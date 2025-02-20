@@ -30,7 +30,7 @@ jobs:
         
     - name: Subir archivos 
       run: |
-        git add lista-ott-procesada.m3u lista-ott-final.csv
+        git add lista-ott-procesada.m3u lista-ott-final.csv canales.txt
         git commit -m "Add processed M3U files"
         git push
       env:
