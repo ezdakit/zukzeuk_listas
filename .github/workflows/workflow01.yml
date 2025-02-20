@@ -20,8 +20,9 @@ jobs:
         chmod +x .github/workflows/procesar_lista_iptv.sh
 
     - name: Ejecutar script
-      run: .github/workflows/extraer_canales_epg.sh
-      run: .github/workflows/procesar_lista_iptv.sh
+      run: |
+      .github/workflows/extraer_canales_epg.sh
+      .github/workflows/procesar_lista_iptv.sh
 
     - name: Configurar identidad de Git
       run: |
