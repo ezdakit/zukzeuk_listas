@@ -8,7 +8,7 @@ sed 's/ -->.*//' lista-ott.m3u > lista-ott-procesada.m3u
 
 # Crear el nuevo archivo con los valores separados por comas
 output_file="lista-ott-final.csv"
-<BLOCKQUOTE><P>"$output_file"</P></BLOCKQUOTE>
+>"$output_file"
 
 # Leer el archivo procesado línea por línea
 while IFS= read -r line; do
