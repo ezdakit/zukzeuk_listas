@@ -1,0 +1,37 @@
+name: miEPG
+
+on:
+  schedule:
+    - cron: '30 18 * * * ' # Ejecutar a las 18:30 AM
+  workflow_dispatch:
+permissions:
+   contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout del repositorio
+      uses: actions/checkout@v2
+
+    - name: Dar permisos de ejecución al script
+      run: |
+        chmod +x .github/workflows/extraer_canales_epg.sh
+        chmod +x .github/workflows/procesar_lista_iptv.sh
+
+    - name: Ejecutar script
+      run: .github/workflows/extraer_canales_epg.sh
+      run: .github/workflows/procesar_lista_iptv.sh
+
+    - name: Configurar identidad de Git
+      run: |
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        
+    - name: Subir archivos 
+      run: |
+        git add lista-ott-procesada.m3u lista-ott-final.csv
+        git commit -m "Add processed M3U files"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
