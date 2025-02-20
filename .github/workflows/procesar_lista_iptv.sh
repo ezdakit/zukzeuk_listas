@@ -25,4 +25,14 @@ while IFS= read -r line; do
     fi
 done < lista-ott-procesada.m3u
 
-echo "Procesamiento completado. El archivo final se ha guardado como $output_file"
+# Añadir el quinto valor a cada línea del fichero lista-ott-final.csv
+canales_file="canales.txt"
+if [ -f "$canales_file" ]; then
+    while IFS= read -r line; do
+        value3=$(echo "$line" | cut -d',' -f3)
+        most_similar_line=$(grep -F "$value3" "$canales_file" | head -n 1)
+        echo "$line,$most_similar_line" >> lista-ott-final-updated.csv
+    done < "$output_file"
+fi
+
+echo "Procesamiento completado. El archivo final se ha guardado como lista-ott-final-updated.csv"
