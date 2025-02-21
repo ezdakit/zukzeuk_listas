@@ -1,6 +1,8 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"
 #EXTVLCOPT:network-caching=2000
 
+#EXTINF:-1 tvg-id="Movistar Plus+ HD" tvg-name="Canal RFB" tvg-chno="169",Canal RFB jsahdJKAH
+http://example.com/stream
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png" tvg-id="DAZN LaLiga HD" group-title="LA LIGA", DAZN LA LIGA FHD --> NEW ERA
 http://127.0.0.1:6878/ace/getstream?id=b5f549da9cafaffab01fb04567ce8a5ad4416b5c
 #EXTINF:-1 tvg-logo="https://comunidad.orange.es/waykc66935/attachments/waykc66935/futbol-series-cine/3971/341/LL_TV_BAR_2_NEG.png" tvg-id="LaLiga TV BAR 2" group-title="LA LIGA", DAZN 1 FHD --> NEW ERA
