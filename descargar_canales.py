@@ -1,6 +1,7 @@
 import sqlite3
 import requests
 from datetime import datetime
+import re
 
 # Descargar el fichero M3U
 url = "https://proxy.zeronet.dev/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u"
@@ -29,22 +30,18 @@ import_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3]
 
 # Procesar el contenido del fichero M3U e insertar en la base de datos
 lines = m3u_content.splitlines()
-for i in range(3, len(lines), 2):
+for i in range(0, len(lines), 2):  # Comenzar desde el inicio
     if lines[i].startswith("#EXTINF:-1"):
-        # Extraer tvg-id, group-title y nombre del canal
+        # Extraer tvg-id, group-title y nombre del canal usando expresiones regulares
         extinf_parts = lines[i].split(',')
         channel_name = extinf_parts[-1]
-        tags = extinf_parts[0].split(' ')
-        tvg_id = ""
-        group_title = ""
-        for tag in tags:
-            if tag.startswith('tvg-id='):
-                tvg_id = tag.split('=')[1].strip('"')
-            elif tag.startswith('group-title='):
-                group_title = tag.split('=')[1].strip('"')
+        tvg_id_match = re.search(r'tvg-id="([^"]+)"', lines[i])
+        group_title_match = re.search(r'group-title="([^"]+)"', lines[i])
+        tvg_id = tvg_id_match.group(1) if tvg_id_match else ""
+        group_title = group_title_match.group(1) if group_title_match else ""
         
         # Obtener la URL de la siguiente línea
-        url = lines[i + 1]
+        url = lines[i + 1] if i + 1 < len(lines) else ""
         
         # Insertar en la base de datos
         cursor.execute('''
