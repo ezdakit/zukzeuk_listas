@@ -4,7 +4,7 @@ from datetime import datetime
 import re
 
 # Descargar el fichero M3U
-url = "https://proxy.zeronet.dev/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u"
+url = "https://proxy.zeronet.dev/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u2"
 response = requests.get(url)
 m3u_content = response.text
 
@@ -25,6 +25,9 @@ CREATE TABLE IF NOT EXISTS canales_iptv_temp (
 )
 ''')
 
+# Borrar todos los registros de la tabla si existe
+cursor.execute('DELETE FROM canales_iptv_temp')
+
 # Obtener la fecha y hora actual para el campo import_date
 import_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3]
 
@@ -35,6 +38,8 @@ for i in range(0, len(lines), 2):  # Comenzar desde el inicio
         # Extraer tvg-id, group-title y nombre del canal usando expresiones regulares
         extinf_parts = lines[i].split(',')
         channel_name = extinf_parts[-1]
+        
+        # Usar expresiones regulares para extraer tvg-id y group-title
         tvg_id_match = re.search(r'tvg-id="([^"]+)"', lines[i])
         group_title_match = re.search(r'group-title="([^"]+)"', lines[i])
         tvg_id = tvg_id_match.group(1) if tvg_id_match else ""
