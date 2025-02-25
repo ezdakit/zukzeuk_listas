@@ -2,6 +2,7 @@ import sqlite3
 import requests
 from datetime import datetime
 import re
+import sys
 
 # Descargar el fichero M3U
 url = "https://proxy.zeronet.dev/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u"
@@ -11,6 +12,9 @@ m3u_content = response.text
 # Guardar una copia del fichero M3U descargado
 with open('lista-ott.m3u', 'w') as file:
     file.write(m3u_content)
+
+# Redirigir la salida de los print a un fichero de texto
+sys.stdout = open('debug_log.txt', 'w')
 
 # Conectar a la base de datos SQLite
 conn = sqlite3.connect('zz_canales.db')
@@ -52,6 +56,12 @@ for i in range(0, len(lines), 2):  # Comenzar desde el inicio
         # Obtener la URL de la siguiente línea
         url = lines[i + 1] if i + 1 < len(lines) else ""
         
+        # Mensajes de depuración
+        print(f"Procesando canal: {channel_name}")
+        print(f"tvg-id: {tvg_id}")
+        print(f"group-title: {group_title}")
+        print(f"url: {url}")
+        
         # Insertar en la base de datos
         cursor.execute('''
         INSERT INTO canales_iptv_temp (import_date, name_original, iptv_epg_id_original, iptv_epg_id_new, iptv_group_original, iptv_group_new, iptv_url)
@@ -63,3 +73,6 @@ conn.commit()
 conn.close()
 
 print("Los datos se han insertado correctamente en zz_canales.db y se ha guardado una copia del fichero lista-ott.m3u")
+
+# Cerrar el archivo de depuración
+sys.stdout.close()
