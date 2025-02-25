@@ -41,7 +41,9 @@ import_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3]
 
 # Procesar el contenido del fichero M3U e insertar en la base de datos
 lines = m3u_content.splitlines()
+print(f"Número total de líneas en el archivo M3U: {len(lines)}")
 for i in range(0, len(lines), 2):  # Comenzar desde el inicio
+    print(f"Procesando línea {i}: {lines[i]}")
     if lines[i].startswith("#EXTINF:-1"):
         # Extraer tvg-id, group-title y nombre del canal usando expresiones regulares
         extinf_parts = lines[i].split(',')
