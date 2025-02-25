@@ -8,6 +8,10 @@ url = "https://proxy.zeronet.dev/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3
 response = requests.get(url)
 m3u_content = response.text
 
+# Guardar una copia del fichero M3U descargado
+with open('lista-ott.m3u', 'w') as file:
+    file.write(m3u_content)
+
 # Conectar a la base de datos SQLite
 conn = sqlite3.connect('zz_canales.db')
 cursor = conn.cursor()
@@ -58,4 +62,4 @@ for i in range(0, len(lines), 2):  # Comenzar desde el inicio
 conn.commit()
 conn.close()
 
-print("Los datos se han insertado correctamente en zz_canales.db")
+print("Los datos se han insertado correctamente en zz_canales.db y se ha guardado una copia del fichero lista-ott.m3u")
