@@ -32,10 +32,24 @@ jobs:
         git config user.name "GitHub Actions"
         git config user.email "actions@github.com"
         
-    - name: Subir archivos 
+    - name: Check for changes
+      id: changes
       run: |
         git add zz_canales.db
-        git commit -m "Add processed M3U files"
-        git push
+        if git diff --cached --quiet; then
+          echo "No changes to commit"
+          echo "::set-output name=changes::false"
+        else
+          echo "Changes detected"
+          echo "::set-output name=changes::true"
+        fi
+
+    - name: Commit changes
+      if: steps.changes.outputs.changes == 'true'
+      run: git commit -m "Add processed M3U files"
+
+    - name: Push changes
+      if: steps.changes.outputs.changes == 'true'
+      run: git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
