@@ -3,7 +3,7 @@ import requests
 from datetime import datetime
 
 # Descargar el fichero M3U
-url = "https://proxy.zeronet.dev/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u2"
+url = "https://proxy.zeronet.dev/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u"
 response = requests.get(url)
 m3u_content = response.text
 
