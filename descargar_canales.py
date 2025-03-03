@@ -18,7 +18,7 @@ except requests.RequestException as e:
 with open('lista-ott.m3u', 'w') as file:
     file.write(m3u_content)
 
-# Redirigir la salida de los print a un fichero de texto
+# Redirigir la salida de los print a fichero de texto
 sys.stdout = open('debug_log.txt', 'w')
 
 # Conectar a la base de datos SQLite
