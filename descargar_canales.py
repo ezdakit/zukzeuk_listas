@@ -122,4 +122,6 @@ finally:
 # Cerrar el archivo de depuración
 sys.stdout.close()
 
+# Imprimir el mensaje final
+sys.stdout = sys.__stdout__
 print("Los datos se han insertado correctamente en zz_canales.db y se ha generado el fichero zz_lista_ott.m3u")
