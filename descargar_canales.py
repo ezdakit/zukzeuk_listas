@@ -3,13 +3,17 @@ import requests
 from datetime import datetime
 import re
 import sys
+import chardet
 
 # Descargar el fichero M3U
 url = "https://proxy.zeronet.dev/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u"
 try:
     response = requests.get(url)
     response.raise_for_status()
-    m3u_content = response.content.decode('utf-8')  # Decodificar el contenido como UTF-8
+    # Detectar la codificación del contenido
+    encoding = chardet.detect(response.content)['encoding']
+    # Decodificar el contenido usando la codificación detectada
+    m3u_content = response.content.decode(encoding)
 except requests.RequestException as e:
     print(f"Error al descargar el archivo M3U: {e}")
     sys.exit(1)
@@ -72,6 +76,12 @@ try:
                 
                 # Obtener la URL de la siguiente línea
                 url = lines[i + 1] if i + 1 < len(lines) else ""
+                
+                # Limpiar caracteres no deseados
+                channel_name = re.sub(r'[^\x00-\x7F]+', '', channel_name)
+                tvg_id = re.sub(r'[^\x00-\x7F]+', '', tvg_id)
+                group_title = re.sub(r'[^\x00-\x7F]+', '', group_title)
+                url = re.sub(r'[^\x00-\x7F]+', '', url)
                 
                 # Mensajes de depuración
                 print(f"Procesando canal: {channel_name}")
