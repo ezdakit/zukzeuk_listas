@@ -9,8 +9,8 @@ http://127.0.0.1:6878/ace/getstream?id=64276786d1bf02d0c2feda9e976f0c4ac14e9e45
 http://127.0.0.1:6878/ace/getstream?id=c2b2603e2aa57db44bd79c4fa7a87e2ed6875c6f
 #EXTINF:-1 tvg-id="DAZN F1 HD" group-title="7. Motor", DAZN F1
 http://127.0.0.1:6878/ace/getstream?id=8c006afa7086d845ab106ddb76704230e61b315b
-#EXTINF:-1 tvg-id="LaLiga TV BAR HD" group-title="1. LaLiga", LaLiga TV BAR
-http://127.0.0.1:6878/ace/getstream?id=db9399427ec0dd2a30208fece043c2afcaef55e3
+#EXTINF:-1 tvg-id="None" group-title="None", None
+http://127.0.0.1:6878/ace/getstream?id=1b5fdd73ab89ea7198e19a086502fb59c50938f7
 #EXTINF:-1 tvg-id="LaLiga TV Hypermotion HD" group-title="5. Segunda Div.", LaLiga TV Hypermotion
 http://127.0.0.1:6878/ace/getstream?id=02d56e47fcf403766f2193599dd96221eee35066
 #EXTINF:-1 tvg-id="Eurosport 1 HD" group-title="9. Varios", Eurosport 1
@@ -111,6 +111,8 @@ http://127.0.0.1:6878/ace/getstream?id=0a335406bad0b658aeddb2d38f8c0614b2e5623a
 http://127.0.0.1:6878/ace/getstream?id=fefd45ed6ff415e05f1341b7d9da2988eacd13ea
 #EXTINF:-1 tvg-id="DAZN 1 HD" group-title="3. DAZN", DAZN 1
 http://127.0.0.1:6878/ace/getstream?id=e6a00cb2912609dceeeee88d3f66a2de9718b421
+#EXTINF:-1 tvg-id="None" group-title="None", None
+http://127.0.0.1:6878/ace/getstream?id=fb51ef5294e99767811a3fa95a1933fb864e9ff3
 #EXTINF:-1 tvg-id="DAZN 1 BAR" group-title="3. DAZN", DAZN 1 BAR
 http://127.0.0.1:6878/ace/getstream?id=ec10963a4408f96d2089a29af8b7a8ac4b23dd3c
 #EXTINF:-1 tvg-id="DAZN 2 BAR" group-title="3. DAZN", DAZN 2 BAR
@@ -308,9 +310,9 @@ http://127.0.0.1:6878/ace/getstream?id=872608e734992db636eb79426802cd08f4029afb
 #EXTINF:-1 tvg-id="M+ LaLiga TV HD" group-title="1. LaLiga", M+ LaLiga TV
 http://127.0.0.1:6878/ace/getstream?id=cc9b7f5fe416069a2110da0909b0f915043c468b
 #EXTINF:-1 tvg-id="M+ Liga de Campeones HD" group-title="2. LigaCampeones", M+ Liga de Campeones
-http://127.0.0.1:6878/ace/getstream?id=bb5a8bf7752e978460ee1710e5e8950a5c9e1f99
-#EXTINF:-1 tvg-id="M+ Liga de Campeones HD" group-title="2. LigaCampeones", M+ Liga de Campeones
 http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 tvg-id="M+ Liga de Campeones HD" group-title="2. LigaCampeones", M+ Liga de Campeones
+http://127.0.0.1:6878/ace/getstream?id=bb5a8bf7752e978460ee1710e5e8950a5c9e1f99
 #EXTINF:-1 tvg-id="DAZN F1 HD" group-title="7. Motor", DAZN F1
 http://127.0.0.1:6878/ace/getstream?id=073d33a5e5270399154bb251fcc95f99c0741264
 #EXTINF:-1 tvg-id="DAZN 1 HD" group-title="3. DAZN", DAZN 1
@@ -347,10 +349,10 @@ http://127.0.0.1:6878/ace/getstream?id=8d475e2688519f2c602687b71be54cedbaef9e6b
 http://127.0.0.1:6878/ace/getstream?id=fffaa64d41e500250064181762d510d513137410
 #EXTINF:-1 tvg-id="no_disponible" group-title="9. Varios", Retrovision Motor
 http://127.0.0.1:6878/ace/getstream?id=b8b8c4470d3d27c75302cf49ab6c4b52a660bff3
-#EXTINF:-1 tvg-id="None" group-title="None", None
-http://127.0.0.1:6878/ace/getstream?id=52a526d748e26ff0827635b3932d9f49aee14a25
-#EXTINF:-1 tvg-id="beIN SPORTS XTRA ñ" group-title="9. Varios", beIN SPORTS XTRA ñ
-http://127.0.0.1:6878/ace/getstream?id=fd869f34346154ca7cd78d46cbf7a6b8671beab5
+#EXTINF:-1 tvg-id="no_disponible" group-title="9. Varios", SuperTennis
+http://127.0.0.1:6878/ace/getstream?id=b58dbf92765976b308695f62dea94b00b40730ee
+#EXTINF:-1 tvg-id="Tennis Channel" group-title="9. Varios", Tennis Channel
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
 #EXTINF:-1 tvg-id="None" group-title="None", None
 http://127.0.0.1:6878/ace/getstream?id=4b4907de51ec11087d4bed5876f2a0c68264f442
 #EXTINF:-1 tvg-id="None" group-title="None", None

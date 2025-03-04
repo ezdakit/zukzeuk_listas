@@ -9,22 +9,25 @@ url = "https://proxy.zeronet.dev/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3
 try:
     response = requests.get(url)
     response.raise_for_status()
-    m3u_content = response.text
+    m3u_content = response.content.decode('utf-8')  # Decodificar el contenido como UTF-8
 except requests.RequestException as e:
     print(f"Error al descargar el archivo M3U: {e}")
     sys.exit(1)
 
 # Guardar una copia del fichero M3U descargado
-with open('lista-ott.m3u', 'w') as file:
+with open('lista-ott.m3u', 'w', encoding='utf-8') as file:
     file.write(m3u_content)
 
 # Redirigir la salida de los print a fichero de texto
-sys.stdout = open('debug_log.txt', 'w')
+sys.stdout = open('debug_log.txt', 'w', encoding='utf-8')
 
 # Conectar a la base de datos SQLite
 try:
     conn = sqlite3.connect('zz_canales.db')
     cursor = conn.cursor()
+
+    # Configurar la conexión para usar UTF-8
+    cursor.execute('PRAGMA encoding = "UTF-8";')
 
     # Crear la tabla si no existe
     cursor.execute('''
@@ -103,7 +106,7 @@ try:
     conn.commit()
 
     # Generar el archivo zz_lista_ott.m3u
-    with open('zz_lista_ott.m3u', 'w') as m3u_file:
+    with open('zz_lista_ott.m3u', 'w', encoding='utf-8') as m3u_file:
         m3u_file.write('#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"\n')
         m3u_file.write('#EXTVLCOPT:network-caching=2000\n\n')
         
@@ -122,6 +125,8 @@ finally:
 # Cerrar el archivo de depuración
 sys.stdout.close()
 
-# Imprimir el mensaje final
+# Redirigir la salida de vuelta a la consola estándar
 sys.stdout = sys.__stdout__
+
+# Imprimir el mensaje final
 print("Los datos se han insertado correctamente en zz_canales.db y se ha generado el fichero zz_lista_ott.m3u")

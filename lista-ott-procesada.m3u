@@ -2,17 +2,17 @@
 #EXTVLCOPT:network-caching=2000
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co/CV4CLjz/deportes.png" tvg-id="M+ Deportes HD" group-title="MOVISTAR", M+ DEPORTES FHD
-http://127.0.0.1:6878/ace/getstream?id=32bb94fe8047be0fddd13d3e3755b46e48fe70b11
+http://127.0.0.1:6878/ace/getstream?id=32bb94fe8047be0fddd13d3e3755b46e48fe70b1
 #EXTINF:-1 tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" tvg-id="M+ Vamos HD" group-title="MOVISTAR", #VAMOS FHD
 http://127.0.0.1:6878/ace/getstream?id=64276786d1bf02d0c2feda9e976f0c4ac14e9e45
 #EXTINF:-1 tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" tvg-id="M+ Vamos HD" group-title="MOVISTAR", #VAMOS ELLAS  FHD
-http://127.0.0.1:6878/ace/getstream?id=c2b2603e2aa57db44bd79c4fa7a87e2ed6875c6ff
+http://127.0.0.1:6878/ace/getstream?id=c2b2603e2aa57db44bd79c4fa7a87e2ed6875c6f
 #EXTINF:-1 tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" tvg-id="DAZN F1 HD" group-title="FORMULA 1", DAZN F1 FHD
 http://127.0.0.1:6878/ace/getstream?id=8c006afa7086d845ab106ddb76704230e61b315b
 #EXTINF:-1 tvg-logo="https://comunidad.orange.es/waykc66935/attachments/waykc66935/futbol-series-cine/3971/339/LL_TV_BAR_NEG.png" tvg-id="LaLiga TV BAR HD" group-title="LA LIGA", LaLiga TV BAR FHD
-http://127.0.0.1:6878/ace/getstream?id=db9399427ec0dd2a30208fece043c2afcaef55e3
+http://127.0.0.1:6878/ace/getstream?id=05214e3471c72f22774490996f533617f4db8dc6
 #EXTINF:-1 tvg-logo="https://i.ibb.co/CBdGc9f/hypermotion1.png" tvg-id="LaLiga TV Hypermotion HD" group-title="HYPERMOTION", LALIGA HYPERMOTION TV FHD
-http://127.0.0.1:6878/ace/getstream?id=02d56e47fcf403766f2193599dd96221eee350666
+http://127.0.0.1:6878/ace/getstream?id=02d56e47fcf403766f2193599dd96221eee35066
 #EXTINF:-1 tvg-logo="https://i.ibb.co/r2Yd7xD/euro1.png" tvg-id="Eurosport 1 HD" group-title="EUROSPORT", EUROSPORT 2 FHD
 http://127.0.0.1:6878/ace/getstream?id=0fc05a1e2da78d44b3b5c1ebf6cbcedb8e92c934
 #EXTINF:-1 tvg-logo="" tvg-id="" group-title="OTROS", M+ COMEDIA FHD
@@ -308,9 +308,9 @@ http://127.0.0.1:6878/ace/getstream?id=872608e734992db636eb79426802cd08f4029afb
 #EXTINF:-1 tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" tvg-id="M+ LaLiga TV HD" group-title="LA LIGA", M. LaLiga
 http://127.0.0.1:6878/ace/getstream?id=cc9b7f5fe416069a2110da0909b0f915043c468b
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png" tvg-id="M+ Liga de Campeones HD" group-title="LIGA DE CAMPEONES", M. Liga de Campeones
-http://127.0.0.1:6878/ace/getstream?id=bb5a8bf7752e978460ee1710e5e8950a5c9e1f99
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png" tvg-id="M+ Liga de Campeones HD" group-title="LIGA DE CAMPEONES", M. Liga de Campeones
 http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png" tvg-id="M+ Liga de Campeones HD" group-title="LIGA DE CAMPEONES", M. Liga de Campeones
+http://127.0.0.1:6878/ace/getstream?id=bb5a8bf7752e978460ee1710e5e8950a5c9e1f99
 #EXTINF:-1 tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" tvg-id="DAZN F1 HD" group-title="FORMULA 1", DAZN FORMULA 1 FHDÂ©ï¸
 http://127.0.0.1:6878/ace/getstream?id=073d33a5e5270399154bb251fcc95f99c0741264
 #EXTINF:-1 tvg-logo="https://i.ibb.co/FVzKq1y/dazn1.png" tvg-id="DAZN 1 HD" group-title="DAZN", DAZN1
@@ -327,10 +327,6 @@ http://127.0.0.1:6878/ace/getstream?id=44c12ecb7b00a961f3c3f80f1edea7f8feedec59
 http://127.0.0.1:6878/ace/getstream?id=cfa75ade53810dac64411b22d56c3d4582a221d3
 #EXTINF:-1 tvg-logo="https://i.ibb.co/r2Yd7xD/euro1.png" tvg-id="Eurosport 1 HD" group-title="EUROSPORT", Eurosport 1 HD
 http://127.0.0.1:6878/ace/getstream?id=f5a5a5bf9903bde0c865e421f126c42e514ff787
-#EXTINF:-1 tvg-logo="https://i.ibb.co/r2Yd7xD/euro1.png" tvg-id="Eurosport 1 HD" group-title="EUROSPORT", Eurosport 1 HD
-http://127.0.0.1:6878/ace/getstream?id=fbc82948dd7c19387a702692bc4590157b376459
-#EXTINF:-1 tvg-logo="https://i.ibb.co/r2Yd7xD/euro1.png" tvg-id="Eurosport 1 HD" group-title="EUROSPORT", Eurosport 1 hd
-http://127.0.0.1:6878/ace/getstream?id=23a4937f1484b435af132dbfb3e8fd3aefc9baad
 #EXTINF:-1 tvg-logo="https://tvprofil.com/img/kanali-logo/Sky_Sports_Arena_GB_logo.png?1734015005" tvg-id="UK | Sky Sport Arena" group-title="SKYSPORTS", Sky Sports Arena [UK]
 http://127.0.0.1:6878/ace/getstream?id=d317a003e8047da2c36a2a2bb2289578c9a3b79c
 #EXTINF:-1 tvg-logo="https://pbs.twimg.com/profile_images/1605139019741929472/RWr7BPxn_200x200.jpg" tvg-id="UK | Sky Sport Cricket" group-title="SKYSPORTS", Sky Sports Cricket [UK]
@@ -347,12 +343,14 @@ http://127.0.0.1:6878/ace/getstream?id=31ef168d43c7cd04e672475f7ec33b99b9fe5a96
 http://127.0.0.1:6878/ace/getstream?id=8d475e2688519f2c602687b71be54cedbaef9e6b
 #EXTINF:-1 tvg-logo="https://cdn.broadbandtvnews.com/wp-content/uploads/2015/10/14120627/Motorvision-TV.png" tvg-id="" group-title="MOTOR", Motorvision TV
 http://127.0.0.1:6878/ace/getstream?id=fffaa64d41e500250064181762d510d513137410
-#EXTINF:-1 tvg-logo="https://www.mxgp.com/sites/default/files/news/image/logo%20Motors%20TV.jpg" tvg-id="" group-title="MOTOR", Retrovision Motor
-http://127.0.0.1:6878/ace/getstream?id=b8b8c4470d3d27c75302cf49ab6c4b52a660bff3
 #EXTINF:-1 tvg-logo="" tvg-id="" group-title="OTROS", SuperTennis HD
 http://127.0.0.1:6878/ace/getstream?id=b58dbf92765976b308695f62dea94b00b40730ee
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Tennis%20Channel.png" tvg-id="Tennis Channel" group-title="OTROS", Tennis Channel (UK) (720p)
+http://127.0.0.1:6878/ace/getstream?id=52a526d748e26ff0827635b3932d9f49aee14a25
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Tennis%20Channel.png" tvg-id="Tennis Channel" group-title="OTROS", Tennis Channel HD
 http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Bein_Sport_en_espa%C3%B1ol_logo.svg/320px-Bein_Sport_en_espa%C3%B1ol_logo.svg.png" tvg-id="beIN SPORTS XTRA ñ" group-title="OTROS", beIN SPORTS XTRA
+http://127.0.0.1:6878/ace/getstream?id=fd869f34346154ca7cd78d46cbf7a6b8671beab5
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/ESPN.png" tvg-id="ESPN" group-title="OTROS", ESPN HD [US]
 http://127.0.0.1:6878/ace/getstream?id=4b4907de51ec11087d4bed5876f2a0c68264f442
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/ESPN%202.png" tvg-id="ESPN 2" group-title="OTROS", ESPN2 [US]
