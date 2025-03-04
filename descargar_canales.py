@@ -3,17 +3,13 @@ import requests
 from datetime import datetime
 import re
 import sys
-import chardet
 
 # Descargar el fichero M3U
 url = "https://proxy.zeronet.dev/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u"
 try:
     response = requests.get(url)
     response.raise_for_status()
-    # Detectar la codificación del contenido
-    encoding = chardet.detect(response.content)['encoding']
-    # Decodificar el contenido usando la codificación detectada
-    m3u_content = response.content.decode(encoding)
+    m3u_content = response.content.decode('utf-8', errors='replace')  # Decodificar el contenido como UTF-8
 except requests.RequestException as e:
     print(f"Error al descargar el archivo M3U: {e}")
     sys.exit(1)
