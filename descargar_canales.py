@@ -29,7 +29,7 @@ try:
     # Configurar la conexión para usar UTF-8
     cursor.execute('PRAGMA encoding = "UTF-8";')
 
-    # Crear la tabla si no existe
+    # Crear la tabla si no existe, incluyendo el nuevo campo "activo"
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS canales_iptv_temp (
         import_date TEXT,
@@ -39,7 +39,8 @@ try:
         iptv_group_original TEXT,
         iptv_group_new TEXT,
         iptv_url TEXT,
-        name_new TEXT
+        name_new TEXT,
+        activo INTEGER DEFAULT 0
     )
     ''')
 
@@ -85,11 +86,11 @@ try:
                 print(f"group-title: {group_title}")
                 print(f"url: {url}")
                 
-                # Insertar en la base de datos
+                # Insertar en la base de datos, estableciendo "activo" a 0 por defecto
                 cursor.execute('''
-                INSERT INTO canales_iptv_temp (import_date, name_original, iptv_epg_id_original, iptv_epg_id_new, iptv_group_original, iptv_group_new, iptv_url, name_new)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-                ''', (import_date, channel_name, tvg_id, "", group_title, "", url, ""))
+                INSERT INTO canales_iptv_temp (import_date, name_original, iptv_epg_id_original, iptv_epg_id_new, iptv_group_original, iptv_group_new, iptv_url, name_new, activo)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                ''', (import_date, channel_name, tvg_id, "", group_title, "", url, "", 0))
 
     # Actualizar los registros de canales_iptv_temp con los datos de correspondencia_canales
     cursor.execute('''
@@ -105,6 +106,11 @@ try:
     name_new = (
         SELECT channel_name FROM correspondencia_canales
         WHERE correspondencia_canales.channel_iptv_name = canales_iptv_temp.name_original
+    ),
+    activo = 1
+    WHERE EXISTS (
+        SELECT 1 FROM correspondencia_canales
+        WHERE correspondencia_canales.channel_iptv_name = canales_iptv_temp.name_original
     )
     ''')
 
@@ -116,7 +122,7 @@ try:
         m3u_file.write('#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"\n')
         m3u_file.write('#EXTVLCOPT:network-caching=2000\n\n')
         
-        for row in cursor.execute('SELECT iptv_epg_id_new, iptv_group_new, name_new, iptv_url FROM canales_iptv_temp'):
+        for row in cursor.execute('SELECT iptv_epg_id_new, iptv_group_new, name_new, iptv_url FROM canales_iptv_temp WHERE activo = 1'):
             iptv_epg_id_new, iptv_group_new, name_new, iptv_url = row
             m3u_file.write(f'#EXTINF:-1 tvg-id="{iptv_epg_id_new}" group-title="{iptv_group_new}", {name_new}\n')
             m3u_file.write(f'{iptv_url}\n')
