@@ -59,8 +59,6 @@ http://127.0.0.1:6878/ace/getstream?id=6de4794cd02f88f14354b5996823413a59a1de0f
 http://127.0.0.1:6878/ace/getstream?id=8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb
 #EXTINF:-1 tvg-id="M+ LaLiga TV HD" group-title="LALIGA", M+ LaLiga TV
 http://127.0.0.1:6878/ace/getstream?id=cc9b7f5fe416069a2110da0909b0f915043c468b
-#EXTINF:-1 tvg-id="M+ LaLiga TV HD" group-title="LALIGA", M+ LaLiga TV
-http://127.0.0.1:6878/ace/getstream?id=d15a0eaf825b5f8f94259d5209688a7e97e6acde
 #EXTINF:-1 tvg-id="M+ LaLiga TV 2 HD" group-title="LALIGA", M+ LaLiga TV 2
 http://127.0.0.1:6878/ace/getstream?id=83c6c4942d69f4aa324aa746c5d7dbfd7d1572b3
 #EXTINF:-1 tvg-id="M+ LaLiga TV 2 HD" group-title="LALIGA", M+ LaLiga TV 2
@@ -246,8 +244,6 @@ http://127.0.0.1:6878/ace/getstream?id=8e9390c1647da151a7bc0e1b37c4b4d21d83049d
 #EXTINF:-1 tvg-id="Eurosport 1 HD" group-title="VARIOS", Eurosport 1
 http://127.0.0.1:6878/ace/getstream?id=cfa75ade53810dac64411b22d56c3d4582a221d3
 #EXTINF:-1 tvg-id="Eurosport 1 HD" group-title="VARIOS", Eurosport 1
-http://127.0.0.1:6878/ace/getstream?id=f5a5a5bf9903bde0c865e421f126c42e514ff787
-#EXTINF:-1 tvg-id="Eurosport 1 HD" group-title="VARIOS", Eurosport 1
 http://127.0.0.1:6878/ace/getstream?id=23a4937f1484b435af132dbfb3e8fd3aefc9baad
 #EXTINF:-1 tvg-id="Eurosport 1 HD" group-title="VARIOS", Eurosport 1
 http://127.0.0.1:6878/ace/getstream?id=9d40122f58b904afc78b971aa287a31c1003cd7d
@@ -257,6 +253,8 @@ http://127.0.0.1:6878/ace/getstream?id=ca4860d9998d63029dcf08c6f5dfc2102c01be4e
 http://127.0.0.1:6878/ace/getstream?id=6ad33feec75d929de54d77b9becfe767ae83fcb3
 #EXTINF:-1 tvg-id="no_disponible" group-title="VARIOS", NBA TV
 http://127.0.0.1:6878/ace/getstream?id=c8aac540621d481965791c4442a7e868bcca10ca
+#EXTINF:-1 tvg-id="no_disponible" group-title="VARIOS", SuperTennis
+http://127.0.0.1:6878/ace/getstream?id=b58dbf92765976b308695f62dea94b00b40730ee
 #EXTINF:-1 tvg-id="Tennis Channel" group-title="VARIOS", Tennis Channel
 http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
 #EXTINF:-1 tvg-id="UK | Sky Sport Arena" group-title="VARIOS", UK | Sky Sport Arena
