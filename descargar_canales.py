@@ -141,5 +141,25 @@ finally:
     if conn:
         conn.close()
 
+# Generar el archivo zz_lista_ace.m3u
+with open('zz_lista_ace.m3u', 'w', encoding='utf-8') as ace_file:
+    ace_file.write('#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"\n')
+    ace_file.write('#EXTVLCOPT:network-caching=2000\n\n')
+    for row in cursor.execute('SELECT iptv_epg_id_new, iptv_group_new, name_new, iptv_url FROM canales_iptv_temp WHERE activo = 1 ORDER BY iptv_group_new, name_new'):
+        iptv_epg_id_new, iptv_group_new, name_new, iptv_url = row
+        ace_url = iptv_url.replace("http://127.0.0.1:6878/ace/getstream?id=", "acestream://")
+        ace_file.write(f'#EXTINF:-1 tvg-id="{iptv_epg_id_new}" group-title="{iptv_group_new}", {name_new}\n')
+        ace_file.write(f'{ace_url}\n')
+
+# Generar el archivo zz_lista_kodi.m3u
+with open('zz_lista_kodi.m3u', 'w', encoding='utf-8') as kodi_file:
+    kodi_file.write('#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"\n')
+    kodi_file.write('#EXTVLCOPT:network-caching=2000\n\n')
+    for row in cursor.execute('SELECT iptv_epg_id_new, iptv_group_new, name_new, iptv_url FROM canales_iptv_temp WHERE activo = 1 ORDER BY iptv_group_new, name_new'):
+        iptv_epg_id_new, iptv_group_new, name_new, iptv_url = row
+        kodi_url = iptv_url.replace("http://127.0.0.1:6878/ace/getstream?id=", "plugin://script.module.horus?action=play&id=")
+        kodi_file.write(f'#EXTINF:-1 tvg-id="{iptv_epg_id_new}" group-title="{iptv_group_new}", {name_new}\n')
+        kodi_file.write(f'{kodi_url}\n')
+
 # Imprimir el mensaje final
-logging.info("Los datos se han insertado correctamente en zz_canales.db y se ha generado el fichero zz_lista_ott.m3u")
+logging.info("Los datos se han insertado correctamente en zz_canales.db y se ha generado el fichero zz_lista_ott.m3u, zz_lista_ace.m3u y zz_lista_kodi.m3u")
