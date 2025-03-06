@@ -98,7 +98,7 @@ try:
         id_temp, name_original = canal
 
         # Buscar registros en correspondencia_canales donde channel_root sea una subcadena de name_original
-        cursor.execute("SELECT id, channel_root, iptv_epg_id_new, iptv_group_new, name_new FROM correspondencia_canales WHERE ? LIKE '%' || channel_root || '%'", (name_original,))
+        cursor.execute("SELECT id, channel_root, channel_epg_id, channel_group, channel_name FROM correspondencia_canales WHERE ? LIKE '%' || channel_root || '%'", (name_original,))
         posibles_correspondencias = cursor.fetchall()
 
         if posibles_correspondencias:
