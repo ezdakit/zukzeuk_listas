@@ -13,6 +13,8 @@ plugin://script.module.horus?action=play&id=d5446f3cc8e42ba965fd9f1c73b1e2ac3921
 plugin://script.module.horus?action=play&id=71a65780b9c542a8c9e4084ae5aefdd9286da51e
 #EXTINF:-1 tvg-id="DAZN 1 HD" group-title="DAZN", DAZN 1
 plugin://script.module.horus?action=play&id=44c12ecb7b00a961f3c3f80f1edea7f8feedec59
+#EXTINF:-1 tvg-id="DAZN 1 HD" group-title="DAZN", DAZN 1
+plugin://script.module.horus?action=play&id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
 #EXTINF:-1 tvg-id="DAZN 1 BAR" group-title="DAZN", DAZN 1 BAR
 plugin://script.module.horus?action=play&id=ec10963a4408f96d2089a29af8b7a8ac4b23dd3c
 #EXTINF:-1 tvg-id="DAZN 1 BAR" group-title="DAZN", DAZN 1 BAR
@@ -25,16 +27,22 @@ plugin://script.module.horus?action=play&id=a929eeec1268d69d1556a2e3ace793b2577d
 plugin://script.module.horus?action=play&id=ddb69a119ab5faf7eeec3cef77e3d591a8242816
 #EXTINF:-1 tvg-id="DAZN 2 HD" group-title="DAZN", DAZN 2
 plugin://script.module.horus?action=play&id=57e38ef7eaab5596559415bdf96926ee4115c5ce
+#EXTINF:-1 tvg-id="DAZN 2 HD" group-title="DAZN", DAZN 2
+plugin://script.module.horus?action=play&id=b0eabe0fdd02fdd165896236765a9b753a2ff516
 #EXTINF:-1 tvg-id="DAZN 2 BAR" group-title="DAZN", DAZN 2 BAR
 plugin://script.module.horus?action=play&id=f86e821848931eaa55bcb779e74f62d6a59f41c0
 #EXTINF:-1 tvg-id="DAZN 3 HD" group-title="DAZN", DAZN 3
 plugin://script.module.horus?action=play&id=c34a6552886fad4627ea36947fdec3e46e4e3b08
 #EXTINF:-1 tvg-id="DAZN 3 HD" group-title="DAZN", DAZN 3
 plugin://script.module.horus?action=play&id=5c7406bfaf65cc32d3f52b1430b53a37bc4c59bc
+#EXTINF:-1 tvg-id="DAZN 3 HD" group-title="DAZN", DAZN 3
+plugin://script.module.horus?action=play&id=d1d9ec2361a6ac8edc0b2841866383768cc28df9
 #EXTINF:-1 tvg-id="DAZN 4 HD" group-title="DAZN", DAZN 4
 plugin://script.module.horus?action=play&id=5e5b670d44e4f23a49ebe1770458066ac2cf58e3
 #EXTINF:-1 tvg-id="DAZN 4 HD" group-title="DAZN", DAZN 4
 plugin://script.module.horus?action=play&id=b4b48a6028aa05ca32f583d3019dc2e3e6bd9988
+#EXTINF:-1 tvg-id="DAZN 4 HD" group-title="DAZN", DAZN 4
+plugin://script.module.horus?action=play&id=7e90956539f4e1318a63f3960e4f75c7c7c5a3b8
 #EXTINF:-1 tvg-id="DAZN LaLiga 2 HD" group-title="LALIGA", DAZN LaLiga 2
 plugin://script.module.horus?action=play&id=fb51ef5294e99767811a3fa95a1933fb864e9ff3
 #EXTINF:-1 tvg-id="LaLiga TV BAR HD" group-title="LALIGA", LaLiga TV BAR
@@ -181,8 +189,6 @@ plugin://script.module.horus?action=play&id=cc5782d37ae6b6e0bab396dd64074982d087
 plugin://script.module.horus?action=play&id=070f82d6443a52962d6a2ed9954c979b29404932
 #EXTINF:-1 tvg-id="M+ Vamos HD" group-title="MOVISTAR", M+ Vamos
 plugin://script.module.horus?action=play&id=c6b52ffb3b84836d334569204797d88bf15d48fa
-#EXTINF:-1 tvg-id="M+ Ellas Vamos HD" group-title="MOVISTAR", M+ Vamos
-plugin://script.module.horus?action=play&id=af636e7b1747cf868eedf242b96bd98f8fbbed4f
 #EXTINF:-1 tvg-id="M+ Vamos HD" group-title="MOVISTAR", M+ Vamos
 plugin://script.module.horus?action=play&id=d03c13b6723f66155d7a0df3692a3b073fe630f2
 #EXTINF:-1 tvg-id="M+ Vamos HD" group-title="MOVISTAR", M+ Vamos
@@ -191,12 +197,14 @@ plugin://script.module.horus?action=play&id=12ba546d229bc39f01c3c18988a034b215fe
 plugin://script.module.horus?action=play&id=47403b07582b05c2a1eadaf6d1fb6454eda03a77
 #EXTINF:-1 tvg-id="M+ Vamos HD" group-title="MOVISTAR", M+ Vamos
 plugin://script.module.horus?action=play&id=a1660d711184fa701bf1c88395e3b2d43ddca83f
-#EXTINF:-1 tvg-id="M+ Ellas Vamos HD" group-title="MOVISTAR", M+ Vamos
-plugin://script.module.horus?action=play&id=e2d26332bf1aa59aec7e3cbe9ed4689df44ae368
 #EXTINF:-1 tvg-id="M+ Vamos HD" group-title="MOVISTAR", M+ Vamos
 plugin://script.module.horus?action=play&id=6f1f82c3cf6bf4b4ccb6d63d687271878e0e908d
 #EXTINF:-1 tvg-id="M+ Vamos HD" group-title="MOVISTAR", M+ Vamos
 plugin://script.module.horus?action=play&id=6bd7e177c31e1d85a97a258059616bbb7ffecb13
+#EXTINF:-1 tvg-id="M+ Ellas Vamos HD" group-title="MOVISTAR", M+ Vamos Ellas
+plugin://script.module.horus?action=play&id=af636e7b1747cf868eedf242b96bd98f8fbbed4f
+#EXTINF:-1 tvg-id="M+ Ellas Vamos HD" group-title="MOVISTAR", M+ Vamos Ellas
+plugin://script.module.horus?action=play&id=e2d26332bf1aa59aec7e3cbe9ed4689df44ae368
 #EXTINF:-1 tvg-id="Movistar Plus+ HD" group-title="MOVISTAR", Movistar Plus+
 plugin://script.module.horus?action=play&id=56ac8e227d526e722624675ccdd91b0cc850582f
 #EXTINF:-1 tvg-id="Movistar Plus+ HD" group-title="MOVISTAR", Movistar Plus+
