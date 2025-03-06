@@ -4,6 +4,7 @@ from datetime import datetime
 import re
 import sys
 import logging
+import Levenshtein
 
 # Configuración de logging
 logging.basicConfig(filename='debug_log.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -31,17 +32,18 @@ try:
 
     # Crear la tabla si no existe, incluyendo el nuevo campo "activo"
     cursor.execute('''
-        CREATE TABLE IF NOT EXISTS canales_iptv_temp (
-            import_date TEXT,
-            name_original TEXT,
-            iptv_epg_id_original TEXT,
-            iptv_epg_id_new TEXT,
-            iptv_group_original TEXT,
-            iptv_group_new TEXT,
-            iptv_url TEXT,
-            name_new TEXT,
-            activo INTEGER DEFAULT 0
-        )
+    CREATE TABLE IF NOT EXISTS canales_iptv_temp (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        import_date TEXT,
+        name_original TEXT,
+        iptv_epg_id_original TEXT,
+        iptv_epg_id_new TEXT,
+        iptv_group_original TEXT,
+        iptv_group_new TEXT,
+        iptv_url TEXT,
+        name_new TEXT,
+        activo INTEGER DEFAULT 0
+    )
     ''')
 
     # Borrar todos los registros de la tabla si existe
@@ -70,48 +72,51 @@ try:
                 group_title = group_title_match.group(1) if group_title_match else ""
                 # Obtener la URL de la siguiente línea
                 url = lines[i + 1] if i + 1 < len(lines) else ""
-
                 # Limpiar caracteres no deseados
                 channel_name = re.sub(r'[^\x00-\x7F]+', '', channel_name)
                 tvg_id = re.sub(r'[^\x00-\x7F]+', '', tvg_id)
                 group_title = re.sub(r'[^\x00-\x7F]+', '', group_title)
                 url = re.sub(r'[^\x00-\x7F]+', '', url)
-
                 # Mensajes de depuración
                 logging.info(f"Procesando canal: {channel_name}")
                 logging.debug(f"tvg-id: {tvg_id}")
                 logging.debug(f"group-title: {group_title}")
                 logging.debug(f"url: {url}")
-
                 # Insertar en la base de datos, estableciendo "activo" a 0 por defecto
                 cursor.execute('''
-                    INSERT INTO canales_iptv_temp (
-                        import_date, name_original, iptv_epg_id_original, iptv_epg_id_new,
-                        iptv_group_original, iptv_group_new, iptv_url, name_new, activo
-                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                INSERT INTO canales_iptv_temp (
+                    import_date, name_original, iptv_epg_id_original, iptv_epg_id_new,
+                    iptv_group_original, iptv_group_new, iptv_url, name_new, activo
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
                 ''', (import_date, channel_name, tvg_id, "", group_title, "", url, "", 0))
 
     # Actualizar los registros de canales_iptv_temp con los datos de correspondencia_canales
-    cursor.execute('''
-        UPDATE canales_iptv_temp
-        SET iptv_epg_id_new = (
-            SELECT channel_epg_id FROM correspondencia_canales
-            WHERE correspondencia_canales.channel_iptv_name = canales_iptv_temp.name_original
-        ),
-        iptv_group_new = (
-            SELECT channel_group FROM correspondencia_canales
-            WHERE correspondencia_canales.channel_iptv_name = canales_iptv_temp.name_original
-        ),
-        name_new = (
-            SELECT channel_name FROM correspondencia_canales
-            WHERE correspondencia_canales.channel_iptv_name = canales_iptv_temp.name_original
-        ),
-        activo = 1
-        WHERE EXISTS (
-            SELECT 1 FROM correspondencia_canales
-            WHERE correspondencia_canales.channel_iptv_name = canales_iptv_temp.name_original
-        )
-    ''')
+    cursor.execute("SELECT id, name_original FROM canales_iptv_temp")
+    canales_iptv_temp = cursor.fetchall()
+
+    for canal in canales_iptv_temp:
+        id_temp, name_original = canal
+
+        # Buscar registros en correspondencia_canales donde channel_root sea una subcadena de name_original
+        cursor.execute("SELECT id, channel_root, iptv_epg_id_new, iptv_group_new, name_new FROM correspondencia_canales WHERE ? LIKE '%' || channel_root || '%'", (name_original,))
+        posibles_correspondencias = cursor.fetchall()
+
+        if posibles_correspondencias:
+            # Si hay más de una correspondencia, elegir la que tenga la menor distancia de Levenshtein
+            mejor_correspondencia = min(posibles_correspondencias, key=lambda x: Levenshtein.distance(name_original, x[1]))
+
+            # Actualizar el registro en canales_iptv_temp con los datos de la mejor correspondencia
+            cursor.execute('''
+                UPDATE canales_iptv_temp
+                SET activo = 1,
+                    iptv_epg_id_new = ?,
+                    iptv_group_new = ?,
+                    name_new = ?
+                WHERE id = ?
+            ''', (mejor_correspondencia[2], mejor_correspondencia[3], mejor_correspondencia[4], id_temp))
+        else:
+            # Si no se encuentra ninguna correspondencia, marcar el campo activo a 0
+            cursor.execute("UPDATE canales_iptv_temp SET activo = 0 WHERE id = ?", (id_temp,))
 
     # Confirmar los cambios
     conn.commit()
