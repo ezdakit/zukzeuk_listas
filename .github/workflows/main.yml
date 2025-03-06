@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+  schedule:
+    - cron: '0 17 * * *'
   workflow_dispatch:
 
 jobs:
@@ -35,7 +37,7 @@ jobs:
     - name: Check for changes
       id: changes
       run: |
-        git add zz_canales.db lista-ott.m3u zz_lista_ott.m3u debug_log.txt
+        git add zz_canales.db lista-ott.m3u zz_lista_ott.m3u zz_lista_ace.m3u zz_lista_kodi.m3u debug_log.txt
         if git diff --cached --quiet; then
           echo "No changes to commit"
           echo "::set-output name=changes::false"

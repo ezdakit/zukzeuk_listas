@@ -18,7 +18,7 @@ url = "https://proxy.zeronet.dev/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3
 try:
     response = requests.get(url)
     response.raise_for_status()
-    m3u_content = response.content.decode('utf-8', errors='replace')  # Decodificar el contenido como UTF-8
+    m3u_content = response.content.decode('utf-8', errors='replace')
 except requests.RequestException as e:
     logging.error(f"Error al descargar el archivo M3U: {e}")
     sys.exit(1)
@@ -31,12 +31,8 @@ with open('lista-ott.m3u', 'w', encoding='utf-8') as file:
 try:
     conn = sqlite3.connect('zz_canales.db')
     cursor = conn.cursor()
-    # Configurar la conexión para usar UTF-8
     cursor.execute('PRAGMA encoding = "UTF-8";')
-
-    # Crear la tabla si no existe, incluyendo el nuevo campo "activo"
-    cursor.execute('''
-    CREATE TABLE IF NOT EXISTS canales_iptv_temp (
+    cursor.execute('''CREATE TABLE IF NOT EXISTS canales_iptv_temp (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         import_date TEXT,
         name_original TEXT,
@@ -47,85 +43,51 @@ try:
         iptv_url TEXT,
         name_new TEXT,
         activo INTEGER DEFAULT 0
-    )
-    ''')
-
-    # Borrar todos los registros de la tabla si existe
+    )''')
     cursor.execute('DELETE FROM canales_iptv_temp')
 
-    # Obtener la fecha y hora actual para el campo import_date
     import_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3]
-
-    # Procesar el contenido del fichero M3U e insertar en la base de datos
     lines = m3u_content.splitlines()
     logging.info(f"Número total de líneas en el archivo M3U: {len(lines)}")
 
-    # Encontrar el índice de la primera línea que empieza por #EXTINF:-1
     start_index = next((i for i, line in enumerate(lines) if line.startswith("#EXTINF:-1")), None)
     if start_index is not None:
         for i in range(start_index, len(lines), 2):
             logging.debug(f"Procesando línea {i}: {lines[i]}")
             if lines[i].startswith("#EXTINF:-1"):
-                # Extraer tvg-id, group-title y nombre del canal usando expresiones regulares
                 extinf_parts = lines[i].split(',')
-                channel_name = extinf_parts[-1].strip().upper()  # Convertir a mayúsculas
-                # Usar expresiones regulares para extraer tvg-id y group-title
+                channel_name = extinf_parts[-1].strip().upper()
                 tvg_id_match = re.search(r'tvg-id="([^"]+)"', lines[i])
                 group_title_match = re.search(r'group-title="([^"]+)"', lines[i])
                 tvg_id = tvg_id_match.group(1) if tvg_id_match else ""
                 group_title = group_title_match.group(1) if group_title_match else ""
-                # Obtener la URL de la siguiente línea
                 url = lines[i + 1] if i + 1 < len(lines) else ""
-                # Limpiar caracteres no deseados
                 channel_name = re.sub(r'[^\x00-\x7F]+', '', channel_name)
                 tvg_id = re.sub(r'[^\x00-\x7F]+', '', tvg_id)
                 group_title = re.sub(r'[^\x00-\x7F]+', '', group_title)
                 url = re.sub(r'[^\x00-\x7F]+', '', url)
-                # Mensajes de depuración
                 logging.info(f"Procesando canal: {channel_name}")
                 logging.debug(f"tvg-id: {tvg_id}")
                 logging.debug(f"group-title: {group_title}")
                 logging.debug(f"url: {url}")
-                # Insertar en la base de datos, estableciendo "activo" a 0 por defecto
-                cursor.execute('''
-                INSERT INTO canales_iptv_temp (
-                    import_date, name_original, iptv_epg_id_original, iptv_epg_id_new,
-                    iptv_group_original, iptv_group_new, iptv_url, name_new, activo
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-                ''', (import_date, channel_name, tvg_id, "", group_title, "", url, "", 0))
+                cursor.execute('''INSERT INTO canales_iptv_temp (
+                    import_date, name_original, iptv_epg_id_original, iptv_epg_id_new, iptv_group_original, iptv_group_new, iptv_url, name_new, activo
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)''', (import_date, channel_name, tvg_id, "", group_title, "", url, "", 0))
 
-    # Actualizar los registros de canales_iptv_temp con los datos de correspondencia_canales
     cursor.execute("SELECT id, name_original FROM canales_iptv_temp")
     canales_iptv_temp = cursor.fetchall()
-
     for canal in canales_iptv_temp:
         id_temp, name_original = canal
-
-        # Buscar registros en correspondencia_canales donde channel_root sea una subcadena de name_original
         cursor.execute("SELECT id, channel_root, channel_epg_id, channel_group, channel_name FROM correspondencia_canales WHERE ? LIKE '%' || channel_root || '%'", (name_original,))
         posibles_correspondencias = cursor.fetchall()
-
         if posibles_correspondencias:
-            # Si hay más de una correspondencia, elegir la que tenga la menor distancia de Levenshtein
             mejor_correspondencia = min(posibles_correspondencias, key=lambda x: Levenshtein.distance(name_original, x[1]))
-
-            # Actualizar el registro en canales_iptv_temp con los datos de la mejor correspondencia
-            cursor.execute('''
-                UPDATE canales_iptv_temp
-                SET activo = 1,
-                    iptv_epg_id_new = ?,
-                    iptv_group_new = ?,
-                    name_new = ?
-                WHERE id = ?
-            ''', (mejor_correspondencia[2], mejor_correspondencia[3], mejor_correspondencia[4], id_temp))
+            cursor.execute('''UPDATE canales_iptv_temp SET activo = 1, iptv_epg_id_new = ?, iptv_group_new = ?, name_new = ? WHERE id = ?''', (mejor_correspondencia[2], mejor_correspondencia[3], mejor_correspondencia[4], id_temp))
         else:
-            # Si no se encuentra ninguna correspondencia, marcar el campo activo a 0
             cursor.execute("UPDATE canales_iptv_temp SET activo = 0 WHERE id = ?", (id_temp,))
 
-    # Confirmar los cambios
     conn.commit()
 
-    # Generar el archivo zz_lista_ott.m3u ordenado por iptv_group_new y name_new
     with open('zz_lista_ott.m3u', 'w', encoding='utf-8') as m3u_file:
         m3u_file.write('#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"\n')
         m3u_file.write('#EXTVLCOPT:network-caching=2000\n\n')
@@ -134,32 +96,34 @@ try:
             m3u_file.write(f'#EXTINF:-1 tvg-id="{iptv_epg_id_new}" group-title="{iptv_group_new}", {name_new}\n')
             m3u_file.write(f'{iptv_url}\n')
 
-# Generar el archivo zz_lista_ace.m3u
-with open('zz_lista_ace.m3u', 'w', encoding='utf-8') as ace_file:
-    ace_file.write('#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"\n')
-    ace_file.write('#EXTVLCOPT:network-caching=2000\n\n')
-    for row in cursor.execute('SELECT iptv_epg_id_new, iptv_group_new, name_new, iptv_url FROM canales_iptv_temp WHERE activo = 1 ORDER BY iptv_group_new, name_new'):
-        iptv_epg_id_new, iptv_group_new, name_new, iptv_url = row
-        ace_url = iptv_url.replace("http://127.0.0.1:6878/ace/getstream?id=", "acestream://")
-        ace_file.write(f'#EXTINF:-1 tvg-id="{iptv_epg_id_new}" group-title="{iptv_group_new}", {name_new}\n')
-        ace_file.write(f'{ace_url}\n')
+    # Generar el archivo zz_lista_ace.m3u
+    try:
+        with open('zz_lista_ace.m3u', 'w', encoding='utf-8') as ace_file:
+            ace_file.write('#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"\n')
+            ace_file.write('#EXTVLCOPT:network-caching=2000\n\n')
+            for row in cursor.execute('SELECT iptv_epg_id_new, iptv_group_new, name_new, iptv_url FROM canales_iptv_temp WHERE activo = 1 ORDER BY iptv_group_new, name_new'):
+                iptv_epg_id_new, iptv_group_new, name_new, iptv_url = row
+                ace_url = iptv_url.replace("http://127.0.0.1:6878/ace/getstream?id=", "acestream://")
+                ace_file.write(f'#EXTINF:-1 tvg-id="{iptv_epg_id_new}" group-title="{iptv_group_new}", {name_new}\n')
+                ace_file.write(f'{ace_url}\n')
+    except Exception as e:
+        logging.error(f"Error al generar zz_lista_ace.m3u: {e}")
 
-# Generar el archivo zz_lista_kodi.m3u
-with open('zz_lista_kodi.m3u', 'w', encoding='utf-8') as kodi_file:
-    kodi_file.write('#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"\n')
-    kodi_file.write('#EXTVLCOPT:network-caching=2000\n\n')
-    for row in cursor.execute('SELECT iptv_epg_id_new, iptv_group_new, name_new, iptv_url FROM canales_iptv_temp WHERE activo = 1 ORDER BY iptv_group_new, name_new'):
-        iptv_epg_id_new, iptv_group_new, name_new, iptv_url = row
-        kodi_url = iptv_url.replace("http://127.0.0.1:6878/ace/getstream?id=", "plugin://script.module.horus?action=play&id=")
-        kodi_file.write(f'#EXTINF:-1 tvg-id="{iptv_epg_id_new}" group-title="{iptv_group_new}", {name_new}\n')
-        kodi_file.write(f'{kodi_url}\n')
+    # Generar el archivo zz_lista_kodi.m3u
+    try:
+        with open('zz_lista_kodi.m3u', 'w', encoding='utf-8') as kodi_file:
+            kodi_file.write('#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"\n')
+            kodi_file.write('#EXTVLCOPT:network-caching=2000\n\n')
+            for row in cursor.execute('SELECT iptv_epg_id_new, iptv_group_new, name_new, iptv_url FROM canales_iptv_temp WHERE activo = 1 ORDER BY iptv_group_new, name_new'):
+                iptv_epg_id_new, iptv_group_new, name_new, iptv_url = row
+                kodi_url = iptv_url.replace("http://127.0.0.1:6878/ace/getstream?id=", "plugin://script.module.horus?action=play&id=")
+                kodi_file.write(f'#EXTINF:-1 tvg-id="{iptv_epg_id_new}" group-title="{iptv_group_new}", {name_new}\n')
+                kodi_file.write(f'{kodi_url}\n')
+    except Exception as e:
+        logging.error(f"Error al generar zz_lista_kodi.m3u: {e}")
 
-except sqlite3.Error as e:
-    logging.error(f"Error al trabajar con la base de datos: {e}")
 finally:
-    # Cerrar la conexión a la base de datos
     if conn:
         conn.close()
 
-# Imprimir el mensaje final
-logging.info("Los datos se han insertado correctamente en zz_canales.db y se ha generado el fichero zz_lista_ott.m3u, zz_lista_ace.m3u y zz_lista_kodi.m3u")
+logging.info("Los datos se han insertado correctamente en zz_canales.db y se han generado los ficheros zz_lista_ott.m3u, zz_lista_ace.m3u y zz_lista_kodi.m3u")
