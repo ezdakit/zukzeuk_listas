@@ -1,7 +1,7 @@
 import sqlite3
 import Levenshtein
 
-# Conexión a la base de datos SQLite
+# Conexión a la base datos SQLite
 conn = sqlite3.connect('zz_canales.db')
 cursor = conn.cursor()
 
