@@ -62,7 +62,7 @@ try:
             if lines[i].startswith("#EXTINF:-1"):
                 # Extraer tvg-id, group-title y nombre del canal usando expresiones regulares
                 extinf_parts = lines[i].split(',')
-                channel_name = extinf_parts[-1].strip()  # Eliminar espacios al principio y al final
+                channel_name = extinf_parts[-1].strip().upper()  # Convertir a mayúsculas
                 # Usar expresiones regulares para extraer tvg-id y group-title
                 tvg_id_match = re.search(r'tvg-id="([^"]+)"', lines[i])
                 group_title_match = re.search(r'group-title="([^"]+)"', lines[i])
