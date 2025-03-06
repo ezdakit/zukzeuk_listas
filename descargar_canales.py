@@ -9,6 +9,10 @@ import Levenshtein
 # Configuración de logging
 logging.basicConfig(filename='debug_log.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
+# Borrar el contenido del fichero de log al inicio
+with open('debug_log.txt', 'w'):
+    pass
+
 # Descargar el fichero M3U
 url = "https://proxy.zeronet.dev/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u"
 try:
