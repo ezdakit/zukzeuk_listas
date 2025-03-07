@@ -43,6 +43,7 @@ jobs:
             echo "new_channels=true" >> $GITHUB_ENV
           else
             echo "new_channels=false" >> $GITHUB_ENV
+          fi
 
       - name: Create issue
         if: env.new_channels == 'true'
