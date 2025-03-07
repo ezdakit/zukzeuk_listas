@@ -27,6 +27,27 @@ except requests.RequestException as e:
 with open('lista-ott.m3u', 'w', encoding='utf-8') as file:
     file.write(m3u_content)
 
+# Comparar con el archivo existente (si existe)
+try:
+    with open('lista-ott-prev.m3u', 'r', encoding='utf-8') as prev_file:
+        prev_m3u_content = prev_file.read()
+except FileNotFoundError:
+    prev_m3u_content = ""
+
+if m3u_content == prev_m3u_content:
+    logging.info("No hay cambios en el archivo M3U. Deteniendo la ejecución del script.")
+    sys.exit(0)
+else:
+    # Guardar el nuevo archivo como el archivo anterior para la próxima comparación
+    with open('lista-ott-prev.m3u', 'w', encoding='utf-8') as prev_file:
+        prev_file.write(m3u_content)
+
+    # Encontrar las líneas nuevas que no estaban en el archivo anterior
+    new_lines = set(m3u_content.splitlines()) - set(prev_m3u_content.splitlines())
+    logging.info(f"Se encontraron {len(new_lines)} líneas nuevas en el archivo M3U.")
+    for line in new_lines:
+        logging.info(f"Línea nueva: {line}")
+
 # Conectar a la base de datos SQLite
 try:
     conn = sqlite3.connect('zz_canales.db')
