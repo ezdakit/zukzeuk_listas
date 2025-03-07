@@ -28,13 +28,29 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
 
-      - name: Subir archivos
+      - name: Check for canales_nuevos.txt
+        id: check_cambios
         run: |
-          git add . # Añadir todos los archivos modificados y no rastreados
-          git commit -m "Add processed M3U files"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          if [ -f canales_nuevos.txt ]; then
+            echo "cambios_exists=true" >> $GITHUB_ENV
+          else
+            echo "cambios_exists=false" >> $GITHUB_ENV
+          fi
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git add canales.txt canales_prev.txt
+          if [ "$GITHUB_ENV" == "cambios_exists=true" ]; then
+            git add canales_nuevos.txt
+          fi
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            echo "::set-output name=changes::false"
+          else
+            echo "Changes detected"
+            echo "::set-output name=changes::true"
+          fi
 
       - name: Check for new channels file
         id: check_new_channels
