@@ -5,6 +5,7 @@ import re
 import sys
 import logging
 import Levenshtein
+import os
 
 # Configuración de logging
 logging.basicConfig(filename='debug_log.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
