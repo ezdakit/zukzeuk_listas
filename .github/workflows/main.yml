@@ -49,7 +49,7 @@ jobs:
     - name: Commit changes
       if: steps.changes.outputs.changes == 'true'
       run: git commit -m "Add processed M3U files"
-
+      
     - name: Push changes
       if: steps.changes.outputs.changes == 'true'
       run: git push
