@@ -74,7 +74,7 @@ try:
     start_index = next((i for i, line in enumerate(lines) if line.startswith("#EXTINF:-1")), None)
     if start_index is not None:
         for i in range(start_index, len(lines), 2):
-            logging.debug(f"Procesando línea {i}: {lines[i]}")
+            # logging.debug(f"Procesando línea {i}: {lines[i]}")
             if lines[i].startswith("#EXTINF:-1"):
                 extinf_parts = lines[i].split(',')
                 channel_name = extinf_parts[-1].strip().upper()
@@ -88,9 +88,9 @@ try:
                 group_title = re.sub(r'[^\x00-\x7F]+', '', group_title)
                 url = re.sub(r'[^\x00-\x7F]+', '', url)
                 logging.info(f"Procesando canal: {channel_name}")
-                logging.debug(f"tvg-id: {tvg_id}")
-                logging.debug(f"group-title: {group_title}")
-                logging.debug(f"url: {url}")
+                # logging.debug(f"tvg-id: {tvg_id}")
+                # logging.debug(f"group-title: {group_title}")
+                # logging.debug(f"url: {url}")
                 cursor.execute('''INSERT INTO canales_iptv_temp (
                     import_date, name_original, iptv_epg_id_original, iptv_epg_id_new, iptv_group_original, iptv_group_new, iptv_url, name_new, activo
                 ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)''', (import_date, channel_name, tvg_id, "", group_title, "", url, "", 0))
