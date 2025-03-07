@@ -13,6 +13,10 @@ logging.basicConfig(filename='debug_log.txt', level=logging.DEBUG, format='%(asc
 with open('debug_log.txt', 'w'):
     pass
 
+# Borrar el fichero cambios.txt si existe al inicio
+if os.path.exists('cambios.txt'):
+    os.remove('cambios.txt')
+
 # Descargar el fichero M3U
 url = "https://proxy.zeronet.dev/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u"
 try:
@@ -45,8 +49,11 @@ else:
     # Encontrar las líneas nuevas que no estaban en el archivo anterior
     new_lines = [line for line in m3u_content.splitlines() if line.startswith("#EXTINF") and line not in prev_m3u_content.splitlines()]
     logging.info(f"Se encontraron {len(new_lines)} líneas nuevas en el archivo M3U.")
-    for line in new_lines:
-        logging.info(f"Línea nueva: {line}")
+    # Incluir las líneas nuevas en cambios.txt
+    with open('cambios.txt', 'w', encoding='utf-8') as cambios_file:
+        for line in new_lines:
+            logging.info(f"Línea nueva: {line}")
+            cambios_file.write(f"{line}\n")
 
 # Conectar a la base de datos SQLite
 try:
