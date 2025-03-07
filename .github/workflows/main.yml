@@ -33,11 +33,22 @@ jobs:
       run: |
         git config user.name "GitHub Actions"
         git config user.email "actions@github.com"
+  
+    - name: Check for cambios.txt
+      id: check_cambios
+      run: |
+        if [ -f cambios.txt ]; then
+          echo "cambios_exists=true" >> $GITHUB_ENV
+        else
+          echo "cambios_exists=false" >> $GITHUB_ENV
         
     - name: Check for changes
       id: changes
       run: |
-        git add zz_canales.db lista-ott-prev.m3u lista-ott.m3u zz_lista_ott.m3u zz_lista_ace.m3u zz_lista_kodi.m3u debug_log.txt cambios.txt
+        git add zz_canales.db lista-ott-prev.m3u lista-ott.m3u zz_lista_ott.m3u zz_lista_ace.m3u zz_lista_kodi.m3u debug_log.txt
+      	if [ "$GITHUB_ENV" == "cambios_exists=true" ]; then
+          git add cambios.txt
+        fi
         if git diff --cached --quiet; then
           echo "No changes to commit"
           echo "::set-output name=changes::false"
