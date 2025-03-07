@@ -57,9 +57,9 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
     - name: Create issue
-        if: steps.changes.outputs.changes == 'true'
-        uses: peter-evans/create-issue-from-file@v3
-        with:
-          title: "Fichero procesado"
-          content-filepath: debug_log.txt
-          token: ${{ secrets.GITHUB_TOKEN }}
+      if: steps.changes.outputs.changes == 'true'
+      uses: peter-evans/create-issue-from-file@v3
+      with:
+        title: "Fichero procesado"
+        content-filepath: debug_log.txt
+        token: ${{ secrets.GITHUB_TOKEN }}
