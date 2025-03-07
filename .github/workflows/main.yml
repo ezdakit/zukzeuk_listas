@@ -46,7 +46,7 @@ jobs:
       id: changes
       run: |
         git add zz_canales.db lista-ott-prev.m3u lista-ott.m3u zz_lista_ott.m3u zz_lista_ace.m3u zz_lista_kodi.m3u debug_log.txt
-      	if [ "$GITHUB_ENV" == "cambios_exists=true" ]; then
+        if [ "$GITHUB_ENV" == "cambios_exists=true" ]; then
           git add cambios.txt
         fi
         if git diff --cached --quiet; then
@@ -56,7 +56,7 @@ jobs:
           echo "Changes detected"
           echo "::set-output name=changes::true"
         fi
-
+        
     - name: Commit changes
       if: steps.changes.outputs.changes == 'true'
       run: git commit -m "Add processed M3U files"
