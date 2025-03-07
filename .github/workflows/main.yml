@@ -55,20 +55,19 @@ jobs:
       run: git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    
-      - name: Check for cambios.txt
-        id: check_cambios
-        run: |
-          if [ -f cambios.txt ]; then
-            echo "cambios_exists=true" >> $GITHUB_ENV
-          else
-            echo "cambios_exists=false" >> $GITHUB_ENV
 
-      - name: Create issue
-        if: env.cambios_exists == 'true'
-        uses: peter-evans/create-issue-from-file@v3
-        with:
-          title: "Fichero procesado"
-          content-filepath: cambios.txt
-          token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Check for cambios.txt
+      id: check_cambios
+      run: |
+        if [ -f cambios.txt ]; then
+          echo "cambios_exists=true" >> $GITHUB_ENV
+        else
+          echo "cambios_exists=false" >> $GITHUB_ENV
+
+    - name: Create issue
+      if: env.cambios_exists == 'true'
+      uses: peter-evans/create-issue-from-file@v3
+      with:
+        title: "Fichero procesado"
+        content-filepath: cambios.txt
         token: ${{ secrets.GITHUB_TOKEN }}
