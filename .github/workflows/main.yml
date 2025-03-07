@@ -37,7 +37,7 @@ jobs:
     - name: Check for changes
       id: changes
       run: |
-        git add zz_canales.db lista-ott-prev.m3u lista-ott.m3u zz_lista_ott.m3u zz_lista_ace.m3u zz_lista_kodi.m3u debug_log.txt
+        git add zz_canales.db lista-ott-prev.m3u lista-ott.m3u zz_lista_ott.m3u zz_lista_ace.m3u zz_lista_kodi.m3u debug_log.txt cambios.txt
         if git diff --cached --quiet; then
           echo "No changes to commit"
           echo "::set-output name=changes::false"
@@ -56,10 +56,19 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
-    - name: Create issue
-      if: steps.changes.outputs.changes == 'true'
-      uses: peter-evans/create-issue-from-file@v3
-      with:
-        title: "Fichero procesado"
-        content-filepath: debug_log.txt
+      - name: Check for cambios.txt
+        id: check_cambios
+        run: |
+          if [ -f cambios.txt ]; then
+            echo "cambios_exists=true" >> $GITHUB_ENV
+          else
+            echo "cambios_exists=false" >> $GITHUB_ENV
+
+      - name: Create issue
+        if: env.cambios_exists == 'true'
+        uses: peter-evans/create-issue-from-file@v3
+        with:
+          title: "Fichero procesado"
+          content-filepath: cambios.txt
+          token: ${{ secrets.GITHUB_TOKEN }}
         token: ${{ secrets.GITHUB_TOKEN }}
