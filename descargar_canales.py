@@ -43,7 +43,7 @@ else:
         prev_file.write(m3u_content)
 
     # Encontrar las líneas nuevas que no estaban en el archivo anterior
-    new_lines = set(m3u_content.splitlines()) - set(prev_m3u_content.splitlines())
+    new_lines = [line for line in m3u_content.splitlines() if line.startswith("#EXTINF") and line not in prev_m3u_content.splitlines()]
     logging.info(f"Se encontraron {len(new_lines)} líneas nuevas en el archivo M3U.")
     for line in new_lines:
         logging.info(f"Línea nueva: {line}")
