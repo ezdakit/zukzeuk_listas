@@ -28,7 +28,7 @@ jobs:
         
     - name: Subir archivos 
       run: |
-        git add canales.txt
+        git add canales.txt canales_nuevos.txt
         git commit -m "Add processed M3U files"
         git push
       env:
