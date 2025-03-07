@@ -17,13 +17,9 @@ jobs:
     - name: Dar permisos de ejecución al script
       run: |
         chmod +x .github/workflows/extraer_canales_epg.sh
-        chmod +x .github/workflows/procesar_lista_iptv.sh
 
     - name: Ejecutar script 1
       run: .github/workflows/extraer_canales_epg.sh
-
-    - name: Ejecutar script 2
-      run: .github/workflows/procesar_lista_iptv.sh
 
     - name: Configurar identidad de Git
       run: |
@@ -32,7 +28,7 @@ jobs:
         
     - name: Subir archivos 
       run: |
-        git add lista-ott-procesada.m3u lista-ott-final.csv canales.txt lista-ott-final-updated.csv
+        git add canales.txt
         git commit -m "Add processed M3U files"
         git push
       env:
