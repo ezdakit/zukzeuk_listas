@@ -26,7 +26,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests python-Levenshtein
 
-      - name: Run Python script
+      - name: Run Python script yea
         run: python descargar_canales.py
 
       - name: Configurar identidad de Git
