@@ -46,10 +46,12 @@ jobs:
           fi
           if git diff --cached --quiet; then
             echo "No changes to commit"
-            echo "::set-output name=changes::false"
+            #echo "::set-output name=changes::false"
+            echo "{name}={false}" >> $GITHUB_OUTPUT
           else
             echo "Changes detected"
-            echo "::set-output name=changes::true"
+            #echo "::set-output name=changes::true"
+            echo "{name}={true}" >> $GITHUB_OUTPUT
           fi
 
       - name: Check for new channels file
