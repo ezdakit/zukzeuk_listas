@@ -25,8 +25,6 @@ plugin://script.module.horus?action=play&id=ddb69a119ab5faf7eeec3cef77e3d591a824
 plugin://script.module.horus?action=play&id=57e38ef7eaab5596559415bdf96926ee4115c5ce
 #EXTINF:-1 tvg-id="DAZN 2 HD" group-title="DAZN", DAZN 2
 plugin://script.module.horus?action=play&id=b0eabe0fdd02fdd165896236765a9b753a2ff516
-#EXTINF:-1 tvg-id="DAZN 2 BAR" group-title="DAZN", DAZN 2 BAR
-plugin://script.module.horus?action=play&id=f86e821848931eaa55bcb779e74f62d6a59f41c0
 #EXTINF:-1 tvg-id="DAZN 3 HD" group-title="DAZN", DAZN 3
 plugin://script.module.horus?action=play&id=c34a6552886fad4627ea36947fdec3e46e4e3b08
 #EXTINF:-1 tvg-id="DAZN 3 HD" group-title="DAZN", DAZN 3
@@ -43,6 +41,8 @@ plugin://script.module.horus?action=play&id=7e90956539f4e1318a63f3960e4f75c7c7c5
 plugin://script.module.horus?action=play&id=ec10963a4408f96d2089a29af8b7a8ac4b23dd3c
 #EXTINF:-1 tvg-id="DAZN 1 BAR" group-title="DAZN", DAZN LaLiga
 plugin://script.module.horus?action=play&id=91cf774bfbdc3a7e3b18cffe0e6ca39a957e96b6
+#EXTINF:-1 tvg-id="DAZN 2 BAR" group-title="DAZN", DAZN LaLiga 2
+plugin://script.module.horus?action=play&id=f86e821848931eaa55bcb779e74f62d6a59f41c0
 #EXTINF:-1 tvg-id="DAZN LaLiga HD" group-title="LALIGA", DAZN LaLiga
 plugin://script.module.horus?action=play&id=110d441ddc9713a7452588770d2bc85504672f47
 #EXTINF:-1 tvg-id="DAZN LaLiga HD" group-title="LALIGA", DAZN LaLiga
@@ -81,69 +81,69 @@ plugin://script.module.horus?action=play&id=ebe14f1edeb49f2253e3b355a8beeadc9b4f
 plugin://script.module.horus?action=play&id=835639b89db00cc0d94660da3c10b6e38bfbcdc1
 #EXTINF:-1 tvg-id="M+ LaLiga TV 4" group-title="LALIGA", M+ LaLiga TV 4
 plugin://script.module.horus?action=play&id=68697ea4f261289d97bbc3418ad3cbc4180aa32f
-#EXTINF:-1 tvg-id="M+ Liga de Campeones HD" group-title="LIGA CAMPEONES", Liga Camp.
+#EXTINF:-1 tvg-id="M+ Liga de Campeones HD" group-title="LIGA CAMPEONES", L Campeones
 plugin://script.module.horus?action=play&id=ec6ce96a4e4eb523108418a84babc9eca4b4c507
-#EXTINF:-1 tvg-id="M+ Liga de Campeones HD" group-title="LIGA CAMPEONES", Liga Camp.
+#EXTINF:-1 tvg-id="M+ Liga de Campeones HD" group-title="LIGA CAMPEONES", L Campeones
 plugin://script.module.horus?action=play&id=ac73acd09d79c46cb818bfd945f20198d1718a85
-#EXTINF:-1 tvg-id="M+ Liga de Campeones HD" group-title="LIGA CAMPEONES", Liga Camp.
+#EXTINF:-1 tvg-id="M+ Liga de Campeones HD" group-title="LIGA CAMPEONES", L Campeones
 plugin://script.module.horus?action=play&id=f43a021e8fd63334a4bf3fb11ffe58f89039a1d0
-#EXTINF:-1 tvg-id="M+ Liga de Campeones HD" group-title="LIGA CAMPEONES", Liga Camp.
+#EXTINF:-1 tvg-id="M+ Liga de Campeones HD" group-title="LIGA CAMPEONES", L Campeones
 plugin://script.module.horus?action=play&id=840f68a0dc6e27c2927a16b4d42b9401ac50270b
-#EXTINF:-1 tvg-id="M+ Liga de Campeones HD" group-title="LIGA CAMPEONES", Liga Camp.
+#EXTINF:-1 tvg-id="M+ Liga de Campeones HD" group-title="LIGA CAMPEONES", L Campeones
 plugin://script.module.horus?action=play&id=fe521a6e9d2ff31616125fa75bac6b0deb52b6b9
-#EXTINF:-1 tvg-id="M+ Liga de Campeones HD" group-title="LIGA CAMPEONES", Liga Camp.
+#EXTINF:-1 tvg-id="M+ Liga de Campeones HD" group-title="LIGA CAMPEONES", L Campeones
 plugin://script.module.horus?action=play&id=05057e832dd1530c7d5e8b0857fee6826243a243
-#EXTINF:-1 tvg-id="M+ Liga de Campeones HD" group-title="LIGA CAMPEONES", Liga Camp.
+#EXTINF:-1 tvg-id="M+ Liga de Campeones HD" group-title="LIGA CAMPEONES", L Campeones
 plugin://script.module.horus?action=play&id=ba87f528de030aad56576f7cbb9d8bbd7efd62b9
-#EXTINF:-1 tvg-id="M+ Liga de Campeones HD" group-title="LIGA CAMPEONES", Liga Camp.
+#EXTINF:-1 tvg-id="M+ Liga de Campeones HD" group-title="LIGA CAMPEONES", L Campeones
 plugin://script.module.horus?action=play&id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 2 HD" group-title="LIGA CAMPEONES", Liga Camp. 02
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 2 HD" group-title="LIGA CAMPEONES", L Campeones 02
 plugin://script.module.horus?action=play&id=abdf9058786a48623d0de51a3adb414ae10b6e72
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 2 HD" group-title="LIGA CAMPEONES", Liga Camp. 02
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 2 HD" group-title="LIGA CAMPEONES", L Campeones 02
 plugin://script.module.horus?action=play&id=deb8972491e3817ba2335662d7855d2c2c05a900
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 2 HD" group-title="LIGA CAMPEONES", Liga Camp. 02
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 2 HD" group-title="LIGA CAMPEONES", L Campeones 02
 plugin://script.module.horus?action=play&id=bd6fa847d9eb4e6fa44b68da1304bf8684ef8acb
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 2 HD" group-title="LIGA CAMPEONES", Liga Camp. 02
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 2 HD" group-title="LIGA CAMPEONES", L Campeones 02
 plugin://script.module.horus?action=play&id=0adc3b525508b4a74ce65685870894a77401afb7
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 2 HD" group-title="LIGA CAMPEONES", Liga Camp. 02
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 2 HD" group-title="LIGA CAMPEONES", L Campeones 02
 plugin://script.module.horus?action=play&id=f7fa79fdad436e969a82389a062a74564e91b10e
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 3 HD" group-title="LIGA CAMPEONES", Liga Camp. 03
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 3 HD" group-title="LIGA CAMPEONES", L Campeones 03
 plugin://script.module.horus?action=play&id=8e65f92af1de567f0af83562c5a14a3db6dc8ac8
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 3 HD" group-title="LIGA CAMPEONES", Liga Camp. 03
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 3 HD" group-title="LIGA CAMPEONES", L Campeones 03
 plugin://script.module.horus?action=play&id=4d754e0b6b583d01668de8544c43cad6a1b253da
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 3 HD" group-title="LIGA CAMPEONES", Liga Camp. 03
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 3 HD" group-title="LIGA CAMPEONES", L Campeones 03
 plugin://script.module.horus?action=play&id=509e91774b5b2d0af80883c8d4217c3b53235231
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 4" group-title="LIGA CAMPEONES", Liga Camp. 04
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 4" group-title="LIGA CAMPEONES", L Campeones 04
 plugin://script.module.horus?action=play&id=5a8323792bb3d48f71d1f690d3f5ec4ad5b48301
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 4" group-title="LIGA CAMPEONES", Liga Camp. 04
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 4" group-title="LIGA CAMPEONES", L Campeones 04
 plugin://script.module.horus?action=play&id=7a5512d101742eb418dd0e3ffbd2bf6c43c73452
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 5" group-title="LIGA CAMPEONES", Liga Camp. 05
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 5" group-title="LIGA CAMPEONES", L Campeones 05
 plugin://script.module.horus?action=play&id=47ab133c0bd7c9e6eb6f11661d33101a9d3bfce3
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 5" group-title="LIGA CAMPEONES", Liga Camp. 05
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 5" group-title="LIGA CAMPEONES", L Campeones 05
 plugin://script.module.horus?action=play&id=7c3791bfaf9b4b215cc63fa2d61902f9bf3da7ff
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 6" group-title="LIGA CAMPEONES", Liga Camp. 06
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 6" group-title="LIGA CAMPEONES", L Campeones 06
 plugin://script.module.horus?action=play&id=c1de133576bc8b82db0891d850f5e2d448dac9d6
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 7" group-title="LIGA CAMPEONES", Liga Camp. 07
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 7" group-title="LIGA CAMPEONES", L Campeones 07
 plugin://script.module.horus?action=play&id=67492877ee4314e8e88c49eaedc82c556750ae9f
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 8" group-title="LIGA CAMPEONES", Liga Camp. 08
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 8" group-title="LIGA CAMPEONES", L Campeones 08
 plugin://script.module.horus?action=play&id=7dd235ecd152c3d303f29aeaa0728d5c8b588f7c
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 9" group-title="LIGA CAMPEONES", Liga Camp. 09
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 9" group-title="LIGA CAMPEONES", L Campeones 09
 plugin://script.module.horus?action=play&id=a792ff171d110e6d890cb1b5db9d6507d1f292b7
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 10" group-title="LIGA CAMPEONES", Liga Camp. 10
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 10" group-title="LIGA CAMPEONES", L Campeones 10
 plugin://script.module.horus?action=play&id=acd1991f35379b01cb09b6a7cc4390c34c6e2bf9
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 11" group-title="LIGA CAMPEONES", Liga Camp. 11
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 11" group-title="LIGA CAMPEONES", L Campeones 11
 plugin://script.module.horus?action=play&id=d8550602603193bfa75bf61587dbbb9b3a9a00c7
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 12" group-title="LIGA CAMPEONES", Liga Camp. 12
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 12" group-title="LIGA CAMPEONES", L Campeones 12
 plugin://script.module.horus?action=play&id=d697e4effe3525a0bc64a5c141d766e9ee6c11a3
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 13" group-title="LIGA CAMPEONES", Liga Camp. 13
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 13" group-title="LIGA CAMPEONES", L Campeones 13
 plugin://script.module.horus?action=play&id=43515b0f66e642bfcd800298006911658e208b49
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 14" group-title="LIGA CAMPEONES", Liga Camp. 14
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 14" group-title="LIGA CAMPEONES", L Campeones 14
 plugin://script.module.horus?action=play&id=f3ad05b2a9a94251ef07682019728ff55ad35922
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 15" group-title="LIGA CAMPEONES", Liga Camp. 15
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 15" group-title="LIGA CAMPEONES", L Campeones 15
 plugin://script.module.horus?action=play&id=e0928b70e63fe0484bf9aeb6de6086ef44efff08
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 16" group-title="LIGA CAMPEONES", Liga Camp. 16
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 16" group-title="LIGA CAMPEONES", L Campeones 16
 plugin://script.module.horus?action=play&id=ce59b6b3640ab5af081d7629cf31bd0efd98561a
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 17" group-title="LIGA CAMPEONES", Liga Camp. 17
+#EXTINF:-1 tvg-id="M+ Liga de Campeones 17" group-title="LIGA CAMPEONES", L Campeones 17
 plugin://script.module.horus?action=play&id=d7b25d4babb6cfa64ce92f9c35b9c3dadee0b5c3
 #EXTINF:-1 tvg-id="M+ Copa del Rey" group-title="M+ COPA", M+ Copa del Rey
 plugin://script.module.horus?action=play&id=b51f2d9a15b6956a44385b6be531bcabeb099d9d
@@ -237,6 +237,8 @@ plugin://script.module.horus?action=play&id=7a90838e67f415e70fd7c9bb87edeb2da5db
 plugin://script.module.horus?action=play&id=e7330b2c28af22b081ab509df5aac9672a7e037b
 #EXTINF:-1 tvg-id="ESPN" group-title="VARIOS", ESPN
 plugin://script.module.horus?action=play&id=4b4907de51ec11087d4bed5876f2a0c68264f442
+#EXTINF:-1 tvg-id="ESPN 2" group-title="VARIOS", ESPN 2
+plugin://script.module.horus?action=play&id=664eb5fe460b96941aed633959a845b185cd8394
 #EXTINF:-1 tvg-id="Eurosport 2" group-title="VARIOS", Eurosport 1
 plugin://script.module.horus?action=play&id=0358f9db953e5fde91c34d7ed4bc368939b49853
 #EXTINF:-1 tvg-id="Eurosport 1 HD" group-title="VARIOS", Eurosport 1
@@ -261,9 +263,15 @@ plugin://script.module.horus?action=play&id=6ad33feec75d929de54d77b9becfe767ae83
 plugin://script.module.horus?action=play&id=c8aac540621d481965791c4442a7e868bcca10ca
 #EXTINF:-1 tvg-id="UK | Sky Sport Arena" group-title="VARIOS", Sky Sport Arena
 plugin://script.module.horus?action=play&id=d317a003e8047da2c36a2a2bb2289578c9a3b79c
+#EXTINF:-1 tvg-id="UK | Sky Sport Cricket" group-title="VARIOS", Sky Sport Cricket
+plugin://script.module.horus?action=play&id=6d95e4b0893e155cc674b84e0763150c445d3ddd
 #EXTINF:-1 tvg-id="UK | Sky Sport Football" group-title="VARIOS", Sky Sport Football
 plugin://script.module.horus?action=play&id=8dbe2d515e9131fa311353537736f8c94be9b26d
 #EXTINF:-1 tvg-id="UK | Sky Sport Main Event" group-title="VARIOS", Sky Sport Main Event
 plugin://script.module.horus?action=play&id=eab7aeef0218ce8b0752e596e4792b69eda4df5e
+#EXTINF:-1 tvg-id="no_disponible" group-title="VARIOS", SuperTennis
+plugin://script.module.horus?action=play&id=b58dbf92765976b308695f62dea94b00b40730ee
+#EXTINF:-1 tvg-id="Tennis Channel" group-title="VARIOS", Tennis Channel
+plugin://script.module.horus?action=play&id=52a526d748e26ff0827635b3932d9f49aee14a25
 #EXTINF:-1 tvg-id="Tennis Channel" group-title="VARIOS", Tennis Channel
 plugin://script.module.horus?action=play&id=039fae21c9e7e5214d3d898cba80863e37e623ac
