@@ -50,13 +50,13 @@ try:
     driver.switch_to.frame(driver.find_element(By.TAG_NAME, 'iframe'))
 
     # Agregar un delay para esperar un poco antes de verificar la visibilidad de la tabla
-    time.sleep(10)
+    time.sleep(5)
 
     # Esperar a que desaparezca el elemento de carga con texto "Cargando datos..."
-    WebDriverWait(driver, 30).until(EC.invisibility_of_element_located((By.XPATH, "//*[contains(text(), 'Cargando datos...')]")))
+    # WebDriverWait(driver, 30).until(EC.invisibility_of_element_located((By.XPATH, "//*[contains(text(), 'Cargando datos...')]")))
 
     # Esperar a que la tabla esté visible
-    WebDriverWait(driver, 30).until(EC.visibility_of_element_located((By.ID, 'tablaEventos')))
+    # WebDriverWait(driver, 30).until(EC.visibility_of_element_located((By.ID, 'tablaEventos')))
 
     # Obtener el contenido del iframe
     iframe_html = driver.page_source
