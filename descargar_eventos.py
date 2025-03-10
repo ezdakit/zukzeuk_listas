@@ -48,9 +48,11 @@ try:
     # Cambiar al contenido del iframe
     driver.switch_to.frame(driver.find_element(By.TAG_NAME, 'iframe'))
 
-    # Aumentar el tiempo de espera para el contenido del iframe
-    WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
-    logging.info("Contenido del iframe cargado correctamente.")
+    # Esperar a que desaparezca el elemento de carga
+    WebDriverWait(driver, 30).until(EC.invisibility_of_element_located((By.ID, 'loading')))
+
+    # Esperar a que la tabla esté visible
+    WebDriverWait(driver, 30).until(EC.visibility_of_element_located((By.ID, 'tablaEventos')))
 
     # Obtener el contenido del iframe
     iframe_html = driver.page_source
