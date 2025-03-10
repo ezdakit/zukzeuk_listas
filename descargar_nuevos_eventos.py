@@ -70,8 +70,6 @@ except Exception as e:
     logging.error(f"Error al guardar el contenido del iframe en el archivo: {e}")
     raise
 
-# ... (código anterior)
-
 # Procesar el fichero code_iframe.txt para extraer información y generar el fichero eventos.csv
 try:
     with open('code_iframe.txt', 'r', encoding='utf-8') as file:
@@ -87,17 +85,15 @@ try:
         cols = row.find_all('td')
         
         # Verificar que hay suficientes columnas
-        if len(cols) < 4:
+        if len(cols) < 5:
             continue  # Saltar filas con formato incorrecto
 
         # Extraer datos de cada columna INDIVIDUAL
         hora = cols[0].text.strip()          # Primera columna (índice 0)
         competicion = cols[1].text.strip()   # Segunda columna (índice 1)
         evento = cols[2].text.strip()        # Tercera columna (índice 2)
-        canales = cols[3].text.strip()       # Cuarta columna (índice 3)
-        
-        # Buscar enlaces "acestream" en la cuarta columna (cols[3])
-        eventos_acestream = cols[3].find_all('a')  # Buscar en la columna de canales
+        # La columna de "Canales" (índice 3) está oculta, no la necesitamos
+        eventos_acestream = cols[4].find_all('a')  # Buscar en la columna de "Eventos Acestream" (índice 4)
 
         # Procesar cada enlace de Acestream
         for evento_acestream in eventos_acestream:
@@ -105,8 +101,7 @@ try:
             url_acestream = evento_acestream['href'].replace('acestream://', '')
             eventos.append([hora, competicion, evento, nombre_canal, url_acestream])
 
-    # ... (resto del código)
-
+    # Guardar los eventos en un archivo CSV
     with open('eventos.csv', 'w', encoding='utf-8', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(['Hora', 'Competicion', 'Evento', 'Canales', 'Eventos_Acestream'])
