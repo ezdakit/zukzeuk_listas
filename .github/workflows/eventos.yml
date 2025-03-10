@@ -34,6 +34,9 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
 
+      - name: Pull latest changes
+        run: git pull origin main
+
       - name: Check for changes
         id: changes_eventos
         run: |
