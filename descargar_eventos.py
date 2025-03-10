@@ -5,16 +5,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import logging
 import time
-import csv
-from bs4 import BeautifulSoup
-import os
-
-# Eliminar el archivo debug_eventos.txt si existe
-if os.path.exists('debug_eventos.txt'):
-    os.remove('debug_eventos.txt')
 
 # Configuración de logging
-logging.basicConfig(filename='debug_eventos.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='debug_eventos.txt', level=logging.DEBUG, format='%(asctime)s - %(levellevelname)s - %(message)s')
 
 # URL de la página principal
 url = 'https://proxy.zeronet.dev/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie'
@@ -57,77 +50,28 @@ try:
     driver.switch_to.frame(driver.find_element(By.TAG_NAME, 'iframe'))
 
     # Agregar un delay para esperar un poco antes de verificar la visibilidad de la tabla
-    time.sleep(10)
+    time.sleep(5)
 
     # Esperar a que desaparezca el elemento de carga con texto "Cargando datos..."
-    WebDriverWait(driver, 30).until(EC.invisibility_of_element_located((By.XPATH, "//*[contains(text(), 'Cargando datos...')]")))
+    # WebDriverWait(driver, 30).until(EC.invisibility_of_element_located((By.XPATH, "//*[contains(text(), 'Cargando datos...')]")))
 
     # Esperar a que la tabla esté visible
-    WebDriverWait(driver, 30).until(EC.visibility_of_element_located((By.ID, 'tablaEventos')))
+    # WebDriverWait(driver, 30).until(EC.visibility_of_element_located((By.ID, 'tablaEventos')))
 
     # Obtener el contenido del iframe
     iframe_html = driver.page_source
-
-    # Guardar el contenido del iframe en un archivo code_iframe.txt
-    with open('code_iframe.txt', 'w', encoding='utf-8') as file:
-        file.write(iframe_html)
-    logging.info("El contenido del iframe se ha guardado en 'code_iframe.txt'.")
-
     driver.quit()
 except Exception as e:
     logging.error(f"Error al cargar la página con Selenium: {e}")
     raise
 
 try:
-    # Analizar el contenido HTML del iframe
-    soup = BeautifulSoup(iframe_html, 'html.parser')
-    logging.info("Contenido HTML del iframe analizado correctamente.")
-
-    # Encontrar la tabla en el iframe
-    table = soup.find('table', {'id': 'tablaEventos'})
-    if table is None:
-        raise ValueError("No se encontró la tabla en el iframe.")
-    logging.info("Tabla encontrada en el iframe.")
-
-    # Extraer los encabezados de la tabla
-    headers = [header.text.strip() for header in table.find_all('th')]
-    logging.info("Encabezados de la tabla extraídos correctamente.")
-
-    # Extraer las filas de la tabla
-    rows = []
-    for row in table.find('tbody').find_all('tr'):
-        cells = [cell.text.strip() for cell in row.find_all('td')]
-        rows.append(cells)
-    logging.info("Filas de la tabla extraídas correctamente.")
-
-    # Eliminar registros anteriores en eventos.csv
-    open('eventos.csv', 'w').close()
-    logging.info("Registros anteriores en 'eventos.csv' eliminados.")
-
-    # Guardar el contenido de la tabla en un archivo CSV
-    with open('eventos.csv', 'w', newline='', encoding='utf-8') as file:
-        writer = csv.writer(file)
-        # Escribir los encabezados, excluyendo la columna "Canales"
-        writer.writerow([headers, headers, headers, headers])
-
-        for row in rows:
-            hora = row
-            competicion = row
-            evento = row
-            eventos_acestream = row
-
-            # Analizar los hipervínculos en el campo "Eventos Acestream"
-            soup_acestream = BeautifulSoup(eventos_acestream, 'html.parser')
-            links = soup_acestream.find_all('a')
-
-            for link in links:
-                texto_mostrar = link.text.strip()
-                url_acestream = link['href'].replace('acestream://', '')
-                writer.writerow([hora, competicion, evento, f"{texto_mostrar} ({url_acestream})"])
-    logging.info("El contenido de la tabla se ha guardado en 'eventos.csv'.")
+    # Guardar el contenido del iframe en un archivo code_iframe.txt
+    with open('code_iframe.txt', 'w', encoding='utf-8') as file:
+        file.write(iframe_html)
+    logging.info("El contenido del iframe se ha guardado en 'code_iframe.txt'.")
 except Exception as e:
-    logging.error(f"Error al analizar el contenido del iframe: {e}")
+    logging.error(f"Error al guardar el contenido del iframe en el archivo: {e}")
     raise
 
-print("El contenido de la tabla se ha guardado en 'eventos.csv'")
-print("El contenido del iframe se ha guardado en 'code_iframe.txt'")
+print("El contenido de la página se ha guardado en 'code.txt' y el contenido del iframe se ha guardado en 'code_iframe.txt'")
