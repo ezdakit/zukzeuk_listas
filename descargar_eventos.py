@@ -1,4 +1,4 @@
-import requests
+import urllib.request
 from bs4 import BeautifulSoup
 import csv
 import re
@@ -11,28 +11,31 @@ logging.basicConfig(filename='debug_eventos.txt', level=logging.DEBUG, format='%
 url = 'https://proxy.zeronet.dev/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie'
 
 headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:106.0) Gecko/20100101 Firefox/106.0',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+    'Accept-Language': 'en-US,en;q=0.5'
 }
 
 try:
-    # Realizar la solicitud HTTP a la página web con encabezados
-    response = requests.get(url, headers=headers)
-    response.raise_for_status()  # Verificar que la solicitud fue exitosa
+    # Realizar la solicitud HTTP a la página web con urllib
+    req = urllib.request.Request(url, headers=headers)
+    with urllib.request.urlopen(req) as response:
+        html = response.read().decode('utf-8')
     logging.info("Solicitud HTTP exitosa.")
-except requests.RequestException as e:
+except urllib.error.URLError as e:
     logging.error(f"Error en la solicitud HTTP: {e}")
     raise
 
 try:
     # Analizar el contenido HTML de la página web
-    soup = BeautifulSoup(response.text, 'html.parser')
+    soup = BeautifulSoup(html, 'html.parser')
     logging.info("Contenido HTML analizado correctamente.")
 except Exception as e:
     logging.error(f"Error al analizar el contenido HTML: {e}")
     raise
 
 try:
-    # Encontrar la tabla en la página web
+    web
     table = soup.find('table')
     if table is None:
         raise ValueError("No se encontró la tabla en la página web.")
