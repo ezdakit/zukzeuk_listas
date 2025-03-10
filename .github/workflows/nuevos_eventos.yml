@@ -4,37 +4,45 @@ on:
   push:
     branches:
       - main
+  schedule:
+    - cron: '00 10,12,17,18,19 * * *'
+  workflow_dispatch:
 
 jobs:
-  ejecutar-script:
+  run-script:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout del repositorio
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Configurar Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.8'
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
 
-    - name: Instalar dependencias
-      run: |
-        python -m pip install --upgrade pip
-        pip install cloudscraper selenium beautifulsoup4
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 selenium cloudscraper
 
-    - name: Ejecutar script de Python eventos
-      run:  descargar_nuevos_eventos.py
+      - name: Run Python script yea
+        run: descargar_canales.py
 
-    - name: Configurar Git
-      run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+      - name: Configurar identidad de Git
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
 
-    - name: Hacer commit de los ficheros generados
-      run: |
-        git add code.txt code_iframe.txt eventos.csv
-        git commit -m 'Añadir ficheros generados por el script de Python'
-        git push
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Check for changes
+        id: changes_eventos
+        run: |
+          git add code.txt debug_eventos.txt code_iframe.txt eventos.csv
+
+      - name: Commit changes
+        run: git commit -m "Add processed M3U files"
+
+      - name: Push changes
+        run: git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }
