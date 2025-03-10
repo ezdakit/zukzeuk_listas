@@ -34,44 +34,15 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
 
-      - name: Check for cambios_eventos.txt
-        id: check_cambios_eventos
-        run: |
-          if [ -f cambios_eventos.txt ]; then
-            echo "cambios_eventos_exists=true" >> $GITHUB_ENV
-          else
-            echo "cambios_eventos_exists=false" >> $GITHUB_ENV
-          fi
-
       - name: Check for changes
         id: changes_eventos
         run: |
           git add code.txt debug_eventos.txt
-          if [ "$GITHUB_ENV" == "cambios_eventos_exists=true" ]; then
-            git add cambios_eventos.txt
-          fi
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-            echo "::set-output name=changes::false"
-          else
-            echo "Changes detected"
-            echo "::set-output name=changes::true"
-          fi
 
       - name: Commit changes
-        if: steps.changes.outputs.changes == 'true'
         run: git commit -m "Add processed M3U files"
 
       - name: Push changes
-        if: steps.changes.outputs.changes == 'true'
         run: git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Create issue
-        if: env.cambios_eventos_exists == 'true'
-        uses: peter-evans/create-issue-from-file@v3
-        with:
-          title: "Eventos procesados"
-          content-filepath: cambios_eventos.txt
-          token: ${{ secrets.GITHUB_TOKEN }}
