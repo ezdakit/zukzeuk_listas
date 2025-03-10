@@ -7,11 +7,6 @@ import logging
 import time
 import csv
 from bs4 import BeautifulSoup
-import os
-
-# Eliminar el archivo debug_eventos.txt si existe
-if os.path.exists('debug_eventos.txt'):
-    os.remove('debug_eventos.txt')
 
 # Configuración de logging
 logging.basicConfig(filename='debug_eventos.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -100,29 +95,11 @@ try:
         rows.append(cells)
     logging.info("Filas de la tabla extraídas correctamente.")
 
-    # Eliminar registros anteriores en eventos.csv
-    open('eventos.csv', 'w').close()
-    logging.info("Registros anteriores en 'eventos.csv' eliminados.")
-
     # Guardar el contenido de la tabla en un archivo CSV
     with open('eventos.csv', 'w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(headers)  # Escribir los encabezados
-
-        for row in rows:
-            hora = row
-            competicion = row
-            evento = row
-            eventos_acestream = row
-
-            # Analizar los hipervínculos en el campo "Eventos Acestream"
-            soup_acestream = BeautifulSoup(eventos_acestream, 'html.parser')
-            links = soup_acestream.find_all('a')
-
-            for link in links:
-                texto_mostrar = link.text.strip()
-                url_acestream = link['href'].replace('acestream://', '')
-                writer.writerow([hora, competicion, evento, f"{texto_mostrar} ({url_acestream})"])
+        writer.writerows(rows)    # Escribir las filas
     logging.info("El contenido de la tabla se ha guardado en 'eventos.csv'.")
 except Exception as e:
     logging.error(f"Error al analizar el contenido del iframe: {e}")
