@@ -26,7 +26,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4 selenium cloudscraper
 
-      - name: Run Python script yea
+      - name: Run Python script eventos
         run: python descargar_eventos.py
 
       - name: Configurar identidad de Git
@@ -40,7 +40,7 @@ jobs:
           git add code.txt debug_eventos.txt code_iframe.txt
 
       - name: Commit changes
-        run: git commit -m "Add processed M3U files"
+        run: git commit -m "Add processed events files"
 
       - name: Push changes
         run: git push
