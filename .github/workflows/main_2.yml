@@ -26,21 +26,24 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4 selenium cloudscraper 
 
+      # ... (parte anterior del workflow igual)
+
       - name: Run Python script
         run: python descargar_nuevos_eventos.py
 
-      # Agregar estos pasos nuevos:
-      - name: Pull cambios recientes con rebase
+      - name: Configurar identidad de Git
         run: |
-          git pull origin main --rebase  # Sincroniza con el remoto
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
 
       - name: Add changes
         run: git add code.txt debug_eventos.txt code_iframe.txt eventos.csv
 
-      - name: Commit
-        run: git commit -m "Actualización automática de eventos"
+      - name: Commit changes
+        run: git commit -m "Actualización automática de eventos" || echo "No hay cambios para confirmar"
+
+      - name: Pull cambios recientes con rebase
+        run: git pull origin main --rebase
 
       - name: Push changes
         run: git push origin main
