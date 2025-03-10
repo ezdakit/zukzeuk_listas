@@ -8,7 +8,7 @@ import logging
 # Configuración de logging
 logging.basicConfig(filename='debug_eventos.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# URL de la página web
+# URL de la página principal
 url = 'https://proxy.zeronet.dev/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie'
 
 try:
@@ -36,18 +36,35 @@ try:
 
     # Obtener el contenido de la página
     html = driver.page_source
+
+    # Guardar el contenido de la página en un archivo code.txt
+    with open('code.txt', 'w', encoding='utf-8') as file:
+        file.write(html)
+    logging.info("El contenido de la página se ha guardado en 'code.txt'.")
+
+    # Buscar el iframe y obtener su URL
+    iframe = driver.find_element(By.TAG_NAME, 'iframe')
+    iframe_url = iframe.get_attribute('src')
+
+    # Cargar el contenido del iframe
+    driver.get(iframe_url)
+    WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
+    logging.info("Contenido del iframe cargado correctamente.")
+
+    # Obtener el contenido del iframe
+    iframe_html = driver.page_source
     driver.quit()
 except Exception as e:
     logging.error(f"Error al cargar la página con Selenium: {e}")
     raise
 
 try:
-    # Guardar el contenido de la página en un archivo code.txt
-    with open('code.txt', 'w', encoding='utf-8') as file:
-        file.write(html)
-    logging.info("El contenido de la página se ha guardado en 'code.txt'.")
+    # Guardar el contenido del iframe en un archivo code_iframe.txt
+    with open('code_iframe.txt', 'w', encoding='utf-8') as file:
+        file.write(iframe_html)
+    logging.info("El contenido del iframe se ha guardado en 'code_iframe.txt'.")
 except Exception as e:
-    logging.error(f"Error al guardar el contenido de la página en el archivo: {e}")
+    logging.error(f"Error al guardar el contenido del iframe en el archivo: {e}")
     raise
 
-print("El contenido de la página se ha guardado en 'code.txt'")
+print("El contenido de la página se ha guardado en 'code.txt' y el contenido del iframe se ha guardado en 'code_iframe.txt'")
