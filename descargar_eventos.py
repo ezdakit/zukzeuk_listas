@@ -10,9 +10,13 @@ logging.basicConfig(filename='debug_eventos.txt', level=logging.DEBUG, format='%
 # URL de la página web
 url = 'https://proxy.zeronet.dev/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie'
 
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
+}
+
 try:
-    # Realizar la solicitud HTTP a la página web
-    response = requests.get(url)
+    # Realizar la solicitud HTTP a la página web con encabezados
+    response = requests.get(url, headers=headers)
     response.raise_for_status()  # Verificar que la solicitud fue exitosa
     logging.info("Solicitud HTTP exitosa.")
 except requests.RequestException as e:
