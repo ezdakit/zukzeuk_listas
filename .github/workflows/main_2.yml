@@ -37,7 +37,7 @@ jobs:
           git config user.email "actions@github.com"
 
       - name: Add changes
-        run: git add code.txt debug_eventos.txt code_iframe.txt eventos.csv
+        run: git add code.txt debug_eventos.txt code_iframe.txt eventos.csv zz_eventos_ott.m3u
 
       - name: Commit changes
         run: git commit -m "Actualización automática de eventos" || echo "No hay cambios para confirmar"
