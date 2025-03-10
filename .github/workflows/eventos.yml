@@ -37,7 +37,7 @@ jobs:
       - name: Check for changes
         id: changes_eventos
         run: |
-          git add code.txt debug_eventos.txt
+          git add code.txt debug_eventos.txt code_iframe.txt
 
       - name: Commit changes
         run: git commit -m "Add processed M3U files"
