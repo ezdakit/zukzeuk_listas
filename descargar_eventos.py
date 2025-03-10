@@ -13,8 +13,11 @@ logging.basicConfig(filename='debug_eventos.txt', level=logging.DEBUG, format='%
 url = 'https://proxy.zeronet.dev/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie'
 
 try:
-    # Configurar el navegador
-    driver = webdriver.Chrome()  # Asegúrate de tener el controlador de Chrome instalado
+    # Configurar el navegador con un directorio de datos único
+    options = webdriver.ChromeOptions()
+    options.add_argument("--user-data-dir=/tmp/selenium_chrome_user_data")
+
+    driver = webdriver.Chrome(options=options)  # Asegúrate de tener el controlador de Chrome instalado
     driver.get(url)
 
     # Esperar a que la tabla se cargue
