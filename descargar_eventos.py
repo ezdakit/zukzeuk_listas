@@ -33,8 +33,8 @@ try:
     driver = webdriver.Chrome(options=options)
     driver.get(url)
 
-    # Esperar a que la tabla se cargue
-    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, 'table')))
+    # Aumentar el tiempo de espera a 30 segundos
+    WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.TAG_NAME, 'table')))
     logging.info("Tabla encontrada en la página web.")
 
     # Obtener el contenido de la página
