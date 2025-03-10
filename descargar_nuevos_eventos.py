@@ -8,7 +8,7 @@ import time
 import csv
 from bs4 import BeautifulSoup
 
-# Configuración de logging RFB
+# Configuración de logging
 logging.basicConfig(filename='debug_eventos.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # URL de la página principal
