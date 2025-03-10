@@ -1,80 +1,120 @@
-<html><head>
- <title>Andrenalina\ Elcano\.top - ZeroNet</title>
- <meta charset="utf-8">
- <meta http-equiv="content-type" content="text/html; charset=utf-8">
- <link rel="stylesheet" href="/uimedia/all.css?rev=4625">
- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
- 
+<html lang="es"><head>
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrenalina</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            transition: background-color 0.5s, color 0.5s;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 1rem;
+            text-align: left;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: rgb(226, 59, 13);
+        }
+
+        .loading {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #ff4d4d;
+        }
+
+        .tabla-acestream {
+            margin-top: 40px;
+            text-align: center;
+
+        }
+
+        .tabla-Eventos {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        a {
+            text-align: center;
+            color: #ff4d4d;
+        }
+
+        hr {
+            border-color: #404040;
+            margin: 15px 0;
+        }
+
+        td img {
+            width: 25px;
+            height: 25px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        /* Estilos para las cabeceras */
+        .tabla-acestream th {
+            background-color: #2c3e50;
+            /* Color oscuro para la cabecera */
+            color: white;
+        }
+    </style>
 </head>
-<body style="background-color: #FFF;" class="theme-light ">
 
-<div class="unsupported" id="unsupported" style="display: none;">
- <script nonce="">document.getElementById('unsupported').style.display = "none"</script>
- <h3>ZeroNet requires JavaScript support.</h3>If you use NoScript/Tor browser: Click on toolbar icon with the notification and choose "Temp. TRUSTED" for 127.0.0.1.
-</div>
+<body>
+    <h1>/⁠╲⁠/⁠\⁠╭⁠(⁠•⁠‿⁠•⁠)⁠╮⁠/⁠\⁠╱⁠\</h1>
+    <h1>Andrenalina</h1>
+    <h1>by TokyoGhoull</h1>
+    <div id="loading" class="loading">Cargando datos...</div>
+    <table id="tablaEventos" class="tabla-Eventos" style="display: none;">
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Competición</th>
+                <th>Evento</th>
+                <th>Canales</th>
+                <th>Eventos Acestream</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
 
-<script nonce="">
-// If we are inside iframe escape from it
-if (window.self !== window.top) {
-	window.open(window.location.toString().replace(/([&?])wrapper=False/, "$1").replace(/&$/, "").replace(/[&?]wrapper_nonce=[A-Za-z0-9]+/, ""), "_top");
-	window.stop();
-	document.execCommand("Stop", false);
-}
+    
+    <h2>Eventos Acestream</h2>
+    <table id="tablaAcestream" class="tabla-acestream" style="display: none;">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Content ID</th>
+                <th>Eventos</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
 
-// We are opened as a parent-window
-else if (window.opener && window.opener.location.toString()) {
-	document.write("Opened as child-window, stopping...");
-	window.stop();
-	document.execCommand("Stop", false);
-}
-</script>
-
-<div class="progressbar">
- <div class="peg"></div>
-</div>
-
-<!-- Fixed button -->
-<div class="fixbutton">
- <div class="fixbutton-text"><img width="30" src="/uimedia/img/logo-white.svg"></div>
- <div class="fixbutton-burger">≡</div>
- <a class="fixbutton-bg" href="/1HELLoE3sFD9569CLCbHEAVqvqV7U2Ri9d/"></a>
-</div>
-
-<!-- Notifications -->
-<div class="notifications">
- <div class="notification template"><span class="notification-icon">!</span> <span class="body">Test notification</span><a class="close" href="#Close">×</a><div style="clear: both"></div></div>
-</div>
-
-<!-- Infopanel -->
-<div class="infopanel-container">
- <div class="infopanel">
-  <span class="closed-num">8</span>
-  <div class="message">
-   <span class="line line-1">8 modified files</span><br><span class="line line-2">content.json, data.json</span>
-  </div>
-  <a href="#Publish" class="button button-submit">Sign &amp; Publish</a>
-  <a href="#Close" class="close">×</a>
- </div>
-</div>
-
-<!-- Loadingscreen -->
-<div class="loadingscreen">
- <a href="/Config" class="loading-config">Config</a>
- <div class="loading-text console">
- </div>
- <div class="flipper-container">
-  <div class="flipper"> <div class="front"></div><div class="back"></div> </div>
- </div>
-</div>
-
-
-<!-- Site Iframe -->
-<iframe src="/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie/?wrapper_nonce=dd171b7f965c25790b24d83a678cd46900bf3d100b812e129665b3905c80f0fc&amp;wrapper_nonce=8f6554c05cbd11f28a0bd8d4b47d17b3ca0bc9a6539737d5b2800a51035232c8" id="inner-iframe" sandbox="allow-forms allow-scripts allow-top-navigation allow-popups allow-modals allow-presentation allow-pointer-lock allow-popups-to-escape-sandbox " allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
-
-<!-- Site info -->
-
-<script type="text/javascript" src="/uimedia/all.js?rev=4625&amp;lang=en" nonce=""></script>
-<script nonce="">setTimeout(window.wrapper.onWrapperLoad, 1)</script>
-
-
+    
 </body></html>
