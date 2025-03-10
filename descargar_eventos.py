@@ -1,5 +1,7 @@
-import urllib.request
-from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 import csv
 import re
 import logging
@@ -10,20 +12,20 @@ logging.basicConfig(filename='debug_eventos.txt', level=logging.DEBUG, format='%
 # URL de la página web
 url = 'https://proxy.zeronet.dev/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie'
 
-headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:106.0) Gecko/20100101 Firefox/106.0',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
-    'Accept-Language': 'en-US,en;q=0.5'
-}
-
 try:
-    # Realizar la solicitud HTTP a la página web con urllib
-    req = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(req) as response:
-        html = response.read().decode('utf-8')
-    logging.info("Solicitud HTTP exitosa.")
-except urllib.error.URLError as e:
-    logging.error(f"Error en la solicitud HTTP: {e}")
+    # Configurar el navegador
+    driver = webdriver.Chrome()  # Asegúrate de tener el controlador de Chrome instalado
+    driver.get(url)
+
+    # Esperar a que la tabla se cargue
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, 'table')))
+    logging.info("Tabla encontrada en la página web.")
+
+    # Obtener el contenido de la página
+    html = driver.page_source
+    driver.quit()
+except Exception as e:
+    logging.error(f"Error al cargar la página con Selenium: {e}")
     raise
 
 try:
