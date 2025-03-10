@@ -24,8 +24,7 @@ jobs:
         pip install cloudscraper selenium beautifulsoup4
 
     - name: Ejecutar script de Python eventos
-      run: |
-        descargar_nuevos_eventos.py
+      run:  descargar_nuevos_eventos.py
 
     - name: Configurar Git
       run: |
