@@ -27,7 +27,7 @@ jobs:
           pip install requests beautifulsoup4 selenium cloudscraper
 
       - name: Run Python script yea
-        run: descargar_canales.py
+        run: descargar_nuevos_eventos.py
 
       - name: Configurar identidad de Git
         run: |
