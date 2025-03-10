@@ -15,7 +15,7 @@ url = 'https://proxy.zeronet.dev/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie'
 try:
     # Configurar el navegador con un directorio de datos único
     options = webdriver.ChromeOptions()
-    options.add_argument("--user-data-dir=/tmp/selenium_chrome_user_data")
+    options.add_argument("--user-data-dir=/tmp/selenium_chrome_user_data_unique")
 
     driver = webdriver.Chrome(options=options)  # Asegúrate de tener el controlador de Chrome instalado
     driver.get(url)
