@@ -46,7 +46,7 @@ jobs:
       - name: Check for changes
         id: changes_eventos
         run: |
-          git add eventos.csv debug_eventos.txt
+          git add code.txt debug_eventos.txt
           if [ "$GITHUB_ENV" == "cambios_eventos_exists=true" ]; then
             git add cambios_eventos.txt
           fi
