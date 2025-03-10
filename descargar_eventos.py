@@ -1,4 +1,8 @@
 import cloudscraper
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 import csv
 import re
@@ -21,8 +25,28 @@ except cloudscraper.exceptions.CloudflareChallengeError as e:
     raise
 
 try:
+    # Configurar Selenium para cargar el contenido dinámico
+    options = webdriver.ChromeOptions()
+    options.add_argument("--headless")  # Ejecutar Chrome en modo headless
+    options.add_argument("--user-data-dir=/tmp/selenium_chrome_user_data_unique")
+
+    driver = webdriver.Chrome(options=options)
+    driver.get(url)
+
+    # Esperar a que la tabla se cargue
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, 'table')))
+    logging.info("Tabla encontrada en la página web.")
+
+    # Obtener el contenido de la página
+    html = driver.page_source
+    driver.quit()
+except Exception as e:
+    logging.error(f"Error al cargar la página con Selenium: {e}")
+    raise
+
+try:
     # Analizar el contenido HTML de la página web
-    soup = BeautifulSoup(response.text, 'html.parser')
+    soup = BeautifulSoup(html, 'html.parser')
     logging.info("Contenido HTML analizado correctamente.")
 except Exception as e:
     logging.error(f"Error al analizar el contenido HTML: {e}")
