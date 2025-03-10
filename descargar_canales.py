@@ -79,13 +79,16 @@ try:
     cursor.execute(create_table_query)
     
     # Abrir el fichero CSV e insertar registros en la tabla
-    with open('correspondencia_canales.csv', 'r') as csvfile:
-        csv_reader = csv.DictReader(csvfile)
-        for row in csv_reader:
-            cursor.execute('''
-                INSERT INTO correspondencia_canales (channel_root, channel_epg_id, channel_name, channel_group)
-                VALUES (?, ?, ?, ?)
-            ''', (row['channel_root'], row['channel_epg_id'], row['channel_name'], row['channel_group']))
+    with open('correspondencia_canales.csv', mode='r', encoding='utf-8') as file:
+        reader = csv.DictReader(file, delimiter=';')
+        for row in reader:
+            if 'channel_root' in row and 'channel_epg_id' in row and 'channel_name' in row and 'channel_group' in row:
+                cursor.execute('''
+                    INSERT INTO correspondencia_canales (channel_root, channel_epg_id, channel_name, channel_group)
+                    VALUES (?, ?, ?, ?)
+                ''', (row['channel_root'], row['channel_epg_id'], row['channel_name'], row['channel_group']))
+            else:
+                print("Falta una de las claves necesarias en la fila:", row)
     
     cursor.execute('''CREATE TABLE IF NOT EXISTS canales_iptv_temp (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
