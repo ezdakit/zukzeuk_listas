@@ -6,6 +6,7 @@ import sys
 import logging
 import Levenshtein
 import os
+import csv
 
 # Configuración de logging
 logging.basicConfig(filename='debug_log.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -61,6 +62,31 @@ try:
     conn = sqlite3.connect('zz_canales.db')
     cursor = conn.cursor()
     cursor.execute('PRAGMA encoding = "UTF-8";')
+
+    # Eliminar la tabla correspondencia_canales si existe
+    cursor.execute('DROP TABLE IF EXISTS correspondencia_canales')
+    
+    # Crear la tabla correspondencia_canales de nuevo
+    create_table_query = '''
+    CREATE TABLE "correspondencia_canales" (
+        "channel_root" TEXT UNIQUE,
+        "channel_epg_id" TEXT,
+        "channel_name" TEXT,
+        "channel_group" TEXT,
+        "id" INTEGER PRIMARY KEY AUTOINCREMENT
+    )
+    '''
+    cursor.execute(create_table_query)
+    
+    # Abrir el fichero CSV e insertar registros en la tabla
+    with open('correspondencia_canales.csv', 'r') as csvfile:
+        csv_reader = csv.DictReader(csvfile)
+        for row in csv_reader:
+            cursor.execute('''
+                INSERT INTO correspondencia_canales (channel_root, channel_epg_id, channel_name, channel_group)
+                VALUES (?, ?, ?, ?)
+            ''', (row['channel_root'], row['channel_epg_id'], row['channel_name'], row['channel_group']))
+    
     cursor.execute('''CREATE TABLE IF NOT EXISTS canales_iptv_temp (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         import_date TEXT,
