@@ -89,7 +89,10 @@ try:
                 ''', (row['channel_root'], row['channel_epg_id'], row['channel_name'], row['channel_group']))
             else:
                 print("Falta una de las claves necesarias en la fila:", row)
-    
+
+    # Eliminar la tabla correspondencia_canales si existe
+    cursor.execute('DROP TABLE IF EXISTS canales_iptv_temp')
+    # volver a crearla
     cursor.execute('''CREATE TABLE IF NOT EXISTS canales_iptv_temp (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         import_date TEXT,
