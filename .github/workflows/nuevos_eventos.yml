@@ -23,7 +23,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install cloudscraper selenium beautifulsoup4
 
-    - name: Ejecutar script de Python
+    - name: Ejecutar script de Python eventos
       run: |
         descargar_nuevos_eventos.py
 
