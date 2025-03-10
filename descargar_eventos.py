@@ -1,7 +1,5 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+import cloudscraper
+from bs4 import BeautifulSoup
 import csv
 import re
 import logging
@@ -13,27 +11,18 @@ logging.basicConfig(filename='debug_eventos.txt', level=logging.DEBUG, format='%
 url = 'https://proxy.zeronet.dev/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie'
 
 try:
-    # Configurar el navegador con un directorio de datos único
-    options = webdriver.ChromeOptions()
-    options.add_argument("--user-data-dir=/tmp/selenium_chrome_user_data_unique")
-
-    driver = webdriver.Chrome(options=options)  # Asegúrate de tener el controlador de Chrome instalado
-    driver.get(url)
-
-    # Esperar a que la tabla se cargue
-    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, 'table')))
-    logging.info("Tabla encontrada en la página web.")
-
-    # Obtener el contenido de la página
-    html = driver.page_source
-    driver.quit()
-except Exception as e:
-    logging.error(f"Error al cargar la página con Selenium: {e}")
+    # Realizar la solicitud HTTP a la página web utilizando cloudscraper
+    scraper = cloudscraper.create_scraper()
+    response = scraper.get(url)
+    response.raise_for_status()  # Verificar que la solicitud fue exitosa
+    logging.info("Solicitud HTTP exitosa.")
+except cloudscraper.exceptions.CloudflareChallengeError as e:
+    logging.error(f"Error en la solicitud HTTP: {e}")
     raise
 
 try:
     # Analizar el contenido HTML de la página web
-    soup = BeautifulSoup(html, 'html.parser')
+    soup = BeautifulSoup(response.text, 'html.parser')
     logging.info("Contenido HTML analizado correctamente.")
 except Exception as e:
     logging.error(f"Error al analizar el contenido HTML: {e}")
