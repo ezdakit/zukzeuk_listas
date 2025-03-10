@@ -29,19 +29,20 @@ jobs:
       - name: Run Python script
         run: python descargar_nuevos_eventos.py
 
-      - name: Configurar identidad de Git
+      # Agregar estos pasos nuevos:
+      - name: Pull cambios recientes con rebase
         run: |
+          git pull origin main --rebase  # Sincroniza con el remoto
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
 
-      - name: changes
-        id: changes_eventos
-        run: |
-          git add code.txt debug_eventos.txt code_iframe.txt eventos.csv
-      - name: Commit changes_eventos
-        run: git commit -m "Add processed event files"
+      - name: Add changes
+        run: git add code.txt debug_eventos.txt code_iframe.txt eventos.csv
+
+      - name: Commit
+        run: git commit -m "Actualización automática de eventos"
 
       - name: Push changes
-        run: git push
+        run: git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
