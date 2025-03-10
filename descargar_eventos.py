@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import logging
 
 # Configuración de logging
-logging.basicConfig(filename='debug_eventos.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='debug_eventos.txt', level=logging.DEBUG, format='%(asctime)s - %(levellevelname)s - %(message)s')
 
 # URL de la página principal
 url = 'https://proxy.zeronet.dev/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie'
@@ -48,8 +48,8 @@ try:
     # Cambiar al contenido del iframe
     driver.switch_to.frame(driver.find_element(By.TAG_NAME, 'iframe'))
 
-    # Esperar a que desaparezca el elemento de carga
-    WebDriverWait(driver, 30).until(EC.invisibility_of_element_located((By.ID, 'loading')))
+    # Esperar a que desaparezca el elemento de carga con texto "Cargando datos..."
+    WebDriverWait(driver, 30).until(EC.invisibility_of_element_located((By.XPATH, "//*[contains(text(), 'Cargando datos...')]")))
 
     # Esperar a que la tabla esté visible
     WebDriverWait(driver, 30).until(EC.visibility_of_element_located((By.ID, 'tablaEventos')))
