@@ -1,0 +1,41 @@
+name: nuevos_eventos
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ejecutar-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout del repositorio
+      uses: actions/checkout@v2
+
+    - name: Configurar Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+
+    - name: Instalar dependencias
+      run: |
+        python -m pip install --upgrade pip
+        pip install cloudscraper selenium beautifulsoup4
+
+    - name: Ejecutar script de Python
+      run: |
+        descargar_nuevos_eventos.py
+
+    - name: Configurar Git
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+    - name: Hacer commit de los ficheros generados
+      run: |
+        git add code.txt code_iframe.txt eventos.csv
+        git commit -m 'Añadir ficheros generados por el script de Python'
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
