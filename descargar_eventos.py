@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import logging
+import time
 
 # Configuración de logging
 logging.basicConfig(filename='debug_eventos.txt', level=logging.DEBUG, format='%(asctime)s - %(levellevelname)s - %(message)s')
@@ -47,6 +48,9 @@ try:
 
     # Cambiar al contenido del iframe
     driver.switch_to.frame(driver.find_element(By.TAG_NAME, 'iframe'))
+
+    # Agregar un delay para esperar un poco antes de verificar la visibilidad de la tabla
+    time.sleep(10)
 
     # Esperar a que desaparezca el elemento de carga con texto "Cargando datos..."
     WebDriverWait(driver, 30).until(EC.invisibility_of_element_located((By.XPATH, "//*[contains(text(), 'Cargando datos...')]")))
