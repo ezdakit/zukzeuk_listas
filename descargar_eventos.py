@@ -35,7 +35,7 @@ except Exception as e:
     raise
 
 try:
-    web
+    # Encontrar la tabla en la página web
     table = soup.find('table')
     if table is None:
         raise ValueError("No se encontró la tabla en la página web.")
