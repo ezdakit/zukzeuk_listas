@@ -95,6 +95,9 @@ try:
         # La columna de "Canales" (índice 3) está oculta, no la necesitamos
         eventos_acestream = cols[4].find_all('a')  # Buscar en la columna de "Eventos Acestream" (índice 4)
 
+        # Limpiar el campo "Evento" (eliminar saltos de línea y espacios adicionales)
+        evento = " ".join(evento.split())  # Elimina espacios múltiples y saltos de línea
+
         # Procesar cada enlace de Acestream
         for evento_acestream in eventos_acestream:
             nombre_canal = evento_acestream.text.strip()
