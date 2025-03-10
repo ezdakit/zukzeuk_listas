@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import logging
 
 # Configuración de logging
-logging.basicConfig(filename='debug_eventos.txt', level=logging.DEBUG, format='%(asctime)s - %(levellevelname)s - %(message)s')
+logging.basicConfig(filename='debug_eventos.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # URL de la página principal
 url = 'https://proxy.zeronet.dev/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie'
@@ -42,12 +42,13 @@ try:
         file.write(html_main)
     logging.info("El contenido de la página principal se ha guardado en 'code.txt'.")
 
-    # Buscar el iframe y obtener su URL
-    iframe = driver.find_element(By.TAG_NAME, 'iframe')
-    iframe_url = iframe.get_attribute('src')
+    # Esperar a que el iframe esté presente
+    WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.TAG_NAME, 'iframe')))
 
-    # Cargar el contenido del iframe
-    driver.get(iframe_url)
+    # Cambiar al contenido del iframe
+    driver.switch_to.frame(driver.find_element(By.TAG_NAME, 'iframe'))
+
+    # Aumentar el tiempo de espera para el contenido del iframe
     WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
     logging.info("Contenido del iframe cargado correctamente.")
 
