@@ -115,12 +115,13 @@ except Exception as e:
     logging.error(f"Error al procesar el fichero code_iframe.txt: {e}")
     raise
 
-# Procesar el fichero eventos.csv para generar zz_eventos_ott.m3u
+# Procesar el fichero eventos.csv para generar zz_eventos_ott.m3u y zz_eventos_all_ott.m3u
 try:
     # Ruta del archivo eventos.csv
     input_csv = 'eventos.csv'
-    # Ruta del archivo de salida zz_eventos_ott.m3u
+    # Rutas de los archivos de salida
     output_m3u = 'zz_eventos_ott.m3u'
+    output_all_m3u = 'zz_eventos_all_ott.m3u'
 
     # Cabecera del archivo M3U
     m3u_header = """#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"
@@ -133,28 +134,37 @@ try:
         csv_reader = csv.reader(csv_file)
         next(csv_reader)  # Saltar la primera fila (encabezados)
 
-        # Abrir el archivo M3U para escritura
-        with open(output_m3u, 'w', encoding='utf-8') as m3u_file:
-            # Escribir la cabecera del archivo M3U
+        # Abrir los archivos M3U para escritura
+        with open(output_m3u, 'w', encoding='utf-8') as m3u_file, \
+             open(output_all_m3u, 'w', encoding='utf-8') as m3u_all_file:
+
+            # Escribir la cabecera en ambos archivos M3U
             m3u_file.write(m3u_header)
+            m3u_all_file.write(m3u_header)
 
             # Procesar cada línea del CSV
             for row in csv_reader:
                 hora, competicion, evento, nombre_canal, eventos_acestream = row
 
-                # Crear la línea #EXTINF con "Evento:" en group-title
+                # Crear la línea #EXTINF para zz_eventos_ott.m3u (group-title="Eventos")
                 extinf_line = f'#EXTINF:-1 tvg-id="" group-title="Eventos", {hora} {evento}\n'
+
+                # Crear la línea #EXTINF para zz_eventos_all_ott.m3u (group-title con el contenido de "Competicion")
+                extinf_all_line = f'#EXTINF:-1 tvg-id="" group-title="{competicion}", {hora} {evento}\n'
 
                 # Crear la línea de la URL
                 url_line = f'http://127.0.0.1:6878/ace/getstream?id={eventos_acestream}\n'
 
-                # Escribir ambas líneas en el archivo M3U
+                # Escribir ambas líneas en los archivos M3U
                 m3u_file.write(extinf_line)
                 m3u_file.write(url_line)
 
-    logging.info("El archivo zz_eventos_ott.m3u se ha generado correctamente.")
+                m3u_all_file.write(extinf_all_line)
+                m3u_all_file.write(url_line)
+
+    logging.info("Los archivos zz_eventos_ott.m3u y zz_eventos_all_ott.m3u se han generado correctamente.")
 except Exception as e:
-    logging.error(f"Error al procesar el archivo CSV o generar el archivo M3U: {e}")
+    logging.error(f"Error al procesar el archivo CSV o generar los archivos M3U: {e}")
     raise
 
-print("Proceso completado. Se han generado los archivos eventos.csv y zz_eventos_ott.m3u.")
+print("Proceso completado. Se han generado los archivos eventos.csv, zz_eventos_ott.m3u y zz_eventos_all_ott.m3u.")
