@@ -142,8 +142,8 @@ try:
             for row in csv_reader:
                 hora, competicion, evento, nombre_canal, eventos_acestream = row
 
-                # Crear la línea #EXTINF con "Evento: " en group-title
-                extinf_line = f'#EXTINF:-1 tvg-id="" group-title="Evento: {competicion}", {hora} {evento}\n'
+                # Crear la línea #EXTINF con "Evento:" en group-title
+                extinf_line = f'#EXTINF:-1 tvg-id="" group-title="Eventos", {hora} {evento}\n'
 
                 # Crear la línea de la URL
                 url_line = f'http://127.0.0.1:6878/ace/getstream?id={eventos_acestream}\n'
