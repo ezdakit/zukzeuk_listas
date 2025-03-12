@@ -1,9 +1,6 @@
 name: procesar_guia
 
 on:
-  push:
-    branches:
-      - main
   schedule:
     - cron: '0 12 * * *' # Ejecutar a las 12:00 cada día
   workflow_dispatch:
