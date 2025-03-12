@@ -26,6 +26,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
+      - name: Pull cambios recientes
+        run: git pull origin main
+        
       - name: Run Python script yea
         run: python descargar_guia.py
 
@@ -61,9 +64,6 @@ jobs:
       - name: Commit changes
         if: steps.changes.outputs.changes == 'true'
         run: git commit -m "Add processed guide files"
-
-      - name: Pull cambios recientes
-        run: git pull origin main
 
       - name: Push changes
         if: steps.changes.outputs.changes == 'true'
