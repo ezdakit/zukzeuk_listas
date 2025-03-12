@@ -44,8 +44,9 @@ jobs:
         id: changes
         run: |
           git add zz_canales.db lista-ott-prev.m3u lista-ott.m3u zz_lista_ott.m3u zz_lista_ace.m3u zz_lista_kodi.m3u debug_log.txt
-          if [ "$GITHUB_ENV" == "cambios_exists=true" ]; then
+          if [ "${{ env.cambios_exists }}" == 'true' ]; then
             git add cambios.txt
+            echo "cambios.txt detected"
           fi
           if git diff --cached --quiet; then
             echo "No changes to commit"
@@ -72,6 +73,6 @@ jobs:
         if: env.cambios_exists == 'true'
         uses: peter-evans/create-issue-from-file@v3
         with:
-          title: "Fichero procesado"
+          title: "Canales procesados"
           content-filepath: cambios.txt
           token: ${{ secrets.GITHUB_TOKEN }}
