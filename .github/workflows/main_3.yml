@@ -62,11 +62,11 @@ jobs:
           fi
 
       - name: Commit changes
-        if: steps.changes.outputs.changes == 'true'
+        if: steps.files_commit.outputs.changes == 'true'
         run: git commit -m "Add processed guide files"
 
       - name: Push changes
-        if: steps.changes.outputs.changes == 'true'
+        if: steps.files_commit.outputs.changes == 'true'
         run: git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
