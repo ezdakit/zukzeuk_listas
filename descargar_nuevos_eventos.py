@@ -23,6 +23,9 @@ try:
 except cloudscraper.exceptions.CloudflareChallengeError as e:
     logging.error(f"Error en la solicitud HTTP: {e}")
     raise
+except requests.exceptions.RequestException as e:
+    logging.error(f"La URL no está disponible o hubo un error en la solicitud: {e}")
+    sys.exit(1)  # Termina el script con un código de error
 
 try:
     # Configurar Selenium para cargar el contenido dinámico
