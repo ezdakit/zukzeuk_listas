@@ -55,6 +55,9 @@ jobs:
             echo "{name}={true}" >> $GITHUB_OUTPUT
           fi
 
+      - name: Commit changes
+        run: git commit -m "Commit realizado" || echo "No hay cambios para confirmar"
+
       - name: Create issue
         if: env.new_channels == 'true'
         uses: peter-evans/create-issue-from-file@v3
