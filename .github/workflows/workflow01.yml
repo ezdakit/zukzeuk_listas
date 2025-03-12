@@ -29,20 +29,20 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
 
-      - name: Check for canales_nuevos.txt
-        id: check_cambios
+      - name: Check for new channels file
+        id: check_new_channels
         run: |
           if [ -f canales_nuevos.txt ]; then
-            echo "cambios_exists=true" >> $GITHUB_ENV
+            echo "new_channels=true" >> $GITHUB_ENV
           else
-            echo "cambios_exists=false" >> $GITHUB_ENV
+            echo "new_channels=false" >> $GITHUB_ENV
           fi
 
       - name: Check for changes
         id: changes
         run: |
           git add canales.txt canales_prev.txt
-          if [ "$GITHUB_ENV" == "cambios_exists=true" ]; then
+          if [ env.new_channels == 'true' ]; then
             git add canales_nuevos.txt
           fi
           if git diff --cached --quiet; then
@@ -53,15 +53,6 @@ jobs:
             echo "Changes detected"
             #echo "::set-output name=changes::true"
             echo "{name}={true}" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Check for new channels file
-        id: check_new_channels
-        run: |
-          if [ -f canales_nuevos.txt ]; then
-            echo "new_channels=true" >> $GITHUB_ENV
-          else
-            echo "new_channels=false" >> $GITHUB_ENV
           fi
 
       - name: Create issue
