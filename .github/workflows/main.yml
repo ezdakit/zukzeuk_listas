@@ -62,6 +62,9 @@ jobs:
         if: steps.changes.outputs.changes == 'true'
         run: git commit -m "Add processed M3U files"
 
+      - name: Pull cambios recientes
+        run: git pull origin main
+
       - name: Push changes
         if: steps.changes.outputs.changes == 'true'
         run: git push
