@@ -33,7 +33,5 @@ if os.path.exists("canales_prev.txt"):
         with open("canales_nuevos.txt", "w") as file_nuevos:
             for canal in nuevos_canales:
                 file_nuevos.write(canal)
-else:
-    os.rename("canales.txt", "canales_nuevos.txt")
 
 print("Extracción completada. Los canales se han guardado en canales.txt y los nuevos canales en canales_nuevos.txt (si hay diferencias).")
