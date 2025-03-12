@@ -147,7 +147,7 @@ try:
                 hora, competicion, evento, nombre_canal, eventos_acestream = row
 
                 # Crear la línea #EXTINF para zz_eventos_ott.m3u (group-title="Eventos")
-                extinf_line = f'#EXTINF:-1 tvg-id="" group-title="Eventos", {hora} {evento}\n'
+                extinf_line = f'#EXTINF:-1 tvg-id="" group-title="# Eventos", {hora} {evento}\n'
 
                 # Crear la línea #EXTINF para zz_eventos_all_ott.m3u (group-title con el contenido de "Competicion")
                 extinf_all_line = f'#EXTINF:-1 tvg-id="" group-title="{competicion}", {hora} {evento}\n'
