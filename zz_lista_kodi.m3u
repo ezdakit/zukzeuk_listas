@@ -154,8 +154,6 @@ plugin://script.module.horus?action=play&id=c0803ffef120a6ec036329ce3fe2e95018cc
 #EXTINF:-1 tvg-id="M+ Copa del Rey" group-title="M+ COPA", M+ Copa del Rey
 plugin://script.module.horus?action=play&id=99364e3a5ed2afc8421dfa6332df194761166c03
 #EXTINF:-1 tvg-id="M+ Deportes HD" group-title="MOVISTAR", M+ Deportes
-plugin://script.module.horus?action=play&id=54470f2db47abeff1f809a0a7262e6f7d7796a4e
-#EXTINF:-1 tvg-id="M+ Deportes HD" group-title="MOVISTAR", M+ Deportes
 plugin://script.module.horus?action=play&id=55d4602cb22b0d8a33c10c2c2f42dae64a9e8895
 #EXTINF:-1 tvg-id="M+ Deportes HD" group-title="MOVISTAR", M+ Deportes
 plugin://script.module.horus?action=play&id=3a74d9869b13e763476800740c6625e715a39879
@@ -236,7 +234,17 @@ plugin://script.module.horus?action=play&id=7a90838e67f415e70fd7c9bb87edeb2da5db
 #EXTINF:-1 tvg-id="no_disponible" group-title="VARIOS", DAZN EVENTOS 3
 plugin://script.module.horus?action=play&id=e7330b2c28af22b081ab509df5aac9672a7e037b
 #EXTINF:-1 tvg-id="ESPN" group-title="VARIOS", ESPN
+plugin://script.module.horus?action=play&id=fc5089d8e1519872fdf951779ccbca913acc9bce
+#EXTINF:-1 tvg-id="ESPN" group-title="VARIOS", ESPN
+plugin://script.module.horus?action=play&id=5f9b19c57195cc28ab81e0ec8cad03b55118687a
+#EXTINF:-1 tvg-id="ESPN" group-title="VARIOS", ESPN
 plugin://script.module.horus?action=play&id=4b4907de51ec11087d4bed5876f2a0c68264f442
+#EXTINF:-1 tvg-id="ESPN" group-title="VARIOS", ESPN
+plugin://script.module.horus?action=play&id=79f10c6c6168e42bfc606f3f7b9e5f3ca79dedab
+#EXTINF:-1 tvg-id="ESPN" group-title="VARIOS", ESPN
+plugin://script.module.horus?action=play&id=fc5089d8e1519872fdf951779ccbca913acc9bce
+#EXTINF:-1 tvg-id="ESPN 2" group-title="VARIOS", ESPN 2
+plugin://script.module.horus?action=play&id=3e0ba6867173f345d482d80c771f1a5dc3b37e63
 #EXTINF:-1 tvg-id="ESPN 2" group-title="VARIOS", ESPN 2
 plugin://script.module.horus?action=play&id=664eb5fe460b96941aed633959a845b185cd8394
 #EXTINF:-1 tvg-id="Eurosport 2" group-title="VARIOS", Eurosport 1
@@ -251,6 +259,10 @@ plugin://script.module.horus?action=play&id=95120cee8223e9af839994ecc2b96aef05f8
 plugin://script.module.horus?action=play&id=8e9390c1647da151a7bc0e1b37c4b4d21d83049d
 #EXTINF:-1 tvg-id="Eurosport 1 HD" group-title="VARIOS", Eurosport 1
 plugin://script.module.horus?action=play&id=f5a5a5bf9903bde0c865e421f126c42e514ff787
+#EXTINF:-1 tvg-id="Eurosport 1 HD" group-title="VARIOS", Eurosport 1
+plugin://script.module.horus?action=play&id=cfa75ade53810dac64411b22d56c3d4582a221d3
+#EXTINF:-1 tvg-id="Eurosport 1 HD" group-title="VARIOS", Eurosport 1
+plugin://script.module.horus?action=play&id=23a4937f1484b435af132dbfb3e8fd3aefc9baad
 #EXTINF:-1 tvg-id="Eurosport 1 HD" group-title="VARIOS", Eurosport 1
 plugin://script.module.horus?action=play&id=9d40122f58b904afc78b971aa287a31c1003cd7d
 #EXTINF:-1 tvg-id="Eurosport 2" group-title="VARIOS", Eurosport 1
