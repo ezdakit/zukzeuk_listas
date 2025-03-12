@@ -2,7 +2,7 @@ import requests
 import re
 import os
 
-# Borrar el archivo canales_nuevos.txt si existe RFB
+# Borrar el archivo canales_nuevos.txt si existe
 if os.path.exists("canales_nuevos.txt"):
     os.remove("canales_nuevos.txt")
 
