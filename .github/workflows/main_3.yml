@@ -63,11 +63,11 @@ jobs:
         id: files_commit
         run: |
           git add canales.txt
-          if [ env.canales_nuevos == 'true' ]; then
+          if [ "${{ env.canales_nuevos }}" == 'true' ]; then
             git add canales_nuevos.txt
             echo "canales_nuevos.txt detected"
           fi
-          if [ env.canales_prev == 'true' ]; then
+          if [ "${{ env.canales_prev }}" == 'true' ]; then
             git add canales_prev.txt
             echo "canales_prev.txt detected"
           fi
