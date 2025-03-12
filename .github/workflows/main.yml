@@ -1,9 +1,6 @@
 name: procesar_canales
 
 on:
-  push:
-    branches:
-      - main
   schedule:
     - cron: '00 12,18 * * *'
   workflow_dispatch:
@@ -62,8 +59,8 @@ jobs:
         if: steps.changes.outputs.changes == 'true'
         run: git commit -m "Add processed M3U files"
 
-      - name: Pull cambios recientes
-        run: git pull origin main
+      #- name: Pull cambios recientes
+      #  run: git pull origin main
 
       - name: Push changes
         if: steps.changes.outputs.changes == 'true'
