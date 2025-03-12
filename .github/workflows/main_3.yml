@@ -50,7 +50,7 @@ jobs:
         id: files_commit
         run: |
           git add canales.txt canales_prev.txt
-          if: env.cambios_guia_exists == 'true'; then
+          if [ env.cambios_guia_exists == 'true' ]; then
             git add canales_nuevos.txt
           fi
           if git diff --cached --quiet; then
