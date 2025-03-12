@@ -9,6 +9,9 @@ if os.path.exists("canales_nuevos.txt"):
 # Renombrar el archivo canales.txt existente a canales_prev.txt
 if os.path.exists("canales.txt"):
     os.rename("canales.txt", "canales_prev.txt")
+else:
+    with open("canales_prev.txt", "w") as file:
+        pass  # Crear un archivo vacío
 
 # Descargar el archivo XML
 url = "https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"
