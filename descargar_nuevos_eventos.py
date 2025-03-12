@@ -8,6 +8,7 @@ import time
 import csv
 from bs4 import BeautifulSoup
 import sys
+import os
 import requests
 from urllib3.exceptions import ReadTimeoutError
 
