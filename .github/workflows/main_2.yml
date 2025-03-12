@@ -1,9 +1,6 @@
 name: procesar_eventos
 
 on:
-  push:
-    branches:
-      - main
   schedule:
     - cron: '30 15,19,23 * * *'
   workflow_dispatch:
@@ -42,8 +39,8 @@ jobs:
       - name: Commit changes
         run: git commit -m "Actualización automática de eventos" || echo "No hay cambios para confirmar"
 
-      - name: Pull cambios recientes con rebase
-        run: git pull origin main --rebase
+      #- name: Pull cambios recientes con rebase
+      #  run: git pull origin main --rebase
 
       - name: Push changes
         run: git push origin main
