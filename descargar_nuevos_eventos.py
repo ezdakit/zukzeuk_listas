@@ -11,6 +11,15 @@ import sys
 import requests
 from urllib3.exceptions import ReadTimeoutError
 
+# Función para comparar dos archivos
+def archivos_son_identicos(archivo1, archivo2):
+    try:
+        with open(archivo1, 'r') as f1, open(archivo2, 'r') as f2:
+            return f1.read() == f2.read()
+    except FileNotFoundError as e:
+        logging.error(f"Error al abrir los archivos: {e}")
+        sys.exit(1)  # Termina el script si no se pueden abrir los archivos
+
 # Configuración de logging
 logging.basicConfig(filename='debug_eventos.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -76,12 +85,19 @@ except Exception as e:
 
 try:
     # Guardar el contenido del iframe en un archivo code_iframe.txt
+        if os.path.exists("code_iframe.txt"):    # Renombrar el archivo code_iframe.txt existente a code_iframe_old.txt
+        os.rename("code_iframe.txt", "code_iframe_old.txt")
     with open('code_iframe.txt', 'w', encoding='utf-8') as file:
         file.write(iframe_html)
     logging.info("El contenido del iframe se ha guardado en 'code_iframe.txt'.")
 except Exception as e:
     logging.error(f"Error al guardar el contenido del iframe en el archivo: {e}")
     raise
+
+# Comparar los archivos antes de continuar
+if archivos_son_identicos('code_iframe.txt', 'code_iframe_old.txt'):
+    logging.info("Los archivos code_iframe.txt, code_iframe_old.txt son idénticos. Terminando el script.")
+    sys.exit(0)  # Termina el script con éxito (código 0)
 
 # Procesar el fichero code_iframe.txt para extraer información y generar el fichero eventos.csv
 try:
