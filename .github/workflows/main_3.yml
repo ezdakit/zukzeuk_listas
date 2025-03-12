@@ -35,19 +35,19 @@ jobs:
           git config user.email "actions@github.com"
 
       - name: Check for canales_nuevos.txt
-        id: check_cambios
+        id: check_cambios_guia
         run: |
           if [ -f canales_nuevos.txt ]; then
-            echo "cambios_exists=true" >> $GITHUB_ENV
+            echo "cambios_guia_exists=true" >> $GITHUB_ENV
           else
-            echo "cambios_exists=false" >> $GITHUB_ENV
+            echo "cambios_guia_exists=false" >> $GITHUB_ENV
           fi
 
-      - name: Check for changes
-        id: changes
+      - name: Add files to commit
+        id: files_commit
         run: |
           git add canales.txt canales_prev.txt
-          if [ "$GITHUB_ENV" == "cambios_exists=true" ]; then
+          if [ "$GITHUB_ENV" == "cambios_guia_exists=true" ]; then
             git add canales_nuevos.txt
           fi
           if git diff --cached --quiet; then
@@ -72,7 +72,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create issue
-        if: env.cambios_exists == 'true'
+        if: env.cambios_guia_exists == 'true'
         uses: peter-evans/create-issue-from-file@v3
         with:
           title: "Guia procesada"
