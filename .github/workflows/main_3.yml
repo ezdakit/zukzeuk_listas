@@ -32,6 +32,9 @@ jobs:
       - name: Run Python script yea
         run: python descargar_guia.py
 
+      - name: List files in directory
+        run: ls -l
+
       - name: Configurar identidad de Git
         run: |
           git config user.name "GitHub Actions"
