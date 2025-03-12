@@ -14,6 +14,10 @@ from urllib3.exceptions import ReadTimeoutError
 # Configuración de logging
 logging.basicConfig(filename='debug_eventos.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
+# Borrar el contenido del fichero de log al inicio
+with open('debug_eventos.txt', 'w'):
+    pass
+
 # URL de la página principal
 url = 'https://proxy.zeronet.dev/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie'
 
