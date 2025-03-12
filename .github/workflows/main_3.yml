@@ -42,8 +42,10 @@ jobs:
         run: |
           if [ -f canales_nuevos.txt ]; then
             echo "canales_nuevos=true" >> $GITHUB_ENV
+            echo "Hay canales nuevos"
           else
             echo "canales_nuevos=false" >> $GITHUB_ENV
+            echo "No hay canales nuevos"
           fi
 
       - name: Check for canales_prev.txt
@@ -51,8 +53,10 @@ jobs:
         run: |
           if [ -f canales_prev.txt ]; then
             echo "canales_prev=true" >> $GITHUB_ENV
+            echo "Hay canales previos"
           else
             echo "canales_prev=false" >> $GITHUB_ENV
+            echo "No hay canales previos"
           fi
 
       - name: Add files to commit
