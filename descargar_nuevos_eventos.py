@@ -7,6 +7,9 @@ import logging
 import time
 import csv
 from bs4 import BeautifulSoup
+import sys
+import requests
+from urllib3.exceptions import ReadTimeoutError
 
 # Configuración de logging
 logging.basicConfig(filename='debug_eventos.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -25,6 +28,9 @@ except cloudscraper.exceptions.CloudflareChallengeError as e:
     raise
 except requests.exceptions.RequestException as e:
     logging.error(f"La URL no está disponible o hubo un error en la solicitud: {e}")
+    sys.exit(1)  # Termina el script con un código de error
+except ReadTimeoutError as e:
+    logging.error(f"Tiempo de espera agotado: {e}")
     sys.exit(1)  # Termina el script con un código de error
 
 try:
