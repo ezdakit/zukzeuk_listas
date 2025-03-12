@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   build:
@@ -69,4 +70,4 @@ jobs:
         with:
           title: "Nuevos canales EPG"
           content-filepath: canales_nuevos.txt
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.MY_PAT_SECRET_01 }}
