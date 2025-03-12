@@ -1,0 +1,77 @@
+name: procesar_guia
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 12 * * *' # Ejecutar a las 12:00 cada día
+  workflow_dispatch:
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run Python script yea
+        run: python descargar_guia.py
+
+      - name: Configurar identidad de Git
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+
+      - name: Check for canales_nuevos.txt
+        id: check_cambios
+        run: |
+          if [ -f canales_nuevos.txt ]; then
+            echo "cambios_exists=true" >> $GITHUB_ENV
+          else
+            echo "cambios_exists=false" >> $GITHUB_ENV
+          fi
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git add canales.txt canales_prev.txt
+          if [ "$GITHUB_ENV" == "cambios_exists=true" ]; then
+            git add canales_nuevos.txt
+          fi
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            echo "::set-output name=changes::false"
+          else
+            echo "Changes detected"
+            echo "::set-output name=changes::true"
+          fi
+
+      - name: Commit changes
+        if: steps.changes.outputs.changes == 'true'
+        run: git commit -m "Add processed guide files"
+
+      - name: Push changes
+        if: steps.changes.outputs.changes == 'true'
+        run: git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create issue
+        if: env.cambios_exists == 'true'
+        uses: peter-evans/create-issue-from-file@v3
+        with:
+          title: "Guia procesada"
+          content-filepath: canales_nuevos.txt
+          token: ${{ secrets.GITHUB_TOKEN }}
