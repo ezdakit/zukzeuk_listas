@@ -62,8 +62,8 @@ jobs:
         if: steps.changes.outputs.changes == 'true'
         run: git commit -m "Add processed guide files"
 
-      - name: Pull cambios recientes con rebase
-        run: git pull origin main --rebase
+      - name: Pull cambios recientes
+        run: git pull origin main
 
       - name: Push changes
         if: steps.changes.outputs.changes == 'true'
