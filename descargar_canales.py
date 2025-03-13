@@ -195,9 +195,9 @@ try:
                 
                 # Añadir " [FHD]" o " [HD]" al nombre del canal según el valor de FHD
                 if fhd == 1:
-                    name_new_with_quality = f"{name_new} - FHD"
+                    name_new_with_quality = f"{name_new} FHD"
                 else:
-                    name_new_with_quality = f"{name_new} - HD"
+                    name_new_with_quality = f"{name_new} HD"
                 
                 m3u_file.write(f'#EXTINF:-1 tvg-id="{iptv_epg_id_new}" group-title="{iptv_group_new}", {name_new_with_quality}\n')
                 m3u_file.write(f'{iptv_url}\n')
@@ -225,9 +225,9 @@ try:
                 
                 # Añadir " [FHD]" o " [HD]" al nombre del canal según el valor de FHD
                 if fhd == 1:
-                    name_new_with_quality = f"{name_new} - FHD"
+                    name_new_with_quality = f"{name_new} FHD"
                 else:
-                    name_new_with_quality = f"{name_new} - HD"
+                    name_new_with_quality = f"{name_new} HD"
                 
                 ace_file.write(f'#EXTINF:-1 tvg-id="{iptv_epg_id_new}" group-title="{iptv_group_new}", {name_new_with_quality}\n')
                 ace_url = iptv_url.replace("http://127.0.0.1:6878/ace/getstream?id=", "acestream://")
@@ -257,9 +257,9 @@ try:
                 
                 # Añadir " [FHD]" o " [HD]" al nombre del canal según el valor de FHD
                 if fhd == 1:
-                    name_new_with_quality = f"{name_new} - FHD"
+                    name_new_with_quality = f"{name_new} FHD"
                 else:
-                    name_new_with_quality = f"{name_new} - HD"
+                    name_new_with_quality = f"{name_new} HD"
                 
                 kodi_file.write(f'#EXTINF:-1 tvg-id="{iptv_epg_id_new}" group-title="{iptv_group_new}", {name_new_with_quality}\n')
                 kodi_url = iptv_url.replace("http://127.0.0.1:6878/ace/getstream?id=", "plugin://script.module.horus?action=play&id=")
