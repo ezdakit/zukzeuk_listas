@@ -180,6 +180,9 @@ try:
             # Luego escribimos los registros con activo = 0
             for row in cursor.execute('SELECT iptv_epg_id_original, name_original, iptv_url FROM canales_iptv_temp WHERE activo = 0 ORDER BY name_original'):
                 iptv_epg_id_original, name_original, iptv_url = row
+                # Eliminar " -->" y todo el texto que le sigue en name_original
+                if " -->" in name_original:
+                    name_original = name_original.split(" -->")[0].strip()
                 m3u_file.write(f'#EXTINF:-1 tvg-id="{iptv_epg_id_original}" group-title="VARIOS", {name_original}\n')
                 m3u_file.write(f'{iptv_url}\n')
     except Exception as e:
@@ -208,6 +211,9 @@ try:
             # Luego escribimos los registros con activo = 0
             for row in cursor.execute('SELECT iptv_epg_id_original, name_original, iptv_url FROM canales_iptv_temp WHERE activo = 0 ORDER BY name_original'):
                 iptv_epg_id_original, name_original, iptv_url = row
+                # Eliminar " -->" y todo el texto que le sigue en name_original
+                if " -->" in name_original:
+                    name_original = name_original.split(" -->")[0].strip()
                 ace_file.write(f'#EXTINF:-1 tvg-id="{iptv_epg_id_original}" group-title="VARIOS", {name_original}\n')
                 ace_url = iptv_url.replace("http://127.0.0.1:6878/ace/getstream?id=", "acestream://")
                 ace_file.write(f'{ace_url}\n')
@@ -237,6 +243,9 @@ try:
             # Luego escribimos los registros con activo = 0
             for row in cursor.execute('SELECT iptv_epg_id_original, name_original, iptv_url FROM canales_iptv_temp WHERE activo = 0 ORDER BY name_original'):
                 iptv_epg_id_original, name_original, iptv_url = row
+                # Eliminar " -->" y todo el texto que le sigue en name_original
+                if " -->" in name_original:
+                    name_original = name_original.split(" -->")[0].strip()
                 kodi_file.write(f'#EXTINF:-1 tvg-id="{iptv_epg_id_original}" group-title="VARIOS", {name_original}\n')
                 kodi_url = iptv_url.replace("http://127.0.0.1:6878/ace/getstream?id=", "plugin://script.module.horus?action=play&id=")
                 kodi_file.write(f'{kodi_url}\n')
