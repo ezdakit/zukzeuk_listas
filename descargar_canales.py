@@ -97,12 +97,13 @@ try:
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         import_date TEXT,
         name_original TEXT,
+        name_new TEXT,
         iptv_epg_id_original TEXT,
         iptv_epg_id_new TEXT,
         iptv_group_original TEXT,
         iptv_group_new TEXT,
+        FHD INTEGER,
         iptv_url TEXT,
-        name_new TEXT,
         activo INTEGER DEFAULT 0
     )''')
     cursor.execute('DELETE FROM canales_iptv_temp')
