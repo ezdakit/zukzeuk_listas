@@ -158,6 +158,10 @@ try:
 
     conn.commit()
 
+    # Borrar el fichero canales_iptv_temp.csv si existe
+    if os.path.exists('canales_iptv_temp.csv'):
+        os.remove('canales_iptv_temp.csv')
+    
     # Exportar la tabla canales_iptv_temp a un archivo CSV
     try:
         with open('canales_iptv_temp.csv', 'w', encoding='utf-8', newline='') as csv_file:
