@@ -163,10 +163,20 @@ try:
         with open('zz_lista_ott.m3u', 'w', encoding='utf-8') as m3u_file:
             m3u_file.write('#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"\n')
             m3u_file.write('#EXTVLCOPT:network-caching=2000\n\n')
-            for row in cursor.execute('SELECT iptv_epg_id_new, iptv_group_new, name_new, iptv_url FROM canales_iptv_temp WHERE activo = 1 ORDER BY iptv_group_new, name_new'):
-                iptv_epg_id_new, iptv_group_new, name_new, iptv_url = row
-                m3u_file.write(f'#EXTINF:-1 tvg-id="{iptv_epg_id_new}" group-title="{iptv_group_new}", {name_new}\n')
+
+            # Primero escribimos los registros con activo = 1
+            for row in cursor.execute('SELECT iptv_epg_id_new, iptv_group_new, name_new, iptv_url, FHD FROM canales_iptv_temp WHERE activo = 1 ORDER BY iptv_group_new, name_new'):
+                iptv_epg_id_new, iptv_group_new, name_new, iptv_url, fhd = row
+                
+                # Añadir " [FHD]" o " [HD]" al nombre del canal según el valor de FHD
+                if fhd == 1:
+                    name_new_with_quality = f"{name_new} [FHD]"
+                else:
+                    name_new_with_quality = f"{name_new} [HD]"
+                
+                m3u_file.write(f'#EXTINF:-1 tvg-id="{iptv_epg_id_new}" group-title="{iptv_group_new}", {name_new_with_quality}\n')
                 m3u_file.write(f'{iptv_url}\n')
+            
             # Luego escribimos los registros con activo = 0
             for row in cursor.execute('SELECT iptv_epg_id_original, name_original, iptv_url FROM canales_iptv_temp WHERE activo = 0 ORDER BY name_original'):
                 iptv_epg_id_original, name_original, iptv_url = row
