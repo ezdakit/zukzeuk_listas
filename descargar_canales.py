@@ -158,6 +158,27 @@ try:
 
     conn.commit()
 
+    # Exportar la tabla canales_iptv_temp a un archivo CSV
+    try:
+        with open('canales_iptv_temp.csv', 'w', encoding='utf-8', newline='') as csv_file:
+            csv_writer = csv.writer(csv_file, delimiter=';')
+            
+            # Escribir la cabecera del CSV
+            cursor.execute("PRAGMA table_info(canales_iptv_temp)")
+            columns = cursor.fetchall()
+            header = [column[1] for column in columns]  # Obtener los nombres de las columnas
+            csv_writer.writerow(header)
+            
+            # Escribir los datos de la tabla
+            cursor.execute("SELECT * FROM canales_iptv_temp")
+            rows = cursor.fetchall()
+            for row in rows:
+                csv_writer.writerow(row)
+        logging.info("Se ha exportado la tabla canales_iptv_temp a canales_iptv_temp.csv")
+    except Exception as e:
+        logging.error(f"Error al exportar la tabla canales_iptv_temp a CSV: {e}")
+
+
     # Generar el archivo zz_lista_ott.m3u
     try:
         with open('zz_lista_ott.m3u', 'w', encoding='utf-8') as m3u_file:
