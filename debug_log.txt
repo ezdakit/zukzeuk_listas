@@ -1,409 +1,208 @@
-2025-03-13 13:34:42,624 - DEBUG - Starting new HTTPS connection (1): proxy.zeronet.dev:443
-2025-03-13 13:34:43,223 - DEBUG - https://proxy.zeronet.dev:443 "GET /1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u HTTP/1.1" 200 48660
-2025-03-13 13:34:43,350 - INFO - Se encontraron 202 líneas nuevas en el archivo M3U.
-2025-03-13 13:34:43,350 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" tvg-id="M+ Vamos HD" group-title="MOVISTAR", #VAMOS FHD --> NEW ERA II
-2025-03-13 13:34:43,350 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" tvg-id="M+ Vamos HD" group-title="MOVISTAR", #VAMOS ELLAS  FHD --> NEW ERA II
-2025-03-13 13:34:43,350 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" tvg-id="DAZN F1 HD" group-title="FORMULA 1", DAZN F1 FHD --> NEW ERA II
-2025-03-13 13:34:43,350 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/CBdGc9f/hypermotion1.png" tvg-id="LaLiga TV Hypermotion HD" group-title="HYPERMOTION", LALIGA HYPERMOTION TV FHD --> NEW ERA II
-2025-03-13 13:34:43,350 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/r2Yd7xD/euro1.png" tvg-id="Eurosport 1 HD" group-title="EUROSPORT", EUROSPORT 2 FHD --> NEW ERA II
-2025-03-13 13:34:43,350 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="" tvg-id="" group-title="OTROS", M+ COMEDIA FHD --> NEW ERA II
-2025-03-13 13:34:43,350 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="" tvg-id="" group-title="OTROS", FOX FHD --> NEW ERA II
-2025-03-13 13:34:43,350 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Mega.png" tvg-id="Mega" group-title="OTROS", MEGA FHD --> NEW ERA II
-2025-03-13 13:34:43,350 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Canal%20Hollywood.png" tvg-id="Canal Hollywood HD" group-title="OTROS", HOLLYWOOD FHD --> NEW ERA II
-2025-03-13 13:34:43,350 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="" tvg-id="" group-title="OTROS", WINTER SERIES ARAGON --> NEW ERA II
-2025-03-13 13:34:43,350 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="" tvg-id="" group-title="OTROS", TWITCH HIKKI360ES --> NEW ERA II
-2025-03-13 13:34:43,350 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%202.png" tvg-id="M+ Liga de Campeones 2 HD" group-title="LIGA DE CAMPEONES", M.L. CAMPEONES 2
-2025-03-13 13:34:43,350 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/hFYPWbpJ/plus.png" tvg-id="Movistar Plus+ HD" group-title="MOVISTAR", MOVISTAR PLUS
-2025-03-13 13:34:43,350 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/CV4CLjz/deportes.png" tvg-id="M+ Deportes HD" group-title="MOVISTAR", M DEPORTES
-2025-03-13 13:34:43,350 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/CV4CLjz/deportes.png" tvg-id="M+ Deportes HD" group-title="MOVISTAR", M DEPORTES
-2025-03-13 13:34:43,350 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/q95fBKV/deportes2.png" tvg-id="M+ Deportes 2 HD" group-title="MOVISTAR", M DEPORTES 2
-2025-03-13 13:34:43,350 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/deportes-5-por-movistar-plus-es.png" tvg-id="M+ Deportes 5" group-title="MOVISTAR", M DEPORTES 5
-2025-03-13 13:34:43,350 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/deportes-6-por-movistar-plus-es.png" tvg-id="M+ Deportes 6" group-title="MOVISTAR", M DEPORTES 6
-2025-03-13 13:34:43,350 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/deportes-7-por-movistar-plus-es.png" tvg-id="M+ Deportes 7" group-title="MOVISTAR", M DEPORTES 7
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/FVzKq1y/dazn1.png" tvg-id="DAZN 1 HD" group-title="DAZN", DAZN 1
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/Kz0GXSX/dazn2.png" tvg-id="DAZN 2 HD" group-title="DAZN", DAZN 2
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/Kz0GXSX/dazn2.png" tvg-id="DAZN 2 HD" group-title="DAZN", DAZN 2
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" tvg-id="M+ Vamos HD" group-title="MOVISTAR", M #VAMOS
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" tvg-id="M+ Vamos HD" group-title="MOVISTAR", M #VAMOS
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/m54QH9Gt/copa.png" tvg-id="M+ Copa del Rey" group-title="COPA DEL REY", Copa del Rey
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/r2Yd7xD/euro1.png" tvg-id="Eurosport 1 HD" group-title="EUROSPORT", EuroSport
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" tvg-id="DAZN F1 HD" group-title="FORMULA 1", DAZN F1 1080 (Fórmula 1)
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" tvg-id="DAZN F1 HD" group-title="FORMULA 1", DAZN F1 1080 (Fórmula 1)
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" tvg-id="DAZN F1 HD" group-title="FORMULA 1", DAZN F1 1080 (Fórmula 1)
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" tvg-id="DAZN F1 HD" group-title="FORMULA 1", DAZN F1 720 (Fórmula 1)
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" tvg-id="M+ LaLiga TV HD" group-title="LA LIGA", M. LaLiga 1080P
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" tvg-id="M+ LaLiga TV HD" group-title="LA LIGA", M. LaLiga 1080 MultiAudio
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" tvg-id="M+ LaLiga TV HD" group-title="LA LIGA", M. LaLiga 1080 MultiAudio
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" tvg-id="M+ LaLiga TV HD" group-title="LA LIGA", M. LaLiga 720
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/Tc97zSb/liga2.png" tvg-id="M+ LaLiga TV 2 HD" group-title="LA LIGA", M. LaLiga 2 1080
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/Tc97zSb/liga2.png" tvg-id="M+ LaLiga TV 2 HD" group-title="LA LIGA", M. LaLiga 2 720
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/BZF0xG9/liga3.png" tvg-id="M+ LaLiga TV 3 HD" group-title="LA LIGA", M. LaLiga 3 1080
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/BZF0xG9/liga3.png" tvg-id="M+ LaLiga TV 3 HD" group-title="LA LIGA", M. LaLiga 3 720
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/laliga-tv-4-por-movistar-plus-es.png" tvg-id="M+ LaLiga TV 4" group-title="LA LIGA", M. LaLiga 4 1080
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://comunidad.orange.es/waykc66935/attachments/waykc66935/futbol-series-cine/3971/339/LL_TV_BAR_NEG.png" tvg-id="LaLiga TV BAR HD" group-title="LA LIGA", La Liga BAR 1080
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://comunidad.orange.es/waykc66935/attachments/waykc66935/futbol-series-cine/3971/339/LL_TV_BAR_NEG.png" tvg-id="LaLiga TV BAR HD" group-title="LA LIGA", La Liga BAR 1080
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png" tvg-id="DAZN LaLiga HD" group-title="LA LIGA", DAZN LaLiga 1080 MultiAudio
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png" tvg-id="DAZN LaLiga HD" group-title="LA LIGA", DAZN LaLiga 1080 MultiAudio
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png" tvg-id="DAZN LaLiga HD" group-title="LA LIGA", DAZN LaLiga 1080 MultiAudio
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png" tvg-id="DAZN LaLiga HD" group-title="LA LIGA", DAZN LaLiga 720
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-2-es.png" tvg-id="DAZN LaLiga 2 HD" group-title="LA LIGA", DAZN LaLiga 2 1080 MultiAudio
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-2-es.png" tvg-id="DAZN LaLiga 2 HD" group-title="LA LIGA", DAZN LaLiga 2 720 MultiAudio
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/CBdGc9f/hypermotion1.png" tvg-id="LaLiga TV Hypermotion HD" group-title="HYPERMOTION", LaLiga HYPERMOTION 1080
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/CBdGc9f/hypermotion1.png" tvg-id="LaLiga TV Hypermotion HD" group-title="HYPERMOTION", LaLiga HYPERMOTION 720
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/8K0VrQV/hypermotion2.png" tvg-id="LaLiga TV Hypermotion 2" group-title="HYPERMOTION", LaLiga HYPERMOTION 2 1080
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/8K0VrQV/hypermotion2.png" tvg-id="LaLiga TV Hypermotion 2" group-title="HYPERMOTION", LaLiga HYPERMOTION 2 720
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/826y2Yv/Hypermotion3.png" tvg-id="LaLiga TV Hypermotion 3" group-title="HYPERMOTION", LaLiga HYPERMOTION 3
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/FVzKq1y/dazn1.png" tvg-id="DAZN 1 HD" group-title="DAZN", DAZN 1 FHD --> NEW ERA
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" tvg-id="DAZN F1 HD" group-title="FORMULA 1", DAZN F1 FHD --> NEW ERA
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/DAZN%201%20BAR.png" tvg-id="DAZN 1 BAR" group-title="DAZN", DAZN 1 BAR FHD --> NEW ERA
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/DAZN%202%20BAR.png" tvg-id="DAZN 2 BAR" group-title="DAZN", DAZN 2 BAR FHD --> NEW ERA
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" tvg-id="DAZN F1 HD" group-title="FORMULA 1", DAZN F1 FHD (SAT) --> NEW ERA
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://static.motor.es/f1/fichas/contenido/fernando-alonso/min280x180/fernando-alonso2024_1708675566.jpg" tvg-id="" group-title="ONBOARDS F1", F1 TV 14 | Fernando Alonso | Aston Martin --> NEW ERA
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://static.motor.es/f1/fichas/contenido/carlos-sainz/min280x180/carlos-sainz2024_1708674925.jpg" tvg-id="" group-title="ONBOARDS F1", F1 TV 55 | Carlos Sainz | Williams --> NEW ERA
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://imgfz.com/i/4qpD71u.png" tvg-id="" group-title="MGPTV", MGPTV | Camara de a bordo 1 --> NEW ERA
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://imgfz.com/i/4qpD71u.png" tvg-id="" group-title="MGPTV", MGPTV | Camara de a bordo 2 --> NEW ERA
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://imgfz.com/i/4qpD71u.png" tvg-id="" group-title="MGPTV", MGPTV | Camara de a bordo 3 --> NEW ERA
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://imgfz.com/i/4qpD71u.png" tvg-id="" group-title="MGPTV", MGPTV | Camara de a bordo 4 --> NEW ERA
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/FVzKq1y/dazn1.png" tvg-id="" group-title="EVENTOS", DAZN EVENTOS 1 --> NEW ERA
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/Kz0GXSX/dazn2.png" tvg-id="" group-title="EVENTOS", DAZN EVENTOS 2 --> NEW ERA
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/2vkThM3/dazn3.png" tvg-id="" group-title="EVENTOS", DAZN EVENTOS 3 --> NEW ERA
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Bundesliga_logo_%282017%29.svg/180px-Bundesliga_logo_%282017%29.svg.png" tvg-id="" group-title="BUNDESLIGA", DAZN BUNDESLIGA 1 FHD --> NEW ERA
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/2._Bundesliga_logo.svg/170px-2._Bundesliga_logo.svg.png" tvg-id="" group-title="BUNDESLIGA", DAZN BUNDESLIGA 2 FHD --> NEW ERA
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/3._Liga_logo_%282019%29.svg/200px-3._Liga_logo_%282019%29.svg.png" tvg-id="" group-title="BUNDESLIGA", DAZN BUNDESLIGA 3 FHD --> NEW ERA
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://assets.laliga.com/assets/2023/07/13/medium/60e1502d7d6098162828bb002e98bdb4.png" tvg-id="GOL PLAY" group-title="TDT", Gol Play FHD --> NEW ERA
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/fb9dbDW/tdp.png" tvg-id="La 1 HD" group-title="TDT", Teledeporte FHD --> NEW ERA
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/FVzKq1y/dazn1.png" tvg-id="DAZN 1 HD" group-title="DAZN", DAZN 1 FHD (SAT) --> NEW ERA
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/Vp04N3pT/golf.png" tvg-id="M+ Golf HD" group-title="MOVISTAR", MOVISTAR GOLF FHD --> NEW ERA
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/BHXHhN2b/M-Golf-2.png" tvg-id="M+ Golf 2 HD" group-title="MOVISTAR", MOVISTAR GOLF 2 FHD --> NEW ERA
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/rGVmRcSH/hits.png" tvg-id="M+ Hits HD" group-title="MOVISTAR", MOVISTAR SERIES FHD --> NEW ERA
-2025-03-13 13:34:43,351 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/JWpf4FcM/clasicos.png" tvg-id="M+ Clásicos HD" group-title="MOVISTAR", MOVISTAR CLASICOS FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png" tvg-id="M+ Liga de Campeones HD" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES FHD (1 opcion) --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png" tvg-id="M+ Liga de Campeones HD" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES FHD (2 opcion) --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png" tvg-id="M+ Liga de Campeones HD" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png" tvg-id="M+ Liga de Campeones HD" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES FHD (SAT) --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%202.png" tvg-id="M+ Liga de Campeones 2 HD" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES 2 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%202.png" tvg-id="M+ Liga de Campeones 2 HD" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES 2 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%203.png" tvg-id="M+ Liga de Campeones 3 HD" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES 3 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%204.png" tvg-id="M+ Liga de Campeones 4" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES 4 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%205.png" tvg-id="M+ Liga de Campeones 5" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES 5 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%206.png" tvg-id="M+ Liga de Campeones 6" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES 6 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%207.png" tvg-id="M+ Liga de Campeones 7" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES 7 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%208.png" tvg-id="M+ Liga de Campeones 8" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES 8 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%209.png" tvg-id="M+ Liga de Campeones 9" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES 9 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%2010.png" tvg-id="M+ Liga de Campeones 10" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES 10 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%2011.png" tvg-id="M+ Liga de Campeones 11" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES 11 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%2012.png" tvg-id="M+ Liga de Campeones 12" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES 12 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%2013.png" tvg-id="M+ Liga de Campeones 13" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES 13 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%2014.png" tvg-id="M+ Liga de Campeones 14" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES 14 SD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%2015.png" tvg-id="M+ Liga de Campeones 15" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES 15 SD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%2016.png" tvg-id="M+ Liga de Campeones 16" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES 16 SD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%2018.png" tvg-id="M+ Liga de Campeones 17" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES 17 SD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/m54QH9Gt/copa.png" tvg-id="M+ Copa del Rey" group-title="COPA DEL REY", M+ Super Copa (SAT) --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/m54QH9Gt/copa.png" tvg-id="M+ Copa del Rey" group-title="COPA DEL REY", M+ Super Copa --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/m54QH9Gt/copa.png" tvg-id="M+ Copa del Rey" group-title="COPA DEL REY", M+ SuperCopa del Rey FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" tvg-id="DAZN F1 HD" group-title="FORMULA 1", DAZN F1 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/FVzKq1y/dazn1.png" tvg-id="DAZN 1 HD" group-title="DAZN", DAZN 1 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/Kz0GXSX/dazn2.png" tvg-id="DAZN 2 HD" group-title="DAZN", DAZN 2 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/2vkThM3/dazn3.png" tvg-id="DAZN 3 HD" group-title="DAZN", DAZN 3 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/R4LBVWP/dazn4.png" tvg-id="DAZN 4 HD" group-title="DAZN", DAZN 4 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" tvg-id="M+ Vamos HD" group-title="MOVISTAR", #VAMOS FHD (SAT) --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" tvg-id="M+ Vamos HD" group-title="MOVISTAR", #VAMOS FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" tvg-id="M+ Vamos HD" group-title="MOVISTAR", #VAMOS ELLAS  FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/r2Yd7xD/euro1.png" tvg-id="Eurosport 1 HD" group-title="EUROSPORT", EUROSPORT 1 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/r2Yd7xD/euro1.png" tvg-id="Eurosport 1 HD" group-title="EUROSPORT", EUROSPORT 1 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/r2Yd7xD/euro1.png" tvg-id="Eurosport 1 HD" group-title="EUROSPORT", EUROSPORT 2 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/CV4CLjz/deportes.png" tvg-id="M+ Deportes HD" group-title="MOVISTAR", M+ DEPORTES FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/q95fBKV/deportes2.png" tvg-id="M+ Deportes 2 HD" group-title="MOVISTAR", M+ DEPORTES 2 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/JWpf4FcM/clasicos.png" tvg-id="M+ Clásicos HD" group-title="MOVISTAR", M+ ACCION FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/gL8rx1B7/plus2.png" tvg-id="Movistar Plus+ 2 HD" group-title="MOVISTAR", M+ PLUS 2 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/jDg5qWD/deportes3.png" tvg-id="M+ Deportes 3" group-title="MOVISTAR", M+ DEPORTES 3 FHD  --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/WDN9NN9/deportes4.png" tvg-id="M+ Deportes 4" group-title="MOVISTAR", M+ DEPORTES 4 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/deportes-5-por-movistar-plus-es.png" tvg-id="M+ Deportes 5" group-title="MOVISTAR", M+ DEPORTES 5 HD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="" tvg-id="" group-title="OTROS", UFC Fight Pass --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="" tvg-id="" group-title="OTROS", NBA TV --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="" tvg-id="" group-title="OTROS", NBA NETWORK --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/Vf2GT70/la1.png" tvg-id="La 1 HD" group-title="TDT", LA 1 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/YFzzqWw5/la2.png" tvg-id="La 2" group-title="TDT", LA 2 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/qFgSG92W/antena3.png" tvg-id="Antena 3 HD" group-title="TDT", ANTENA 3 FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/C3yh66tp/cuatro.png" tvg-id="Cuatro HD" group-title="TDT", CUATRO FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/81wJ3GH/telecinco.png" tvg-id="Telecinco HD" group-title="TDT", TELECINCO FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/SX1jhBzy/lasexta.png" tvg-id="La Sexta HD" group-title="TDT", LA SEXTA FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/hFYPWbpJ/plus.png" tvg-id="Movistar Plus+ HD" group-title="MOVISTAR", M+ PLUS FHD --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/DAZN%201%20BAR.png" tvg-id="DAZN 1 BAR" group-title="DAZN", DAZN 1 BAR FHD (*) --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" tvg-id="DAZN F1 HD" group-title="FORMULA 1", DAZN F1 FHD (*) --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/FVzKq1y/dazn1.png" tvg-id="DAZN 1 HD" group-title="DAZN", DAZN 1 FHD (*) --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/Kz0GXSX/dazn2.png" tvg-id="DAZN 2 HD" group-title="DAZN", DAZN 2 FHD (*) --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/2vkThM3/dazn3.png" tvg-id="DAZN 3 HD" group-title="DAZN", DAZN 3 FHD (*) --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/R4LBVWP/dazn4.png" tvg-id="DAZN 4 HD" group-title="DAZN", DAZN 4 FHD (*) --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png" tvg-id="M+ Liga de Campeones HD" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES FHD (*) --> NEW ERA
-2025-03-13 13:34:43,352 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png" tvg-id="M+ Liga de Campeones HD" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES FHD (*) --> NEW ERA
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%202.png" tvg-id="M+ Liga de Campeones 2 HD" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES 2 FHD (*) --> NEW ERA
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%202.png" tvg-id="M+ Liga de Campeones 2 HD" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES 2 FHD (*) --> NEW ERA
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%203.png" tvg-id="M+ Liga de Campeones 3 HD" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES 3 FHD (*) --> NEW ERA
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%203.png" tvg-id="M+ Liga de Campeones 3 HD" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES 3 FHD (*) --> NEW ERA
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%204.png" tvg-id="M+ Liga de Campeones 4" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES 4 FHD (*) --> NEW ERA
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%205.png" tvg-id="M+ Liga de Campeones 5" group-title="LIGA DE CAMPEONES", M+ LIGA DE CAMPEONES 5 FHD (*) --> NEW ERA
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/CV4CLjz/deportes.png" tvg-id="M+ Deportes HD" group-title="MOVISTAR", M+ DEPORTES FHD (*) --> NEW ERA
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/CV4CLjz/deportes.png" tvg-id="M+ Deportes HD" group-title="MOVISTAR", M+ DEPORTES FHD 2 (*) --> NEW ERA
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" tvg-id="M+ Vamos HD" group-title="MOVISTAR", #VAMOS FHD (*) --> NEW ERA
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="" tvg-id="" group-title="OTROS", EVENTO UFC 1 —> NEW ERA
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="" tvg-id="" group-title="OTROS", ONETORO* --> NEW ERA III
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/CV4CLjz/deportes.png" tvg-id="M+ Deportes HD" group-title="MOVISTAR", M. Deportes HD --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/Vp04N3pT/golf.png" tvg-id="M+ Golf HD" group-title="MOVISTAR", M. Golf HD --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" tvg-id="M+ LaLiga TV HD" group-title="LA LIGA", M. LaLiga --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" tvg-id="M+ LaLiga TV HD" group-title="LA LIGA", M. LaLiga --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png" tvg-id="M+ Liga de Campeones HD" group-title="LIGA DE CAMPEONES", M. Liga de Campeones --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png" tvg-id="M+ Liga de Campeones HD" group-title="LIGA DE CAMPEONES", M. Liga de Campeones --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/FVzKq1y/dazn1.png" tvg-id="DAZN 1 HD" group-title="DAZN", DAZN1 --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/Kz0GXSX/dazn2.png" tvg-id="DAZN 2 HD" group-title="DAZN", DAZN2 --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/2vkThM3/dazn3.png" tvg-id="DAZN 3 HD" group-title="DAZN", DAZN3 --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/R4LBVWP/dazn4.png" tvg-id="DAZN 4 HD" group-title="DAZN", DAZN4 --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/r2Yd7xD/euro1.png" tvg-id="Eurosport 1 HD" group-title="EUROSPORT", Eurosport 1 HD --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/r2Yd7xD/euro1.png" tvg-id="Eurosport 1 HD" group-title="EUROSPORT", Eurosport 1 hd --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://tvprofil.com/img/kanali-logo/Sky_Sports_Arena_GB_logo.png?1734015005" tvg-id="UK | Sky Sport Arena" group-title="OTROS", Sky Sports Arena [UK] --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://pbs.twimg.com/profile_images/1605139019741929472/RWr7BPxn_200x200.jpg" tvg-id="UK | Sky Sport Cricket" group-title="OTROS", Sky Sports Cricket [UK] --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://tvprofil.com/img/kanali-logo/Sky_Sports_Football_GB_logo.png?1734015024" tvg-id="UK | Sky Sport Football" group-title="FUTBOL INT", Sky Sports Football [UK] --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://tvprofil.com/img/kanali-logo/Sky_Sports_Main_Event_GB_logo.png?1734014539" tvg-id="UK | Sky Sport Main Event" group-title="FUTBOL INT", Sky Sports Main Event [UK] --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-l/3ee9eef4eb12ec1b3e26049e79a43606.webp" tvg-id="" group-title="MOTOR", Canal Motor (720p) --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://www.mxgp.com/sites/default/files/news/image/logo%20Motors%20TV.jpg" tvg-id="" group-title="MOTOR", Motors TV HD --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://cdn.broadbandtvnews.com/wp-content/uploads/2015/10/14120627/Motorvision-TV.png" tvg-id="" group-title="MOTOR", Motorvision TV --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://www.mxgp.com/sites/default/files/news/image/logo%20Motors%20TV.jpg" tvg-id="" group-title="MOTOR", Retrovision Motor --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="" tvg-id="" group-title="OTROS", SuperTennis HD --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Tennis%20Channel.png" tvg-id="Tennis Channel" group-title="OTROS", Tennis Channel HD --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/TNT%20Sports%201.png" tvg-id="UK | TNT Sports 1" group-title="FUTBOL INT", BT Sport / ESPN [UK] --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://tvgidsassets.nl/v354/img/channels/120x120/468.png" tvg-id="ESPN.2.nl" group-title="FUTBOL INT", ESPN 2 [BE] --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://tvgidsassets.nl/v354/img/channels/120x120/470.png" tvg-id="ESPN.4.nl" group-title="FUTBOL INT", ESPN 4 [BE] --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/ESPN.png" tvg-id="ESPN" group-title="FUTBOL INT", ESPN HD [US] --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://tvgidsassets.nl/v354/img/channels/120x120/148.png" tvg-id="ESPN.1.nl" group-title="FUTBOL INT", ESPN [BE] --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/ESPN%202.png" tvg-id="ESPN 2" group-title="FUTBOL INT", ESPN2 [US] --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/beIN%20SPORTS%201.png" tvg-id="FR | beIN SPORTS 1" group-title="FUTBOL INT", BeIN Sports 1 [BE] --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/beIN%20SPORTS%202.png" tvg-id="FR | beIN SPORTS 2" group-title="FUTBOL INT", BeIN Sports 2 [BE] --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/beIN%20SPORTS%203.png" tvg-id="FR | beIN SPORTS 3" group-title="FUTBOL INT", BeIN Sports 3 [BE] --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Bein_Sport_en_espa%C3%B1ol_logo.svg/320px-Bein_Sport_en_espa%C3%B1ol_logo.svg.png" tvg-id="beIN SPORTS XTRA ñ" group-title="FUTBOL INT", BeinSportsXtraÑ --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/10xGrD4/Premier1.png" tvg-id="UK | Premier Sports 1" group-title="FUTBOL INT", Premier Sports 1 [UK] --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/10xGrD4/Premier2.png" tvg-id="UK | Premier Sports 2" group-title="FUTBOL INT", Premier Sports 2 [UK] --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/DAZN%201.png" tvg-id="PT | DAZN 1" group-title="FUTBOL INT", Eleven Sports 1 [BE] --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/DAZN%202.png" tvg-id="PT | DAZN 2" group-title="FUTBOL INT", Eleven Sports 2 [BE] --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/DAZN%203.png" tvg-id="PT | DAZN 3" group-title="FUTBOL INT", Eleven Sports 3 [BE] --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/DAZN%204.png" tvg-id="PT | DAZN 4" group-title="FUTBOL INT", Eleven Sports 4 [BE] --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/DAZN%205.png" tvg-id="PT | DAZN 5" group-title="FUTBOL INT", Eleven Sports 5 [BE] --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/DAZN%206.png" tvg-id="PT | DAZN 6" group-title="FUTBOL INT", Eleven Sports 6 [BE] --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/TNT%20Sports%201.png" tvg-id="UK | TNT Sports 1" group-title="FUTBOL INT", BT Sport / ESPN [UK] --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/TNT%20Sports%201.png" tvg-id="UK | TNT Sports 1" group-title="FUTBOL INT", BT Sport 1 [UK] --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/TNT%20Sports%202.png" tvg-id="UK | TNT Sports 2" group-title="FUTBOL INT", BT Sport 2 [UK] --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/TNT%20Sports%203.png" tvg-id="UK | TNT Sports 3" group-title="FUTBOL INT", BT Sport 3 [UK] --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://tvgidsassets.nl/v354/img/channels/120x120/99.png" tvg-id="Ziggo.Sport.nl" group-title="FUTBOL INT", Ziggo Sport --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://tvgidsassets.nl/v354/img/channels/120x120/474.png" tvg-id="Ziggo.Sport.2.nl" group-title="FUTBOL INT", Ziggo Sport 2 --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://tvgidsassets.nl/v354/img/channels/120x120/419.png" tvg-id="Ziggo.Sport.6.nl" group-title="FUTBOL INT", Ziggo Sport 6 --> NEW LOOP
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://assets.laliga.com/assets/2023/07/13/medium/60e1502d7d6098162828bb002e98bdb4.png" tvg-id="GOL PLAY" group-title="TDT", GOL PLAY --> NEW ERA IV
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/r2Yd7xD/euro1.png" tvg-id="Eurosport 1 HD" group-title="EUROSPORT", EUROSPORT 1 --> NEW ERA IV
-2025-03-13 13:34:43,353 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/r2Yd7xD/euro1.png" tvg-id="Eurosport 1 HD" group-title="EUROSPORT", EUROSPORT 2 --> NEW ERA IV
-2025-03-13 13:34:43,354 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" tvg-id="M+ Vamos HD" group-title="MOVISTAR", M+ Vamos --> NEW ERA IV
-2025-03-13 13:34:43,354 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="" tvg-id="" group-title="OTROS", Discovery Channel --> NEW ERA IV
-2025-03-13 13:34:43,354 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="" tvg-id="" group-title="OTROS", MAX UFC PPV --> NEW ERA IV
-2025-03-13 13:34:43,354 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/df/Logo_Primera_RFEF_2021.png/revision/latest?cb=20230620215900&path-prefix=es" tvg-id="Canal 1 (1RFEF)" group-title="1RFEF", Canal 1 (1RFEF)  --> NEW ERA V
-2025-03-13 13:34:43,354 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/df/Logo_Primera_RFEF_2021.png/revision/latest?cb=20230620215900&path-prefix=es" tvg-id="Canal 1 (1RFEF)" group-title="1RFEF", Canal 2 (1RFEF)  --> NEW ERA V
-2025-03-13 13:34:43,360 - INFO - Número total de líneas en el archivo M3U: 407
-2025-03-13 13:34:43,361 - INFO - Procesando canal: #VAMOS FHD --> NEW ERA II
-2025-03-13 13:34:43,361 - INFO - Procesando canal: #VAMOS ELLAS  FHD --> NEW ERA II
-2025-03-13 13:34:43,361 - INFO - Procesando canal: DAZN F1 FHD --> NEW ERA II
-2025-03-13 13:34:43,361 - INFO - Procesando canal: LALIGA HYPERMOTION TV FHD --> NEW ERA II
-2025-03-13 13:34:43,361 - INFO - Procesando canal: EUROSPORT 2 FHD --> NEW ERA II
-2025-03-13 13:34:43,361 - INFO - Procesando canal: M+ COMEDIA FHD --> NEW ERA II
-2025-03-13 13:34:43,361 - INFO - Procesando canal: FOX FHD --> NEW ERA II
-2025-03-13 13:34:43,361 - INFO - Procesando canal: MEGA FHD --> NEW ERA II
-2025-03-13 13:34:43,361 - INFO - Procesando canal: HOLLYWOOD FHD --> NEW ERA II
-2025-03-13 13:34:43,361 - INFO - Procesando canal: WINTER SERIES ARAGON --> NEW ERA II
-2025-03-13 13:34:43,361 - INFO - Procesando canal: TWITCH HIKKI360ES --> NEW ERA II
-2025-03-13 13:34:43,361 - INFO - Procesando canal: M.L. CAMPEONES 2
-2025-03-13 13:34:43,361 - INFO - Procesando canal: MOVISTAR PLUS
-2025-03-13 13:34:43,361 - INFO - Procesando canal: M DEPORTES
-2025-03-13 13:34:43,361 - INFO - Procesando canal: M DEPORTES
-2025-03-13 13:34:43,361 - INFO - Procesando canal: M DEPORTES 2
-2025-03-13 13:34:43,361 - INFO - Procesando canal: M DEPORTES 5
-2025-03-13 13:34:43,361 - INFO - Procesando canal: M DEPORTES 6
-2025-03-13 13:34:43,361 - INFO - Procesando canal: M DEPORTES 7
-2025-03-13 13:34:43,361 - INFO - Procesando canal: DAZN 1
-2025-03-13 13:34:43,361 - INFO - Procesando canal: DAZN 2
-2025-03-13 13:34:43,361 - INFO - Procesando canal: DAZN 2
-2025-03-13 13:34:43,361 - INFO - Procesando canal: M #VAMOS
-2025-03-13 13:34:43,362 - INFO - Procesando canal: M #VAMOS
-2025-03-13 13:34:43,362 - INFO - Procesando canal: COPA DEL REY
-2025-03-13 13:34:43,362 - INFO - Procesando canal: EUROSPORT
-2025-03-13 13:34:43,362 - INFO - Procesando canal: DAZN F1 1080 (FRMULA 1)
-2025-03-13 13:34:43,362 - INFO - Procesando canal: DAZN F1 1080 (FRMULA 1)
-2025-03-13 13:34:43,362 - INFO - Procesando canal: DAZN F1 1080 (FRMULA 1)
-2025-03-13 13:34:43,362 - INFO - Procesando canal: DAZN F1 720 (FRMULA 1)
-2025-03-13 13:34:43,362 - INFO - Procesando canal: M. LALIGA 1080P
-2025-03-13 13:34:43,362 - INFO - Procesando canal: M. LALIGA 1080 MULTIAUDIO
-2025-03-13 13:34:43,362 - INFO - Procesando canal: M. LALIGA 1080 MULTIAUDIO
-2025-03-13 13:34:43,362 - INFO - Procesando canal: M. LALIGA 720
-2025-03-13 13:34:43,362 - INFO - Procesando canal: M. LALIGA 2 1080
-2025-03-13 13:34:43,362 - INFO - Procesando canal: M. LALIGA 2 720
-2025-03-13 13:34:43,362 - INFO - Procesando canal: M. LALIGA 3 1080
-2025-03-13 13:34:43,362 - INFO - Procesando canal: M. LALIGA 3 720
-2025-03-13 13:34:43,362 - INFO - Procesando canal: M. LALIGA 4 1080
-2025-03-13 13:34:43,362 - INFO - Procesando canal: LA LIGA BAR 1080
-2025-03-13 13:34:43,362 - INFO - Procesando canal: LA LIGA BAR 1080
-2025-03-13 13:34:43,362 - INFO - Procesando canal: DAZN LALIGA 1080 MULTIAUDIO
-2025-03-13 13:34:43,362 - INFO - Procesando canal: DAZN LALIGA 1080 MULTIAUDIO
-2025-03-13 13:34:43,362 - INFO - Procesando canal: DAZN LALIGA 1080 MULTIAUDIO
-2025-03-13 13:34:43,362 - INFO - Procesando canal: DAZN LALIGA 720
-2025-03-13 13:34:43,362 - INFO - Procesando canal: DAZN LALIGA 2 1080 MULTIAUDIO
-2025-03-13 13:34:43,362 - INFO - Procesando canal: DAZN LALIGA 2 720 MULTIAUDIO
-2025-03-13 13:34:43,362 - INFO - Procesando canal: LALIGA HYPERMOTION 1080
-2025-03-13 13:34:43,362 - INFO - Procesando canal: LALIGA HYPERMOTION 720
-2025-03-13 13:34:43,362 - INFO - Procesando canal: LALIGA HYPERMOTION 2 1080
-2025-03-13 13:34:43,363 - INFO - Procesando canal: LALIGA HYPERMOTION 2 720
-2025-03-13 13:34:43,363 - INFO - Procesando canal: LALIGA HYPERMOTION 3
-2025-03-13 13:34:43,363 - INFO - Procesando canal: DAZN 1 FHD --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: DAZN F1 FHD --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: DAZN 1 BAR FHD --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: DAZN 2 BAR FHD --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: DAZN F1 FHD (SAT) --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: F1 TV 14 | FERNANDO ALONSO | ASTON MARTIN --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: F1 TV 55 | CARLOS SAINZ | WILLIAMS --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: MGPTV | CAMARA DE A BORDO 1 --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: MGPTV | CAMARA DE A BORDO 2 --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: MGPTV | CAMARA DE A BORDO 3 --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: MGPTV | CAMARA DE A BORDO 4 --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: DAZN EVENTOS 1 --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: DAZN EVENTOS 2 --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: DAZN EVENTOS 3 --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: DAZN BUNDESLIGA 1 FHD --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: DAZN BUNDESLIGA 2 FHD --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: DAZN BUNDESLIGA 3 FHD --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: GOL PLAY FHD --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: TELEDEPORTE FHD --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: DAZN 1 FHD (SAT) --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: MOVISTAR GOLF FHD --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: MOVISTAR GOLF 2 FHD --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: MOVISTAR SERIES FHD --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: MOVISTAR CLASICOS FHD --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: M+ LIGA DE CAMPEONES FHD (1 OPCION) --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: M+ LIGA DE CAMPEONES FHD (2 OPCION) --> NEW ERA
-2025-03-13 13:34:43,363 - INFO - Procesando canal: M+ LIGA DE CAMPEONES FHD --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: M+ LIGA DE CAMPEONES FHD (SAT) --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 2 FHD --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 2 FHD --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 3 FHD --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 4 FHD --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 5 FHD --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 6 FHD --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 7 FHD --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 8 FHD --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 9 FHD --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 10 FHD --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 11 FHD --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 12 FHD --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 13 FHD --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 14 SD --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 15 SD --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 16 SD --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 17 SD --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: M+ SUPER COPA (SAT) --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: M+ SUPER COPA --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: M+ SUPERCOPA DEL REY FHD --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: DAZN F1 FHD --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: DAZN 1 FHD --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: DAZN 2 FHD --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: DAZN 3 FHD --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: DAZN 4 FHD --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: #VAMOS FHD (SAT) --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: #VAMOS FHD --> NEW ERA
-2025-03-13 13:34:43,364 - INFO - Procesando canal: #VAMOS ELLAS  FHD --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: EUROSPORT 1 FHD --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: EUROSPORT 1 FHD --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: EUROSPORT 2 FHD --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: M+ DEPORTES FHD --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: M+ DEPORTES 2 FHD --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: M+ ACCION FHD --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: M+ PLUS 2 FHD --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: M+ DEPORTES 3 FHD  --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: M+ DEPORTES 4 FHD --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: M+ DEPORTES 5 HD --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: UFC FIGHT PASS --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: NBA TV --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: NBA NETWORK --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: LA 1 FHD --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: LA 2 FHD --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: ANTENA 3 FHD --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: CUATRO FHD --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: TELECINCO FHD --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: LA SEXTA FHD --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: M+ PLUS FHD --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: DAZN 1 BAR FHD (*) --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: DAZN F1 FHD (*) --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: DAZN 1 FHD (*) --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: DAZN 2 FHD (*) --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: DAZN 3 FHD (*) --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: DAZN 4 FHD (*) --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: M+ LIGA DE CAMPEONES FHD (*) --> NEW ERA
-2025-03-13 13:34:43,365 - INFO - Procesando canal: M+ LIGA DE CAMPEONES FHD (*) --> NEW ERA
-2025-03-13 13:34:43,366 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 2 FHD (*) --> NEW ERA
-2025-03-13 13:34:43,366 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 2 FHD (*) --> NEW ERA
-2025-03-13 13:34:43,366 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 3 FHD (*) --> NEW ERA
-2025-03-13 13:34:43,366 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 3 FHD (*) --> NEW ERA
-2025-03-13 13:34:43,366 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 4 FHD (*) --> NEW ERA
-2025-03-13 13:34:43,366 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 5 FHD (*) --> NEW ERA
-2025-03-13 13:34:43,366 - INFO - Procesando canal: M+ DEPORTES FHD (*) --> NEW ERA
-2025-03-13 13:34:43,366 - INFO - Procesando canal: M+ DEPORTES FHD 2 (*) --> NEW ERA
-2025-03-13 13:34:43,366 - INFO - Procesando canal: #VAMOS FHD (*) --> NEW ERA
-2025-03-13 13:34:43,366 - INFO - Procesando canal: EVENTO UFC 1 > NEW ERA
-2025-03-13 13:34:43,366 - INFO - Procesando canal: ONETORO* --> NEW ERA III
-2025-03-13 13:34:43,366 - INFO - Procesando canal: M. DEPORTES HD --> NEW LOOP
-2025-03-13 13:34:43,366 - INFO - Procesando canal: M. GOLF HD --> NEW LOOP
-2025-03-13 13:34:43,366 - INFO - Procesando canal: M. LALIGA --> NEW LOOP
-2025-03-13 13:34:43,366 - INFO - Procesando canal: M. LALIGA --> NEW LOOP
-2025-03-13 13:34:43,366 - INFO - Procesando canal: M. LIGA DE CAMPEONES --> NEW LOOP
-2025-03-13 13:34:43,366 - INFO - Procesando canal: M. LIGA DE CAMPEONES --> NEW LOOP
-2025-03-13 13:34:43,366 - INFO - Procesando canal: DAZN1 --> NEW LOOP
-2025-03-13 13:34:43,366 - INFO - Procesando canal: DAZN2 --> NEW LOOP
-2025-03-13 13:34:43,366 - INFO - Procesando canal: DAZN3 --> NEW LOOP
-2025-03-13 13:34:43,366 - INFO - Procesando canal: DAZN4 --> NEW LOOP
-2025-03-13 13:34:43,366 - INFO - Procesando canal: EUROSPORT 1 HD --> NEW LOOP
-2025-03-13 13:34:43,366 - INFO - Procesando canal: EUROSPORT 1 HD --> NEW LOOP
-2025-03-13 13:34:43,366 - INFO - Procesando canal: SKY SPORTS ARENA [UK] --> NEW LOOP
-2025-03-13 13:34:43,366 - INFO - Procesando canal: SKY SPORTS CRICKET [UK] --> NEW LOOP
-2025-03-13 13:34:43,366 - INFO - Procesando canal: SKY SPORTS FOOTBALL [UK] --> NEW LOOP
-2025-03-13 13:34:43,366 - INFO - Procesando canal: SKY SPORTS MAIN EVENT [UK] --> NEW LOOP
-2025-03-13 13:34:43,366 - INFO - Procesando canal: CANAL MOTOR (720P) --> NEW LOOP
-2025-03-13 13:34:43,366 - INFO - Procesando canal: MOTORS TV HD --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: MOTORVISION TV --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: RETROVISION MOTOR --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: SUPERTENNIS HD --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: TENNIS CHANNEL HD --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: BT SPORT / ESPN [UK] --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: ESPN 2 [BE] --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: ESPN 4 [BE] --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: ESPN HD [US] --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: ESPN [BE] --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: ESPN2 [US] --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: BEIN SPORTS 1 [BE] --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: BEIN SPORTS 2 [BE] --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: BEIN SPORTS 3 [BE] --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: BEINSPORTSXTRA --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: PREMIER SPORTS 1 [UK] --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: PREMIER SPORTS 2 [UK] --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: ELEVEN SPORTS 1 [BE] --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: ELEVEN SPORTS 2 [BE] --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: ELEVEN SPORTS 3 [BE] --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: ELEVEN SPORTS 4 [BE] --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: ELEVEN SPORTS 5 [BE] --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: ELEVEN SPORTS 6 [BE] --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: BT SPORT / ESPN [UK] --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: BT SPORT 1 [UK] --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: BT SPORT 2 [UK] --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: BT SPORT 3 [UK] --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: ZIGGO SPORT --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: ZIGGO SPORT 2 --> NEW LOOP
-2025-03-13 13:34:43,367 - INFO - Procesando canal: ZIGGO SPORT 6 --> NEW LOOP
-2025-03-13 13:34:43,368 - INFO - Procesando canal: GOL PLAY --> NEW ERA IV
-2025-03-13 13:34:43,368 - INFO - Procesando canal: EUROSPORT 1 --> NEW ERA IV
-2025-03-13 13:34:43,368 - INFO - Procesando canal: EUROSPORT 2 --> NEW ERA IV
-2025-03-13 13:34:43,368 - INFO - Procesando canal: M+ VAMOS --> NEW ERA IV
-2025-03-13 13:34:43,368 - INFO - Procesando canal: DISCOVERY CHANNEL --> NEW ERA IV
-2025-03-13 13:34:43,368 - INFO - Procesando canal: MAX UFC PPV --> NEW ERA IV
-2025-03-13 13:34:43,368 - INFO - Procesando canal: CANAL 1 (1RFEF)  --> NEW ERA V
-2025-03-13 13:34:43,368 - INFO - Procesando canal: CANAL 2 (1RFEF)  --> NEW ERA V
-2025-03-13 13:34:43,375 - INFO - Los datos se han insertado correctamente en zz_canales.db y se han generado los ficheros zz_lista_ott.m3u, zz_lista_ace.m3u y zz_lista_kodi.m3u
+2025-03-13 15:35:51,672 - DEBUG - Starting new HTTPS connection (1): proxy.zeronet.dev:443
+2025-03-13 15:35:52,413 - DEBUG - https://proxy.zeronet.dev:443 "GET /1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u HTTP/1.1" 200 48464
+2025-03-13 15:35:52,572 - INFO - Se encontraron 2 líneas nuevas en el archivo M3U.
+2025-03-13 15:35:52,573 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://seeklogo.com/images/A/Automotor-logo-D99B43248F-seeklogo.com.gif" tvg-id="" group-title="MOTOR", AutoMotorSport HD --> NEW LOOP
+2025-03-13 15:35:52,573 - INFO - Línea nueva: #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/Tennis%20Channel.png" tvg-id="Tennis Channel" group-title="OTROS", Tennis Channel (UK) (720p) --> NEW LOOP
+2025-03-13 15:35:52,578 - INFO - Número total de líneas en el archivo M3U: 405
+2025-03-13 15:35:52,578 - INFO - Procesando canal: #VAMOS FHD --> NEW ERA II
+2025-03-13 15:35:52,578 - INFO - Procesando canal: #VAMOS ELLAS  FHD --> NEW ERA II
+2025-03-13 15:35:52,578 - INFO - Procesando canal: DAZN F1 FHD --> NEW ERA II
+2025-03-13 15:35:52,578 - INFO - Procesando canal: LALIGA HYPERMOTION TV FHD --> NEW ERA II
+2025-03-13 15:35:52,578 - INFO - Procesando canal: EUROSPORT 2 FHD --> NEW ERA II
+2025-03-13 15:35:52,578 - INFO - Procesando canal: M+ COMEDIA FHD --> NEW ERA II
+2025-03-13 15:35:52,578 - INFO - Procesando canal: FOX FHD --> NEW ERA II
+2025-03-13 15:35:52,578 - INFO - Procesando canal: MEGA FHD --> NEW ERA II
+2025-03-13 15:35:52,578 - INFO - Procesando canal: HOLLYWOOD FHD --> NEW ERA II
+2025-03-13 15:35:52,578 - INFO - Procesando canal: WINTER SERIES ARAGON --> NEW ERA II
+2025-03-13 15:35:52,578 - INFO - Procesando canal: TWITCH HIKKI360ES --> NEW ERA II
+2025-03-13 15:35:52,578 - INFO - Procesando canal: M.L. CAMPEONES 2
+2025-03-13 15:35:52,578 - INFO - Procesando canal: MOVISTAR PLUS
+2025-03-13 15:35:52,578 - INFO - Procesando canal: M DEPORTES
+2025-03-13 15:35:52,578 - INFO - Procesando canal: M DEPORTES
+2025-03-13 15:35:52,578 - INFO - Procesando canal: M DEPORTES 2
+2025-03-13 15:35:52,578 - INFO - Procesando canal: M DEPORTES 5
+2025-03-13 15:35:52,579 - INFO - Procesando canal: M DEPORTES 6
+2025-03-13 15:35:52,579 - INFO - Procesando canal: M DEPORTES 7
+2025-03-13 15:35:52,579 - INFO - Procesando canal: DAZN 1
+2025-03-13 15:35:52,579 - INFO - Procesando canal: DAZN 2
+2025-03-13 15:35:52,579 - INFO - Procesando canal: DAZN 2
+2025-03-13 15:35:52,579 - INFO - Procesando canal: M #VAMOS
+2025-03-13 15:35:52,579 - INFO - Procesando canal: M #VAMOS
+2025-03-13 15:35:52,579 - INFO - Procesando canal: COPA DEL REY
+2025-03-13 15:35:52,579 - INFO - Procesando canal: EUROSPORT
+2025-03-13 15:35:52,579 - INFO - Procesando canal: DAZN F1 1080 (FRMULA 1)
+2025-03-13 15:35:52,579 - INFO - Procesando canal: DAZN F1 1080 (FRMULA 1)
+2025-03-13 15:35:52,579 - INFO - Procesando canal: DAZN F1 1080 (FRMULA 1)
+2025-03-13 15:35:52,579 - INFO - Procesando canal: DAZN F1 720 (FRMULA 1)
+2025-03-13 15:35:52,579 - INFO - Procesando canal: M. LALIGA 1080P
+2025-03-13 15:35:52,579 - INFO - Procesando canal: M. LALIGA 1080 MULTIAUDIO
+2025-03-13 15:35:52,579 - INFO - Procesando canal: M. LALIGA 1080 MULTIAUDIO
+2025-03-13 15:35:52,579 - INFO - Procesando canal: M. LALIGA 720
+2025-03-13 15:35:52,579 - INFO - Procesando canal: M. LALIGA 2 1080
+2025-03-13 15:35:52,579 - INFO - Procesando canal: M. LALIGA 2 720
+2025-03-13 15:35:52,579 - INFO - Procesando canal: M. LALIGA 3 1080
+2025-03-13 15:35:52,579 - INFO - Procesando canal: M. LALIGA 3 720
+2025-03-13 15:35:52,579 - INFO - Procesando canal: M. LALIGA 4 1080
+2025-03-13 15:35:52,579 - INFO - Procesando canal: LA LIGA BAR 1080
+2025-03-13 15:35:52,579 - INFO - Procesando canal: LA LIGA BAR 1080
+2025-03-13 15:35:52,579 - INFO - Procesando canal: DAZN LALIGA 1080 MULTIAUDIO
+2025-03-13 15:35:52,579 - INFO - Procesando canal: DAZN LALIGA 1080 MULTIAUDIO
+2025-03-13 15:35:52,579 - INFO - Procesando canal: DAZN LALIGA 1080 MULTIAUDIO
+2025-03-13 15:35:52,579 - INFO - Procesando canal: DAZN LALIGA 720
+2025-03-13 15:35:52,580 - INFO - Procesando canal: DAZN LALIGA 2 1080 MULTIAUDIO
+2025-03-13 15:35:52,580 - INFO - Procesando canal: DAZN LALIGA 2 720 MULTIAUDIO
+2025-03-13 15:35:52,580 - INFO - Procesando canal: LALIGA HYPERMOTION 1080
+2025-03-13 15:35:52,580 - INFO - Procesando canal: LALIGA HYPERMOTION 720
+2025-03-13 15:35:52,580 - INFO - Procesando canal: LALIGA HYPERMOTION 2 1080
+2025-03-13 15:35:52,580 - INFO - Procesando canal: LALIGA HYPERMOTION 2 720
+2025-03-13 15:35:52,580 - INFO - Procesando canal: LALIGA HYPERMOTION 3
+2025-03-13 15:35:52,580 - INFO - Procesando canal: DAZN 1 FHD --> NEW ERA
+2025-03-13 15:35:52,580 - INFO - Procesando canal: DAZN F1 FHD --> NEW ERA
+2025-03-13 15:35:52,580 - INFO - Procesando canal: DAZN 1 BAR FHD --> NEW ERA
+2025-03-13 15:35:52,580 - INFO - Procesando canal: DAZN 2 BAR FHD --> NEW ERA
+2025-03-13 15:35:52,580 - INFO - Procesando canal: DAZN F1 FHD (SAT) --> NEW ERA
+2025-03-13 15:35:52,580 - INFO - Procesando canal: F1 TV 14 | FERNANDO ALONSO | ASTON MARTIN --> NEW ERA
+2025-03-13 15:35:52,580 - INFO - Procesando canal: F1 TV 55 | CARLOS SAINZ | WILLIAMS --> NEW ERA
+2025-03-13 15:35:52,580 - INFO - Procesando canal: MGPTV | CAMARA DE A BORDO 1 --> NEW ERA
+2025-03-13 15:35:52,580 - INFO - Procesando canal: MGPTV | CAMARA DE A BORDO 2 --> NEW ERA
+2025-03-13 15:35:52,580 - INFO - Procesando canal: MGPTV | CAMARA DE A BORDO 3 --> NEW ERA
+2025-03-13 15:35:52,580 - INFO - Procesando canal: MGPTV | CAMARA DE A BORDO 4 --> NEW ERA
+2025-03-13 15:35:52,580 - INFO - Procesando canal: DAZN EVENTOS 1 --> NEW ERA
+2025-03-13 15:35:52,580 - INFO - Procesando canal: DAZN EVENTOS 2 --> NEW ERA
+2025-03-13 15:35:52,580 - INFO - Procesando canal: DAZN EVENTOS 3 --> NEW ERA
+2025-03-13 15:35:52,580 - INFO - Procesando canal: DAZN BUNDESLIGA 1 FHD --> NEW ERA
+2025-03-13 15:35:52,580 - INFO - Procesando canal: DAZN BUNDESLIGA 2 FHD --> NEW ERA
+2025-03-13 15:35:52,580 - INFO - Procesando canal: DAZN BUNDESLIGA 3 FHD --> NEW ERA
+2025-03-13 15:35:52,580 - INFO - Procesando canal: GOL PLAY FHD --> NEW ERA
+2025-03-13 15:35:52,580 - INFO - Procesando canal: TELEDEPORTE FHD --> NEW ERA
+2025-03-13 15:35:52,580 - INFO - Procesando canal: DAZN 1 FHD (SAT) --> NEW ERA
+2025-03-13 15:35:52,580 - INFO - Procesando canal: MOVISTAR GOLF FHD --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: MOVISTAR GOLF 2 FHD --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: MOVISTAR SERIES FHD --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: MOVISTAR CLASICOS FHD --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: M+ LIGA DE CAMPEONES FHD (1 OPCION) --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: M+ LIGA DE CAMPEONES FHD (2 OPCION) --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: M+ LIGA DE CAMPEONES FHD --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: M+ LIGA DE CAMPEONES FHD (SAT) --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 2 FHD --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 2 FHD --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 3 FHD --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 4 FHD --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 5 FHD --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 6 FHD --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 7 FHD --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 8 FHD --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 9 FHD --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 10 FHD --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 11 FHD --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 12 FHD --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 13 FHD --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 14 SD --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 15 SD --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 16 SD --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 17 SD --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: M+ SUPER COPA (SAT) --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: M+ SUPER COPA --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: M+ SUPERCOPA DEL REY FHD --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: DAZN F1 FHD --> NEW ERA
+2025-03-13 15:35:52,581 - INFO - Procesando canal: DAZN 1 FHD --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: DAZN 2 FHD --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: DAZN 3 FHD --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: DAZN 4 FHD --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: #VAMOS FHD (SAT) --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: #VAMOS FHD --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: #VAMOS ELLAS  FHD --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: EUROSPORT 1 FHD --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: EUROSPORT 1 FHD --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: EUROSPORT 2 FHD --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: M+ DEPORTES FHD --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: M+ DEPORTES 2 FHD --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: M+ ACCION FHD --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: M+ PLUS 2 FHD --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: M+ DEPORTES 3 FHD  --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: M+ DEPORTES 4 FHD --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: M+ DEPORTES 5 HD --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: UFC FIGHT PASS --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: NBA TV --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: NBA NETWORK --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: LA 1 FHD --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: LA 2 FHD --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: ANTENA 3 FHD --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: CUATRO FHD --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: TELECINCO FHD --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: LA SEXTA FHD --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: M+ PLUS FHD --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: DAZN 1 BAR FHD (*) --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: DAZN F1 FHD (*) --> NEW ERA
+2025-03-13 15:35:52,582 - INFO - Procesando canal: DAZN 1 FHD (*) --> NEW ERA
+2025-03-13 15:35:52,583 - INFO - Procesando canal: DAZN 2 FHD (*) --> NEW ERA
+2025-03-13 15:35:52,583 - INFO - Procesando canal: DAZN 3 FHD (*) --> NEW ERA
+2025-03-13 15:35:52,583 - INFO - Procesando canal: DAZN 4 FHD (*) --> NEW ERA
+2025-03-13 15:35:52,583 - INFO - Procesando canal: M+ LIGA DE CAMPEONES FHD (*) --> NEW ERA
+2025-03-13 15:35:52,583 - INFO - Procesando canal: M+ LIGA DE CAMPEONES FHD (*) --> NEW ERA
+2025-03-13 15:35:52,583 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 2 FHD (*) --> NEW ERA
+2025-03-13 15:35:52,583 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 2 FHD (*) --> NEW ERA
+2025-03-13 15:35:52,583 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 3 FHD (*) --> NEW ERA
+2025-03-13 15:35:52,583 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 3 FHD (*) --> NEW ERA
+2025-03-13 15:35:52,583 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 4 FHD (*) --> NEW ERA
+2025-03-13 15:35:52,583 - INFO - Procesando canal: M+ LIGA DE CAMPEONES 5 FHD (*) --> NEW ERA
+2025-03-13 15:35:52,583 - INFO - Procesando canal: M+ DEPORTES FHD (*) --> NEW ERA
+2025-03-13 15:35:52,583 - INFO - Procesando canal: M+ DEPORTES FHD 2 (*) --> NEW ERA
+2025-03-13 15:35:52,583 - INFO - Procesando canal: #VAMOS FHD (*) --> NEW ERA
+2025-03-13 15:35:52,583 - INFO - Procesando canal: EVENTO UFC 1 > NEW ERA
+2025-03-13 15:35:52,583 - INFO - Procesando canal: ONETORO* --> NEW ERA III
+2025-03-13 15:35:52,583 - INFO - Procesando canal: M. DEPORTES HD --> NEW LOOP
+2025-03-13 15:35:52,583 - INFO - Procesando canal: M. LALIGA --> NEW LOOP
+2025-03-13 15:35:52,583 - INFO - Procesando canal: M. LIGA DE CAMPEONES --> NEW LOOP
+2025-03-13 15:35:52,583 - INFO - Procesando canal: M. LIGA DE CAMPEONES --> NEW LOOP
+2025-03-13 15:35:52,583 - INFO - Procesando canal: DAZN1 --> NEW LOOP
+2025-03-13 15:35:52,583 - INFO - Procesando canal: DAZN2 --> NEW LOOP
+2025-03-13 15:35:52,583 - INFO - Procesando canal: DAZN3 --> NEW LOOP
+2025-03-13 15:35:52,583 - INFO - Procesando canal: DAZN4 --> NEW LOOP
+2025-03-13 15:35:52,583 - INFO - Procesando canal: EUROSPORT 1 HD --> NEW LOOP
+2025-03-13 15:35:52,583 - INFO - Procesando canal: EUROSPORT 1 HD --> NEW LOOP
+2025-03-13 15:35:52,583 - INFO - Procesando canal: EUROSPORT 1 HD --> NEW LOOP
+2025-03-13 15:35:52,583 - INFO - Procesando canal: SKY SPORTS ARENA [UK] --> NEW LOOP
+2025-03-13 15:35:52,583 - INFO - Procesando canal: SKY SPORTS CRICKET [UK] --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: SKY SPORTS FOOTBALL [UK] --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: SKY SPORTS MAIN EVENT [UK] --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: AUTOMOTORSPORT HD --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: MOTORS TV HD --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: MOTORVISION TV --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: RETROVISION MOTOR --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: SUPERTENNIS HD --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: TENNIS CHANNEL (UK) (720P) --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: TENNIS CHANNEL HD --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: BT SPORT / ESPN [UK] --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: ESPN 2 [BE] --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: ESPN 4 [BE] --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: ESPN HD [US] --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: ESPN [BE] --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: ESPN2 [US] --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: BEIN SPORTS 1 [BE] --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: BEIN SPORTS 2 [BE] --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: BEIN SPORTS 3 [BE] --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: BEINSPORTSXTRA --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: PREMIER SPORTS 1 [UK] --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: PREMIER SPORTS 2 [UK] --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: ELEVEN SPORTS 1 [BE] --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: ELEVEN SPORTS 3 [BE] --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: ELEVEN SPORTS 4 [BE] --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: ELEVEN SPORTS 5 [BE] --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: ELEVEN SPORTS 6 [BE] --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: BT SPORT / ESPN [UK] --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: BT SPORT 1 [UK] --> NEW LOOP
+2025-03-13 15:35:52,584 - INFO - Procesando canal: BT SPORT 2 [UK] --> NEW LOOP
+2025-03-13 15:35:52,585 - INFO - Procesando canal: BT SPORT 3 [UK] --> NEW LOOP
+2025-03-13 15:35:52,585 - INFO - Procesando canal: ZIGGO SPORT --> NEW LOOP
+2025-03-13 15:35:52,585 - INFO - Procesando canal: ZIGGO SPORT 2 --> NEW LOOP
+2025-03-13 15:35:52,585 - INFO - Procesando canal: ZIGGO SPORT 6 --> NEW LOOP
+2025-03-13 15:35:52,585 - INFO - Procesando canal: GOL PLAY --> NEW ERA IV
+2025-03-13 15:35:52,585 - INFO - Procesando canal: EUROSPORT 1 --> NEW ERA IV
+2025-03-13 15:35:52,585 - INFO - Procesando canal: EUROSPORT 2 --> NEW ERA IV
+2025-03-13 15:35:52,585 - INFO - Procesando canal: M+ VAMOS --> NEW ERA IV
+2025-03-13 15:35:52,585 - INFO - Procesando canal: DISCOVERY CHANNEL --> NEW ERA IV
+2025-03-13 15:35:52,585 - INFO - Procesando canal: MAX UFC PPV --> NEW ERA IV
+2025-03-13 15:35:52,585 - INFO - Procesando canal: CANAL 1 (1RFEF)  --> NEW ERA V
+2025-03-13 15:35:52,585 - INFO - Procesando canal: CANAL 2 (1RFEF)  --> NEW ERA V
+2025-03-13 15:35:52,591 - INFO - Los datos se han insertado correctamente en zz_canales.db y se han generado los ficheros zz_lista_ott.m3u, zz_lista_ace.m3u y zz_lista_kodi.m3u
