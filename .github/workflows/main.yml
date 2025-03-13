@@ -43,7 +43,7 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          git add zz_canales.db lista-ott-prev.m3u lista-ott.m3u zz_lista_ott.m3u zz_lista_ace.m3u zz_lista_kodi.m3u debug_log.txt
+          git add zz_canales.db lista-ott-prev.m3u lista-ott.m3u zz_lista_ott.m3u zz_lista_ace.m3u zz_lista_kodi.m3u debug_log.txt canales_iptv_temp.csv
           if [ "${{ env.cambios_exists }}" == 'true' ]; then
             git add cambios.txt
             echo "cambios.txt detected"
