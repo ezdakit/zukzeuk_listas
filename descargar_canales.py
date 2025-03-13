@@ -132,10 +132,18 @@ try:
                 # logging.debug(f"tvg-id: {tvg_id}")
                 # logging.debug(f"group-title: {group_title}")
                 # logging.debug(f"url: {url}")
-                cursor.execute('''INSERT INTO canales_iptv_temp (
-                    import_date, name_original, iptv_epg_id_original, iptv_epg_id_new, iptv_group_original, iptv_group_new, iptv_url, name_new, activo
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)''', (import_date, channel_name, tvg_id, "", group_title, "", url, "", 0))
 
+                # Determinar si el canal es FHD
+                if "FHD" in channel_name or "1080" in channel_name:
+                    fhd = 1  # Es FHD
+                else:
+                    fhd = 0  # No es FHD
+    
+                # Insertar el registro en la tabla canales_iptv_temp
+                cursor.execute('''INSERT INTO canales_iptv_temp (
+                    import_date, name_original, iptv_epg_id_original, iptv_epg_id_new, iptv_group_original, iptv_group_new, iptv_url, name_new, activo, FHD
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)''', (import_date, channel_name, tvg_id, "", group_title, "", url, "", 0, fhd))
+                
     cursor.execute("SELECT id, name_original FROM canales_iptv_temp")
     canales_iptv_temp = cursor.fetchall()
     for canal in canales_iptv_temp:
