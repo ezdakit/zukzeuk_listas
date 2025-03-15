@@ -1,10 +1,6 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"
 #EXTVLCOPT:network-caching=2000
 
-#EXTINF:-1 tvg-id="" group-title="WTA Indian Wells | Semifinal 1", 00:00 M. Andreeva I. Swiatek
-http://127.0.0.1:6878/ace/getstream?id=8091334c82e8720fc6aa05ff0bd6d343c5bfecbf
-#EXTINF:-1 tvg-id="" group-title="WTA Indian Wells | Semifinal 1", 00:00 M. Andreeva I. Swiatek
-http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
 #EXTINF:-1 tvg-id="" group-title="México Open", 00:00 1/4 de final femenino Premier Padel Tour
 http://127.0.0.1:6878/ace/getstream?id=af636e7b1747cf868eedf242b96bd98f8fbbed4f
 #EXTINF:-1 tvg-id="" group-title="México Open", 00:00 1/4 de final femenino Premier Padel Tour
@@ -23,6 +19,8 @@ http://127.0.0.1:6878/ace/getstream?id=3a74d9869b13e763476800740c6625e715a39879
 http://127.0.0.1:6878/ace/getstream?id=fcc0fd75bf1dba40b108fcf0d3514e0e549bfbac
 #EXTINF:-1 tvg-id="" group-title="México Open", 00:00 1/4 de final femenino Premier Padel Tour
 http://127.0.0.1:6878/ace/getstream?id=14aa86be2b451cd4f5ee6d12e7479885373ea9b3
+#EXTINF:-1 tvg-id="" group-title="WTA Indian Wells | Semifinal 1", 00:10 M. Andreeva I. Swiatek
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
 #EXTINF:-1 tvg-id="" group-title="NBA | Liga Regular", 01:00 Memphis Grizzlies Cleveland Cavaliers
 http://127.0.0.1:6878/ace/getstream?id=c6b52ffb3b84836d334569204797d88bf15d48fa
 #EXTINF:-1 tvg-id="" group-title="NBA | Liga Regular", 01:00 Memphis Grizzlies Cleveland Cavaliers
@@ -53,16 +51,10 @@ http://127.0.0.1:6878/ace/getstream?id=4f1d222c600e66ef4990b3d7ea13bfa53f7bfea1
 http://127.0.0.1:6878/ace/getstream?id=5d8613b5fde87f366bb5e41ac8011007a4c6bd3c
 #EXTINF:-1 tvg-id="" group-title="FIA Fórmula 3", 01:15 G.P. Australia (Albert Park) Carrera 1
 http://127.0.0.1:6878/ace/getstream?id=751aa1f2429dfb9484b67a3ede00d859c6212994
-#EXTINF:-1 tvg-id="" group-title="WTA Indian Wells | Semifinal 2", 02:00 A. Sabalenka M. Keys
-http://127.0.0.1:6878/ace/getstream?id=8091334c82e8720fc6aa05ff0bd6d343c5bfecbf
-#EXTINF:-1 tvg-id="" group-title="WTA Indian Wells | Semifinal 2", 02:00 A. Sabalenka M. Keys
-http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
 #EXTINF:-1 tvg-id="" group-title="Australian Women's Classic", 02:00 Jornada 3
 http://127.0.0.1:6878/ace/getstream?id=d41f974884746560213e68519e5f6b9d51f37470
 #EXTINF:-1 tvg-id="" group-title="LIV Golf", 02:13 Jornada 2
 http://127.0.0.1:6878/ace/getstream?id=7f1c44c9f362eba2d4a6820a00ff6701ead9e79d
-#EXTINF:-1 tvg-id="" group-title="LIV Golf", 02:13 Jornada 2
-http://127.0.0.1:6878/ace/getstream?id=872608e734992db636eb79426802cd08f4029afb
 #EXTINF:-1 tvg-id="" group-title="Fórmula 1", 02:30 G.P. Australia (Albert Park) Libres 3
 http://127.0.0.1:6878/ace/getstream?id=d6281d4e6310269b416180442a470d23a4a99dc9
 #EXTINF:-1 tvg-id="" group-title="Fórmula 1", 02:30 G.P. Australia (Albert Park) Libres 3
@@ -81,6 +73,8 @@ http://127.0.0.1:6878/ace/getstream?id=4f1d222c600e66ef4990b3d7ea13bfa53f7bfea1
 http://127.0.0.1:6878/ace/getstream?id=5d8613b5fde87f366bb5e41ac8011007a4c6bd3c
 #EXTINF:-1 tvg-id="" group-title="Fórmula 1", 02:30 G.P. Australia (Albert Park) Libres 3
 http://127.0.0.1:6878/ace/getstream?id=751aa1f2429dfb9484b67a3ede00d859c6212994
+#EXTINF:-1 tvg-id="" group-title="WTA Indian Wells | Semifinal 2", 02:45 A. Sabalenka M. Keys
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
 #EXTINF:-1 tvg-id="" group-title="FIA Fórmula 2", 04:15 G.P. Australia (Albert Park) Carrera 1
 http://127.0.0.1:6878/ace/getstream?id=d6281d4e6310269b416180442a470d23a4a99dc9
 #EXTINF:-1 tvg-id="" group-title="FIA Fórmula 2", 04:15 G.P. Australia (Albert Park) Carrera 1
@@ -209,6 +203,8 @@ http://127.0.0.1:6878/ace/getstream?id=56ac8e227d526e722624675ccdd91b0cc850582f
 http://127.0.0.1:6878/ace/getstream?id=335646e7394ea4eda343c95e57852bb70fc4178f
 #EXTINF:-1 tvg-id="" group-title="Premier League", 16:00 Manchester City Brighton
 http://127.0.0.1:6878/ace/getstream?id=ac73acd09d79c46cb818bfd945f20198d1718a85
+#EXTINF:-1 tvg-id="" group-title="Premier League", 16:00 Manchester City Brighton
+http://127.0.0.1:6878/ace/getstream?id=ba87f528de030aad56576f7cbb9d8bbd7efd62b9
 #EXTINF:-1 tvg-id="" group-title="Premier League", 16:00 Manchester City Brighton
 http://127.0.0.1:6878/ace/getstream?id=f43a021e8fd63334a4bf3fb11ffe58f89039a1d0
 #EXTINF:-1 tvg-id="" group-title="Premier League", 16:00 Manchester City Brighton
@@ -451,6 +447,30 @@ http://127.0.0.1:6878/ace/getstream?id=0358f9db953e5fde91c34d7ed4bc368939b49853
 http://127.0.0.1:6878/ace/getstream?id=16ffa1713f42aa27317ee039a2bd0cdbc89a1580
 #EXTINF:-1 tvg-id="" group-title="UFC | UFC Fight Night", 21:00 D. Barez A. Lima
 http://127.0.0.1:6878/ace/getstream?id=8e9390c1647da151a7bc0e1b37c4b4d21d83049d
+#EXTINF:-1 tvg-id="" group-title="Masters Indian Wells | Semifinal 1", 21:30 H. Rune D. Medvedev
+http://127.0.0.1:6878/ace/getstream?id=55d4602cb22b0d8a33c10c2c2f42dae64a9e8895
+#EXTINF:-1 tvg-id="" group-title="Masters Indian Wells | Semifinal 1", 21:30 H. Rune D. Medvedev
+http://127.0.0.1:6878/ace/getstream?id=3a74d9869b13e763476800740c6625e715a39879
+#EXTINF:-1 tvg-id="" group-title="Masters Indian Wells | Semifinal 1", 21:30 H. Rune D. Medvedev
+http://127.0.0.1:6878/ace/getstream?id=d8c2ed470e847154a88f011137cc206319f6bed5
+#EXTINF:-1 tvg-id="" group-title="Masters Indian Wells | Semifinal 1", 21:30 H. Rune D. Medvedev
+http://127.0.0.1:6878/ace/getstream?id=d225087e30f6efe4c6d9b5ae3c2f3829368cd637
+#EXTINF:-1 tvg-id="" group-title="Masters Indian Wells | Semifinal 1", 21:30 H. Rune D. Medvedev
+http://127.0.0.1:6878/ace/getstream?id=fe134ae09f9643ea9bfdd75ff1f121ba8c58e5c1
+#EXTINF:-1 tvg-id="" group-title="Masters Indian Wells | Semifinal 2", 23:00 J. Draper C. Alcaraz
+http://127.0.0.1:6878/ace/getstream?id=56ac8e227d526e722624675ccdd91b0cc850582f
+#EXTINF:-1 tvg-id="" group-title="Masters Indian Wells | Semifinal 2", 23:00 J. Draper C. Alcaraz
+http://127.0.0.1:6878/ace/getstream?id=335646e7394ea4eda343c95e57852bb70fc4178f
+#EXTINF:-1 tvg-id="" group-title="Masters Indian Wells | Semifinal 2", 23:00 J. Draper C. Alcaraz
+http://127.0.0.1:6878/ace/getstream?id=55d4602cb22b0d8a33c10c2c2f42dae64a9e8895
+#EXTINF:-1 tvg-id="" group-title="Masters Indian Wells | Semifinal 2", 23:00 J. Draper C. Alcaraz
+http://127.0.0.1:6878/ace/getstream?id=3a74d9869b13e763476800740c6625e715a39879
+#EXTINF:-1 tvg-id="" group-title="Masters Indian Wells | Semifinal 2", 23:00 J. Draper C. Alcaraz
+http://127.0.0.1:6878/ace/getstream?id=d8c2ed470e847154a88f011137cc206319f6bed5
+#EXTINF:-1 tvg-id="" group-title="Masters Indian Wells | Semifinal 2", 23:00 J. Draper C. Alcaraz
+http://127.0.0.1:6878/ace/getstream?id=d225087e30f6efe4c6d9b5ae3c2f3829368cd637
+#EXTINF:-1 tvg-id="" group-title="Masters Indian Wells | Semifinal 2", 23:00 J. Draper C. Alcaraz
+http://127.0.0.1:6878/ace/getstream?id=fe134ae09f9643ea9bfdd75ff1f121ba8c58e5c1
 #EXTINF:-1 tvg-id="" group-title="Córdoba Open", 23:00 Semifinales A1 Padel
 http://127.0.0.1:6878/ace/getstream?id=ca923c9873fd206a41c1e83ff8fc40e3cf323c9a
 #EXTINF:-1 tvg-id="" group-title="Córdoba Open", 23:00 Semifinales A1 Padel
