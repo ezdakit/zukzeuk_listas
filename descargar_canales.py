@@ -165,7 +165,7 @@ try:
     # Exportar la tabla canales_iptv_temp a un archivo CSV
     try:
         with open('canales_iptv_temp.csv', 'w', encoding='utf-8', newline='') as csv_file:
-            csv_writer = csv.writer(csv_file, delimiter=';')
+            csv_writer = csv.writer(csv_file, delimiter=',')
             
             # Escribir la cabecera del CSV
             cursor.execute("PRAGMA table_info(canales_iptv_temp)")
