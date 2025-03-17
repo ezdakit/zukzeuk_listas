@@ -1,21 +1,7 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"
 #EXTVLCOPT:network-caching=2000
 
-#EXTINF:-1 tvg-id="" group-title="México Open", 01:00 Final Masculina Premier Padel Tour
-http://127.0.0.1:6878/ace/getstream?id=c6b52ffb3b84836d334569204797d88bf15d48fa
-#EXTINF:-1 tvg-id="" group-title="México Open", 01:00 Final Masculina Premier Padel Tour
-http://127.0.0.1:6878/ace/getstream?id=d03c13b6723f66155d7a0df3692a3b073fe630f2
-#EXTINF:-1 tvg-id="" group-title="México Open", 01:00 Final Masculina Premier Padel Tour
-http://127.0.0.1:6878/ace/getstream?id=12ba546d229bc39f01c3c18988a034b215fe6adb
-#EXTINF:-1 tvg-id="" group-title="México Open", 01:00 Final Masculina Premier Padel Tour
-http://127.0.0.1:6878/ace/getstream?id=47403b07582b05c2a1eadaf6d1fb6454eda03a77
-#EXTINF:-1 tvg-id="" group-title="México Open", 01:00 Final Masculina Premier Padel Tour
-http://127.0.0.1:6878/ace/getstream?id=a1660d711184fa701bf1c88395e3b2d43ddca83f
-#EXTINF:-1 tvg-id="" group-title="México Open", 01:00 Final Masculina Premier Padel Tour
-http://127.0.0.1:6878/ace/getstream?id=6f1f82c3cf6bf4b4ccb6d63d687271878e0e908d
-#EXTINF:-1 tvg-id="" group-title="LaLiga Hypermotion", 20:30 CD Castellón Deportivo
+#EXTINF:-1 tvg-id="" group-title="futbol - LaLiga Hypermotion | Estadio Municipal Castalia, Castellón", 20:30 CD Castellón Deportivo
 http://127.0.0.1:6878/ace/getstream?id=b2706a7ffbea236a3b398139a3a606ada664c0eb
-#EXTINF:-1 tvg-id="" group-title="LaLiga Hypermotion", 20:30 CD Castellón Deportivo
+#EXTINF:-1 tvg-id="" group-title="futbol - LaLiga Hypermotion | Estadio Municipal Castalia, Castellón", 20:30 CD Castellón Deportivo
 http://127.0.0.1:6878/ace/getstream?id=121f719ebb94193c6086ef92865cf9b197750980
-#EXTINF:-1 tvg-id="" group-title="LaLiga Hypermotion", 20:30 CD Castellón Deportivo
-http://127.0.0.1:6878/ace/getstream?id=4e066df67d118f95b41f850869abdc663c515186
