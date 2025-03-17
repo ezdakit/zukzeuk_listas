@@ -2,7 +2,7 @@ name: procesar_guia
 
 on:
   schedule:
-    - cron: '0 12 * * *' # Ejecutar a las 12:00 cada día
+    - cron: '0 10 * * *' # Ejecutar a las 12:00 cada día
   workflow_dispatch:
 
 jobs:
