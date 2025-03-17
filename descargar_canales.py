@@ -80,7 +80,7 @@ try:
     
     # Abrir el fichero CSV e insertar registros en la tabla
     with open('correspondencia_canales.csv', mode='r', encoding='utf-8') as file:
-        reader = csv.DictReader(file, delimiter=';')
+        reader = csv.DictReader(file, delimiter=',')
         for row in reader:
             if 'channel_root' in row and 'channel_epg_id' in row and 'channel_name' in row and 'channel_group' in row:
                 cursor.execute('''
