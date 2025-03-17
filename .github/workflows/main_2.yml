@@ -2,7 +2,7 @@ name: procesar_eventos
 
 on:
   schedule:
-    - cron: '30 15,19,23 * * *'
+    - cron: '05 11,19,23 * * *'
   workflow_dispatch:
 
 jobs:
