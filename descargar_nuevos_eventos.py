@@ -9,6 +9,7 @@ import csv
 from bs4 import BeautifulSoup
 import sys
 import os
+import re
 import requests
 from urllib3.exceptions import ReadTimeoutError
 
@@ -129,16 +130,23 @@ try:
         evento = " ".join(evento.split())  # Elimina espacios múltiples y saltos de línea
         evento = evento.replace(",", ".")  # Sustituye comas por puntos
 
+        # Extraer el deporte del campo "Competición"
+        # Buscar la URL de la imagen en el campo "Competición"
+        match = re.search(r'src="https://static\.futbolenlatv\.com/img/32/\d+-(.*?)\.webp"', str(cols[1]))
+        if match:
+            # Extraer el texto entre el último punto y el primer guion
+            deporte = match.group(1).split('-')[-1]
+
         # Procesar cada enlace de Acestream
         for evento_acestream in eventos_acestream:
             nombre_canal = evento_acestream.text.strip()
             url_acestream = evento_acestream['href'].replace('acestream://', '')
-            eventos.append([hora, competicion, evento, nombre_canal, url_acestream])
+            eventos.append([hora, competicion, evento, nombre_canal, url_acestream, deporte])
 
     # Guardar los eventos en un archivo CSV
     with open('eventos.csv', 'w', encoding='utf-8', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(['Hora', 'Competicion', 'Evento', 'Canales', 'Eventos_Acestream'])
+        writer.writerow(['Hora', 'Competicion', 'Evento', 'Canales', 'Eventos_Acestream', 'Deporte'])
         writer.writerows(eventos)
 
     logging.info("El fichero eventos.csv se ha generado correctamente.")
@@ -175,13 +183,13 @@ try:
 
             # Procesar cada línea del CSV
             for row in csv_reader:
-                hora, competicion, evento, nombre_canal, eventos_acestream = row
+                hora, competicion, evento, nombre_canal, eventos_acestream, deporte = row
 
                 # Crear la línea #EXTINF para zz_eventos_ott.m3u (group-title="Eventos")
-                extinf_line = f'#EXTINF:-1 tvg-id="" group-title="# Eventos", {hora} {evento}\n'
+                extinf_line = f'#EXTINF:-1 tvg-id="" group-title="# Eventos por horario", {hora} {evento}\n'
 
                 # Crear la línea #EXTINF para zz_eventos_all_ott.m3u (group-title con el contenido de "Competicion")
-                extinf_all_line = f'#EXTINF:-1 tvg-id="" group-title="{competicion}", {hora} {evento}\n'
+                extinf_all_line = f'#EXTINF:-1 tvg-id="" group-title="{deporte} - {competicion}", {hora} {evento}\n'
 
                 # Crear la línea de la URL
                 url_line = f'http://127.0.0.1:6878/ace/getstream?id={eventos_acestream}\n'
