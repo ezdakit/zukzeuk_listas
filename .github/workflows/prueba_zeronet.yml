@@ -38,9 +38,16 @@ jobs:
           unzip zeronet.zip
           cd ZeroNet-master
 
-          # Ejecutar ZeroNet en modo headless
-          python3 zeronet.py --ui_ip 127.0.0.1 --ui_port 43110 --disable_udp --size_limit 50 --log_requests &
-          sleep 10  # Esperar a que ZeroNet se inicie
+          # Ejecutar ZeroNet y redirigir la salida a un archivo de log
+          python3 zeronet.py --ui_ip 127.0.0.1 --ui_port 43110 --disable_udp --size_limit 50 --log_requests > zeronet.log 2>&1 &
+          sleep 30  # Esperar 30 segundos
+
+          # Mostrar el contenido del archivo de log
+          cat zeronet.log
+
+      - name: Check if ZeroNet is running
+        run: |
+          netstat -tuln | grep 43110 || echo "ZeroNet no está escuchando en el puerto 43110"
 
       # Paso 4: Obtener y mostrar el contenido de la página de ZeroNet
       - name: Fetch and display ZeroNet page content
