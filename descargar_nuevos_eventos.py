@@ -12,6 +12,7 @@ import os
 import re
 import requests
 from urllib3.exceptions import ReadTimeoutError
+from datetime import datetime, timedelta
 
 # Función para comparar dos archivos
 def archivos_son_identicos(archivo1, archivo2):
@@ -168,6 +169,12 @@ try:
 
 """
 
+    # Obtener la fecha actual en UTC y convertirla a UTC+1
+    now_utc = datetime.utcnow()  # Fecha y hora actual en UTC
+    now_utc_plus_1 = now_utc + timedelta(hours=1)  # Sumar 1 hora para UTC+1
+    fecha_formateada = now_utc_plus_1.strftime("%d de %B")  # Formato "día de mes"
+    fecha_formateada_2 = now_utc_plus_1.strftime("%d-%m")  # Formato "día-mes"
+    
     # Abrir el archivo CSV para lectura
     with open(input_csv, 'r', encoding='utf-8') as csv_file:
         csv_reader = csv.reader(csv_file)
@@ -185,11 +192,11 @@ try:
             for row in csv_reader:
                 hora, competicion, evento, nombre_canal, eventos_acestream, deporte = row
 
-                # Crear la línea #EXTINF para zz_eventos_ott.m3u (group-title="Eventos")
-                extinf_line = f'#EXTINF:-1 tvg-id="" group-title="# Eventos por horario", {hora} {evento}\n'
+                # Crear la línea #EXTINF para zz_eventos_ott.m3u (group-title="# Eventos [fecha] por horario")
+                extinf_line = f'#EXTINF:-1 tvg-id="" group-title="# Eventos {fecha_formateada.lower()} por horario", {hora} {evento}\n'
 
                 # Crear la línea #EXTINF para zz_eventos_all_ott.m3u (group-title con el contenido de "Competicion")
-                extinf_all_line = f'#EXTINF:-1 tvg-id="" group-title="{deporte} - {competicion}", {hora} {evento}\n'
+                extinf_all_line = f'#EXTINF:-1 tvg-id="" group-title="{deporte}-{fecha_formateada_2.lower()}-{competicion}", {hora} {evento}\n'
 
                 # Crear la línea de la URL
                 url_line = f'http://127.0.0.1:6878/ace/getstream?id={eventos_acestream}\n'
