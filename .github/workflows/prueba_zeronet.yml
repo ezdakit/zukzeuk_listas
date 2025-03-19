@@ -1,6 +1,5 @@
 name: ZeroNet CI
 
-# Configurar el workflow para ejecución manual
 on:
   workflow_dispatch:
     inputs:
@@ -11,18 +10,16 @@ on:
 
 jobs:
   run-zeronet:
-    runs-on: ubuntu-latest  # Usar una máquina virtual con Ubuntu
+    runs-on: ubuntu-latest
 
     steps:
-      # Paso 1: Configurar el entorno
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Paso 2: Instalar dependencias (Python y ZeroNet)
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.9'  # Usar Python 3.9
+          python-version: '3.9'
 
       - name: Install dependencies
         run: |
@@ -30,17 +27,19 @@ jobs:
           sudo apt-get install -y python3-pip python3-dev libffi-dev libssl-dev curl
           pip install requests
 
-      # Paso 3: Descargar y ejecutar ZeroNet
       - name: Download and run ZeroNet
         run: |
-          # Descargar ZeroNet
           wget https://github.com/HelloZeroNet/ZeroNet/archive/refs/heads/master.zip -O zeronet.zip
           unzip zeronet.zip
           cd ZeroNet-master
 
+          # Configurar ZeroNet
+          echo "ui_ip = 127.0.0.1" >> zeronet.conf
+          echo "ui_port = 43110" >> zeronet.conf
+
           # Ejecutar ZeroNet y redirigir la salida a un archivo de log
           python3 zeronet.py --ui_ip 127.0.0.1 --ui_port 43110 --disable_udp --size_limit 50 --log_requests > zeronet.log 2>&1 &
-          sleep 30  # Esperar 30 segundos
+          sleep 60  # Esperar 60 segundos
 
           # Mostrar el contenido del archivo de log
           cat zeronet.log
@@ -49,20 +48,13 @@ jobs:
         run: |
           netstat -tuln | grep 43110 || echo "ZeroNet no está escuchando en el puerto 43110"
 
-      # Paso 4: Obtener y mostrar el contenido de la página de ZeroNet
       - name: Fetch and display ZeroNet page content
         run: |
-          # URL de ZeroNet (usando el input proporcionado)
           ZERONET_SITE="${{ github.event.inputs.zeronet_site }}"
           ZERONET_URL="http://127.0.0.1:43110/$ZERONET_SITE"
 
-          # Imprimir la URL para depuración
           echo "Valor de ZERONET_SITE: $ZERONET_SITE"
           echo "URL construida: $ZERONET_URL"
 
-          # Usar curl para obtener el contenido de la página
-          PAGE_CONTENT=$(curl -s "$ZERONET_URL")
-
-          # Mostrar el contenido de la página
-          echo "Contenido de la página:"
-          echo "$PAGE_CONTENT"
+          # Usar curl con opciones de depuración
+          curl -v "$ZERONET_URL"
