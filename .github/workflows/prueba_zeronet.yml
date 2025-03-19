@@ -37,9 +37,8 @@ jobs:
           echo "ui_ip = 127.0.0.1" >> zeronet.conf
           echo "ui_port = 43110" >> zeronet.conf
 
-          # Ejecutar ZeroNet y redirigir la salida a un archivo de log
-          python3 zeronet.py --ui_ip 127.0.0.1 --ui_port 43110 --disable_udp --size_limit 50 --log_requests > zeronet.log 2>&1 &
-          sleep 60  # Esperar 60 segundos
+          # Ejecutar ZeroNet en primer plano con un tiempo límite
+          timeout 120 python3 zeronet.py --ui_ip 127.0.0.1 --ui_port 43110 --disable_udp --size_limit 50 --log_requests > zeronet.log 2>&1
 
           # Mostrar el contenido del archivo de log
           cat zeronet.log
