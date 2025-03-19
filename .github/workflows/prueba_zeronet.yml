@@ -56,7 +56,9 @@ jobs:
           ZERONET_SITE="${{ github.event.inputs.zeronet_site }}"
           ZERONET_URL="http://127.0.0.1:43110/$ZERONET_SITE"
 
-          echo "Accediendo a la URL de ZeroNet: $ZERONET_URL"
+          # Imprimir la URL para depuración
+          echo "Valor de ZERONET_SITE: $ZERONET_SITE"
+          echo "URL construida: $ZERONET_URL"
 
           # Usar curl para obtener el contenido de la página
           PAGE_CONTENT=$(curl -s "$ZERONET_URL")
