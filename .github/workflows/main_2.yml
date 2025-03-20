@@ -55,8 +55,8 @@ jobs:
           # url con los links: https://googlechromelabs.github.io/chrome-for-testing/#stable
           wget https://storage.googleapis.com/chrome-for-testing-public/$CHROMEDRIVER_VERSION/linux64/chrome-linux64.zip
           unzip chrome-linux64.zip
-          chmod +x chromedriver
-          sudo mv chromedriver /usr/local/bin/
+          chmod +x chrome
+          sudo mv chrome /usr/local/bin/
 
       - name: Run Python script
         run: python descargar_nuevos_eventos_2.py
