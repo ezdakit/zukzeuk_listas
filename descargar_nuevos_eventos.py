@@ -77,7 +77,7 @@ try:
     driver.switch_to.frame(driver.find_element(By.TAG_NAME, 'iframe'))
 
     # Agregar un delay para esperar un poco antes de verificar la visibilidad de la tabla
-    time.sleep(5)
+    time.sleep(10)
 
     # Obtener el contenido del iframe
     iframe_html = driver.page_source
@@ -109,6 +109,10 @@ try:
 
     soup = BeautifulSoup(iframe_html, 'html.parser')
     table = soup.find('table', {'id': 'tablaEventos'})
+
+    if table is None:
+    logging.error("No se encontró la tabla con ID 'tablaEventos' en el iframe.")
+    sys.exit(1)  # Terminar el script con un código de error
 
     rows = table.find_all('tr')
     eventos = []
