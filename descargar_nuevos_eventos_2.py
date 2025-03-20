@@ -5,7 +5,9 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
 import logging
+import shutil
 
 # Configuración de logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -24,7 +26,8 @@ try:
     # options.add_argument("--headless")  # Desactiva el modo headless para depuración
 
     # Crear un directorio de datos de usuario único
-    user_data_dir = tempfile.mkdtemp(prefix="selenium_chrome_user_data_")
+    # user_data_dir = tempfile.mkdtemp(prefix="selenium_chrome_user_data_")
+    user_data_dir = tempfile.mkdtemp()
     options.add_argument(f"--user-data-dir={user_data_dir}")
 
     options.add_argument("--disable-extensions")
@@ -101,5 +104,6 @@ finally:
         logger.info("Navegador cerrado.")
     # Eliminar el directorio de datos de usuario temporal
     if user_data_dir and os.path.exists(user_data_dir):
-        os.rmdir(user_data_dir)
+        # os.rmdir(user_data_dir)
+        shutil.rmtree(user_data_dir)
         logger.info(f"Directorio de datos de usuario eliminado: {user_data_dir}")
