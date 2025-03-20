@@ -81,6 +81,11 @@ try:
     # Esperar a que el iframe esté presente
     WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.TAG_NAME, 'iframe')))
 
+    # Obtener la URL del iframe
+    iframe = driver.find_element(By.TAG_NAME, 'iframe')
+    iframe_url = iframe.get_attribute('src')
+    logger.info(f"URL del iframe: {iframe_url}")
+
     # Cambiar al contenido del iframe
     driver.switch_to.frame(driver.find_element(By.TAG_NAME, 'iframe'))
 
@@ -90,6 +95,7 @@ try:
     # Obtener el contenido del iframe
     iframe_html = driver.page_source
     driver.quit()
+    
 except Exception as e:
     logger.error(f"Error al cargar la página con Selenium: {e}")
     raise
