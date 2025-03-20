@@ -38,7 +38,7 @@ jobs:
           pip install requests beautifulsoup4
 
       - name: Run scraper
-        run: prueba_zeronet.py
+        run: python prueba_zeronet.py
 
       # Mostrar el contenido del archivo code_iframe.txt
       - name: Show iframe_content.txt content
