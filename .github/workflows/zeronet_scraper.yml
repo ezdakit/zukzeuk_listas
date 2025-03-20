@@ -30,8 +30,6 @@ jobs:
       - name: Run scraper
         run: python scraper.py
 
-      - name: Upload artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: iframe-content
-          path: iframe_content.txt
+      # Mostrar el contenido del archivo code_iframe.txt
+      - name: Show iframe_content.txt content
+        run: cat iframe_content.txt
