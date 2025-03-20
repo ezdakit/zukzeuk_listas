@@ -81,7 +81,11 @@ try:
     try:
         WebDriverWait(driver, 60).until(EC.presence_of_element_located((By.TAG_NAME, 'iframe')))
         driver.switch_to.frame(driver.find_element(By.TAG_NAME, 'iframe'))
-        time.sleep(60)
+        # Esperar a que el contenido final esté presente
+        WebDriverWait(driver, 60).until(
+            EC.presence_of_element_located((By.XPATH, "//table//tr"))  # Ajusta el XPath según tu tabla
+        )
+        
         iframe_html = driver.page_source
         if "Not Found" in iframe_html:
             logger.error("El contenido del iframe no se cargó correctamente.")
