@@ -1,25 +1,35 @@
 import requests
 import time
 
-def fetch_final_content(url, timeout=5):
+def fetch_final_content(url, timeout=5, max_duration=60):
     headers = {
         'Accept': 'text/html'
     }
     previous_content = None
     start_time = time.time()
+    max_time = start_time + max_duration
 
-    while True:
+    while time.time() < max_time:
         response = requests.get(url, headers=headers)
         current_content = response.text
+
+        # Prints para depuración
+        print(f"Tiempo actual: {time.time()}")
+        print(f"Contenido actual: {current_content[:100]}...")  # Muestra los primeros 100 caracteres
+        print(f"Contenido anterior: {previous_content[:100]}..." if previous_content else "Contenido anterior: None")
+        print(f"Tiempo desde última actualización: {time.time() - start_time}")
 
         if current_content != previous_content:
             previous_content = current_content
             start_time = time.time()
+            print("Contenido actualizado, reiniciando temporizador.")
         elif time.time() - start_time >= timeout:
+            print("Contenido no ha cambiado en el tiempo especificado, saliendo del bucle.")
             break
 
         time.sleep(1)
 
+    print("Contenido final:")
     print(current_content)
 
 if __name__ == "__main__":
