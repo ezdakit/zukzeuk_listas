@@ -8,6 +8,7 @@ def fetch_final_content(url, timeout=5, max_duration=60):
     previous_content = None
     start_time = time.time()
     max_time = start_time + max_duration
+    exit_reason = None
 
     while time.time() < max_time:
         response = requests.get(url, headers=headers)
@@ -24,13 +25,18 @@ def fetch_final_content(url, timeout=5, max_duration=60):
             start_time = time.time()
             print("Contenido actualizado, reiniciando temporizador.")
         elif time.time() - start_time >= timeout:
+            exit_reason = "timeout"
             print("Contenido no ha cambiado en el tiempo especificado, saliendo del bucle.")
             break
 
         time.sleep(1)
 
+    if exit_reason is None:
+        exit_reason = "max_duration"
+
     print("Contenido final:")
     print(current_content)
+    print(f"Razón de salida del bucle: {exit_reason}")
 
 if __name__ == "__main__":
     url = "http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie/?wrapper_nonce=36c675088d663a7f4bc575928f5924ff5bdc2301b739cfc3c752b6d91dbbe011"
