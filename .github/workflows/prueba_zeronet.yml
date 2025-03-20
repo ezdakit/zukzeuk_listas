@@ -10,50 +10,47 @@ on:
 
 jobs:
   run-zeronet:
-    runs-on: ubuntu-20.04  # Usar Ubuntu 20.04
+    runs-on: ubuntu-latest
+
+    container:
+      image: python:2.7-slim  # Usar una imagen de Docker con Python 2.7
 
     steps:
       # Paso 1: Configurar el entorno
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Paso 2: Instalar Python 2
-      - name: Set up Python 2
-        uses: actions/setup-python@v4
-        with:
-          python-version: '2.7'  # Usar Python 2.7
-
-      # Paso 3: Instalar dependencias
+      # Paso 2: Instalar dependencias
       - name: Install dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install -y python-pip python-dev libffi-dev libssl-dev curl unzip
+          apt-get update
+          apt-get install -y python-pip python-dev libffi-dev libssl-dev curl unzip
           pip install requests
 
-      # Paso 4: Verificar espacio en disco
+      # Paso 3: Verificar espacio en disco
       - name: Check disk space
         run: df -h  # Mostrar el espacio en disco disponible
 
-      # Paso 5: Descargar ZeroNet
+      # Paso 4: Descargar ZeroNet
       - name: Download ZeroNet
         run: |
           wget https://github.com/HelloZeroNet/ZeroNet/archive/refs/heads/master.zip -O zeronet.zip
           ls -lh zeronet.zip  # Verificar el tamaño del archivo
 
-      # Paso 6: Descomprimir ZeroNet
+      # Paso 5: Descomprimir ZeroNet
       - name: Unzip ZeroNet
         run: |
           unzip -v zeronet.zip  # Verificar el contenido del archivo ZIP
           unzip zeronet.zip     # Descomprimir el archivo
 
-      # Paso 7: Configurar ZeroNet
+      # Paso 6: Configurar ZeroNet
       - name: Configure ZeroNet
         run: |
           cd ZeroNet-master
           echo "ui_ip = 127.0.0.1" >> zeronet.conf
           echo "ui_port = 43110" >> zeronet.conf
 
-      # Paso 8: Ejecutar ZeroNet
+      # Paso 7: Ejecutar ZeroNet
       - name: Run ZeroNet
         run: |
           cd ZeroNet-master
@@ -63,12 +60,12 @@ jobs:
           # Mostrar el contenido del archivo de log
           cat zeronet.log
 
-      # Paso 9: Verificar si ZeroNet está en ejecución
+      # Paso 8: Verificar si ZeroNet está en ejecución
       - name: Check if ZeroNet is running
         run: |
           netstat -tuln | grep 43110 || echo "ZeroNet no está escuchando en el puerto 43110"
 
-      # Paso 10: Obtener y mostrar el contenido de la página de ZeroNet
+      # Paso 9: Obtener y mostrar el contenido de la página de ZeroNet
       - name: Fetch and display ZeroNet page content
         run: |
           ZERONET_SITE="${{ github.event.inputs.zeronet_site }}"
