@@ -1,7 +1,4 @@
 import time
-import tempfile
-import os
-import shutil
 import subprocess  # Para comprobar y terminar instancias de Chrome
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -18,7 +15,6 @@ url = 'http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie'
 
 # Inicializar driver como None para manejar excepciones
 driver = None
-user_data_dir = None
 
 try:
     # Comprobar si hay instancias de Chrome en ejecución y terminarlas
@@ -33,10 +29,6 @@ try:
     options = webdriver.ChromeOptions()
     # Desactivar el modo headless para depuración
     # options.add_argument("--headless")  # Comenta esta línea para desactivar el modo headless
-
-    # Crear un directorio de datos de usuario único
-    user_data_dir = tempfile.mkdtemp(prefix="selenium_chrome_user_data_")
-    options.add_argument(f"--user-data-dir={user_data_dir}")
 
     # Argumentos útiles para entornos CI/CD o contenedores
     options.add_argument("--no-sandbox")
@@ -114,7 +106,3 @@ finally:
     if driver:
         driver.quit()
         logger.info("Navegador cerrado.")
-    # Eliminar el directorio de datos de usuario temporal
-    if user_data_dir and os.path.exists(user_data_dir):
-        shutil.rmtree(user_data_dir)  # Usar shutil.rmtree para eliminar directorios no vacíos
-        logger.info(f"Directorio de datos de usuario eliminado: {user_data_dir}")
