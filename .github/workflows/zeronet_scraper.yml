@@ -24,7 +24,6 @@ jobs:
           docker ps -f name=zeronet --format "table {{.Names}}\t{{.Status}}"
           docker logs zeronet  # Mostrar logs de ZeroNet
 
-    steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
