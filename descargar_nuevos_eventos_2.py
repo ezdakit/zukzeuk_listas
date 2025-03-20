@@ -3,6 +3,8 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 import logging
 
 # Configuración de logging
@@ -12,14 +14,27 @@ logger = logging.getLogger()
 # URL de la página principal
 url = 'http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie'
 
+caps = DesiredCapabilities.CHROME
+caps['goog:loggingPrefs'] = {'browser': 'ALL'}
+
 try:
     # Configurar Selenium para cargar el contenido dinámico
     options = webdriver.ChromeOptions()
-    options.add_argument("--headless")  # Ejecutar Chrome en modo headless
+    # options.add_argument("--headless")  # Desactiva el modo headless para depuración
     options.add_argument("--user-data-dir=/tmp/selenium_chrome_user_data_unique")
+    options.add_argument("--disable-extensions")
+    options.add_argument("--disable-popup-blocking")
+    options.add_argument("--enable-javascript")
+    options.add_argument("--disable-web-security")  # Deshabilitar políticas de seguridad
+    options.add_argument("--disable-xss-auditor")  # Deshabilitar auditoría XSS
+
+    # Configurar User-Agent
+    user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    options.add_argument(f"user-agent={user_agent}")
 
     # Inicializar el driver de Chrome
-    driver = webdriver.Chrome(options=options)
+    # driver = webdriver.Chrome(options=options)
+    driver = webdriver.Chrome(desired_capabilities=caps, options=options)
     driver.get(url)
 
     # Esperar a que la página principal esté completamente cargada
@@ -70,4 +85,7 @@ finally:
     # Cerrar el navegador
     if driver:
         driver.quit()
+    logs = driver.get_log('browser')
+    for log in logs:
+        print(log)
     logger.info("Navegador cerrado.")
