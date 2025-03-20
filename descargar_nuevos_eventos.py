@@ -14,6 +14,14 @@ import requests
 from urllib3.exceptions import ReadTimeoutError
 from datetime import datetime, timedelta
 
+# Configuración de logging
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger()
+file_handler = logging.FileHandler('debug_eventos.txt')
+console_handler = logging.StreamHandler()
+logger.addHandler(file_handler)
+logger.addHandler(console_handler)
+
 # Función para comparar dos archivos
 def archivos_son_identicos(archivo1, archivo2):
     try:
@@ -24,7 +32,7 @@ def archivos_son_identicos(archivo1, archivo2):
         sys.exit(1)  # Termina el script si no se pueden abrir los archivos
 
 # Configuración de logging
-logging.basicConfig(filename='debug_eventos.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+# logging.basicConfig(filename='debug_eventos.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Borrar el contenido del fichero de log al inicio
 with open('debug_eventos.txt', 'w'):
@@ -38,15 +46,15 @@ try:
     scraper = cloudscraper.create_scraper()
     response = scraper.get(url)
     response.raise_for_status()  # Verificar que la solicitud fue exitosa
-    logging.info("Solicitud HTTP exitosa.")
+    logger.info("Solicitud HTTP exitosa.")
 except cloudscraper.exceptions.CloudflareChallengeError as e:
-    logging.error(f"Error en la solicitud HTTP: {e}")
+    logger.error(f"Error en la solicitud HTTP: {e}")
     raise
 except requests.exceptions.RequestException as e:
-    logging.error(f"La URL no está disponible o hubo un error en la solicitud: {e}")
+    logger.error(f"La URL no está disponible o hubo un error en la solicitud: {e}")
     sys.exit(1)  # Termina el script con un código de error
 except ReadTimeoutError as e:
-    logging.error(f"Tiempo de espera agotado: {e}")
+    logger.error(f"Tiempo de espera agotado: {e}")
     sys.exit(1)  # Termina el script con un código de error
 
 try:
@@ -60,7 +68,7 @@ try:
 
     # Aumentar el tiempo de espera a 30 segundos
     WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
-    logging.info("Contenido de la página cargado correctamente.")
+    logger.info("Contenido de la página cargado correctamente.")
 
     # Obtener el contenido de la página principal
     html_main = driver.page_source
@@ -68,7 +76,7 @@ try:
     # Guardar el contenido de la página principal en un archivo code.txt
     with open('code.txt', 'w', encoding='utf-8') as file:
         file.write(html_main)
-    logging.info("El contenido de la página principal se ha guardado en 'code.txt'.")
+    logger.info("El contenido de la página principal se ha guardado en 'code.txt'.")
 
     # Esperar a que el iframe esté presente
     WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.TAG_NAME, 'iframe')))
@@ -83,7 +91,7 @@ try:
     iframe_html = driver.page_source
     driver.quit()
 except Exception as e:
-    logging.error(f"Error al cargar la página con Selenium: {e}")
+    logger.error(f"Error al cargar la página con Selenium: {e}")
     raise
 
 try:
@@ -92,14 +100,14 @@ try:
         os.rename("code_iframe.txt", "code_iframe_old.txt")
     with open('code_iframe.txt', 'w', encoding='utf-8') as file:
         file.write(iframe_html)
-    logging.info("El contenido del iframe se ha guardado en 'code_iframe.txt'.")
+    logger.info("El contenido del iframe se ha guardado en 'code_iframe.txt'.")
 except Exception as e:
-    logging.error(f"Error al guardar el contenido del iframe en el archivo: {e}")
+    logger.error(f"Error al guardar el contenido del iframe en el archivo: {e}")
     raise
 
 # Comparar los archivos antes de continuar
 if archivos_son_identicos('code_iframe.txt', 'code_iframe_old.txt'):
-    logging.info("Los archivos code_iframe.txt, code_iframe_old.txt son idénticos. Terminando el script.")
+    logger.info("Los archivos code_iframe.txt, code_iframe_old.txt son idénticos. Terminando el script.")
     sys.exit(0)  # Termina el script con éxito (código 0)
 
 # Procesar el fichero code_iframe.txt para extraer información y generar el fichero eventos.csv
@@ -111,7 +119,7 @@ try:
     table = soup.find('table', {'id': 'tablaEventos'})
 
     if table is None:
-        logging.error("No se encontró la tabla con ID 'tablaEventos' en el iframe.")
+        logger.error("No se encontró la tabla con ID 'tablaEventos' en el iframe.")
         sys.exit(1)  # Terminar el script con un código de error
 
     rows = table.find_all('tr')
@@ -154,9 +162,9 @@ try:
         writer.writerow(['Hora', 'Competicion', 'Evento', 'Canales', 'Eventos_Acestream', 'Deporte'])
         writer.writerows(eventos)
 
-    logging.info("El fichero eventos.csv se ha generado correctamente.")
+    logger.info("El fichero eventos.csv se ha generado correctamente.")
 except Exception as e:
-    logging.error(f"Error al procesar el fichero code_iframe.txt: {e}")
+    logger.error(f"Error al procesar el fichero code_iframe.txt: {e}")
     raise
 
 # Procesar el fichero eventos.csv para generar zz_eventos_ott.m3u y zz_eventos_all_ott.m3u
@@ -212,9 +220,9 @@ try:
                 m3u_all_file.write(extinf_all_line)
                 m3u_all_file.write(url_line)
 
-    logging.info("Los archivos zz_eventos_ott.m3u y zz_eventos_all_ott.m3u se han generado correctamente.")
+    logger.info("Los archivos zz_eventos_ott.m3u y zz_eventos_all_ott.m3u se han generado correctamente.")
 except Exception as e:
-    logging.error(f"Error al procesar el archivo CSV o generar los archivos M3U: {e}")
+    logger.error(f"Error al procesar el archivo CSV o generar los archivos M3U: {e}")
     raise
 
 print("Proceso completado. Se han generado los archivos eventos.csv, zz_eventos_ott.m3u y zz_eventos_all_ott.m3u.")
