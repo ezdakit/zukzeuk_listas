@@ -50,6 +50,14 @@ jobs:
           # Forzar la instalación de una versión específica de Chrome (opcional)
           # sudo apt-get install -y google-chrome-stable=113.0.5672.93-1  # Reemplaza con la versión deseada
 
+      # Verificar las versiones de Chrome y ChromeDriver
+      - name: Verify Chrome and ChromeDriver versions
+        run: |
+          echo "Versión de Chrome:"
+          google-chrome --version
+          echo "Versión de ChromeDriver:"
+          chromedriver --version
+
       - name: Run Python script
         run: python descargar_nuevos_eventos_2.py
 
