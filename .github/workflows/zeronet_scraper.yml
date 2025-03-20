@@ -1,7 +1,7 @@
 name: ZeroNet Scraper
 
 on:
-  workflow_dispatch: # Permite ejecutar el workflow manualmente
+  workflow_dispatch:
 
 jobs:
   scrape:
@@ -28,10 +28,10 @@ jobs:
           pip install requests beautifulsoup4
 
       - name: Run scraper
-        run: prueba_zeronet.py
+        run: python scraper.py
 
-      - name: Upload iframe content
-        uses: actions/upload-artifact@v3
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3 #asegurate de no tener espacios extras en esta linea.
         with:
           name: iframe-content
           path: iframe_content.txt
