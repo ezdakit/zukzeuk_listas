@@ -31,7 +31,7 @@ with open('debug_eventos.txt', 'w'):
     pass
 
 # URL de la página principal
-url = 'https://proxy.zeronet.dev/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie'
+url = 'http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie'
 
 try:
     # Realizar la solicitud HTTP a la página web utilizando cloudscraper
