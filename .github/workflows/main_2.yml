@@ -1,8 +1,6 @@
 name: procesar_eventos
 
 on:
-  schedule:
-    - cron: '20 11,19,23 * * *'
   workflow_dispatch:
 
 jobs:
