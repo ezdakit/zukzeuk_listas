@@ -2,6 +2,7 @@ import time
 import tempfile
 import os
 import shutil
+import subprocess  # Para comprobar y terminar instancias de Chrome
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -20,9 +21,18 @@ driver = None
 user_data_dir = None
 
 try:
+    # Comprobar si hay instancias de Chrome en ejecución y terminarlas
+    logger.info("Comprobando si hay instancias de Chrome en ejecución...")
+    chrome_processes = subprocess.run(["pgrep", "-f", "chrome"], stdout=subprocess.PIPE)
+    if chrome_processes.returncode == 0:  # Si se encontraron procesos de Chrome
+        logger.info("Instancias de Chrome en ejecución encontradas. Terminándolas...")
+        subprocess.run(["pkill", "-f", "chrome"])
+        time.sleep(2)  # Esperar un poco para que los procesos se terminen
+
     # Configurar Selenium para cargar el contenido dinámico
     options = webdriver.ChromeOptions()
-    # options.add_argument("--headless")  # Desactiva el modo headless para depuración
+    # Desactivar el modo headless para depuración
+    # options.add_argument("--headless")  # Comenta esta línea para desactivar el modo headless
 
     # Crear un directorio de datos de usuario único
     user_data_dir = tempfile.mkdtemp(prefix="selenium_chrome_user_data_")
