@@ -26,8 +26,8 @@ try:
     # options.add_argument("--headless")  # Desactiva el modo headless para depuración
 
     # Crear un directorio de datos de usuario único
-    # user_data_dir = tempfile.mkdtemp(prefix="selenium_chrome_user_data_")
-    user_data_dir = tempfile.mkdtemp()
+    user_data_dir = tempfile.mkdtemp(prefix="selenium_chrome_user_data_")
+    # user_data_dir = tempfile.mkdtemp()
     options.add_argument(f"--user-data-dir={user_data_dir}")
 
     options.add_argument("--disable-extensions")
