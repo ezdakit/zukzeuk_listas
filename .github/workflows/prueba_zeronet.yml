@@ -12,63 +12,29 @@ jobs:
   run-zeronet:
     runs-on: ubuntu-latest
 
-    container:
-      image: python:2.7-slim  # Usar una imagen de Docker con Python 2.7
-
     steps:
       # Paso 1: Configurar el entorno
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Paso 2: Instalar dependencias
-      - name: Install dependencies
+      # Paso 2: Ejecutar ZeroNet en un contenedor Docker
+      - name: Run ZeroNet with Docker
         run: |
-          apt-get update
-          apt-get install -y wget python-pip python-dev libffi-dev libssl-dev curl unzip
-          pip install requests gevent  # Instalar gevent
+          docker run -d \
+            --name zeronet \
+            -p 43110:43110 \
+            nofish/zeronet
 
-      # Paso 3: Verificar espacio en disco
-      - name: Check disk space
-        run: df -h  # Mostrar el espacio en disco disponible
+          # Esperar a que ZeroNet se inicie
+          sleep 120
 
-      # Paso 4: Descargar ZeroNet
-      - name: Download ZeroNet
-        run: |
-          wget https://github.com/HelloZeroNet/ZeroNet/archive/refs/heads/master.zip -O zeronet.zip
-          ls -lh zeronet.zip  # Verificar el tamaño del archivo
-
-      # Paso 5: Descomprimir ZeroNet
-      - name: Unzip ZeroNet
-        run: |
-          unzip -v zeronet.zip  # Verificar el contenido del archivo ZIP
-          unzip zeronet.zip     # Descomprimir el archivo
-
-      # Paso 6: Configurar ZeroNet
-      - name: Configure ZeroNet
-        run: |
-          cd ZeroNet-master
-          echo "[global]" > zeronet.conf  # Crear una sección [global]
-          echo "ui_ip = 127.0.0.1" >> zeronet.conf
-          echo "ui_port = 43110" >> zeronet.conf
-          echo "log_dir = data/logs" >> zeronet.conf  # Configurar el directorio de logs
-          mkdir -p data/logs  # Crear el directorio de logs
-
-      # Paso 7: Ejecutar ZeroNet
-      - name: Run ZeroNet
-        run: |
-          cd ZeroNet-master
-          python zeronet.py --ui_ip 127.0.0.1 --ui_port 43110 --disable_udp --size_limit 50 --log_requests > zeronet.log 2>&1 &
-          sleep 120  # Esperar 120 segundos para asegurarse de que ZeroNet se inicie
-
-          # Mostrar el contenido del archivo de log
-          cat zeronet.log
-
-      # Paso 8: Verificar si ZeroNet está en ejecución
+      # Paso 3: Verificar si ZeroNet está en ejecución
       - name: Check if ZeroNet is running
         run: |
-          netstat -tuln | grep 43110 || echo "ZeroNet no está escuchando en el puerto 43110"
+          docker ps -f name=zeronet --format "table {{.Names}}\t{{.Status}}"
+          docker logs zeronet  # Mostrar logs de ZeroNet
 
-      # Paso 9: Obtener y mostrar el contenido de la página de ZeroNet
+      # Paso 4: Obtener y mostrar el contenido de la página de ZeroNet
       - name: Fetch and display ZeroNet page content
         run: |
           ZERONET_SITE="${{ github.event.inputs.zeronet_site }}"
@@ -79,3 +45,10 @@ jobs:
 
           # Usar curl con opciones de depuración
           curl -v "$ZERONET_URL"
+
+      # Paso 5: Detener y eliminar el contenedor
+      - name: Clean up Docker container
+        if: always()  # Ejecutar este paso incluso si fallan los anteriores
+        run: |
+          docker stop zeronet || true
+          docker rm zeronet || true
