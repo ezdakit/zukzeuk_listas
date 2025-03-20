@@ -47,10 +47,11 @@ jobs:
       - name: Configure ZeroNet
         run: |
           cd ZeroNet-master
+          echo "[global]" > zeronet.conf  # Crear una sección [global]
           echo "ui_ip = 127.0.0.1" >> zeronet.conf
           echo "ui_port = 43110" >> zeronet.conf
-          mkdir -p data/logs  # Crear el directorio de logs
           echo "log_dir = data/logs" >> zeronet.conf  # Configurar el directorio de logs
+          mkdir -p data/logs  # Crear el directorio de logs
 
       # Paso 7: Ejecutar ZeroNet
       - name: Run ZeroNet
