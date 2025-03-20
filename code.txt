@@ -29,7 +29,7 @@ else if (window.opener && window.opener.location.toString()) {
 }
 </script>
 
-<div class="progressbar" style="transform: scaleX(1); opacity: 0;">
+<div class="progressbar" style="transform: scaleX(1); opacity: 0; display: block;">
  <div class="peg"></div>
 </div>
 
@@ -61,7 +61,7 @@ else if (window.opener && window.opener.location.toString()) {
 <div class="loadingscreen ready" style="display: block;">
  <a href="/Config" class="loading-config">Config</a>
  <div class="loading-text console">
- <div class="console-line">&nbsp;&nbsp;&nbsp;Connecting...</div><div class="console-line">Trackers announcing: 0, error: 6, done: 1</div><div class="console-line">No peers found</div><div class="console-line"><span class="console-error">Tracker connection error detected.</span></div><a href="#Enable+Tor+bridges" class="button button-settrackerbridge disabled">Use Tor meek bridges for tracker connections</a><div class="console-line console-warning">No meek bridge support in your client, please <a href="https://github.com/HelloZeroNet/ZeroNet#how-to-join">download the latest bundle</a>.</div><div class="console-line"><span class="console-error">content.json download failed</span></div></div>
+ <div class="console-line">&nbsp;&nbsp;&nbsp;Connecting...</div><div class="console-line">Trackers announcing: 0, error: 6, done: 1</div><div class="console-line"><span class="console-error">Tracker connection error detected.</span></div><a href="#Enable+Tor+bridges" class="button button-settrackerbridge disabled">Use Tor meek bridges for tracker connections</a><div class="console-line console-warning">No meek bridge support in your client, please <a href="https://github.com/HelloZeroNet/ZeroNet#how-to-join">download the latest bundle</a>.</div><div class="console-line">No peers found</div><div class="console-line">Peers found: 1</div><div class="console-line"><span class="console-error">content.json download failed</span></div></div>
  <div class="flipper-container">
   <div class="flipper"> <div class="front"></div><div class="back"></div> </div>
  </div>
@@ -69,7 +69,7 @@ else if (window.opener && window.opener.location.toString()) {
 
 
 <!-- Site Iframe -->
-<iframe src="/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie/?wrapper_nonce=4fa3133508b9062ee890c6252dc0a3ecfbf5089ea8032066d9de107aa7613f6f" id="inner-iframe" sandbox="allow-forms allow-scripts allow-top-navigation allow-popups allow-modals allow-presentation allow-pointer-lock allow-popups-to-escape-sandbox " allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
+<iframe src="/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie/?wrapper_nonce=ffaeb2e8a9d95cae510dc7dede86f364f0400a8f0a54de9d8babed8260a1d125" id="inner-iframe" sandbox="allow-forms allow-scripts allow-top-navigation allow-popups allow-modals allow-presentation allow-pointer-lock allow-popups-to-escape-sandbox " allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
 
 <!-- Site info -->
 
