@@ -2,11 +2,14 @@ import requests
 import time
 
 def fetch_final_content(url, timeout=5):
+    headers = {
+        'Accept': 'text/html'
+    }
     previous_content = None
     start_time = time.time()
 
     while True:
-        response = requests.get(url)
+        response = requests.get(url, headers=headers)
         current_content = response.text
 
         if current_content != previous_content:
