@@ -5,7 +5,7 @@ on:
 
 jobs:
   scrape:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # Cambiado a ubuntu-latest
 
     services:
       zeronet:
@@ -31,7 +31,7 @@ jobs:
         run: python scraper.py
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3 #asegurate de no tener espacios extras en esta linea.
+        uses: actions/upload-artifact@v3
         with:
           name: iframe-content
           path: iframe_content.txt
