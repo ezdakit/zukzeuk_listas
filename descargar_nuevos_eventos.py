@@ -111,8 +111,8 @@ try:
     table = soup.find('table', {'id': 'tablaEventos'})
 
     if table is None:
-    logging.error("No se encontró la tabla con ID 'tablaEventos' en el iframe.")
-    sys.exit(1)  # Terminar el script con un código de error
+        logging.error("No se encontró la tabla con ID 'tablaEventos' en el iframe.")
+        sys.exit(1)  # Terminar el script con un código de error
 
     rows = table.find_all('tr')
     eventos = []
