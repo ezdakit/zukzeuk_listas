@@ -1,9 +1,11 @@
 import time
-import subprocess  # Para comprobar y terminar instancias de Firefox
+import subprocess
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.firefox.service import Service
+from selenium.webdriver.firefox.options import Options
 import logging
 
 # Configuración de logging
@@ -26,31 +28,27 @@ try:
         time.sleep(2)  # Esperar un poco para que los procesos se terminen
 
     # Configurar Selenium para cargar el contenido dinámico con Firefox
-    options = webdriver.FirefoxOptions()
-    # Desactivar el modo headless para depuración
-    # options.add_argument("--headless")  # Comenta esta línea para desactivar el modo headless
-
-    # Argumentos útiles para entornos CI/CD o contenedores
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
+    options = Options()
+    options.add_argument("--headless")  # Activar el modo headless
+    options.log.level = "trace"  # Habilitar logs detallados
 
     # Configurar User-Agent
     user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0"
     options.set_preference("general.useragent.override", user_agent)
 
-    # Configurar logs del navegador
-    options.set_capability('goog:loggingPrefs', {'browser': 'ALL'})
+    # Especificar la ruta de geckodriver
+    service = Service(executable_path="/usr/local/bin/geckodriver")
 
     # Inicializar el driver de Firefox
-    driver = webdriver.Firefox(options=options)
+    driver = webdriver.Firefox(service=service, options=options)
     driver.get(url)
 
     # Esperar a que la página principal esté completamente cargada
-    WebDriverWait(driver, 60).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
+    WebDriverWait(driver, 120).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
     logger.info("Contenido de la página principal cargado correctamente.")
 
     # Esperar a que el iframe esté presente
-    WebDriverWait(driver, 60).until(EC.presence_of_element_located((By.TAG_NAME, 'iframe')))
+    WebDriverWait(driver, 120).until(EC.presence_of_element_located((By.TAG_NAME, 'iframe')))
     logger.info("Iframe detectado en la página principal.")
 
     # Obtener la URL del iframe
@@ -68,11 +66,11 @@ try:
     driver.get(iframe_src)
 
     # Esperar a que el contenido del iframe se cargue
-    WebDriverWait(driver, 60).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
+    WebDriverWait(driver, 120).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
     logger.info("Contenido del iframe cargado correctamente.")
 
     # Esperar a que la tabla esté presente
-    WebDriverWait(driver, 60).until(
+    WebDriverWait(driver, 120).until(
         EC.presence_of_element_located((By.XPATH, "//table//tr"))
     )
     logger.info("Tabla detectada en el iframe.")
