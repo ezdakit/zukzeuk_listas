@@ -60,7 +60,7 @@ except ReadTimeoutError as e:
 try:
     # Configurar Selenium para cargar el contenido dinámico
     options = webdriver.ChromeOptions()
-    # options.add_argument("--headless")  # Ejecutar Chrome en modo headless
+    options.add_argument("--headless")  # Ejecutar Chrome en modo headless
     options.add_argument("--user-data-dir=/tmp/selenium_chrome_user_data_unique")
 
     driver = webdriver.Chrome(options=options)
