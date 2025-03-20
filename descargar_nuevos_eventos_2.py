@@ -1,61 +1,16 @@
-import cloudscraper
+import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import logging
-import time
-import csv
-from bs4 import BeautifulSoup
-import sys
-import os
-import re
-import requests
-from urllib3.exceptions import ReadTimeoutError
-from datetime import datetime, timedelta
 
 # Configuración de logging
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger()
-file_handler = logging.FileHandler('debug_eventos.txt')
-console_handler = logging.StreamHandler()
-logger.addHandler(file_handler)
-logger.addHandler(console_handler)
-
-# Función para comparar dos archivos
-def archivos_son_identicos(archivo1, archivo2):
-    try:
-        with open(archivo1, 'r') as f1, open(archivo2, 'r') as f2:
-            return f1.read() == f2.read()
-    except FileNotFoundError as e:
-        logging.error(f"Error al abrir los archivos: {e}")
-        sys.exit(1)  # Termina el script si no se pueden abrir los archivos
-
-# Configuración de logging
-# logging.basicConfig(filename='debug_eventos.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-
-# Borrar el contenido del fichero de log al inicio
-with open('debug_eventos.txt', 'w'):
-    pass
 
 # URL de la página principal
 url = 'http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie'
-
-try:
-    # Realizar la solicitud HTTP a la página web utilizando cloudscraper
-    scraper = cloudscraper.create_scraper()
-    response = scraper.get(url)
-    response.raise_for_status()  # Verificar que la solicitud fue exitosa
-    logger.info("Solicitud HTTP exitosa.")
-except cloudscraper.exceptions.CloudflareChallengeError as e:
-    logger.error(f"Error en la solicitud HTTP: {e}")
-    raise
-except requests.exceptions.RequestException as e:
-    logger.error(f"La URL no está disponible o hubo un error en la solicitud: {e}")
-    sys.exit(1)  # Termina el script con un código de error
-except ReadTimeoutError as e:
-    logger.error(f"Tiempo de espera agotado: {e}")
-    sys.exit(1)  # Termina el script con un código de error
 
 try:
     # Configurar Selenium para cargar el contenido dinámico
@@ -63,42 +18,47 @@ try:
     options.add_argument("--headless")  # Ejecutar Chrome en modo headless
     options.add_argument("--user-data-dir=/tmp/selenium_chrome_user_data_unique")
 
+    # Inicializar el driver de Chrome
     driver = webdriver.Chrome(options=options)
     driver.get(url)
 
-    # Aumentar el tiempo de espera a 30 segundos
-    WebDriverWait(driver, 60).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
-    logger.info("Contenido de la página cargado correctamente.")
+    # Esperar a que la página principal esté completamente cargada
+    WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
+    logger.info("Contenido de la página principal cargado correctamente.")
 
-    # Obtener el contenido de la página principal
-    html_main = driver.page_source
+    # Esperar a que el iframe esté presente
+    WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.TAG_NAME, 'iframe')))
+    logger.info("Iframe detectado en la página principal.")
 
-    # Guardar el contenido de la página principal en un archivo code.txt
-    with open('code.txt', 'w', encoding='utf-8') as file:
-        file.write(html_main)
-    logger.info("El contenido de la página principal se ha guardado en 'code.txt'.")
+    # Cambiar al contexto del iframe
+    iframe = driver.find_element(By.TAG_NAME, 'iframe')
+    driver.switch_to.frame(iframe)
+    logger.info("Cambiado al contexto del iframe.")
 
-    try:
-        WebDriverWait(driver, 60).until(EC.presence_of_element_located((By.TAG_NAME, 'iframe')))
-        driver.switch_to.frame(driver.find_element(By.TAG_NAME, 'iframe'))
-        # Esperar a que el contenido final esté presente
-        WebDriverWait(driver, 60).until(
-            EC.presence_of_element_located((By.XPATH, "//table//tr"))  # Ajusta el XPath según tu tabla
-        )
-        
-        iframe_html = driver.page_source
-        if "Not Found" in iframe_html:
-            logger.error("El contenido del iframe no se cargó correctamente.")
-        else:
-            with open('code_iframe.txt', 'w', encoding='utf-8') as file:
-                file.write(iframe_html)
-            logger.info("El contenido del iframe se ha guardado en 'code_iframe.txt'.")
-        driver.quit()
-    except Exception as e:
-        logger.error(f"Error al cargar el iframe: {e}")
-   
+    # Esperar un tiempo adicional para permitir la recarga del iframe
+    time.sleep(5)  # Ajusta este tiempo según sea necesario
+    logger.info("Esperando a que el iframe se recargue...")
+
+    # Esperar a que la tabla esté presente después de la recarga
+    WebDriverWait(driver, 30).until(
+        EC.presence_of_element_located((By.XPATH, "//table//tr"))
+    )
+    logger.info("Tabla detectada en el iframe.")
+
+    # Capturar el contenido del iframe
+    iframe_html = driver.page_source
+    logger.info("Contenido del iframe capturado correctamente.")
+
+    # Guardar el contenido del iframe en un archivo
+    with open('code_iframe.txt', 'w', encoding='utf-8') as file:
+        file.write(iframe_html)
+    logger.info("El contenido del iframe se ha guardado en 'code_iframe.txt'.")
+
 except Exception as e:
-    logger.error(f"Error al cargar la página con Selenium: {e}")
-    raise
+    logger.error(f"Error durante la ejecución del script: {e}")
 
-print("Proceso completado.")
+finally:
+    # Cerrar el navegador
+    if driver:
+        driver.quit()
+    logger.info("Navegador cerrado.")
