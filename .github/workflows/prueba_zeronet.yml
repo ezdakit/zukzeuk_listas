@@ -25,7 +25,7 @@ jobs:
         run: |
           apt-get update
           apt-get install -y wget python-pip python-dev libffi-dev libssl-dev curl unzip
-          pip install requests
+          pip install requests gevent  # Instalar gevent
 
       # Paso 3: Verificar espacio en disco
       - name: Check disk space
@@ -49,6 +49,8 @@ jobs:
           cd ZeroNet-master
           echo "ui_ip = 127.0.0.1" >> zeronet.conf
           echo "ui_port = 43110" >> zeronet.conf
+          mkdir -p data/logs  # Crear el directorio de logs
+          echo "log_dir = data/logs" >> zeronet.conf  # Configurar el directorio de logs
 
       # Paso 7: Ejecutar ZeroNet
       - name: Run ZeroNet
