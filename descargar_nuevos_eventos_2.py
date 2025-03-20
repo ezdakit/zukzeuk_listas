@@ -1,4 +1,6 @@
 import time
+import tempfile
+import os
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -14,12 +16,17 @@ url = 'http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie'
 
 # Inicializar driver como None para manejar excepciones
 driver = None
+user_data_dir = None
 
 try:
     # Configurar Selenium para cargar el contenido dinámico
     options = webdriver.ChromeOptions()
     # options.add_argument("--headless")  # Desactiva el modo headless para depuración
-    options.add_argument("--user-data-dir=/tmp/selenium_chrome_user_data_unique")
+
+    # Crear un directorio de datos de usuario único
+    user_data_dir = tempfile.mkdtemp(prefix="selenium_chrome_user_data_")
+    options.add_argument(f"--user-data-dir={user_data_dir}")
+
     options.add_argument("--disable-extensions")
     options.add_argument("--disable-popup-blocking")
     options.add_argument("--enable-javascript")
@@ -91,4 +98,8 @@ finally:
     # Cerrar el navegador si el driver está definido
     if driver:
         driver.quit()
-    logger.info("Navegador cerrado.")
+        logger.info("Navegador cerrado.")
+    # Eliminar el directorio de datos de usuario temporal
+    if user_data_dir and os.path.exists(user_data_dir):
+        os.rmdir(user_data_dir)
+        logger.info(f"Directorio de datos de usuario eliminado: {user_data_dir}")
