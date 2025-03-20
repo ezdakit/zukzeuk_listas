@@ -23,7 +23,7 @@ jobs:
             nofish/zeronet
 
           # Esperar a que ZeroNet se inicie
-          sleep 20
+          sleep 10
 
       # Verificar si ZeroNet está en ejecución
       - name: Check if ZeroNet is running
