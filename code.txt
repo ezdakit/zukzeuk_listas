@@ -1,12 +1,12 @@
 <html><head>
- <title>Andrenalina\ Elcano\.top - ZeroNet</title>
+ <title>Loading 18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie... - ZeroNet</title>
  <meta charset="utf-8">
  <meta http-equiv="content-type" content="text/html; charset=utf-8">
- <link rel="stylesheet" href="/uimedia/all.css?rev=4625">
+ <link rel="stylesheet" href="/uimedia/all.css?rev=4555">
  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
  
 </head>
-<body style="background-color: #FFF;" class="theme-light ">
+<body style="" class="theme-light ">
 
 <div class="unsupported" id="unsupported" style="display: none;">
  <script nonce="">document.getElementById('unsupported').style.display = "none"</script>
@@ -29,15 +29,15 @@ else if (window.opener && window.opener.location.toString()) {
 }
 </script>
 
-<div class="progressbar">
+<div class="progressbar" style="transform: scaleX(1); opacity: 0;">
  <div class="peg"></div>
 </div>
 
 <!-- Fixed button -->
-<div class="fixbutton">
+<div class="fixbutton" style="left: 705px;">
  <div class="fixbutton-text"><img width="30" src="/uimedia/img/logo-white.svg"></div>
  <div class="fixbutton-burger">≡</div>
- <a class="fixbutton-bg" href="/1HELLoE3sFD9569CLCbHEAVqvqV7U2Ri9d/"></a>
+ <a class="fixbutton-bg" href="/1HeLLo4uzjaLetFx6NH3PMwFP3qbRbTf3D/"></a>
 </div>
 
 <!-- Notifications -->
@@ -58,10 +58,10 @@ else if (window.opener && window.opener.location.toString()) {
 </div>
 
 <!-- Loadingscreen -->
-<div class="loadingscreen">
+<div class="loadingscreen ready" style="display: block;">
  <a href="/Config" class="loading-config">Config</a>
  <div class="loading-text console">
- </div>
+ <div class="console-line">&nbsp;&nbsp;&nbsp;Connecting...</div><div class="console-line">Trackers announcing: 0, error: 6, done: 1</div><div class="console-line">No peers found</div><div class="console-line"><span class="console-error">Tracker connection error detected.</span></div><a href="#Enable+Tor+bridges" class="button button-settrackerbridge disabled">Use Tor meek bridges for tracker connections</a><div class="console-line console-warning">No meek bridge support in your client, please <a href="https://github.com/HelloZeroNet/ZeroNet#how-to-join">download the latest bundle</a>.</div><div class="console-line"><span class="console-error">content.json download failed</span></div></div>
  <div class="flipper-container">
   <div class="flipper"> <div class="front"></div><div class="back"></div> </div>
  </div>
@@ -69,11 +69,11 @@ else if (window.opener && window.opener.location.toString()) {
 
 
 <!-- Site Iframe -->
-<iframe src="/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie/?wrapper_nonce=9916a5c4fb5957afb189cc92c51e4ad882d69dfcd9fabb73e6bf73814483453e" id="inner-iframe" sandbox="allow-forms allow-scripts allow-top-navigation allow-popups allow-modals allow-presentation allow-pointer-lock allow-popups-to-escape-sandbox " allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
+<iframe src="/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie/?wrapper_nonce=632e568a4873a88057df57866434f4bda92c0ea712f2b83ffc0907ba63ac4164" id="inner-iframe" sandbox="allow-forms allow-scripts allow-top-navigation allow-popups allow-modals allow-presentation allow-pointer-lock allow-popups-to-escape-sandbox " allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
 
 <!-- Site info -->
 
-<script type="text/javascript" src="/uimedia/all.js?rev=4625&amp;lang=en" nonce=""></script>
+<script type="text/javascript" src="/uimedia/all.js?rev=4555&amp;lang=en" nonce=""></script>
 <script nonce="">setTimeout(window.wrapper.onWrapperLoad, 1)</script>
 
 
