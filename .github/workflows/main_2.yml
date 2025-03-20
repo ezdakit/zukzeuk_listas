@@ -47,16 +47,8 @@ jobs:
           sudo apt-get install -y wget unzip
           wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
           sudo apt-get install -y ./google-chrome-stable_current_amd64.deb
-
-      - name: Install ChromeDriver
-        run: |
-          # Especificar manualmente la versión de ChromeDriver
-          CHROMEDRIVER_VERSION="134.0.6998.90"  # Reemplaza con la versión correcta
-          # url con los links: https://googlechromelabs.github.io/chrome-for-testing/#stable
-          wget https://storage.googleapis.com/chrome-for-testing-public/$CHROMEDRIVER_VERSION/linux64/chrome-linux64.zip
-          unzip chrome-linux64.zip
-          chmod +x chrome
-          sudo mv chrome /usr/local/bin/
+          # Forzar la instalación de una versión específica de Chrome (opcional)
+          # sudo apt-get install -y google-chrome-stable=113.0.5672.93-1  # Reemplaza con la versión deseada
 
       - name: Run Python script
         run: python descargar_nuevos_eventos_2.py
