@@ -85,7 +85,7 @@ try:
     driver.switch_to.frame(driver.find_element(By.TAG_NAME, 'iframe'))
 
     # Agregar un delay para esperar un poco antes de verificar la visibilidad de la tabla
-    time.sleep(10)
+    time.sleep(60)
 
     # Obtener el contenido del iframe
     iframe_html = driver.page_source
