@@ -10,8 +10,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Configurar el entorno
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+
+      # Ejecutar ZeroNet en un contenedor Docker
+      - name: Run ZeroNet with Docker
+        run: |
+          docker run -d \
+            --name zeronet \
+            -p 43110:43110 \
+            nofish/zeronet
+
+          # Esperar a que ZeroNet se inicie
+          sleep 20
+
+      # Verificar si ZeroNet está en ejecución
+      - name: Check if ZeroNet is running
+        run: |
+          docker ps -f name=zeronet --format "table {{.Names}}\t{{.Status}}"
+          docker logs zeronet  # Mostrar logs de ZeroNet
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -46,3 +64,10 @@ jobs:
         run: git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Detener y eliminar el contenedor
+      - name: Clean up Docker container
+        if: always()  # Ejecutar este paso incluso si fallan los anteriores
+        run: |
+          docker stop zeronet || true
+          docker rm zeronet || true
