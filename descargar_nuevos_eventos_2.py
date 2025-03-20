@@ -5,6 +5,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import logging
+from selenium.webdriver import Firefox
+from selenium.webdriver.firefox.options import Options
 
 # Configuración de logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -26,9 +28,9 @@ try:
         time.sleep(2)  # Esperar un poco para que los procesos se terminen
 
     # Configurar Selenium para cargar el contenido dinámico
-    options = webdriver.ChromeOptions()
+    options = Options()
     # Desactivar el modo headless para depuración
-    # options.add_argument("--headless")  # Comenta esta línea para desactivar el modo headless
+    options.add_argument("--headless")  # Comenta esta línea para desactivar el modo headless
 
     # Argumentos útiles para entornos CI/CD o contenedores
     options.add_argument("--no-sandbox")
@@ -48,7 +50,7 @@ try:
     options.set_capability('goog:loggingPrefs', {'browser': 'ALL'})
 
     # Inicializar el driver de Chrome
-    driver = webdriver.Chrome(options=options)
+    driver = Firefox(options=options)
     driver.get(url)
 
     # Esperar a que la página principal esté completamente cargada
