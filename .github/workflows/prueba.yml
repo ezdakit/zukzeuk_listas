@@ -1,0 +1,28 @@
+name: prueba
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-zeronet:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Run ZeroNet with Docker
+      run: |
+        docker run -d \
+          --name zeronet \
+          -p 43110:43110 \
+          nofish/zeronet
+
+    - name: Wait for ZeroNet to start
+      run: sleep 10
+
+    - name: Install Python
+      run: sudo apt-get install python3 python3-pip
+
+    - name: Run Python script
+      run: python3 prueba.py
