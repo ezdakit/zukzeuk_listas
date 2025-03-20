@@ -13,9 +13,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Paso 1: Configurar el entorno
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      # Paso 2: Instalar dependencias
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -24,29 +26,52 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y python3-pip python3-dev libffi-dev libssl-dev curl
+          sudo apt-get install -y python3-pip python3-dev libffi-dev libssl-dev curl unzip
           pip install requests
 
-      - name: Download and run ZeroNet
+      # Paso 3: Verificar espacio en disco
+      - name: Check disk space
+        run: df -h  # Mostrar el espacio en disco disponible
+
+      # Paso 4: Descargar ZeroNet
+      - name: Download ZeroNet
         run: |
           wget https://github.com/HelloZeroNet/ZeroNet/archive/refs/heads/master.zip -O zeronet.zip
-          unzip zeronet.zip
-          cd ZeroNet-master
+          ls -lh zeronet.zip  # Verificar el tamaño del archivo
 
-          # Configurar ZeroNet
+      # Paso 5: Descomprimir ZeroNet
+      - name: Unzip ZeroNet
+        run: |
+          unzip -v zeronet.zip  # Verificar el contenido del archivo ZIP
+          unzip zeronet.zip     # Descomprimir el archivo
+
+      # Paso 6: Configurar ZeroNet
+      - name: Configure ZeroNet
+        run: |
+          cd ZeroNet-master
           echo "ui_ip = 127.0.0.1" >> zeronet.conf
           echo "ui_port = 43110" >> zeronet.conf
 
-          # Ejecutar ZeroNet en primer plano con un tiempo límite
-          timeout 120 python3 zeronet.py --ui_ip 127.0.0.1 --ui_port 43110 --disable_udp --size_limit 50 --log_requests > zeronet.log 2>&1
+      # Paso 7: Ejecutar ZeroNet
+      - name: Run ZeroNet
+        run: |
+          cd ZeroNet-master
+          python3 zeronet.py --ui_ip 127.0.0.1 --ui_port 43110 --disable_udp --size_limit 50 --log_requests > zeronet.log 2>&1 &
+          sleep 120  # Esperar 120 segundos para asegurarse de que ZeroNet se inicie
 
           # Mostrar el contenido del archivo de log
           cat zeronet.log
 
+      # Paso 8: Verificar si ZeroNet está en ejecución
       - name: Check if ZeroNet is running
         run: |
           netstat -tuln | grep 43110 || echo "ZeroNet no está escuchando en el puerto 43110"
 
+      # Paso X: Verificar espacio en disco
+      - name: Check disk space
+        run: df -h  # Mostrar el espacio en disco disponible
+
+      # Paso 9: Obtener y mostrar el contenido de la página de ZeroNet
       - name: Fetch and display ZeroNet page content
         run: |
           ZERONET_SITE="${{ github.event.inputs.zeronet_site }}"
