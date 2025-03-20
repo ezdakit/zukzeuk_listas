@@ -1,12 +1,10 @@
 import time
-import subprocess  # Para comprobar y terminar instancias de Chrome
+import subprocess  # Para comprobar y terminar instancias de Firefox
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import logging
-from selenium.webdriver import Firefox
-from selenium.webdriver.firefox.options import Options
 
 # Configuración de logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -19,38 +17,32 @@ url = 'http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie'
 driver = None
 
 try:
-    # Comprobar si hay instancias de Chrome en ejecución y terminarlas
-    logger.info("Comprobando si hay instancias de Chrome en ejecución...")
-    chrome_processes = subprocess.run(["pgrep", "-f", "chrome"], stdout=subprocess.PIPE)
-    if chrome_processes.returncode == 0:  # Si se encontraron procesos de Chrome
-        logger.info("Instancias de Chrome en ejecución encontradas. Terminándolas...")
-        subprocess.run(["pkill", "-f", "chrome"])
+    # Comprobar si hay instancias de Firefox en ejecución y terminarlas
+    logger.info("Comprobando si hay instancias de Firefox en ejecución...")
+    firefox_processes = subprocess.run(["pgrep", "-f", "firefox"], stdout=subprocess.PIPE)
+    if firefox_processes.returncode == 0:  # Si se encontraron procesos de Firefox
+        logger.info("Instancias de Firefox en ejecución encontradas. Terminándolas...")
+        subprocess.run(["pkill", "-f", "firefox"])
         time.sleep(2)  # Esperar un poco para que los procesos se terminen
 
-    # Configurar Selenium para cargar el contenido dinámico
-    options = Options()
+    # Configurar Selenium para cargar el contenido dinámico con Firefox
+    options = webdriver.FirefoxOptions()
     # Desactivar el modo headless para depuración
-    options.add_argument("--headless")  # Comenta esta línea para desactivar el modo headless
+    # options.add_argument("--headless")  # Comenta esta línea para desactivar el modo headless
 
     # Argumentos útiles para entornos CI/CD o contenedores
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
 
-    options.add_argument("--disable-extensions")
-    options.add_argument("--disable-popup-blocking")
-    options.add_argument("--enable-javascript")
-    options.add_argument("--disable-web-security")  # Deshabilitar políticas de seguridad
-    options.add_argument("--disable-xss-auditor")  # Deshabilitar auditoría XSS
-
     # Configurar User-Agent
-    user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
-    options.add_argument(f"user-agent={user_agent}")
+    user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0"
+    options.set_preference("general.useragent.override", user_agent)
 
     # Configurar logs del navegador
     options.set_capability('goog:loggingPrefs', {'browser': 'ALL'})
 
-    # Inicializar el driver de Chrome
-    driver = Firefox(options=options)
+    # Inicializar el driver de Firefox
+    driver = webdriver.Firefox(options=options)
     driver.get(url)
 
     # Esperar a que la página principal esté completamente cargada
