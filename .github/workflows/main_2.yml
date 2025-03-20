@@ -50,10 +50,6 @@ jobs:
       - name: Show code_iframe.txt content
         run: cat code_iframe.txt
 
-      # Mostrar el contenido del archivo code_iframe.txt
-      - name: Show code_iframe.txt content
-        run: cat code_iframe.txt
-
       - name: Configurar identidad de Git
         run: |
           git config user.name "GitHub Actions"
