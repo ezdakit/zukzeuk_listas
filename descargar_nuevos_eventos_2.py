@@ -30,16 +30,25 @@ try:
     WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.TAG_NAME, 'iframe')))
     logger.info("Iframe detectado en la página principal.")
 
-    # Cambiar al contexto del iframe
+    # Obtener la URL del iframe
     iframe = driver.find_element(By.TAG_NAME, 'iframe')
-    driver.switch_to.frame(iframe)
-    logger.info("Cambiado al contexto del iframe.")
+    iframe_src = iframe.get_attribute('src')
+    logger.info(f"URL del iframe: {iframe_src}")
 
-    # Esperar un tiempo adicional para permitir la recarga del iframe
-    time.sleep(5)  # Ajusta este tiempo según sea necesario
-    logger.info("Esperando a que el iframe se recargue...")
+    # Verificar si la URL del iframe es válida
+    if not iframe_src:
+        raise ValueError("La URL del iframe está vacía o no es válida.")
 
-    # Esperar a que la tabla esté presente después de la recarga
+    # Abrir la URL del iframe en una nueva pestaña
+    driver.execute_script("window.open('');")  # Abrir una nueva pestaña
+    driver.switch_to.window(driver.window_handles[1])  # Cambiar a la nueva pestaña
+    driver.get(iframe_src)  # Navegar a la URL del iframe
+
+    # Esperar a que la página del iframe esté completamente cargada
+    WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
+    logger.info("Contenido del iframe cargado correctamente.")
+
+    # Esperar a que la tabla esté presente
     WebDriverWait(driver, 30).until(
         EC.presence_of_element_located((By.XPATH, "//table//tr"))
     )
