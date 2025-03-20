@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: |
           apt-get update
-          apt-get install -y python-pip python-dev libffi-dev libssl-dev curl unzip
+          apt-get install -y wget python-pip python-dev libffi-dev libssl-dev curl unzip
           pip install requests
 
       # Paso 3: Verificar espacio en disco
