@@ -1,5 +1,5 @@
 import time
-import subprocess  # Para comprobar y terminar instancias de Chrome
+import subprocess
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -10,8 +10,8 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger()
 
-# URL de la página principal
-url = 'http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie'
+# URL del iframe
+iframe_src = 'http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie/?wrapper_nonce=36c675088d663a7f4bc575928f5924ff5bdc2301b739cfc3c752b6d91dbbe011'
 
 # Inicializar driver como None para manejar excepciones
 driver = None
@@ -27,7 +27,7 @@ try:
 
     # Configurar Selenium para cargar el contenido dinámico con Chrome
     options = webdriver.ChromeOptions()
-    options.add_argument("--headless")  # Activar el modo headless
+    # options.add_argument("--headless")  # Comenta esta línea para desactivar el modo headless
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--disable-extensions")
@@ -37,7 +37,7 @@ try:
     options.add_argument("--disable-xss-auditor")  # Deshabilitar auditoría XSS
 
     # Configurar User-Agent
-    user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.6998.117 Safari/537.36"
     options.add_argument(f"user-agent={user_agent}")
 
     # Configurar logs del navegador
@@ -46,26 +46,26 @@ try:
     # Inicializar el driver de Chrome
     driver = webdriver.Chrome(options=options)
 
-    # Obtener la URL del iframe directamente
-    iframe_src = 'http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie/?wrapper_nonce=36c675088d663a7f4bc575928f5924ff5bdc2301b739cfc3c752b6d91dbbe011'  # Reemplaza con la URL correcta
-    logger.info(f"Abriendo directamente la URL del iframe: {iframe_src}")
-
     # Abrir la URL del iframe
+    logger.info(f"Abriendo directamente la URL del iframe: {iframe_src}")
     driver.get(iframe_src)
 
     # Esperar a que el contenido del iframe se cargue
-    WebDriverWait(driver, 120).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
+    WebDriverWait(driver, 60).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
     logger.info("Contenido del iframe cargado correctamente.")
 
     # Esperar a que la tabla esté presente
-    WebDriverWait(driver, 120).until(
-        EC.presence_of_element_located((By.XPATH, "//table//tr"))
-    )
-    logger.info("Tabla detectada en el iframe.")
+    try:
+        WebDriverWait(driver, 60).until(
+            EC.presence_of_element_located((By.XPATH, "//table//tr"))
+        )
+        logger.info("Tabla detectada en el iframe.")
+    except Exception as e:
+        logger.error(f"Error al buscar la tabla en el iframe: {e}")
 
     # Capturar el contenido del iframe
     iframe_html = driver.page_source
-    logger.info("Contenido del iframe capturado correctamente.")
+    logger.info(f"Contenido del iframe: {iframe_html}")  # Imprime el contenido para depuración
 
     # Guardar el contenido del iframe en un archivo
     with open('code_iframe.txt', 'w', encoding='utf-8') as file:
