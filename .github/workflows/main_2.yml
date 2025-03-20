@@ -52,8 +52,9 @@ jobs:
         run: |
           # Especificar manualmente la versión de ChromeDriver
           CHROMEDRIVER_VERSION="134.0.6998.90"  # Reemplaza con la versión correcta
+          # url con los links: https://googlechromelabs.github.io/chrome-for-testing/#stable
           wget https://storage.googleapis.com/chrome-for-testing-public/$CHROMEDRIVER_VERSION/linux64/chrome-linux64.zip
-          unzip chromedriver_linux64.zip
+          unzip chrome-linux64.zip
           chmod +x chromedriver
           sudo mv chromedriver /usr/local/bin/
 
