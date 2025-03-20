@@ -60,14 +60,14 @@ except ReadTimeoutError as e:
 try:
     # Configurar Selenium para cargar el contenido dinámico
     options = webdriver.ChromeOptions()
-    options.add_argument("--headless")  # Ejecutar Chrome en modo headless
+    # options.add_argument("--headless")  # Ejecutar Chrome en modo headless
     options.add_argument("--user-data-dir=/tmp/selenium_chrome_user_data_unique")
 
     driver = webdriver.Chrome(options=options)
     driver.get(url)
 
     # Aumentar el tiempo de espera a 30 segundos
-    WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
+    WebDriverWait(driver, 60).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
     logger.info("Contenido de la página cargado correctamente.")
 
     # Obtener el contenido de la página principal
@@ -78,37 +78,23 @@ try:
         file.write(html_main)
     logger.info("El contenido de la página principal se ha guardado en 'code.txt'.")
 
-    # Esperar a que el iframe esté presente
-    WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.TAG_NAME, 'iframe')))
-
-    # Obtener la URL del iframe
-    iframe = driver.find_element(By.TAG_NAME, 'iframe')
-    iframe_url = iframe.get_attribute('src')
-    logger.info(f"URL del iframe: {iframe_url}")
-
-    # Cambiar al contenido del iframe
-    driver.switch_to.frame(driver.find_element(By.TAG_NAME, 'iframe'))
-
-    # Agregar un delay para esperar un poco antes de verificar la visibilidad de la tabla
-    time.sleep(60)
-
-    # Obtener el contenido del iframe
-    iframe_html = driver.page_source
-    driver.quit()
-    
+    try:
+        WebDriverWait(driver, 60).until(EC.presence_of_element_located((By.TAG_NAME, 'iframe')))
+        driver.switch_to.frame(driver.find_element(By.TAG_NAME, 'iframe'))
+        time.sleep(60)
+        iframe_html = driver.page_source
+        if "Not Found" in iframe_html:
+            logger.error("El contenido del iframe no se cargó correctamente.")
+        else:
+            with open('code_iframe.txt', 'w', encoding='utf-8') as file:
+                file.write(iframe_html)
+            logger.info("El contenido del iframe se ha guardado en 'code_iframe.txt'.")
+        driver.quit()
+    except Exception as e:
+        logger.error(f"Error al cargar el iframe: {e}")
+   
 except Exception as e:
     logger.error(f"Error al cargar la página con Selenium: {e}")
     raise
 
-try:
-    # Guardar el contenido del iframe en un archivo code_iframe.txt
-    if os.path.exists("code_iframe.txt"):    # Renombrar el archivo code_iframe.txt existente a code_iframe_old.txt
-        os.rename("code_iframe.txt", "code_iframe_old.txt")
-    with open('code_iframe.txt', 'w', encoding='utf-8') as file:
-        file.write(iframe_html)
-    logger.info("El contenido del iframe se ha guardado en 'code_iframe.txt'.")
-except Exception as e:
-    logger.error(f"Error al guardar el contenido del iframe en el archivo: {e}")
-    raise
-
-print("Proceso completado. Se han generado los archivos eventos.csv, zz_eventos_ott.m3u y zz_eventos_all_ott.m3u.")
+print("Proceso completado.")
