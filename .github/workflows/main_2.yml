@@ -44,7 +44,7 @@ jobs:
       # ... (parte anterior del workflow igual)
 
       - name: Run Python script
-        run: python descargar_nuevos_eventos.py
+        run: python descargar_nuevos_eventos_2.py
 
       # Mostrar el contenido del archivo code_iframe.txt
       - name: Show code_iframe.txt content
