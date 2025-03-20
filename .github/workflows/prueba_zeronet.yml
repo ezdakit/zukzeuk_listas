@@ -10,7 +10,7 @@ on:
 
 jobs:
   run-zeronet:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04  # Usar Ubuntu 20.04
 
     steps:
       # Paso 1: Configurar el entorno
