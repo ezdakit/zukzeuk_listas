@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - prueba.yml
+      - .github/workflows/prueba.yml
       - prueba.py
 jobs:
   run-zeronet:
