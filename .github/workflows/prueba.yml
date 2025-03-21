@@ -6,38 +6,35 @@ on:
 jobs:
   run-zeronet:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-
     - name: Run ZeroNet with Docker
       run: |
         docker run -d \
           --name zeronet \
           -p 43110:43110 \
-          nofish/zeronet \
-          --tor_use_bridges \
-          --tracker_proxy tor \
-          --tor_controller 127.0.0.1:9151 \
-          --tor_proxy 127.0.0.1:9150
-
+          nofish/zeronet
     - name: Wait for ZeroNet to start
       run: sleep 10
-
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y python3 python3-pip
+        sudo apt-get install -y python3 python3-pip tor
         pip3 install selenium
         sudo apt-get install -y chromium-chromedriver
         if [ ! -f /usr/bin/chromedriver ]; then
           sudo ln -s /usr/lib/chromium-browser/chromedriver /usr/bin/chromedriver
         fi
-
+    - name: Configure Tor bridges
+      run: |
+        echo "UseBridges 1" >> /etc/tor/torrc
+        echo "ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy" >> /etc/tor/torrc
+        echo "Bridge obfs4 <IP-address:port> <Fingerprint>" >> /etc/tor/torrc
+    - name: Start Tor service
+      run: sudo service tor start
     - name: Run Python script
       run: python3 prueba.py
-
     - name: Upload screenshots folder
       uses: actions/upload-artifact@v4
       with:
