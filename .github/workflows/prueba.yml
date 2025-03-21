@@ -33,8 +33,3 @@ jobs:
 
     - name: Run Python script
       run: python3 script.py
-        sudo apt-get install -y chromium-chromedriver
-        sudo ln -s /usr/lib/chromium-browser/chromedriver /usr/bin/chromedriver
-
-    - name: Run Python script
-      run: python3 script.py
