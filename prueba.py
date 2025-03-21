@@ -87,6 +87,14 @@ if __name__ == "__main__":
             torrc.write("ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy\n")
             for bridge in bridges:
                 torrc.write(f"Bridge obfs4 {bridge}\n")
+                print(f"Bridge configured: {bridge}")
         subprocess.run(['sudo', 'mv', 'torrc_temp', '/etc/tor/torrc'])
         subprocess.run(['sudo', 'service', 'tor', 'restart'])
+    
     fetch_final_content(url, iframe_id)
+    
+    # Collect ZeroNet logs and ensure they are not empty
+    result = subprocess.run(['docker', 'logs', 'zeronet'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    with open('zeronet_logs.txt', 'w') as log_file:
+        log_file.write(result.stdout.decode())
+        log_file.write(result.stderr.decode())
