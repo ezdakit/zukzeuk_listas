@@ -20,7 +20,6 @@ jobs:
     - name: Wait for ZeroNet to start
       run: sleep 10
     - name: Install dependencies
-    - name: Install dependencies
       run: |
         sudo apt-get update
         sudo apt-get install -y obfs4proxy
