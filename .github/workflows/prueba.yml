@@ -33,3 +33,9 @@ jobs:
 
     - name: Run Python script
       run: python3 prueba.py
+
+    - name: Upload screenshot
+      uses: actions/upload-artifact@v2
+      with:
+        name: final_screenshot
+        path: final_screenshot.png
