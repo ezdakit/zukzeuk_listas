@@ -21,12 +21,18 @@ jobs:
       run: sleep 10
     - name: Install dependencies
       run: |
+        echo "Updating package lists"
         sudo apt-get update
-        sudo apt-get install -y obfs4proxy
+        echo "Installing Python and pip"
         sudo apt-get install -y python3 python3-pip tor
+        echo "Installing obfs4proxy"
+        sudo apt-get install -y obfs4proxy
+        echo "Installing Selenium and requests"
         pip3 install selenium requests
+        echo "Installing Chromium and Chromedriver"
         sudo apt-get install -y chromium-chromedriver
         if [ ! -f /usr/bin/chromedriver ]; then
+          echo "Creating symlink for Chromedriver"
           sudo ln -s /usr/lib/chromium-browser/chromedriver /usr/bin/chromedriver
     - name: Run Python script
       run: python3 prueba.py
