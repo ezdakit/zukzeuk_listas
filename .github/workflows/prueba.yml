@@ -12,11 +12,13 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
     - name: Run ZeroNet with Docker
-      run: |
-        docker run -d \
-          --name zeronet \
-          -p 43110:43110 \
-          nofish/zeronet
+        run: |
+          docker run -d \
+            --name zeronet \
+            -p 43110:43110 \
+            --log-driver json-file \
+            --log-opt max-size=10m \
+            nofish/zeronet
     - name: Wait for ZeroNet to start
       run: sleep 10
     - name: Install dependencies
