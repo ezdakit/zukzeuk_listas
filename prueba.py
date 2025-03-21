@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
+import subprocess
 
 def fetch_bridges():
     response = requests.get('https://bridges.torproject.org/bridges?transport=obfs4')
@@ -81,10 +82,11 @@ if __name__ == "__main__":
     iframe_id = "inner-iframe" # ID del iframe que quieres monitorizar
     bridges = fetch_bridges()
     if bridges:
-        with open('/etc/tor/torrc', 'a') as torrc:
+        with open('torrc_temp', 'w') as torrc:
             torrc.write("UseBridges 1\n")
             torrc.write("ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy\n")
             for bridge in bridges:
                 torrc.write(f"Bridge obfs4 {bridge}\n")
-    os.system('sudo service tor restart')
+        subprocess.run(['sudo', 'mv', 'torrc_temp', '/etc/tor/torrc'])
+        subprocess.run(['sudo', 'service', 'tor', 'restart'])
     fetch_final_content(url, iframe_id)
