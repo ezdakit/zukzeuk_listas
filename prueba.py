@@ -13,6 +13,11 @@ def fetch_final_content(url, iframe_id, timeout=5, max_duration=60):
     driver = webdriver.Chrome(service=service, options=options)
     driver.get(url)
 
+    # Print del contenido inicial
+    initial_content = driver.page_source
+    print("Contenido inicial:")
+    print(initial_content)
+
     # Esperar a que el iframe esté presente
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, iframe_id)))
 
