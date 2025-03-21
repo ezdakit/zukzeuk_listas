@@ -5,13 +5,15 @@ on:
     paths:
       - .github/workflows/prueba.yml
       - prueba.py
+
 jobs:
   run-zeronet:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-    - name: Run ZeroNet with Docker
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Run ZeroNet with Docker
         run: |
           docker run -d \
             --name zeronet \
@@ -19,33 +21,38 @@ jobs:
             --log-driver json-file \
             --log-opt max-size=10m \
             nofish/zeronet
-    - name: Wait for ZeroNet to start
-      run: sleep 10
-    - name: Install dependencies
-      run: |
-        echo "Updating package lists"
-        sudo apt-get update
-        echo "Installing Python and pip"
-        sudo apt-get install -y python3 python3-pip tor
-        echo "Installing obfs4proxy"
-        sudo apt-get install -y obfs4proxy
-        echo "Installing Selenium and requests"
-        pip3 install selenium requests
-        echo "Installing Chromium and Chromedriver"
-        sudo apt-get install -y chromium-chromedriver
-        if [ ! -f /usr/bin/chromedriver ]; then
-          sudo ln -s /usr/lib/chromium-browser/chromedriver /usr/bin/chromedriver
-          echo "Creating symlink for Chromedriver"
-        fi
-    - name: Run Python script
-      run: python3 prueba.py
-    - name: Collect ZeroNet logs
-      run: |
-        docker logs zeronet > zeronet_logs.txt
-    - name: Upload artifacts
-      uses: actions/upload-artifact@v4
-      with:
-        name: artifacts
-        path: |
-          pantallazos/
-          zeronet_logs.txt
+
+      - name: Wait for ZeroNet to start
+        run: sleep 20  # Aumentar el tiempo de espera
+
+      - name: Install dependencies
+        run: |
+          echo "Updating package lists"
+          sudo apt-get update
+          echo "Installing Python and pip"
+          sudo apt-get install -y python3 python3-pip tor
+          echo "Installing obfs4proxy"
+          sudo apt-get install -y obfs4proxy
+          echo "Installing Selenium and requests"
+          pip3 install selenium requests
+          echo "Installing Chromium and Chromedriver"
+          sudo apt-get install -y chromium-chromedriver
+          if [ ! -f /usr/bin/chromedriver ]; then
+            sudo ln -s /usr/lib/chromium-browser/chromedriver /usr/bin/chromedriver
+            echo "Creating symlink for Chromedriver"
+          fi
+
+      - name: Run Python script
+        run: python3 prueba.py
+
+      - name: Collect ZeroNet logs
+        run: |
+          docker logs zeronet > zeronet_logs.txt
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: artifacts
+          path: |
+            pantallazos/
+            zeronet_logs.txt
