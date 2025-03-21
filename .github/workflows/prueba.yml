@@ -16,7 +16,11 @@ jobs:
         docker run -d \
           --name zeronet \
           -p 43110:43110 \
-          nofish/zeronet
+          nofish/zeronet \
+          --tor_use_bridges \
+          --tracker_proxy tor \
+          --tor_controller 127.0.0.1:9151 \
+          --tor_proxy 127.0.0.1:9150
 
     - name: Wait for ZeroNet to start
       run: sleep 10
