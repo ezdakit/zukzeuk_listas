@@ -1,10 +1,20 @@
 import os
+import requests
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
+
+def fetch_bridges():
+    response = requests.get('https://bridges.torproject.org/bridges?transport=obfs4')
+    if response.status_code == 200:
+        bridges = response.text.split('\n')
+        return bridges
+    else:
+        print("Error fetching bridges")
+        return []
 
 def fetch_final_content(url, iframe_id, timeout=20):
     service = Service('/usr/bin/chromedriver') # Ruta predeterminada de ChromeDriver en Ubuntu
@@ -69,4 +79,12 @@ def fetch_final_content(url, iframe_id, timeout=20):
 if __name__ == "__main__":
     url = "http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie"
     iframe_id = "inner-iframe" # ID del iframe que quieres monitorizar
+    bridges = fetch_bridges()
+    if bridges:
+        with open('/etc/tor/torrc', 'a') as torrc:
+            torrc.write("UseBridges 1\n")
+            torrc.write("ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy\n")
+            for bridge in bridges:
+                torrc.write(f"Bridge obfs4 {bridge}\n")
+    os.system('sudo service tor restart')
     fetch_final_content(url, iframe_id)
