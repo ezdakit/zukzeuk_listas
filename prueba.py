@@ -4,9 +4,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
-import difflib
 
-def fetch_final_content(url, iframe_id, timeout=5, max_duration=60):
+def fetch_final_content(url, iframe_id, timeout=20):
     service = Service('/usr/bin/chromedriver')  # Ruta predeterminada de ChromeDriver en Ubuntu
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
@@ -16,10 +15,10 @@ def fetch_final_content(url, iframe_id, timeout=5, max_duration=60):
     # Print del contenido inicial
     initial_content = driver.page_source
     print("Contenido inicial:")
-    print(initial_content)
+    print(initial_content[:1000] + '...' if len(initial_content) > 1000 else initial_content)
 
     # Esperar a que el iframe esté presente
-    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, iframe_id)))
+    WebDriverWait(driver, timeout).until(EC.presence_of_element_located((By.ID, iframe_id)))
 
     iframe = driver.find_element(By.ID, iframe_id)
     iframe_src = iframe.get_attribute('src')
@@ -27,46 +26,16 @@ def fetch_final_content(url, iframe_id, timeout=5, max_duration=60):
 
     driver.get(iframe_src)
 
-    previous_content = driver.page_source
-    start_time = time.time()
-    max_time = start_time + max_duration
-    exit_reason = None
+    # Esperar a que el contenido del iframe se estabilice
+    WebDriverWait(driver, timeout).until(lambda d: d.execute_script('return document.readyState') == 'complete')
 
-    while time.time() < max_time:
-        current_content = driver.page_source
+    # Captura de pantalla para depuración
+    driver.save_screenshot('final_screenshot.png')
 
-        # Espera explícita para contenido dinámico
-        WebDriverWait(driver, timeout).until(lambda d: d.page_source != previous_content)
-
-        # Prints para depuración
-        print(f"Tiempo actual: {time.time()}")
-        if previous_content is not None:
-            diff = difflib.unified_diff(previous_content.splitlines(), current_content.splitlines(), lineterm='')
-            diff_text = '\n'.join(diff)
-            print("Diferencias entre contenido anterior y actual (limitadas a 100 caracteres):")
-            print(diff_text[:100] + '...' if len(diff_text) > 100 else diff_text)
-        else:
-            print("Contenido anterior: None")
-
-        print(f"Tiempo desde última actualización: {time.time() - start_time}")
-
-        if current_content != previous_content:
-            previous_content = current_content
-            start_time = time.time()
-            print("Contenido actualizado, reiniciando temporizador.")
-        elif time.time() - start_time >= timeout:
-            exit_reason = "timeout"
-            print("Contenido no ha cambiado en el tiempo especificado, saliendo del bucle.")
-            break
-
-        time.sleep(1)
-
-    if exit_reason is None:
-        exit_reason = "max_duration"
-
+    # Obtener el contenido final
+    final_content = driver.page_source
     print("Contenido final:")
-    print(current_content)
-    print(f"Razón de salida del bucle: {exit_reason}")
+    print(final_content[:1000] + '...' if len(final_content) > 1000 else final_content)
 
     driver.quit()
 
