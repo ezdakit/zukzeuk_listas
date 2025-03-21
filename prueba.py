@@ -20,7 +20,7 @@ def fetch_final_content(url, timeout=5, max_duration=60):
             # Prints para depuración
             print(f"Tiempo actual: {time.time()}")
             if previous_content is not None:
-                diff = difflib.ndiff(previous_content.splitlines(), current_content.splitlines())
+                diff = difflib.unified_diff(previous_content.splitlines(), current_content.splitlines(), lineterm='')
                 diff_text = '\n'.join(diff)
                 print("Diferencias entre contenido anterior y actual (limitadas a 100 caracteres):")
                 print(diff_text[:100] + '...' if len(diff_text) > 100 else diff_text)
