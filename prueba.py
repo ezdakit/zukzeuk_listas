@@ -1,5 +1,6 @@
 import requests
 import time
+import difflib
 
 def fetch_final_content(url, timeout=5, max_duration=60):
     headers = {
@@ -16,8 +17,13 @@ def fetch_final_content(url, timeout=5, max_duration=60):
 
         # Prints para depuración
         print(f"Tiempo actual: {time.time()}")
-        print(f"Contenido actual: {current_content[:100]}...")  # Muestra los primeros 100 caracteres
-        print(f"Contenido anterior: {previous_content[:100]}..." if previous_content else "Contenido anterior: None")
+        if previous_content is not None:
+            diff = difflib.ndiff(previous_content.splitlines(), current_content.splitlines())
+            print("Diferencias entre contenido anterior y actual:")
+            print('\n'.join(diff))
+        else:
+            print("Contenido anterior: None")
+
         print(f"Tiempo desde última actualización: {time.time() - start_time}")
 
         if current_content != previous_content:
