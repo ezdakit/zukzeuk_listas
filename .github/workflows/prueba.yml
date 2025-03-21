@@ -1,6 +1,10 @@
 name: prueba
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - prueba.yml
+      - prueba.py
 jobs:
   run-zeronet:
     runs-on: ubuntu-latest
@@ -16,10 +20,11 @@ jobs:
     - name: Wait for ZeroNet to start
       run: sleep 10
     - name: Install dependencies
+    - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y python3 python3-pip tor
         sudo apt-get install -y obfs4proxy
+        sudo apt-get install -y python3 python3-pip tor
         pip3 install selenium requests
         sudo apt-get install -y chromium-chromedriver
         if [ ! -f /usr/bin/chromedriver ]; then
