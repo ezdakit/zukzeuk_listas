@@ -25,8 +25,11 @@ jobs:
           sudo ln -s /usr/lib/chromium-browser/chromedriver /usr/bin/chromedriver
     - name: Run Python script
       run: python3 prueba.py
+    - name: Collect ZeroNet logs
+      run: |
+        docker logs zeronet > zeronet_logs.txt
     - name: Upload artifacts
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v2
       with:
         name: artifacts
         path: |
