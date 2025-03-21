@@ -6,12 +6,18 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import difflib
 
-def fetch_final_content(url, timeout=5, max_duration=60):
+def fetch_final_content(url, iframe_id, timeout=5, max_duration=60):
     service = Service('/usr/bin/chromedriver')  # Ruta predeterminada de ChromeDriver en Ubuntu
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
     driver = webdriver.Chrome(service=service, options=options)
     driver.get(url)
+
+    # Esperar a que el iframe esté presente
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, iframe_id)))
+
+    iframe = driver.find_element(By.ID, iframe_id)
+    driver.switch_to.frame(iframe)
 
     previous_content = driver.page_source
     start_time = time.time()
@@ -54,5 +60,6 @@ def fetch_final_content(url, timeout=5, max_duration=60):
     driver.quit()
 
 if __name__ == "__main__":
-    url = "http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie/?wrapper_nonce=36c675088d663a7f4bc575928f5924ff5bdc2301b739cfc3c752b6d91dbbe011"
-    fetch_final_content(url)
+    url = "http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie"
+    iframe_id = "inner-iframe"  # ID del iframe que quieres monitorizar
+    fetch_final_content(url, iframe_id)
