@@ -32,4 +32,4 @@ jobs:
         fi
 
     - name: Run Python script
-      run: python3 script.py
+      run: python3 prueba.py
