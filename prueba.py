@@ -1,3 +1,4 @@
+import os
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
@@ -6,31 +7,57 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 def fetch_final_content(url, iframe_id, timeout=20):
-    service = Service('/usr/bin/chromedriver')  # Ruta predeterminada de ChromeDriver en Ubuntu
+    service = Service('/usr/bin/chromedriver') # Ruta predeterminada de ChromeDriver en Ubuntu
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
     driver = webdriver.Chrome(service=service, options=options)
     driver.get(url)
+
+    # Crear carpeta "pantallazos" si no existe
+    if not os.path.exists('pantallazos'):
+        os.makedirs('pantallazos')
+    
+    # Borrar todo el contenido de la carpeta "pantallazos"
+    for file in os.listdir('pantallazos'):
+        file_path = os.path.join('pantallazos', file)
+        if os.path.isfile(file_path):
+            os.unlink(file_path)
 
     # Print del contenido inicial
     initial_content = driver.page_source
     print("Contenido inicial:")
     print(initial_content[:1000] + '...' if len(initial_content) > 1000 else initial_content)
 
-    # Esperar a que el iframe esté presente
-    WebDriverWait(driver, timeout).until(EC.presence_of_element_located((By.ID, iframe_id)))
+    # Captura de pantalla inicial
+    driver.save_screenshot('pantallazos/screenshot_initial.png')
 
-    iframe = driver.find_element(By.ID, iframe_id)
+    # Capturar pantalla cada medio segundo hasta que el iframe esté presente
+    start_time = time.time()
+    screenshot_counter = 1
+    while time.time() - start_time < timeout:
+        driver.save_screenshot(f'pantallazos/screenshot_{screenshot_counter}.png')
+        screenshot_counter += 1
+        try:
+            iframe = driver.find_element(By.ID, iframe_id)
+            break
+        except:
+            time.sleep(0.5)
+
     iframe_src = iframe.get_attribute('src')
     print(f"URL del iframe: {iframe_src}")
-
     driver.get(iframe_src)
 
-    # Esperar a que el contenido del iframe se estabilice
-    WebDriverWait(driver, timeout).until(lambda d: d.execute_script('return document.readyState') == 'complete')
+    # Esperar a que el contenido del iframe se estabilice y capturar pantalla cada medio segundo
+    start_time = time.time()
+    while time.time() - start_time < timeout:
+        driver.save_screenshot(f'pantallazos/screenshot_iframe_{screenshot_counter}.png')
+        screenshot_counter += 1
+        if driver.execute_script('return document.readyState') == 'complete':
+            break
+        time.sleep(0.5)
 
-    # Captura de pantalla para depuración
-    driver.save_screenshot('final_screenshot.png')
+    # Captura de pantalla final para depuración
+    driver.save_screenshot('pantallazos/final_screenshot.png')
 
     # Obtener el contenido final
     final_content = driver.page_source
@@ -41,5 +68,5 @@ def fetch_final_content(url, iframe_id, timeout=20):
 
 if __name__ == "__main__":
     url = "http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie"
-    iframe_id = "inner-iframe"  # ID del iframe que quieres monitorizar
+    iframe_id = "inner-iframe" # ID del iframe que quieres monitorizar
     fetch_final_content(url, iframe_id)
