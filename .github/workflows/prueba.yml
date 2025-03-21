@@ -1,8 +1,6 @@
 name: prueba
-
 on:
   workflow_dispatch:
-
 jobs:
   run-zeronet:
     runs-on: ubuntu-latest
@@ -20,24 +18,13 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y python3 python3-pip tor
-        pip3 install selenium
+        sudo apt-get install -y python3 python3-pip tor obfs4proxy
+        pip3 install selenium requests
         sudo apt-get install -y chromium-chromedriver
         if [ ! -f /usr/bin/chromedriver ]; then
           sudo ln -s /usr/lib/chromium-browser/chromedriver /usr/bin/chromedriver
-        fi
-    - name: Configure Tor bridges
-      run: |
-        echo "UseBridges 1" | sudo tee -a /etc/tor/torrc
-        echo "ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy" | sudo tee -a /etc/tor/torrc
-        echo "Bridge obfs4 <IP-address:port> <Fingerprint>" | sudo tee -a /etc/tor/torrc
-    - name: Start Tor service
-      run: sudo service tor start
     - name: Run Python script
       run: python3 prueba.py
-    - name: Collect ZeroNet logs
-      run: |
-        docker logs zeronet > zeronet_logs.txt
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
