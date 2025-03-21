@@ -21,8 +21,13 @@ jobs:
     - name: Wait for ZeroNet to start
       run: sleep 10
 
-    - name: Install Python
-      run: sudo apt-get install python3 python3-pip
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y python3 python3-pip
+        pip3 install selenium
+        sudo apt-get install -y chromium-chromedriver
+        sudo ln -s /usr/lib/chromium-browser/chromedriver /usr/bin/chromedriver
 
     - name: Run Python script
-      run: python3 prueba.py
+      run: python3 script.py
