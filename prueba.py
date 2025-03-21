@@ -16,16 +16,16 @@ def fetch_final_content(url, iframe_id, timeout=5, max_duration=60):
     # Print del contenido inicial
     initial_content = driver.page_source
     print("Contenido inicial:")
-    print(initial_content[:1000] + '...' if len(initial_content) > 1000 else initial_content)
+    print(initial_content)
 
     # Esperar a que el iframe esté presente
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, iframe_id)))
 
     iframe = driver.find_element(By.ID, iframe_id)
-    iframe_src = iframe.get_attribute('src')  # Captura dinámica de la URL del iframe
+    iframe_src = iframe.get_attribute('src')
     print(f"URL del iframe: {iframe_src}")
 
-    driver.get(iframe_src)  # Navegación a la URL del iframe
+    driver.get(iframe_src)
 
     previous_content = driver.page_source
     start_time = time.time()
@@ -34,6 +34,9 @@ def fetch_final_content(url, iframe_id, timeout=5, max_duration=60):
 
     while time.time() < max_time:
         current_content = driver.page_source
+
+        # Espera explícita para contenido dinámico
+        WebDriverWait(driver, timeout).until(lambda d: d.page_source != previous_content)
 
         # Prints para depuración
         print(f"Tiempo actual: {time.time()}")
