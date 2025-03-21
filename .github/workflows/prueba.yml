@@ -28,9 +28,9 @@ jobs:
         fi
     - name: Configure Tor bridges
       run: |
-        echo "UseBridges 1" >> /etc/tor/torrc
-        echo "ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy" >> /etc/tor/torrc
-        echo "Bridge obfs4 <IP-address:port> <Fingerprint>" >> /etc/tor/torrc
+        echo "UseBridges 1" | sudo tee -a /etc/tor/torrc
+        echo "ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy" | sudo tee -a /etc/tor/torrc
+        echo "Bridge obfs4 <IP-address:port> <Fingerprint>" | sudo tee -a /etc/tor/torrc
     - name: Start Tor service
       run: sudo service tor start
     - name: Run Python script
