@@ -18,12 +18,12 @@ def fetch_bridges():
         return []
 
 def fetch_final_content(url, iframe_id, timeout=20):
-    service = Service('/usr/bin/chromedriver') # Ruta predeterminada de ChromeDriver en Ubuntu
+    service = Service('/usr/bin/chromedriver')  # Ruta predeterminada de ChromeDriver en Ubuntu
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
     driver = webdriver.Chrome(service=service, options=options)
     driver.get(url)
-
+    
     # Crear carpeta "pantallazos" si no existe
     if not os.path.exists('pantallazos'):
         os.makedirs('pantallazos')
@@ -33,15 +33,15 @@ def fetch_final_content(url, iframe_id, timeout=20):
         file_path = os.path.join('pantallazos', file)
         if os.path.isfile(file_path):
             os.unlink(file_path)
-
+    
     # Print del contenido inicial
     initial_content = driver.page_source
     print("Contenido inicial:")
     print(initial_content[:1000] + '...' if len(initial_content) > 1000 else initial_content)
-
+    
     # Captura de pantalla inicial
     driver.save_screenshot('pantallazos/screenshot_initial.png')
-
+    
     # Capturar pantalla cada medio segundo hasta que el iframe esté presente
     start_time = time.time()
     screenshot_counter = 1
@@ -53,11 +53,11 @@ def fetch_final_content(url, iframe_id, timeout=20):
             break
         except:
             time.sleep(0.5)
-
+    
     iframe_src = iframe.get_attribute('src')
     print(f"URL del iframe: {iframe_src}")
     driver.get(iframe_src)
-
+    
     # Esperar a que el contenido del iframe se estabilice y capturar pantalla cada medio segundo
     start_time = time.time()
     while time.time() - start_time < timeout:
@@ -66,20 +66,35 @@ def fetch_final_content(url, iframe_id, timeout=20):
         if driver.execute_script('return document.readyState') == 'complete':
             break
         time.sleep(0.5)
-
+    
     # Captura de pantalla final para depuración
     driver.save_screenshot('pantallazos/final_screenshot.png')
-
+    
     # Obtener el contenido final
     final_content = driver.page_source
     print("Contenido final:")
     print(final_content[:1000] + '...' if len(final_content) > 1000 else final_content)
-
+    
     driver.quit()
+
+def configure_zeronet_trackers():
+    trackers = [
+        "http://tracker.opentrackr.org:1337/announce",
+        "udp://tracker.openbittorrent.com:80",
+        "udp://tracker.opentrackr.org:1337/announce"
+    ]
+    config_lines = [f"tracker = {tracker}" for tracker in trackers]
+    config_content = "\n".join(config_lines)
+    
+    # Crear el archivo de configuración de ZeroNet
+    with open('/root/.zeronet/zeronet.conf', 'a') as config_file:
+        config_file.write(config_content)
+    
+    print("Trackers configurados en ZeroNet")
 
 if __name__ == "__main__":
     url = "http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie"
-    iframe_id = "inner-iframe" # ID del iframe que quieres monitorizar
+    iframe_id = "inner-iframe"  # ID del iframe que quieres monitorizar
     bridges = fetch_bridges()
     if bridges:
         with open('torrc_temp', 'w') as torrc:
@@ -91,6 +106,7 @@ if __name__ == "__main__":
         subprocess.run(['sudo', 'mv', 'torrc_temp', '/etc/tor/torrc'])
         subprocess.run(['sudo', 'service', 'tor', 'restart'])
     
+    configure_zeronet_trackers()
     fetch_final_content(url, iframe_id)
     
     # Collect ZeroNet logs and ensure they are not empty
