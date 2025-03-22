@@ -1,0 +1,43 @@
+name: Run ZeroNet with Docker
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/running_zeronet.yml
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Docker
+        uses: docker/setup-buildx-action@v1
+
+      - name: Install Docker
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y docker.io
+          sudo systemctl start docker
+          sudo systemctl enable docker
+        continue-on-error: true
+
+      - name: Run ZeroNet container
+        run: |
+          docker run -d --name zeronet -p 43110:43110 -v zeronet_data:/root/ZeroNet/data nofish/zeronet
+          docker logs -f zeronet &
+
+      - name: Verify ZeroNet is running
+        run: |
+          sleep 10
+          curl -I http://localhost:43110
+          docker logs zeronet
+
+      - name: Access ZeroNet dashboard
+        run: |
+          curl http://localhost:43110/Stats
+          curl http://localhost:43110/Trackers
+          docker logs zeronet
