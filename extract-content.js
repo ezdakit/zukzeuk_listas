@@ -1,3 +1,68 @@
+const { chromium } = require('playwright'); // Importar Playwright
+const fs = require('fs');
+const path = require('path');
+
+// Obtener los parámetros
+const zeronetAddress1 = process.argv[2]; // Dirección de ZeroNet para eventos.html
+const outputFolder = process.argv[3];    // Carpeta de destino
+const outputFile = process.argv[4];     // Nombre del archivo para eventos.html
+
+if (!zeronetAddress1 || !outputFolder || !outputFile) {
+  console.error('Error: Faltan parámetros. Uso: node extract-content.js <zeronet-address-1> <output-folder> <output-file>');
+  process.exit(1);
+}
+
+// Ruta de la carpeta y el archivo
+const folderPath = path.join(__dirname, outputFolder);
+const filePath = path.join(folderPath, outputFile);
+
+console.log('Parámetros recibidos:');
+console.log(`- Dirección 1: ${zeronetAddress1}`);
+console.log(`- Carpeta de destino: ${folderPath}`);
+console.log(`- Archivo de salida: ${filePath}`);
+
+// Función para verificar si ZeroNet está funcionando
+async function isZeroNetRunning() {
+  console.log('Verificando si ZeroNet está funcionando...');
+  try {
+    const response = await fetch('http://127.0.0.1:43110', {
+      headers: {
+        'Accept': 'text/html', // Especificar el tipo de contenido esperado
+      },
+    });
+    if (response.ok) {
+      console.log('ZeroNet está funcionando correctamente.');
+      return true;
+    } else {
+      console.log('ZeroNet no está funcionando (respuesta no OK).');
+      return false;
+    }
+  } catch (error) {
+    console.error('Error al verificar ZeroNet:', error.message);
+    return false;
+  }
+}
+
+// Función para cargar una página con reintentos
+async function loadPageWithRetries(page, url, retries = 3, timeout = 60000) {
+  console.log(`Cargando página: ${url}`);
+  for (let i = 0; i < retries; i++) {
+    try {
+      console.log(`Intento ${i + 1} de ${retries}`);
+      await page.goto(url, { waitUntil: 'load', timeout });
+      console.log('Página cargada correctamente.');
+      return true; // La página se cargó correctamente
+    } catch (error) {
+      console.warn(`Intento ${i + 1} fallido: ${error.message}`);
+      if (i < retries - 1) {
+        console.log('Reintentando en 5 segundos...');
+        await new Promise((resolve) => setTimeout(resolve, 5000)); // Esperar 5 segundos antes de reintentar
+      }
+    }
+  }
+  throw new Error(`No se pudo cargar la página después de ${retries} intentos.`);
+}
+
 (async () => {
   console.log('Iniciando el script...');
 
