@@ -40,7 +40,7 @@ jobs:
       - name: Verify ZeroNet is running
         run: |
           echo "Verifying ZeroNet is running"
-          sleep 15  # Espera 15 segundos para asegurar que ZeroNet esté listo
+          sleep 5  # Espera 15 segundos para asegurar que ZeroNet esté listo
           curl -I http://127.0.0.1:43110
           echo "ZeroNet verification complete"
 
@@ -59,9 +59,9 @@ jobs:
           cat page.html
           
           echo "Printing visible text (similar to browser view):"
-          # Usamos `lynx` para extraer solo el texto visible
-          sudo apt-get install -y lynx
-          lynx -dump page.html
+          # Instalamos `pup` para extraer el texto visible
+          sudo apt-get install -y pup
+          cat page.html | pup 'body' | sed 's/<[^>]*>//g' | tr -s ' '  # Elimina etiquetas HTML y espacios extra
           echo "Page content printed above"
 
       - name: Check site synchronization (1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU)
