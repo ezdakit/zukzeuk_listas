@@ -29,6 +29,8 @@ jobs:
         run: |
           echo '[global]' > zeronet.conf
           echo 'ui_host = 0.0.0.0' >> zeronet.conf
+          echo 'ui_host = localhost:43110' >> zeronet.conf
+          echo 'ui_host = 127.0.0.1:43110' >> zeronet.conf
 
       - name: Run ZeroNet with Docker
         run: |
