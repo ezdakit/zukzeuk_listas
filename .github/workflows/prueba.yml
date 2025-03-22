@@ -42,6 +42,18 @@ jobs:
             echo "Creating symlink for Chromedriver"
           fi
 
+      - name: Configure ZeroNet for logging
+        run: |
+          echo "Configuring ZeroNet for logging"
+          docker exec zeronet bash -c 'echo "log_dir = logs" >> /root/.zeronet/zeronet.conf'
+          docker exec zeronet bash -c 'echo "log_level = DEBUG" >> /root/.zeronet/zeronet.conf'
+          docker exec zeronet bash -c 'mkdir -p /root/.zeronet/logs'
+
+      - name: Verify ZeroNet logging configuration
+        run: |
+          echo "Verifying ZeroNet logging configuration"
+          docker exec zeronet bash -c 'cat /root/.zeronet/zeronet.conf'
+
       - name: Run Python script
         run: python3 prueba.py
 
