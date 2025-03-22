@@ -50,4 +50,4 @@ jobs:
         run: |
           curl http://localhost:43110/Stats
           curl http://localhost:43110/Trackers
-          docker logs zerone
+          docker logs zeronet
