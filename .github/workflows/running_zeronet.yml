@@ -94,10 +94,24 @@ jobs:
             fi
           fi
 
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: ZeroNet-files
-          path: |
-            $OUTPUT_FOLDER/eventos.html
-            $OUTPUT_FOLDER/lista-ott.m3u
+      - name: Print eventos.html
+        run: |
+          echo "Contenido de eventos.html:"
+          cat $OUTPUT_FOLDER/eventos.html
+
+      - name: Commit files
+        run: |
+          echo "Verifying that both files exist..."
+          if [ -f "$OUTPUT_FOLDER/eventos.html" ] && [ -f "$OUTPUT_FOLDER/lista-ott.m3u" ]; then
+            echo "Both files exist. Proceeding with commit..."
+            git config --global user.name "GitHub Actions"
+            git config --global user.email "actions@github.com"
+            git add $OUTPUT_FOLDER/eventos.html $OUTPUT_FOLDER/lista-ott.m3u
+            git commit -m "Actualizar eventos.html y lista-ott.m3u desde ZeroNet"
+            git push
+          else
+            echo "Error: One or both files are missing."
+            echo "eventos.html exists: $( [ -f "$OUTPUT_FOLDER/eventos.html" ] && echo "Yes" || echo "No" )"
+            echo "lista-ott.m3u exists: $( [ -f "$OUTPUT_FOLDER/lista-ott.m3u" ] && echo "Yes" || echo "No" )"
+            exit 1
+          fi
