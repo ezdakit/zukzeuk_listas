@@ -13,8 +13,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        with:
-          path: .
       - run: echo "Checked out code"
 
       - name: Set up Docker
@@ -35,7 +33,7 @@ jobs:
         run: |
           echo "Creating ZeroNet start script"
           echo '#!/bin/bash' > start_zeronet.sh
-          echo 'python /root/ZeroNet/zeronet.py --config_file /root/.zeronet/zeronet.conf --ui_host "localhost:43110"' >> start_zeronet.sh
+          echo 'python /root/ZeroNet/zeronet.py --config_file /root/.zeronet/zeronet.conf --ui_host "0.0.0.0:43110" &' >> start_zeronet.sh
           echo 'echo "ZeroNet started successfully"' >> start_zeronet.sh
           chmod +x start_zeronet.sh
           cat start_zeronet.sh
@@ -46,8 +44,6 @@ jobs:
           echo "Creating ZeroNet config"
           echo '[global]' > zeronet.conf
           echo 'ui_host = 0.0.0.0' >> zeronet.conf
-          echo 'ui_host = localhost' >> zeronet.conf
-          echo 'ui_host = 127.0.0.1' >> zeronet.conf
           cat zeronet.conf
           echo "ZeroNet config created"
 
@@ -69,7 +65,7 @@ jobs:
       - name: Verify ZeroNet is running
         run: |
           echo "Verifying ZeroNet is running"
-          sleep 10
+          sleep 30
           curl -I http://localhost:43110
           docker logs zeronet
           echo "ZeroNet verification complete"
