@@ -8,15 +8,6 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import subprocess
 
-def fetch_bridges():
-    response = requests.get('https://bridges.torproject.org/bridges?transport=obfs4')
-    if response.status_code == 200:
-        bridges = response.text.split('\n')
-        return bridges
-    else:
-        print("Error fetching bridges")
-        return []
-
 def fetch_final_content(url, iframe_id, timeout=20):
     service = Service('/usr/bin/chromedriver')  # Ruta predeterminada de ChromeDriver en Ubuntu
     options = webdriver.ChromeOptions()
@@ -77,36 +68,9 @@ def fetch_final_content(url, iframe_id, timeout=20):
     
     driver.quit()
 
-def configure_zeronet_trackers():
-    trackers = [
-        "http://tracker.opentrackr.org:1337/announce",
-        "udp://tracker.openbittorrent.com:80",
-        "udp://tracker.opentrackr.org:1337/announce"
-    ]
-    config_lines = [f"tracker = {tracker}" for tracker in trackers]
-    config_content = "\n".join(config_lines)
-    
-    # Crear el archivo de configuración de ZeroNet
-    with open('/root/.zeronet/zeronet.conf', 'a') as config_file:
-        config_file.write(config_content)
-    
-    print("Trackers configurados en ZeroNet")
-
 if __name__ == "__main__":
     url = "http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie"
     iframe_id = "inner-iframe"  # ID del iframe que quieres monitorizar
-    bridges = fetch_bridges()
-    if bridges:
-        with open('torrc_temp', 'w') as torrc:
-            torrc.write("UseBridges 1\n")
-            torrc.write("ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy\n")
-            for bridge in bridges:
-                torrc.write(f"Bridge obfs4 {bridge}\n")
-                print(f"Bridge configured: {bridge}")
-        subprocess.run(['sudo', 'mv', 'torrc_temp', '/etc/tor/torrc'])
-        subprocess.run(['sudo', 'service', 'tor', 'restart'])
-    
-    configure_zeronet_trackers()
     fetch_final_content(url, iframe_id)
     
     # Collect ZeroNet logs and ensure they are not empty
