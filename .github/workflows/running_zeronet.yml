@@ -85,13 +85,13 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'  # Usa una versión compatible con Puppeteer
+          node-version: '20'  # Usa una versión compatible con Playwright
 
-      - name: Install Puppeteer
+      - name: Install Playwright
         run: |
-          npm install puppeteer
+          npm install playwright
 
-      - name: Extract dynamic content with Puppeteer
+      - name: Extract dynamic content with Playwright
         run: |
           node extract-content.js
 
