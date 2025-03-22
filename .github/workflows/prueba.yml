@@ -42,7 +42,7 @@ jobs:
         run: |
           echo "Configuring ZeroNet for logging and trackers"
           sudo mkdir -p /etc/zeronet
-          echo "log_dir = /var/log/zeronet" | sudo tee -a /etc/zeronet/zeronet.conf
+          echo "log_dir = logs" | sudo tee -a /etc/zeronet/zeronet.conf
           echo "log_level = DEBUG" | sudo tee -a /etc/zeronet/zeronet.conf
           echo "tracker = http://tracker.opentrackr.org:1337/announce" | sudo tee -a /etc/zeronet/zeronet.conf
           echo "tracker = udp://tracker.openbittorrent.com:80" | sudo tee -a /etc/zeronet/zeronet.conf
@@ -66,7 +66,7 @@ jobs:
 
       - name: Collect ZeroNet logs
         run: |
-          docker exec zeronet sh -c 'cat /var/log/zeronet/*' > zeronet_logs.txt
+          docker logs zeronet > zeronet_logs.txt
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
