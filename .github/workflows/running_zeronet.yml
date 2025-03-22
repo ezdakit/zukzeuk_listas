@@ -28,8 +28,15 @@ jobs:
       - name: Create ZeroNet start script
         run: |
           echo '#!/bin/bash' > start_zeronet.sh
-          echo 'zeronet.py --ui_host "localhost:43110"' >> start_zeronet.sh
+          echo 'zeronet.py --config_file /root/.zeronet/zeronet.conf --ui_host "localhost:43110"' >> start_zeronet.sh
           chmod +x start_zeronet.sh
+
+      - name: Create ZeroNet config
+        run: |
+          echo '[global]' > zeronet.conf
+          echo 'ui_host = 0.0.0.0' >> zeronet.conf
+          echo 'ui_host = localhost' >> zeronet.conf
+          echo 'ui_host = 127.0.0.1' >> zeronet.conf
 
       - name: Run ZeroNet with Docker
         run: |
@@ -37,7 +44,7 @@ jobs:
             --name zeronet \
             -p 43110:43110 \
             -v $(pwd)/start_zeronet.sh:/root/start_zeronet.sh \
-            -v /etc/zeronet/zeronet.conf:/root/.zeronet/zeronet.conf \
+            -v $(pwd)/zeronet.conf:/root/.zeronet/zeronet.conf \
             --log-driver json-file \
             --log-opt max-size=10m \
             nofish/zeronet \
