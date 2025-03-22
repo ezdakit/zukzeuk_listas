@@ -33,7 +33,8 @@ jobs:
             -v /etc/zeronet/zeronet.conf:/root/.zeronet/zeronet.conf \
             --log-driver json-file \
             --log-opt max-size=10m \
-            nofish/zeronet
+            nofish/zeronet \
+            --ui_host 0.0.0.0
 
       - name: Verify ZeroNet is running
         run: |
