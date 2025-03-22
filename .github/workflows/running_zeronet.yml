@@ -25,16 +25,20 @@ jobs:
           sudo systemctl enable docker
         continue-on-error: true
 
+      - name: Create ZeroNet config
+        run: |
+          echo '[global]' > zeronet.conf
+          echo 'ui_host = 0.0.0.0' >> zeronet.conf
+
       - name: Run ZeroNet with Docker
         run: |
           docker run -d \
             --name zeronet \
             -p 43110:43110 \
-            -v /etc/zeronet/zeronet.conf:/root/.zeronet/zeronet.conf \
+            -v $(pwd)/zeronet.conf:/root/.zeronet/zeronet.conf \
             --log-driver json-file \
             --log-opt max-size=10m \
-            nofish/zeronet \
-            --ui_host 0.0.0.0
+            nofish/zeronet
 
       - name: Verify ZeroNet is running
         run: |
@@ -46,4 +50,4 @@ jobs:
         run: |
           curl http://localhost:43110/Stats
           curl http://localhost:43110/Trackers
-          docker logs zeronet
+          docker logs zerone
