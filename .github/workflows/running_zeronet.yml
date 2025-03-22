@@ -32,20 +32,22 @@ jobs:
       - name: Run ZeroNet with Docker
         run: |
           echo "Starting ZeroNet with Docker"
+          docker rm -f zeronet || true  # Elimina el contenedor si existe
+          docker volume rm zeronet_data || true  # Elimina el volumen si existe
           docker run -d \
             --name zeronet \
             -p 43110:43110 \
             -v zeronet_data:/root/.zeronet \
             --log-driver json-file \
             --log-opt max-size=10m \
-            nofish/zeronet
+            nofish/zeronet:latest
           echo "ZeroNet container started"
           docker ps -a
 
       - name: Verify ZeroNet is running
         run: |
           echo "Verifying ZeroNet is running"
-          sleep 30
+          sleep 60  # Espera 60 segundos para asegurar que ZeroNet esté listo
           curl -I http://127.0.0.1:43110
           docker logs zeronet
           echo "ZeroNet verification complete"
@@ -53,7 +55,7 @@ jobs:
       - name: Access ZeroNet dashboard
         run: |
           echo "Accessing ZeroNet dashboard"
-          curl http://127.0.0.1:43110/Stats
-          curl http://127.0.0.1:43110/Trackers
+          curl -H "Accept: application/json" http://127.0.0.1:43110/Stats
+          curl -H "Accept: application/json" http://127.0.0.1:43110/Trackers
           docker logs zeronet
           echo "ZeroNet dashboard accessed"
