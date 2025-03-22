@@ -30,46 +30,60 @@ const filePath = path.join(folderPath, outputFile);
   // Extraer contenido dinámico de la primera página (eventos.html)
   const zeronetUrl1 = `http://127.0.0.1:43110/${zeronetAddress1}/`;
   console.log(`Extrayendo contenido de: ${zeronetUrl1}`);
-  await page.goto(zeronetUrl1, { waitUntil: 'networkidle' });
 
-  // Esperar a que el iframe se cargue
-  await page.waitForSelector('#inner-iframe');
+  try {
+    // Aumentar el tiempo de espera a 60 segundos y usar 'load' en lugar de 'networkidle'
+    await page.goto(zeronetUrl1, { waitUntil: 'load', timeout: 60000 });
 
-  // Obtener el contenido del iframe
-  const iframeHandle = await page.$('#inner-iframe');
-  const frame = await iframeHandle.contentFrame();
+    // Esperar a que el iframe se cargue
+    await page.waitForSelector('#inner-iframe', { timeout: 60000 });
 
-  // Esperar a que el contenido dinámico se cargue
-  await frame.waitForSelector('body');
+    // Obtener el contenido del iframe
+    const iframeHandle = await page.$('#inner-iframe');
+    const frame = await iframeHandle.contentFrame();
 
-  // Obtener el HTML final del iframe
-  const finalContent = await frame.content();
+    // Esperar a que el contenido dinámico se cargue
+    await frame.waitForSelector('body', { timeout: 60000 });
 
-  // Crear la carpeta si no existe
-  if (!fs.existsSync(folderPath)) {
-    fs.mkdirSync(folderPath, { recursive: true });
+    // Obtener el HTML final del iframe
+    const finalContent = await frame.content();
+
+    // Crear la carpeta si no existe
+    if (!fs.existsSync(folderPath)) {
+      fs.mkdirSync(folderPath, { recursive: true });
+    }
+
+    // Guardar el contenido en un archivo
+    fs.writeFileSync(filePath, finalContent);
+    console.log(`Archivo guardado en: ${filePath}`);
+  } catch (error) {
+    console.error(`Error al extraer el contenido: ${error.message}`);
+    process.exit(1); // Terminar el script con un código de error
   }
-
-  // Guardar el contenido en un archivo
-  fs.writeFileSync(filePath, finalContent);
-  console.log(`Archivo guardado en: ${filePath}`);
 
   // Descargar el archivo lista-ott.m3u de la segunda página
   const zeronetUrl2 = `http://127.0.0.1:43110/${zeronetAddress2}/`;
   console.log(`Sincronizando contenido de: ${zeronetUrl2}`);
-  await page.goto(zeronetUrl2, { waitUntil: 'networkidle' });
 
-  const downloadUrl = `http://127.0.0.1:43110/${zeronetAddress2}/lista-ott.m3u`;
-  console.log(`Descargando archivo: ${downloadUrl}`);
-  const response = await page.goto(downloadUrl);
+  try {
+    // Aumentar el tiempo de espera a 60 segundos y usar 'load' en lugar de 'networkidle'
+    await page.goto(zeronetUrl2, { waitUntil: 'load', timeout: 60000 });
 
-  if (response.status() === 200) {
-    const content = await response.text();
-    const downloadPath = path.join(folderPath, 'lista-ott.m3u');
-    fs.writeFileSync(downloadPath, content);
-    console.log(`Archivo descargado en: ${downloadPath}`);
-  } else {
-    console.error(`Error al descargar el archivo: ${response.status()}`);
+    const downloadUrl = `http://127.0.0.1:43110/${zeronetAddress2}/lista-ott.m3u`;
+    console.log(`Descargando archivo: ${downloadUrl}`);
+    const response = await page.goto(downloadUrl, { waitUntil: 'load', timeout: 60000 });
+
+    if (response.status() === 200) {
+      const content = await response.text();
+      const downloadPath = path.join(folderPath, 'lista-ott.m3u');
+      fs.writeFileSync(downloadPath, content);
+      console.log(`Archivo descargado en: ${downloadPath}`);
+    } else {
+      console.error(`Error al descargar el archivo: ${response.status()}`);
+    }
+  } catch (error) {
+    console.error(`Error al descargar el archivo: ${error.message}`);
+    process.exit(1); // Terminar el script con un código de error
   }
 
   // Cerrar el navegador
