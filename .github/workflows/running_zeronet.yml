@@ -47,27 +47,24 @@ jobs:
       - name: Verify ZeroNet is running
         run: |
           echo "Verifying ZeroNet is running"
-          sleep 20  # Espera 120 segundos para asegurar que ZeroNet esté listo
+          sleep 15  # Espera 15 segundos para asegurar que ZeroNet esté listo
           curl -I http://127.0.0.1:43110
           docker logs zeronet
           echo "ZeroNet verification complete"
 
-      - name: Access ZeroNet web interface
-        run: |
-          echo "Accessing ZeroNet web interface"
-          curl -I http://127.0.0.1:43110/1HeLLo4uzjaLetFx6NH3PMwFP3qbRbTf3D/
-          echo "ZeroNet web interface accessed"
-
-      - name: Access ZeroNet dashboard (with correct headers)
-        run: |
-          echo "Accessing ZeroNet dashboard"
-          curl -H "Accept: application/json" http://127.0.0.1:43110/1HeLLo4uzjaLetFx6NH3PMwFP3qbRbTf3D/Stats
-          curl -H "Accept: application/json" http://127.0.0.1:43110/1HeLLo4uzjaLetFx6NH3PMwFP3qbRbTf3D/Trackers
-          docker logs zeronet
-          echo "ZeroNet dashboard accessed"
-
       - name: Access specific ZeroNet site
         run: |
-          echo "Accessing http://127.0.0.1:43110/18XNZqktqbQhSChrxy7jvhWyHVkfAsDusD/"
-          curl -H "Accept: text/html" http://127.0.0.1:43110/18XNZqktqbQhSChrxy7jvhWyHVkfAsDusD/
-          echo "Content of the page printed above"
+          echo "Accessing http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/"
+          curl -H "Accept: text/html" http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/
+          echo "Content of the site printed above"
+
+      - name: Download and print file content
+        run: |
+          echo "Downloading http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u"
+          if curl -f -o lista-ott.m3u http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u; then
+            echo "Content of lista-ott.m3u:"
+            cat lista-ott.m3u
+          else
+            echo "Failed to download lista-ott.m3u"
+          fi
+          echo "File content printed above"
