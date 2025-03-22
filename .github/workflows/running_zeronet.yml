@@ -47,7 +47,7 @@ jobs:
       - name: Verify ZeroNet is running
         run: |
           echo "Verifying ZeroNet is running"
-          sleep 120  # Espera 120 segundos para asegurar que ZeroNet esté listo
+          sleep 20  # Espera 120 segundos para asegurar que ZeroNet esté listo
           curl -I http://127.0.0.1:43110
           docker logs zeronet
           echo "ZeroNet verification complete"
@@ -60,9 +60,8 @@ jobs:
 
       - name: Access ZeroNet dashboard (with correct headers)
         run: |
-          echo "Accessing ZeroNet dashboard-Stats"
+          echo "Accessing ZeroNet dashboard"
           curl -H "Accept: application/json" http://127.0.0.1:43110/1HeLLo4uzjaLetFx6NH3PMwFP3qbRbTf3D/Stats
-          echo "Accessing ZeroNet dashboard-Trackers"
           curl -H "Accept: application/json" http://127.0.0.1:43110/1HeLLo4uzjaLetFx6NH3PMwFP3qbRbTf3D/Trackers
           docker logs zeronet
           echo "ZeroNet dashboard accessed"
@@ -70,5 +69,5 @@ jobs:
       - name: Access specific ZeroNet site
         run: |
           echo "Accessing http://127.0.0.1:43110/18XNZqktqbQhSChrxy7jvhWyHVkfAsDusD/"
-          curl http://127.0.0.1:43110/18XNZqktqbQhSChrxy7jvhWyHVkfAsDusD/
+          curl -H "Accept: text/html" http://127.0.0.1:43110/18XNZqktqbQhSChrxy7jvhWyHVkfAsDusD/
           echo "Content of the page printed above"
