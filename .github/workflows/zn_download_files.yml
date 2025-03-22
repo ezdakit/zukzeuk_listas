@@ -1,0 +1,116 @@
+name: zn_download_files
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 * * * *'  # Ejecutar a las y media de cada hora
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10  # Establece un tiempo máximo de ejecución
+
+    env:
+      ZERONET_ADDRESS_1: 18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie  # Dirección para eventos.html
+      ZERONET_ADDRESS_2: 1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU  # Dirección para lista-ott.m3u
+      OUTPUT_FOLDER: zn_downloads  # Carpeta de destino
+      OUTPUT_FILE: eventos.html  # Nombre del archivo para eventos.html
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install system dependencies
+        run: |
+          set -e  # Detener el script si hay un error
+          echo "Installing system dependencies"
+          sudo apt-get update
+          sudo apt-get install -y wget tar curl python3 python3-pip
+          echo "Dependencies installed"
+
+      - name: Download and extract ZeroNet
+        run: |
+          set -e
+          echo "Downloading ZeroNet"
+          wget https://github.com/HelloZeroNet/ZeroNet-linux/archive/dist-linux64/ZeroNet-py3-linux64.tar.gz
+          tar xvpfz ZeroNet-py3-linux64.tar.gz
+          cd ZeroNet-linux-dist-linux64/
+          echo "ZeroNet downloaded and extracted"
+
+      - name: Start ZeroNet
+        run: |
+          set -e
+          echo "Starting ZeroNet"
+          cd ZeroNet-linux-dist-linux64/
+          ./ZeroNet.sh &
+          echo "ZeroNet started"
+
+      - name: Verify ZeroNet is running
+        run: |
+          set -e
+          echo "Verifying ZeroNet is running"
+          sleep 5  # Espera 5 segundos para asegurar que ZeroNet esté listo
+          curl -I http://127.0.0.1:43110
+          echo "ZeroNet verification complete"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'  # Usa una versión compatible con Playwright
+
+      - name: Install Playwright
+        run: |
+          npm install playwright
+
+      - name: Install Playwright browsers
+        run: |
+          npx playwright install
+
+      - name: Extract dynamic content with Playwright
+        run: |
+          node extract-content.js "$ZERONET_ADDRESS_1" "$OUTPUT_FOLDER" "$OUTPUT_FILE"
+
+      - name: Check site synchronization (1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU)
+        run: |
+          echo "Checking site synchronization for $ZERONET_ADDRESS_2"
+          curl -H "Accept: text/html" -I http://127.0.0.1:43110/$ZERONET_ADDRESS_2/
+          echo "Site synchronization checked"
+
+      - name: Download lista-ott.m3u
+        run: |
+          echo "Downloading http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u"
+          if curl -H "Accept: text/html" -f -o $OUTPUT_FOLDER/lista-ott.m3u http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u; then
+            echo "File downloaded successfully to $OUTPUT_FOLDER/lista-ott.m3u"
+          else
+            echo "Failed to download lista-ott.m3u: The file does not exist or the site is not fully synchronized."
+            echo "Retrying in 30 seconds..."
+            sleep 30
+            if curl -H "Accept: text/html" -f -o $OUTPUT_FOLDER/lista-ott.m3u http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u; then
+              echo "File downloaded successfully to $OUTPUT_FOLDER/lista-ott.m3u"
+            else
+              echo "Failed to download lista-ott.m3u after retry."
+              exit 1
+            fi
+          fi
+
+      - name: Print eventos.html
+        run: |
+          echo "Contenido de eventos.html:"
+          cat $OUTPUT_FOLDER/eventos.html
+
+      - name: Commit files
+        run: |
+          echo "Verifying that both files exist..."
+          if [ -f "$OUTPUT_FOLDER/eventos.html" ] && [ -f "$OUTPUT_FOLDER/lista-ott.m3u" ]; then
+            echo "Both files exist. Proceeding with commit..."
+            git config --global user.name "GitHub Actions"
+            git config --global user.email "actions@github.com"
+            git add $OUTPUT_FOLDER/eventos.html $OUTPUT_FOLDER/lista-ott.m3u
+            git commit -m "Actualizar eventos.html y lista-ott.m3u desde ZeroNet"
+            git push
+          else
+            echo "Error: One or both files are missing."
+            echo "eventos.html exists: $( [ -f "$OUTPUT_FOLDER/eventos.html" ] && echo "Yes" || echo "No" )"
+            echo "lista-ott.m3u exists: $( [ -f "$OUTPUT_FOLDER/lista-ott.m3u" ] && echo "Yes" || echo "No" )"
+            exit 1
+          fi
