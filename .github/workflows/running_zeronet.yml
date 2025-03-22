@@ -25,16 +25,23 @@ jobs:
           sudo systemctl enable docker
         continue-on-error: true
 
+      - name: Create ZeroNet start script
+        run: |
+          echo '#!/bin/bash' > start_zeronet.sh
+          echo 'zeronet.py --ui_host "localhost:43110"' >> start_zeronet.sh
+          chmod +x start_zeronet.sh
+
       - name: Run ZeroNet with Docker
         run: |
           docker run -d \
             --name zeronet \
             -p 43110:43110 \
+            -v $(pwd)/start_zeronet.sh:/root/start_zeronet.sh \
             -v /etc/zeronet/zeronet.conf:/root/.zeronet/zeronet.conf \
             --log-driver json-file \
             --log-opt max-size=10m \
             nofish/zeronet \
-            --ui_host "localhost:43110"
+            /root/start_zeronet.sh
 
       - name: Verify ZeroNet is running
         run: |
