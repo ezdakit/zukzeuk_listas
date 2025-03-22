@@ -124,18 +124,18 @@ jobs:
           fi
           if git diff --cached --quiet; then
             echo "No changes to commit"
-            echo "::set-output name=changes::false"
+            echo "changes=false" >> $GITHUB_ENV
           else
             echo "Changes detected"
-            echo "::set-output name=changes::true"
+            echo "changes=true" >> $GITHUB_ENV
           fi
 
       - name: Commit changes
-        if: steps.changes.outputs.changes == 'true'
+        if: env.changes == 'true'
         run: git commit -m "Add new files"
 
       - name: Push changes
-        if: steps.changes.outputs.changes == 'true'
+        if: env.changes == 'true'
         run: git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
