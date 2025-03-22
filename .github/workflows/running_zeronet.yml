@@ -19,7 +19,7 @@ jobs:
         run: |
           echo "Installing dependencies"
           sudo apt-get update
-          sudo apt-get install -y wget tar curl
+          sudo apt-get install -y wget tar curl jq
           echo "Dependencies installed"
 
       - name: Download and extract ZeroNet
@@ -44,13 +44,7 @@ jobs:
           curl -I http://127.0.0.1:43110
           echo "ZeroNet verification complete"
 
-      - name: Check site synchronization (18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie)
-        run: |
-          echo "Checking site synchronization for 18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie"
-          curl -H "Accept: text/html" -I http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie/
-          echo "Site synchronization checked"
-
-      - name: Download and print page content (18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie)
+      - name: Download and analyze page content (18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie)
         run: |
           echo "Downloading http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie/"
           curl -H "Accept: text/html" -o page.html http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie/
@@ -58,33 +52,38 @@ jobs:
           echo "Printing full HTML content:"
           cat page.html
           
-          echo "Printing visible text (similar to browser view):"
-          # Extraemos el texto visible usando sed y tr
-          sed 's/<[^>]*>//g' page.html | tr -s ' '  # Elimina etiquetas HTML y espacios extra
-          echo "Page content printed above"
-
-      # Comentamos la parte de descargar y mostrar el archivo lista-ott.m3u
-      # - name: Check site synchronization (1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU)
-      #   run: |
-      #     echo "Checking site synchronization for 1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU"
-      #     curl -H "Accept: text/html" -I http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/
-      #     echo "Site synchronization checked"
-
-      # - name: Download and print file content (1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU)
-      #   run: |
-      #     echo "Downloading http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u"
-      #     if curl -H "Accept: text/html" -f -o lista-ott.m3u http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u; then
-      #       echo "Content of lista-ott.m3u:"
-      #       cat lista-ott.m3u
-      #     else
-      #       echo "Failed to download lista-ott.m3u: The file does not exist or the site is not fully synchronized."
-      #       echo "Retrying in 30 seconds..."
-      #       sleep 30
-      #       if curl -H "Accept: text/html" -f -o lista-ott.m3u http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u; then
-      #         echo "Content of lista-ott.m3u:"
-      #         cat lista-ott.m3u
-      #       else
-      #         echo "Failed to download lista-ott.m3u after retry."
-      #       fi
-      #     fi
-      #     echo "File content printed above"
+          echo "Extracting JavaScript configuration:"
+          # Buscamos el fragmento de código JavaScript que contiene la configuración
+          CONFIG_SCRIPT=$(grep -oP '(?<=<script id="script_init" nonce=")[^"]+' page.html)
+          if [ -z "$CONFIG_SCRIPT" ]; then
+            echo "JavaScript configuration not found."
+            exit 1
+          fi
+          
+          echo "JavaScript configuration found:"
+          echo "$CONFIG_SCRIPT"
+          
+          # Extraemos las variables de configuración
+          ADDRESS=$(echo "$CONFIG_SCRIPT" | grep -oP 'address\s*=\s*"[^"]+"' | cut -d'"' -f2)
+          WRAPPER_NONCE=$(echo "$CONFIG_SCRIPT" | grep -oP 'wrapper_nonce\s*=\s*"[^"]+"' | cut -d'"' -f2)
+          WRAPPER_KEY=$(echo "$CONFIG_SCRIPT" | grep -oP 'wrapper_key\s*=\s*"[^"]+"' | cut -d'"' -f2)
+          AJAX_KEY=$(echo "$CONFIG_SCRIPT" | grep -oP 'ajax_key\s*=\s*"[^"]+"' | cut -d'"' -f2)
+          FILE_INNER_PATH=$(echo "$CONFIG_SCRIPT" | grep -oP 'file_inner_path\s*=\s*"[^"]+"' | cut -d'"' -f2)
+          SCRIPT_NONCE=$(echo "$CONFIG_SCRIPT" | grep -oP 'script_nonce\s*=\s*"[^"]+"' | cut -d'"' -f2)
+          
+          echo "Extracted configuration:"
+          echo "Address: $ADDRESS"
+          echo "Wrapper Nonce: $WRAPPER_NONCE"
+          echo "Wrapper Key: $WRAPPER_KEY"
+          echo "Ajax Key: $AJAX_KEY"
+          echo "File Inner Path: $FILE_INNER_PATH"
+          echo "Script Nonce: $SCRIPT_NONCE"
+          
+          # Descargamos el contenido del inner-iframe
+          echo "Downloading inner-iframe content:"
+          INNER_IFRAME_URL="http://127.0.0.1:43110/$ADDRESS/$FILE_INNER_PATH?wrapper_nonce=$WRAPPER_NONCE"
+          curl -H "Accept: text/html" -o inner-iframe.html "$INNER_IFRAME_URL"
+          
+          echo "Inner-iframe content downloaded:"
+          cat inner-iframe.html
+          echo "Inner-iframe content printed above"
