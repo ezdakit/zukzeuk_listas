@@ -4,12 +4,11 @@ const path = require('path');
 
 // Obtener los parámetros
 const zeronetAddress1 = process.argv[2]; // Dirección de ZeroNet para eventos.html
-const zeronetAddress2 = process.argv[3]; // Dirección de ZeroNet para lista-ott.m3u
-const outputFolder = process.argv[4];    // Carpeta de destino
-const outputFile = process.argv[5];     // Nombre del archivo para eventos.html
+const outputFolder = process.argv[3];    // Carpeta de destino
+const outputFile = process.argv[4];     // Nombre del archivo para eventos.html
 
-if (!zeronetAddress1 || !zeronetAddress2 || !outputFolder || !outputFile) {
-  console.error('Error: Faltan parámetros. Uso: node extract-content.js <zeronet-address-1> <zeronet-address-2> <output-folder> <output-file>');
+if (!zeronetAddress1 || !outputFolder || !outputFile) {
+  console.error('Error: Faltan parámetros. Uso: node extract-content.js <zeronet-address-1> <output-folder> <output-file>');
   process.exit(1);
 }
 
@@ -19,7 +18,6 @@ const filePath = path.join(folderPath, outputFile);
 
 console.log('Parámetros recibidos:');
 console.log(`- Dirección 1: ${zeronetAddress1}`);
-console.log(`- Dirección 2: ${zeronetAddress2}`);
 console.log(`- Carpeta de destino: ${folderPath}`);
 console.log(`- Archivo de salida: ${filePath}`);
 
@@ -125,39 +123,6 @@ async function loadPageWithRetries(page, url, retries = 3, timeout = 60000) {
     console.log(`Archivo guardado correctamente: ${filePath}`);
   } catch (error) {
     console.error(`Error al extraer el contenido: ${error.message}`);
-    process.exit(1); // Terminar el script con un código de error
-  }
-
-  // Descargar el archivo lista-ott.m3u de la segunda página
-  const zeronetUrl2 = `http://127.0.0.1:43110/${zeronetAddress2}/`;
-  console.log(`Sincronizando contenido de: ${zeronetUrl2}`);
-
-  try {
-    // Configurar el encabezado "Accept" para la descarga del archivo
-    console.log('Configurando encabezado "Accept: */*"...');
-    await page.setExtraHTTPHeaders({
-      'Accept': '*/*', // Aceptar cualquier tipo de contenido para la descarga
-    });
-
-    // Cargar la página con reintentos
-    await loadPageWithRetries(page, zeronetUrl2);
-
-    const downloadUrl = `http://127.0.0.1:43110/${zeronetAddress2}/lista-ott.m3u`;
-    console.log(`Descargando archivo: ${downloadUrl}`);
-    const response = await page.goto(downloadUrl, { waitUntil: 'load', timeout: 60000 });
-
-    if (response.status() === 200) {
-      console.log('Archivo descargado correctamente.');
-      const content = await response.text();
-      const downloadPath = path.join(folderPath, 'lista-ott.m3u');
-      console.log(`Guardando archivo en: ${downloadPath}`);
-      fs.writeFileSync(downloadPath, content);
-      console.log(`Archivo guardado correctamente: ${downloadPath}`);
-    } else {
-      console.error(`Error al descargar el archivo: ${response.status()}`);
-    }
-  } catch (error) {
-    console.error(`Error al descargar el archivo: ${error.message}`);
     process.exit(1); // Terminar el script con un código de error
   }
 
