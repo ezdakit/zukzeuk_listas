@@ -54,7 +54,7 @@ jobs:
           
           echo "Extracting JavaScript configuration:"
           # Extraemos el contenido completo del script que contiene la configuración
-          CONFIG_SCRIPT=$(awk '/<script id="script_init"/,/<\\/script>/' page.html)
+          CONFIG_SCRIPT=$(grep -oPz '(?s)<script id="script_init"[^>]*>.*?</script>' page.html)
           if [ -z "$CONFIG_SCRIPT" ]; then
             echo "JavaScript configuration not found."
             exit 1
