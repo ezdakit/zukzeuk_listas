@@ -93,19 +93,49 @@ jobs:
             fi
           fi
 
-      - name: Commit files
+      - name: Check for eventos.html
+        id: check_eventos
         run: |
-          echo "Verifying that both files exist..."
-          if [ -f "$OUTPUT_FOLDER/eventos.html" ] && [ -f "$OUTPUT_FOLDER/lista-ott.m3u" ]; then
-            echo "Both files exist. Proceeding with commit..."
-            git config --global user.name "GitHub Actions"
-            git config --global user.email "actions@github.com"
-            git add $OUTPUT_FOLDER/eventos.html $OUTPUT_FOLDER/lista-ott.m3u
-            git commit -m "Actualizar eventos.html y lista-ott.m3u desde ZeroNet"
-            git push
+          if [ -f $OUTPUT_FOLDER/eventos.html ]; then
+            echo "eventos=true" >> $GITHUB_ENV
           else
-            echo "Error: One or both files are missing."
-            echo "eventos.html exists: $( [ -f "$OUTPUT_FOLDER/eventos.html" ] && echo "Yes" || echo "No" )"
-            echo "lista-ott.m3u exists: $( [ -f "$OUTPUT_FOLDER/lista-ott.m3u" ] && echo "Yes" || echo "No" )"
-            exit 1
+            echo "eventos=false" >> $GITHUB_ENV
           fi
+
+      - name: Check for lista-ott.m3u
+        id: check_lista_ott
+        run: |
+          if [ -f $OUTPUT_FOLDER/lista-ott.m3u ]; then
+            echo "lista_ott=true" >> $GITHUB_ENV
+          else
+            echo "lista_ott=false" >> $GITHUB_ENV
+          fi
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if [ "${{ env.eventos }}" == 'true' ]; then
+            git add $OUTPUT_FOLDER/eventos.html
+            echo "eventos.html detected"
+          fi
+          if [ "${{ env.lista_ott }}" == 'true' ]; then
+            git add $OUTPUT_FOLDER/lista-ott.m3u
+            echo "lista-ott.m3u detected"
+          fi
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            echo "::set-output name=changes::false"
+          else
+            echo "Changes detected"
+            echo "::set-output name=changes::true"
+          fi
+
+      - name: Commit changes
+        if: steps.changes.outputs.changes == 'true'
+        run: git commit -m "Add new files"
+
+      - name: Push changes
+        if: steps.changes.outputs.changes == 'true'
+        run: git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
