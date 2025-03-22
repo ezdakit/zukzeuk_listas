@@ -81,47 +81,47 @@ jobs:
           echo "Ajax Key: $AJAX_KEY"
           echo "File Inner Path: $FILE_INNER_PATH"
           echo "Script Nonce: $SCRIPT_NONCE"
-          
-          echo "Downloading inner-iframe content:"
-          INNER_IFRAME_URL="http://127.0.0.1:43110/$ADDRESS/$FILE_INNER_PATH?wrapper_nonce=$WRAPPER_NONCE"
-          curl -H "Accept: text/html" -o inner-iframe.html "$INNER_IFRAME_URL"
-          
-          echo "Inner-iframe content downloaded:"
-          cat inner-iframe.html
 
-      - name: Deobfuscate inner-iframe content
+      - name: Set up Node.js for Puppeteer
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'  # Usa una versión compatible con Puppeteer
+
+      - name: Install Puppeteer
         run: |
-          set -e
-          echo "Installing Python dependencies for deobfuscation..."
-          pip3 install beautifulsoup4  # Instala BeautifulSoup para manipulación de HTML
-          
-          echo "Running deobfuscation script..."
-          cat << 'EOF' > deobfuscate.py
-          import re
-          from bs4 import BeautifulSoup
+          npm install puppeteer
 
-          def deobfuscate(html_content):
-              # Ejemplo: Buscar y decodificar código ofuscado
-              soup = BeautifulSoup(html_content, 'html.parser')
-              scripts = soup.find_all('script')
-              for script in scripts:
-                  if script.string:
-                      # Eliminar caracteres ofuscantes (esto es un ejemplo básico)
-                      script.string = re.sub(r'[^\x20-\x7E]', '', script.string)
-              return str(soup)
+      - name: Extract dynamic content with Puppeteer
+        run: |
+          node <<EOF
+          const puppeteer = require('puppeteer');
+          const fs = require('fs');
 
-          if __name__ == "__main__":
-              with open("inner-iframe.html", "r") as file:
-                  content = file.read()
-              deobfuscated = deobfuscate(content)
-              with open("deobfuscated.html", "w") as file:
-                  file.write(deobfuscated)
+          (async () => {
+            const browser = await puppeteer.launch();
+            const page = await browser.newPage();
+            const url = 'http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie/';
+            await page.goto(url, { waitUntil: 'networkidle2' });
+
+            // Esperar a que el iframe se cargue
+            await page.waitForSelector('#inner-iframe');
+
+            // Obtener el contenido del iframe
+            const frameHandle = await page.$('#inner-iframe');
+            const frame = await frameHandle.contentFrame();
+
+            // Esperar a que el contenido dinámico se cargue
+            await frame.waitForSelector('body');
+
+            // Obtener el HTML final del iframe
+            const finalContent = await frame.content();
+
+            // Guardar el contenido en un archivo
+            fs.writeFileSync('final-content.html', finalContent);
+
+            await browser.close();
+          })();
           EOF
-
-          python3 deobfuscate.py
-          
-          echo "Deobfuscated content:"
-          cat deobfuscated.html
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
@@ -129,5 +129,4 @@ jobs:
           name: ZeroNet-files
           path: |
             page.html
-            inner-iframe.html
-            deobfuscated.html
+            final-content.html
