@@ -26,13 +26,8 @@ jobs:
           set -e  # Detener el script si hay un error
           echo "Installing system dependencies"
           sudo apt-get update
-          sudo apt-get install -y \
-            wget tar curl python3 python3-pip \
-            libgtk-4-1 libgraphene-1.0-0 \
-            libevent-2.1-7 libopus0 libgstreamer1.0-0 libgstreamer-plugins-base1.0-0 \
-            libflite1 libharfbuzz-icu0 libsecret-1-0 libhyphen0 \
-            libmanette-0.2-0 libgles2
-          echo "System dependencies installed"
+          sudo apt-get install -y wget tar curl python3 python3-pip
+          echo "Dependencies installed"
 
       - name: Download and extract ZeroNet
         run: |
@@ -72,15 +67,37 @@ jobs:
         run: |
           npx playwright install
 
-      - name: Extract and download content
+      - name: Extract dynamic content with Playwright
         run: |
-          node extract-content.js "$ZERONET_ADDRESS_1" "$ZERONET_ADDRESS_2" "$OUTPUT_FOLDER" "$OUTPUT_FILE"
+          node extract-content.js "$ZERONET_ADDRESS_1" "$OUTPUT_FOLDER" "$OUTPUT_FILE"
 
-      - name: Commit and push files
-        if: success()  # Solo ejecutar si el paso anterior fue exitoso
+      - name: Check site synchronization (1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU)
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git add "$OUTPUT_FOLDER/$OUTPUT_FILE" "$OUTPUT_FOLDER/lista-ott.m3u"
-          git commit -m "Actualizar $OUTPUT_FILE y lista-ott.m3u desde ZeroNet"
-          git push
+          echo "Checking site synchronization for $ZERONET_ADDRESS_2"
+          curl -H "Accept: text/html" -I http://127.0.0.1:43110/$ZERONET_ADDRESS_2/
+          echo "Site synchronization checked"
+
+      - name: Download lista-ott.m3u
+        run: |
+          echo "Downloading http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u"
+          if curl -H "Accept: text/html" -f -o $OUTPUT_FOLDER/lista-ott.m3u http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u; then
+            echo "File downloaded successfully to $OUTPUT_FOLDER/lista-ott.m3u"
+          else
+            echo "Failed to download lista-ott.m3u: The file does not exist or the site is not fully synchronized."
+            echo "Retrying in 30 seconds..."
+            sleep 30
+            if curl -H "Accept: text/html" -f -o $OUTPUT_FOLDER/lista-ott.m3u http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u; then
+              echo "File downloaded successfully to $OUTPUT_FOLDER/lista-ott.m3u"
+            else
+              echo "Failed to download lista-ott.m3u after retry."
+              exit 1
+            fi
+          fi
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ZeroNet-files
+          path: |
+            $OUTPUT_FOLDER/eventos.html
+            $OUTPUT_FOLDER/lista-ott.m3u
