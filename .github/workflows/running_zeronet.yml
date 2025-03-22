@@ -47,7 +47,7 @@ jobs:
       - name: Verify ZeroNet is running
         run: |
           echo "Verifying ZeroNet is running"
-          sleep 30  # Aumenta el tiempo de espera a 60 segundos
+          sleep 30  # Espera 60 segundos para asegurar que ZeroNet esté listo
           curl -I http://127.0.0.1:43110
           docker logs zeronet
           echo "ZeroNet verification complete"
@@ -55,21 +55,21 @@ jobs:
       - name: Check site synchronization
         run: |
           echo "Checking site synchronization"
-          curl -I http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/
+          curl -H "Accept: text/html" -I http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/
           docker logs zeronet | grep "1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU"
           echo "Site synchronization checked"
 
       - name: Download and print file content
         run: |
           echo "Downloading http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u"
-          if curl -f -o lista-ott.m3u http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u; then
+          if curl -H "Accept: text/html" -f -o lista-ott.m3u http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u; then
             echo "Content of lista-ott.m3u:"
             cat lista-ott.m3u
           else
             echo "Failed to download lista-ott.m3u: The file does not exist or the site is not fully synchronized."
             echo "Retrying in 30 seconds..."
             sleep 30
-            if curl -f -o lista-ott.m3u http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u; then
+            if curl -H "Accept: text/html" -f -o lista-ott.m3u http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u; then
               echo "Content of lista-ott.m3u:"
               cat lista-ott.m3u
             else
