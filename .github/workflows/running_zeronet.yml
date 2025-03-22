@@ -44,16 +44,16 @@ jobs:
           curl -I http://127.0.0.1:43110
           echo "ZeroNet verification complete"
 
-      - name: Check site synchronization (18XNZqktqbQhSChrxy7jvhWyHVkfAsDusD)
+      - name: Check site synchronization (18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie)
         run: |
-          echo "Checking site synchronization for 18XNZqktqbQhSChrxy7jvhWyHVkfAsDusD"
-          curl -H "Accept: text/html" -I http://127.0.0.1:43110/18XNZqktqbQhSChrxy7jvhWyHVkfAsDusD/
+          echo "Checking site synchronization for 18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie"
+          curl -H "Accept: text/html" -I http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie/
           echo "Site synchronization checked"
 
-      - name: Download and print page content (18XNZqktqbQhSChrxy7jvhWyHVkfAsDusD)
+      - name: Download and print page content (18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie)
         run: |
-          echo "Downloading http://127.0.0.1:43110/18XNZqktqbQhSChrxy7jvhWyHVkfAsDusD/"
-          curl -H "Accept: text/html" -o page.html http://127.0.0.1:43110/18XNZqktqbQhSChrxy7jvhWyHVkfAsDusD/
+          echo "Downloading http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie/"
+          curl -H "Accept: text/html" -o page.html http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie/
           
           echo "Printing full HTML content:"
           cat page.html
@@ -63,27 +63,28 @@ jobs:
           sed 's/<[^>]*>//g' page.html | tr -s ' '  # Elimina etiquetas HTML y espacios extra
           echo "Page content printed above"
 
-      - name: Check site synchronization (1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU)
-        run: |
-          echo "Checking site synchronization for 1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU"
-          curl -H "Accept: text/html" -I http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/
-          echo "Site synchronization checked"
+      # Comentamos la parte de descargar y mostrar el archivo lista-ott.m3u
+      # - name: Check site synchronization (1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU)
+      #   run: |
+      #     echo "Checking site synchronization for 1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU"
+      #     curl -H "Accept: text/html" -I http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/
+      #     echo "Site synchronization checked"
 
-      - name: Download and print file content (1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU)
-        run: |
-          echo "Downloading http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u"
-          if curl -H "Accept: text/html" -f -o lista-ott.m3u http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u; then
-            echo "Content of lista-ott.m3u:"
-            cat lista-ott.m3u
-          else
-            echo "Failed to download lista-ott.m3u: The file does not exist or the site is not fully synchronized."
-            echo "Retrying in 30 seconds..."
-            sleep 30
-            if curl -H "Accept: text/html" -f -o lista-ott.m3u http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u; then
-              echo "Content of lista-ott.m3u:"
-              cat lista-ott.m3u
-            else
-              echo "Failed to download lista-ott.m3u after retry."
-            fi
-          fi
-          echo "File content printed above"
+      # - name: Download and print file content (1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU)
+      #   run: |
+      #     echo "Downloading http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u"
+      #     if curl -H "Accept: text/html" -f -o lista-ott.m3u http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u; then
+      #       echo "Content of lista-ott.m3u:"
+      #       cat lista-ott.m3u
+      #     else
+      #       echo "Failed to download lista-ott.m3u: The file does not exist or the site is not fully synchronized."
+      #       echo "Retrying in 30 seconds..."
+      #       sleep 30
+      #       if curl -H "Accept: text/html" -f -o lista-ott.m3u http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u; then
+      #         echo "Content of lista-ott.m3u:"
+      #         cat lista-ott.m3u
+      #       else
+      #         echo "Failed to download lista-ott.m3u after retry."
+      #       fi
+      #     fi
+      #     echo "File content printed above"
