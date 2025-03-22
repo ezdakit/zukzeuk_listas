@@ -11,6 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10  # Establece un tiempo máximo de ejecución
 
+    env:
+      ZERONET_ADDRESS_1: 18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie  # Dirección para eventos.html
+      ZERONET_ADDRESS_2: 1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU  # Dirección para lista-ott.m3u
+      OUTPUT_FOLDER: zn_downloads  # Carpeta de destino
+      OUTPUT_FILE: eventos.html  # Nombre del archivo para eventos.html
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -53,40 +59,6 @@ jobs:
           curl -I http://127.0.0.1:43110
           echo "ZeroNet verification complete"
 
-      - name: Download and analyze page content (18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie)
-        run: |
-          set -e
-          echo "Downloading http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie/"
-          curl -H "Accept: text/html" -o page.html http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie/
-          
-          echo "Printing full HTML content:"
-          cat page.html
-          
-          echo "Extracting JavaScript configuration:"
-          CONFIG_SCRIPT=$(grep -oPz '(?s)<script id="script_init"[^>]*>.*?</script>' page.html)
-          if [ -z "$CONFIG_SCRIPT" ]; then
-            echo "JavaScript configuration not found."
-            exit 1
-          fi
-          
-          echo "JavaScript configuration found:"
-          echo "$CONFIG_SCRIPT"
-          
-          ADDRESS=$(echo "$CONFIG_SCRIPT" | grep -oP 'address\s*=\s*"[^"]+"' | cut -d'"' -f2)
-          WRAPPER_NONCE=$(echo "$CONFIG_SCRIPT" | grep -oP 'wrapper_nonce\s*=\s*"[^"]+"' | cut -d'"' -f2)
-          WRAPPER_KEY=$(echo "$CONFIG_SCRIPT" | grep -oP 'wrapper_key\s*=\s*"[^"]+"' | cut -d'"' -f2)
-          AJAX_KEY=$(echo "$CONFIG_SCRIPT" | grep -oP 'ajax_key\s*=\s*"[^"]+"' | cut -d'"' -f2)
-          FILE_INNER_PATH=$(echo "$CONFIG_SCRIPT" | grep -oP 'file_inner_path\s*=\s*"[^"]+"' | cut -d'"' -f2 | sed 's/\\//g')
-          SCRIPT_NONCE=$(echo "$CONFIG_SCRIPT" | grep -oP 'script_nonce\s*=\s*"[^"]+"' | cut -d'"' -f2)
-          
-          echo "Extracted configuration:"
-          echo "Address: $ADDRESS"
-          echo "Wrapper Nonce: $WRAPPER_NONCE"
-          echo "Wrapper Key: $WRAPPER_KEY"
-          echo "Ajax Key: $AJAX_KEY"
-          echo "File Inner Path: $FILE_INNER_PATH"
-          echo "Script Nonce: $SCRIPT_NONCE"
-
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
@@ -100,14 +72,15 @@ jobs:
         run: |
           npx playwright install
 
-      - name: Extract dynamic content with Playwright
+      - name: Extract and download content
         run: |
-          node extract-content.js
+          node extract-content.js "$ZERONET_ADDRESS_1" "$ZERONET_ADDRESS_2" "$OUTPUT_FOLDER" "$OUTPUT_FILE"
 
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: ZeroNet-files
-          path: |
-            page.html
-            final-content.html
+      - name: Commit and push files
+        if: success()  # Solo ejecutar si el paso anterior fue exitoso
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add "$OUTPUT_FOLDER/$OUTPUT_FILE" "$OUTPUT_FOLDER/lista-ott.m3u"
+          git commit -m "Actualizar $OUTPUT_FILE y lista-ott.m3u desde ZeroNet"
+          git push
