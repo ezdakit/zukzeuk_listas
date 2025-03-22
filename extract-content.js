@@ -5,6 +5,12 @@ const fs = require('fs');
   // Lanzar el navegador Chromium
   const browser = await chromium.launch();
   const page = await browser.newPage();
+
+  // Configurar el encabezado "Accept"
+  await page.setExtraHTTPHeaders({
+    'Accept': 'text/html',
+  });
+
   const url = 'http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie/';
 
   // Navegar a la URL
