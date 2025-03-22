@@ -53,7 +53,7 @@ jobs:
       - name: Verify ZeroNet logging configuration
         run: |
           echo "Verifying ZeroNet logging configuration"
-          docker exec zeronet bash -c 'cat /root/.zeronet/zeronet.conf'
+          docker exec zeronet sh -c 'cat /root/.zeronet/zeronet.conf'
 
       - name: Run Python script
         run: python3 prueba.py
