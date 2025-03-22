@@ -9,21 +9,23 @@ on:
 jobs:
   setup:
     runs-on: ubuntu-latest
+    timeout-minutes: 10  # Establece un tiempo máximo de ejecución
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - run: echo "Checked out code"
 
       - name: Install dependencies
         run: |
+          set -e  # Detener el script si hay un error
           echo "Installing dependencies"
           sudo apt-get update
-          sudo apt-get install -y wget tar curl
+          sudo apt-get install -y wget tar curl python3 python3-pip
           echo "Dependencies installed"
 
       - name: Download and extract ZeroNet
         run: |
+          set -e
           echo "Downloading ZeroNet"
           wget https://github.com/HelloZeroNet/ZeroNet-linux/archive/dist-linux64/ZeroNet-py3-linux64.tar.gz
           tar xvpfz ZeroNet-py3-linux64.tar.gz
@@ -32,6 +34,7 @@ jobs:
 
       - name: Start ZeroNet
         run: |
+          set -e
           echo "Starting ZeroNet"
           cd ZeroNet-linux-dist-linux64/
           ./ZeroNet.sh &
@@ -39,6 +42,7 @@ jobs:
 
       - name: Verify ZeroNet is running
         run: |
+          set -e
           echo "Verifying ZeroNet is running"
           sleep 5  # Espera 5 segundos para asegurar que ZeroNet esté listo
           curl -I http://127.0.0.1:43110
@@ -46,6 +50,7 @@ jobs:
 
       - name: Download and analyze page content (18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie)
         run: |
+          set -e
           echo "Downloading http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie/"
           curl -H "Accept: text/html" -o page.html http://127.0.0.1:43110/18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie/
           
@@ -53,7 +58,6 @@ jobs:
           cat page.html
           
           echo "Extracting JavaScript configuration:"
-          # Extraemos el contenido completo del script que contiene la configuración
           CONFIG_SCRIPT=$(grep -oPz '(?s)<script id="script_init"[^>]*>.*?</script>' page.html)
           if [ -z "$CONFIG_SCRIPT" ]; then
             echo "JavaScript configuration not found."
@@ -63,12 +67,11 @@ jobs:
           echo "JavaScript configuration found:"
           echo "$CONFIG_SCRIPT"
           
-          # Extraemos las variables de configuración
           ADDRESS=$(echo "$CONFIG_SCRIPT" | grep -oP 'address\s*=\s*"[^"]+"' | cut -d'"' -f2)
           WRAPPER_NONCE=$(echo "$CONFIG_SCRIPT" | grep -oP 'wrapper_nonce\s*=\s*"[^"]+"' | cut -d'"' -f2)
           WRAPPER_KEY=$(echo "$CONFIG_SCRIPT" | grep -oP 'wrapper_key\s*=\s*"[^"]+"' | cut -d'"' -f2)
           AJAX_KEY=$(echo "$CONFIG_SCRIPT" | grep -oP 'ajax_key\s*=\s*"[^"]+"' | cut -d'"' -f2)
-          FILE_INNER_PATH=$(echo "$CONFIG_SCRIPT" | grep -oP 'file_inner_path\s*=\s*"[^"]+"' | cut -d'"' -f2 | sed 's/\\//g')  # Eliminamos la barra invertida
+          FILE_INNER_PATH=$(echo "$CONFIG_SCRIPT" | grep -oP 'file_inner_path\s*=\s*"[^"]+"' | cut -d'"' -f2 | sed 's/\\//g')
           SCRIPT_NONCE=$(echo "$CONFIG_SCRIPT" | grep -oP 'script_nonce\s*=\s*"[^"]+"' | cut -d'"' -f2)
           
           echo "Extracted configuration:"
@@ -79,11 +82,52 @@ jobs:
           echo "File Inner Path: $FILE_INNER_PATH"
           echo "Script Nonce: $SCRIPT_NONCE"
           
-          # Descargamos el contenido del inner-iframe
           echo "Downloading inner-iframe content:"
           INNER_IFRAME_URL="http://127.0.0.1:43110/$ADDRESS/$FILE_INNER_PATH?wrapper_nonce=$WRAPPER_NONCE"
           curl -H "Accept: text/html" -o inner-iframe.html "$INNER_IFRAME_URL"
           
           echo "Inner-iframe content downloaded:"
           cat inner-iframe.html
-          echo "Inner-iframe content printed above"
+
+      - name: Deobfuscate inner-iframe content
+        run: |
+          set -e
+          echo "Installing Python dependencies for deobfuscation..."
+          pip3 install beautifulsoup4  # Instala BeautifulSoup para manipulación de HTML
+          
+          echo "Running deobfuscation script..."
+          cat << 'EOF' > deobfuscate.py
+          import re
+          from bs4 import BeautifulSoup
+
+          def deobfuscate(html_content):
+              # Ejemplo: Buscar y decodificar código ofuscado
+              soup = BeautifulSoup(html_content, 'html.parser')
+              scripts = soup.find_all('script')
+              for script in scripts:
+                  if script.string:
+                      # Eliminar caracteres ofuscantes (esto es un ejemplo básico)
+                      script.string = re.sub(r'[^\x20-\x7E]', '', script.string)
+              return str(soup)
+
+          if __name__ == "__main__":
+              with open("inner-iframe.html", "r") as file:
+                  content = file.read()
+              deobfuscated = deobfuscate(content)
+              with open("deobfuscated.html", "w") as file:
+                  file.write(deobfuscated)
+          EOF
+
+          python3 deobfuscate.py
+          
+          echo "Deobfuscated content:"
+          cat deobfuscated.html
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ZeroNet-files
+          path: |
+            page.html
+            inner-iframe.html
+            deobfuscated.html
