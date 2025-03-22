@@ -13,33 +13,49 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          path: .
+        run: |
+          echo "Checked out code"
 
       - name: Set up Docker
         uses: docker/setup-buildx-action@v1
+        run: |
+          echo "Docker setup complete"
 
       - name: Install Docker
         run: |
+          echo "Starting Docker installation"
           sudo apt-get update
           sudo apt-get install -y docker.io
           sudo systemctl start docker
           sudo systemctl enable docker
+          echo "Docker installation complete"
         continue-on-error: true
 
       - name: Create ZeroNet start script
         run: |
+          echo "Creating ZeroNet start script"
           echo '#!/bin/bash' > start_zeronet.sh
           echo 'python /root/ZeroNet/zeronet.py --config_file /root/.zeronet/zeronet.conf --ui_host "localhost:43110"' >> start_zeronet.sh
+          echo 'echo "ZeroNet started successfully"' >> start_zeronet.sh
           chmod +x start_zeronet.sh
+          cat start_zeronet.sh
+          echo "ZeroNet start script created"
 
       - name: Create ZeroNet config
         run: |
+          echo "Creating ZeroNet config"
           echo '[global]' > zeronet.conf
           echo 'ui_host = 0.0.0.0' >> zeronet.conf
           echo 'ui_host = localhost' >> zeronet.conf
           echo 'ui_host = 127.0.0.1' >> zeronet.conf
+          cat zeronet.conf
+          echo "ZeroNet config created"
 
       - name: Run ZeroNet with Docker
         run: |
+          echo "Starting ZeroNet with Docker"
           docker run -d \
             --name zeronet \
             -p 43110:43110 \
@@ -49,15 +65,27 @@ jobs:
             --log-opt max-size=10m \
             nofish/zeronet \
             /root/start_zeronet.sh
+          echo "ZeroNet container started"
+          docker ps -a
 
       - name: Verify ZeroNet is running
         run: |
+          echo "Verifying ZeroNet is running"
           sleep 10
           curl -I http://localhost:43110
           docker logs zeronet
+          echo "ZeroNet verification complete"
+
+      - name: Check ZeroNet start message
+        run: |
+          echo "Checking ZeroNet start message"
+          docker logs zeronet | grep "ZeroNet started successfully"
+          echo "ZeroNet start message checked"
 
       - name: Access ZeroNet dashboard
         run: |
+          echo "Accessing ZeroNet dashboard"
           curl http://localhost:43110/Stats
           curl http://localhost:43110/Trackers
           docker logs zeronet
+          echo "ZeroNet dashboard accessed"
