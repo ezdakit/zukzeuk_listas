@@ -40,7 +40,7 @@ jobs:
             -v zeronet_data:/root/.zeronet \
             --log-driver json-file \
             --log-opt max-size=10m \
-            nofish/zeronet:0.7.1  # Usa una versión anterior
+            nofish/zeronet:latest  # Usa la etiqueta latest
           echo "ZeroNet container started"
           docker ps -a
 
