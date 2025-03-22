@@ -68,7 +68,7 @@ jobs:
           WRAPPER_NONCE=$(echo "$CONFIG_SCRIPT" | grep -oP 'wrapper_nonce\s*=\s*"[^"]+"' | cut -d'"' -f2)
           WRAPPER_KEY=$(echo "$CONFIG_SCRIPT" | grep -oP 'wrapper_key\s*=\s*"[^"]+"' | cut -d'"' -f2)
           AJAX_KEY=$(echo "$CONFIG_SCRIPT" | grep -oP 'ajax_key\s*=\s*"[^"]+"' | cut -d'"' -f2)
-          FILE_INNER_PATH=$(echo "$CONFIG_SCRIPT" | grep -oP 'file_inner_path\s*=\s*"[^"]+"' | cut -d'"' -f2)
+          FILE_INNER_PATH=$(echo "$CONFIG_SCRIPT" | grep -oP 'file_inner_path\s*=\s*"[^"]+"' | cut -d'"' -f2 | sed 's/\\//g')  # Eliminamos la barra invertida
           SCRIPT_NONCE=$(echo "$CONFIG_SCRIPT" | grep -oP 'script_nonce\s*=\s*"[^"]+"' | cut -d'"' -f2)
           
           echo "Extracted configuration:"
