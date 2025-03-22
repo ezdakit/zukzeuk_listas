@@ -27,7 +27,7 @@ jobs:
 
       - name: Run ZeroNet container
         run: |
-          docker run -d --name zeronet -p 43110:43110 -v zeronet_data:/root/ZeroNet/data nofish/zeronet zeronet.py --ui_host 0.0.0.0
+          docker run -d --name zeronet -p 43110:43110 -v zeronet_data:/root/ZeroNet/data nofish/zeronet -- --ui_host 0.0.0.0
           docker logs -f zeronet &
 
       - name: Verify ZeroNet is running
