@@ -45,6 +45,7 @@ jobs:
       - name: Configure ZeroNet for logging
         run: |
           echo "Configuring ZeroNet for logging"
+          docker exec zeronet sh -c 'mkdir -p /root/.zeronet'
           docker exec zeronet sh -c 'echo "log_dir = logs" >> /root/.zeronet/zeronet.conf'
           docker exec zeronet sh -c 'echo "log_level = DEBUG" >> /root/.zeronet/zeronet.conf'
           docker exec zeronet sh -c 'mkdir -p /root/.zeronet/logs'
