@@ -19,7 +19,7 @@ jobs:
         run: |
           echo "Installing dependencies"
           sudo apt-get update
-          sudo apt-get install -y wget tar curl jq
+          sudo apt-get install -y wget tar curl
           echo "Dependencies installed"
 
       - name: Download and extract ZeroNet
@@ -53,8 +53,8 @@ jobs:
           cat page.html
           
           echo "Extracting JavaScript configuration:"
-          # Buscamos el fragmento de código JavaScript que contiene la configuración
-          CONFIG_SCRIPT=$(grep -oP '(?<=<script id="script_init" nonce=")[^"]+' page.html)
+          # Extraemos el contenido completo del script que contiene la configuración
+          CONFIG_SCRIPT=$(sed -n '/<script id="script_init"/,/<\\/script>/p' page.html)
           if [ -z "$CONFIG_SCRIPT" ]; then
             echo "JavaScript configuration not found."
             exit 1
