@@ -27,7 +27,11 @@ console.log(`- Archivo de salida: ${filePath}`);
 async function isZeroNetRunning() {
   console.log('Verificando si ZeroNet está funcionando...');
   try {
-    const response = await fetch('http://127.0.0.1:43110');
+    const response = await fetch('http://127.0.0.1:43110', {
+      headers: {
+        'Accept': 'text/html', // Especificar el tipo de contenido esperado
+      },
+    });
     if (response.ok) {
       console.log('ZeroNet está funcionando correctamente.');
       return true;
@@ -76,21 +80,17 @@ async function loadPageWithRetries(page, url, retries = 3, timeout = 60000) {
   const page = await browser.newPage();
   console.log('Navegador lanzado correctamente.');
 
-  // Configurar el encabezado "Accept"
-  console.log('Configurando encabezado "Accept"...');
-  await page.setExtraHTTPHeaders({
-    'Accept': 'text/html',
-  });
-
-  // Deshabilitar recursos innecesarios para acelerar la carga
-  console.log('Deshabilitando recursos innecesarios (imágenes, estilos, fuentes)...');
-  await page.route('**/*.{png,jpg,jpeg,webp,svg,gif,css,woff,woff2}', (route) => route.abort());
-
   // Extraer contenido dinámico de la primera página (eventos.html)
   const zeronetUrl1 = `http://127.0.0.1:43110/${zeronetAddress1}/`;
   console.log(`Extrayendo contenido de: ${zeronetUrl1}`);
 
   try {
+    // Configurar el encabezado "Accept" para páginas HTML
+    console.log('Configurando encabezado "Accept: text/html"...');
+    await page.setExtraHTTPHeaders({
+      'Accept': 'text/html',
+    });
+
     // Cargar la página con reintentos
     await loadPageWithRetries(page, zeronetUrl1);
 
@@ -133,6 +133,12 @@ async function loadPageWithRetries(page, url, retries = 3, timeout = 60000) {
   console.log(`Sincronizando contenido de: ${zeronetUrl2}`);
 
   try {
+    // Configurar el encabezado "Accept" para la descarga del archivo
+    console.log('Configurando encabezado "Accept: */*"...');
+    await page.setExtraHTTPHeaders({
+      'Accept': '*/*', // Aceptar cualquier tipo de contenido para la descarga
+    });
+
     // Cargar la página con reintentos
     await loadPageWithRetries(page, zeronetUrl2);
 
