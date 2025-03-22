@@ -79,26 +79,19 @@ jobs:
       - name: Download lista-ott.m3u
         run: |
           echo "Downloading http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u"
-          #if curl -H "Accept: text/html" -f -o $OUTPUT_FOLDER/lista-ott.m3u http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u; then
-          if curl -f -o $OUTPUT_FOLDER/lista-ott.m3u http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u; then
+          if curl -H "Accept: text/html" -f -o $OUTPUT_FOLDER/lista-ott.m3u http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u; then
             echo "File downloaded successfully to $OUTPUT_FOLDER/lista-ott.m3u"
           else
             echo "Failed to download lista-ott.m3u: The file does not exist or the site is not fully synchronized."
             echo "Retrying in 30 seconds..."
             sleep 30
-            #if curl -H "Accept: text/html" -f -o $OUTPUT_FOLDER/lista-ott.m3u http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u; then
-            if curl -f -o $OUTPUT_FOLDER/lista-ott.m3u http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u; then
+            if curl -H "Accept: text/html" -f -o $OUTPUT_FOLDER/lista-ott.m3u http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u; then
               echo "File downloaded successfully to $OUTPUT_FOLDER/lista-ott.m3u"
             else
               echo "Failed to download lista-ott.m3u after retry."
               exit 1
             fi
           fi
-
-      - name: Print eventos.html
-        run: |
-          echo "Contenido de eventos.html:"
-          cat $OUTPUT_FOLDER/eventos.html
 
       - name: Commit files
         run: |
