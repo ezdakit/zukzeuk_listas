@@ -28,7 +28,8 @@ jobs:
       - name: Create ZeroNet start script
         run: |
           echo '#!/bin/bash' > start_zeronet.sh
-          echo 'zeronet.py --config_file /root/.zeronet/zeronet.conf --ui_host "localhost:43110"' >> start_zeronet.sh
+-         echo 'zeronet.py --config_file /root/.zeronet/zeronet.conf --ui_host "localhost:43110"' >> start_zeronet.sh
++         echo 'python /root/ZeroNet/zeronet.py --config_file /root/.zeronet/zeronet.conf --ui_host "localhost:43110"' >> start_zeronet.sh
           chmod +x start_zeronet.sh
 
       - name: Create ZeroNet config
