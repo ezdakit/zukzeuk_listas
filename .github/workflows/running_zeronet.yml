@@ -1,4 +1,4 @@
-name: Run ZeroNet with Docker
+name: Run ZeroNet on Ubuntu
 
 on:
   workflow_dispatch:
@@ -15,48 +15,39 @@ jobs:
         uses: actions/checkout@v2
       - run: echo "Checked out code"
 
-      - name: Set up Docker
-        uses: docker/setup-buildx-action@v1
-      - run: echo "Docker setup complete"
-
-      - name: Install Docker
+      - name: Install dependencies
         run: |
-          echo "Starting Docker installation"
+          echo "Installing dependencies"
           sudo apt-get update
-          sudo apt-get install -y docker.io
-          sudo systemctl start docker
-          sudo systemctl enable docker
-          echo "Docker installation complete"
-        continue-on-error: true
+          sudo apt-get install -y wget tar
+          echo "Dependencies installed"
 
-      - name: Run ZeroNet with Docker
+      - name: Download and extract ZeroNet
         run: |
-          echo "Starting ZeroNet with Docker"
-          docker rm -f zeronet || true  # Elimina el contenedor si existe
-          docker volume rm zeronet_data || true  # Elimina el volumen si existe
-          docker run -d \
-            --name zeronet \
-            -p 43110:43110 \
-            -v zeronet_data:/root/.zeronet \
-            --log-driver json-file \
-            --log-opt max-size=10m \
-            nofish/zeronet:latest
-          echo "ZeroNet container started"
-          docker ps -a
+          echo "Downloading ZeroNet"
+          wget https://github.com/HelloZeroNet/ZeroNet-linux/archive/dist-linux64/ZeroNet-py3-linux64.tar.gz
+          tar xvpfz ZeroNet-py3-linux64.tar.gz
+          cd ZeroNet-linux-dist-linux64/
+          echo "ZeroNet downloaded and extracted"
+
+      - name: Start ZeroNet
+        run: |
+          echo "Starting ZeroNet"
+          cd ZeroNet-linux-dist-linux64/
+          ./ZeroNet.sh &
+          echo "ZeroNet started"
 
       - name: Verify ZeroNet is running
         run: |
           echo "Verifying ZeroNet is running"
-          sleep 30  # Espera 60 segundos para asegurar que ZeroNet esté listo
+          sleep 15  # Espera 15 segundos para asegurar que ZeroNet esté listo
           curl -I http://127.0.0.1:43110
-          docker logs zeronet
           echo "ZeroNet verification complete"
 
       - name: Check site synchronization
         run: |
           echo "Checking site synchronization"
           curl -H "Accept: text/html" -I http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/
-          docker logs zeronet | grep "1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU"
           echo "Site synchronization checked"
 
       - name: Download and print file content
