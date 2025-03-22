@@ -1,77 +1,89 @@
-name: prueba
+name: Run ZeroNet on Ubuntu
+
 on:
   workflow_dispatch:
   push:
     paths:
-      - .github/workflows/prueba.yml
-      - prueba.py
+      - .github/workflows/running_zeronet.yml
 
 jobs:
-  run-zeronet:
+  setup:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v2
+      - run: echo "Checked out code"
 
       - name: Install dependencies
         run: |
-          echo "Updating package lists"
+          echo "Installing dependencies"
           sudo apt-get update
-          echo "Installing Python and pip"
-          sudo apt-get install -y python3 python3-pip tor
-          echo "Installing obfs4proxy"
-          sudo apt-get install -y obfs4proxy
-          echo "Installing Selenium and requests"
-          pip3 install selenium requests
-          echo "Installing Chromium and Chromedriver"
-          sudo apt-get install -y chromium-chromedriver
-          if [ ! -f /usr/bin/chromedriver ]; then
-            sudo ln -s /usr/lib/chromium-browser/chromedriver /usr/bin/chromedriver
-            echo "Creating symlink for Chromedriver"
+          sudo apt-get install -y wget tar curl
+          echo "Dependencies installed"
+
+      - name: Download and extract ZeroNet
+        run: |
+          echo "Downloading ZeroNet"
+          wget https://github.com/HelloZeroNet/ZeroNet-linux/archive/dist-linux64/ZeroNet-py3-linux64.tar.gz
+          tar xvpfz ZeroNet-py3-linux64.tar.gz
+          cd ZeroNet-linux-dist-linux64/
+          echo "ZeroNet downloaded and extracted"
+
+      - name: Start ZeroNet
+        run: |
+          echo "Starting ZeroNet"
+          cd ZeroNet-linux-dist-linux64/
+          ./ZeroNet.sh &
+          echo "ZeroNet started"
+
+      - name: Verify ZeroNet is running
+        run: |
+          echo "Verifying ZeroNet is running"
+          sleep 5  # Espera 5 segundos para asegurar que ZeroNet esté listo
+          curl -I http://127.0.0.1:43110
+          echo "ZeroNet verification complete"
+
+      - name: Check site synchronization (18XNZqktqbQhSChrxy7jvhWyHVkfAsDusD)
+        run: |
+          echo "Checking site synchronization for 18XNZqktqbQhSChrxy7jvhWyHVkfAsDusD"
+          curl -H "Accept: text/html" -I http://127.0.0.1:43110/18XNZqktqbQhSChrxy7jvhWyHVkfAsDusD/
+          echo "Site synchronization checked"
+
+      - name: Download and print page content (18XNZqktqbQhSChrxy7jvhWyHVkfAsDusD)
+        run: |
+          echo "Downloading http://127.0.0.1:43110/18XNZqktqbQhSChrxy7jvhWyHVkfAsDusD/"
+          curl -H "Accept: text/html" -o page.html http://127.0.0.1:43110/18XNZqktqbQhSChrxy7jvhWyHVkfAsDusD/
+          
+          echo "Printing full HTML content:"
+          cat page.html
+          
+          echo "Printing visible text (similar to browser view):"
+          # Extraemos el texto visible usando sed y tr
+          sed 's/<[^>]*>//g' page.html | tr -s ' '  # Elimina etiquetas HTML y espacios extra
+          echo "Page content printed above"
+
+      - name: Check site synchronization (1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU)
+        run: |
+          echo "Checking site synchronization for 1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU"
+          curl -H "Accept: text/html" -I http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/
+          echo "Site synchronization checked"
+
+      - name: Download and print file content (1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU)
+        run: |
+          echo "Downloading http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u"
+          if curl -H "Accept: text/html" -f -o lista-ott.m3u http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u; then
+            echo "Content of lista-ott.m3u:"
+            cat lista-ott.m3u
+          else
+            echo "Failed to download lista-ott.m3u: The file does not exist or the site is not fully synchronized."
+            echo "Retrying in 30 seconds..."
+            sleep 30
+            if curl -H "Accept: text/html" -f -o lista-ott.m3u http://127.0.0.1:43110/1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u; then
+              echo "Content of lista-ott.m3u:"
+              cat lista-ott.m3u
+            else
+              echo "Failed to download lista-ott.m3u after retry."
+            fi
           fi
-
-      - name: Configure Tor bridges
-        run: |
-          echo "Configuring Tor bridges"
-          echo "UseBridges 1" | sudo tee -a /etc/tor/torrc
-          echo "ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy" | sudo tee -a /etc/tor/torrc
-          echo "Bridge obfs4 98.118.127.54:9002 E3879CB1EFC2D308DAAA491D985219AF3EDEE8B9 cert=EY+saO6Z/Q9jNaa7PvFcnqH6CmimyfaKAvCI3kUyidC7EJtAy/UxxeSok+YFM1ElHdfUbg iat-mode=0" | sudo tee -a /etc/tor/torrc
-          sudo service tor restart
-
-      - name: Configure ZeroNet for logging and trackers
-        run: |
-          echo "Configuring ZeroNet for logging and trackers"
-          sudo mkdir -p /etc/zeronet
-          echo "log_dir = logs" | sudo tee -a /etc/zeronet/zeronet.conf
-          echo "log_level = DEBUG" | sudo tee -a /etc/zeronet/zeronet.conf
-          echo "tracker = http://tracker.opentrackr.org:1337/announce" | sudo tee -a /etc/zeronet/zeronet.conf
-          echo "tracker = udp://tracker.openbittorrent.com:80" | sudo tee -a /etc/zeronet/zeronet.conf
-          echo "tracker = udp://tracker.opentrackr.org:1337/announce" | sudo tee -a /etc/zeronet/zeronet.conf
-
-      - name: Run ZeroNet with Docker
-        run: |
-          docker run -d \
-            --name zeronet \
-            -p 43110:43110 \
-            -v /etc/zeronet/zeronet.conf:/root/.zeronet/zeronet.conf \
-            --log-driver json-file \
-            --log-opt max-size=10m \
-            nofish/zeronet
-
-      - name: Wait for ZeroNet to start
-        run: sleep 20  # Aumentar el tiempo de espera
-
-      - name: Run Python script
-        run: python3 prueba.py
-
-      - name: Collect ZeroNet logs
-        run: |
-          docker logs zeronet > zeronet_logs.txt
-
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: artifacts
-          path: |
-            pantallazos/
-            zeronet_logs.txt
+          echo "File content printed above"
