@@ -91,6 +91,10 @@ jobs:
         run: |
           npm install playwright
 
+      - name: Install Playwright browsers
+        run: |
+          npx playwright install
+
       - name: Extract dynamic content with Playwright
         run: |
           node extract-content.js
