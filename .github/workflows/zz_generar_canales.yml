@@ -30,17 +30,23 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests python-Levenshtein
 
-      # 4. Ejecutar el script
+      # 4. Sincronizar zz_canales con main
+      - name: Sync zz_canales with main
+        run: |
+          git fetch origin main  # Obtener los últimos cambios de main
+          git merge main         # Fusionar main en zz_canales
+
+      # 5. Ejecutar el script
       - name: Run Python script
         run: python scripts/generar_canales.py
 
-      # 5. Configurar identidad de Git
+      # 6. Configurar identidad de Git
       - name: Configurar identidad de Git
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
 
-      # 6. Verificar si existe el archivo cambios.txt
+      # 7. Verificar si existe el archivo cambios.txt
       - name: Check for zz_canales/cambios.txt
         id: check_cambios
         run: |
@@ -50,7 +56,7 @@ jobs:
             echo "cambios_exists=false" >> $GITHUB_ENV
           fi
 
-      # 7. Verificar si hay cambios en los archivos
+      # 8. Verificar si hay cambios en los archivos
       - name: Check for changes
         id: changes
         run: |
@@ -67,7 +73,7 @@ jobs:
             echo "changes=true" >> $GITHUB_OUTPUT
           fi
 
-      # 8. Commit y push en zz_canales
+      # 9. Commit y push en zz_canales
       - name: Commit changes in zz_canales
         if: steps.changes.outputs.changes == 'true'
         run: |
@@ -76,18 +82,18 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 9. Merge de zz_canales en main
-      - name: Merge zz_canales into main
+      # 10. Merge de zz_canales en main (forzado)
+      - name: Merge zz_canales into main (forced)
         if: steps.changes.outputs.changes == 'true'
         run: |
           git fetch origin main  # Obtener la rama main
-          git checkout main  # Cambiar a la rama main
-          git merge zz_canales --no-ff -m "Merge zz_canales into main"  # Fusionar cambios de zz_canales en main
-          git push origin main  # Hacer push a main
+          git checkout main     # Cambiar a la rama main
+          git merge zz_canales --no-ff -m "Merge zz_canales into main (forced)"  # Fusionar cambios de zz_canales en main
+          git push origin main --force  # Hacer push forzado a main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 10. Crear un issue si existe cambios.txt
+      # 11. Crear un issue si existe cambios.txt
       - name: Create issue
         if: env.cambios_exists == 'true'
         uses: peter-evans/create-issue-from-file@v3
