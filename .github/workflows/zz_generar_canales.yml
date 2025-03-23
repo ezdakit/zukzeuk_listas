@@ -35,7 +35,7 @@ jobs:
       - name: Sync zz_canales with main
         run: |
           git fetch origin main  # Obtener los últimos cambios de main
-          git merge main         # Fusionar main en zz_canales
+          git merge origin/main         # Fusionar main en zz_canales
 
       # 5. Ejecutar el script
       - name: Run Python script
