@@ -128,9 +128,15 @@ async function loadPageWithRetries(page, url, retries = 3, timeout = 60000) {
       fs.mkdirSync(folderPath, { recursive: true });
     }
 
+    // Obtener la fecha y hora actual en formato ISO 8601
+    const currentDateTime = new Date().toISOString();
+
+    // Agregar un comentario con la fecha y hora al principio del contenido HTML
+    const contentWithDateTime = `<!-- Fecha y hora de extracción: ${currentDateTime} -->\n${finalContent}`;
+
     // Guardar el contenido en un archivo
     console.log(`Guardando contenido en: ${filePath}`);
-    fs.writeFileSync(filePath, finalContent);
+    fs.writeFileSync(filePath, contentWithDateTime);
     console.log(`Archivo guardado correctamente: ${filePath}`);
   } catch (error) {
     console.error(`Error al extraer el contenido: ${error.message}`);
