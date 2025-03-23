@@ -45,11 +45,11 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
 
-      # Sincronizar zz_eventos con main
-      - name: Sync zz_eventos with main
+      # Resetear zz_eventos al estado de main (hard reset)
+      - name: Reset zz_eventos to main
         run: |
           git fetch origin main  # Obtener los últimos cambios de main
-          git merge origin/main --allow-unrelated-histories  # Fusionar main en zz_eventos permitiendo historiales no relacionados
+          git reset --hard origin/main  # Resetear zz_eventos al estado de main
 
       # Ejecutar el script
       - name: Run Python script
