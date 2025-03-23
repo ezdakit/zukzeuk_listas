@@ -1,0 +1,44 @@
+name: procesar_eventos
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - zn_downloads/eventos.html
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 selenium cloudscraper 
+
+      - name: Run Python script
+        run: python scripts/generar_eventos.py
+
+      - name: Configurar identidad de Git
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+
+      - name: Add changes
+        run: git add zz_eventos/debug_eventos.txt zz_eventos/eventos.csv zz_eventos/zz_eventos_ott.m3u zz_eventos/zz_eventos_all_ott.m3u
+
+      - name: Commit changes
+        run: git commit -m "Actualización automática de eventos" || echo "No hay cambios para confirmar"
+
+      - name: Push changes
+        run: git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
