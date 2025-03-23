@@ -44,7 +44,7 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          git add zz_canales/zz_canales.db zz_canales/lista-ott.m3u zz_canales/zz_lista_ott.m3u zz_canales/zz_lista_ace.m3u zz_canales/zz_lista_kodi.m3u zz_canales/debug_log.txt zz_canales/canales_iptv_temp.csv
+          git add zz_canales/zz_canales.db zz_canales/lista-ott.m3u zz_canales/zz_lista_ott.m3u zz_canales/zz_lista_ace.m3u zz_canales/zz_lista_kodi.m3u zz_canales/debug_log.txt zz_canales/canales_iptv_temp.csv zz_lista_ott.m3u zz_lista_ace.m3u zz_lista_kodi.m3u
           if [ "${{ env.cambios_exists }}" == 'true' ]; then
             git add zz_canales/cambios.txt
             echo "cambios.txt detected"
