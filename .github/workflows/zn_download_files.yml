@@ -146,6 +146,28 @@ jobs:
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
 
+      - name: Check for changes in eventos.html
+        id: check_eventos_changes
+        run: |
+          if git diff --exit-code $OUTPUT_FOLDER/eventos.html; then
+            echo "No changes in eventos.html"
+            echo "eventos_changed=false" >> $GITHUB_ENV
+          else
+            echo "Changes detected in eventos.html"
+            echo "eventos_changed=true" >> $GITHUB_ENV
+          fi
+
+      - name: Check for changes in lista-ott.m3u
+        id: check_lista_ott_changes
+        run: |
+          if git diff --exit-code $OUTPUT_FOLDER/lista-ott.m3u; then
+            echo "No changes in lista-ott.m3u"
+            echo "lista_ott_changed=false" >> $GITHUB_ENV
+          else
+            echo "Changes detected in lista-ott.m3u"
+            echo "lista_ott_changed=true" >> $GITHUB_ENV
+          fi
+
       - name: Commit changes
         if: env.changes == 'true'
         run: git commit -m "Add new files"
@@ -155,3 +177,11 @@ jobs:
         run: git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Trigger zz_generar_eventos workflow if eventos.html has changed
+        if: env.eventos_changed == 'true'
+        uses: ./.github/workflows/zz_generar_eventos.yml@main  # Cambia "main" por la rama que corresponda
+
+      - name: Trigger zz_generar_canales workflow if lista-ott.m3u has changed
+        if: env.lista_ott_changed == 'true'
+        uses: ./.github/workflows/zz_generar_canales.yml@main  # Cambia "main" por la rama que corresponda
