@@ -78,6 +78,15 @@ jobs:
           curl -H "Accept: text/html" -I http://127.0.0.1:43110/$ZERONET_ADDRESS_2/
           echo "Site synchronization checked"
 
+      - name: Verify and create output folder if it doesn't exist
+        run: |
+          if [ ! -d "$OUTPUT_FOLDER" ]; then
+            echo "Output folder does not exist. Creating $OUTPUT_FOLDER..."
+            mkdir -p "$OUTPUT_FOLDER"
+          else
+            echo "Output folder already exists."
+          fi
+
       - name: Download lista-ott.m3u
         run: |
           echo "Downloading http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u"

@@ -13,8 +13,8 @@ if (!zeronetAddress1 || !outputFolder || !outputFile) {
 }
 
 // Ruta de la carpeta y el archivo
-const folderPath = path.join(__dirname, outputFolder);
-const filePath = path.join(folderPath, outputFile);
+const folderPath = path.join(__dirname, '..', outputFolder); // Subir un nivel y entrar en outputFolder
+const filePath = path.join(folderPath, outputFile);          // Ruta del archivo de salida
 
 console.log('Parámetros recibidos:');
 console.log(`- Dirección 1: ${zeronetAddress1}`);
@@ -94,7 +94,7 @@ async function loadPageWithRetries(page, url, retries = 3, timeout = 60000) {
 
     // Esperar a que el iframe se cargue
     console.log('Esperando a que el iframe se cargue...');
-    await page.waitForSelector('#inner-iframe', { timeout: 10000 }); // Timeout de 10 segundos
+    await page.waitForSelector('#inner-iframe', { timeout: 20000 }); // Timeout de 20 segundos
     console.log('Iframe cargado correctamente.');
 
     // Obtener el contenido del iframe
@@ -104,7 +104,7 @@ async function loadPageWithRetries(page, url, retries = 3, timeout = 60000) {
 
     // Esperar a que la tabla "tablaAcestream" esté presente y visible
     console.log('Esperando a que la tabla "tablaAcestream" se cargue...');
-    await frame.waitForSelector('#tablaAcestream', { timeout: 10000 }); // Timeout de 10 segundos
+    await frame.waitForSelector('#tablaAcestream', { timeout: 20000 }); // Timeout de 20 segundos
     console.log('Tabla "tablaAcestream" cargada correctamente.');
 
     // Verificar que la tabla esté visible (display: table)
@@ -128,9 +128,15 @@ async function loadPageWithRetries(page, url, retries = 3, timeout = 60000) {
       fs.mkdirSync(folderPath, { recursive: true });
     }
 
+    // Obtener la fecha y hora actual en formato ISO 8601
+    const currentDateTime = new Date().toISOString();
+
+    // Agregar un comentario con la fecha y hora al principio del contenido HTML
+    const contentWithDateTime = `<!-- Fecha y hora de extracción: ${currentDateTime} -->\n${finalContent}`;
+
     // Guardar el contenido en un archivo
     console.log(`Guardando contenido en: ${filePath}`);
-    fs.writeFileSync(filePath, finalContent);
+    fs.writeFileSync(filePath, contentWithDateTime);
     console.log(`Archivo guardado correctamente: ${filePath}`);
   } catch (error) {
     console.error(`Error al extraer el contenido: ${error.message}`);

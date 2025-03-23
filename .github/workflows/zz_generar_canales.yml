@@ -1,37 +1,52 @@
 name: zz_generar_canales
 
 on:
-  workflow_dispatch:
   push:
+    branches:
+      - main  # Solo se activa en la rama main
     paths:
-      - zn_downloads/lista-ott.m3u
+      - 'zn_downloads/lista-ott.m3u'  # Solo se activa si cambia este archivo
 
 jobs:
   run-script:
     runs-on: ubuntu-latest
 
     steps:
+      # 1. Checkout del repositorio en la rama zz_canales
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+        with:
+          ref: zz_canales  # Trabajar en la rama zz_canales
 
+      # 2. Configurar Python
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
+      # 3. Instalar dependencias
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests python-Levenshtein
 
-      - name: Run Python script yea
+      # 4. Sincronizar zz_canales con main
+      - name: Sync zz_canales with main
+        run: |
+          git fetch origin main  # Obtener los últimos cambios de main
+          git merge main         # Fusionar main en zz_canales
+
+      # 5. Ejecutar el script
+      - name: Run Python script
         run: python scripts/generar_canales.py
 
+      # 6. Configurar identidad de Git
       - name: Configurar identidad de Git
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
 
+      # 7. Verificar si existe el archivo cambios.txt
       - name: Check for zz_canales/cambios.txt
         id: check_cambios
         run: |
@@ -41,32 +56,44 @@ jobs:
             echo "cambios_exists=false" >> $GITHUB_ENV
           fi
 
+      # 8. Verificar si hay cambios en los archivos
       - name: Check for changes
         id: changes
         run: |
           git add zz_canales/zz_canales.db zz_canales/lista-ott.m3u zz_canales/zz_lista_ott.m3u zz_canales/zz_lista_ace.m3u zz_canales/zz_lista_kodi.m3u zz_canales/debug_log.txt zz_canales/canales_iptv_temp.csv zz_lista_ott.m3u zz_lista_ace.m3u zz_lista_kodi.m3u
           if [ "${{ env.cambios_exists }}" == 'true' ]; then
             git add zz_canales/cambios.txt
-            echo "cambios.txt detected"
+            echo "cambios.txt detectado"
           fi
           if git diff --cached --quiet; then
-            echo "No changes to commit"
-            echo "::set-output name=changes::false"
+            echo "No hay cambios para confirmar"
+            echo "changes=false" >> $GITHUB_OUTPUT
           else
-            echo "Changes detected"
-            echo "::set-output name=changes::true"
+            echo "Cambios detectados"
+            echo "changes=true" >> $GITHUB_OUTPUT
           fi
 
-      - name: Commit changes
+      # 9. Commit y push en zz_canales
+      - name: Commit changes in zz_canales
         if: steps.changes.outputs.changes == 'true'
-        run: git commit -m "Add processed files"
-
-      - name: Push changes
-        if: steps.changes.outputs.changes == 'true'
-        run: git push
+        run: |
+          git commit -m "Actualización automática desde workflow"
+          git push origin zz_canales
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      # 10. Merge de zz_canales en main (forzado)
+      - name: Merge zz_canales into main (forced)
+        if: steps.changes.outputs.changes == 'true'
+        run: |
+          git fetch origin main  # Obtener la rama main
+          git checkout main     # Cambiar a la rama main
+          git merge zz_canales --no-ff -m "Merge zz_canales into main (forced)"  # Fusionar cambios de zz_canales en main
+          git push origin main --force  # Hacer push forzado a main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 11. Crear un issue si existe cambios.txt
       - name: Create issue
         if: env.cambios_exists == 'true'
         uses: peter-evans/create-issue-from-file@v3

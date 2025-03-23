@@ -1,29 +1,36 @@
 name: zz_generar_eventos
 
 on:
-  workflow_dispatch:
   push:
+    branches:
+      - main  # Solo se activa en la rama main
     paths:
-      - zn_downloads/eventos.html
+      - 'zn_downloads/eventos.html'  # Solo se activa si cambia este archivo
 
 jobs:
   run-script:
     runs-on: ubuntu-latest
 
     steps:
+      # 1. Checkout del repositorio en la rama zz_eventos
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+        with:
+          ref: zz_eventos  # Trabajar en la rama zz_eventos
 
+      # 2. Configurar Python
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
+      # 3. Instalar dependencias
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4 selenium cloudscraper
 
+      # 4. Instalar paquete de idioma español
       - name: Instalar paquete de idioma español
         run: |
           sudo apt-get update
@@ -31,21 +38,55 @@ jobs:
           sudo locale-gen es_ES.UTF-8
           sudo update-locale LANG=es_ES.UTF-8
 
+      # 5. Sincronizar zz_eventos con main
+      - name: Sync zz_eventos with main
+        run: |
+          git fetch origin main  # Obtener los últimos cambios de main
+          git merge main         # Fusionar main en zz_eventos
+
+      # 6. Ejecutar el script
       - name: Run Python script
         run: python scripts/generar_eventos.py
 
+      # 7. Configurar identidad de Git
       - name: Configurar identidad de Git
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
 
+      # 8. Añadir cambios
       - name: Add changes
-        run: git add zz_eventos/debug_eventos.txt zz_eventos/eventos.csv zz_eventos/zz_eventos_ott.m3u zz_eventos/zz_eventos_all_ott.m3u zz_eventos_ott.m3u zz_eventos_all_ott.m3u
+        run: |
+          git add zz_eventos/debug_eventos.txt zz_eventos/eventos.csv zz_eventos/zz_eventos_ott.m3u zz_eventos/zz_eventos_all_ott.m3u zz_eventos_ott.m3u zz_eventos_all_ott.m3u
 
-      - name: Commit changes
-        run: git commit -m "Actualización automática de eventos" || echo "No hay cambios para confirmar"
+      # 9. Verificar si hay cambios
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --cached --quiet; then
+            echo "No hay cambios para confirmar"
+            echo "changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "Cambios detectados"
+            echo "changes=true" >> $GITHUB_OUTPUT
+          fi
 
-      - name: Push changes
-        run: git push origin main
+      # 10. Commit y push en zz_eventos
+      - name: Commit changes in zz_eventos
+        if: steps.changes.outputs.changes == 'true'
+        run: |
+          git commit -m "Actualización automática de eventos"
+          git push origin zz_eventos
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 11. Merge de zz_eventos en main (forzado)
+      - name: Merge zz_eventos into main (forced)
+        if: steps.changes.outputs.changes == 'true'
+        run: |
+          git fetch origin main  # Obtener la rama main
+          git checkout main     # Cambiar a la rama main
+          git merge zz_eventos --no-ff -m "Merge zz_eventos into main (forced)"  # Fusionar cambios de zz_eventos en main
+          git push origin main --force  # Hacer push forzado a main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
