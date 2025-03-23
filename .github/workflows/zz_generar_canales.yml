@@ -1,0 +1,75 @@
+name: generar_canales
+
+on:
+#  schedule:
+#    - cron: '00 12,18 * * *'
+  workflow_dispatch:
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests python-Levenshtein
+
+      - name: Run Python script yea
+        run: python scripts/generar_canales.py
+
+      - name: Configurar identidad de Git
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+
+      - name: Check for zz_canales/cambios.txt
+        id: check_cambios
+        run: |
+          if [ -f zz_canales/cambios.txt ]; then
+            echo "cambios_exists=true" >> $GITHUB_ENV
+          else
+            echo "cambios_exists=false" >> $GITHUB_ENV
+          fi
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git add zz_canales/zz_canales.db zz_canales/lista-ott.m3u zz_canales/zz_lista_ott.m3u zz_canales/zz_lista_ace.m3u zz_canales/zz_lista_kodi.m3u zz_canales/debug_log.txt zz_canales/canales_iptv_temp.csv
+          if [ "${{ env.cambios_exists }}" == 'true' ]; then
+            git add zz_canales/cambios.txt
+            echo "cambios.txt detected"
+          fi
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            echo "::set-output name=changes::false"
+          else
+            echo "Changes detected"
+            echo "::set-output name=changes::true"
+          fi
+
+      - name: Commit changes
+        if: steps.changes.outputs.changes == 'true'
+        run: git commit -m "Add processed files"
+
+      - name: Push changes
+        if: steps.changes.outputs.changes == 'true'
+        run: git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create issue
+        if: env.cambios_exists == 'true'
+        uses: peter-evans/create-issue-from-file@v3
+        with:
+          title: "Canales generados"
+          content-filepath: zz_canales/cambios.txt
+          token: ${{ secrets.GITHUB_TOKEN }}
