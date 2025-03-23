@@ -1,9 +1,10 @@
-name: generar_canales
+name: zz_generar_canales
 
 on:
-#  schedule:
-#    - cron: '00 12,18 * * *'
   workflow_dispatch:
+  push:
+    paths:
+      - zn_downloads/lista-ott.m3u
 
 jobs:
   run-script:
