@@ -38,22 +38,28 @@ jobs:
           sudo locale-gen es_ES.UTF-8
           sudo update-locale LANG=es_ES.UTF-8
 
-      # 5. Ejecutar el script
+      # 5. Sincronizar zz_eventos con main
+      - name: Sync zz_eventos with main
+        run: |
+          git fetch origin main  # Obtener los últimos cambios de main
+          git merge main         # Fusionar main en zz_eventos
+
+      # 6. Ejecutar el script
       - name: Run Python script
         run: python scripts/generar_eventos.py
 
-      # 6. Configurar identidad de Git
+      # 7. Configurar identidad de Git
       - name: Configurar identidad de Git
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
 
-      # 7. Añadir cambios
+      # 8. Añadir cambios
       - name: Add changes
         run: |
           git add zz_eventos/debug_eventos.txt zz_eventos/eventos.csv zz_eventos/zz_eventos_ott.m3u zz_eventos/zz_eventos_all_ott.m3u zz_eventos_ott.m3u zz_eventos_all_ott.m3u
 
-      # 8. Verificar si hay cambios
+      # 9. Verificar si hay cambios
       - name: Check for changes
         id: changes
         run: |
@@ -65,7 +71,7 @@ jobs:
             echo "changes=true" >> $GITHUB_OUTPUT
           fi
 
-      # 9. Commit y push en zz_eventos
+      # 10. Commit y push en zz_eventos
       - name: Commit changes in zz_eventos
         if: steps.changes.outputs.changes == 'true'
         run: |
@@ -74,13 +80,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 10. Merge de zz_eventos en main
-      - name: Merge zz_eventos into main
+      # 11. Merge de zz_eventos en main (forzado)
+      - name: Merge zz_eventos into main (forced)
         if: steps.changes.outputs.changes == 'true'
         run: |
           git fetch origin main  # Obtener la rama main
-          git checkout main  # Cambiar a la rama main
-          git merge zz_eventos --no-ff -m "Merge zz_eventos into main"  # Fusionar cambios de zz_eventos en main
-          git push origin main  # Hacer push a main
+          git checkout main     # Cambiar a la rama main
+          git merge zz_eventos --no-ff -m "Merge zz_eventos into main (forced)"  # Fusionar cambios de zz_eventos en main
+          git push origin main --force  # Hacer push forzado a main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
