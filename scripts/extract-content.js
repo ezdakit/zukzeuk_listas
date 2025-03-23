@@ -94,7 +94,7 @@ async function loadPageWithRetries(page, url, retries = 3, timeout = 60000) {
 
     // Esperar a que el iframe se cargue
     console.log('Esperando a que el iframe se cargue...');
-    await page.waitForSelector('#inner-iframe', { timeout: 10000 }); // Timeout de 10 segundos
+    await page.waitForSelector('#inner-iframe', { timeout: 20000 }); // Timeout de 20 segundos
     console.log('Iframe cargado correctamente.');
 
     // Obtener el contenido del iframe
@@ -104,7 +104,7 @@ async function loadPageWithRetries(page, url, retries = 3, timeout = 60000) {
 
     // Esperar a que la tabla "tablaAcestream" esté presente y visible
     console.log('Esperando a que la tabla "tablaAcestream" se cargue...');
-    await frame.waitForSelector('#tablaAcestream', { timeout: 10000 }); // Timeout de 10 segundos
+    await frame.waitForSelector('#tablaAcestream', { timeout: 20000 }); // Timeout de 20 segundos
     console.log('Tabla "tablaAcestream" cargada correctamente.');
 
     // Verificar que la tabla esté visible (display: table)
