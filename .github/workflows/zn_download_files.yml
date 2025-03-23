@@ -2,8 +2,10 @@ name: zn_download_files
 
 on:
   workflow_dispatch:
-#  schedule:
-#    - cron: '0 */4 * * *'  # Ejecutar cada 4 horas, en el minuto 0
+  schedule:
+    - cron: '0 23 * * *'  # Ejecutar a las 23:00
+    - cron: '0 18 * * *'  # Ejecutar a las 18:00
+    - cron: '0 12 * * *'  # Ejecutar a las 12:00
 
 jobs:
   setup:
