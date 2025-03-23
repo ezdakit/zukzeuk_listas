@@ -301,7 +301,7 @@ except Exception as e:
 # Copiar el archivo zz_lista_ott.m3u de zz_canales al raiz
 try:
     import shutil
-    shutil.copy(zz_canales/zz_lista_ott.m3u, zz_lista_ott.m3u)
+    shutil.copy("zz_canales/zz_lista_ott.m3u", "zz_lista_ott.m3u")
     logging.info(f"Se ha copiado el archivo zz_lista_ott.m3u de zz_canales al raiz")
 except Exception as e:
     logging.error(f"Error al copiar el archivo zz_lista_ott.m3u de zz_canales al raiz: {e}")
@@ -309,7 +309,7 @@ except Exception as e:
 # Copiar el archivo zz_lista_ace.m3u de zz_canales al raiz
 try:
     import shutil
-    shutil.copy(zz_canales/zz_lista_ace.m3u, zz_lista_ace.m3u)
+    shutil.copy("zz_canales/zz_lista_ace.m3u", "zz_lista_ace.m3u")
     logging.info(f"Se ha copiado el archivo zz_lista_ace.m3u de zz_canales al raiz")
 except Exception as e:
     logging.error(f"Error al copiar el archivo zz_lista_ace.m3u de zz_canales al raiz: {e}")
@@ -317,7 +317,7 @@ except Exception as e:
 # Copiar el archivo zz_lista_kodi.m3u de zz_canales al raiz
 try:
     import shutil
-    shutil.copy(zz_canales/zz_lista_kodi.m3u, zz_lista_kodi.m3u)
+    shutil.copy("zz_canales/zz_lista_kodi.m3u", "zz_lista_kodi.m3u")
     logging.info(f"Se ha copiado el archivo zz_lista_kodi.m3u de zz_canales al raiz")
 except Exception as e:
     logging.error(f"Error al copiar el archivo zz_lista_kodi.m3u de zz_canales al raiz: {e}")
