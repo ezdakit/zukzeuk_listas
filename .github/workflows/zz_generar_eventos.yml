@@ -43,7 +43,7 @@ jobs:
       - name: Sync zz_eventos with main
         run: |
           git fetch origin main  # Obtener los últimos cambios de main
-          git merge main         # Fusionar main en zz_eventos
+          git merge origin/main         # Fusionar main en zz_eventos
 
       # 6. Ejecutar el script
       - name: Run Python script
