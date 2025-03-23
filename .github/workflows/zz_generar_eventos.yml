@@ -48,8 +48,9 @@ jobs:
       # Resetear zz_eventos al estado de main (hard reset)
       - name: Reset zz_eventos to main
         run: |
-          git fetch origin main  # Obtener los últimos cambios de main
+          git pull --rebase
           git reset --hard origin/main  # Resetear zz_eventos al estado de main
+          git push
 
       # Ejecutar el script
       - name: Run Python script
@@ -77,6 +78,7 @@ jobs:
         if: steps.changes.outputs.changes == 'true'
         run: |
           git commit -m "Actualización automática de eventos"
+          git pull origin zz_eventos --rebase  # Incorporar cambios remotos y aplicar los locales encima
           git push origin zz_eventos
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
