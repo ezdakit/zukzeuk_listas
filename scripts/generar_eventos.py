@@ -7,6 +7,7 @@ import os
 import re
 from datetime import datetime, timedelta
 import locale
+import shutil  # Importar shutil para operaciones de archivos
 
 # Configuración de logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -147,6 +148,20 @@ try:
     logger.info("Los archivos zz_eventos_ott.m3u y zz_eventos_all_ott.m3u se han generado correctamente.")
 except Exception as e:
     logger.error(f"Error al procesar el archivo CSV o generar los archivos M3U: {e}")
+    raise
+
+# Copiar los archivos M3U al directorio raíz del repositorio
+try:
+    # Ruta de los archivos M3U en la carpeta zz_eventos
+    m3u_files = ['zz_eventos/zz_eventos_ott.m3u', 'zz_eventos/zz_eventos_all_ott.m3u']
+
+    # Copiar cada archivo al directorio raíz
+    for m3u_file in m3u_files:
+        shutil.copy(m3u_file, './')
+
+    logger.info("Los archivos M3U se han copiado al directorio raíz del repositorio.")
+except Exception as e:
+    logger.error(f"Error al copiar los archivos M3U al directorio raíz: {e}")
     raise
 
 print("Proceso completado. Se han generado los archivos eventos.csv, zz_eventos_ott.m3u y zz_eventos_all_ott.m3u.")
