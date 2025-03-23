@@ -13,7 +13,8 @@ if (!zeronetAddress1 || !outputFolder || !outputFile) {
 }
 
 // Ruta de la carpeta y el archivo
-const folderPath = path.join(__dirname, outputFolder);
+#const folderPath = path.join(__dirname, outputFolder);
+const folderPath = path.join(process.cwd(), outputFolder); // Usar process.cwd() en lugar de __dirname
 const filePath = path.join(folderPath, outputFile);
 
 console.log('Parámetros recibidos:');
