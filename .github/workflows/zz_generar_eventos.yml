@@ -1,11 +1,7 @@
 name: zz_generar_eventos
 
 on:
-  push:
-    branches:
-      - main  # Solo se activa en la rama main
-    paths:
-      - zn_downloads/eventos.html  # Solo se activa si cambia este archivo
+  workflow_call:
   workflow_dispatch:  # Permite la ejecución manual del workflow
 
 jobs:
@@ -16,8 +12,6 @@ jobs:
       # Checkout del repositorio en la rama zz_eventos
       - name: Checkout repository
         uses: actions/checkout@v3
-        with:
-          ref: zz_eventos  # Trabajar en la rama zz_eventos
 
       # Configurar Python
       - name: Set up Python
@@ -45,13 +39,6 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
 
-      # Resetear zz_eventos al estado de main (hard reset)
-      - name: Reset zz_eventos to main
-        run: |
-          git pull --rebase
-          git reset --hard origin/main  # Resetear zz_eventos al estado de main
-          git push
-
       # Ejecutar el script
       - name: Run Python script
         run: python scripts/generar_eventos.py
@@ -73,23 +60,11 @@ jobs:
             echo "changes=true" >> $GITHUB_OUTPUT
           fi
 
-      # Commit y push en zz_eventos
-      - name: Commit changes in zz_eventos
+      # Commit y push
+      - name: Commit changes
         if: steps.changes.outputs.changes == 'true'
         run: |
           git commit -m "Actualización automática de eventos"
-          git pull origin zz_eventos --rebase  # Incorporar cambios remotos y aplicar los locales encima
-          git push origin zz_eventos
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # Merge de zz_eventos en main (forzado)
-      - name: Merge zz_eventos into main (forced)
-        if: steps.changes.outputs.changes == 'true'
-        run: |
-          git fetch origin main  # Obtener la rama main
-          git checkout main     # Cambiar a la rama main
-          git merge zz_eventos --no-ff -m "Merge zz_eventos into main (forced)"  # Fusionar cambios de zz_eventos en main
-          git push origin main --force  # Hacer push forzado a main
+          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
