@@ -6,6 +6,7 @@ import sys
 import os
 import re
 from datetime import datetime, timedelta
+import locale
 
 # Configuración de logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -14,6 +15,8 @@ file_handler = logging.FileHandler('zz_eventos/debug_eventos.txt')
 console_handler = logging.StreamHandler()
 logger.addHandler(file_handler)
 logger.addHandler(console_handler)
+
+locale.setlocale(locale.LC_TIME, 'es_ES.UTF-8')  # Configura el idioma a español
 
 # Borrar el contenido del fichero de log al inicio
 with open('zz_eventos/debug_eventos.txt', 'w'):
