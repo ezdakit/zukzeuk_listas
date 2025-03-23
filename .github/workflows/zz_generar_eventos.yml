@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout del repositorio en la rama zz_eventos
+      # Checkout del repositorio
       - name: Checkout repository
         uses: actions/checkout@v3
 
