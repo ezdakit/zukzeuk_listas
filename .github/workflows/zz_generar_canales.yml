@@ -28,6 +28,8 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y language-pack-es
+          sudo locale-gen es_ES.UTF-8
+          sudo update-locale LANG=es_ES.UTF-8
 
       - name: Run Python script yea
         run: python scripts/generar_canales.py
