@@ -298,4 +298,28 @@ try:
 except Exception as e:
     logging.error(f"Error al copiar el archivo {m3u_file_path} a {prev_m3u_file_path}: {e}")
 
+# Copiar el archivo zz_lista_ott.m3u de zz_canales al raiz
+try:
+    import shutil
+    shutil.copy(zz_canales/zz_lista_ott.m3u, zz_lista_ott.m3u)
+    logging.info(f"Se ha copiado el archivo zz_lista_ott.m3u de zz_canales al raiz")
+except Exception as e:
+    logging.error(f"Error al copiar el archivo zz_lista_ott.m3u de zz_canales al raiz: {e}")
+
+# Copiar el archivo zz_lista_ace.m3u de zz_canales al raiz
+try:
+    import shutil
+    shutil.copy(zz_canales/zz_lista_ace.m3u, zz_lista_ace.m3u)
+    logging.info(f"Se ha copiado el archivo zz_lista_ace.m3u de zz_canales al raiz")
+except Exception as e:
+    logging.error(f"Error al copiar el archivo zz_lista_ace.m3u de zz_canales al raiz: {e}")
+
+# Copiar el archivo zz_lista_kodi.m3u de zz_canales al raiz
+try:
+    import shutil
+    shutil.copy(zz_canales/zz_lista_kodi.m3u, zz_lista_kodi.m3u)
+    logging.info(f"Se ha copiado el archivo zz_lista_kodi.m3u de zz_canales al raiz")
+except Exception as e:
+    logging.error(f"Error al copiar el archivo zz_lista_kodi.m3u de zz_canales al raiz: {e}")
+
 logging.info("Los datos se han insertado correctamente en zz_canales.db y se han generado los ficheros zz_lista_ott.m3u, zz_lista_ace.m3u y zz_lista_kodi.m3u")
