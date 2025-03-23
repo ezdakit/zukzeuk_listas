@@ -122,53 +122,64 @@ jobs:
             echo "lista_ott=false" >> $GITHUB_ENV
           fi
 
-      - name: Check for changes in eventos.html
+      - name: Check for changes using git status
+        id: check_changes
+        run: |
+          changes=$(git status --porcelain $OUTPUT_FOLDER)
+          if [ -z "$changes" ]; then
+            echo "No changes detected"
+            echo "changes_detected=false" >> $GITHUB_ENV
+          else
+            echo "Changes detected:"
+            echo "$changes"
+            echo "changes_detected=true" >> $GITHUB_ENV
+          fi
+
+      - name: Check if eventos.html is new or modified
         id: check_eventos_changes
         run: |
-          if git diff --exit-code HEAD -- $OUTPUT_FOLDER/eventos.html; then
+          status=$(git status --porcelain $OUTPUT_FOLDER/eventos.html)
+          if [[ "$status" == "??"* || "$status" == "M"* ]]; then
+            echo "eventos.html is new or modified"
+            echo "eventos_changed=true" >> $GITHUB_ENV
+          else
             echo "No changes in eventos.html"
             echo "eventos_changed=false" >> $GITHUB_ENV
-          else
-            echo "Changes detected in eventos.html"
-            echo "eventos_changed=true" >> $GITHUB_ENV
           fi
 
-      - name: Check for changes in lista-ott.m3u
+      - name: Check if lista-ott.m3u is new or modified
         id: check_lista_ott_changes
         run: |
-          if git diff --exit-code HEAD -- $OUTPUT_FOLDER/lista-ott.m3u; then
+          status=$(git status --porcelain $OUTPUT_FOLDER/lista-ott.m3u)
+          if [[ "$status" == "??"* || "$status" == "M"* ]]; then
+            echo "lista-ott.m3u is new or modified"
+            echo "lista_ott_changed=true" >> $GITHUB_ENV
+          else
             echo "No changes in lista-ott.m3u"
             echo "lista_ott_changed=false" >> $GITHUB_ENV
-          else
-            echo "Changes detected in lista-ott.m3u"
-            echo "lista_ott_changed=true" >> $GITHUB_ENV
           fi
 
-      - name: Add eventos.html to staging area if changed
-        if: env.eventos_changed == 'true'
-        run: git add $OUTPUT_FOLDER/eventos.html
+      - name: Add all changes to staging area
+        if: env.changes_detected == 'true'
+        run: git add $OUTPUT_FOLDER/
 
-      - name: Add lista-ott.m3u to staging area if changed
-        if: env.lista_ott_changed == 'true'
-        run: git add $OUTPUT_FOLDER/lista-ott.m3u
-
-      - name: Commit changes if any
-        if: env.eventos_changed == 'true' || env.lista_ott_changed == 'true'
+      - name: Commit changes
+        if: env.changes_detected == 'true'
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
           git commit -m "Add new files"
 
       - name: Push changes
-        if: env.eventos_changed == 'true' || env.lista_ott_changed == 'true'
+        if: env.changes_detected == 'true'
         run: git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Trigger zz_generar_eventos workflow if eventos.html has changed
+      - name: Trigger zz_generar_eventos workflow if eventos.html is new or modified
         if: env.eventos_changed == 'true'
         uses: ./.github/workflows/zz_generar_eventos.yml@main  # Cambia "main" por la rama que corresponda
 
-      - name: Trigger zz_generar_canales workflow if lista-ott.m3u has changed
+      - name: Trigger zz_generar_canales workflow if lista-ott.m3u is new or modified
         if: env.lista_ott_changed == 'true'
         uses: ./.github/workflows/zz_generar_canales.yml@main  # Cambia "main" por la rama que corresponda
