@@ -9,6 +9,10 @@ from datetime import datetime, timedelta
 import locale
 import shutil  # Importar shutil para operaciones de archivos
 
+# Crear el directorio zz_eventos si no existe
+if not os.path.exists('zz_eventos'):
+    os.makedirs('zz_eventos')
+
 # Borrar el contenido del fichero de log al inicio
 with open('zz_eventos/debug_eventos.txt', 'w'):
     pass
