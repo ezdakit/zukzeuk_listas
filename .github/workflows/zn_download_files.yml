@@ -175,11 +175,23 @@ jobs:
         run: git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+          
       - name: Trigger zz_generar_eventos workflow if eventos.html is new or modified
         if: env.eventos_changed == 'true'
-        uses: ./.github/workflows/zz_generar_eventos.yml@main  # Cambia "main" por la rama que corresponda
+        run: |
+          echo "Triggering zz_generar_eventos workflow"
+          curl -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            https://api.github.com/repos/${{ github.repository }}/dispatches \
+            -d '{"event_type":"generate_eventos"}'
 
       - name: Trigger zz_generar_canales workflow if lista-ott.m3u is new or modified
         if: env.lista_ott_changed == 'true'
-        uses: ./.github/workflows/zz_generar_canales.yml@main  # Cambia "main" por la rama que corresponda
+        run: |
+          echo "Triggering zz_generar_canales workflow"
+          curl -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            https://api.github.com/repos/${{ github.repository }}/dispatches \
+            -d '{"event_type":"generate_canales"}'
