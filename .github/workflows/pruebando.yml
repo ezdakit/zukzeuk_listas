@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: '3.x'
 
-      # Instalar dependencias
+      # Instalar dependencias _
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
