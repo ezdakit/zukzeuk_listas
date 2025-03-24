@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: '3.x'
 
-      # Instalar dependencias _
+      # Instalar dependencias
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -75,13 +75,9 @@ jobs:
           fi
 
       # Pull latest changes
-       - name: Pull latest changes
-         if: steps.changes.outputs.changes_eventos == 'true'
-         run: git pull origin main
-
-      # Listar los archivos del repositorio y subdirectorios con detalle de fecha y hora (final)
-      - name: List repository files
-        run: ls -lR
+      # - name: Pull latest changes
+      #   if: steps.changes.outputs.changes_eventos == 'true'
+      #   run: git pull origin main
 
       # Commit y push
       - name: Commit changes
