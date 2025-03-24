@@ -7,7 +7,8 @@ import os
 import re
 from datetime import datetime, timedelta
 import locale
-import shutil  # Importar shutil para operaciones de archivos
+import shutil
+import pytz  # Importar pytz para manejo de zonas horarias
 
 # Crear el directorio zz_eventos si no existe
 if not os.path.exists('zz_eventos'):
@@ -29,21 +30,19 @@ logger.addHandler(console_handler)
 
 locale.setlocale(locale.LC_TIME, 'es_ES.UTF-8')  # Configura el idioma a español
 
+# Verificar explícitamente si el archivo existe antes de procesarlo [NUEVO COMENTARIO]
+if not os.path.exists('zn_downloads/eventos.html'):
+    logger.error("El archivo zn_downloads/eventos.html no existe. Verifica la ruta o la descarga previa.")
+    sys.exit(1)
 
 # Procesar el fichero eventos.html para extraer información y generar el fichero eventos.csv
 try:
+    # [COMENTARIO ORIGINAL MODIFICADO] Obtener fecha de modificación del archivo en lugar del comentario HTML
+    mod_time = os.path.getmtime('zn_downloads/eventos.html')
+    fecha_extraccion = datetime.fromtimestamp(mod_time)
+    
     with open('zn_downloads/eventos.html', 'r', encoding='utf-8') as file:
-        primera_linea = file.readline()  # Leer la primera línea del archivo
-        iframe_html = primera_linea + file.read()  # Concatenar la primera línea con el resto del contenido
-
-    # Extraer la fecha y hora de extracción de la primera línea
-    fecha_extraccion_match = re.search(r'<!-- Fecha y hora de extracción: (\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z) -->', primera_linea)
-    if not fecha_extraccion_match:
-        logger.error("No se encontró la fecha y hora de extracción en el fichero eventos.html.")
-        sys.exit(1)  # Terminar el script con un código de error
-
-    fecha_extraccion_str = fecha_extraccion_match.group(1)
-    fecha_extraccion = datetime.strptime(fecha_extraccion_str, "%Y-%m-%dT%H:%M:%S.%fZ")
+        iframe_html = file.read()  # Leer todo el contenido del archivo
 
     soup = BeautifulSoup(iframe_html, 'html.parser')
     table = soup.find('table', {'id': 'tablaEventos'})
@@ -123,10 +122,13 @@ try:
 
 """
 
-    # Obtener la fecha de extracción y convertirla a UTC+1
-    fecha_extraccion_utc_plus_1 = fecha_extraccion + timedelta(hours=1)  # Sumar 1 hora para UTC+1
-    fecha_formateada = fecha_extraccion_utc_plus_1.strftime("%d de %B")  # Formato "día de mes"
-    fecha_formateada_2 = fecha_extraccion_utc_plus_1.strftime("[%d/%m]")  # Formato "día/mes"
+    # [COMENTARIO ORIGINAL MODIFICADO] Convertir a hora de Madrid (CET/CEST) en lugar de UTC+1 fijo
+    fecha_extraccion_utc = fecha_extraccion.replace(tzinfo=pytz.utc)
+    madrid_tz = pytz.timezone('Europe/Madrid')
+    fecha_madrid = fecha_extraccion_utc.astimezone(madrid_tz)
+    
+    fecha_formateada = fecha_madrid.strftime("%d de %B")  # Formato "día de mes"
+    fecha_formateada_2 = fecha_madrid.strftime("[%d/%m]")  # Formato "día/mes"
     
     # Abrir el archivo CSV para lectura
     with open(input_csv, 'r', encoding='utf-8') as csv_file:
