@@ -144,9 +144,9 @@ jobs:
       - name: Check if eventos.html is new or modified
         id: check_eventos_changes
         run: |
-          status=$(git status --porcelain $OUTPUT_FOLDER/eventos.html)
-          echo "$status"
-          if [[ "$status" =~ ^\?\?.* ]] || [[ "$status" =~ ^M.* ]]; then
+          status=$(git status --porcelain "$OUTPUT_FOLDER/eventos.html" | awk '{print $1}')
+          echo "Git status code: $status"  # Para depuración
+          if [[ "$status" == "??" || "$status" == "M" ]]; then
             echo "eventos.html is new or modified"
             echo "eventos_changed=true" >> $GITHUB_ENV
           else
@@ -157,9 +157,9 @@ jobs:
       - name: Check if lista-ott.m3u is new or modified
         id: check_lista_ott_changes
         run: |
-          status=$(git status --porcelain $OUTPUT_FOLDER/lista-ott.m3u)
-          echo "$status"
-          if [[ "$status" =~ ^\?\?.* ]] || [[ "$status" =~ ^M.* ]]; then
+          status=$(git status --porcelain "$OUTPUT_FOLDER/lista-ott.m3u" | awk '{print $1}')
+          echo "Git status code: $status"  # Para depuración
+          if [[ "$status" == "??" || "$status" == "M" ]]; then
             echo "lista-ott.m3u is new or modified"
             echo "lista_ott_changed=true" >> $GITHUB_ENV
           else
