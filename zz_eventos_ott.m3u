@@ -1,21 +1,21 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"
 #EXTVLCOPT:network-caching=2000
 
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 00:00 C. Ruud A. Tabilo
-http://127.0.0.1:6878/ace/getstream?id=d8c2ed470e847154a88f011137cc206319f6bed5
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 00:00 C. Ruud A. Tabilo
-http://127.0.0.1:6878/ace/getstream?id=d225087e30f6efe4c6d9b5ae3c2f3829368cd637
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 00:00 C. Ruud A. Tabilo
-http://127.0.0.1:6878/ace/getstream?id=985896872c52d04030c112ca99584046d022a349
 #EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 00:00 Montevideo Wanderers Miramar Misiones
 http://127.0.0.1:6878/ace/getstream?id=3a2bbdbe4cc775c5c75ccb7d2408363d69c94b5d
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 00:00 A. Anisimova M. Andreeva
+#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 00:10 A. Anisimova M. Andreeva
 http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 01:30 F. Cerúndolo T. Paul
+#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 01:10 C. Ruud A. Tabilo
 http://127.0.0.1:6878/ace/getstream?id=d8c2ed470e847154a88f011137cc206319f6bed5
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 01:30 F. Cerúndolo T. Paul
+#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 01:10 C. Ruud A. Tabilo
 http://127.0.0.1:6878/ace/getstream?id=d225087e30f6efe4c6d9b5ae3c2f3829368cd637
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 01:30 F. Cerúndolo T. Paul
+#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 01:10 C. Ruud A. Tabilo
+http://127.0.0.1:6878/ace/getstream?id=985896872c52d04030c112ca99584046d022a349
+#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 03:20 F. Cerúndolo T. Paul
+http://127.0.0.1:6878/ace/getstream?id=d8c2ed470e847154a88f011137cc206319f6bed5
+#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 03:20 F. Cerúndolo T. Paul
+http://127.0.0.1:6878/ace/getstream?id=d225087e30f6efe4c6d9b5ae3c2f3829368cd637
+#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 03:20 F. Cerúndolo T. Paul
 http://127.0.0.1:6878/ace/getstream?id=985896872c52d04030c112ca99584046d022a349
 #EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 09:00 2ª Ronda A1 Padel
 http://127.0.0.1:6878/ace/getstream?id=ca923c9873fd206a41c1e83ff8fc40e3cf323c9a
