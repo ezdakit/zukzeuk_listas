@@ -26,7 +26,17 @@ with open('zz_eventos/debug_eventos.txt', 'w'):
 # Procesar el fichero eventos.html para extraer información y generar el fichero eventos.csv
 try:
     with open('zn_downloads/eventos.html', 'r', encoding='utf-8') as file:
-        iframe_html = file.read()
+        primera_linea = file.readline()  # Leer la primera línea del archivo
+        iframe_html = primera_linea + file.read()  # Concatenar la primera línea con el resto del contenido
+
+    # Extraer la fecha y hora de extracción de la primera línea
+    fecha_extraccion_match = re.search(r'<!-- Fecha y hora de extracción: (\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z) -->', primera_linea)
+    if not fecha_extraccion_match:
+        logger.error("No se encontró la fecha y hora de extracción en el fichero eventos.html.")
+        sys.exit(1)  # Terminar el script con un código de error
+
+    fecha_extraccion_str = fecha_extraccion_match.group(1)
+    fecha_extraccion = datetime.strptime(fecha_extraccion_str, "%Y-%m-%dT%H:%M:%S.%fZ")
 
     soup = BeautifulSoup(iframe_html, 'html.parser')
     table = soup.find('table', {'id': 'tablaEventos'})
@@ -106,11 +116,10 @@ try:
 
 """
 
-    # Obtener la fecha actual en UTC y convertirla a UTC+1
-    now_utc = datetime.utcnow()  # Fecha y hora actual en UTC
-    now_utc_plus_1 = now_utc + timedelta(hours=1)  # Sumar 1 hora para UTC+1
-    fecha_formateada = now_utc_plus_1.strftime("%d de %B")  # Formato "día de mes"
-    fecha_formateada_2 = now_utc_plus_1.strftime("%d-%m")  # Formato "día-mes"
+    # Obtener la fecha de extracción y convertirla a UTC+1
+    fecha_extraccion_utc_plus_1 = fecha_extraccion + timedelta(hours=1)  # Sumar 1 hora para UTC+1
+    fecha_formateada = fecha_extraccion_utc_plus_1.strftime("%d de %B")  # Formato "día de mes"
+    fecha_formateada_2 = fecha_extraccion_utc_plus_1.strftime("%d-%m")  # Formato "día-mes"
     
     # Abrir el archivo CSV para lectura
     with open(input_csv, 'r', encoding='utf-8') as csv_file:
