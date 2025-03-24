@@ -61,6 +61,11 @@ jobs:
             echo "changes=true" >> $GITHUB_OUTPUT
           fi
 
+      # Pull latest changes
+      - name: Pull latest changes
+        if: steps.changes.outputs.changes == 'true'
+        run: git pull origin main
+
       # Commit y push
       - name: Commit changes
         if: steps.changes.outputs.changes == 'true'
