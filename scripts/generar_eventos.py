@@ -9,6 +9,10 @@ from datetime import datetime, timedelta
 import locale
 import shutil  # Importar shutil para operaciones de archivos
 
+# Borrar el contenido del fichero de log al inicio
+with open('zz_eventos/debug_eventos.txt', 'w'):
+    pass
+
 # Configuración de logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger()
@@ -19,9 +23,6 @@ logger.addHandler(console_handler)
 
 locale.setlocale(locale.LC_TIME, 'es_ES.UTF-8')  # Configura el idioma a español
 
-# Borrar el contenido del fichero de log al inicio
-with open('zz_eventos/debug_eventos.txt', 'w'):
-    pass
 
 # Procesar el fichero eventos.html para extraer información y generar el fichero eventos.csv
 try:
