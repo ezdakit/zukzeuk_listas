@@ -48,6 +48,15 @@ jobs:
       - name: List repository files
         run: ls -lR
 
+      # Mostrar el contenido del archivo de log si existe
+      - name: Show debug log
+        run: |
+          if [ -f zz_eventos/debug_eventos.txt ]; then
+            cat zz_eventos/debug_eventos.txt
+          else
+            echo "El archivo zz_eventos/debug_eventos.txt no existe."
+          fi
+
       # Verificar si hay cambios en los archivos
       - name: Check for changes
         id: changes_eventos
