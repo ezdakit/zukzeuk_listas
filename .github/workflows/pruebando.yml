@@ -75,9 +75,9 @@ jobs:
           fi
 
       # Pull latest changes
-      - name: Pull latest changes
-        if: steps.changes.outputs.changes_eventos == 'true'
-        run: git pull origin main
+      # - name: Pull latest changes
+      #   if: steps.changes.outputs.changes_eventos == 'true'
+      #   run: git pull origin main
 
       # Commit y push
       - name: Commit changes
