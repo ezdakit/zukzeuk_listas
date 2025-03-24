@@ -75,9 +75,13 @@ jobs:
           fi
 
       # Pull latest changes
-      # - name: Pull latest changes
-      #   if: steps.changes.outputs.changes_eventos == 'true'
-      #   run: git pull origin main
+      - name: Pull latest changes
+        if: steps.changes.outputs.changes_eventos == 'true'
+        run: git pull origin main
+
+      # Listar los archivos del repositorio y subdirectorios con detalle de fecha y hora (final)
+      - name: List repository files
+        run: ls -lR
 
       # Commit y push
       - name: Commit changes
