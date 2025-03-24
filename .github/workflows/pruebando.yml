@@ -81,7 +81,7 @@ jobs:
 
       # Commit y push
       - name: Commit changes
-        if: steps.changes.outputs.changes_eventos == 'true'
+        if: steps.changes_eventos.outputs.changes_eventos == 'true'
         run: |
           echo "Archivos modificados:"
           git status
