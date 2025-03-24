@@ -1,87 +1,101 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"
 #EXTVLCOPT:network-caching=2000
 
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 00:00 Montevideo Wanderers Miramar Misiones
-http://127.0.0.1:6878/ace/getstream?id=3a2bbdbe4cc775c5c75ccb7d2408363d69c94b5d
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 00:10 A. Anisimova M. Andreeva
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 00:00 A. De Miñaur J. Fonseca
+http://127.0.0.1:6878/ace/getstream?id=d8c2ed470e847154a88f011137cc206319f6bed5
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 00:00 A. De Miñaur J. Fonseca
+http://127.0.0.1:6878/ace/getstream?id=d225087e30f6efe4c6d9b5ae3c2f3829368cd637
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 00:00 A. Eala P. Badosa
 http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 01:10 C. Ruud A. Tabilo
-http://127.0.0.1:6878/ace/getstream?id=d8c2ed470e847154a88f011137cc206319f6bed5
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 01:10 C. Ruud A. Tabilo
-http://127.0.0.1:6878/ace/getstream?id=d225087e30f6efe4c6d9b5ae3c2f3829368cd637
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 01:10 C. Ruud A. Tabilo
-http://127.0.0.1:6878/ace/getstream?id=985896872c52d04030c112ca99584046d022a349
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 03:20 F. Cerúndolo T. Paul
-http://127.0.0.1:6878/ace/getstream?id=d8c2ed470e847154a88f011137cc206319f6bed5
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 03:20 F. Cerúndolo T. Paul
-http://127.0.0.1:6878/ace/getstream?id=d225087e30f6efe4c6d9b5ae3c2f3829368cd637
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 03:20 F. Cerúndolo T. Paul
-http://127.0.0.1:6878/ace/getstream?id=985896872c52d04030c112ca99584046d022a349
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 09:00 2ª Ronda A1 Padel
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 00:00 Orlando Magic Los Angeles Lakers
+http://127.0.0.1:6878/ace/getstream?id=d03c13b6723f66155d7a0df3692a3b073fe630f2
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 00:00 Orlando Magic Los Angeles Lakers
+http://127.0.0.1:6878/ace/getstream?id=12ba546d229bc39f01c3c18988a034b215fe6adb
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 00:00 Orlando Magic Los Angeles Lakers
+http://127.0.0.1:6878/ace/getstream?id=47403b07582b05c2a1eadaf6d1fb6454eda03a77
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 00:00 Orlando Magic Los Angeles Lakers
+http://127.0.0.1:6878/ace/getstream?id=a1660d711184fa701bf1c88395e3b2d43ddca83f
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 00:00 Orlando Magic Los Angeles Lakers
+http://127.0.0.1:6878/ace/getstream?id=6f1f82c3cf6bf4b4ccb6d63d687271878e0e908d
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 01:15 Central Español CA Atenas
+http://127.0.0.1:6878/ace/getstream?id=3a2bbdbe4cc775c5c75ccb7d2408363d69c94b5d
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 01:30 E. Svitolina I. Swiatek
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 09:00 2ª Ronda A1 Padel
 http://127.0.0.1:6878/ace/getstream?id=ca923c9873fd206a41c1e83ff8fc40e3cf323c9a
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 09:00 2ª Ronda A1 Padel
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 09:00 2ª Ronda A1 Padel
 http://127.0.0.1:6878/ace/getstream?id=a929eeec1268d69d1556a2e3ace793b2577d8810
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 09:00 2ª Ronda A1 Padel
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 09:00 2ª Ronda A1 Padel
 http://127.0.0.1:6878/ace/getstream?id=b0eabe0fdd02fdd165896236765a9b753a2ff516
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 09:00 2ª Ronda A1 Padel
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 09:00 2ª Ronda A1 Padel
 http://127.0.0.1:6878/ace/getstream?id=f86e821848931eaa55bcb779e74f62d6a59f41c0
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 09:00 2ª Ronda A1 Padel
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 09:00 2ª Ronda A1 Padel
 http://127.0.0.1:6878/ace/getstream?id=ddb69a119ab5faf7eeec3cef77e3d591a8242816
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 09:00 2ª Ronda A1 Padel
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 09:00 2ª Ronda A1 Padel
 http://127.0.0.1:6878/ace/getstream?id=57e38ef7eaab5596559415bdf96926ee4115c5ce
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 09:00 2ª Ronda A1 Padel
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 09:00 2ª Ronda A1 Padel
 http://127.0.0.1:6878/ace/getstream?id=d08013df6e437a1fdf1e0c34f573fdf6a40c7fce
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 15:15 Etapa 1 Sant Feliu de Guíxols › Sant Feliu de Guíxols (178.3 km)
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 15:00 Etapa 2 Banyoles › Figueres (177.3 km)
 http://127.0.0.1:6878/ace/getstream?id=c693df0cbccedec130e2b31453bdbfb3ccb7a648
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 15:15 Etapa 1 Sant Feliu de Guíxols › Sant Feliu de Guíxols (178.3 km)
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 15:00 Etapa 2 Banyoles › Figueres (177.3 km)
 http://127.0.0.1:6878/ace/getstream?id=8e9390c1647da151a7bc0e1b37c4b4d21d83049d
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 16:00 R. Opelka T. Machac
-http://127.0.0.1:6878/ace/getstream?id=d8c2ed470e847154a88f011137cc206319f6bed5
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 16:00 R. Opelka T. Machac
-http://127.0.0.1:6878/ace/getstream?id=d225087e30f6efe4c6d9b5ae3c2f3829368cd637
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 16:00 R. Opelka T. Machac
-http://127.0.0.1:6878/ace/getstream?id=23d1bcceacb7606d4ee6deaf9e6034c54eeedd2f
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 16:00 A. Walton C. Wong
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 18:00 Bahçeşehir Koleji Dreamland Gran Canaria
+http://127.0.0.1:6878/ace/getstream?id=d03c13b6723f66155d7a0df3692a3b073fe630f2
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 18:00 Bahçeşehir Koleji Dreamland Gran Canaria
+http://127.0.0.1:6878/ace/getstream?id=12ba546d229bc39f01c3c18988a034b215fe6adb
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 18:00 Bahçeşehir Koleji Dreamland Gran Canaria
+http://127.0.0.1:6878/ace/getstream?id=47403b07582b05c2a1eadaf6d1fb6454eda03a77
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 18:00 Bahçeşehir Koleji Dreamland Gran Canaria
+http://127.0.0.1:6878/ace/getstream?id=a1660d711184fa701bf1c88395e3b2d43ddca83f
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 18:00 Bahçeşehir Koleji Dreamland Gran Canaria
+http://127.0.0.1:6878/ace/getstream?id=6f1f82c3cf6bf4b4ccb6d63d687271878e0e908d
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 18:00 Bahçeşehir Koleji Dreamland Gran Canaria
+http://127.0.0.1:6878/ace/getstream?id=985896872c52d04030c112ca99584046d022a349
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 18:45 Fenerbahce Istanbul Paris Basketball
 http://127.0.0.1:6878/ace/getstream?id=fcc0fd75bf1dba40b108fcf0d3514e0e549bfbac
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 16:00 A. Walton C. Wong
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 18:45 Fenerbahce Istanbul Paris Basketball
 http://127.0.0.1:6878/ace/getstream?id=14aa86be2b451cd4f5ee6d12e7479885373ea9b3
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 16:00 N. Osaka J. Paolini
-http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 17:00 A. Zverev J. Thompson
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 19:00 AS Monaco Basket Zalgiris Kaunas
+http://127.0.0.1:6878/ace/getstream?id=070f82d6443a52962d6a2ed9954c979b29404932
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 20:00 La Laguna Tenerife BAXI Manresa
+http://127.0.0.1:6878/ace/getstream?id=c693df0cbccedec130e2b31453bdbfb3ccb7a648
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 20:30 Alemania España
+http://127.0.0.1:6878/ace/getstream?id=56d98cef21d9e242a8c32f36259c850c467e9748
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 20:30 Barça Basket FC Bayern Basketball
+http://127.0.0.1:6878/ace/getstream?id=55d4602cb22b0d8a33c10c2c2f42dae64a9e8895
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 20:30 Barça Basket FC Bayern Basketball
+http://127.0.0.1:6878/ace/getstream?id=3a74d9869b13e763476800740c6625e715a39879
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 20:30 Barça Basket FC Bayern Basketball
+http://127.0.0.1:6878/ace/getstream?id=0f771c30336a0506c74f4aa86762edcb94d21fac
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 20:30 Barça Basket FC Bayern Basketball
+http://127.0.0.1:6878/ace/getstream?id=a8745bd07dc60413a4fc05caf2cabbfb11952232
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 20:30 Barça Basket FC Bayern Basketball
+http://127.0.0.1:6878/ace/getstream?id=fe134ae09f9643ea9bfdd75ff1f121ba8c58e5c1
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 20:30 Barça Basket FC Bayern Basketball
+http://127.0.0.1:6878/ace/getstream?id=acb510858f34c3c6fd5f79395b031abd6885c2b3
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 20:30 Valencia Basket Hapoel Tel Aviv BC
+http://127.0.0.1:6878/ace/getstream?id=d03c13b6723f66155d7a0df3692a3b073fe630f2
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 20:30 Valencia Basket Hapoel Tel Aviv BC
+http://127.0.0.1:6878/ace/getstream?id=12ba546d229bc39f01c3c18988a034b215fe6adb
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 20:30 Valencia Basket Hapoel Tel Aviv BC
+http://127.0.0.1:6878/ace/getstream?id=47403b07582b05c2a1eadaf6d1fb6454eda03a77
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 20:30 Valencia Basket Hapoel Tel Aviv BC
+http://127.0.0.1:6878/ace/getstream?id=a1660d711184fa701bf1c88395e3b2d43ddca83f
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 20:30 Valencia Basket Hapoel Tel Aviv BC
+http://127.0.0.1:6878/ace/getstream?id=6f1f82c3cf6bf4b4ccb6d63d687271878e0e908d
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 20:30 Valencia Basket Hapoel Tel Aviv BC
+http://127.0.0.1:6878/ace/getstream?id=985896872c52d04030c112ca99584046d022a349
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 20:45 ASVEL Lyon-Villeurbanne Olympiacos Piraeus
+http://127.0.0.1:6878/ace/getstream?id=cc5782d37ae6b6e0bab396dd64074982d0879046
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 20:45 Real Madrid Baloncesto AX Olimpia Milano
+http://127.0.0.1:6878/ace/getstream?id=56ac8e227d526e722624675ccdd91b0cc850582f
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 20:45 Real Madrid Baloncesto AX Olimpia Milano
 http://127.0.0.1:6878/ace/getstream?id=bbd251f89bc7716e2bef237906ecfba3c562ecde
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 17:00 A. Zverev J. Thompson
-http://127.0.0.1:6878/ace/getstream?id=d8c2ed470e847154a88f011137cc206319f6bed5
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 17:00 A. Zverev J. Thompson
-http://127.0.0.1:6878/ace/getstream?id=d225087e30f6efe4c6d9b5ae3c2f3829368cd637
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 17:30 T. Fritz D. Shapovalov
-http://127.0.0.1:6878/ace/getstream?id=d8c2ed470e847154a88f011137cc206319f6bed5
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 17:30 T. Fritz D. Shapovalov
-http://127.0.0.1:6878/ace/getstream?id=d225087e30f6efe4c6d9b5ae3c2f3829368cd637
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 17:30 T. Fritz D. Shapovalov
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 20:45 Real Madrid Baloncesto AX Olimpia Milano
+http://127.0.0.1:6878/ace/getstream?id=335646e7394ea4eda343c95e57852bb70fc4178f
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 20:45 Real Madrid Baloncesto AX Olimpia Milano
 http://127.0.0.1:6878/ace/getstream?id=985896872c52d04030c112ca99584046d022a349
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 17:30 R. Safiullin J. Mensik
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 20:45 BC Partizan Beograd ALBA Berlin
 http://127.0.0.1:6878/ace/getstream?id=fcc0fd75bf1dba40b108fcf0d3514e0e549bfbac
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 17:30 R. Safiullin J. Mensik
+#EXTINF:-1 tvg-id="" group-title="# Eventos 25 de marzo por horario", 20:45 BC Partizan Beograd ALBA Berlin
 http://127.0.0.1:6878/ace/getstream?id=14aa86be2b451cd4f5ee6d12e7479885373ea9b3
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 18:30 A. Sabalenka D. Collins
-http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 19:00 A. Fils F. Tiafoe
-http://127.0.0.1:6878/ace/getstream?id=d8c2ed470e847154a88f011137cc206319f6bed5
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 19:00 A. Fils F. Tiafoe
-http://127.0.0.1:6878/ace/getstream?id=d225087e30f6efe4c6d9b5ae3c2f3829368cd637
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 19:00 A. Fils F. Tiafoe
-http://127.0.0.1:6878/ace/getstream?id=985896872c52d04030c112ca99584046d022a349
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 20:00 C. Gauff M. Linette
-http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 20:30 M. Berrettini Z. Bergs
-http://127.0.0.1:6878/ace/getstream?id=d8c2ed470e847154a88f011137cc206319f6bed5
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 20:30 M. Berrettini Z. Bergs
-http://127.0.0.1:6878/ace/getstream?id=d225087e30f6efe4c6d9b5ae3c2f3829368cd637
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 20:30 M. Berrettini Z. Bergs
-http://127.0.0.1:6878/ace/getstream?id=985896872c52d04030c112ca99584046d022a349
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 20:30 Real Zaragoza Córdoba
-http://127.0.0.1:6878/ace/getstream?id=b2706a7ffbea236a3b398139a3a606ada664c0eb
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 20:30 Real Zaragoza Córdoba
-http://127.0.0.1:6878/ace/getstream?id=121f719ebb94193c6086ef92865cf9b197750980
-#EXTINF:-1 tvg-id="" group-title="# Eventos 24 de marzo por horario", 23:00 CA Rentistas CA Artigas
-http://127.0.0.1:6878/ace/getstream?id=3a2bbdbe4cc775c5c75ccb7d2408363d69c94b5d
