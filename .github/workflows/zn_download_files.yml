@@ -190,7 +190,7 @@ jobs:
             -H "Accept: application/vnd.github+json" \
             -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
             https://api.github.com/repos/${{ github.repository }}/dispatches \
-            -d '{"event_type":"process_downloaded_files"}'
+            -d '{"event_type":"procesar_eventos"}'
 
       - name: Trigger zz_generar_canales workflow if lista-ott.m3u is new or modified
         if: env.lista_ott_changed == 'true'
