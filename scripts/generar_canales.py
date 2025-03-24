@@ -55,11 +55,14 @@ except FileNotFoundError:
 new_lines = [line for line in m3u_content.splitlines() if line.startswith("#EXTINF") and line not in prev_m3u_content.splitlines()]
 logging.info(f"Se encontraron {len(new_lines)} líneas nuevas en el archivo M3U.")
 
-# Incluir las líneas nuevas en cambios.txt
-with open(cambios_file_path, 'w', encoding='utf-8') as cambios_file:
-    for line in new_lines:
-        logging.info(f"Línea nueva: {line}")
-        cambios_file.write(f"{line}\n")
+# Incluir las líneas nuevas en cambios.txt solo si hay líneas nuevas
+if new_lines:
+    with open(cambios_file_path, 'w', encoding='utf-8') as cambios_file:
+        for line in new_lines:
+            logging.info(f"Línea nueva: {line}")
+            cambios_file.write(f"{line}\n")
+else:
+    logging.info("No se encontraron líneas nuevas. No se generará el archivo cambios.txt.")
 
 # Conectar a la base de datos SQLite
 db_file_path = os.path.join('zz_canales', 'zz_canales.db')
