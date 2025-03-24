@@ -44,6 +44,10 @@ jobs:
       - name: Run Python script
         run: python scripts/generar_eventos.py
 
+      # Listar los archivos del repositorio y subdirectorios con detalle de fecha y hora
+      - name: List repository files
+        run: ls -lR
+
       # Verificar si hay cambios en los archivos
       - name: Check for changes
         id: changes_eventos
