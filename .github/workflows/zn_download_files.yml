@@ -89,20 +89,26 @@ jobs:
 
       - name: Download lista-ott.m3u
         run: |
+          set +e  # Desactiva la opción "exit on error" para permitir que el script continúe
           echo "Downloading http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u"
-          if curl -H "Accept: text/html" -f -o $OUTPUT_FOLDER/lista-ott.m3u http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u; then
+          curl -H "Accept: text/html" -f -o $OUTPUT_FOLDER/lista-ott.m3u http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u
+          curl_exit_code=$?  # Guarda el código de salida de curl
+          if [ $curl_exit_code -eq 0 ]; then
             echo "File downloaded successfully to $OUTPUT_FOLDER/lista-ott.m3u"
           else
             echo "Failed to download lista-ott.m3u: The file does not exist or the site is not fully synchronized."
             echo "Retrying in 30 seconds..."
             sleep 30
-            if curl -H "Accept: text/html" -f -o $OUTPUT_FOLDER/lista-ott.m3u http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u; then
+            curl -H "Accept: text/html" -f -o $OUTPUT_FOLDER/lista-ott.m3u http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u
+            curl_exit_code=$?
+            if [ $curl_exit_code -eq 0 ]; then
               echo "File downloaded successfully to $OUTPUT_FOLDER/lista-ott.m3u"
             else
               echo "Failed to download lista-ott.m3u after retry."
-              exit 1
+              echo "Continuing with the workflow..."
             fi
           fi
+          set -e  # Reactiva la opción "exit on error" para el resto del script
 
       - name: Check for eventos.html
         id: check_eventos
