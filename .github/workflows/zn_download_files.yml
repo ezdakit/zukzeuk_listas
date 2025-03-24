@@ -146,7 +146,7 @@ jobs:
         run: |
           status=$(git status --porcelain $OUTPUT_FOLDER/eventos.html)
           echo "$status"
-          if [[ "$status" == "??"* || "$status" == "M"* ]]; then
+          if [[ "$status" =~ ^\?\?.* ]] || [[ "$status" =~ ^M.* ]]; then
             echo "eventos.html is new or modified"
             echo "eventos_changed=true" >> $GITHUB_ENV
           else
@@ -159,7 +159,7 @@ jobs:
         run: |
           status=$(git status --porcelain $OUTPUT_FOLDER/lista-ott.m3u)
           echo "$status"
-          if [[ "$status" == "??"* || "$status" == "M"* ]]; then
+          if [[ "$status" =~ ^\?\?.* ]] || [[ "$status" =~ ^M.* ]]; then
             echo "lista-ott.m3u is new or modified"
             echo "lista_ott_changed=true" >> $GITHUB_ENV
           else
