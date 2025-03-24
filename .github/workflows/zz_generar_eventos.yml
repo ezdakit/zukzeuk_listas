@@ -3,7 +3,7 @@ name: zz_generar_eventos
 on:
   workflow_call:
   repository_dispatch:
-    types: [process_downloaded_files]  # Tipo de evento personalizado
+    types: [procesar_eventos]  # Tipo de evento personalizado
 
 jobs:
   run-script:
@@ -50,15 +50,28 @@ jobs:
           git add zz_eventos/debug_eventos.txt zz_eventos/eventos.csv zz_eventos/zz_eventos_ott.m3u zz_eventos/zz_eventos_all_ott.m3u zz_eventos_ott.m3u zz_eventos_all_ott.m3u
 
       # Verificar si hay cambios
-      - name: Check for changes
-        id: changes
+      #- name: Check for changes
+      #  id: changes
+      #  run: |
+      #    if git diff --cached --quiet; then
+      #      echo "No hay cambios para confirmar"
+      #      echo "changes=false" >> $GITHUB_OUTPUT
+      #    else
+      #      echo "Cambios detectados"
+      #      echo "changes=true" >> $GITHUB_OUTPUT
+      #    fi
+
+      - name: Check for changes using git status
+        id: check_changes
         run: |
-          if git diff --cached --quiet; then
-            echo "No hay cambios para confirmar"
-            echo "changes=false" >> $GITHUB_OUTPUT
+          changes_detected=$(git status --porcelain $OUTPUT_FOLDER)
+          if [ -z "$changes_detected" ]; then
+            echo "No changes detected"
+            echo "changes=false" >> $GITHUB_ENV
           else
-            echo "Cambios detectados"
-            echo "changes=true" >> $GITHUB_OUTPUT
+            echo "Changes detected:"
+            echo "$changes"
+            echo "changes=true" >> $GITHUB_ENV
           fi
 
       # Pull latest changes
