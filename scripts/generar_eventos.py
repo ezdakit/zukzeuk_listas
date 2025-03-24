@@ -13,11 +13,13 @@ import shutil  # Importar shutil para operaciones de archivos
 with open('zz_eventos/debug_eventos.txt', 'w'):
     pass
 
-# Configuración de logging
+# Configuración de logging con fecha y hora en cada línea
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger()
 file_handler = logging.FileHandler('zz_eventos/debug_eventos.txt')
+file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')) # Asegurar que el formato se aplica al manejador de archivo
 console_handler = logging.StreamHandler()
+console_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')) # Asegurar que el formato se aplica al manejador de consola
 logger.addHandler(file_handler)
 logger.addHandler(console_handler)
 
