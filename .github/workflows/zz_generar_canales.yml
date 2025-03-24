@@ -2,7 +2,8 @@ name: zz_generar_canales
 
 on:
   workflow_call:
-  workflow_dispatch:  # Permite la ejecución manual del workflow
+  repository_dispatch:
+    types: [generate_eventos]  # Tipo de evento personalizado
 
 jobs:
   run-script:
