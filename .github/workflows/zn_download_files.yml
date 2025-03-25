@@ -10,21 +10,27 @@ on:
 jobs:
   setup:
     runs-on: ubuntu-latest
-    timeout-minutes: 10  # Establece un tiempo máximo de ejecución
+    timeout-minutes: 10
 
     env:
-      ZERONET_ADDRESS_1: 18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie  # Dirección para eventos.html
-      ZERONET_ADDRESS_2: 1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU  # Dirección para lista-ott.m3u
-      OUTPUT_FOLDER: zn_downloads  # Carpeta de destino
-      OUTPUT_FILE: eventos.html  # Nombre del archivo para eventos.html
+      ZERONET_ADDRESS_1: 18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie
+      ZERONET_ADDRESS_2: 1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU
+      OUTPUT_FOLDER: zn_downloads
+      OUTPUT_FILE: eventos.html
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Backup original files
+        run: |
+          mkdir -p $OUTPUT_FOLDER
+          cp $OUTPUT_FOLDER/eventos.html $OUTPUT_FOLDER/eventos.html.orig 2>/dev/null || true
+          cp $OUTPUT_FOLDER/lista-ott.m3u $OUTPUT_FOLDER/lista-ott.m3u.orig 2>/dev/null || true
+
       - name: Install system dependencies
         run: |
-          set -e  # Detener el script si hay un error
+          set -e
           echo "Installing system dependencies"
           sudo apt-get update
           sudo apt-get install -y wget tar curl python3 python3-pip
@@ -51,14 +57,14 @@ jobs:
         run: |
           set -e
           echo "Verifying ZeroNet is running"
-          sleep 5  # Espera 5 segundos para asegurar que ZeroNet esté listo
+          sleep 5
           curl -I http://127.0.0.1:43110
           echo "ZeroNet verification complete"
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'  # Usa una versión compatible con Playwright
+          node-version: '20'
 
       - name: Install Playwright
         run: |
@@ -72,134 +78,94 @@ jobs:
         run: |
           node scripts/extract-content.js "$ZERONET_ADDRESS_1" "$OUTPUT_FOLDER" "$OUTPUT_FILE"
 
-      - name: Check site synchronization (1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU)
+      - name: Check site synchronization
         run: |
           echo "Checking site synchronization for $ZERONET_ADDRESS_2"
           curl -H "Accept: text/html" -I http://127.0.0.1:43110/$ZERONET_ADDRESS_2/
           echo "Site synchronization checked"
 
-      - name: Verify and create output folder if it doesn't exist
-        run: |
-          if [ ! -d "$OUTPUT_FOLDER" ]; then
-            echo "Output folder does not exist. Creating $OUTPUT_FOLDER..."
-            mkdir -p "$OUTPUT_FOLDER"
-          else
-            echo "Output folder already exists."
-          fi
-
       - name: Download lista-ott.m3u
         run: |
-          set +e  # Desactiva la opción "exit on error" para permitir que el script continúe
+          set +e
           echo "Downloading http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u"
           curl -H "Accept: text/html" -f -o $OUTPUT_FOLDER/lista-ott.m3u http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u
-          curl_exit_code=$?  # Guarda el código de salida de curl
-          if [ $curl_exit_code -eq 0 ]; then
-            echo "File downloaded successfully to $OUTPUT_FOLDER/lista-ott.m3u"
-          else
-            echo "Failed to download lista-ott.m3u: The file does not exist or the site is not fully synchronized."
-            echo "Retrying in 30 seconds..."
+          curl_exit_code=$?
+          if [ $curl_exit_code -ne 0 ]; then
+            echo "Retrying download..."
             sleep 30
-            curl -H "Accept: text/html" -f -o $OUTPUT_FOLDER/lista-ott.m3u http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u
-            curl_exit_code=$?
-            if [ $curl_exit_code -eq 0 ]; then
-              echo "File downloaded successfully to $OUTPUT_FOLDER/lista-ott.m3u"
+            curl -H "Accept: text/html" -f -o $OUTPUT_FOLDER/lista-ott.m3u http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u || true
+          fi
+          set -e
+
+      - name: Remove existing diff files
+        run: |
+          echo "Removing existing diff files"
+          [ -f "$OUTPUT_FOLDER/eventos.diff" ] && rm $OUTPUT_FOLDER/eventos.diff
+          [ -f "$OUTPUT_FOLDER/lista-ott.diff" ] && rm $OUTPUT_FOLDER/lista-ott.diff
+
+      - name: Generate diff files
+        run: |
+          echo "Checking eventos.html files"
+          ls -l $OUTPUT_FOLDER/eventos.html.orig
+          ls -l $OUTPUT_FOLDER/eventos.html
+          if [ -f "$OUTPUT_FOLDER/eventos.html.orig" ] && [ -f "$OUTPUT_FOLDER/eventos.html" ]; then
+            diff_output=$(diff $OUTPUT_FOLDER/eventos.html.orig $OUTPUT_FOLDER/eventos.html || true)
+            if [ -n "$diff_output" ]; then
+              echo "$diff_output" > $OUTPUT_FOLDER/eventos.diff
             else
-              echo "Failed to download lista-ott.m3u after retry."
-              echo "Continuing with the workflow..."
+              echo "No changes in eventos.html"
             fi
           fi
-          set -e  # Reactiva la opción "exit on error" para el resto del script
-
-      - name: Check for eventos.html
-        id: check_eventos
-        run: |
-          if [ -f $OUTPUT_FOLDER/eventos.html ]; then
-            echo "eventos=true" >> $GITHUB_ENV
-          else
-            echo "eventos=false" >> $GITHUB_ENV
+          echo "Checking lista-ott.m3u files"
+          ls -l $OUTPUT_FOLDER/lista-ott.m3u.orig
+          ls -l $OUTPUT_FOLDER/lista-ott.m3u
+          if [ -f "$OUTPUT_FOLDER/lista-ott.m3u.orig" ] && [ -f "$OUTPUT_FOLDER/lista-ott.m3u" ]; then
+            diff_output_2=$(diff $OUTPUT_FOLDER/lista-ott.m3u.orig $OUTPUT_FOLDER/lista-ott.m3u || true)
+            if [ -n "$diff_output_2" ]; then
+              echo "$diff_output_2" > $OUTPUT_FOLDER/lista-ott.diff
+            else
+              echo "No changes in lista-ott.m3u"
+            fi
           fi
 
-      - name: Check for lista-ott.m3u
-        id: check_lista_ott
-        run: |
-          if [ -f $OUTPUT_FOLDER/lista-ott.m3u ]; then
-            echo "lista_ott=true" >> $GITHUB_ENV
-          else
-            echo "lista_ott=false" >> $GITHUB_ENV
-          fi
-
-      - name: Check for changes using git status
+      - name: Check for file changes
         id: check_changes
         run: |
-          changes=$(git status --porcelain $OUTPUT_FOLDER)
-          if [ -z "$changes" ]; then
-            echo "No changes detected"
-            echo "changes_detected=false" >> $GITHUB_ENV
-          else
-            echo "Changes detected:"
-            echo "$changes"
+          cambios=$(git status --porcelain $OUTPUT_FOLDER)
+          if [ -n "$cambios" ]; then
             echo "changes_detected=true" >> $GITHUB_ENV
-          fi
-
-      - name: Check if eventos.html is new or modified
-        id: check_eventos_changes
-        run: |
-          status=$(git status --porcelain "$OUTPUT_FOLDER/eventos.html" | awk '{print $1}')
-          echo "Git status code: $status"  # Para depuración
-          if [[ "$status" == "??" || "$status" == "M" ]]; then
-            echo "eventos.html is new or modified"
-            echo "eventos_changed=true" >> $GITHUB_ENV
+            echo "Files changed:"
+            echo "$cambios"
           else
-            echo "No changes in eventos.html"
-            echo "eventos_changed=false" >> $GITHUB_ENV
+            echo "changes_detected=false" >> $GITHUB_ENV
           fi
 
-      - name: Check if lista-ott.m3u is new or modified
-        id: check_lista_ott_changes
-        run: |
-          status=$(git status --porcelain "$OUTPUT_FOLDER/lista-ott.m3u" | awk '{print $1}')
-          echo "Git status code: $status"  # Para depuración
-          if [[ "$status" == "??" || "$status" == "M" ]]; then
-            echo "lista-ott.m3u is new or modified"
-            echo "lista_ott_changed=true" >> $GITHUB_ENV
-          else
-            echo "No changes in lista-ott.m3u"
-            echo "lista_ott_changed=false" >> $GITHUB_ENV
-          fi
-
-      - name: Add all changes to staging area
-        if: env.changes_detected == 'true'
-        run: git add $OUTPUT_FOLDER/
-
-      - name: Commit changes
+      - name: Add and commit changes
         if: env.changes_detected == 'true'
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
-          git commit -m "Add new files"
-
-      - name: Push changes
-        if: env.changes_detected == 'true'
-        run: git push
+          git add $OUTPUT_FOLDER/
+          git commit -m "Actualización automática de archivos"
+          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
-      - name: Trigger zz_generar_eventos workflow if eventos.html is new or modified
-        if: env.eventos_changed == 'true'
-        run: |
-          echo "Triggering zz_generar_eventos workflow"
-          curl -X POST \
-            -H "Accept: application/vnd.github+json" \
-            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-            https://api.github.com/repos/${{ github.repository }}/dispatches \
-            -d '{"event_type":"procesar_eventos"}'
 
-      - name: Trigger zz_generar_canales workflow if lista-ott.m3u is new or modified
-        if: env.lista_ott_changed == 'true'
+      - name: Trigger downstream workflows
+        if: env.changes_detected == 'true'
         run: |
-          echo "Triggering zz_generar_canales workflow"
-          curl -X POST \
-            -H "Accept: application/vnd.github+json" \
-            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-            https://api.github.com/repos/${{ github.repository }}/dispatches \
-            -d '{"event_type":"process_downloaded_files"}'
+          if [ -f "$OUTPUT_FOLDER/eventos.diff" ]; then
+            curl -X POST \
+              -H "Accept: application/vnd.github+json" \
+              -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+              https://api.github.com/repos/${{ github.repository }}/dispatches \
+              -d '{"event_type":"procesar_eventos"}'
+          fi
+          
+          if [ -f "$OUTPUT_FOLDER/lista-ott.diff" ]; then
+            curl -X POST \
+              -H "Accept: application/vnd.github+json" \
+              -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+              https://api.github.com/repos/${{ github.repository }}/dispatches \
+              -d '{"event_type":"process_downloaded_files"}'
+          fi
