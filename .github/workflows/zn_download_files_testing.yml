@@ -3,103 +3,59 @@ name: zn_download_files_testing
 on:
   workflow_dispatch:
 
+
 env:
   ZERONET_ADDRESS_1: 18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie
   ZERONET_ADDRESS_2: 1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU
   OUTPUT_FOLDER: zn_downloads
   OUTPUT_FILE: eventos.html
-  ZERONET_DIR: ZeroNet-linux-dist-linux64
 
 jobs:
-  setup_environment:
+  download_and_process:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 20
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
-        
-      - name: Debug - Mostrar estructura inicial
-        run: |
-          echo "=== Estructura inicial del directorio ==="
-          ls -la
-          echo "=== Espacio disponible ==="
-          df -h
+        uses: actions/checkout@v2
 
       - name: Install system dependencies
         run: |
-          echo "=== Instalando dependencias ==="
+          echo "Instalando dependencias del sistema..."
           sudo apt-get update
-          sudo apt-get install -y wget tar curl python3 python3-pip diffutils
+          sudo apt-get install -y wget tar curl python3 python3-pip
 
       - name: Download and extract ZeroNet
         run: |
-          echo "=== Descargando ZeroNet ==="
-          wget -q https://github.com/HelloZeroNet/ZeroNet-linux/archive/dist-linux64/ZeroNet-py3-linux64.tar.gz
-          
-          echo "=== Extrayendo ZeroNet ==="
+          echo "Descargando ZeroNet..."
+          wget https://github.com/HelloZeroNet/ZeroNet-linux/archive/dist-linux64/ZeroNet-py3-linux64.tar.gz
           tar xvpfz ZeroNet-py3-linux64.tar.gz
-          
-          echo "=== Verificando extracción ==="
-          echo "Contenido del directorio actual:"
-          ls -la
-          echo "Contenido del directorio extraído:"
-          ls -la $ZERONET_DIR || echo "Probando estructura alternativa..."
-          ls -la ZeroNet-linux-dist-linux64/ZeroNet-linux-dist-linux64 || true
-          
-          # Establecer la ruta correcta
-          if [ -d "$ZERONET_DIR" ]; then
-            echo "ZERONET_PATH=$GITHUB_WORKSPACE/$ZERONET_DIR" >> $GITHUB_ENV
-          elif [ -d "ZeroNet-linux-dist-linux64/ZeroNet-linux-dist-linux64" ]; then
-            echo "ZERONET_PATH=$GITHUB_WORKSPACE/ZeroNet-linux-dist-linux64/ZeroNet-linux-dist-linux64" >> $GITHUB_ENV
-            echo "ZERONET_DIR=ZeroNet-linux-dist-linux64/ZeroNet-linux-dist-linux64" >> $GITHUB_ENV
-          else
-            echo "ERROR: No se pudo encontrar el directorio de ZeroNet"
-            exit 1
-          fi
-          
-          echo "Ruta establecida a: $ZERONET_PATH"
-
-  start_zeronet:
-    needs: setup_environment
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Debug - Mostrar variables y estructura
-        run: |
-          echo "=== Variables de entorno ==="
-          echo "ZERONET_PATH: $ZERONET_PATH"
-          echo "ZERONET_DIR: $ZERONET_DIR"
-          echo "=== Estructura del directorio ==="
-          ls -la
-          echo "=== Contenido de $ZERONET_DIR ==="
-          ls -la $ZERONET_DIR || echo "No se puede listar el directorio"
+          echo "ZeroNet descargado y extraído correctamente"
 
       - name: Start ZeroNet
         run: |
-          echo "=== Iniciando ZeroNet ==="
-          echo "Directorio actual: $(pwd)"
-          echo "Cambiando al directorio: $ZERONET_DIR"
-          cd "$ZERONET_DIR" || { echo "ERROR: No se pudo cambiar al directorio $ZERONET_DIR"; exit 1; }
-          
-          echo "=== Contenido del directorio ZeroNet ==="
-          ls -la
-          
-          echo "Iniciando ZeroNet en segundo plano..."
+          echo "Iniciando ZeroNet..."
+          cd ZeroNet-linux-dist-linux64/
           ./ZeroNet.sh &
-          ZERONET_PID=$!
-          echo "ZeroNet iniciado con PID: $ZERONET_PID"
-          
-          echo "=== Esperando a que ZeroNet esté listo ==="
-          echo "Intentando conectar a http://127.0.0.1:43110..."
-          timeout 120 bash -c 'while ! curl -s -I http://127.0.0.1:43110 >/dev/null; do 
-            echo "ZeroNet no responde aún, esperando 5 segundos..."
-            sleep 5; 
-          done'
-          echo "=== ZeroNet está funcionando correctamente ==="
+          echo "Esperando 10 segundos para que ZeroNet inicie..."
+          sleep 10
+          echo "Verificando estado de ZeroNet..."
+          curl -I http://127.0.0.1:43110 && echo "ZeroNet está funcionando"
 
-  # Resto del workflow (download_files, generate_diffs, process_changes) permanece igual
+      # Resto de tus pasos originales (descarga de archivos, generación de diffs, etc.)
+      - name: Verify and create output folder
+        run: |
+          if [ ! -d "$OUTPUT_FOLDER" ]; then
+            echo "Creando directorio de salida..."
+            mkdir -p "$OUTPUT_FOLDER"
+          fi
+
+      - name: Extract dynamic content with Playwright
+        run: |
+          node scripts/extract-content.js "$ZERONET_ADDRESS_1" "$OUTPUT_FOLDER" "$OUTPUT_FILE"
+
+      - name: Download lista-ott.m3u
+        run: |
+          echo "Descargando lista-ott.m3u..."
+          curl -H "Accept: text/html" -f -o $OUTPUT_FOLDER/lista-ott.m3u http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u || echo "Advertencia: No se pudo descargar lista-ott.m3u"
+
+      # Continuar con el resto de tus pasos originales...
