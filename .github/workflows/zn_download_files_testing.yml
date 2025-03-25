@@ -117,7 +117,7 @@ jobs:
             else
               echo "No changes in lista-ott.m3u"
             fi
-          f
+          fi
 
       - name: Check for file changes
         id: check_changes
