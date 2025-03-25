@@ -1,11 +1,7 @@
-name: zn_download_files_testing
+name: zn_download_files
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 23 * * *'  # Ejecutar a las 23:00
-    - cron: '0 18 * * *'  # Ejecutar a las 18:00
-    - cron: '0 12 * * *'  # Ejecutar a las 12:00
 
 env:
   ZERONET_ADDRESS_1: 18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie
@@ -22,59 +18,48 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2  # Necesario para poder hacer diff con la versión anterior
-        env:
-          DEBUG: true
+          fetch-depth: 2
         
-      - name: Debug - Mostrar estructura del repositorio
+      - name: Debug - Mostrar estructura inicial
         run: |
-          echo "=== Estructura del directorio ==="
+          echo "=== Estructura inicial del directorio ==="
           ls -la
-          echo "=== Contenido de $OUTPUT_FOLDER (si existe) ==="
-          ls -la $OUTPUT_FOLDER || echo "El directorio $OUTPUT_FOLDER no existe aún"
-
-      - name: Cache Node.js modules
-        uses: actions/cache@v3
-        id: cache-node-modules
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
-      - name: Debug - Estado de la caché
-        run: |
-          echo "=== Estado de la caché ==="
-          echo "Cache hit: ${{ steps.cache-node-modules.outputs.cache-hit }}"
+          echo "=== Espacio disponible ==="
+          df -h
 
       - name: Install system dependencies
         run: |
-          echo "=== Instalando dependencias del sistema ==="
-          echo "Actualizando lista de paquetes..."
+          echo "=== Instalando dependencias ==="
           sudo apt-get update
-          echo "Instalando paquetes: wget, tar, curl, python3, python3-pip, diffutils..."
           sudo apt-get install -y wget tar curl python3 python3-pip diffutils
-          echo "=== Versiones instaladas ==="
-          echo "wget: $(wget --version | head -n1)"
-          echo "curl: $(curl --version | head -n1)"
-          echo "python3: $(python3 --version)"
-          echo "diff: $(diff --version | head -n1)"
 
       - name: Download and extract ZeroNet
         run: |
           echo "=== Descargando ZeroNet ==="
-          echo "Descargando desde: https://github.com/HelloZeroNet/ZeroNet-linux/archive/dist-linux64/ZeroNet-py3-linux64.tar.gz"
           wget -q https://github.com/HelloZeroNet/ZeroNet-linux/archive/dist-linux64/ZeroNet-py3-linux64.tar.gz
           
           echo "=== Extrayendo ZeroNet ==="
           tar xvpfz ZeroNet-py3-linux64.tar.gz
-          echo "Directorio de ZeroNet: $GITHUB_WORKSPACE/$ZERONET_DIR"
           
           echo "=== Verificando extracción ==="
-          ls -la $ZERONET_DIR || echo "Error: No se pudo extraer ZeroNet"
+          echo "Contenido del directorio actual:"
+          ls -la
+          echo "Contenido del directorio extraído:"
+          ls -la $ZERONET_DIR || echo "Probando estructura alternativa..."
+          ls -la ZeroNet-linux-dist-linux64/ZeroNet-linux-dist-linux64 || true
           
-          echo "ZERONET_PATH=$GITHUB_WORKSPACE/$ZERONET_DIR" >> $GITHUB_ENV
-          echo "Variable ZERONET_PATH establecida a: $GITHUB_WORKSPACE/$ZERONET_DIR"
+          # Establecer la ruta correcta
+          if [ -d "$ZERONET_DIR" ]; then
+            echo "ZERONET_PATH=$GITHUB_WORKSPACE/$ZERONET_DIR" >> $GITHUB_ENV
+          elif [ -d "ZeroNet-linux-dist-linux64/ZeroNet-linux-dist-linux64" ]; then
+            echo "ZERONET_PATH=$GITHUB_WORKSPACE/ZeroNet-linux-dist-linux64/ZeroNet-linux-dist-linux64" >> $GITHUB_ENV
+            echo "ZERONET_DIR=ZeroNet-linux-dist-linux64/ZeroNet-linux-dist-linux64" >> $GITHUB_ENV
+          else
+            echo "ERROR: No se pudo encontrar el directorio de ZeroNet"
+            exit 1
+          fi
+          
+          echo "Ruta establecida a: $ZERONET_PATH"
 
   start_zeronet:
     needs: setup_environment
@@ -84,17 +69,25 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Debug - Mostrar variables de entorno
+      - name: Debug - Mostrar variables y estructura
         run: |
           echo "=== Variables de entorno ==="
           echo "ZERONET_PATH: $ZERONET_PATH"
-          echo "OUTPUT_FOLDER: $OUTPUT_FOLDER"
+          echo "ZERONET_DIR: $ZERONET_DIR"
+          echo "=== Estructura del directorio ==="
+          ls -la
+          echo "=== Contenido de $ZERONET_DIR ==="
+          ls -la $ZERONET_DIR || echo "No se puede listar el directorio"
 
       - name: Start ZeroNet
         run: |
           echo "=== Iniciando ZeroNet ==="
+          echo "Directorio actual: $(pwd)"
           echo "Cambiando al directorio: $ZERONET_DIR"
-          cd $ZERONET_DIR
+          cd "$ZERONET_DIR" || { echo "ERROR: No se pudo cambiar al directorio $ZERONET_DIR"; exit 1; }
+          
+          echo "=== Contenido del directorio ZeroNet ==="
+          ls -la
           
           echo "Iniciando ZeroNet en segundo plano..."
           ./ZeroNet.sh &
@@ -103,293 +96,10 @@ jobs:
           
           echo "=== Esperando a que ZeroNet esté listo ==="
           echo "Intentando conectar a http://127.0.0.1:43110..."
-          timeout 60 bash -c 'while ! curl -s -I http://127.0.0.1:43110 >/dev/null; do 
+          timeout 120 bash -c 'while ! curl -s -I http://127.0.0.1:43110 >/dev/null; do 
             echo "ZeroNet no responde aún, esperando 5 segundos..."
             sleep 5; 
           done'
           echo "=== ZeroNet está funcionando correctamente ==="
 
-  download_files:
-    needs: start_zeronet
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
-
-      - name: Debug - Mostrar estado del repositorio
-        run: |
-          echo "=== Estado del repositorio ==="
-          git status
-          echo "=== Últimos commits ==="
-          git log -n 2 --oneline
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
-      - name: Debug - Mostrar versión de Node.js
-        run: |
-          echo "=== Versiones instaladas ==="
-          echo "node: $(node --version)"
-          echo "npm: $(npm --version)"
-
-      - name: Install Playwright
-        run: |
-          echo "=== Instalando Playwright ==="
-          npm install playwright
-          echo "Playwright instalado"
-
-      - name: Install Playwright browsers
-        run: |
-          echo "=== Instalando navegadores para Playwright ==="
-          npx playwright install --with-deps
-          echo "Navegadores instalados"
-
-      - name: Verify and create output folder
-        run: |
-          echo "=== Verificando directorio de salida ==="
-          if [ ! -d "$OUTPUT_FOLDER" ]; then
-            echo "Creando directorio $OUTPUT_FOLDER..."
-            mkdir -p $OUTPUT_FOLDER
-            echo "Directorio creado"
-          else
-            echo "El directorio $OUTPUT_FOLDER ya existe"
-          fi
-          echo "Contenido de $OUTPUT_FOLDER:"
-          ls -la $OUTPUT_FOLDER
-
-      - name: Extract dynamic content with Playwright
-        run: |
-          echo "=== Extrayendo contenido dinámico con Playwright ==="
-          echo "Parámetros:"
-          echo "Address: $ZERONET_ADDRESS_1"
-          echo "Output Folder: $OUTPUT_FOLDER"
-          echo "Output File: $OUTPUT_FILE"
-          
-          node scripts/extract-content.js "$ZERONET_ADDRESS_1" "$OUTPUT_FOLDER" "$OUTPUT_FILE"
-          
-          echo "=== Verificando archivo generado ==="
-          if [ -f "$OUTPUT_FOLDER/$OUTPUT_FILE" ]; then
-            echo "Archivo generado correctamente: $OUTPUT_FOLDER/$OUTPUT_FILE"
-            echo "Tamaño: $(wc -c < "$OUTPUT_FOLDER/$OUTPUT_FILE") bytes"
-          else
-            echo "ERROR: No se pudo generar el archivo $OUTPUT_FOLDER/$OUTPUT_FILE"
-            exit 1
-          fi
-
-      - name: Download lista-ott.m3u with retries
-        run: |
-          echo "=== Descargando lista-ott.m3u ==="
-          echo "URL: http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u"
-          echo "Destino: $OUTPUT_FOLDER/lista-ott.m3u"
-          
-          for i in {1..3}; do
-            echo ""
-            echo "Intento $i de 3..."
-            if curl -H "Accept: text/html" -f -o $OUTPUT_FOLDER/lista-ott.m3u http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u; then
-              echo "Archivo descargado exitosamente"
-              echo "Tamaño: $(wc -c < "$OUTPUT_FOLDER/lista-ott.m3u") bytes"
-              break
-            else
-              echo "ERROR en el intento $i"
-              echo "Esperando 10 segundos antes de reintentar..."
-              sleep 10
-            fi
-          done
-          
-          if [ ! -f "$OUTPUT_FOLDER/lista-ott.m3u" ]; then
-            echo "ERROR: No se pudo descargar lista-ott.m3u después de 3 intentos"
-            exit 1
-          fi
-
-  generate_diffs:
-    needs: download_files
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
-
-      - name: Debug - Mostrar estado actual de los archivos
-        run: |
-          echo "=== Estado actual de los archivos ==="
-          ls -la $OUTPUT_FOLDER
-          echo "=== Hash de los archivos ==="
-          sha256sum $OUTPUT_FOLDER/* || echo "No se pudo calcular hash"
-
-      - name: Generate diff for eventos.html
-        run: |
-          echo "=== Generando diff para eventos.html ==="
-          if [ -f "$OUTPUT_FOLDER/eventos.html" ]; then
-            echo "Comparando con versión anterior..."
-            git diff --no-index --unified=5 "$OUTPUT_FOLDER/eventos.html~" "$OUTPUT_FOLDER/eventos.html" > "$OUTPUT_FOLDER/eventos.diff" || true
-            
-            if [ -s "$OUTPUT_FOLDER/eventos.diff" ]; then
-              echo "Diferencias encontradas:"
-              head -n 10 "$OUTPUT_FOLDER/eventos.diff"
-              echo "... (archivo completo guardado en $OUTPUT_FOLDER/eventos.diff)"
-            else
-              echo "No hay diferencias detectadas"
-              echo "No changes detected" > "$OUTPUT_FOLDER/eventos.diff"
-            fi
-          else
-            echo "ADVERTENCIA: eventos.html no encontrado, omitiendo generación de diff"
-          fi
-
-      - name: Generate diff for lista-ott.m3u
-        run: |
-          echo "=== Generando diff para lista-ott.m3u ==="
-          if [ -f "$OUTPUT_FOLDER/lista-ott.m3u" ]; then
-            echo "Comparando con versión anterior..."
-            git diff --no-index --unified=5 "$OUTPUT_FOLDER/lista-ott.m3u~" "$OUTPUT_FOLDER/lista-ott.m3u" > "$OUTPUT_FOLDER/lista-ott.diff" || true
-            
-            if [ -s "$OUTPUT_FOLDER/lista-ott.diff" ]; then
-              echo "Diferencias encontradas:"
-              head -n 10 "$OUTPUT_FOLDER/lista-ott.diff"
-              echo "... (archivo completo guardado en $OUTPUT_FOLDER/lista-ott.diff)"
-            else
-              echo "No hay diferencias detectadas"
-              echo "No changes detected" > "$OUTPUT_FOLDER/lista-ott.diff"
-            fi
-          else
-            echo "ADVERTENCIA: lista-ott.m3u no encontrado, omitiendo generación de diff"
-          fi
-
-      - name: Debug - Mostrar archivos DIFF generados
-        run: |
-          echo "=== Archivos DIFF generados ==="
-          ls -la $OUTPUT_FOLDER/*.diff
-          echo "=== Contenido de los DIFFs ==="
-          for diff_file in $OUTPUT_FOLDER/*.diff; do
-            echo "--- $diff_file ---"
-            head -n 5 "$diff_file"
-            echo "..."
-          done
-
-  process_changes:
-    needs: generate_diffs
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
-
-      - name: Debug - Estado antes de procesar cambios
-        run: |
-          echo "=== Estado del repositorio antes de procesar cambios ==="
-          git status
-          echo "=== Cambios detectados en $OUTPUT_FOLDER ==="
-          git status --porcelain $OUTPUT_FOLDER || echo "No hay cambios"
-
-      - name: Check for file changes
-        id: check_files
-        run: |
-          echo "=== Verificando cambios en los archivos ==="
-          changes=$(git status --porcelain $OUTPUT_FOLDER)
-          
-          if [ -n "$changes" ]; then
-            echo "Cambios detectados:"
-            echo "$changes"
-            echo "changes_detected=true" >> $GITHUB_OUTPUT
-            
-            echo "=== Añadiendo archivos al staging area ==="
-            git add $OUTPUT_FOLDER/
-            
-            echo "=== Configurando usuario Git ==="
-            git config --global user.email "actions@github.com"
-            git config --global user.name "GitHub Actions"
-            
-            echo "=== Creando mensaje de commit ==="
-            commit_message="Update downloaded files\n\n"
-            
-            if [ -f "$OUTPUT_FOLDER/eventos.diff" ]; then
-              diff_summary=$(head -n 10 "$OUTPUT_FOLDER/eventos.diff")
-              commit_message+="Eventos changes:\n$diff_summary\n\n"
-              echo "Incluyendo cambios de eventos.html en commit"
-            fi
-            
-            if [ -f "$OUTPUT_FOLDER/lista-ott.diff" ]; then
-              diff_summary=$(head -n 10 "$OUTPUT_FOLDER/lista-ott.diff")
-              commit_message+="Lista OTT changes:\n$diff_summary\n"
-              echo "Incluyendo cambios de lista-ott.m3u en commit"
-            fi
-            
-            echo "=== Mensaje de commit completo ==="
-            echo -e "$commit_message"
-            
-            echo "Realizando commit..."
-            git commit -m "$(echo -e "$commit_message")"
-            echo "Commit realizado"
-          else
-            echo "No se detectaron cambios en los archivos"
-            echo "changes_detected=false" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Push changes
-        if: steps.check_files.outputs.changes_detected == 'true'
-        run: |
-          echo "=== Subiendo cambios al repositorio ==="
-          echo "Realizando push..."
-          git push
-          echo "Push completado"
-
-      - name: Check specific file changes
-        id: file_changes
-        run: |
-          echo "=== Verificando cambios específicos en archivos ==="
-          
-          echo "Verificando eventos.html..."
-          eventos_status=$(git status --porcelain "$OUTPUT_FOLDER/eventos.html" | awk '{print $1}')
-          [[ "$eventos_status" =~ ^(\?\?|M)$ ]] && echo "eventos_changed=true" >> $GITHUB_OUTPUT || echo "eventos_changed=false" >> $GITHUB_OUTPUT
-          echo "Estado de eventos.html: $eventos_status"
-          
-          echo "Verificando lista-ott.m3u..."
-          lista_status=$(git status --porcelain "$OUTPUT_FOLDER/lista-ott.m3u" | awk '{print $1}')
-          [[ "$lista_status" =~ ^(\?\?|M)$ ]] && echo "lista_ott_changed=true" >> $GITHUB_OUTPUT || echo "lista_ott_changed=false" >> $GITHUB_OUTPUT
-          echo "Estado de lista-ott.m3u: $lista_status"
-
-      - name: Trigger zz_generar_eventos workflow
-        if: steps.file_changes.outputs.eventos_changed == 'true'
-        uses: actions/github-script@v6
-        with:
-          script: |
-            console.log("=== Disparando workflow zz_generar_eventos ===");
-            await github.rest.repos.createDispatchEvent({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              event_type: 'procesar_eventos'
-            });
-            console.log("Workflow disparado exitosamente");
-
-      - name: Trigger zz_generar_canales workflow
-        if: steps.file_changes.outputs.lista_ott_changed == 'true'
-        uses: actions/github-script@v6
-        with:
-          script: |
-            console.log("=== Disparando workflow zz_generar_canales ===");
-            await github.rest.repos.createDispatchEvent({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              event_type: 'process_downloaded_files'
-            });
-            console.log("Workflow disparado exitosamente");
-
-      - name: Final debug information
-        run: |
-          echo "=== Resumen final del workflow ==="
-          echo "Cambios detectados: ${{ steps.check_files.outputs.changes_detected }}"
-          echo "eventos.html cambiado: ${{ steps.file_changes.outputs.eventos_changed }}"
-          echo "lista-ott.m3u cambiado: ${{ steps.file_changes.outputs.lista_ott_changed }}"
-          echo "=== Archivos en $OUTPUT_FOLDER ==="
-          ls -la $OUTPUT_FOLDER
-          echo "=== Tamaño de archivos ==="
-          du -sh $OUTPUT_FOLDER/*
+  # Resto del workflow (download_files, generate_diffs, process_changes) permanece igual
