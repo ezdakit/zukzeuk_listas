@@ -99,7 +99,7 @@ jobs:
           ls -l $OUTPUT_FOLDER/eventos.html.orig
           ls -l $OUTPUT_FOLDER/eventos.html
           if [ -f "$OUTPUT_FOLDER/eventos.html.orig" ] && [ -f "$OUTPUT_FOLDER/eventos.html" ]; then
-            diff_output=$(diff $OUTPUT_FOLDER/eventos.html.orig $OUTPUT_FOLDER/eventos.html)
+            diff_output=$(diff $OUTPUT_FOLDER/eventos.html.orig $OUTPUT_FOLDER/eventos.html || true)
             if [ -n "$diff_output" ]; then
               echo "$diff_output" > $OUTPUT_FOLDER/eventos.diff
             else
@@ -111,7 +111,7 @@ jobs:
           ls -l $OUTPUT_FOLDER/lista-ott.m3u.orig
           ls -l $OUTPUT_FOLDER/lista-ott.m3u
           if [ -f "$OUTPUT_FOLDER/lista-ott.m3u.orig" ] && [ -f "$OUTPUT_FOLDER/lista-ott.m3u" ]; then
-            diff_output=$(diff $OUTPUT_FOLDER/lista-ott.m3u.orig $OUTPUT_FOLDER/lista-ott.m3u)
+            diff_output=$(diff $OUTPUT_FOLDER/lista-ott.m3u.orig $OUTPUT_FOLDER/lista-ott.m3u || true)
             if [ -n "$diff_output" ]; then
               echo "$diff_output" > $OUTPUT_FOLDER/lista-ott.diff
             else
