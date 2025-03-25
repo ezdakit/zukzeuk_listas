@@ -106,14 +106,13 @@ jobs:
               echo "No changes in eventos.html"
             fi
           fi
-          
           echo "Checking lista-ott.m3u files"
           ls -l $OUTPUT_FOLDER/lista-ott.m3u.orig
           ls -l $OUTPUT_FOLDER/lista-ott.m3u
           if [ -f "$OUTPUT_FOLDER/lista-ott.m3u.orig" ] && [ -f "$OUTPUT_FOLDER/lista-ott.m3u" ]; then
-            diff_output=$(diff $OUTPUT_FOLDER/lista-ott.m3u.orig $OUTPUT_FOLDER/lista-ott.m3u || true)
-            if [ -n "$diff_output" ]; then
-              echo "$diff_output" > $OUTPUT_FOLDER/lista-ott.diff
+            diff_output_2=$(diff $OUTPUT_FOLDER/lista-ott.m3u.orig $OUTPUT_FOLDER/lista-ott.m3u || true)
+            if [ -n "$diff_output_2" ]; then
+              echo "$diff_output_2" > $OUTPUT_FOLDER/lista-ott.diff
             else
               echo "No changes in lista-ott.m3u"
             fi
