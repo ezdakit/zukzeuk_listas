@@ -3,7 +3,7 @@ name: zz_generar_canales
 on:
   workflow_call:
   repository_dispatch:
-    types: [process_downloaded_files]  # Tipo de evento personalizado
+    types: [procesar_canales]  # Tipo de evento personalizado
 
 jobs:
   run-script:
