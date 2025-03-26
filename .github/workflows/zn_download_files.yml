@@ -114,20 +114,27 @@ jobs:
           ls -l $OUTPUT_FOLDER/eventos.html
           if [ -f "$OUTPUT_FOLDER/eventos.html.orig" ] && [ -f "$OUTPUT_FOLDER/eventos.html" ]; then
             echo "líneas eliminadas: " > $OUTPUT_FOLDER/eventos.diff
-            grep -Fxv -f $OUTPUT_FOLDER/eventos.html $OUTPUT_FOLDER/eventos.html.orig >> $OUTPUT_FOLDER/eventos.diff
+            grep -Fxv -f $OUTPUT_FOLDER/eventos.html $OUTPUT_FOLDER/eventos.html.orig >> $OUTPUT_FOLDER/eventos.diff || true
             echo -e "\n\nlíneas añadidas: " >> $OUTPUT_FOLDER/eventos.diff
-            grep -Fxv -f $OUTPUT_FOLDER/eventos.html.orig $OUTPUT_FOLDER/eventos.html >> $OUTPUT_FOLDER/eventos.diff
+            grep -Fxv -f $OUTPUT_FOLDER/eventos.html.orig $OUTPUT_FOLDER/eventos.html >> $OUTPUT_FOLDER/eventos.diff || true
+            if [ ! -s $OUTPUT_FOLDER/eventos.diff ]; then
+              echo "No changes in eventos.html" > $OUTPUT_FOLDER/eventos.diff
+            fi
           else
             echo "No changes in eventos.html"
           fi
+      
           echo "Checking lista-ott.m3u files"
           ls -l $OUTPUT_FOLDER/lista-ott.m3u.orig
           ls -l $OUTPUT_FOLDER/lista-ott.m3u
           if [ -f "$OUTPUT_FOLDER/lista-ott.m3u.orig" ] && [ -f "$OUTPUT_FOLDER/lista-ott.m3u" ]; then
             echo "líneas eliminadas: " > $OUTPUT_FOLDER/lista-ott.diff
-            grep -Fxv -f $OUTPUT_FOLDER/lista-ott.m3u $OUTPUT_FOLDER/lista-ott.m3u.orig >> $OUTPUT_FOLDER/lista-ott.diff
+            grep -Fxv -f $OUTPUT_FOLDER/lista-ott.m3u $OUTPUT_FOLDER/lista-ott.m3u.orig >> $OUTPUT_FOLDER/lista-ott.diff || true
             echo -e "\n\nlíneas añadidas: " >> $OUTPUT_FOLDER/lista-ott.diff
-            grep -Fxv -f $OUTPUT_FOLDER/lista-ott.m3u.orig $OUTPUT_FOLDER/lista-ott.m3u >> $OUTPUT_FOLDER/lista-ott.diff
+            grep -Fxv -f $OUTPUT_FOLDER/lista-ott.m3u.orig $OUTPUT_FOLDER/lista-ott.m3u >> $OUTPUT_FOLDER/lista-ott.diff || true
+            if [ ! -s $OUTPUT_FOLDER/lista-ott.diff ]; then
+              echo "No changes in lista-ott.m3u" > $OUTPUT_FOLDER/lista-ott.diff
+            fi
           else
             echo "No changes in lista-ott.m3u"
           fi
