@@ -3,16 +3,15 @@ const fs = require('fs');
 const path = require('path');
 
 // Obtener los parámetros
-const zeronetAddress = process.argv[2]; // Dirección de ZeroNet (13eNqJiWACUUuFM37xwUwmRiCuyMd6X2tS)
-const outputFolder = process.argv[3];   // Carpeta de destino
-const outputFile = process.argv[4];     // Nombre del archivo para eventos_2.html
+const zeronetAddress = process.argv[2];
+const outputFolder = process.argv[3];
+const outputFile = process.argv[4];
 
 if (!zeronetAddress || !outputFolder || !outputFile) {
   console.error('Error: Faltan parámetros. Uso: node extract-events.js <zeronet-address> <output-folder> <output-file>');
   process.exit(1);
 }
 
-// Ruta de la carpeta y el archivo
 const folderPath = path.join(__dirname, '..', outputFolder);
 const filePath = path.join(folderPath, outputFile);
 
@@ -21,115 +20,78 @@ console.log(`- Dirección ZeroNet: ${zeronetAddress}`);
 console.log(`- Carpeta de destino: ${folderPath}`);
 console.log(`- Archivo de salida: ${filePath}`);
 
-async function isZeroNetRunning() {
-  console.log('Verificando si ZeroNet está funcionando...');
-  try {
-    const response = await fetch('http://127.0.0.1:43110', {
-      headers: { 'Accept': 'text/html' },
-    });
-    if (response.ok) {
-      console.log('ZeroNet está funcionando correctamente.');
-      return true;
-    }
-    console.log('ZeroNet no está funcionando (respuesta no OK).');
-    return false;
-  } catch (error) {
-    console.error('Error al verificar ZeroNet:', error.message);
-    return false;
-  }
-}
-
-async function loadPageWithRetries(page, url, retries = 3, timeout = 60000) {
-  console.log(`Cargando página: ${url}`);
-  for (let i = 0; i < retries; i++) {
-    try {
-      console.log(`Intento ${i + 1} de ${retries}`);
-      await page.goto(url, { 
-        waitUntil: 'networkidle', // Más estricto que 'domcontentloaded'
-        timeout 
-      });
-      console.log('Página cargada correctamente.');
-      return true;
-    } catch (error) {
-      console.warn(`Intento ${i + 1} fallido: ${error.message}`);
-      if (i < retries - 1) {
-        console.log('Reintentando en 5 segundos...');
-        await new Promise(resolve => setTimeout(resolve, 5000));
-      }
-    }
-  }
-  throw new Error(`No se pudo cargar la página después de ${retries} intentos.`);
-}
-
 (async () => {
   console.log('Iniciando el script...');
-
-  if (!(await isZeroNetRunning())) {
-    console.error('Error: ZeroNet no está funcionando. Saliendo...');
-    process.exit(1);
-  }
-
-  console.log('Lanzando el navegador Chromium...');
   const browser = await chromium.launch();
   const page = await browser.newPage();
-  console.log('Navegador lanzado correctamente.');
-
-  const zeronetUrl = `http://127.0.0.1:43110/${zeronetAddress}/`;
-  console.log(`Extrayendo contenido de: ${zeronetUrl}`);
-
+  
   try {
-    await page.setExtraHTTPHeaders({ 'Accept': 'text/html' });
+    const zeronetUrl = `http://127.0.0.1:43110/${zeronetAddress}/`;
+    console.log(`Extrayendo contenido de: ${zeronetUrl}`);
 
-    // Cargar la página con reintentos
-    await loadPageWithRetries(page, zeronetUrl);
-
-    // Esperar directamente a que la tabla esté presente
-    console.log('Esperando a que la tabla "events-table" se cargue...');
-    await page.waitForSelector('#events-table', { 
-      timeout: 30000,
-      state: 'attached'
+    // Configuración mejorada para esperar a la carga
+    await page.goto(zeronetUrl, {
+      waitUntil: 'networkidle',
+      timeout: 60000
     });
 
-    // Verificar que la tabla tenga contenido (filas)
-    console.log('Verificando que la tabla tenga datos...');
-    await page.waitForFunction(() => {
-      const table = document.querySelector('#events-table tbody');
-      return table && table.querySelectorAll('tr').length > 0;
-    }, { timeout: 20000 });
+    console.log('Página cargada, buscando elementos...');
 
-    console.log('Tabla "events-table" cargada con datos.');
+    // Estrategia de espera mejorada
+    try {
+      // Primero esperamos el contenedor principal
+      await page.waitForSelector('.container', { timeout: 30000 });
+      console.log('Contenedor principal encontrado');
 
-    // Opcional: Esperar a que los eventos próximos estén visibles
-    await page.waitForSelector('.status.pronto', { timeout: 10000 });
+      // Luego esperamos la tabla o mostramos contenido disponible
+      try {
+        await page.waitForSelector('#events-table', { timeout: 30000 });
+        console.log('Tabla de eventos encontrada');
+      } catch (e) {
+        console.warn('No se encontró la tabla #events-table, continuando con lo disponible');
+      }
 
-    // Extraer solo la sección relevante (opcional)
-    const tableHtml = await page.$eval('.table-container', container => {
-      // Puedes personalizar esto para extraer solo lo que necesites
-      return container.outerHTML;
-    });
+      // Esperamos a que haya algún contenido en el cuerpo
+      await page.waitForFunction(() => {
+        const body = document.querySelector('body');
+        return body && body.innerText.trim().length > 100;
+      }, { timeout: 30000 });
 
-    // O extraer toda la página si lo prefieres
-    const fullHtml = await page.content();
+      // Tomamos captura de pantalla para diagnóstico (opcional)
+      await page.screenshot({ path: path.join(folderPath, 'debug.png') });
+      console.log('Captura de pantalla guardada para diagnóstico');
 
-    // Crear la carpeta si no existe
-    if (!fs.existsSync(folderPath)) {
-      console.log(`Creando carpeta: ${folderPath}`);
-      fs.mkdirSync(folderPath, { recursive: true });
+      // Extraemos el HTML completo como fallback
+      const content = await page.content();
+      
+      // Crear la carpeta si no existe
+      if (!fs.existsSync(folderPath)) {
+        fs.mkdirSync(folderPath, { recursive: true });
+      }
+
+      // Guardar el contenido
+      fs.writeFileSync(filePath, content);
+      console.log(`Contenido guardado en: ${filePath}`);
+
+      // Verificar si la tabla está presente en el contenido guardado
+      if (content.includes('events-table')) {
+        console.log('La tabla de eventos está presente en el archivo guardado');
+      } else {
+        console.warn('Advertencia: No se detectó la tabla de eventos en el contenido guardado');
+        console.warn('El contenido contiene:', content.substring(0, 500) + '...');
+      }
+
+    } catch (error) {
+      console.error('Error durante la extracción:', error);
+      // Guardar el contenido de todos modos para diagnóstico
+      const fallbackContent = await page.content();
+      fs.writeFileSync(filePath, fallbackContent);
+      console.log('Se guardó contenido de fallback para diagnóstico');
+      throw error;
     }
 
-    // Guardar el contenido (elige una de las opciones)
-    console.log(`Guardando contenido en: ${filePath}`);
-    fs.writeFileSync(filePath, fullHtml); // o tableHtml si elegiste extraer solo la tabla
-    console.log(`Archivo guardado correctamente: ${filePath}`);
-
-  } catch (error) {
-    console.error(`Error al extraer el contenido: ${error.message}`);
-    process.exit(1);
   } finally {
-    console.log('Cerrando el navegador...');
     await browser.close();
-    console.log('Navegador cerrado correctamente.');
+    console.log('Navegador cerrado');
   }
-
-  console.log('Script completado con éxito.');
 })();
