@@ -22,46 +22,54 @@ console.log(`- Archivo de salida: ${filePath}`);
 
 (async () => {
   console.log('Iniciando el script...');
-  const browser = await chromium.launch();
+  const browser = await chromium.launch({ headless: true });
   const page = await browser.newPage();
   
   try {
     const zeronetUrl = `http://127.0.0.1:43110/${zeronetAddress}/`;
     console.log(`Extrayendo contenido de: ${zeronetUrl}`);
 
-    // Configuración mejorada para esperar a la carga
+    // Configuración con tiempos de espera extendidos
     await page.goto(zeronetUrl, {
-      waitUntil: 'networkidle',
-      timeout: 60000
+      waitUntil: 'domcontentloaded',
+      timeout: 120000 // 2 minutos para cargar la página
     });
 
-    console.log('Página cargada, buscando elementos...');
+    console.log('Página cargada, esperando contenido...');
 
-    // Estrategia de espera mejorada
+    // Estrategia de espera flexible
     try {
-      // Primero esperamos el contenedor principal
-      await page.waitForSelector('.container', { timeout: 30000 });
-      console.log('Contenedor principal encontrado');
+      // Esperar a que haya algún contenido visible en el body
+      await page.waitForFunction(() => {
+        const bodyText = document.body.innerText;
+        return bodyText && bodyText.trim().length > 100;
+      }, { timeout: 60000 });
 
-      // Luego esperamos la tabla o mostramos contenido disponible
-      try {
-        await page.waitForSelector('#events-table', { timeout: 30000 });
+      console.log('Contenido detectado en la página');
+
+      // Tomar captura de pantalla para diagnóstico
+      await page.screenshot({ path: path.join(folderPath, 'debug.png') });
+      console.log('Captura de pantalla guardada en debug.png');
+
+      // Verificar si la tabla de eventos existe (pero no fallar si no)
+      const tableExists = await page.evaluate(() => {
+        return !!document.querySelector('#events-table');
+      });
+
+      if (tableExists) {
         console.log('Tabla de eventos encontrada');
-      } catch (e) {
-        console.warn('No se encontró la tabla #events-table, continuando con lo disponible');
+      } else {
+        console.warn('Advertencia: No se encontró la tabla #events-table');
+        // Listar todos los IDs y clases presentes para diagnóstico
+        const pageStructure = await page.evaluate(() => {
+          const ids = Array.from(document.querySelectorAll('[id]')).map(el => el.id);
+          const classes = Array.from(document.querySelectorAll('[class]')).flatMap(el => el.className.split(' '));
+          return { ids, classes };
+        });
+        console.log('Estructura de la página:', JSON.stringify(pageStructure, null, 2));
       }
 
-      // Esperamos a que haya algún contenido en el cuerpo
-      await page.waitForFunction(() => {
-        const body = document.querySelector('body');
-        return body && body.innerText.trim().length > 100;
-      }, { timeout: 30000 });
-
-      // Tomamos captura de pantalla para diagnóstico (opcional)
-      await page.screenshot({ path: path.join(folderPath, 'debug.png') });
-      console.log('Captura de pantalla guardada para diagnóstico');
-
-      // Extraemos el HTML completo como fallback
+      // Extraer el HTML completo
       const content = await page.content();
       
       // Crear la carpeta si no existe
@@ -73,23 +81,29 @@ console.log(`- Archivo de salida: ${filePath}`);
       fs.writeFileSync(filePath, content);
       console.log(`Contenido guardado en: ${filePath}`);
 
-      // Verificar si la tabla está presente en el contenido guardado
+      // Verificación final
       if (content.includes('events-table')) {
-        console.log('La tabla de eventos está presente en el archivo guardado');
+        console.log('Éxito: La tabla de eventos está en el contenido guardado');
       } else {
-        console.warn('Advertencia: No se detectó la tabla de eventos en el contenido guardado');
-        console.warn('El contenido contiene:', content.substring(0, 500) + '...');
+        console.warn('Advertencia: No se detectó la tabla en el HTML guardado');
+        console.warn('Primeras 500 caracteres del contenido:', content.substring(0, 500));
       }
 
     } catch (error) {
       console.error('Error durante la extracción:', error);
       // Guardar el contenido de todos modos para diagnóstico
       const fallbackContent = await page.content();
+      if (!fs.existsSync(folderPath)) {
+        fs.mkdirSync(folderPath, { recursive: true });
+      }
       fs.writeFileSync(filePath, fallbackContent);
       console.log('Se guardó contenido de fallback para diagnóstico');
-      throw error;
+      // No salir con error para permitir inspección del contenido
     }
 
+  } catch (error) {
+    console.error('Error fatal:', error);
+    process.exit(1);
   } finally {
     await browser.close();
     console.log('Navegador cerrado');
