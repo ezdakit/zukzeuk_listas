@@ -97,9 +97,11 @@ jobs:
         run: |
           echo "Removing existing diff files"
           if [ -f "$OUTPUT_FOLDER/eventos.diff" ]; then
-            rm $OUTPUT_FOLDER/eventos.diff
-          if [ -f "$OUTPUT_FOLDER/lista-ott.diff" ] then
-            rm $OUTPUT_FOLDER/lista-ott.diff
+            rm "$OUTPUT_FOLDER/eventos.diff"
+          fi
+          if [ -f "$OUTPUT_FOLDER/lista-ott.diff" ]; then
+            rm "$OUTPUT_FOLDER/lista-ott.diff"
+          fi
 
       - name: Generate diff files
         run: |
