@@ -11,8 +11,10 @@ jobs:
     env:
       ZERONET_ADDRESS_1: 18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie
       ZERONET_ADDRESS_2: 1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU
+      ZERONET_ADDRESS_3: 13eNqJiWACUUuFM37xwUwmRiCuyMd6X2tS
       OUTPUT_FOLDER: zn_downloads
       OUTPUT_FILE: eventos.html
+      OUTPUT_FILE_2: eventos_2.html
 
     steps:
       - name: Checkout code
@@ -70,15 +72,31 @@ jobs:
         run: |
           npx playwright install
 
+      - name: Check site ZERONET_ADDRESS_1 synchronization
+        run: |
+          echo "Checking site synchronization for $ZERONET_ADDRESS_1"
+          curl -H "Accept: text/html" -I http://127.0.0.1:43110/$ZERONET_ADDRESS_1/
+          echo "Site ZERONET_ADDRESS_1 synchronization checked"
+
       - name: Extract dynamic content with Playwright
         run: |
           node scripts/extract-content.js "$ZERONET_ADDRESS_1" "$OUTPUT_FOLDER" "$OUTPUT_FILE"
 
-      - name: Check site synchronization
+      - name: Check site ZERONET_ADDRESS_3 synchronization
+        run: |
+          echo "Checking site synchronization for $ZERONET_ADDRESS_3"
+          curl -H "Accept: text/html" -I http://127.0.0.1:43110/$ZERONET_ADDRESS_3/
+          echo "Site ZERONET_ADDRESS_3 synchronization checked"
+
+      - name: Extract dynamic content 2 with Playwright
+        run: |
+          node scripts/extract-content_2.js "$ZERONET_ADDRESS_3" "$OUTPUT_FOLDER" "$OUTPUT_FILE_2"
+
+      - name: Check site ZERONET_ADDRESS_2 synchronization
         run: |
           echo "Checking site synchronization for $ZERONET_ADDRESS_2"
           curl -H "Accept: text/html" -I http://127.0.0.1:43110/$ZERONET_ADDRESS_2/
-          echo "Site synchronization checked"
+          echo "Site ZERONET_ADDRESS_2 synchronization checked"
 
       - name: Download lista-ott.m3u
         run: |
@@ -109,21 +127,34 @@ jobs:
           ls -l $OUTPUT_FOLDER/eventos.html.orig
           ls -l $OUTPUT_FOLDER/eventos.html
           if [ -f "$OUTPUT_FOLDER/eventos.html.orig" ] && [ -f "$OUTPUT_FOLDER/eventos.html" ]; then
-            echo "líneas eliminadas: " > $OUTPUT_FOLDER/eventos.diff
-            grep -Fxv -f $OUTPUT_FOLDER/eventos.html $OUTPUT_FOLDER/eventos.html.orig >> $OUTPUT_FOLDER/eventos.diff
-            echo -e "\n\nlíneas añadidas: " >> $OUTPUT_FOLDER/eventos.diff
-            grep -Fxv -f $OUTPUT_FOLDER/eventos.html.orig $OUTPUT_FOLDER/eventos.html >> $OUTPUT_FOLDER/eventos.diff
+            deleted_lines=$(grep -Fxv -f $OUTPUT_FOLDER/eventos.html $OUTPUT_FOLDER/eventos.html.orig || true)
+            added_lines=$(grep -Fxv -f $OUTPUT_FOLDER/eventos.html.orig $OUTPUT_FOLDER/eventos.html || true)
+            if [ -n "$deleted_lines" ] || [ -n "$added_lines" ]; then
+              echo "líneas eliminadas: " > $OUTPUT_FOLDER/eventos.diff
+              echo "$deleted_lines" >> $OUTPUT_FOLDER/eventos.diff
+              echo -e "\n\nlíneas añadidas: " >> $OUTPUT_FOLDER/eventos.diff
+              echo "$added_lines" >> $OUTPUT_FOLDER/eventos.diff
+            else
+              echo "No changes in eventos.html"
+            fi
           else
             echo "No changes in eventos.html"
           fi
+      
           echo "Checking lista-ott.m3u files"
           ls -l $OUTPUT_FOLDER/lista-ott.m3u.orig
           ls -l $OUTPUT_FOLDER/lista-ott.m3u
           if [ -f "$OUTPUT_FOLDER/lista-ott.m3u.orig" ] && [ -f "$OUTPUT_FOLDER/lista-ott.m3u" ]; then
-            echo "líneas eliminadas: " > $OUTPUT_FOLDER/lista-ott.diff
-            grep -Fxv -f $OUTPUT_FOLDER/lista-ott.m3u $OUTPUT_FOLDER/lista-ott.m3u.orig >> $OUTPUT_FOLDER/lista-ott.diff
-            echo -e "\n\nlíneas añadidas: " >> $OUTPUT_FOLDER/lista-ott.diff
-            grep -Fxv -f $OUTPUT_FOLDER/lista-ott.m3u.orig $OUTPUT_FOLDER/lista-ott.m3u >> $OUTPUT_FOLDER/lista-ott.diff
+            deleted_lines_2=$(grep -Fxv -f $OUTPUT_FOLDER/lista-ott.m3u $OUTPUT_FOLDER/lista-ott.m3u.orig || true)
+            added_lines_2=$(grep -Fxv -f $OUTPUT_FOLDER/lista-ott.m3u.orig $OUTPUT_FOLDER/lista-ott.m3u || true)
+            if [ -n "$deleted_lines_2" ] || [ -n "$added_lines_2" ]; then
+              echo "líneas eliminadas: " > $OUTPUT_FOLDER/lista-ott.diff
+              echo "$deleted_lines_2" >> $OUTPUT_FOLDER/lista-ott.diff
+              echo -e "\n\nlíneas añadidas: " >> $OUTPUT_FOLDER/lista-ott.diff
+              echo "$added_lines_2" >> $OUTPUT_FOLDER/lista-ott.diff
+            else
+              echo "No changes in lista-ott.m3u"
+            fi
           else
             echo "No changes in lista-ott.m3u"
           fi
@@ -167,5 +198,5 @@ jobs:
               -H "Accept: application/vnd.github+json" \
               -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
               https://api.github.com/repos/${{ github.repository }}/dispatches \
-              -d '{"event_type":"process_downloaded_files"}'
+              -d '{"event_type":"procesar_canales"}'
           fi
