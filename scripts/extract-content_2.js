@@ -15,90 +15,94 @@ if (!zeronetAddress || !outputFolder || !outputFile) {
 const folderPath = path.join(__dirname, '..', outputFolder);
 const filePath = path.join(folderPath, outputFile);
 
-console.log('Parámetros recibidos:');
-console.log(`- Dirección ZeroNet: ${zeronetAddress}`);
-console.log(`- Carpeta de destino: ${folderPath}`);
-console.log(`- Archivo de salida: ${filePath}`);
-
 (async () => {
   console.log('Iniciando el script...');
   const browser = await chromium.launch({ headless: true });
-  const context = await browser.newContext();
-  const page = await context.newPage();
+  const page = await browser.newPage();
   
   try {
     const zeronetUrl = `http://127.0.0.1:43110/${zeronetAddress}/`;
     console.log(`Extrayendo contenido de: ${zeronetUrl}`);
 
-    // Configuración con tiempos de espera extendidos
-    await page.goto(zeronetUrl, {
-      waitUntil: 'domcontentloaded',
-      timeout: 120000 // 2 minutos para cargar la página
-    });
+    // 1. Cargar página principal
+    await page.goto(zeronetUrl, { waitUntil: 'domcontentloaded', timeout: 120000 });
 
-    console.log('Página principal cargada, esperando iframe...');
-
-    // Esperar a que el iframe esté cargado
+    // 2. Esperar iframe
     await page.waitForSelector('#inner-iframe', { timeout: 30000 });
-    console.log('Iframe encontrado');
-
-    // Obtener el frame del iframe
     const frameHandle = await page.$('#inner-iframe');
     const frame = await frameHandle.contentFrame();
-    
-    // Esperar a que el contenido del iframe esté listo
-    console.log('Esperando contenido dentro del iframe...');
-    await frame.waitForLoadState('networkidle', { timeout: 60000 });
 
-    // Tomar captura de pantalla del iframe para diagnóstico
-    await frame.screenshot({ path: path.join(folderPath, 'debug-iframe.png') });
-    console.log('Captura del iframe guardada');
+    // 3. Estrategia de espera mejorada para contenido del iframe
+    let attempts = 0;
+    const maxAttempts = 3;
+    let success = false;
 
-    // Esperar la tabla de eventos dentro del iframe
-    try {
-      await frame.waitForSelector('#events-table', { timeout: 30000 });
-      console.log('Tabla de eventos encontrada en el iframe');
-
-      // Extraer el HTML completo del iframe
-      const iframeContent = await frame.content();
+    while (attempts < maxAttempts && !success) {
+      attempts++;
+      console.log(`Intento ${attempts} de ${maxAttempts}`);
       
-      // Crear la carpeta si no existe
-      if (!fs.existsSync(folderPath)) {
-        fs.mkdirSync(folderPath, { recursive: true });
+      try {
+        // Opción 1: Esperar a que aparezca la tabla directamente
+        await frame.waitForSelector('#events-table', { timeout: 30000 });
+        success = true;
+      } catch (e) {
+        console.log('Tabla no encontrada, intentando alternativa...');
+        
+        // Opción 2: Verificar si hay algún contenido útil
+        const hasContent = await frame.evaluate(() => {
+          return document.body.innerText.length > 100;
+        });
+        
+        if (hasContent) {
+          console.log('Se encontró contenido alternativo en el iframe');
+          success = true;
+        } else {
+          // Opción 3: Recargar el iframe
+          await frame.evaluate(() => location.reload());
+          await new Promise(resolve => setTimeout(resolve, 5000));
+        }
       }
-
-      // Guardar el contenido
-      fs.writeFileSync(filePath, iframeContent);
-      console.log(`Contenido del iframe guardado en: ${filePath}`);
-
-    } catch (error) {
-      console.error('No se pudo encontrar la tabla en el iframe:', error);
-      
-      // Guardar el contenido del iframe de todos modos para diagnóstico
-      const fallbackContent = await frame.content();
-      fs.writeFileSync(filePath, fallbackContent);
-      console.log('Se guardó contenido de fallback del iframe');
-
-      // Mostrar estructura del iframe para diagnóstico
-      const iframeStructure = await frame.evaluate(() => {
-        const ids = Array.from(document.querySelectorAll('[id]')).map(el => el.id);
-        const classes = Array.from(document.querySelectorAll('[class]')).flatMap(el => el.className.split(' '));
-        return { ids, classes };
-      });
-      console.log('Estructura del iframe:', JSON.stringify(iframeStructure, null, 2));
     }
 
-  } catch (error) {
-    console.error('Error durante la extracción:', error);
+    if (!success) {
+      throw new Error('No se pudo cargar el contenido después de varios intentos');
+    }
+
+    // 4. Extraer contenido
+    const content = await frame.content();
     
-    // Guardar el contenido de la página principal para diagnóstico
-    const mainContent = await page.content();
+    // 5. Guardar resultados
     if (!fs.existsSync(folderPath)) {
       fs.mkdirSync(folderPath, { recursive: true });
     }
-    fs.writeFileSync(filePath, mainContent);
-    console.log('Se guardó contenido de la página principal para diagnóstico');
-    
+    fs.writeFileSync(filePath, content);
+    console.log(`Contenido guardado en: ${filePath}`);
+
+    // 6. Verificación final
+    if (content.includes('events-table')) {
+      console.log('Éxito: Tabla encontrada');
+    } else {
+      console.warn('Advertencia: La tabla no está en el contenido');
+      // Guardar diagnóstico extendido
+      const diagnostics = {
+        url: zeronetUrl,
+        timestamp: new Date().toISOString(),
+        contentSample: content.substring(0, 500),
+        fullPage: await page.content()
+      };
+      fs.writeFileSync(path.join(folderPath, 'diagnostics.json'), JSON.stringify(diagnostics, null, 2));
+    }
+
+  } catch (error) {
+    console.error('Error crítico:', error);
+    // Guardar toda la información disponible para diagnóstico
+    const errorData = {
+      error: error.toString(),
+      pageContent: await page?.content?.(),
+      timestamp: new Date().toISOString()
+    };
+    fs.writeFileSync(path.join(folderPath, 'error.json'), JSON.stringify(errorData, null, 2));
+    process.exit(1);
   } finally {
     await browser.close();
     console.log('Navegador cerrado');
