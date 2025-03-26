@@ -74,15 +74,21 @@ jobs:
         run: |
           npx playwright install
 
+      - name: Check site ZERONET_ADDRESS_1 synchronization
+        run: |
+          echo "Checking site synchronization for $ZERONET_ADDRESS_1"
+          curl -H "Accept: text/html" -I http://127.0.0.1:43110/$ZERONET_ADDRESS_1/
+          echo "Site ZERONET_ADDRESS_1 synchronization checked"
+
       - name: Extract dynamic content with Playwright
         run: |
           node scripts/extract-content.js "$ZERONET_ADDRESS_1" "$OUTPUT_FOLDER" "$OUTPUT_FILE"
 
-      - name: Check site synchronization
+      - name: Check site ZERONET_ADDRESS_2 synchronization
         run: |
           echo "Checking site synchronization for $ZERONET_ADDRESS_2"
           curl -H "Accept: text/html" -I http://127.0.0.1:43110/$ZERONET_ADDRESS_2/
-          echo "Site synchronization checked"
+          echo "Site ZERONET_ADDRESS_2 synchronization checked"
 
       - name: Download lista-ott.m3u
         run: |
@@ -184,5 +190,5 @@ jobs:
               -H "Accept: application/vnd.github+json" \
               -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
               https://api.github.com/repos/${{ github.repository }}/dispatches \
-              -d '{"event_type":"process_downloaded_files"}'
+              -d '{"event_type":"procesar_canales"}'
           fi
