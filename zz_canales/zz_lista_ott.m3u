@@ -31,6 +31,8 @@ http://127.0.0.1:6878/ace/getstream?id=5c7406bfaf65cc32d3f52b1430b53a37bc4c59bc
 http://127.0.0.1:6878/ace/getstream?id=5e5b670d44e4f23a49ebe1770458066ac2cf58e3
 #EXTINF:-1 tvg-id="DAZN 4 HD" group-title="DAZN", DAZN 4 FHD
 http://127.0.0.1:6878/ace/getstream?id=b4b48a6028aa05ca32f583d3019dc2e3e6bd9988
+#EXTINF:-1 tvg-id="DAZN 4 HD" group-title="DAZN", DAZN 4 HD
+http://127.0.0.1:6878/ace/getstream?id=7e90956539f4e1318a63f3960e4f75c7c7c5a3b8
 #EXTINF:-1 tvg-id="DAZN LaLiga HD" group-title="LALIGA", DAZN LaLiga FHD
 http://127.0.0.1:6878/ace/getstream?id=110d441ddc9713a7452588770d2bc85504672f47
 #EXTINF:-1 tvg-id="DAZN LaLiga HD" group-title="LALIGA", DAZN LaLiga FHD
@@ -307,10 +309,6 @@ http://127.0.0.1:6878/ace/getstream?id=44a1d2952357564004a1afa2e3e0d262a45c5742
 http://127.0.0.1:6878/ace/getstream?id=e55dfcc2111568668e2df397e5de440103c991fb
 #EXTINF:-1 tvg-id="" group-title="VARIOS", MGPTV | CAMARA DE A BORDO 4
 http://127.0.0.1:6878/ace/getstream?id=8a0957fa263a3dbb986e75fdcf5fbf6ef111b742
-#EXTINF:-1 tvg-id="" group-title="VARIOS", MOTORS TV HD
-http://127.0.0.1:6878/ace/getstream?id=442aeb6643b8836f9d00361c9e48eeb0841ddf98
-#EXTINF:-1 tvg-id="" group-title="VARIOS", MOTORVISION TV
-http://127.0.0.1:6878/ace/getstream?id=9c75e6ed0671eec6670cb2eabcc7d78267c7f404
 #EXTINF:-1 tvg-id="M+ Clsicos HD" group-title="VARIOS", MOVISTAR ACCION FHD
 http://127.0.0.1:6878/ace/getstream?id=de88ed8716612d9c548df63a168fbdd96843dd20
 #EXTINF:-1 tvg-id="M+ Clsicos HD" group-title="VARIOS", MOVISTAR CLASICOS FHD
@@ -333,12 +331,8 @@ http://127.0.0.1:6878/ace/getstream?id=c8aac540621d481965791c4442a7e868bcca10ca
 http://127.0.0.1:6878/ace/getstream?id=ff6c8b62faf8b5130bea01fe2aa14e7bed8b3950
 #EXTINF:-1 tvg-id="" group-title="VARIOS", ONBOARD FERNANDO ALONSO
 http://127.0.0.1:6878/ace/getstream?id=adab1ca1447108f5dcee688d709bdd372a002c4b
-#EXTINF:-1 tvg-id="UK | Premier Sports 1" group-title="VARIOS", PREMIER SPORTS 1
-http://127.0.0.1:6878/ace/getstream?id=75a56863b6fe0407ad4305b4d7ee5643c3923565
 #EXTINF:-1 tvg-id="UK | Premier Sports 2" group-title="VARIOS", PREMIER SPORTS 2
 http://127.0.0.1:6878/ace/getstream?id=4903ca695edb64bc72ae29eb85a5333ba0139537
-#EXTINF:-1 tvg-id="" group-title="VARIOS", RETROVISION MOTOR
-http://127.0.0.1:6878/ace/getstream?id=b8b8c4470d3d27c75302cf49ab6c4b52a660bff3
 #EXTINF:-1 tvg-id="UK | Sky Sport Arena" group-title="VARIOS", SKY SPORTS ARENA
 http://127.0.0.1:6878/ace/getstream?id=d317a003e8047da2c36a2a2bb2289578c9a3b79c
 #EXTINF:-1 tvg-id="UK | Sky Sport Cricket" group-title="VARIOS", SKY SPORTS CRICKET
@@ -347,8 +341,6 @@ http://127.0.0.1:6878/ace/getstream?id=6d95e4b0893e155cc674b84e0763150c445d3ddd
 http://127.0.0.1:6878/ace/getstream?id=8dbe2d515e9131fa311353537736f8c94be9b26d
 #EXTINF:-1 tvg-id="UK | Sky Sport Main Event" group-title="VARIOS", SKY SPORTS MAIN EVENT
 http://127.0.0.1:6878/ace/getstream?id=eab7aeef0218ce8b0752e596e4792b69eda4df5e
-#EXTINF:-1 tvg-id="" group-title="VARIOS", SUPERTENNIS HD
-http://127.0.0.1:6878/ace/getstream?id=b58dbf92765976b308695f62dea94b00b40730ee
 #EXTINF:-1 tvg-id="Telecinco HD" group-title="VARIOS", TELECINCO FHD
 http://127.0.0.1:6878/ace/getstream?id=154c6f876ddf1d9c87880eae0d0442335ec156bf
 #EXTINF:-1 tvg-id="Teledeporte" group-title="VARIOS", TELEDEPORTE FHD
