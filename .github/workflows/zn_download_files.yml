@@ -113,12 +113,15 @@ jobs:
           ls -l $OUTPUT_FOLDER/eventos.html.orig
           ls -l $OUTPUT_FOLDER/eventos.html
           if [ -f "$OUTPUT_FOLDER/eventos.html.orig" ] && [ -f "$OUTPUT_FOLDER/eventos.html" ]; then
-            echo "líneas eliminadas: " > $OUTPUT_FOLDER/eventos.diff
-            grep -Fxv -f $OUTPUT_FOLDER/eventos.html $OUTPUT_FOLDER/eventos.html.orig >> $OUTPUT_FOLDER/eventos.diff || true
-            echo -e "\n\nlíneas añadidas: " >> $OUTPUT_FOLDER/eventos.diff
-            grep -Fxv -f $OUTPUT_FOLDER/eventos.html.orig $OUTPUT_FOLDER/eventos.html >> $OUTPUT_FOLDER/eventos.diff || true
-            if [ ! -s $OUTPUT_FOLDER/eventos.diff ]; then
-              echo "No changes in eventos.html" > $OUTPUT_FOLDER/eventos.diff
+            deleted_lines=$(grep -Fxv -f $OUTPUT_FOLDER/eventos.html $OUTPUT_FOLDER/eventos.html.orig || true)
+            added_lines=$(grep -Fxv -f $OUTPUT_FOLDER/eventos.html.orig $OUTPUT_FOLDER/eventos.html || true)
+            if [ -n "$deleted_lines" ] || [ -n "$added_lines" ]; then
+              echo "líneas eliminadas: " > $OUTPUT_FOLDER/eventos.diff
+              echo "$deleted_lines" >> $OUTPUT_FOLDER/eventos.diff
+              echo -e "\n\nlíneas añadidas: " >> $OUTPUT_FOLDER/eventos.diff
+              echo "$added_lines" >> $OUTPUT_FOLDER/eventos.diff
+            else
+              echo "No changes in eventos.html"
             fi
           else
             echo "No changes in eventos.html"
@@ -128,12 +131,15 @@ jobs:
           ls -l $OUTPUT_FOLDER/lista-ott.m3u.orig
           ls -l $OUTPUT_FOLDER/lista-ott.m3u
           if [ -f "$OUTPUT_FOLDER/lista-ott.m3u.orig" ] && [ -f "$OUTPUT_FOLDER/lista-ott.m3u" ]; then
-            echo "líneas eliminadas: " > $OUTPUT_FOLDER/lista-ott.diff
-            grep -Fxv -f $OUTPUT_FOLDER/lista-ott.m3u $OUTPUT_FOLDER/lista-ott.m3u.orig >> $OUTPUT_FOLDER/lista-ott.diff || true
-            echo -e "\n\nlíneas añadidas: " >> $OUTPUT_FOLDER/lista-ott.diff
-            grep -Fxv -f $OUTPUT_FOLDER/lista-ott.m3u.orig $OUTPUT_FOLDER/lista-ott.m3u >> $OUTPUT_FOLDER/lista-ott.diff || true
-            if [ ! -s $OUTPUT_FOLDER/lista-ott.diff ]; then
-              echo "No changes in lista-ott.m3u" > $OUTPUT_FOLDER/lista-ott.diff
+            deleted_lines_2=$(grep -Fxv -f $OUTPUT_FOLDER/lista-ott.m3u $OUTPUT_FOLDER/lista-ott.m3u.orig || true)
+            added_lines_2=$(grep -Fxv -f $OUTPUT_FOLDER/lista-ott.m3u.orig $OUTPUT_FOLDER/lista-ott.m3u || true)
+            if [ -n "$deleted_lines_2" ] || [ -n "$added_lines_2" ]; then
+              echo "líneas eliminadas: " > $OUTPUT_FOLDER/lista-ott.diff
+              echo "$deleted_lines_2" >> $OUTPUT_FOLDER/lista-ott.diff
+              echo -e "\n\nlíneas añadidas: " >> $OUTPUT_FOLDER/lista-ott.diff
+              echo "$added_lines_2" >> $OUTPUT_FOLDER/lista-ott.diff
+            else
+              echo "No changes in lista-ott.m3u"
             fi
           else
             echo "No changes in lista-ott.m3u"
