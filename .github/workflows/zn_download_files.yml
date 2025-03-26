@@ -107,41 +107,29 @@ jobs:
             rm "$OUTPUT_FOLDER/lista-ott.diff"
           fi
 
-      - name: Generate diff files
+      - name: Generate custom diff files
         run: |
           echo "Checking eventos.html files"
           ls -l $OUTPUT_FOLDER/eventos.html.orig
           ls -l $OUTPUT_FOLDER/eventos.html
           if [ -f "$OUTPUT_FOLDER/eventos.html.orig" ] && [ -f "$OUTPUT_FOLDER/eventos.html" ]; then
-            diff_output=$(diff $OUTPUT_FOLDER/eventos.html.orig $OUTPUT_FOLDER/eventos.html || true)
-            if [ -n "$diff_output" ]; then
-              echo "$diff_output" > $OUTPUT_FOLDER/eventos.diff
-            else
-              echo "No changes in eventos.html"
-            fi
+            echo "líneas eliminadas: " > $OUTPUT_FOLDER/eventos.diff
+            grep -Fxv -f $OUTPUT_FOLDER/eventos.html $OUTPUT_FOLDER/eventos.html.orig >> $OUTPUT_FOLDER/eventos.diff
+            echo -e "\n\nlíneas añadidas: " >> $OUTPUT_FOLDER/eventos.diff
+            grep -Fxv -f $OUTPUT_FOLDER/eventos.html.orig $OUTPUT_FOLDER/eventos.html >> $OUTPUT_FOLDER/eventos.diff
+          else
+            echo "No changes in eventos.html"
           fi
           echo "Checking lista-ott.m3u files"
           ls -l $OUTPUT_FOLDER/lista-ott.m3u.orig
           ls -l $OUTPUT_FOLDER/lista-ott.m3u
           if [ -f "$OUTPUT_FOLDER/lista-ott.m3u.orig" ] && [ -f "$OUTPUT_FOLDER/lista-ott.m3u" ]; then
-            diff_output_2=$(diff $OUTPUT_FOLDER/lista-ott.m3u.orig $OUTPUT_FOLDER/lista-ott.m3u || true)
-            if [ -n "$diff_output_2" ]; then
-              echo "$diff_output_2" > $OUTPUT_FOLDER/lista-ott.diff
-            else
-              echo "No changes in lista-ott.m3u"
-            fi
-          fi
-
-      - name: Check for file changes
-        id: check_changes
-        run: |
-          cambios=$(git status --porcelain $OUTPUT_FOLDER)
-          if [ -n "$cambios" ]; then
-            echo "changes_detected=true" >> $GITHUB_ENV
-            echo "Files changed:"
-            echo "$cambios"
+            echo "líneas eliminadas: " > $OUTPUT_FOLDER/lista-ott.diff
+            grep -Fxv -f $OUTPUT_FOLDER/lista-ott.m3u $OUTPUT_FOLDER/lista-ott.m3u.orig >> $OUTPUT_FOLDER/lista-ott.diff
+            echo -e "\n\nlíneas añadidas: " >> $OUTPUT_FOLDER/lista-ott.diff
+            grep -Fxv -f $OUTPUT_FOLDER/lista-ott.m3u.orig $OUTPUT_FOLDER/lista-ott.m3u >> $OUTPUT_FOLDER/lista-ott.diff
           else
-            echo "changes_detected=false" >> $GITHUB_ENV
+            echo "No changes in lista-ott.m3u"
           fi
 
       - name: Add and commit changes
