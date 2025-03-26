@@ -132,6 +132,18 @@ jobs:
             echo "No changes in lista-ott.m3u"
           fi
 
+      - name: Check for file changes
+        id: check_changes
+        run: |
+          cambios=$(git status --porcelain $OUTPUT_FOLDER)
+          if [ -n "$cambios" ]; then
+            echo "changes_detected=true" >> $GITHUB_ENV
+            echo "Files changed:"
+            echo "$cambios"
+          else
+            echo "changes_detected=false" >> $GITHUB_ENV
+          fi
+
       - name: Add and commit changes
         if: env.changes_detected == 'true'
         run: |
