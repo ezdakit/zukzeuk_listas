@@ -27,6 +27,8 @@ acestream://b0eabe0fdd02fdd165896236765a9b753a2ff516
 acestream://c34a6552886fad4627ea36947fdec3e46e4e3b08
 #EXTINF:-1 tvg-id="DAZN 3 HD" group-title="DAZN", DAZN 3 FHD
 acestream://5c7406bfaf65cc32d3f52b1430b53a37bc4c59bc
+#EXTINF:-1 tvg-id="DAZN 3 HD" group-title="DAZN", DAZN 3 HD
+acestream://d1d9ec2361a6ac8edc0b2841866383768cc28df9
 #EXTINF:-1 tvg-id="DAZN 4 HD" group-title="DAZN", DAZN 4 FHD
 acestream://5e5b670d44e4f23a49ebe1770458066ac2cf58e3
 #EXTINF:-1 tvg-id="DAZN 4 HD" group-title="DAZN", DAZN 4 FHD
@@ -63,6 +65,8 @@ acestream://d3de78aebe544611a2347f54d5796bd87f16c92d
 acestream://6d05b31e5e8fdae312fbd57897363a7b10ddb163
 #EXTINF:-1 tvg-id="M+ LaLiga TV HD" group-title="LALIGA", M+ LaLiga TV HD
 acestream://1bc437bce57b4b0450f6d1f8d818b7e97000745e
+#EXTINF:-1 tvg-id="M+ LaLiga TV HD" group-title="LALIGA", M+ LaLiga TV HD
+acestream://cc9b7f5fe416069a2110da0909b0f915043c468b
 #EXTINF:-1 tvg-id="M+ LaLiga TV 2 HD" group-title="LALIGA", M+ LaLiga TV 2 FHD
 acestream://83c6c4942d69f4aa324aa746c5d7dbfd7d1572b3
 #EXTINF:-1 tvg-id="M+ LaLiga TV 2 HD" group-title="LALIGA", M+ LaLiga TV 2 HD
@@ -207,6 +211,10 @@ acestream://50b6d2b5fd59fefb9f4fd2176994d418f2b94a80
 acestream://c5b1bb99bdee549885d4d680cafbdd0a026239f5
 #EXTINF:-1 tvg-id="" group-title="VARIOS", AUTOMOTORSPORT HD
 acestream://610993aea3a2bfd509594334b7461ce96900f54c
+#EXTINF:-1 tvg-id="beIN SPORTS XTRA " group-title="VARIOS", BEIN SPORTS
+acestream://4922d8414b6d96bcdd36e99483a7077f484b6f71
+#EXTINF:-1 tvg-id="beIN SPORTS XTRA " group-title="VARIOS", BEIN SPORTS
+acestream://e8e459656f964f601ad4bcda8b81a43ba41c68f9
 #EXTINF:-1 tvg-id="FR | beIN SPORTS 1" group-title="VARIOS", BEIN SPORTS 1
 acestream://bba1905fcd1c4975aec544047bf8e4cd23ce3fe0
 #EXTINF:-1 tvg-id="FR | beIN SPORTS 1" group-title="VARIOS", BEIN SPORTS 1 FHD
@@ -309,6 +317,10 @@ acestream://44a1d2952357564004a1afa2e3e0d262a45c5742
 acestream://e55dfcc2111568668e2df397e5de440103c991fb
 #EXTINF:-1 tvg-id="" group-title="VARIOS", MGPTV | CAMARA DE A BORDO 4
 acestream://8a0957fa263a3dbb986e75fdcf5fbf6ef111b742
+#EXTINF:-1 tvg-id="" group-title="VARIOS", MOTORS TV HD
+acestream://442aeb6643b8836f9d00361c9e48eeb0841ddf98
+#EXTINF:-1 tvg-id="" group-title="VARIOS", MOTORVISION TV
+acestream://9c75e6ed0671eec6670cb2eabcc7d78267c7f404
 #EXTINF:-1 tvg-id="M+ Clsicos HD" group-title="VARIOS", MOVISTAR ACCION FHD
 acestream://de88ed8716612d9c548df63a168fbdd96843dd20
 #EXTINF:-1 tvg-id="M+ Clsicos HD" group-title="VARIOS", MOVISTAR CLASICOS FHD
@@ -319,8 +331,6 @@ acestream://e2d26332bf1aa59aec7e3cbe9ed4689df44ae368
 acestream://d41f974884746560213e68519e5f6b9d51f37470
 #EXTINF:-1 tvg-id="M+ Golf HD" group-title="VARIOS", MOVISTAR GOLF FHD
 acestream://7f1c44c9f362eba2d4a6820a00ff6701ead9e79d
-#EXTINF:-1 tvg-id="M+ Golf HD" group-title="VARIOS", MOVISTAR GOLF HD
-acestream://872608e734992db636eb79426802cd08f4029afb
 #EXTINF:-1 tvg-id="M+ Hits HD" group-title="VARIOS", MOVISTAR SERIES FHD
 acestream://28dc545c00d47a620bc7243657de5a85811f1254
 #EXTINF:-1 tvg-id="" group-title="VARIOS", NBA NETWORK
@@ -331,6 +341,8 @@ acestream://c8aac540621d481965791c4442a7e868bcca10ca
 acestream://ff6c8b62faf8b5130bea01fe2aa14e7bed8b3950
 #EXTINF:-1 tvg-id="" group-title="VARIOS", ONBOARD FERNANDO ALONSO
 acestream://adab1ca1447108f5dcee688d709bdd372a002c4b
+#EXTINF:-1 tvg-id="UK | Premier Sports 1" group-title="VARIOS", PREMIER SPORTS 1
+acestream://75a56863b6fe0407ad4305b4d7ee5643c3923565
 #EXTINF:-1 tvg-id="UK | Premier Sports 2" group-title="VARIOS", PREMIER SPORTS 2
 acestream://4903ca695edb64bc72ae29eb85a5333ba0139537
 #EXTINF:-1 tvg-id="UK | Sky Sport Arena" group-title="VARIOS", SKY SPORTS ARENA
@@ -341,6 +353,8 @@ acestream://6d95e4b0893e155cc674b84e0763150c445d3ddd
 acestream://8dbe2d515e9131fa311353537736f8c94be9b26d
 #EXTINF:-1 tvg-id="UK | Sky Sport Main Event" group-title="VARIOS", SKY SPORTS MAIN EVENT
 acestream://eab7aeef0218ce8b0752e596e4792b69eda4df5e
+#EXTINF:-1 tvg-id="" group-title="VARIOS", SUPERTENNIS HD
+acestream://b58dbf92765976b308695f62dea94b00b40730ee
 #EXTINF:-1 tvg-id="Telecinco HD" group-title="VARIOS", TELECINCO FHD
 acestream://154c6f876ddf1d9c87880eae0d0442335ec156bf
 #EXTINF:-1 tvg-id="Teledeporte" group-title="VARIOS", TELEDEPORTE FHD
