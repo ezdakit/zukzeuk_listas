@@ -33,25 +33,13 @@ async function isZeroNetRunning() {
   }
 }
 
-async function waitForContent(page, selector, timeout = 30000) {
-  console.log(`Esperando selector: ${selector}`);
-  try {
-    await page.waitForSelector(selector, { state: 'attached', timeout });
-    await page.waitForSelector(selector, { state: 'visible', timeout });
-    return true;
-  } catch (error) {
-    console.error(`Error esperando selector ${selector}:`, error.message);
-    return false;
-  }
-}
-
 (async () => {
   if (!(await isZeroNetRunning())) {
     console.error('Error: ZeroNet no está funcionando. Saliendo...');
     process.exit(1);
   }
 
-  const browser = await chromium.launch();
+  const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext();
   const page = await context.newPage();
   
@@ -59,50 +47,52 @@ async function waitForContent(page, selector, timeout = 30000) {
   console.log(`Extrayendo contenido de: ${zeronetUrl1}`);
 
   try {
-    // Configurar timeout más largo para la navegación
-    await page.setDefaultNavigationTimeout(120000); // 2 minutos
-    await page.setDefaultTimeout(60000); // 1 minuto para otros timeouts
-
-    // Configurar encabezados
-    await page.setExtraHTTPHeaders({
-      'Accept': 'text/html',
-    });
+    // Configurar timeouts
+    await page.setDefaultNavigationTimeout(120000);
+    await page.setDefaultTimeout(60000);
 
     // Navegar a la página
     console.log('Navegando a la página...');
     await page.goto(zeronetUrl1, { 
-      waitUntil: 'domcontentloaded',
+      waitUntil: 'networkidle',
       timeout: 120000
     });
 
-    // Esperar a que la página termine de cargar completamente
-    console.log('Esperando a que la página termine de cargar...');
-    await page.waitForFunction(() => {
-      return document.readyState === 'complete';
-    }, { timeout: 120000 });
+    // Esperar a que el iframe se cargue - versión alternativa sin eval
+    console.log('Esperando iframe...');
+    await page.waitForSelector('#inner-iframe', { 
+      state: 'attached',
+      timeout: 60000 
+    });
 
-    // Esperar a que el iframe se cargue y sea visible
-    const iframeLoaded = await waitForContent(page, '#inner-iframe');
-    if (!iframeLoaded) {
-      throw new Error('No se pudo cargar el iframe');
+    // Verificar visibilidad del iframe de forma segura
+    const isIframeVisible = await page.$eval('#inner-iframe', iframe => {
+      return iframe.offsetWidth > 0 && iframe.offsetHeight > 0;
+    });
+    
+    if (!isIframeVisible) {
+      throw new Error('El iframe no es visible');
     }
 
     // Obtener el iframe
     const iframeHandle = await page.$('#inner-iframe');
     const frame = await iframeHandle.contentFrame();
 
-    // Esperar a que el contenido dinámico dentro del iframe esté listo
-    console.log('Esperando contenido dinámico dentro del iframe...');
-    await frame.waitForSelector('#events-table', { state: 'visible', timeout: 60000 });
-    
-    // Esperar un poco más para asegurar que el contenido está completamente renderizado
-    await frame.waitForTimeout(3000);
+    // Esperar contenido dinámico dentro del iframe
+    console.log('Esperando tabla de eventos...');
+    await frame.waitForSelector('#events-table', {
+      state: 'visible',
+      timeout: 60000
+    });
 
-    // Obtener el HTML final
-    console.log('Obteniendo el HTML final...');
+    // Esperar un poco más para contenido dinámico
+    await page.waitForTimeout(5000);
+
+    // Obtener HTML final del iframe
+    console.log('Obteniendo contenido final...');
     const finalContent = await frame.content();
 
-    // Guardar el archivo
+    // Guardar archivo
     if (!fs.existsSync(folderPath)) {
       fs.mkdirSync(folderPath, { recursive: true });
     }
