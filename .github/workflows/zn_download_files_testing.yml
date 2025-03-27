@@ -120,7 +120,6 @@ jobs:
           if [ -f "$OUTPUT_FOLDER/lista-ott.diff" ]; then
             rm "$OUTPUT_FOLDER/lista-ott.diff"
           fi
-          fi
           if [ -f "$OUTPUT_FOLDER/eventos_2.diff" ]; then
             rm "$OUTPUT_FOLDER/eventos_2.diff"
           fi
