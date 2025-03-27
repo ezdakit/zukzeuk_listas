@@ -104,7 +104,7 @@ async function loadPageWithRetries(page, url, retries = 3, timeout = 60000) {
 
     // Esperar a que la tabla esté presente y visible
     console.log('Esperando a que la tabla se cargue...');
-    await frame.waitForSelector('#tablaAcestream', { timeout: 20000 }); // Timeout de 20 segundos
+    await frame.waitForSelector('#events-table', { timeout: 20000 }); // Timeout de 20 segundos
     console.log('Tabla  cargada correctamente.');
 
     // Verificar que la tabla esté visible (display: table)
