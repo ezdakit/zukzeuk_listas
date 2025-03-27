@@ -2,13 +2,13 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
 
-// Configuración ajustada para ZeroNet
+// Configuración optimizada para ZeroNet
 const CONFIG = {
   NAVIGATION_TIMEOUT: 600000, // 10 minutos
   ACTION_TIMEOUT: 300000,     // 5 minutos
   RETRY_DELAY: 20000,         // 20 segundos
   MAX_RETRIES: 5,             // 5 reintentos
-  FINAL_WAIT: 10000           // 10 segundos adicionales
+  FINAL_WAIT: 15000           // 15 segundos adicionales
 };
 
 // Validación de parámetros
@@ -21,8 +21,8 @@ if (!zeronetAddress || !outputFolder || !outputFile) {
 const folderPath = path.join(__dirname, '..', outputFolder);
 const filePath = path.join(folderPath, outputFile);
 
-// Función con reintentos inteligentes
-async function robustOperation(operation, description) {
+// Función con reintentos seguros sin eval
+async function safeRetryOperation(operation, description) {
   let lastError;
   
   for (let attempt = 1; attempt <= CONFIG.MAX_RETRIES; attempt++) {
@@ -44,6 +44,15 @@ async function robustOperation(operation, description) {
   throw lastError;
 }
 
+// Verificador de visibilidad seguro
+async function isElementVisible(pageOrFrame, selector) {
+  return await pageOrFrame.$eval(selector, el => {
+    if (!el) return false;
+    const style = window.getComputedStyle(el);
+    return style && style.display !== 'none' && style.visibility !== 'hidden' && el.offsetWidth > 0 && el.offsetHeight > 0;
+  }).catch(() => false);
+}
+
 async function extractZeroNetContent() {
   const browser = await chromium.launch({ 
     headless: true,
@@ -61,8 +70,8 @@ async function extractZeroNetContent() {
     const targetUrl = `http://127.0.0.1:43110/${zeronetAddress}/`;
     console.log(`Target URL: ${targetUrl}`);
 
-    // 1. Navegación inicial
-    await robustOperation(
+    // 1. Navegación inicial (sin verificación de readyState)
+    await safeRetryOperation(
       () => page.goto(targetUrl, { 
         waitUntil: 'domcontentloaded',
         timeout: CONFIG.NAVIGATION_TIMEOUT 
@@ -70,77 +79,58 @@ async function extractZeroNetContent() {
       'Navegando a la página'
     );
 
-    // 2. Esperar señal de carga completa
-    console.log('Esperando señal de carga completa...');
-    await robustOperation(
-      () => page.waitForFunction(
-        () => document.readyState === 'complete',
-        { timeout: CONFIG.ACTION_TIMEOUT }
-      ),
-      'Verificando estado de carga'
-    );
-
-    // 3. Localizar y verificar iframe principal
-    console.log('Buscando iframe principal...');
-    await robustOperation(
-      () => page.waitForSelector('#inner-iframe', { 
-        state: 'attached',
-        timeout: CONFIG.ACTION_TIMEOUT 
-      }),
+    // 2. Esperar iframe principal usando métodos seguros
+    console.log('Esperando iframe principal...');
+    await safeRetryOperation(
+      async () => {
+        await page.waitForSelector('#inner-iframe', { 
+          state: 'attached',
+          timeout: CONFIG.ACTION_TIMEOUT 
+        });
+        
+        const isVisible = await isElementVisible(page, '#inner-iframe');
+        if (!isVisible) throw new Error('El iframe no está visible');
+      },
       'Localizando iframe'
     );
 
-    // 4. Verificar visibilidad del iframe (sin evaluar JS)
-    const isIframeVisible = await page.evaluate(() => {
-      const iframe = document.getElementById('inner-iframe');
-      if (!iframe) return false;
-      const style = window.getComputedStyle(iframe);
-      return style && style.display !== 'none' && style.visibility !== 'hidden';
-    });
-
-    if (!isIframeVisible) {
-      throw new Error('El iframe no está visible en la página');
-    }
-
-    // 5. Acceder al contenido del iframe
+    // 3. Acceder al contenido del iframe
     const frame = await page.$('#inner-iframe').then(f => f.contentFrame());
     if (!frame) {
       throw new Error('No se pudo acceder al contenido del iframe');
     }
 
-    // 6. Esperar contenido dinámico con verificación en dos pasos
+    // 4. Esperar contenido dinámico con verificación segura
     console.log('Esperando contenido dinámico...');
     
-    // Paso 6.1: Esperar estructura de tabla
-    await robustOperation(
-      () => frame.waitForSelector('#events-table', {
-        state: 'attached',
-        timeout: CONFIG.ACTION_TIMEOUT
-      }),
-      'Esperando estructura de tabla'
-    );
-
-    // Paso 6.2: Esperar datos visibles
-    await robustOperation(
+    await safeRetryOperation(
       async () => {
+        // Verificar que la tabla existe
+        await frame.waitForSelector('#events-table', {
+          state: 'attached',
+          timeout: CONFIG.ACTION_TIMEOUT
+        });
+        
+        // Verificar que tiene filas visibles
         const hasVisibleRows = await frame.$$eval(
           '#events-table tbody tr',
-          rows => rows.some(r => r.offsetParent !== null)
+          rows => rows.some(r => r.offsetParent !== null && r.textContent.trim().length > 0)
         );
-        if (!hasVisibleRows) throw new Error('Tabla sin filas visibles');
+        
+        if (!hasVisibleRows) throw new Error('Tabla sin filas visibles o con contenido');
       },
-      'Verificando filas visibles'
+      'Verificando tabla con datos'
     );
 
     // Espera final para asegurar renderizado completo
     console.log('Espera final para renderizado completo...');
     await page.waitForTimeout(CONFIG.FINAL_WAIT);
 
-    // 7. Extraer contenido HTML
+    // 5. Extraer contenido HTML
     console.log('Extrayendo contenido final...');
     const finalContent = await frame.content();
 
-    // 8. Guardar archivo
+    // 6. Guardar archivo
     if (!fs.existsSync(folderPath)) {
       fs.mkdirSync(folderPath, { recursive: true });
     }
