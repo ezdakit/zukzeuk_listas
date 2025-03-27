@@ -153,51 +153,40 @@ jobs:
           echo '{"ui_ip": "0.0.0.0", "ui_port": 43110, "debug": true}' > data/zeronet.conf
           echo "Configuration complete!"
 
-      - name: Start ZeroNet
+      - name: Start ZeroNet with logging
         run: |
-          set -e
-          echo "Starting ZeroNet"
+          set -eo pipefail
           cd ZeroNet-linux-dist-linux64/
-          # Iniciar ZeroNet en modo debug y con logging completo
+          
+          # Iniciar ZeroNet en segundo plano con logging extendido
           nohup ./ZeroNet.sh --debug > debug.log 2>&1 &
-          # Registrar PID para posible terminación limpia
-          echo $! > zeronet.pid
-          echo "ZeroNet started in debug mode"
-
-      - name: Wait for ZeroNet initialization
+          echo $! > zeronet.pid  # Guardar PID para gestión
+          
+          # Esperar hasta que el archivo debug.log exista
+          timeout 60 bash -c 'while [ ! -s debug.log ]; do sleep 2; done'
+          echo "ZeroNet log detected"
+      
+      - name: Wait for tracker connections
         run: |
-          set -e
+          set -eo pipefail
           cd ZeroNet-linux-dist-linux64/
           
-          echo "=== Active Trackers Check ==="
+          # Esperar hasta 2 minutos buscando actividad de trackers
+          echo "Waiting for tracker connections (max 120s)..."
+          timeout 120 bash -c '
+            while ! grep -q "Tracker" debug.log; do
+              sleep 5
+              echo -n "."
+            done
+          ' || echo "Trackers not found (timeout)"
           
-          # 1. Verificar trackers en logs
-          echo "[1] Checking debug logs..."
-          if grep -a "Tracker" debug.log; then
-            echo "Trackers found in logs"
-          else
-            echo "No tracker activity in logs yet"
-          fi  # ¡Corregido: 'fi' en lugar de 'end'!
+          # Verificación final extendida
+          echo -e "\n=== Final Status ==="
+          echo "Last log entries:"
+          tail -n 20 debug.log | grep -a -E "Tracker|Peer" || echo "No relevant activity"
           
-          # 2. Verificar mediante API
-          echo "[2] Checking API response..."
-          API_RESPONSE=$(curl -s http://127.0.0.1:43110/Stats || echo "{}")
-          
-          if echo "$API_RESPONSE" | grep -q "tracker"; then
-            echo "Trackers in API response:"
-            echo "$API_RESPONSE" | jq '.tracker' || echo "$API_RESPONSE"
-          else
-            echo "No tracker info in API response"
-            echo "Full response: $API_RESPONSE"
-          fi
-          
-          # 3. Verificar conexiones P2P
-          echo "[3] Checking peer connections..."
-          if grep -a "Peer" debug.log; then
-            echo "Peer connections found"
-          else
-            echo "No peer connections yet"
-          fi
+          echo "Active processes:"
+          ps aux | grep ZeroNet || echo "No ZeroNet process found"
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
