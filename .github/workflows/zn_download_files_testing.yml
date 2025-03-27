@@ -49,6 +49,7 @@ jobs:
           set -e
           echo "Configuring ZeroNet trackers..."
           cd ZeroNet-linux-dist-linux64/
+          mkdir -p data  # ¡Esto soluciona el error!
           cat > data/trackers_allowed.txt << 'EOF'
           http://tracker.opentrackr.org:1337/announce
           http://explodie.org:6969/announce
