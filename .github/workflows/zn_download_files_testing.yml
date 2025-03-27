@@ -148,35 +148,37 @@ jobs:
           http://retracker.omsk.ru:2710/announce
           http://omg.wtftrackr.pw:1337/announce
           EOF
-          # Configuración para entornos restringidos
+          # Configuración optimizada para CI
           echo '{
-            "disable_udp": false,
+            "disable_udp": true,
+            "use_https": false,
             "offline": false,
-            "trackers_file": "data/trackers_allowed.txt",
-            "use_tempfiles": true
+            "ui_ip": "0.0.0.0",
+            "ui_port": 43110,
+            "log_level": "DEBUG"
           }' > data/zeronet.conf
 
-      - name: Start ZeroNet with forced trackers
+      - name: Start ZeroNet with HTTP trackers
         run: |
           cd ZeroNet-linux-dist-linux64/
           nohup ./ZeroNet.sh --debug > debug.log 2>&1 &
           
-          # Espera específica para trackers UDP
-          timeout 60 bash -c '
-            while ! grep -q "Tracker.*udp" debug.log; do
-              sleep 3
+          # Esperar actividad HTTP específicamente
+          timeout 120 bash -c '
+            while ! grep -q "Tracker.*http" debug.log; do
+              sleep 5
               echo -n "."
             done
-          ' || echo "UDP trackers timeout"
+          ' || echo "HTTP trackers timeout"
       
-      - name: Verify connections
+      - name: Final verification
         run: |
           cd ZeroNet-linux-dist-linux64/
-          echo "=== TRACKER STATUS ==="
-          grep -a "Tracker.*udp" debug.log || echo "No UDP tracker activity"
+          echo "=== HTTP TRACKER ACTIVITY ==="
+          grep -a "Tracker.*http" debug.log || echo "No HTTP tracker success"
           
-          echo "=== OPEN PORTS ==="
-          curl -s http://127.0.0.1:43110/Stats | jq '.ip_external' || echo "No external IP"
+          echo "=== RAW API RESPONSE ==="
+          curl -s http://127.0.0.1:43110/Stats || echo "API unavailable"
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
