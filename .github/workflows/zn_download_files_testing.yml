@@ -49,6 +49,7 @@ jobs:
           set -e
           echo "Configuring ZeroNet trackers..."
           cd ZeroNet-linux-dist-linux64/
+          mkdir -p data logs
           mkdir -p data  # ¡Esto soluciona el error!
           cat > data/trackers_allowed.txt << 'EOF'
           zero://boot3rdez4rzn36x.onion:15441
@@ -148,37 +149,65 @@ jobs:
           http://omg.wtftrackr.pw:1337/announce
           EOF
           echo "Trackers configured successfully!"
+          # Habilitar API y configurar puerto
+          echo '{"ui_ip": "0.0.0.0", "ui_port": 43110, "debug": true}' > data/zeronet.conf
+          echo "Configuration complete!"
 
       - name: Start ZeroNet
         run: |
           set -e
           echo "Starting ZeroNet"
           cd ZeroNet-linux-dist-linux64/
-          ./ZeroNet.sh &
-          echo "ZeroNet started"
+          # Iniciar ZeroNet en modo debug y con logging completo
+          nohup ./ZeroNet.sh --debug > debug.log 2>&1 &
+          # Registrar PID para posible terminación limpia
+          echo $! > zeronet.pid
+          echo "ZeroNet started in debug mode"
 
-      - name: Verify ZeroNet is running
+      - name: Wait for ZeroNet initialization
         run: |
           set -e
-          echo "Verifying ZeroNet is running"
-          sleep 5
-          curl -I http://127.0.0.1:43110
-          echo "ZeroNet verification complete"
-
-      - name: Check active trackers (via logs)
-        run: |
-          set -e
-          echo "Checking ZeroNet logs for trackers..."
-          cd ZeroNet-linux-dist-linux64/
-          # Busca líneas relacionadas con trackers en los logs recientes
-          grep -a "Tracker" logs/debug.log || echo "No tracker entries found yet. Wait longer or check manually."
+          echo "Waiting for ZeroNet to initialize..."
+          
+          # Espera hasta 60 segundos verificando conexión
+          timeout 60 bash -c 'while ! curl -s -I http://127.0.0.1:43110 >/dev/null; do sleep 5; done' || (echo "Startup timeout"; exit 1)
+          
+          echo "ZeroNet is fully operational"
       
-      - name: Query ZeroNet API for tracker status (optional)
+      - name: Verify tracker usage
         run: |
           set -e
-          echo "Querying ZeroNet API for tracker info..."
-          # Usa la API de ZeroNet (si está habilitada) para obtener stats de trackers
-          curl -s http://127.0.0.1:43110/Stats | grep -i "tracker" || echo "API not responding. Ensure API is enabled in zeronet.conf."
+          cd ZeroNet-linux-dist-linux64/
+          
+          echo "=== Active Trackers Check ==="
+          
+          # 1. Verificar trackers en logs
+          echo "[1] Checking debug logs..."
+          if grep -a "Tracker" debug.log; then
+            echo "Trackers found in logs"
+          else
+            echo "No tracker activity in logs yet"
+          end
+          
+          # 2. Verificar mediante API
+          echo "[2] Checking API response..."
+          API_RESPONSE=$(curl -s http://127.0.0.1:43110/Stats || echo "{}")
+          
+          if echo "$API_RESPONSE" | grep -q "tracker"; then
+            echo "Trackers in API response:"
+            echo "$API_RESPONSE" | jq '.tracker' || echo "$API_RESPONSE"
+          else
+            echo "No tracker info in API response"
+            echo "Full response: $API_RESPONSE"
+          fi
+          
+          # 3. Verificar conexiones P2P
+          echo "[3] Checking peer connections..."
+          if grep -a "Peer" debug.log; then
+            echo "Peer connections found"
+          else
+            echo "No peer connections yet"
+          fi
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
