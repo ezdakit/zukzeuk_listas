@@ -24,6 +24,7 @@ jobs:
         run: |
           mkdir -p $OUTPUT_FOLDER
           cp $OUTPUT_FOLDER/eventos.html $OUTPUT_FOLDER/eventos.html.orig 2>/dev/null || true
+          cp $OUTPUT_FOLDER/eventos_2.html $OUTPUT_FOLDER/eventos_2.html.orig 2>/dev/null || true
           cp $OUTPUT_FOLDER/lista-ott.m3u $OUTPUT_FOLDER/lista-ott.m3u.orig 2>/dev/null || true
 
       - name: Install system dependencies
@@ -127,8 +128,8 @@ jobs:
       - name: Generate custom diff files
         run: |
           echo "Checking eventos.html files"
-          ls -l $OUTPUT_FOLDER/eventos.html.orig
-          ls -l $OUTPUT_FOLDER/eventos.html
+          #ls -l $OUTPUT_FOLDER/eventos.html.orig
+          #ls -l $OUTPUT_FOLDER/eventos.html
           if [ -f "$OUTPUT_FOLDER/eventos.html.orig" ] && [ -f "$OUTPUT_FOLDER/eventos.html" ]; then
             deleted_lines=$(grep -Fxv -f $OUTPUT_FOLDER/eventos.html $OUTPUT_FOLDER/eventos.html.orig || true)
             added_lines=$(grep -Fxv -f $OUTPUT_FOLDER/eventos.html.orig $OUTPUT_FOLDER/eventos.html || true)
@@ -144,8 +145,8 @@ jobs:
             echo "No changes in eventos.html"
           fi
           echo "Checking eventos_2.html files"
-          ls -l $OUTPUT_FOLDER/eventos_2.html.orig
-          ls -l $OUTPUT_FOLDER/eventos_2.html
+          #ls -l $OUTPUT_FOLDER/eventos_2.html.orig
+          #ls -l $OUTPUT_FOLDER/eventos_2.html
           if [ -f "$OUTPUT_FOLDER/eventos_2.html.orig" ] && [ -f "$OUTPUT_FOLDER/eventos_2.html" ]; then
             deleted_lines=$(grep -Fxv -f $OUTPUT_FOLDER/eventos_2.html $OUTPUT_FOLDER/eventos_2.html.orig || true)
             added_lines=$(grep -Fxv -f $OUTPUT_FOLDER/eventos_2.html.orig $OUTPUT_FOLDER/eventos_2.html || true)
@@ -161,8 +162,8 @@ jobs:
             echo "No changes in eventos_2.html"
           fi
           echo "Checking lista-ott.m3u files"
-          ls -l $OUTPUT_FOLDER/lista-ott.m3u.orig
-          ls -l $OUTPUT_FOLDER/lista-ott.m3u
+          #ls -l $OUTPUT_FOLDER/lista-ott.m3u.orig
+          #ls -l $OUTPUT_FOLDER/lista-ott.m3u
           if [ -f "$OUTPUT_FOLDER/lista-ott.m3u.orig" ] && [ -f "$OUTPUT_FOLDER/lista-ott.m3u" ]; then
             deleted_lines_2=$(grep -Fxv -f $OUTPUT_FOLDER/lista-ott.m3u $OUTPUT_FOLDER/lista-ott.m3u.orig || true)
             added_lines_2=$(grep -Fxv -f $OUTPUT_FOLDER/lista-ott.m3u.orig $OUTPUT_FOLDER/lista-ott.m3u || true)
