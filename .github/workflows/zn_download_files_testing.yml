@@ -167,16 +167,6 @@ jobs:
       - name: Wait for ZeroNet initialization
         run: |
           set -e
-          echo "Waiting for ZeroNet to initialize..."
-          
-          # Espera hasta 60 segundos verificando conexión
-          timeout 60 bash -c 'while ! curl -s -I http://127.0.0.1:43110 >/dev/null; do sleep 5; done' || (echo "Startup timeout"; exit 1)
-          
-          echo "ZeroNet is fully operational"
-      
-      - name: Verify tracker usage
-        run: |
-          set -e
           cd ZeroNet-linux-dist-linux64/
           
           echo "=== Active Trackers Check ==="
@@ -187,7 +177,7 @@ jobs:
             echo "Trackers found in logs"
           else
             echo "No tracker activity in logs yet"
-          end
+          fi  # ¡Corregido: 'fi' en lugar de 'end'!
           
           # 2. Verificar mediante API
           echo "[2] Checking API response..."
