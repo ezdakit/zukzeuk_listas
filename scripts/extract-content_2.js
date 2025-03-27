@@ -2,108 +2,116 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
 
-// Obtener los parámetros
-const zeronetAddress1 = process.argv[2];
-const outputFolder = process.argv[3];
-const outputFile = process.argv[4];
+// Configuración de timeouts (en milisegundos)
+const CONFIG = {
+  NAVIGATION_TIMEOUT: 300000, // 5 minutos para navegación
+  DEFAULT_TIMEOUT: 120000,    // 2 minutos para otras operaciones
+  RETRY_DELAY: 10000,        // 10 segundos entre reintentos
+  MAX_RETRIES: 3             // Máximo de reintentos
+};
 
-if (!zeronetAddress1 || !outputFolder || !outputFile) {
-  console.error('Error: Faltan parámetros. Uso: node extract-content.js <zeronet-address-1> <output-folder> <output-file>');
+// Obtener parámetros
+const [,, zeronetAddress, outputFolder, outputFile] = process.argv;
+
+if (!zeronetAddress || !outputFolder || !outputFile) {
+  console.error('Uso: node script.js <zeronet-address> <output-folder> <output-file>');
   process.exit(1);
 }
 
 const folderPath = path.join(__dirname, '..', outputFolder);
 const filePath = path.join(folderPath, outputFile);
 
-console.log('Parámetros recibidos:');
-console.log(`- Dirección 1: ${zeronetAddress1}`);
-console.log(`- Carpeta de destino: ${folderPath}`);
-console.log(`- Archivo de salida: ${filePath}`);
-
-async function isZeroNetRunning() {
-  console.log('Verificando si ZeroNet está funcionando...');
-  try {
-    const response = await fetch('http://127.0.0.1:43110', {
-      headers: { 'Accept': 'text/html' },
-    });
-    return response.ok;
-  } catch (error) {
-    console.error('Error al verificar ZeroNet:', error.message);
-    return false;
+async function withRetries(fn, description, maxRetries = CONFIG.MAX_RETRIES) {
+  let lastError;
+  for (let i = 0; i < maxRetries; i++) {
+    try {
+      console.log(`${description} (Intento ${i + 1}/${maxRetries})`);
+      return await fn();
+    } catch (error) {
+      lastError = error;
+      if (i < maxRetries - 1) {
+        await new Promise(resolve => setTimeout(resolve, CONFIG.RETRY_DELAY));
+      }
+    }
   }
+  throw lastError;
 }
 
-(async () => {
-  if (!(await isZeroNetRunning())) {
-    console.error('Error: ZeroNet no está funcionando. Saliendo...');
-    process.exit(1);
-  }
-
+async function extractContent() {
   const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext();
   const page = await context.newPage();
-  
-  const zeronetUrl1 = `http://127.0.0.1:43110/${zeronetAddress1}/`;
-  console.log(`Extrayendo contenido de: ${zeronetUrl1}`);
 
   try {
     // Configurar timeouts
-    await page.setDefaultNavigationTimeout(120000);
-    await page.setDefaultTimeout(60000);
+    page.setDefaultTimeout(CONFIG.DEFAULT_TIMEOUT);
+    page.setDefaultNavigationTimeout(CONFIG.NAVIGATION_TIMEOUT);
 
-    // Navegar a la página
-    console.log('Navegando a la página...');
-    await page.goto(zeronetUrl1, { 
-      waitUntil: 'networkidle',
-      timeout: 120000
-    });
+    const url = `http://127.0.0.1:43110/${zeronetAddress}/`;
+    console.log(`Iniciando extracción de: ${url}`);
 
-    // Esperar a que el iframe se cargue - versión alternativa sin eval
-    console.log('Esperando iframe...');
-    await page.waitForSelector('#inner-iframe', { 
-      state: 'attached',
-      timeout: 60000 
-    });
+    // Paso 1: Navegar a la página
+    await withRetries(
+      () => page.goto(url, { waitUntil: 'domcontentloaded' }),
+      'Navegando a la página'
+    );
 
-    // Verificar visibilidad del iframe de forma segura
-    const isIframeVisible = await page.$eval('#inner-iframe', iframe => {
-      return iframe.offsetWidth > 0 && iframe.offsetHeight > 0;
+    // Paso 2: Esperar indicadores de carga
+    console.log('Esperando indicadores de carga...');
+    await withRetries(
+      () => page.waitForSelector('#inner-iframe', { state: 'attached' }),
+      'Esperando iframe principal'
+    );
+
+    // Paso 3: Verificar iframe visible
+    const isIframeReady = await page.evaluate(() => {
+      const iframe = document.querySelector('#inner-iframe');
+      return iframe && iframe.offsetWidth > 0 && iframe.offsetHeight > 0;
     });
     
-    if (!isIframeVisible) {
-      throw new Error('El iframe no es visible');
+    if (!isIframeReady) {
+      throw new Error('El iframe no está listo para interactuar');
     }
 
-    // Obtener el iframe
-    const iframeHandle = await page.$('#inner-iframe');
-    const frame = await iframeHandle.contentFrame();
+    // Paso 4: Acceder al contenido del iframe
+    const frame = await (await page.$('#inner-iframe')).contentFrame();
+    
+    // Paso 5: Esperar contenido dinámico
+    console.log('Esperando contenido dinámico...');
+    await withRetries(
+      () => frame.waitForSelector('#events-table', { state: 'visible' }),
+      'Esperando tabla de eventos'
+    );
 
-    // Esperar contenido dinámico dentro del iframe
-    console.log('Esperando tabla de eventos...');
-    await frame.waitForSelector('#events-table', {
-      state: 'visible',
-      timeout: 60000
-    });
+    // Paso 6: Esperar datos cargados (verificar filas)
+    await withRetries(
+      async () => {
+        const hasData = await frame.$$eval('#events-table tbody tr', rows => rows.length > 0);
+        if (!hasData) throw new Error('La tabla no contiene datos');
+      },
+      'Verificando datos en la tabla'
+    );
 
-    // Esperar un poco más para contenido dinámico
-    await page.waitForTimeout(5000);
-
-    // Obtener HTML final del iframe
+    // Paso 7: Obtener HTML final
     console.log('Obteniendo contenido final...');
-    const finalContent = await frame.content();
+    const content = await frame.content();
 
     // Guardar archivo
     if (!fs.existsSync(folderPath)) {
       fs.mkdirSync(folderPath, { recursive: true });
     }
-    fs.writeFileSync(filePath, finalContent);
+    fs.writeFileSync(filePath, content);
     console.log(`Contenido guardado en: ${filePath}`);
 
-  } catch (error) {
-    console.error('Error durante la extracción:', error);
-    process.exit(1);
   } finally {
     await browser.close();
-    console.log('Navegador cerrado.');
   }
-})();
+}
+
+// Ejecutar con manejo de errores
+extractContent()
+  .then(() => process.exit(0))
+  .catch(error => {
+    console.error('Error en el proceso de extracción:', error);
+    process.exit(1);
+  });
