@@ -2,17 +2,17 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
 
-// Configuración de timeouts (en milisegundos)
+// Configuración ajustada para ZeroNet
 const CONFIG = {
-  NAVIGATION_TIMEOUT: 300000, // 5 minutos para navegación
-  DEFAULT_TIMEOUT: 120000,    // 2 minutos para otras operaciones
-  RETRY_DELAY: 10000,        // 10 segundos entre reintentos
-  MAX_RETRIES: 3             // Máximo de reintentos
+  NAVIGATION_TIMEOUT: 600000, // 10 minutos
+  ACTION_TIMEOUT: 300000,     // 5 minutos
+  RETRY_DELAY: 20000,         // 20 segundos
+  MAX_RETRIES: 5,             // 5 reintentos
+  FINAL_WAIT: 10000           // 10 segundos adicionales
 };
 
-// Obtener parámetros
+// Validación de parámetros
 const [,, zeronetAddress, outputFolder, outputFile] = process.argv;
-
 if (!zeronetAddress || !outputFolder || !outputFile) {
   console.error('Uso: node script.js <zeronet-address> <output-folder> <output-file>');
   process.exit(1);
@@ -21,97 +21,145 @@ if (!zeronetAddress || !outputFolder || !outputFile) {
 const folderPath = path.join(__dirname, '..', outputFolder);
 const filePath = path.join(folderPath, outputFile);
 
-async function withRetries(fn, description, maxRetries = CONFIG.MAX_RETRIES) {
+// Función con reintentos inteligentes
+async function robustOperation(operation, description) {
   let lastError;
-  for (let i = 0; i < maxRetries; i++) {
+  
+  for (let attempt = 1; attempt <= CONFIG.MAX_RETRIES; attempt++) {
     try {
-      console.log(`${description} (Intento ${i + 1}/${maxRetries})`);
-      return await fn();
+      console.log(`${description} [Intento ${attempt}/${CONFIG.MAX_RETRIES}]`);
+      const result = await operation();
+      return result;
     } catch (error) {
       lastError = error;
-      if (i < maxRetries - 1) {
+      console.warn(`Intento ${attempt} fallido: ${error.message}`);
+      
+      if (attempt < CONFIG.MAX_RETRIES) {
+        console.log(`Reintentando en ${CONFIG.RETRY_DELAY/1000} segundos...`);
         await new Promise(resolve => setTimeout(resolve, CONFIG.RETRY_DELAY));
       }
     }
   }
+  
   throw lastError;
 }
 
-async function extractContent() {
-  const browser = await chromium.launch({ headless: true });
+async function extractZeroNetContent() {
+  const browser = await chromium.launch({ 
+    headless: true,
+    timeout: CONFIG.NAVIGATION_TIMEOUT
+  });
+  
   const context = await browser.newContext();
   const page = await context.newPage();
 
   try {
-    // Configurar timeouts
-    page.setDefaultTimeout(CONFIG.DEFAULT_TIMEOUT);
+    // Configuración de timeouts
+    page.setDefaultTimeout(CONFIG.ACTION_TIMEOUT);
     page.setDefaultNavigationTimeout(CONFIG.NAVIGATION_TIMEOUT);
 
-    const url = `http://127.0.0.1:43110/${zeronetAddress}/`;
-    console.log(`Iniciando extracción de: ${url}`);
+    const targetUrl = `http://127.0.0.1:43110/${zeronetAddress}/`;
+    console.log(`Target URL: ${targetUrl}`);
 
-    // Paso 1: Navegar a la página
-    await withRetries(
-      () => page.goto(url, { waitUntil: 'domcontentloaded' }),
+    // 1. Navegación inicial
+    await robustOperation(
+      () => page.goto(targetUrl, { 
+        waitUntil: 'domcontentloaded',
+        timeout: CONFIG.NAVIGATION_TIMEOUT 
+      }),
       'Navegando a la página'
     );
 
-    // Paso 2: Esperar indicadores de carga
-    console.log('Esperando indicadores de carga...');
-    await withRetries(
-      () => page.waitForSelector('#inner-iframe', { state: 'attached' }),
-      'Esperando iframe principal'
+    // 2. Esperar señal de carga completa
+    console.log('Esperando señal de carga completa...');
+    await robustOperation(
+      () => page.waitForFunction(
+        () => document.readyState === 'complete',
+        { timeout: CONFIG.ACTION_TIMEOUT }
+      ),
+      'Verificando estado de carga'
     );
 
-    // Paso 3: Verificar iframe visible
-    const isIframeReady = await page.evaluate(() => {
-      const iframe = document.querySelector('#inner-iframe');
-      return iframe && iframe.offsetWidth > 0 && iframe.offsetHeight > 0;
+    // 3. Localizar y verificar iframe principal
+    console.log('Buscando iframe principal...');
+    await robustOperation(
+      () => page.waitForSelector('#inner-iframe', { 
+        state: 'attached',
+        timeout: CONFIG.ACTION_TIMEOUT 
+      }),
+      'Localizando iframe'
+    );
+
+    // 4. Verificar visibilidad del iframe (sin evaluar JS)
+    const isIframeVisible = await page.evaluate(() => {
+      const iframe = document.getElementById('inner-iframe');
+      if (!iframe) return false;
+      const style = window.getComputedStyle(iframe);
+      return style && style.display !== 'none' && style.visibility !== 'hidden';
     });
-    
-    if (!isIframeReady) {
-      throw new Error('El iframe no está listo para interactuar');
+
+    if (!isIframeVisible) {
+      throw new Error('El iframe no está visible en la página');
     }
 
-    // Paso 4: Acceder al contenido del iframe
-    const frame = await (await page.$('#inner-iframe')).contentFrame();
-    
-    // Paso 5: Esperar contenido dinámico
+    // 5. Acceder al contenido del iframe
+    const frame = await page.$('#inner-iframe').then(f => f.contentFrame());
+    if (!frame) {
+      throw new Error('No se pudo acceder al contenido del iframe');
+    }
+
+    // 6. Esperar contenido dinámico con verificación en dos pasos
     console.log('Esperando contenido dinámico...');
-    await withRetries(
-      () => frame.waitForSelector('#events-table', { state: 'visible' }),
-      'Esperando tabla de eventos'
+    
+    // Paso 6.1: Esperar estructura de tabla
+    await robustOperation(
+      () => frame.waitForSelector('#events-table', {
+        state: 'attached',
+        timeout: CONFIG.ACTION_TIMEOUT
+      }),
+      'Esperando estructura de tabla'
     );
 
-    // Paso 6: Esperar datos cargados (verificar filas)
-    await withRetries(
+    // Paso 6.2: Esperar datos visibles
+    await robustOperation(
       async () => {
-        const hasData = await frame.$$eval('#events-table tbody tr', rows => rows.length > 0);
-        if (!hasData) throw new Error('La tabla no contiene datos');
+        const hasVisibleRows = await frame.$$eval(
+          '#events-table tbody tr',
+          rows => rows.some(r => r.offsetParent !== null)
+        );
+        if (!hasVisibleRows) throw new Error('Tabla sin filas visibles');
       },
-      'Verificando datos en la tabla'
+      'Verificando filas visibles'
     );
 
-    // Paso 7: Obtener HTML final
-    console.log('Obteniendo contenido final...');
-    const content = await frame.content();
+    // Espera final para asegurar renderizado completo
+    console.log('Espera final para renderizado completo...');
+    await page.waitForTimeout(CONFIG.FINAL_WAIT);
 
-    // Guardar archivo
+    // 7. Extraer contenido HTML
+    console.log('Extrayendo contenido final...');
+    const finalContent = await frame.content();
+
+    // 8. Guardar archivo
     if (!fs.existsSync(folderPath)) {
       fs.mkdirSync(folderPath, { recursive: true });
     }
-    fs.writeFileSync(filePath, content);
-    console.log(`Contenido guardado en: ${filePath}`);
+    fs.writeFileSync(filePath, finalContent);
+    console.log(`✅ Contenido guardado en: ${filePath}`);
 
+  } catch (error) {
+    console.error('❌ Error crítico:', error);
+    throw error;
   } finally {
     await browser.close();
+    console.log('Navegador cerrado');
   }
 }
 
-// Ejecutar con manejo de errores
-extractContent()
+// Ejecución con manejo de errores global
+extractZeroNetContent()
   .then(() => process.exit(0))
   .catch(error => {
-    console.error('Error en el proceso de extracción:', error);
+    console.error('🛑 Fallo en el proceso de extracción:', error.message);
     process.exit(1);
   });
