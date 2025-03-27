@@ -50,15 +50,15 @@ jobs:
           echo "Configuring ZeroNet trackers..."
           cd ZeroNet-linux-dist-linux64/
           cat << 'EOF' > data/trackers_allowed.txt
-      http://tracker.opentrackr.org:1337/announce
-      http://explodie.org:6969/announce
-      http://tracker2.postman.i2p/announce
-      udp://tracker.opentrackr.org:6969/announce
-      udp://explodie.org:6969/announce
-      udp://tracker.openbittorrent.com:6969/announce
-      udp://9.rarbg.to:2710/announce
-      udp://p4p.arenabg.com:1337/announce
-      EOF
+http://tracker.opentrackr.org:1337/announce
+http://explodie.org:6969/announce
+http://tracker2.postman.i2p/announce
+udp://tracker.opentrackr.org:6969/announce
+udp://explodie.org:6969/announce
+udp://tracker.openbittorrent.com:6969/announce
+udp://9.rarbg.to:2710/announce
+udp://p4p.arenabg.com:1337/announce
+EOF
           echo "Trackers configured successfully!"
 
       - name: Start ZeroNet
