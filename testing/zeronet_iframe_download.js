@@ -10,17 +10,17 @@ async function captureIframeContent(zeroNetAddress, baseFilename, captureMultipl
     const outputDir = 'testing';
 
     try {
-        // Limpiar archivos .html existentes en el directorio de salida
+        // Clean existing .html files in output directory
         if (fs.existsSync(outputDir)) {
             fs.readdirSync(outputDir).forEach(file => {
                 if (file.endsWith('.html')) {
                     fs.unlinkSync(path.join(outputDir, file));
-                    console.log(`Eliminado archivo ${file}`);
+                    console.log(`Deleted file ${file}`);
                 }
             });
         } else {
             fs.mkdirSync(outputDir, { recursive: true });
-            console.log(`Carpeta ${outputDir} creada.`);
+            console.log(`Created folder ${outputDir}.`);
         }
 
         const targetUrl = `http://127.0.0.1:43110/${zeroNetAddress}?accept=1`;
@@ -38,11 +38,14 @@ async function captureIframeContent(zeroNetAddress, baseFilename, captureMultipl
 
         // Calculate total seconds to wait and adjust capture interval
         const totalSeconds = captureMultiplier * 10;
-        const captureInterval = totalSeconds / 10; // Intervalo en segundos
+        const captureInterval = totalSeconds / 10; // Interval in seconds
 
         // Capture content every interval for the specified total time
         for (let i = 0; i < 10; i++) {
             try {
+                // Wait for a specific element inside the iframe to ensure it's loaded
+                await iframeLocator.waitForSelector('body', { timeout: 5000 });
+
                 // Get the iframe content
                 const frameContent = await iframeLocator.locator('body').innerHTML();
 
@@ -54,10 +57,7 @@ async function captureIframeContent(zeroNetAddress, baseFilename, captureMultipl
                 const timestamp = new Date().toISOString();
                 const filePath = path.join(outputDir, `${baseFilename}_${i}.html`);
                 
-                // Construir la cadena de manera explícita para evitar problemas con las plantillas
-                const content = `<!-- Capture ${i} at ${timestamp} -->\n${frameContent}`;
-                
-                fs.writeFileSync(filePath, content);
+                fs.writeFileSync(filePath, `<!-- Capture ${i} at ${timestamp} -->\n${frameContent}`);
                 console.log(`Captured ${filePath}`);
 
             } catch (e) {
@@ -65,7 +65,7 @@ async function captureIframeContent(zeroNetAddress, baseFilename, captureMultipl
             }
 
             // Wait for the capture interval
-            if (i < 9) { // No necesitamos esperar después de la última captura
+            if (i < 9) { // No need to wait after last capture
                 await new Promise(resolve => setTimeout(resolve, captureInterval * 1000));
             }
         }
