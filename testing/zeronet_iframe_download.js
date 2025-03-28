@@ -51,7 +51,37 @@ async function captureIframeContent(zeroNetAddress, baseFilename, captureMultipl
                     continue;
                 }
 
+                const timestamp = new Date().toISOString();
                 const filePath = path.join(outputDir, `${baseFilename}_${i}.html`);
-                fs.writeFileSync(
-                    filePath,
-                    `<!-- Capture ${i} at ${new Date().toISOString()} -->\n${frame
+                
+                // Construir la cadena de manera explícita para evitar problemas con las plantillas
+                const content = `<!-- Capture ${i} at ${timestamp} -->\n${frameContent}`;
+                
+                fs.writeFileSync(filePath, content);
+                console.log(`Captured ${filePath}`);
+
+            } catch (e) {
+                console.error(`Failed to capture iframe content for ${baseFilename}_${i}.html: ${e}`);
+            }
+
+            // Wait for the capture interval
+            if (i < 9) { // No necesitamos esperar después de la última captura
+                await new Promise(resolve => setTimeout(resolve, captureInterval * 1000));
+            }
+        }
+
+    } catch (error) {
+        console.error(`An error occurred: ${error}`);
+    } finally {
+        await browser.close();
+    }
+}
+
+// CLI execution
+const [,, zeroNetAddress, filename, captureMultiplier] = process.argv;
+if (!zeroNetAddress || !filename || !captureMultiplier) {
+    console.error('Usage: node loader.js <zeronet-address> <filename-base> <capture-multiplier>');
+    process.exit(1);
+}
+
+captureIframeContent(zeroNetAddress, filename, parseInt(captureMultiplier)).catch(console.error);
