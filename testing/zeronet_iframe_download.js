@@ -33,9 +33,11 @@ async function captureIframeContent(zeroNetAddress, baseFilename, captureMultipl
         // Wait for iframe to load
         await page.waitForSelector('iframe#inner-iframe');
 
-        // Locate the iframe using frameLocator
-        const iframeLocator = page.frameLocator('iframe#inner-iframe');
-        const frame = await iframeLocator.contentFrame();
+        // Get the iframe element handle
+        const iframeHandle = await page.$('iframe#inner-iframe');
+
+        // Get the iframe content frame
+        const frame = await iframeHandle.contentFrame();
 
         // Calculate total seconds to wait and adjust capture interval
         const totalSeconds = captureMultiplier * 10;
