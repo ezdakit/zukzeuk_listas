@@ -2,7 +2,7 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
 
-async function captureIframeContent(zeroNetAddress, baseFilename) {
+async function captureIframeContent(zeroNetAddress, baseFilename, captureIntervalMultiplier) {
     const browser = await chromium.launch();
     const context = await browser.newContext();
     const page = await context.newPage();
@@ -25,11 +25,12 @@ async function captureIframeContent(zeroNetAddress, baseFilename) {
         // Locate the iframe using frameLocator
         const iframeLocator = page.frameLocator('iframe#inner-iframe');
 
-        // Capture content every second for 10 seconds
-        for (let i = 0; i < 10; i++) {
-            // Wait a second
-            await new Promise(resolve => setTimeout(resolve, 1000));
+        // Calculate total seconds to wait and adjust capture interval
+        const totalSeconds = captureIntervalMultiplier * 10;
+        const captureInterval = 1000; // 1 second
 
+        // Capture content every second for the specified total time
+        for (let i = 0; i < totalSeconds; i++) {
             try {
                 // Get the iframe content
                 const frameContent = await iframeLocator.locator('body').innerHTML();
@@ -44,6 +45,9 @@ async function captureIframeContent(zeroNetAddress, baseFilename) {
             } catch (e) {
                 console.error(`Failed to capture iframe content for ${baseFilename}_${i}.html: ${e}`);
             }
+
+            // Wait for the capture interval
+            await new Promise(resolve => setTimeout(resolve, captureInterval));
         }
 
     } catch (error) {
@@ -54,10 +58,10 @@ async function captureIframeContent(zeroNetAddress, baseFilename) {
 }
 
 // CLI execution
-const [,, zeroNetAddress, filename] = process.argv;
-if (!zeroNetAddress || !filename) {
-    console.error('Usage: node loader.js <zeronet-address> <filename-base>');
+const [,, zeroNetAddress, filename, captureMultiplier] = process.argv;
+if (!zeroNetAddress || !filename || !captureMultiplier) {
+    console.error('Usage: node loader.js <zeronet-address> <filename-base> <capture-multiplier>');
     process.exit(1);
 }
 
-captureIframeContent(zeroNetAddress, filename).catch(console.error);
+captureIframeContent(zeroNetAddress, filename, parseInt(captureMultiplier)).catch(console.error);
