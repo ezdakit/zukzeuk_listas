@@ -3,152 +3,141 @@ const fs = require('fs');
 const path = require('path');
 
 // Obtener los parámetros
-const zeronetAddress1 = process.argv[2];
+const zeronetAddress = process.argv[2];
 const outputFolder = process.argv[3];
 const outputFile = process.argv[4];
 
-if (!zeronetAddress1 || !outputFolder || !outputFile) {
-  console.error('Error: Faltan parámetros. Uso: node extract-content.js <zeronet-address-1> <output-folder> <output-file>');
+if (!zeronetAddress || !outputFolder || !outputFile) {
+  console.error('Error: Faltan parámetros. Uso: node extract-content.js <zeronet-address> <output-folder> <output-file>');
   process.exit(1);
 }
 
-// Configuración de tiempos
-const TIMEOUTS = {
-  pageLoad: 120000, // 2 minutos para carga inicial
-  iframeWait: 30000, // 30 segundos para el iframe
-  betweenCaptures: 5000, // 5 segundos entre capturas
-  totalDuration: 60000 // 1 minuto de capturas
-};
+// Ruta de la carpeta y el archivo
+const folderPath = path.join(__dirname, '..', outputFolder);
+const filePath = path.join(folderPath, outputFile);
+
+console.log('Parámetros recibidos:');
+console.log(`- Dirección: ${zeronetAddress}`);
+console.log(`- Carpeta de destino: ${folderPath}`);
+console.log(`- Archivo de salida: ${filePath}`);
 
 // Función para verificar si ZeroNet está funcionando
 async function isZeroNetRunning() {
   console.log('Verificando si ZeroNet está funcionando...');
   try {
     const response = await fetch('http://127.0.0.1:43110', {
-      headers: { 'Accept': 'text/html' },
-      timeout: 10000 // 10 segundos máximo para esta verificación
+      headers: {
+        'Accept': 'text/html',
+      },
     });
-    if (!response.ok) {
-      console.log(`ZeroNet respondió con estado: ${response.status}`);
+    if (response.ok) {
+      console.log('ZeroNet está funcionando correctamente.');
+      return true;
+    } else {
+      console.log('ZeroNet no está funcionando (respuesta no OK).');
+      return false;
     }
-    return response.ok;
   } catch (error) {
     console.error('Error al verificar ZeroNet:', error.message);
     return false;
   }
 }
 
-// Función para generar nombre de archivo secuencial
-function getSequentialFilename(basePath, baseName, extension, index) {
-  const paddedIndex = index.toString().padStart(3, '0');
-  return path.join(basePath, `${baseName}_${paddedIndex}${extension}`);
+// Función para cargar una página con reintentos
+async function loadPageWithRetries(page, url, retries = 3, timeout = 60000) {
+  console.log(`Cargando página: ${url}`);
+  for (let i = 0; i < retries; i++) {
+    try {
+      console.log(`Intento ${i + 1} de ${retries}`);
+      await page.goto(url, { waitUntil: 'load', timeout });
+      console.log('Página cargada correctamente.');
+      return true;
+    } catch (error) {
+      console.warn(`Intento ${i + 1} fallido: ${error.message}`);
+      if (i < retries - 1) {
+        console.log('Reintentando en 5 segundos...');
+        await new Promise((resolve) => setTimeout(resolve, 5000));
+      }
+    }
+  }
+  throw new Error(`No se pudo cargar la página después de ${retries} intentos.`);
 }
 
 (async () => {
+  console.log('Iniciando el script...');
+  // Verificar si ZeroNet está funcionando
   if (!(await isZeroNetRunning())) {
     console.error('Error: ZeroNet no está funcionando. Saliendo...');
     process.exit(1);
   }
 
-  const browser = await chromium.launch({
-    headless: false, // Ejecutar en modo visible para diagnóstico
-    slowMo: 100 // Añadir pequeña pausa entre acciones
-  });
-  
+  // Lanzar el navegador Chromium
+  console.log('Lanzando el navegador Chromium...');
+  const browser = await chromium.launch();
   const page = await browser.newPage();
-  const zeronetUrl1 = `http://127.0.0.1:43110/${zeronetAddress1}/`;
+  console.log('Navegador lanzado correctamente.');
+
+  // Extraer contenido dinámico de la página
+  const zeronetUrl = `http://127.0.0.1:43110/${zeronetAddress}/`;
+  console.log(`Extrayendo contenido de: ${zeronetUrl}`);
 
   try {
-    // Configurar timeouts más largos
-    page.setDefaultTimeout(TIMEOUTS.pageLoad);
-    page.setDefaultNavigationTimeout(TIMEOUTS.pageLoad);
-
-    console.log(`Navegando a: ${zeronetUrl1} (timeout: ${TIMEOUTS.pageLoad/1000}s)`);
-    await page.setExtraHTTPHeaders({ 'Accept': 'text/html' });
-
-    // Intentar cargar la página con diferentes estrategias
-    const response = await page.goto(zeronetUrl1, { 
-      waitUntil: 'domcontentloaded', // Más rápido que 'load'
-      timeout: TIMEOUTS.pageLoad
-    }).catch(async (error) => {
-      console.warn(`Primer intento fallido (${error.message}), intentando con 'networkidle'`);
-      return page.goto(zeronetUrl1, {
-        waitUntil: 'networkidle',
-        timeout: TIMEOUTS.pageLoad
-      });
+    // Configurar el encabezado "Accept" para páginas HTML
+    console.log('Configurando encabezado "Accept: text/html"...');
+    await page.setExtraHTTPHeaders({
+      'Accept': 'text/html',
     });
 
-    console.log(`Página cargada. Estado HTTP: ${response.status()}`);
+    // Cargar la página con reintentos
+    await loadPageWithRetries(page, zeronetUrl);
 
-    // Verificar contenido crítico
-    const pageContent = await page.content();
-    if (!pageContent.includes('inner-iframe')) {
-      console.error('No se encuentra el elemento inner-iframe en el HTML principal');
-      fs.writeFileSync(path.join(__dirname, '..', outputFolder, 'debug_main_page.html'), pageContent);
-      console.log('Se ha guardado el HTML principal para diagnóstico en debug_main_page.html');
-    }
-
+    // Esperar a que el iframe se cargue
     console.log('Esperando a que el iframe se cargue...');
-    await page.waitForSelector('#inner-iframe', { 
-      state: 'attached',
-      timeout: TIMEOUTS.iframeWait 
-    });
+    await page.waitForSelector('#inner-iframe', { timeout: 20000 });
+    console.log('Iframe cargado correctamente.');
 
+    // Obtener el contenido del iframe
+    console.log('Obteniendo el contenido del iframe...');
     const iframeHandle = await page.$('#inner-iframe');
     const frame = await iframeHandle.contentFrame();
 
-    // Crear carpeta de salida
-    const folderPath = path.join(__dirname, '..', outputFolder);
+    // Esperar a que la tabla esté presente y visible
+    console.log('Esperando a que la tabla se cargue...');
+    await frame.waitForSelector('#events-table', { timeout: 20000 });
+    console.log('Tabla cargada correctamente.');
+
+    // Verificar que la tabla esté visible (display: table)
+    console.log('Verificando que la tabla esté visible...');
+    const isTableVisible = await frame.$eval('#events-table', (table) => {
+      return window.getComputedStyle(table).display === 'table';
+    });
+    if (!isTableVisible) {
+      throw new Error('La tabla no está visible.');
+    }
+    console.log('La tabla está visible.');
+
+    // Obtener el HTML final del iframe
+    console.log('Obteniendo el HTML final del iframe...');
+    const finalContent = await frame.content();
+
+    // Crear la carpeta si no existe
     if (!fs.existsSync(folderPath)) {
+      console.log(`Creando carpeta: ${folderPath}`);
       fs.mkdirSync(folderPath, { recursive: true });
     }
 
-    const ext = path.extname(outputFile);
-    const baseName = path.basename(outputFile, ext);
-    const iterations = TIMEOUTS.totalDuration / TIMEOUTS.betweenCaptures;
-
-    console.log(`Iniciando captura de contenido cada ${TIMEOUTS.betweenCaptures/1000}s (${iterations} capturas)`);
-    
-    for (let i = 0; i < iterations; i++) {
-      const startTime = Date.now();
-      const sequentialFile = getSequentialFilename(folderPath, baseName, ext, i);
-      
-      try {
-        console.log(`[${i+1}/${iterations}] Obteniendo contenido...`);
-        
-        // Verificar estado del iframe
-        const isIframeVisible = await page.$('#inner-iframe').then(async (el) => {
-          return el ? await el.isVisible() : false;
-        });
-
-        if (!isIframeVisible) {
-          console.error('El iframe no está visible. Deteniendo captura.');
-          break;
-        }
-
-        // Obtener contenido con timeout independiente
-        const content = await frame.content().catch(e => {
-          console.warn(`Error al obtener contenido del iframe: ${e.message}`);
-          return "<!-- Error al obtener contenido -->";
-        });
-
-        fs.writeFileSync(sequentialFile, `<!-- Captura ${i+1} - ${new Date().toISOString()} -->\n${content}`);
-        console.log(`Contenido guardado en: ${sequentialFile} (${Date.now() - startTime}ms)`);
-
-        // Esperar para la próxima captura
-        if (i < iterations - 1) {
-          await new Promise(resolve => setTimeout(resolve, TIMEOUTS.betweenCaptures));
-        }
-      } catch (error) {
-        console.error(`Error en iteración ${i+1}:`, error.message);
-      }
-    }
+    // Guardar el contenido en un archivo
+    console.log(`Guardando contenido en: ${filePath}`);
+    fs.writeFileSync(filePath, finalContent);
+    console.log(`Archivo guardado correctamente: ${filePath}`);
   } catch (error) {
-    console.error('Error durante el proceso principal:', error.message);
-    // Guardar captura de pantalla para diagnóstico
-    await page.screenshot({ path: path.join(__dirname, '..', outputFolder, 'error_screenshot.png') });
-    console.log('Se ha guardado una captura de pantalla del error en error_screenshot.png');
-  } finally {
-    await browser.close();
+    console.error(`Error al extraer el contenido: ${error.message}`);
+    process.exit(1);
   }
+
+  // Cerrar el navegador
+  console.log('Cerrando el navegador...');
+  await browser.close();
+  console.log('Navegador cerrado correctamente.');
+  console.log('Script completado con éxito.');
 })();
