@@ -73,16 +73,6 @@ jobs:
         run: |
           npx playwright install
 
-      - name: Check site ZERONET_ADDRESS_1 synchronization
-        run: |
-          echo "Checking site synchronization for $ZERONET_ADDRESS_1"
-          curl -H "Accept: text/html" -I http://127.0.0.1:43110/$ZERONET_ADDRESS_1/
-          echo "Site ZERONET_ADDRESS_1 synchronization checked"
-
-      - name: Extract dynamic content with Playwright
-        run: |
-          node scripts/extract-content.js "$ZERONET_ADDRESS_1" "$OUTPUT_FOLDER" "$OUTPUT_FILE"
-
       - name: Check site ZERONET_ADDRESS_3 synchronization
         run: |
           echo "Checking site synchronization for $ZERONET_ADDRESS_3"
@@ -91,7 +81,7 @@ jobs:
 
       - name: Extract dynamic content 2 with Playwright
         run: |
-          node scripts/extract-content_2.js "$ZERONET_ADDRESS_3" "$OUTPUT_FOLDER" "$OUTPUT_FILE_2"
+          node scripts/extract-content_2.js
 
       - name: Check site ZERONET_ADDRESS_2 synchronization
         run: |
@@ -111,73 +101,6 @@ jobs:
             curl -H "Accept: text/html" -f -o $OUTPUT_FOLDER/lista-ott.m3u http://127.0.0.1:43110/$ZERONET_ADDRESS_2/lista-ott.m3u || true
           fi
           set -e
-
-      - name: Remove existing diff files
-        run: |
-          echo "Removing existing diff files"
-          if [ -f "$OUTPUT_FOLDER/eventos.diff" ]; then
-            rm "$OUTPUT_FOLDER/eventos.diff"
-          fi
-          if [ -f "$OUTPUT_FOLDER/lista-ott.diff" ]; then
-            rm "$OUTPUT_FOLDER/lista-ott.diff"
-          fi
-          if [ -f "$OUTPUT_FOLDER/eventos_2.diff" ]; then
-            rm "$OUTPUT_FOLDER/eventos_2.diff"
-          fi
-
-      - name: Generate custom diff files
-        run: |
-          echo "Checking eventos.html files"
-          #ls -l $OUTPUT_FOLDER/eventos.html.orig
-          #ls -l $OUTPUT_FOLDER/eventos.html
-          if [ -f "$OUTPUT_FOLDER/eventos.html.orig" ] && [ -f "$OUTPUT_FOLDER/eventos.html" ]; then
-            deleted_lines=$(grep -Fxv -f $OUTPUT_FOLDER/eventos.html $OUTPUT_FOLDER/eventos.html.orig || true)
-            added_lines=$(grep -Fxv -f $OUTPUT_FOLDER/eventos.html.orig $OUTPUT_FOLDER/eventos.html || true)
-            if [ -n "$deleted_lines" ] || [ -n "$added_lines" ]; then
-              echo "líneas eliminadas: " > $OUTPUT_FOLDER/eventos.diff
-              echo "$deleted_lines" >> $OUTPUT_FOLDER/eventos.diff
-              echo -e "\n\nlíneas añadidas: " >> $OUTPUT_FOLDER/eventos.diff
-              echo "$added_lines" >> $OUTPUT_FOLDER/eventos.diff
-            else
-              echo "No changes in eventos.html"
-            fi
-          else
-            echo "No changes in eventos.html"
-          fi
-          echo "Checking eventos_2.html files"
-          #ls -l $OUTPUT_FOLDER/eventos_2.html.orig
-          #ls -l $OUTPUT_FOLDER/eventos_2.html
-          if [ -f "$OUTPUT_FOLDER/eventos_2.html.orig" ] && [ -f "$OUTPUT_FOLDER/eventos_2.html" ]; then
-            deleted_lines=$(grep -Fxv -f $OUTPUT_FOLDER/eventos_2.html $OUTPUT_FOLDER/eventos_2.html.orig || true)
-            added_lines=$(grep -Fxv -f $OUTPUT_FOLDER/eventos_2.html.orig $OUTPUT_FOLDER/eventos_2.html || true)
-            if [ -n "$deleted_lines" ] || [ -n "$added_lines" ]; then
-              echo "líneas eliminadas: " > $OUTPUT_FOLDER/eventos_2.diff
-              echo "$deleted_lines" >> $OUTPUT_FOLDER/eventos_2.diff
-              echo -e "\n\nlíneas añadidas: " >> $OUTPUT_FOLDER/eventos_2.diff
-              echo "$added_lines" >> $OUTPUT_FOLDER/eventos_2.diff
-            else
-              echo "No changes in eventos.html"
-            fi
-          else
-            echo "No changes in eventos_2.html"
-          fi
-          echo "Checking lista-ott.m3u files"
-          #ls -l $OUTPUT_FOLDER/lista-ott.m3u.orig
-          #ls -l $OUTPUT_FOLDER/lista-ott.m3u
-          if [ -f "$OUTPUT_FOLDER/lista-ott.m3u.orig" ] && [ -f "$OUTPUT_FOLDER/lista-ott.m3u" ]; then
-            deleted_lines_2=$(grep -Fxv -f $OUTPUT_FOLDER/lista-ott.m3u $OUTPUT_FOLDER/lista-ott.m3u.orig || true)
-            added_lines_2=$(grep -Fxv -f $OUTPUT_FOLDER/lista-ott.m3u.orig $OUTPUT_FOLDER/lista-ott.m3u || true)
-            if [ -n "$deleted_lines_2" ] || [ -n "$added_lines_2" ]; then
-              echo "líneas eliminadas: " > $OUTPUT_FOLDER/lista-ott.diff
-              echo "$deleted_lines_2" >> $OUTPUT_FOLDER/lista-ott.diff
-              echo -e "\n\nlíneas añadidas: " >> $OUTPUT_FOLDER/lista-ott.diff
-              echo "$added_lines_2" >> $OUTPUT_FOLDER/lista-ott.diff
-            else
-              echo "No changes in lista-ott.m3u"
-            fi
-          else
-            echo "No changes in lista-ott.m3u"
-          fi
 
       - name: Check for file changes
         id: check_changes
