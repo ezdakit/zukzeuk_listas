@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 async function captureIframeContent(zeroNetAddress, baseFilename, captureMultiplier) {
-    const browser = await chromium.launch({ headless: false }); // Run in headed mode for debugging
+    const browser = await chromium.launch({ headless: true });
     const context = await browser.newContext();
     const page = await context.newPage();
 
@@ -21,12 +21,29 @@ async function captureIframeContent(zeroNetAddress, baseFilename, captureMultipl
 
         const targetUrl = `http://127.0.0.1:43110/${zeroNetAddress}?accept=1`;
         
-        console.log(`Navigating to ${targetUrl}`);
-        await page.goto(targetUrl, { 
-            waitUntil: 'networkidle',
-            timeout: 300000 // Increased to 5 minutes
-        });
-        console.log(`Navigation completed`);
+        let attempts = 0;
+        let pageLoaded = false;
+
+        while (!pageLoaded && attempts < 3) {
+            try {
+                console.log(`Navigating to ${targetUrl} (Attempt ${attempts + 1})`);
+                await page.goto(targetUrl, { 
+                    waitUntil: 'domcontentloaded',
+                    timeout: 30000 // Esperar 30 segundos
+                });
+                console.log(`Navigation completed`);
+                pageLoaded = true;
+            } catch (error) {
+                console.error(`Failed to load page (Attempt ${attempts + 1}): ${error}`);
+                attempts++;
+                await new Promise(resolve => setTimeout(resolve, 5000)); // Esperar 5 segundos antes del siguiente intento
+            }
+        }
+
+        if (!pageLoaded) {
+            console.error('Failed to load page after 3 attempts.');
+            return;
+        }
 
         // Wait for iframe to load
         await page.waitForSelector('iframe#inner-iframe');
