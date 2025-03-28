@@ -1,14 +1,6 @@
 const { chromium } = require('playwright');
 
-// Obtener los parámetros
-const zeronetAddress = process.argv[2];
-
-if (!zeronetAddress) {
-  console.error('Error: Falta el parámetro de la dirección de ZeroNet. Uso: node extract-content.js <zeronet-address>');
-  process.exit(1);
-}
-
-const zeronetUrl = `http://127.0.0.1:43110/${zeronetAddress}/`;
+const zeronetUrl = 'http://127.0.0.1:43110/13eNqJiWACUUuFM37xwUwmRiCuyMd6X2tS/';
 
 (async () => {
   console.log('Iniciando el script...');
