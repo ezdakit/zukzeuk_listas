@@ -36,7 +36,7 @@ async function captureIframeContent(zeroNetAddress, baseFilename) {
 
                 if (frame) {
                     // Capture iframe content
-                    const frameContent = await frame.content();
+                    const frameContent = await frame.content(); // This should work correctly
                     const filePath = path.join(outputDir, `${baseFilename}_${i}.html`);
                     fs.writeFileSync(
                         filePath,
