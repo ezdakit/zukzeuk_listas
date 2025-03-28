@@ -81,7 +81,7 @@ jobs:
 
       - name: Extract dynamic content 2 with Playwright
         run: |
-          node scripts/extract-content_2.js
+          node scripts/extract-content_2.js "$ZERONET_ADDRESS_3" "$OUTPUT_FOLDER" "$OUTPUT_FILE_2"
 
       - name: Check site ZERONET_ADDRESS_2 synchronization
         run: |
