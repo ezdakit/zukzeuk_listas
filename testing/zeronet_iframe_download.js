@@ -31,26 +31,21 @@ async function captureIframeContent(zeroNetAddress, baseFilename) {
             await new Promise(resolve => setTimeout(resolve, 1000));
 
             try {
-                // Get the frame content
-                const frameContent = await iframe.contentFrame().then(async frame => {
-                    if (frame) {
-                        return await frame.content();
-                    } else {
-                        console.warn('Iframe content not available.');
-                        return '';
-                    }
-                }).catch(e => {
-                    console.error(`Error accessing iframe content: ${e}`);
-                    return '';
-                });
+                // Get the iframe content frame
+                const frame = await iframe.contentFrame();
 
-                // Write to file
-                const filePath = path.join(outputDir, `${baseFilename}_${i}.html`);
-                fs.writeFileSync(
-                    filePath,
-                    `<!-- Capture ${i} at ${new Date().toISOString()} -->\n${frameContent}`
-                );
-                console.log(`Captured ${filePath}`);
+                if (frame) {
+                    // Capture iframe content
+                    const frameContent = await frame.content();
+                    const filePath = path.join(outputDir, `${baseFilename}_${i}.html`);
+                    fs.writeFileSync(
+                        filePath,
+                        `<!-- Capture ${i} at ${new Date().toISOString()} -->\n${frameContent}`
+                    );
+                    console.log(`Captured ${filePath}`);
+                } else {
+                    console.log('Iframe content not available.');
+                }
 
             } catch (e) {
                 console.error(`Failed to capture iframe content for ${baseFilename}_${i}.html: ${e}`);
