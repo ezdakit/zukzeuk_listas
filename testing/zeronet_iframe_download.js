@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 async function captureIframeContent(zeroNetAddress, baseFilename, captureMultiplier) {
-    const browser = await chromium.launch();
+    const browser = await chromium.launch({ headless: false }); // Run in headed mode for debugging
     const context = await browser.newContext();
     const page = await context.newPage();
 
@@ -21,11 +21,12 @@ async function captureIframeContent(zeroNetAddress, baseFilename, captureMultipl
 
         const targetUrl = `http://127.0.0.1:43110/${zeroNetAddress}?accept=1`;
         
-        // Increased timeout for navigation
+        console.log(`Navigating to ${targetUrl}`);
         await page.goto(targetUrl, { 
             waitUntil: 'networkidle',
-            timeout: 180000 // Increased to 3 minutes
+            timeout: 300000 // Increased to 5 minutes
         });
+        console.log(`Navigation completed`);
 
         // Wait for iframe to load
         await page.waitForSelector('iframe#inner-iframe');
