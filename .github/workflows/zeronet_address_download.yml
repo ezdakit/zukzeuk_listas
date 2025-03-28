@@ -75,7 +75,7 @@ jobs:
 
       - name: Extract dynamic content with Playwright
         run: |
-          node zeronet_address_download.js "$ZERONET_ADDRESS_3" "$OUTPUT_FILE_3"
+          node testing/zeronet_address_download.js "$ZERONET_ADDRESS_3" "$OUTPUT_FILE_3"
 
       - name: Check for file changes
         id: check_changes
