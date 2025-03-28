@@ -22,8 +22,8 @@ async function captureIframeContent(zeroNetAddress, baseFilename) {
             console.error(`Navigation to ${targetUrl} failed: ${e}`);
         });
 
-        // Locate the iframe
-        const iframe = await page.locator('iframe#inner-iframe');
+        // Locate the iframe using frameLocator
+        const iframeLocator = page.frameLocator('iframe#inner-iframe');
 
         // Capture content every second for 10 seconds
         for (let i = 0; i < 10; i++) {
@@ -31,21 +31,15 @@ async function captureIframeContent(zeroNetAddress, baseFilename) {
             await new Promise(resolve => setTimeout(resolve, 1000));
 
             try {
-                // Get the iframe content frame
-                const frame = await iframe.contentFrame();
+                // Get the iframe content
+                const frameContent = await iframeLocator.locator('body').innerHTML();
 
-                if (frame) {
-                    // Capture iframe content
-                    const frameContent = await frame.content(); // This should work correctly
-                    const filePath = path.join(outputDir, `${baseFilename}_${i}.html`);
-                    fs.writeFileSync(
-                        filePath,
-                        `<!-- Capture ${i} at ${new Date().toISOString()} -->\n${frameContent}`
-                    );
-                    console.log(`Captured ${filePath}`);
-                } else {
-                    console.log('Iframe content not available.');
-                }
+                const filePath = path.join(outputDir, `${baseFilename}_${i}.html`);
+                fs.writeFileSync(
+                    filePath,
+                    `<!-- Capture ${i} at ${new Date().toISOString()} -->\n${frameContent}`
+                );
+                console.log(`Captured ${filePath}`);
 
             } catch (e) {
                 console.error(`Failed to capture iframe content for ${baseFilename}_${i}.html: ${e}`);
