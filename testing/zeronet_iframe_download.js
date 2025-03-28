@@ -21,80 +21,64 @@ async function captureIframeContent(zeroNetAddress, baseFilename, captureMultipl
 
         const targetUrl = `http://127.0.0.1:43110/${zeroNetAddress}?accept=1`;
         
-        // Enhanced navigation with multiple wait states
+        // Increased timeout for navigation
         await page.goto(targetUrl, { 
             waitUntil: 'networkidle',
-            timeout: 60000 
+            timeout: 180000 // Increased to 3 minutes
         });
 
-        // Robust frame handling with multiple checks
-        const getFrameContent = async (attempt = 1) => {
-            try {
-                // Wait for iframe existence and visibility
-                await page.waitForSelector('iframe#inner-iframe', { 
-                    state: 'attached',
-                    timeout: 10000 
-                });
-                
-                // Multiple methods to access frame
-                const frame = await page.$('iframe#inner-iframe')
-                    .then(handle => handle.contentFrame())
-                    .catch(() => null);
+        // Wait for iframe to load
+        await page.waitForSelector('iframe#inner-iframe');
 
-                if (!frame) throw new Error('Frame not found');
-                
-                // Wait for frame stability
-                await frame.waitForLoadState('domcontentloaded');
-                await frame.waitForLoadState('networkidle');
-                
-                // Verify visible content
-                const body = await frame.$('body');
-                const isVisible = await body.isVisible();
-                if (!isVisible) throw new Error('Iframe body not visible');
+        // Locate the iframe using frameLocator
+        const iframeLocator = page.frameLocator('iframe#inner-iframe');
 
-                return await frame.content();
-            } catch (error) {
-                if (attempt <= 3) {
-                    console.log(`Retry attempt ${attempt}`);
-                    await new Promise(resolve => setTimeout(resolve, 2000));
-                    return getFrameContent(attempt + 1);
-                }
-                throw error;
-            }
-        };
+        // Wait for iframe content to load
+        await iframeLocator.locator('body').waitFor({ state: 'visible', timeout: 10000 });
 
-        // Capture logic with retries
-        const captureInterval = (captureMultiplier * 10 * 1000) / 10;
-        
+        // Calculate total seconds to wait and adjust capture interval
+        const totalSeconds = captureMultiplier * 10;
+        const captureInterval = totalSeconds / 10; // Interval in seconds
+
+        // Capture content every interval for the specified total time
         for (let i = 0; i < 10; i++) {
-            const startTime = Date.now();
             try {
-                const content = await getFrameContent();
+                // Get the iframe content
+                const frameContent = await iframeLocator.locator('body').innerHTML();
+
+                if (!frameContent) {
+                    console.log('Iframe content not available.');
+                    continue;
+                }
+
                 const timestamp = new Date().toISOString();
                 const filePath = path.join(outputDir, `${baseFilename}_${i}.html`);
                 
-                fs.writeFileSync(filePath, `<!-- Capture ${i} at ${timestamp} -->\n${content}`);
-                console.log(`Success: ${filePath}`);
-            } catch (error) {
-                console.error(`Capture ${i} failed: ${error.message}`);
+                fs.writeFileSync(filePath, `<!-- Capture ${i} at ${timestamp} -->\n${frameContent}`);
+                console.log(`Captured ${filePath}`);
+
+            } catch (e) {
+                console.error(`Failed to capture iframe content for ${baseFilename}_${i}.html: ${e}`);
             }
 
-            // Precision interval control
-            const elapsed = Date.now() - startTime;
-            const waitTime = Math.max(0, captureInterval - elapsed);
-            await new Promise(resolve => setTimeout(resolve, waitTime));
+            // Wait for the capture interval
+            if (i < 9) { // No need to wait after last capture
+                await new Promise(resolve => setTimeout(resolve, captureInterval * 1000));
+            }
         }
 
+    } catch (error) {
+        console.error(`An error occurred: ${error}`);
     } finally {
         await browser.close();
     }
 }
 
 // CLI execution
-const [,, zeronetAddress, filename, multiplier] = process.argv;
-if (!zeronetAddress || !filename || !multiplier) {
-    console.error('Usage: node script.js <address> <base-filename> <multiplier>');
+const [,, zeroNetAddress, filename, captureMultiplier] = process.argv;
+if (!zeroNetAddress || !filename || !captureMultiplier) {
+    console.error('Usage: node loader.js <zeronet-address> <filename-base> <capture-multiplier>');
     process.exit(1);
 }
 
-captureIframeContent(zeronetAddress, filename, parseInt(multiplier));
+captureIframeContent(zeroNetAddress, filename, parseInt(captureMultiplier)).catch(console.error);
