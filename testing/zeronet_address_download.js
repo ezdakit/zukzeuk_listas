@@ -1,5 +1,6 @@
 const { chromium } = require('playwright');
 const fs = require('fs');
+const path = require('path');
 const { URL } = require('url');
 
 async function captureLoadingContent(zeroNetAddress, baseFilename) {
@@ -7,29 +8,39 @@ async function captureLoadingContent(zeroNetAddress, baseFilename) {
     const context = await browser.newContext();
     const page = await context.newPage();
     
+    // Ruta donde se guardarán los archivos
+    const outputDir = 'testing';
+    
     try {
-        // Construct the full ZeroNet URL
+        // Verificar si existe la carpeta, si no, crearla
+        if (!fs.existsSync(outputDir)) {
+            fs.mkdirSync(outputDir, { recursive: true });
+            console.log(`Carpeta ${outputDir} creada.`);
+        }
+        
+        // Construir la URL completa
         const targetUrl = `http://127.0.0.1:43110/${zeroNetAddress}?accept=1`;
         
-        // Start navigation without waiting for completion
+        // Iniciar la navegación sin esperar a que termine
         const navigationPromise = page.goto(targetUrl, {
             waitUntil: 'commit',
             timeout: 60000
         });
 
-        // Capture loop while page loads
+        // Capturar contenido cada segundo
         for (let i = 0; i < 10; i++) {
             const rawContent = await page.content();
+            const filePath = path.join(outputDir, `${baseFilename}_${i}.html`);
             fs.writeFileSync(
-                `${baseFilename}_${i}.html`,
+                filePath,
                 `<!-- Capture ${i} at ${new Date().toISOString()} -->\n${rawContent}`
             );
             
-            // Wait exactly 1 second between captures
+            // Esperar exactamente 1 segundo entre capturas
             await new Promise(resolve => setTimeout(resolve, 1000));
         }
 
-        // Wait for navigation to complete or timeout
+        // Esperar a que la navegación termine o se agote el tiempo
         await navigationPromise.catch(() => {});
 
     } finally {
@@ -37,7 +48,7 @@ async function captureLoadingContent(zeroNetAddress, baseFilename) {
     }
 }
 
-// Execution with CLI parameters
+// Ejecución con parámetros CLI
 const [,, zeroNetAddress, filename] = process.argv;
 if (!zeroNetAddress || !filename) {
     console.error('Usage: node loader.js <zeronet-address> <filename-base>');
