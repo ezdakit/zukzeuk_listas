@@ -26,7 +26,7 @@ jobs:
           set -e
           echo "Installing system dependencies"
           sudo apt-get update
-          sudo apt-get install -y wget tar curl python3 python3-pip
+          sudo apt-get install -y wget tar curl python3 python3-pip xvfb
           echo "Dependencies installed"
 
       - name: Download and extract ZeroNet
@@ -75,7 +75,7 @@ jobs:
 
       - name: Extract dynamic content with Playwright
         run: |
-          node testing/zeronet_iframe_download.js "$ZERONET_ADDRESS_3" "$OUTPUT_FILE_3" 6
+          xvfb-run node testing/zeronet_iframe_download.js "$ZERONET_ADDRESS_3" "$OUTPUT_FILE_3" 6
 
       - name: Check for file changes
         id: check_changes
