@@ -77,7 +77,7 @@ async function loadPageWithRetries(page, url, retries = 3, timeout = 60000) {
   const page = await browser.newPage();
   console.log('Navegador lanzado correctamente.');
 
-  // Extraer contenido dinámico de la página
+  // Extraer contenido inicial de la página
   const zeronetUrl = `http://127.0.0.1:43110/${zeronetAddress}/`;
   console.log(`Extrayendo contenido de: ${zeronetUrl}`);
 
@@ -91,34 +91,9 @@ async function loadPageWithRetries(page, url, retries = 3, timeout = 60000) {
     // Cargar la página con reintentos
     await loadPageWithRetries(page, zeronetUrl);
 
-    // Esperar a que el iframe se cargue
-    console.log('Esperando a que el iframe se cargue...');
-    await page.waitForSelector('#inner-iframe', { timeout: 20000 });
-    console.log('Iframe cargado correctamente.');
-
-    // Obtener el contenido del iframe
-    console.log('Obteniendo el contenido del iframe...');
-    const iframeHandle = await page.$('#inner-iframe');
-    const frame = await iframeHandle.contentFrame();
-
-    // Esperar a que la tabla esté presente y visible
-    console.log('Esperando a que la tabla se cargue...');
-    await frame.waitForSelector('#events-table', { timeout: 20000 });
-    console.log('Tabla cargada correctamente.');
-
-    // Verificar que la tabla esté visible (display: table)
-    console.log('Verificando que la tabla esté visible...');
-    const isTableVisible = await frame.$eval('#events-table', (table) => {
-      return window.getComputedStyle(table).display === 'table';
-    });
-    if (!isTableVisible) {
-      throw new Error('La tabla no está visible.');
-    }
-    console.log('La tabla está visible.');
-
-    // Obtener el HTML final del iframe
-    console.log('Obteniendo el HTML final del iframe...');
-    const finalContent = await frame.content();
+    // Obtener el HTML inicial de la página
+    console.log('Obteniendo el HTML inicial de la página...');
+    const initialContent = await page.content();
 
     // Crear la carpeta si no existe
     if (!fs.existsSync(folderPath)) {
@@ -128,7 +103,7 @@ async function loadPageWithRetries(page, url, retries = 3, timeout = 60000) {
 
     // Guardar el contenido en un archivo
     console.log(`Guardando contenido en: ${filePath}`);
-    fs.writeFileSync(filePath, finalContent);
+    fs.writeFileSync(filePath, initialContent);
     console.log(`Archivo guardado correctamente: ${filePath}`);
   } catch (error) {
     console.error(`Error al extraer el contenido: ${error.message}`);
