@@ -1,22 +1,6 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"
 #EXTVLCOPT:network-caching=2000
 
-#EXTINF:-1 tvg-id="" group-title="tenis [29/03] Masters Miami | Semifinal 2", 00:00 J. Mensik T. Fritz
-http://127.0.0.1:6878/ace/getstream?id=d03c13b6723f66155d7a0df3692a3b073fe630f2
-#EXTINF:-1 tvg-id="" group-title="tenis [29/03] Masters Miami | Semifinal 2", 00:00 J. Mensik T. Fritz
-http://127.0.0.1:6878/ace/getstream?id=12ba546d229bc39f01c3c18988a034b215fe6adb
-#EXTINF:-1 tvg-id="" group-title="tenis [29/03] Masters Miami | Semifinal 2", 00:00 J. Mensik T. Fritz
-http://127.0.0.1:6878/ace/getstream?id=47403b07582b05c2a1eadaf6d1fb6454eda03a77
-#EXTINF:-1 tvg-id="" group-title="tenis [29/03] Masters Miami | Semifinal 2", 00:00 J. Mensik T. Fritz
-http://127.0.0.1:6878/ace/getstream?id=a1660d711184fa701bf1c88395e3b2d43ddca83f
-#EXTINF:-1 tvg-id="" group-title="tenis [29/03] Masters Miami | Semifinal 2", 00:00 J. Mensik T. Fritz
-http://127.0.0.1:6878/ace/getstream?id=6f1f82c3cf6bf4b4ccb6d63d687271878e0e908d
-#EXTINF:-1 tvg-id="" group-title="tenis [29/03] Masters Miami | Semifinal 2", 00:00 J. Mensik T. Fritz
-http://127.0.0.1:6878/ace/getstream?id=1205151f6fa5d95c0eeb543cbce43ccfa6a1b216
-#EXTINF:-1 tvg-id="" group-title="tenis [29/03] Masters Miami | Semifinal 2", 00:00 J. Mensik T. Fritz
-http://127.0.0.1:6878/ace/getstream?id=d8c2ed470e847154a88f011137cc206319f6bed5
-#EXTINF:-1 tvg-id="" group-title="tenis [29/03] Masters Miami | Semifinal 2", 00:00 J. Mensik T. Fritz
-http://127.0.0.1:6878/ace/getstream?id=d225087e30f6efe4c6d9b5ae3c2f3829368cd637
 #EXTINF:-1 tvg-id="" group-title="futbol [29/03] Segunda Uruguay", 00:00 Rampla Juniors Deportivo Maldonado
 http://127.0.0.1:6878/ace/getstream?id=3a2bbdbe4cc775c5c75ccb7d2408363d69c94b5d
 #EXTINF:-1 tvg-id="" group-title="padel [29/03] Santiago Open", 00:00 1/4 de final masculino Premier Padel Tour
@@ -39,6 +23,22 @@ http://127.0.0.1:6878/ace/getstream?id=a8745bd07dc60413a4fc05caf2cabbfb11952232
 http://127.0.0.1:6878/ace/getstream?id=fe134ae09f9643ea9bfdd75ff1f121ba8c58e5c1
 #EXTINF:-1 tvg-id="" group-title="baloncesto [29/03] NBA | Liga Regular", 00:00 Detroit Pistons Cleveland Cavaliers
 http://127.0.0.1:6878/ace/getstream?id=acb510858f34c3c6fd5f79395b031abd6885c2b3
+#EXTINF:-1 tvg-id="" group-title="tenis [29/03] Masters Miami | Semifinal 2", 00:10 J. Mensik T. Fritz
+http://127.0.0.1:6878/ace/getstream?id=d03c13b6723f66155d7a0df3692a3b073fe630f2
+#EXTINF:-1 tvg-id="" group-title="tenis [29/03] Masters Miami | Semifinal 2", 00:10 J. Mensik T. Fritz
+http://127.0.0.1:6878/ace/getstream?id=12ba546d229bc39f01c3c18988a034b215fe6adb
+#EXTINF:-1 tvg-id="" group-title="tenis [29/03] Masters Miami | Semifinal 2", 00:10 J. Mensik T. Fritz
+http://127.0.0.1:6878/ace/getstream?id=47403b07582b05c2a1eadaf6d1fb6454eda03a77
+#EXTINF:-1 tvg-id="" group-title="tenis [29/03] Masters Miami | Semifinal 2", 00:10 J. Mensik T. Fritz
+http://127.0.0.1:6878/ace/getstream?id=a1660d711184fa701bf1c88395e3b2d43ddca83f
+#EXTINF:-1 tvg-id="" group-title="tenis [29/03] Masters Miami | Semifinal 2", 00:10 J. Mensik T. Fritz
+http://127.0.0.1:6878/ace/getstream?id=6f1f82c3cf6bf4b4ccb6d63d687271878e0e908d
+#EXTINF:-1 tvg-id="" group-title="tenis [29/03] Masters Miami | Semifinal 2", 00:10 J. Mensik T. Fritz
+http://127.0.0.1:6878/ace/getstream?id=1205151f6fa5d95c0eeb543cbce43ccfa6a1b216
+#EXTINF:-1 tvg-id="" group-title="tenis [29/03] Masters Miami | Semifinal 2", 00:10 J. Mensik T. Fritz
+http://127.0.0.1:6878/ace/getstream?id=d8c2ed470e847154a88f011137cc206319f6bed5
+#EXTINF:-1 tvg-id="" group-title="tenis [29/03] Masters Miami | Semifinal 2", 00:10 J. Mensik T. Fritz
+http://127.0.0.1:6878/ace/getstream?id=d225087e30f6efe4c6d9b5ae3c2f3829368cd637
 #EXTINF:-1 tvg-id="" group-title="futbol [29/03] Liga 1 Perú", 02:00 Universitario Sport Huancayo
 http://127.0.0.1:6878/ace/getstream?id=3a2bbdbe4cc775c5c75ccb7d2408363d69c94b5d
 #EXTINF:-1 tvg-id="" group-title="golf [29/03] Hero Indian Open", 09:00 Jornada 3
