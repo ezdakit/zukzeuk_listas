@@ -75,14 +75,16 @@ jobs:
 
       - name: Extract iframe src from ZeroNet address
         run: |
-          curl -H "Accept: text/html" -s "http://127.0.0.1:43110/${{ env.ZERONET_ADDRESS_1 }}" -o content.html
+          curl -H "Accept: text/html" --connect-timeout 10 --max-time 30 -s "http://127.0.0.1:43110/${{ env.ZERONET_ADDRESS_1 }}" -o content.html
           cat content.html
           ADDRESS=$(grep -oP '(?<=address = ")[^"]*' content.html)
           WRAPPER_NONCE=$(grep -oP '(?<=wrapper_nonce = ")[^"]*' content.html)
           SRC="${ADDRESS}/?wrapper_nonce=${WRAPPER_NONCE}"
           echo "Extracted src: $SRC"
-          
-          curl -H "Accept: text/html" -s "http://127.0.0.1:43110/${SRC}" -o iframe.html
+
+          echo "iframe url:"
+          echo "http://127.0.0.1:43110/${SRC}"
+          curl -H "Accept: text/html"  --connect-timeout 10 --max-time 30 -s "http://127.0.0.1:43110/${SRC}" -o iframe.html
           cat iframe.html
           echo "Extracted iframe"
 
