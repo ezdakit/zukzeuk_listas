@@ -124,6 +124,7 @@ jobs:
             echo "$cambios"
           else
             echo "changes_detected=false" >> $GITHUB_ENV
+          fi
 
       - name: Add and commit changes
         if: env.changes_detected == 'true'
