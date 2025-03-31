@@ -21,6 +21,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Cache system dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cache/pip
+            ~/.npm
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
       - name: Install system dependencies
         run: |
           set -e
@@ -28,6 +38,14 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y wget tar curl python3 python3-pip xvfb
           echo "Dependencies installed"
+
+      - name: Cache ZeroNet
+        uses: actions/cache@v3
+        with:
+          path: ZeroNet-linux-dist-linux64/
+          key: ${{ runner.os }}-zeronet-${{ hashFiles('**/ZeroNet-py3-linux64.tar.gz') }}
+          restore-keys: |
+            ${{ runner.os }}-zeronet-
 
       - name: Download and extract ZeroNet
         run: |
@@ -61,6 +79,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+
+      - name: Cache Node.js dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
       - name: Install Playwright
         run: |
@@ -98,7 +124,6 @@ jobs:
             echo "$cambios"
           else
             echo "changes_detected=false" >> $GITHUB_ENV
-          fi
 
       - name: Add and commit changes
         if: env.changes_detected == 'true'
