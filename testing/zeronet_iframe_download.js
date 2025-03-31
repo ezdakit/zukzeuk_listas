@@ -30,7 +30,7 @@ async function captureIframeContent(url) {
       console.log('Selector del iframe encontrado');
 
       // Espera explícita para asegurar que el contenido dinámico se cargue
-      await page.waitForTimeout(5000); // Espera 5 segundos
+      await page.waitForTimeout(10000); // Espera 10 segundos
 
       // Crea el directorio 'testing' si no existe
       const testingDir = path.join(__dirname, 'testing');
