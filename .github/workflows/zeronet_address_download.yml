@@ -71,11 +71,11 @@ jobs:
         run: |
           echo "Checking site synchronization for $ZERONET_ADDRESS_1"
           curl -H "Accept: text/html" -I http://127.0.0.1:43110/$ZERONET_ADDRESS_1/
-          echo "Site ZERONET_ADDRESS_3 synchronization checked"
+          echo "Site ZERONET_ADDRESS_1 synchronization checked"
 
       - name: Extract dynamic content with Playwright
         run: |
-          node testing/zeronet_iframe_download.js "$ZERONET_ADDRESS_1" "$OUTPUT_FILE_1" 6
+          node testing/zeronet_iframe_download.js "$ZERONET_ADDRESS_1" "$OUTPUT_FILE_1" 1
 
       - name: Check for file changes
         id: check_changes
