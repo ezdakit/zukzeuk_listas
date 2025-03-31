@@ -75,7 +75,7 @@ jobs:
 
       - name: Extract dynamic content with Playwright
         run: |
-          xvfb-run node testing/zeronet_iframe_download.js "$ZERONET_ADDRESS_3" "$OUTPUT_FILE_3" 6
+          node testing/zeronet_iframe_download.js "$ZERONET_ADDRESS_1" "$OUTPUT_FILE_1" 6
 
       - name: Check for file changes
         id: check_changes
