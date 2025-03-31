@@ -8,6 +8,9 @@ async function captureIframeContent(url) {
   const browser = await chromium.launch();
   const page = await browser.newPage();
 
+  // Configura el enrutamiento para deshabilitar la caché
+  await page.route('**', route => route.continue({ headers: { 'Cache-Control': 'no-cache' } }));
+
   console.log('Navegador iniciado.');
 
   // Construye la URL completa con el parámetro accept
@@ -16,7 +19,7 @@ async function captureIframeContent(url) {
   console.log(`Navegando a: ${fullUrl}`);
 
   try {
-    await page.goto(fullUrl, { timeout: 10000 }); // 10s el tiempo de espera
+    await page.goto(fullUrl, { timeout: 10000, waitUntil: 'networkidle' }); // 10s el tiempo de espera
     console.log('Navegación completada con éxito.');
   } catch (error) {
     console.error('Error al navegar a la página:', error);
@@ -32,28 +35,34 @@ async function captureIframeContent(url) {
       // Espera explícita para asegurar que el contenido dinámico se cargue
       const content = await page.waitForTimeout(10000); // Espera 10 segundos
 
-      // Crea el directorio 'testing' si no existe
-      const testingDir = path.join(__dirname, 'testing');
-      if (!fs.existsSync(testingDir)) {
-          fs.mkdirSync(testingDir);
-          console.log(`Directorio '${testingDir}' creado.`);
-      }
+      if (content) {
 
-      // Elimina todos los archivos .html existentes en el directorio 'testing'
-      fs.readdirSync(testingDir).forEach(file => {
-          if (file.endsWith('.html')) {
-              fs.unlinkSync(path.join(testingDir, file));
-              console.log(`Archivo '${file}' eliminado.`);
-          }
-      });
+        // Crea el directorio 'testing' si no existe
+        const testingDir = path.join(__dirname, 'testing');
+        if (!fs.existsSync(testingDir)) {
+            fs.mkdirSync(testingDir);
+            console.log(`Directorio '${testingDir}' creado.`);
+        }
+  
+        // Elimina todos los archivos .html existentes en el directorio 'testing'
+        fs.readdirSync(testingDir).forEach(file => {
+            if (file.endsWith('.html')) {
+                fs.unlinkSync(path.join(testingDir, file));
+                console.log(`Archivo '${file}' eliminado.`);
+            }
+        });
+  
+        try {
+            //const content = await iframe.locator('body').innerHTML();
+            const filePath = path.join(testingDir, `iframe.html`);
+            fs.writeFileSync(filePath, content);
+            console.log(`Contenido capturado y guardado en '${filePath}'.`);
+        } catch (error) {
+            console.error(`Error al capturar el contenido del iframe`, error);
+        }
 
-      try {
-          //const content = await iframe.locator('body').innerHTML();
-          const filePath = path.join(testingDir, `iframe.html`);
-          fs.writeFileSync(filePath, content);
-          console.log(`Contenido capturado y guardado en '${filePath}'.`);
-      } catch (error) {
-          console.error(`Error al capturar el contenido del iframe`, error);
+      } else {
+        console.error('El contenido capturado es undefined.');
       }
 
   } catch (error) {
