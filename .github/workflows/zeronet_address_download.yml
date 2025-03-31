@@ -84,6 +84,7 @@ jobs:
 
       - name: Cache Node.js dependencies
         uses: actions/cache@v3
+        id: cache-node
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
@@ -91,10 +92,12 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Install Playwright
+        if: steps.cache-node.outputs.cache-hit != 'true'
         run: |
           npm install playwright
 
       - name: Install Playwright browsers
+        if: steps.cache-node.outputs.cache-hit != 'true'
         run: |
           npx playwright install
 
