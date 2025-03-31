@@ -29,6 +29,9 @@ async function captureIframeContent(url) {
       const iframe = await page.frameLocator('iframe#inner-iframe');
       console.log('Selector del iframe encontrado');
 
+      // Espera explícita para asegurar que el contenido dinámico se cargue
+      await page.waitForTimeout(5000); // Espera 5 segundos
+
       // Crea el directorio 'testing' si no existe
       const testingDir = path.join(__dirname, 'testing');
       if (!fs.existsSync(testingDir)) {
