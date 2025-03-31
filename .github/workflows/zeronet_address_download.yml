@@ -41,6 +41,7 @@ jobs:
 
       - name: Cache ZeroNet
         uses: actions/cache@v3
+        id: cache-zeronet
         with:
           path: ZeroNet-linux-dist-linux64/
           key: ${{ runner.os }}-zeronet-${{ hashFiles('**/ZeroNet-py3-linux64.tar.gz') }}
@@ -48,6 +49,7 @@ jobs:
             ${{ runner.os }}-zeronet-
 
       - name: Download and extract ZeroNet
+        if: steps.cache-zeronet.outputs.cache-hit != 'true'
         run: |
           set -e
           echo "Downloading ZeroNet"
