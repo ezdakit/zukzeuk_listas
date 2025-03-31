@@ -19,7 +19,8 @@ async function captureIframeContent(url) {
   console.log(`Navegando a: ${fullUrl}`);
 
   try {
-    await page.goto(fullUrl, { timeout: 10000, waitUntil: 'networkidle' }); // 10s el tiempo de espera
+    await page.goto(fullUrl, { timeout: 10000 }); // 10s el tiempo de espera
+    //await page.goto(fullUrl, { timeout: 10000, waitUntil: 'networkidle' }); // 10s el tiempo de espera
     console.log('Navegación completada con éxito.');
   } catch (error) {
     console.error('Error al navegar a la página:', error);
@@ -52,14 +53,10 @@ async function captureIframeContent(url) {
             }
         });
   
-        try {
-            //const content = await iframe.locator('body').innerHTML();
-            const filePath = path.join(testingDir, `iframe.html`);
-            fs.writeFileSync(filePath, content);
-            console.log(`Contenido capturado y guardado en '${filePath}'.`);
-        } catch (error) {
-            console.error(`Error al capturar el contenido del iframe`, error);
-        }
+        //const content = await iframe.locator('body').innerHTML();
+        const filePath = path.join(testingDir, `iframe.html`);
+        fs.writeFileSync(filePath, content);
+        console.log(`Contenido capturado y guardado en '${filePath}'.`);
 
       } else {
         console.error('El contenido capturado es undefined.');
