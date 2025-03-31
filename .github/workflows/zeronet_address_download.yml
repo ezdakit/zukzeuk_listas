@@ -77,7 +77,9 @@ jobs:
         run: |
           curl -H "Accept: text/html" -s "http://127.0.0.1:43110/${{ env.ZERONET_ADDRESS_1 }}" -o content.html
           cat content.html
-          SRC=$(grep -oE '<iframe src="[^"]*' content.html | sed 's/<iframe src="//')
+          ADDRESS=$(grep -oP '(?<=address = ")[^"]*' content.html)
+          WRAPPER_NONCE=$(grep -oP '(?<=wrapper_nonce = ")[^"]*' content.html)
+          SRC="/${ADDRESS}/?wrapper_nonce=${WRAPPER_NONCE}"
           echo "Extracted src: $SRC"
 
       #- name: Extract dynamic content with Playwright
