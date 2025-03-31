@@ -83,9 +83,6 @@ jobs:
           echo "Extracted src: $SRC"
           echo "iframe url:"
           echo "http://127.0.0.1:43110/${SRC}"
-
-      - name: Extract dynamic content with Playwright
-        run: |
           node testing/zeronet_iframe_download.js "http://127.0.0.1:43110/${SRC}"
 
       - name: Check for file changes
