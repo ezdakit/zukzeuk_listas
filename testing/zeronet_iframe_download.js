@@ -16,7 +16,7 @@ async function captureIframeContent(url) {
   console.log(`Navegando a: ${fullUrl}`);
 
   try {
-    await page.goto(fullUrl, { timeout: 20000 }); // Desactiva el tiempo de espera
+    await page.goto(fullUrl, { timeout: 10000 }); // 10s el tiempo de espera
     console.log('Navegación completada con éxito.');
   } catch (error) {
     console.error('Error al navegar a la página:', error);
@@ -25,7 +25,7 @@ async function captureIframeContent(url) {
 
   try {
       console.log('Esperando selector del iframe');
-      await page.waitForSelector('iframe#inner-iframe', {timeout: 60000}); //60 seconds timeout
+      await page.waitForSelector('iframe#inner-iframe', {timeout: 10000}); //10 seconds timeout
       const iframe = await page.frameLocator('iframe#inner-iframe');
       console.log('Selector del iframe encontrado');
 
