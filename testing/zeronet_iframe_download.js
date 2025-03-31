@@ -46,7 +46,7 @@ async function captureIframeContent(url) {
 
       try {
           const content = await iframe.locator('body').innerHTML();
-          const filePath = path.join(testingDir, `filename_${i}.html`);
+          const filePath = path.join(testingDir, `iframe.html`);
           fs.writeFileSync(filePath, content);
           console.log(`Contenido capturado y guardado en '${filePath}'.`);
       } catch (error) {
