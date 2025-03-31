@@ -75,7 +75,7 @@ jobs:
 
       - name: Extract iframe src from ZeroNet address
         run: |
-          curl -s "http://127.0.0.1:43110/${{ $ZERONET_ADDRESS_1 }}?accept=1" -o content.html
+          curl -s "http://127.0.0.1:43110/${{ env.ZERONET_ADDRESS_1 }}?accept=1" -o content.html
           SRC=$(grep -oP '(?<=<iframe src=")[^"]*' content.html)
           echo "Extracted src: $SRC"
 
