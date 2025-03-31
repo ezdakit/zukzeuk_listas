@@ -75,8 +75,9 @@ jobs:
 
       - name: Extract iframe src from ZeroNet address
         run: |
-          curl -s "http://127.0.0.1:43110/${{ env.ZERONET_ADDRESS_1 }}?accept=1" -o content.html
-          SRC=$(grep -oP '(?<=<iframe src=")[^"]*' content.html)
+          curl -H "Accept: text/html" -s "http://127.0.0.1:43110/${{ env.ZERONET_ADDRESS_1 }}" -o content.html
+          cat content.html
+          SRC=$(grep -oE '<iframe src="[^"]*' content.html | sed 's/<iframe src="//')
           echo "Extracted src: $SRC"
 
       #- name: Extract dynamic content with Playwright
