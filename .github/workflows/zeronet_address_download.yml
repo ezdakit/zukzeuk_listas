@@ -21,16 +21,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Cache system dependencies
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.cache/pip
-            ~/.npm
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-
       - name: Install system dependencies
         run: |
           set -e
@@ -39,17 +29,7 @@ jobs:
           sudo apt-get install -y wget tar curl python3 python3-pip xvfb
           echo "Dependencies installed"
 
-      - name: Cache ZeroNet
-        uses: actions/cache@v3
-        id: cache-zeronet
-        with:
-          path: ZeroNet-linux-dist-linux64/
-          key: ${{ runner.os }}-zeronet-${{ hashFiles('**/ZeroNet-py3-linux64.tar.gz') }}
-          restore-keys: |
-            ${{ runner.os }}-zeronet-
-
       - name: Download and extract ZeroNet
-        if: steps.cache-zeronet.outputs.cache-hit != 'true'
         run: |
           set -e
           echo "Downloading ZeroNet"
@@ -82,22 +62,11 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Cache Node.js dependencies
-        uses: actions/cache@v3
-        id: cache-node
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
       - name: Install Playwright
-        if: steps.cache-node.outputs.cache-hit != 'true'
         run: |
           npm install playwright
 
       - name: Install Playwright browsers
-        if: steps.cache-node.outputs.cache-hit != 'true'
         run: |
           npx playwright install
 
