@@ -25,12 +25,12 @@ async function captureIframeContent(url) {
 
   try {
       console.log('Esperando selector del iframe');
-      await page.waitForSelector('iframe#inner-iframe', {timeout: 10000}); //10 seconds timeout
-      const iframe = await page.frameLocator('iframe#inner-iframe');
-      console.log('Selector del iframe encontrado');
+      //await page.waitForSelector('iframe#inner-iframe', {timeout: 10000}); //10 seconds timeout
+      //const iframe = await page.frameLocator('iframe#inner-iframe');
+      //console.log('Selector del iframe encontrado');
 
       // Espera explícita para asegurar que el contenido dinámico se cargue
-      await page.waitForTimeout(10000); // Espera 10 segundos
+      const content = await page.waitForTimeout(10000); // Espera 10 segundos
 
       // Crea el directorio 'testing' si no existe
       const testingDir = path.join(__dirname, 'testing');
@@ -48,7 +48,7 @@ async function captureIframeContent(url) {
       });
 
       try {
-          const content = await iframe.locator('body').innerHTML();
+          //const content = await iframe.locator('body').innerHTML();
           const filePath = path.join(testingDir, `iframe.html`);
           fs.writeFileSync(filePath, content);
           console.log(`Contenido capturado y guardado en '${filePath}'.`);
