@@ -79,8 +79,12 @@ jobs:
           cat content.html
           ADDRESS=$(grep -oP '(?<=address = ")[^"]*' content.html)
           WRAPPER_NONCE=$(grep -oP '(?<=wrapper_nonce = ")[^"]*' content.html)
-          SRC="/${ADDRESS}/?wrapper_nonce=${WRAPPER_NONCE}"
+          SRC="${ADDRESS}/?wrapper_nonce=${WRAPPER_NONCE}"
           echo "Extracted src: $SRC"
+          
+          curl -H "Accept: text/html" -s "http://127.0.0.1:43110/${SRC}" -o iframe.html
+          cat iframe.html
+          echo "Extracted iframe"
 
       #- name: Extract dynamic content with Playwright
       #  run: |
