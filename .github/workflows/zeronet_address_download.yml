@@ -86,7 +86,7 @@ jobs:
 
       - name: Extract dynamic content with Playwright
         run: |
-          node testing/zeronet_iframe_download.js "$ZERONET_ADDRESS_3"
+          node testing/zeronet_iframe_download.js "http://127.0.0.1:43110/${SRC}"
 
       - name: Check for file changes
         id: check_changes
