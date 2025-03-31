@@ -73,9 +73,15 @@ jobs:
           curl -H "Accept: text/html" -I http://127.0.0.1:43110/$ZERONET_ADDRESS_1/
           echo "Site ZERONET_ADDRESS_1 synchronization checked"
 
-      - name: Extract dynamic content with Playwright
+      - name: Extract iframe src from ZeroNet address
         run: |
-          node testing/zeronet_iframe_download.js "$ZERONET_ADDRESS_1" "$OUTPUT_FILE_1" 1
+          curl -s "http://127.0.0.1:43110/${{ $ZERONET_ADDRESS_1 }}?accept=1" -o content.html
+          SRC=$(grep -oP '(?<=<iframe src=")[^"]*' content.html)
+          echo "Extracted src: $SRC"
+
+      #- name: Extract dynamic content with Playwright
+      #  run: |
+      #    node testing/zeronet_iframe_download.js "$ZERONET_ADDRESS_1" "$OUTPUT_FILE_1" 1
 
       - name: Check for file changes
         id: check_changes
