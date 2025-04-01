@@ -36,31 +36,25 @@ async function captureIframeContent(url) {
       // Espera explícita para asegurar que el contenido dinámico se cargue
       const content = await page.waitForTimeout(10000); // Espera 10 segundos
 
-      if (content) {
-
-        // Crea el directorio 'testing' si no existe
-        const testingDir = path.join(__dirname, 'testing');
-        if (!fs.existsSync(testingDir)) {
-            fs.mkdirSync(testingDir);
-            console.log(`Directorio '${testingDir}' creado.`);
-        }
-  
-        // Elimina todos los archivos .html existentes en el directorio 'testing'
-        fs.readdirSync(testingDir).forEach(file => {
-            if (file.endsWith('.html')) {
-                fs.unlinkSync(path.join(testingDir, file));
-                console.log(`Archivo '${file}' eliminado.`);
-            }
-        });
-  
-        //const content = await iframe.locator('body').innerHTML();
-        const filePath = path.join(testingDir, `iframe.html`);
-        fs.writeFileSync(filePath, content);
-        console.log(`Contenido capturado y guardado en '${filePath}'.`);
-
-      } else {
-        console.error('El contenido capturado es undefined.');
+      // Crea el directorio 'testing' si no existe
+      const testingDir = path.join(__dirname, 'testing');
+      if (!fs.existsSync(testingDir)) {
+          fs.mkdirSync(testingDir);
+          console.log(`Directorio '${testingDir}' creado.`);
       }
+
+      // Elimina todos los archivos .html existentes en el directorio 'testing'
+      fs.readdirSync(testingDir).forEach(file => {
+          if (file.endsWith('.html')) {
+              fs.unlinkSync(path.join(testingDir, file));
+              console.log(`Archivo '${file}' eliminado.`);
+          }
+      });
+
+      //const content = await iframe.locator('body').innerHTML();
+      const filePath = path.join(testingDir, `iframe.html`);
+      fs.writeFileSync(filePath, content);
+      console.log(`Contenido capturado y guardado en '${filePath}'.`);
 
   } catch (error) {
       console.error('Error al procesar el iFrame:', error);
