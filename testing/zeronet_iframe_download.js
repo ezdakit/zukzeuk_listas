@@ -8,9 +8,6 @@ async function captureIframeContent(url) {
   const browser = await chromium.launch();
   const page = await browser.newPage();
 
-  // Configura el enrutamiento para deshabilitar la caché
-  await page.route('**', route => route.continue({ headers: { 'Cache-Control': 'no-cache' } }));
-
   console.log('Navegador iniciado.');
 
   // Construye la URL completa con el parámetro accept
@@ -19,8 +16,7 @@ async function captureIframeContent(url) {
   console.log(`Navegando a: ${fullUrl}`);
 
   try {
-    await page.goto(fullUrl, { timeout: 10000 }); // 10s el tiempo de espera
-    //await page.goto(fullUrl, { timeout: 10000, waitUntil: 'networkidle' }); // 10s el tiempo de espera
+    await page.goto(fullUrl, { timeout: 20000 }); // Desactiva el tiempo de espera
     console.log('Navegación completada con éxito.');
   } catch (error) {
     console.error('Error al navegar a la página:', error);
@@ -29,12 +25,12 @@ async function captureIframeContent(url) {
 
   try {
       console.log('Esperando selector del iframe');
-      //await page.waitForSelector('iframe#inner-iframe', {timeout: 10000}); //10 seconds timeout
-      //const iframe = await page.frameLocator('iframe#inner-iframe');
-      //console.log('Selector del iframe encontrado');
+      await page.waitForSelector('iframe#inner-iframe', {timeout: 60000}); //60 seconds timeout
+      const iframe = await page.frameLocator('iframe#inner-iframe');
+      console.log('Selector del iframe encontrado');
 
       // Espera explícita para asegurar que el contenido dinámico se cargue
-      const content = await page.waitForTimeout(10000); // Espera 10 segundos
+      await page.waitForTimeout(10000); // Espera 10 segundos
 
       // Crea el directorio 'testing' si no existe
       const testingDir = path.join(__dirname, 'testing');
@@ -51,10 +47,14 @@ async function captureIframeContent(url) {
           }
       });
 
-      content = await iframe.locator('body').innerHTML();
-      const filePath = path.join(testingDir, `iframe.html`);
-      fs.writeFileSync(filePath, content);
-      console.log(`Contenido capturado y guardado en '${filePath}'.`);
+      try {
+          const content = await iframe.locator('body').innerHTML();
+          const filePath = path.join(testingDir, `iframe.html`);
+          fs.writeFileSync(filePath, content);
+          console.log(`Contenido capturado y guardado en '${filePath}'.`);
+      } catch (error) {
+          console.error(`Error al capturar el contenido del iframe`, error);
+      }
 
   } catch (error) {
       console.error('Error al procesar el iFrame:', error);
