@@ -1,8 +1,6 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"
 #EXTVLCOPT:network-caching=2000
 
-#EXTINF:-1 tvg-id="" group-title="tenis [01/04] WTA Torneo de Charleston | 1ª Ronda", 00:00 S. Kenin B. Pera
-http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
 #EXTINF:-1 tvg-id="" group-title="futbol [01/04] Campeonato Uruguayo", 00:00 CA Cerro Montevideo Wanderers
 http://127.0.0.1:6878/ace/getstream?id=3a2bbdbe4cc775c5c75ccb7d2408363d69c94b5d
 #EXTINF:-1 tvg-id="" group-title="padel [01/04] Santiago Open", 01:00 Final Masculina Premier Padel Tour
@@ -18,7 +16,7 @@ http://127.0.0.1:6878/ace/getstream?id=6f1f82c3cf6bf4b4ccb6d63d687271878e0e908d
 #EXTINF:-1 tvg-id="" group-title="padel [01/04] Santiago Open", 01:00 Final Masculina Premier Padel Tour
 http://127.0.0.1:6878/ace/getstream?id=1205151f6fa5d95c0eeb543cbce43ccfa6a1b216
 #EXTINF:-1 tvg-id="" group-title="padel [01/04] Santiago Open", 01:00 Final Masculina Premier Padel Tour
-http://127.0.0.1:6878/ace/getstream?id=d8c2ed470e847154a88f011137cc206319f6bed5
+http://127.0.0.1:6878/ace/getstream?id=639c561dd57fa3fc91fde715caeb696c5efb7ce7
 #EXTINF:-1 tvg-id="" group-title="padel [01/04] Santiago Open", 01:00 Final Masculina Premier Padel Tour
 http://127.0.0.1:6878/ace/getstream?id=d225087e30f6efe4c6d9b5ae3c2f3829368cd637
 #EXTINF:-1 tvg-id="" group-title="padel [01/04] Santiago Open", 01:00 Final Masculina Premier Padel Tour
@@ -37,8 +35,6 @@ http://127.0.0.1:6878/ace/getstream?id=fe134ae09f9643ea9bfdd75ff1f121ba8c58e5c1
 http://127.0.0.1:6878/ace/getstream?id=67a33c3f74956eed14b9b400523462fe362e0e66
 #EXTINF:-1 tvg-id="" group-title="baloncesto [01/04] NBA | Liga Regular", 01:00 Orlando Magic Los Angeles Clippers
 http://127.0.0.1:6878/ace/getstream?id=acb510858f34c3c6fd5f79395b031abd6885c2b3
-#EXTINF:-1 tvg-id="" group-title="tenis [01/04] WTA Torneo de Charleston | 1ª Ronda", 01:30 A. Li A. Blinkova
-http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
 #EXTINF:-1 tvg-id="" group-title="futbol [01/04] Campeonato Uruguayo", 02:15 Defensor Sporting Miramar Misiones
 http://127.0.0.1:6878/ace/getstream?id=3a2bbdbe4cc775c5c75ccb7d2408363d69c94b5d
 #EXTINF:-1 tvg-id="" group-title="futbol [01/04] UEFA Youth League | 1/4 de Final", 16:00 Red Bull Salzburg Academy Olympiacos Academy
@@ -63,7 +59,13 @@ http://127.0.0.1:6878/ace/getstream?id=fe521a6e9d2ff31616125fa75bac6b0deb52b6b9
 http://127.0.0.1:6878/ace/getstream?id=05057e832dd1530c7d5e8b0857fee6826243a243
 #EXTINF:-1 tvg-id="" group-title="futbol [01/04] UEFA Youth League | 1/4 de Final", 17:00 Trabzonspor Academy Inter Milan Academy
 http://127.0.0.1:6878/ace/getstream?id=ba87f528de030aad56576f7cbb9d8bbd7efd62b9
-#EXTINF:-1 tvg-id="" group-title="tenis [01/04] WTA Torneo de Bogotá", 17:05 1ª Ronda WTA 250
+#EXTINF:-1 tvg-id="" group-title="tenis [01/04] WTA Torneo de Bogotá | 1ª Ronda", 18:00 S. Janicijevic S. Sorribes
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
+#EXTINF:-1 tvg-id="" group-title="tenis [01/04] WTA Torneo de Charleston | 1ª Ronda", 18:30 S. Kenin B. Pera
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
+#EXTINF:-1 tvg-id="" group-title="tenis [01/04] WTA Torneo de Bogotá | 1ª Ronda", 19:30 MI. Higuita Barraza MC. Osorio
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
+#EXTINF:-1 tvg-id="" group-title="tenis [01/04] WTA Torneo de Charleston | 1ª Ronda", 20:00 O. Gadecki H. Baptiste
 http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
 #EXTINF:-1 tvg-id="" group-title="waterpolo [01/04] Liga Europea Masculina", 20:00 CN At. Barceloneta Ferencvaros Waterpolo
 http://127.0.0.1:6878/ace/getstream?id=c693df0cbccedec130e2b31453bdbfb3ccb7a648
@@ -127,6 +129,8 @@ http://127.0.0.1:6878/ace/getstream?id=5e5b670d44e4f23a49ebe1770458066ac2cf58e3
 http://127.0.0.1:6878/ace/getstream?id=b4b48a6028aa05ca32f583d3019dc2e3e6bd9988
 #EXTINF:-1 tvg-id="" group-title="futbol [01/04] Coppa Italia | Semifinales", 21:00 Empoli Bologna
 http://127.0.0.1:6878/ace/getstream?id=0f32c0131a2d9444996410801f4e18b04384db98
+#EXTINF:-1 tvg-id="" group-title="tenis [01/04] WTA Torneo de Bogotá | 1ª Ronda", 21:00 E. Arango L. Stefanini
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
 #EXTINF:-1 tvg-id="" group-title="futbol [01/04] Premier League", 21:00 Nottingham Forest Manchester Utd.
 http://127.0.0.1:6878/ace/getstream?id=ca923c9873fd206a41c1e83ff8fc40e3cf323c9a
 #EXTINF:-1 tvg-id="" group-title="futbol [01/04] Premier League", 21:00 Nottingham Forest Manchester Utd.
@@ -139,6 +143,10 @@ http://127.0.0.1:6878/ace/getstream?id=f86e821848931eaa55bcb779e74f62d6a59f41c0
 http://127.0.0.1:6878/ace/getstream?id=ddb69a119ab5faf7eeec3cef77e3d591a8242816
 #EXTINF:-1 tvg-id="" group-title="futbol [01/04] Premier League", 21:00 Nottingham Forest Manchester Utd.
 http://127.0.0.1:6878/ace/getstream?id=57e38ef7eaab5596559415bdf96926ee4115c5ce
+#EXTINF:-1 tvg-id="" group-title="futbol [01/04] Premier League", 21:00 Nottingham Forest Manchester Utd.
+http://127.0.0.1:6878/ace/getstream?id=d08013df6e437a1fdf1e0c34f573fdf6a40c7fce
+#EXTINF:-1 tvg-id="" group-title="tenis [01/04] WTA Torneo de Charleston | 2ª Ronda", 21:30 C. Dolehide M. Keys
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
 #EXTINF:-1 tvg-id="" group-title="futbol [01/04] Copa del Rey | Semifinales", 21:30 Real Madrid Real Sociedad
 http://127.0.0.1:6878/ace/getstream?id=56ac8e227d526e722624675ccdd91b0cc850582f
 #EXTINF:-1 tvg-id="" group-title="futbol [01/04] Copa del Rey | Semifinales", 21:30 Real Madrid Real Sociedad
@@ -155,3 +163,5 @@ http://127.0.0.1:6878/ace/getstream?id=c0d688a5045c5446c35f802a567ac3f0fa72b4b6
 http://127.0.0.1:6878/ace/getstream?id=2dcc9fa21935872130029206395a12cd10533a75
 #EXTINF:-1 tvg-id="" group-title="futbol [01/04] Copa del Rey | Semifinales", 21:30 Real Madrid Real Sociedad
 http://127.0.0.1:6878/ace/getstream?id=7225e4b281975f1a36d61dfd9724b669d7747b70
+#EXTINF:-1 tvg-id="" group-title="tenis [01/04] WTA Torneo de Bogotá | 1ª Ronda", 22:30 M. Bouzkova A. Krunic
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
