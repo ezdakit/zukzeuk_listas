@@ -53,9 +53,6 @@ jobs:
           sleep 5
           curl -I http://127.0.0.1:43110
           echo "ZeroNet verification complete"
-          echo "Zeronet Stats:"
-          curl -H "Accept: text/html" --connect-timeout 10 --max-time 30 -s "http://127.0.0.1:43110/Stats" -o stats.html
-          cat stats.html
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
