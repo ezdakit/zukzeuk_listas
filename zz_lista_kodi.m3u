@@ -67,8 +67,6 @@ plugin://script.module.horus?action=play&id=6d05b31e5e8fdae312fbd57897363a7b10dd
 plugin://script.module.horus?action=play&id=1bc437bce57b4b0450f6d1f8d818b7e97000745e
 #EXTINF:-1 tvg-id="M+ LaLiga TV HD" group-title="LALIGA", M+ LaLiga TV HD
 plugin://script.module.horus?action=play&id=cc9b7f5fe416069a2110da0909b0f915043c468b
-#EXTINF:-1 tvg-id="M+ LaLiga TV HD" group-title="LALIGA", M+ LaLiga TV HD
-plugin://script.module.horus?action=play&id=cc9b7f5fe416069a2110da0909b0f915043c468b
 #EXTINF:-1 tvg-id="M+ LaLiga TV 2 HD" group-title="LALIGA", M+ LaLiga TV 2 FHD
 plugin://script.module.horus?action=play&id=83c6c4942d69f4aa324aa746c5d7dbfd7d1572b3
 #EXTINF:-1 tvg-id="M+ LaLiga TV 2 HD" group-title="LALIGA", M+ LaLiga TV 2 HD
@@ -241,6 +239,8 @@ plugin://script.module.horus?action=play&id=f2b903b4b286c2cfecc23ebea66a412ec887
 plugin://script.module.horus?action=play&id=e720d8fef514c63468bdae65d7c20d48e22d7df9
 #EXTINF:-1 tvg-id="" group-title="VARIOS", BUNDESLIGA 3 FHD
 plugin://script.module.horus?action=play&id=f2dc625a32ba3437100b1261fd0751d83d64ce91
+#EXTINF:-1 tvg-id="" group-title="VARIOS", CANAL MOTOR
+plugin://script.module.horus?action=play&id=35e17cc84abc5e393b5acd688536a9681105f2d5
 #EXTINF:-1 tvg-id="Cuatro HD" group-title="VARIOS", CUATRO FHD
 plugin://script.module.horus?action=play&id=da60cf19fab0b9e23aab83bb37d61e8b8c3b7655
 #EXTINF:-1 tvg-id="" group-title="VARIOS", DAZN EVENTOS 1
@@ -279,6 +279,8 @@ plugin://script.module.horus?action=play&id=79f10c6c6168e42bfc606f3f7b9e5f3ca79d
 plugin://script.module.horus?action=play&id=664eb5fe460b96941aed633959a845b185cd8394
 #EXTINF:-1 tvg-id="Eurosport 1 HD" group-title="VARIOS", EUROSPORT 1
 plugin://script.module.horus?action=play&id=16ffa1713f42aa27317ee039a2bd0cdbc89a1580
+#EXTINF:-1 tvg-id="Eurosport 1 HD" group-title="VARIOS", EUROSPORT 1
+plugin://script.module.horus?action=play&id=1d04e3b27c2ac3ff52dc949e76f36207fbb235c4
 #EXTINF:-1 tvg-id="Eurosport 1 HD" group-title="VARIOS", EUROSPORT 1 FHD
 plugin://script.module.horus?action=play&id=8e8cf5d0da2f30cd3b266344891a18ed6bacaf50
 #EXTINF:-1 tvg-id="Eurosport 1 HD" group-title="VARIOS", EUROSPORT 1 FHD
@@ -323,6 +325,10 @@ plugin://script.module.horus?action=play&id=44a1d2952357564004a1afa2e3e0d262a45c
 plugin://script.module.horus?action=play&id=e55dfcc2111568668e2df397e5de440103c991fb
 #EXTINF:-1 tvg-id="" group-title="VARIOS", MGPTV | CAMARA DE A BORDO 4
 plugin://script.module.horus?action=play&id=8a0957fa263a3dbb986e75fdcf5fbf6ef111b742
+#EXTINF:-1 tvg-id="" group-title="VARIOS", MOTORS TV HD
+plugin://script.module.horus?action=play&id=442aeb6643b8836f9d00361c9e48eeb0841ddf98
+#EXTINF:-1 tvg-id="" group-title="VARIOS", MOTORVISION TV
+plugin://script.module.horus?action=play&id=9c75e6ed0671eec6670cb2eabcc7d78267c7f404
 #EXTINF:-1 tvg-id="M+ Clsicos HD" group-title="VARIOS", MOVISTAR ACCION FHD
 plugin://script.module.horus?action=play&id=de88ed8716612d9c548df63a168fbdd96843dd20
 #EXTINF:-1 tvg-id="M+ Clsicos HD" group-title="VARIOS", MOVISTAR CLASICOS FHD
