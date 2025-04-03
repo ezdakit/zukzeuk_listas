@@ -1,89 +1,153 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"
 #EXTVLCOPT:network-caching=2000
 
-#EXTINF:-1 tvg-id="" group-title="golf [03/04] LPGA T- Mobile Match Play", 00:00 Jornada 1
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] WTA Torneo de Charleston | 2ª Ronda", 00:00 A. Kalinskaya M. Keys
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
+#EXTINF:-1 tvg-id="" group-title="golf [04/04] LPGA T- Mobile Match Play", 00:00 Jornada 2
 http://127.0.0.1:6878/ace/getstream?id=e2d26332bf1aa59aec7e3cbe9ed4689df44ae368
-#EXTINF:-1 tvg-id="" group-title="golf [03/04] LPGA T- Mobile Match Play", 00:00 Jornada 1
+#EXTINF:-1 tvg-id="" group-title="golf [04/04] LPGA T- Mobile Match Play", 00:00 Jornada 2
 http://127.0.0.1:6878/ace/getstream?id=ab0d8baaf889017c5e87b2e484203a359585c9dc
-#EXTINF:-1 tvg-id="" group-title="golf [03/04] LPGA T- Mobile Match Play", 00:00 Jornada 1
+#EXTINF:-1 tvg-id="" group-title="golf [04/04] LPGA T- Mobile Match Play", 00:00 Jornada 2
 http://127.0.0.1:6878/ace/getstream?id=7f1c44c9f362eba2d4a6820a00ff6701ead9e79d
-#EXTINF:-1 tvg-id="" group-title="golf [03/04] LPGA T- Mobile Match Play", 00:00 Jornada 1
+#EXTINF:-1 tvg-id="" group-title="golf [04/04] LPGA T- Mobile Match Play", 00:00 Jornada 2
 http://127.0.0.1:6878/ace/getstream?id=872608e734992db636eb79426802cd08f4029afb
-#EXTINF:-1 tvg-id="" group-title="tenis [03/04] WTA Torneo de Charleston | 2ª Ronda", 00:10 Q. Zheng M. Sakkari
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] WTA Torneo de Charleston | 2ª Ronda", 01:30 D. Kasatkina S. Kenin
 http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
-#EXTINF:-1 tvg-id="" group-title="baloncesto [03/04] NBA | Liga Regular", 01:00 Cleveland Cavaliers New York Knicks
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] WTA Torneo de Bogotá | 2ª Ronda", 01:30 J. Riera I. Jovic
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
+#EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] NBA | Liga Regular", 01:30 Brooklyn Nets Minnesota Timberwolves
 http://127.0.0.1:6878/ace/getstream?id=55d4602cb22b0d8a33c10c2c2f42dae64a9e8895
-#EXTINF:-1 tvg-id="" group-title="baloncesto [03/04] NBA | Liga Regular", 01:00 Cleveland Cavaliers New York Knicks
+#EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] NBA | Liga Regular", 01:30 Brooklyn Nets Minnesota Timberwolves
 http://127.0.0.1:6878/ace/getstream?id=3a74d9869b13e763476800740c6625e715a39879
-#EXTINF:-1 tvg-id="" group-title="baloncesto [03/04] NBA | Liga Regular", 01:00 Cleveland Cavaliers New York Knicks
+#EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] NBA | Liga Regular", 01:30 Brooklyn Nets Minnesota Timberwolves
 http://127.0.0.1:6878/ace/getstream?id=0f771c30336a0506c74f4aa86762edcb94d21fac
-#EXTINF:-1 tvg-id="" group-title="baloncesto [03/04] NBA | Liga Regular", 01:00 Cleveland Cavaliers New York Knicks
+#EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] NBA | Liga Regular", 01:30 Brooklyn Nets Minnesota Timberwolves
 http://127.0.0.1:6878/ace/getstream?id=a8745bd07dc60413a4fc05caf2cabbfb11952232
-#EXTINF:-1 tvg-id="" group-title="baloncesto [03/04] NBA | Liga Regular", 01:00 Cleveland Cavaliers New York Knicks
+#EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] NBA | Liga Regular", 01:30 Brooklyn Nets Minnesota Timberwolves
 http://127.0.0.1:6878/ace/getstream?id=fe134ae09f9643ea9bfdd75ff1f121ba8c58e5c1
-#EXTINF:-1 tvg-id="" group-title="baloncesto [03/04] NBA | Liga Regular", 01:00 Cleveland Cavaliers New York Knicks
+#EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] NBA | Liga Regular", 01:30 Brooklyn Nets Minnesota Timberwolves
 http://127.0.0.1:6878/ace/getstream?id=67a33c3f74956eed14b9b400523462fe362e0e66
-#EXTINF:-1 tvg-id="" group-title="baloncesto [03/04] NBA | Liga Regular", 01:00 Cleveland Cavaliers New York Knicks
+#EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] NBA | Liga Regular", 01:30 Brooklyn Nets Minnesota Timberwolves
 http://127.0.0.1:6878/ace/getstream?id=acb510858f34c3c6fd5f79395b031abd6885c2b3
-#EXTINF:-1 tvg-id="" group-title="tenis [03/04] WTA Torneo de Bogotá | 2ª Ronda", 01:45 L. Jeanjean S. Janicijevic
+#EXTINF:-1 tvg-id="" group-title="automovilismo [04/04] Fórmula 1", 04:30 G.P. Japón (Suzuka) Libres 1
+http://127.0.0.1:6878/ace/getstream?id=d6281d4e6310269b416180442a470d23a4a99dc9
+#EXTINF:-1 tvg-id="" group-title="automovilismo [04/04] Fórmula 1", 04:30 G.P. Japón (Suzuka) Libres 1
+http://127.0.0.1:6878/ace/getstream?id=2c6e4c897661e6b0257bfe931b66d20b2ec763b6
+#EXTINF:-1 tvg-id="" group-title="automovilismo [04/04] Fórmula 1", 04:30 G.P. Japón (Suzuka) Libres 1
+http://127.0.0.1:6878/ace/getstream?id=71eef80158aa8b37f3dc59f6793c6696df9a2dfa
+#EXTINF:-1 tvg-id="" group-title="automovilismo [04/04] Fórmula 1", 04:30 G.P. Japón (Suzuka) Libres 1
+http://127.0.0.1:6878/ace/getstream?id=268289e7a3c5209960b53b4d43c8c65fab294b85
+#EXTINF:-1 tvg-id="" group-title="automovilismo [04/04] Fórmula 1", 04:30 G.P. Japón (Suzuka) Libres 1
+http://127.0.0.1:6878/ace/getstream?id=9f04b67904bf5ec6782ab34e8105bca264c10b62
+#EXTINF:-1 tvg-id="" group-title="automovilismo [04/04] Fórmula 1", 04:30 G.P. Japón (Suzuka) Libres 1
+http://127.0.0.1:6878/ace/getstream?id=4f1d222c600e66ef4990b3d7ea13bfa53f7bfea1
+#EXTINF:-1 tvg-id="" group-title="automovilismo [04/04] Fórmula 1", 04:30 G.P. Japón (Suzuka) Libres 1
+http://127.0.0.1:6878/ace/getstream?id=5d8613b5fde87f366bb5e41ac8011007a4c6bd3c
+#EXTINF:-1 tvg-id="" group-title="automovilismo [04/04] Fórmula 1", 04:30 G.P. Japón (Suzuka) Libres 1
+http://127.0.0.1:6878/ace/getstream?id=751aa1f2429dfb9484b67a3ede00d859c6212994
+#EXTINF:-1 tvg-id="" group-title="automovilismo [04/04] Fórmula 1", 04:30 G.P. Japón (Suzuka) Libres 1
+http://127.0.0.1:6878/ace/getstream?id=d8068894248c1f21eea31e538917276a8c49ec06
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] Torneo de Menorca | 1/4 de Final", 10:00 Z. Piros I. Buse
 http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
-#EXTINF:-1 tvg-id="" group-title="tenis [03/04] WTA Torneo de Charleston | 2ª Ronda", 02:00 V. Gracheva E. Mertens
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] WTA Torneo de La Bisbal | 1/4 de Final", 11:00 G. Maristany D. Semenistaja
 http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
-#EXTINF:-1 tvg-id="" group-title="tenis [03/04] WTA Torneo de Charleston | 2ª Ronda", 17:00 A. Anisimova Y. Putintseva
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] WTA Torneo de La Bisbal | 1/4 de Final", 11:00 G. Maristany D. Semenistaja
+http://127.0.0.1:6878/ace/getstream?id=e2d26332bf1aa59aec7e3cbe9ed4689df44ae368
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] WTA Torneo de La Bisbal | 1/4 de Final", 11:00 G. Maristany D. Semenistaja
+http://127.0.0.1:6878/ace/getstream?id=ab0d8baaf889017c5e87b2e484203a359585c9dc
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] Torneo de Menorca | 1/4 de Final", 11:30 V. Gaubas S. Ofner
 http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
-#EXTINF:-1 tvg-id="" group-title="tenis [03/04] WTA Torneo de Charleston | 2ª Ronda", 18:30 A. Krueger E. Navarro
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] WTA Torneo de La Bisbal | 1/4 de Final", 12:30 C. Werner A. Bolsova
 http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
-#EXTINF:-1 tvg-id="" group-title="tenis [03/04] WTA Torneo de Bogotá | 2ª Ronda", 19:00 E. Bektas MC. Osorio
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] WTA Torneo de La Bisbal | 1/4 de Final", 12:30 C. Werner A. Bolsova
+http://127.0.0.1:6878/ace/getstream?id=e2d26332bf1aa59aec7e3cbe9ed4689df44ae368
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] WTA Torneo de La Bisbal | 1/4 de Final", 12:30 C. Werner A. Bolsova
+http://127.0.0.1:6878/ace/getstream?id=ab0d8baaf889017c5e87b2e484203a359585c9dc
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] WTA Torneo de La Bisbal | 1/4 de Final", 12:30 C. Werner A. Bolsova
+http://127.0.0.1:6878/ace/getstream?id=c693df0cbccedec130e2b31453bdbfb3ccb7a648
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] Ultimate Tennis Showdown | 1/4 de Final", 13:30 A. Rublev B. Shelton
 http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
-#EXTINF:-1 tvg-id="" group-title="baloncesto [03/04] Euroliga | Liga Regular", 19:00 Zalgiris Kaunas BC Partizan Beograd
-http://127.0.0.1:6878/ace/getstream?id=985896872c52d04030c112ca99584046d022a349
-#EXTINF:-1 tvg-id="" group-title="baloncesto [03/04] Euroliga | Liga Regular", 19:00 AS Monaco Basket Panathinaikos BC
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] Torneo de Menorca | 1/4 de Final", 14:00 P. Martin Tiffon C. Taberner
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] WTA Torneo de La Bisbal | 1/4 de Final", 14:30 A. Cornet D. Galfi
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] Ultimate Tennis Showdown | 1/4 de Final", 14:30 A. De Miñaur U. Humbert
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] Ultimate Tennis Showdown | 1/4 de Final", 15:30 C. Ruud A. Popyrin
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] Torneo de Menorca | 1/4 de Final", 15:30 E. Moller L. Neumayer
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] WTA Torneo de La Bisbal | 1/4 de Final", 16:00 E. Lys P. Udvardy
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] Ultimate Tennis Showdown | 1/4 de Final", 16:30 T. Machac G. Monfils
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
+#EXTINF:-1 tvg-id="" group-title="balonmano [04/04] Liga ASOBAL", 19:00 Barça BM BM Granollers
+http://127.0.0.1:6878/ace/getstream?id=c693df0cbccedec130e2b31453bdbfb3ccb7a648
+#EXTINF:-1 tvg-id="" group-title="golf [04/04] LIV Golf", 19:13 Jornada 1
+http://127.0.0.1:6878/ace/getstream?id=7f1c44c9f362eba2d4a6820a00ff6701ead9e79d
+#EXTINF:-1 tvg-id="" group-title="golf [04/04] LIV Golf", 19:13 Jornada 1
+http://127.0.0.1:6878/ace/getstream?id=872608e734992db636eb79426802cd08f4029afb
+#EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] Euroliga | Liga Regular", 20:00 Crvena Zvezda MTS Belgrade Anadolu Efes Istanbul
 http://127.0.0.1:6878/ace/getstream?id=639c561dd57fa3fc91fde715caeb696c5efb7ce7
-#EXTINF:-1 tvg-id="" group-title="baloncesto [03/04] Euroliga | Liga Regular", 19:00 AS Monaco Basket Panathinaikos BC
+#EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] Euroliga | Liga Regular", 20:00 Crvena Zvezda MTS Belgrade Anadolu Efes Istanbul
 http://127.0.0.1:6878/ace/getstream?id=d225087e30f6efe4c6d9b5ae3c2f3829368cd637
-#EXTINF:-1 tvg-id="" group-title="tenis [03/04] WTA Torneo de Charleston | 2ª Ronda", 20:00 J. Pegula A. Tomljanovic
-http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
-#EXTINF:-1 tvg-id="" group-title="tenis [03/04] WTA Torneo de Bogotá | 2ª Ronda", 20:30 T. Maria H. Chang
-http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
-#EXTINF:-1 tvg-id="" group-title="baloncesto [03/04] Euroliga | Liga Regular", 20:30 Maccabi Tel Aviv BC FC Bayern Basketball
-http://127.0.0.1:6878/ace/getstream?id=23d1bcceacb7606d4ee6deaf9e6034c54eeedd2f
-#EXTINF:-1 tvg-id="" group-title="baloncesto [03/04] Euroliga | Liga Regular", 21:00 Real Madrid Baloncesto Paris Basketball
-http://127.0.0.1:6878/ace/getstream?id=56ac8e227d526e722624675ccdd91b0cc850582f
-#EXTINF:-1 tvg-id="" group-title="baloncesto [03/04] Euroliga | Liga Regular", 21:00 Real Madrid Baloncesto Paris Basketball
-http://127.0.0.1:6878/ace/getstream?id=bbd251f89bc7716e2bef237906ecfba3c562ecde
-#EXTINF:-1 tvg-id="" group-title="baloncesto [03/04] Euroliga | Liga Regular", 21:00 Real Madrid Baloncesto Paris Basketball
-http://127.0.0.1:6878/ace/getstream?id=335646e7394ea4eda343c95e57852bb70fc4178f
-#EXTINF:-1 tvg-id="" group-title="baloncesto [03/04] Euroliga | Liga Regular", 21:00 Real Madrid Baloncesto Paris Basketball
+#EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] Euroliga | Liga Regular", 20:00 ALBA Berlin Olympiacos Piraeus
+http://127.0.0.1:6878/ace/getstream?id=cc5782d37ae6b6e0bab396dd64074982d0879046
+#EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] Primera FEB | Liga Regular", 20:30 Real Betis Baloncesto Movistar Estudiantes
+http://127.0.0.1:6878/ace/getstream?id=fcc0fd75bf1dba40b108fcf0d3514e0e549bfbac
+#EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] Primera FEB | Liga Regular", 20:30 Real Betis Baloncesto Movistar Estudiantes
+http://127.0.0.1:6878/ace/getstream?id=14aa86be2b451cd4f5ee6d12e7479885373ea9b3
+#EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] Liga Femenina Endesa | Liga Regular", 20:30 Ardoi Baloncesto Movistar Estudiantes
+http://127.0.0.1:6878/ace/getstream?id=e2d26332bf1aa59aec7e3cbe9ed4689df44ae368
+#EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] Liga Femenina Endesa | Liga Regular", 20:30 Ardoi Baloncesto Movistar Estudiantes
+http://127.0.0.1:6878/ace/getstream?id=ab0d8baaf889017c5e87b2e484203a359585c9dc
+#EXTINF:-1 tvg-id="" group-title="futbol [04/04] LaLiga Hypermotion", 20:30 CD Castellón Albacete
+http://127.0.0.1:6878/ace/getstream?id=b2706a7ffbea236a3b398139a3a606ada664c0eb
+#EXTINF:-1 tvg-id="" group-title="futbol [04/04] LaLiga Hypermotion", 20:30 CD Castellón Albacete
+http://127.0.0.1:6878/ace/getstream?id=121f719ebb94193c6086ef92865cf9b197750980
+#EXTINF:-1 tvg-id="" group-title="futbol [04/04] LaLiga Hypermotion", 20:30 CD Castellón Albacete
+http://127.0.0.1:6878/ace/getstream?id=83e8a605ffebe2062f15dad76b6ffe9486a28eb3
+#EXTINF:-1 tvg-id="" group-title="futbol [04/04] LaLiga Hypermotion", 20:30 CD Castellón Albacete
+http://127.0.0.1:6878/ace/getstream?id=d03c13b6723f66155d7a0df3692a3b073fe630f2
+#EXTINF:-1 tvg-id="" group-title="futbol [04/04] LaLiga Hypermotion", 20:30 CD Castellón Albacete
+http://127.0.0.1:6878/ace/getstream?id=12ba546d229bc39f01c3c18988a034b215fe6adb
+#EXTINF:-1 tvg-id="" group-title="futbol [04/04] LaLiga Hypermotion", 20:30 CD Castellón Albacete
+http://127.0.0.1:6878/ace/getstream?id=47403b07582b05c2a1eadaf6d1fb6454eda03a77
+#EXTINF:-1 tvg-id="" group-title="futbol [04/04] LaLiga Hypermotion", 20:30 CD Castellón Albacete
+http://127.0.0.1:6878/ace/getstream?id=a1660d711184fa701bf1c88395e3b2d43ddca83f
+#EXTINF:-1 tvg-id="" group-title="futbol [04/04] LaLiga Hypermotion", 20:30 CD Castellón Albacete
+http://127.0.0.1:6878/ace/getstream?id=6f1f82c3cf6bf4b4ccb6d63d687271878e0e908d
+#EXTINF:-1 tvg-id="" group-title="futbol [04/04] LaLiga Hypermotion", 20:30 CD Castellón Albacete
+http://127.0.0.1:6878/ace/getstream?id=1205151f6fa5d95c0eeb543cbce43ccfa6a1b216
+#EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] Euroliga | Liga Regular", 20:30 Baskonia ASVEL Lyon-Villeurbanne
 http://127.0.0.1:6878/ace/getstream?id=55d4602cb22b0d8a33c10c2c2f42dae64a9e8895
-#EXTINF:-1 tvg-id="" group-title="baloncesto [03/04] Euroliga | Liga Regular", 21:00 Real Madrid Baloncesto Paris Basketball
+#EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] Euroliga | Liga Regular", 20:30 Baskonia ASVEL Lyon-Villeurbanne
 http://127.0.0.1:6878/ace/getstream?id=3a74d9869b13e763476800740c6625e715a39879
-#EXTINF:-1 tvg-id="" group-title="baloncesto [03/04] Euroliga | Liga Regular", 21:00 Real Madrid Baloncesto Paris Basketball
+#EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] Euroliga | Liga Regular", 20:30 Baskonia ASVEL Lyon-Villeurbanne
 http://127.0.0.1:6878/ace/getstream?id=0f771c30336a0506c74f4aa86762edcb94d21fac
-#EXTINF:-1 tvg-id="" group-title="baloncesto [03/04] Euroliga | Liga Regular", 21:00 Real Madrid Baloncesto Paris Basketball
+#EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] Euroliga | Liga Regular", 20:30 Baskonia ASVEL Lyon-Villeurbanne
 http://127.0.0.1:6878/ace/getstream?id=a8745bd07dc60413a4fc05caf2cabbfb11952232
-#EXTINF:-1 tvg-id="" group-title="baloncesto [03/04] Euroliga | Liga Regular", 21:00 Real Madrid Baloncesto Paris Basketball
+#EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] Euroliga | Liga Regular", 20:30 Baskonia ASVEL Lyon-Villeurbanne
 http://127.0.0.1:6878/ace/getstream?id=fe134ae09f9643ea9bfdd75ff1f121ba8c58e5c1
-#EXTINF:-1 tvg-id="" group-title="baloncesto [03/04] Euroliga | Liga Regular", 21:00 Real Madrid Baloncesto Paris Basketball
+#EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] Euroliga | Liga Regular", 20:30 Baskonia ASVEL Lyon-Villeurbanne
 http://127.0.0.1:6878/ace/getstream?id=67a33c3f74956eed14b9b400523462fe362e0e66
-#EXTINF:-1 tvg-id="" group-title="baloncesto [03/04] Euroliga | Liga Regular", 21:00 Real Madrid Baloncesto Paris Basketball
+#EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] Euroliga | Liga Regular", 20:30 Baskonia ASVEL Lyon-Villeurbanne
 http://127.0.0.1:6878/ace/getstream?id=acb510858f34c3c6fd5f79395b031abd6885c2b3
-#EXTINF:-1 tvg-id="" group-title="futbol [03/04] Premier League", 21:00 Chelsea Tottenham
-http://127.0.0.1:6878/ace/getstream?id=35c7f0c966ecde3390f4510bb4caded40018c07a
-#EXTINF:-1 tvg-id="" group-title="futbol [03/04] Premier League", 21:00 Chelsea Tottenham
-http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
-#EXTINF:-1 tvg-id="" group-title="futbol [03/04] Premier League", 21:00 Chelsea Tottenham
-http://127.0.0.1:6878/ace/getstream?id=ec10963a4408f96d2089a29af8b7a8ac4b23dd3c
-#EXTINF:-1 tvg-id="" group-title="futbol [03/04] Premier League", 21:00 Chelsea Tottenham
-http://127.0.0.1:6878/ace/getstream?id=91cf774bfbdc3a7e3b18cffe0e6ca39a957e96b6
-#EXTINF:-1 tvg-id="" group-title="futbol [03/04] Premier League", 21:00 Chelsea Tottenham
-http://127.0.0.1:6878/ace/getstream?id=e6a00cb2912609dceeeee88d3f66a2de9718b421
-#EXTINF:-1 tvg-id="" group-title="futbol [03/04] Premier League", 21:00 Chelsea Tottenham
-http://127.0.0.1:6878/ace/getstream?id=a7e083d922be14a0496d65aad2ff8ea9c8011bd0
-#EXTINF:-1 tvg-id="" group-title="futbol [03/04] Premier League", 21:00 Chelsea Tottenham
-http://127.0.0.1:6878/ace/getstream?id=d5446f3cc8e42ba965fd9f1c73b1e2ac3921a6ab
-#EXTINF:-1 tvg-id="" group-title="futbol [03/04] Premier League", 21:00 Chelsea Tottenham
-http://127.0.0.1:6878/ace/getstream?id=71a65780b9c542a8c9e4084ae5aefdd9286da51e
-#EXTINF:-1 tvg-id="" group-title="futbol [03/04] Premier League", 21:00 Chelsea Tottenham
-http://127.0.0.1:6878/ace/getstream?id=36cad67fed5a739757a9db844a551aa845a8d51b
-#EXTINF:-1 tvg-id="" group-title="tenis [03/04] WTA Torneo de Bogotá | 2ª Ronda", 22:00 C. Bucsa L. Boskovic
-http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
+#EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] Euroliga | Liga Regular", 20:30 Virtus Bologna AX Olimpia Milano
+http://127.0.0.1:6878/ace/getstream?id=23d1bcceacb7606d4ee6deaf9e6034c54eeedd2f
+#EXTINF:-1 tvg-id="" group-title="futbol [04/04] UEFA Women's Nations League | Fase de grupos", 20:45 Portugal España
+http://127.0.0.1:6878/ace/getstream?id=56d98cef21d9e242a8c32f36259c850c467e9748
+#EXTINF:-1 tvg-id="" group-title="futbol [04/04] UEFA Women's Nations League | Fase de grupos", 20:45 Portugal España
+http://127.0.0.1:6878/ace/getstream?id=c693df0cbccedec130e2b31453bdbfb3ccb7a648
+#EXTINF:-1 tvg-id="" group-title="rugby [04/04] Champions Cup | 1/8 de final", 21:00 Northampton Saints Clermont Auvergne
+http://127.0.0.1:6878/ace/getstream?id=985896872c52d04030c112ca99584046d022a349
+#EXTINF:-1 tvg-id="" group-title="futbol [04/04] Segunda Uruguay", 21:00 Albión Central Español
+http://127.0.0.1:6878/ace/getstream?id=3a2bbdbe4cc775c5c75ccb7d2408363d69c94b5d
+#EXTINF:-1 tvg-id="" group-title="futbol [04/04] La Liga EA Sports", 21:00 Rayo Vallecano Espanyol
+http://127.0.0.1:6878/ace/getstream?id=110d441ddc9713a7452588770d2bc85504672f47
+#EXTINF:-1 tvg-id="" group-title="futbol [04/04] La Liga EA Sports", 21:00 Rayo Vallecano Espanyol
+http://127.0.0.1:6878/ace/getstream?id=ec29289b0b14756e686c03a501bae1efa05be70c
+#EXTINF:-1 tvg-id="" group-title="futbol [04/04] La Liga EA Sports", 21:00 Rayo Vallecano Espanyol
+http://127.0.0.1:6878/ace/getstream?id=6de4794cd02f88f14354b5996823413a59a1de0f
+#EXTINF:-1 tvg-id="" group-title="futbol [04/04] La Liga EA Sports", 21:00 Rayo Vallecano Espanyol
+http://127.0.0.1:6878/ace/getstream?id=8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb
