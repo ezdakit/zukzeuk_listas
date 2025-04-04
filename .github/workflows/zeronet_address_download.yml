@@ -85,7 +85,7 @@ jobs:
           echo "Extracted src: $SRC"
           echo "iframe url:"
           echo "http://127.0.0.1:43110/${SRC}"
-          node testing/zeronet_iframe_download.js "http://127.0.0.1:43110/${SRC}"
+          node testing/zeronet_iframe_download.js "http://127.0.0.1:43110/${SRC}" $OUTPUT_FILE_3
 
       - name: Check site ZERONET_ADDRESS synchronization
         run: |
@@ -103,7 +103,7 @@ jobs:
           echo "Extracted src: $SRC"
           echo "iframe url:"
           echo "http://127.0.0.1:43110/${SRC}"
-          node testing/zeronet_iframe_download.js "http://127.0.0.1:43110/${SRC}"
+          node testing/zeronet_iframe_download.js "http://127.0.0.1:43110/${SRC}" $OUTPUT_FILE_4
 
       - name: Check for file changes
         id: check_changes
