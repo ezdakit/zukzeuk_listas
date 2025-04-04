@@ -13,9 +13,11 @@ jobs:
       ZERONET_ADDRESS_1: 18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie
       ZERONET_ADDRESS_2: 1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU
       ZERONET_ADDRESS_3: 13eNqJiWACUUuFM37xwUwmRiCuyMd6X2tS
+      ZERONET_ADDRESS_4: 1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU
       OUTPUT_FILE_1: tokio_ace
       OUTPUT_FILE_2: lista_ott
       OUTPUT_FILE_3: tokio_no_ace
+      OUTPUT_FILE_4: new_all
 
     steps:
       - name: Checkout code
@@ -67,15 +69,15 @@ jobs:
         run: |
           npx playwright install
 
-      - name: Check site ZERONET_ADDRESS_3 synchronization
+      - name: Check site ZERONET_ADDRESS synchronization
         run: |
-          echo "Checking site synchronization for $ZERONET_ADDRESS_3"
-          curl -H "Accept: text/html" -I http://127.0.0.1:43110/$ZERONET_ADDRESS_3/
-          echo "Site ZERONET_ADDRESS_3 synchronization checked"
+          echo "Checking site synchronization for $ZERONET_ADDRESS_4"
+          curl -H "Accept: text/html" -I http://127.0.0.1:43110/$ZERONET_ADDRESS_4/
+          echo "Site ZERONET_ADDRESS synchronization checked"
 
       - name: Extract iframe src from ZeroNet address
         run: |
-          curl -H "Accept: text/html" --connect-timeout 10 --max-time 30 -s "http://127.0.0.1:43110/${{ env.ZERONET_ADDRESS_3 }}" -o content.html
+          curl -H "Accept: text/html" --connect-timeout 10 --max-time 30 -s "http://127.0.0.1:43110/${{ env.ZERONET_ADDRESS_4 }}" -o content.html
           cat content.html
           ADDRESS=$(grep -oP '(?<=address = ")[^"]*' content.html)
           WRAPPER_NONCE=$(grep -oP '(?<=wrapper_nonce = ")[^"]*' content.html)
