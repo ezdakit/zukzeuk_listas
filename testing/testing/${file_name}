@@ -1,0 +1,204 @@
+
+	<script type="text/javascript" src="js/ZeroFrame.js"></script>
+    <!-- ZeroNet Info Section (Añadido) -->
+    <div id="site-info">
+        <div id="out">Cargando información del sitio...</div>
+        <div id="url-type">Estás viendo esta página en tu red local (URL local).</div> <!-- Elemento donde se mostrará el mensaje sobre la URL -->
+        <div id="proxy-warning" style="display: none; margin-top: 10px; padding: 12px; background-color: #FF5252; color: white; border-radius: 4px; font-weight: bold;">
+            ⚠️ ATENCIÓN: El uso de este sitio se ha restringido y bloqueado en Proxy Público. Por favor, utilice ZeroNet sin Proxy público para acceder a todas las funcionalidades.
+        </div>
+    </div>
+	<div id="content-container" style="display: block;">  
+    <h1>Listas <u>NEW ERA</u> + <u>ElCano</u> + <u>New Loop</u> (Acestream API)</h1>
+    <p>Esta lista ofrece canales deportivos de diversas fuentes <u>New Era</u> (incluyendo II, III y IV).  También integra canales <i>New Loop</i>, basados en la API de Acestream, y los canales de <u>ElCano</u>.<br>
+	La lista se <b>actualiza automáticamente</b> <i>cada hora</i> si es necesario para incorporar cambios desde Acestream API (New Loop), ElCano y New Era.<br>
+	Para aprender a crear tus propios canales Acestream, únete a: <br><a href="https://t.me/+sStn0dNNQvIxODJk"><b>SALA ESPERA THE COLLECTIVE</b></a>.
+    </p>
+        <div class="container-listas">
+            <div class="bloque-lista">
+                <h2>Lista 1</h2>
+                <h3>Uso Dentro de OTT, VLC, etc...</h3>
+                <p>Para usar en reproductores como VLC, OTT, etc., utiliza este tipo de enlace:</p>
+                <p style="margin-bottom: 10px;">
+                    <code>http://127.0.0.1:6878/ace/getstream?id=<b>[ID_ACESTREAM]</b></code>
+                </p>
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <a href="lista-ott.m3u" class="boton-descargar" target="_blank">
+                        Descargar Lista 1 (OTT)
+                    </a>
+                    <button onclick="copiarTexto('enlace-lista1')" class="boton-copiar" style="margin-top: 10px;">
+                        Copiar Lista 1
+                    </button>
+                    <pre id="enlace-lista1" style="display: none;">1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ott.m3u</pre> <!-- Oculto pero necesario para copiarTexto -->
+                </div>
+            </div>
+            <div class="bloque-lista">
+                <h2>Lista 2</h2>
+                <h3>Uso Fuera de OTT, etc...</h3>
+                <p>Para abrir directamente con Acestream Player (fuera de OTT, etc.) o software IPTV, utiliza este tipo de enlace:</p>
+                <p style="margin-bottom: 10px;">
+                    <code>acestream://<b>[ID_ACESTREAM]</b></code>
+                </p>
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <a href="lista-ace.m3u" class="boton-descargar" target="_blank">
+                        Descargar Lista 2 (Acestream)
+                    </a>
+                    <button onclick="copiarTexto('enlace-lista2')" class="boton-copiar" style="margin-top: 10px;">
+                        Copiar Lista 2
+                    </button>
+                    <pre id="enlace-lista2" style="display: none;">1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-ace.m3u</pre> <!-- Oculto pero necesario para copiarTexto -->
+                </div>
+            </div>
+            <div class="bloque-lista">
+                <h2>Lista 3</h2>
+                <h3>Uso en Kodi</h3>
+                <p>Para usar en Kodi, puedes descargar la lista y añadirla como fuente M3U local o remota:</p>
+                <p style="margin-bottom: 10px;">
+                    <code>plugin://script.module.horus?action=[ID_ACESTREAM]</code>
+                </p><br>
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <a href="lista-kodi.txt" class="boton-descargar" target="_blank">
+                        Descargar Lista Kodi
+                    </a>
+                    <button onclick="copiarTexto('enlace-lista3')" class="boton-copiar" style="margin-top: 10px;">
+                        Copiar Lista Kodi
+                    </button>
+                    <pre id="enlace-lista3" style="display: none;">1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU/lista-kodi.txt</pre> <!-- Oculto pero necesario para copiarTexto -->
+                </div>
+            </div>
+        </div>
+        <p class="mensaje-importante"><strong>Importante:</strong> Las listas New Loop y New Era tienen variaciones diarias y semanales respectivamente. Debido a estos cambios frecuentes, <strong>no se garantiza su correcto funcionamiento a través de URL proxy</strong>.</p>
+        <p>Para descargar click derecho abrir en nueva pestaña encima del botón.</p>
+        <p><strong>Recomendación:</strong> Tener software OTT Navigator o IPTV Pro, son las que mejor funcionan.</p>
+        <div class="consejos-container">
+            <h2>Consejos para evitar cortes.</h2>
+            <h5>Si tienes cortes (como que se para a los 5 minutos en seco) esto es para ti, puede ser normal tener minicortes de vez en cuando de unos segundos, si estás en operadoras locales dificilmente tendrás problemas, pero operadoras como Movistar, etc hacen bloqueo por DNS o el router bloquea el tráfico p2p y esto te puede servir.</h5>
+            <ol>
+                <li>
+                    <p><strong>Cambiar las DNS de vuestro Router SIEMPRE y PARA TODOS:</strong> Entrad en <code>192.168.1.1</code> y buscad la opción LAN. En la zona de valores DNS o similar, poned en DNS 1: <code>8.8.8.8</code> y en DNS 2: <code>8.8.4.4</code>. En caso de que vuestro router no os deje cambiar las DNS, buscad en Youtube como realizar el cambio de DNS en vuestro dispositivo directamente, ejemplo: "Cambiar DNS en FireTV"</p>
+                </li>
+                <li>
+                    <p><strong>Usar VPN (o alternativas gratuitas):</strong>IMPORTANTE: También están bloqueando VPN, se recomienda instalar más de 1 opción por precaución. Opciones gratuitas que pueden ayudar: "<a href="https://one.one.one.one/">Warp</a>", "<a href="https://protonvpn.com/">ProtonVPN</a>", "<a href="https://octohide.com/download">Octohide</a>", "<a href="https://windscribe.com/yo/ydu8ow4c">Windscribe</a>" (todos tienen opción gratuita).</p>
+                </li>
+                <li>
+                    <p><strong>Modificar la caché de Acestream:</strong> Configuración recomendada: Buffer VOD 10, Buffer live 60.  Opcionalmente, probar "aceleración de hardware completa" y jugador ACE player.</p>
+                </li>
+                <li>
+                    <p><strong>Limpiar la caché de Acestream y abrir los canales 10 minutos antes:</strong> No esperéis al último momento, limpiad la caché antes, no entreis luego a limpiar la caché durante el descanso, etc.</p>
+                </li>
+                            <li>
+                    <p><strong>Aplicaciones:</strong> Si usais software como Kodi, OTT y se os corta, en ocasiones es porque teneis que seleccionar aplicación externa y ahí (si os deja seleccionar) dejar por defecto ACE PLAYER</p>
+                </li>
+        <li>
+                    <p><strong>Aplicaciones MOD:</strong> En la comunidad de Telegram encontrareis aplicaciones MOD como acestream con la que evitar anuncios molestos.</p>
+                </li>
+            </ol>
+        </div>
+                    <h1>Alternativas Acestream</h1>
+        <div class="container-listas">
+            <div class="bloque-lista">
+                <h2>ADDONS KODI</h2>
+            <p>Como alternativa a Acestream, existen algunos Addons de Kodi que no utilizan enlaces acestream y funcionan bien, en muchos casos es casi obligatorio el uso de VPN para que carguen los enlaces:</p>
+            <ul>
+                <li>
+                    <a href="https://mundokodi.com/addon-daddylive-en-kodi-deportes/" target="_blank">Addon Daddylive</a>
+                </li>
+                <li>
+                    <a href="https://mundokodi.com/como-instalar-addon-the-loop-2021-en-kodi-deportes/" target="_blank">Addon The Loop</a>
+                </li>
+                <li>
+                    <a href="https://mundokodi.com/addon-magellan-en-kodi/" target="_blank">Addon Magellan</a>
+                </li>
+            </ul>
+            </div>
+            <div class="bloque-alternativa listas-iptv-container bloque-lista">
+                <h2>LISTAS IPTV</h2>
+                <p>Estas listas IPTV son mantenidas por comunidades en grupos de Telegram gratis y sin animo de lucro, donde comparten y actualizan enlaces a contenido IPTV, se usan con "Wiseplay" y el uso de VPN es obligatorio, es recomendable entrar a sus comunidades para estar al tanto de actualizaciones:</p>
+                <ul>
+                    <li>
+                        <a href="https://t.me/+rvlnLxcvsGY1NmZk">Telegram IPTV Chucky-Hood</a>
+                    </li>
+                                    <li>
+                        <a href="https://t.me/Lista_AF1CIONADOS">Telegram Af1c1onados</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </div> <!-- Fin del contenedor de contenido principal -->
+
+    <div id="blocked-message" class="blocked-content" style="display: none;">
+        <div style="color: #FF5252; font-size: 24px; margin-bottom: 15px;">🚫 ACCESO BLOQUEADO</div>
+        <div>El contenido está bloqueado cuando se accede a través de un proxy público.</div>
+        <div style="margin-top: 10px;">Por favor, utilice ZeroNet sin proxy para ver todos los eventos.</div>
+    </div>
+    <script>
+        // Variable global para indicar si el sitio se está viendo a través de un proxy
+        window.isProxyDetected = false;
+
+        // Función para detectar si estamos en un proxy público
+        function isPublicProxy(url) {
+            // Solo detectar estos dominios específicos como proxies públicos
+            return url.includes('proxy.zeronet.dev') ||
+                   url.includes('0net.io') ||
+                   /zeronet\.[a-z]+/.test(url);
+        }
+
+        // Verificación de la URL actual
+        (function() {
+            const currentUrl = window.location.href;
+            const proxyWarningElement = document.getElementById('proxy-warning');
+            const blockedMessageElement = document.getElementById('blocked-message');
+            const contentContainer = document.getElementById('content-container');
+            const urlTypeElement = document.getElementById('url-type'); // Referencia al elemento url-type
+
+            try {
+                // Verificar si la URL contiene "127.0.0.1", "localhost" o "192.168.1." (red local)
+                if (currentUrl.includes('127.0.0.1') || currentUrl.includes('localhost') || currentUrl.includes('192.168.1.')) { // Usamos .includes() para buscar "192.168.1." dentro de la URL
+                    urlTypeElement.textContent = 'Estás viendo esta página en tu red local (URL local).';
+                    proxyWarningElement.style.display = 'none';
+                    blockedMessageElement.style.display = 'none'; // Asegurar que el mensaje de bloqueo no se muestre
+                    contentContainer.style.display = 'block'; // Mostrar el contenido normal
+                } else if (isPublicProxy(currentUrl)) {
+                    // Marcar que se ha detectado un proxy
+                    window.isProxyDetected = true;
+
+                    urlTypeElement.textContent = 'Estás viendo esta página en una red pública (URL de proxy).';
+                    proxyWarningElement.style.display = 'block';
+                    blockedMessageElement.style.display = 'block'; // Mostrar el mensaje de bloqueo
+                    contentContainer.style.display = 'none'; // Ocultar el contenido normal
+
+                    // Sobreescribir el método fetch nativo solo para proxies públicos
+                    const originalFetch = window.fetch;
+                    window.fetch = function() {
+                        console.error("Solicitud fetch bloqueada debido a detección de proxy");
+                        return Promise.reject(new Error("Las solicitudes fetch están bloqueadas en proxies públicos. Por favor, utilice ZeroNet sin proxy."));
+                    };
+
+                } else {
+                    urlTypeElement.textContent = 'La URL no corresponde ni a una red local ni a un proxy público.';
+                    proxyWarningElement.style.display = 'none';
+                    blockedMessageElement.style.display = 'none'; // Asegurar que el mensaje de bloqueo no se muestre
+                    contentContainer.style.display = 'block'; // Mostrar el contenido normal
+                }
+            } catch (e) {
+                console.error("Error en la detección de URL:", e);
+                // En caso de error, no bloquear nada para evitar problemas
+                window.isProxyDetected = false;
+            }
+        })();
+
+        function copiarTexto(id) {
+            var relativePath = document.getElementById(id).textContent;
+            var baseUrl = window.location.origin;
+            var absoluteUrl = baseUrl + '/' + relativePath;
+            var textarea = document.createElement("textarea");
+            textarea.value = absoluteUrl;
+            document.body.appendChild(textarea);
+            textarea.select();
+            textarea.setSelectionRange(0, 99999);
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+            alert("Enlace copiado al portapapeles!");
+        }
+    </script>
+
