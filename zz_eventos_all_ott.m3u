@@ -1,8 +1,6 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"
 #EXTVLCOPT:network-caching=2000
 
-#EXTINF:-1 tvg-id="" group-title="tenis [04/04] WTA Torneo de Charleston | 2ª Ronda", 00:00 A. Kalinskaya M. Keys
-http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
 #EXTINF:-1 tvg-id="" group-title="golf [04/04] LPGA T- Mobile Match Play", 00:00 Jornada 2
 http://127.0.0.1:6878/ace/getstream?id=e2d26332bf1aa59aec7e3cbe9ed4689df44ae368
 #EXTINF:-1 tvg-id="" group-title="golf [04/04] LPGA T- Mobile Match Play", 00:00 Jornada 2
@@ -11,9 +9,9 @@ http://127.0.0.1:6878/ace/getstream?id=ab0d8baaf889017c5e87b2e484203a359585c9dc
 http://127.0.0.1:6878/ace/getstream?id=7f1c44c9f362eba2d4a6820a00ff6701ead9e79d
 #EXTINF:-1 tvg-id="" group-title="golf [04/04] LPGA T- Mobile Match Play", 00:00 Jornada 2
 http://127.0.0.1:6878/ace/getstream?id=872608e734992db636eb79426802cd08f4029afb
-#EXTINF:-1 tvg-id="" group-title="tenis [04/04] WTA Torneo de Charleston | 2ª Ronda", 01:30 D. Kasatkina S. Kenin
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] WTA Torneo de Charleston | 2ª Ronda", 00:05 A. Kalinskaya M. Keys
 http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
-#EXTINF:-1 tvg-id="" group-title="tenis [04/04] WTA Torneo de Bogotá | 2ª Ronda", 01:30 J. Riera I. Jovic
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] WTA Torneo de Bogotá | 2ª Ronda", 00:05 C. Bucsa L. Boskovic
 http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
 #EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] NBA | Liga Regular", 01:30 Brooklyn Nets Minnesota Timberwolves
 http://127.0.0.1:6878/ace/getstream?id=55d4602cb22b0d8a33c10c2c2f42dae64a9e8895
@@ -29,6 +27,10 @@ http://127.0.0.1:6878/ace/getstream?id=fe134ae09f9643ea9bfdd75ff1f121ba8c58e5c1
 http://127.0.0.1:6878/ace/getstream?id=67a33c3f74956eed14b9b400523462fe362e0e66
 #EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] NBA | Liga Regular", 01:30 Brooklyn Nets Minnesota Timberwolves
 http://127.0.0.1:6878/ace/getstream?id=acb510858f34c3c6fd5f79395b031abd6885c2b3
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] WTA Torneo de Bogotá | 2ª Ronda", 01:40 J. Riera I. Jovic
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] WTA Torneo de Charleston | 2ª Ronda", 01:45 D. Kasatkina S. Kenin
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
 #EXTINF:-1 tvg-id="" group-title="automovilismo [04/04] Fórmula 1", 04:30 G.P. Japón (Suzuka) Libres 1
 http://127.0.0.1:6878/ace/getstream?id=d6281d4e6310269b416180442a470d23a4a99dc9
 #EXTINF:-1 tvg-id="" group-title="automovilismo [04/04] Fórmula 1", 04:30 G.P. Japón (Suzuka) Libres 1
@@ -81,12 +83,20 @@ http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
 http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
 #EXTINF:-1 tvg-id="" group-title="tenis [04/04] Ultimate Tennis Showdown | 1/4 de Final", 16:30 T. Machac G. Monfils
 http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] WTA Torneo de Charleston | 1/4 de Final", 17:00 J. Pegula D. Collins
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] WTA Torneo de Charleston | 1/4 de Final", 18:30 Q. Zheng E. Alexandrova
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] WTA Torneo de Bogotá | 1/4 de Final", 19:00 T. Maria MC. Osorio
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
 #EXTINF:-1 tvg-id="" group-title="balonmano [04/04] Liga ASOBAL", 19:00 Barça BM BM Granollers
 http://127.0.0.1:6878/ace/getstream?id=c693df0cbccedec130e2b31453bdbfb3ccb7a648
 #EXTINF:-1 tvg-id="" group-title="golf [04/04] LIV Golf", 19:13 Jornada 1
 http://127.0.0.1:6878/ace/getstream?id=7f1c44c9f362eba2d4a6820a00ff6701ead9e79d
 #EXTINF:-1 tvg-id="" group-title="golf [04/04] LIV Golf", 19:13 Jornada 1
 http://127.0.0.1:6878/ace/getstream?id=872608e734992db636eb79426802cd08f4029afb
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] WTA Torneo de Charleston | 1/4 de Final", 20:00 S. Kenin A. Kalinskaya
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
 #EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] Euroliga | Liga Regular", 20:00 Crvena Zvezda MTS Belgrade Anadolu Efes Istanbul
 http://127.0.0.1:6878/ace/getstream?id=639c561dd57fa3fc91fde715caeb696c5efb7ce7
 #EXTINF:-1 tvg-id="" group-title="baloncesto [04/04] Euroliga | Liga Regular", 20:00 Crvena Zvezda MTS Belgrade Anadolu Efes Istanbul
@@ -151,3 +161,7 @@ http://127.0.0.1:6878/ace/getstream?id=ec29289b0b14756e686c03a501bae1efa05be70c
 http://127.0.0.1:6878/ace/getstream?id=6de4794cd02f88f14354b5996823413a59a1de0f
 #EXTINF:-1 tvg-id="" group-title="futbol [04/04] La Liga EA Sports", 21:00 Rayo Vallecano Espanyol
 http://127.0.0.1:6878/ace/getstream?id=8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] WTA Torneo de Bogotá | 1/4 de Final", 21:00 L. Boskovic J. Riera
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
+#EXTINF:-1 tvg-id="" group-title="tenis [04/04] WTA Torneo de Bogotá | 1/4 de Final", 22:30 M. Bouzkova K. Kawa
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
