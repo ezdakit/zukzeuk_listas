@@ -12,9 +12,11 @@ jobs:
       ZERONET_ADDRESS_1: 18cZ4ehTarf34TCxntYDx9T2NHXiBvsVie
       ZERONET_ADDRESS_2: 1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU
       ZERONET_ADDRESS_3: 13eNqJiWACUUuFM37xwUwmRiCuyMd6X2tS
+      ZERONET_ADDRESS_4: 1H3KoazXt2gCJgeD8673eFvQYXG7cbRddU
       OUTPUT_FOLDER: zn_downloads
       OUTPUT_FILE: eventos.html
       OUTPUT_FILE_2: eventos_2.html
+      OUTPUT_FILE_3: eventos_new.html
 
     steps:
       - name: Checkout code
@@ -73,15 +75,15 @@ jobs:
         run: |
           npx playwright install
 
-      - name: Check site ZERONET_ADDRESS_3 synchronization
+      - name: Check site ZERONET_ADDRESS_4 synchronization
         run: |
-          echo "Checking site synchronization for $ZERONET_ADDRESS_3"
-          curl -H "Accept: text/html" -I http://127.0.0.1:43110/$ZERONET_ADDRESS_3/
-          echo "Site ZERONET_ADDRESS_3 synchronization checked"
+          echo "Checking site synchronization for $ZERONET_ADDRESS_4"
+          curl -H "Accept: text/html" -I http://127.0.0.1:43110/$ZERONET_ADDRESS_4/
+          echo "Site ZERONET_ADDRESS_4 synchronization checked"
 
       - name: Extract dynamic content 2 with Playwright
         run: |
-          node scripts/extract-content_2.js "$ZERONET_ADDRESS_3" "$OUTPUT_FOLDER" "$OUTPUT_FILE_2"
+          node scripts/extract-content_2.js "$ZERONET_ADDRESS_4" "$OUTPUT_FOLDER" "$OUTPUT_FILE_3"
 
       - name: Check site ZERONET_ADDRESS_2 synchronization
         run: |
