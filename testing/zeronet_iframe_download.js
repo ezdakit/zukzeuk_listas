@@ -2,7 +2,7 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
 
-async function captureIframeContent(url) {
+async function captureIframeContent(url, file_name) {
   console.log('Iniciando captura de contenido del iframe...');
 
   const browser = await chromium.launch();
@@ -49,7 +49,7 @@ async function captureIframeContent(url) {
 
       try {
           const content = await iframe.locator('body').innerHTML();
-          const filePath = path.join(testingDir, `iframe.html`);
+          const filePath = path.join(testingDir, '${file_name}');
           fs.writeFileSync(filePath, content);
           console.log(`Contenido capturado y guardado en '${filePath}'.`);
       } catch (error) {
@@ -68,4 +68,5 @@ async function captureIframeContent(url) {
 
 // Obtener los argumentos de la línea de comandos
 const url = process.argv[2];
+const file_name = process.argv[3];
 captureIframeContent(url);
