@@ -1,0 +1,69 @@
+
+    
+    
+
+    <div class="container">
+        <div class="header">
+            <div class="title-container">
+                <h1>Eventos Deportivos | Sports Events | TokyoGhoull</h1>
+                <div class="system-time" id="system-time">(2025/04/05 20:34:13) <span class="time-badge">Se requiere VPN | VPN required</span></div>
+            </div>
+        </div>
+        
+        <div class="time-notice">
+            <div><strong>Nota:</strong> Los horarios pueden ajustarse automáticamente para Madrid (UTC+1/+2)</div>
+            <div class="timezone-toggle">
+                <span>Horario original</span>
+                <label class="switch">
+                    <input type="checkbox" id="timezone-switch" checked="">
+                    <span class="slider"></span>
+                </label>
+                <span>Horario Madrid (+6h)</span>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <div class="filters">
+                <select id="category-filter"><option value="all">Todas las categorías</option><option value="Fútbol">Fútbol</option></select>
+                
+                <select id="status-filter">
+                    <option value="all">Todos los estados</option>
+                    <option value="en vivo">En vivo</option>
+                    <option value="pronto">Próximamente</option>
+                    <option value="finalizado">Finalizado</option>
+                </select>
+            </div>
+            
+            <div class="search">
+                <input type="text" id="search-input" placeholder="Buscar eventos...">
+            </div>
+        </div>
+        
+        <div class="table-container">
+            <table id="events-table">
+                <thead>
+                    <tr>
+                        <th data-sort="title">Evento</th>
+                        <th data-sort="category">Categoría</th>
+                        <th data-sort="time" class="asc">Hora</th>
+                        <th data-sort="status">Estado</th>
+                        <th>Enlace</th>
+                    </tr>
+                </thead>
+                <tbody id="events-body"><tr><td>Serie A: Hellas Verona vs. Parma</td><td><span class="category-tag Fútbol">Fútbol</span></td><td title="Hora original: 11:30">17:30</td><td class="status-cell"><span class="status pronto">PRÓXIMO</span></td><td><a href="https://streamtp4.com/global1.php?stream=disney1" class="link-btn" target="_blank">Ver</a></td></tr></tbody>
+            </table>
+        </div>
+        
+        <div class="footer">
+            <p>Actualizado: <span id="update-time">05/04/2025, 20:33:44</span></p>
+        </div>
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+
