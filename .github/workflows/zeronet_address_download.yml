@@ -71,24 +71,6 @@ jobs:
 
       - name: Check site ZERONET_ADDRESS synchronization
         run: |
-          echo "Checking site synchronization for $ZERONET_ADDRESS_3"
-          curl -H "Accept: text/html" -I http://127.0.0.1:43110/$ZERONET_ADDRESS_3/
-          echo "Site ZERONET_ADDRESS synchronization checked"
-
-      - name: Extract iframe src from ZeroNet address
-        run: |
-          curl -H "Accept: text/html" --connect-timeout 10 --max-time 30 -s "http://127.0.0.1:43110/${{ env.ZERONET_ADDRESS_3 }}" -o content.html
-          cat content.html
-          ADDRESS=$(grep -oP '(?<=address = ")[^"]*' content.html)
-          WRAPPER_NONCE=$(grep -oP '(?<=wrapper_nonce = ")[^"]*' content.html)
-          SRC="${ADDRESS}/?wrapper_nonce=${WRAPPER_NONCE}"
-          echo "Extracted src: $SRC"
-          echo "iframe url:"
-          echo "http://127.0.0.1:43110/${SRC}"
-          node testing/zeronet_iframe_download.js "http://127.0.0.1:43110/${SRC}" "$OUTPUT_FILE_3"
-
-      - name: Check site ZERONET_ADDRESS synchronization
-        run: |
           echo "Checking site synchronization for $ZERONET_ADDRESS_4"
           curl -H "Accept: text/html" -I http://127.0.0.1:43110/$ZERONET_ADDRESS_4/
           echo "Site ZERONET_ADDRESS synchronization checked"
@@ -104,6 +86,24 @@ jobs:
           echo "iframe url:"
           echo "http://127.0.0.1:43110/${SRC}"
           node testing/zeronet_iframe_download.js "http://127.0.0.1:43110/${SRC}" "$OUTPUT_FILE_4"
+
+      - name: Check site ZERONET_ADDRESS synchronization
+        run: |
+          echo "Checking site synchronization for $ZERONET_ADDRESS_3"
+          curl -H "Accept: text/html" -I http://127.0.0.1:43110/$ZERONET_ADDRESS_3/
+          echo "Site ZERONET_ADDRESS synchronization checked"
+
+      - name: Extract iframe src from ZeroNet address
+        run: |
+          curl -H "Accept: text/html" --connect-timeout 10 --max-time 30 -s "http://127.0.0.1:43110/${{ env.ZERONET_ADDRESS_3 }}" -o content.html
+          cat content.html
+          ADDRESS=$(grep -oP '(?<=address = ")[^"]*' content.html)
+          WRAPPER_NONCE=$(grep -oP '(?<=wrapper_nonce = ")[^"]*' content.html)
+          SRC="${ADDRESS}/?wrapper_nonce=${WRAPPER_NONCE}"
+          echo "Extracted src: $SRC"
+          echo "iframe url:"
+          echo "http://127.0.0.1:43110/${SRC}"
+          node testing/zeronet_iframe_download.js "http://127.0.0.1:43110/${SRC}" "$OUTPUT_FILE_3"
 
       - name: Check for file changes
         id: check_changes
