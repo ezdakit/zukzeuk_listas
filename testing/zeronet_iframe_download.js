@@ -16,7 +16,7 @@ async function captureIframeContent(url, file_name) {
   console.log(`Navegando a: ${fullUrl}`);
 
   try {
-    await page.goto(fullUrl, { timeout: 20000 }); // 20s el tiempo de espera
+    await page.goto(fullUrl, { timeout: 30000 }); // 20s el tiempo de espera
     console.log('Navegación completada con éxito.');
   } catch (error) {
     console.error('Error al navegar a la página:', error);
@@ -30,7 +30,7 @@ async function captureIframeContent(url, file_name) {
       console.log('Selector del iframe encontrado');
 
       // Espera explícita para asegurar que el contenido dinámico se cargue
-      await page.waitForTimeout(10000); // Espera 10 segundos
+      await page.waitForTimeout(30000); // Espera 10 segundos
 
       // Crea el directorio 'testing' si no existe
       const testingDir = path.join(__dirname, 'testing');
