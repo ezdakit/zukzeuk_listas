@@ -50,7 +50,7 @@ for section in agenda_sections:
 
 # Escribir el archivo CSV
 if csv_data:
-    with open('eventos_acestream.csv', 'w', newline='', encoding='utf-8') as csvfile:
+    with open('testing/testing/eventos_acestream.csv', 'w', newline='', encoding='utf-8') as csvfile:
         fieldnames = ['date', 'event_id', 'acestream_id']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         
