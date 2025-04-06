@@ -3,7 +3,7 @@ import csv
 import re
 
 # Leer el archivo HTML
-with open('new_all.txt', 'r', encoding='utf-8') as file:
+with open('testing/testing/new_all.txt', 'r', encoding='utf-8') as file:
     html_content = file.read()
 
 soup = BeautifulSoup(html_content, 'html.parser')
