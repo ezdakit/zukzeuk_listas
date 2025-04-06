@@ -2,6 +2,41 @@ from bs4 import BeautifulSoup
 import csv
 import re
 
+def format_match_info(match_cell):
+    """Formatea correctamente la información del partido, manteniendo espacios entre elementos span"""
+    match_info = match_cell.find('div', class_='match-info')
+    if match_info:
+        # Extraer texto preservando espacios entre elementos
+        parts = []
+        for element in match_info.find_all(['span', 'img']):
+            if element.name == 'span':
+                parts.append(element.get_text(strip=True))
+            elif 'vs-text' in element.get('class', []):
+                parts.append(' vs ')  # Mantener espacios alrededor del "vs"
+        
+        return ' '.join(parts).replace('  ', ' ').strip()
+    else:
+        # Si no hay match-info, usar el texto normal
+        return match_cell.get_text(' ', strip=True)
+
+def format_competition_info(competition_cell):
+    """Formatea correctamente la información de la competición, combinando nombre y fase"""
+    competition_info = competition_cell.find('div', class_='competition-info')
+    if competition_info:
+        name = competition_info.find('span', class_='competition-name')
+        fase = competition_info.find('div', class_='fase')
+        
+        name_text = name.get_text(strip=True) if name else ''
+        fase_text = fase.get_text(strip=True) if fase else ''
+        
+        # Combinar con un espacio si ambos existen
+        if name_text and fase_text:
+            return f"{name_text} {fase_text}"
+        else:
+            return name_text or fase_text
+    else:
+        return competition_cell.get_text(' ', strip=True)
+
 with open('testing/testing/new_all.txt', 'r', encoding='utf-8') as file:
     soup = BeautifulSoup(file.read(), 'html.parser')
 
@@ -36,8 +71,13 @@ for day in events_container.find_all('div', class_='events-day'):
             continue
         
         time = cols[0].get_text(strip=True)
-        competition = cols[1].get_text(strip=True)
-        match = cols[2].get_text(strip=True)
+        competition = format_competition_info(cols[1])  # Usamos la nueva función de formateo
+        match = format_match_info(cols[2])
+        
+        # Crear un event_id más descriptivo si el actual es genérico
+        if event_id.endswith('--'):
+            teams = match.split(' vs ') if ' vs ' in match else [match]
+            event_id = f"{time}-{'-'.join([t.strip() for t in teams])}"
         
         # Procesar los grupos de streams
         for group in detail_row.find_all('div', class_='stream-channel-group'):
