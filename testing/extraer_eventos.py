@@ -1,6 +1,11 @@
 from bs4 import BeautifulSoup
 import csv
 import re
+from datetime import datetime
+
+# Input and output file paths
+csv_file = 'testing/testing/eventos_acestream.csv'
+m3u_file = 'testing/testing/eventos_acestream.m3u'
 
 def format_match_info(match_cell):
     """Formatea correctamente la información del partido, manteniendo espacios entre elementos span"""
@@ -44,7 +49,7 @@ def replace_commas_with_dots(data):
             data[key] = data[key].replace(",", ".")
     return data
 
-with open('testing/testing/new_all.txt', 'r', encoding='utf-8') as file:
+with open(csv_file, 'r', encoding='utf-8') as file:
     soup = BeautifulSoup(file.read(), 'html.parser')
 
 csv_data = []
@@ -122,3 +127,40 @@ if csv_data:
     print(f"Archivo CSV creado exitosamente con {len(csv_data)} entradas de Acestream.")
 else:
     print("No se encontraron eventos con IDs de Acestream.")
+
+
+
+# Write the header lines
+header_lines = [
+    '#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"\n',
+    '#EXTVLCOPT:network-caching=2000\n',
+    '\n'
+]
+
+with open(m3u_file, 'w', encoding='utf-8') as out_file:
+    # Write header
+    out_file.writelines(header_lines)
+    
+    # Read CSV and write entries
+    with open(csv_file, 'r', encoding='utf-8') as in_file:
+        reader = csv.DictReader(in_file)
+        
+        for row in reader:
+            # Format date from YYYY-MM-DD to DD-MM
+            date_obj = datetime.strptime(row['date'], '%Y-%m-%d')
+            date_formated = date_obj.strftime('%d-%m')
+            
+            # Get quality if available, otherwise empty string
+            quality = row['quality'] if row['quality'] else ''
+            
+            # Create EXTINF line
+            extinf_line = f'#EXTINF:-1 tvg-id="" group-title="{date_formated} {row["competition"]}", {row["time"]} {row["match"]} {row["group"]} {quality}\n'
+            
+            # Create URL line
+            url_line = f'http://127.0.0.1:6878/ace/getstream?id={row["acestream_id"]}\n'
+            
+            # Write both lines to output file
+            out_file.write(extinf_line)
+            out_file.write(url_line)
+
+print(f"M3U file generated successfully at {m3u_file}")
