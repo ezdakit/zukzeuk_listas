@@ -37,6 +37,13 @@ def format_competition_info(competition_cell):
     else:
         return competition_cell.get_text(' ', strip=True)
 
+def replace_commas_with_dots(data):
+    """Reemplaza comas por puntos en todos los campos de un diccionario"""
+    for key in data:
+        if isinstance(data[key], str):
+            data[key] = data[key].replace(",", ".")
+    return data
+
 with open('testing/testing/new_all.txt', 'r', encoding='utf-8') as file:
     soup = BeautifulSoup(file.read(), 'html.parser')
 
@@ -91,7 +98,8 @@ for day in events_container.find_all('div', class_='events-day'):
                 # Determinar calidad (FHD, SD, etc.)
                 quality = 'FHD' if 'FHD' in link.get_text() else ('SD' if 'SD' in link.get_text() else '')
                 
-                csv_data.append({
+                # Crear el diccionario y reemplazar comas por puntos
+                entry = {
                     'date': date,
                     'event_id': event_id,
                     'time': time,
@@ -100,7 +108,8 @@ for day in events_container.find_all('div', class_='events-day'):
                     'group': group_name,
                     'acestream_id': acestream_id,
                     'quality': quality
-                })
+                }
+                csv_data.append(replace_commas_with_dots(entry))
 
 # Escribir el archivo CSV
 if csv_data:
