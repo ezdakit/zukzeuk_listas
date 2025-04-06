@@ -7,6 +7,28 @@ from datetime import datetime
 html_file = 'testing/testing/new_all.txt'
 csv_file = 'testing/testing/eventos_acestream.csv'
 m3u_file = 'testing/testing/eventos_acestream.m3u'
+output_file = 'testing/testing/canales_acestream.m3u'
+
+def extract_and_save_m3u(input_file, output_file):
+    # Leer el contenido del archivo HTML
+    with open(input_file, 'r', encoding='utf-8') as file:
+        content = file.read()
+    
+    # Buscar el contenido de get.txt usando una expresión regular
+    pattern = r"const fileContents = \{.*?'get\.txt': `(.*?)`.*?\}"
+    match = re.search(pattern, content, re.DOTALL)
+    
+    if not match:
+        print("No se encontró el contenido de get.txt en el archivo HTML")
+        return
+    
+    m3u_content = match.group(1)
+    
+    # Guardar el contenido en el archivo de salida
+    with open(output_file, 'w', encoding='utf-8') as file:
+        file.write(m3u_content)
+    
+    print(f"Archivo M3U guardado correctamente en {output_file}")
 
 def format_match_info(match_cell):
     """Formatea correctamente la información del partido, manteniendo espacios entre elementos span"""
@@ -52,6 +74,9 @@ def replace_commas_with_dots(data):
 
 with open(html_file, 'r', encoding='utf-8') as file:
     soup = BeautifulSoup(file.read(), 'html.parser')
+
+# Ejecutar la extracción m3u
+extract_and_save_m3u(html_file, output_file)
 
 csv_data = []
 
