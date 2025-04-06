@@ -25,7 +25,9 @@ def extract_and_save_m3u(input_file, output_file):
     m3u_content = match.group(1)
 
     # Reemplazar las secuencias de escape \n por saltos de línea reales
-    m3u_content = m3u_content.replace('\\n', '\n')
+    m3u_content = m3u_content.replace('\\n', '\n')  # Convertir \n en saltos de línea reales
+    m3u_content = m3u_content.replace('\\"', '"')   # Eliminar el escape de las comillas
+    m3u_content = m3u_content.replace('\\\\', '\\') # Reemplazar \\ con \
     
     # Guardar el contenido en el archivo de salida
     with open(output_file, 'w', encoding='utf-8') as file:
