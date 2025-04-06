@@ -201,18 +201,10 @@ plugin://script.module.horus?action=play&id=fbc39d8a9e5d7c9ac6a1438d440104620f54
 plugin://script.module.horus?action=play&id=c1ee6e1e0ef5928d8261f855c417de21794f437d
 #EXTINF:-1 tvg-id="no_disponible" group-title="SEGUNDA+1RFEF", 1RFEF canal 2 HD
 plugin://script.module.horus?action=play&id=8677d339ecddd75165c0015025f598b6215974cf
-#EXTINF:-1 tvg-id="PT | DAZN 1" group-title="VARIOS", ELEVEN DAZN 1 HD
-plugin://script.module.horus?action=play&id=36cad67fed5a739757a9db844a551aa845a8d51b
-#EXTINF:-1 tvg-id="PT | DAZN 2" group-title="VARIOS", ELEVEN DAZN 2 HD
-plugin://script.module.horus?action=play&id=d08013df6e437a1fdf1e0c34f573fdf6a40c7fce
-#EXTINF:-1 tvg-id="PT | DAZN 4" group-title="VARIOS", ELEVEN DAZN 4 HD
-plugin://script.module.horus?action=play&id=0f32c0131a2d9444996410801f4e18b04384db98
-#EXTINF:-1 tvg-id="PT | DAZN 5" group-title="VARIOS", ELEVEN DAZN 5 HD
-plugin://script.module.horus?action=play&id=4dbe63b44fc4f439f5b634c0d2aa7e0cccad808a
-#EXTINF:-1 tvg-id="PT | DAZN 6" group-title="VARIOS", ELEVEN DAZN 6 HD
-plugin://script.module.horus?action=play&id=50b6d2b5fd59fefb9f4fd2176994d418f2b94a80
 #EXTINF:-1 tvg-id="Antena 3 HD" group-title="VARIOS", ANTENA 3 FHD
 plugin://script.module.horus?action=play&id=390b5b0fc49a811c5c5ebd6d195b08a48b1e8496
+#EXTINF:-1 tvg-id="" group-title="VARIOS", AUTOMOTORSPORT HD
+plugin://script.module.horus?action=play&id=610993aea3a2bfd509594334b7461ce96900f54c
 #EXTINF:-1 tvg-id="beIN SPORTS XTRA " group-title="VARIOS", BEIN SPORTS
 plugin://script.module.horus?action=play&id=e8e459656f964f601ad4bcda8b81a43ba41c68f9
 #EXTINF:-1 tvg-id="FR | beIN SPORTS 1" group-title="VARIOS", BEIN SPORTS 1
@@ -301,10 +293,14 @@ plugin://script.module.horus?action=play&id=b2d560741c006fc5e4a42412bb52dbd25a6a
 plugin://script.module.horus?action=play&id=ebc2e767633cf272abf749a8884751f1f177c8b3
 #EXTINF:-1 tvg-id="LaLiga TV Hypermotion 2" group-title="VARIOS", HYPERMOTION 2 FHD
 plugin://script.module.horus?action=play&id=0cfdfde1b70623b8c210b0f7301be2a87456481d
+#EXTINF:-1 tvg-id="LaLiga TV Hypermotion 2" group-title="VARIOS", HYPERMOTION 2 HD
+plugin://script.module.horus?action=play&id=f416f36cc1be370e3f9ac29cd6a9acc0d766f7ba
 #EXTINF:-1 tvg-id="LaLiga TV Hypermotion 2" group-title="VARIOS", HYPERMOTION 2 SD
 plugin://script.module.horus?action=play&id=0a335406bad0b658aeddb2d38f8c0614b2e5623a
 #EXTINF:-1 tvg-id="LaLiga TV Hypermotion 3" group-title="VARIOS", HYPERMOTION 3
 plugin://script.module.horus?action=play&id=fefd45ed6ff415e05f1341b7d9da2988eacd13ea
+#EXTINF:-1 tvg-id="LaLiga TV Hypermotion 3" group-title="VARIOS", HYPERMOTION 3 FHD
+plugin://script.module.horus?action=play&id=01445a4b9f0cce21da59408d1a2c3d028b803a81
 #EXTINF:-1 tvg-id="LaLiga TV Hypermotion HD" group-title="VARIOS", HYPERMOTION FHD
 plugin://script.module.horus?action=play&id=b2706a7ffbea236a3b398139a3a606ada664c0eb
 #EXTINF:-1 tvg-id="LaLiga TV Hypermotion HD" group-title="VARIOS", HYPERMOTION FHD
