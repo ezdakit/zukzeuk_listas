@@ -16,7 +16,7 @@ async function captureIframeContent(url, file_name) {
   console.log(`Navegando a: ${fullUrl}`);
 
   try {
-    await page.goto(fullUrl, { timeout: 30000 }); // 20s el tiempo de espera
+    await page.goto(fullUrl, { timeout: 60000 }); // 20s el tiempo de espera
     console.log('Navegación completada con éxito.');
   } catch (error) {
     console.error('Error al navegar a la página:', error);
