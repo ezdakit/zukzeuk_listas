@@ -4,6 +4,7 @@ import re
 from datetime import datetime
 
 # Input and output file paths
+html_file = 'testing/testing/new_all.txt'
 csv_file = 'testing/testing/eventos_acestream.csv'
 m3u_file = 'testing/testing/eventos_acestream.m3u'
 
@@ -49,7 +50,7 @@ def replace_commas_with_dots(data):
             data[key] = data[key].replace(",", ".")
     return data
 
-with open(csv_file, 'r', encoding='utf-8') as file:
+with open(html_file, 'r', encoding='utf-8') as file:
     soup = BeautifulSoup(file.read(), 'html.parser')
 
 csv_data = []
@@ -118,7 +119,7 @@ for day in events_container.find_all('div', class_='events-day'):
 
 # Escribir el archivo CSV
 if csv_data:
-    with open('testing/testing/eventos_acestream.csv', 'w', newline='', encoding='utf-8') as csvfile:
+    with open(csv_file, 'w', newline='', encoding='utf-8') as csvfile:
         fieldnames = ['date', 'event_id', 'time', 'competition', 'match', 'group', 'acestream_id', 'quality']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         
