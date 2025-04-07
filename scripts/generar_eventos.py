@@ -74,7 +74,7 @@ try:
 
         # Extraer el deporte del campo "Competición"
         # Buscar la URL de la imagen en el campo "Competición"
-        match = re.search(r'src="https://static\.futbolenlatv\.com/img/32/\d+-(.*?)\.webp"', str(cols[1]))
+        match = re.search(r'src="(?:https?://[^/]+/)?https://static\.futbolenlatv\.com/img/32/\d+-(.*?)\.webp"', str(cols[1]))
         if match:
             # Extraer el texto entre el último punto y el primer guion
             deporte = match.group(1).split('-')[-1]
