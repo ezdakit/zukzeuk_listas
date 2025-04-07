@@ -1,9 +1,9 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"
 #EXTVLCOPT:network-caching=2000
 
-#EXTINF:-1 tvg-id="" group-title="@CICLISMO/07-04 Vuelta al País Vasco", 15:00 Etapa 1 Vitoria-Gasteiz › Baskonia-Alavés (16.5 km) DAZN FHD
+#EXTINF:-1 tvg-id="" group-title="@CICLISMO\/07-04 Vuelta al País Vasco", 15:00 Etapa 1 Vitoria-Gasteiz › Baskonia-Alavés (16.5 km) DAZN FHD
 http://127.0.0.1:6878/ace/getstream?id=110d441ddc9713a7452588770d2bc85504672f47
-#EXTINF:-1 tvg-id="" group-title="@CICLISMO\07-04 Vuelta al País Vasco", 15:00 Etapa 1 Vitoria-Gasteiz › Baskonia-Alavés (16.5 km) DAZN FHD
+#EXTINF:-1 tvg-id="" group-title="@CICLISMO/\07-04 Vuelta al País Vasco", 15:00 Etapa 1 Vitoria-Gasteiz › Baskonia-Alavés (16.5 km) DAZN FHD
 http://127.0.0.1:6878/ace/getstream?id=ec29289b0b14756e686c03a501bae1efa05be70c
 #EXTINF:-1 tvg-id="" group-title="@CICLISMO|07-04 Vuelta al País Vasco", 15:00 Etapa 1 Vitoria-Gasteiz › Baskonia-Alavés (16.5 km) DAZN FHD
 http://127.0.0.1:6878/ace/getstream?id=6de4794cd02f88f14354b5996823413a59a1de0f
@@ -13,7 +13,7 @@ http://127.0.0.1:6878/ace/getstream?id=51dbbfb42f8091e4ea7a2186b566a40e780953d9
 http://127.0.0.1:6878/ace/getstream?id=6538b79ce0da657d8455d1da6a5f342398899a0e
 #EXTINF:-1 tvg-id="" group-title="07-04 Vuelta al País Vasco", 15:00 Etapa 1 Vitoria-Gasteiz › Baskonia-Alavés (16.5 km) DAZN FHD
 http://127.0.0.1:6878/ace/getstream?id=50a8a13c474848d1efbd5586efdb5b6cdd173fa9
-#EXTINF:-1 tvg-id="" group-title="07-04 Vuelta al País Vasco", 15:00 Etapa 1 Vitoria-Gasteiz › Baskonia-Alavés (16.5 km) DAZN FHD
+#EXTINF:-1 tvg-id="" group-title="07-04 Vuelta al País Vasco"&"Pruebando", 15:00 Etapa 1 Vitoria-Gasteiz › Baskonia-Alavés (16.5 km) DAZN FHD
 http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
 #EXTINF:-1 tvg-id="" group-title="07-04 Vuelta al País Vasco", 15:00 Etapa 1 Vitoria-Gasteiz › Baskonia-Alavés (16.5 km) DAZN FHD
 http://127.0.0.1:6878/ace/getstream?id=6a1703a6bbe6110a1d27f35a41c88661e1740bfa
