@@ -196,7 +196,7 @@ try:
     try:
         zz_lista_ott_path = os.path.join('zz_canales', 'zz_lista_ott.m3u')
         with open(zz_lista_ott_path, 'w', encoding='utf-8') as m3u_file:
-            m3u_file.write('#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"\n')
+            m3u_file.write('#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml, https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz"\n')
             m3u_file.write('#EXTVLCOPT:network-caching=2000\n\n')
 
             # Primero escribimos los registros con activo = 1
@@ -227,7 +227,7 @@ try:
     try:
         zz_lista_ace_path = os.path.join('zz_canales', 'zz_lista_ace.m3u')
         with open(zz_lista_ace_path, 'w', encoding='utf-8') as ace_file:
-            ace_file.write('#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"\n')
+            ace_file.write('#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml, https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz"\n')
             ace_file.write('#EXTVLCOPT:network-caching=2000\n\n')
 
             # Primero escribimos los registros con activo = 1
@@ -260,7 +260,7 @@ try:
     try:
         zz_lista_kodi_path = os.path.join('zz_canales', 'zz_lista_kodi.m3u')
         with open(zz_lista_kodi_path, 'w', encoding='utf-8') as kodi_file:
-            kodi_file.write('#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"\n')
+            kodi_file.write('#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml, https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz"\n')
             kodi_file.write('#EXTVLCOPT:network-caching=2000\n\n')
 
             # Primero escribimos los registros con activo = 1
