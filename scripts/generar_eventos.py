@@ -128,7 +128,8 @@ try:
     fecha_madrid = fecha_extraccion_utc.astimezone(madrid_tz)
     
     fecha_formateada = fecha_madrid.strftime("%d de %B")  # Formato "día de mes"
-    fecha_formateada_2 = fecha_madrid.strftime("[%d/%m]")  # Formato "día/mes"
+    # fecha_formateada_2 = fecha_madrid.strftime("[%d/%m]")  # Formato "día/mes"
+    fecha_formateada_2 = fecha_madrid.strftime("%d/%m")  # Formato "día/mes"
     
     # Abrir el archivo CSV para lectura
     with open(input_csv, 'r', encoding='utf-8') as csv_file:
@@ -151,7 +152,8 @@ try:
                 extinf_line = f'#EXTINF:-1 tvg-id="" group-title="# Eventos {fecha_formateada.lower()} por horario", {hora} {evento}\n'
 
                 # Crear la línea #EXTINF para zz_eventos_all_ott.m3u (group-title con el contenido de "Competicion")
-                extinf_all_line = f'#EXTINF:-1 tvg-id="" group-title="{deporte} {fecha_formateada_2.lower()} {competicion}", {hora} {evento}\n'
+                # extinf_all_line = f'#EXTINF:-1 tvg-id="" group-title="{deporte} {fecha_formateada_2.lower()} {competicion}", {hora} {evento}\n'
+                extinf_all_line = f'#EXTINF:-1 tvg-id="" group-title="{fecha_formateada_2.lower()} {competicion}", {hora} {evento}\n'
 
                 # Crear la línea de la URL
                 url_line = f'http://127.0.0.1:6878/ace/getstream?id={eventos_acestream}\n'
