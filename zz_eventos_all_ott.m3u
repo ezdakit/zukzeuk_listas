@@ -189,9 +189,9 @@ http://127.0.0.1:6878/ace/getstream?id=4b87a5b67f39dfc151a163ec8c08039520f0a372
 http://127.0.0.1:6878/ace/getstream?id=138b30c93e8a780ac490a4f6d2181c41f3670230
 #EXTINF:-1 tvg-id="" group-title="04/05 Campeonato Uruguayo", 15:45 Montevideo City Torque Progreso
 http://127.0.0.1:6878/ace/getstream?id=b2d560741c006fc5e4a42412bb52dbd25a6a4a3a
-#EXTINF:-1 tvg-id="" group-title="04/05 Champions Cup", 16:00 Bordeaux Bègles Stade Toulouse
+#EXTINF:-1 tvg-id="" group-title="04/05 Champions Cup | Final", 16:00 Bordeaux Bègles Stade Toulouse
 http://127.0.0.1:6878/ace/getstream?id=753d4b1f7c4ef43238b5cf23b05572b550a44eee
-#EXTINF:-1 tvg-id="" group-title="04/05 Copa de la Reina", 16:00 Final
+#EXTINF:-1 tvg-id="" group-title="04/05 Copa de la Reina | Final", 16:00 Torreblanca Melilla Burela FS
 http://127.0.0.1:6878/ace/getstream?id=138b30c93e8a780ac490a4f6d2181c41f3670230
 #EXTINF:-1 tvg-id="" group-title="04/05 Liga F", 16:00 Granada Femenino Real Madrid Femenino
 http://127.0.0.1:6878/ace/getstream?id=fbc39d8a9e5d7c9ac6a1438d440104620f54e09c
@@ -295,6 +295,14 @@ http://127.0.0.1:6878/ace/getstream?id=a9025d4e168764248d33129c30940502cea0e1c2
 http://127.0.0.1:6878/ace/getstream?id=47223e64a576c21bd61e818a42397a753d34fba5
 #EXTINF:-1 tvg-id="" group-title="04/05 Liga Femenina Endesa | Play Offs Semifinales", 18:00 Spar Girona Casademont Zaragoza
 http://127.0.0.1:6878/ace/getstream?id=138b30c93e8a780ac490a4f6d2181c41f3670230
+#EXTINF:-1 tvg-id="" group-title="04/05 EHF Women's European League | Final", 18:00 Herning-Ikast Håndbold Thüringer HC
+http://127.0.0.1:6878/ace/getstream?id=7e90956539f4e1318a63f3960e4f75c7c7c5a3b8
+#EXTINF:-1 tvg-id="" group-title="04/05 EHF Women's European League | Final", 18:00 Herning-Ikast Håndbold Thüringer HC
+http://127.0.0.1:6878/ace/getstream?id=7e27e46c25d4308d16098d9dc67fcd8736e8c1f0
+#EXTINF:-1 tvg-id="" group-title="04/05 EHF Women's European League | Final", 18:00 Herning-Ikast Håndbold Thüringer HC
+http://127.0.0.1:6878/ace/getstream?id=75306ac6ffbe33b08c5c28487674f75f012c7f50
+#EXTINF:-1 tvg-id="" group-title="04/05 EHF Women's European League | Final", 18:00 Herning-Ikast Håndbold Thüringer HC
+http://127.0.0.1:6878/ace/getstream?id=0f32c0131a2d9444996410801f4e18b04384db98
 #EXTINF:-1 tvg-id="" group-title="04/05 Masters Madrid | Final", 18:30 C. Ruud J. Draper
 http://127.0.0.1:6878/ace/getstream?id=fbc39d8a9e5d7c9ac6a1438d440104620f54e09c
 #EXTINF:-1 tvg-id="" group-title="04/05 Masters Madrid | Final", 18:30 C. Ruud J. Draper
@@ -353,6 +361,8 @@ http://127.0.0.1:6878/ace/getstream?id=2c6e4c897661e6b0257bfe931b66d20b2ec763b6
 http://127.0.0.1:6878/ace/getstream?id=71eef80158aa8b37f3dc59f6793c6696df9a2dfa
 #EXTINF:-1 tvg-id="" group-title="04/05 F1 Academy", 19:05 G.P. Miami (Miami) Carrera 2
 http://127.0.0.1:6878/ace/getstream?id=268289e7a3c5209960b53b4d43c8c65fab294b85
+#EXTINF:-1 tvg-id="" group-title="04/05 F1 Academy", 19:05 G.P. Miami (Miami) Carrera 2
+http://127.0.0.1:6878/ace/getstream?id=7e1523ccfaac00800e67bd0b97c428810104b2b8
 #EXTINF:-1 tvg-id="" group-title="04/05 F1 Academy", 19:05 G.P. Miami (Miami) Carrera 2
 http://127.0.0.1:6878/ace/getstream?id=6422e8bc34282871634c81947be093c04ad1bb29
 #EXTINF:-1 tvg-id="" group-title="04/05 F1 Academy", 19:05 G.P. Miami (Miami) Carrera 2
@@ -415,6 +425,8 @@ http://127.0.0.1:6878/ace/getstream?id=2c6e4c897661e6b0257bfe931b66d20b2ec763b6
 http://127.0.0.1:6878/ace/getstream?id=71eef80158aa8b37f3dc59f6793c6696df9a2dfa
 #EXTINF:-1 tvg-id="" group-title="04/05 Fórmula 1", 22:00 G.P. Miami (Miami) Carrera
 http://127.0.0.1:6878/ace/getstream?id=268289e7a3c5209960b53b4d43c8c65fab294b85
+#EXTINF:-1 tvg-id="" group-title="04/05 Fórmula 1", 22:00 G.P. Miami (Miami) Carrera
+http://127.0.0.1:6878/ace/getstream?id=7e1523ccfaac00800e67bd0b97c428810104b2b8
 #EXTINF:-1 tvg-id="" group-title="04/05 Fórmula 1", 22:00 G.P. Miami (Miami) Carrera
 http://127.0.0.1:6878/ace/getstream?id=6422e8bc34282871634c81947be093c04ad1bb29
 #EXTINF:-1 tvg-id="" group-title="04/05 Fórmula 1", 22:00 G.P. Miami (Miami) Carrera
