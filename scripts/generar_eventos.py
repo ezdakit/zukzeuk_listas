@@ -77,7 +77,8 @@ try:
         match = re.search(r'src="(?:https?://[^/]+/)?https://static\.futbolenlatv\.com/img/32/\d+-(.*?)\.webp"', str(cols[1]))
         if match:
             # Extraer el texto entre el último punto y el primer guion
-            deporte = match.group(1).split('-')[-1]
+            #deporte = match.group(1).split('-')[-1]
+            deporte = "deporte"
 
         # Procesar cada enlace de Acestream
         for evento_acestream in eventos_acestream:
