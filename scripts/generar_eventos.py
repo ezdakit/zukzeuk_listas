@@ -74,22 +74,23 @@ try:
 
         # Extraer el deporte del campo "Competición"
         # Buscar la URL de la imagen en el campo "Competición"
-        match = re.search(r'src="(?:https?://[^/]+/)?https://static\.futbolenlatv\.com/img/32/\d+-(.*?)\.webp"', str(cols[1]))
-        if match:
+        # match = re.search(r'src="(?:https?://[^/]+/)?https://static\.futbolenlatv\.com/img/32/\d+-(.*?)\.webp"', str(cols[1]))
+        # if match:
             # Extraer el texto entre el último punto y el primer guion
-            #deporte = match.group(1).split('-')[-1]
-            deporte = "deporte"
+            # deporte = match.group(1).split('-')[-1]
 
         # Procesar cada enlace de Acestream
         for evento_acestream in eventos_acestream:
             nombre_canal = evento_acestream.text.strip()
             url_acestream = evento_acestream['href'].replace('acestream://', '')
-            eventos.append([hora, competicion, evento, nombre_canal, url_acestream, deporte])
+            # eventos.append([hora, competicion, evento, nombre_canal, url_acestream, deporte])
+            eventos.append([hora, competicion, evento, nombre_canal, url_acestream])
 
     # Guardar los eventos en un archivo CSV
     with open('zz_eventos/eventos.csv', 'w', encoding='utf-8', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(['Hora', 'Competicion', 'Evento', 'Canales', 'Eventos_Acestream', 'Deporte'])
+        # writer.writerow(['Hora', 'Competicion', 'Evento', 'Canales', 'Eventos_Acestream', 'Deporte'])
+        writer.writerow(['Hora', 'Competicion', 'Evento', 'Canales', 'Eventos_Acestream'])
         writer.writerows(eventos)
 
     logger.info("El fichero eventos.csv se ha generado correctamente.")
@@ -147,7 +148,8 @@ try:
 
             # Procesar cada línea del CSV
             for row in csv_reader:
-                hora, competicion, evento, nombre_canal, eventos_acestream, deporte = row
+                # hora, competicion, evento, nombre_canal, eventos_acestream, deporte = row
+                hora, competicion, evento, nombre_canal, eventos_acestream = row
 
                 # Crear la línea #EXTINF para zz_eventos_ott.m3u (group-title="# Eventos [fecha] por horario")
                 extinf_line = f'#EXTINF:-1 tvg-id="" group-title="# Eventos {fecha_formateada.lower()} por horario", {hora} {evento}\n'
