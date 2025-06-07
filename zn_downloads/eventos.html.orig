@@ -134,7 +134,7 @@
     <h1>by TokyoGhoull</h1>
     <div id="loading" class="loading" style="display: none;">Cargando datos...</div>
     
-    <h2 id="tituloEventos" style="display: block;">Eventos de hoy (viernes, 6 de junio de 2025)</h2>
+    <h2 id="tituloEventos" style="display: block;">Eventos de hoy (sábado, 7 de junio de 2025)</h2>
     <table id="tablaEventos" class="tabla-Eventos" style="display: table;">
         <thead>
             <tr>
@@ -146,51 +146,33 @@
             </tr>
         </thead>
         <tbody><tr>
-                        <td>01:00</td>
+                        <td>00:00</td>
                         <td>
                                         <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
-                                        FIFA Copa Mundial 2026 | Eliminatorias Sudamericanas
+                                        Campeonato Uruguayo
                                     </td>
                         <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130204101510_ecuador.webp" width="32" height="32" alt="Ecuador">
-                                            Ecuador
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130204124155_brasil.webp" width="32" height="32" alt="Brasil">
-                                            Brasil
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20141108081457-ca-cerro.webp" width="32" height="32" alt="CA Cerro">
+                                            CA Cerro
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130729071310-river-plate-m.webp" width="32" height="32" alt="River Plate M.">
+                                            River Plate M.
                                         </td>
                         <td></td>
                         <td>
-                                        <a href="acestream://d03c13b6723f66155d7a0df3692a3b073fe630f2" target="_blank">MOVISTAR VAMOS --&gt; ELCANO</a>
-                                        <button onclick="playAceStream('d03c13b6723f66155d7a0df3692a3b073fe630f2', 'MOVISTAR VAMOS --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://12ba546d229bc39f01c3c18988a034b215fe6adb" target="_blank">MOVISTAR VAMOS --&gt; ELCANO</a>
-                                        <button onclick="playAceStream('12ba546d229bc39f01c3c18988a034b215fe6adb', 'MOVISTAR VAMOS --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://3b2a8b41e7097c16b0468b42d7de0320886fa933" target="_blank">MOVISTAR VAMOS FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('3b2a8b41e7097c16b0468b42d7de0320886fa933', 'MOVISTAR VAMOS FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://2940120bf034db79a7f5849846ccea0255172eae" target="_blank">MOVISTAR VAMOS FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('2940120bf034db79a7f5849846ccea0255172eae', 'MOVISTAR VAMOS FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://57313e1ef438538df4feb5a6028dc78ee4f66b6a" target="_blank">MOVISTAR VAMOS FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('57313e1ef438538df4feb5a6028dc78ee4f66b6a', 'MOVISTAR VAMOS FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://17b8bc4bf8e29547b0071c742e3d7da3bcbc484d" target="_blank">LIGA DE CAMPEONES 3 FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('17b8bc4bf8e29547b0071c742e3d7da3bcbc484d', 'LIGA DE CAMPEONES 3 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://4fc2fce0d019bdb622164bba3cff84c120fb9243" target="_blank">LIGA DE CAMPEONES 3 FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('4fc2fce0d019bdb622164bba3cff84c120fb9243', 'LIGA DE CAMPEONES 3 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                        <a href="acestream://b2d560741c006fc5e4a42412bb52dbd25a6a4a3a" target="_blank">GOL PLAY FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('b2d560741c006fc5e4a42412bb52dbd25a6a4a3a', 'GOL PLAY FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     </td>
                     </tr><tr>
-                        <td>01:00</td>
+                        <td>00:00</td>
                         <td>
                                         <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
                                         FIFA Copa Mundial 2026 | Eliminatorias Sudamericanas
                                     </td>
                         <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130319095210_paraguay.webp" width="32" height="32" alt="Paraguay">
-                                            Paraguay
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130108083741_uruguay.webp" width="32" height="32" alt="Uruguay">
-                                            Uruguay
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130316103615_venezuela.webp" width="32" height="32" alt="Venezuela">
+                                            Venezuela
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20121227105210_bolivia.webp" width="32" height="32" alt="Bolivia">
+                                            Bolivia
                                         </td>
                         <td></td>
                         <td>
@@ -210,27 +192,33 @@
                                         <button onclick="playAceStream('4c6ed0cd87c090f3cf85b2c8adbe8b37dba08565', 'LIGA DE CAMPEONES 2 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     </td>
                     </tr><tr>
-                        <td>02:30</td>
+                        <td>02:00</td>
                         <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113234-baloncesto.webp" width="22" height="22" alt="Competición">
-                                        NBA | Final
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20191002102055-hockey-hielo-2.webp" width="22" height="22" alt="Competición">
+                                        NHL
                                     </td>
                         <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130808083758-oc-thunder.webp" width="32" height="32" alt="Oklahoma C. Thunder">
-                                            Oklahoma C. Thunder
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20191028090446-indiana-pacers.webp" width="32" height="32" alt="Indiana Pacers">
-                                            Indiana Pacers
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20170427121156-edmonton-oilers.webp" width="32" height="32" alt="Edmonton Oilers">
+                                            Edmonton Oilers
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20200712213119-florida-panthers.webp" width="32" height="32" alt="Florida Panthers">
+                                            Florida Panthers
                                         </td>
                         <td></td>
                         <td>
-                                        <a href="acestream://56ac8e227d526e722624675ccdd91b0cc850582f" target="_blank">MOVISTAR PLUS --&gt; ELCANO</a>
-                                        <button onclick="playAceStream('56ac8e227d526e722624675ccdd91b0cc850582f', 'MOVISTAR PLUS --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                        <a href="acestream://d03c13b6723f66155d7a0df3692a3b073fe630f2" target="_blank">MOVISTAR VAMOS --&gt; ELCANO</a>
+                                        <button onclick="playAceStream('d03c13b6723f66155d7a0df3692a3b073fe630f2', 'MOVISTAR VAMOS --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     <br>
-                                        <a href="acestream://fbc39d8a9e5d7c9ac6a1438d440104620f54e09c" target="_blank">MOVISTAR PLUS 2 FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('fbc39d8a9e5d7c9ac6a1438d440104620f54e09c', 'MOVISTAR PLUS 2 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                        <a href="acestream://12ba546d229bc39f01c3c18988a034b215fe6adb" target="_blank">MOVISTAR VAMOS --&gt; ELCANO</a>
+                                        <button onclick="playAceStream('12ba546d229bc39f01c3c18988a034b215fe6adb', 'MOVISTAR VAMOS --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     <br>
-                                        <a href="acestream://b2a4d1eba9b46df5f52a87105df779f9d39abeb4" target="_blank">MOVISTAR PLUS FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('b2a4d1eba9b46df5f52a87105df779f9d39abeb4', 'MOVISTAR PLUS FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                        <a href="acestream://3b2a8b41e7097c16b0468b42d7de0320886fa933" target="_blank">MOVISTAR VAMOS FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('3b2a8b41e7097c16b0468b42d7de0320886fa933', 'MOVISTAR VAMOS FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://2940120bf034db79a7f5849846ccea0255172eae" target="_blank">MOVISTAR VAMOS FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('2940120bf034db79a7f5849846ccea0255172eae', 'MOVISTAR VAMOS FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://57313e1ef438538df4feb5a6028dc78ee4f66b6a" target="_blank">MOVISTAR VAMOS FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('57313e1ef438538df4feb5a6028dc78ee4f66b6a', 'MOVISTAR VAMOS FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     <br>
                                         <a href="acestream://55d4602cb22b0d8a33c10c2c2f42dae64a9e8895" target="_blank">MOVISTAR DEPORTES --&gt; ELCANO</a>
                                         <button onclick="playAceStream('55d4602cb22b0d8a33c10c2c2f42dae64a9e8895', 'MOVISTAR DEPORTES --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
@@ -251,57 +239,16 @@
                                         <button onclick="playAceStream('acb510858f34c3c6fd5f79395b031abd6885c2b3', 'MOVISTAR DEPORTES HD --> NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     </td>
                     </tr><tr>
-                        <td>03:00</td>
-                        <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
-                                        FIFA Copa Mundial 2026 | Eliminatorias Sudamericanas
-                                    </td>
-                        <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130322050634_chile.webp" width="32" height="32" alt="Chile">
-                                            Chile
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130204101418_argentina.webp" width="32" height="32" alt="Argentina">
-                                            Argentina
-                                        </td>
-                        <td></td>
-                        <td>
-                                        <a href="acestream://d03c13b6723f66155d7a0df3692a3b073fe630f2" target="_blank">MOVISTAR VAMOS --&gt; ELCANO</a>
-                                        <button onclick="playAceStream('d03c13b6723f66155d7a0df3692a3b073fe630f2', 'MOVISTAR VAMOS --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://12ba546d229bc39f01c3c18988a034b215fe6adb" target="_blank">MOVISTAR VAMOS --&gt; ELCANO</a>
-                                        <button onclick="playAceStream('12ba546d229bc39f01c3c18988a034b215fe6adb', 'MOVISTAR VAMOS --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://3b2a8b41e7097c16b0468b42d7de0320886fa933" target="_blank">MOVISTAR VAMOS FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('3b2a8b41e7097c16b0468b42d7de0320886fa933', 'MOVISTAR VAMOS FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://2940120bf034db79a7f5849846ccea0255172eae" target="_blank">MOVISTAR VAMOS FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('2940120bf034db79a7f5849846ccea0255172eae', 'MOVISTAR VAMOS FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://57313e1ef438538df4feb5a6028dc78ee4f66b6a" target="_blank">MOVISTAR VAMOS FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('57313e1ef438538df4feb5a6028dc78ee4f66b6a', 'MOVISTAR VAMOS FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://abdf9058786a48623d0de51a3adb414ae10b6e72" target="_blank">LIGA DE CAMPEONES 2 --&gt; ELCANO</a>
-                                        <button onclick="playAceStream('abdf9058786a48623d0de51a3adb414ae10b6e72', 'LIGA DE CAMPEONES 2 --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://c6a3673f6a37b1bd3cf31fdd6404dd33d48cfccb" target="_blank">LIGA DE CAMPEONES 2 FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('c6a3673f6a37b1bd3cf31fdd6404dd33d48cfccb', 'LIGA DE CAMPEONES 2 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://3bb6c5f346369d4f2a6bde45ec0bfe100d0e1f42" target="_blank">LIGA DE CAMPEONES 2 FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('3bb6c5f346369d4f2a6bde45ec0bfe100d0e1f42', 'LIGA DE CAMPEONES 2 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://4c6ed0cd87c090f3cf85b2c8adbe8b37dba08565" target="_blank">LIGA DE CAMPEONES 2 FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('4c6ed0cd87c090f3cf85b2c8adbe8b37dba08565', 'LIGA DE CAMPEONES 2 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    </td>
-                    </tr><tr>
                         <td>09:05</td>
                         <td>
                                         <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20200729125932-rugby.webp" width="22" height="22" alt="Competición">
                                         Super Rugby Pacific
                                     </td>
                         <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20200629105646-crusaders-rugby.webp" width="32" height="32" alt="Crusaders">
-                                            Crusaders
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20200727105852-reds-rugby.webp" width="32" height="32" alt="Reds">
-                                            Reds
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20140714060701-chiefs.webp" width="32" height="32" alt="Chiefs">
+                                            Chiefs
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20180708110504-blues.webp" width="32" height="32" alt="Blues">
+                                            Blues
                                         </td>
                         <td></td>
                         <td>
@@ -330,8 +277,8 @@
                                         LaLiga Futures | Fase de grupos
                                     </td>
                         <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20151130110649-athletic.webp" width="32" height="32" alt="Athletic Club Academy">
-                                            Athletic Club Academy
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20151130110758-real-sociedad.webp" width="32" height="32" alt="Real Sociedad Academy">
+                                            Real Sociedad Academy
                                             <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20240214173657-girona-cantera.webp" width="32" height="32" alt="Girona Academy">
                                             Girona Academy
                                         </td>
@@ -371,10 +318,10 @@
                                         LaLiga Futures | Fase de grupos
                                     </td>
                         <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20160830072242-real-betis.webp" width="32" height="32" alt="Real Betis Academy">
-                                            Real Betis Academy
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20160728062738-osasuna.webp" width="32" height="32" alt="Osasuna Academy">
-                                            Osasuna Academy
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20240712124125-atletico-madrid-cantera.webp" width="32" height="32" alt="At. Madrid Academy">
+                                            At. Madrid Academy
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20151007033201-mallorca.webp" width="32" height="32" alt="Mallorca Academy">
+                                            Mallorca Academy
                                         </td>
                         <td></td>
                         <td>
@@ -406,13 +353,27 @@
                                         <button onclick="playAceStream('8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb', 'DAZN LaLiga 720')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     </td>
                     </tr><tr>
-                        <td>10:45</td>
+                        <td>10:30</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
+                                        UEFA Friendship Cup U18
+                                    </td>
+                        <td>
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130208071559_japon.webp" width="32" height="32" alt="Japón">
+                                            Japón
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130108083741_uruguay.webp" width="32" height="32" alt="Uruguay">
+                                            Uruguay
+                                        </td>
+                        <td>UEFA Youtube</td>
+                        <td>No disponible</td>
+                    </tr><tr>
+                        <td>10:50</td>
                         <td>
                                         <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130629041459-motociclismo.webp" width="22" height="22" alt="Competición">
                                         MotoGP
                                     </td>
-                        <td>G.P. Aragón (Motorland) <br>Libres 1 </td>
-                        <td></td>
+                        <td>G.P. Aragón (Motorland) <br>Clasificación </td>
+                        <td>MEGA<br>AtresPlayer</td>
                         <td>
                                         <a href="acestream://35c7f0c966ecde3390f4510bb4caded40018c07a" target="_blank">DAZN 1 --&gt; ELCANO</a>
                                         <button onclick="playAceStream('35c7f0c966ecde3390f4510bb4caded40018c07a', 'DAZN 1 --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
@@ -437,6 +398,15 @@
                                     <br>
                                         <a href="acestream://6a1703a6bbe6110a1d27f35a41c88661e1740bfa" target="_blank">DAZN 1 FHD --&gt; NEW ERA</a>
                                         <button onclick="playAceStream('6a1703a6bbe6110a1d27f35a41c88661e1740bfa', 'DAZN 1 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://56ac8e227d526e722624675ccdd91b0cc850582f" target="_blank">MOVISTAR PLUS --&gt; ELCANO</a>
+                                        <button onclick="playAceStream('56ac8e227d526e722624675ccdd91b0cc850582f', 'MOVISTAR PLUS --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://fbc39d8a9e5d7c9ac6a1438d440104620f54e09c" target="_blank">MOVISTAR PLUS 2 FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('fbc39d8a9e5d7c9ac6a1438d440104620f54e09c', 'MOVISTAR PLUS 2 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://b2a4d1eba9b46df5f52a87105df779f9d39abeb4" target="_blank">MOVISTAR PLUS FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('b2a4d1eba9b46df5f52a87105df779f9d39abeb4', 'MOVISTAR PLUS FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     </td>
                     </tr><tr>
                         <td>11:00</td>
@@ -445,10 +415,10 @@
                                         LaLiga Futures | Fase de grupos
                                     </td>
                         <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20150914072039-Sevilla.webp" width="32" height="32" alt="Sevilla FC Academy">
-                                            Sevilla FC Academy
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20150930124019-Leganes.webp" width="32" height="32" alt="Leganés Academy">
-                                            Leganés Academy
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20150808023001-barcelona-b.webp" width="32" height="32" alt="FC Barcelona Academy">
+                                            FC Barcelona Academy
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20210127191233-alaves-esports.webp" width="32" height="32" alt="Alavés Academy">
+                                            Alavés Academy
                                         </td>
                         <td></td>
                         <td>
@@ -480,16 +450,47 @@
                                         <button onclick="playAceStream('8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb', 'DAZN LaLiga 720')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     </td>
                     </tr><tr>
+                        <td>11:00</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130627015342-futbol-sala.webp" width="22" height="22" alt="Competición">
+                                        Primera Federación Femenina | Playoff Semifinal
+                                    </td>
+                        <td>
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20211014091654-club-deportivo-burela-futbol-sala.webp" width="32" height="32" alt="Burela FS">
+                                            Burela FS
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20220620083331-atletico-navalcarnero-fs.webp" width="32" height="32" alt="At. Navalcarnero FS">
+                                            At. Navalcarnero FS
+                                        </td>
+                        <td></td>
+                        <td>
+                                        <a href="acestream://138b30c93e8a780ac490a4f6d2181c41f3670230" target="_blank">TELEDEPORTE FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('138b30c93e8a780ac490a4f6d2181c41f3670230', 'TELEDEPORTE FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    </td>
+                    </tr><tr>
+                        <td>11:00</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
+                                        UEFA Friendship Cup U18
+                                    </td>
+                        <td>
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130501101148_australia.webp" width="32" height="32" alt="Australia">
+                                            Australia
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130226100540_eeuu.webp" width="32" height="32" alt="Estados Unidos">
+                                            Estados Unidos
+                                        </td>
+                        <td>UEFA Youtube</td>
+                        <td>No disponible</td>
+                    </tr><tr>
                         <td>11:30</td>
                         <td>
                                         <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
                                         LaLiga Futures | Fase de grupos
                                     </td>
                         <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20151007033201-mallorca.webp" width="32" height="32" alt="Mallorca Academy">
-                                            Mallorca Academy
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130919094140-las-palmas.webp" width="32" height="32" alt="Las Palmas Academy">
-                                            Las Palmas Academy
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20160830072242-real-betis.webp" width="32" height="32" alt="Real Betis Academy">
+                                            Real Betis Academy
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20131007021135-villarreal.webp" width="32" height="32" alt="Villarreal Academy">
+                                            Villarreal Academy
                                         </td>
                         <td></td>
                         <td>
@@ -519,6 +520,38 @@
                                     <br>
                                         <a href="acestream://8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb" target="_blank">DAZN LaLiga 720</a>
                                         <button onclick="playAceStream('8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb', 'DAZN LaLiga 720')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    </td>
+                    </tr><tr>
+                        <td>11:35</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20200729125932-rugby.webp" width="22" height="22" alt="Competición">
+                                        Super Rugby Pacific
+                                    </td>
+                        <td>
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20140714060723-brumbies.webp" width="32" height="32" alt="Brumbies">
+                                            Brumbies
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20150612090936-hurricanes.webp" width="32" height="32" alt="Hurricanes">
+                                            Hurricanes
+                                        </td>
+                        <td></td>
+                        <td>
+                                        <a href="acestream://55d4602cb22b0d8a33c10c2c2f42dae64a9e8895" target="_blank">MOVISTAR DEPORTES --&gt; ELCANO</a>
+                                        <button onclick="playAceStream('55d4602cb22b0d8a33c10c2c2f42dae64a9e8895', 'MOVISTAR DEPORTES --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://3a74d9869b13e763476800740c6625e715a39879" target="_blank">MOVISTAR DEPORTES --&gt; ELCANO</a>
+                                        <button onclick="playAceStream('3a74d9869b13e763476800740c6625e715a39879', 'MOVISTAR DEPORTES --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://ef9dcc4eaac36a0f608b52a31f8ab237859e071a" target="_blank">MOVISTAR DEPORTES FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('ef9dcc4eaac36a0f608b52a31f8ab237859e071a', 'MOVISTAR DEPORTES FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://b5842718859345a596107ab8e6b24d7bfa2d617e" target="_blank">MOVISTAR DEPORTES FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('b5842718859345a596107ab8e6b24d7bfa2d617e', 'MOVISTAR DEPORTES FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://be02b9918b8fe7224cfa9af1e37856760f95b1b8" target="_blank">MOVISTAR DEPORTES FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('be02b9918b8fe7224cfa9af1e37856760f95b1b8', 'MOVISTAR DEPORTES FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://acb510858f34c3c6fd5f79395b031abd6885c2b3" target="_blank">MOVISTAR DEPORTES HD --&gt; NEW LOOP</a>
+                                        <button onclick="playAceStream('acb510858f34c3c6fd5f79395b031abd6885c2b3', 'MOVISTAR DEPORTES HD --> NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     </td>
                     </tr><tr>
                         <td>12:00</td>
@@ -527,10 +560,10 @@
                                         LaLiga Futures | Fase de grupos
                                     </td>
                         <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20160725122745-real-madrid.webp" width="32" height="32" alt="Real Madrid Academy">
-                                            Real Madrid Academy
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20240214173657-girona-cantera.webp" width="32" height="32" alt="Girona Academy">
-                                            Girona Academy
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20240712124125-atletico-madrid-cantera.webp" width="32" height="32" alt="At. Madrid Academy">
+                                            At. Madrid Academy
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20151004120005-valencia.webp" width="32" height="32" alt="Valencia CF Academy">
+                                            Valencia CF Academy
                                         </td>
                         <td></td>
                         <td>
@@ -568,83 +601,10 @@
                                         LaLiga Futures | Fase de grupos
                                     </td>
                         <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20131007021135-villarreal.webp" width="32" height="32" alt="Villarreal Academy">
-                                            Villarreal Academy
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20150918112349-rayo-vallecano.webp" width="32" height="32" alt="Rayo Vallecano Academy">
-                                            Rayo Vallecano Academy
-                                        </td>
-                        <td></td>
-                        <td>
-                                        <a href="acestream://94d34491106e00394835c8cb68aa94481339b53f" target="_blank">M. LaLiga 1080P</a>
-                                        <button onclick="playAceStream('94d34491106e00394835c8cb68aa94481339b53f', 'M. LaLiga 1080P')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://d3de78aebe544611a2347f54d5796bd87f16c92d" target="_blank">M. LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('d3de78aebe544611a2347f54d5796bd87f16c92d', 'M. LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://6d05b31e5e8fdae312fbd57897363a7b10ddb163" target="_blank">M. LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('6d05b31e5e8fdae312fbd57897363a7b10ddb163', 'M. LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://1bc437bce57b4b0450f6d1f8d818b7e97000745e" target="_blank">M. LaLiga 720</a>
-                                        <button onclick="playAceStream('1bc437bce57b4b0450f6d1f8d818b7e97000745e', 'M. LaLiga 720')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://cc9b7f5fe416069a2110da0909b0f915043c468b" target="_blank">M+ LALIGA --&gt; NEW LOOP</a>
-                                        <button onclick="playAceStream('cc9b7f5fe416069a2110da0909b0f915043c468b', 'M+ LALIGA --> NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://110d441ddc9713a7452588770d2bc85504672f47" target="_blank">DAZN LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('110d441ddc9713a7452588770d2bc85504672f47', 'DAZN LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://ec29289b0b14756e686c03a501bae1efa05be70c" target="_blank">DAZN LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('ec29289b0b14756e686c03a501bae1efa05be70c', 'DAZN LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://6de4794cd02f88f14354b5996823413a59a1de0f" target="_blank">DAZN LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('6de4794cd02f88f14354b5996823413a59a1de0f', 'DAZN LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb" target="_blank">DAZN LaLiga 720</a>
-                                        <button onclick="playAceStream('8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb', 'DAZN LaLiga 720')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    </td>
-                    </tr><tr>
-                        <td>13:00</td>
-                        <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130724090914-balonmano.webp" width="22" height="22" alt="Competición">
-                                        Copa del Rey | 1/4 de Final
-                                    </td>
-                        <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20140306062105-bm-alcobendas.webp" width="32" height="32" alt="BM Alcobendas">
-                                            BM Alcobendas
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20180910104127-ademar-leon.webp" width="32" height="32" alt="Ademar León">
-                                            Ademar León
-                                        </td>
-                        <td></td>
-                        <td>
-                                        <a href="acestream://138b30c93e8a780ac490a4f6d2181c41f3670230" target="_blank">TELEDEPORTE FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('138b30c93e8a780ac490a4f6d2181c41f3670230', 'TELEDEPORTE FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    </td>
-                    </tr><tr>
-                        <td>13:00</td>
-                        <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130724083030-bola-golf.webp" width="22" height="22" alt="Competición">
-                                        The KLM Open
-                                    </td>
-                        <td>Jornada 2 </td>
-                        <td></td>
-                        <td>
-                                        <a href="acestream://8546cff89e4ee8bf3ad31cf6457c3bc2c4341031" target="_blank">MOVISTAR GOLF FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('8546cff89e4ee8bf3ad31cf6457c3bc2c4341031', 'MOVISTAR GOLF FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://872608e734992db636eb79426802cd08f4029afb" target="_blank">MOVISTAR GOLF HD --&gt; NEW LOOP</a>
-                                        <button onclick="playAceStream('872608e734992db636eb79426802cd08f4029afb', 'MOVISTAR GOLF HD --> NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    </td>
-                    </tr><tr>
-                        <td>13:00</td>
-                        <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
-                                        LaLiga Futures | Fase de grupos
-                                    </td>
-                        <td>
                                             <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20150808023001-barcelona-b.webp" width="32" height="32" alt="FC Barcelona Academy">
                                             FC Barcelona Academy
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20150914072039-Sevilla.webp" width="32" height="32" alt="Sevilla FC Academy">
-                                            Sevilla FC Academy
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20180801031814-celta.webp" width="32" height="32" alt="Celta Academy">
+                                            Celta Academy
                                         </td>
                         <td></td>
                         <td>
@@ -674,194 +634,58 @@
                                     <br>
                                         <a href="acestream://8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb" target="_blank">DAZN LaLiga 720</a>
                                         <button onclick="playAceStream('8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb', 'DAZN LaLiga 720')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    </td>
+                    </tr><tr>
+                        <td>12:50</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130629041459-motociclismo.webp" width="22" height="22" alt="Competición">
+                                        Moto3
+                                    </td>
+                        <td>G.P. Aragón (Motorland) <br>Clasificación </td>
+                        <td>MEGA<br>AtresPlayer</td>
+                        <td>
+                                        <a href="acestream://35c7f0c966ecde3390f4510bb4caded40018c07a" target="_blank">DAZN 1 --&gt; ELCANO</a>
+                                        <button onclick="playAceStream('35c7f0c966ecde3390f4510bb4caded40018c07a', 'DAZN 1 --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151" target="_blank">DAZN 1 --&gt; NEW LOOP</a>
+                                        <button onclick="playAceStream('d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151', 'DAZN 1 --> NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://688e785893b50acc1d00cb37f15bfc42e72f5ae3" target="_blank">DAZN 1 BAR FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('688e785893b50acc1d00cb37f15bfc42e72f5ae3', 'DAZN 1 BAR FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://448a647ba8cd8885588572d609ce02b961238121" target="_blank">DAZN 1 BAR FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('448a647ba8cd8885588572d609ce02b961238121', 'DAZN 1 BAR FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://6538b79ce0da657d8455d1da6a5f342398899a0e" target="_blank">DAZN 1 FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('6538b79ce0da657d8455d1da6a5f342398899a0e', 'DAZN 1 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://50a8a13c474848d1efbd5586efdb5b6cdd173fa9" target="_blank">DAZN 1 FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('50a8a13c474848d1efbd5586efdb5b6cdd173fa9', 'DAZN 1 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://4141892f5df7d6474bf0279895ce02b7336c9928" target="_blank">DAZN 1 FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('4141892f5df7d6474bf0279895ce02b7336c9928', 'DAZN 1 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://6a1703a6bbe6110a1d27f35a41c88661e1740bfa" target="_blank">DAZN 1 FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('6a1703a6bbe6110a1d27f35a41c88661e1740bfa', 'DAZN 1 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://56ac8e227d526e722624675ccdd91b0cc850582f" target="_blank">MOVISTAR PLUS --&gt; ELCANO</a>
+                                        <button onclick="playAceStream('56ac8e227d526e722624675ccdd91b0cc850582f', 'MOVISTAR PLUS --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://fbc39d8a9e5d7c9ac6a1438d440104620f54e09c" target="_blank">MOVISTAR PLUS 2 FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('fbc39d8a9e5d7c9ac6a1438d440104620f54e09c', 'MOVISTAR PLUS 2 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://b2a4d1eba9b46df5f52a87105df779f9d39abeb4" target="_blank">MOVISTAR PLUS FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('b2a4d1eba9b46df5f52a87105df779f9d39abeb4', 'MOVISTAR PLUS FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     </td>
                     </tr><tr>
                         <td>13:00</td>
                         <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130627010504-ciclismo.webp" width="22" height="22" alt="Competición">
-                                        Tour de Eslovenia
-                                    </td>
-                        <td>Etapa 3 <br>Majšperk › Ormož (172 km) </td>
-                        <td></td>
-                        <td>
-                                        <a href="acestream://dc4ccb9e72550bc72be9360aa7d77e337ad11ecc" target="_blank">EUROSPORT 2 FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('dc4ccb9e72550bc72be9360aa7d77e337ad11ecc', 'EUROSPORT 2 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://2773b39926d15dd3d9495d94c4050604792d7031" target="_blank">EUROSPORT 2 FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('2773b39926d15dd3d9495d94c4050604792d7031', 'EUROSPORT 2 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    </td>
-                    </tr><tr>
-                        <td>13:30</td>
-                        <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130724083030-bola-golf.webp" width="22" height="22" alt="Competición">
-                                        Tenerife Women's Open
-                                    </td>
-                        <td>Jornada 2 </td>
-                        <td></td>
-                        <td>
-                                        <a href="acestream://96e82321c731e41768a806992ee4d3b9b7a0e7d7" target="_blank">MOVISTAR GOLF 2 FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('96e82321c731e41768a806992ee4d3b9b7a0e7d7', 'MOVISTAR GOLF 2 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://d8c2ed470e847154a88f011137cc206319f6bed5" target="_blank">MOVISTAR ELLAS --&gt; ELCANO</a>
-                                        <button onclick="playAceStream('d8c2ed470e847154a88f011137cc206319f6bed5', 'MOVISTAR ELLAS --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://9b84af74b2fa3690c519199326fc2f181b025cdd" target="_blank">MOVISTAR ELLAS FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('9b84af74b2fa3690c519199326fc2f181b025cdd', 'MOVISTAR ELLAS FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    </td>
-                    </tr><tr>
-                        <td>14:00</td>
-                        <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
-                                        Maurice Revello Tournament
-                                    </td>
-                        <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20190512093725-panama2.webp" width="32" height="32" alt="Panamá">
-                                            Panamá
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130730010609-arabia-saudi.webp" width="32" height="32" alt="Arabia Saudí">
-                                            Arabia Saudí
-                                        </td>
-                        <td>Youth Football Arena</td>
-                        <td>No disponible</td>
-                    </tr><tr>
-                        <td>14:30</td>
-                        <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113307-tenis.webp" width="22" height="22" alt="Competición">
-                                        Roland Garros | Semifinal masculina
-                                    </td>
-                        <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20200727124913-gran-trittico-lombardo.webp" width="32" height="32" alt="L. Musetti">
-                                            L. Musetti
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130727123206-espana.webp" width="32" height="32" alt="C. Alcaraz">
-                                            C. Alcaraz
-                                        </td>
-                        <td></td>
-                        <td>
-                                        <a href="acestream://16ffa1713f42aa27317ee039a2bd0cdbc89a1580" target="_blank">EUROSPORT 1 --&gt; ELCANO</a>
-                                        <button onclick="playAceStream('16ffa1713f42aa27317ee039a2bd0cdbc89a1580', 'EUROSPORT 1 --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://bae98f69fbf867550b4f73b4eb176dae84d7f909" target="_blank">EUROSPORT 1 FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('bae98f69fbf867550b4f73b4eb176dae84d7f909', 'EUROSPORT 1 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://714e14e6d6e27660fd25a75b57b0ac5580fe705d" target="_blank">EUROSPORT 1 FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('714e14e6d6e27660fd25a75b57b0ac5580fe705d', 'EUROSPORT 1 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    </td>
-                    </tr><tr>
-                        <td>16:30</td>
-                        <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130627010504-ciclismo.webp" width="22" height="22" alt="Competición">
-                                        Vuelta a Cataluña Femenina
-                                    </td>
-                        <td>Etapa 1 <br>El Perelló › Reus (114,4 km) </td>
-                        <td></td>
-                        <td>
-                                        <a href="acestream://138b30c93e8a780ac490a4f6d2181c41f3670230" target="_blank">TELEDEPORTE FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('138b30c93e8a780ac490a4f6d2181c41f3670230', 'TELEDEPORTE FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    </td>
-                    </tr><tr>
-                        <td>17:00</td>
-                        <td>
                                         <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
                                         LaLiga Futures | Fase de grupos
                                     </td>
                         <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20150904084220-espanyol.webp" width="32" height="32" alt="Espanyol Academy">
-                                            Espanyol Academy
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20131007021135-villarreal.webp" width="32" height="32" alt="Villarreal Academy">
-                                            Villarreal Academy
-                                        </td>
-                        <td></td>
-                        <td>
-                                        <a href="acestream://94d34491106e00394835c8cb68aa94481339b53f" target="_blank">M. LaLiga 1080P</a>
-                                        <button onclick="playAceStream('94d34491106e00394835c8cb68aa94481339b53f', 'M. LaLiga 1080P')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://d3de78aebe544611a2347f54d5796bd87f16c92d" target="_blank">M. LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('d3de78aebe544611a2347f54d5796bd87f16c92d', 'M. LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://6d05b31e5e8fdae312fbd57897363a7b10ddb163" target="_blank">M. LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('6d05b31e5e8fdae312fbd57897363a7b10ddb163', 'M. LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://1bc437bce57b4b0450f6d1f8d818b7e97000745e" target="_blank">M. LaLiga 720</a>
-                                        <button onclick="playAceStream('1bc437bce57b4b0450f6d1f8d818b7e97000745e', 'M. LaLiga 720')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://cc9b7f5fe416069a2110da0909b0f915043c468b" target="_blank">M+ LALIGA --&gt; NEW LOOP</a>
-                                        <button onclick="playAceStream('cc9b7f5fe416069a2110da0909b0f915043c468b', 'M+ LALIGA --> NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://110d441ddc9713a7452588770d2bc85504672f47" target="_blank">DAZN LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('110d441ddc9713a7452588770d2bc85504672f47', 'DAZN LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://ec29289b0b14756e686c03a501bae1efa05be70c" target="_blank">DAZN LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('ec29289b0b14756e686c03a501bae1efa05be70c', 'DAZN LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://6de4794cd02f88f14354b5996823413a59a1de0f" target="_blank">DAZN LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('6de4794cd02f88f14354b5996823413a59a1de0f', 'DAZN LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb" target="_blank">DAZN LaLiga 720</a>
-                                        <button onclick="playAceStream('8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb', 'DAZN LaLiga 720')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    </td>
-                    </tr><tr>
-                        <td>17:30</td>
-                        <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
-                                        Maurice Revello Tournament
-                                    </td>
-                        <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130124053558_francia.webp" width="32" height="32" alt="Francia">
-                                            Francia
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130103114840_mali.webp" width="32" height="32" alt="Mali">
-                                            Mali
-                                        </td>
-                        <td>Youth Football Arena</td>
-                        <td>No disponible</td>
-                    </tr><tr>
-                        <td>17:30</td>
-                        <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
-                                        LaLiga Futures | Fase de grupos
-                                    </td>
-                        <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20240712124125-atletico-madrid-cantera.webp" width="32" height="32" alt="At. Madrid Academy">
-                                            At. Madrid Academy
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20151112125004-getafe.webp" width="32" height="32" alt="Getafe Academy">
-                                            Getafe Academy
-                                        </td>
-                        <td></td>
-                        <td>
-                                        <a href="acestream://94d34491106e00394835c8cb68aa94481339b53f" target="_blank">M. LaLiga 1080P</a>
-                                        <button onclick="playAceStream('94d34491106e00394835c8cb68aa94481339b53f', 'M. LaLiga 1080P')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://d3de78aebe544611a2347f54d5796bd87f16c92d" target="_blank">M. LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('d3de78aebe544611a2347f54d5796bd87f16c92d', 'M. LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://6d05b31e5e8fdae312fbd57897363a7b10ddb163" target="_blank">M. LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('6d05b31e5e8fdae312fbd57897363a7b10ddb163', 'M. LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://1bc437bce57b4b0450f6d1f8d818b7e97000745e" target="_blank">M. LaLiga 720</a>
-                                        <button onclick="playAceStream('1bc437bce57b4b0450f6d1f8d818b7e97000745e', 'M. LaLiga 720')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://cc9b7f5fe416069a2110da0909b0f915043c468b" target="_blank">M+ LALIGA --&gt; NEW LOOP</a>
-                                        <button onclick="playAceStream('cc9b7f5fe416069a2110da0909b0f915043c468b', 'M+ LALIGA --> NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://110d441ddc9713a7452588770d2bc85504672f47" target="_blank">DAZN LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('110d441ddc9713a7452588770d2bc85504672f47', 'DAZN LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://ec29289b0b14756e686c03a501bae1efa05be70c" target="_blank">DAZN LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('ec29289b0b14756e686c03a501bae1efa05be70c', 'DAZN LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://6de4794cd02f88f14354b5996823413a59a1de0f" target="_blank">DAZN LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('6de4794cd02f88f14354b5996823413a59a1de0f', 'DAZN LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb" target="_blank">DAZN LaLiga 720</a>
-                                        <button onclick="playAceStream('8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb', 'DAZN LaLiga 720')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    </td>
-                    </tr><tr>
-                        <td>18:00</td>
-                        <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
-                                        LaLiga Futures | Fase de grupos
-                                    </td>
-                        <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20150808023001-barcelona-b.webp" width="32" height="32" alt="FC Barcelona Academy">
-                                            FC Barcelona Academy
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20210127191233-alaves-esports.webp" width="32" height="32" alt="Alavés Academy">
+                                            Alavés Academy
                                             <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20150930124019-Leganes.webp" width="32" height="32" alt="Leganés Academy">
                                             Leganés Academy
                                         </td>
@@ -895,12 +719,12 @@
                                         <button onclick="playAceStream('8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb', 'DAZN LaLiga 720')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     </td>
                     </tr><tr>
-                        <td>18:13</td>
+                        <td>13:30</td>
                         <td>
                                         <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130724083030-bola-golf.webp" width="22" height="22" alt="Competición">
-                                        LIV Golf
+                                        The KLM Open
                                     </td>
-                        <td>Jornada 1 </td>
+                        <td>Jornada 3 </td>
                         <td></td>
                         <td>
                                         <a href="acestream://8546cff89e4ee8bf3ad31cf6457c3bc2c4341031" target="_blank">MOVISTAR GOLF FHD --&gt; NEW ERA</a>
@@ -910,16 +734,117 @@
                                         <button onclick="playAceStream('872608e734992db636eb79426802cd08f4029afb', 'MOVISTAR GOLF HD --> NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     </td>
                     </tr><tr>
-                        <td>18:30</td>
+                        <td>13:30</td>
                         <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130724090914-balonmano.webp" width="22" height="22" alt="Competición">
-                                        Copa del Rey | 1/4 de Final
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130624110336-automovilismo.webp" width="22" height="22" alt="Competición">
+                                        DTM
+                                    </td>
+                        <td>Circuit Park Zandvoort <br>Carrera 1 </td>
+                        <td></td>
+                        <td>
+                                        <a href="acestream://ca923c9873fd206a41c1e83ff8fc40e3cf323c9a" target="_blank">DAZN 2 --&gt; ELCANO</a>
+                                        <button onclick="playAceStream('ca923c9873fd206a41c1e83ff8fc40e3cf323c9a', 'DAZN 2 --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://a929eeec1268d69d1556a2e3ace793b2577d8810" target="_blank">DAZN 2 --&gt; ELCANO</a>
+                                        <button onclick="playAceStream('a929eeec1268d69d1556a2e3ace793b2577d8810', 'DAZN 2 --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://b0eabe0fdd02fdd165896236765a9b753a2ff516" target="_blank">DAZN 2 --&gt; NEW LOOP</a>
+                                        <button onclick="playAceStream('b0eabe0fdd02fdd165896236765a9b753a2ff516', 'DAZN 2 --> NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://2f9211669499f413dab1a490198afab2a9b4b57c" target="_blank">DAZN 2 BAR FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('2f9211669499f413dab1a490198afab2a9b4b57c', 'DAZN 2 BAR FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://8b081c8afbd9beafc8c5fbf0115eb36eadb07a35" target="_blank">DAZN 2 FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('8b081c8afbd9beafc8c5fbf0115eb36eadb07a35', 'DAZN 2 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://0f5402f75107112d59d924a5f381cfed33dbe6d2" target="_blank">DAZN 2 FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('0f5402f75107112d59d924a5f381cfed33dbe6d2', 'DAZN 2 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    </td>
+                    </tr><tr>
+                        <td>13:45</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130629041459-motociclismo.webp" width="22" height="22" alt="Competición">
+                                        Moto2
+                                    </td>
+                        <td>G.P. Aragón (Motorland) <br>Clasificación </td>
+                        <td>MEGA<br>AtresPlayer</td>
+                        <td>
+                                        <a href="acestream://35c7f0c966ecde3390f4510bb4caded40018c07a" target="_blank">DAZN 1 --&gt; ELCANO</a>
+                                        <button onclick="playAceStream('35c7f0c966ecde3390f4510bb4caded40018c07a', 'DAZN 1 --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151" target="_blank">DAZN 1 --&gt; NEW LOOP</a>
+                                        <button onclick="playAceStream('d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151', 'DAZN 1 --> NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://688e785893b50acc1d00cb37f15bfc42e72f5ae3" target="_blank">DAZN 1 BAR FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('688e785893b50acc1d00cb37f15bfc42e72f5ae3', 'DAZN 1 BAR FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://448a647ba8cd8885588572d609ce02b961238121" target="_blank">DAZN 1 BAR FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('448a647ba8cd8885588572d609ce02b961238121', 'DAZN 1 BAR FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://6538b79ce0da657d8455d1da6a5f342398899a0e" target="_blank">DAZN 1 FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('6538b79ce0da657d8455d1da6a5f342398899a0e', 'DAZN 1 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://50a8a13c474848d1efbd5586efdb5b6cdd173fa9" target="_blank">DAZN 1 FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('50a8a13c474848d1efbd5586efdb5b6cdd173fa9', 'DAZN 1 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://4141892f5df7d6474bf0279895ce02b7336c9928" target="_blank">DAZN 1 FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('4141892f5df7d6474bf0279895ce02b7336c9928', 'DAZN 1 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://6a1703a6bbe6110a1d27f35a41c88661e1740bfa" target="_blank">DAZN 1 FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('6a1703a6bbe6110a1d27f35a41c88661e1740bfa', 'DAZN 1 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://56ac8e227d526e722624675ccdd91b0cc850582f" target="_blank">MOVISTAR PLUS --&gt; ELCANO</a>
+                                        <button onclick="playAceStream('56ac8e227d526e722624675ccdd91b0cc850582f', 'MOVISTAR PLUS --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://fbc39d8a9e5d7c9ac6a1438d440104620f54e09c" target="_blank">MOVISTAR PLUS 2 FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('fbc39d8a9e5d7c9ac6a1438d440104620f54e09c', 'MOVISTAR PLUS 2 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://b2a4d1eba9b46df5f52a87105df779f9d39abeb4" target="_blank">MOVISTAR PLUS FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('b2a4d1eba9b46df5f52a87105df779f9d39abeb4', 'MOVISTAR PLUS FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    </td>
+                    </tr><tr>
+                        <td>14:00</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
+                                        Maurice Revello Tournament
                                     </td>
                         <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20150808023001-barcelona-b.webp" width="32" height="32" alt="Barça BM">
-                                            Barça BM
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20160824060244-at-valladolid.webp" width="32" height="32" alt="Recoletas At. Valladolid">
-                                            Recoletas At. Valladolid
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130208071559_japon.webp" width="32" height="32" alt="Japón">
+                                            Japón
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130208071540_mexico.webp" width="32" height="32" alt="México">
+                                            México
+                                        </td>
+                        <td>Youth Football Arena</td>
+                        <td>No disponible</td>
+                    </tr><tr>
+                        <td>14:00</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130724083030-bola-golf.webp" width="22" height="22" alt="Competición">
+                                        Tenerife Women's Open
+                                    </td>
+                        <td>Jornada 3 </td>
+                        <td></td>
+                        <td>
+                                        <a href="acestream://96e82321c731e41768a806992ee4d3b9b7a0e7d7" target="_blank">MOVISTAR GOLF 2 FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('96e82321c731e41768a806992ee4d3b9b7a0e7d7', 'MOVISTAR GOLF 2 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://d8c2ed470e847154a88f011137cc206319f6bed5" target="_blank">MOVISTAR ELLAS --&gt; ELCANO</a>
+                                        <button onclick="playAceStream('d8c2ed470e847154a88f011137cc206319f6bed5', 'MOVISTAR ELLAS --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://9b84af74b2fa3690c519199326fc2f181b025cdd" target="_blank">MOVISTAR ELLAS FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('9b84af74b2fa3690c519199326fc2f181b025cdd', 'MOVISTAR ELLAS FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    </td>
+                    </tr><tr>
+                        <td>14:30</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130627015342-futbol-sala.webp" width="22" height="22" alt="Competición">
+                                        Primera Federación Futsal | Playoff Semifinales
+                                    </td>
+                        <td>
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20140923043256-palma-futsal.webp" width="32" height="32" alt="Palma Futsal">
+                                            Palma Futsal
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20150808023001-barcelona-b.webp" width="32" height="32" alt="Barça FS">
+                                            Barça FS
                                         </td>
                         <td></td>
                         <td>
@@ -927,57 +852,159 @@
                                         <button onclick="playAceStream('138b30c93e8a780ac490a4f6d2181c41f3670230', 'TELEDEPORTE FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     </td>
                     </tr><tr>
-                        <td>18:30</td>
+                        <td>15:00</td>
                         <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
-                                        LaLiga Futures | Fase de grupos
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113307-tenis.webp" width="22" height="22" alt="Competición">
+                                        Roland Garros | Final Femenina
                                     </td>
                         <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20151130110649-athletic.webp" width="32" height="32" alt="Athletic Club Academy">
-                                            Athletic Club Academy
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20160725122745-real-madrid.webp" width="32" height="32" alt="Real Madrid Academy">
-                                            Real Madrid Academy
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130727123407-Bielorrusia.webp" width="32" height="32" alt="A. Sabalenka">
+                                            A. Sabalenka
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130727120523-EEUU.webp" width="32" height="32" alt="C. Gauff">
+                                            C. Gauff
                                         </td>
                         <td></td>
                         <td>
-                                        <a href="acestream://94d34491106e00394835c8cb68aa94481339b53f" target="_blank">M. LaLiga 1080P</a>
-                                        <button onclick="playAceStream('94d34491106e00394835c8cb68aa94481339b53f', 'M. LaLiga 1080P')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                        <a href="acestream://16ffa1713f42aa27317ee039a2bd0cdbc89a1580" target="_blank">EUROSPORT 1 --&gt; ELCANO</a>
+                                        <button onclick="playAceStream('16ffa1713f42aa27317ee039a2bd0cdbc89a1580', 'EUROSPORT 1 --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     <br>
-                                        <a href="acestream://d3de78aebe544611a2347f54d5796bd87f16c92d" target="_blank">M. LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('d3de78aebe544611a2347f54d5796bd87f16c92d', 'M. LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                        <a href="acestream://bae98f69fbf867550b4f73b4eb176dae84d7f909" target="_blank">EUROSPORT 1 FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('bae98f69fbf867550b4f73b4eb176dae84d7f909', 'EUROSPORT 1 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     <br>
-                                        <a href="acestream://6d05b31e5e8fdae312fbd57897363a7b10ddb163" target="_blank">M. LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('6d05b31e5e8fdae312fbd57897363a7b10ddb163', 'M. LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://1bc437bce57b4b0450f6d1f8d818b7e97000745e" target="_blank">M. LaLiga 720</a>
-                                        <button onclick="playAceStream('1bc437bce57b4b0450f6d1f8d818b7e97000745e', 'M. LaLiga 720')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://cc9b7f5fe416069a2110da0909b0f915043c468b" target="_blank">M+ LALIGA --&gt; NEW LOOP</a>
-                                        <button onclick="playAceStream('cc9b7f5fe416069a2110da0909b0f915043c468b', 'M+ LALIGA --> NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://110d441ddc9713a7452588770d2bc85504672f47" target="_blank">DAZN LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('110d441ddc9713a7452588770d2bc85504672f47', 'DAZN LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://ec29289b0b14756e686c03a501bae1efa05be70c" target="_blank">DAZN LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('ec29289b0b14756e686c03a501bae1efa05be70c', 'DAZN LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://6de4794cd02f88f14354b5996823413a59a1de0f" target="_blank">DAZN LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('6de4794cd02f88f14354b5996823413a59a1de0f', 'DAZN LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb" target="_blank">DAZN LaLiga 720</a>
-                                        <button onclick="playAceStream('8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb', 'DAZN LaLiga 720')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                        <a href="acestream://714e14e6d6e27660fd25a75b57b0ac5580fe705d" target="_blank">EUROSPORT 1 FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('714e14e6d6e27660fd25a75b57b0ac5580fe705d', 'EUROSPORT 1 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     </td>
                     </tr><tr>
-                        <td>19:00</td>
+                        <td>15:30</td>
                         <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113307-tenis.webp" width="22" height="22" alt="Competición">
-                                        Roland Garros | Semifinal masculina
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
+                                        UEFA Friendship Cup U18
                                     </td>
                         <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130727123437-Italia.webp" width="32" height="32" alt="J. Sinner">
-                                            J. Sinner
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130727123503-Serbia.webp" width="32" height="32" alt="N. Djokovic">
-                                            N. Djokovic
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130716094920-senegal.webp" width="32" height="32" alt="Senegal">
+                                            Senegal
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130204101449_portugal.webp" width="32" height="32" alt="Portugal">
+                                            Portugal
+                                        </td>
+                        <td>UEFA Youtube</td>
+                        <td>No disponible</td>
+                    </tr><tr>
+                        <td>16:00</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
+                                        Campeonato Uruguayo
+                                    </td>
+                        <td>
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20141217063415-liverpool-fc.webp" width="32" height="32" alt="Liverpool FC">
+                                            Liverpool FC
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20141206100136-cerro-largo.webp" width="32" height="32" alt="Cerro Largo">
+                                            Cerro Largo
+                                        </td>
+                        <td></td>
+                        <td>
+                                        <a href="acestream://b2d560741c006fc5e4a42412bb52dbd25a6a4a3a" target="_blank">GOL PLAY FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('b2d560741c006fc5e4a42412bb52dbd25a6a4a3a', 'GOL PLAY FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    </td>
+                    </tr><tr>
+                        <td>16:00</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
+                                        UEFA Friendship Cup U18
+                                    </td>
+                        <td>
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130124053558_francia.webp" width="32" height="32" alt="Francia">
+                                            Francia
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130204101418_argentina.webp" width="32" height="32" alt="Argentina">
+                                            Argentina
+                                        </td>
+                        <td>UEFA Youtube</td>
+                        <td>No disponible</td>
+                    </tr><tr>
+                        <td>16:30</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20200729125932-rugby.webp" width="22" height="22" alt="Competición">
+                                        Gallagher Premiership
+                                    </td>
+                        <td>
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20140113053658-leicester-tigers.webp" width="32" height="32" alt="Leicester Tigers">
+                                            Leicester Tigers
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20170106021613-sale-sharks.webp" width="32" height="32" alt="Sale Sharks">
+                                            Sale Sharks
+                                        </td>
+                        <td></td>
+                        <td>
+                                        <a href="acestream://55d4602cb22b0d8a33c10c2c2f42dae64a9e8895" target="_blank">MOVISTAR DEPORTES --&gt; ELCANO</a>
+                                        <button onclick="playAceStream('55d4602cb22b0d8a33c10c2c2f42dae64a9e8895', 'MOVISTAR DEPORTES --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://3a74d9869b13e763476800740c6625e715a39879" target="_blank">MOVISTAR DEPORTES --&gt; ELCANO</a>
+                                        <button onclick="playAceStream('3a74d9869b13e763476800740c6625e715a39879', 'MOVISTAR DEPORTES --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://ef9dcc4eaac36a0f608b52a31f8ab237859e071a" target="_blank">MOVISTAR DEPORTES FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('ef9dcc4eaac36a0f608b52a31f8ab237859e071a', 'MOVISTAR DEPORTES FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://b5842718859345a596107ab8e6b24d7bfa2d617e" target="_blank">MOVISTAR DEPORTES FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('b5842718859345a596107ab8e6b24d7bfa2d617e', 'MOVISTAR DEPORTES FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://be02b9918b8fe7224cfa9af1e37856760f95b1b8" target="_blank">MOVISTAR DEPORTES FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('be02b9918b8fe7224cfa9af1e37856760f95b1b8', 'MOVISTAR DEPORTES FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://acb510858f34c3c6fd5f79395b031abd6885c2b3" target="_blank">MOVISTAR DEPORTES HD --&gt; NEW LOOP</a>
+                                        <button onclick="playAceStream('acb510858f34c3c6fd5f79395b031abd6885c2b3', 'MOVISTAR DEPORTES HD --> NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    </td>
+                    </tr><tr>
+                        <td>17:00</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130724090914-balonmano.webp" width="22" height="22" alt="Competición">
+                                        Copa del Rey
+                                    </td>
+                        <td>Semifinales </td>
+                        <td></td>
+                        <td>
+                                        <a href="acestream://138b30c93e8a780ac490a4f6d2181c41f3670230" target="_blank">TELEDEPORTE FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('138b30c93e8a780ac490a4f6d2181c41f3670230', 'TELEDEPORTE FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    </td>
+                    </tr><tr>
+                        <td>17:00</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113234-baloncesto.webp" width="22" height="22" alt="Competición">
+                                        Primera FEB | Playoff Ascenso Semifinales
+                                    </td>
+                        <td>
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20190925101244-movistar-estudiantes.webp" width="32" height="32" alt="Movistar Estudiantes">
+                                            Movistar Estudiantes
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20160830072242-real-betis.webp" width="32" height="32" alt="Real Betis Baloncesto">
+                                            Real Betis Baloncesto
+                                        </td>
+                        <td></td>
+                        <td>
+                                        <a href="acestream://753d4b1f7c4ef43238b5cf23b05572b550a44eee" target="_blank">MOVISTAR DEPORTES 3 FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('753d4b1f7c4ef43238b5cf23b05572b550a44eee', 'MOVISTAR DEPORTES 3 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    </td>
+                    </tr><tr>
+                        <td>17:30</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
+                                        Maurice Revello Tournament
+                                    </td>
+                        <td>
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130207060752_dinamarca.webp" width="32" height="32" alt="Dinamarca">
+                                            Dinamarca
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20140110094224-republica-congo.webp" width="32" height="32" alt="República del Congo">
+                                            República del Congo
+                                        </td>
+                        <td>Youth Football Arena</td>
+                        <td>No disponible</td>
+                    </tr><tr>
+                        <td>18:30</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113307-tenis.webp" width="22" height="22" alt="Competición">
+                                        Roland Garros | Final Dobles Masculinos
+                                    </td>
+                        <td>
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20200813173222-t20i-series.webp" width="32" height="32" alt="M. Granollers | H. Zeballos">
+                                            M. Granollers | H. Zeballos
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20140820091418-Gran-Bretana.webp" width="32" height="32" alt="J. Salisbury | N. Skupski">
+                                            J. Salisbury | N. Skupski
                                         </td>
                         <td></td>
                         <td>
@@ -993,230 +1020,12 @@
                     </tr><tr>
                         <td>19:00</td>
                         <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
-                                        LaLiga Futures | Fase de grupos
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20210211132921-mma.webp" width="22" height="22" alt="Competición">
+                                        Velada
                                     </td>
-                        <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20160728062738-osasuna.webp" width="32" height="32" alt="Osasuna Academy">
-                                            Osasuna Academy
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20131007021135-villarreal.webp" width="32" height="32" alt="Villarreal Academy">
-                                            Villarreal Academy
-                                        </td>
+                        <td>WOW 20 <br>Madrid Arena (Madrid) </td>
                         <td></td>
                         <td>
-                                        <a href="acestream://94d34491106e00394835c8cb68aa94481339b53f" target="_blank">M. LaLiga 1080P</a>
-                                        <button onclick="playAceStream('94d34491106e00394835c8cb68aa94481339b53f', 'M. LaLiga 1080P')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://d3de78aebe544611a2347f54d5796bd87f16c92d" target="_blank">M. LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('d3de78aebe544611a2347f54d5796bd87f16c92d', 'M. LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://6d05b31e5e8fdae312fbd57897363a7b10ddb163" target="_blank">M. LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('6d05b31e5e8fdae312fbd57897363a7b10ddb163', 'M. LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://1bc437bce57b4b0450f6d1f8d818b7e97000745e" target="_blank">M. LaLiga 720</a>
-                                        <button onclick="playAceStream('1bc437bce57b4b0450f6d1f8d818b7e97000745e', 'M. LaLiga 720')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://cc9b7f5fe416069a2110da0909b0f915043c468b" target="_blank">M+ LALIGA --&gt; NEW LOOP</a>
-                                        <button onclick="playAceStream('cc9b7f5fe416069a2110da0909b0f915043c468b', 'M+ LALIGA --> NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://110d441ddc9713a7452588770d2bc85504672f47" target="_blank">DAZN LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('110d441ddc9713a7452588770d2bc85504672f47', 'DAZN LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://ec29289b0b14756e686c03a501bae1efa05be70c" target="_blank">DAZN LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('ec29289b0b14756e686c03a501bae1efa05be70c', 'DAZN LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://6de4794cd02f88f14354b5996823413a59a1de0f" target="_blank">DAZN LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('6de4794cd02f88f14354b5996823413a59a1de0f', 'DAZN LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb" target="_blank">DAZN LaLiga 720</a>
-                                        <button onclick="playAceStream('8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb', 'DAZN LaLiga 720')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    </td>
-                    </tr><tr>
-                        <td>19:00</td>
-                        <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113234-baloncesto.webp" width="22" height="22" alt="Competición">
-                                        Liga Endesa | Playoffs 1/4 Final
-                                    </td>
-                        <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20150808023001-barcelona-b.webp" width="32" height="32" alt="Barça Basket">
-                                            Barça Basket
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20240318163823-unicaja-malaga.webp" width="32" height="32" alt="Unicaja Málaga">
-                                            Unicaja Málaga
-                                        </td>
-                        <td></td>
-                        <td>
-                                        <a href="acestream://56ac8e227d526e722624675ccdd91b0cc850582f" target="_blank">MOVISTAR PLUS --&gt; ELCANO</a>
-                                        <button onclick="playAceStream('56ac8e227d526e722624675ccdd91b0cc850582f', 'MOVISTAR PLUS --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://fbc39d8a9e5d7c9ac6a1438d440104620f54e09c" target="_blank">MOVISTAR PLUS 2 FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('fbc39d8a9e5d7c9ac6a1438d440104620f54e09c', 'MOVISTAR PLUS 2 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://b2a4d1eba9b46df5f52a87105df779f9d39abeb4" target="_blank">MOVISTAR PLUS FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('b2a4d1eba9b46df5f52a87105df779f9d39abeb4', 'MOVISTAR PLUS FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://55d4602cb22b0d8a33c10c2c2f42dae64a9e8895" target="_blank">MOVISTAR DEPORTES --&gt; ELCANO</a>
-                                        <button onclick="playAceStream('55d4602cb22b0d8a33c10c2c2f42dae64a9e8895', 'MOVISTAR DEPORTES --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://3a74d9869b13e763476800740c6625e715a39879" target="_blank">MOVISTAR DEPORTES --&gt; ELCANO</a>
-                                        <button onclick="playAceStream('3a74d9869b13e763476800740c6625e715a39879', 'MOVISTAR DEPORTES --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://ef9dcc4eaac36a0f608b52a31f8ab237859e071a" target="_blank">MOVISTAR DEPORTES FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('ef9dcc4eaac36a0f608b52a31f8ab237859e071a', 'MOVISTAR DEPORTES FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://b5842718859345a596107ab8e6b24d7bfa2d617e" target="_blank">MOVISTAR DEPORTES FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('b5842718859345a596107ab8e6b24d7bfa2d617e', 'MOVISTAR DEPORTES FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://be02b9918b8fe7224cfa9af1e37856760f95b1b8" target="_blank">MOVISTAR DEPORTES FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('be02b9918b8fe7224cfa9af1e37856760f95b1b8', 'MOVISTAR DEPORTES FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://acb510858f34c3c6fd5f79395b031abd6885c2b3" target="_blank">MOVISTAR DEPORTES HD --&gt; NEW LOOP</a>
-                                        <button onclick="playAceStream('acb510858f34c3c6fd5f79395b031abd6885c2b3', 'MOVISTAR DEPORTES HD --> NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    </td>
-                    </tr><tr>
-                        <td>19:30</td>
-                        <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
-                                        LaLiga Futures | Fase de grupos
-                                    </td>
-                        <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20240712124125-atletico-madrid-cantera.webp" width="32" height="32" alt="At. Madrid Academy">
-                                            At. Madrid Academy
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130919094140-las-palmas.webp" width="32" height="32" alt="Las Palmas Academy">
-                                            Las Palmas Academy
-                                        </td>
-                        <td></td>
-                        <td>
-                                        <a href="acestream://94d34491106e00394835c8cb68aa94481339b53f" target="_blank">M. LaLiga 1080P</a>
-                                        <button onclick="playAceStream('94d34491106e00394835c8cb68aa94481339b53f', 'M. LaLiga 1080P')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://d3de78aebe544611a2347f54d5796bd87f16c92d" target="_blank">M. LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('d3de78aebe544611a2347f54d5796bd87f16c92d', 'M. LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://6d05b31e5e8fdae312fbd57897363a7b10ddb163" target="_blank">M. LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('6d05b31e5e8fdae312fbd57897363a7b10ddb163', 'M. LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://1bc437bce57b4b0450f6d1f8d818b7e97000745e" target="_blank">M. LaLiga 720</a>
-                                        <button onclick="playAceStream('1bc437bce57b4b0450f6d1f8d818b7e97000745e', 'M. LaLiga 720')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://cc9b7f5fe416069a2110da0909b0f915043c468b" target="_blank">M+ LALIGA --&gt; NEW LOOP</a>
-                                        <button onclick="playAceStream('cc9b7f5fe416069a2110da0909b0f915043c468b', 'M+ LALIGA --> NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://110d441ddc9713a7452588770d2bc85504672f47" target="_blank">DAZN LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('110d441ddc9713a7452588770d2bc85504672f47', 'DAZN LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://ec29289b0b14756e686c03a501bae1efa05be70c" target="_blank">DAZN LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('ec29289b0b14756e686c03a501bae1efa05be70c', 'DAZN LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://6de4794cd02f88f14354b5996823413a59a1de0f" target="_blank">DAZN LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('6de4794cd02f88f14354b5996823413a59a1de0f', 'DAZN LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb" target="_blank">DAZN LaLiga 720</a>
-                                        <button onclick="playAceStream('8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb', 'DAZN LaLiga 720')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    </td>
-                    </tr><tr>
-                        <td>20:00</td>
-                        <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
-                                        LaLiga Futures | Fase de grupos
-                                    </td>
-                        <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20160725122745-real-madrid.webp" width="32" height="32" alt="Real Madrid Academy">
-                                            Real Madrid Academy
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20240711221931-real-valladolid-cantera.webp" width="32" height="32" alt="Real Valladolid Academy">
-                                            Real Valladolid Academy
-                                        </td>
-                        <td></td>
-                        <td>
-                                        <a href="acestream://94d34491106e00394835c8cb68aa94481339b53f" target="_blank">M. LaLiga 1080P</a>
-                                        <button onclick="playAceStream('94d34491106e00394835c8cb68aa94481339b53f', 'M. LaLiga 1080P')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://d3de78aebe544611a2347f54d5796bd87f16c92d" target="_blank">M. LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('d3de78aebe544611a2347f54d5796bd87f16c92d', 'M. LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://6d05b31e5e8fdae312fbd57897363a7b10ddb163" target="_blank">M. LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('6d05b31e5e8fdae312fbd57897363a7b10ddb163', 'M. LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://1bc437bce57b4b0450f6d1f8d818b7e97000745e" target="_blank">M. LaLiga 720</a>
-                                        <button onclick="playAceStream('1bc437bce57b4b0450f6d1f8d818b7e97000745e', 'M. LaLiga 720')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://cc9b7f5fe416069a2110da0909b0f915043c468b" target="_blank">M+ LALIGA --&gt; NEW LOOP</a>
-                                        <button onclick="playAceStream('cc9b7f5fe416069a2110da0909b0f915043c468b', 'M+ LALIGA --> NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://110d441ddc9713a7452588770d2bc85504672f47" target="_blank">DAZN LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('110d441ddc9713a7452588770d2bc85504672f47', 'DAZN LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://ec29289b0b14756e686c03a501bae1efa05be70c" target="_blank">DAZN LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('ec29289b0b14756e686c03a501bae1efa05be70c', 'DAZN LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://6de4794cd02f88f14354b5996823413a59a1de0f" target="_blank">DAZN LaLiga 1080 MultiAudio</a>
-                                        <button onclick="playAceStream('6de4794cd02f88f14354b5996823413a59a1de0f', 'DAZN LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb" target="_blank">DAZN LaLiga 720</a>
-                                        <button onclick="playAceStream('8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb', 'DAZN LaLiga 720')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    </td>
-                    </tr><tr>
-                        <td>20:30</td>
-                        <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
-                                        Amistoso Sub-21
-                                    </td>
-                        <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130727123206-espana.webp" width="32" height="32" alt="España">
-                                            España
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130304045244_ucrania.webp" width="32" height="32" alt="Ucrania">
-                                            Ucrania
-                                        </td>
-                        <td></td>
-                        <td>
-                                        <a href="acestream://8bdd29882fa2c2f9fe49e67b102934c9e293f5a5" target="_blank">LA 1 FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('8bdd29882fa2c2f9fe49e67b102934c9e293f5a5', 'LA 1 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    </td>
-                    </tr><tr>
-                        <td>20:45</td>
-                        <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130724090914-balonmano.webp" width="22" height="22" alt="Competición">
-                                        Copa del Rey | 1/4 de Final
-                                    </td>
-                        <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130817095651-bidasoa.webp" width="32" height="32" alt="Bidasoa Irún">
-                                            Bidasoa Irún
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20220304165208-balonmano-torrelavega.webp" width="32" height="32" alt="BM Torrelavega">
-                                            BM Torrelavega
-                                        </td>
-                        <td></td>
-                        <td>
-                                        <a href="acestream://138b30c93e8a780ac490a4f6d2181c41f3670230" target="_blank">TELEDEPORTE FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('138b30c93e8a780ac490a4f6d2181c41f3670230', 'TELEDEPORTE FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    </td>
-                    </tr><tr>
-                        <td>20:45</td>
-                        <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20200729125932-rugby.webp" width="22" height="22" alt="Competición">
-                                        Gallagher Premiership
-                                    </td>
-                        <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20150326060257-bath-rugby.webp" width="32" height="32" alt="Bath Rugby">
-                                            Bath Rugby
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20200805222036-bristol-bears.webp" width="32" height="32" alt="Bristol Bears">
-                                            Bristol Bears
-                                        </td>
-                        <td></td>
-                        <td>
-                                        <a href="acestream://753d4b1f7c4ef43238b5cf23b05572b550a44eee" target="_blank">MOVISTAR DEPORTES 3 FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('753d4b1f7c4ef43238b5cf23b05572b550a44eee', 'MOVISTAR DEPORTES 3 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    </td>
-                    </tr><tr>
-                        <td>21:00</td>
-                        <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130627014923-atletismo.webp" width="22" height="22" alt="Competición">
-                                        IAAF Diamond League
-                                    </td>
-                        <td>Roma (Italia) </td>
-                        <td></td>
-                        <td>
-                                        <a href="acestream://fbc39d8a9e5d7c9ac6a1438d440104620f54e09c" target="_blank">MOVISTAR PLUS 2 FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('fbc39d8a9e5d7c9ac6a1438d440104620f54e09c', 'MOVISTAR PLUS 2 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
                                         <a href="acestream://639c561dd57fa3fc91fde715caeb696c5efb7ce7" target="_blank">MOVISTAR DEPORTES 2 --&gt; ELCANO</a>
                                         <button onclick="playAceStream('639c561dd57fa3fc91fde715caeb696c5efb7ce7', 'MOVISTAR DEPORTES 2 --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     <br>
@@ -1224,19 +1033,115 @@
                                         <button onclick="playAceStream('edd06f11e1cef292a1d795e15207ef2f580e298c', 'MOVISTAR DEPORTES 2 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     </td>
                     </tr><tr>
-                        <td>21:15</td>
+                        <td>19:00</td>
                         <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113234-baloncesto.webp" width="22" height="22" alt="Competición">
-                                        Liga Endesa | Playoffs 1/4 Final
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
+                                        Copa de la Reina | Final
                                     </td>
                         <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20160907115208-baskonia.webp" width="32" height="32" alt="Baskonia">
-                                            Baskonia
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20160725122745-real-madrid.webp" width="32" height="32" alt="Real Madrid Baloncesto">
-                                            Real Madrid Baloncesto
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20150808023001-barcelona-b.webp" width="32" height="32" alt="FC Barcelona Femenino">
+                                            FC Barcelona Femenino
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20240712124213-atletico-madrid-femenino.webp" width="32" height="32" alt="At. Madrid Femenino">
+                                            At. Madrid Femenino
                                         </td>
                         <td></td>
                         <td>
+                                        <a href="acestream://fc36c7249aef74e3ea579500efdfd7a98d8e9ac5" target="_blank">LA 2 FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('fc36c7249aef74e3ea579500efdfd7a98d8e9ac5', 'LA 2 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    </td>
+                    </tr><tr>
+                        <td>19:13</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130724083030-bola-golf.webp" width="22" height="22" alt="Competición">
+                                        LIV Golf
+                                    </td>
+                        <td>Jornada 2 </td>
+                        <td></td>
+                        <td>
+                                        <a href="acestream://8546cff89e4ee8bf3ad31cf6457c3bc2c4341031" target="_blank">MOVISTAR GOLF FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('8546cff89e4ee8bf3ad31cf6457c3bc2c4341031', 'MOVISTAR GOLF FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://872608e734992db636eb79426802cd08f4029afb" target="_blank">MOVISTAR GOLF HD --&gt; NEW LOOP</a>
+                                        <button onclick="playAceStream('872608e734992db636eb79426802cd08f4029afb', 'MOVISTAR GOLF HD --> NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    </td>
+                    </tr><tr>
+                        <td>19:30</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130624110538-boxeo.webp" width="22" height="22" alt="Competición">
+                                        Título Mundial | Peso Pesado
+                                    </td>
+                        <td>
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130204124525_inglaterra.webp" width="32" height="32" alt="F. Wardley">
+                                            F. Wardley
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130501101148_australia.webp" width="32" height="32" alt="J. Huni">
+                                            J. Huni
+                                        </td>
+                        <td></td>
+                        <td>
+                                        <a href="acestream://ca923c9873fd206a41c1e83ff8fc40e3cf323c9a" target="_blank">DAZN 2 --&gt; ELCANO</a>
+                                        <button onclick="playAceStream('ca923c9873fd206a41c1e83ff8fc40e3cf323c9a', 'DAZN 2 --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://a929eeec1268d69d1556a2e3ace793b2577d8810" target="_blank">DAZN 2 --&gt; ELCANO</a>
+                                        <button onclick="playAceStream('a929eeec1268d69d1556a2e3ace793b2577d8810', 'DAZN 2 --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://b0eabe0fdd02fdd165896236765a9b753a2ff516" target="_blank">DAZN 2 --&gt; NEW LOOP</a>
+                                        <button onclick="playAceStream('b0eabe0fdd02fdd165896236765a9b753a2ff516', 'DAZN 2 --> NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://2f9211669499f413dab1a490198afab2a9b4b57c" target="_blank">DAZN 2 BAR FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('2f9211669499f413dab1a490198afab2a9b4b57c', 'DAZN 2 BAR FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://8b081c8afbd9beafc8c5fbf0115eb36eadb07a35" target="_blank">DAZN 2 FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('8b081c8afbd9beafc8c5fbf0115eb36eadb07a35', 'DAZN 2 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://0f5402f75107112d59d924a5f381cfed33dbe6d2" target="_blank">DAZN 2 FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('0f5402f75107112d59d924a5f381cfed33dbe6d2', 'DAZN 2 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    </td>
+                    </tr><tr>
+                        <td>20:00</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
+                                        Campeonato Uruguayo
+                                    </td>
+                        <td>
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20140813051152-danubio.webp" width="32" height="32" alt="Danubio">
+                                            Danubio
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20200807001922-ca-torque.webp" width="32" height="32" alt="Montevideo City Torque">
+                                            Montevideo City Torque
+                                        </td>
+                        <td></td>
+                        <td>
+                                        <a href="acestream://b2d560741c006fc5e4a42412bb52dbd25a6a4a3a" target="_blank">GOL PLAY FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('b2d560741c006fc5e4a42412bb52dbd25a6a4a3a', 'GOL PLAY FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    </td>
+                    </tr><tr>
+                        <td>21:00</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
+                                        LaLiga Hypermotion | Playoffs Semi-Final
+                                    </td>
+                        <td>
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20190417031741-almeria.webp" width="32" height="32" alt="UD Almería">
+                                            UD Almería
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20121219073017_oviedo.webp" width="32" height="32" alt="Real Oviedo">
+                                            Real Oviedo
+                                        </td>
+                        <td></td>
+                        <td>
+                                        <a href="acestream://b2706a7ffbea236a3b398139a3a606ada664c0eb" target="_blank">LaLiga Smartbank 1080</a>
+                                        <button onclick="playAceStream('b2706a7ffbea236a3b398139a3a606ada664c0eb', 'LaLiga Smartbank 1080')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://121f719ebb94193c6086ef92865cf9b197750980" target="_blank">LaLiga Smartbank 720</a>
+                                        <button onclick="playAceStream('121f719ebb94193c6086ef92865cf9b197750980', 'LaLiga Smartbank 720')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://a4ea8b888b5b11a3d08498d7bc858c564b5be423" target="_blank">LaLiga Smartbank 7</a>
+                                        <button onclick="playAceStream('a4ea8b888b5b11a3d08498d7bc858c564b5be423', 'LaLiga Smartbank 7')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://ef7f710a5133477237b06ea023a4f20017ea0262" target="_blank">LaLiga Smartbank 10</a>
+                                        <button onclick="playAceStream('ef7f710a5133477237b06ea023a4f20017ea0262', 'LaLiga Smartbank 10')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://fe289ab20d8f9dcb426fc6d56ce9dbbddb66e3b3" target="_blank">HYPERMOTION FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('fe289ab20d8f9dcb426fc6d56ce9dbbddb66e3b3', 'HYPERMOTION FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
                                         <a href="acestream://56ac8e227d526e722624675ccdd91b0cc850582f" target="_blank">MOVISTAR PLUS --&gt; ELCANO</a>
                                         <button onclick="playAceStream('56ac8e227d526e722624675ccdd91b0cc850582f', 'MOVISTAR PLUS --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     <br>
@@ -1246,61 +1151,54 @@
                                         <a href="acestream://b2a4d1eba9b46df5f52a87105df779f9d39abeb4" target="_blank">MOVISTAR PLUS FHD --&gt; NEW ERA</a>
                                         <button onclick="playAceStream('b2a4d1eba9b46df5f52a87105df779f9d39abeb4', 'MOVISTAR PLUS FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     <br>
-                                        <a href="acestream://55d4602cb22b0d8a33c10c2c2f42dae64a9e8895" target="_blank">MOVISTAR DEPORTES --&gt; ELCANO</a>
-                                        <button onclick="playAceStream('55d4602cb22b0d8a33c10c2c2f42dae64a9e8895', 'MOVISTAR DEPORTES --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                        <a href="acestream://94d34491106e00394835c8cb68aa94481339b53f" target="_blank">M. LaLiga 1080P</a>
+                                        <button onclick="playAceStream('94d34491106e00394835c8cb68aa94481339b53f', 'M. LaLiga 1080P')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     <br>
-                                        <a href="acestream://3a74d9869b13e763476800740c6625e715a39879" target="_blank">MOVISTAR DEPORTES --&gt; ELCANO</a>
-                                        <button onclick="playAceStream('3a74d9869b13e763476800740c6625e715a39879', 'MOVISTAR DEPORTES --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                        <a href="acestream://d3de78aebe544611a2347f54d5796bd87f16c92d" target="_blank">M. LaLiga 1080 MultiAudio</a>
+                                        <button onclick="playAceStream('d3de78aebe544611a2347f54d5796bd87f16c92d', 'M. LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     <br>
-                                        <a href="acestream://ef9dcc4eaac36a0f608b52a31f8ab237859e071a" target="_blank">MOVISTAR DEPORTES FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('ef9dcc4eaac36a0f608b52a31f8ab237859e071a', 'MOVISTAR DEPORTES FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                        <a href="acestream://6d05b31e5e8fdae312fbd57897363a7b10ddb163" target="_blank">M. LaLiga 1080 MultiAudio</a>
+                                        <button onclick="playAceStream('6d05b31e5e8fdae312fbd57897363a7b10ddb163', 'M. LaLiga 1080 MultiAudio')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     <br>
-                                        <a href="acestream://b5842718859345a596107ab8e6b24d7bfa2d617e" target="_blank">MOVISTAR DEPORTES FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('b5842718859345a596107ab8e6b24d7bfa2d617e', 'MOVISTAR DEPORTES FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                        <a href="acestream://1bc437bce57b4b0450f6d1f8d818b7e97000745e" target="_blank">M. LaLiga 720</a>
+                                        <button onclick="playAceStream('1bc437bce57b4b0450f6d1f8d818b7e97000745e', 'M. LaLiga 720')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     <br>
-                                        <a href="acestream://be02b9918b8fe7224cfa9af1e37856760f95b1b8" target="_blank">MOVISTAR DEPORTES FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('be02b9918b8fe7224cfa9af1e37856760f95b1b8', 'MOVISTAR DEPORTES FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://acb510858f34c3c6fd5f79395b031abd6885c2b3" target="_blank">MOVISTAR DEPORTES HD --&gt; NEW LOOP</a>
-                                        <button onclick="playAceStream('acb510858f34c3c6fd5f79395b031abd6885c2b3', 'MOVISTAR DEPORTES HD --> NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://58a4c880ab18486d914751db32a12760e74b75a4" target="_blank">MOVISTAR DEPORTES 4 FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('58a4c880ab18486d914751db32a12760e74b75a4', 'MOVISTAR DEPORTES 4 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                        <a href="acestream://cc9b7f5fe416069a2110da0909b0f915043c468b" target="_blank">M+ LALIGA --&gt; NEW LOOP</a>
+                                        <button onclick="playAceStream('cc9b7f5fe416069a2110da0909b0f915043c468b', 'M+ LALIGA --> NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    </td>
+                    </tr><tr>
+                        <td>21:05</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20200729125932-rugby.webp" width="22" height="22" alt="Competición">
+                                        Top 14
+                                    </td>
+                        <td>
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20201119172255-section-paloise.webp" width="32" height="32" alt="Section Paloise">
+                                            Section Paloise
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20180114054214-la-rochelle.webp" width="32" height="32" alt="La Rochelle">
+                                            La Rochelle
+                                        </td>
+                        <td></td>
+                        <td>
+                                        <a href="acestream://753d4b1f7c4ef43238b5cf23b05572b550a44eee" target="_blank">MOVISTAR DEPORTES 3 FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('753d4b1f7c4ef43238b5cf23b05572b550a44eee', 'MOVISTAR DEPORTES 3 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     </td>
                     </tr><tr>
                         <td>22:30</td>
                         <td>
                                         <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
-                                        FIFA Copa Mundial 2026 | Eliminatorias Sudamericanas
+                                        Campeonato Uruguayo
                                     </td>
                         <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130410092520_colombia.webp" width="32" height="32" alt="Colombia">
-                                            Colombia
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130410092823_peru.webp" width="32" height="32" alt="Perú">
-                                            Perú
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20170306054007-m-wanderers.webp" width="32" height="32" alt="Montevideo Wanderers">
+                                            Montevideo Wanderers
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20150410014516-plaza-colonia.webp" width="32" height="32" alt="Plaza Colonia">
+                                            Plaza Colonia
                                         </td>
                         <td></td>
                         <td>
-                                        <a href="acestream://d03c13b6723f66155d7a0df3692a3b073fe630f2" target="_blank">MOVISTAR VAMOS --&gt; ELCANO</a>
-                                        <button onclick="playAceStream('d03c13b6723f66155d7a0df3692a3b073fe630f2', 'MOVISTAR VAMOS --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://12ba546d229bc39f01c3c18988a034b215fe6adb" target="_blank">MOVISTAR VAMOS --&gt; ELCANO</a>
-                                        <button onclick="playAceStream('12ba546d229bc39f01c3c18988a034b215fe6adb', 'MOVISTAR VAMOS --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://3b2a8b41e7097c16b0468b42d7de0320886fa933" target="_blank">MOVISTAR VAMOS FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('3b2a8b41e7097c16b0468b42d7de0320886fa933', 'MOVISTAR VAMOS FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://2940120bf034db79a7f5849846ccea0255172eae" target="_blank">MOVISTAR VAMOS FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('2940120bf034db79a7f5849846ccea0255172eae', 'MOVISTAR VAMOS FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://57313e1ef438538df4feb5a6028dc78ee4f66b6a" target="_blank">MOVISTAR VAMOS FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('57313e1ef438538df4feb5a6028dc78ee4f66b6a', 'MOVISTAR VAMOS FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://17b8bc4bf8e29547b0071c742e3d7da3bcbc484d" target="_blank">LIGA DE CAMPEONES 3 FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('17b8bc4bf8e29547b0071c742e3d7da3bcbc484d', 'LIGA DE CAMPEONES 3 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://4fc2fce0d019bdb622164bba3cff84c120fb9243" target="_blank">LIGA DE CAMPEONES 3 FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('4fc2fce0d019bdb622164bba3cff84c120fb9243', 'LIGA DE CAMPEONES 3 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                        <a href="acestream://b2d560741c006fc5e4a42412bb52dbd25a6a4a3a" target="_blank">GOL PLAY FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('b2d560741c006fc5e4a42412bb52dbd25a6a4a3a', 'GOL PLAY FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     </td>
                     </tr></tbody>
     </table>
