@@ -134,7 +134,7 @@
     <h1>by TokyoGhoull</h1>
     <div id="loading" class="loading" style="display: none;">Cargando datos...</div>
     
-    <h2 id="tituloEventos" style="display: block;">Eventos de hoy (domingo, 22 de junio de 2025)</h2>
+    <h2 id="tituloEventos" style="display: block;">Eventos de hoy (lunes, 23 de junio de 2025)</h2>
     <table id="tablaEventos" class="tabla-Eventos" style="display: table;">
         <thead>
             <tr>
@@ -224,12 +224,51 @@
                         <td>Ten TV</td>
                         <td>No disponible</td>
                     </tr><tr>
-                        <td>12:00</td>
+                        <td>13:10</td>
                         <td>
                                         <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113307-tenis.webp" width="22" height="22" alt="Competición">
-                                        Torneo de Mallorca
+                                        Torneo de Mallorca | 1ª Ronda
                                     </td>
-                        <td>1ª Ronda <br>ATP 250 </td>
+                        <td>
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130727123206-espana.webp" width="32" height="32" alt="P. Martínez">
+                                            P. Martínez
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130727123333-Francia.webp" width="32" height="32" alt="C. Moutet">
+                                            C. Moutet
+                                        </td>
+                        <td></td>
+                        <td>
+                                        <a href="acestream://138b30c93e8a780ac490a4f6d2181c41f3670230" target="_blank">TELEDEPORTE FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('138b30c93e8a780ac490a4f6d2181c41f3670230', 'TELEDEPORTE FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    </td>
+                    </tr><tr>
+                        <td>16:10</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113307-tenis.webp" width="22" height="22" alt="Competición">
+                                        Torneo de Mallorca | 1ª Ronda
+                                    </td>
+                        <td>
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130727125012-Canada.webp" width="32" height="32" alt="G. Diallo">
+                                            G. Diallo
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130727123206-espana.webp" width="32" height="32" alt="J. Munar">
+                                            J. Munar
+                                        </td>
+                        <td></td>
+                        <td>
+                                        <a href="acestream://138b30c93e8a780ac490a4f6d2181c41f3670230" target="_blank">TELEDEPORTE FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('138b30c93e8a780ac490a4f6d2181c41f3670230', 'TELEDEPORTE FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    </td>
+                    </tr><tr>
+                        <td>18:30</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113307-tenis.webp" width="22" height="22" alt="Competición">
+                                        Torneo de Mallorca | 1ª Ronda
+                                    </td>
+                        <td>
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130226100540_eeuu.webp" width="32" height="32" alt="L. Tien">
+                                            L. Tien
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130727123343-Alemania.webp" width="32" height="32" alt="J. Engel">
+                                            J. Engel
+                                        </td>
                         <td></td>
                         <td>
                                         <a href="acestream://138b30c93e8a780ac490a4f6d2181c41f3670230" target="_blank">TELEDEPORTE FHD --&gt; NEW ERA</a>
@@ -1133,6 +1172,42 @@
                         </button>
                     </td>
                 </tr><tr class="origen-2">
+                    <td>DAZN 1 FHD --&gt; NEW ERA</td>
+                    <td>50a8a13c474848d1efbd5586efdb5b6cdd173fa9</td>
+                    <td>
+                        <a href="acestream://50a8a13c474848d1efbd5586efdb5b6cdd173fa9" target="_blank">
+                            DAZN 1 (M70)
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('50a8a13c474848d1efbd5586efdb5b6cdd173fa9', 'DAZN 1 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
+                    <td>DAZN 1 FHD --&gt; NEW ERA</td>
+                    <td>4141892f5df7d6474bf0279895ce02b7336c9928</td>
+                    <td>
+                        <a href="acestream://4141892f5df7d6474bf0279895ce02b7336c9928" target="_blank">
+                            DAZN 1 (M70)
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('4141892f5df7d6474bf0279895ce02b7336c9928', 'DAZN 1 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
+                    <td>DAZN 1 FHD --&gt; NEW ERA</td>
+                    <td>6a1703a6bbe6110a1d27f35a41c88661e1740bfa</td>
+                    <td>
+                        <a href="acestream://6a1703a6bbe6110a1d27f35a41c88661e1740bfa" target="_blank">
+                            DAZN 1 (M70)
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('6a1703a6bbe6110a1d27f35a41c88661e1740bfa', 'DAZN 1 FHD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
                     <td>DAZN 1 FHD --&gt; NEW ERA VI</td>
                     <td>d4e68ee57fa77269823ecf4cf714e28a5fa80fb1</td>
                     <td>
@@ -1777,6 +1852,18 @@
                         </a>
                         <br><br>
                         <button onclick="playAceStream('442aeb6643b8836f9d00361c9e48eeb0841ddf98', 'MOTORS TV HD --> NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
+                    <td>MOTORVISION TV --&gt; NEW LOOP</td>
+                    <td>9c75e6ed0671eec6670cb2eabcc7d78267c7f404</td>
+                    <td>
+                        <a href="acestream://9c75e6ed0671eec6670cb2eabcc7d78267c7f404" target="_blank">
+                            MOTORVISION TV --&gt; NEW LOOP
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('9c75e6ed0671eec6670cb2eabcc7d78267c7f404', 'MOTORVISION TV --> NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
                             ▶️ 
                         </button>
                     </td>
@@ -3042,6 +3129,18 @@
                         </a>
                         <br><br>
                         <button onclick="playAceStream('442aeb6643b8836f9d00361c9e48eeb0841ddf98', 'MOTORS TV HD --> NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
+                    <td>MOTORVISION TV --&gt; NEW LOOP</td>
+                    <td>9c75e6ed0671eec6670cb2eabcc7d78267c7f404</td>
+                    <td>
+                        <a href="acestream://9c75e6ed0671eec6670cb2eabcc7d78267c7f404" target="_blank">
+                            MOTORVISION TV --&gt; NEW LOOP
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('9c75e6ed0671eec6670cb2eabcc7d78267c7f404', 'MOTORVISION TV --> NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
                             ▶️ 
                         </button>
                     </td>
