@@ -146,6 +146,29 @@
             </tr>
         </thead>
         <tbody><tr>
+                        <td>12:00</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113307-tenis.webp" width="22" height="22" alt="Competición">
+                                        Wimbledon | 2ª Ronda Junior
+                                    </td>
+                        <td>
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130727123206-espana.webp" width="32" height="32" alt="A. Santamarta">
+                                            A. Santamarta
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130204101247_eslovenia.webp" width="32" height="32" alt="Z. Sesko">
+                                            Z. Sesko
+                                        </td>
+                        <td></td>
+                        <td>
+                                        <a href="acestream://7b361369a40046ad3011086f9d4ae2982fb4d5aa" target="_blank">Deporte 5 1080</a>
+                                        <button onclick="playAceStream('7b361369a40046ad3011086f9d4ae2982fb4d5aa', 'Deporte 5 1080')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://fcc0fd75bf1dba40b108fcf0d3514e0e549bfbac" target="_blank">MOVISTAR DEPORTES 5 --&gt; ELCANO</a>
+                                        <button onclick="playAceStream('fcc0fd75bf1dba40b108fcf0d3514e0e549bfbac', 'MOVISTAR DEPORTES 5 --> ELCANO')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://f6961e0dbf9b6ede4f5be93b72dc15533b4063d4" target="_blank">MOVISTAR DEPORTES 5 HD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('f6961e0dbf9b6ede4f5be93b72dc15533b4063d4', 'MOVISTAR DEPORTES 5 HD --> NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    </td>
+                    </tr><tr>
                         <td>13:00</td>
                         <td>
                                         <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130627010504-ciclismo.webp" width="22" height="22" alt="Competición">
@@ -1565,6 +1588,18 @@
                         </a>
                         <br><br>
                         <button onclick="playAceStream('c2858a94d2045e5dbb14e99323e90afe4e872266', 'DISCOVERY CHANNEL FHD --> NEW ERA II')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
+                    <td>ELEVEN DAZN 1 --&gt; NEW LOOP</td>
+                    <td>36cad67fed5a739757a9db844a551aa845a8d51b</td>
+                    <td>
+                        <a href="acestream://36cad67fed5a739757a9db844a551aa845a8d51b" target="_blank">
+                            DAZN 1 (M70)
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('36cad67fed5a739757a9db844a551aa845a8d51b', 'ELEVEN DAZN 1 --> NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
                             ▶️ 
                         </button>
                     </td>
