@@ -1,6 +1,12 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"
 #EXTVLCOPT:network-caching=2000
 
+#EXTINF:-1 tvg-id="" group-title="# Eventos 08 de julio por horario", 12:00 A. Santamarta Z. Sesko
+http://127.0.0.1:6878/ace/getstream?id=7b361369a40046ad3011086f9d4ae2982fb4d5aa
+#EXTINF:-1 tvg-id="" group-title="# Eventos 08 de julio por horario", 12:00 A. Santamarta Z. Sesko
+http://127.0.0.1:6878/ace/getstream?id=fcc0fd75bf1dba40b108fcf0d3514e0e549bfbac
+#EXTINF:-1 tvg-id="" group-title="# Eventos 08 de julio por horario", 12:00 A. Santamarta Z. Sesko
+http://127.0.0.1:6878/ace/getstream?id=f6961e0dbf9b6ede4f5be93b72dc15533b4063d4
 #EXTINF:-1 tvg-id="" group-title="# Eventos 08 de julio por horario", 13:00 Etapa 4 Amiens Métropole › Rouen (173 km)
 http://127.0.0.1:6878/ace/getstream?id=16ffa1713f42aa27317ee039a2bd0cdbc89a1580
 #EXTINF:-1 tvg-id="" group-title="# Eventos 08 de julio por horario", 13:00 Etapa 4 Amiens Métropole › Rouen (173 km)
