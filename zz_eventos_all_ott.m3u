@@ -1,8 +1,6 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"
 #EXTVLCOPT:network-caching=2000
 
-#EXTINF:-1 tvg-id="" group-title="11/07 Liga 1 Perú", 00:00 Universitario CD Los Chankas
-http://127.0.0.1:6878/ace/getstream?id=b2d560741c006fc5e4a42412bb52dbd25a6a4a3a
 #EXTINF:-1 tvg-id="" group-title="11/07 Campeonato Mundo Femenino | Fase de grupos", 03:00 Sudáfrica España
 http://127.0.0.1:6878/ace/getstream?id=138b30c93e8a780ac490a4f6d2181c41f3670230
 #EXTINF:-1 tvg-id="" group-title="11/07 Campeonato Mundo Femenino | Fase de grupos", 03:00 Sudáfrica España
