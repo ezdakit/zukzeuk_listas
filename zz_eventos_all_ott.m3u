@@ -1,43 +1,21 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"
 #EXTVLCOPT:network-caching=2000
 
-#EXTINF:-1 tvg-id="" group-title="16/07 Campeonato del Mundo", 02:00 Aguas Abiertas 10km Masculinos
-http://127.0.0.1:6878/ace/getstream?id=138b30c93e8a780ac490a4f6d2181c41f3670230
-#EXTINF:-1 tvg-id="" group-title="16/07 Campeonato del Mundo", 02:00 Aguas Abiertas 10km Masculinos
-http://127.0.0.1:6878/ace/getstream?id=bdc32e0f99653f96e0e1a3b98c88764b631ed9ef
-#EXTINF:-1 tvg-id="" group-title="16/07 MLB | All Star Games", 02:00 American League National League
-http://127.0.0.1:6878/ace/getstream?id=ebca4a63ce3bfda7b272964a1acc5227218184a4
-#EXTINF:-1 tvg-id="" group-title="16/07 MLB | All Star Games", 02:00 American League National League
-http://127.0.0.1:6878/ace/getstream?id=2f3cfd199a49819cbd129689a840dc3d23ab93aa
-#EXTINF:-1 tvg-id="" group-title="16/07 MLB | All Star Games", 02:00 American League National League
-http://127.0.0.1:6878/ace/getstream?id=55d4602cb22b0d8a33c10c2c2f42dae64a9e8895
-#EXTINF:-1 tvg-id="" group-title="16/07 MLB | All Star Games", 02:00 American League National League
-http://127.0.0.1:6878/ace/getstream?id=3a74d9869b13e763476800740c6625e715a39879
-#EXTINF:-1 tvg-id="" group-title="16/07 MLB | All Star Games", 02:00 American League National League
-http://127.0.0.1:6878/ace/getstream?id=ef9dcc4eaac36a0f608b52a31f8ab237859e071a
-#EXTINF:-1 tvg-id="" group-title="16/07 MLB | All Star Games", 02:00 American League National League
-http://127.0.0.1:6878/ace/getstream?id=b5842718859345a596107ab8e6b24d7bfa2d617e
-#EXTINF:-1 tvg-id="" group-title="16/07 MLB | All Star Games", 02:00 American League National League
-http://127.0.0.1:6878/ace/getstream?id=be02b9918b8fe7224cfa9af1e37856760f95b1b8
-#EXTINF:-1 tvg-id="" group-title="16/07 MLB | All Star Games", 02:00 American League National League
-http://127.0.0.1:6878/ace/getstream?id=e1d5ef78e80a737a7a9198d63f7c1f66c88ab7a6
-#EXTINF:-1 tvg-id="" group-title="16/07 MLB | All Star Games", 02:00 American League National League
-http://127.0.0.1:6878/ace/getstream?id=acb510858f34c3c6fd5f79395b031abd6885c2b3
-#EXTINF:-1 tvg-id="" group-title="16/07 Tour de Francia", 13:00 Etapa 11 Toulouse › Toulouse (154 km)
+#EXTINF:-1 tvg-id="" group-title="17/07 Open Británico", 07:30 Jornada 1
+http://127.0.0.1:6878/ace/getstream?id=8546cff89e4ee8bf3ad31cf6457c3bc2c4341031
+#EXTINF:-1 tvg-id="" group-title="17/07 Open Británico", 07:30 Jornada 1
+http://127.0.0.1:6878/ace/getstream?id=872608e734992db636eb79426802cd08f4029afb
+#EXTINF:-1 tvg-id="" group-title="17/07 Tour de Francia", 13:00 Etapa 12 Auch › Hautacam (181 km)
 http://127.0.0.1:6878/ace/getstream?id=16ffa1713f42aa27317ee039a2bd0cdbc89a1580
-#EXTINF:-1 tvg-id="" group-title="16/07 Tour de Francia", 13:00 Etapa 11 Toulouse › Toulouse (154 km)
+#EXTINF:-1 tvg-id="" group-title="17/07 Tour de Francia", 13:00 Etapa 12 Auch › Hautacam (181 km)
 http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
-#EXTINF:-1 tvg-id="" group-title="16/07 Tour de Francia", 13:00 Etapa 11 Toulouse › Toulouse (154 km)
+#EXTINF:-1 tvg-id="" group-title="17/07 Tour de Francia", 13:00 Etapa 12 Auch › Hautacam (181 km)
 http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
-#EXTINF:-1 tvg-id="" group-title="16/07 Tour de Francia", 13:00 Etapa 11 Toulouse › Toulouse (154 km)
+#EXTINF:-1 tvg-id="" group-title="17/07 Tour de Francia", 13:00 Etapa 12 Auch › Hautacam (181 km)
 http://127.0.0.1:6878/ace/getstream?id=0ac6524dd3c35ae5fc76e0cfa4faeed4d6ef6df4
-#EXTINF:-1 tvg-id="" group-title="16/07 Tour de Francia", 13:00 Etapa 11 Toulouse › Toulouse (154 km)
+#EXTINF:-1 tvg-id="" group-title="17/07 Tour de Francia", 13:00 Etapa 12 Auch › Hautacam (181 km)
 http://127.0.0.1:6878/ace/getstream?id=cfa75ade53810dac64411b22d56c3d4582a221d3
-#EXTINF:-1 tvg-id="" group-title="16/07 Campeonato del Mundo | Fase de grupos", 14:45 España Hungría
+#EXTINF:-1 tvg-id="" group-title="17/07 Eurocopa Femenina | 1/4 de Final", 21:00 Suecia Inglaterra
 http://127.0.0.1:6878/ace/getstream?id=138b30c93e8a780ac490a4f6d2181c41f3670230
-#EXTINF:-1 tvg-id="" group-title="16/07 Campeonato del Mundo | Fase de grupos", 14:45 España Hungría
-http://127.0.0.1:6878/ace/getstream?id=bdc32e0f99653f96e0e1a3b98c88764b631ed9ef
-#EXTINF:-1 tvg-id="" group-title="16/07 Eurocopa Femenina | 1/4 de Final", 21:00 Noruega Italia
-http://127.0.0.1:6878/ace/getstream?id=138b30c93e8a780ac490a4f6d2181c41f3670230
-#EXTINF:-1 tvg-id="" group-title="16/07 Eurocopa Femenina | 1/4 de Final", 21:00 Noruega Italia
+#EXTINF:-1 tvg-id="" group-title="17/07 Eurocopa Femenina | 1/4 de Final", 21:00 Suecia Inglaterra
 http://127.0.0.1:6878/ace/getstream?id=bdc32e0f99653f96e0e1a3b98c88764b631ed9ef
