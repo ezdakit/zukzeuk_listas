@@ -134,7 +134,7 @@
     <h1>by TokyoGhoull</h1>
     <div id="loading" class="loading" style="display: none;">Cargando datos...</div>
     
-    <h2 id="tituloEventos" style="display: block;">Eventos de hoy (martes, 29 de julio de 2025)</h2>
+    <h2 id="tituloEventos" style="display: block;">Eventos de hoy (miércoles, 30 de julio de 2025)</h2>
     <table id="tablaEventos" class="tabla-Eventos" style="display: table;">
         <thead>
             <tr>
@@ -146,7 +146,7 @@
             </tr>
         </thead>
         <tbody><tr>
-                        <td>00:45</td>
+                        <td>00:55</td>
                         <td>
                                         <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113307-tenis.webp" width="22" height="22" alt="Competición">
                                         Masters Canadá | 2ª Ronda
@@ -172,7 +172,7 @@
                                         <button onclick="playAceStream('03aa6a0c160d2ad74e9d6fb62c7f33e2e5e7233e', 'MOVISTAR DEPORTES 3 FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     </td>
                     </tr><tr>
-                        <td>01:00</td>
+                        <td>01:10</td>
                         <td>
                                         <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113307-tenis.webp" width="22" height="22" alt="Competición">
                                         Masters Canadá | 2ª Ronda
@@ -263,7 +263,7 @@
                                         <button onclick="playAceStream('fe5f7c9f87fc6dbe1c10c67c9b86731ca5f18e10', 'LIGA DE CAMPEONES FHD --&gt; NEW ERA VI')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     </td>
                     </tr><tr>
-                        <td>02:30</td>
+                        <td>03:10</td>
                         <td>
                                         <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113307-tenis.webp" width="22" height="22" alt="Competición">
                                         Masters Canadá | 2ª Ronda
@@ -345,11 +345,11 @@
                                         <a href="acestream://0ac6524dd3c35ae5fc76e0cfa4faeed4d6ef6df4" target="_blank">EUROSPORT 1 FHD --&gt; NEW ERA VI</a>
                                         <button onclick="playAceStream('0ac6524dd3c35ae5fc76e0cfa4faeed4d6ef6df4', 'EUROSPORT 1 FHD --&gt; NEW ERA VI')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     <br>
-                                        <a href="acestream://cfa75ade53810dac64411b22d56c3d4582a221d3" target="_blank">EUROSPORT 1 HD --&gt; NEW LOOP</a>
-                                        <button onclick="playAceStream('cfa75ade53810dac64411b22d56c3d4582a221d3', 'EUROSPORT 1 HD --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
                                         <a href="acestream://1b0bc4d4dcd609d3c092712e721392b199f50a62" target="_blank">EUROSPORT 1 HD --&gt; NEW LOOP</a>
                                         <button onclick="playAceStream('1b0bc4d4dcd609d3c092712e721392b199f50a62', 'EUROSPORT 1 HD --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://cfa75ade53810dac64411b22d56c3d4582a221d3" target="_blank">EUROSPORT 1 HD --&gt; NEW LOOP</a>
+                                        <button onclick="playAceStream('cfa75ade53810dac64411b22d56c3d4582a221d3', 'EUROSPORT 1 HD --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     </td>
                     </tr></tbody>
     </table>
@@ -957,6 +957,30 @@
                         </button>
                     </td>
                 </tr><tr class="origen-2">
+                    <td>ARAGON TV HD --&gt; NEW ERA</td>
+                    <td>ba4597903f099695e7d6bcc5938f91cb0798006b</td>
+                    <td>
+                        <a href="acestream://ba4597903f099695e7d6bcc5938f91cb0798006b" target="_blank">
+                            ARAGON TV HD --&gt; NEW ERA
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('ba4597903f099695e7d6bcc5938f91cb0798006b', 'ARAGON TV HD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
+                    <td>AUTOMOTORSPORT HD --&gt; NEW LOOP</td>
+                    <td>610993aea3a2bfd509594334b7461ce96900f54c</td>
+                    <td>
+                        <a href="acestream://610993aea3a2bfd509594334b7461ce96900f54c" target="_blank">
+                            AUTOMOTORSPORT HD --&gt; NEW LOOP
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('610993aea3a2bfd509594334b7461ce96900f54c', 'AUTOMOTORSPORT HD --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
                     <td>BEIN SPORTS 1 --&gt; NEW LOOP</td>
                     <td>bba1905fcd1c4975aec544047bf8e4cd23ce3fe0</td>
                     <td>
@@ -1001,6 +1025,18 @@
                         </a>
                         <br><br>
                         <button onclick="playAceStream('731bd3336ec0986ff9100efe40dbaf1473a22cf8', 'BEIN SPORTS 3 --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
+                    <td>BEIN SPORTS 3 FHD --&gt; NEW ERA</td>
+                    <td>ea6dd2fbd792fe4fb5d372f5d8b84d03792e6e7a</td>
+                    <td>
+                        <a href="acestream://ea6dd2fbd792fe4fb5d372f5d8b84d03792e6e7a" target="_blank">
+                            BEIN SPORTS 3 FHD --&gt; NEW ERA
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('ea6dd2fbd792fe4fb5d372f5d8b84d03792e6e7a', 'BEIN SPORTS 3 FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
                             ▶️ 
                         </button>
                     </td>
@@ -1593,6 +1629,18 @@
                         </button>
                     </td>
                 </tr><tr class="origen-2">
+                    <td>DAZN LA LIGA 2 FHD --&gt; NEW ERA</td>
+                    <td>635b61c1f240449163260cd914d10d886a54fee3</td>
+                    <td>
+                        <a href="acestream://635b61c1f240449163260cd914d10d886a54fee3" target="_blank">
+                            DAZN LaLiga 2 (M58 O274)
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('635b61c1f240449163260cd914d10d886a54fee3', 'DAZN LA LIGA 2 FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
                     <td>DAZN LA LIGA 2 FHD --&gt; NEW ERA VI</td>
                     <td>5af57417a2d24008861ed25a8a400ac6d5144afb</td>
                     <td>
@@ -1649,54 +1697,6 @@
                         </a>
                         <br><br>
                         <button onclick="playAceStream('d08013df6e437a1fdf1e0c34f573fdf6a40c7fce', 'ELEVEN DAZN 2 --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
-                            ▶️ 
-                        </button>
-                    </td>
-                </tr><tr class="origen-2">
-                    <td>ELEVEN DAZN 3 --&gt; NEW LOOP</td>
-                    <td>dae7d1251f069516cc0a9c8f15f6639d2a17df1e</td>
-                    <td>
-                        <a href="acestream://dae7d1251f069516cc0a9c8f15f6639d2a17df1e" target="_blank">
-                            DAZN 3 (M196)
-                        </a>
-                        <br><br>
-                        <button onclick="playAceStream('dae7d1251f069516cc0a9c8f15f6639d2a17df1e', 'ELEVEN DAZN 3 --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
-                            ▶️ 
-                        </button>
-                    </td>
-                </tr><tr class="origen-2">
-                    <td>ELEVEN DAZN 4 --&gt; NEW LOOP</td>
-                    <td>0f32c0131a2d9444996410801f4e18b04384db98</td>
-                    <td>
-                        <a href="acestream://0f32c0131a2d9444996410801f4e18b04384db98" target="_blank">
-                            DAZN 4 (M197)
-                        </a>
-                        <br><br>
-                        <button onclick="playAceStream('0f32c0131a2d9444996410801f4e18b04384db98', 'ELEVEN DAZN 4 --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
-                            ▶️ 
-                        </button>
-                    </td>
-                </tr><tr class="origen-2">
-                    <td>ELEVEN DAZN 5 --&gt; NEW LOOP</td>
-                    <td>4dbe63b44fc4f439f5b634c0d2aa7e0cccad808a</td>
-                    <td>
-                        <a href="acestream://4dbe63b44fc4f439f5b634c0d2aa7e0cccad808a" target="_blank">
-                            ELEVEN DAZN 5 --&gt; NEW LOOP
-                        </a>
-                        <br><br>
-                        <button onclick="playAceStream('4dbe63b44fc4f439f5b634c0d2aa7e0cccad808a', 'ELEVEN DAZN 5 --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
-                            ▶️ 
-                        </button>
-                    </td>
-                </tr><tr class="origen-2">
-                    <td>ELEVEN DAZN 6 --&gt; NEW LOOP</td>
-                    <td>50b6d2b5fd59fefb9f4fd2176994d418f2b94a80</td>
-                    <td>
-                        <a href="acestream://50b6d2b5fd59fefb9f4fd2176994d418f2b94a80" target="_blank">
-                            ELEVEN DAZN 6 --&gt; NEW LOOP
-                        </a>
-                        <br><br>
-                        <button onclick="playAceStream('50b6d2b5fd59fefb9f4fd2176994d418f2b94a80', 'ELEVEN DAZN 6 --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
                             ▶️ 
                         </button>
                     </td>
@@ -1822,18 +1822,6 @@
                     </td>
                 </tr><tr class="origen-2">
                     <td>EUROSPORT 1 HD --&gt; NEW LOOP</td>
-                    <td>cfa75ade53810dac64411b22d56c3d4582a221d3</td>
-                    <td>
-                        <a href="acestream://cfa75ade53810dac64411b22d56c3d4582a221d3" target="_blank">
-                            Eurosport 1
-                        </a>
-                        <br><br>
-                        <button onclick="playAceStream('cfa75ade53810dac64411b22d56c3d4582a221d3', 'EUROSPORT 1 HD --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
-                            ▶️ 
-                        </button>
-                    </td>
-                </tr><tr class="origen-2">
-                    <td>EUROSPORT 1 HD --&gt; NEW LOOP</td>
                     <td>1b0bc4d4dcd609d3c092712e721392b199f50a62</td>
                     <td>
                         <a href="acestream://1b0bc4d4dcd609d3c092712e721392b199f50a62" target="_blank">
@@ -1841,6 +1829,18 @@
                         </a>
                         <br><br>
                         <button onclick="playAceStream('1b0bc4d4dcd609d3c092712e721392b199f50a62', 'EUROSPORT 1 HD --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
+                    <td>EUROSPORT 1 HD --&gt; NEW LOOP</td>
+                    <td>cfa75ade53810dac64411b22d56c3d4582a221d3</td>
+                    <td>
+                        <a href="acestream://cfa75ade53810dac64411b22d56c3d4582a221d3" target="_blank">
+                            Eurosport 1
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('cfa75ade53810dac64411b22d56c3d4582a221d3', 'EUROSPORT 1 HD --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
                             ▶️ 
                         </button>
                     </td>
@@ -1929,6 +1929,18 @@
                         </button>
                     </td>
                 </tr><tr class="origen-2">
+                    <td>LIGA DE CAMPEONES 4K --&gt; NEW ERA</td>
+                    <td>152169ce99e1fd27f2249c18384a121079cdef29</td>
+                    <td>
+                        <a href="acestream://152169ce99e1fd27f2249c18384a121079cdef29" target="_blank">
+                            M+ Liga de Campeones (M60 O115)
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('152169ce99e1fd27f2249c18384a121079cdef29', 'LIGA DE CAMPEONES 4K --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
                     <td>LIGA DE CAMPEONES 2 --&gt; ELCANO</td>
                     <td>abdf9058786a48623d0de51a3adb414ae10b6e72</td>
                     <td>
@@ -1985,6 +1997,18 @@
                         </a>
                         <br><br>
                         <button onclick="playAceStream('17b8bc4bf8e29547b0071c742e3d7da3bcbc484d', 'LIGA DE CAMPEONES 3 FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
+                    <td>LIGA DE CAMPEONES 4 FHD --&gt; NEW ERA</td>
+                    <td>f1219582a3059e7fff2db22e69475c45cbc84356</td>
+                    <td>
+                        <a href="acestream://f1219582a3059e7fff2db22e69475c45cbc84356" target="_blank">
+                            M+ Liga de Campeones (M60 O115)
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('f1219582a3059e7fff2db22e69475c45cbc84356', 'LIGA DE CAMPEONES 4 FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
                             ▶️ 
                         </button>
                     </td>
@@ -2805,18 +2829,6 @@
                         </button>
                     </td>
                 </tr><tr class="origen-2">
-                    <td>RETROVISION MOTOR --&gt; NEW LOOP</td>
-                    <td>b8b8c4470d3d27c75302cf49ab6c4b52a660bff3</td>
-                    <td>
-                        <a href="acestream://b8b8c4470d3d27c75302cf49ab6c4b52a660bff3" target="_blank">
-                            RETROVISION MOTOR --&gt; NEW LOOP
-                        </a>
-                        <br><br>
-                        <button onclick="playAceStream('b8b8c4470d3d27c75302cf49ab6c4b52a660bff3', 'RETROVISION MOTOR --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
-                            ▶️ 
-                        </button>
-                    </td>
-                </tr><tr class="origen-2">
                     <td>SKY SPORTS ARENA --&gt; NEW LOOP</td>
                     <td>d317a003e8047da2c36a2a2bb2289578c9a3b79c</td>
                     <td>
@@ -2829,14 +2841,14 @@
                         </button>
                     </td>
                 </tr><tr class="origen-2">
-                    <td>SKY SPORTS FOOTBALL --&gt; NEW LOOP</td>
-                    <td>8dbe2d515e9131fa311353537736f8c94be9b26d</td>
+                    <td>SKY SPORTS CRICKET --&gt; NEW LOOP</td>
+                    <td>6d95e4b0893e155cc674b84e0763150c445d3ddd</td>
                     <td>
-                        <a href="acestream://8dbe2d515e9131fa311353537736f8c94be9b26d" target="_blank">
-                            SKY SPORTS FOOTBALL --&gt; NEW LOOP
+                        <a href="acestream://6d95e4b0893e155cc674b84e0763150c445d3ddd" target="_blank">
+                            SKY SPORTS CRICKET --&gt; NEW LOOP
                         </a>
                         <br><br>
-                        <button onclick="playAceStream('8dbe2d515e9131fa311353537736f8c94be9b26d', 'SKY SPORTS FOOTBALL --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                        <button onclick="playAceStream('6d95e4b0893e155cc674b84e0763150c445d3ddd', 'SKY SPORTS CRICKET --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
                             ▶️ 
                         </button>
                     </td>
@@ -2913,6 +2925,18 @@
                         </button>
                     </td>
                 </tr><tr class="origen-2">
+                    <td>TENNIS CHANNEL --&gt; NEW LOOP</td>
+                    <td>8091334c82e8720fc6aa05ff0bd6d343c5bfecbf</td>
+                    <td>
+                        <a href="acestream://8091334c82e8720fc6aa05ff0bd6d343c5bfecbf" target="_blank">
+                            Tennis Channel
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('8091334c82e8720fc6aa05ff0bd6d343c5bfecbf', 'TENNIS CHANNEL --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
                     <td>TENNIS CHANNEL HD --&gt; NEW LOOP</td>
                     <td>039fae21c9e7e5214d3d898cba80863e37e623ac</td>
                     <td>
@@ -2957,6 +2981,30 @@
                         </a>
                         <br><br>
                         <button onclick="playAceStream('3f23e772f30c5f127609cbef8aa904219b63caef', 'TR: S SPORT 1 HD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
+                    <td>TVG EUROPA HD --&gt; NEW ERA</td>
+                    <td>d48b299bbcd811cfd14159224bf5012a305021c1</td>
+                    <td>
+                        <a href="acestream://d48b299bbcd811cfd14159224bf5012a305021c1" target="_blank">
+                            TVG EUROPA HD --&gt; NEW ERA
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('d48b299bbcd811cfd14159224bf5012a305021c1', 'TVG EUROPA HD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
+                    <td>UFC 317 ESPN --&gt; NEW ERA</td>
+                    <td>f3fdef8de18c33683856c1eb9240f696f43f2e28</td>
+                    <td>
+                        <a href="acestream://f3fdef8de18c33683856c1eb9240f696f43f2e28" target="_blank">
+                            UFC 317 ESPN --&gt; NEW ERA
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('f3fdef8de18c33683856c1eb9240f696f43f2e28', 'UFC 317 ESPN --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
                             ▶️ 
                         </button>
                     </td>
@@ -3074,6 +3122,30 @@
                         </button>
                     </td>
                 </tr><tr class="origen-2">
+                    <td>ARAGON TV HD --&gt; NEW ERA</td>
+                    <td>ba4597903f099695e7d6bcc5938f91cb0798006b</td>
+                    <td>
+                        <a href="acestream://ba4597903f099695e7d6bcc5938f91cb0798006b" target="_blank">
+                            ARAGON TV HD --&gt; NEW ERA
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('ba4597903f099695e7d6bcc5938f91cb0798006b', 'ARAGON TV HD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
+                    <td>AUTOMOTORSPORT HD --&gt; NEW LOOP</td>
+                    <td>610993aea3a2bfd509594334b7461ce96900f54c</td>
+                    <td>
+                        <a href="acestream://610993aea3a2bfd509594334b7461ce96900f54c" target="_blank">
+                            AUTOMOTORSPORT HD --&gt; NEW LOOP
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('610993aea3a2bfd509594334b7461ce96900f54c', 'AUTOMOTORSPORT HD --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
                     <td>BEIN SPORTS 1 --&gt; NEW LOOP</td>
                     <td>bba1905fcd1c4975aec544047bf8e4cd23ce3fe0</td>
                     <td>
@@ -3118,6 +3190,18 @@
                         </a>
                         <br><br>
                         <button onclick="playAceStream('731bd3336ec0986ff9100efe40dbaf1473a22cf8', 'BEIN SPORTS 3 --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
+                    <td>BEIN SPORTS 3 FHD --&gt; NEW ERA</td>
+                    <td>ea6dd2fbd792fe4fb5d372f5d8b84d03792e6e7a</td>
+                    <td>
+                        <a href="acestream://ea6dd2fbd792fe4fb5d372f5d8b84d03792e6e7a" target="_blank">
+                            BEIN SPORTS 3 FHD --&gt; NEW ERA
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('ea6dd2fbd792fe4fb5d372f5d8b84d03792e6e7a', 'BEIN SPORTS 3 FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
                             ▶️ 
                         </button>
                     </td>
@@ -3382,30 +3466,6 @@
                         </a>
                         <br><br>
                         <button onclick="playAceStream('c2858a94d2045e5dbb14e99323e90afe4e872266', 'DISCOVERY CHANNEL FHD --&gt; NEW ERA II')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
-                            ▶️ 
-                        </button>
-                    </td>
-                </tr><tr class="origen-2">
-                    <td>ELEVEN DAZN 5 --&gt; NEW LOOP</td>
-                    <td>4dbe63b44fc4f439f5b634c0d2aa7e0cccad808a</td>
-                    <td>
-                        <a href="acestream://4dbe63b44fc4f439f5b634c0d2aa7e0cccad808a" target="_blank">
-                            ELEVEN DAZN 5 --&gt; NEW LOOP
-                        </a>
-                        <br><br>
-                        <button onclick="playAceStream('4dbe63b44fc4f439f5b634c0d2aa7e0cccad808a', 'ELEVEN DAZN 5 --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
-                            ▶️ 
-                        </button>
-                    </td>
-                </tr><tr class="origen-2">
-                    <td>ELEVEN DAZN 6 --&gt; NEW LOOP</td>
-                    <td>50b6d2b5fd59fefb9f4fd2176994d418f2b94a80</td>
-                    <td>
-                        <a href="acestream://50b6d2b5fd59fefb9f4fd2176994d418f2b94a80" target="_blank">
-                            ELEVEN DAZN 6 --&gt; NEW LOOP
-                        </a>
-                        <br><br>
-                        <button onclick="playAceStream('50b6d2b5fd59fefb9f4fd2176994d418f2b94a80', 'ELEVEN DAZN 6 --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
                             ▶️ 
                         </button>
                     </td>
@@ -3806,18 +3866,6 @@
                         </button>
                     </td>
                 </tr><tr class="origen-2">
-                    <td>RETROVISION MOTOR --&gt; NEW LOOP</td>
-                    <td>b8b8c4470d3d27c75302cf49ab6c4b52a660bff3</td>
-                    <td>
-                        <a href="acestream://b8b8c4470d3d27c75302cf49ab6c4b52a660bff3" target="_blank">
-                            RETROVISION MOTOR --&gt; NEW LOOP
-                        </a>
-                        <br><br>
-                        <button onclick="playAceStream('b8b8c4470d3d27c75302cf49ab6c4b52a660bff3', 'RETROVISION MOTOR --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
-                            ▶️ 
-                        </button>
-                    </td>
-                </tr><tr class="origen-2">
                     <td>SKY SPORTS ARENA --&gt; NEW LOOP</td>
                     <td>d317a003e8047da2c36a2a2bb2289578c9a3b79c</td>
                     <td>
@@ -3830,14 +3878,14 @@
                         </button>
                     </td>
                 </tr><tr class="origen-2">
-                    <td>SKY SPORTS FOOTBALL --&gt; NEW LOOP</td>
-                    <td>8dbe2d515e9131fa311353537736f8c94be9b26d</td>
+                    <td>SKY SPORTS CRICKET --&gt; NEW LOOP</td>
+                    <td>6d95e4b0893e155cc674b84e0763150c445d3ddd</td>
                     <td>
-                        <a href="acestream://8dbe2d515e9131fa311353537736f8c94be9b26d" target="_blank">
-                            SKY SPORTS FOOTBALL --&gt; NEW LOOP
+                        <a href="acestream://6d95e4b0893e155cc674b84e0763150c445d3ddd" target="_blank">
+                            SKY SPORTS CRICKET --&gt; NEW LOOP
                         </a>
                         <br><br>
-                        <button onclick="playAceStream('8dbe2d515e9131fa311353537736f8c94be9b26d', 'SKY SPORTS FOOTBALL --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                        <button onclick="playAceStream('6d95e4b0893e155cc674b84e0763150c445d3ddd', 'SKY SPORTS CRICKET --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
                             ▶️ 
                         </button>
                     </td>
@@ -3898,6 +3946,30 @@
                         </a>
                         <br><br>
                         <button onclick="playAceStream('3f23e772f30c5f127609cbef8aa904219b63caef', 'TR: S SPORT 1 HD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
+                    <td>TVG EUROPA HD --&gt; NEW ERA</td>
+                    <td>d48b299bbcd811cfd14159224bf5012a305021c1</td>
+                    <td>
+                        <a href="acestream://d48b299bbcd811cfd14159224bf5012a305021c1" target="_blank">
+                            TVG EUROPA HD --&gt; NEW ERA
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('d48b299bbcd811cfd14159224bf5012a305021c1', 'TVG EUROPA HD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
+                    <td>UFC 317 ESPN --&gt; NEW ERA</td>
+                    <td>f3fdef8de18c33683856c1eb9240f696f43f2e28</td>
+                    <td>
+                        <a href="acestream://f3fdef8de18c33683856c1eb9240f696f43f2e28" target="_blank">
+                            UFC 317 ESPN --&gt; NEW ERA
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('f3fdef8de18c33683856c1eb9240f696f43f2e28', 'UFC 317 ESPN --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
                             ▶️ 
                         </button>
                     </td>
