@@ -248,6 +248,9 @@
                                         <a href="acestream://0ac6524dd3c35ae5fc76e0cfa4faeed4d6ef6df4" target="_blank">EUROSPORT 1 FHD --&gt; NEW ERA VI</a>
                                         <button onclick="playAceStream('0ac6524dd3c35ae5fc76e0cfa4faeed4d6ef6df4', 'EUROSPORT 1 FHD --&gt; NEW ERA VI')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     <br>
+                                        <a href="acestream://cfa75ade53810dac64411b22d56c3d4582a221d3" target="_blank">EUROSPORT 1 HD --&gt; NEW LOOP</a>
+                                        <button onclick="playAceStream('cfa75ade53810dac64411b22d56c3d4582a221d3', 'EUROSPORT 1 HD --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
                                         <a href="acestream://1b0bc4d4dcd609d3c092712e721392b199f50a62" target="_blank">EUROSPORT 1 HD --&gt; NEW LOOP</a>
                                         <button onclick="playAceStream('1b0bc4d4dcd609d3c092712e721392b199f50a62', 'EUROSPORT 1 HD --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     </td>
@@ -1761,6 +1764,18 @@
                         </a>
                         <br><br>
                         <button onclick="playAceStream('0ac6524dd3c35ae5fc76e0cfa4faeed4d6ef6df4', 'EUROSPORT 1 FHD --&gt; NEW ERA VI')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
+                    <td>EUROSPORT 1 HD --&gt; NEW LOOP</td>
+                    <td>cfa75ade53810dac64411b22d56c3d4582a221d3</td>
+                    <td>
+                        <a href="acestream://cfa75ade53810dac64411b22d56c3d4582a221d3" target="_blank">
+                            Eurosport 1
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('cfa75ade53810dac64411b22d56c3d4582a221d3', 'EUROSPORT 1 HD --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
                             ▶️ 
                         </button>
                     </td>
