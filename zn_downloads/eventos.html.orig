@@ -134,7 +134,7 @@
     <h1>by TokyoGhoull</h1>
     <div id="loading" class="loading" style="display: none;">Cargando datos...</div>
     
-    <h2 id="tituloEventos" style="display: block;">Eventos de hoy (martes, 12 de agosto de 2025)</h2>
+    <h2 id="tituloEventos" style="display: block;">Eventos de hoy (miércoles, 13 de agosto de 2025)</h2>
     <table id="tablaEventos" class="tabla-Eventos" style="display: table;">
         <thead>
             <tr>
@@ -146,7 +146,52 @@
             </tr>
         </thead>
         <tbody><tr>
-                        <td>01:00</td>
+                        <td>13:30</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130627010504-ciclismo.webp" width="22" height="22" alt="Competición">
+                                        Tour de Polonia Femenino
+                                    </td>
+                        <td>Etapa 2 <br>Chelm › Chelm (100 km) </td>
+                        <td></td>
+                        <td>
+                                        <a href="acestream://0585e09bb8ac9720e4c11934f1b184e309291551" target="_blank">Eurosport 2 1080</a>
+                                        <button onclick="playAceStream('0585e09bb8ac9720e4c11934f1b184e309291551', 'Eurosport 2 1080')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://dc4ccb9e72550bc72be9360aa7d77e337ad11ecc" target="_blank">EUROSPORT 2 FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('dc4ccb9e72550bc72be9360aa7d77e337ad11ecc', 'EUROSPORT 2 FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://2773b39926d15dd3d9495d94c4050604792d7031" target="_blank">EUROSPORT 2 FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('2773b39926d15dd3d9495d94c4050604792d7031', 'EUROSPORT 2 FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    </td>
+                    </tr><tr>
+                        <td>15:45</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130627010504-ciclismo.webp" width="22" height="22" alt="Competición">
+                                        Tour de Dinamarca
+                                    </td>
+                        <td>Etapa 2 <br>Rødovre › Gladsaxe (110,5 km) </td>
+                        <td></td>
+                        <td>
+                                        <a href="acestream://0585e09bb8ac9720e4c11934f1b184e309291551" target="_blank">Eurosport 2 1080</a>
+                                        <button onclick="playAceStream('0585e09bb8ac9720e4c11934f1b184e309291551', 'Eurosport 2 1080')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://dc4ccb9e72550bc72be9360aa7d77e337ad11ecc" target="_blank">EUROSPORT 2 FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('dc4ccb9e72550bc72be9360aa7d77e337ad11ecc', 'EUROSPORT 2 FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://2773b39926d15dd3d9495d94c4050604792d7031" target="_blank">EUROSPORT 2 FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('2773b39926d15dd3d9495d94c4050604792d7031', 'EUROSPORT 2 FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    </td>
+                    </tr><tr>
+                        <td>16:00</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130627010504-ciclismo.webp" width="22" height="22" alt="Competición">
+                                        Vuelta a Portugal
+                                    </td>
+                        <td>Etapa 6 <br>Lamego › Viseu (155,5 km) </td>
+                        <td>RTP Play Internacional</td>
+                        <td>No disponible</td>
+                    </tr><tr>
+                        <td>18:30</td>
                         <td>
                                         <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113307-tenis.webp" width="22" height="22" alt="Competición">
                                         Masters Cincinnati | 3ª Ronda
@@ -199,7 +244,7 @@
                                         <button onclick="playAceStream('81e100e3fee4def126eb37280327cf43ce48c639', 'MOVISTAR DEPORTES 3 FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     </td>
                     </tr><tr>
-                        <td>02:30</td>
+                        <td>18:45</td>
                         <td>
                                         <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113307-tenis.webp" width="22" height="22" alt="Competición">
                                         Masters Cincinnati | 3ª Ronda
@@ -239,51 +284,6 @@
                                         <a href="acestream://acb510858f34c3c6fd5f79395b031abd6885c2b3" target="_blank">MOVISTAR DEPORTES HD --&gt; NEW LOOP</a>
                                         <button onclick="playAceStream('acb510858f34c3c6fd5f79395b031abd6885c2b3', 'MOVISTAR DEPORTES HD --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     </td>
-                    </tr><tr>
-                        <td>13:30</td>
-                        <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130627010504-ciclismo.webp" width="22" height="22" alt="Competición">
-                                        Tour de Polonia Femenino
-                                    </td>
-                        <td>Etapa 2 <br>Chelm › Chelm (100 km) </td>
-                        <td></td>
-                        <td>
-                                        <a href="acestream://0585e09bb8ac9720e4c11934f1b184e309291551" target="_blank">Eurosport 2 1080</a>
-                                        <button onclick="playAceStream('0585e09bb8ac9720e4c11934f1b184e309291551', 'Eurosport 2 1080')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://dc4ccb9e72550bc72be9360aa7d77e337ad11ecc" target="_blank">EUROSPORT 2 FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('dc4ccb9e72550bc72be9360aa7d77e337ad11ecc', 'EUROSPORT 2 FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://2773b39926d15dd3d9495d94c4050604792d7031" target="_blank">EUROSPORT 2 FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('2773b39926d15dd3d9495d94c4050604792d7031', 'EUROSPORT 2 FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    </td>
-                    </tr><tr>
-                        <td>15:45</td>
-                        <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130627010504-ciclismo.webp" width="22" height="22" alt="Competición">
-                                        Tour de Dinamarca
-                                    </td>
-                        <td>Etapa 2 <br>Rødovre › Gladsaxe (110,5 km) </td>
-                        <td></td>
-                        <td>
-                                        <a href="acestream://0585e09bb8ac9720e4c11934f1b184e309291551" target="_blank">Eurosport 2 1080</a>
-                                        <button onclick="playAceStream('0585e09bb8ac9720e4c11934f1b184e309291551', 'Eurosport 2 1080')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://dc4ccb9e72550bc72be9360aa7d77e337ad11ecc" target="_blank">EUROSPORT 2 FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('dc4ccb9e72550bc72be9360aa7d77e337ad11ecc', 'EUROSPORT 2 FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://2773b39926d15dd3d9495d94c4050604792d7031" target="_blank">EUROSPORT 2 FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('2773b39926d15dd3d9495d94c4050604792d7031', 'EUROSPORT 2 FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    </td>
-                    </tr><tr>
-                        <td>16:00</td>
-                        <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130627010504-ciclismo.webp" width="22" height="22" alt="Competición">
-                                        Vuelta a Portugal
-                                    </td>
-                        <td>Etapa 6 <br>Lamego › Viseu (155,5 km) </td>
-                        <td>RTP Play Internacional</td>
-                        <td>No disponible</td>
                     </tr><tr>
                         <td>19:30</td>
                         <td>
@@ -1668,6 +1668,18 @@
                         </button>
                     </td>
                 </tr><tr class="origen-2">
+                    <td>ELEVEN DAZN 6 --&gt; NEW LOOP</td>
+                    <td>50b6d2b5fd59fefb9f4fd2176994d418f2b94a80</td>
+                    <td>
+                        <a href="acestream://50b6d2b5fd59fefb9f4fd2176994d418f2b94a80" target="_blank">
+                            ELEVEN DAZN 6 --&gt; NEW LOOP
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('50b6d2b5fd59fefb9f4fd2176994d418f2b94a80', 'ELEVEN DAZN 6 --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
                     <td>ESPN2 [US] --&gt; NEW LOOP</td>
                     <td>664eb5fe460b96941aed633959a845b185cd8394</td>
                     <td>
@@ -1700,6 +1712,18 @@
                         </a>
                         <br><br>
                         <button onclick="playAceStream('5f9b19c57195cc28ab81e0ec8cad03b55118687a', 'ESPN 4 [BE] --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
+                    <td>ESPN HD [US] --&gt; NEW LOOP</td>
+                    <td>4b4907de51ec11087d4bed5876f2a0c68264f442</td>
+                    <td>
+                        <a href="acestream://4b4907de51ec11087d4bed5876f2a0c68264f442" target="_blank">
+                            ESPN HD [US] --&gt; NEW LOOP
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('4b4907de51ec11087d4bed5876f2a0c68264f442', 'ESPN HD [US] --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
                             ▶️ 
                         </button>
                     </td>
@@ -2784,18 +2808,6 @@
                         </button>
                     </td>
                 </tr><tr class="origen-2">
-                    <td>Orange TV --&gt; NEW LOOP</td>
-                    <td>abdbfccdfd73bb5b1dcad598d539058040fb24fa</td>
-                    <td>
-                        <a href="acestream://abdbfccdfd73bb5b1dcad598d539058040fb24fa" target="_blank">
-                            Orange TV --&gt; NEW LOOP
-                        </a>
-                        <br><br>
-                        <button onclick="playAceStream('abdbfccdfd73bb5b1dcad598d539058040fb24fa', 'Orange TV --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
-                            ▶️ 
-                        </button>
-                    </td>
-                </tr><tr class="origen-2">
                     <td>PREMIER SPORTS 1 --&gt; NEW LOOP</td>
                     <td>75a56863b6fe0407ad4305b4d7ee5643c3923565</td>
                     <td>
@@ -3401,6 +3413,18 @@
                         </button>
                     </td>
                 </tr><tr class="origen-2">
+                    <td>ELEVEN DAZN 6 --&gt; NEW LOOP</td>
+                    <td>50b6d2b5fd59fefb9f4fd2176994d418f2b94a80</td>
+                    <td>
+                        <a href="acestream://50b6d2b5fd59fefb9f4fd2176994d418f2b94a80" target="_blank">
+                            ELEVEN DAZN 6 --&gt; NEW LOOP
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('50b6d2b5fd59fefb9f4fd2176994d418f2b94a80', 'ELEVEN DAZN 6 --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
                     <td>ESPN2 [US] --&gt; NEW LOOP</td>
                     <td>664eb5fe460b96941aed633959a845b185cd8394</td>
                     <td>
@@ -3433,6 +3457,18 @@
                         </a>
                         <br><br>
                         <button onclick="playAceStream('5f9b19c57195cc28ab81e0ec8cad03b55118687a', 'ESPN 4 [BE] --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
+                    <td>ESPN HD [US] --&gt; NEW LOOP</td>
+                    <td>4b4907de51ec11087d4bed5876f2a0c68264f442</td>
+                    <td>
+                        <a href="acestream://4b4907de51ec11087d4bed5876f2a0c68264f442" target="_blank">
+                            ESPN HD [US] --&gt; NEW LOOP
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('4b4907de51ec11087d4bed5876f2a0c68264f442', 'ESPN HD [US] --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
                             ▶️ 
                         </button>
                     </td>
@@ -3733,18 +3769,6 @@
                         </a>
                         <br><br>
                         <button onclick="playAceStream('cd0188292b6b3876ff66c99bd3d25eab88b41079', 'ONETORO FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
-                            ▶️ 
-                        </button>
-                    </td>
-                </tr><tr class="origen-2">
-                    <td>Orange TV --&gt; NEW LOOP</td>
-                    <td>abdbfccdfd73bb5b1dcad598d539058040fb24fa</td>
-                    <td>
-                        <a href="acestream://abdbfccdfd73bb5b1dcad598d539058040fb24fa" target="_blank">
-                            Orange TV --&gt; NEW LOOP
-                        </a>
-                        <br><br>
-                        <button onclick="playAceStream('abdbfccdfd73bb5b1dcad598d539058040fb24fa', 'Orange TV --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
                             ▶️ 
                         </button>
                     </td>
