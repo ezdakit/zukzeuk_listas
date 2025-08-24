@@ -1,10 +1,70 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"
 #EXTVLCOPT:network-caching=2000
 
+#EXTINF:-1 tvg-id="" group-title="24/08 Campeonato Uruguayo", 01:30 Miramar Misiones Cerro Largo
+http://127.0.0.1:6878/ace/getstream?id=b2d560741c006fc5e4a42412bb52dbd25a6a4a3a
+#EXTINF:-1 tvg-id="" group-title="24/08 Campeonato Uruguayo", 01:30 Miramar Misiones Cerro Largo
+http://127.0.0.1:6878/ace/getstream?id=9fb99c40a2c45d5c5342b30626eb56140f980612
+#EXTINF:-1 tvg-id="" group-title="24/08 Campeonato Uruguayo", 01:30 Miramar Misiones Cerro Largo
+http://127.0.0.1:6878/ace/getstream?id=73094658f0a3ed523c0e188de67a7a690c0d4f93
 #EXTINF:-1 tvg-id="" group-title="24/08 WTA Torneo de Monterrey | Final", 02:30 D. Shnaider E. Alexandrova
 http://127.0.0.1:6878/ace/getstream?id=8091334c82e8720fc6aa05ff0bd6d343c5bfecbf
+#EXTINF:-1 tvg-id="" group-title="24/08 WTA Torneo de Monterrey | Final", 02:30 D. Shnaider E. Alexandrova
+http://127.0.0.1:6878/ace/getstream?id=71698ee415b6ba3f123aac1c8c37cc97376f20d0
+#EXTINF:-1 tvg-id="" group-title="24/08 Moto3", 11:00 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=eb6ffec065b26259ad3d1811e0bbb0a5332ed276
+#EXTINF:-1 tvg-id="" group-title="24/08 Moto3", 11:00 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=7ba1f321f4d0791b7ebd42f41a07c1cd1479e784
+#EXTINF:-1 tvg-id="" group-title="24/08 Moto3", 11:00 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
+#EXTINF:-1 tvg-id="" group-title="24/08 Moto3", 11:00 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=688e785893b50acc1d00cb37f15bfc42e72f5ae3
+#EXTINF:-1 tvg-id="" group-title="24/08 Moto3", 11:00 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=6538b79ce0da657d8455d1da6a5f342398899a0e
+#EXTINF:-1 tvg-id="" group-title="24/08 Moto3", 11:00 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=50a8a13c474848d1efbd5586efdb5b6cdd173fa9
+#EXTINF:-1 tvg-id="" group-title="24/08 Moto3", 11:00 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
+#EXTINF:-1 tvg-id="" group-title="24/08 Moto3", 11:00 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=ee4dc45720d3ec283f61189fbfc120c91d5141bf
+#EXTINF:-1 tvg-id="" group-title="24/08 Moto3", 11:00 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=36cad67fed5a739757a9db844a551aa845a8d51b
+#EXTINF:-1 tvg-id="" group-title="24/08 Moto2", 12:15 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=eb6ffec065b26259ad3d1811e0bbb0a5332ed276
+#EXTINF:-1 tvg-id="" group-title="24/08 Moto2", 12:15 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=7ba1f321f4d0791b7ebd42f41a07c1cd1479e784
+#EXTINF:-1 tvg-id="" group-title="24/08 Moto2", 12:15 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
+#EXTINF:-1 tvg-id="" group-title="24/08 Moto2", 12:15 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=688e785893b50acc1d00cb37f15bfc42e72f5ae3
+#EXTINF:-1 tvg-id="" group-title="24/08 Moto2", 12:15 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=6538b79ce0da657d8455d1da6a5f342398899a0e
+#EXTINF:-1 tvg-id="" group-title="24/08 Moto2", 12:15 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=50a8a13c474848d1efbd5586efdb5b6cdd173fa9
+#EXTINF:-1 tvg-id="" group-title="24/08 Moto2", 12:15 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
+#EXTINF:-1 tvg-id="" group-title="24/08 Moto2", 12:15 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=ee4dc45720d3ec283f61189fbfc120c91d5141bf
+#EXTINF:-1 tvg-id="" group-title="24/08 Moto2", 12:15 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=36cad67fed5a739757a9db844a551aa845a8d51b
+#EXTINF:-1 tvg-id="" group-title="24/08 Copa Mundial Femenina | Fase de grupos", 13:00 Irlanda Japón
+http://127.0.0.1:6878/ace/getstream?id=9b84af74b2fa3690c519199326fc2f181b025cdd
+#EXTINF:-1 tvg-id="" group-title="24/08 British Masters", 13:00 Jornada 4
+http://127.0.0.1:6878/ace/getstream?id=8546cff89e4ee8bf3ad31cf6457c3bc2c4341031
+#EXTINF:-1 tvg-id="" group-title="24/08 British Masters", 13:00 Jornada 4
+http://127.0.0.1:6878/ace/getstream?id=9be118a64eb603b5eb62be6cf27631d3891b5174
 #EXTINF:-1 tvg-id="" group-title="24/08 British Masters", 13:00 Jornada 4
 http://127.0.0.1:6878/ace/getstream?id=76a69812c66bfc4899e89df498220588a56e6064
+#EXTINF:-1 tvg-id="" group-title="24/08 British Masters", 13:00 Jornada 4
+http://127.0.0.1:6878/ace/getstream?id=872608e734992db636eb79426802cd08f4029afb
+#EXTINF:-1 tvg-id="" group-title="24/08 Vuelta a España", 13:20 Etapa 2 Alba › Puerto Limone (157 km)
+http://127.0.0.1:6878/ace/getstream?id=138b30c93e8a780ac490a4f6d2181c41f3670230
+#EXTINF:-1 tvg-id="" group-title="24/08 Vuelta a España", 13:20 Etapa 2 Alba › Puerto Limone (157 km)
+http://127.0.0.1:6878/ace/getstream?id=bdc32e0f99653f96e0e1a3b98c88764b631ed9ef
+#EXTINF:-1 tvg-id="" group-title="24/08 Vuelta a España", 13:20 Etapa 2 Alba › Puerto Limone (157 km)
+http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
+#EXTINF:-1 tvg-id="" group-title="24/08 Vuelta a España", 13:20 Etapa 2 Alba › Puerto Limone (157 km)
+http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
 #EXTINF:-1 tvg-id="" group-title="24/08 Vuelta a España", 13:20 Etapa 2 Alba › Puerto Limone (157 km)
 http://127.0.0.1:6878/ace/getstream?id=704e51760a644bc90aa22269bf84139947a0414a
 #EXTINF:-1 tvg-id="" group-title="24/08 Vuelta a España", 13:20 Etapa 2 Alba › Puerto Limone (157 km)
@@ -14,13 +74,43 @@ http://127.0.0.1:6878/ace/getstream?id=1b0bc4d4dcd609d3c092712e721392b199f50a62
 #EXTINF:-1 tvg-id="" group-title="24/08 DTM", 13:30 Sachsenring Carrera 2
 http://127.0.0.1:6878/ace/getstream?id=7e90956539f4e1318a63f3960e4f75c7c7c5a3b8
 #EXTINF:-1 tvg-id="" group-title="24/08 DTM", 13:30 Sachsenring Carrera 2
+http://127.0.0.1:6878/ace/getstream?id=7e27e46c25d4308d16098d9dc67fcd8736e8c1f0
+#EXTINF:-1 tvg-id="" group-title="24/08 DTM", 13:30 Sachsenring Carrera 2
+http://127.0.0.1:6878/ace/getstream?id=c015d37d1ead8155b1e7b97e743a1fe9850f0af5
+#EXTINF:-1 tvg-id="" group-title="24/08 DTM", 13:30 Sachsenring Carrera 2
 http://127.0.0.1:6878/ace/getstream?id=6a11eb510edc5b3581c5c97883c44563eb894b1b
 #EXTINF:-1 tvg-id="" group-title="24/08 DTM", 13:30 Sachsenring Carrera 2
 http://127.0.0.1:6878/ace/getstream?id=0f32c0131a2d9444996410801f4e18b04384db98
+#EXTINF:-1 tvg-id="" group-title="24/08 MotoGP", 14:00 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=eb6ffec065b26259ad3d1811e0bbb0a5332ed276
+#EXTINF:-1 tvg-id="" group-title="24/08 MotoGP", 14:00 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=7ba1f321f4d0791b7ebd42f41a07c1cd1479e784
+#EXTINF:-1 tvg-id="" group-title="24/08 MotoGP", 14:00 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
+#EXTINF:-1 tvg-id="" group-title="24/08 MotoGP", 14:00 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=688e785893b50acc1d00cb37f15bfc42e72f5ae3
+#EXTINF:-1 tvg-id="" group-title="24/08 MotoGP", 14:00 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=6538b79ce0da657d8455d1da6a5f342398899a0e
+#EXTINF:-1 tvg-id="" group-title="24/08 MotoGP", 14:00 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=50a8a13c474848d1efbd5586efdb5b6cdd173fa9
+#EXTINF:-1 tvg-id="" group-title="24/08 MotoGP", 14:00 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
+#EXTINF:-1 tvg-id="" group-title="24/08 MotoGP", 14:00 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=ee4dc45720d3ec283f61189fbfc120c91d5141bf
+#EXTINF:-1 tvg-id="" group-title="24/08 MotoGP", 14:00 G.P. Hungría (Balaton Park) Carrera
+http://127.0.0.1:6878/ace/getstream?id=36cad67fed5a739757a9db844a551aa845a8d51b
 #EXTINF:-1 tvg-id="" group-title="24/08 Tour del Benelux", 15:00 Etapa 5 Leuven › Leuven (184.7 km)
 http://127.0.0.1:6878/ace/getstream?id=0585e09bb8ac9720e4c11934f1b184e309291551
+#EXTINF:-1 tvg-id="" group-title="24/08 Tour del Benelux", 15:00 Etapa 5 Leuven › Leuven (184.7 km)
+http://127.0.0.1:6878/ace/getstream?id=dc4ccb9e72550bc72be9360aa7d77e337ad11ecc
+#EXTINF:-1 tvg-id="" group-title="24/08 Tour del Benelux", 15:00 Etapa 5 Leuven › Leuven (184.7 km)
+http://127.0.0.1:6878/ace/getstream?id=2773b39926d15dd3d9495d94c4050604792d7031
 #EXTINF:-1 tvg-id="" group-title="24/08 Premier League", 15:00 Everton Brighton
 http://127.0.0.1:6878/ace/getstream?id=d1d9ec2361a6ac8edc0b2841866383768cc28df9
+#EXTINF:-1 tvg-id="" group-title="24/08 Premier League", 15:00 Everton Brighton
+http://127.0.0.1:6878/ace/getstream?id=d641cd0fca0f467b3130754a091e2f4d22e68eb1
+#EXTINF:-1 tvg-id="" group-title="24/08 Premier League", 15:00 Everton Brighton
+http://127.0.0.1:6878/ace/getstream?id=8a86cd6152154a25ad4b76523160552a40313b28
 #EXTINF:-1 tvg-id="" group-title="24/08 Premier League", 15:00 Everton Brighton
 http://127.0.0.1:6878/ace/getstream?id=6fb944e8985881ae6db89667aca6362e746255b6
 #EXTINF:-1 tvg-id="" group-title="24/08 Premier League", 15:00 Everton Brighton
@@ -30,11 +120,45 @@ http://127.0.0.1:6878/ace/getstream?id=ae68a0835039fab28fd2314108fabd4fab33b8ab
 #EXTINF:-1 tvg-id="" group-title="24/08 Premier League", 15:00 Crystal Palace Nottingham Forest
 http://127.0.0.1:6878/ace/getstream?id=b0eabe0fdd02fdd165896236765a9b753a2ff516
 #EXTINF:-1 tvg-id="" group-title="24/08 Premier League", 15:00 Crystal Palace Nottingham Forest
+http://127.0.0.1:6878/ace/getstream?id=2f9211669499f413dab1a490198afab2a9b4b57c
+#EXTINF:-1 tvg-id="" group-title="24/08 Premier League", 15:00 Crystal Palace Nottingham Forest
+http://127.0.0.1:6878/ace/getstream?id=8b081c8afbd9beafc8c5fbf0115eb36eadb07a35
+#EXTINF:-1 tvg-id="" group-title="24/08 Premier League", 15:00 Crystal Palace Nottingham Forest
+http://127.0.0.1:6878/ace/getstream?id=fb2dd566824658eeab27aae19a01c09430f1a97d
+#EXTINF:-1 tvg-id="" group-title="24/08 Premier League", 15:00 Crystal Palace Nottingham Forest
 http://127.0.0.1:6878/ace/getstream?id=9adf7ac6531788ec022dbc14b77e1367f6c5bdc5
 #EXTINF:-1 tvg-id="" group-title="24/08 Premier League", 15:00 Crystal Palace Nottingham Forest
 http://127.0.0.1:6878/ace/getstream?id=d08013df6e437a1fdf1e0c34f573fdf6a40c7fce
+#EXTINF:-1 tvg-id="" group-title="24/08 Campeonato Uruguayo", 15:30 Progreso Danubio
+http://127.0.0.1:6878/ace/getstream?id=b2d560741c006fc5e4a42412bb52dbd25a6a4a3a
+#EXTINF:-1 tvg-id="" group-title="24/08 Campeonato Uruguayo", 15:30 Progreso Danubio
+http://127.0.0.1:6878/ace/getstream?id=9fb99c40a2c45d5c5342b30626eb56140f980612
+#EXTINF:-1 tvg-id="" group-title="24/08 Campeonato Uruguayo", 15:30 Progreso Danubio
+http://127.0.0.1:6878/ace/getstream?id=73094658f0a3ed523c0e188de67a7a690c0d4f93
 #EXTINF:-1 tvg-id="" group-title="24/08 Copa Mundial Femenina | Fase de grupos", 15:45 Sudáfrica Brasil
 http://127.0.0.1:6878/ace/getstream?id=b40e1de2dcbd7c665f54877b14c830ed67b32a96
+#EXTINF:-1 tvg-id="" group-title="24/08 Copa Mundial Femenina | Fase de grupos", 15:45 Sudáfrica Brasil
+http://127.0.0.1:6878/ace/getstream?id=58a4c880ab18486d914751db32a12760e74b75a4
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 17:00 R. Carballés A. Rinderknech
+http://127.0.0.1:6878/ace/getstream?id=799c6b5ee1cf41af077d14e3f9c45a32697eb903
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 17:00 R. Carballés A. Rinderknech
+http://127.0.0.1:6878/ace/getstream?id=2fd410c5d89e7a627cd3785685b7915b8e4bd534
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 17:00 R. Carballés A. Rinderknech
+http://127.0.0.1:6878/ace/getstream?id=753d4b1f7c4ef43238b5cf23b05572b550a44eee
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 17:00 R. Carballés A. Rinderknech
+http://127.0.0.1:6878/ace/getstream?id=81e100e3fee4def126eb37280327cf43ce48c639
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 17:00 A. Shevchenko A. Davidovich
+http://127.0.0.1:6878/ace/getstream?id=ebca4a63ce3bfda7b272964a1acc5227218184a4
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 17:00 A. Shevchenko A. Davidovich
+http://127.0.0.1:6878/ace/getstream?id=2f3cfd199a49819cbd129689a840dc3d23ab93aa
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 17:00 A. Shevchenko A. Davidovich
+http://127.0.0.1:6878/ace/getstream?id=ef9dcc4eaac36a0f608b52a31f8ab237859e071a
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 17:00 A. Shevchenko A. Davidovich
+http://127.0.0.1:6878/ace/getstream?id=332d8fdeb9c51385230b8c9448e047ccc4a6355d
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 17:00 A. Shevchenko A. Davidovich
+http://127.0.0.1:6878/ace/getstream?id=751b9cb03d188ce70e6aac22c1bfb16a5d0b2237
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 17:00 A. Shevchenko A. Davidovich
+http://127.0.0.1:6878/ace/getstream?id=acb510858f34c3c6fd5f79395b031abd6885c2b3
 #EXTINF:-1 tvg-id="" group-title="24/08 La Liga EA Sports", 17:00 Osasuna Valencia CF
 http://127.0.0.1:6878/ace/getstream?id=e2b8a4aba2f4ea3dd68992fcdb65c9e62d910b05
 #EXTINF:-1 tvg-id="" group-title="24/08 La Liga EA Sports", 17:00 Osasuna Valencia CF
@@ -47,26 +171,88 @@ http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
 #EXTINF:-1 tvg-id="" group-title="24/08 LaLiga Hypermotion", 17:00 Deportivo Burgos CF
 http://127.0.0.1:6878/ace/getstream?id=f15f997f457e49ad9697e65cf2d78db26ee875b9
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open WTA | 1ª Ronda", 17:00 N. Parrizas Díaz P. Kudermetova
+http://127.0.0.1:6878/ace/getstream?id=9b84af74b2fa3690c519199326fc2f181b025cdd
 #EXTINF:-1 tvg-id="" group-title="24/08 Premier League", 17:30 Fulham Manchester Utd.
 http://127.0.0.1:6878/ace/getstream?id=ae68a0835039fab28fd2314108fabd4fab33b8ab
 #EXTINF:-1 tvg-id="" group-title="24/08 Premier League", 17:30 Fulham Manchester Utd.
 http://127.0.0.1:6878/ace/getstream?id=b0eabe0fdd02fdd165896236765a9b753a2ff516
 #EXTINF:-1 tvg-id="" group-title="24/08 Premier League", 17:30 Fulham Manchester Utd.
+http://127.0.0.1:6878/ace/getstream?id=2f9211669499f413dab1a490198afab2a9b4b57c
+#EXTINF:-1 tvg-id="" group-title="24/08 Premier League", 17:30 Fulham Manchester Utd.
+http://127.0.0.1:6878/ace/getstream?id=8b081c8afbd9beafc8c5fbf0115eb36eadb07a35
+#EXTINF:-1 tvg-id="" group-title="24/08 Premier League", 17:30 Fulham Manchester Utd.
+http://127.0.0.1:6878/ace/getstream?id=fb2dd566824658eeab27aae19a01c09430f1a97d
+#EXTINF:-1 tvg-id="" group-title="24/08 Premier League", 17:30 Fulham Manchester Utd.
 http://127.0.0.1:6878/ace/getstream?id=9adf7ac6531788ec022dbc14b77e1367f6c5bdc5
 #EXTINF:-1 tvg-id="" group-title="24/08 Premier League", 17:30 Fulham Manchester Utd.
 http://127.0.0.1:6878/ace/getstream?id=d08013df6e437a1fdf1e0c34f573fdf6a40c7fce
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 18:00 B. Shelton I. Buse
+http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 18:00 B. Shelton I. Buse
+http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 18:00 B. Shelton I. Buse
+http://127.0.0.1:6878/ace/getstream?id=edd06f11e1cef292a1d795e15207ef2f580e298c
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 18:00 B. Shelton I. Buse
+http://127.0.0.1:6878/ace/getstream?id=438991226c3bc6a06e7bfda9bea9f769957dc366
+#EXTINF:-1 tvg-id="" group-title="24/08 Segunda Uruguay", 18:00 Albión CA Artigas
+http://127.0.0.1:6878/ace/getstream?id=b2d560741c006fc5e4a42412bb52dbd25a6a4a3a
+#EXTINF:-1 tvg-id="" group-title="24/08 Segunda Uruguay", 18:00 Albión CA Artigas
+http://127.0.0.1:6878/ace/getstream?id=9fb99c40a2c45d5c5342b30626eb56140f980612
+#EXTINF:-1 tvg-id="" group-title="24/08 Segunda Uruguay", 18:00 Albión CA Artigas
+http://127.0.0.1:6878/ace/getstream?id=73094658f0a3ed523c0e188de67a7a690c0d4f93
 #EXTINF:-1 tvg-id="" group-title="24/08 Copa Mundial Femenina | Fase de grupos", 18:30 Nueva Zelanda España
 http://127.0.0.1:6878/ace/getstream?id=c7c81acdd1a03ecc418c94c2f28e2adb0556c40b
 #EXTINF:-1 tvg-id="" group-title="24/08 Copa Mundial Femenina | Fase de grupos", 18:30 Nueva Zelanda España
 http://127.0.0.1:6878/ace/getstream?id=0e5d8c9724fa9163f49096b70484e315251eb785
 #EXTINF:-1 tvg-id="" group-title="24/08 Copa Mundial Femenina | Fase de grupos", 18:30 Nueva Zelanda España
+http://127.0.0.1:6878/ace/getstream?id=3b2a8b41e7097c16b0468b42d7de0320886fa933
+#EXTINF:-1 tvg-id="" group-title="24/08 Copa Mundial Femenina | Fase de grupos", 18:30 Nueva Zelanda España
+http://127.0.0.1:6878/ace/getstream?id=2940120bf034db79a7f5849846ccea0255172eae
+#EXTINF:-1 tvg-id="" group-title="24/08 Copa Mundial Femenina | Fase de grupos", 18:30 Nueva Zelanda España
+http://127.0.0.1:6878/ace/getstream?id=651d6be899d1fafa107a265a9dc00ff914c1b548
+#EXTINF:-1 tvg-id="" group-title="24/08 Copa Mundial Femenina | Fase de grupos", 18:30 Nueva Zelanda España
 http://127.0.0.1:6878/ace/getstream?id=1444a976d2cf6e7fdcee833ed36ee5e55632253f
+#EXTINF:-1 tvg-id="" group-title="24/08 Copa Mundial Femenina | Fase de grupos", 18:30 Nueva Zelanda España
+http://127.0.0.1:6878/ace/getstream?id=138b30c93e8a780ac490a4f6d2181c41f3670230
+#EXTINF:-1 tvg-id="" group-title="24/08 Copa Mundial Femenina | Fase de grupos", 18:30 Nueva Zelanda España
+http://127.0.0.1:6878/ace/getstream?id=bdc32e0f99653f96e0e1a3b98c88764b631ed9ef
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 19:00 E. Nava T. Fritz
+http://127.0.0.1:6878/ace/getstream?id=ebca4a63ce3bfda7b272964a1acc5227218184a4
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 19:00 E. Nava T. Fritz
+http://127.0.0.1:6878/ace/getstream?id=2f3cfd199a49819cbd129689a840dc3d23ab93aa
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 19:00 E. Nava T. Fritz
+http://127.0.0.1:6878/ace/getstream?id=ef9dcc4eaac36a0f608b52a31f8ab237859e071a
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 19:00 E. Nava T. Fritz
+http://127.0.0.1:6878/ace/getstream?id=332d8fdeb9c51385230b8c9448e047ccc4a6355d
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 19:00 E. Nava T. Fritz
+http://127.0.0.1:6878/ace/getstream?id=751b9cb03d188ce70e6aac22c1bfb16a5d0b2237
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 19:00 E. Nava T. Fritz
+http://127.0.0.1:6878/ace/getstream?id=acb510858f34c3c6fd5f79395b031abd6885c2b3
+#EXTINF:-1 tvg-id="" group-title="24/08 LIV Golf", 19:00 Jornada 3
+http://127.0.0.1:6878/ace/getstream?id=8546cff89e4ee8bf3ad31cf6457c3bc2c4341031
+#EXTINF:-1 tvg-id="" group-title="24/08 LIV Golf", 19:00 Jornada 3
+http://127.0.0.1:6878/ace/getstream?id=9be118a64eb603b5eb62be6cf27631d3891b5174
 #EXTINF:-1 tvg-id="" group-title="24/08 LIV Golf", 19:00 Jornada 3
 http://127.0.0.1:6878/ace/getstream?id=76a69812c66bfc4899e89df498220588a56e6064
+#EXTINF:-1 tvg-id="" group-title="24/08 LIV Golf", 19:00 Jornada 3
+http://127.0.0.1:6878/ace/getstream?id=872608e734992db636eb79426802cd08f4029afb
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open WTA | 1ª Ronda", 19:00 J. Teichmann C. McNally
+http://127.0.0.1:6878/ace/getstream?id=799c6b5ee1cf41af077d14e3f9c45a32697eb903
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open WTA | 1ª Ronda", 19:00 J. Teichmann C. McNally
+http://127.0.0.1:6878/ace/getstream?id=2fd410c5d89e7a627cd3785685b7915b8e4bd534
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open WTA | 1ª Ronda", 19:00 J. Teichmann C. McNally
+http://127.0.0.1:6878/ace/getstream?id=753d4b1f7c4ef43238b5cf23b05572b550a44eee
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open WTA | 1ª Ronda", 19:00 J. Teichmann C. McNally
+http://127.0.0.1:6878/ace/getstream?id=81e100e3fee4def126eb37280327cf43ce48c639
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open WTA | 1ª Ronda", 19:00 A. Eala C. Tauson
+http://127.0.0.1:6878/ace/getstream?id=9b84af74b2fa3690c519199326fc2f181b025cdd
 #EXTINF:-1 tvg-id="" group-title="24/08 La Liga EA Sports", 19:30 Villarreal Girona
 http://127.0.0.1:6878/ace/getstream?id=a231b2fa1f7754433efeb8bb8d69d7b9096dcba8
 #EXTINF:-1 tvg-id="" group-title="24/08 La Liga EA Sports", 19:30 Villarreal Girona
 http://127.0.0.1:6878/ace/getstream?id=c976c7b37964322752db562b4ad65515509c8d36
+#EXTINF:-1 tvg-id="" group-title="24/08 La Liga EA Sports", 19:30 Villarreal Girona
+http://127.0.0.1:6878/ace/getstream?id=635b61c1f240449163260cd914d10d886a54fee3
 #EXTINF:-1 tvg-id="" group-title="24/08 La Liga EA Sports", 19:30 Villarreal Girona
 http://127.0.0.1:6878/ace/getstream?id=ae16a8f004b1287ee1f53263ab265f72bba0daf5
 #EXTINF:-1 tvg-id="" group-title="24/08 La Liga EA Sports", 19:30 Real Sociedad Espanyol
@@ -78,6 +264,8 @@ http://127.0.0.1:6878/ace/getstream?id=4b528d10eaad747ddf52251206177573ee3e9f74
 #EXTINF:-1 tvg-id="" group-title="24/08 La Liga EA Sports", 19:30 Real Sociedad Espanyol
 http://127.0.0.1:6878/ace/getstream?id=14b6cd8769cd485f2cffdca64be9698d9bfeac58
 #EXTINF:-1 tvg-id="" group-title="24/08 La Liga EA Sports", 19:30 Real Sociedad Espanyol
+http://127.0.0.1:6878/ace/getstream?id=cc9b7f5fe416069a2110da0909b0f915043c468b
+#EXTINF:-1 tvg-id="" group-title="24/08 La Liga EA Sports", 19:30 Real Sociedad Espanyol
 http://127.0.0.1:6878/ace/getstream?id=00c9bc9c5d7d87680a5a6bed349edfa775a89947
 #EXTINF:-1 tvg-id="" group-title="24/08 La Liga EA Sports", 19:30 Real Sociedad Espanyol
 http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
@@ -85,6 +273,8 @@ http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
 http://127.0.0.1:6878/ace/getstream?id=4b528d10eaad747ddf52251206177573ee3e9f74
 #EXTINF:-1 tvg-id="" group-title="24/08 La Liga EA Sports", 19:30 Real Sociedad Espanyol
 http://127.0.0.1:6878/ace/getstream?id=14b6cd8769cd485f2cffdca64be9698d9bfeac58
+#EXTINF:-1 tvg-id="" group-title="24/08 La Liga EA Sports", 19:30 Real Sociedad Espanyol
+http://127.0.0.1:6878/ace/getstream?id=cc9b7f5fe416069a2110da0909b0f915043c468b
 #EXTINF:-1 tvg-id="" group-title="24/08 LaLiga Hypermotion", 19:30 Cultural Leonesa UD Almería
 http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 tvg-id="" group-title="24/08 LaLiga Hypermotion", 19:30 Cultural Leonesa UD Almería
@@ -92,11 +282,57 @@ http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
 #EXTINF:-1 tvg-id="" group-title="24/08 LaLiga Hypermotion", 19:30 Cultural Leonesa UD Almería
 http://127.0.0.1:6878/ace/getstream?id=f15f997f457e49ad9697e65cf2d78db26ee875b9
 #EXTINF:-1 tvg-id="" group-title="24/08 IndyCar", 20:00 Grand Prix of Milwaukee Carrera
+http://127.0.0.1:6878/ace/getstream?id=fbc39d8a9e5d7c9ac6a1438d440104620f54e09c
+#EXTINF:-1 tvg-id="" group-title="24/08 IndyCar", 20:00 Grand Prix of Milwaukee Carrera
 http://127.0.0.1:6878/ace/getstream?id=b40e1de2dcbd7c665f54877b14c830ed67b32a96
+#EXTINF:-1 tvg-id="" group-title="24/08 IndyCar", 20:00 Grand Prix of Milwaukee Carrera
+http://127.0.0.1:6878/ace/getstream?id=58a4c880ab18486d914751db32a12760e74b75a4
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open WTA | 1ª Ronda", 20:00 A. Sabalenka R. Masarova
+http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open WTA | 1ª Ronda", 20:00 A. Sabalenka R. Masarova
+http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open WTA | 1ª Ronda", 20:00 A. Sabalenka R. Masarova
+http://127.0.0.1:6878/ace/getstream?id=edd06f11e1cef292a1d795e15207ef2f580e298c
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open WTA | 1ª Ronda", 20:00 A. Sabalenka R. Masarova
+http://127.0.0.1:6878/ace/getstream?id=438991226c3bc6a06e7bfda9bea9f769957dc366
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 20:30 J. Kym E. Quinn
+http://127.0.0.1:6878/ace/getstream?id=799c6b5ee1cf41af077d14e3f9c45a32697eb903
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 20:30 J. Kym E. Quinn
+http://127.0.0.1:6878/ace/getstream?id=2fd410c5d89e7a627cd3785685b7915b8e4bd534
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 20:30 J. Kym E. Quinn
+http://127.0.0.1:6878/ace/getstream?id=753d4b1f7c4ef43238b5cf23b05572b550a44eee
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 20:30 J. Kym E. Quinn
+http://127.0.0.1:6878/ace/getstream?id=81e100e3fee4def126eb37280327cf43ce48c639
+#EXTINF:-1 tvg-id="" group-title="24/08 Campeonato Uruguayo", 20:30 CA Cerro Liverpool FC
+http://127.0.0.1:6878/ace/getstream?id=b2d560741c006fc5e4a42412bb52dbd25a6a4a3a
+#EXTINF:-1 tvg-id="" group-title="24/08 Campeonato Uruguayo", 20:30 CA Cerro Liverpool FC
+http://127.0.0.1:6878/ace/getstream?id=9fb99c40a2c45d5c5342b30626eb56140f980612
+#EXTINF:-1 tvg-id="" group-title="24/08 Campeonato Uruguayo", 20:30 CA Cerro Liverpool FC
+http://127.0.0.1:6878/ace/getstream?id=73094658f0a3ed523c0e188de67a7a690c0d4f93
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 21:00 P. Carreño P. Llamas
+http://127.0.0.1:6878/ace/getstream?id=ebca4a63ce3bfda7b272964a1acc5227218184a4
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 21:00 P. Carreño P. Llamas
+http://127.0.0.1:6878/ace/getstream?id=2f3cfd199a49819cbd129689a840dc3d23ab93aa
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 21:00 P. Carreño P. Llamas
+http://127.0.0.1:6878/ace/getstream?id=ef9dcc4eaac36a0f608b52a31f8ab237859e071a
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 21:00 P. Carreño P. Llamas
+http://127.0.0.1:6878/ace/getstream?id=332d8fdeb9c51385230b8c9448e047ccc4a6355d
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 21:00 P. Carreño P. Llamas
+http://127.0.0.1:6878/ace/getstream?id=751b9cb03d188ce70e6aac22c1bfb16a5d0b2237
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open | 1ª Ronda", 21:00 P. Carreño P. Llamas
+http://127.0.0.1:6878/ace/getstream?id=acb510858f34c3c6fd5f79395b031abd6885c2b3
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open WTA | 1ª Ronda", 21:00 E. Navarro Y. Wang
+http://127.0.0.1:6878/ace/getstream?id=9b84af74b2fa3690c519199326fc2f181b025cdd
 #EXTINF:-1 tvg-id="" group-title="24/08 Serie A Brasil", 21:00 Bahía Santos
 http://127.0.0.1:6878/ace/getstream?id=c7c81acdd1a03ecc418c94c2f28e2adb0556c40b
 #EXTINF:-1 tvg-id="" group-title="24/08 Serie A Brasil", 21:00 Bahía Santos
 http://127.0.0.1:6878/ace/getstream?id=0e5d8c9724fa9163f49096b70484e315251eb785
+#EXTINF:-1 tvg-id="" group-title="24/08 Serie A Brasil", 21:00 Bahía Santos
+http://127.0.0.1:6878/ace/getstream?id=3b2a8b41e7097c16b0468b42d7de0320886fa933
+#EXTINF:-1 tvg-id="" group-title="24/08 Serie A Brasil", 21:00 Bahía Santos
+http://127.0.0.1:6878/ace/getstream?id=2940120bf034db79a7f5849846ccea0255172eae
+#EXTINF:-1 tvg-id="" group-title="24/08 Serie A Brasil", 21:00 Bahía Santos
+http://127.0.0.1:6878/ace/getstream?id=651d6be899d1fafa107a265a9dc00ff914c1b548
 #EXTINF:-1 tvg-id="" group-title="24/08 Serie A Brasil", 21:00 Bahía Santos
 http://127.0.0.1:6878/ace/getstream?id=1444a976d2cf6e7fdcee833ed36ee5e55632253f
 #EXTINF:-1 tvg-id="" group-title="24/08 La Liga EA Sports", 21:30 Real Oviedo Real Madrid
@@ -110,6 +346,8 @@ http://127.0.0.1:6878/ace/getstream?id=a231b2fa1f7754433efeb8bb8d69d7b9096dcba8
 #EXTINF:-1 tvg-id="" group-title="24/08 La Liga EA Sports", 21:30 Real Oviedo Real Madrid
 http://127.0.0.1:6878/ace/getstream?id=c976c7b37964322752db562b4ad65515509c8d36
 #EXTINF:-1 tvg-id="" group-title="24/08 La Liga EA Sports", 21:30 Real Oviedo Real Madrid
+http://127.0.0.1:6878/ace/getstream?id=635b61c1f240449163260cd914d10d886a54fee3
+#EXTINF:-1 tvg-id="" group-title="24/08 La Liga EA Sports", 21:30 Real Oviedo Real Madrid
 http://127.0.0.1:6878/ace/getstream?id=ae16a8f004b1287ee1f53263ab265f72bba0daf5
 #EXTINF:-1 tvg-id="" group-title="24/08 LaLiga Hypermotion", 21:30 Málaga Real Sociedad B
 http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
@@ -117,3 +355,17 @@ http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
 #EXTINF:-1 tvg-id="" group-title="24/08 LaLiga Hypermotion", 21:30 Málaga Real Sociedad B
 http://127.0.0.1:6878/ace/getstream?id=f15f997f457e49ad9697e65cf2d78db26ee875b9
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open WTA | 1ª Ronda", 22:30 V. Azarenka N. Inoue
+http://127.0.0.1:6878/ace/getstream?id=799c6b5ee1cf41af077d14e3f9c45a32697eb903
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open WTA | 1ª Ronda", 22:30 V. Azarenka N. Inoue
+http://127.0.0.1:6878/ace/getstream?id=2fd410c5d89e7a627cd3785685b7915b8e4bd534
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open WTA | 1ª Ronda", 22:30 V. Azarenka N. Inoue
+http://127.0.0.1:6878/ace/getstream?id=753d4b1f7c4ef43238b5cf23b05572b550a44eee
+#EXTINF:-1 tvg-id="" group-title="24/08 US Open WTA | 1ª Ronda", 22:30 V. Azarenka N. Inoue
+http://127.0.0.1:6878/ace/getstream?id=81e100e3fee4def126eb37280327cf43ce48c639
+#EXTINF:-1 tvg-id="" group-title="24/08 Campeonato Uruguayo", 23:00 Peñarol River Plate M.
+http://127.0.0.1:6878/ace/getstream?id=b2d560741c006fc5e4a42412bb52dbd25a6a4a3a
+#EXTINF:-1 tvg-id="" group-title="24/08 Campeonato Uruguayo", 23:00 Peñarol River Plate M.
+http://127.0.0.1:6878/ace/getstream?id=9fb99c40a2c45d5c5342b30626eb56140f980612
+#EXTINF:-1 tvg-id="" group-title="24/08 Campeonato Uruguayo", 23:00 Peñarol River Plate M.
+http://127.0.0.1:6878/ace/getstream?id=73094658f0a3ed523c0e188de67a7a690c0d4f93
