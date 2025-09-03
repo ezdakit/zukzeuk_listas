@@ -1,81 +1,57 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"
 #EXTVLCOPT:network-caching=2000
 
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open WTA | 1/4 de Final", 01:00 A. Sabalenka M. Vondrousova
+#EXTINF:-1 tvg-id="" group-title="04/09 US Open WTA | 1/4 de Final", 01:00 K. Muchova N. Osaka
 http://127.0.0.1:6878/ace/getstream?id=9b84af74b2fa3690c519199326fc2f181b025cdd
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open WTA | 1/4 de Final", 01:00 A. Sabalenka M. Vondrousova
+#EXTINF:-1 tvg-id="" group-title="04/09 US Open WTA | 1/4 de Final", 01:00 K. Muchova N. Osaka
 http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open WTA | 1/4 de Final", 01:00 A. Sabalenka M. Vondrousova
+#EXTINF:-1 tvg-id="" group-title="04/09 US Open WTA | 1/4 de Final", 01:00 K. Muchova N. Osaka
 http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open WTA | 1/4 de Final", 01:00 A. Sabalenka M. Vondrousova
+#EXTINF:-1 tvg-id="" group-title="04/09 US Open WTA | 1/4 de Final", 01:00 K. Muchova N. Osaka
 http://127.0.0.1:6878/ace/getstream?id=edd06f11e1cef292a1d795e15207ef2f580e298c
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open WTA | 1/4 de Final", 01:00 A. Sabalenka M. Vondrousova
+#EXTINF:-1 tvg-id="" group-title="04/09 US Open WTA | 1/4 de Final", 01:00 K. Muchova N. Osaka
 http://127.0.0.1:6878/ace/getstream?id=6e212a916c83638268047dd2757c95b14f7d25a3
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open WTA | 1/4 de Final", 01:00 A. Sabalenka M. Vondrousova
+#EXTINF:-1 tvg-id="" group-title="04/09 US Open WTA | 1/4 de Final", 01:00 K. Muchova N. Osaka
 http://127.0.0.1:6878/ace/getstream?id=438991226c3bc6a06e7bfda9bea9f769957dc366
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open | 1/4 de Final", 02:10 N. Djokovic T. Fritz
+#EXTINF:-1 tvg-id="" group-title="04/09 US Open | 1/4 de Final", 02:30 J. Sinner L. Musetti
 http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open | 1/4 de Final", 02:10 N. Djokovic T. Fritz
+#EXTINF:-1 tvg-id="" group-title="04/09 US Open | 1/4 de Final", 02:30 J. Sinner L. Musetti
 http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open | 1/4 de Final", 02:10 N. Djokovic T. Fritz
+#EXTINF:-1 tvg-id="" group-title="04/09 US Open | 1/4 de Final", 02:30 J. Sinner L. Musetti
 http://127.0.0.1:6878/ace/getstream?id=edd06f11e1cef292a1d795e15207ef2f580e298c
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open | 1/4 de Final", 02:10 N. Djokovic T. Fritz
+#EXTINF:-1 tvg-id="" group-title="04/09 US Open | 1/4 de Final", 02:30 J. Sinner L. Musetti
 http://127.0.0.1:6878/ace/getstream?id=6e212a916c83638268047dd2757c95b14f7d25a3
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open | 1/4 de Final", 02:10 N. Djokovic T. Fritz
+#EXTINF:-1 tvg-id="" group-title="04/09 US Open | 1/4 de Final", 02:30 J. Sinner L. Musetti
 http://127.0.0.1:6878/ace/getstream?id=438991226c3bc6a06e7bfda9bea9f769957dc366
-#EXTINF:-1 tvg-id="" group-title="03/09 Vuelta a España", 13:15 Etapa 11 Bilbao › Bilbao (167 km)
+#EXTINF:-1 tvg-id="" group-title="04/09 Irish Open", 09:00 Jornada 1
+http://127.0.0.1:6878/ace/getstream?id=9be118a64eb603b5eb62be6cf27631d3891b5174
+#EXTINF:-1 tvg-id="" group-title="04/09 Irish Open", 09:00 Jornada 1
+http://127.0.0.1:6878/ace/getstream?id=76a69812c66bfc4899e89df498220588a56e6064
+#EXTINF:-1 tvg-id="" group-title="04/09 Irish Open", 09:00 Jornada 1
+http://127.0.0.1:6878/ace/getstream?id=872608e734992db636eb79426802cd08f4029afb
+#EXTINF:-1 tvg-id="" group-title="04/09 Vuelta a España", 14:45 Etapa 12 Laredo › Los Corrales de Buelna (143 km)
 http://127.0.0.1:6878/ace/getstream?id=138b30c93e8a780ac490a4f6d2181c41f3670230
-#EXTINF:-1 tvg-id="" group-title="03/09 Vuelta a España", 13:15 Etapa 11 Bilbao › Bilbao (167 km)
+#EXTINF:-1 tvg-id="" group-title="04/09 Vuelta a España", 14:45 Etapa 12 Laredo › Los Corrales de Buelna (143 km)
 http://127.0.0.1:6878/ace/getstream?id=bdc32e0f99653f96e0e1a3b98c88764b631ed9ef
-#EXTINF:-1 tvg-id="" group-title="03/09 Vuelta a España", 13:15 Etapa 11 Bilbao › Bilbao (167 km)
+#EXTINF:-1 tvg-id="" group-title="04/09 Vuelta a España", 14:45 Etapa 12 Laredo › Los Corrales de Buelna (143 km)
 http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
-#EXTINF:-1 tvg-id="" group-title="03/09 Vuelta a España", 13:15 Etapa 11 Bilbao › Bilbao (167 km)
+#EXTINF:-1 tvg-id="" group-title="04/09 Vuelta a España", 14:45 Etapa 12 Laredo › Los Corrales de Buelna (143 km)
 http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
-#EXTINF:-1 tvg-id="" group-title="03/09 Vuelta a España", 13:15 Etapa 11 Bilbao › Bilbao (167 km)
+#EXTINF:-1 tvg-id="" group-title="04/09 Vuelta a España", 14:45 Etapa 12 Laredo › Los Corrales de Buelna (143 km)
 http://127.0.0.1:6878/ace/getstream?id=704e51760a644bc90aa22269bf84139947a0414a
-#EXTINF:-1 tvg-id="" group-title="03/09 Vuelta a España", 13:15 Etapa 11 Bilbao › Bilbao (167 km)
-http://127.0.0.1:6878/ace/getstream?id=cfa75ade53810dac64411b22d56c3d4582a221d3
-#EXTINF:-1 tvg-id="" group-title="03/09 Vuelta a España", 13:15 Etapa 11 Bilbao › Bilbao (167 km)
+#EXTINF:-1 tvg-id="" group-title="04/09 Vuelta a España", 14:45 Etapa 12 Laredo › Los Corrales de Buelna (143 km)
 http://127.0.0.1:6878/ace/getstream?id=1b0bc4d4dcd609d3c092712e721392b199f50a62
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open | 1/4 de Final", 17:30 F. Auger-Aliassime A. De Miñaur
-http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open | 1/4 de Final", 17:30 F. Auger-Aliassime A. De Miñaur
-http://127.0.0.1:6878/ace/getstream?id=fbc39d8a9e5d7c9ac6a1438d440104620f54e09c
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open | 1/4 de Final", 17:30 F. Auger-Aliassime A. De Miñaur
-http://127.0.0.1:6878/ace/getstream?id=8c67cdb5ba81976662c3a67984a9545d9cfb0f70
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open | 1/4 de Final", 17:30 F. Auger-Aliassime A. De Miñaur
-http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open | 1/4 de Final", 17:30 F. Auger-Aliassime A. De Miñaur
-http://127.0.0.1:6878/ace/getstream?id=5d9a26e0a5f3e5f2ae027bd05635ab9a4fd4b51a
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open | 1/4 de Final", 17:30 F. Auger-Aliassime A. De Miñaur
-http://127.0.0.1:6878/ace/getstream?id=5e24a1b9187fccb91553f7c7da4b36341386f74a
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open | 1/4 de Final", 17:30 F. Auger-Aliassime A. De Miñaur
-http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open | 1/4 de Final", 17:30 F. Auger-Aliassime A. De Miñaur
-http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open | 1/4 de Final", 17:30 F. Auger-Aliassime A. De Miñaur
-http://127.0.0.1:6878/ace/getstream?id=edd06f11e1cef292a1d795e15207ef2f580e298c
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open | 1/4 de Final", 17:30 F. Auger-Aliassime A. De Miñaur
-http://127.0.0.1:6878/ace/getstream?id=6e212a916c83638268047dd2757c95b14f7d25a3
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open | 1/4 de Final", 17:30 F. Auger-Aliassime A. De Miñaur
-http://127.0.0.1:6878/ace/getstream?id=438991226c3bc6a06e7bfda9bea9f769957dc366
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open WTA | 1/4 de Final", 19:30 A. Anisimova I. Swiatek
-http://127.0.0.1:6878/ace/getstream?id=9b84af74b2fa3690c519199326fc2f181b025cdd
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open WTA | 1/4 de Final", 19:30 A. Anisimova I. Swiatek
-http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open WTA | 1/4 de Final", 19:30 A. Anisimova I. Swiatek
-http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open WTA | 1/4 de Final", 19:30 A. Anisimova I. Swiatek
-http://127.0.0.1:6878/ace/getstream?id=edd06f11e1cef292a1d795e15207ef2f580e298c
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open WTA | 1/4 de Final", 19:30 A. Anisimova I. Swiatek
-http://127.0.0.1:6878/ace/getstream?id=6e212a916c83638268047dd2757c95b14f7d25a3
-#EXTINF:-1 tvg-id="" group-title="03/09 US Open WTA | 1/4 de Final", 19:30 A. Anisimova I. Swiatek
-http://127.0.0.1:6878/ace/getstream?id=438991226c3bc6a06e7bfda9bea9f769957dc366
-#EXTINF:-1 tvg-id="" group-title="03/09 Eurobasket | Fase de grupos", 20:15 Turquía Serbia
+#EXTINF:-1 tvg-id="" group-title="04/09 Torneo de Sevilla", 19:00 1/4 de Final ATP Challenger Tour
+http://127.0.0.1:6878/ace/getstream?id=71698ee415b6ba3f123aac1c8c37cc97376f20d0
+#EXTINF:-1 tvg-id="" group-title="04/09 Torneo de Sevilla", 19:00 1/4 de Final ATP Challenger Tour
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
+#EXTINF:-1 tvg-id="" group-title="04/09 Mundial Clubes Juvenil | Fase de grupos", 20:00 FC Barcelona Academy River Plate Academy
+http://127.0.0.1:6878/ace/getstream?id=181fcc443b953d54b00a1bf6320ccbb097e85d64
+#EXTINF:-1 tvg-id="" group-title="04/09 Mundial Clubes Juvenil | Fase de grupos", 20:00 FC Barcelona Academy River Plate Academy
+http://127.0.0.1:6878/ace/getstream?id=ca20f93ea5d9c15744e48a21b52598b9fce87425
+#EXTINF:-1 tvg-id="" group-title="04/09 Eurobasket | Fase de grupos", 20:30 España Grecia
 http://127.0.0.1:6878/ace/getstream?id=138b30c93e8a780ac490a4f6d2181c41f3670230
-#EXTINF:-1 tvg-id="" group-title="03/09 Eurobasket | Fase de grupos", 20:15 Turquía Serbia
+#EXTINF:-1 tvg-id="" group-title="04/09 Eurobasket | Fase de grupos", 20:30 España Grecia
 http://127.0.0.1:6878/ace/getstream?id=bdc32e0f99653f96e0e1a3b98c88764b631ed9ef
-#EXTINF:-1 tvg-id="" group-title="03/09 Mundial Clubes Juvenil | Fase de grupos", 22:15 Real Madrid Academy Real Betis Academy
-http://127.0.0.1:6878/ace/getstream?id=138b30c93e8a780ac490a4f6d2181c41f3670230
-#EXTINF:-1 tvg-id="" group-title="03/09 Mundial Clubes Juvenil | Fase de grupos", 22:15 Real Madrid Academy Real Betis Academy
-http://127.0.0.1:6878/ace/getstream?id=bdc32e0f99653f96e0e1a3b98c88764b631ed9ef
+#EXTINF:-1 tvg-id="" group-title="04/09 FIFA Copa Mundial 2026 | Eliminatorias Europeas", 20:45 Bulgaria España
+http://127.0.0.1:6878/ace/getstream?id=7597d4feb3195079ffa606cf23a183d626ee40ba
