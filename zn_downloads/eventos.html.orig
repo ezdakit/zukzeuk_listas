@@ -134,7 +134,7 @@
     <h1>by TokyoGhoull</h1>
     <div id="loading" class="loading" style="display: none;">Cargando datos...</div>
     
-    <h2 id="tituloEventos" style="display: block;">Eventos de hoy (viernes, 5 de septiembre de 2025)</h2>
+    <h2 id="tituloEventos" style="display: block;">Eventos de hoy (sábado, 6 de septiembre de 2025)</h2>
     <table id="tablaEventos" class="tabla-Eventos" style="display: table;">
         <thead>
             <tr>
@@ -147,6 +147,29 @@
         </thead>
         <tbody><tr>
                         <td>01:00</td>
+                        <td>
+                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
+                                        Campeonato Uruguayo
+                                    </td>
+                        <td>
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20140502100938-defensor-sporting.webp" width="32" height="32" alt="Defensor Sporting">
+                                            Defensor Sporting
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20141121093950-ca-juventud.webp" width="32" height="32" alt="CA Juventud">
+                                            CA Juventud
+                                        </td>
+                        <td></td>
+                        <td>
+                                        <a href="acestream://b2d560741c006fc5e4a42412bb52dbd25a6a4a3a" target="_blank">GOL PLAY FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('b2d560741c006fc5e4a42412bb52dbd25a6a4a3a', 'GOL PLAY FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://9fb99c40a2c45d5c5342b30626eb56140f980612" target="_blank">GOL PLAY FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('9fb99c40a2c45d5c5342b30626eb56140f980612', 'GOL PLAY FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://73094658f0a3ed523c0e188de67a7a690c0d4f93" target="_blank">GOL PLAY FHD --&gt; NEW ERA</a>
+                                        <button onclick="playAceStream('73094658f0a3ed523c0e188de67a7a690c0d4f93', 'GOL PLAY FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    </td>
+                    </tr><tr>
+                        <td>01:35</td>
                         <td>
                                         <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113307-tenis.webp" width="22" height="22" alt="Competición">
                                         US Open | Semifinales
@@ -173,29 +196,6 @@
                                     <br>
                                         <a href="acestream://73d38feaa770d788848ec098470e32670fe55a61" target="_blank">MOVISTAR DEPORTES 2 FHD --&gt; NEW ERA VI</a>
                                         <button onclick="playAceStream('73d38feaa770d788848ec098470e32670fe55a61', 'MOVISTAR DEPORTES 2 FHD --&gt; NEW ERA VI')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    </td>
-                    </tr><tr>
-                        <td>01:00</td>
-                        <td>
-                                        <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113222-futbol.webp" width="22" height="22" alt="Competición">
-                                        Campeonato Uruguayo
-                                    </td>
-                        <td>
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20140502100938-defensor-sporting.webp" width="32" height="32" alt="Defensor Sporting">
-                                            Defensor Sporting
-                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20141121093950-ca-juventud.webp" width="32" height="32" alt="CA Juventud">
-                                            CA Juventud
-                                        </td>
-                        <td></td>
-                        <td>
-                                        <a href="acestream://b2d560741c006fc5e4a42412bb52dbd25a6a4a3a" target="_blank">GOL PLAY FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('b2d560741c006fc5e4a42412bb52dbd25a6a4a3a', 'GOL PLAY FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://9fb99c40a2c45d5c5342b30626eb56140f980612" target="_blank">GOL PLAY FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('9fb99c40a2c45d5c5342b30626eb56140f980612', 'GOL PLAY FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://73094658f0a3ed523c0e188de67a7a690c0d4f93" target="_blank">GOL PLAY FHD --&gt; NEW ERA</a>
-                                        <button onclick="playAceStream('73094658f0a3ed523c0e188de67a7a690c0d4f93', 'GOL PLAY FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     </td>
                     </tr><tr>
                         <td>06:30</td>
@@ -231,6 +231,9 @@
                                     <br>
                                         <a href="acestream://3692ea4cdda97eb0062ed5d656ebd61f149ebd0b" target="_blank">MOVISTAR DEPORTES FHD --&gt; NEW ERA VI</a>
                                         <button onclick="playAceStream('3692ea4cdda97eb0062ed5d656ebd61f149ebd0b', 'MOVISTAR DEPORTES FHD --&gt; NEW ERA VI')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://acb510858f34c3c6fd5f79395b031abd6885c2b3" target="_blank">MOVISTAR DEPORTES HD --&gt; NEW LOOP</a>
+                                        <button onclick="playAceStream('acb510858f34c3c6fd5f79395b031abd6885c2b3', 'MOVISTAR DEPORTES HD --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     </td>
                     </tr><tr>
                         <td>09:05</td>
@@ -317,9 +320,6 @@
                                     <br>
                                         <a href="acestream://7ba1f321f4d0791b7ebd42f41a07c1cd1479e784" target="_blank">Dazn 1</a>
                                         <button onclick="playAceStream('7ba1f321f4d0791b7ebd42f41a07c1cd1479e784', 'Dazn 1')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151" target="_blank">DAZN 1 --&gt; NEW LOOP</a>
-                                        <button onclick="playAceStream('d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151', 'DAZN 1 --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     <br>
                                         <a href="acestream://688e785893b50acc1d00cb37f15bfc42e72f5ae3" target="_blank">DAZN 1 BAR FHD --&gt; NEW ERA</a>
                                         <button onclick="playAceStream('688e785893b50acc1d00cb37f15bfc42e72f5ae3', 'DAZN 1 BAR FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
@@ -431,6 +431,9 @@
                                     <br>
                                         <a href="acestream://3692ea4cdda97eb0062ed5d656ebd61f149ebd0b" target="_blank">MOVISTAR DEPORTES FHD --&gt; NEW ERA VI</a>
                                         <button onclick="playAceStream('3692ea4cdda97eb0062ed5d656ebd61f149ebd0b', 'MOVISTAR DEPORTES FHD --&gt; NEW ERA VI')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
+                                        <a href="acestream://acb510858f34c3c6fd5f79395b031abd6885c2b3" target="_blank">MOVISTAR DEPORTES HD --&gt; NEW LOOP</a>
+                                        <button onclick="playAceStream('acb510858f34c3c6fd5f79395b031abd6885c2b3', 'MOVISTAR DEPORTES HD --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     </td>
                     </tr><tr>
                         <td>12:00</td>
@@ -561,9 +564,6 @@
                                         <a href="acestream://7ba1f321f4d0791b7ebd42f41a07c1cd1479e784" target="_blank">Dazn 1</a>
                                         <button onclick="playAceStream('7ba1f321f4d0791b7ebd42f41a07c1cd1479e784', 'Dazn 1')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     <br>
-                                        <a href="acestream://d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151" target="_blank">DAZN 1 --&gt; NEW LOOP</a>
-                                        <button onclick="playAceStream('d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151', 'DAZN 1 --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
                                         <a href="acestream://688e785893b50acc1d00cb37f15bfc42e72f5ae3" target="_blank">DAZN 1 BAR FHD --&gt; NEW ERA</a>
                                         <button onclick="playAceStream('688e785893b50acc1d00cb37f15bfc42e72f5ae3', 'DAZN 1 BAR FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     <br>
@@ -667,9 +667,6 @@
                                     <br>
                                         <a href="acestream://7ba1f321f4d0791b7ebd42f41a07c1cd1479e784" target="_blank">Dazn 1</a>
                                         <button onclick="playAceStream('7ba1f321f4d0791b7ebd42f41a07c1cd1479e784', 'Dazn 1')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
-                                    <br>
-                                        <a href="acestream://d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151" target="_blank">DAZN 1 --&gt; NEW LOOP</a>
-                                        <button onclick="playAceStream('d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151', 'DAZN 1 --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     <br>
                                         <a href="acestream://688e785893b50acc1d00cb37f15bfc42e72f5ae3" target="_blank">DAZN 1 BAR FHD --&gt; NEW ERA</a>
                                         <button onclick="playAceStream('688e785893b50acc1d00cb37f15bfc42e72f5ae3', 'DAZN 1 BAR FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
@@ -1160,11 +1157,19 @@
                         <td>20:00</td>
                         <td>
                                         <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130618113307-tenis.webp" width="22" height="22" alt="Competición">
-                                        Torneo de Sevilla
+                                        Torneo de Sevilla | Final
                                     </td>
-                        <td>Final <br>ATP Challenger Tour </td>
+                        <td>
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20130727123852-Argentina.webp" width="32" height="32" alt="GA. Olivieri">
+                                            GA. Olivieri
+                                            <img src="https://api.codetabs.com/v1/proxy/?quest=https://static.futbolenlatv.com/img/32/20150731103345-Peru.webp" width="32" height="32" alt="I. Buse">
+                                            I. Buse
+                                        </td>
                         <td></td>
                         <td>
+                                        <a href="acestream://8091334c82e8720fc6aa05ff0bd6d343c5bfecbf" target="_blank">TENNIS CHANNEL --&gt; NEW LOOP</a>
+                                        <button onclick="playAceStream('8091334c82e8720fc6aa05ff0bd6d343c5bfecbf', 'TENNIS CHANNEL --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
+                                    <br>
                                         <a href="acestream://71698ee415b6ba3f123aac1c8c37cc97376f20d0" target="_blank">TENNIS CHANNEL FHD --&gt; NEW ERA</a>
                                         <button onclick="playAceStream('71698ee415b6ba3f123aac1c8c37cc97376f20d0', 'TENNIS CHANNEL FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px; margin-left:5px;"> ▶️ </button>
                                     <br>
@@ -2073,18 +2078,6 @@
                         </button>
                     </td>
                 </tr><tr class="origen-2">
-                    <td>AUTOMOTORSPORT HD --&gt; NEW LOOP</td>
-                    <td>610993aea3a2bfd509594334b7461ce96900f54c</td>
-                    <td>
-                        <a href="acestream://610993aea3a2bfd509594334b7461ce96900f54c" target="_blank">
-                            AUTOMOTORSPORT HD --&gt; NEW LOOP
-                        </a>
-                        <br><br>
-                        <button onclick="playAceStream('610993aea3a2bfd509594334b7461ce96900f54c', 'AUTOMOTORSPORT HD --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
-                            ▶️ 
-                        </button>
-                    </td>
-                </tr><tr class="origen-2">
                     <td>BEIN SPORTS 1 --&gt; NEW LOOP</td>
                     <td>bba1905fcd1c4975aec544047bf8e4cd23ce3fe0</td>
                     <td>
@@ -2261,18 +2254,6 @@
                         </a>
                         <br><br>
                         <button onclick="playAceStream('8d66979e705a8b532b9243bbc0862c0f1c734ef0', 'CUATRO FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
-                            ▶️ 
-                        </button>
-                    </td>
-                </tr><tr class="origen-2">
-                    <td>DAZN 1 --&gt; NEW LOOP</td>
-                    <td>d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151</td>
-                    <td>
-                        <a href="acestream://d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151" target="_blank">
-                            DAZN 1 (M70)
-                        </a>
-                        <br><br>
-                        <button onclick="playAceStream('d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151', 'DAZN 1 --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
                             ▶️ 
                         </button>
                     </td>
@@ -3489,6 +3470,18 @@
                         </button>
                     </td>
                 </tr><tr class="origen-2">
+                    <td>MOVISTAR DEPORTES HD --&gt; NEW LOOP</td>
+                    <td>acb510858f34c3c6fd5f79395b031abd6885c2b3</td>
+                    <td>
+                        <a href="acestream://acb510858f34c3c6fd5f79395b031abd6885c2b3" target="_blank">
+                            M+ Deportes (63)
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('acb510858f34c3c6fd5f79395b031abd6885c2b3', 'MOVISTAR DEPORTES HD --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
                     <td>MOVISTAR DOCUMENTALES FHD --&gt; NEW ERA VI</td>
                     <td>b3fc9b5647c5933b101c0b6b64322590c68587b9</td>
                     <td>
@@ -3849,6 +3842,18 @@
                         </button>
                     </td>
                 </tr><tr class="origen-2">
+                    <td>RETROVISION MOTOR --&gt; NEW LOOP</td>
+                    <td>b8b8c4470d3d27c75302cf49ab6c4b52a660bff3</td>
+                    <td>
+                        <a href="acestream://b8b8c4470d3d27c75302cf49ab6c4b52a660bff3" target="_blank">
+                            RETROVISION MOTOR --&gt; NEW LOOP
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('b8b8c4470d3d27c75302cf49ab6c4b52a660bff3', 'RETROVISION MOTOR --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
                     <td>S SPORT 1 FHD --&gt; NEW ERA</td>
                     <td>6ad87abc93cc3c8508be327e313afcd3aa37ec0b</td>
                     <td>
@@ -3965,6 +3970,18 @@
                         </a>
                         <br><br>
                         <button onclick="playAceStream('19cab799c86251ae8ae5f4b4faace9b78d784abc', 'Ten TV FHD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
+                    <td>TENNIS CHANNEL --&gt; NEW LOOP</td>
+                    <td>8091334c82e8720fc6aa05ff0bd6d343c5bfecbf</td>
+                    <td>
+                        <a href="acestream://8091334c82e8720fc6aa05ff0bd6d343c5bfecbf" target="_blank">
+                            Tennis Channel
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('8091334c82e8720fc6aa05ff0bd6d343c5bfecbf', 'TENNIS CHANNEL --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
                             ▶️ 
                         </button>
                     </td>
@@ -4138,18 +4155,6 @@
                         </a>
                         <br><br>
                         <button onclick="playAceStream('ba4597903f099695e7d6bcc5938f91cb0798006b', 'ARAGON TV HD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
-                            ▶️ 
-                        </button>
-                    </td>
-                </tr><tr class="origen-2">
-                    <td>AUTOMOTORSPORT HD --&gt; NEW LOOP</td>
-                    <td>610993aea3a2bfd509594334b7461ce96900f54c</td>
-                    <td>
-                        <a href="acestream://610993aea3a2bfd509594334b7461ce96900f54c" target="_blank">
-                            AUTOMOTORSPORT HD --&gt; NEW LOOP
-                        </a>
-                        <br><br>
-                        <button onclick="playAceStream('610993aea3a2bfd509594334b7461ce96900f54c', 'AUTOMOTORSPORT HD --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
                             ▶️ 
                         </button>
                     </td>
@@ -4846,6 +4851,18 @@
                         </a>
                         <br><br>
                         <button onclick="playAceStream('7a955964c91c66311eef9137a96332352dbb891e', 'REAL MADRID TV HD --&gt; NEW ERA')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
+                            ▶️ 
+                        </button>
+                    </td>
+                </tr><tr class="origen-2">
+                    <td>RETROVISION MOTOR --&gt; NEW LOOP</td>
+                    <td>b8b8c4470d3d27c75302cf49ab6c4b52a660bff3</td>
+                    <td>
+                        <a href="acestream://b8b8c4470d3d27c75302cf49ab6c4b52a660bff3" target="_blank">
+                            RETROVISION MOTOR --&gt; NEW LOOP
+                        </a>
+                        <br><br>
+                        <button onclick="playAceStream('b8b8c4470d3d27c75302cf49ab6c4b52a660bff3', 'RETROVISION MOTOR --&gt; NEW LOOP')" style="background:#2c3e50; color:black; border:none; padding:5px 10px; cursor:pointer; font-size:14px;">
                             ▶️ 
                         </button>
                     </td>
