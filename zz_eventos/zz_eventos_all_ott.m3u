@@ -1,22 +1,22 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"
 #EXTVLCOPT:network-caching=2000
 
-#EXTINF:-1 tvg-id="" group-title="06/09 US Open | Semifinales", 01:00 J. Sinner F. Auger-Aliassime
-http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
-#EXTINF:-1 tvg-id="" group-title="06/09 US Open | Semifinales", 01:00 J. Sinner F. Auger-Aliassime
-http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
-#EXTINF:-1 tvg-id="" group-title="06/09 US Open | Semifinales", 01:00 J. Sinner F. Auger-Aliassime
-http://127.0.0.1:6878/ace/getstream?id=edd06f11e1cef292a1d795e15207ef2f580e298c
-#EXTINF:-1 tvg-id="" group-title="06/09 US Open | Semifinales", 01:00 J. Sinner F. Auger-Aliassime
-http://127.0.0.1:6878/ace/getstream?id=6e212a916c83638268047dd2757c95b14f7d25a3
-#EXTINF:-1 tvg-id="" group-title="06/09 US Open | Semifinales", 01:00 J. Sinner F. Auger-Aliassime
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 tvg-id="" group-title="06/09 Campeonato Uruguayo", 01:00 Defensor Sporting CA Juventud
 http://127.0.0.1:6878/ace/getstream?id=b2d560741c006fc5e4a42412bb52dbd25a6a4a3a
 #EXTINF:-1 tvg-id="" group-title="06/09 Campeonato Uruguayo", 01:00 Defensor Sporting CA Juventud
 http://127.0.0.1:6878/ace/getstream?id=9fb99c40a2c45d5c5342b30626eb56140f980612
 #EXTINF:-1 tvg-id="" group-title="06/09 Campeonato Uruguayo", 01:00 Defensor Sporting CA Juventud
 http://127.0.0.1:6878/ace/getstream?id=73094658f0a3ed523c0e188de67a7a690c0d4f93
+#EXTINF:-1 tvg-id="" group-title="06/09 US Open | Semifinales", 01:35 J. Sinner F. Auger-Aliassime
+http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
+#EXTINF:-1 tvg-id="" group-title="06/09 US Open | Semifinales", 01:35 J. Sinner F. Auger-Aliassime
+http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
+#EXTINF:-1 tvg-id="" group-title="06/09 US Open | Semifinales", 01:35 J. Sinner F. Auger-Aliassime
+http://127.0.0.1:6878/ace/getstream?id=edd06f11e1cef292a1d795e15207ef2f580e298c
+#EXTINF:-1 tvg-id="" group-title="06/09 US Open | Semifinales", 01:35 J. Sinner F. Auger-Aliassime
+http://127.0.0.1:6878/ace/getstream?id=6e212a916c83638268047dd2757c95b14f7d25a3
+#EXTINF:-1 tvg-id="" group-title="06/09 US Open | Semifinales", 01:35 J. Sinner F. Auger-Aliassime
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 tvg-id="" group-title="06/09 The Rugby Championship", 06:30 Australia Argentina
 http://127.0.0.1:6878/ace/getstream?id=ebca4a63ce3bfda7b272964a1acc5227218184a4
 #EXTINF:-1 tvg-id="" group-title="06/09 The Rugby Championship", 06:30 Australia Argentina
@@ -31,6 +31,8 @@ http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 tvg-id="" group-title="06/09 The Rugby Championship", 06:30 Australia Argentina
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 tvg-id="" group-title="06/09 The Rugby Championship", 06:30 Australia Argentina
+http://127.0.0.1:6878/ace/getstream?id=acb510858f34c3c6fd5f79395b031abd6885c2b3
 #EXTINF:-1 tvg-id="" group-title="06/09 The Rugby Championship", 09:05 Nueva Zelanda Sudáfrica
 http://127.0.0.1:6878/ace/getstream?id=c7c81acdd1a03ecc418c94c2f28e2adb0556c40b
 #EXTINF:-1 tvg-id="" group-title="06/09 The Rugby Championship", 09:05 Nueva Zelanda Sudáfrica
@@ -67,8 +69,6 @@ http://127.0.0.1:6878/ace/getstream?id=3f5b7e2f883fe4b4b973e198d147a513d5c7c32a
 http://127.0.0.1:6878/ace/getstream?id=eb6ffec065b26259ad3d1811e0bbb0a5332ed276
 #EXTINF:-1 tvg-id="" group-title="06/09 MotoGP", 10:50 G.P. Cataluña (Circuito de Barcelona) Clasificación
 http://127.0.0.1:6878/ace/getstream?id=7ba1f321f4d0791b7ebd42f41a07c1cd1479e784
-#EXTINF:-1 tvg-id="" group-title="06/09 MotoGP", 10:50 G.P. Cataluña (Circuito de Barcelona) Clasificación
-http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
 #EXTINF:-1 tvg-id="" group-title="06/09 MotoGP", 10:50 G.P. Cataluña (Circuito de Barcelona) Clasificación
 http://127.0.0.1:6878/ace/getstream?id=688e785893b50acc1d00cb37f15bfc42e72f5ae3
 #EXTINF:-1 tvg-id="" group-title="06/09 MotoGP", 10:50 G.P. Cataluña (Circuito de Barcelona) Clasificación
@@ -119,6 +119,8 @@ http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 tvg-id="" group-title="06/09 Madrid Open", 12:00 Semifinal Femenina Premier Padel Tour
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 tvg-id="" group-title="06/09 Madrid Open", 12:00 Semifinal Femenina Premier Padel Tour
+http://127.0.0.1:6878/ace/getstream?id=acb510858f34c3c6fd5f79395b031abd6885c2b3
 #EXTINF:-1 tvg-id="" group-title="06/09 Primera Federación | Grupo 2", 12:00 Eldense Villarreal B
 http://127.0.0.1:6878/ace/getstream?id=a2ed6f2ca3f804481131c41ce64d4286a5820476
 #EXTINF:-1 tvg-id="" group-title="06/09 Primera Federación | Grupo 2", 12:00 Eldense Villarreal B
@@ -166,8 +168,6 @@ http://127.0.0.1:6878/ace/getstream?id=eb6ffec065b26259ad3d1811e0bbb0a5332ed276
 #EXTINF:-1 tvg-id="" group-title="06/09 Moto3", 12:50 G.P. Cataluña (Circuito de Barcelona) Clasificación
 http://127.0.0.1:6878/ace/getstream?id=7ba1f321f4d0791b7ebd42f41a07c1cd1479e784
 #EXTINF:-1 tvg-id="" group-title="06/09 Moto3", 12:50 G.P. Cataluña (Circuito de Barcelona) Clasificación
-http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
-#EXTINF:-1 tvg-id="" group-title="06/09 Moto3", 12:50 G.P. Cataluña (Circuito de Barcelona) Clasificación
 http://127.0.0.1:6878/ace/getstream?id=688e785893b50acc1d00cb37f15bfc42e72f5ae3
 #EXTINF:-1 tvg-id="" group-title="06/09 Moto3", 12:50 G.P. Cataluña (Circuito de Barcelona) Clasificación
 http://127.0.0.1:6878/ace/getstream?id=6538b79ce0da657d8455d1da6a5f342398899a0e
@@ -209,8 +209,6 @@ http://127.0.0.1:6878/ace/getstream?id=872608e734992db636eb79426802cd08f4029afb
 http://127.0.0.1:6878/ace/getstream?id=eb6ffec065b26259ad3d1811e0bbb0a5332ed276
 #EXTINF:-1 tvg-id="" group-title="06/09 Moto2", 13:45 G.P. Cataluña (Circuito de Barcelona) Clasificación
 http://127.0.0.1:6878/ace/getstream?id=7ba1f321f4d0791b7ebd42f41a07c1cd1479e784
-#EXTINF:-1 tvg-id="" group-title="06/09 Moto2", 13:45 G.P. Cataluña (Circuito de Barcelona) Clasificación
-http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
 #EXTINF:-1 tvg-id="" group-title="06/09 Moto2", 13:45 G.P. Cataluña (Circuito de Barcelona) Clasificación
 http://127.0.0.1:6878/ace/getstream?id=688e785893b50acc1d00cb37f15bfc42e72f5ae3
 #EXTINF:-1 tvg-id="" group-title="06/09 Moto2", 13:45 G.P. Cataluña (Circuito de Barcelona) Clasificación
@@ -373,17 +371,19 @@ http://127.0.0.1:6878/ace/getstream?id=9be118a64eb603b5eb62be6cf27631d3891b5174
 http://127.0.0.1:6878/ace/getstream?id=9ed46050217ee6ed8236a64b72d7992f7b3b37f2
 #EXTINF:-1 tvg-id="" group-title="06/09 LPGA Aramco Houston Championship", 19:00 Jornada 2
 http://127.0.0.1:6878/ace/getstream?id=872608e734992db636eb79426802cd08f4029afb
-#EXTINF:-1 tvg-id="" group-title="06/09 Torneo de Sevilla", 20:00 Final ATP Challenger Tour
+#EXTINF:-1 tvg-id="" group-title="06/09 Torneo de Sevilla | Final", 20:00 GA. Olivieri I. Buse
+http://127.0.0.1:6878/ace/getstream?id=8091334c82e8720fc6aa05ff0bd6d343c5bfecbf
+#EXTINF:-1 tvg-id="" group-title="06/09 Torneo de Sevilla | Final", 20:00 GA. Olivieri I. Buse
 http://127.0.0.1:6878/ace/getstream?id=71698ee415b6ba3f123aac1c8c37cc97376f20d0
-#EXTINF:-1 tvg-id="" group-title="06/09 Torneo de Sevilla", 20:00 Final ATP Challenger Tour
+#EXTINF:-1 tvg-id="" group-title="06/09 Torneo de Sevilla | Final", 20:00 GA. Olivieri I. Buse
 http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
-#EXTINF:-1 tvg-id="" group-title="06/09 Torneo de Sevilla", 20:00 Final ATP Challenger Tour
+#EXTINF:-1 tvg-id="" group-title="06/09 Torneo de Sevilla | Final", 20:00 GA. Olivieri I. Buse
 http://127.0.0.1:6878/ace/getstream?id=799c6b5ee1cf41af077d14e3f9c45a32697eb903
-#EXTINF:-1 tvg-id="" group-title="06/09 Torneo de Sevilla", 20:00 Final ATP Challenger Tour
+#EXTINF:-1 tvg-id="" group-title="06/09 Torneo de Sevilla | Final", 20:00 GA. Olivieri I. Buse
 http://127.0.0.1:6878/ace/getstream?id=2fd410c5d89e7a627cd3785685b7915b8e4bd534
-#EXTINF:-1 tvg-id="" group-title="06/09 Torneo de Sevilla", 20:00 Final ATP Challenger Tour
+#EXTINF:-1 tvg-id="" group-title="06/09 Torneo de Sevilla | Final", 20:00 GA. Olivieri I. Buse
 http://127.0.0.1:6878/ace/getstream?id=753d4b1f7c4ef43238b5cf23b05572b550a44eee
-#EXTINF:-1 tvg-id="" group-title="06/09 Torneo de Sevilla", 20:00 Final ATP Challenger Tour
+#EXTINF:-1 tvg-id="" group-title="06/09 Torneo de Sevilla | Final", 20:00 GA. Olivieri I. Buse
 http://127.0.0.1:6878/ace/getstream?id=29d786d72d4b53dbc333af3a50f8fb021aa0296f
 #EXTINF:-1 tvg-id="" group-title="06/09 Título Intercontinental | Peso Welter", 20:00 P. McCormack M. Parra
 http://127.0.0.1:6878/ace/getstream?id=ae68a0835039fab28fd2314108fabd4fab33b8ab
