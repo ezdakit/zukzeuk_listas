@@ -1,67 +1,53 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"
 #EXTVLCOPT:network-caching=2000
 
-#EXTINF:-1 tvg-id="" group-title="08/09 Campeonato Uruguayo", 01:30 Montevideo City Torque Liverpool FC
-http://127.0.0.1:6878/ace/getstream?id=b2d560741c006fc5e4a42412bb52dbd25a6a4a3a
-#EXTINF:-1 tvg-id="" group-title="08/09 Campeonato Uruguayo", 01:30 Montevideo City Torque Liverpool FC
-http://127.0.0.1:6878/ace/getstream?id=9fb99c40a2c45d5c5342b30626eb56140f980612
-#EXTINF:-1 tvg-id="" group-title="08/09 Campeonato Uruguayo", 01:30 Montevideo City Torque Liverpool FC
-http://127.0.0.1:6878/ace/getstream?id=73094658f0a3ed523c0e188de67a7a690c0d4f93
-#EXTINF:-1 tvg-id="" group-title="08/09 WTA Torneo de Sao Paulo | 1ª Ronda", 18:05 A. Tomljanovic V. Rodríguez
-http://127.0.0.1:6878/ace/getstream?id=8091334c82e8720fc6aa05ff0bd6d343c5bfecbf
-#EXTINF:-1 tvg-id="" group-title="08/09 WTA Torneo de Sao Paulo | 1ª Ronda", 18:05 A. Tomljanovic V. Rodríguez
+#EXTINF:-1 tvg-id="" group-title="09/09 WTA Torneo de Guadalajara | 1ª Ronda", 02:00 M. Sakkari E. Jacquemot
 http://127.0.0.1:6878/ace/getstream?id=71698ee415b6ba3f123aac1c8c37cc97376f20d0
-#EXTINF:-1 tvg-id="" group-title="08/09 WTA Torneo de Sao Paulo | 1ª Ronda", 18:05 A. Tomljanovic V. Rodríguez
+#EXTINF:-1 tvg-id="" group-title="09/09 WTA Torneo de Guadalajara | 1ª Ronda", 02:00 M. Sakkari E. Jacquemot
 http://127.0.0.1:6878/ace/getstream?id=3254851ab35da4a1f1a00911aa8f0da9b7ca5be7
-#EXTINF:-1 tvg-id="" group-title="08/09 WTA Torneo de Sao Paulo | 1ª Ronda", 18:05 A. Tomljanovic V. Rodríguez
+#EXTINF:-1 tvg-id="" group-title="09/09 WTA Torneo de Guadalajara | 1ª Ronda", 02:00 M. Sakkari E. Jacquemot
 http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
-#EXTINF:-1 tvg-id="" group-title="08/09 Mundial Clubes Juvenil | Semifinales", 19:00 Racing Avellaneda Academy Real Madrid Academy
+#EXTINF:-1 tvg-id="" group-title="09/09 WTA Torneo de Guadalajara | 1ª Ronda", 03:30 M. Trevisan R. Marino
+http://127.0.0.1:6878/ace/getstream?id=71698ee415b6ba3f123aac1c8c37cc97376f20d0
+#EXTINF:-1 tvg-id="" group-title="09/09 WTA Torneo de Guadalajara | 1ª Ronda", 03:30 M. Trevisan R. Marino
+http://127.0.0.1:6878/ace/getstream?id=3254851ab35da4a1f1a00911aa8f0da9b7ca5be7
+#EXTINF:-1 tvg-id="" group-title="09/09 WTA Torneo de Guadalajara | 1ª Ronda", 03:30 M. Trevisan R. Marino
+http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
+#EXTINF:-1 tvg-id="" group-title="09/09 Vuelta a España", 14:45 Etapa 16 Poio › Mos.Castro de Herville (172 km)
 http://127.0.0.1:6878/ace/getstream?id=138b30c93e8a780ac490a4f6d2181c41f3670230
-#EXTINF:-1 tvg-id="" group-title="08/09 Mundial Clubes Juvenil | Semifinales", 19:00 Racing Avellaneda Academy Real Madrid Academy
+#EXTINF:-1 tvg-id="" group-title="09/09 Vuelta a España", 14:45 Etapa 16 Poio › Mos.Castro de Herville (172 km)
 http://127.0.0.1:6878/ace/getstream?id=bdc32e0f99653f96e0e1a3b98c88764b631ed9ef
-#EXTINF:-1 tvg-id="" group-title="08/09 WTA Torneo de Sao Paulo | 1ª Ronda", 19:30 C. Alves NV Leme Da Silva
-http://127.0.0.1:6878/ace/getstream?id=8091334c82e8720fc6aa05ff0bd6d343c5bfecbf
-#EXTINF:-1 tvg-id="" group-title="08/09 WTA Torneo de Sao Paulo | 1ª Ronda", 19:30 C. Alves NV Leme Da Silva
-http://127.0.0.1:6878/ace/getstream?id=71698ee415b6ba3f123aac1c8c37cc97376f20d0
-#EXTINF:-1 tvg-id="" group-title="08/09 WTA Torneo de Sao Paulo | 1ª Ronda", 19:30 C. Alves NV Leme Da Silva
-http://127.0.0.1:6878/ace/getstream?id=3254851ab35da4a1f1a00911aa8f0da9b7ca5be7
-#EXTINF:-1 tvg-id="" group-title="08/09 WTA Torneo de Sao Paulo | 1ª Ronda", 19:30 C. Alves NV Leme Da Silva
-http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
-#EXTINF:-1 tvg-id="" group-title="08/09 LaLiga Hypermotion", 20:30 Eibar FC Andorra
-http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
-#EXTINF:-1 tvg-id="" group-title="08/09 LaLiga Hypermotion", 20:30 Eibar FC Andorra
-http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
-#EXTINF:-1 tvg-id="" group-title="08/09 LaLiga Hypermotion", 20:30 Eibar FC Andorra
-http://127.0.0.1:6878/ace/getstream?id=8ee52f6208e33706171856f99d2ed2dabd317f3a
-#EXTINF:-1 tvg-id="" group-title="08/09 LaLiga Hypermotion", 20:30 Eibar FC Andorra
-http://127.0.0.1:6878/ace/getstream?id=70f22be1286ef224b5e4e9451d9a42468152cda4
-#EXTINF:-1 tvg-id="" group-title="08/09 Mundial Clubes Juvenil | Semifinales", 21:00 FC Barcelona Academy Palmeiras Academy
+#EXTINF:-1 tvg-id="" group-title="09/09 Vuelta a España", 14:45 Etapa 16 Poio › Mos.Castro de Herville (172 km)
+http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
+#EXTINF:-1 tvg-id="" group-title="09/09 Vuelta a España", 14:45 Etapa 16 Poio › Mos.Castro de Herville (172 km)
+http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
+#EXTINF:-1 tvg-id="" group-title="09/09 Vuelta a España", 14:45 Etapa 16 Poio › Mos.Castro de Herville (172 km)
+http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
+#EXTINF:-1 tvg-id="" group-title="09/09 Vuelta a España", 14:45 Etapa 16 Poio › Mos.Castro de Herville (172 km)
+http://127.0.0.1:6878/ace/getstream?id=cfa75ade53810dac64411b22d56c3d4582a221d3
+#EXTINF:-1 tvg-id="" group-title="09/09 Eurobasket | 1/4 de Final", 16:00 Turquía Polonia
 http://127.0.0.1:6878/ace/getstream?id=138b30c93e8a780ac490a4f6d2181c41f3670230
-#EXTINF:-1 tvg-id="" group-title="08/09 Mundial Clubes Juvenil | Semifinales", 21:00 FC Barcelona Academy Palmeiras Academy
+#EXTINF:-1 tvg-id="" group-title="09/09 Eurobasket | 1/4 de Final", 16:00 Turquía Polonia
 http://127.0.0.1:6878/ace/getstream?id=bdc32e0f99653f96e0e1a3b98c88764b631ed9ef
-#EXTINF:-1 tvg-id="" group-title="08/09 Mundial Clubes Juvenil | Semifinales", 21:00 FC Barcelona Academy Palmeiras Academy
-http://127.0.0.1:6878/ace/getstream?id=ca20f93ea5d9c15744e48a21b52598b9fce87425
-#EXTINF:-1 tvg-id="" group-title="08/09 WTA Torneo de Guadalajara | 1ª Ronda", 22:00 A. Parks D. Vidmanova
-http://127.0.0.1:6878/ace/getstream?id=8091334c82e8720fc6aa05ff0bd6d343c5bfecbf
-#EXTINF:-1 tvg-id="" group-title="08/09 WTA Torneo de Guadalajara | 1ª Ronda", 22:00 A. Parks D. Vidmanova
+#EXTINF:-1 tvg-id="" group-title="09/09 WTA Torneo de Sao Paulo", 17:00 1ª Ronda WTA 250
 http://127.0.0.1:6878/ace/getstream?id=71698ee415b6ba3f123aac1c8c37cc97376f20d0
-#EXTINF:-1 tvg-id="" group-title="08/09 WTA Torneo de Guadalajara | 1ª Ronda", 22:00 A. Parks D. Vidmanova
+#EXTINF:-1 tvg-id="" group-title="09/09 WTA Torneo de Sao Paulo", 17:00 1ª Ronda WTA 250
 http://127.0.0.1:6878/ace/getstream?id=3254851ab35da4a1f1a00911aa8f0da9b7ca5be7
-#EXTINF:-1 tvg-id="" group-title="08/09 WTA Torneo de Guadalajara | 1ª Ronda", 22:00 A. Parks D. Vidmanova
+#EXTINF:-1 tvg-id="" group-title="09/09 WTA Torneo de Sao Paulo", 17:00 1ª Ronda WTA 250
 http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
-#EXTINF:-1 tvg-id="" group-title="08/09 WTA Torneo de Sao Paulo | 1ª Ronda", 22:30 VL Barros W. Osuigwe
-http://127.0.0.1:6878/ace/getstream?id=8091334c82e8720fc6aa05ff0bd6d343c5bfecbf
-#EXTINF:-1 tvg-id="" group-title="08/09 WTA Torneo de Sao Paulo | 1ª Ronda", 22:30 VL Barros W. Osuigwe
-http://127.0.0.1:6878/ace/getstream?id=71698ee415b6ba3f123aac1c8c37cc97376f20d0
-#EXTINF:-1 tvg-id="" group-title="08/09 WTA Torneo de Sao Paulo | 1ª Ronda", 22:30 VL Barros W. Osuigwe
-http://127.0.0.1:6878/ace/getstream?id=3254851ab35da4a1f1a00911aa8f0da9b7ca5be7
-#EXTINF:-1 tvg-id="" group-title="08/09 WTA Torneo de Sao Paulo | 1ª Ronda", 22:30 VL Barros W. Osuigwe
-http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
-#EXTINF:-1 tvg-id="" group-title="08/09 WTA Torneo de Guadalajara | 1ª Ronda", 23:30 K. Kawa I. Jovic
-http://127.0.0.1:6878/ace/getstream?id=8091334c82e8720fc6aa05ff0bd6d343c5bfecbf
-#EXTINF:-1 tvg-id="" group-title="08/09 WTA Torneo de Guadalajara | 1ª Ronda", 23:30 K. Kawa I. Jovic
-http://127.0.0.1:6878/ace/getstream?id=71698ee415b6ba3f123aac1c8c37cc97376f20d0
-#EXTINF:-1 tvg-id="" group-title="08/09 WTA Torneo de Guadalajara | 1ª Ronda", 23:30 K. Kawa I. Jovic
-http://127.0.0.1:6878/ace/getstream?id=3254851ab35da4a1f1a00911aa8f0da9b7ca5be7
-#EXTINF:-1 tvg-id="" group-title="08/09 WTA Torneo de Guadalajara | 1ª Ronda", 23:30 K. Kawa I. Jovic
-http://127.0.0.1:6878/ace/getstream?id=039fae21c9e7e5214d3d898cba80863e37e623ac
+#EXTINF:-1 tvg-id="" group-title="09/09 Cto. Mundo Mountain Bike", 17:05 Cross Country Pista Corta Femenino Valais 2025
+http://127.0.0.1:6878/ace/getstream?id=0585e09bb8ac9720e4c11934f1b184e309291551
+#EXTINF:-1 tvg-id="" group-title="09/09 Cto. Mundo Mountain Bike", 17:05 Cross Country Pista Corta Femenino Valais 2025
+http://127.0.0.1:6878/ace/getstream?id=dc4ccb9e72550bc72be9360aa7d77e337ad11ecc
+#EXTINF:-1 tvg-id="" group-title="09/09 Cto. Mundo Mountain Bike", 17:05 Cross Country Pista Corta Femenino Valais 2025
+http://127.0.0.1:6878/ace/getstream?id=2773b39926d15dd3d9495d94c4050604792d7031
+#EXTINF:-1 tvg-id="" group-title="09/09 Cto. Mundo Mountain Bike", 17:05 Cross Country Pista Corta Femenino Valais 2025
+http://127.0.0.1:6878/ace/getstream?id=37d6f1aabcde81ee6e4873b4db6b7bb8964af8bf
+#EXTINF:-1 tvg-id="" group-title="09/09 Europeo Sub-21 | Fase de Clasificación", 19:00 Kosovo España
+http://127.0.0.1:6878/ace/getstream?id=138b30c93e8a780ac490a4f6d2181c41f3670230
+#EXTINF:-1 tvg-id="" group-title="09/09 Europeo Sub-21 | Fase de Clasificación", 19:00 Kosovo España
+http://127.0.0.1:6878/ace/getstream?id=bdc32e0f99653f96e0e1a3b98c88764b631ed9ef
+#EXTINF:-1 tvg-id="" group-title="09/09 Primera Federación Futsal", 20:30 Alzira FS ElPozo Murcia
+http://127.0.0.1:6878/ace/getstream?id=138b30c93e8a780ac490a4f6d2181c41f3670230
+#EXTINF:-1 tvg-id="" group-title="09/09 Primera Federación Futsal", 20:30 Alzira FS ElPozo Murcia
+http://127.0.0.1:6878/ace/getstream?id=bdc32e0f99653f96e0e1a3b98c88764b631ed9ef
