@@ -2,8 +2,6 @@
 #EXTVLCOPT:network-caching=2000
 
 #EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 05:00 Jornada 2
-http://127.0.0.1:6878/ace/getstream?id=8546cff89e4ee8bf3ad31cf6457c3bc2c4341031
-#EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 05:00 Jornada 2
 http://127.0.0.1:6878/ace/getstream?id=9be118a64eb603b5eb62be6cf27631d3891b5174
 #EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 05:00 Jornada 2
 http://127.0.0.1:6878/ace/getstream?id=9ed46050217ee6ed8236a64b72d7992f7b3b37f2
@@ -25,6 +23,8 @@ http://127.0.0.1:6878/ace/getstream?id=c7c81acdd1a03ecc418c94c2f28e2adb0556c40b
 http://127.0.0.1:6878/ace/getstream?id=0e5d8c9724fa9163f49096b70484e315251eb785
 #EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 09:00 1/4 de final femenino Premier Padel Tour
 http://127.0.0.1:6878/ace/getstream?id=3b2a8b41e7097c16b0468b42d7de0320886fa933
+#EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 09:00 1/4 de final femenino Premier Padel Tour
+http://127.0.0.1:6878/ace/getstream?id=2940120bf034db79a7f5849846ccea0255172eae
 #EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 09:00 1/4 de final femenino Premier Padel Tour
 http://127.0.0.1:6878/ace/getstream?id=651d6be899d1fafa107a265a9dc00ff914c1b548
 #EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 09:00 1/4 de final femenino Premier Padel Tour
@@ -51,14 +51,18 @@ http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 http://127.0.0.1:6878/ace/getstream?id=f2f318919c0035b8979153599a90597671eeefc3
 #EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 09:00 1/4 de final femenino Premier Padel Tour
 http://127.0.0.1:6878/ace/getstream?id=acb510858f34c3c6fd5f79395b031abd6885c2b3
-#EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 10:05 1/4 de Final WTA 125
+#EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 10:00 M. Carle T. Kostovic
+http://127.0.0.1:6878/ace/getstream?id=bdc32e0f99653f96e0e1a3b98c88764b631ed9ef
+#EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 10:00 M. Carle T. Kostovic
+http://127.0.0.1:6878/ace/getstream?id=138b30c93e8a780ac490a4f6d2181c41f3670230
+#EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 11:30 L. Radivojevic N. Noha Akugue
+http://127.0.0.1:6878/ace/getstream?id=bdc32e0f99653f96e0e1a3b98c88764b631ed9ef
+#EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 11:30 L. Radivojevic N. Noha Akugue
 http://127.0.0.1:6878/ace/getstream?id=138b30c93e8a780ac490a4f6d2181c41f3670230
 #EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 12:30 D. Medvedev A. De Miñaur
 http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
 #EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 12:30 D. Medvedev A. De Miñaur
 http://127.0.0.1:6878/ace/getstream?id=8c67cdb5ba81976662c3a67984a9545d9cfb0f70
-#EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 12:30 D. Medvedev A. De Miñaur
-http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
 #EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 12:30 D. Medvedev A. De Miñaur
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
 #EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 12:30 D. Medvedev A. De Miñaur
@@ -74,9 +78,9 @@ http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 12:30 D. Medvedev A. De Miñaur
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 13:45 Jornada 2
-http://127.0.0.1:6878/ace/getstream?id=138b30c93e8a780ac490a4f6d2181c41f3670230
+http://127.0.0.1:6878/ace/getstream?id=bdc32e0f99653f96e0e1a3b98c88764b631ed9ef
 #EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 13:45 Jornada 2
-http://127.0.0.1:6878/ace/getstream?id=8546cff89e4ee8bf3ad31cf6457c3bc2c4341031
+http://127.0.0.1:6878/ace/getstream?id=138b30c93e8a780ac490a4f6d2181c41f3670230
 #EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 13:45 Jornada 2
 http://127.0.0.1:6878/ace/getstream?id=9be118a64eb603b5eb62be6cf27631d3891b5174
 #EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 13:45 Jornada 2
@@ -308,6 +312,8 @@ http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
 #EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 18:30 Palmeiras Academy Orlando City Academy
 http://127.0.0.1:6878/ace/getstream?id=1bb5bf76fb2018d6db9aaa29b1467ecdfabe2884
 #EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 18:30 Real Madrid B Baloncesto Unicaja Málaga B
+http://127.0.0.1:6878/ace/getstream?id=bdc32e0f99653f96e0e1a3b98c88764b631ed9ef
+#EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 18:30 Real Madrid B Baloncesto Unicaja Málaga B
 http://127.0.0.1:6878/ace/getstream?id=138b30c93e8a780ac490a4f6d2181c41f3670230
 #EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 19:00 Miami Rush Academy Inter Miami CF Academy
 http://127.0.0.1:6878/ace/getstream?id=00c9bc9c5d7d87680a5a6bed349edfa775a89947
@@ -372,8 +378,6 @@ http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
 #EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 20:30 Barça Basket Valencia Basket
 http://127.0.0.1:6878/ace/getstream?id=8c67cdb5ba81976662c3a67984a9545d9cfb0f70
 #EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 20:30 Barça Basket Valencia Basket
-http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
-#EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 20:30 Barça Basket Valencia Basket
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
 #EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 20:30 Barça Basket Valencia Basket
 http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
@@ -406,10 +410,8 @@ http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
 #EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 20:30 FC Bayern Basketball Zalgiris Kaunas
 http://127.0.0.1:6878/ace/getstream?id=3230cdca852a10325222e3c546e499e31d547a90
 #EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 21:00 España Noruega
+http://127.0.0.1:6878/ace/getstream?id=bdc32e0f99653f96e0e1a3b98c88764b631ed9ef
+#EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 21:00 España Noruega
 http://127.0.0.1:6878/ace/getstream?id=138b30c93e8a780ac490a4f6d2181c41f3670230
-#EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 21:15 Barakaldo Bilbao Athletic
-http://127.0.0.1:6878/ace/getstream?id=599a2fda91aa55703e2c5a51562d9dbf5d3d31d9
-#EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 21:15 Barakaldo Bilbao Athletic
-http://127.0.0.1:6878/ace/getstream?id=a2ed6f2ca3f804481131c41ce64d4286a5820476
 #EXTINF:-1 tvg-id="" group-title="# Eventos 10 de octubre por horario", 21:15 Barakaldo Bilbao Athletic
 http://127.0.0.1:6878/ace/getstream?id=b40212c43e96e97542ea00f2129212a054853a57
