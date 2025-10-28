@@ -23,14 +23,6 @@ http://127.0.0.1:6878/ace/getstream?id=ef9dcc4eaac36a0f608b52a31f8ab237859e071a
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 tvg-id="" group-title="28/10 MLB | World Series", 01:00 Los Angeles Dodgers Toronto Blue Jays
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 tvg-id="" group-title="28/10 Masters París | 1ª Ronda", 11:00 A. Davidovich V. Royer
-http://127.0.0.1:6878/ace/getstream?id=799c6b5ee1cf41af077d14e3f9c45a32697eb903
-#EXTINF:-1 tvg-id="" group-title="28/10 Masters París | 1ª Ronda", 11:00 A. Davidovich V. Royer
-http://127.0.0.1:6878/ace/getstream?id=2fd410c5d89e7a627cd3785685b7915b8e4bd534
-#EXTINF:-1 tvg-id="" group-title="28/10 Masters París | 1ª Ronda", 11:00 A. Davidovich V. Royer
-http://127.0.0.1:6878/ace/getstream?id=29d786d72d4b53dbc333af3a50f8fb021aa0296f
-#EXTINF:-1 tvg-id="" group-title="28/10 Masters París | 1ª Ronda", 11:00 A. Davidovich V. Royer
-http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
 #EXTINF:-1 tvg-id="" group-title="28/10 Masters París | 1ª Ronda", 11:00 F. Auger-Aliassime F. Comesana
 http://127.0.0.1:6878/ace/getstream?id=799c6b5ee1cf41af077d14e3f9c45a32697eb903
 #EXTINF:-1 tvg-id="" group-title="28/10 Masters París | 1ª Ronda", 11:00 F. Auger-Aliassime F. Comesana
@@ -83,6 +75,14 @@ http://127.0.0.1:6878/ace/getstream?id=6e212a916c83638268047dd2757c95b14f7d25a3
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 tvg-id="" group-title="28/10 Masters París | 1ª Ronda", 14:00 J. Munar D. Medvedev
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 tvg-id="" group-title="28/10 Masters París | 1ª Ronda", 14:00 A. Davidovich V. Royer
+http://127.0.0.1:6878/ace/getstream?id=799c6b5ee1cf41af077d14e3f9c45a32697eb903
+#EXTINF:-1 tvg-id="" group-title="28/10 Masters París | 1ª Ronda", 14:00 A. Davidovich V. Royer
+http://127.0.0.1:6878/ace/getstream?id=2fd410c5d89e7a627cd3785685b7915b8e4bd534
+#EXTINF:-1 tvg-id="" group-title="28/10 Masters París | 1ª Ronda", 14:00 A. Davidovich V. Royer
+http://127.0.0.1:6878/ace/getstream?id=29d786d72d4b53dbc333af3a50f8fb021aa0296f
+#EXTINF:-1 tvg-id="" group-title="28/10 Masters París | 1ª Ronda", 14:00 A. Davidovich V. Royer
+http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
 #EXTINF:-1 tvg-id="" group-title="28/10 Masters París | 2ª Ronda", 15:30 B. Shelton F. Cobolli
 http://127.0.0.1:6878/ace/getstream?id=799c6b5ee1cf41af077d14e3f9c45a32697eb903
 #EXTINF:-1 tvg-id="" group-title="28/10 Masters París | 2ª Ronda", 15:30 B. Shelton F. Cobolli
@@ -127,8 +127,6 @@ http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
 http://127.0.0.1:6878/ace/getstream?id=4b528d10eaad747ddf52251206177573ee3e9f74
 #EXTINF:-1 tvg-id="" group-title="28/10 Copa del Rey | 1ª Ronda", 19:00 Constancia Girona
 http://127.0.0.1:6878/ace/getstream?id=14b6cd8769cd485f2cffdca64be9698d9bfeac58
-#EXTINF:-1 tvg-id="" group-title="28/10 Copa del Rey | 1ª Ronda", 19:00 Constancia Girona
-http://127.0.0.1:6878/ace/getstream?id=cc9b7f5fe416069a2110da0909b0f915043c468b
 #EXTINF:-1 tvg-id="" group-title="28/10 Copa del Rey | 1ª Ronda", 19:00 Constancia Girona
 http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
 #EXTINF:-1 tvg-id="" group-title="28/10 Copa del Rey | 1ª Ronda", 19:00 Constancia Girona
@@ -202,8 +200,6 @@ http://127.0.0.1:6878/ace/getstream?id=4b528d10eaad747ddf52251206177573ee3e9f74
 #EXTINF:-1 tvg-id="" group-title="28/10 Copa del Rey | 1ª Ronda", 21:00 Negreira Real Sociedad
 http://127.0.0.1:6878/ace/getstream?id=14b6cd8769cd485f2cffdca64be9698d9bfeac58
 #EXTINF:-1 tvg-id="" group-title="28/10 Copa del Rey | 1ª Ronda", 21:00 Negreira Real Sociedad
-http://127.0.0.1:6878/ace/getstream?id=cc9b7f5fe416069a2110da0909b0f915043c468b
-#EXTINF:-1 tvg-id="" group-title="28/10 Copa del Rey | 1ª Ronda", 21:00 Negreira Real Sociedad
 http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
 #EXTINF:-1 tvg-id="" group-title="28/10 Copa del Rey | 1ª Ronda", 21:00 Negreira Real Sociedad
 http://127.0.0.1:6878/ace/getstream?id=d4ff041287a43e3114d411d671c4b4e92e21f33y
@@ -217,6 +213,8 @@ http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
 http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
 #EXTINF:-1 tvg-id="" group-title="28/10 Copa del Rey | 1ª Ronda", 21:00 Negreira Real Sociedad
 http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 tvg-id="" group-title="28/10 Copa del Rey | 1ª Ronda", 21:00 Negreira Real Sociedad
+http://127.0.0.1:6878/ace/getstream?id=c16b4fab1f724c94cad92081cbb7fc7c6fe8a2cc
 #EXTINF:-1 tvg-id="" group-title="28/10 Copa del Rey | 1ª Ronda", 21:00 Negreira Real Sociedad
 http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
 #EXTINF:-1 tvg-id="" group-title="28/10 Copa del Rey | 1ª Ronda", 21:00 Negreira Real Sociedad
@@ -245,3 +243,15 @@ http://127.0.0.1:6878/ace/getstream?id=651d6be899d1fafa107a265a9dc00ff914c1b548
 http://127.0.0.1:6878/ace/getstream?id=4e99e755aa32c4bc043a4bb1cd1de35f9bd94dde
 #EXTINF:-1 tvg-id="" group-title="28/10 Euroliga | Liga Regular", 21:00 Valencia Basket Fenerbahce Istanbul
 http://127.0.0.1:6878/ace/getstream?id=e19c1fc5e3ada56c60d45257f7f4ed0d14bf7003
+#EXTINF:-1 tvg-id="" group-title="28/10 Euroliga | Liga Regular", 21:00 Valencia Basket Fenerbahce Istanbul
+http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
+#EXTINF:-1 tvg-id="" group-title="28/10 Euroliga | Liga Regular", 21:00 Valencia Basket Fenerbahce Istanbul
+http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
+#EXTINF:-1 tvg-id="" group-title="28/10 Euroliga | Liga Regular", 21:00 Valencia Basket Fenerbahce Istanbul
+http://127.0.0.1:6878/ace/getstream?id=edd06f11e1cef292a1d795e15207ef2f580e298c
+#EXTINF:-1 tvg-id="" group-title="28/10 Euroliga | Liga Regular", 21:00 Valencia Basket Fenerbahce Istanbul
+http://127.0.0.1:6878/ace/getstream?id=6e212a916c83638268047dd2757c95b14f7d25a3
+#EXTINF:-1 tvg-id="" group-title="28/10 Euroliga | Liga Regular", 21:00 Valencia Basket Fenerbahce Istanbul
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 tvg-id="" group-title="28/10 Euroliga | Liga Regular", 21:00 Valencia Basket Fenerbahce Istanbul
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
