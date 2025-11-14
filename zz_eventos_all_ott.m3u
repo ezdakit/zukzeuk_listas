@@ -1,145 +1,223 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"
 #EXTVLCOPT:network-caching=2000
 
-#EXTINF:-1 tvg-id="" group-title="13/11 Championship Dubai Rolex Series", 08:00 Jornada 1
+#EXTINF:-1 tvg-id="" group-title="14/11 Championship Dubai Rolex Series", 08:00 Jornada 2
 http://127.0.0.1:6878/ace/getstream?id=8546cff89e4ee8bf3ad31cf6457c3bc2c4341031
-#EXTINF:-1 tvg-id="" group-title="13/11 Championship Dubai Rolex Series", 08:00 Jornada 1
+#EXTINF:-1 tvg-id="" group-title="14/11 Championship Dubai Rolex Series", 08:00 Jornada 2
 http://127.0.0.1:6878/ace/getstream?id=9ed46050217ee6ed8236a64b72d7992f7b3b37f2
-#EXTINF:-1 tvg-id="" group-title="13/11 Championship Dubai Rolex Series", 08:00 Jornada 1
+#EXTINF:-1 tvg-id="" group-title="14/11 Championship Dubai Rolex Series", 08:00 Jornada 2
 http://127.0.0.1:6878/ace/getstream?id=872608e734992db636eb79426802cd08f4029afb
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin Dobles", 11:30 K. Krawietz | T. Puetz S. Bolelli | A. Vavassori
-http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin Dobles", 11:30 K. Krawietz | T. Puetz S. Bolelli | A. Vavassori
-http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin Dobles", 11:30 K. Krawietz | T. Puetz S. Bolelli | A. Vavassori
-http://127.0.0.1:6878/ace/getstream?id=edd06f11e1cef292a1d795e15207ef2f580e298c
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin Dobles", 11:30 K. Krawietz | T. Puetz S. Bolelli | A. Vavassori
-http://127.0.0.1:6878/ace/getstream?id=6e212a916c83638268047dd2757c95b14f7d25a3
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin Dobles", 11:30 K. Krawietz | T. Puetz S. Bolelli | A. Vavassori
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin Dobles", 11:30 K. Krawietz | T. Puetz S. Bolelli | A. Vavassori
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin", 14:00 T. Fritz A. De Miñaur
-http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin", 14:00 T. Fritz A. De Miñaur
-http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin", 14:00 T. Fritz A. De Miñaur
-http://127.0.0.1:6878/ace/getstream?id=edd06f11e1cef292a1d795e15207ef2f580e298c
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin", 14:00 T. Fritz A. De Miñaur
-http://127.0.0.1:6878/ace/getstream?id=6e212a916c83638268047dd2757c95b14f7d25a3
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin", 14:00 T. Fritz A. De Miñaur
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin", 14:00 T. Fritz A. De Miñaur
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 tvg-id="" group-title="13/11 LPGA The Annika", 16:00 Jornada 1
+#EXTINF:-1 tvg-id="" group-title="14/11 Dubai Open", 09:00 1/4 de final femenino Premier Padel Tour
 http://127.0.0.1:6878/ace/getstream?id=9b84af74b2fa3690c519199326fc2f181b025cdd
-#EXTINF:-1 tvg-id="" group-title="13/11 LPGA The Annika", 16:00 Jornada 1
+#EXTINF:-1 tvg-id="" group-title="14/11 Dubai Open", 09:00 1/4 de final femenino Premier Padel Tour
 http://127.0.0.1:6878/ace/getstream?id=594b59d435527327c9b6965f247995b907bfc285
-#EXTINF:-1 tvg-id="" group-title="13/11 LPGA The Annika", 16:00 Jornada 1
-http://127.0.0.1:6878/ace/getstream?id=8546cff89e4ee8bf3ad31cf6457c3bc2c4341031
-#EXTINF:-1 tvg-id="" group-title="13/11 LPGA The Annika", 16:00 Jornada 1
-http://127.0.0.1:6878/ace/getstream?id=9ed46050217ee6ed8236a64b72d7992f7b3b37f2
-#EXTINF:-1 tvg-id="" group-title="13/11 LPGA The Annika", 16:00 Jornada 1
-http://127.0.0.1:6878/ace/getstream?id=872608e734992db636eb79426802cd08f4029afb
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin Dobles", 18:00 J. Cash | L. Glasspool M. Granollers | H. Zeballos
-http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin Dobles", 18:00 J. Cash | L. Glasspool M. Granollers | H. Zeballos
-http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin Dobles", 18:00 J. Cash | L. Glasspool M. Granollers | H. Zeballos
-http://127.0.0.1:6878/ace/getstream?id=edd06f11e1cef292a1d795e15207ef2f580e298c
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin Dobles", 18:00 J. Cash | L. Glasspool M. Granollers | H. Zeballos
-http://127.0.0.1:6878/ace/getstream?id=6e212a916c83638268047dd2757c95b14f7d25a3
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin Dobles", 18:00 J. Cash | L. Glasspool M. Granollers | H. Zeballos
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin Dobles", 18:00 J. Cash | L. Glasspool M. Granollers | H. Zeballos
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 tvg-id="" group-title="13/11 Euroliga | Liga Regular", 20:00 Fenerbahce Istanbul Hapoel Tel Aviv BC
-http://127.0.0.1:6878/ace/getstream?id=b40e1de2dcbd7c665f54877b14c830ed67b32a96
-#EXTINF:-1 tvg-id="" group-title="13/11 Euroliga | Liga Regular", 20:00 Fenerbahce Istanbul Hapoel Tel Aviv BC
-http://127.0.0.1:6878/ace/getstream?id=58a4c880ab18486d914751db32a12760e74b75a4
-#EXTINF:-1 tvg-id="" group-title="13/11 Euroliga | Liga Regular", 20:00 Fenerbahce Istanbul Hapoel Tel Aviv BC
-http://127.0.0.1:6878/ace/getstream?id=37825883ed185365e3194a79207347f6c7bd5ba5
-#EXTINF:-1 tvg-id="" group-title="13/11 Euroliga | Liga Regular", 20:00 Fenerbahce Istanbul Hapoel Tel Aviv BC
-http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
-#EXTINF:-1 tvg-id="" group-title="13/11 Euroliga | Liga Regular", 20:00 Crvena Zvezda MTS Belgrade AS Monaco Basket
-http://127.0.0.1:6878/ace/getstream?id=7b361369a40046ad3011086f9d4ae2982fb4d5aa
-#EXTINF:-1 tvg-id="" group-title="13/11 Euroliga | Liga Regular", 20:00 Crvena Zvezda MTS Belgrade AS Monaco Basket
-http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
-#EXTINF:-1 tvg-id="" group-title="13/11 Euroliga | Liga Regular", 20:00 Crvena Zvezda MTS Belgrade AS Monaco Basket
-http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
-#EXTINF:-1 tvg-id="" group-title="13/11 Euroliga | Liga Regular", 20:00 Crvena Zvezda MTS Belgrade AS Monaco Basket
-http://127.0.0.1:6878/ace/getstream?id=3230cdca852a10325222e3c546e499e31d547a90
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin", 20:30 C. Alcaraz L. Musetti
-http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin", 20:30 C. Alcaraz L. Musetti
-http://127.0.0.1:6878/ace/getstream?id=8c67cdb5ba81976662c3a67984a9545d9cfb0f70
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin", 20:30 C. Alcaraz L. Musetti
-http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin", 20:30 C. Alcaraz L. Musetti
-http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin", 20:30 C. Alcaraz L. Musetti
-http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin", 20:30 C. Alcaraz L. Musetti
-http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin", 20:30 C. Alcaraz L. Musetti
-http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin", 20:30 C. Alcaraz L. Musetti
-http://127.0.0.1:6878/ace/getstream?id=edd06f11e1cef292a1d795e15207ef2f580e298c
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin", 20:30 C. Alcaraz L. Musetti
-http://127.0.0.1:6878/ace/getstream?id=6e212a916c83638268047dd2757c95b14f7d25a3
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin", 20:30 C. Alcaraz L. Musetti
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 tvg-id="" group-title="13/11 ATP Finals | Round Robin", 20:30 C. Alcaraz L. Musetti
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 tvg-id="" group-title="13/11 EHF Champions League | Fase de grupos", 20:45 Barça BM Wisla Plock HB
-http://127.0.0.1:6878/ace/getstream?id=eb6ffec065b26259ad3d1811e0bbb0a5332ed276
-#EXTINF:-1 tvg-id="" group-title="13/11 EHF Champions League | Fase de grupos", 20:45 Barça BM Wisla Plock HB
-http://127.0.0.1:6878/ace/getstream?id=7ba1f321f4d0791b7ebd42f41a07c1cd1479e784
-#EXTINF:-1 tvg-id="" group-title="13/11 EHF Champions League | Fase de grupos", 20:45 Barça BM Wisla Plock HB
-http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
-#EXTINF:-1 tvg-id="" group-title="13/11 EHF Champions League | Fase de grupos", 20:45 Barça BM Wisla Plock HB
-http://127.0.0.1:6878/ace/getstream?id=6538b79ce0da657d8455d1da6a5f342398899a0e
-#EXTINF:-1 tvg-id="" group-title="13/11 EHF Champions League | Fase de grupos", 20:45 Barça BM Wisla Plock HB
-http://127.0.0.1:6878/ace/getstream?id=50a8a13c474848d1efbd5586efdb5b6cdd173fa9
-#EXTINF:-1 tvg-id="" group-title="13/11 EHF Champions League | Fase de grupos", 20:45 Barça BM Wisla Plock HB
-http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
-#EXTINF:-1 tvg-id="" group-title="13/11 EHF Champions League | Fase de grupos", 20:45 Barça BM Wisla Plock HB
-http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
-#EXTINF:-1 tvg-id="" group-title="13/11 EHF Champions League | Fase de grupos", 20:45 Barça BM Wisla Plock HB
-http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
-#EXTINF:-1 tvg-id="" group-title="13/11 EHF Champions League | Fase de grupos", 20:45 Barça BM Wisla Plock HB
-http://127.0.0.1:6878/ace/getstream?id=ca20f93ea5d9c15744e48a21b52598b9fce87425
-#EXTINF:-1 tvg-id="" group-title="13/11 EHF Champions League | Fase de grupos", 20:45 Barça BM Wisla Plock HB
-http://127.0.0.1:6878/ace/getstream?id=181fcc443b953d54b00a1bf6320ccbb097e85d64
-#EXTINF:-1 tvg-id="" group-title="13/11 Euroliga | Liga Regular", 20:45 Real Madrid Baloncesto Panathinaikos BC
-http://127.0.0.1:6878/ace/getstream?id=c7c81acdd1a03ecc418c94c2f28e2adb0556c40b
-#EXTINF:-1 tvg-id="" group-title="13/11 Euroliga | Liga Regular", 20:45 Real Madrid Baloncesto Panathinaikos BC
-http://127.0.0.1:6878/ace/getstream?id=0e5d8c9724fa9163f49096b70484e315251eb785
-#EXTINF:-1 tvg-id="" group-title="13/11 Euroliga | Liga Regular", 20:45 Real Madrid Baloncesto Panathinaikos BC
-http://127.0.0.1:6878/ace/getstream?id=3b2a8b41e7097c16b0468b42d7de0320886fa933
-#EXTINF:-1 tvg-id="" group-title="13/11 Euroliga | Liga Regular", 20:45 Real Madrid Baloncesto Panathinaikos BC
-http://127.0.0.1:6878/ace/getstream?id=2940120bf034db79a7f5849846ccea0255172eae
-#EXTINF:-1 tvg-id="" group-title="13/11 Euroliga | Liga Regular", 20:45 Real Madrid Baloncesto Panathinaikos BC
-http://127.0.0.1:6878/ace/getstream?id=651d6be899d1fafa107a265a9dc00ff914c1b548
-#EXTINF:-1 tvg-id="" group-title="13/11 Euroliga | Liga Regular", 20:45 Real Madrid Baloncesto Panathinaikos BC
-http://127.0.0.1:6878/ace/getstream?id=4e99e755aa32c4bc043a4bb1cd1de35f9bd94dde
-#EXTINF:-1 tvg-id="" group-title="13/11 Euroliga | Liga Regular", 20:45 Paris Basketball Valencia Basket
-http://127.0.0.1:6878/ace/getstream?id=ebca4a63ce3bfda7b272964a1acc5227218184a4
-#EXTINF:-1 tvg-id="" group-title="13/11 Euroliga | Liga Regular", 20:45 Paris Basketball Valencia Basket
-http://127.0.0.1:6878/ace/getstream?id=2f3cfd199a49819cbd129689a840dc3d23ab93aa
-#EXTINF:-1 tvg-id="" group-title="13/11 Euroliga | Liga Regular", 20:45 Paris Basketball Valencia Basket
-http://127.0.0.1:6878/ace/getstream?id=ef9dcc4eaac36a0f608b52a31f8ab237859e071a
-#EXTINF:-1 tvg-id="" group-title="13/11 Euroliga | Liga Regular", 20:45 Paris Basketball Valencia Basket
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 tvg-id="" group-title="13/11 Euroliga | Liga Regular", 20:45 Paris Basketball Valencia Basket
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 tvg-id="" group-title="13/11 Euroliga | Liga Regular", 21:00 Maccabi Tel Aviv BC Baskonia
+#EXTINF:-1 tvg-id="" group-title="14/11 Dubai Open", 09:00 1/4 de final femenino Premier Padel Tour
 http://127.0.0.1:6878/ace/getstream?id=799c6b5ee1cf41af077d14e3f9c45a32697eb903
-#EXTINF:-1 tvg-id="" group-title="13/11 Euroliga | Liga Regular", 21:00 Maccabi Tel Aviv BC Baskonia
+#EXTINF:-1 tvg-id="" group-title="14/11 Dubai Open", 09:00 1/4 de final femenino Premier Padel Tour
 http://127.0.0.1:6878/ace/getstream?id=2fd410c5d89e7a627cd3785685b7915b8e4bd534
-#EXTINF:-1 tvg-id="" group-title="13/11 Euroliga | Liga Regular", 21:00 Maccabi Tel Aviv BC Baskonia
+#EXTINF:-1 tvg-id="" group-title="14/11 Dubai Open", 09:00 1/4 de final femenino Premier Padel Tour
 http://127.0.0.1:6878/ace/getstream?id=753d4b1f7c4ef43238b5cf23b05572b550a44eee
-#EXTINF:-1 tvg-id="" group-title="13/11 Euroliga | Liga Regular", 21:00 Maccabi Tel Aviv BC Baskonia
+#EXTINF:-1 tvg-id="" group-title="14/11 Dubai Open", 09:00 1/4 de final femenino Premier Padel Tour
 http://127.0.0.1:6878/ace/getstream?id=29d786d72d4b53dbc333af3a50f8fb021aa0296f
-#EXTINF:-1 tvg-id="" group-title="13/11 Euroliga | Liga Regular", 21:00 Maccabi Tel Aviv BC Baskonia
+#EXTINF:-1 tvg-id="" group-title="14/11 Dubai Open", 09:00 1/4 de final femenino Premier Padel Tour
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
+#EXTINF:-1 tvg-id="" group-title="14/11 Dubai Open", 09:00 1/4 de final femenino Premier Padel Tour
+http://127.0.0.1:6878/ace/getstream?id=b40e1de2dcbd7c665f54877b14c830ed67b32a96
+#EXTINF:-1 tvg-id="" group-title="14/11 Dubai Open", 09:00 1/4 de final femenino Premier Padel Tour
+http://127.0.0.1:6878/ace/getstream?id=58a4c880ab18486d914751db32a12760e74b75a4
+#EXTINF:-1 tvg-id="" group-title="14/11 Dubai Open", 09:00 1/4 de final femenino Premier Padel Tour
+http://127.0.0.1:6878/ace/getstream?id=37825883ed185365e3194a79207347f6c7bd5ba5
+#EXTINF:-1 tvg-id="" group-title="14/11 Dubai Open", 09:00 1/4 de final femenino Premier Padel Tour
+http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
+#EXTINF:-1 tvg-id="" group-title="14/11 MotoGP", 10:45 G.P. C. Valenciana (Ricardo Tormo) Libres 1
+http://127.0.0.1:6878/ace/getstream?id=eb6ffec065b26259ad3d1811e0bbb0a5332ed276
+#EXTINF:-1 tvg-id="" group-title="14/11 MotoGP", 10:45 G.P. C. Valenciana (Ricardo Tormo) Libres 1
+http://127.0.0.1:6878/ace/getstream?id=7ba1f321f4d0791b7ebd42f41a07c1cd1479e784
+#EXTINF:-1 tvg-id="" group-title="14/11 MotoGP", 10:45 G.P. C. Valenciana (Ricardo Tormo) Libres 1
+http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
+#EXTINF:-1 tvg-id="" group-title="14/11 MotoGP", 10:45 G.P. C. Valenciana (Ricardo Tormo) Libres 1
+http://127.0.0.1:6878/ace/getstream?id=6538b79ce0da657d8455d1da6a5f342398899a0e
+#EXTINF:-1 tvg-id="" group-title="14/11 MotoGP", 10:45 G.P. C. Valenciana (Ricardo Tormo) Libres 1
+http://127.0.0.1:6878/ace/getstream?id=50a8a13c474848d1efbd5586efdb5b6cdd173fa9
+#EXTINF:-1 tvg-id="" group-title="14/11 MotoGP", 10:45 G.P. C. Valenciana (Ricardo Tormo) Libres 1
+http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
+#EXTINF:-1 tvg-id="" group-title="14/11 MotoGP", 10:45 G.P. C. Valenciana (Ricardo Tormo) Libres 1
+http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
+#EXTINF:-1 tvg-id="" group-title="14/11 MotoGP", 10:45 G.P. C. Valenciana (Ricardo Tormo) Libres 1
+http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin Dobles", 11:30 H. Heliovaara | H. Patten M. Arevalo | M. Pavic
+http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin Dobles", 11:30 H. Heliovaara | H. Patten M. Arevalo | M. Pavic
+http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin Dobles", 11:30 H. Heliovaara | H. Patten M. Arevalo | M. Pavic
+http://127.0.0.1:6878/ace/getstream?id=edd06f11e1cef292a1d795e15207ef2f580e298c
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin Dobles", 11:30 H. Heliovaara | H. Patten M. Arevalo | M. Pavic
+http://127.0.0.1:6878/ace/getstream?id=6e212a916c83638268047dd2757c95b14f7d25a3
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin Dobles", 11:30 H. Heliovaara | H. Patten M. Arevalo | M. Pavic
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin Dobles", 11:30 H. Heliovaara | H. Patten M. Arevalo | M. Pavic
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin", 14:00 J. Sinner B. Shelton
+http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin", 14:00 J. Sinner B. Shelton
+http://127.0.0.1:6878/ace/getstream?id=8c67cdb5ba81976662c3a67984a9545d9cfb0f70
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin", 14:00 J. Sinner B. Shelton
+http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin", 14:00 J. Sinner B. Shelton
+http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin", 14:00 J. Sinner B. Shelton
+http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin", 14:00 J. Sinner B. Shelton
+http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin", 14:00 J. Sinner B. Shelton
+http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin", 14:00 J. Sinner B. Shelton
+http://127.0.0.1:6878/ace/getstream?id=edd06f11e1cef292a1d795e15207ef2f580e298c
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin", 14:00 J. Sinner B. Shelton
+http://127.0.0.1:6878/ace/getstream?id=6e212a916c83638268047dd2757c95b14f7d25a3
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin", 14:00 J. Sinner B. Shelton
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin", 14:00 J. Sinner B. Shelton
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 tvg-id="" group-title="14/11 LPGA The Annika", 16:00 Jornada 2
+http://127.0.0.1:6878/ace/getstream?id=9b84af74b2fa3690c519199326fc2f181b025cdd
+#EXTINF:-1 tvg-id="" group-title="14/11 LPGA The Annika", 16:00 Jornada 2
+http://127.0.0.1:6878/ace/getstream?id=594b59d435527327c9b6965f247995b907bfc285
+#EXTINF:-1 tvg-id="" group-title="14/11 LPGA The Annika", 16:00 Jornada 2
+http://127.0.0.1:6878/ace/getstream?id=8546cff89e4ee8bf3ad31cf6457c3bc2c4341031
+#EXTINF:-1 tvg-id="" group-title="14/11 LPGA The Annika", 16:00 Jornada 2
+http://127.0.0.1:6878/ace/getstream?id=9ed46050217ee6ed8236a64b72d7992f7b3b37f2
+#EXTINF:-1 tvg-id="" group-title="14/11 LPGA The Annika", 16:00 Jornada 2
+http://127.0.0.1:6878/ace/getstream?id=872608e734992db636eb79426802cd08f4029afb
+#EXTINF:-1 tvg-id="" group-title="14/11 Euroliga | Liga Regular", 17:00 Dubai Basketball Zalgiris Kaunas
+http://127.0.0.1:6878/ace/getstream?id=ebca4a63ce3bfda7b272964a1acc5227218184a4
+#EXTINF:-1 tvg-id="" group-title="14/11 Euroliga | Liga Regular", 17:00 Dubai Basketball Zalgiris Kaunas
+http://127.0.0.1:6878/ace/getstream?id=2f3cfd199a49819cbd129689a840dc3d23ab93aa
+#EXTINF:-1 tvg-id="" group-title="14/11 Euroliga | Liga Regular", 17:00 Dubai Basketball Zalgiris Kaunas
+http://127.0.0.1:6878/ace/getstream?id=ef9dcc4eaac36a0f608b52a31f8ab237859e071a
+#EXTINF:-1 tvg-id="" group-title="14/11 Euroliga | Liga Regular", 17:00 Dubai Basketball Zalgiris Kaunas
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 tvg-id="" group-title="14/11 Euroliga | Liga Regular", 17:00 Dubai Basketball Zalgiris Kaunas
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin Dobles", 18:00 J. Salisbury | N. Skupski C. Harrison | E. King
+http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin Dobles", 18:00 J. Salisbury | N. Skupski C. Harrison | E. King
+http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin Dobles", 18:00 J. Salisbury | N. Skupski C. Harrison | E. King
+http://127.0.0.1:6878/ace/getstream?id=edd06f11e1cef292a1d795e15207ef2f580e298c
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin Dobles", 18:00 J. Salisbury | N. Skupski C. Harrison | E. King
+http://127.0.0.1:6878/ace/getstream?id=6e212a916c83638268047dd2757c95b14f7d25a3
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin Dobles", 18:00 J. Salisbury | N. Skupski C. Harrison | E. King
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin Dobles", 18:00 J. Salisbury | N. Skupski C. Harrison | E. King
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 tvg-id="" group-title="14/11 Euroliga | Liga Regular", 18:00 Anadolu Efes Istanbul FC Bayern Basketball
+http://127.0.0.1:6878/ace/getstream?id=7b361369a40046ad3011086f9d4ae2982fb4d5aa
+#EXTINF:-1 tvg-id="" group-title="14/11 Euroliga | Liga Regular", 18:00 Anadolu Efes Istanbul FC Bayern Basketball
+http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
+#EXTINF:-1 tvg-id="" group-title="14/11 Euroliga | Liga Regular", 18:00 Anadolu Efes Istanbul FC Bayern Basketball
+http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
+#EXTINF:-1 tvg-id="" group-title="14/11 Euroliga | Liga Regular", 18:00 Anadolu Efes Istanbul FC Bayern Basketball
+http://127.0.0.1:6878/ace/getstream?id=3230cdca852a10325222e3c546e499e31d547a90
+#EXTINF:-1 tvg-id="" group-title="14/11 Amistoso Femenino", 18:45 España Italia
+http://127.0.0.1:6878/ace/getstream?id=2d997da301573c5aba78f969d0d37eb6107941b2
+#EXTINF:-1 tvg-id="" group-title="14/11 Amistoso Femenino", 18:45 España Italia
+http://127.0.0.1:6878/ace/getstream?id=7d910d9480e023608d1fe77eaf47c2ed34592155
+#EXTINF:-1 tvg-id="" group-title="14/11 Primera Federación | Grupo 2", 19:00 Betis Deportivo Sabadell
+http://127.0.0.1:6878/ace/getstream?id=599a2fda91aa55703e2c5a51562d9dbf5d3d31d9
+#EXTINF:-1 tvg-id="" group-title="14/11 Primera Federación | Grupo 2", 19:00 Betis Deportivo Sabadell
+http://127.0.0.1:6878/ace/getstream?id=a2ed6f2ca3f804481131c41ce64d4286a5820476
+#EXTINF:-1 tvg-id="" group-title="14/11 Primera Federación | Grupo 2", 19:00 Betis Deportivo Sabadell
+http://127.0.0.1:6878/ace/getstream?id=b40212c43e96e97542ea00f2129212a054853a57
+#EXTINF:-1 tvg-id="" group-title="14/11 Primera Federación | Grupo 2", 19:00 Betis Deportivo Sabadell
+http://127.0.0.1:6878/ace/getstream?id=ca20f93ea5d9c15744e48a21b52598b9fce87425
+#EXTINF:-1 tvg-id="" group-title="14/11 Primera Federación | Grupo 2", 19:00 Betis Deportivo Sabadell
+http://127.0.0.1:6878/ace/getstream?id=181fcc443b953d54b00a1bf6320ccbb097e85d64
+#EXTINF:-1 tvg-id="" group-title="14/11 Liga F", 19:30 Deportivo Abanca Levante Femenino
+http://127.0.0.1:6878/ace/getstream?id=9b84af74b2fa3690c519199326fc2f181b025cdd
+#EXTINF:-1 tvg-id="" group-title="14/11 Liga F", 19:30 Deportivo Abanca Levante Femenino
+http://127.0.0.1:6878/ace/getstream?id=594b59d435527327c9b6965f247995b907bfc285
+#EXTINF:-1 tvg-id="" group-title="14/11 Liga F", 19:30 Deportivo Abanca Levante Femenino
+http://127.0.0.1:6878/ace/getstream?id=eb6ffec065b26259ad3d1811e0bbb0a5332ed276
+#EXTINF:-1 tvg-id="" group-title="14/11 Liga F", 19:30 Deportivo Abanca Levante Femenino
+http://127.0.0.1:6878/ace/getstream?id=7ba1f321f4d0791b7ebd42f41a07c1cd1479e784
+#EXTINF:-1 tvg-id="" group-title="14/11 Liga F", 19:30 Deportivo Abanca Levante Femenino
+http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
+#EXTINF:-1 tvg-id="" group-title="14/11 Liga F", 19:30 Deportivo Abanca Levante Femenino
+http://127.0.0.1:6878/ace/getstream?id=6538b79ce0da657d8455d1da6a5f342398899a0e
+#EXTINF:-1 tvg-id="" group-title="14/11 Liga F", 19:30 Deportivo Abanca Levante Femenino
+http://127.0.0.1:6878/ace/getstream?id=50a8a13c474848d1efbd5586efdb5b6cdd173fa9
+#EXTINF:-1 tvg-id="" group-title="14/11 Liga F", 19:30 Deportivo Abanca Levante Femenino
+http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
+#EXTINF:-1 tvg-id="" group-title="14/11 Liga F", 19:30 Deportivo Abanca Levante Femenino
+http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
+#EXTINF:-1 tvg-id="" group-title="14/11 Liga F", 19:30 Deportivo Abanca Levante Femenino
+http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
+#EXTINF:-1 tvg-id="" group-title="14/11 NHL | Regular Season", 20:00 Nashville Predators Pittsburgh Penguins
+http://127.0.0.1:6878/ace/getstream?id=b40e1de2dcbd7c665f54877b14c830ed67b32a96
+#EXTINF:-1 tvg-id="" group-title="14/11 NHL | Regular Season", 20:00 Nashville Predators Pittsburgh Penguins
+http://127.0.0.1:6878/ace/getstream?id=58a4c880ab18486d914751db32a12760e74b75a4
+#EXTINF:-1 tvg-id="" group-title="14/11 NHL | Regular Season", 20:00 Nashville Predators Pittsburgh Penguins
+http://127.0.0.1:6878/ace/getstream?id=37825883ed185365e3194a79207347f6c7bd5ba5
+#EXTINF:-1 tvg-id="" group-title="14/11 NHL | Regular Season", 20:00 Nashville Predators Pittsburgh Penguins
+http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
+#EXTINF:-1 tvg-id="" group-title="14/11 Euroliga | Liga Regular", 20:00 ASVEL Lyon-Villeurbanne BC Partizan Beograd
+http://127.0.0.1:6878/ace/getstream?id=8f982a0d6e3196c12d0034142b65008321150f7c
+#EXTINF:-1 tvg-id="" group-title="14/11 Europeo Sub-21 | Fase de Clasificación", 20:30 España San Marino
+http://127.0.0.1:6878/ace/getstream?id=2d997da301573c5aba78f969d0d37eb6107941b2
+#EXTINF:-1 tvg-id="" group-title="14/11 Europeo Sub-21 | Fase de Clasificación", 20:30 España San Marino
+http://127.0.0.1:6878/ace/getstream?id=7d910d9480e023608d1fe77eaf47c2ed34592155
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin", 20:30 A. Zverev F. Auger-Aliassime
+http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin", 20:30 A. Zverev F. Auger-Aliassime
+http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin", 20:30 A. Zverev F. Auger-Aliassime
+http://127.0.0.1:6878/ace/getstream?id=edd06f11e1cef292a1d795e15207ef2f580e298c
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin", 20:30 A. Zverev F. Auger-Aliassime
+http://127.0.0.1:6878/ace/getstream?id=6e212a916c83638268047dd2757c95b14f7d25a3
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin", 20:30 A. Zverev F. Auger-Aliassime
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 tvg-id="" group-title="14/11 ATP Finals | Round Robin", 20:30 A. Zverev F. Auger-Aliassime
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 tvg-id="" group-title="14/11 LaLiga Hypermotion", 20:30 Real Valladolid UD Las Palmas
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 tvg-id="" group-title="14/11 LaLiga Hypermotion", 20:30 Real Valladolid UD Las Palmas
+http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
+#EXTINF:-1 tvg-id="" group-title="14/11 LaLiga Hypermotion", 20:30 Real Valladolid UD Las Palmas
+http://127.0.0.1:6878/ace/getstream?id=8ee52f6208e33706171856f99d2ed2dabd317f3a
+#EXTINF:-1 tvg-id="" group-title="14/11 LaLiga Hypermotion", 20:30 Real Valladolid UD Las Palmas
+http://127.0.0.1:6878/ace/getstream?id=70f22be1286ef224b5e4e9451d9a42468152cda4
+#EXTINF:-1 tvg-id="" group-title="14/11 Euroliga | Liga Regular", 20:30 AX Olimpia Milano Olympiacos Piraeus
+http://127.0.0.1:6878/ace/getstream?id=7b361369a40046ad3011086f9d4ae2982fb4d5aa
+#EXTINF:-1 tvg-id="" group-title="14/11 Euroliga | Liga Regular", 20:30 AX Olimpia Milano Olympiacos Piraeus
+http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
+#EXTINF:-1 tvg-id="" group-title="14/11 Euroliga | Liga Regular", 20:30 AX Olimpia Milano Olympiacos Piraeus
+http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
+#EXTINF:-1 tvg-id="" group-title="14/11 Euroliga | Liga Regular", 20:30 AX Olimpia Milano Olympiacos Piraeus
+http://127.0.0.1:6878/ace/getstream?id=3230cdca852a10325222e3c546e499e31d547a90
+#EXTINF:-1 tvg-id="" group-title="14/11 Euroliga | Liga Regular", 20:30 Barça Basket Virtus Bologna
+http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
+#EXTINF:-1 tvg-id="" group-title="14/11 Euroliga | Liga Regular", 20:30 Barça Basket Virtus Bologna
+http://127.0.0.1:6878/ace/getstream?id=8c67cdb5ba81976662c3a67984a9545d9cfb0f70
+#EXTINF:-1 tvg-id="" group-title="14/11 Euroliga | Liga Regular", 20:30 Barça Basket Virtus Bologna
+http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
+#EXTINF:-1 tvg-id="" group-title="14/11 Euroliga | Liga Regular", 20:30 Barça Basket Virtus Bologna
+http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
+#EXTINF:-1 tvg-id="" group-title="14/11 Euroliga | Liga Regular", 20:30 Barça Basket Virtus Bologna
+http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
+#EXTINF:-1 tvg-id="" group-title="14/11 Euroliga | Liga Regular", 20:30 Barça Basket Virtus Bologna
+http://127.0.0.1:6878/ace/getstream?id=ebca4a63ce3bfda7b272964a1acc5227218184a4
+#EXTINF:-1 tvg-id="" group-title="14/11 Euroliga | Liga Regular", 20:30 Barça Basket Virtus Bologna
+http://127.0.0.1:6878/ace/getstream?id=2f3cfd199a49819cbd129689a840dc3d23ab93aa
+#EXTINF:-1 tvg-id="" group-title="14/11 Euroliga | Liga Regular", 20:30 Barça Basket Virtus Bologna
+http://127.0.0.1:6878/ace/getstream?id=ef9dcc4eaac36a0f608b52a31f8ab237859e071a
+#EXTINF:-1 tvg-id="" group-title="14/11 Euroliga | Liga Regular", 20:30 Barça Basket Virtus Bologna
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 tvg-id="" group-title="14/11 Euroliga | Liga Regular", 20:30 Barça Basket Virtus Bologna
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 tvg-id="" group-title="14/11 Primera Federación | Grupo 1", 21:15 Real Avilés Arenas Club
+http://127.0.0.1:6878/ace/getstream?id=599a2fda91aa55703e2c5a51562d9dbf5d3d31d9
+#EXTINF:-1 tvg-id="" group-title="14/11 Primera Federación | Grupo 1", 21:15 Real Avilés Arenas Club
+http://127.0.0.1:6878/ace/getstream?id=a2ed6f2ca3f804481131c41ce64d4286a5820476
+#EXTINF:-1 tvg-id="" group-title="14/11 Primera Federación | Grupo 1", 21:15 Real Avilés Arenas Club
+http://127.0.0.1:6878/ace/getstream?id=b40212c43e96e97542ea00f2129212a054853a57
