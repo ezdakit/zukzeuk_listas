@@ -44,7 +44,7 @@ async function isZeroNetRunning() {
 }
 
 // Función para cargar una página con reintentos
-async function loadPageWithRetries(page, url, retries = 3, timeout = 60000) {
+async function loadPageWithRetries(page, url, retries = 3, timeout = 80000) {
   console.log(`Cargando página: ${url}`);
   for (let i = 0; i < retries; i++) {
     try {
