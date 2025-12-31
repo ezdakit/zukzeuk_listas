@@ -1,17 +1,11 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"
 #EXTVLCOPT:network-caching=2000
 
-#EXTINF:-1 tvg-id="" group-title="# Eventos 31 de diciembre por horario", 16:25 NEOM SC Al-Ittihad Jeddah Club
-http://127.0.0.1:6878/ace/getstream?id=4416843c96b7f7a1bc55c476091a60fff0922bc7
-#EXTINF:-1 tvg-id="" group-title="# Eventos 31 de diciembre por horario", 16:25 NEOM SC Al-Ittihad Jeddah Club
-http://127.0.0.1:6878/ace/getstream?id=cfc371890bfb502737a26de5215e50929c52d0f9
-#EXTINF:-1 tvg-id="" group-title="# Eventos 31 de diciembre por horario", 17:00 Guinea Ecuatorial Argelia
-http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
-#EXTINF:-1 tvg-id="" group-title="# Eventos 31 de diciembre por horario", 17:00 Guinea Ecuatorial Argelia
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 tvg-id="" group-title="# Eventos 31 de diciembre por horario", 17:00 Guinea Ecuatorial Argelia
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 tvg-id="" group-title="# Eventos 31 de diciembre por horario", 20:00 Gabón Costa de Marfil
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 tvg-id="" group-title="# Eventos 31 de diciembre por horario", 20:00 Gabón Costa de Marfil
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
+#EXTINF:-1 tvg-id="" group-title="# Eventos 01 de enero por horario", 18:00 Texas Tech Oregon
+http://127.0.0.1:6878/ace/getstream?id=ebca4a63ce3bfda7b272964a1acc5227218184a4
+#EXTINF:-1 tvg-id="" group-title="# Eventos 01 de enero por horario", 18:00 Texas Tech Oregon
+http://127.0.0.1:6878/ace/getstream?id=2f3cfd199a49819cbd129689a840dc3d23ab93aa
+#EXTINF:-1 tvg-id="" group-title="# Eventos 01 de enero por horario", 22:00 Indiana Hoosiers Alabama Athletics
+http://127.0.0.1:6878/ace/getstream?id=ebca4a63ce3bfda7b272964a1acc5227218184a4
+#EXTINF:-1 tvg-id="" group-title="# Eventos 01 de enero por horario", 22:00 Indiana Hoosiers Alabama Athletics
+http://127.0.0.1:6878/ace/getstream?id=2f3cfd199a49819cbd129689a840dc3d23ab93aa
