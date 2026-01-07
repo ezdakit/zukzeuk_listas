@@ -1,11 +1,27 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml"
 #EXTVLCOPT:network-caching=2000
 
-#EXTINF:-1 tvg-id="" group-title="* SUPERCOPA ", 20:00 Barcelona - Athletic Club
+#EXTINF:-1 tvg-id="" group-title="# SUPERCOPA ", 20:00 Barcelona - Athletic Club
 http://127.0.0.1:6878/ace/getstream?id=4b528d10eaad747ddf52251206177573ee3e9f74
-#EXTINF:-1 tvg-id="" group-title="* SUPERCOPA ", 20:00 Barcelona - Athletic Club
+#EXTINF:-1 tvg-id="" group-title="# SUPERCOPA ", 20:00 Barcelona - Athletic Club
 http://127.0.0.1:6878/ace/getstream?id=00c9bc9c5d7d87680a5a6bed349edfa775a89947
-#EXTINF:-1 tvg-id="" group-title="* SUPERCOPA ", 20:00 Barcelona - Athletic Club
+#EXTINF:-1 tvg-id="" group-title="# SUPERCOPA ", 20:00 Barcelona - Athletic Club
 http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
-#EXTINF:-1 tvg-id="" group-title="* SUPERCOPA ", 20:00 Barcelona - Athletic Club
+#EXTINF:-1 tvg-id="" group-title="# SUPERCOPA ", 20:00 Barcelona - Athletic Club
 http://127.0.0.1:6878/ace/getstream?id=14b6cd8769cd485f2cffdca64be9698d9bfeac58
+#EXTINF:-1 tvg-id="" group-title="# SUPERCOPA ", 20:00 Barcelona - Athletic Club
+http://127.0.0.1:6878/ace/getstream?id=d4ff041287a43e3114d411d671c4b4e92e21f33y
+#EXTINF:-1 tvg-id="" group-title="# SUPERCOPA ", 20:00 Barcelona - Athletic Club
+http://127.0.0.1:6878/ace/getstream?id=107c3ce5a5d2527c9f06e4eab87477201791f231
+#EXTINF:-1 tvg-id="" group-title="# SUPERCOPA ", 20:00 Barcelona - Athletic Club
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 tvg-id="" group-title="# SUPERCOPA ", 20:00 Barcelona - Athletic Club
+http://127.0.0.1:6878/ace/getstream?id=00c9bc9c5d7d87680a5a6bed349edfa775a89947
+#EXTINF:-1 tvg-id="" group-title="# SUPERCOPA ", 20:00 Barcelona - Athletic Club
+http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
+#EXTINF:-1 tvg-id="" group-title="# SUPERCOPA ", 20:00 Barcelona - Athletic Club
+http://127.0.0.1:6878/ace/getstream?id=4b528d10eaad747ddf52251206177573ee3e9f74
+#EXTINF:-1 tvg-id="" group-title="# SUPERCOPA ", 20:00 Barcelona - Athletic Club
+http://127.0.0.1:6878/ace/getstream?id=14b6cd8769cd485f2cffdca64be9698d9bfeac58
+#EXTINF:-1 tvg-id="" group-title="# SUPERCOPA ", 20:00 Barcelona - Athletic Club
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
