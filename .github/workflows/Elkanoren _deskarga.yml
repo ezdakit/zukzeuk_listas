@@ -1,0 +1,43 @@
+name: Actualizar elcano.m3u
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # Cada 30 minutos
+  workflow_dispatch:         # Permite ejecutarlo manualmente también
+
+jobs:
+  actualizar-lista:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v3
+
+      - name: Preparar rotación de ficheros
+        run: |
+          if [ -f elcano_old.m3u ]; then
+            echo "Borrando elcano_old.m3u existente"
+            rm elcano_old.m3u
+          fi
+
+          if [ -f elcano.m3u ]; then
+            echo "Renombrando elcano.m3u a elcano_old.m3u"
+            mv elcano.m3u elcano_old.m3u
+          fi
+
+      - name: Descargar nuevo fichero
+        run: |
+          curl -L "https://ipfs.io/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.m3u" -o elcano.m3u
+
+      - name: Commit y push de cambios
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git add elcano.m3u
+          if [ -f elcano_old.m3u ]; then
+            git add elcano_old.m3u
+          fi
+
+          git commit -m "Actualización automática de elcano.m3u" || echo "No hay cambios para commitear"
+          git push
