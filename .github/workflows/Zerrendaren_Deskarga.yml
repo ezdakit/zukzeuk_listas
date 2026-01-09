@@ -1,0 +1,269 @@
+name: Zerrendaren_Deskarga
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # Cada 60 minutos
+  workflow_dispatch:
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Descargar elcano.m3u desde múltiples gateways IPFS
+        id: elcano_descarga
+        run: |
+          URLS=(
+            "https://ipfs.io/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.m3u"
+            "https://k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr.ipns.dweb.link/hashes.m3u"
+            "https://cloudflare-ipfs.com/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.m3u"
+            "https://cf-ipfs.com/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.m3u"
+            "https://ipfs.runfission.com/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.m3u"
+            "https://gateway.pinata.cloud/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.m3u"
+            "https://ipfs.infura.io/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.m3u"
+            "https://ipfs.eth.aragon.network/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.m3u"
+            "https://ipfs.decentralized-content.com/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.m3u"
+            "https://ipfs.fleek.co/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.m3u"
+            "https://ipfs.4everland.io/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.m3u"
+            "https://ipfs.io/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.m3u"
+          )
+
+          success=false
+
+          for url in "${URLS[@]}"; do
+            echo "Intentando descargar elcano desde: $url"
+            for i in {1..3}; do
+              curl -L --max-time 20 "$url" -o elcano_tmp.m3u && break
+              echo "Intento $i fallido para $url"
+              sleep 5
+            done
+            if [ -s elcano_tmp.m3u ]; then
+              echo "Descarga correcta elcano desde: $url"
+              success=true
+              break
+            fi
+          done
+
+          if [ "$success" != true ]; then
+            echo "::error title=Descarga elcano fallida::Ninguno de los gateways IPFS respondió correctamente"
+            echo "downloaded=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          if ! grep -q "^#EXTM3U" elcano_tmp.m3u; then
+            echo "::error title=Archivo elcano inválido::El archivo descargado NO es un M3U válido"
+            echo "downloaded=false" >> $GITHUB_OUTPUT
+            rm elcano_tmp.m3u
+            exit 0
+          fi
+
+          changed=true
+          if [ -f elcano.m3u ]; then
+            if cmp -s elcano_tmp.m3u elcano.m3u; then
+              echo "Elcano sin cambios"
+              changed=false
+              rm elcano_tmp.m3u
+            fi
+          fi
+
+          if [ "$changed" = true ]; then
+            mv elcano_tmp.m3u elcano.m3u
+            echo "downloaded=true" >> $GITHUB_OUTPUT
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "downloaded=true" >> $GITHUB_OUTPUT
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Guardar histórico elcano (máximo 50)
+        if: steps.elcano_descarga.outputs.changed == 'true'
+        run: |
+          mkdir -p history
+          timestamp=$(date +"%Y-%m-%d_%H-%M")
+          cp elcano.m3u "history/elcano_$timestamp.m3u"
+
+          total=$(ls history/elcano_*.m3u 2>/dev/null | wc -l || echo 0)
+          if [ "$total" -gt 50 ]; then
+            excess=$((total - 50))
+            echo "Eliminando $excess históricos antiguos de elcano"
+            ls -1t history/elcano_*.m3u | tail -n "$excess" | xargs -I {} rm "{}"
+          fi
+
+      - name: Descargar new_era.m3u desde múltiples gateways IPFS
+        id: newera_descarga
+        run: |
+          URLS=(
+            "https://ipfs.io/ipns/k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004/data/listas/lista_iptv.m3u"
+            "https://k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004.ipns.dweb.link/data/listas/lista_iptv.m3u"
+            "https://cloudflare-ipfs.com/ipns/k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004/data/listas/lista_iptv.m3u"
+            "https://cf-ipfs.com/ipns/k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004/data/listas/lista_iptv.m3u"
+            "https://ipfs.runfission.com/ipns/k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004/data/listas/lista_iptv.m3u"
+            "https://gateway.pinata.cloud/ipns/k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004/data/listas/lista_iptv.m3u"
+            "https://ipfs.infura.io/ipns/k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004/data/listas/lista_iptv.m3u"
+            "https://ipfs.eth.aragon.network/ipns/k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004/data/listas/lista_iptv.m3u"
+            "https://ipfs.decentralized-content.com/ipns/k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004/data/listas/lista_iptv.m3u"
+            "https://ipfs.fleek.co/ipns/k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004/data/listas/lista_iptv.m3u"
+            "https://ipfs.4everland.io/ipns/k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004/data/listas/lista_iptv.m3u"
+            "https://ipfs.io/ipns/k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004/data/listas/lista_iptv.m3u"
+          )
+
+          success=false
+
+          for url in "${URLS[@]}"; do
+            echo "Intentando descargar new_era desde: $url"
+            for i in {1..3}; do
+              curl -L --max-time 20 "$url" -o new_era_tmp.m3u && break
+              echo "Intento $i fallido para $url"
+              sleep 5
+            done
+            if [ -s new_era_tmp.m3u ]; then
+              echo "Descarga correcta new_era desde: $url"
+              success=true
+              break
+            fi
+          done
+
+          if [ "$success" != true ]; then
+            echo "::error title=Descarga new_era fallida::Ninguno de los gateways IPFS respondió correctamente"
+            echo "downloaded=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          if ! grep -q "^#EXTM3U" new_era_tmp.m3u; then
+            echo "::error title=Archivo new_era inválido::El archivo descargado NO es un M3U válido"
+            echo "downloaded=false" >> $GITHUB_OUTPUT
+            rm new_era_tmp.m3u
+            exit 0
+          fi
+
+          changed=true
+          if [ -f new_era.m3u ]; then
+            if cmp -s new_era_tmp.m3u new_era.m3u; then
+              echo "new_era sin cambios"
+              changed=false
+              rm new_era_tmp.m3u
+            fi
+          fi
+
+          if [ "$changed" = true ]; then
+            mv new_era_tmp.m3u new_era.m3u
+            echo "downloaded=true" >> $GITHUB_OUTPUT
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "downloaded=true" >> $GITHUB_OUTPUT
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Guardar histórico new_era (máximo 50)
+        if: steps.newera_descarga.outputs.changed == 'true'
+        run: |
+          mkdir -p history
+          timestamp=$(date +"%Y-%m-%d_%H-%M")
+          cp new_era.m3u "history/new_era_$timestamp.m3u"
+
+          total=$(ls history/new_era_*.m3u 2>/dev/null | wc -l || echo 0)
+          if [ "$total" -gt 50 ]; then
+            excess=$((total - 50))
+            echo "Eliminando $excess históricos antiguos de new_era"
+            ls -1t history/new_era_*.m3u | tail -n "$excess" | xargs -I {} rm "{}"
+          fi
+
+      - name: Generar ezdakit.m3u fusionando elcano y new_era
+        id: ezdakit_generar
+        run: |
+          if [ ! -f elcano.m3u ] || [ ! -f new_era.m3u ]; then
+            echo "::warning title=Fusión no realizada::Faltan elcano.m3u o new_era.m3u"
+            echo "generated=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          {
+            echo "#EXTM3U"
+            awk '
+              BEGIN {
+                FS="\n"
+              }
+              FNR==1 { source = (ARGIND==1 ? "E" : "N") }
+              /^#EXTINF/ {
+                extinf_line = $0
+                getline url_line
+                if (url_line !~ /acestream:\/\//) next
+                if (match(extinf_line, /tvg-id=\"([^\"]*)\"/, a)) {
+                  tvgid = a[1]
+                } else {
+                  next
+                }
+                norm = tvgid
+                sub(/ HD$/, "", norm)
+                if (match(url_line, /acestream:\/\/([0-9a-fA-F]+)/, b)) {
+                  ace = b[1]
+                } else {
+                  next
+                }
+                if (seen[ace]++) next
+                prefix = substr(ace, 1, 3)
+                name = norm " [" source "-" prefix "]"
+                ext = "#EXTINF:-1 tvg-id=\"" tvgid "\" tvg-name=\"" name "\" group-title=\"\"," name
+                printf "%s|||%s|||%s\n", tvgid, ext, url_line
+              }
+            ' elcano.m3u new_era.m3u | sort -t"|" -k1,1 | awk -F'\|\|\|' '{print $2 RS $3}'
+          } > ezdakit_tmp.m3u
+
+          if ! grep -q "^#EXTM3U" ezdakit_tmp.m3u; then
+            echo "::error title=ezdakit inválido::El fichero fusionado no es un M3U válido"
+            rm ezdakit_tmp.m3u
+            echo "generated=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          changed=true
+          if [ -f ezdakit.m3u ]; then
+            if cmp -s ezdakit_tmp.m3u ezdakit.m3u; then
+              echo "ezdakit sin cambios"
+              changed=false
+              rm ezdakit_tmp.m3u
+            fi
+          fi
+
+          if [ "$changed" = true ]; then
+            mv ezdakit_tmp.m3u ezdakit.m3u
+            echo "generated=true" >> $GITHUB_OUTPUT
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "generated=true" >> $GITHUB_OUTPUT
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Guardar histórico ezdakit (máximo 50)
+        if: steps.ezdakit_generar.outputs.changed == 'true'
+        run: |
+          mkdir -p history
+          timestamp=$(date +"%Y-%m-%d_%H-%M")
+          cp ezdakit.m3u "history/ezdakit_$timestamp.m3u"
+
+          total=$(ls history/ezdakit_*.m3u 2>/dev/null | wc -l || echo 0)
+          if [ "$total" -gt 50 ]; then
+            excess=$((total - 50))
+            echo "Eliminando $excess históricos antiguos de ezdakit"
+            ls -1t history/ezdakit_*.m3u | tail -n "$excess" | xargs -I {} rm "{}"
+          fi
+
+      - name: Configurar Git
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+      - name: Commit y push
+        run: |
+          git add elcano.m3u new_era.m3u ezdakit.m3u || true
+          git add history/ || true
+
+          git diff --cached --quiet || git commit -m "Actualización automática de listas IPTV"
+          git push
+
+      - name: Notificación final
+        run: |
+          echo "::notice title=Workflow completado::Actualización y fusión de listas IPTV finalizada"
