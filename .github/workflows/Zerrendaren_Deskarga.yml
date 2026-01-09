@@ -16,9 +16,6 @@ jobs:
       - name: Checkout del repositorio
         uses: actions/checkout@v4
 
-      # ---------------------------------------------------------
-      # BLOQUE 1: DESCARGA ELCANO
-      # ---------------------------------------------------------
       - name: Descargar elcano.m3u desde múltiples gateways IPFS
         id: elcano_descarga
         run: |
@@ -27,58 +24,28 @@ jobs:
             "https://k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr.ipns.dweb.link/hashes.m3u"
             "https://cloudflare-ipfs.com/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.m3u"
             "https://gateway.pinata.cloud/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.m3u"
-            "https://ipfs.io/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.m3u"
           )
-
           success=false
           for url in "${URLS[@]}"; do
-            echo "Intentando descargar elcano desde: $url"
             if curl -L -A "Mozilla/5.0" --max-time 20 "$url" -o elcano_tmp.m3u; then
               if [ -s elcano_tmp.m3u ] && grep -q "^#EXTM3U" elcano_tmp.m3u; then
-                 echo "Descarga correcta y válida desde: $url"
-                 success=true
-                 break
+                 success=true; break
               fi
             fi
-            echo "Fallo o archivo inválido en $url"
             sleep 2
           done
-
           if [ "$success" != true ]; then
-            echo "::warning::No se pudo descargar elcano de ningún gateway. Se usará la versión anterior si existe."
             echo "downloaded=false" >> $GITHUB_OUTPUT
-            if [ -f elcano_tmp.m3u ]; then rm elcano_tmp.m3u; fi
             exit 0
           fi
-
-          changed=true
-          if [ -f elcano.m3u ]; then
-            if cmp -s elcano_tmp.m3u elcano.m3u; then
-              echo "Elcano sin cambios"
-              changed=false
-              rm elcano_tmp.m3u
-            fi
-          fi
-
-          if [ "$changed" = true ]; then
-            mv elcano_tmp.m3u elcano.m3u
-            echo "downloaded=true" >> $GITHUB_OUTPUT
-            echo "changed=true" >> $GITHUB_OUTPUT
-          else
-            echo "downloaded=true" >> $GITHUB_OUTPUT
+          if [ -f elcano.m3u ] && cmp -s elcano_tmp.m3u elcano.m3u; then
             echo "changed=false" >> $GITHUB_OUTPUT
+            rm elcano_tmp.m3u
+          else
+            mv elcano_tmp.m3u elcano.m3u
+            echo "changed=true" >> $GITHUB_OUTPUT
           fi
 
-      - name: Guardar histórico elcano
-        if: steps.elcano_descarga.outputs.changed == 'true'
-        run: |
-          mkdir -p history
-          cp elcano.m3u "history/elcano_$(date +"%Y-%m-%d_%H-%M").m3u"
-          ls -1t history/elcano_*.m3u | tail -n +51 | xargs -r rm
-
-      # ---------------------------------------------------------
-      # BLOQUE 2: DESCARGA NEW ERA
-      # ---------------------------------------------------------
       - name: Descargar new_era.m3u desde múltiples gateways IPFS
         id: newera_descarga
         run: |
@@ -87,88 +54,47 @@ jobs:
             "https://k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004.ipns.dweb.link/data/listas/lista_iptv.m3u"
             "https://cloudflare-ipfs.com/ipns/k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004/data/listas/lista_iptv.m3u"
             "https://gateway.pinata.cloud/ipns/k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004/data/listas/lista_iptv.m3u"
-            "https://ipfs.io/ipns/k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004/data/listas/lista_iptv.m3u"
           )
-
           success=false
           for url in "${URLS[@]}"; do
-            echo "Intentando descargar new_era desde: $url"
             if curl -L -A "Mozilla/5.0" --max-time 20 "$url" -o new_era_tmp.m3u; then
               if [ -s new_era_tmp.m3u ] && grep -q "^#EXTM3U" new_era_tmp.m3u; then
-                 echo "Descarga correcta y válida desde: $url"
-                 success=true
-                 break
+                 success=true; break
               fi
             fi
-            echo "Fallo o archivo inválido en $url"
             sleep 2
           done
-
           if [ "$success" != true ]; then
-            echo "::warning::No se pudo descargar new_era. Se usará versión anterior."
             echo "downloaded=false" >> $GITHUB_OUTPUT
-            if [ -f new_era_tmp.m3u ]; then rm new_era_tmp.m3u; fi
             exit 0
           fi
-
-          changed=true
-          if [ -f new_era.m3u ]; then
-            if cmp -s new_era_tmp.m3u new_era.m3u; then
-              echo "new_era sin cambios"
-              changed=false
-              rm new_era_tmp.m3u
-            fi
-          fi
-
-          if [ "$changed" = true ]; then
-            mv new_era_tmp.m3u new_era.m3u
-            echo "downloaded=true" >> $GITHUB_OUTPUT
-            echo "changed=true" >> $GITHUB_OUTPUT
-          else
-            echo "downloaded=true" >> $GITHUB_OUTPUT
+          if [ -f new_era.m3u ] && cmp -s new_era_tmp.m3u new_era.m3u; then
             echo "changed=false" >> $GITHUB_OUTPUT
+            rm new_era_tmp.m3u
+          else
+            mv new_era_tmp.m3u new_era.m3u
+            echo "changed=true" >> $GITHUB_OUTPUT
           fi
 
-      - name: Guardar histórico new_era
-        if: steps.newera_descarga.outputs.changed == 'true'
-        run: |
-          mkdir -p history
-          cp new_era.m3u "history/new_era_$(date +"%Y-%m-%d_%H-%M").m3u"
-          ls -1t history/new_era_*.m3u | tail -n +51 | xargs -r rm
-
-      # ---------------------------------------------------------
-      # BLOQUE 3: GENERAR EZDAKIT (PYTHON ACTUALIZADO)
-      # ---------------------------------------------------------
       - name: Generar ezdakit.m3u fusionando listas
         id: ezdakit_generar
         run: |
           python3 << 'EOF'
           import re
-          import os
           from pathlib import Path
-
-          elcano_path = Path("elcano.m3u")
-          newera_path = Path("new_era.m3u")
-          output_path = Path("ezdakit_tmp.m3u")
-
-          if not elcano_path.exists() or not newera_path.exists():
-              print("Faltan archivos fuente.")
-              exit(0)
 
           def parse_m3u(path_obj, source_letter):
               items = []
+              if not path_obj.exists(): return items
               content = path_obj.read_text(encoding='utf-8', errors='ignore')
               lines = content.splitlines()
               
               i = 0
               while i < len(lines):
                   line = lines[i].strip()
-                  
                   if line.startswith("#EXTINF"):
                       extinf = line
                       url = None
-                      
-                      # Buscar URL en líneas siguientes
                       j = i + 1
                       while j < len(lines):
                           next_line = lines[j].strip()
@@ -176,99 +102,77 @@ jobs:
                               url = next_line
                               break
                           j += 1
-                      
                       if not url:
-                          i += 1
-                          continue
+                          i += 1; continue
 
-                      # Buscar ID (acestream o http id=)
                       m_ace = re.search(r"(?:acestream://|id=|/)([0-9a-fA-F]{40})", url)
-                      
                       if m_ace:
                           ace_id = m_ace.group(1)
-                          
                           # Extraer tvg-id
                           m_id = re.search(r'tvg-id="([^"]+)"', extinf)
-                          tvgid = m_id.group(1) if m_id else "Unknown"
-
+                          tvgid = m_id.group(1) if m_id and m_id.group(1).strip() else "Unknown"
+                          
+                          # Extraer nombre original (lo que va después de la última coma)
+                          original_name = extinf.split(',')[-1].strip()
+                          
                           # Extraer group-title
                           m_group = re.search(r'group-title="([^"]+)"', extinf)
                           group_title = m_group.group(1) if m_group else "OTROS"
                           
-                          items.append((tvgid, ace_id, extinf, url, source_letter, group_title))
-                      
+                          items.append((tvgid, ace_id, url, source_letter, group_title, original_name))
                       i = j 
-                  
                   i += 1
               return items
 
-          print("Procesando Elcano...")
-          items_elcano = parse_m3u(elcano_path, "E")
-
-          print("Procesando New Era...")
-          items_newera = parse_m3u(newera_path, "N")
+          items_elcano = parse_m3u(Path("elcano.m3u"), "E")
+          items_newera = parse_m3u(Path("new_era.m3u"), "N")
 
           merged = {}
-          # Fusionar manteniendo el grupo original
-          for tvgid, ace, ext, url, src, grp in items_elcano + items_newera:
+          for tvgid, ace, url, src, grp, ori_name in items_elcano + items_newera:
               if ace not in merged:
-                  merged[ace] = (tvgid, ace, ext, url, src, grp)
+                  merged[ace] = (tvgid, ace, url, src, grp, ori_name)
 
           final_items = []
-          for tvgid, ace, ext, url, src, grp in merged.values():
-              norm = tvgid[:-3] if tvgid.endswith(" HD") else tvgid
+          for tvgid, ace, url, src, grp, ori_name in merged.values():
               prefix = ace[:3]
+              if tvgid == "Unknown":
+                  name = f"{ori_name} ({src}-{prefix})"
+              else:
+                  norm = tvgid[:-3] if tvgid.endswith(" HD") else tvgid
+                  name = f"{norm} ({src}-{prefix})"
               
-              # CAMBIO AQUÍ: Usar paréntesis () en lugar de corchetes []
-              name = f"{norm} ({src}-{prefix})"
-              
-              # Reconstruir EXTINF
               new_extinf = f'#EXTINF:-1 tvg-id="{tvgid}" tvg-name="{name}" group-title="{grp}",{name}'
-              
-              final_items.append((tvgid, new_extinf, url))
+              final_items.append((tvgid if tvgid != "Unknown" else name, new_extinf, url))
 
           final_items.sort(key=lambda x: x[0])
-
-          header = "#EXTM3U url-tvg=\"https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml\" refresh=\"3600\""
-          output_lines = [header]
           
-          for _, extinf, url in final_items:
-              output_lines.append(extinf)
-              output_lines.append(url)
-
-          output_path.write_text("\n".join(output_lines), encoding="utf-8")
-
-          if Path("ezdakit.m3u").exists():
-              old_content = Path("ezdakit.m3u").read_text(encoding="utf-8", errors="ignore")
-              new_content = output_path.read_text(encoding="utf-8", errors="ignore")
-              if old_content == new_content:
-                  print("ezdakit sin cambios")
-                  output_path.unlink()
-                  print("generated=true")
-                  print("changed=false")
-                  exit(0)
-
-          output_path.replace("ezdakit.m3u")
-          print("generated=true")
-          print("changed=true")
+          header = "#EXTM3U url-tvg=\"https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml\" refresh=\"3600\""
+          output_path = Path("ezdakit.m3u")
+          new_content = header + "\n" + "\n".join([f"{ei}\n{u}" for _, ei, u in final_items])
+          
+          changed = True
+          if output_path.exists() and output_path.read_text(encoding='utf-8') == new_content:
+              changed = False
+          
+          if changed:
+              output_path.write_text(new_content, encoding="utf-8")
+              print("changed=true")
+          else:
+              print("changed=false")
           EOF
+          echo "changed=$(python3 -c "import sys; print('true') if 'changed=true' in sys.stdin.read() else print('false')" << 'EOF'
+          $(cat)
+          EOF
+          )" >> $GITHUB_OUTPUT
 
-      - name: Guardar histórico ezdakit
-        if: steps.ezdakit_generar.outputs.changed == 'true'
-        run: |
-          mkdir -p history
-          cp ezdakit.m3u "history/ezdakit_$(date +"%Y-%m-%d_%H-%M").m3u"
-          ls -1t history/ezdakit_*.m3u | tail -n +51 | xargs -r rm
-
-      - name: Configurar Git y Push
+      - name: Guardar histórico y Push
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git add elcano.m3u new_era.m3u ezdakit.m3u history/*.m3u || true
-
-          if git diff --staged --quiet; then
-            echo "No hay cambios para commitear"
-          else
-            git commit -m "Actualización automática de listas IPTV [$(date +'%Y-%m-%d %H:%M')]"
-            git push
-          fi
+          mkdir -p history
+          [ -f elcano.m3u ] && cp elcano.m3u "history/elcano_$(date +%F_%H-%M).m3u"
+          [ -f new_era.m3u ] && cp new_era.m3u "history/new_era_$(date +%F_%H-%M).m3u"
+          [ -f ezdakit.m3u ] && cp ezdakit.m3u "history/ezdakit_$(date +%F_%H-%M).m3u"
+          ls -1t history/*.m3u | tail -n +151 | xargs -r rm
+          git add .
+          git diff --staged --quiet || (git commit -m "Update lists $(date +'%Y-%m-%d %H:%M')" && git push)
