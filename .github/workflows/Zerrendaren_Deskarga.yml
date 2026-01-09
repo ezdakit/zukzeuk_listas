@@ -183,24 +183,19 @@ jobs:
           # Copiar cabecera completa de elcano
           head -n1 elcano.m3u > ezdakit_tmp.m3u
 
-          awk '
-            # Detectar fuente (E = elcano, N = new_era)
+          awk -v SEP="$(printf '\x1F')" '
             FNR==1 {
               source = (ARGIND==1 ? "E" : "N")
               next
             }
 
-            # Detectar EXTINF aunque tenga espacios o BOM
             /^[[:space:]]*#EXTINF/ {
               extinf_line = $0
 
-              # Leer URL
               if (getline url_line <= 0) next
-
-              # Solo acestream
               if (url_line !~ /acestream:\/\//) next
 
-              # Extraer tvg-id
+              # tvg-id
               tvgid=""
               if (match(extinf_line, /tvg-id="[^"]*"/)) {
                 raw = substr(extinf_line, RSTART, RLENGTH)
@@ -209,11 +204,10 @@ jobs:
                 tvgid = raw
               } else next
 
-              # Normalizar nombre
               norm = tvgid
               sub(/ HD$/, "", norm)
 
-              # Extraer acestream ID
+              # acestream ID
               ace=""
               if (match(url_line, /acestream:\/\/[0-9a-fA-F]+/)) {
                 raw = substr(url_line, RSTART, RLENGTH)
@@ -221,7 +215,6 @@ jobs:
                 ace = raw
               } else next
 
-              # Evitar duplicados
               if (seen[ace]++) next
 
               prefix = substr(ace, 1, 3)
@@ -229,12 +222,11 @@ jobs:
 
               ext = "#EXTINF:-1 tvg-id=\"" tvgid "\" tvg-name=\"" name "\" group-title=\"\"," name
 
-              # Guardar para ordenar por tvg-id
-              print tvgid "|||" ext "|||" url_line
+              print tvgid SEP ext SEP url_line
             }
           ' elcano.m3u new_era.m3u \
-          | sort -t"|" -k1,1 \
-          | awk -F'\|\|\|' '{print $2 ORS $3}' >> ezdakit_tmp.m3u
+          | sort -t"$(printf '\x1F')" -k1,1 \
+          | awk -v SEP="$(printf '\x1F')" -F"$(printf '\x1F')" '{print $2 ORS $3}' >> ezdakit_tmp.m3u
 
           # Validación
           if ! grep -q "^#EXTM3U" ezdakit_tmp.m3u; then
