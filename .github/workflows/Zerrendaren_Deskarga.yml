@@ -180,37 +180,54 @@ jobs:
             exit 0
           fi
 
-          {
-            echo "#EXTM3U"
-            awk '
-              BEGIN {
-                FS="\n"
+          # Cabecera: copiamos solo la primera línea de elcano
+          head -n1 elcano.m3u > ezdakit_tmp.m3u
+
+          # Procesamos elcano (fuente E) y new_era (fuente N)
+          awk '
+            FNR==1 {
+              source = (ARGIND==1 ? "E" : "N")
+              next
+            }
+            /^#EXTINF/ {
+              extinf_line = $0
+              if (getline url_line <= 0) next
+
+              # Solo canales con acestream
+              if (url_line !~ /acestream:\/\//) next
+
+              # tvg-id obligatorio
+              if (match(extinf_line, /tvg-id=\"([^\"]*)\"/, a)) {
+                tvgid = a[1]
+              } else {
+                next
               }
-              FNR==1 { source = (ARGIND==1 ? "E" : "N") }
-              /^#EXTINF/ {
-                extinf_line = $0
-                getline url_line
-                if (url_line !~ /acestream:\/\//) next
-                if (match(extinf_line, /tvg-id=\"([^\"]*)\"/, a)) {
-                  tvgid = a[1]
-                } else {
-                  next
-                }
-                norm = tvgid
-                sub(/ HD$/, "", norm)
-                if (match(url_line, /acestream:\/\/([0-9a-fA-F]+)/, b)) {
-                  ace = b[1]
-                } else {
-                  next
-                }
-                if (seen[ace]++) next
-                prefix = substr(ace, 1, 3)
-                name = norm " [" source "-" prefix "]"
-                ext = "#EXTINF:-1 tvg-id=\"" tvgid "\" tvg-name=\"" name "\" group-title=\"\"," name
-                printf "%s|||%s|||%s\n", tvgid, ext, url_line
+
+              # Normalizar nombre: tvg-id sin sufijo " HD"
+              norm = tvgid
+              sub(/ HD$/, "", norm)
+
+              # Extraer ID de acestream
+              if (match(url_line, /acestream:\/\/([0-9a-fA-F]+)/, b)) {
+                ace = b[1]
+              } else {
+                next
               }
-            ' elcano.m3u new_era.m3u | sort -t"|" -k1,1 | awk -F'\|\|\|' '{print $2 RS $3}'
-          } > ezdakit_tmp.m3u
+
+              # Evitar duplicados por ID de acestream
+              if (seen[ace]++) next
+
+              prefix = substr(ace, 1, 3)
+              name = norm " [" source "-" prefix "]"
+
+              ext = "#EXTINF:-1 tvg-id=\"" tvgid "\" tvg-name=\"" name "\" group-title=\"\"," name
+
+              # Guardamos línea ordenable por tvg-id
+              printf "%s|||%s|||%s\n", tvgid, ext, url_line
+            }
+          ' elcano.m3u new_era.m3u \
+          | sort -t"|" -k1,1 \
+          | awk -F'\|\|\|' '{print $2 ORS $3}' >> ezdakit_tmp.m3u
 
           if ! grep -q "^#EXTM3U" ezdakit_tmp.m3u; then
             echo "::error title=ezdakit inválido::El fichero fusionado no es un M3U válido"
