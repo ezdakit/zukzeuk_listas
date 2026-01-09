@@ -175,84 +175,84 @@ jobs:
         id: ezdakit_generar
         run: |
           python3 << 'EOF'
-import re
-import os
-from pathlib import Path
+          import re
+          import os
+          from pathlib import Path
 
-elcano = Path("elcano.m3u")
-newera = Path("new_era.m3u")
+          elcano = Path("elcano.m3u")
+          newera = Path("new_era.m3u")
 
-if not elcano.exists() or not newera.exists():
-    print("generated=false")
-    exit(0)
+          if not elcano.exists() or not newera.exists():
+              print("generated=false")
+              exit(0)
 
-def parse_m3u(path, source_letter):
-    items = []
-    lines = path.read_text(errors="ignore").splitlines()
-    i = 0
-    while i < len(lines):
-        line = lines[i].strip()
-        if line.startswith("#EXTINF"):
-            extinf = line
-            if i + 1 < len(lines):
-                url = lines[i+1].strip()
-            else:
-                i += 1
-                continue
-            m_ace = re.search(r"acestream://([0-9a-fA-F]+)", url)
-            if not m_ace:
-                i += 1
-                continue
-            ace_id = m_ace.group(1)
-            m_id = re.search(r'tvg-id="([^"]+)"', extinf)
-            if not m_id:
-                i += 1
-                continue
-            tvgid = m_id.group(1)
-            items.append((tvgid, ace_id, extinf, url, source_letter))
-        i += 1
-    return items
+          def parse_m3u(path, source_letter):
+              items = []
+              lines = path.read_text(errors="ignore").splitlines()
+              i = 0
+              while i < len(lines):
+                  line = lines[i].strip()
+                  if line.startswith("#EXTINF"):
+                      extinf = line
+                      if i + 1 < len(lines):
+                          url = lines[i+1].strip()
+                      else:
+                          i += 1
+                          continue
+                      m_ace = re.search(r"acestream://([0-9a-fA-F]+)", url)
+                      if not m_ace:
+                          i += 1
+                          continue
+                      ace_id = m_ace.group(1)
+                      m_id = re.search(r'tvg-id="([^"]+)"', extinf)
+                      if not m_id:
+                          i += 1
+                          continue
+                      tvgid = m_id.group(1)
+                      items.append((tvgid, ace_id, extinf, url, source_letter))
+                  i += 1
+              return items
 
-items_elcano = parse_m3u(elcano, "E")
-items_newera = parse_m3u(newera, "N")
+          items_elcano = parse_m3u(elcano, "E")
+          items_newera = parse_m3u(newera, "N")
 
-merged = {}
-for tvgid, ace, ext, url, src in items_elcano + items_newera:
-    if ace not in merged:
-        merged[ace] = (tvgid, ace, ext, url, src)
+          merged = {}
+          for tvgid, ace, ext, url, src in items_elcano + items_newera:
+              if ace not in merged:
+                  merged[ace] = (tvgid, ace, ext, url, src)
 
-final_items = []
-for tvgid, ace, ext, url, src in merged.values():
-    norm = tvgid[:-3] if tvgid.endswith(" HD") else tvgid
-    prefix = ace[:3]
-    name = f"{norm} [{src}-{prefix}]"
-    extinf = f'#EXTINF:-1 tvg-id="{tvgid}" tvg-name="{name}" group-title="",{name}'
-    final_items.append((tvgid, extinf, url))
+          final_items = []
+          for tvgid, ace, ext, url, src in merged.values():
+              norm = tvgid[:-3] if tvgid.endswith(" HD") else tvgid
+              prefix = ace[:3]
+              name = f"{norm} [{src}-{prefix}]"
+              extinf = f'#EXTINF:-1 tvg-id="{tvgid}" tvg-name="{name}" group-title="",{name}'
+              final_items.append((tvgid, extinf, url))
 
-final_items.sort(key=lambda x: x[0])
+          final_items.sort(key=lambda x: x[0])
 
-header = elcano.read_text(errors="ignore").splitlines()[0]
-output = [header]
-for _, extinf, url in final_items:
-    output.append(extinf)
-    output.append(url)
+          header = elcano.read_text(errors="ignore").splitlines()[0]
+          output = [header]
+          for _, extinf, url in final_items:
+              output.append(extinf)
+              output.append(url)
 
-Path("ezdakit_tmp.m3u").write_text("\n".join(output), encoding="utf-8")
+          Path("ezdakit_tmp.m3u").write_text("\n".join(output), encoding="utf-8")
 
-if Path("ezdakit.m3u").exists():
-    old = Path("ezdakit.m3u").read_text(errors="ignore")
-    new = Path("ezdakit_tmp.m3u").read_text(errors="ignore")
-    if old == new:
-        print("ezdakit sin cambios")
-        os.remove("ezdakit_tmp.m3u")
-        print("generated=true")
-        print("changed=false")
-        exit(0)
+          if Path("ezdakit.m3u").exists():
+              old = Path("ezdakit.m3u").read_text(errors="ignore")
+              new = Path("ezdakit_tmp.m3u").read_text(errors="ignore")
+              if old == new:
+                  print("ezdakit sin cambios")
+                  os.remove("ezdakit_tmp.m3u")
+                  print("generated=true")
+                  print("changed=false")
+                  exit(0)
 
-os.replace("ezdakit_tmp.m3u", "ezdakit.m3u")
-print("generated=true")
-print("changed=true")
-EOF
+          os.replace("ezdakit_tmp.m3u", "ezdakit.m3u")
+          print("generated=true")
+          print("changed=true")
+          EOF
 
       - name: Guardar histórico ezdakit (máximo 50)
         if: steps.ezdakit_generar.outputs.changed == 'true'
