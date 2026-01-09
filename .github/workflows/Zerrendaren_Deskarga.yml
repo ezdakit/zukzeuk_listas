@@ -191,7 +191,7 @@ jobs:
                           m_id = re.search(r'tvg-id="([^"]+)"', extinf)
                           tvgid = m_id.group(1) if m_id else "Unknown"
 
-                          # Extraer group-title (NUEVO)
+                          # Extraer group-title
                           m_group = re.search(r'group-title="([^"]+)"', extinf)
                           group_title = m_group.group(1) if m_group else "OTROS"
                           
@@ -218,9 +218,11 @@ jobs:
           for tvgid, ace, ext, url, src, grp in merged.values():
               norm = tvgid[:-3] if tvgid.endswith(" HD") else tvgid
               prefix = ace[:3]
-              name = f"{norm} [{src}-{prefix}]"
               
-              # Usar el 'grp' extraído en lugar de "FUSION"
+              # CAMBIO AQUÍ: Usar paréntesis () en lugar de corchetes []
+              name = f"{norm} ({src}-{prefix})"
+              
+              # Reconstruir EXTINF
               new_extinf = f'#EXTINF:-1 tvg-id="{tvgid}" tvg-name="{name}" group-title="{grp}",{name}'
               
               final_items.append((tvgid, new_extinf, url))
