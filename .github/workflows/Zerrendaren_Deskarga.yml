@@ -5,7 +5,6 @@ on:
     - cron: "0 * * * *"   # Cada 60 minutos
   workflow_dispatch:
 
-# Permisos necesarios para poder hacer commit y push
 permissions:
   contents: write
 
@@ -34,7 +33,6 @@ jobs:
           success=false
           for url in "${URLS[@]}"; do
             echo "Intentando descargar elcano desde: $url"
-            # Se añade User-Agent para evitar bloqueos en algunos gateways
             if curl -L -A "Mozilla/5.0" --max-time 20 "$url" -o elcano_tmp.m3u; then
               if [ -s elcano_tmp.m3u ] && grep -q "^#EXTM3U" elcano_tmp.m3u; then
                  echo "Descarga correcta y válida desde: $url"
@@ -139,7 +137,7 @@ jobs:
           ls -1t history/new_era_*.m3u | tail -n +51 | xargs -r rm
 
       # ---------------------------------------------------------
-      # BLOQUE 3: GENERAR EZDAKIT (PYTHON CORREGIDO)
+      # BLOQUE 3: GENERAR EZDAKIT (PYTHON ACTUALIZADO)
       # ---------------------------------------------------------
       - name: Generar ezdakit.m3u fusionando listas
         id: ezdakit_generar
@@ -149,7 +147,6 @@ jobs:
           import os
           from pathlib import Path
 
-          # Definir archivos
           elcano_path = Path("elcano.m3u")
           newera_path = Path("new_era.m3u")
           output_path = Path("ezdakit_tmp.m3u")
@@ -160,7 +157,6 @@ jobs:
 
           def parse_m3u(path_obj, source_letter):
               items = []
-              # Leer archivo con codificación tolerante
               content = path_obj.read_text(encoding='utf-8', errors='ignore')
               lines = content.splitlines()
               
@@ -172,7 +168,7 @@ jobs:
                       extinf = line
                       url = None
                       
-                      # Buscar la URL en las siguientes líneas (saltando #EXTGRP, etc.)
+                      # Buscar URL en líneas siguientes
                       j = i + 1
                       while j < len(lines):
                           next_line = lines[j].strip()
@@ -185,8 +181,7 @@ jobs:
                           i += 1
                           continue
 
-                      # CORRECCIÓN IMPORTANTE: Regex para capturar tanto 'acestream://' como 'id='
-                      # Tus archivos usan http://.../getstream?id=HASH, no ace://
+                      # Buscar ID (acestream o http id=)
                       m_ace = re.search(r"(?:acestream://|id=|/)([0-9a-fA-F]{40})", url)
                       
                       if m_ace:
@@ -195,10 +190,13 @@ jobs:
                           # Extraer tvg-id
                           m_id = re.search(r'tvg-id="([^"]+)"', extinf)
                           tvgid = m_id.group(1) if m_id else "Unknown"
+
+                          # Extraer group-title (NUEVO)
+                          m_group = re.search(r'group-title="([^"]+)"', extinf)
+                          group_title = m_group.group(1) if m_group else "OTROS"
                           
-                          items.append((tvgid, ace_id, extinf, url, source_letter))
+                          items.append((tvgid, ace_id, extinf, url, source_letter, group_title))
                       
-                      # Saltar al índice donde encontramos la URL para continuar desde ahí
                       i = j 
                   
                   i += 1
@@ -206,41 +204,29 @@ jobs:
 
           print("Procesando Elcano...")
           items_elcano = parse_m3u(elcano_path, "E")
-          print(f"Encontrados {len(items_elcano)} canales en Elcano")
 
           print("Procesando New Era...")
           items_newera = parse_m3u(newera_path, "N")
-          print(f"Encontrados {len(items_newera)} canales en New Era")
 
-          # Fusionar usando diccionario para evitar duplicados (ID es la clave)
           merged = {}
-          # El orden importa: items posteriores sobrescriben si la clave es igual.
-          # Si quieres prioridad Elcano, procesa NewEra primero o usa setdefault.
-          # Aquí concatenamos: Elcano tiene prioridad en el bucle si usamos 'if not in'.
-          
-          for tvgid, ace, ext, url, src in items_elcano + items_newera:
+          # Fusionar manteniendo el grupo original
+          for tvgid, ace, ext, url, src, grp in items_elcano + items_newera:
               if ace not in merged:
-                  merged[ace] = (tvgid, ace, ext, url, src)
+                  merged[ace] = (tvgid, ace, ext, url, src, grp)
 
-          # Generar lista final
           final_items = []
-          for tvgid, ace, ext, url, src in merged.values():
-              # Limpiar nombre (quitar HD al final para ordenar mejor)
+          for tvgid, ace, ext, url, src, grp in merged.values():
               norm = tvgid[:-3] if tvgid.endswith(" HD") else tvgid
-              prefix = ace[:3] # Primeros 3 caracteres del ID
-              
-              # Crear nuevo nombre para el canal
+              prefix = ace[:3]
               name = f"{norm} [{src}-{prefix}]"
               
-              # Reconstruir EXTINF limpio
-              new_extinf = f'#EXTINF:-1 tvg-id="{tvgid}" tvg-name="{name}" group-title="FUSION",{name}'
+              # Usar el 'grp' extraído en lugar de "FUSION"
+              new_extinf = f'#EXTINF:-1 tvg-id="{tvgid}" tvg-name="{name}" group-title="{grp}",{name}'
               
               final_items.append((tvgid, new_extinf, url))
 
-          # Ordenar alfabéticamente por tvg-id
           final_items.sort(key=lambda x: x[0])
 
-          # Escribir archivo
           header = "#EXTM3U url-tvg=\"https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml\" refresh=\"3600\""
           output_lines = [header]
           
@@ -249,15 +235,13 @@ jobs:
               output_lines.append(url)
 
           output_path.write_text("\n".join(output_lines), encoding="utf-8")
-          print(f"Archivo generado con {len(final_items)} canales.")
 
-          # Verificar cambios
           if Path("ezdakit.m3u").exists():
               old_content = Path("ezdakit.m3u").read_text(encoding="utf-8", errors="ignore")
               new_content = output_path.read_text(encoding="utf-8", errors="ignore")
               if old_content == new_content:
                   print("ezdakit sin cambios")
-                  output_path.unlink() # Borrar temporal
+                  output_path.unlink()
                   print("generated=true")
                   print("changed=false")
                   exit(0)
@@ -274,18 +258,12 @@ jobs:
           cp ezdakit.m3u "history/ezdakit_$(date +"%Y-%m-%d_%H-%M").m3u"
           ls -1t history/ezdakit_*.m3u | tail -n +51 | xargs -r rm
 
-      # ---------------------------------------------------------
-      # BLOQUE 4: COMMIT FINAL
-      # ---------------------------------------------------------
       - name: Configurar Git y Push
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-
-          # Añadir archivos relevantes
           git add elcano.m3u new_era.m3u ezdakit.m3u history/*.m3u || true
 
-          # Commit solo si hay cambios
           if git diff --staged --quiet; then
             echo "No hay cambios para commitear"
           else
