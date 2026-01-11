@@ -1,8 +1,6 @@
 name: new_era_deskarga
-
 on:
-  schedule:
-    - cron: "0 * * * *"   # Cada 60 minutos
+
   workflow_dispatch:
 
 jobs:
