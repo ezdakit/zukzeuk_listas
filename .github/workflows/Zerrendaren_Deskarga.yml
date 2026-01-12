@@ -146,7 +146,7 @@ jobs:
 
           final_items.sort(key=lambda x: x[0])
           
-          header = "#EXTM3U url-tvg=\"https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml\" refresh=\"3600\""
+          header = "#EXTM3U url-tvg=\"https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml\" refresh=\"3600\""
           output_path = Path("ezdakit.m3u")
           new_content = header + "\n" + "\n".join([f"{ei}\n{u}" for _, ei, u in final_items])
           
