@@ -1,29 +1,24 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
-#EXTINF:-1 tvg-id="M+ LaLiga 2 HD" tvg-name="Real Sociedad - Osasuna (N-911)" group-title="COPA DEL REY",Real Sociedad - Osasuna (N-911)
+#EXTINF:-1 tvg-id="M+ LaLiga 2 HD" tvg-name="Alavés - Rayo (N-911)" group-title="COPA DEL REY",Alavés - Rayo (N-911)
 http://127.0.0.1:6878/ace/getstream?id=911ad127726234b97658498a8b790fdd7516541d
-#EXTINF:-1 tvg-id="M+ LaLiga 2 HD" tvg-name="Real Sociedad - Osasuna (N-51b)" group-title="COPA DEL REY",Real Sociedad - Osasuna (N-51b)
+#EXTINF:-1 tvg-id="M+ LaLiga 2 HD" tvg-name="Alavés - Rayo (N-51b)" group-title="COPA DEL REY",Alavés - Rayo (N-51b)
 http://127.0.0.1:6878/ace/getstream?id=51b363b1c4d42724e05240ad068ad219df8042ec
-#EXTINF:-1 tvg-id="M+ LaLiga 2 HD" tvg-name="Real Sociedad - Osasuna (N-ad4)" group-title="COPA DEL REY",Real Sociedad - Osasuna (N-ad4)
+#EXTINF:-1 tvg-id="M+ LaLiga 2 HD" tvg-name="Alavés - Rayo (N-ad4)" group-title="COPA DEL REY",Alavés - Rayo (N-ad4)
 http://127.0.0.1:6878/ace/getstream?id=ad42faa399df66dcd62a1cbc9d1c99ed4512d3b8
-#EXTINF:-1 tvg-id="M+ LaLiga 2 HD" tvg-name="Real Sociedad - Osasuna (N-b8e)" group-title="COPA DEL REY",Real Sociedad - Osasuna (N-b8e)
+#EXTINF:-1 tvg-id="M+ LaLiga 2 HD" tvg-name="Alavés - Rayo (N-b8e)" group-title="COPA DEL REY",Alavés - Rayo (N-b8e)
 http://127.0.0.1:6878/ace/getstream?id=b8eb9c9868d487402569bba2d97a8af113d033fe
-#EXTINF:-1 tvg-id="M+ LaLiga 3 HD" tvg-name="Cultural - Athletic (N-7ad)" group-title="COPA DEL REY",Cultural - Athletic (N-7ad)
-http://127.0.0.1:6878/ace/getstream?id=7ad14386deef2f45ffe17d30a631dbf79b6a1a87
-#EXTINF:-1 tvg-id="M+ LaLiga 3 HD" tvg-name="Cultural - Athletic (N-382)" group-title="COPA DEL REY",Cultural - Athletic (N-382)
-http://127.0.0.1:6878/ace/getstream?id=382b14499e3d76e557d449d2e5bbc4e4bd63bd39
-#EXTINF:-1 tvg-id="M+ LaLiga 3 HD" tvg-name="Cultural - Athletic (N-571)" group-title="COPA DEL REY",Cultural - Athletic (N-571)
-http://127.0.0.1:6878/ace/getstream?id=571ce113b9d600a145766443d7417eccab2e1846
-#EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-name="Deportivo - At. Madrid (N-107)" group-title="COPA DEL REY",Deportivo - At. Madrid (N-107)
+
+#EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-name="Real Betis - Elche (N-107)" group-title="COPA DEL REY",Real Betis - Elche (N-107)
 http://127.0.0.1:6878/ace/getstream?id=107c3ce5a5d2527c9f06e4eab87477201791f231
-#EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-name="Deportivo - At. Madrid (N-8c3)" group-title="COPA DEL REY",Deportivo - At. Madrid (N-8c3)
+#EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-name="Real Betis - Elche (N-8c3)" group-title="COPA DEL REY",Real Betis - Elche (N-8c3)
 http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
-#EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-name="Deportivo - At. Madrid (N-00c)" group-title="COPA DEL REY",Deportivo - At. Madrid (N-00c)
+#EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-name="Real Betis - Elche (N-00c)" group-title="COPA DEL REY",Real Betis - Elche (N-00c)
 http://127.0.0.1:6878/ace/getstream?id=00c9bc9c5d7d87680a5a6bed349edfa775a89947
-#EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-name="Deportivo - At. Madrid (N-c93)" group-title="COPA DEL REY",Deportivo - At. Madrid (N-c93)
+#EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-name="Real Betis - Elche (N-c93)" group-title="COPA DEL REY",Real Betis - Elche (N-c93)
 http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
-#EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-name="Deportivo - At. Madrid (N-4b5)" group-title="COPA DEL REY",Deportivo - At. Madrid (N-4b5)
+#EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-name="Real Betis - Elche (N-4b5)" group-title="COPA DEL REY",Real Betis - Elche (N-4b5)
 http://127.0.0.1:6878/ace/getstream?id=4b528d10eaad747ddf52251206177573ee3e9f74
-#EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-name="Deportivo - At. Madrid (N-14b)" group-title="COPA DEL REY",Deportivo - At. Madrid (N-14b)
+#EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-name="Real Betis - Elche (N-14b)" group-title="COPA DEL REY",Real Betis - Elche (N-14b)
 http://127.0.0.1:6878/ace/getstream?id=14b6cd8769cd485f2cffdca64be9698d9bfeac58
-#EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-name="Deportivo - At. Madrid (N-31c)" group-title="COPA DEL REY",Deportivo - At. Madrid (N-31c)
+#EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-name="Real Betis - Elche (N-31c)" group-title="COPA DEL REY",Real Betis - Elche (N-31c)
 http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
