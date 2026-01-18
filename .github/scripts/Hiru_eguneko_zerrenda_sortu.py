@@ -25,7 +25,6 @@ def get_html_content():
 
 def clean_text(text):
     if not text: return ""
-    # Basura detectada en los nombres
     noise = ["Copiar ID", "Reproducir", "Ver Contenido", "Descargar", "FHD", "HD", "SD", "-->", "Links", "Acestream"]
     for n in noise:
         text = text.replace(n, "")
@@ -39,83 +38,80 @@ def parse_agenda(html):
     current_date = datetime.now().strftime("%d-%m")
     ace_pattern = re.compile(r'[a-f0-9]{40}')
     
-    # 1. Filtro de zona: Solo la agenda real
+    # Localizar el área de agenda para evitar menús
     agenda_area = soup.find('div', id='agenda') or soup.body
     
-    # Variable de estado para mantener la competición
-    active_competition = "Deportes"
-
-    # Iteramos por elementos clave para mantener el orden
-    for element in agenda_area.find_all(['h3', 'b', 'tr', 'div']):
-        # Ignorar el menú gigante (basado en longitud)
-        if len(element.get_text()) > 500: continue
+    active_group = "Otros Deportes"
+    
+    # Analizamos los elementos de la agenda
+    for element in agenda_area.find_all(['h3', 'b', 'tr', 'div', 'p']):
+        # Evitar bloques masivos (menús ocultos)
+        if len(element.get_text()) > 400: continue
 
         row_str = str(element)
         ids = ace_pattern.findall(row_str)
 
-        # CASO A: Es un título de competición (No tiene IDs y es texto corto)
-        if not ids:
-            candidate = clean_text(element.get_text())
-            if 3 < len(candidate) < 35 and not any(x in candidate.upper() for x in ["TODOS", "CATEGORÍAS", "MENÚ"]):
-                active_competition = candidate
+        # 1. ¿ES UN GRUPO (COMPETICIÓN)? 
+        # Si es un encabezado (h3, b) y NO tiene IDs
+        if element.name in ['h3', 'b'] and not ids:
+            txt = clean_text(element.get_text())
+            if 3 < len(txt) < 35 and not any(x in txt.upper() for x in ["TODOS", "CATEGORÍAS", "MENÚ"]):
+                active_group = txt
             continue
 
-        # CASO B: Es un evento (Tiene IDs)
+        # 2. ¿ES UN EVENTO?
+        # Debe tener IDs y, para ser evento real de agenda, una HORA
         full_text = element.get_text(" ", strip=True)
         time_match = re.search(r'(\d{1,2}:\d{2})', full_text)
         
-        # Si tiene ID pero no tiene hora, suele ser un canal del menú, lo saltamos
-        if not time_match: continue
-        
-        hora = time_match.group(1)
-        # El nombre del partido es lo que viene después de la hora
-        match_name = clean_text(full_text.split(hora)[-1])
+        if ids and time_match:
+            hora = time_match.group(1)
+            # El nombre del partido es lo que sigue a la hora
+            name_part = full_text.split(hora)[-1]
+            match_name = clean_text(name_part)
 
-        if len(match_name) < 3:
-            match_name = f"Evento {active_competition}"
+            if len(match_name) < 3: 
+                match_name = f"Evento {active_group}"
 
-        # Evitar duplicados de IDs en la misma fila
-        for aid in list(dict.fromkeys(ids)):
-            short_id = aid[:3]
-            # ESTRUCTURA SOLICITADA:
-            # group-title = Fecha + Competición
-            # tvg-name = Nombre del Partido
-            group_title = f"{current_date} {active_competition}"
-            
-            entry = (
-                f'#EXTINF:-1 group-title="{group_title}" tvg-name="{match_name}",{hora} {match_name} ({short_id})\n'
-                f'http://127.0.0.1:6878/ace/getstream?id={aid}'
-            )
-            entries.append(entry)
-            
-            if len(entries) >= 1000: break
-            
+            for aid in list(dict.fromkeys(ids)):
+                short_id = aid[:3]
+                # Estructura final solicitada
+                entry = (
+                    f'#EXTINF:-1 group-title="{current_date} {active_group}" tvg-name="{match_name}",{hora} {match_name} ({short_id})\n'
+                    f'http://127.0.0.1:6878/ace/getstream?id={aid}'
+                )
+                entries.append(entry)
+                if len(entries) >= 1000: break
+    
     return entries
 
 def main():
     html = get_html_content()
-    if not html: return
+    if not html:
+        print("Error de conexión.")
+        return
 
-    entries = parse_agenda(html)
+    final_entries = parse_agenda(html)
     
-    if entries:
-        # Deduplicar preservando orden
-        final = []
+    if final_entries:
+        # Deduplicar
+        unique_list = []
         seen = set()
-        for e in entries:
+        for e in final_entries:
             if e not in seen:
-                final.append(e)
+                unique_list.append(e)
                 seen.add(e)
 
         with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
-            f.write(HEADER_M3U + "\n\n" + "\n\n".join(final))
+            f.write(HEADER_M3U + "\n\n" + "\n\n".join(unique_list))
         
         # Historial
         if not os.path.exists(HISTORY_DIR): os.makedirs(HISTORY_DIR)
         shutil.copy(OUTPUT_FILE, os.path.join(HISTORY_DIR, f"zz_eventos_{datetime.now().strftime('%H%M%S')}.m3u"))
-        print(f"Éxito: {len(final)} canales. Estructura: {active_competition} > {match_name}")
+        
+        print(f"Éxito: {len(unique_list)} canales generados correctamente.")
     else:
-        print("No se encontraron eventos con el formato Hora + ID.")
+        print("No se encontraron eventos que cumplan el criterio (Hora + ID).")
 
 if __name__ == "__main__":
     main()
