@@ -6,6 +6,7 @@ import sys
 import hashlib
 from datetime import datetime
 from pathlib import Path
+from typing import Iterable
 
 import requests
 from bs4 import BeautifulSoup
@@ -20,6 +21,7 @@ PROXY_LIST = [p.strip() for p in os.environ.get("PROXY_LIST", "").split(",") if 
 USE_LOCAL_HTML = os.environ.get("USE_LOCAL_HTML", "").strip()
 INCLUDE_ID_SUFFIX = os.environ.get("INCLUDE_ID_SUFFIX", "true").lower() == "true"
 ALLOW_IPFS_IO = os.environ.get("ALLOW_IPFS_IO", "false").lower() == "true"
+DEBUG = os.environ.get("DEBUG", "false").lower() == "true"
 
 # Gateways alternativos a ipfs.io; se probarán en orden
 IPFS_GATEWAYS = [
@@ -32,7 +34,7 @@ if ALLOW_IPFS_IO:
     IPFS_GATEWAYS.append("https://ipfs.io")  # como último recurso
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; M3U-Bot/1.0; +https://github.com/)",
+    "User-Agent": "Mozilla/5.0 (compatible; M3U-Bot/1.1; +https://github.com/)",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
 
@@ -42,9 +44,11 @@ M3U_HEADER_2 = "#EXTVLCOPT:network-caching=1000"
 
 ACE_HTTP_PREFIX = "http://127.0.0.1:6878/ace/getstream?id="
 
+# Regex
 HEX40_RE = re.compile(r"\b[a-fA-F0-9]{40}\b")
 ACE_URL_RE = re.compile(r"acestream://([a-fA-F0-9]{40})", re.IGNORECASE)
 DATE_TOKEN_RE = re.compile(r"\b(\d{2})/-\b")  # DD-MM o DD/MM
+STREAM_LINKS_CLASS_RE = re.compile(r"\bstream[-_\s]*links\b", re.IGNORECASE)
 
 
 def log(msg: str):
@@ -75,7 +79,9 @@ def fetch_html() -> str:
             log(f"Fichero local no encontrado: {p}")
             sys.exit(1)
         log(f"Usando HTML local: {p}")
-        return p.read_text(encoding="utf-8", errors="ignore")
+        text = p.read_text(encoding="utf-8", errors="ignore")
+        _debug_dump(text, suffix="local")
+        return text
 
     if not TARGET_URL:
         log("TARGET_URL vacío")
@@ -92,6 +98,7 @@ def fetch_html() -> str:
                 resp = requests.get(url, headers=HEADERS, timeout=20, proxies=proxies)
                 if resp.status_code == 200 and resp.text:
                     log(f"OK {url}")
+                    _debug_dump(resp.text, suffix="fetched")
                     return resp.text
                 else:
                     log(f"Fallo {url}: HTTP {resp.status_code}")
@@ -100,6 +107,14 @@ def fetch_html() -> str:
 
     log("No fue posible descargar la página desde ningún gateway/proxy.")
     sys.exit(2)
+
+
+def _debug_dump(html: str, suffix: str):
+    if not DEBUG:
+        return
+    dbg_dir = Path(".debug")
+    dbg_dir.mkdir(parents=True, exist_ok=True)
+    (dbg_dir / f"debug_source_{suffix}.html").write_text(html, encoding="utf-8", errors="ignore")
 
 
 def normalize_space(s: str) -> str:
@@ -114,7 +129,10 @@ def extract_near_date_str(node) -> str:
     """
     # 1) Ancestros
     for anc in node.parents:
-        txt = normalize_space(anc.get_text(" ", strip=True))
+        try:
+            txt = normalize_space(anc.get_text(" ", strip=True))
+        except Exception:
+            txt = ""
         m = DATE_TOKEN_RE.search(txt)
         if m:
             dd, mm = m.group(1), m.group(2)
@@ -127,7 +145,7 @@ def extract_near_date_str(node) -> str:
                     dd, mm = m.group(1), m.group(2)
                     return f"{dd}-{mm}"
 
-    # 2) Hermanos anteriores
+    # 2) Hermanos anteriores (limitado)
     sib = node
     for _ in range(20):
         sib = sib.previous_sibling
@@ -145,7 +163,7 @@ def extract_near_date_str(node) -> str:
 
 
 def extract_competition(node) -> str:
-    # 1) En el propio nodo <tr>
+    # 1) En el propio nodo
     comp = node.select_one("span.competition-name")
     if comp and comp.get_text(strip=True):
         return normalize_space(comp.get_text(strip=True))
@@ -157,16 +175,58 @@ def extract_competition(node) -> str:
     return ""
 
 
-def extract_acestream_ids_from_html(html_fragment: str):
-    """Extrae IDs de acestream desde un fragmento HTML (solo stream-links del propio evento)."""
+def _iter_attrs(tag) -> Iterable[str]:
+    """Itera sobre todos los valores de atributos del tag como strings (para buscar IDs también en atributos)."""
+    for k, v in (tag.attrs or {}).items():
+        if isinstance(v, (list, tuple)):
+            for x in v:
+                yield str(x)
+        else:
+            yield str(v)
+
+
+def extract_ace_ids_from_stream_container(container) -> list[str]:
+    """
+    Extrae IDs de acestream desde el contenedor de stream-links:
+    - en contenido de texto
+    - en atributos (data-href, href, data-id, etc.)
+    """
     ids = set()
-    # 1) acestream://<id>
-    for m in ACE_URL_RE.findall(html_fragment):
+
+    frag = str(container)
+    # 1) acestream://<id> en texto/HTML
+    for m in ACE_URL_RE.findall(frag):
         ids.add(m.lower())
-    # 2) 40 hex sueltos
-    for m in HEX40_RE.findall(html_fragment):
+    # 2) 40 hex sueltos en texto/HTML
+    for m in HEX40_RE.findall(frag):
         ids.add(m.lower())
+
+    # 3) Atributos que puedan contenerlo
+    for tag in container.find_all(True):
+        # Buscar primero el patrón acestream:// en atributos
+        for val in _iter_attrs(tag):
+            m = ACE_URL_RE.search(val)
+            if m:
+                ids.add(m.group(1).lower())
+            else:
+                # Si no hay prefijo, buscar 40 hex
+                m2 = HEX40_RE.search(val)
+                if m2:
+                    ids.add(m2.group(0).lower())
+
     return sorted(ids)
+
+
+def find_stream_container(event_node):
+    """
+    Busca dentro del nodo del evento un contenedor cuya clase cumpla stream[-_ ]?links
+    (div/ul/section/td/etc.). Devuelve el primer match o None.
+    """
+    for el in event_node.find_all(True):
+        classes = el.get("class", [])
+        if any(STREAM_LINKS_CLASS_RE.search(cls) for cls in classes):
+            return el
+    return None
 
 
 def build_m3u_entry(group_title: str, name: str, ace_id: str, include_suffix: bool) -> str:
@@ -225,36 +285,57 @@ def write_if_changed(content: str, path_out: Path, history_dir: Path, keep_last:
 
 def main():
     html = fetch_html()
+
+    # Depuración: dump del tamaño y un extracto si DEBUG
+    if DEBUG:
+        log(f"HTML recibido: {len(html)} bytes")
+        preview = normalize_space(html[:500])
+        log(f"Preview HTML: {preview[:200]}...")
+
     soup = BeautifulSoup(html, "lxml")
+
+    # 1) Buscar nodos de evento
+    rows = soup.select("tr.event-detail, [data-event-id]")
+    # Filtrar a los que realmente tienen data-event-id
+    rows = [r for r in rows if r.get("data-event-id")]
+    log(f"Eventos encontrados: {len(rows)}")
+
+    if DEBUG:
+        dbg_dir = Path(".debug")
+        dbg_dir.mkdir(parents=True, exist_ok=True)
+        (dbg_dir / "debug_found_events.txt").write_text(
+            "\n".join([r.get("data-event-id", "") for r in rows]),
+            encoding="utf-8"
+        )
 
     entries = []
 
-    # Cada evento: <tr class="event-detail" data-event-id="...">
-    rows = soup.select("tr.event-detail")
-    log(f"Eventos encontrados: {len(rows)}")
-
-    for tr in rows:
-        event_id = (tr.get("data-event-id") or "").strip()
+    for event_node in rows:
+        event_id = (event_node.get("data-event-id") or "").strip()
         if not event_id:
             continue
 
         # Competición y fecha
-        comp = extract_competition(tr)
-        date_str = extract_near_date_str(tr)
+        comp = extract_competition(event_node)
+        date_str = extract_near_date_str(event_node)
         group_title = normalize_space(f"{date_str} {comp}".strip())
 
-        # IMPORTANTE: solo buscar acestream en el div.stream-links del propio tr
-        stream_div = tr.select_one("div.stream-links")
-        if not stream_div:
+        # 2) Buscar contenedor stream-links dentro del propio evento (flexible)
+        stream_container = find_stream_container(event_node)
+        if not stream_container:
+            if DEBUG:
+                log(f"[DEBUG] Sin stream-links para evento: {event_id}")
             continue
 
-        ace_ids = extract_acestream_ids_from_html(str(stream_div))
+        ace_ids = extract_ace_ids_from_stream_container(stream_container)
+        if DEBUG:
+            log(f"[DEBUG] Evento '{event_id}' -> acestream_ids: {len(ace_ids)}")
+
         if not ace_ids:
             continue
 
         for ace_id in ace_ids:
-            entry = build_m3u_entry(group_title, event_id, ace_id, INCLUDE_ID_SUFFIX)
-            entries.append(entry)
+            entries.append(build_m3u_entry(group_title, event_id, ace_id, INCLUDE_ID_SUFFIX))
 
     # Construir M3U final
     m3u_lines = [M3U_HEADER_1, M3U_HEADER_2, ""]
