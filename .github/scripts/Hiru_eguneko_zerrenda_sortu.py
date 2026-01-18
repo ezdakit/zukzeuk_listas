@@ -25,15 +25,11 @@ def get_html_content():
 
 def clean_text(text):
     if not text: return ""
-    # Basura específica que hemos visto en tu HTML
-    noise = [
-        "Copiar ID", "Reproducir", "Ver Contenido", "Descargar", "FHD", "HD", "SD", 
-        "NEW ERA", "ELCANO", "SPORT TV", "-->", "Links", "Acestream", "Grid Lista",
-        "Categorías:", "Etiquetas:", "TODOS", "NEW LOOP"
-    ]
+    # Basura detectada en los nombres
+    noise = ["Copiar ID", "Reproducir", "Ver Contenido", "Descargar", "FHD", "HD", "SD", "-->", "Links", "Acestream"]
     for n in noise:
         text = text.replace(n, "")
-    text = re.sub(r'[a-f0-9]{40}', '', text) # Quitar IDs
+    text = re.sub(r'[a-f0-9]{40}', '', text)
     text = re.sub(r'\s+', ' ', text).strip(" -:>()")
     return text
 
@@ -43,59 +39,57 @@ def parse_agenda(html):
     current_date = datetime.now().strftime("%d-%m")
     ace_pattern = re.compile(r'[a-f0-9]{40}')
     
-    # 1. EVITAR EL MENÚ: Buscamos solo el contenedor de la "Agenda Deportiva"
-    # Según tu HTML, los eventos están en una sección específica
-    agenda_section = soup.find('div', id='agenda') or soup.find('div', class_='tab-content')
+    # 1. Filtro de zona: Solo la agenda real
+    agenda_area = soup.find('div', id='agenda') or soup.body
     
-    # Si no encontramos el contenedor, usamos el cuerpo pero con filtros estrictos
-    search_area = agenda_section if agenda_section else soup.body
+    # Variable de estado para mantener la competición
+    active_competition = "Deportes"
 
-    current_comp = "Deportes"
-    
-    # Buscamos todas las filas que parecen eventos
-    # Filtramos por las que tienen un ID de Acestream
-    for element in search_area.find_all(['tr', 'div', 'h3']):
+    # Iteramos por elementos clave para mantener el orden
+    for element in agenda_area.find_all(['h3', 'b', 'tr', 'div']):
+        # Ignorar el menú gigante (basado en longitud)
+        if len(element.get_text()) > 500: continue
+
         row_str = str(element)
         ids = ace_pattern.findall(row_str)
-        
-        # Si no hay ID, podría ser un título de competición (NCAA, 1RFEF...)
+
+        # CASO A: Es un título de competición (No tiene IDs y es texto corto)
         if not ids:
-            txt = clean_text(element.get_text())
-            # Solo aceptamos como grupo si es un texto corto y no es del menú
-            if 3 < len(txt) < 30 and not any(x in txt.upper() for x in ["CATEGORÍAS", "ETIQUETAS", "GRID"]):
-                current_comp = txt
+            candidate = clean_text(element.get_text())
+            if 3 < len(candidate) < 35 and not any(x in candidate.upper() for x in ["TODOS", "CATEGORÍAS", "MENÚ"]):
+                active_competition = candidate
             continue
 
-        # Si hay IDs, es un evento. Validamos que no sea el menú gigante.
+        # CASO B: Es un evento (Tiene IDs)
         full_text = element.get_text(" ", strip=True)
-        if len(full_text) > 300: continue # El menú gigante tiene cientos de letras, lo saltamos
-
-        # Buscamos la hora HH:MM
         time_match = re.search(r'(\d{1,2}:\d{2})', full_text)
-        hora = time_match.group(1) if time_match else ""
         
-        # Extraer nombre del partido (lo que queda después de la hora)
-        match_name = full_text.split(hora)[-1] if hora else full_text
-        match_name = clean_text(match_name)
+        # Si tiene ID pero no tiene hora, suele ser un canal del menú, lo saltamos
+        if not time_match: continue
         
-        # Si no hay hora ni nombre real, es basura técnica
-        if not hora and (len(match_name) < 5 or "Canal" in match_name):
-            continue
+        hora = time_match.group(1)
+        # El nombre del partido es lo que viene después de la hora
+        match_name = clean_text(full_text.split(hora)[-1])
 
-        # REGLA DE SEGURIDAD: Máximo 1000
-        if len(entries) >= 1000: break
+        if len(match_name) < 3:
+            match_name = f"Evento {active_competition}"
 
+        # Evitar duplicados de IDs en la misma fila
         for aid in list(dict.fromkeys(ids)):
             short_id = aid[:3]
-            group_title = f"{current_date} {current_comp}"
-            display_name = f"{hora} {match_name}".strip()
-
+            # ESTRUCTURA SOLICITADA:
+            # group-title = Fecha + Competición
+            # tvg-name = Nombre del Partido
+            group_title = f"{current_date} {active_competition}"
+            
             entry = (
-                f'#EXTINF:-1 group-title="{group_title}" tvg-name="{match_name}",{display_name} ({short_id})\n'
+                f'#EXTINF:-1 group-title="{group_title}" tvg-name="{match_name}",{hora} {match_name} ({short_id})\n'
                 f'http://127.0.0.1:6878/ace/getstream?id={aid}'
             )
             entries.append(entry)
-
+            
+            if len(entries) >= 1000: break
+            
     return entries
 
 def main():
@@ -105,24 +99,23 @@ def main():
     entries = parse_agenda(html)
     
     if entries:
-        # Eliminar duplicados exactos
-        final_list = []
+        # Deduplicar preservando orden
+        final = []
         seen = set()
         for e in entries:
             if e not in seen:
-                final_list.append(e)
+                final.append(e)
                 seen.add(e)
 
-        # Escribir con codificación UTF-8 para las tildes
         with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
-            f.write(HEADER_M3U + "\n\n" + "\n\n".join(final_list))
+            f.write(HEADER_M3U + "\n\n" + "\n\n".join(final))
         
-        # Guardar en historial
+        # Historial
         if not os.path.exists(HISTORY_DIR): os.makedirs(HISTORY_DIR)
         shutil.copy(OUTPUT_FILE, os.path.join(HISTORY_DIR, f"zz_eventos_{datetime.now().strftime('%H%M%S')}.m3u"))
-        print(f"Éxito: {len(final_list)} eventos guardados.")
+        print(f"Éxito: {len(final)} canales. Estructura: {active_competition} > {match_name}")
     else:
-        print("No se encontraron eventos válidos en la agenda.")
+        print("No se encontraron eventos con el formato Hora + ID.")
 
 if __name__ == "__main__":
     main()
