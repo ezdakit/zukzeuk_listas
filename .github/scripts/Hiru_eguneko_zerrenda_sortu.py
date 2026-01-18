@@ -48,7 +48,7 @@ ACE_HTTP_PREFIX = "http://127.0.0.1:6878/ace/getstream?id="
 # Regex
 HEX40_RE = re.compile(r"\b[a-fA-F0-9]{40}\b")
 ACE_URL_RE = re.compile(r"acestream://([a-fA-F0-9]{40})", re.IGNORECASE)
-DATE_TOKEN_RE = re.compile(r"\b(\d{2})/-\b")  # DD-MM o DD/MM
+DATE_TOKEN_RE = re.compile(r"\b(\d{2})/-\b")
 STREAM_LINKS_CLASS_RE = re.compile(r"\bstream[-_\s]*links\b", re.IGNORECASE)
 
 
@@ -57,7 +57,6 @@ def log(msg: str):
 
 
 def build_url_for_gateway(base_gateway: str, original_url: str) -> str:
-    """Remapea https://ipfs.io/ipns/... a <gateway>/ipns/... conservando la query (?tab=agenda)."""
     u = urlparse(original_url)
     path, qs = u.path, u.query
     gateway = base_gateway.rstrip("/")
@@ -122,7 +121,6 @@ def normalize_space(s: str) -> str:
 
 
 def extract_near_date_str(node) -> str:
-    """Busca fecha (DD-MM o DD/MM) en ancestros o hermanos anteriores. Fallback: hoy (UTC)."""
     # 1) Ancestros
     for anc in node.parents:
         try:
@@ -138,7 +136,6 @@ def extract_near_date_str(node) -> str:
                 m = DATE_TOKEN_RE.search(str(v))
                 if m:
                     return f"{m.group(1)}-{m.group(2)}"
-
     # 2) Hermanos anteriores
     sib = node
     for _ in range(20):
@@ -150,7 +147,6 @@ def extract_near_date_str(node) -> str:
             m = DATE_TOKEN_RE.search(txt)
             if m:
                 return f"{m.group(1)}-{m.group(2)}"
-
     # 3) Fallback
     return datetime.utcnow().strftime("%d-%m")
 
@@ -177,13 +173,11 @@ def _iter_attrs(tag) -> Iterable[str]:
 
 def extract_ace_ids_from_stream_container(container) -> List[str]:
     ids = set()
-
     frag = str(container)
     for m in ACE_URL_RE.findall(frag):
         ids.add(m.lower())
     for m in HEX40_RE.findall(frag):
         ids.add(m.lower())
-
     for tag in container.find_all(True):
         for val in _iter_attrs(tag):
             m = ACE_URL_RE.search(val)
@@ -193,11 +187,10 @@ def extract_ace_ids_from_stream_container(container) -> List[str]:
                 m2 = HEX40_RE.search(val)
                 if m2:
                     ids.add(m2.group(0).lower())
-
     return sorted(ids)
 
 
-def find_stream_container_inside_event(event_node) -> Optional[BeautifulSoup]:
+def find_stream_container_inside_event(event_node):
     for el in event_node.find_all(True):
         classes = el.get("class", [])
         if any(STREAM_LINKS_CLASS_RE.search(cls) for cls in classes):
@@ -221,14 +214,12 @@ def _collect_toggle_targets(event_node) -> List[str]:
     return list(targets)
 
 
-def find_panel_by_targets(soup: BeautifulSoup, targets: List[str]) -> Optional[BeautifulSoup]:
+def find_panel_by_targets(soup: BeautifulSoup, targets: List[str]):
     for tid in targets:
         panel = soup.find(id=tid)
         if panel:
-            # Si el propio panel es stream-links
             if any(STREAM_LINKS_CLASS_RE.search(c) for c in panel.get("class", [])):
                 return panel
-            # O si lo contiene dentro
             inside = panel.find(class_=STREAM_LINKS_CLASS_RE)
             if inside:
                 return inside
@@ -236,17 +227,12 @@ def find_panel_by_targets(soup: BeautifulSoup, targets: List[str]) -> Optional[B
 
 
 def _collect_remote_panel_urls(event_node) -> List[str]:
-    """
-    Busca en botones/enlaces del evento posibles URLs que carguen el panel (data-url, data-src, data-href, href).
-    Devuelve rutas tal cual aparecen (pueden ser relativas o con hash IPFS).
-    """
     urls = set()
     for el in event_node.find_all(True):
         for attr in ("data-url", "data-src", "data-href", "href"):
             v = el.get(attr)
             if not v:
                 continue
-            # Evitar anchors puros (#id) que no sean URL remota
             if v.strip().startswith("#"):
                 continue
             urls.add(v.strip())
@@ -254,31 +240,17 @@ def _collect_remote_panel_urls(event_node) -> List[str]:
 
 
 def _rewrite_to_gateway(url_like: str, gateway_used: str) -> str:
-    """
-    Reescribe la URL a usar el mismo gateway IPFS que funcionó:
-    - Si es absoluta a ipfs.io, se reemplaza host por el gateway usado.
-    - Si es relativa, se hace urljoin contra la página base remapeada.
-    """
-    # Base: la página original remapeada al gateway
     base = build_url_for_gateway(gateway_used, TARGET_URL)
-
     u = urlparse(url_like)
-
     if not u.scheme:
-        # relativa
         return urljoin(base, url_like)
-
-    # absoluta: si apunta a ipfs.io, forzar al gateway
     if "ipfs.io" in u.netloc:
         new_u = u._replace(netloc=urlparse(gateway_used).netloc)
         return urlunparse(new_u)
-
-    # otras absolutas: devolver tal cual (aun así pasarán por el proxy si se configuró)
     return url_like
 
 
 def fetch_remote_panel(url_like: str, gateway_used: str) -> Optional[str]:
-    """Descarga el HTML del panel remoto (si el botón lo carga por AJAX) usando el mismo gateway y proxies."""
     url = _rewrite_to_gateway(url_like, gateway_used)
     proxies_candidates = [None] + PROXY_LIST if PROXY_LIST else [None]
     for proxy in proxies_candidates:
@@ -297,26 +269,17 @@ def fetch_remote_panel(url_like: str, gateway_used: str) -> Optional[str]:
     return None
 
 
-def find_associated_stream_container(soup: BeautifulSoup, event_node, gateway_used: str) -> Optional[BeautifulSoup]:
-    """
-    Orden de búsqueda:
-      1) Dentro del propio evento
-      2) Panel colapsable referenciado (por id)
-      3) Descargar panel remoto (si hay URL en botones)
-      4) Hermanos siguientes hasta el próximo data-event-id
-    """
-    # 1) Dentro del propio <tr>
+def find_associated_stream_container(soup: BeautifulSoup, event_node, gateway_used: str):
+    # 1) Dentro del propio evento
     container = find_stream_container_inside_event(event_node)
     if container:
         return container
-
     # 2) Panel colapsable referenciado
     targets = _collect_toggle_targets(event_node)
     panel = find_panel_by_targets(soup, targets)
     if panel:
         return panel
-
-    # 3) Panel remoto (AJAX) referenciado por URL
+    # 3) Panel remoto (AJAX)
     remote_urls = _collect_remote_panel_urls(event_node)
     for ru in remote_urls:
         html = fetch_remote_panel(ru, gateway_used)
@@ -326,8 +289,7 @@ def find_associated_stream_container(soup: BeautifulSoup, event_node, gateway_us
         inside = frag.find(class_=STREAM_LINKS_CLASS_RE)
         if inside:
             return inside
-
-    # 4) Hermanos siguientes (fila colapsable contigua)
+    # 4) Hermanos siguientes hasta el próximo evento
     sib = event_node
     for _ in range(30):
         sib = sib.find_next_sibling()
@@ -338,7 +300,6 @@ def find_associated_stream_container(soup: BeautifulSoup, event_node, gateway_us
         inside = sib.find(class_=STREAM_LINKS_CLASS_RE)
         if inside:
             return inside
-
     return None
 
 
@@ -396,7 +357,6 @@ def main():
     events = [n for n in events if n.get("data-event-id")]
     log(f"Eventos detectados: {len(events)}")
 
-    # Depuración: lista de event IDs
     if DEBUG:
         dbg_dir = Path(".debug"); dbg_dir.mkdir(parents=True, exist_ok=True)
         (dbg_dir / "debug_found_events.txt").write_text(
@@ -436,10 +396,8 @@ def main():
     m3u_lines.extend(entries)
     m3u_text = "\n".join(m3u_lines).strip() + "\n"
 
-    # Escribir resultado + histórico
     write_if_changed(m3u_text, Path(OUTPUT_FILE), Path(HISTORY_DIR), keep_last=50)
 
 
 if __name__ == "__main__":
     main()
-``
