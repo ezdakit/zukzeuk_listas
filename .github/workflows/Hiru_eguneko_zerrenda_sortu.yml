@@ -25,6 +25,7 @@ jobs:
       INCLUDE_ID_SUFFIX: "true"
       ALLOW_IPFS_IO: "false"
       NO_PROXY: "127.0.0.1,localhost"
+      DEBUG: "true"
 
     steps:
       - name: Checkout
