@@ -1,8 +1,9 @@
+
 name: Hiru_eguneko_zerrenda_sortu
 
 on:
   schedule:
-    - cron: '20 * * * *'   # Cada hora a y 20 (UTC)
+    - cron: '20 * * * *'   # Cada hora a y 20 en UTC
   workflow_dispatch:
 
 permissions:
@@ -19,15 +20,12 @@ jobs:
       TARGET_URL: "https://ipfs.io/ipns/k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004/?tab=agenda"
       OUTPUT_FILE: "zz_eventos_ott.m3u"
       HISTORY_DIR: "history"
-      # Lista de proxies separada por comas, configurable en Secrets: http://user:pass@host:port,https://host2:port
       PROXY_LIST: "${{ secrets.PROXY_LIST }}"
-      # Si subes un HTML para pruebas, pon aquí la ruta relativa para usarlo en vez de descargar por red:
       # USE_LOCAL_HTML: "tests/agenda_sample.html"
-      # Controla si añadimos el sufijo con los 3 primeros chars del acestream_id al nombre del canal:
       INCLUDE_ID_SUFFIX: "true"
-      # Evitar ipfs.io salvo última instancia (por si los gateways alternativos fallan todos):
       ALLOW_IPFS_IO: "false"
       NO_PROXY: "127.0.0.1,localhost"
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -37,12 +35,12 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
+      - name: Install runtime dependencies (sin requirements.txt)
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install requests beautifulsoup4 lxml
 
-      - name: Generate M3U
+      - name: Run script
         run: |
           python scripts/Hiru_eguneko_zerrenda_sortu.py
 
