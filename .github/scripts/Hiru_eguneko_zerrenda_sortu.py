@@ -6,7 +6,8 @@ import sys
 import hashlib
 from datetime import datetime
 from pathlib import Path
-from typing import Iterable, List, Optional
+from typing import Iterable, List, Optional, Tuple
+from urllib.parse import urlparse, urlunparse, urljoin
 
 import requests
 from bs4 import BeautifulSoup
@@ -34,7 +35,7 @@ if ALLOW_IPFS_IO:
     IPFS_GATEWAYS.append("https://ipfs.io")  # como último recurso
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; M3U-Bot/1.3; +https://github.com/)",
+    "User-Agent": "Mozilla/5.0 (compatible; M3U-Bot/1.4; +https://github.com/)",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
 
@@ -57,56 +58,15 @@ def log(msg: str):
 
 def build_url_for_gateway(base_gateway: str, original_url: str) -> str:
     """Remapea https://ipfs.io/ipns/... a <gateway>/ipns/... conservando la query (?tab=agenda)."""
-    from urllib.parse import urlparse
-
     u = urlparse(original_url)
-    path = u.path  # /ipns/<id>/
-    qs = u.query   # tab=agenda
+    path, qs = u.path, u.query
     gateway = base_gateway.rstrip("/")
     return f"{gateway}{path}" + (f"?{qs}" if qs else "")
 
 
 def iter_candidate_urls():
     for gw in IPFS_GATEWAYS:
-        yield build_url_for_gateway(gw, TARGET_URL)
-
-
-def fetch_html() -> str:
-    """Descarga el HTML (gateways alternativos + proxies) o lee un fichero local si USE_LOCAL_HTML está definido."""
-    if USE_LOCAL_HTML:
-        p = Path(USE_LOCAL_HTML)
-        if not p.exists():
-            log(f"Fichero local no encontrado: {p}")
-            sys.exit(1)
-        log(f"Usando HTML local: {p}")
-        text = p.read_text(encoding="utf-8", errors="ignore")
-        _debug_dump(text, suffix="local")
-        return text
-
-    if not TARGET_URL:
-        log("TARGET_URL vacío")
-        sys.exit(1)
-
-    candidates = list(iter_candidate_urls())
-    proxies_candidates = [None] + PROXY_LIST if PROXY_LIST else [None]
-
-    for url in candidates:
-        for proxy in proxies_candidates:
-            try:
-                proxies = {"http": proxy, "https": proxy} if proxy else None
-                log(f"GET {url}" + (f" vía proxy {proxy}" if proxy else " sin proxy"))
-                resp = requests.get(url, headers=HEADERS, timeout=25, proxies=proxies)
-                if resp.status_code == 200 and resp.text:
-                    log(f"OK {url}")
-                    _debug_dump(resp.text, suffix="fetched")
-                    return resp.text
-                else:
-                    log(f"Fallo {url}: HTTP {resp.status_code}")
-            except Exception as ex:
-                log(f"Error {url} (proxy={proxy}): {ex}")
-
-    log("No fue posible descargar la página desde ningún gateway/proxy.")
-    sys.exit(2)
+        yield build_url_for_gateway(gw, TARGET_URL), gw
 
 
 def _debug_dump(html: str, suffix: str):
@@ -115,6 +75,46 @@ def _debug_dump(html: str, suffix: str):
     dbg_dir = Path(".debug")
     dbg_dir.mkdir(parents=True, exist_ok=True)
     (dbg_dir / f"debug_source_{suffix}.html").write_text(html, encoding="utf-8", errors="ignore")
+
+
+def fetch_html() -> Tuple[str, str]:
+    """
+    Descarga el HTML y devuelve (html, gateway_usado).
+    Si USE_LOCAL_HTML está definido, devuelve (html_local, 'local').
+    """
+    if USE_LOCAL_HTML:
+        p = Path(USE_LOCAL_HTML)
+        if not p.exists():
+            log(f"Fichero local no encontrado: {p}")
+            sys.exit(1)
+        log(f"Usando HTML local: {p}")
+        text = p.read_text(encoding="utf-8", errors="ignore")
+        _debug_dump(text, suffix="local")
+        return text, "local"
+
+    if not TARGET_URL:
+        log("TARGET_URL vacío")
+        sys.exit(1)
+
+    proxies_candidates = [None] + PROXY_LIST if PROXY_LIST else [None]
+
+    for url, gateway in iter_candidate_urls():
+        for proxy in proxies_candidates:
+            try:
+                proxies = {"http": proxy, "https": proxy} if proxy else None
+                log(f"GET {url}" + (f" vía proxy {proxy}" if proxy else " sin proxy"))
+                resp = requests.get(url, headers=HEADERS, timeout=25, proxies=proxies)
+                if resp.status_code == 200 and resp.text:
+                    log(f"OK {url}")
+                    _debug_dump(resp.text, suffix="fetched")
+                    return resp.text, gateway
+                else:
+                    log(f"Fallo {url}: HTTP {resp.status_code}")
+            except Exception as ex:
+                log(f"Error {url} (proxy={proxy}): {ex}")
+
+    log("No fue posible descargar la página desde ningún gateway/proxy.")
+    sys.exit(2)
 
 
 def normalize_space(s: str) -> str:
@@ -131,17 +131,15 @@ def extract_near_date_str(node) -> str:
             txt = ""
         m = DATE_TOKEN_RE.search(txt)
         if m:
-            dd, mm = m.group(1), m.group(2)
-            return f"{dd}-{mm}"
+            return f"{m.group(1)}-{m.group(2)}"
         for attr in ("data-date", "date", "data-fecha"):
             v = anc.get(attr)
             if v:
                 m = DATE_TOKEN_RE.search(str(v))
                 if m:
-                    dd, mm = m.group(1), m.group(2)
-                    return f"{dd}-{mm}"
+                    return f"{m.group(1)}-{m.group(2)}"
 
-    # 2) Hermanos anteriores (limitado)
+    # 2) Hermanos anteriores
     sib = node
     for _ in range(20):
         sib = sib.previous_sibling
@@ -151,19 +149,16 @@ def extract_near_date_str(node) -> str:
             txt = normalize_space(sib.get_text(" ", strip=True))
             m = DATE_TOKEN_RE.search(txt)
             if m:
-                dd, mm = m.group(1), m.group(2)
-                return f"{dd}-{mm}"
+                return f"{m.group(1)}-{m.group(2)}"
 
     # 3) Fallback
     return datetime.utcnow().strftime("%d-%m")
 
 
 def extract_competition(node) -> str:
-    # 1) En el propio nodo
     comp = node.select_one("span.competition-name")
     if comp and comp.get_text(strip=True):
         return normalize_space(comp.get_text(strip=True))
-    # 2) En ancestros cercanos
     for anc in node.parents:
         comp = getattr(anc, "select_one", lambda *_: None)("span.competition-name")
         if comp and comp.get_text(strip=True):
@@ -172,7 +167,6 @@ def extract_competition(node) -> str:
 
 
 def _iter_attrs(tag) -> Iterable[str]:
-    """Itera valores de atributos como strings (para buscar IDs también en atributos)."""
     for _, v in (tag.attrs or {}).items():
         if isinstance(v, (list, tuple)):
             for x in v:
@@ -182,18 +176,14 @@ def _iter_attrs(tag) -> Iterable[str]:
 
 
 def extract_ace_ids_from_stream_container(container) -> List[str]:
-    """Extrae IDs de acestream desde el contenedor de stream-links (texto y atributos)."""
     ids = set()
 
     frag = str(container)
-    # 1) acestream://<id> en texto/HTML
     for m in ACE_URL_RE.findall(frag):
         ids.add(m.lower())
-    # 2) 40 hex sueltos en texto/HTML
     for m in HEX40_RE.findall(frag):
         ids.add(m.lower())
 
-    # 3) Atributos
     for tag in container.find_all(True):
         for val in _iter_attrs(tag):
             m = ACE_URL_RE.search(val)
@@ -208,7 +198,6 @@ def extract_ace_ids_from_stream_container(container) -> List[str]:
 
 
 def find_stream_container_inside_event(event_node) -> Optional[BeautifulSoup]:
-    """Busca un contenedor stream-links dentro del propio nodo de evento."""
     for el in event_node.find_all(True):
         classes = el.get("class", [])
         if any(STREAM_LINKS_CLASS_RE.search(cls) for cls in classes):
@@ -217,94 +206,152 @@ def find_stream_container_inside_event(event_node) -> Optional[BeautifulSoup]:
 
 
 def _collect_toggle_targets(event_node) -> List[str]:
-    """
-    Recolecta posibles ID de panel colapsable referenciado por el evento.
-    Busca atributos: data-bs-target, data-target, aria-controls, href="#id".
-    Devuelve IDs sin '#'.
-    """
     targets = set()
-    # candidatos: botones, enlaces, etc.
     for el in event_node.find_all(True):
         for attr in ("data-bs-target", "data-target", "aria-controls", "href"):
             v = el.get(attr)
             if not v:
                 continue
-            # puede ser "#panel-123" o "panel-123"
             m = re.search(r"#([A-Za-z0-9_\-:]+)", v)
             if m:
                 targets.add(m.group(1))
             else:
-                # si parece un id directo sin '#'
                 if re.match(r"^[A-Za-z0-9_\-:]+$", v):
                     targets.add(v)
     return list(targets)
 
 
-def find_associated_stream_container(soup: BeautifulSoup, event_node) -> Optional[BeautifulSoup]:
+def find_panel_by_targets(soup: BeautifulSoup, targets: List[str]) -> Optional[BeautifulSoup]:
+    for tid in targets:
+        panel = soup.find(id=tid)
+        if panel:
+            # Si el propio panel es stream-links
+            if any(STREAM_LINKS_CLASS_RE.search(c) for c in panel.get("class", [])):
+                return panel
+            # O si lo contiene dentro
+            inside = panel.find(class_=STREAM_LINKS_CLASS_RE)
+            if inside:
+                return inside
+    return None
+
+
+def _collect_remote_panel_urls(event_node) -> List[str]:
     """
-    Encuentra el contenedor stream-links correspondiente al evento:
-      1) dentro del propio <tr>
-      2) en el/los panel(es) colapsables referenciados por el evento (via data-bs-target/aria-controls/href)
-      3) en hermanos siguientes hasta el próximo tr.event-detail (fila colapsable contigua)
+    Busca en botones/enlaces del evento posibles URLs que carguen el panel (data-url, data-src, data-href, href).
+    Devuelve rutas tal cual aparecen (pueden ser relativas o con hash IPFS).
     """
-    # (1) Dentro del propio evento
+    urls = set()
+    for el in event_node.find_all(True):
+        for attr in ("data-url", "data-src", "data-href", "href"):
+            v = el.get(attr)
+            if not v:
+                continue
+            # Evitar anchors puros (#id) que no sean URL remota
+            if v.strip().startswith("#"):
+                continue
+            urls.add(v.strip())
+    return list(urls)
+
+
+def _rewrite_to_gateway(url_like: str, gateway_used: str) -> str:
+    """
+    Reescribe la URL a usar el mismo gateway IPFS que funcionó:
+    - Si es absoluta a ipfs.io, se reemplaza host por el gateway usado.
+    - Si es relativa, se hace urljoin contra la página base remapeada.
+    """
+    # Base: la página original remapeada al gateway
+    base = build_url_for_gateway(gateway_used, TARGET_URL)
+
+    u = urlparse(url_like)
+
+    if not u.scheme:
+        # relativa
+        return urljoin(base, url_like)
+
+    # absoluta: si apunta a ipfs.io, forzar al gateway
+    if "ipfs.io" in u.netloc:
+        new_u = u._replace(netloc=urlparse(gateway_used).netloc)
+        return urlunparse(new_u)
+
+    # otras absolutas: devolver tal cual (aun así pasarán por el proxy si se configuró)
+    return url_like
+
+
+def fetch_remote_panel(url_like: str, gateway_used: str) -> Optional[str]:
+    """Descarga el HTML del panel remoto (si el botón lo carga por AJAX) usando el mismo gateway y proxies."""
+    url = _rewrite_to_gateway(url_like, gateway_used)
+    proxies_candidates = [None] + PROXY_LIST if PROXY_LIST else [None]
+    for proxy in proxies_candidates:
+        try:
+            proxies = {"http": proxy, "https": proxy} if proxy else None
+            log(f"GET panel {url}" + (f" vía proxy {proxy}" if proxy else " sin proxy"))
+            resp = requests.get(url, headers=HEADERS, timeout=20, proxies=proxies)
+            if resp.status_code == 200 and resp.text:
+                if DEBUG:
+                    _debug_dump(resp.text, suffix=f"panel_{hashlib.md5(url.encode()).hexdigest()[:8]}")
+                return resp.text
+            else:
+                log(f"Panel fallo {url}: HTTP {resp.status_code}")
+        except Exception as ex:
+            log(f"Panel error {url} (proxy={proxy}): {ex}")
+    return None
+
+
+def find_associated_stream_container(soup: BeautifulSoup, event_node, gateway_used: str) -> Optional[BeautifulSoup]:
+    """
+    Orden de búsqueda:
+      1) Dentro del propio evento
+      2) Panel colapsable referenciado (por id)
+      3) Descargar panel remoto (si hay URL en botones)
+      4) Hermanos siguientes hasta el próximo data-event-id
+    """
+    # 1) Dentro del propio <tr>
     container = find_stream_container_inside_event(event_node)
     if container:
         return container
 
-    # (2) Paneles colapsables referenciados
-    for target_id in _collect_toggle_targets(event_node):
-        panel = soup.find(id=target_id)
-        if panel:
-            # Si el propio panel tiene la clase, úsalo; si no, busca dentro
-            if panel.get("class") and any(STREAM_LINKS_CLASS_RE.search(c) for c in panel.get("class", [])):
-                return panel
-            inner = None
-            for el in panel.find_all(True):
-                classes = el.get("class", [])
-                if any(STREAM_LINKS_CLASS_RE.search(cls) for cls in classes):
-                    inner = el
-                    break
-            if inner:
-                return inner
+    # 2) Panel colapsable referenciado
+    targets = _collect_toggle_targets(event_node)
+    panel = find_panel_by_targets(soup, targets)
+    if panel:
+        return panel
 
-    # (3) Hermanos siguientes hasta el siguiente evento
+    # 3) Panel remoto (AJAX) referenciado por URL
+    remote_urls = _collect_remote_panel_urls(event_node)
+    for ru in remote_urls:
+        html = fetch_remote_panel(ru, gateway_used)
+        if not html:
+            continue
+        frag = BeautifulSoup(html, "lxml")
+        inside = frag.find(class_=STREAM_LINKS_CLASS_RE)
+        if inside:
+            return inside
+
+    # 4) Hermanos siguientes (fila colapsable contigua)
     sib = event_node
-    for _ in range(30):  # límite de seguridad
+    for _ in range(30):
         sib = sib.find_next_sibling()
         if sib is None:
             break
-        if sib.get("data-event-id"):  # llegó el siguiente evento
+        if sib.get("data-event-id"):
             break
-        # buscar contenedor en este hermano
-        for el in sib.find_all(True):
-            classes = el.get("class", [])
-            if any(STREAM_LINKS_CLASS_RE.search(cls) for cls in classes):
-                return el
+        inside = sib.find(class_=STREAM_LINKS_CLASS_RE)
+        if inside:
+            return inside
 
     return None
 
 
 def build_m3u_entry(group_title: str, name: str, ace_id: str, include_suffix: bool) -> str:
-    """
-    Construye la entrada M3U para el par evento–canal (acestream).
-    - group-title: "DD-MM COMPETICIÓN"
-    - tvg-name y nombre del canal: data-event-id [+ ' (' + primeros 3 chars + ')'] (si include_suffix)
-    """
     display_name = name
     if include_suffix and ace_id:
         display_name = f"{display_name} ({ace_id[:3]})"
-
     line1 = f'#EXTINF:-1 group-title="{group_title}" tvg-name="{display_name}",{display_name}'
     line2 = f"{ACE_HTTP_PREFIX}{ace_id}"
     return f"{line1}\n{line2}"
 
 
 def write_if_changed(content: str, path_out: Path, history_dir: Path, keep_last: int = 50):
-    """
-    Escribe el fichero principal y, si el contenido es distinto del último guardado en history,
-    añade una nueva versión a history/ y elimina versiones antiguas manteniendo 'keep_last'.
-    """
     path_out.parent.mkdir(parents=True, exist_ok=True)
     history_dir.mkdir(parents=True, exist_ok=True)
 
@@ -317,7 +364,6 @@ def write_if_changed(content: str, path_out: Path, history_dir: Path, keep_last:
     else:
         log("Sin cambios en el fichero principal.")
 
-    # Comparar con el último del histórico
     def _hash(b): return hashlib.sha256(b).hexdigest()
     new_hash = _hash(new_bytes)
 
@@ -330,7 +376,6 @@ def write_if_changed(content: str, path_out: Path, history_dir: Path, keep_last:
         hist_path.write_bytes(new_bytes)
         log(f"Guardado histórico: {hist_path.name}")
 
-    # Limitar a 'keep_last'
     history_files = sorted(history_dir.glob("zz_eventos_ott_*.m3u"), key=lambda p: p.stat().st_mtime, reverse=True)
     for old in history_files[keep_last:]:
         try:
@@ -340,9 +385,9 @@ def write_if_changed(content: str, path_out: Path, history_dir: Path, keep_last:
 
 
 def main():
-    html = fetch_html()
+    html, gateway_used = fetch_html()
     if DEBUG:
-        log(f"HTML recibido: {len(html)} bytes (depuración activada)")
+        log(f"HTML recibido: {len(html)} bytes (gateway: {gateway_used})")
 
     soup = BeautifulSoup(html, "lxml")
 
@@ -351,7 +396,15 @@ def main():
     events = [n for n in events if n.get("data-event-id")]
     log(f"Eventos detectados: {len(events)}")
 
-    entries = []
+    # Depuración: lista de event IDs
+    if DEBUG:
+        dbg_dir = Path(".debug"); dbg_dir.mkdir(parents=True, exist_ok=True)
+        (dbg_dir / "debug_found_events.txt").write_text(
+            "\n".join([(n.get("data-event-id") or "").strip() for n in events]),
+            encoding="utf-8"
+        )
+
+    entries: List[str] = []
 
     for event_node in events:
         event_id = (event_node.get("data-event-id") or "").strip()
@@ -362,8 +415,7 @@ def main():
         date_str = extract_near_date_str(event_node)
         group_title = normalize_space(f"{date_str} {comp}".strip())
 
-        # Buscar el contenedor asociado (dentro, paneles target u hermanos próximos)
-        container = find_associated_stream_container(soup, event_node)
+        container = find_associated_stream_container(soup, event_node, gateway_used)
         if not container:
             if DEBUG:
                 log(f"[DEBUG] Sin contenedor stream-links para evento: {event_id}")
@@ -390,3 +442,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+``
