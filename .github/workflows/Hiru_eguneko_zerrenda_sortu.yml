@@ -27,7 +27,7 @@ jobs:
           pip install requests beautifulsoup4 fake-useragent lxml
 
       - name: Ejecutar Scraper
-        run: python Hiru_eguneko_zerrenda_sortu.py
+        run: python .github/scripts/Hiru_eguneko_zerrenda_sortu.py
 
       - name: Commit y Push si hay cambios
         run: |
