@@ -18,25 +18,26 @@ def get_html_content():
         try:
             r = requests.get(f"{gw}{IPNS_KEY}{PATH_PARAMS}", headers={'User-Agent': ua.random}, timeout=30)
             if r.status_code == 200:
-                r.encoding = 'utf-8'
+                r.encoding = 'utf-8' # Forzamos UTF-8 para corregir "FEDERACIÓN"
                 return r.text
         except: continue
     return None
 
-def clean_text(text):
+def clean_label(text):
+    """Limpia el nombre del partido de ruidos y botones"""
     if not text: return ""
-    # 1. Eliminar frases de sistema que ensucian la lista
-    system_trash = [
+    # Eliminar términos de sistema y botones
+    trash = [
         "Enlaces de disponibles", "Copiar ID", "Reproducir", "Ver Contenido", 
         "Descargar", "FHD", "HD", "SD", "NEW ERA", "ELCANO", "-->", "ID", 
-        "Links", "Acestream", "Agenda Deportiva", "Grid Lista", "Categorías", "Etiquetas"
+        "Links", "Acestream", "Grid Lista", "Categorías", "Etiquetas", "()"
     ]
-    for trash in system_trash:
-        text = text.replace(trash, "")
+    for t in trash:
+        text = text.replace(t, "")
     
-    # 2. Quitar IDs de 40 caracteres
+    # Eliminar hashes de 40 caracteres
     text = re.sub(r'[a-f0-9]{40}', '', text)
-    # 3. Limpiar símbolos y espacios
+    # Limpiar espacios múltiples y símbolos
     text = re.sub(r'\s+', ' ', text).strip(" -:>()")
     return text
 
@@ -46,70 +47,73 @@ def parse_agenda(html):
     current_date = datetime.now().strftime("%d-%m")
     ace_pattern = re.compile(r'[a-f0-9]{40}')
     
-    # Empezamos con un grupo genérico por si hay eventos antes del primer título
-    current_competition = "Deportes"
+    # Grupo por defecto
+    current_comp = "Otros Deportes"
 
-    # Buscamos todas las filas de tabla y encabezados
-    # El truco es que las competiciones suelen estar en celdas que ocupan toda la fila (colspan)
-    for element in soup.find_all(['tr', 'h2', 'h3', 'b']):
-        
-        # Obtener IDs en este elemento
-        html_str = str(element)
-        ids = ace_pattern.findall(html_str)
-        raw_text = element.get_text(" ", strip=True)
+    # Buscamos todas las filas (tr) que son donde están los datos reales
+    # y los encabezados (h2, h3, b) para las competiciones
+    for row in soup.find_all(['tr', 'h2', 'h3', 'b']):
+        row_str = str(row)
+        ids = ace_pattern.findall(row_str)
+        text = row.get_text(" ", strip=True)
 
-        # CASO A: Es una CABECERA de Competición
-        # Si es un texto corto, no tiene IDs y no es menú, es la competición (ej: NCAA)
+        # 1. Identificar COMPETICIÓN (Si no hay IDs y el texto es corto/relevante)
         if not ids:
-            cleaned_comp = clean_text(raw_text)
-            if 2 < len(cleaned_comp) < 45 and not any(x in cleaned_comp.upper() for x in ["TODOS", "MENÚ", "AGENDA"]):
-                current_competition = cleaned_comp
+            clean_t = clean_label(text)
+            if 2 < len(clean_t) < 40 and not any(x in clean_t.upper() for x in ["TODOS", "MENÚ", "AGENDA"]):
+                current_comp = clean_t
             continue
 
-        # CASO B: Es una FILA de Evento (Tiene IDs)
+        # 2. Identificar EVENTO (Si hay IDs)
         if ids:
-            # 1. Extraer Hora
-            time_match = re.search(r'(\d{1,2}:\d{2})', raw_text)
+            # Buscamos la hora (HH:MM)
+            time_match = re.search(r'(\d{1,2}:\d{2})', text)
             event_time = time_match.group(1) if time_match else ""
             
-            # 2. Extraer el Nombre del Partido de forma aislada
-            # Intentamos quedarnos solo con lo que hay después de la hora
+            # El nombre del partido es lo que queda tras la hora
+            # pero antes de que empiecen los IDs de Acestrem
             if event_time:
-                match_name = raw_text.split(event_time)[-1]
+                # Separamos por la hora y nos quedamos con la parte derecha
+                parts = text.split(event_time)
+                match_name = parts[-1] if len(parts) > 1 else text
             else:
-                match_name = raw_text
-            
-            match_name = clean_text(match_name)
-            
-            # Si al limpiar se queda vacío o es igual a la competición, poner un genérico
-            if len(match_name) < 3:
-                match_name = "Evento"
+                match_name = text
 
-            # 3. Generar entrada por cada ID único
-            for aid in list(dict.fromkeys(ids)):
-                short_id = aid[:3]
-                display_name = f"{event_time} {match_name}".strip()
-                # Formato solicitado: group-title="DD-MM Competición"
-                group_title = f"{current_date} {current_competition}"
+            match_name = clean_label(match_name)
+            
+            # Si el nombre capturado es "Evento" o similar, intentamos usar la competición
+            if len(match_name) < 3 or match_name.lower() == "evento":
+                match_name = current_comp
 
-                entry = (
-                    f'#EXTINF:-1 group-title="{group_title}" tvg-name="{match_name}",{display_name} ({short_id})\n'
-                    f'http://127.0.0.1:6878/ace/getstream?id={aid}'
-                )
-                entries.append(entry)
-    
+            # Generar una línea por cada ID único
+            unique_ids = []
+            for aid in ids:
+                if aid not in unique_ids:
+                    unique_ids.append(aid)
+                    short_id = aid[:3]
+                    
+                    # Formato final solicitado
+                    group_title = f"{current_date} {current_comp}"
+                    display_name = f"{event_time} {match_name}".strip()
+
+                    entry = (
+                        f'#EXTINF:-1 group-title="{group_title}" tvg-name="{match_name}",{display_name} ({short_id})\n'
+                        f'http://127.0.0.1:6878/ace/getstream?id={aid}'
+                    )
+                    entries.append(entry)
+                    
     return entries
 
 def save_and_history(entries):
-    # Eliminar duplicados exactos
-    unique_entries = []
+    # Eliminar duplicados manteniendo el orden
+    final = []
     seen = set()
     for e in entries:
         if e not in seen:
-            unique_entries.append(e)
+            final.append(e)
             seen.add(e)
 
-    content = HEADER_M3U + "\n\n" + "\n\n".join(unique_entries)
+    content = HEADER_M3U + "\n\n" + "\n\n".join(final)
     
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         f.write(content)
@@ -127,11 +131,11 @@ def main():
         entries = parse_agenda(html)
         if entries:
             save_and_history(entries)
-            print(f"Éxito: {len(entries)} canales generados.")
+            print(f"Éxito: {len(entries)} canales extraídos correctamente.")
         else:
-            print("No se encontraron eventos procesables.")
+            print("No se encontraron eventos en esta ejecución.")
     else:
-        print("Error al descargar el contenido.")
+        print("Error: No se pudo conectar con el Gateway.")
 
 if __name__ == "__main__":
     main()
