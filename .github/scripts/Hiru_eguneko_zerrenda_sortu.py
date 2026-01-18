@@ -1,3 +1,4 @@
+
 # -*- coding: utf-8 -*-
 import os
 import re
@@ -21,6 +22,15 @@ PROXY_LIST = [p.strip() for p in os.environ.get("PROXY_LIST", "").split(",") if 
 INCLUDE_ID_SUFFIX = os.environ.get("INCLUDE_ID_SUFFIX", "true").lower() == "true"
 ALLOW_IPFS_IO = os.environ.get("ALLOW_IPFS_IO", "false").lower() == "true"
 DEBUG = os.environ.get("DEBUG", "false").lower() == "true"
+
+def _get_int_env(name: str, default: int = 0) -> int:
+    try:
+        return int((os.environ.get(name, str(default)) or "").strip())
+    except Exception:
+        return default
+
+# 0 => sin límite; >0 => procesa solo los N primeros eventos
+MAX_EVENTS = _get_int_env("MAX_EVENTS", 0)
 
 # Gateways alternativos a ipfs.io; se probarán en orden con Playwright
 IPFS_GATEWAYS = [
@@ -118,22 +128,19 @@ def write_if_changed(content: str, path_out: Path, history_dir: Path, keep_last:
         try: old.unlink(missing_ok=True)
         except Exception: pass
 
-# --------- NUEVO: utilidades estrictas de Agenda ---------
+# --------- Utilidades estrictas de Agenda ---------
 
 def ensure_agenda_tab(page) -> None:
     """
     Garantiza que estamos en la pestaña 'Agenda Deportiva' y que su contenedor está activo.
     """
     try:
-        # Por si no está activa, clic en el botón de Agenda
         btn = page.locator('nav [data-tab="agendaTab"]')
         if btn.count() > 0:
             if "active" not in (btn.first.get_attribute("class") or ""):
                 btn.first.click(timeout=2000)
-        # Esperar a que el contenedor esté visible
         page.wait_for_selector("#agendaTab.tab-content.active", timeout=5000)
     except Exception:
-        # Si falla, seguimos, pero luego limitamos selectores al contenedor #agendaTab
         pass
 
 def find_event_rows(page):
@@ -141,10 +148,8 @@ def find_event_rows(page):
     Selecciona SOLO las filas cabecera de evento dentro de la pestaña Agenda.
     """
     container = page.locator("#agendaTab")
-    # Aislar a la tabla de eventos dentro de Agenda
     table = container.locator(".events-table")
     if table.count() == 0:
-        # fallback: todo dentro de #agendaTab
         return container.locator("tr.event-row[data-event-id]")
     return table.locator("tr.event-row[data-event-id]")
 
@@ -155,7 +160,6 @@ def expand_event_detail(page, event_row) -> None:
     try:
         event_row.click(timeout=2000)
     except Exception:
-        # Intento alternativo: click en un posible botón dentro de la fila
         toggles = event_row.locator("[data-bs-target], [data-target], [aria-controls], a[href^='#'], button[aria-controls]")
         for i in range(min(3, toggles.count())):
             try: toggles.nth(i).click(timeout=800)
@@ -165,7 +169,7 @@ def get_stream_links_html_for_event(page, event_id: str) -> str | None:
     """
     Devuelve el HTML concatenado de TODOS los .stream-links
     dentro de la fila de detalle DEL MISMO evento:
-      tr.event-detail[data-event-id='<event_id>'] .stream-links
+      #agendaTab tr.event-detail[data-event-id='<event_id>'] .stream-links
     """
     try:
         page.wait_for_selector(f"#agendaTab tr.event-detail[data-event-id='{event_id}']", timeout=4000)
@@ -187,10 +191,8 @@ def extract_ids_from_stream_links_html(html: str) -> List[str]:
     """
     if not html: return []
     ids = set()
-    # Regex directa sobre el fragmento
     for m in OPENACE_RE.findall(html):
         ids.add(m.lower())
-    # Refuerzo: verificar que vienen de <a.stream-link>
     try:
         frag = BeautifulSoup(html, "lxml")
         for a in frag.select("a.stream-link[onclick]"):
@@ -234,11 +236,10 @@ def main():
                     # Enfocar la pestaña Agenda y su contenido
                     ensure_agenda_tab(page)
 
-                    # Esperar a que existan filas cabecera de evento
+                    # Esperar filas cabecera de evento
                     try:
                         page.wait_for_selector("#agendaTab tr.event-row[data-event-id]", timeout=15000)
                     except PWTimeout:
-                        # Scroll pequeño por si hay lazy-load
                         try: page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
                         except Exception: pass
                         page.wait_for_selector("#agendaTab tr.event-row[data-event-id]", timeout=8000)
@@ -248,13 +249,16 @@ def main():
 
                     event_rows = find_event_rows(page)
                     count = event_rows.count()
-                    log(f"Eventos detectados (agenda): {count}")
 
-                    if count == 0:
+                    # Límite para depuración
+                    effective = count if MAX_EVENTS <= 0 else min(count, MAX_EVENTS)
+                    log(f"Eventos detectados (agenda): {count} | Procesando: {effective} (MAX_EVENTS={MAX_EVENTS})")
+
+                    if effective == 0:
                         raise PWTimeout("Sin eventos tras renderizado (agenda)")
 
-                    # Procesar cada evento
-                    for i in range(count):
+                    # Procesar cada evento (limitado por MAX_EVENTS)
+                    for i in range(effective):
                         ev = event_rows.nth(i)
                         event_id = (ev.get_attribute("data-event-id") or "").strip()
                         if not event_id:
@@ -263,7 +267,7 @@ def main():
                         # Desplegar el detalle SOLO de este evento
                         expand_event_detail(page, ev)
 
-                        # Traer exclusivamente el HTML de los links del detalle del MISMO evento
+                        # HTML de los links del detalle del MISMO evento
                         links_html = get_stream_links_html_for_event(page, event_id)
                         if not links_html:
                             if DEBUG: log(f"[DEBUG] Sin stream-links para: {event_id}")
@@ -274,7 +278,7 @@ def main():
                         if not ace_ids:
                             continue
 
-                        # Infos del grupo (competición y fecha) desde la fila cabecera
+                        # Grupo: fecha + competición (desde fila cabecera)
                         ev_html = ev.inner_html()
                         comp = extract_competition_from_html(ev_html)
                         date_str = extract_near_date_str_from_html(ev_html)
@@ -305,14 +309,12 @@ def main():
 
     # Construcción del M3U
     lines = [M3U_HEADER_1, M3U_HEADER_2, ""]
-    # Evitar duplicados absolutos idénticos (por si algún evento repite el mismo id/entrada)
     seen = set()
     for e in entries:
         if e not in seen:
-            lines.append(e)
-            seen.add(e)
-
+            lines.append(e); seen.add(e)
     m3u = "\n".join(lines).strip() + "\n"
+
     write_if_changed(m3u, Path(OUTPUT_FILE), Path(HISTORY_DIR), keep_last=50)
 
     if DEBUG:
