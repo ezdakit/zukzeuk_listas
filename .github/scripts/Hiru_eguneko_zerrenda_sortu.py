@@ -18,27 +18,26 @@ def get_html_content():
         try:
             r = requests.get(f"{gw}{IPNS_KEY}{PATH_PARAMS}", headers={'User-Agent': ua.random}, timeout=30)
             if r.status_code == 200:
-                r.encoding = 'utf-8' # Corrección de tildes (FEDERACIÓN)
+                r.encoding = 'utf-8'
                 return r.text
         except: continue
     return None
 
-def clean_name(text):
-    """Limpia el ruido de los nombres de eventos y competiciones"""
+def clean_text(text):
     if not text: return ""
-    # Palabras de control/basura a eliminar
-    noise = [
-        "FHD", "HD", "SD", "NEW ERA", "ELCANO", "SPORT TV", "VI FHD", "II FHD", "III FHD", 
-        "IV FHD", "V FHD", "NEW LOOP", "Copiar ID", "Reproducir", "Ver Contenido", 
-        "Descargar", "-->", "ID", "Links", "Acestream", "Agenda Deportiva", "Grid Lista"
+    # 1. Eliminar frases de sistema que ensucian la lista
+    system_trash = [
+        "Enlaces de disponibles", "Copiar ID", "Reproducir", "Ver Contenido", 
+        "Descargar", "FHD", "HD", "SD", "NEW ERA", "ELCANO", "-->", "ID", 
+        "Links", "Acestream", "Agenda Deportiva", "Grid Lista", "Categorías", "Etiquetas"
     ]
-    for n in noise:
-        text = text.replace(n, "")
+    for trash in system_trash:
+        text = text.replace(trash, "")
     
-    # Quitar hashes (IDs)
+    # 2. Quitar IDs de 40 caracteres
     text = re.sub(r'[a-f0-9]{40}', '', text)
-    # Limpiar espacios extra
-    text = re.sub(r'\s+', ' ', text).strip(" -:>")
+    # 3. Limpiar símbolos y espacios
+    text = re.sub(r'\s+', ' ', text).strip(" -:>()")
     return text
 
 def parse_agenda(html):
@@ -47,59 +46,64 @@ def parse_agenda(html):
     current_date = datetime.now().strftime("%d-%m")
     ace_pattern = re.compile(r'[a-f0-9]{40}')
     
-    current_comp = "Deportes"
-    
-    # Bloques prohibidos (Menús de navegación que no queremos procesar)
-    blacklist = ["TODOS", "CATEGORÍAS", "ETIQUETAS", "GRID LISTA"]
+    # Empezamos con un grupo genérico por si hay eventos antes del primer título
+    current_competition = "Deportes"
 
-    # Buscamos todos los elementos de texto en orden de aparición
-    for element in soup.find_all(['h2', 'h3', 'b', 'tr']):
+    # Buscamos todas las filas de tabla y encabezados
+    # El truco es que las competiciones suelen estar en celdas que ocupan toda la fila (colspan)
+    for element in soup.find_all(['tr', 'h2', 'h3', 'b']):
         
-        # 1. Ignorar si es un bloque de menú gigante
+        # Obtener IDs en este elemento
+        html_str = str(element)
+        ids = ace_pattern.findall(html_str)
         raw_text = element.get_text(" ", strip=True)
-        if any(word in raw_text.upper() for word in blacklist) and len(raw_text) > 80:
+
+        # CASO A: Es una CABECERA de Competición
+        # Si es un texto corto, no tiene IDs y no es menú, es la competición (ej: NCAA)
+        if not ids:
+            cleaned_comp = clean_text(raw_text)
+            if 2 < len(cleaned_comp) < 45 and not any(x in cleaned_comp.upper() for x in ["TODOS", "MENÚ", "AGENDA"]):
+                current_competition = cleaned_comp
             continue
 
-        ids = ace_pattern.findall(str(element))
-
-        # 2. ¿Es un encabezado de Competición?
-        if not ids and element.name in ['h2', 'h3', 'b']:
-            potential_comp = clean_name(raw_text)
-            if 2 < len(potential_comp) < 50:
-                current_comp = potential_comp
-            continue
-
-        # 3. ¿Es una fila de evento?
+        # CASO B: Es una FILA de Evento (Tiene IDs)
         if ids:
-            # Extraer hora (HH:MM)
+            # 1. Extraer Hora
             time_match = re.search(r'(\d{1,2}:\d{2})', raw_text)
             event_time = time_match.group(1) if time_match else ""
             
-            # El nombre del partido es el texto de la fila limpiando hora y competición
-            match_name = clean_name(raw_text.replace(event_time, "").replace(current_comp, ""))
+            # 2. Extraer el Nombre del Partido de forma aislada
+            # Intentamos quedarnos solo con lo que hay después de la hora
+            if event_time:
+                match_name = raw_text.split(event_time)[-1]
+            else:
+                match_name = raw_text
             
-            if not match_name or len(match_name) < 3:
+            match_name = clean_text(match_name)
+            
+            # Si al limpiar se queda vacío o es igual a la competición, poner un genérico
+            if len(match_name) < 3:
                 match_name = "Evento"
 
-            # Una entrada por cada ID único
-            unique_ids = list(dict.fromkeys(ids))
-            for aid in unique_ids:
+            # 3. Generar entrada por cada ID único
+            for aid in list(dict.fromkeys(ids)):
                 short_id = aid[:3]
                 display_name = f"{event_time} {match_name}".strip()
-                group_title = f"{current_date} {current_comp}"
+                # Formato solicitado: group-title="DD-MM Competición"
+                group_title = f"{current_date} {current_competition}"
 
                 entry = (
                     f'#EXTINF:-1 group-title="{group_title}" tvg-name="{match_name}",{display_name} ({short_id})\n'
                     f'http://127.0.0.1:6878/ace/getstream?id={aid}'
                 )
                 entries.append(entry)
-                
+    
     return entries
 
 def save_and_history(entries):
     # Eliminar duplicados exactos
-    seen = set()
     unique_entries = []
+    seen = set()
     for e in entries:
         if e not in seen:
             unique_entries.append(e)
@@ -123,11 +127,11 @@ def main():
         entries = parse_agenda(html)
         if entries:
             save_and_history(entries)
-            print(f"Completado: {len(entries)} eventos guardados.")
+            print(f"Éxito: {len(entries)} canales generados.")
         else:
-            print("No se detectaron eventos.")
+            print("No se encontraron eventos procesables.")
     else:
-        print("Error al descargar.")
+        print("Error al descargar el contenido.")
 
 if __name__ == "__main__":
     main()
