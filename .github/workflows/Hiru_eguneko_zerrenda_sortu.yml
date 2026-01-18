@@ -1,3 +1,4 @@
+
 name: Hiru_eguneko_zerrenda_sortu
 
 on:
@@ -19,11 +20,11 @@ jobs:
       TARGET_URL: "https://ipfs.io/ipns/k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004/?tab=agenda"
       OUTPUT_FILE: "zz_eventos_ott.m3u"
       HISTORY_DIR: "history"
-      PROXY_LIST: "${{ secrets.PROXY_LIST }}"  # ej: http://user:pass@host1:port,https://host2:port
+      PROXY_LIST: "${{ secrets.PROXY_LIST }}"
       INCLUDE_ID_SUFFIX: "true"
-      ALLOW_IPFS_IO: "false"                   # true = permitir ipfs.io como último recurso
+      ALLOW_IPFS_IO: "false"
       NO_PROXY: "127.0.0.1,localhost"
-      DEBUG: "true"                            # deja "true" para ver artefactos de depuración
+      DEBUG: "true"
 
     steps:
       - name: Checkout
@@ -39,30 +40,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install playwright beautifulsoup4 lxml
 
-      # Instala los navegadores y deps de Playwright (Chromium)
-      - name: Install Playwright Browsers
-        uses: microsoft/playwright-github-action@v1
+      # 👇 Instala navegadores + dependencias del sistema para Chromium
+      - name: Install Playwright (browsers + system deps)
+        run: |
+          python -m playwright install --with-deps chromium
 
       - name: Run script
         run: |
-          python .github/scripts/Hiru_eguneko_zerrenda_sortu.py
-
-      - name: Subir artefactos de depuración
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: debug-artifacts
-          path: .debug/
-
-      - name: Commit & Push changes (if any)
-        run: |
-          set -e
-          if [[ -n "$(git status --porcelain)" ]]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add -A
-            git commit -m "chore: actualizar M3U y/o histórico [ci skip]"
-            git push
-          else
-            echo "No hay cambios para commitear."
-          fi
+          python .github/scripts/Hiru
