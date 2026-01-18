@@ -2,253 +2,59 @@ name: Hiru_eguneko_zerrenda_sortu
 
 on:
   schedule:
-    # Se ejecuta cada hora a los 20 minutos
-    - cron: '20 * * * *'
-  workflow_dispatch:  # Permite ejecución manual
+    - cron: '20 * * * *'   # Cada hora a y 20 (UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: m3u-generation
+  cancel-in-progress: false
 
 jobs:
-  scrape:
+  build-m3u:
     runs-on: ubuntu-latest
-    
+    env:
+      TARGET_URL: "https://ipfs.io/ipns/k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004/?tab=agenda"
+      OUTPUT_FILE: "zz_eventos_ott.m3u"
+      HISTORY_DIR: "history"
+      # Lista de proxies separada por comas, configurable en Secrets: http://user:pass@host:port,https://host2:port
+      PROXY_LIST: "${{ secrets.PROXY_LIST }}"
+      # Si subes un HTML para pruebas, pon aquí la ruta relativa para usarlo en vez de descargar por red:
+      # USE_LOCAL_HTML: "tests/agenda_sample.html"
+      # Controla si añadimos el sufijo con los 3 primeros chars del acestream_id al nombre del canal:
+      INCLUDE_ID_SUFFIX: "true"
+      # Evitar ipfs.io salvo última instancia (por si los gateways alternativos fallan todos):
+      ALLOW_IPFS_IO: "false"
+      NO_PROXY: "127.0.0.1,localhost"
     steps:
-      - name: Checkout repository with files
+      - name: Checkout
         uses: actions/checkout@v4
-        with:
-          persist-credentials: true
-          fetch-depth: 0  # Traer todo el histórico
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.11'
 
-      - name: Install Python dependencies
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests beautifulsoup4 lxml
+          pip install -r requirements.txt
 
-      - name: Verify script exists
+      - name: Generate M3U
         run: |
-          echo "=== VERIFICANDO ESTRUCTURA ==="
-          echo "Directorio actual: $(pwd)"
-          echo ""
-          echo "Contenido de .github/:"
-          find .github -type f -name "*.py" | sort
-          echo ""
-          
-          SCRIPT_PATH=".github/scripts/Hiru_eguneko_zerrenda_sortu.py"
-          if [ -f "$SCRIPT_PATH" ]; then
-            echo "✅ Script encontrado: $SCRIPT_PATH"
-            echo "Tamaño: $(wc -l < "$SCRIPT_PATH") líneas"
-            echo "Permisos: $(ls -l "$SCRIPT_PATH")"
-          else
-            echo "❌ ERROR: No se encuentra $SCRIPT_PATH"
-            echo "Buscando scripts Python..."
-            find . -name "*.py" -type f | sort
-            exit 1
-          fi
+          python scripts/Hiru_eguneko_zerrenda_sortu.py
 
-      - name: Run scraping script
-        id: scrape
+      - name: Commit & Push changes (if any)
         run: |
-          echo "=== INICIANDO SCRAPING DE EVENTOS ==="
-          echo "Fecha y hora: $(date '+%Y-%m-%d %H:%M:%S')"
-          echo "Script: .github/scripts/Hiru_eguneko_zerrenda_sortu.py"
-          echo ""
-          
-          # Navegar al directorio raíz si es necesario
-          cd "$GITHUB_WORKSPACE"
-          
-          # Ejecutar script y capturar output
-          python .github/scripts/Hiru_eguneko_zerrenda_sortu.py 2>&1 | tee scrape.log
-          
-          # Extraer estadísticas del log
-          EVENTS_COUNT=$(grep "Eventos encontrados:" scrape.log | tail -1 | grep -o '[0-9]*' || echo "0")
-          CHANNELS_COUNT=$(grep "Canales Acestream totales:" scrape.log | tail -1 | grep -o '[0-9]*' || echo "0")
-          
-          # Determinar si fue exitoso
-          if grep -q "✓ Archivo principal creado:" scrape.log || \
-             grep -q "✅ Archivo principal creado:" scrape.log || \
-             grep -q "Archivo principal generado:" scrape.log; then
-            SUCCESS="true"
+          set -e
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "chore: actualizar M3U y/o histórico [ci skip]"
+            git push
           else
-            SUCCESS="false"
+            echo "No hay cambios para commitear."
           fi
-          
-          # También verificar si el archivo M3U fue creado
-          if [ -f "zz_eventos_ott.m3u" ]; then
-            SUCCESS="true"
-          fi
-          
-          # Guardar outputs para pasos siguientes
-          echo "events_count=$EVENTS_COUNT" >> $GITHUB_OUTPUT
-          echo "channels_count=$CHANNELS_COUNT" >> $GITHUB_OUTPUT
-          echo "success=$SUCCESS" >> $GITHUB_OUTPUT
-          
-          echo ""
-          echo "=== RESUMEN EJECUCIÓN ==="
-          echo "Eventos encontrados: $EVENTS_COUNT"
-          echo "Canales Acestream: $CHANNELS_COUNT"
-          echo "Éxito: $SUCCESS"
-          echo ""
-          echo "Contenido actual:"
-          ls -la
-
-      - name: Show generated files
-        if: always()
-        run: |
-          echo "=== ARCHIVOS GENERADOS ==="
-          echo "Directorio de trabajo: $(pwd)"
-          echo ""
-          
-          # Verificar archivo M3U principal
-          M3U_FILE="zz_eventos_ott.m3u"
-          if [ -f "$M3U_FILE" ]; then
-            LINE_COUNT=$(wc -l < "$M3U_FILE")
-            echo "✅ $M3U_FILE - $LINE_COUNT líneas"
-            
-            # Contar canales reales (líneas que contienen acestream:// o getstream?id=)
-            STREAM_COUNT=$(grep -c "getstream?id=" "$M3U_FILE" || echo "0")
-            echo "   Canales activos: $STREAM_COUNT"
-            
-            echo ""
-            echo "📄 Vista previa (primeras 3 entradas completas):"
-            # Mostrar entradas EXTINF + URL
-            grep -A 1 "#EXTINF" "$M3U_FILE" | head -6 || true
-          else
-            echo "❌ $M3U_FILE - NO GENERADO"
-            echo "Buscando archivos M3U..."
-            find . -name "*.m3u" -type f | sort
-          fi
-          
-          echo ""
-          
-          # Verificar histórico
-          HISTORY_DIR="history"
-          if [ -d "$HISTORY_DIR" ]; then
-            HIST_COUNT=$(find "$HISTORY_DIR" -name "*.m3u" -type f | wc -l)
-            echo "📂 Histórico: $HIST_COUNT archivos en $HISTORY_DIR/"
-            if [ "$HIST_COUNT" -gt 0 ]; then
-              echo "Últimos 3 archivos:"
-              find "$HISTORY_DIR" -name "*.m3u" -type f -printf "%T@ %p\n" | sort -rn | head -3 | cut -d' ' -f2-
-            fi
-          else
-            echo "📂 Histórico: Directorio no existe"
-          fi
-          
-          echo ""
-          echo "=== TAMAÑOS ==="
-          for file in *.m3u *.json *.log 2>/dev/null; do
-            if [ -f "$file" ]; then
-              echo "$(du -h "$file" | cut -f1) - $file"
-            fi
-          done
-          
-          if [ -d "$HISTORY_DIR" ]; then
-            echo "$(du -sh "$HISTORY_DIR" 2>/dev/null | cut -f1) - $HISTORY_DIR/"
-          fi
-
-      - name: Commit and push changes
-        if: github.ref == 'refs/heads/main' && steps.scrape.outputs.success == 'true'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          echo "=== ACTUALIZANDO REPOSITORIO ==="
-          
-          # Configurar git
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          
-          # Verificar estado
-          echo "📊 Estado de git:"
-          git status --porcelain || true
-          
-          # Agregar archivos generados (si existen)
-          FILES_TO_ADD=""
-          
-          if [ -f "zz_eventos_ott.m3u" ]; then
-            FILES_TO_ADD="$FILES_TO_ADD zz_eventos_ott.m3u"
-          fi
-          
-          if [ -d "history" ]; then
-            FILES_TO_ADD="$FILES_TO_ADD history/"
-          fi
-          
-          if [ -f "events_debug.json" ]; then
-            FILES_TO_ADD="$FILES_TO_ADD events_debug.json"
-          fi
-          
-          if [ -n "$FILES_TO_ADD" ]; then
-            echo "📦 Agregando archivos: $FILES_TO_ADD"
-            git add $FILES_TO_ADD
-            
-            # Verificar si hay cambios reales
-            if ! git diff --cached --quiet; then
-              echo ""
-              echo "📝 Cambios detectados, haciendo commit..."
-              
-              # Crear mensaje de commit
-              TIMESTAMP=$(date '+%Y-%m-%d %H:%M')
-              EVENTS=${{ steps.scrape.outputs.events_count }}
-              CHANNELS=${{ steps.scrape.outputs.channels_count }}
-              
-              COMMIT_MSG="📺 Actualización eventos deportivos ($TIMESTAMP)
-              
-• Eventos: $EVENTS
-• Canales: $CHANNELS
-• Generado automaticamente por GitHub Actions"
-              
-              # Hacer commit
-              git commit -m "$COMMIT_MSG"
-              
-              # Hacer push
-              echo "🔼 Subiendo cambios a main..."
-              git push origin main
-              echo "✅ Cambios subidos exitosamente"
-            else
-              echo ""
-              echo "⏭️  No hay cambios para commitear (contenido idéntico)"
-            fi
-          else
-            echo ""
-            echo "⚠️  No se generaron archivos nuevos para commitear"
-          fi
-
-      - name: Show detailed logs on failure
-        if: failure()
-        run: |
-          echo "❌ EL WORKFLOW HA FALLADO"
-          echo "=========================================="
-          echo ""
-          
-          echo "=== ÚLTIMAS 50 LÍNEAS DEL LOG ==="
-          if [ -f "scrape.log" ]; then
-            tail -50 scrape.log
-          else
-            echo "No hay archivo scrape.log"
-          fi
-          
-          echo ""
-          echo "=== ARCHIVOS EN EL DIRECTORIO ==="
-          ls -la
-          
-          echo ""
-          echo "=== ESTRUCTURA DE .github/ ==="
-          find .github -type f | sort
-          
-          echo ""
-          echo "=== CONTENIDO DEL SCRIPT ==="
-          if [ -f ".github/scripts/Hiru_eguneko_zerrenda_sortu.py" ]; then
-            echo "Primeras 20 líneas del script:"
-            head -20 ".github/scripts/Hiru_eguneko_zerrenda_sortu.py"
-          fi
-
-      - name: Send notification on success
-        if: success()
-        run: |
-          echo "✅ SCRAPING COMPLETADO EXITOSAMENTE"
-          echo ""
-          echo "Resumen:"
-          echo "• Eventos: ${{ steps.scrape.outputs.events_count }}"
-          echo "• Canales: ${{ steps.scrape.outputs.channels_count }}"
-          echo "• Éxito: ${{ steps.scrape.outputs.success }}"
