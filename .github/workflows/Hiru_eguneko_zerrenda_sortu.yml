@@ -196,7 +196,7 @@ jobs:
               
 • Eventos: $EVENTS
 • Canales: $CHANNELS
-• Generado automáticamente por GitHub Actions"
+• Generado automaticamente por GitHub Actions"
               
               # Hacer commit
               git commit -m "$COMMIT_MSG"
