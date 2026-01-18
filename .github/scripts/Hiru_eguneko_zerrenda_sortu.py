@@ -23,9 +23,19 @@ def get_html_content():
         except: continue
     return None
 
+def is_garbage(text):
+    """Detecta si el texto es parte de las instrucciones de la web y no un partido"""
+    garbage_keywords = [
+        "reproductores", "VLC", "OTT", "Kodi", "plugin", "acestream://", 
+        "fuente M3U", "software IPTV", "Copiar", "instrucciones", "ID_ACESTREAM",
+        "Enlaces de disponibles", "Grid Lista", "Categorías"
+    ]
+    return any(word.lower() in text.lower() for word in garbage_keywords)
+
 def clean_text(text):
     if not text: return ""
-    noise = ["Copiar ID", "Reproducir", "Ver Contenido", "Descargar", "FHD", "HD", "SD", "-->", "Links", "Acestream"]
+    # Ruido visual
+    noise = ["FHD", "HD", "SD", "-->", "Links", "Acestream", "NEW ERA", "ELCANO"]
     for n in noise:
         text = text.replace(n, "")
     text = re.sub(r'[a-f0-9]{40}', '', text)
@@ -38,44 +48,40 @@ def parse_agenda(html):
     current_date = datetime.now().strftime("%d-%m")
     ace_pattern = re.compile(r'[a-f0-9]{40}')
     
-    # Localizar el área de agenda para evitar menús
+    # Solo buscamos en la zona de la agenda
     agenda_area = soup.find('div', id='agenda') or soup.body
     
-    active_group = "Otros Deportes"
-    
-    # Analizamos los elementos de la agenda
-    for element in agenda_area.find_all(['h3', 'b', 'tr', 'div', 'p']):
-        # Evitar bloques masivos (menús ocultos)
-        if len(element.get_text()) > 400: continue
+    active_group = "Otros"
+
+    for element in agenda_area.find_all(['h3', 'b', 'tr', 'div']):
+        # Evitar bloques de texto masivos
+        if len(element.get_text()) > 350: continue
 
         row_str = str(element)
         ids = ace_pattern.findall(row_str)
 
-        # 1. ¿ES UN GRUPO (COMPETICIÓN)? 
-        # Si es un encabezado (h3, b) y NO tiene IDs
+        # 1. ACTUALIZAR GRUPO (Competición)
         if element.name in ['h3', 'b'] and not ids:
             txt = clean_text(element.get_text())
-            if 3 < len(txt) < 35 and not any(x in txt.upper() for x in ["TODOS", "CATEGORÍAS", "MENÚ"]):
+            if 3 < len(txt) < 30 and not is_garbage(txt):
                 active_group = txt
             continue
 
-        # 2. ¿ES UN EVENTO?
-        # Debe tener IDs y, para ser evento real de agenda, una HORA
+        # 2. PROCESAR EVENTO
         full_text = element.get_text(" ", strip=True)
         time_match = re.search(r'(\d{1,2}:\d{2})', full_text)
         
+        # Un evento válido DEBE tener Hora e ID, y NO ser basura técnica
         if ids and time_match:
             hora = time_match.group(1)
-            # El nombre del partido es lo que sigue a la hora
-            name_part = full_text.split(hora)[-1]
-            match_name = clean_text(name_part)
+            raw_name = full_text.split(hora)[-1]
+            match_name = clean_text(raw_name)
 
-            if len(match_name) < 3: 
-                match_name = f"Evento {active_group}"
+            if is_garbage(match_name) or len(match_name) < 4:
+                continue
 
             for aid in list(dict.fromkeys(ids)):
                 short_id = aid[:3]
-                # Estructura final solicitada
                 entry = (
                     f'#EXTINF:-1 group-title="{current_date} {active_group}" tvg-name="{match_name}",{hora} {match_name} ({short_id})\n'
                     f'http://127.0.0.1:6878/ace/getstream?id={aid}'
@@ -87,9 +93,7 @@ def parse_agenda(html):
 
 def main():
     html = get_html_content()
-    if not html:
-        print("Error de conexión.")
-        return
+    if not html: return
 
     final_entries = parse_agenda(html)
     
@@ -105,13 +109,11 @@ def main():
         with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
             f.write(HEADER_M3U + "\n\n" + "\n\n".join(unique_list))
         
-        # Historial
         if not os.path.exists(HISTORY_DIR): os.makedirs(HISTORY_DIR)
         shutil.copy(OUTPUT_FILE, os.path.join(HISTORY_DIR, f"zz_eventos_{datetime.now().strftime('%H%M%S')}.m3u"))
-        
-        print(f"Éxito: {len(unique_list)} canales generados correctamente.")
+        print(f"Éxito: {len(unique_list)} canales limpios.")
     else:
-        print("No se encontraron eventos que cumplan el criterio (Hora + ID).")
+        print("No se encontraron eventos válidos.")
 
 if __name__ == "__main__":
     main()
