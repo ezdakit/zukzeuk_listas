@@ -1,3 +1,4 @@
+
 name: Hiru_eguneko_zerrenda_sortu
 
 on:
@@ -16,14 +17,29 @@ jobs:
   build-m3u:
     runs-on: ubuntu-latest
     env:
+      # --- Config del script ---
       TARGET_URL: "https://ipfs.io/ipns/k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004/?tab=agenda"
       OUTPUT_FILE: "zz_eventos_ott.m3u"
       HISTORY_DIR: "history"
+
+      # Si quieres usar proxies (secreto del repo):
+      # Formato: http://user:pass@host:port,https://host2:port
       PROXY_LIST: "${{ secrets.PROXY_LIST }}"
-      INCLUDE_ID_SUFFIX: "true"       # pon "false" si no quieres el sufijo (XYZ)
+
+      # Mostrar sufijo con los 3 primeros chars del acestream_id en el nombre del canal
+      INCLUDE_ID_SUFFIX: "true"     # pon "false" si quieres que NO salga el sufijo (XYZ)
+
+      # Evitar ipfs.io salvo último recurso (si pones true, lo probará al final)
       ALLOW_IPFS_IO: "false"
+
+      # Depuración (sube artefactos .debug/ con el DOM y el M3U generado)
       DEBUG: "true"
+
+      # Evitar uso de proxy para loopback
       NO_PROXY: "127.0.0.1,localhost"
+
+      # Limitar nº de eventos para depurar rápidamente (0 = sin límite)
+      MAX_EVENTS: "10"
 
     steps:
       - name: Checkout
@@ -39,6 +55,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install playwright beautifulsoup4 lxml
 
+      # Instalar navegadores + dependencias del sistema (Chromium)
       - name: Install Playwright (browsers + system deps)
         run: |
           python -m playwright install --with-deps chromium
