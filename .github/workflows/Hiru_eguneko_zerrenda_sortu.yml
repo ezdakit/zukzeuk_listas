@@ -1,0 +1,38 @@
+name: Hiru_eguneko_zerrenda_sortu
+
+on:
+  schedule:
+    # Se ejecuta al minuto 20 de cada hora
+    - cron: '20 * * * *'
+  workflow_dispatch: # Permite ejecutarlo manualmente desde la pestaña Actions
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Permiso necesario para guardar los cambios en el repo
+
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+
+      - name: Instalar dependencias
+        # Aquí instalamos las librerías directamente sin usar requirements.txt
+        run: |
+          pip install requests beautifulsoup4 fake-useragent lxml
+
+      - name: Ejecutar Scraper
+        run: python Hiru_eguneko_zerrenda_sortu.py
+
+      - name: Commit y Push si hay cambios
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add zz_eventos_all_ott.m3u history/
+          # Solo hace commit si detecta cambios, evita errores si no hay nada nuevo
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update playlist [skip ci]" && git push)
