@@ -23,59 +23,69 @@ def get_html_content():
         except: continue
     return None
 
+def clean_text(text):
+    if not text: return ""
+    # Eliminar basura específica detectada en tu HTML
+    noise = ["Copiar ID", "Reproducir", "Ver Contenido", "Descargar", "FHD", "HD", "SD", "NEW ERA", "ELCANO", "Acestream"]
+    for n in noise:
+        text = text.replace(n, "")
+    text = re.sub(r'[a-f0-9]{40}', '', text) # Quitar IDs
+    text = re.sub(r'\s+', ' ', text).strip(" -:>()")
+    return text
+
 def parse_agenda(html):
     soup = BeautifulSoup(html, 'lxml')
     entries = []
     current_date = datetime.now().strftime("%d-%m")
     ace_pattern = re.compile(r'[a-f0-9]{40}')
     
-    # 1. LOCALIZAR LAS TABLAS: La agenda real siempre está en tablas <table>
-    # Esto ignora automáticamente el menú de arriba y los laterales
-    tables = soup.find_all('table')
+    # Seleccionamos solo el contenedor principal de la agenda para evitar el menú superior
+    # En tu HTML, la agenda suele estar dentro de un div con id 'agenda' o similar
+    agenda_container = soup.find('div', {'id': 'agenda'}) or soup.find('main') or soup
     
-    for table in tables:
-        # Buscamos el título de la competición justo antes de la tabla
-        # Normalmente es un h2, h3 o un b que está encima
-        prev = table.find_previous(['h2', 'h3', 'b', 'strong'])
-        current_comp = prev.get_text(strip=True) if prev else "Deportes"
-        
-        # Limpiar nombre de competición (evitar menús)
-        if len(current_comp) > 40 or "TODOS" in current_comp.upper():
-            current_comp = "Evento"
+    current_comp = "Deportes"
+    
+    # Buscamos bloques de eventos. Tu HTML usa estructuras de filas o tarjetas.
+    for element in agenda_container.find_all(['div', 'tr', 'h3', 'b']):
+        # 1. TEST DE GRUPO: Identificar competición
+        if element.name in ['h3', 'b'] and not ace_pattern.search(str(element)):
+            txt = clean_text(element.get_text())
+            if 3 < len(txt) < 40 and "TODOS" not in txt.upper():
+                current_comp = txt
+            continue
 
-        rows = table.find_all('tr')
-        for row in rows:
-            text_row = row.get_text(" ", strip=True)
-            ids = ace_pattern.findall(str(row))
-            
-            if ids:
-                # Buscar hora HH:MM
-                time_match = re.search(r'(\d{1,2}:\d{2})', text_row)
-                hora = time_match.group(1) if time_match else ""
-                
-                # EL NOMBRE DEL PARTIDO:
-                # Es el texto que NO es la hora y NO son los botones de ID
-                match_name = text_row.replace(hora, "")
-                # Limpieza rápida de ruidos comunes
-                for noise in ["Copiar ID", "Reproducir", "Ver", "Descargar", "FHD", "HD", "SD"]:
-                    match_name = match_name.replace(noise, "")
-                
-                match_name = re.sub(r'\s+', ' ', match_name).strip(" -:>()")
+        # 2. TEST DE EVENTO: Buscar IDs de Acestream
+        row_str = str(element)
+        ids = ace_pattern.findall(row_str)
+        if not ids: continue
 
-                # Si el nombre queda vacío, usamos el título de la competición
-                if len(match_name) < 3: match_name = current_comp
+        full_text = element.get_text(" ", strip=True)
+        time_match = re.search(r'(\d{1,2}:\d{2})', full_text)
+        hora = time_match.group(1) if time_match else ""
 
-                for aid in list(dict.fromkeys(ids)):
-                    short_id = aid[:3]
-                    group_title = f"{current_date} {current_comp}"
-                    display_name = f"{hora} {match_name}".strip()
+        # 3. TEST DE NOMBRE: Evitar que el nombre sea igual al grupo o genérico
+        # Extraemos el texto después de la hora
+        match_name = full_text.split(hora)[-1] if hora else full_text
+        match_name = clean_text(match_name)
 
-                    entry = (
-                        f'#EXTINF:-1 group-title="{group_title}" tvg-name="{match_name}",{display_name} ({short_id})\n'
-                        f'http://127.0.0.1:6878/ace/getstream?id={aid}'
-                    )
-                    entries.append(entry)
-                    
+        if len(match_name) < 4:
+            match_name = f"Evento {current_comp}"
+
+        # 4. TEST DE CANTIDAD: No más de 1000
+        if len(entries) >= 1000: break
+
+        for aid in list(dict.fromkeys(ids)):
+            short_id = aid[:3]
+            group_title = f"{current_date} {current_comp}"
+            # Asegurar que el nombre del canal es informativo
+            display_name = f"{hora} {match_name}".strip()
+
+            entry = (
+                f'#EXTINF:-1 group-title="{group_title}" tvg-name="{match_name}",{display_name} ({short_id})\n'
+                f'http://127.0.0.1:6878/ace/getstream?id={aid}'
+            )
+            entries.append(entry)
+
     return entries
 
 def main():
@@ -84,26 +94,27 @@ def main():
 
     entries = parse_agenda(html)
     
+    # VALIDACIÓN ANTES DE GUARDAR
     if entries:
-        # Deduplicar
-        unique = []
+        # Deduplicar preservando orden
+        final_list = []
         seen = set()
         for e in entries:
             if e not in seen:
-                unique.append(e)
+                final_list.append(e)
                 seen.add(e)
 
-        content = HEADER_M3U + "\n\n" + "\n\n".join(unique)
+        # Escribir archivo
         with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
-            f.write(content)
+            f.write(HEADER_M3U + "\n\n" + "\n\n".join(final_list))
         
+        # Historial
         if not os.path.exists(HISTORY_DIR): os.makedirs(HISTORY_DIR)
-        shutil.copy(OUTPUT_FILE, os.path.join(HISTORY_DIR, f"zz_eventos_{datetime.now().strftime('%Y%m%d_%H%M%S')}.m3u"))
-        print(f"Éxito: {len(unique)} canales.")
+        shutil.copy(OUTPUT_FILE, os.path.join(HISTORY_DIR, f"zz_eventos_{datetime.now().strftime('%H%M%S')}.m3u"))
+        
+        print(f"Resultado: {len(final_list)} eventos procesados. Grupos diferenciados y nombres limpios.")
     else:
-        # Si fallan las tablas, intentamos un modo desesperado (todo lo que tenga ID)
-        print("Aviso: No se encontraron tablas, usando modo bypass...")
-        # (Aquí podrías poner un fallback, pero probemos primero con el filtro de tablas)
+        print("No se encontraron eventos. Revisar selectores.")
 
 if __name__ == "__main__":
     main()
