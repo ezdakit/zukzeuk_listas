@@ -42,7 +42,7 @@ jobs:
 
       - name: Run script
         run: |
-          python scripts/Hiru_eguneko_zerrenda_sortu.py
+          python .github/scripts/Hiru_eguneko_zerrenda_sortu.py
 
       - name: Commit & Push changes (if any)
         run: |
