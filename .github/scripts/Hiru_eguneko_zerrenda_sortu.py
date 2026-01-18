@@ -1,4 +1,5 @@
 import os, requests, re, shutil
+from bs4 import BeautifulSoup
 from datetime import datetime
 from fake_useragent import UserAgent
 
@@ -15,7 +16,8 @@ def get_html_content():
     ua = UserAgent()
     for gw in GATEWAYS:
         try:
-            r = requests.get(f"{gw}{IPNS_KEY}{PATH_PARAMS}", headers={'User-Agent': ua.random}, timeout=30)
+            url = f"{gw}{IPNS_KEY}{PATH_PARAMS}"
+            r = requests.get(url, headers={'User-Agent': ua.random}, timeout=30)
             if r.status_code == 200:
                 r.encoding = 'utf-8'
                 return r.text
@@ -24,98 +26,99 @@ def get_html_content():
 
 def clean_text(text):
     if not text: return ""
-    # Kendu soberan dagoen testu teknikoa
-    noise = ["Copiar ID", "Reproducir", "Ver Contenido", "Descargar", "FHD", "HD", "SD", "-->", "ID", "Acestream"]
+    # Kendu soberan dagoen guztia
+    noise = ["Copiar ID", "Reproducir", "Ver Contenido", "Descargar", "FHD", "HD", "SD", "-->", "ID", "Acestream", "Enlaces de disponibles"]
     for n in noise:
         text = text.replace(n, "")
-    # Kendu Acestream hash-ak (40 karaktere)
+    # Kendu hash-ak
     text = re.sub(r'[a-f0-9]{40}', '', text)
-    # Garbitu zuriuneak
+    # Garbitu zuriuneak eta karaktere arraroak
     text = re.sub(r'\s+', ' ', text).strip(" -:>()")
     return text
 
-def parse_content(html):
-    from bs4 import BeautifulSoup
+def parse_agenda(html):
     soup = BeautifulSoup(html, 'lxml')
     entries = []
     current_date = datetime.now().strftime("%d-%m")
     ace_pattern = re.compile(r'[a-f0-9]{40}')
     
-    # Bilatu orrialdeko lerro guztiak (tr)
-    rows = soup.find_all('tr')
+    current_comp = "Kirol Ekitaldiak"
     
-    # Orrialdean taularik ez badago (oso arraroa), saiatu div-ekin
-    if not rows:
-        rows = soup.find_all('div')
+    # Bilatu eduki guztia lerroz lerro (tr, div edo p)
+    for element in soup.find_all(['tr', 'h2', 'h3', 'b', 'div']):
+        raw_text = element.get_text(" ", strip=True)
+        ids = ace_pattern.findall(str(element))
 
-    current_comp = "Kirolak"
-
-    for row in rows:
-        text = row.get_text(" ", strip=True)
-        html_row = str(row)
-        ids = ace_pattern.findall(html_row)
-
-        # 1. Izenburua den detektatu (ID-rik gabe eta testu laburra)
+        # 1. Kategoria edo Txapelketa (IDrik gabe eta laburra)
         if not ids:
-            cleaned = clean_text(text)
-            if 3 < len(cleaned) < 35 and "TODOS" not in cleaned.upper():
+            cleaned = clean_text(raw_text)
+            if 3 < len(cleaned) < 40 and "TODOS" not in cleaned.upper():
                 current_comp = cleaned
             continue
 
-        # 2. Partida den detektatu (Ordua + IDak)
-        time_match = re.search(r'(\d{1,2}:\d{2})', text)
-        if ids and time_match:
-            hora = time_match.group(1)
-            # Partidaren izena orduaren ostean dagoena da
-            match_name = text.split(hora)[-1]
-            match_name = clean_text(match_name)
+        # 2. Partida (IDak aurkitu badira)
+        # Bilatu ordua (hautazkoa orain, ez badago ez dugu baztertuko)
+        time_match = re.search(r'(\d{1,2}:\d{2})', raw_text)
+        hora = time_match.group(1) if time_match else ""
+        
+        # Izena garbitu: orduaren ostean dagoena edo testu osoa
+        if hora:
+            match_name = raw_text.split(hora)[-1]
+        else:
+            match_name = raw_text
             
-            if not match_name or len(match_name) < 3:
-                match_name = "Ekitaldia"
+        match_name = clean_text(match_name)
 
-            for aid in list(dict.fromkeys(ids)):
-                short_id = aid[:3]
-                group_title = f"{current_date} {current_comp}"
-                display_name = f"{hora} {match_name}".strip()
+        if len(match_name) < 2:
+            match_name = current_comp
 
-                entry = (
-                    f'#EXTINF:-1 group-title="{group_title}" tvg-name="{match_name}",{display_name} ({short_id})\n'
-                    f'http://127.0.0.1:6878/ace/getstream?id={aid}'
-                )
-                entries.append(entry)
-                
+        # Gehitu aurkitutako ID bakoitza
+        for aid in list(dict.fromkeys(ids)):
+            short_id = aid[:3]
+            group_title = f"{current_date} {current_comp}"
+            display_name = f"{hora} {match_name}".strip()
+
+            entry = (
+                f'#EXTINF:-1 group-title="{group_title}" tvg-name="{match_name}",{display_name} ({short_id})\n'
+                f'http://127.0.0.1:6878/ace/getstream?id={aid}'
+            )
+            entries.append(entry)
+            
     return entries
+
+def save_and_history(entries):
+    if not entries: return
+    # Kendu bikoiztuak
+    unique_entries = []
+    seen = set()
+    for e in entries:
+        if e not in seen:
+            unique_entries.append(e)
+            seen.add(e)
+
+    full_content = HEADER_M3U + "\n\n" + "\n\n".join(unique_entries)
+    
+    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
+        f.write(full_content)
+    
+    if not os.path.exists(HISTORY_DIR): os.makedirs(HISTORY_DIR)
+    ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+    shutil.copy(OUTPUT_FILE, os.path.join(HISTORY_DIR, f"zz_eventos_{ts}.m3u"))
 
 def main():
     html = get_html_content()
     if not html:
-        print("Ezin izan da HTMLa eskuratu.")
+        print("Akatsa: Ezin izan da webgunera konektatu.")
         return
 
-    entries = parse_content(html)
+    entries = parse_agenda(html)
     
     if entries:
-        # Kendu bikoiztuak
-        unique_entries = []
-        seen = set()
-        for e in entries:
-            if e not in seen:
-                unique_entries.append(e)
-                seen.add(e)
-
-        content = HEADER_M3U + "\n\n" + "\n\n".join(unique_entries)
-        
-        with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
-            f.write(content)
-        
-        # Historiala kudeatu
-        if not os.path.exists(HISTORY_DIR): os.makedirs(HISTORY_DIR)
-        ts = datetime.now().strftime("%Y%m%d_%H%M%S")
-        shutil.copy(OUTPUT_FILE, os.path.join(HISTORY_DIR, f"zz_eventos_{ts}.m3u"))
-        
-        print(f"Egina! {len(unique_entries)} partida aurkitu dira.")
+        save_and_history(entries)
+        print(f"Egina! {len(entries)} kanal sortu dira.")
     else:
-        print("Ez da partidarik aurkitu ordu formatuarekin. Egiaztatu IPNS gakoa.")
+        # Debug: orrialdearen zati bat erakutsi IDak dauden ikusteko
+        print("Ez da partidarik aurkitu. Orrialdeak ez du Acestream IDrik (40 karaktere).")
 
 if __name__ == "__main__":
     main()
