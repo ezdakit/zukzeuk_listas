@@ -1,9 +1,8 @@
-
 name: Hiru_eguneko_zerrenda_sortu
 
 on:
   schedule:
-    - cron: '20 * * * *'   # Cada hora a y 20 en UTC
+    - cron: '20 * * * *'   # Cada hora a y 20 (UTC)
   workflow_dispatch:
 
 permissions:
@@ -20,12 +19,11 @@ jobs:
       TARGET_URL: "https://ipfs.io/ipns/k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004/?tab=agenda"
       OUTPUT_FILE: "zz_eventos_ott.m3u"
       HISTORY_DIR: "history"
-      PROXY_LIST: "${{ secrets.PROXY_LIST }}"
-      # USE_LOCAL_HTML: "tests/agenda_sample.html"
+      PROXY_LIST: "${{ secrets.PROXY_LIST }}"  # ej: http://user:pass@host1:port,https://host2:port
       INCLUDE_ID_SUFFIX: "true"
-      ALLOW_IPFS_IO: "false"
+      ALLOW_IPFS_IO: "false"                   # true = permitir ipfs.io como último recurso
       NO_PROXY: "127.0.0.1,localhost"
-      DEBUG: "true"
+      DEBUG: "true"                            # deja "true" para ver artefactos de depuración
 
     steps:
       - name: Checkout
@@ -36,14 +34,25 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install runtime dependencies (sin requirements.txt)
+      - name: Install runtime dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests beautifulsoup4 lxml
+          pip install playwright beautifulsoup4 lxml
+
+      # Instala los navegadores y deps de Playwright (Chromium)
+      - name: Install Playwright Browsers
+        uses: microsoft/playwright-github-action@v1
 
       - name: Run script
         run: |
           python .github/scripts/Hiru_eguneko_zerrenda_sortu.py
+
+      - name: Subir artefactos de depuración
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-artifacts
+          path: .debug/
 
       - name: Commit & Push changes (if any)
         run: |
