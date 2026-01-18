@@ -32,7 +32,7 @@ jobs:
 
       - name: Ejecutar generador M3U
         run: |
-          python .github/scripts/generate_m3u.py
+          python .github/scripts/hiru_eguneko_zerrenda_sortu.py
 
       - name: Commit & push si hay cambios
         run: |
