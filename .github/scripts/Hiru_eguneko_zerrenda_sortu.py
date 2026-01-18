@@ -18,27 +18,30 @@ def get_html_content():
         try:
             r = requests.get(f"{gw}{IPNS_KEY}{PATH_PARAMS}", headers={'User-Agent': ua.random}, timeout=30)
             if r.status_code == 200:
-                r.encoding = 'utf-8'
+                r.encoding = 'utf-8' # Crucial para las tildes
                 return r.text
         except: continue
     return None
 
-def clean_text(text):
+def clean_text(text, is_comp=False):
     if not text: return ""
-    # 1. Eliminar IDs y hashes
-    text = re.sub(r'[a-f0-9]{40}', '', text)
-    # 2. Eliminar palabras de botones y técnicos
+    # Ruido técnico a eliminar
     noise = [
-        "Copiar ID", "Reproducir", "Ver Contenido", "Descargar", "FHD", "HD", "SD", 
-        "NEW ERA", "ELCANO", "SPORT TV", "-->", "ID", "Links", "Acestream", "Grid", 
-        "Lista", "Categorías", "Etiquetas", "TODOS", "Agenda Deportiva"
+        "FHD", "HD", "SD", "NEW ERA", "ELCANO", "SPORT TV", "VI FHD", "II FHD", "III FHD", 
+        "IV FHD", "V FHD", "NEW LOOP", "Copiar ID", "Reproducir", "Ver Contenido", 
+        "Descargar", "-->", "ID", "Links", "Acestream", "Agenda Deportiva"
     ]
     for n in noise:
         text = text.replace(n, "")
     
-    # 3. Limpieza final de espacios y símbolos
-    text = re.sub(r'\s+', ' ', text)
-    return text.strip(" -:>")
+    # Eliminar hashes de 40 caracteres
+    text = re.sub(r'[a-f0-9]{40}', '', text)
+    # Limpiar espacios
+    text = re.sub(r'\s+', ' ', text).strip(" -:>")
+    
+    # Si es competición y es demasiado larga, probablemente no lo sea
+    if is_comp and len(text) > 40: return ""
+    return text
 
 def parse_agenda(html):
     soup = BeautifulSoup(html, 'lxml')
@@ -46,51 +49,46 @@ def parse_agenda(html):
     current_date = datetime.now().strftime("%d-%m")
     ace_pattern = re.compile(r'[a-f0-9]{40}')
     
-    # Palabras que indican que NO es una competición válida
-    blacklist = ["TODOS", "CATEGORÍAS", "ETIQUETAS", "ACEStream", "AGENDA", "MENU"]
+    # Palabras que delatan que un bloque es un menú y no contenido
+    menu_keywords = ["GRID", "LISTA CATEGORÍAS", "TODOS", "ETIQUETAS", "CATEGORÍAS:"]
     
-    current_comp = "Otros Deportes"
+    current_comp = "Deportes"
 
-    # Buscamos todos los elementos que contengan texto o IDs
-    for row in soup.find_all(['tr', 'div', 'h2', 'h3', 'b']):
-        # Evitar procesar el menú de navegación superior
-        raw_text = row.get_text(" ", strip=True)
-        if any(word in raw_text.upper() for word in blacklist) and len(raw_text) > 100:
+    # Buscamos todos los elementos que pueden ser contenedores
+    for element in soup.find_all(['h2', 'h3', 'b', 'tr']):
+        raw_text = element.get_text(" ", strip=True).upper()
+        
+        # 1. FILTRO: ¿Es un menú de navegación? Ignorar.
+        if any(key in raw_text for key in menu_keywords) and len(raw_text) > 60:
             continue
 
-        ids = ace_pattern.findall(str(row))
-        
-        # 1. ¿Es un posible cambio de Competición?
-        if not ids and row.name in ['h2', 'h3', 'b']:
-            potential_comp = clean_text(raw_text)
-            if 2 < len(potential_comp) < 40:
+        ids = ace_pattern.findall(str(element))
+
+        # 2. ¿Es un título de competición? (h2, h3 o b sin IDs de acestream)
+        if not ids and element.name in ['h2', 'h3', 'b']:
+            potential_comp = clean_text(element.get_text(strip=True), is_comp=True)
+            if potential_comp:
                 current_comp = potential_comp
             continue
 
-        # 2. Si hay IDs, es un evento
+        # 3. ¿Es un evento? (Contiene IDs)
         if ids:
-            # Capturamos el texto de la fila para sacar la hora y el nombre
-            # Intentamos buscar el formato HH:MM
-            time_match = re.search(r'(\d{1,2}:\d{2})', raw_text)
+            # Buscamos la hora HH:MM en el texto del elemento
+            row_text = element.get_text(" ", strip=True)
+            time_match = re.search(r'(\d{1,2}:\d{2})', row_text)
             event_time = time_match.group(1) if time_match else ""
             
-            # El nombre del partido es lo que queda tras quitar hora, IDs y basura
-            match_name = clean_text(raw_text.replace(event_time, ""))
+            # Limpiar el nombre del partido (quitando la competición si se repite)
+            match_name = clean_text(row_text.replace(event_time, "").replace(current_comp, ""))
             
-            # Si el nombre es muy largo, es que ha pillado texto de más, lo acortamos
-            if len(match_name) > 60:
-                match_name = match_name[:60].rsplit(' ', 1)[0]
-
             if not match_name or len(match_name) < 3:
                 match_name = "Evento"
 
-            # Generar entradas
+            # Crear una entrada por cada ID único en esta fila
             for aid in list(dict.fromkeys(ids)):
                 short_id = aid[:3]
                 display_name = f"{event_time} {match_name}".strip()
-                
-                # Formatear group-title como pides: 18-01 Competición
-                group_title = f"{current_date} {current_comp}".strip()
+                group_title = f"{current_date} {current_comp}"
 
                 entry = (
                     f'#EXTINF:-1 group-title="{group_title}" tvg-name="{match_name}",{display_name} ({short_id})\n'
@@ -101,15 +99,15 @@ def parse_agenda(html):
     return entries
 
 def save_and_history(entries):
-    # Eliminar duplicados manteniendo orden
-    unique_entries = []
+    # Deduplicar manteniendo el orden
+    final_list = []
     seen = set()
     for e in entries:
         if e not in seen:
-            unique_entries.append(e)
+            final_list.append(e)
             seen.add(e)
 
-    content = HEADER_M3U + "\n\n" + "\n\n".join(unique_entries)
+    content = HEADER_M3U + "\n\n" + "\n\n".join(final_list)
     
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         f.write(content)
@@ -127,11 +125,11 @@ def main():
         entries = parse_agenda(html)
         if entries:
             save_and_history(entries)
-            print(f"Éxito: {len(entries)} eventos procesados.")
+            print(f"Éxito: {len(entries)} eventos procesados correctamente.")
         else:
-            print("No se encontraron eventos.")
+            print("No se encontraron eventos procesables.")
     else:
-        print("Error en la descarga.")
+        print("Error al descargar el HTML.")
 
 if __name__ == "__main__":
     main()
