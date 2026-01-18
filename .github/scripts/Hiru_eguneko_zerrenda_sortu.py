@@ -1,4 +1,3 @@
-
 # -*- coding: utf-8 -*-
 import os
 import re
@@ -6,8 +5,8 @@ import sys
 import hashlib
 from datetime import datetime
 from pathlib import Path
-from typing import Iterable, List, Optional, Tuple
-from urllib.parse import urlparse, urlunparse, urljoin
+from typing import List
+from urllib.parse import urlparse
 
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright, TimeoutError as PWTimeout
@@ -33,21 +32,18 @@ IPFS_GATEWAYS = [
 if ALLOW_IPFS_IO:
     IPFS_GATEWAYS.append("https://ipfs.io")  # último recurso
 
+# Cabeceras M3U
 M3U_HEADER_1 = '#EXTM3U url-tvg="https://github.com/davidmuma/EPG_dobleM/raw/refs/heads/master/EPG_dobleM.xml,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/EPG_dobleM.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz" refresh="3600"'
 M3U_HEADER_2 = "#EXTVLCOPT:network-caching=1000"
 ACE_HTTP_PREFIX = "http://127.0.0.1:6878/ace/getstream?id="
 
-HEX40_RE = re.compile(r"\b[a-fA-F0-9]{40}\b")
-ACE_URL_RE = re.compile(r"acestream://([a-fA-F0-9]{40})", re.IGNORECASE)
+# Regex
+HEX40 = r"[a-fA-F0-9]{40}"
+OPENACE_RE = re.compile(r"openAcestream\('\"['\"]\)")
 DATE_TOKEN_RE = re.compile(r"\b(\d{2})/-\b")
-STREAM_LINKS_CLASS_RE = re.compile(r"\bstream[-_\s]*links\b", re.IGNORECASE)
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121 Safari/537.36 M3U-Bot/1.6"
 
-UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121 Safari/537.36 M3U-Bot/1.5"
-
-
-def log(msg: str):
-    print(f"[m3u] {msg}", flush=True)
-
+def log(msg: str): print(f"[m3u] {msg}", flush=True)
 
 def build_url_for_gateway(base_gateway: str, original_url: str) -> str:
     u = urlparse(original_url)
@@ -55,21 +51,16 @@ def build_url_for_gateway(base_gateway: str, original_url: str) -> str:
     base = base_gateway.rstrip("/")
     return f"{base}{path}" + (f"?{qs}" if qs else "")
 
-
 def _debug_write(name: str, content: str):
-    if not DEBUG:
-        return
-    d = Path(".debug")
-    d.mkdir(parents=True, exist_ok=True)
+    if not DEBUG: return
+    d = Path(".debug"); d.mkdir(parents=True, exist_ok=True)
     Path(d / name).write_text(content or "", encoding="utf-8", errors="ignore")
 
-
 def normalize_space(s: str) -> str:
-    return re.sub(r"\s+", " ", (s or "").strip())
-
+    import re as _re
+    return _re.sub(r"\s+", " ", (s or "").strip())
 
 def extract_near_date_str_from_html(fragment_html: str) -> str:
-    """Busca DD-MM o DD/MM en el HTML del evento; fallback: hoy UTC."""
     try:
         soup = BeautifulSoup(fragment_html or "", "lxml")
         txt = normalize_space(soup.get_text(" ", strip=True))
@@ -79,7 +70,6 @@ def extract_near_date_str_from_html(fragment_html: str) -> str:
     except Exception:
         pass
     return datetime.utcnow().strftime("%d-%m")
-
 
 def extract_competition_from_html(fragment_html: str) -> str:
     try:
@@ -91,113 +81,12 @@ def extract_competition_from_html(fragment_html: str) -> str:
         pass
     return ""
 
-
-def extract_ace_ids_from_stream_html(stream_html: str) -> List[str]:
-    ids = set()
-    if not stream_html:
-        return []
-    # en texto/HTML
-    for m in ACE_URL_RE.findall(stream_html):
-        ids.add(m.lower())
-    for m in HEX40_RE.findall(stream_html):
-        ids.add(m.lower())
-    # también mirar atributos con BeautifulSoup
-    try:
-        frag = BeautifulSoup(stream_html, "lxml")
-        for tag in frag.find_all(True):
-            for k, v in (tag.attrs or {}).items():
-                vals = v if isinstance(v, (list, tuple)) else [v]
-                for val in vals:
-                    if not val:
-                        continue
-                    val = str(val)
-                    m = ACE_URL_RE.search(val)
-                    if m:
-                        ids.add(m.group(1).lower())
-                    else:
-                        m2 = HEX40_RE.search(val)
-                        if m2:
-                            ids.add(m2.group(0).lower())
-    except Exception:
-        pass
-    return sorted(ids)
-
-
-def find_stream_container_html_for_event(page, event_element) -> Optional[str]:
-    """
-    Devuelve el HTML del contenedor 'stream-links' correspondiente a un evento:
-      1) dentro del propio nodo
-      2) en panel colapsable referenciado por data-bs-target/aria-controls/href="#id"
-      3) en hermanos siguientes hasta el próximo evento
-    """
-    js = """
-    (tr) => {
-      function hasStreamLinks(el) {
-        if (!el) return null;
-        // match por clase exacta o "contiene"
-        let q = el.querySelector('.stream-links');
-        if (q) return q;
-        // aproximado por clase que contenga "stream" y "links"
-        let all = el.querySelectorAll('[class]');
-        for (let node of all) {
-          const cls = (node.getAttribute('class') || '').toLowerCase();
-          if (cls.includes('stream') && cls.includes('links')) {
-            return node;
-          }
-        }
-        return null;
-      }
-
-      // 1) Dentro del propio evento
-      let inside = hasStreamLinks(tr);
-      if (inside) return inside.outerHTML;
-
-      // 2) Panel colapsable por id
-      const toggles = tr.querySelectorAll('[data-bs-target], [data-target], [aria-controls], a[href^="#"]');
-      for (let el of toggles) {
-        let id = el.getAttribute('data-bs-target') || el.getAttribute('data-target') || el.getAttribute('aria-controls') || '';
-        if (!id && el.tagName.toLowerCase() === 'a') {
-          const href = el.getAttribute('href') || '';
-          if (href.startsWith('#')) id = href.slice(1);
-        }
-        if (id) {
-          const panel = document.getElementById(id);
-          if (panel) {
-            let target = hasStreamLinks(panel) || panel;
-            if (target) return target.outerHTML;
-          }
-        }
-      }
-
-      // 3) Hermanos siguientes hasta el próximo evento
-      let sib = tr.nextElementSibling;
-      while (sib) {
-        if (sib.hasAttribute('data-event-id')) break;
-        let found = hasStreamLinks(sib);
-        if (found) return found.outerHTML;
-        sib = sib.nextElementSibling;
-      }
-      return null;
-    }
-    """
-    try:
-        return page.evaluate(js, event_element)
-    except Exception:
-        return None
-
-
-def parse_proxy_url(proxy_url: str) -> dict:
-    """
-    Convierte http(s)://user:pass@host:port en el dict esperado por Playwright.
-    """
+def parse_proxy_url_for_playwright(proxy_url: str) -> dict:
     u = urlparse(proxy_url)
     cfg = {"server": f"{u.scheme}://{u.hostname}:{u.port or 80}"}
-    if u.username:
-        cfg["username"] = u.username
-    if u.password:
-        cfg["password"] = u.password
+    if u.username: cfg["username"] = u.username
+    if u.password: cfg["password"] = u.password
     return cfg
-
 
 def write_if_changed(content: str, path_out: Path, history_dir: Path, keep_last: int = 50):
     path_out.parent.mkdir(parents=True, exist_ok=True)
@@ -214,7 +103,8 @@ def write_if_changed(content: str, path_out: Path, history_dir: Path, keep_last:
     def _hash(b): return hashlib.sha256(b).hexdigest()
     new_hash = _hash(new_bytes)
 
-    history_files = sorted(history_dir.glob("zz_eventos_ott_*.m3u"), key=lambda p: p.stat().st_mtime, reverse=True)
+    history_files = sorted(history_dir.glob("zz_eventos_ott_*.m3u"),
+                           key=lambda p: p.stat().st_mtime, reverse=True)
     latest_hash = _hash(history_files[0].read_bytes()) if history_files else None
     if latest_hash != new_hash:
         ts = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
@@ -222,13 +112,96 @@ def write_if_changed(content: str, path_out: Path, history_dir: Path, keep_last:
         hist_path.write_bytes(new_bytes)
         log(f"Guardado histórico: {hist_path.name}")
 
-    history_files = sorted(history_dir.glob("zz_eventos_ott_*.m3u"), key=lambda p: p.stat().st_mtime, reverse=True)
+    history_files = sorted(history_dir.glob("zz_eventos_ott_*.m3u"),
+                           key=lambda p: p.stat().st_mtime, reverse=True)
     for old in history_files[keep_last:]:
-        try:
-            old.unlink(missing_ok=True)
-        except Exception:
-            pass
+        try: old.unlink(missing_ok=True)
+        except Exception: pass
 
+# --------- NUEVO: utilidades estrictas de Agenda ---------
+
+def ensure_agenda_tab(page) -> None:
+    """
+    Garantiza que estamos en la pestaña 'Agenda Deportiva' y que su contenedor está activo.
+    """
+    try:
+        # Por si no está activa, clic en el botón de Agenda
+        btn = page.locator('nav [data-tab="agendaTab"]')
+        if btn.count() > 0:
+            if "active" not in (btn.first.get_attribute("class") or ""):
+                btn.first.click(timeout=2000)
+        # Esperar a que el contenedor esté visible
+        page.wait_for_selector("#agendaTab.tab-content.active", timeout=5000)
+    except Exception:
+        # Si falla, seguimos, pero luego limitamos selectores al contenedor #agendaTab
+        pass
+
+def find_event_rows(page):
+    """
+    Selecciona SOLO las filas cabecera de evento dentro de la pestaña Agenda.
+    """
+    container = page.locator("#agendaTab")
+    # Aislar a la tabla de eventos dentro de Agenda
+    table = container.locator(".events-table")
+    if table.count() == 0:
+        # fallback: todo dentro de #agendaTab
+        return container.locator("tr.event-row[data-event-id]")
+    return table.locator("tr.event-row[data-event-id]")
+
+def expand_event_detail(page, event_row) -> None:
+    """
+    Intenta desplegar SOLO el detalle del evento clicando la fila cabecera.
+    """
+    try:
+        event_row.click(timeout=2000)
+    except Exception:
+        # Intento alternativo: click en un posible botón dentro de la fila
+        toggles = event_row.locator("[data-bs-target], [data-target], [aria-controls], a[href^='#'], button[aria-controls]")
+        for i in range(min(3, toggles.count())):
+            try: toggles.nth(i).click(timeout=800)
+            except Exception: pass
+
+def get_stream_links_html_for_event(page, event_id: str) -> str | None:
+    """
+    Devuelve el HTML concatenado de TODOS los .stream-links
+    dentro de la fila de detalle DEL MISMO evento:
+      tr.event-detail[data-event-id='<event_id>'] .stream-links
+    """
+    try:
+        page.wait_for_selector(f"#agendaTab tr.event-detail[data-event-id='{event_id}']", timeout=4000)
+    except Exception:
+        return None
+
+    links = page.locator(f"#agendaTab tr.event-detail[data-event-id='{event_id}'] .stream-links")
+    n = links.count()
+    if n == 0:
+        return None
+    parts = []
+    for i in range(n):
+        parts.append(links.nth(i).inner_html())
+    return "\n".join(parts) if parts else None
+
+def extract_ids_from_stream_links_html(html: str) -> List[str]:
+    """
+    IDs exclusivamente desde onclick="openAcestream('<ID>')" de <a.stream-link>.
+    """
+    if not html: return []
+    ids = set()
+    # Regex directa sobre el fragmento
+    for m in OPENACE_RE.findall(html):
+        ids.add(m.lower())
+    # Refuerzo: verificar que vienen de <a.stream-link>
+    try:
+        frag = BeautifulSoup(html, "lxml")
+        for a in frag.select("a.stream-link[onclick]"):
+            m = OPENACE_RE.search(a.get("onclick", ""))
+            if m:
+                ids.add(m.group(1).lower())
+    except Exception:
+        pass
+    return sorted(ids)
+
+# -----------------------------------------------
 
 def main():
     if not TARGET_URL:
@@ -238,20 +211,18 @@ def main():
     last_page_dump = ""
 
     with sync_playwright() as p:
-        # Intentamos gateways y proxies en cascada
         gateways = IPFS_GATEWAYS[:]
         proxies = [None] + PROXY_LIST if PROXY_LIST else [None]
-
         success = False
+
         for gw in gateways:
             url = build_url_for_gateway(gw, TARGET_URL)
             for proxy in proxies:
-                browser = None
-                context = None
+                browser = context = None
                 try:
                     launch_kwargs = {"headless": True}
                     if proxy:
-                        launch_kwargs["proxy"] = parse_proxy_url(proxy)
+                        launch_kwargs["proxy"] = parse_proxy_url_for_playwright(proxy)
 
                     browser = p.chromium.launch(**launch_kwargs)
                     context = browser.new_context(user_agent=UA, ignore_https_errors=True)
@@ -260,88 +231,53 @@ def main():
                     log(f"Navegando a {url}" + (f" con proxy {proxy}" if proxy else ""))
                     page.goto(url, wait_until="domcontentloaded", timeout=35000)
 
-                    # Espera tentativa de la pestaña Agenda: algunos frameworks tardan
-                    # Intentamos detectar al menos un [data-event-id]
-                    try:
-                        page.wait_for_selector("[data-event-id]", timeout=15000)
-                    except PWTimeout:
-                        # Scroll para disparar cargas diferidas
-                        try:
-                            page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                        except Exception:
-                            pass
-                        # segunda oportunidad
-                        page.wait_for_selector("[data-event-id]", timeout=10000)
+                    # Enfocar la pestaña Agenda y su contenido
+                    ensure_agenda_tab(page)
 
-                    # volcamos el HTML de la página para depurar si hace falta
+                    # Esperar a que existan filas cabecera de evento
+                    try:
+                        page.wait_for_selector("#agendaTab tr.event-row[data-event-id]", timeout=15000)
+                    except PWTimeout:
+                        # Scroll pequeño por si hay lazy-load
+                        try: page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                        except Exception: pass
+                        page.wait_for_selector("#agendaTab tr.event-row[data-event-id]", timeout=8000)
+
                     last_page_dump = page.content()
                     _debug_write("debug_page_content.html", last_page_dump)
 
-                    # Recogemos todos los eventos
-                    event_loc = page.locator("[data-event-id]")
-                    count = event_loc.count()
-                    log(f"Eventos detectados (render): {count}")
-
-                    # Si aún 0, probamos expandir algo genérico (por si hay controles globales)
-                    if count == 0:
-                        # botoncitos que puedan cargar/mostrar agenda
-                        candidates = page.locator('[data-bs-target], [data-target], [aria-controls], a[href^="#"], button')
-                        for i in range(min(50, candidates.count())):
-                            try:
-                                candidates.nth(i).click(timeout=1000)
-                            except Exception:
-                                pass
-                        # reintentar
-                        event_loc = page.locator("[data-event-id]")
-                        count = event_loc.count()
-                        log(f"Eventos detectados tras intentar expandir: {count}")
+                    event_rows = find_event_rows(page)
+                    count = event_rows.count()
+                    log(f"Eventos detectados (agenda): {count}")
 
                     if count == 0:
-                        # Cambiamos de proxy/gateway
-                        raise PWTimeout("Sin eventos tras renderizado")
+                        raise PWTimeout("Sin eventos tras renderizado (agenda)")
 
-                    # Expandimos y extraemos por evento
+                    # Procesar cada evento
                     for i in range(count):
-                        ev = event_loc.nth(i)
-                        event_id = ev.get_attribute("data-event-id") or ""
-                        event_id = (event_id or "").strip()
+                        ev = event_rows.nth(i)
+                        event_id = (ev.get_attribute("data-event-id") or "").strip()
                         if not event_id:
                             continue
 
-                        # Intento de clic en toggles DENTRO del evento
-                        toggles = ev.locator("[data-bs-target], [data-target], [aria-controls], a[href^='#'], button[aria-controls]")
-                        tcount = toggles.count()
-                        for t in range(min(8, tcount)):
-                            try:
-                                toggles.nth(t).click(timeout=1000)
-                            except Exception:
-                                pass
+                        # Desplegar el detalle SOLO de este evento
+                        expand_event_detail(page, ev)
 
-                        # Localizar el contenedor stream-links correspondiente
-                        html_stream = find_stream_container_html_for_event(page, ev.element_handle())
-                        if not html_stream:
-                            # Por si requiere scroll un poco más
-                            try:
-                                ev.scroll_into_view_if_needed(timeout=2000)
-                            except Exception:
-                                pass
-                            html_stream = find_stream_container_html_for_event(page, ev.element_handle())
-
-                        if not html_stream:
-                            if DEBUG:
-                                log(f"[DEBUG] Sin stream-links para: {event_id}")
+                        # Traer exclusivamente el HTML de los links del detalle del MISMO evento
+                        links_html = get_stream_links_html_for_event(page, event_id)
+                        if not links_html:
+                            if DEBUG: log(f"[DEBUG] Sin stream-links para: {event_id}")
                             continue
 
-                        ace_ids = extract_ace_ids_from_stream_html(html_stream)
+                        ace_ids = extract_ids_from_stream_links_html(links_html)
+                        if DEBUG: log(f"[DEBUG] Evento '{event_id}' -> acestream_ids: {ace_ids}")
                         if not ace_ids:
-                            if DEBUG:
-                                log(f"[DEBUG] Sin acestream_id en stream-links para: {event_id}")
                             continue
 
-                        # info de grupo: fecha + competición
-                        event_html = ev.inner_html()
-                        comp = extract_competition_from_html(event_html)
-                        date_str = extract_near_date_str_from_html(event_html)
+                        # Infos del grupo (competición y fecha) desde la fila cabecera
+                        ev_html = ev.inner_html()
+                        comp = extract_competition_from_html(ev_html)
+                        date_str = extract_near_date_str_from_html(ev_html)
                         group_title = normalize_space(f"{date_str} {comp}".strip())
 
                         for ace_id in ace_ids:
@@ -352,7 +288,7 @@ def main():
 
                     if entries:
                         success = True
-                        break  # salimos del bucle de proxies para este gateway
+                        break
 
                 except Exception as ex:
                     log(f"Intento fallido con {gw} (proxy={proxy}): {ex}")
@@ -369,14 +305,17 @@ def main():
 
     # Construcción del M3U
     lines = [M3U_HEADER_1, M3U_HEADER_2, ""]
-    lines.extend(entries)
-    m3u = "\n".join(lines).strip() + "\n"
+    # Evitar duplicados absolutos idénticos (por si algún evento repite el mismo id/entrada)
+    seen = set()
+    for e in entries:
+        if e not in seen:
+            lines.append(e)
+            seen.add(e)
 
-    # Guardado e histórico
+    m3u = "\n".join(lines).strip() + "\n"
     write_if_changed(m3u, Path(OUTPUT_FILE), Path(HISTORY_DIR), keep_last=50)
 
-    # Depuración adicional
-    if DEBUG and last_page_dump:
+    if DEBUG:
         _debug_write("debug_final_m3u.txt", m3u)
 
 
