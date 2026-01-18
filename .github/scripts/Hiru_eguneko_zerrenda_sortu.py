@@ -6,7 +6,7 @@ import sys
 import hashlib
 from datetime import datetime
 from pathlib import Path
-from typing import Iterable
+from typing import Iterable, List, Optional
 
 import requests
 from bs4 import BeautifulSoup
@@ -34,7 +34,7 @@ if ALLOW_IPFS_IO:
     IPFS_GATEWAYS.append("https://ipfs.io")  # como último recurso
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; M3U-Bot/1.1; +https://github.com/)",
+    "User-Agent": "Mozilla/5.0 (compatible; M3U-Bot/1.3; +https://github.com/)",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
 
@@ -95,7 +95,7 @@ def fetch_html() -> str:
             try:
                 proxies = {"http": proxy, "https": proxy} if proxy else None
                 log(f"GET {url}" + (f" vía proxy {proxy}" if proxy else " sin proxy"))
-                resp = requests.get(url, headers=HEADERS, timeout=20, proxies=proxies)
+                resp = requests.get(url, headers=HEADERS, timeout=25, proxies=proxies)
                 if resp.status_code == 200 and resp.text:
                     log(f"OK {url}")
                     _debug_dump(resp.text, suffix="fetched")
@@ -122,11 +122,7 @@ def normalize_space(s: str) -> str:
 
 
 def extract_near_date_str(node) -> str:
-    """
-    Intenta localizar una fecha (DD-MM o DD/MM) alrededor del evento, buscando en ancestros
-    y hermanos anteriores algún texto que contenga un token de fecha.
-    Fallback: fecha actual (UTC) si no hay match.
-    """
+    """Busca fecha (DD-MM o DD/MM) en ancestros o hermanos anteriores. Fallback: hoy (UTC)."""
     # 1) Ancestros
     for anc in node.parents:
         try:
@@ -176,8 +172,8 @@ def extract_competition(node) -> str:
 
 
 def _iter_attrs(tag) -> Iterable[str]:
-    """Itera sobre todos los valores de atributos del tag como strings (para buscar IDs también en atributos)."""
-    for k, v in (tag.attrs or {}).items():
+    """Itera valores de atributos como strings (para buscar IDs también en atributos)."""
+    for _, v in (tag.attrs or {}).items():
         if isinstance(v, (list, tuple)):
             for x in v:
                 yield str(x)
@@ -185,12 +181,8 @@ def _iter_attrs(tag) -> Iterable[str]:
             yield str(v)
 
 
-def extract_ace_ids_from_stream_container(container) -> list[str]:
-    """
-    Extrae IDs de acestream desde el contenedor de stream-links:
-    - en contenido de texto
-    - en atributos (data-href, href, data-id, etc.)
-    """
+def extract_ace_ids_from_stream_container(container) -> List[str]:
+    """Extrae IDs de acestream desde el contenedor de stream-links (texto y atributos)."""
     ids = set()
 
     frag = str(container)
@@ -201,15 +193,13 @@ def extract_ace_ids_from_stream_container(container) -> list[str]:
     for m in HEX40_RE.findall(frag):
         ids.add(m.lower())
 
-    # 3) Atributos que puedan contenerlo
+    # 3) Atributos
     for tag in container.find_all(True):
-        # Buscar primero el patrón acestream:// en atributos
         for val in _iter_attrs(tag):
             m = ACE_URL_RE.search(val)
             if m:
                 ids.add(m.group(1).lower())
             else:
-                # Si no hay prefijo, buscar 40 hex
                 m2 = HEX40_RE.search(val)
                 if m2:
                     ids.add(m2.group(0).lower())
@@ -217,15 +207,81 @@ def extract_ace_ids_from_stream_container(container) -> list[str]:
     return sorted(ids)
 
 
-def find_stream_container(event_node):
-    """
-    Busca dentro del nodo del evento un contenedor cuya clase cumpla stream[-_ ]?links
-    (div/ul/section/td/etc.). Devuelve el primer match o None.
-    """
+def find_stream_container_inside_event(event_node) -> Optional[BeautifulSoup]:
+    """Busca un contenedor stream-links dentro del propio nodo de evento."""
     for el in event_node.find_all(True):
         classes = el.get("class", [])
         if any(STREAM_LINKS_CLASS_RE.search(cls) for cls in classes):
             return el
+    return None
+
+
+def _collect_toggle_targets(event_node) -> List[str]:
+    """
+    Recolecta posibles ID de panel colapsable referenciado por el evento.
+    Busca atributos: data-bs-target, data-target, aria-controls, href="#id".
+    Devuelve IDs sin '#'.
+    """
+    targets = set()
+    # candidatos: botones, enlaces, etc.
+    for el in event_node.find_all(True):
+        for attr in ("data-bs-target", "data-target", "aria-controls", "href"):
+            v = el.get(attr)
+            if not v:
+                continue
+            # puede ser "#panel-123" o "panel-123"
+            m = re.search(r"#([A-Za-z0-9_\-:]+)", v)
+            if m:
+                targets.add(m.group(1))
+            else:
+                # si parece un id directo sin '#'
+                if re.match(r"^[A-Za-z0-9_\-:]+$", v):
+                    targets.add(v)
+    return list(targets)
+
+
+def find_associated_stream_container(soup: BeautifulSoup, event_node) -> Optional[BeautifulSoup]:
+    """
+    Encuentra el contenedor stream-links correspondiente al evento:
+      1) dentro del propio <tr>
+      2) en el/los panel(es) colapsables referenciados por el evento (via data-bs-target/aria-controls/href)
+      3) en hermanos siguientes hasta el próximo tr.event-detail (fila colapsable contigua)
+    """
+    # (1) Dentro del propio evento
+    container = find_stream_container_inside_event(event_node)
+    if container:
+        return container
+
+    # (2) Paneles colapsables referenciados
+    for target_id in _collect_toggle_targets(event_node):
+        panel = soup.find(id=target_id)
+        if panel:
+            # Si el propio panel tiene la clase, úsalo; si no, busca dentro
+            if panel.get("class") and any(STREAM_LINKS_CLASS_RE.search(c) for c in panel.get("class", [])):
+                return panel
+            inner = None
+            for el in panel.find_all(True):
+                classes = el.get("class", [])
+                if any(STREAM_LINKS_CLASS_RE.search(cls) for cls in classes):
+                    inner = el
+                    break
+            if inner:
+                return inner
+
+    # (3) Hermanos siguientes hasta el siguiente evento
+    sib = event_node
+    for _ in range(30):  # límite de seguridad
+        sib = sib.find_next_sibling()
+        if sib is None:
+            break
+        if sib.get("data-event-id"):  # llegó el siguiente evento
+            break
+        # buscar contenedor en este hermano
+        for el in sib.find_all(True):
+            classes = el.get("class", [])
+            if any(STREAM_LINKS_CLASS_RE.search(cls) for cls in classes):
+                return el
+
     return None
 
 
@@ -285,51 +341,37 @@ def write_if_changed(content: str, path_out: Path, history_dir: Path, keep_last:
 
 def main():
     html = fetch_html()
-
-    # Depuración: dump del tamaño y un extracto si DEBUG
     if DEBUG:
-        log(f"HTML recibido: {len(html)} bytes")
-        preview = normalize_space(html[:500])
-        log(f"Preview HTML: {preview[:200]}...")
+        log(f"HTML recibido: {len(html)} bytes (depuración activada)")
 
     soup = BeautifulSoup(html, "lxml")
 
-    # 1) Buscar nodos de evento
-    rows = soup.select("tr.event-detail, [data-event-id]")
-    # Filtrar a los que realmente tienen data-event-id
-    rows = [r for r in rows if r.get("data-event-id")]
-    log(f"Eventos encontrados: {len(rows)}")
-
-    if DEBUG:
-        dbg_dir = Path(".debug")
-        dbg_dir.mkdir(parents=True, exist_ok=True)
-        (dbg_dir / "debug_found_events.txt").write_text(
-            "\n".join([r.get("data-event-id", "") for r in rows]),
-            encoding="utf-8"
-        )
+    # Buscar nodos de evento (flexible)
+    events = soup.select("tr.event-detail, [data-event-id]")
+    events = [n for n in events if n.get("data-event-id")]
+    log(f"Eventos detectados: {len(events)}")
 
     entries = []
 
-    for event_node in rows:
+    for event_node in events:
         event_id = (event_node.get("data-event-id") or "").strip()
         if not event_id:
             continue
 
-        # Competición y fecha
         comp = extract_competition(event_node)
         date_str = extract_near_date_str(event_node)
         group_title = normalize_space(f"{date_str} {comp}".strip())
 
-        # 2) Buscar contenedor stream-links dentro del propio evento (flexible)
-        stream_container = find_stream_container(event_node)
-        if not stream_container:
+        # Buscar el contenedor asociado (dentro, paneles target u hermanos próximos)
+        container = find_associated_stream_container(soup, event_node)
+        if not container:
             if DEBUG:
-                log(f"[DEBUG] Sin stream-links para evento: {event_id}")
+                log(f"[DEBUG] Sin contenedor stream-links para evento: {event_id}")
             continue
 
-        ace_ids = extract_ace_ids_from_stream_container(stream_container)
+        ace_ids = extract_ace_ids_from_stream_container(container)
         if DEBUG:
-            log(f"[DEBUG] Evento '{event_id}' -> acestream_ids: {len(ace_ids)}")
+            log(f"[DEBUG] Evento '{event_id}' -> acestream_ids: {ace_ids}")
 
         if not ace_ids:
             continue
