@@ -2,8 +2,6 @@
 name: Hiru_eguneko_zerrenda_sortu
 
 on:
-  schedule:
-    - cron: '20 * * * *'   # Cada hora a y 20 (UTC)
   workflow_dispatch:
 
 permissions:
