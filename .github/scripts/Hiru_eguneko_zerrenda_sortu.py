@@ -1,4 +1,3 @@
-
 # -*- coding: utf-8 -*-
 import os, re, sys, hashlib, json
 from datetime import datetime
@@ -29,8 +28,10 @@ def _get_int_env(name: str, default: int = 0) -> int:
 # 0 => sin límite; >0 => procesa sólo N primeros
 MAX_EVENTS = _get_int_env("MAX_EVENTS", 0)
 
-# Fallback: permitir M3U con IDs aunque no haya Agenda
+# Fallbacks
 FALLBACK_ANY_OPENACE = os.environ.get("FALLBACK_ANY_OPENACE", "true").lower() == "true"
+FALLBACK_USE_CHANNELS = os.environ.get("FALLBACK_USE_CHANNELS", "true").lower() == "true"
+FALLBACK_CHANNELS_MAX_PER_GROUP = _get_int_env("FALLBACK_CHANNELS_MAX_PER_GROUP", 0)  # 0 = sin límite
 
 # Gateways IPFS en orden
 IPFS_GATEWAYS = [
@@ -50,14 +51,14 @@ ACE_HTTP_PREFIX = "http://127.0.0.1:6878/ace/getstream?id="
 # Regex
 HEX40 = r"[a-fA-F0-9]{40}"
 OPENACE_RE = re.compile(r"openAcestream\('\"['\"]\)", re.I)
+ID_HEX_RE = re.compile(rf"\b{HEX40}\b", re.I)
 DATE_TOKEN_RE = re.compile(r"\b(\d{2})/-\b")
-UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121 Safari/537.36 M3U-Bot/1.8"
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121 Safari/537.36 M3U-Bot/1.9"
 
 def log(msg: str): print(f"[m3u] {msg}", flush=True)
 
 def build_url_for_gateway(base_gateway: str, original_url: str) -> str:
     u = urlparse(original_url)
-    # conservamos path+query del original, pero con host del gateway
     return base_gateway.rstrip("/") + u.path + (("?" + u.query) if u.query else "")
 
 def add_or_replace_query(url: str, **params) -> str:
@@ -87,7 +88,6 @@ def extract_near_date_str_from_html(fragment_html: str) -> str:
         if m: return f"{m.group(1)}-{m.group(2)}"
     except Exception:
         pass
-    # fallback: hoy (UTC) si no detectamos
     return datetime.utcnow().strftime("%d-%m")
 
 def extract_competition_from_html(fragment_html: str) -> str:
@@ -133,7 +133,7 @@ def write_if_changed(content: str, path_out: Path, history_dir: Path, keep_last:
     # limpieza
     history_files = sorted(history_dir.glob("zz_eventos_ott_*.m3u"),
                            key=lambda p: p.stat().st_mtime, reverse=True)
-    for old in history_files[keep_last:]:
+    for old in history_files[50:]:
         try: old.unlink(missing_ok=True)
         except Exception: pass
 
@@ -150,10 +150,6 @@ def neutralize_blocking_modals(page):
         pass
 
 def force_query_tab_agenda(page, url_current: str) -> str:
-    """
-    Garantiza ?tab=agenda en la URL (misma gateway).
-    Si no coincide, navega y retorna la URL efectiva.
-    """
     try:
         if "tab=agenda" not in urlparse(url_current).query:
             new_url = add_or_replace_query(url_current, tab="agenda")
@@ -164,7 +160,6 @@ def force_query_tab_agenda(page, url_current: str) -> str:
     return url_current
 
 def force_activate_agenda(page):
-    # Marca la pestaña Agenda
     page.evaluate("""
       () => {
         const ids = ['canalesTab','agendaTab','descargasTab','buscadorTab','listaPlanaTab','consejosTab'];
@@ -236,13 +231,87 @@ def extract_ids_from_stream_links_html(html: str) -> List[str]:
     return sorted(i.lower() for i in ids)
 
 def extract_ids_anywhere_from_dom(page) -> List[str]:
-    """
-    Fallback: busca cualquier openAcestream('<ID>') en TODO el HTML.
-    """
     html = page.content()
-    _debug_write("debug_page_content_fallback.html", html)
+    _debug_write("debug_page_content.html", html)
     ids = sorted(set(i.lower() for i in OPENACE_RE.findall(html)))
     return ids
+
+# --------- NUEVO: rascar canales cuando no hay agenda ----------
+def _text(l):
+    try: return l.inner_text().strip()
+    except Exception: return ""
+
+def _first_text(page, selector, scope=None):
+    try:
+        loc = (scope.locator(selector) if scope else page.locator(selector))
+        return _text(loc.first) if loc.count() > 0 else ""
+    except Exception:
+        return ""
+
+def extract_channels_from_dom(page) -> List[dict]:
+    """
+    Devuelve canales detectados en la pestaña de 'Canales':
+    [
+      { 'group': 'DAZN', 'name': 'DAZN 1 FHD -> NEW ERA', 'id': '6917...', 'source': 'list'|'grid' }
+    ]
+    """
+    results = []
+
+    groups = page.locator("#channelsContainer .channel-group")
+    gcount = groups.count()
+    for gi in range(gcount):
+        g = groups.nth(gi)
+        gname = _first_text(page, ".group-title", g) or "CANALES"
+
+        # Vista LISTA
+        items = g.locator(".channels-list .channel-item")
+        ic = items.count()
+        per_group = 0
+        for i in range(ic):
+            if FALLBACK_CHANNELS_MAX_PER_GROUP > 0 and per_group >= FALLBACK_CHANNELS_MAX_PER_GROUP:
+                break
+            it = items.nth(i)
+            name = _first_text(page, ".item-name", it)
+            ace_id = ""
+            # primero, .item-url
+            url_text = _first_text(page, ".item-url", it)
+            m = ID_HEX_RE.search(url_text)
+            if m: ace_id = m.group(0).lower()
+            # si no, botón copy
+            if not ace_id:
+                btns = it.locator(".item-actions .copy-btn")
+                if btns.count() > 0:
+                    val = (btns.first.get_attribute("data-url") or "").strip()
+                    if ID_HEX_RE.fullmatch(val): ace_id = val.lower()
+            if not ace_id: continue
+            results.append({"group": gname, "name": name or ace_id[:8], "id": ace_id, "source": "list"})
+            per_group += 1
+
+        # Vista GRID (por si la lista estuviera vacía/oculta)
+        cards = g.locator(".channels-grid .channel-card")
+        cc = cards.count()
+        for i in range(cc):
+            if FALLBACK_CHANNELS_MAX_PER_GROUP > 0 and per_group >= FALLBACK_CHANNELS_MAX_PER_GROUP:
+                break
+            c = cards.nth(i)
+            name = _first_text(page, ".channel-name", c)
+            # El ID suele estar en .url-container como texto
+            uc = c.locator(".url-container")
+            ace_id = ""
+            if uc.count() > 0:
+                m = ID_HEX_RE.search(_text(uc.first))
+                if m: ace_id = m.group(0).lower()
+            if not ace_id:
+                btns = c.locator(".channel-actions .copy-btn")
+                if btns.count() > 0:
+                    val = (btns.first.get_attribute("data-url") or "").strip()
+                    if ID_HEX_RE.fullmatch(val): ace_id = val.lower()
+            if not ace_id: continue
+            results.append({"group": gname, "name": name or ace_id[:8], "id": ace_id, "source": "grid"})
+            per_group += 1
+
+    return results
+# ---------------------------------------------------------------
 
 # =====================
 # Registro de diagnóst.
@@ -325,17 +394,13 @@ def main():
                     log(f"Navegando a {base_url}" + (f" con proxy {proxy}" if proxy else ""))
                     page.goto(base_url, wait_until="domcontentloaded", timeout=60000)
 
-                    # Forzamos modal off + tab agenda + query tab=agenda
+                    # Neutralizar modal y forzar pestaña Agenda
                     neutralize_blocking_modals(page)
-                    current = page.url
-                    current = force_query_tab_agenda(page, current)
-                    neutralize_blocking_modals(page)  # otra vez tras posible reload
+                    current = force_query_tab_agenda(page, page.url)
+                    neutralize_blocking_modals(page)
                     force_activate_agenda(page)
 
-                    # Espera del contenedor agenda
-                    page.wait_for_selector("#agendaTab", timeout=20000)
-
-                    # Intento real de click en el botón de nav (por si hay lógica)
+                    # Intento real de click en el nav Agenda (por si hay lógica asociada)
                     try:
                         btn = page.locator('nav [data-tab="agendaTab"]')
                         if btn.count() > 0:
@@ -343,14 +408,28 @@ def main():
                     except Exception:
                         pass
 
-                    # Espera filas (60s máx)
+                    # Despliegue progresivo (por si hay lazy-load/IntersectionObserver)
+                    try:
+                        page.evaluate("""
+                          () => new Promise(resolve => {
+                            let y = 0; const step = () => {
+                              window.scrollBy(0, 800); y += 800;
+                              if (y < document.body.scrollHeight*1.2) requestAnimationFrame(step);
+                              else resolve();
+                            }; step();
+                          })
+                        """)
+                    except Exception:
+                        pass
+
+                    # Espera de filas de eventos
                     try:
                         page.wait_for_function(
                             "document.querySelectorAll('#agendaTab tr.event-row[data-event-id]').length > 0",
                             timeout=60000
                         )
                     except Exception:
-                        # Intentamos disparar fechas
+                        # Pulsar fechas
                         click_all_date_buttons(page)
                         try:
                             page.wait_for_function(
@@ -360,7 +439,7 @@ def main():
                         except Exception:
                             pass
 
-                    # DUMPs de depuración
+                    # Dumps de depuración
                     _debug_write("debug_page_content.html", page.content())
                     try:
                         ag_html = page.locator("#agendaTab").inner_html()
@@ -368,19 +447,11 @@ def main():
                     except Exception:
                         pass
 
-                    # Conteos
-                    try:
-                        total_all = page.locator("tr.event-row").count()
-                        total_scoped = page.locator("#agendaTab tr.event-row[data-event-id]").count()
-                        log(f"Diagnóstico filas -> total página: {total_all} | en #agendaTab: {total_scoped}")
-                    except Exception:
-                        total_scoped = 0
-
-                    # ========== Camino principal ==========
+                    # ========= Camino principal (Agenda) =========
                     event_rows = find_event_rows(page)
                     count = event_rows.count()
                     effective = count if MAX_EVENTS <= 0 else min(count, MAX_EVENTS)
-                    log(f"Eventos detectados (agenda): {count} | Procesando: {effective} (MAX_EVENTS={MAX_EVENTS})")
+                    log(f"Eventos detectados (agenda): {count} | Procesando: {effective}")
 
                     if effective > 0:
                         for i in range(effective):
@@ -388,17 +459,12 @@ def main():
                             event_id = (ev.get_attribute("data-event-id") or "").strip()
                             if not event_id:
                                 continue
-
                             expand_event_detail(page, ev)
                             links_html = get_stream_links_html_for_event(page, event_id)
-                            if not links_html:
-                                continue
+                            if not links_html: continue
 
                             ace_ids = extract_ids_from_stream_links_html(links_html)
-                            if DEBUG:
-                                log(f"[DEBUG] Evento '{event_id}' -> IDs: {ace_ids}")
-                            if not ace_ids:
-                                continue
+                            if not ace_ids: continue
 
                             ev_html = ev.inner_html()
                             comp = extract_competition_from_html(ev_html)
@@ -415,9 +481,9 @@ def main():
                             success = True
                             break
 
-                    # ========== Fallback (DOM completo) ==========
-                    if FALLBACK_ANY_OPENACE:
-                        log("Aplicando fallback: escaneo global de openAcestream(...)")
+                    # ========= Fallback 1: buscar openAcestream() global =========
+                    if FALLBACK_ANY_OPENACE and not entries:
+                        log("Fallback 1: escaneo global de openAcestream(...)")
                         ids_any = extract_ids_anywhere_from_dom(page)
                         if ids_any:
                             for ace_id in (ids_any if MAX_EVENTS <= 0 else ids_any[:MAX_EVENTS]):
@@ -426,9 +492,25 @@ def main():
                                 line2 = f"{ACE_HTTP_PREFIX}{ace_id}"
                                 entries.append(f"{line1}\n{line2}")
                             success = True
-                            break
-                        else:
-                            log("Fallback sin resultados (no se detectaron openAcestream en el DOM).")
+
+                    # ========= Fallback 2 (NUEVO): rascar canales =========
+                    if FALLBACK_USE_CHANNELS and not entries:
+                        log("Fallback 2: recopilando canales desde la pestaña 'Canales'")
+                        chans = extract_channels_from_dom(page)
+                        log(f"Canales detectados: {len(chans)}")
+                        if chans:
+                            # Opcionalmente limitar total via MAX_EVENTS
+                            take = len(chans) if MAX_EVENTS <= 0 else min(len(chans), MAX_EVENTS)
+                            for c in chans[:take]:
+                                group = normalize_space(c["group"] or "CANALES")
+                                name = normalize_space(c["name"] or c["id"][:8])
+                                ace_id = c["id"]
+                                if not ID_HEX_RE.fullmatch(ace_id): continue
+                                display = f"{name} ({ace_id[:3]})" if INCLUDE_ID_SUFFIX else name
+                                line1 = f'#EXTINF:-1 group-title="{group}" tvg-name="{display}",{display}'
+                                line2 = f"{ACE_HTTP_PREFIX}{ace_id}"
+                                entries.append(f"{line1}\n{line2}")
+                            success = True
 
                 except Exception as ex:
                     log(f"Intento fallido con gateway={gw} proxy={proxy}: {ex}")
@@ -456,7 +538,6 @@ def main():
     m3u = "\n".join(lines).strip() + "\n"
 
     write_if_changed(m3u, Path(OUTPUT_FILE), Path(HISTORY_DIR), keep_last=50)
-
     if DEBUG:
         _debug_write("debug_final_m3u.txt", m3u)
 
