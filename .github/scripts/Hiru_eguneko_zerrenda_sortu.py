@@ -51,11 +51,12 @@ ACE_HTTP_PREFIX = "http://127.0.0.1:6878/ace/getstream?id="
 HEX40 = r"[a-fA-F0-9]{40}"
 OPENACE_RE = re.compile(r"openAcestream\('\"['\"]\)")
 DATE_TOKEN_RE = re.compile(r"\b(\d{2})/-\b")
-UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121 Safari/537.36 M3U-Bot/1.6"
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121 Safari/537.36 M3U-Bot/1.7"
 
 def log(msg: str): print(f"[m3u] {msg}", flush=True)
 
 def build_url_for_gateway(base_gateway: str, original_url: str) -> str:
+    from urllib.parse import urlparse
     u = urlparse(original_url)
     path, qs = u.path, u.query
     base = base_gateway.rstrip("/")
@@ -92,6 +93,7 @@ def extract_competition_from_html(fragment_html: str) -> str:
     return ""
 
 def parse_proxy_url_for_playwright(proxy_url: str) -> dict:
+    from urllib.parse import urlparse
     u = urlparse(proxy_url)
     cfg = {"server": f"{u.scheme}://{u.hostname}:{u.port or 80}"}
     if u.username: cfg["username"] = u.username
@@ -130,39 +132,95 @@ def write_if_changed(content: str, path_out: Path, history_dir: Path, keep_last:
 
 # --------- Utilidades estrictas de Agenda ---------
 
+def neutralize_blocking_modals(page) -> None:
+    """
+    Inyecta CSS para ocultar overlays/modales que cortan los clics.
+    """
+    try:
+        page.add_style_tag(content="""
+            .file-modal, .modal, .toast { display: none !important; visibility: hidden !important; }
+            #mainNav { position: relative !important; z-index: 1 !important; }
+        """)
+    except Exception:
+        pass
+
+def force_activate_agenda(page) -> None:
+    """
+    Fuerza que #agendaTab quede activo sin depender de clics (por si hay overlays).
+    """
+    page.evaluate("""
+        () => {
+            const ids = ['canalesTab','agendaTab','descargasTab','buscadorTab','listaPlanaTab','consejosTab'];
+            ids.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.classList.remove('active');
+            });
+            const ag = document.getElementById('agendaTab');
+            if (ag) ag.classList.add('active');
+
+            // Marcar el botón de nav
+            const navBtns = document.querySelectorAll('nav [data-tab]');
+            navBtns.forEach(b => b.classList.toggle('active', b.getAttribute('data-tab') === 'agendaTab'));
+        }
+    """)
+
 def ensure_agenda_tab(page) -> None:
     """
-    Garantiza que estamos en la pestaña 'Agenda Deportiva' y que su contenedor está activo.
+    Garantiza que estamos en la pestaña 'Agenda Deportiva':
+    - neutraliza modales
+    - fuerza activación por JS
+    - espera filas renderizadas
     """
+    neutralize_blocking_modals(page)
+    try:
+        force_activate_agenda(page)
+    except Exception:
+        pass
+
+    # Asegurar que el contenedor existe
+    page.wait_for_selector("#agendaTab", timeout=15000)
+
+    # Intento de clic (por si hay lógica adicional), forzado para evitar overlays
     try:
         btn = page.locator('nav [data-tab="agendaTab"]')
         if btn.count() > 0:
-            if "active" not in (btn.first.get_attribute("class") or ""):
-                btn.first.click(timeout=2000)
-        page.wait_for_selector("#agendaTab.tab-content.active", timeout=5000)
+            btn.first.click(timeout=2000, force=True)
     except Exception:
         pass
+
+    # Espera robusta a la presencia de filas (al menos una)
+    try:
+        page.wait_for_function(
+            "document.querySelectorAll('#agendaTab tr.event-row[data-event-id]').length > 0",
+            timeout=20000
+        )
+    except Exception:
+        # último scroll por si hay lazy-load
+        try: page.locator("#agendaTab").scroll_into_view_if_needed(timeout=3000)
+        except Exception: pass
 
 def find_event_rows(page):
     """
     Selecciona SOLO las filas cabecera de evento dentro de la pestaña Agenda.
     """
     container = page.locator("#agendaTab")
+    # Priorizamos dentro de .events-table, pero si no existe, cogemos cualquier tr.event-row dentro de #agendaTab
     table = container.locator(".events-table")
-    if table.count() == 0:
-        return container.locator("tr.event-row[data-event-id]")
-    return table.locator("tr.event-row[data-event-id]")
+    if table.count() > 0:
+        return table.locator("tr.event-row[data-event-id]")
+    return container.locator("tr.event-row[data-event-id]")
 
 def expand_event_detail(page, event_row) -> None:
     """
-    Intenta desplegar SOLO el detalle del evento clicando la fila cabecera.
+    Despliega SOLO el detalle del evento clicando la fila cabecera
+    (o pulsando targets alternativos si fuera necesario).
     """
     try:
-        event_row.click(timeout=2000)
+        event_row.click(timeout=2000, force=True)
     except Exception:
         toggles = event_row.locator("[data-bs-target], [data-target], [aria-controls], a[href^='#'], button[aria-controls]")
         for i in range(min(3, toggles.count())):
-            try: toggles.nth(i).click(timeout=800)
+            try: toggles.nth(i).click(timeout=800, force=True)
             except Exception: pass
 
 def get_stream_links_html_for_event(page, event_id: str) -> str | None:
@@ -172,7 +230,7 @@ def get_stream_links_html_for_event(page, event_id: str) -> str | None:
       #agendaTab tr.event-detail[data-event-id='<event_id>'] .stream-links
     """
     try:
-        page.wait_for_selector(f"#agendaTab tr.event-detail[data-event-id='{event_id}']", timeout=4000)
+        page.wait_for_selector(f"#agendaTab tr.event-detail[data-event-id='{event_id}']", timeout=5000, state="attached")
     except Exception:
         return None
 
@@ -210,7 +268,6 @@ def main():
         log("TARGET_URL vacío"); sys.exit(1)
 
     entries: List[str] = []
-    last_page_dump = ""
 
     with sync_playwright() as p:
         gateways = IPFS_GATEWAYS[:]
@@ -229,33 +286,38 @@ def main():
                     browser = p.chromium.launch(**launch_kwargs)
                     context = browser.new_context(user_agent=UA, ignore_https_errors=True)
                     page = context.new_page()
+                    page.set_default_timeout(30000)
 
                     log(f"Navegando a {url}" + (f" con proxy {proxy}" if proxy else ""))
-                    page.goto(url, wait_until="domcontentloaded", timeout=35000)
+                    page.goto(url, wait_until="domcontentloaded", timeout=45000)
 
-                    # Enfocar la pestaña Agenda y su contenido
+                    # Forzar y verificar Agenda
                     ensure_agenda_tab(page)
 
-                    # Esperar filas cabecera de evento
-                    try:
-                        page.wait_for_selector("#agendaTab tr.event-row[data-event-id]", timeout=15000)
-                    except PWTimeout:
-                        try: page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                        except Exception: pass
-                        page.wait_for_selector("#agendaTab tr.event-row[data-event-id]", timeout=8000)
+                    # Dump completo del DOM para depuración
+                    _debug_write("debug_page_content.html", page.content())
 
-                    last_page_dump = page.content()
-                    _debug_write("debug_page_content.html", last_page_dump)
+                    # Contadores de diagnóstico
+                    try:
+                        total_all = page.locator("tr.event-row").count()
+                        total_scoped = page.locator("#agendaTab tr.event-row[data-event-id]").count()
+                        log(f"Diagnóstico filas -> en toda la página: {total_all} | en #agendaTab: {total_scoped}")
+                    except Exception:
+                        pass
 
                     event_rows = find_event_rows(page)
                     count = event_rows.count()
-
-                    # Límite para depuración
                     effective = count if MAX_EVENTS <= 0 else min(count, MAX_EVENTS)
                     log(f"Eventos detectados (agenda): {count} | Procesando: {effective} (MAX_EVENTS={MAX_EVENTS})")
 
+                    # Si no hay filas, vuelca el HTML solo de #agendaTab y aborta este intento
                     if effective == 0:
-                        raise PWTimeout("Sin eventos tras renderizado (agenda)")
+                        try:
+                            agenda_html = page.locator("#agendaTab").inner_html()
+                            _debug_write("debug_agenda_only.html", agenda_html)
+                        except Exception:
+                            pass
+                        raise PWTimeout("Sin eventos en #agendaTab tras renderizado")
 
                     # Procesar cada evento (limitado por MAX_EVENTS)
                     for i in range(effective):
