@@ -1,19 +1,2 @@
 #EXTM3U url-tvg="https://github.com/davidmuma/EPG_dobleM/raw/refs/heads/master/EPG_dobleM.xml,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/EPG_dobleM.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz" refresh="3600"
 #EXTVLCOPT:network-caching=1000
-
-#EXTINF:-1 group-title="1RFEF" tvg-name="Canal 1 (1RFEF) (SOLO EVENTOS) --> NEW ERA V (c1e)",Canal 1 (1RFEF) (SOLO EVENTOS) --> NEW ERA V (c1e)
-http://127.0.0.1:6878/ace/getstream?id=c1ee6e1e0ef5928d8261f855c417de21794f437d
-#EXTINF:-1 group-title="1RFEF" tvg-name="Canal 2 (1RFEF) (SOLO EVENTOS) --> NEW ERA V (867)",Canal 2 (1RFEF) (SOLO EVENTOS) --> NEW ERA V (867)
-http://127.0.0.1:6878/ace/getstream?id=8677d339ecddd75165c0015025f598b6215974cf
-#EXTINF:-1 group-title="1RFEF" tvg-name="PRIMERA FEDERACIÓN FHD --> NEW ERA FHD (599)",PRIMERA FEDERACIÓN FHD --> NEW ERA FHD (599)
-http://127.0.0.1:6878/ace/getstream?id=599a2fda91aa55703e2c5a51562d9dbf5d3d31d9
-#EXTINF:-1 group-title="1RFEF" tvg-name="PRIMERA FEDERACIÓN FHD --> NEW ERA VI FHD (b40)",PRIMERA FEDERACIÓN FHD --> NEW ERA VI FHD (b40)
-http://127.0.0.1:6878/ace/getstream?id=b40212c43e96e97542ea00f2129212a054853a57
-#EXTINF:-1 group-title="1RFEF" tvg-name="PRIMERA FEDERACIÓN FHD --> NEW ERA (599)",PRIMERA FEDERACIÓN FHD --> NEW ERA (599)
-http://127.0.0.1:6878/ace/getstream?id=599a2fda91aa55703e2c5a51562d9dbf5d3d31d9
-#EXTINF:-1 group-title="1RFEF" tvg-name="PRIMERA FEDERACIÓN FHD --> NEW ERA VI (b40)",PRIMERA FEDERACIÓN FHD --> NEW ERA VI (b40)
-http://127.0.0.1:6878/ace/getstream?id=b40212c43e96e97542ea00f2129212a054853a57
-#EXTINF:-1 group-title="DAZN" tvg-name="DAZN 1 FHD --> NEW ERA FHD (691)",DAZN 1 FHD --> NEW ERA FHD (691)
-http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
-#EXTINF:-1 group-title="DAZN" tvg-name="DAZN 1 FHD --> NEW ERA FHD (414)",DAZN 1 FHD --> NEW ERA FHD (414)
-http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
