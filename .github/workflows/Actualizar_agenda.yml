@@ -1,0 +1,40 @@
+name: Actualizar Agenda Deportiva
+
+on:
+  schedule:
+    # Ejecutar cada hora al minuto 30
+    - cron: '30 * * * *'
+  workflow_dispatch: # Permite ejecutar manualmente
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Instalar dependencias
+        run: |
+          pip install requests beautifulsoup4
+
+      - name: Ejecutar script de generación
+        # IMPORTANTE: Ejecutamos el script indicando su nueva ruta.
+        # Al ejecutarlo desde la raíz (default), el script seguirá encontrando
+        # las carpetas 'canales/' y 'history/' sin problemas.
+        run: python .github/scripts/scraper.py
+
+      - name: Commit y Push si hay cambios
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          # Solo añadimos los ficheros generados/modificados
+          git add ezdakit_eventos.m3u history/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update agenda m3u [skip ci]" && git push)
