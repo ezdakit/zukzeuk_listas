@@ -26,15 +26,22 @@ jobs:
           pip install requests beautifulsoup4
 
       - name: Ejecutar script de generación
-        # IMPORTANTE: Ejecutamos el script indicando su nueva ruta.
-        # Al ejecutarlo desde la raíz (default), el script seguirá encontrando
-        # las carpetas 'canales/' y 'history/' sin problemas.
+        # Ejecuta el script desde la carpeta scripts, pero estando en la raíz del proyecto
         run: python .github/scripts/scraper.py
 
       - name: Commit y Push si hay cambios
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          # Solo añadimos los ficheros generados/modificados
-          git add ezdakit_eventos.m3u history/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update agenda m3u [skip ci]" && git push)
+
+          # Verificamos si el archivo se generó antes de intentar añadirlo
+          if [ -f "ezdakit_eventos.m3u" ]; then
+            git add ezdakit_eventos.m3u history/
+            
+            # Si git detecta cambios, hacemos commit y push. Si no, no hacemos nada.
+            git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update agenda m3u [skip ci]" && git push)
+          else
+            echo "⚠️ ERROR: El archivo ezdakit_eventos.m3u no se ha generado."
+            echo "Posible causa: El script de Python no encontró 'canales/listado_canales.csv' o 'ezdakit.m3u', o falló la conexión web."
+            exit 1
+          fi
