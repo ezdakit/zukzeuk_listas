@@ -9,17 +9,14 @@ import sys
 import time
 
 # --- CONFIGURACIÓN ---
-# El hash IPNS de la web
 IPNS_HASH = "k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004"
 
-# LISTA DE GATEWAYS CORREGIDA
-# Usamos el formato de SUBDOMINIO (hash.ipns.gateway) para evitar redirecciones y errores.
-# ipfs.io se mantiene con ruta normal porque no siempre usa subdominios.
+# GATEWAYS
 GATEWAYS = [
-    f"https://{IPNS_HASH}.ipns.cf-ipfs.com/?tab=agenda",   # Cloudflare (Suele ser el mejor)
-    f"https://{IPNS_HASH}.ipns.dweb.link/?tab=agenda",    # dweb.link (Formato correcto)
-    f"https://{IPNS_HASH}.ipns.w3s.link/?tab=agenda",     # w3s.link (Formato correcto)
-    f"https://ipfs.io/ipns/{IPNS_HASH}/?tab=agenda",      # ipfs.io (Clásico, lento pero estándar)
+    f"https://{IPNS_HASH}.ipns.cf-ipfs.com/?tab=agenda",
+    f"https://{IPNS_HASH}.ipns.dweb.link/?tab=agenda",
+    f"https://{IPNS_HASH}.ipns.w3s.link/?tab=agenda",
+    f"https://ipfs.io/ipns/{IPNS_HASH}/?tab=agenda",
     f"https://gateway.ipfs.io/ipns/{IPNS_HASH}/?tab=agenda"
 ]
 
@@ -33,7 +30,6 @@ HEADER_M3U = """#EXTM3U url-tvg="https://github.com/davidmuma/EPG_dobleM/raw/ref
 
 """
 
-# Headers: Simulamos ser un navegador real
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
@@ -62,18 +58,19 @@ def debug_info():
     print("--- FIN DEPURACIÓN ---")
 
 def get_html_content():
-    # Iteramos por los gateways
     for url in GATEWAYS:
         try:
             print(f"[CONEXIÓN] Probando: {url}")
-            # Timeout generoso de 45s
             response = requests.get(url, headers=HEADERS, timeout=45)
             
             if response.status_code == 200:
+                # CORRECCIÓN AQUÍ: Forzamos UTF-8 para evitar caracteres raros (Ã¡)
+                response.encoding = 'utf-8' 
+                
                 print(f"[ÉXITO] Datos recibidos ({len(response.text)} bytes) desde {url}")
                 return response.text
             elif response.status_code in [301, 302, 307, 308]:
-                 print(f"[REDIRECCIÓN] El gateway nos redirige (esto debería evitarse con la URL correcta).")
+                 print(f"[REDIRECCIÓN] El gateway nos redirige.")
             else:
                 print(f"[FALLO] Status code {response.status_code}")
         
@@ -84,7 +81,6 @@ def get_html_content():
         except Exception as e:
             print(f"[ERROR] {e}")
             
-        # Espera breve antes de probar el siguiente para no saturar la red del runner
         time.sleep(1)
         
     return None
@@ -137,7 +133,7 @@ def parse_agenda(html, dial_map, stream_map):
     agenda_tab = soup.find('div', id='agendaTab')
     
     if not agenda_tab:
-        print("[ERROR] No se encontró la sección 'agendaTab' en el HTML descargado.")
+        print("[ERROR] No se encontró la sección 'agendaTab'.")
         return []
 
     entries = []
@@ -201,12 +197,10 @@ def manage_history(new_content):
     try:
         os.makedirs(DIR_HISTORY, exist_ok=True)
         
-        # Guardar fichero principal
         with open(FILE_OUTPUT, 'w', encoding='utf-8') as f:
             f.write(new_content)
         print(f"[ÉXITO] Generado {FILE_OUTPUT}")
         
-        # Gestionar histórico
         content_changed = True
         files_history = sorted(glob.glob(os.path.join(DIR_HISTORY, "ezdakit_eventos_*.m3u")))
         
@@ -228,7 +222,6 @@ def manage_history(new_content):
                 f.write(new_content)
             print(f"[HISTORIAL] Creado: {history_filename}")
             
-            # Limpieza
             files = sorted(glob.glob(os.path.join(DIR_HISTORY, "ezdakit_eventos_*.m3u")))
             while len(files) > 50:
                 os.remove(files[0])
