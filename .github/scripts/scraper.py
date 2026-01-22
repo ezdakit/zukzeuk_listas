@@ -1,4 +1,4 @@
-import requests
+import cloudscraper
 from bs4 import BeautifulSoup
 import re
 import csv
@@ -11,13 +11,14 @@ import time
 # --- CONFIGURACIÓN ---
 IPNS_HASH = "k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004"
 
-# GATEWAYS
+# GATEWAYS (Ordenados por probabilidad de éxito con cloudscraper)
 GATEWAYS = [
-    f"https://{IPNS_HASH}.ipns.cf-ipfs.com/?tab=agenda",
-    f"https://{IPNS_HASH}.ipns.dweb.link/?tab=agenda",
-    f"https://{IPNS_HASH}.ipns.w3s.link/?tab=agenda",
-    f"https://ipfs.io/ipns/{IPNS_HASH}/?tab=agenda",
-    f"https://gateway.ipfs.io/ipns/{IPNS_HASH}/?tab=agenda"
+    f"https://cf-ipfs.com/ipns/{IPNS_HASH}/?tab=agenda",      # Cloudflare (Ruta estandar)
+    f"https://{IPNS_HASH}.ipns.cf-ipfs.com/?tab=agenda",      # Cloudflare (Subdominio)
+    f"https://ipfs.io/ipns/{IPNS_HASH}/?tab=agenda",          # IPFS.io Oficial
+    f"https://{IPNS_HASH}.ipns.dweb.link/?tab=agenda",        # dweb.link
+    f"https://{IPNS_HASH}.ipns.w3s.link/?tab=agenda",         # w3s.link
+    f"https://gateway.ipfs.io/ipns/{IPNS_HASH}/?tab=agenda"   # Gateway alternativo
 ]
 
 FILE_CSV = "canales/listado_canales.csv"
@@ -29,18 +30,6 @@ HEADER_M3U = """#EXTM3U url-tvg="https://github.com/davidmuma/EPG_dobleM/raw/ref
 #EXTVLCOPT:network-caching=1000
 
 """
-
-HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-    'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8',
-    'Connection': 'keep-alive',
-    'Upgrade-Insecure-Requests': '1',
-    'Sec-Fetch-Dest': 'document',
-    'Sec-Fetch-Mode': 'navigate',
-    'Sec-Fetch-Site': 'none',
-    'Sec-Fetch-User': '?1'
-}
 
 def debug_info():
     print("--- INICIO DEPURACIÓN DEL SISTEMA ---")
@@ -58,30 +47,34 @@ def debug_info():
     print("--- FIN DEPURACIÓN ---")
 
 def get_html_content():
+    # Creamos un scraper que simula ser un navegador Chrome real
+    scraper = cloudscraper.create_scraper(
+        browser={
+            'browser': 'chrome',
+            'platform': 'windows',
+            'desktop': True
+        }
+    )
+
     for url in GATEWAYS:
         try:
             print(f"[CONEXIÓN] Probando: {url}")
-            response = requests.get(url, headers=HEADERS, timeout=45)
+            # Usamos scraper.get en lugar de requests.get
+            # Timeout alto (90s) porque IPFS es lento resolviendo nombres
+            response = scraper.get(url, timeout=90)
             
             if response.status_code == 200:
-                # CORRECCIÓN AQUÍ: Forzamos UTF-8 para evitar caracteres raros
-                response.encoding = 'utf-8' 
-                
+                response.encoding = 'utf-8' # Forzar UTF-8
                 print(f"[ÉXITO] Datos recibidos ({len(response.text)} bytes) desde {url}")
                 return response.text
-            elif response.status_code in [301, 302, 307, 308]:
-                 print(f"[REDIRECCIÓN] El gateway nos redirige.")
             else:
                 print(f"[FALLO] Status code {response.status_code}")
         
-        except requests.Timeout:
-            print(f"[TIMEOUT] Se agotó el tiempo esperando a {url}")
-        except requests.ConnectionError:
-            print(f"[ERROR CONEXIÓN] No se pudo conectar a {url}")
         except Exception as e:
-            print(f"[ERROR] {e}")
+            # Cloudscraper lanza sus propias excepciones a veces, las capturamos todas
+            print(f"[ERROR] Fallo en {url}: {e}")
             
-        time.sleep(1)
+        time.sleep(2) # Espera un poco antes de probar el siguiente
         
     return None
 
@@ -134,6 +127,8 @@ def parse_agenda(html, dial_map, stream_map):
     
     if not agenda_tab:
         print("[ERROR] No se encontró la sección 'agendaTab'.")
+        # Si fallamos, imprimimos un trozo del HTML para ver si es una página de error de Cloudflare
+        print(f"[DEBUG DUMP] Inicio del HTML recibido: {html[:500]}")
         return []
 
     entries = []
@@ -237,7 +232,7 @@ def main():
     
     html = get_html_content()
     if not html:
-        print("[ERROR CRÍTICO] Fallo total de conexión con IPFS.")
+        print("[ERROR CRÍTICO] Fallo total de conexión con todos los gateways IPFS.")
         sys.exit(1)
 
     dial_map = load_dial_mapping()
