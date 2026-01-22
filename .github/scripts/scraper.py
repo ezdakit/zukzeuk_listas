@@ -268,3 +268,13 @@ def main():
 
     dial_map = load_dial_mapping()
     stream_map = load_acestreams()
+    blacklist = load_blacklist()
+    
+    entries = parse_agenda(html, dial_map, stream_map, blacklist)
+    
+    full_content = HEADER_M3U + "\n".join(entries)
+    manage_history(full_content)
+    print("[FIN] Script finalizado.")
+
+if __name__ == "__main__":
+    main()
