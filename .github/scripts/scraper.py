@@ -64,7 +64,7 @@ def get_html_content():
             response = requests.get(url, headers=HEADERS, timeout=45)
             
             if response.status_code == 200:
-                # CORRECCIÓN AQUÍ: Forzamos UTF-8 para evitar caracteres raros (Ã¡)
+                # CORRECCIÓN AQUÍ: Forzamos UTF-8 para evitar caracteres raros
                 response.encoding = 'utf-8' 
                 
                 print(f"[ÉXITO] Datos recibidos ({len(response.text)} bytes) desde {url}")
