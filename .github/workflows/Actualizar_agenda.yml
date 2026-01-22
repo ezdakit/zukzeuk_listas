@@ -22,11 +22,11 @@ jobs:
           python-version: '3.10'
 
       - name: Instalar dependencias
+        # AÑADIMOS cloudscraper AQUÍ
         run: |
-          pip install requests beautifulsoup4
+          pip install requests beautifulsoup4 cloudscraper
 
       - name: Ejecutar script de generación
-        # Ejecuta el script que acabas de guardar en .github/scripts/
         run: python .github/scripts/scraper.py
 
       - name: Commit y Push si hay cambios
@@ -34,11 +34,8 @@ jobs:
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
 
-          # Comprobamos si el fichero de salida existe (significa que el script funcionó)
           if [ -f "ezdakit_eventos.m3u" ]; then
             git add ezdakit_eventos.m3u history/
-            
-            # Solo hacemos commit si realmente hubo cambios en los archivos
             git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update agenda m3u [skip ci]" && git push)
           else
             echo "⚠️ ERROR: El archivo ezdakit_eventos.m3u no se ha generado."
