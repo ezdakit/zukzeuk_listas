@@ -81,8 +81,30 @@ jobs:
         run: |
           python3 << 'EOF'
           import re
+          import csv
           from pathlib import Path
 
+          # 1. CARGAR LISTA NEGRA
+          blacklist_map = {}
+          blacklist_path = Path("canales/lista_negra.csv")
+          
+          if blacklist_path.exists():
+              try:
+                  with blacklist_path.open(mode='r', encoding='utf-8', errors='ignore') as f:
+                      reader = csv.DictReader(f)
+                      for row in reader:
+                          # Obtenemos ace_id y canal_real, limpiando espacios
+                          aid = row.get('ace_id', '').strip()
+                          real = row.get('canal_real', '').strip()
+                          if aid:
+                              blacklist_map[aid] = real
+                  print(f"Lista negra cargada: {len(blacklist_map)} entradas.")
+              except Exception as e:
+                  print(f"Error leyendo lista negra: {e}")
+          else:
+              print("No se encontró canales/lista_negra.csv, se continúa sin filtro.")
+
+          # 2. PARSEO DE M3U
           def parse_m3u(path_obj, source_letter):
               items = []
               if not path_obj.exists(): return items
@@ -135,14 +157,29 @@ jobs:
           final_items = []
           for tvgid, ace, url, src, grp, ori_name in merged.values():
               prefix = ace[:3]
+              
+              # Generar nombre base
               if tvgid == "Unknown":
-                  name = f"{ori_name} ({src}-{prefix})"
+                  base_name = f"{ori_name} ({src}-{prefix})"
               else:
                   norm = tvgid[:-3] if tvgid.endswith(" HD") else tvgid
-                  name = f"{norm} ({src}-{prefix})"
+                  base_name = f"{norm} ({src}-{prefix})"
               
-              new_extinf = f'#EXTINF:-1 tvg-id="{tvgid}" tvg-name="{name}" group-title="{grp}",{name}'
-              final_items.append((tvgid if tvgid != "Unknown" else name, new_extinf, url))
+              # --- LÓGICA DE LISTA NEGRA ---
+              final_group = grp
+              final_name = base_name
+
+              if ace in blacklist_map:
+                  # 1. Cambiar grupo
+                  final_group = "ZZ_Canales_KO"
+                  
+                  # 2. Comprobar canal_real y modificar nombre si existe
+                  real_channel = blacklist_map[ace]
+                  if real_channel:
+                      final_name = f"{base_name} >>> {real_channel}"
+              
+              new_extinf = f'#EXTINF:-1 tvg-id="{tvgid}" tvg-name="{final_name}" group-title="{final_group}",{final_name}'
+              final_items.append((tvgid if tvgid != "Unknown" else final_name, new_extinf, url))
 
           final_items.sort(key=lambda x: x[0])
           
