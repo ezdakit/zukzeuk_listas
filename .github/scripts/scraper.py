@@ -11,18 +11,19 @@ import time
 # --- CONFIGURACIÓN ---
 IPNS_HASH = "k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004"
 
-# GATEWAYS (Ordenados por probabilidad de éxito con cloudscraper)
+# GATEWAYS
 GATEWAYS = [
-    f"https://cf-ipfs.com/ipns/{IPNS_HASH}/?tab=agenda",      # Cloudflare (Ruta estandar)
-    f"https://{IPNS_HASH}.ipns.cf-ipfs.com/?tab=agenda",      # Cloudflare (Subdominio)
-    f"https://ipfs.io/ipns/{IPNS_HASH}/?tab=agenda",          # IPFS.io Oficial
-    f"https://{IPNS_HASH}.ipns.dweb.link/?tab=agenda",        # dweb.link
-    f"https://{IPNS_HASH}.ipns.w3s.link/?tab=agenda",         # w3s.link
-    f"https://gateway.ipfs.io/ipns/{IPNS_HASH}/?tab=agenda"   # Gateway alternativo
+    f"https://cf-ipfs.com/ipns/{IPNS_HASH}/?tab=agenda",
+    f"https://{IPNS_HASH}.ipns.cf-ipfs.com/?tab=agenda",
+    f"https://ipfs.io/ipns/{IPNS_HASH}/?tab=agenda",
+    f"https://{IPNS_HASH}.ipns.dweb.link/?tab=agenda",
+    f"https://{IPNS_HASH}.ipns.w3s.link/?tab=agenda",
+    f"https://gateway.ipfs.io/ipns/{IPNS_HASH}/?tab=agenda"
 ]
 
 FILE_CSV = "canales/listado_canales.csv"
 FILE_M3U_SOURCE = "ezdakit.m3u"
+FILE_BLACKLIST = "canales/lista_negra.txt"  # <--- NUEVO ARCHIVO
 FILE_OUTPUT = "ezdakit_eventos.m3u"
 DIR_HISTORY = "history"
 
@@ -44,39 +45,55 @@ def debug_info():
         print(f"[DEBUG] Archivo {FILE_M3U_SOURCE} OK.")
     else:
         print(f"[ERROR CRÍTICO] Falta archivo {FILE_M3U_SOURCE}.")
+        
+    if os.path.exists(FILE_BLACKLIST):
+        print(f"[DEBUG] Archivo lista negra encontrado: {FILE_BLACKLIST}")
+    else:
+        print(f"[INFO] No existe lista negra ({FILE_BLACKLIST}), se continuará sin filtrar.")
+        
     print("--- FIN DEPURACIÓN ---")
 
 def get_html_content():
-    # Creamos un scraper que simula ser un navegador Chrome real
     scraper = cloudscraper.create_scraper(
-        browser={
-            'browser': 'chrome',
-            'platform': 'windows',
-            'desktop': True
-        }
+        browser={'browser': 'chrome', 'platform': 'windows', 'desktop': True}
     )
 
     for url in GATEWAYS:
         try:
             print(f"[CONEXIÓN] Probando: {url}")
-            # Usamos scraper.get en lugar de requests.get
-            # Timeout alto (90s) porque IPFS es lento resolviendo nombres
             response = scraper.get(url, timeout=90)
             
             if response.status_code == 200:
-                response.encoding = 'utf-8' # Forzar UTF-8
+                response.encoding = 'utf-8'
                 print(f"[ÉXITO] Datos recibidos ({len(response.text)} bytes) desde {url}")
                 return response.text
             else:
                 print(f"[FALLO] Status code {response.status_code}")
-        
         except Exception as e:
-            # Cloudscraper lanza sus propias excepciones a veces, las capturamos todas
             print(f"[ERROR] Fallo en {url}: {e}")
             
-        time.sleep(2) # Espera un poco antes de probar el siguiente
+        time.sleep(2)
         
     return None
+
+def load_blacklist():
+    """Carga los IDs de la lista negra en un set para búsqueda rápida."""
+    blacklist = set()
+    if not os.path.exists(FILE_BLACKLIST):
+        return blacklist
+    
+    try:
+        with open(FILE_BLACKLIST, 'r', encoding='utf-8', errors='ignore') as f:
+            for line in f:
+                # Limpiamos espacios y saltos de línea
+                clean_id = line.strip()
+                if clean_id and not clean_id.startswith("#"):
+                    blacklist.add(clean_id)
+        print(f"[DEBUG] Lista negra cargada: {len(blacklist)} IDs ignorados.")
+    except Exception as e:
+        print(f"[ERROR] Leyendo lista negra: {e}")
+        
+    return blacklist
 
 def load_dial_mapping():
     mapping = {}
@@ -120,14 +137,13 @@ def load_acestreams():
         print(f"[ERROR] Fallo M3U: {e}")
     return streams
 
-def parse_agenda(html, dial_map, stream_map):
+def parse_agenda(html, dial_map, stream_map, blacklist):
     print("[DEBUG] Analizando HTML...")
     soup = BeautifulSoup(html, 'html.parser')
     agenda_tab = soup.find('div', id='agendaTab')
     
     if not agenda_tab:
         print("[ERROR] No se encontró la sección 'agendaTab'.")
-        # Si fallamos, imprimimos un trozo del HTML para ver si es una página de error de Cloudflare
         print(f"[DEBUG DUMP] Inicio del HTML recibido: {html[:500]}")
         return []
 
@@ -136,6 +152,7 @@ def parse_agenda(html, dial_map, stream_map):
     print(f"[DEBUG] Días encontrados: {len(days)}")
     
     event_count = 0
+    skipped_count = 0
     
     for day_div in days:
         date_str_iso = day_div.get('data-date')
@@ -172,6 +189,13 @@ def parse_agenda(html, dial_map, stream_map):
                     if tvg_id:
                         ace_ids = stream_map.get(tvg_id, [])
                         for ace_id in ace_ids:
+                            # --- NUEVO: FILTRO LISTA NEGRA ---
+                            if ace_id in blacklist:
+                                # Solo loguear una vez por ejecución para no saturar
+                                # print(f"[SKIP] ID en lista negra ignorado: {ace_id}") 
+                                skipped_count += 1
+                                continue
+
                             if ace_id in processed_ace_ids:
                                 continue
                             processed_ace_ids.add(ace_id)
@@ -181,11 +205,14 @@ def parse_agenda(html, dial_map, stream_map):
                             final_name = f"{event_name} ({ace_prefix})"
                             group_title = f"{date_formatted} {competition}".strip()
                             
-                            entry = f'#EXTINF:-1 group-title="{group_title}" tvg-name="{final_name}",{final_name}\n'
+                            # --- MODIFICADO: AÑADIDO tvg-id ---
+                            entry = f'#EXTINF:-1 group-title="{group_title}" tvg-id="{tvg_id}" tvg-name="{final_name}",{final_name}\n'
                             entry += f'http://127.0.0.1:6878/ace/getstream?id={ace_id}'
                             entries.append(entry)
     
     print(f"[DEBUG] Total eventos generados: {event_count}")
+    if skipped_count > 0:
+        print(f"[DEBUG] Total IDs ignorados por lista negra: {skipped_count}")
     return entries
 
 def manage_history(new_content):
@@ -237,7 +264,12 @@ def main():
 
     dial_map = load_dial_mapping()
     stream_map = load_acestreams()
-    entries = parse_agenda(html, dial_map, stream_map)
+    
+    # --- NUEVO: CARGAMOS LA LISTA NEGRA ---
+    blacklist = load_blacklist()
+    
+    # Pasamos la blacklist a parse_agenda
+    entries = parse_agenda(html, dial_map, stream_map, blacklist)
     
     full_content = HEADER_M3U + "\n".join(entries)
     manage_history(full_content)
