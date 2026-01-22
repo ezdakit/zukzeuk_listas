@@ -23,7 +23,7 @@ GATEWAYS = [
 
 FILE_CSV = "canales/listado_canales.csv"
 FILE_M3U_SOURCE = "ezdakit.m3u"
-FILE_BLACKLIST = "canales/lista_negra.txt"  # <--- NUEVO ARCHIVO
+FILE_BLACKLIST = "canales/lista_negra.txt"
 FILE_OUTPUT = "ezdakit_eventos.m3u"
 DIR_HISTORY = "history"
 
@@ -85,7 +85,6 @@ def load_blacklist():
     try:
         with open(FILE_BLACKLIST, 'r', encoding='utf-8', errors='ignore') as f:
             for line in f:
-                # Limpiamos espacios y saltos de línea
                 clean_id = line.strip()
                 if clean_id and not clean_id.startswith("#"):
                     blacklist.add(clean_id)
@@ -189,10 +188,8 @@ def parse_agenda(html, dial_map, stream_map, blacklist):
                     if tvg_id:
                         ace_ids = stream_map.get(tvg_id, [])
                         for ace_id in ace_ids:
-                            # --- NUEVO: FILTRO LISTA NEGRA ---
+                            # --- FILTRO LISTA NEGRA ---
                             if ace_id in blacklist:
-                                # Solo loguear una vez por ejecución para no saturar
-                                # print(f"[SKIP] ID en lista negra ignorado: {ace_id}") 
                                 skipped_count += 1
                                 continue
 
@@ -205,8 +202,8 @@ def parse_agenda(html, dial_map, stream_map, blacklist):
                             final_name = f"{event_name} ({ace_prefix})"
                             group_title = f"{date_formatted} {competition}".strip()
                             
-                            # --- MODIFICADO: AÑADIDO tvg-id ---
-                            entry = f'#EXTINF:-1 group-title="{group_title}" tvg-id="{tvg_id}" tvg-name="{final_name}",{final_name}\n'
+                            # --- MODIFICADO: ELIMINADO tvg-id ---
+                            entry = f'#EXTINF:-1 group-title="{group_title}" tvg-name="{final_name}",{final_name}\n'
                             entry += f'http://127.0.0.1:6878/ace/getstream?id={ace_id}'
                             entries.append(entry)
     
@@ -264,11 +261,8 @@ def main():
 
     dial_map = load_dial_mapping()
     stream_map = load_acestreams()
-    
-    # --- NUEVO: CARGAMOS LA LISTA NEGRA ---
     blacklist = load_blacklist()
     
-    # Pasamos la blacklist a parse_agenda
     entries = parse_agenda(html, dial_map, stream_map, blacklist)
     
     full_content = HEADER_M3U + "\n".join(entries)
