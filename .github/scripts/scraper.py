@@ -183,7 +183,11 @@ def parse_agenda(html, dial_map, stream_map, blacklist):
 
             for ch in channels:
                 ch_text = ch.get_text()
-                match_m = re.search(r'\(M(\d+).*?\)', ch_text)
+                
+                # --- CAMBIO REALIZADO AQUÍ ---
+                # Regex modificada: (?:M)? hace que la M sea opcional.
+                # Captura: (M55) -> 55, (55) -> 55
+                match_m = re.search(r'\((?:M)?(\d+).*?\)', ch_text)
                 
                 if match_m:
                     dial = match_m.group(1)
@@ -204,7 +208,7 @@ def parse_agenda(html, dial_map, stream_map, blacklist):
                             
                             ace_prefix = ace_id[:3]
                             
-                            # --- CAMBIO AQUÍ: Añadimos tvg_id al nombre visual ---
+                            # Añadimos tvg_id al final del nombre
                             final_name = f"{event_name} ({ace_prefix}) ({tvg_id})"
                             
                             group_title = f"{date_formatted} {competition}".strip()
