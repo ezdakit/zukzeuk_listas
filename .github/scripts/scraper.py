@@ -141,7 +141,7 @@ def load_acestreams():
     return streams
 
 def parse_agenda(html, dial_map, stream_map, blacklist):
-    print("[DEBUG] Analizando HTML...")
+    print("[DEBUG] Analizando HTML con fallback inteligente...")
     soup = BeautifulSoup(html, 'html.parser')
     agenda_tab = soup.find('div', id='agendaTab')
     
@@ -169,6 +169,7 @@ def parse_agenda(html, dial_map, stream_map, blacklist):
 
         rows = day_div.find_all('tr', class_='event-row')
         for row in rows:
+            # 1. Intentar obtener datos de los atributos data (Método Rápido)
             event_name = row.get('data-event-id')
             
             comp_div = row.find('div', class_='competition-info')
@@ -178,15 +179,34 @@ def parse_agenda(html, dial_map, stream_map, blacklist):
                 if comp_span:
                     competition = comp_span.get_text(strip=True)
 
+            # --- FALLBACK (PLAN B) ---
+            # Si data-event-id está roto (ej: "18:00--") o la competición vacía
+            # Leemos las celdas de la tabla directamente
+            tds = row.find_all('td')
+            # Estructura usual: td[0]=Hora, td[1]=Competición, td[2]=Evento, td[3]=Canales
+            
+            if len(tds) >= 3:
+                # Arreglar nombre del evento si parece roto
+                if not event_name or event_name.strip() == "" or event_name.endswith("--"):
+                    time_val = tds[0].get_text(strip=True)
+                    teams_val = tds[2].get_text(strip=True)
+                    if time_val and teams_val:
+                        event_name = f"{time_val}-{teams_val}"
+                        # print(f"[FIX] Reparado nombre evento: {event_name}")
+
+                # Arreglar competición si está vacía
+                if not competition:
+                    competition = tds[1].get_text(strip=True)
+                    # print(f"[FIX] Reparada competición: {competition}")
+            # -------------------------
+
             channels = row.find_all('span', class_='channel-link')
             processed_ace_ids = set() 
 
             for ch in channels:
                 ch_text = ch.get_text()
                 
-                # --- CAMBIO REALIZADO AQUÍ ---
-                # Regex modificada: (?:M)? hace que la M sea opcional.
-                # Captura: (M55) -> 55, (55) -> 55
+                # Regex opcional M: (M55) o (55)
                 match_m = re.search(r'\((?:M)?(\d+).*?\)', ch_text)
                 
                 if match_m:
@@ -196,7 +216,7 @@ def parse_agenda(html, dial_map, stream_map, blacklist):
                     if tvg_id:
                         ace_ids = stream_map.get(tvg_id, [])
                         for ace_id in ace_ids:
-                            # --- FILTRO LISTA NEGRA ---
+                            # Filtro Lista Negra
                             if ace_id in blacklist:
                                 skipped_count += 1
                                 continue
@@ -207,8 +227,6 @@ def parse_agenda(html, dial_map, stream_map, blacklist):
                             event_count += 1
                             
                             ace_prefix = ace_id[:3]
-                            
-                            # Añadimos tvg_id al final del nombre
                             final_name = f"{event_name} ({ace_prefix}) ({tvg_id})"
                             
                             group_title = f"{date_formatted} {competition}".strip()
