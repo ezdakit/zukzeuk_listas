@@ -23,8 +23,7 @@ GATEWAYS = [
 
 FILE_CSV = "canales/listado_canales.csv"
 FILE_M3U_SOURCE = "ezdakit.m3u"
-# CAMBIO: Ahora apunta al archivo .csv
-FILE_BLACKLIST = "canales/lista_negra.csv" 
+FILE_BLACKLIST = "canales/lista_negra.csv"
 FILE_OUTPUT = "ezdakit_eventos.m3u"
 DIR_HISTORY = "history"
 
@@ -84,11 +83,9 @@ def load_blacklist():
         return blacklist
     
     try:
-        # CAMBIO: Lectura de CSV en lugar de TXT plano
         with open(FILE_BLACKLIST, 'r', encoding='utf-8', errors='ignore') as f:
             reader = csv.DictReader(f)
             for row in reader:
-                # Buscamos la columna llamada 'ace_id'
                 ace_id = row.get('ace_id')
                 if ace_id:
                     clean_id = ace_id.strip()
@@ -206,10 +203,12 @@ def parse_agenda(html, dial_map, stream_map, blacklist):
                             event_count += 1
                             
                             ace_prefix = ace_id[:3]
-                            final_name = f"{event_name} ({ace_prefix})"
+                            
+                            # --- CAMBIO AQUÍ: Añadimos tvg_id al nombre visual ---
+                            final_name = f"{event_name} ({ace_prefix}) ({tvg_id})"
+                            
                             group_title = f"{date_formatted} {competition}".strip()
                             
-                            # SIN tvg-id (según tu última petición)
                             entry = f'#EXTINF:-1 group-title="{group_title}" tvg-name="{final_name}",{final_name}\n'
                             entry += f'http://127.0.0.1:6878/ace/getstream?id={ace_id}'
                             entries.append(entry)
