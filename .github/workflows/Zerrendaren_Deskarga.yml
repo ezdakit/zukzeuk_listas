@@ -93,7 +93,6 @@ jobs:
                   with blacklist_path.open(mode='r', encoding='utf-8', errors='ignore') as f:
                       reader = csv.DictReader(f)
                       for row in reader:
-                          # Obtenemos ace_id y canal_real, limpiando espacios
                           aid = row.get('ace_id', '').strip()
                           real = row.get('canal_real', '').strip()
                           if aid:
@@ -104,7 +103,7 @@ jobs:
           else:
               print("No se encontró canales/lista_negra.csv, se continúa sin filtro.")
 
-          # 2. PARSEO DE M3U
+          # 2. FUNCIÓN PARSEO
           def parse_m3u(path_obj, source_letter):
               items = []
               if not path_obj.exists(): return items
@@ -130,9 +129,10 @@ jobs:
                       m_ace = re.search(r"(?:acestream://|id=|/)([0-9a-fA-F]{40})", url)
                       if m_ace:
                           ace_id = m_ace.group(1)
+                          
                           # Extraer tvg-id
                           m_id = re.search(r'tvg-id="([^"]+)"', extinf)
-                          tvgid = m_id.group(1) if m_id and m_id.group(1).strip() else "Unknown"
+                          tvgid = m_id.group(1).strip() if m_id and m_id.group(1).strip() else "Unknown"
                           
                           # Extraer nombre original (lo que va después de la última coma)
                           original_name = extinf.split(',')[-1].strip()
@@ -146,14 +146,39 @@ jobs:
                   i += 1
               return items
 
-          items_elcano = parse_m3u(Path("elcano.m3u"), "E")
+          # 3. LEER LISTAS
           items_newera = parse_m3u(Path("new_era.m3u"), "N")
+          items_elcano = parse_m3u(Path("elcano.m3u"), "E")
 
+          # 4. CREAR REFERENCIAS DE "NEW_ERA" (La lista buena)
           merged = {}
-          for tvgid, ace, url, src, grp, ori_name in items_elcano + items_newera:
-              if ace not in merged:
-                  merged[ace] = (tvgid, ace, url, src, grp, ori_name)
+          new_era_names = {} # Mapa Nombre -> TVG-ID
 
+          for tvgid, ace, url, src, grp, ori_name in items_newera:
+              # Guardamos en merged directamente (prioridad New Era)
+              merged[ace] = (tvgid, ace, url, src, grp, ori_name)
+              
+              # Guardamos referencia para reparar Elcano
+              if tvgid != "Unknown":
+                  new_era_names[ori_name] = tvgid
+
+          # 5. PROCESAR "ELCANO" (La lista que puede fallar)
+          for tvgid, ace, url, src, grp, ori_name in items_elcano:
+              # Si el ID ya está en merged (venía de New Era), lo ignoramos (prioridad New Era)
+              if ace in merged:
+                  continue
+              
+              # Si es nuevo, verificamos si hay que reparar el TVG-ID
+              final_tvgid = tvgid
+              if final_tvgid == "Unknown" or not final_tvgid:
+                  # Intentamos buscar por nombre en la lista de New Era
+                  if ori_name in new_era_names:
+                      final_tvgid = new_era_names[ori_name]
+                      # print(f"Reparado {ori_name}: Unknown -> {final_tvgid}")
+
+              merged[ace] = (final_tvgid, ace, url, src, grp, ori_name)
+
+          # 6. GENERAR LISTA FINAL
           final_items = []
           for tvgid, ace, url, src, grp, ori_name in merged.values():
               prefix = ace[:3]
@@ -162,6 +187,7 @@ jobs:
               if tvgid == "Unknown":
                   base_name = f"{ori_name} ({src}-{prefix})"
               else:
+                  # Quitamos " HD" si existe para limpiar el nombre
                   norm = tvgid[:-3] if tvgid.endswith(" HD") else tvgid
                   base_name = f"{norm} ({src}-{prefix})"
               
@@ -181,6 +207,7 @@ jobs:
               new_extinf = f'#EXTINF:-1 tvg-id="{tvgid}" tvg-name="{final_name}" group-title="{final_group}",{final_name}'
               final_items.append((tvgid if tvgid != "Unknown" else final_name, new_extinf, url))
 
+          # Ordenar alfabéticamente
           final_items.sort(key=lambda x: x[0])
           
           header = "#EXTM3U url-tvg=\"https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml\" refresh=\"3600\""
