@@ -12,10 +12,11 @@ import time
 IPNS_HASH = "k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004"
 
 # GATEWAYS
+# He movido ipfs.io arriba porque cf-ipfs estaba fallando en tus logs
 GATEWAYS = [
+    f"https://ipfs.io/ipns/{IPNS_HASH}/?tab=agenda",
     f"https://cf-ipfs.com/ipns/{IPNS_HASH}/?tab=agenda",
     f"https://{IPNS_HASH}.ipns.cf-ipfs.com/?tab=agenda",
-    f"https://ipfs.io/ipns/{IPNS_HASH}/?tab=agenda",
     f"https://{IPNS_HASH}.ipns.dweb.link/?tab=agenda",
     f"https://{IPNS_HASH}.ipns.w3s.link/?tab=agenda",
     f"https://gateway.ipfs.io/ipns/{IPNS_HASH}/?tab=agenda"
@@ -77,11 +78,9 @@ def get_html_content():
     return None
 
 def load_blacklist():
-    """Carga los IDs de la lista negra desde un CSV (columna ace_id)."""
     blacklist = set()
     if not os.path.exists(FILE_BLACKLIST):
         return blacklist
-    
     try:
         with open(FILE_BLACKLIST, 'r', encoding='utf-8', errors='ignore') as f:
             reader = csv.DictReader(f)
@@ -91,11 +90,9 @@ def load_blacklist():
                     clean_id = ace_id.strip()
                     if clean_id and not clean_id.startswith("#"):
                         blacklist.add(clean_id)
-                        
         print(f"[DEBUG] Lista negra cargada: {len(blacklist)} IDs ignorados.")
     except Exception as e:
         print(f"[ERROR] Leyendo lista negra: {e}")
-        
     return blacklist
 
 def load_dial_mapping():
@@ -103,7 +100,6 @@ def load_dial_mapping():
     if not os.path.exists(FILE_CSV):
         print(f"[ERROR] No existe {FILE_CSV}")
         return mapping
-    
     try:
         with open(FILE_CSV, mode='r', encoding='utf-8', errors='ignore') as f:
             reader = csv.DictReader(f)
@@ -122,42 +118,40 @@ def load_acestreams():
     if not os.path.exists(FILE_M3U_SOURCE):
         print(f"[ERROR] No existe {FILE_M3U_SOURCE}")
         return streams
-
     try:
         with open(FILE_M3U_SOURCE, 'r', encoding='utf-8', errors='ignore') as f:
             content = f.read()
-        
         pattern = re.compile(r'tvg-id="([^"]+)".*?\n(http://127\.0\.0\.1:6878/ace/getstream\?id=([a-fA-F0-9]+))', re.DOTALL)
         matches = pattern.findall(content)
-        
         for tvg_id, full_url, ace_id in matches:
             if tvg_id not in streams:
                 streams[tvg_id] = []
             streams[tvg_id].append(ace_id)
-            
         print(f"[DEBUG] M3U Source cargado: {len(streams)} canales.")
     except Exception as e:
         print(f"[ERROR] Fallo M3U: {e}")
     return streams
 
 def parse_agenda(html, dial_map, stream_map, blacklist):
-    print("[DEBUG] Analizando HTML con fallback inteligente...")
+    print("[DEBUG] Analizando HTML con búsqueda flexible...")
     soup = BeautifulSoup(html, 'html.parser')
-    agenda_tab = soup.find('div', id='agendaTab')
     
-    if not agenda_tab:
-        print("[ERROR] No se encontró la sección 'agendaTab'.")
-        print(f"[DEBUG DUMP] Inicio del HTML recibido: {html[:500]}")
+    # --- CAMBIO IMPORTANTE: NO BUSCAMOS id='agendaTab' ---
+    # Buscamos directamente las clases que contienen los días, estén donde estén.
+    days = soup.find_all('div', class_='events-day')
+    
+    if not days:
+        print("[ERROR CRÍTICO] No se han encontrado bloques 'events-day' en el HTML.")
+        # Dump parcial para depurar si falla
+        print(f"[DEBUG DUMP HEAD] {html[:1000]}") 
         return []
 
-    entries = []
-    days = agenda_tab.find_all('div', class_='events-day')
     print(f"[DEBUG] Días encontrados: {len(days)}")
     
+    entries = []
     event_count = 0
     skipped_count = 0
     
-    # Lista de días en español para evitar problemas de locale en GitHub Actions
     dias_semana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
     
     for day_div in days:
@@ -166,11 +160,8 @@ def parse_agenda(html, dial_map, stream_map, blacklist):
         
         try:
             dt_obj = datetime.datetime.strptime(date_str_iso, "%Y-%m-%d")
-            
-            # --- NUEVA LÓGICA DE FECHA: DD-MM (Día) ---
             dia_nombre = dias_semana[dt_obj.weekday()]
             date_formatted = f"{dt_obj.strftime('%d-%m')} ({dia_nombre})"
-            
         except ValueError:
             continue
 
@@ -185,7 +176,7 @@ def parse_agenda(html, dial_map, stream_map, blacklist):
                 if comp_span:
                     competition = comp_span.get_text(strip=True)
 
-            # --- FALLBACK (PLAN B) ---
+            # --- FALLBACK ---
             tds = row.find_all('td')
             if len(tds) >= 3:
                 if not event_name or event_name.strip() == "" or event_name.endswith("--"):
@@ -196,15 +187,14 @@ def parse_agenda(html, dial_map, stream_map, blacklist):
 
                 if not competition:
                     competition = tds[1].get_text(strip=True)
-            # -------------------------
+            # ----------------
 
             channels = row.find_all('span', class_='channel-link')
             processed_ace_ids = set() 
 
             for ch in channels:
                 ch_text = ch.get_text()
-                
-                # Regex opcional M: (M55) o (55)
+                # Regex (M55) o (55)
                 match_m = re.search(r'\((?:M)?(\d+).*?\)', ch_text)
                 
                 if match_m:
@@ -214,7 +204,6 @@ def parse_agenda(html, dial_map, stream_map, blacklist):
                     if tvg_id:
                         ace_ids = stream_map.get(tvg_id, [])
                         for ace_id in ace_ids:
-                            # Filtro Lista Negra
                             if ace_id in blacklist:
                                 skipped_count += 1
                                 continue
@@ -225,10 +214,7 @@ def parse_agenda(html, dial_map, stream_map, blacklist):
                             event_count += 1
                             
                             ace_prefix = ace_id[:3]
-                            # Nombre final con tvg-id al final
                             final_name = f"{event_name} ({ace_prefix}) ({tvg_id})"
-                            
-                            # Group title con la fecha y día
                             group_title = f"{date_formatted} {competition}".strip()
                             
                             entry = f'#EXTINF:-1 group-title="{group_title}" tvg-name="{final_name}",{final_name}\n'
@@ -292,6 +278,12 @@ def main():
     blacklist = load_blacklist()
     
     entries = parse_agenda(html, dial_map, stream_map, blacklist)
+    
+    # --- PROTECCIÓN ANTI-BORRADO ---
+    if not entries:
+        print("[ALERTA] No se han encontrado eventos válidos tras el parseo.")
+        print("[PROTECCIÓN] Se cancela la actualización para no sobrescribir la lista con un archivo vacío.")
+        sys.exit(1) # Salimos con error para que Github Actions avise y no haga commit
     
     full_content = HEADER_M3U + "\n".join(entries)
     manage_history(full_content)
