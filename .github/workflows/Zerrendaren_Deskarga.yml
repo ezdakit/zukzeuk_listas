@@ -174,7 +174,6 @@ jobs:
                   # Intentamos buscar por nombre en la lista de New Era
                   if ori_name in new_era_names:
                       final_tvgid = new_era_names[ori_name]
-                      # print(f"Reparado {ori_name}: Unknown -> {final_tvgid}")
 
               merged[ace] = (final_tvgid, ace, url, src, grp, ori_name)
 
@@ -183,13 +182,22 @@ jobs:
           for tvgid, ace, url, src, grp, ori_name in merged.values():
               prefix = ace[:3]
               
+              # --- NUEVA LÓGICA DE CALIDAD ---
+              u_name = ori_name.upper()
+              if "4K" in u_name or "UHD" in u_name:
+                  quality_suffix = " (UHD)"
+              elif "1080" in u_name or "FHD" in u_name:
+                  quality_suffix = " (FHD)"
+              else:
+                  quality_suffix = " (HD)"
+
               # Generar nombre base
               if tvgid == "Unknown":
-                  base_name = f"{ori_name} ({src}-{prefix})"
+                  base_name = f"{ori_name} ({src}-{prefix}){quality_suffix}"
               else:
-                  # Quitamos " HD" si existe para limpiar el nombre
+                  # Quitamos " HD" si existe para limpiar el nombre y evitar duplicar el (HD)
                   norm = tvgid[:-3] if tvgid.endswith(" HD") else tvgid
-                  base_name = f"{norm} ({src}-{prefix})"
+                  base_name = f"{norm} ({src}-{prefix}){quality_suffix}"
               
               # --- LÓGICA DE LISTA NEGRA ---
               final_group = grp
