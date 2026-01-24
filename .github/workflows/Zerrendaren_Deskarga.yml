@@ -191,13 +191,16 @@ jobs:
               else:
                   quality_suffix = " (HD)"
 
-              # Generar nombre base
+              # Generar nombre base CON EL CAMBIO DE ORDEN
+              # Antes: {norm} ({src}-{prefix}){quality_suffix}
+              # Ahora: {norm}{quality_suffix} ({src}-{prefix})
+              
               if tvgid == "Unknown":
-                  base_name = f"{ori_name} ({src}-{prefix}){quality_suffix}"
+                  base_name = f"{ori_name}{quality_suffix} ({src}-{prefix})"
               else:
-                  # Quitamos " HD" si existe para limpiar el nombre y evitar duplicar el (HD)
+                  # Quitamos " HD" si existe para limpiar el nombre
                   norm = tvgid[:-3] if tvgid.endswith(" HD") else tvgid
-                  base_name = f"{norm} ({src}-{prefix}){quality_suffix}"
+                  base_name = f"{norm}{quality_suffix} ({src}-{prefix})"
               
               # --- LÓGICA DE LISTA NEGRA ---
               final_group = grp
