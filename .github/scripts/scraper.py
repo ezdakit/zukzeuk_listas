@@ -12,7 +12,6 @@ import time
 IPNS_HASH = "k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004"
 
 # GATEWAYS
-# He movido ipfs.io arriba porque cf-ipfs estaba fallando en tus logs
 GATEWAYS = [
     f"https://ipfs.io/ipns/{IPNS_HASH}/?tab=agenda",
     f"https://cf-ipfs.com/ipns/{IPNS_HASH}/?tab=agenda",
@@ -114,6 +113,10 @@ def load_dial_mapping():
     return mapping
 
 def load_acestreams():
+    """
+    Carga ezdakit.m3u y extrae ID y Calidad del nombre.
+    Devuelve dict: {tvg_id: [{'id': ace_id, 'quality': ' (HD)'}, ...]}
+    """
     streams = {}
     if not os.path.exists(FILE_M3U_SOURCE):
         print(f"[ERROR] No existe {FILE_M3U_SOURCE}")
@@ -121,13 +124,28 @@ def load_acestreams():
     try:
         with open(FILE_M3U_SOURCE, 'r', encoding='utf-8', errors='ignore') as f:
             content = f.read()
-        pattern = re.compile(r'tvg-id="([^"]+)".*?\n(http://127\.0\.0\.1:6878/ace/getstream\?id=([a-fA-F0-9]+))', re.DOTALL)
+        
+        # Regex para capturar tvg-id, nombre del canal y ace_id
+        pattern = re.compile(r'tvg-id="([^"]+)".*?,([^\n]*)\n(http://127\.0\.0\.1:6878/ace/getstream\?id=([a-fA-F0-9]+))', re.DOTALL)
+        
         matches = pattern.findall(content)
-        for tvg_id, full_url, ace_id in matches:
+        for tvg_id, channel_name, full_url, ace_id in matches:
             if tvg_id not in streams:
                 streams[tvg_id] = []
-            streams[tvg_id].append(ace_id)
-        print(f"[DEBUG] M3U Source cargado: {len(streams)} canales.")
+            
+            # Detectar calidad basada en el nombre en ezdakit.m3u
+            # Nota: Incluimos el espacio inicial en la calidad para facilitar el formateo luego
+            quality = " (HD)"
+            if "(UHD)" in channel_name:
+                quality = " (UHD)"
+            elif "(FHD)" in channel_name:
+                quality = " (FHD)"
+            elif "(HD)" in channel_name:
+                quality = " (HD)"
+            
+            streams[tvg_id].append({'id': ace_id, 'quality': quality})
+            
+        print(f"[DEBUG] M3U Source cargado: {len(streams)} canales con info de calidad.")
     except Exception as e:
         print(f"[ERROR] Fallo M3U: {e}")
     return streams
@@ -136,13 +154,9 @@ def parse_agenda(html, dial_map, stream_map, blacklist):
     print("[DEBUG] Analizando HTML con búsqueda flexible...")
     soup = BeautifulSoup(html, 'html.parser')
     
-    # --- CAMBIO IMPORTANTE: NO BUSCAMOS id='agendaTab' ---
-    # Buscamos directamente las clases que contienen los días, estén donde estén.
     days = soup.find_all('div', class_='events-day')
-    
     if not days:
         print("[ERROR CRÍTICO] No se han encontrado bloques 'events-day' en el HTML.")
-        # Dump parcial para depurar si falla
         print(f"[DEBUG DUMP HEAD] {html[:1000]}") 
         return []
 
@@ -194,7 +208,6 @@ def parse_agenda(html, dial_map, stream_map, blacklist):
 
             for ch in channels:
                 ch_text = ch.get_text()
-                # Regex (M55) o (55)
                 match_m = re.search(r'\((?:M)?(\d+).*?\)', ch_text)
                 
                 if match_m:
@@ -202,8 +215,12 @@ def parse_agenda(html, dial_map, stream_map, blacklist):
                     tvg_id = dial_map.get(dial)
                     
                     if tvg_id:
-                        ace_ids = stream_map.get(tvg_id, [])
-                        for ace_id in ace_ids:
+                        stream_list = stream_map.get(tvg_id, [])
+                        
+                        for stream_obj in stream_list:
+                            ace_id = stream_obj['id']
+                            quality = stream_obj['quality']
+                            
                             if ace_id in blacklist:
                                 skipped_count += 1
                                 continue
@@ -214,7 +231,12 @@ def parse_agenda(html, dial_map, stream_map, blacklist):
                             event_count += 1
                             
                             ace_prefix = ace_id[:3]
-                            final_name = f"{event_name} ({ace_prefix}) ({tvg_id})"
+                            
+                            # --- NOMBRE FINAL REORDENADO ---
+                            # Antes: Evento (prefijo) (tvgid) (calidad)
+                            # Ahora: Evento (tvgid) (calidad) (prefijo)
+                            final_name = f"{event_name} ({tvg_id}){quality} ({ace_prefix})"
+                            
                             group_title = f"{date_formatted} {competition}".strip()
                             
                             entry = f'#EXTINF:-1 group-title="{group_title}" tvg-name="{final_name}",{final_name}\n'
@@ -279,11 +301,10 @@ def main():
     
     entries = parse_agenda(html, dial_map, stream_map, blacklist)
     
-    # --- PROTECCIÓN ANTI-BORRADO ---
     if not entries:
         print("[ALERTA] No se han encontrado eventos válidos tras el parseo.")
         print("[PROTECCIÓN] Se cancela la actualización para no sobrescribir la lista con un archivo vacío.")
-        sys.exit(1) # Salimos con error para que Github Actions avise y no haga commit
+        sys.exit(1)
     
     full_content = HEADER_M3U + "\n".join(entries)
     manage_history(full_content)
