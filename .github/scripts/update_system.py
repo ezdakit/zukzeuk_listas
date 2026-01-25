@@ -90,7 +90,6 @@ def read_file_safe(path_obj):
     raw = path_obj.read_bytes()
     try:
         content = raw.decode('utf-8')
-        # Check simple para detectar malformaciones UTF-8 comunes
         if "Ã" in content and "Ã±" not in content: raise ValueError()
         return content
     except:
@@ -99,20 +98,18 @@ def read_file_safe(path_obj):
 def download_file(urls, output_filename):
     """Descarga con rotación de URLs y validación básica"""
     print(f"   -> Descargando {output_filename}...")
-    scraper = cloudscraper.create_scraper() # Usamos cloudscraper para saltar protecciones de gateways
+    scraper = cloudscraper.create_scraper()
     scraper.headers.update({"User-Agent": "Mozilla/5.0"})
     
     for url in urls:
         try:
             r = scraper.get(url, timeout=30)
             if r.status_code == 200:
-                # Validación simple: debe parecer un M3U o HTML
                 if "#EXTM3U" in r.text[:200] or "<html" in r.text.lower() or "<!doctype" in r.text.lower():
                     Path(output_filename).write_text(r.text, encoding='utf-8')
                     print(f"      ✅ [OK] Fuente: {url[:60]}...")
                     return True
         except Exception as e:
-            # print(f"      ⚠️ Debug: {e}") # Descomentar para debug detallado
             pass
     print(f"      ❌ [ERROR] No se pudo descargar {output_filename}")
     return False
@@ -122,25 +119,22 @@ def clean_channel_name(name, ace_id_suffix):
     if not name: return ""
     name = re.sub(r'-->.*', '', name)
     
-    # Lista de términos a eliminar
     terms = [
         r'1080p', r'720p', r'FHD', r'UHD', r'4K', r'8K', 
         r'HD', r'SD',
         r'50fps', r'HEVC', r'AAC', r'H\.265',
         r'\(ES\)', r'\(SP\)', r'\(RU\)', r'\(M\d+\)', r'\(O\d+\)', 
         r'\(BACKUP\)', r'\|', r'vip', r'premium', r'\( original \)',
-        r'\bBAR\b' # Regla crítica: eliminar BAR palabra completa
+        r'\bBAR\b'
     ]
     for term in terms:
         name = re.sub(term, '', name, flags=re.IGNORECASE)
     
     name = name.replace('  ', ' ').strip().rstrip(' -_')
     
-    # Eliminar ID al final si coincide con el del canal
     if ace_id_suffix and name.endswith(ace_id_suffix):
         name = name[:-4].strip()
     
-    # Eliminar hash hexadecimal genérico al final
     name = re.sub(r'\s+[0-9a-fA-F]{4}$', '', name)
     
     return name
@@ -213,7 +207,6 @@ def parse_m3u(file_path, source_tag):
         if line.startswith("#EXTINF"):
             inf = line
             url = None
-            # Buscar URL en líneas siguientes
             for k in range(i+1, min(i+5, len(lines))):
                 candidate = lines[k].strip()
                 if candidate and not candidate.startswith("#"):
@@ -221,7 +214,6 @@ def parse_m3u(file_path, source_tag):
                     break
             
             if url:
-                # Extraer ID Acestream
                 m = re.search(r"(?:acestream://|id=|/)([0-9a-fA-F]{40})", url)
                 if m:
                     aid = m.group(1)
@@ -242,7 +234,6 @@ def parse_m3u(file_path, source_tag):
 def build_master_channel_list(blacklist):
     print(f"[3] Procesando y fusionando listas M3U...")
     
-    # Descargar ambas listas
     d1 = download_file(URLS_ELCANO, FILE_ELCANO)
     d2 = download_file(URLS_NEW_ERA, FILE_NEW_ERA)
 
@@ -256,7 +247,6 @@ def build_master_channel_list(blacklist):
     all_ids = set(elcano.keys()) | set(newera.keys())
     master_db = []
     
-    # Mapa auxiliar para rescatar TVG-IDs de NewEra si Elcano no tiene
     new_era_names_map = {v['name']: v['tvg'] for v in newera.values() if v['tvg'] != "Unknown"}
 
     for aid in all_ids:
@@ -271,33 +261,26 @@ def build_master_channel_list(blacklist):
         group_e = e_data.get('group', '')
         tvg_e = e_data.get('tvg', '')
         
-        # Lógica de Fallback de TVG-ID
         if not tvg_e or tvg_e == "Unknown":
             if name_e in new_era_names_map:
                 tvg_e = new_era_names_map[name_e]
 
-        # Limpieza de Nombre
         raw_name_for_clean = name_ne if name_ne else name_e
         nombre_supuesto = clean_channel_name(raw_name_for_clean, aid[-4:])
         if not nombre_supuesto: nombre_supuesto = "Desconocido"
         
-        # Calidad
         quality_tag = determine_quality((name_ne + " " + name_e))
         clean_quality = quality_tag.strip().replace("(", "").replace(")", "")
         
-        # Fuente final y URL
         final_source = "N" if aid in newera else "E"
         final_url = n_data.get('url') if aid in newera else e_data.get('url')
         
-        # Grupo final
         final_group = group_ne if group_ne else group_e
         if not final_group: final_group = "OTROS"
         
-        # TVG final
         final_tvg = tvg_ne if (tvg_ne and tvg_ne != "Unknown") else tvg_e
         if not final_tvg: final_tvg = "Unknown"
 
-        # Blacklist
         in_bl = "yes" if aid in blacklist else "no"
         bl_real_name = blacklist.get(aid, "")
 
@@ -320,7 +303,6 @@ def build_master_channel_list(blacklist):
             'blacklist_real_name': bl_real_name
         })
     
-    # ORDENACIÓN: Grupo -> Nombre
     master_db.sort(key=lambda x: (x['grupo_ne'] or "ZZZ", x['nombre_supuesto']))
     
     print(f"    -> Procesados {len(master_db)} canales únicos.")
@@ -382,7 +364,6 @@ def generate_ezdakit_m3u(db):
 def scrape_and_match(dial_map, master_db):
     print(f"[6] Scraping de Agenda IPFS ({IPNS_HASH_NEW_ERA})...")
     
-    # Indexar master_db por TVG-ID para búsqueda rápida
     tvg_index = {}
     for item in master_db:
         if item['final_tvg'] and item['final_tvg'] != "Unknown":
@@ -392,7 +373,6 @@ def scrape_and_match(dial_map, master_db):
     scraper = cloudscraper.create_scraper()
     html = None
     
-    # Intentar descargar Agenda desde IPFS
     for url in URLS_AGENDA:
         try:
             print(f"    Probando {url[:40]}...")
@@ -408,19 +388,17 @@ def scrape_and_match(dial_map, master_db):
         print("    ⚠️ [ALERTA] No se pudo descargar la agenda. Saltando eventos.")
         return []
 
-    # Guardar HTML debug en testing
     if TEST_MODE:
         Path(get_path("debug_agenda.html")).write_text(html, encoding='utf-8')
 
     soup = BeautifulSoup(html, 'html.parser')
-    # Selector específico de tu agenda: class_='events-day'
     days = soup.find_all('div', class_='events-day')
     
     events_list = []
     dias_semana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
 
     for day_div in days:
-        date_iso = day_div.get('data-date') # Format: YYYY-MM-DD
+        date_iso = day_div.get('data-date')
         if not date_iso: continue
         
         try:
@@ -439,30 +417,25 @@ def scrape_and_match(dial_map, master_db):
             hora_evento = "00:00"
             if len(tds) >= 3:
                 hora_evento = tds[0].get_text(strip=True)
-                # Si el data-event-id está vacío, usar texto de equipos
                 if not event_raw or event_raw.endswith("--"):
                     event_raw = tds[2].get_text(strip=True)
                 if not competition:
                     competition = tds[1].get_text(strip=True)
             
-            # Buscar canales en los spans con clase channel-link
             channels = row.find_all('span', class_='channel-link')
             processed_ace_ids = set()
             
             for ch in channels:
                 txt = ch.get_text()
-                # Regex para capturar Dial formato (M54) o (54)
                 match = re.search(r'\((?:M)?(\d+).*?\)', txt)
                 if match:
                     dial = match.group(1)
                     
-                    # Cruzar con mapeo CSV local
                     map_info = dial_map.get(dial)
                     if map_info:
                         tvgid = map_info['tvg']
                         nombre_canal_csv = map_info['name'] 
                         
-                        # Buscar streams disponibles para este TVG-ID
                         available_streams = tvg_index.get(tvgid, [])
                         
                         for stream in available_streams:
@@ -477,7 +450,7 @@ def scrape_and_match(dial_map, master_db):
                                 'fecha': fecha_csv,
                                 'hora': hora_evento,
                                 'evento': event_raw,
-                                'competicion': competition,
+                                'competición': competition, # FIX: AÑADIDA TILDE PARA COINCIDIR CON CSV
                                 'nombre_canal': nombre_canal_csv, 
                                 'calidad': stream['calidad_clean'],
                                 'lista_negra': stream['in_blacklist'],
@@ -492,17 +465,16 @@ def scrape_and_match(dial_map, master_db):
 def generate_eventos_files(events_list):
     print(f"[7] Generando ficheros de eventos...")
     
-    # ORDEN: Fecha -> Hora -> Competición -> Evento
-    events_list.sort(key=lambda x: (x['fecha'], x['hora'], x['competicion'], x['evento']))
+    events_list.sort(key=lambda x: (x['fecha'], x['hora'], x['competición'], x['evento']))
     
     # CSV Eventos
     with open(FILE_EVENTOS_CSV, 'w', newline='', encoding='utf-8-sig') as f:
         fields = ['acestream_id', 'dial_M', 'tvg_id', 'fecha', 'hora', 'evento', 
-                  'competición', 'nombre_canal', 'calidad', 'lista_negra']
+                  'competición', 'nombre_canal', 'calidad', 'lista_negra'] # Cabecera con tilde
         w = csv.DictWriter(f, fieldnames=fields)
         w.writeheader()
         for ev in events_list:
-            w.writerow({k: ev.get(k, '') for k in fields})
+            w.writerow({k: ev.get(k, '') for k in fields}) # Ahora encontrará 'competición'
     
     # M3U Eventos
     m3u_entries = []
@@ -514,7 +486,7 @@ def generate_eventos_files(events_list):
              full_event_name = f"{ev['hora']}-{full_event_name}"
         
         final_name = f"{full_event_name} ({ev['nombre_canal']}){ev['calidad_tag']} ({ev['ace_prefix']})"
-        group_title = f"{ev['dia_str_m3u']} {ev['competicion']}".strip()
+        group_title = f"{ev['dia_str_m3u']} {ev['competición']}".strip() # FIX: Usar clave con tilde
         
         entry = f'#EXTINF:-1 group-title="{group_title}" tvg-name="{final_name}",{final_name}\nhttp://127.0.0.1:6878/ace/getstream?id={ev["acestream_id"]}'
         m3u_entries.append(entry)
