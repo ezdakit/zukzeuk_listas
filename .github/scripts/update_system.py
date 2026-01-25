@@ -38,12 +38,10 @@ FILE_ELCANO = get_path("elcano.m3u")
 FILE_NEW_ERA = get_path("new_era.m3u")
 FILE_EZDAKIT = get_path("ezdakit.m3u")
 FILE_CORRESPONDENCIAS = get_path(f"{DIR_CANALES}/correspondencias.csv")
-FILE_EVENTOS_CSV = get_path("eventos_canales.csv")     # NUEVO
+FILE_EVENTOS_CSV = get_path("eventos_canales.csv")     
 FILE_EVENTOS_M3U = get_path("ezdakit_eventos.m3u")
 
-# Ficheros de ENTRADA ESTÁTICOS (Normalmente no llevan sufijo, salvo que crees uno específico para test)
-# Si quieres usar una lista negra específica para testing, descomenta la lógica del sufijo, 
-# pero por defecto usaremos la original para validar datos reales.
+# Ficheros de ENTRADA ESTÁTICOS
 FILE_BLACKLIST = get_path(f"{DIR_CANALES}/lista_negra.csv") 
 FILE_DIAL_MAP = f"{DIR_CANALES}/listado_canales.csv" 
 
@@ -107,13 +105,16 @@ def clean_channel_name(name, ace_id_suffix):
     """Lógica de limpieza para generar el nombre_supuesto"""
     if not name: return ""
     name = re.sub(r'-->.*', '', name)
+    
     # Orden crítico: Primero los largos que contienen a los cortos
     terms = [
         r'1080p', r'720p', r'FHD', r'UHD', r'4K', r'8K', 
         r'HD', r'SD',
         r'50fps', r'HEVC', r'AAC', r'H\.265',
         r'\(ES\)', r'\(SP\)', r'\(RU\)', r'\(M\d+\)', r'\(O\d+\)', 
-        r'\(BACKUP\)', r'\|', r'vip', r'premium', r'\( original \)'
+        r'\(BACKUP\)', r'\|', r'vip', r'premium', r'\( original \)',
+        # Nueva regla para eliminar BAR (palabra completa)
+        r'\bBAR\b'
     ]
     for term in terms:
         name = re.sub(term, '', name, flags=re.IGNORECASE)
@@ -164,9 +165,13 @@ def load_dial_mapping():
     content = read_file_safe(path)
     reader = csv.DictReader(io.StringIO(content))
     for row in reader:
+        # Extraemos Dial y TVG
         dial = row.get('Dial_Movistar(M)', '').strip()
         tvg = row.get('TV_guide_id', '').strip()
-        name = row.get('Nombre Canal', '').strip() # Asumimos que esta columna existe o similar
+        
+        # Extraemos el NOMBRE DEL CANAL para los eventos
+        # Buscamos la columna "Canal" específicamente
+        name = row.get('Canal', '').strip()
         
         if dial and tvg:
             mapping[dial] = {'tvg': tvg, 'name': name}
@@ -226,15 +231,12 @@ def build_master_channel_list(blacklist):
     all_ids = set(elcano.keys()) | set(newera.keys())
     master_db = []
     
-    # Para reparación de Elcano
     new_era_names_map = {v['name']: v['tvg'] for v in newera.values() if v['tvg'] != "Unknown"}
 
     for aid in all_ids:
-        # Extraer datos de ambas listas si existen
         e_data = elcano.get(aid, {})
         n_data = newera.get(aid, {})
         
-        # Determinar datos base (Prioridad New Era para nombres originales y grupos)
         name_ne = n_data.get('name', '')
         group_ne = n_data.get('group', '')
         tvg_ne = n_data.get('tvg', '')
@@ -243,32 +245,26 @@ def build_master_channel_list(blacklist):
         group_e = e_data.get('group', '')
         tvg_e = e_data.get('tvg', '')
         
-        # Reparación de TVG-ID para Elcano si falta
         if not tvg_e or tvg_e == "Unknown":
             if name_e in new_era_names_map:
                 tvg_e = new_era_names_map[name_e]
 
-        # Datos calculados
-        # Nombre base para limpieza: Preferimos New Era, si no Elcano
+        # Nombre base para limpieza
         raw_name_for_clean = name_ne if name_ne else name_e
         
-        # Limpieza
+        # Limpieza (Incluye limpieza de BAR)
         nombre_supuesto = clean_channel_name(raw_name_for_clean, aid[-4:])
         if not nombre_supuesto: nombre_supuesto = "Desconocido"
         
-        # Calidad
         quality_tag = determine_quality((name_ne + " " + name_e))
-        clean_quality = quality_tag.strip().replace("(", "").replace(")", "") # Para CSV
+        clean_quality = quality_tag.strip().replace("(", "").replace(")", "")
         
-        # Fuente y URL (Prioridad New Era)
         final_source = "N" if aid in newera else "E"
         final_url = n_data.get('url') if aid in newera else e_data.get('url')
         
-        # Grupo final (Requisito: Usar grupo_ne siempre que sea posible)
         final_group = group_ne if group_ne else group_e
         if not final_group: final_group = "OTROS"
         
-        # TVG Final (Para eventos, necesitamos un TVG fiable)
         final_tvg = tvg_ne if (tvg_ne and tvg_ne != "Unknown") else tvg_e
         if not final_tvg: final_tvg = "Unknown"
 
@@ -281,8 +277,8 @@ def build_master_channel_list(blacklist):
             'grupo_e': group_e,
             'grupo_ne': group_ne,
             'nombre_supuesto': nombre_supuesto,
-            'calidad_tag': quality_tag,     # " (HD)"
-            'calidad_clean': clean_quality, # "HD"
+            'calidad_tag': quality_tag,     
+            'calidad_clean': clean_quality, 
             'source': final_source,
             'url': final_url,
             'final_group': final_group,
@@ -326,21 +322,20 @@ def generate_correspondencias(db):
 
 def generate_ezdakit_m3u(db):
     print(f"[5] Generando {FILE_EZDAKIT}...")
-    # Orden alfabético por nombre supuesto para la lista M3U
     db_sorted = sorted(db, key=lambda x: x['nombre_supuesto'])
     
     entries = []
     for item in db_sorted:
-        # Formato nombre: NombreSupuesto (Calidad) (Fuente-Prefix)
         prefix = item['ace_id'][:3]
+        # Ezdakit usa Nombre Supuesto y Grupo NE
         display_name = f"{item['nombre_supuesto']}{item['calidad_tag']} ({item['source']}-{prefix})"
+        grp = item['grupo_ne'] if item['grupo_ne'] else "OTROS"
         
-        # Gestión lista negra visual
-        grp = item['final_group']
         if item['in_blacklist'] == "yes":
             grp = "ZZ_Canales_KO"
             display_name += " >>> BLACKLIST"
 
+        # IMPORTANTE: Aquí usamos final_tvg para el tvg-id, pero el nombre visible es nombre_supuesto
         entry = f'#EXTINF:-1 tvg-id="{item["final_tvg"]}" tvg-name="{display_name}" group-title="{grp}",{display_name}\n{item["url"]}'
         entries.append(entry)
         
@@ -355,15 +350,13 @@ def generate_ezdakit_m3u(db):
 def scrape_and_match(dial_map, master_db):
     print(f"[6] Scraping de Agenda y cruce de datos...")
     
-    # Crear índice rápido para buscar streams por TVG-ID
-    # Key: TVG-ID, Value: Lista de canales compatibles (dicts de master_db)
+    # Índice rápido para buscar streams por TVG-ID
     tvg_index = {}
     for item in master_db:
         if item['final_tvg'] and item['final_tvg'] != "Unknown":
             if item['final_tvg'] not in tvg_index: tvg_index[item['final_tvg']] = []
             tvg_index[item['final_tvg']].append(item)
             
-    # Descarga HTML
     scraper = cloudscraper.create_scraper(browser={'browser': 'chrome', 'platform': 'windows', 'desktop': True})
     html = None
     for url in URLS_AGENDA:
@@ -387,7 +380,7 @@ def scrape_and_match(dial_map, master_db):
         print("    [ERROR] HTML sin eventos. Estructura web ha cambiado.")
         return []
 
-    events_list = [] # Lista de dicts para el CSV
+    events_list = []
     dias_semana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
 
     for day_div in days:
@@ -396,19 +389,16 @@ def scrape_and_match(dial_map, master_db):
         
         try:
             dt = datetime.datetime.strptime(date_iso, "%Y-%m-%d")
-            # Formato fecha para CSV (YYYY-MM-DD) y M3U (dd-mm Dia)
             fecha_csv = date_iso
             dia_m3u = f"{dt.strftime('%d-%m')} ({dias_semana[dt.weekday()]})"
         except: continue
 
         rows = day_div.find_all('tr', class_='event-row')
         for row in rows:
-            # Extracción datos evento
             event_raw = row.get('data-event-id')
             comp_div = row.find('div', class_='competition-info')
             competition = comp_div.get_text(strip=True) if comp_div else ""
             
-            # Fallback si no hay data attributes
             tds = row.find_all('td')
             hora_evento = "00:00"
             if len(tds) >= 3:
@@ -419,13 +409,11 @@ def scrape_and_match(dial_map, master_db):
                 if not competition:
                     competition = tds[1].get_text(strip=True)
             
-            # Procesar canales del evento
             channels = row.find_all('span', class_='channel-link')
             processed_ace_ids = set()
             
             for ch in channels:
                 txt = ch.get_text()
-                # Buscar dial entre paréntesis (M55) o (55)
                 match = re.search(r'\((?:M)?(\d+).*?\)', txt)
                 if match:
                     dial = match.group(1)
@@ -434,29 +422,28 @@ def scrape_and_match(dial_map, master_db):
                     map_info = dial_map.get(dial)
                     if map_info:
                         tvgid = map_info['tvg']
-                        nombre_canal_csv = map_info['name']
+                        nombre_canal_csv = map_info['name'] # Obtenido del campo 'Canal'
                         
-                        # Buscar streams disponibles para este TVG-ID
+                        # Buscar streams disponibles
                         available_streams = tvg_index.get(tvgid, [])
                         
                         for stream in available_streams:
                             aid = stream['ace_id']
-                            if aid in processed_ace_ids: continue # Evitar dupes por evento
+                            if aid in processed_ace_ids: continue
                             processed_ace_ids.add(aid)
                             
-                            # Añadir a la lista de eventos
                             events_list.append({
                                 'acestream_id': aid,
                                 'dial_M': dial,
                                 'tvg_id': tvgid,
-                                'fecha': fecha_csv,     # YYYY-MM-DD (bueno para ordenar)
+                                'fecha': fecha_csv,
                                 'hora': hora_evento,
                                 'evento': event_raw,
                                 'competicion': competition,
-                                'nombre_canal': nombre_canal_csv,
+                                'nombre_canal': nombre_canal_csv, # Dato crucial
                                 'calidad': stream['calidad_clean'],
                                 'lista_negra': stream['in_blacklist'],
-                                # Extras para generar M3U luego sin rebuscar
+                                # Extras para M3U
                                 'calidad_tag': stream['calidad_tag'],
                                 'dia_str_m3u': dia_m3u,
                                 'ace_prefix': aid[:3]
@@ -468,14 +455,11 @@ def scrape_and_match(dial_map, master_db):
 def generate_eventos_files(events_list):
     print(f"[7] Generando ficheros de eventos...")
     
-    # 7.1 Ordenar: fecha -> hora -> competicion -> evento
+    # 7.1 Ordenar
     events_list.sort(key=lambda x: (x['fecha'], x['hora'], x['competicion'], x['evento']))
     
-    # 7.2 Generar CSV (eventos_canales.csv)
-    Path(DIR_CANALES).mkdir(exist_ok=True) # Por si acaso se decide guardar ahí, aunque pediste raíz
-    # El usuario pidió el fichero "eventos_canales.csv". Lo guardamos en raíz o carpeta? 
-    # El get_path lo define. Asumimos raíz según la definición inicial.
-    
+    # 7.2 CSV
+    Path(DIR_CANALES).mkdir(exist_ok=True)
     with open(FILE_EVENTOS_CSV, 'w', newline='', encoding='utf-8-sig') as f:
         fields = ['acestream_id', 'dial_M', 'tvg_id', 'fecha', 'hora', 'evento', 
                   'competición', 'nombre_canal', 'calidad', 'lista_negra']
@@ -496,23 +480,18 @@ def generate_eventos_files(events_list):
             })
     print(f"    -> Generado CSV: {FILE_EVENTOS_CSV}")
     
-    # 7.3 Generar M3U (ezdakit_eventos.m3u)
+    # 7.3 M3U
     m3u_entries = []
     
     for ev in events_list:
-        # Filtrar Blacklist para el M3U
         if ev['lista_negra'] == "yes": continue
         
-        # Formato: 21:00-Madrid-Barca (M+ LaLiga) (UHD) (a4f)
-        # Nota: ev['evento'] ya suele venir como "Hora-Partido" si falló el ID, 
-        # pero si vino bien, hay que componerlo.
-        
-        # Construcción nombre evento
         full_event_name = ev['evento']
         if not re.match(r'\d{2}:\d{2}', full_event_name):
              full_event_name = f"{ev['hora']}-{full_event_name}"
-             
-        final_name = f"{full_event_name} ({ev['tvg_id']}){ev['calidad_tag']} ({ev['ace_prefix']})"
+        
+        # CAMBIO SOLICITADO: Usar (Nombre Canal) en lugar de (TVG-ID)
+        final_name = f"{full_event_name} ({ev['nombre_canal']}){ev['calidad_tag']} ({ev['ace_prefix']})"
         group_title = f"{ev['dia_str_m3u']} {ev['competicion']}".strip()
         
         entry = f'#EXTINF:-1 group-title="{group_title}" tvg-name="{final_name}",{final_name}\nhttp://127.0.0.1:6878/ace/getstream?id={ev["acestream_id"]}'
@@ -523,7 +502,7 @@ def generate_eventos_files(events_list):
         Path(FILE_EVENTOS_M3U).write_text(content, encoding='utf-8')
         print(f"    -> Generado M3U: {FILE_EVENTOS_M3U} con {len(m3u_entries)} entradas.")
     else:
-        print("    [ALERTA] No se generaron entradas M3U (¿todo en blacklist o sin agenda?).")
+        print("    [ALERTA] No se generaron entradas M3U.")
 
 
 # ============================================================================================
@@ -531,21 +510,15 @@ def generate_eventos_files(events_list):
 # ============================================================================================
 
 def main():
-    # 1. Preparar entorno
     Path(DIR_CANALES).mkdir(exist_ok=True)
-    
-    # 2. Cargar datos estáticos
     blacklist = load_blacklist()
     dial_map = load_dial_mapping()
     
-    # 3. Procesar Canales (Master DB)
     master_db = build_master_channel_list(blacklist)
     
-    # 4. Generar Ficheros de Canales
     generate_correspondencias(master_db)
     generate_ezdakit_m3u(master_db)
     
-    # 5. Generar Eventos
     events_list = scrape_and_match(dial_map, master_db)
     generate_eventos_files(events_list)
 
