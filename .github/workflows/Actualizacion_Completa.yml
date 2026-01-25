@@ -33,11 +33,12 @@ jobs:
 
       - name: Ejecutar Sistema de Actualización
         run: |
+          echo "Iniciando ejecución del script..."
           if [ "${{ github.event.inputs.testing_mode }}" == "true" ]; then
-            echo "Modo Manual detectado: TESTING activado"
+            echo "🛠️ MODO TESTING ACTIVADO"
             python .github/scripts/update_system.py --testing
           else
-            echo "Ejecución normal (Producción)"
+            echo "🚀 MODO PRODUCCIÓN"
             python .github/scripts/update_system.py
           fi
 
@@ -47,4 +48,11 @@ jobs:
           git config --global user.email "github-actions@github.com"
           
           git add .
-          git diff --staged --quiet || (git commit -m "Auto-Update [Mode: ${{ github.event.inputs.testing_mode == 'true' && 'TEST' || 'PROD' }}] $(date +'%Y-%m-%d %H:%M')" && git push)
+          
+          # Verificar si hay cambios antes de hacer commit para evitar errores vacíos
+          if git diff --staged --quiet; then
+            echo "No hay cambios para commitear."
+          else
+            git commit -m "Auto-Update [Mode: ${{ github.event.inputs.testing_mode == 'true' && 'TEST' || 'PROD' }}] $(date +'%Y-%m-%d %H:%M')"
+            git push
+          fi
