@@ -38,7 +38,7 @@ FILE_ELCANO = get_path("elcano.m3u")
 FILE_NEW_ERA = get_path("new_era.m3u")
 FILE_EZDAKIT = get_path("ezdakit.m3u")
 FILE_CORRESPONDENCIAS = get_path(f"{DIR_CANALES}/correspondencias.csv")
-FILE_EVENTOS_CSV = get_path("eventos_canales.csv")     
+FILE_EVENTOS_CSV = get_path(f"{DIR_CANALES}/eventos_canales.csv")  # <-- CORREGIDO: Ahora en carpeta canales
 FILE_EVENTOS_M3U = get_path("ezdakit_eventos.m3u")
 
 # Ficheros de ENTRADA ESTÁTICOS
@@ -168,9 +168,7 @@ def load_dial_mapping():
         # Extraemos Dial y TVG
         dial = row.get('Dial_Movistar(M)', '').strip()
         tvg = row.get('TV_guide_id', '').strip()
-        
         # Extraemos el NOMBRE DEL CANAL para los eventos
-        # Buscamos la columna "Canal" específicamente
         name = row.get('Canal', '').strip()
         
         if dial and tvg:
@@ -327,7 +325,6 @@ def generate_ezdakit_m3u(db):
     entries = []
     for item in db_sorted:
         prefix = item['ace_id'][:3]
-        # Ezdakit usa Nombre Supuesto y Grupo NE
         display_name = f"{item['nombre_supuesto']}{item['calidad_tag']} ({item['source']}-{prefix})"
         grp = item['grupo_ne'] if item['grupo_ne'] else "OTROS"
         
@@ -335,7 +332,6 @@ def generate_ezdakit_m3u(db):
             grp = "ZZ_Canales_KO"
             display_name += " >>> BLACKLIST"
 
-        # IMPORTANTE: Aquí usamos final_tvg para el tvg-id, pero el nombre visible es nombre_supuesto
         entry = f'#EXTINF:-1 tvg-id="{item["final_tvg"]}" tvg-name="{display_name}" group-title="{grp}",{display_name}\n{item["url"]}'
         entries.append(entry)
         
@@ -490,7 +486,7 @@ def generate_eventos_files(events_list):
         if not re.match(r'\d{2}:\d{2}', full_event_name):
              full_event_name = f"{ev['hora']}-{full_event_name}"
         
-        # CAMBIO SOLICITADO: Usar (Nombre Canal) en lugar de (TVG-ID)
+        # Nombre evento usando (Nombre Canal)
         final_name = f"{full_event_name} ({ev['nombre_canal']}){ev['calidad_tag']} ({ev['ace_prefix']})"
         group_title = f"{ev['dia_str_m3u']} {ev['competicion']}".strip()
         
