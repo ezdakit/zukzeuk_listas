@@ -2,7 +2,7 @@ name: Actualizacion_Completa
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "45 */2 * * *"
   workflow_dispatch:
     inputs:
       testing_mode:
