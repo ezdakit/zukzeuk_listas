@@ -243,10 +243,15 @@ def generate_csv(blacklist_map):
     rows = []
     
     for aid in all_ids:
+        # Datos Elcano
         ne = data_elcano.get(aid, {}).get('name', '')
         te = data_elcano.get(aid, {}).get('tvg', '')
+        ge = data_elcano.get(aid, {}).get('group', '')
+        
+        # Datos New Era
         nn = data_newera.get(aid, {}).get('name', '')
         tn = data_newera.get(aid, {}).get('tvg', '')
+        gn = data_newera.get(aid, {}).get('group', '')
         
         qual = determine_quality(ne + " " + nn).strip().replace("(", "").replace(")", "").strip()
         base = nn if nn else ne
@@ -260,6 +265,7 @@ def generate_csv(blacklist_map):
             'nombre_e': ne, 'nombre_ne': nn,
             'tvg-id_e': te, 'tvg-id_ne': tn,
             'nombre_supuesto': sup,
+            'grupo_e': ge, 'grupo_ne': gn,  # Nuevos campos
             'calidad': qual,
             'lista_negra': in_bl,
             'canal_real': real_ch
@@ -270,7 +276,8 @@ def generate_csv(blacklist_map):
     Path(DIR_CANALES).mkdir(exist_ok=True)
     with open(FILE_CSV_OUT, 'w', newline='', encoding='utf-8-sig') as f:
         fields = ['acestream_id', 'nombre_e', 'nombre_ne', 'tvg-id_e', 'tvg-id_ne', 
-                  'nombre_supuesto', 'calidad', 'lista_negra', 'canal_real']
+                  'nombre_supuesto', 'grupo_e', 'grupo_ne', 
+                  'calidad', 'lista_negra', 'canal_real']
         w = csv.DictWriter(f, fieldnames=fields)
         w.writeheader()
         w.writerows(rows)
@@ -323,9 +330,6 @@ def scrape_agenda(blacklist_map):
             print(f"Probando {url}...")
             r = scraper.get(url, timeout=60)
             if r.status_code == 200:
-                # --- CORRECCIÓN CRÍTICA DE CODIFICACIÓN ---
-                # Forzamos UTF-8 porque el servidor a veces no envía el header correcto
-                # y requests asume ISO-8859-1, rompiendo tildes y ñ (EspaÃ±a).
                 r.encoding = 'utf-8' 
                 html = r.text
                 break
