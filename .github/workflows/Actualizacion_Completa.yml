@@ -1,8 +1,8 @@
 name: Actualizacion_Completa
 
 on:
-  # schedule:
-  #   - cron: "0 * * * *"   # Descomentar para activar auto-ejecución
+  schedule:
+    - cron: "0 * * * *"
   workflow_dispatch:
     inputs:
       testing_mode:
