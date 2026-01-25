@@ -1,9 +1,9 @@
 name: Actualizar Agenda Deportiva
 
 on:
-  schedule:
+#  schedule:
     # Ejecutar cada hora al minuto 30
-    - cron: '30 * * * *'
+#    - cron: '30 * * * *'
   workflow_dispatch: # Permite ejecutar manualmente
 
 jobs:
