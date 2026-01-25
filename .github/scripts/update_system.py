@@ -41,9 +41,9 @@ FILE_CORRESPONDENCIAS = get_path(f"{DIR_CANALES}/correspondencias.csv")
 FILE_EVENTOS_CSV = get_path(f"{DIR_CANALES}/eventos_canales.csv")
 FILE_EVENTOS_M3U = get_path("ezdakit_eventos.m3u")
 
-# Ficheros de ENTRADA ESTÁTICOS
+# Ficheros de ENTRADA (Estricto: Si es testing busca _testing.csv)
 FILE_BLACKLIST = get_path(f"{DIR_CANALES}/lista_negra.csv") 
-FILE_DIAL_MAP = get_path(f"{DIR_CANALES}/listado_canales.csv") # Aplica sufijo si es testing
+FILE_DIAL_MAP = get_path(f"{DIR_CANALES}/listado_canales.csv")
 
 # URLs
 IPNS_HASH = "k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004"
@@ -132,7 +132,7 @@ def determine_quality(name):
     return " (HD)"
 
 # ============================================================================================
-# CARGA DE DATOS ESTÁTICOS
+# CARGA DE DATOS ESTÁTICOS (ESTRICTO)
 # ============================================================================================
 
 def load_blacklist():
@@ -140,14 +140,17 @@ def load_blacklist():
     bl = {}
     path = Path(FILE_BLACKLIST)
     if not path.exists():
-        print("    [AVISO] No existe fichero. Se continúa sin filtro.")
+        print(f"    [AVISO] No existe {FILE_BLACKLIST}. Se continúa sin filtro.")
         return bl
     
     content = read_file_safe(path)
     reader = csv.DictReader(io.StringIO(content))
     for row in reader:
         aid = row.get('ace_id', '').strip()
-        if aid: bl[aid] = "yes"
+        real = row.get('canal_real', '').strip()
+        if aid:
+            # Guardamos el nombre real si existe, sino string vacío
+            bl[aid] = real
     print(f"    -> {len(bl)} IDs en lista negra.")
     return bl
 
@@ -259,6 +262,10 @@ def build_master_channel_list(blacklist):
         final_tvg = tvg_ne if (tvg_ne and tvg_ne != "Unknown") else tvg_e
         if not final_tvg: final_tvg = "Unknown"
 
+        # Gestión Blacklist
+        in_bl = "yes" if aid in blacklist else "no"
+        bl_real_name = blacklist.get(aid, "") # Recuperamos el nombre real si existe
+
         master_db.append({
             'ace_id': aid,
             'nombre_e': name_e,
@@ -274,13 +281,11 @@ def build_master_channel_list(blacklist):
             'url': final_url,
             'final_group': final_group,
             'final_tvg': final_tvg,
-            'in_blacklist': "yes" if aid in blacklist else "no"
+            'in_blacklist': in_bl,
+            'blacklist_real_name': bl_real_name
         })
     
-    # --- ORDENACIÓN CENTRALIZADA ---
-    # Ordenamos la base de datos maestra aquí UNA VEZ.
-    # Criterio: Grupo New Era (alfabético) -> Nombre Supuesto (alfabético)
-    # Nota: (x['grupo_ne'] or "ZZZ") pone los canales sin grupo al final.
+    # ORDENACIÓN CENTRALIZADA
     master_db.sort(key=lambda x: (x['grupo_ne'] or "ZZZ", x['nombre_supuesto']))
     
     print(f"    -> Procesados y ordenados {len(master_db)} canales únicos.")
@@ -292,12 +297,12 @@ def build_master_channel_list(blacklist):
 
 def generate_correspondencias(db):
     print(f"[4] Generando {FILE_CORRESPONDENCIAS}...")
-    # NOTA: Usamos 'db' tal cual viene (ya ordenado en build_master_channel_list)
     
     Path(DIR_CANALES).mkdir(exist_ok=True)
     with open(FILE_CORRESPONDENCIAS, 'w', newline='', encoding='utf-8-sig') as f:
+        # Añadido canal_real al final
         fields = ['acestream_id', 'nombre_e', 'nombre_ne', 'tvg-id_e', 'tvg-id_ne', 
-                  'nombre_supuesto', 'grupo_e', 'grupo_ne', 'calidad', 'lista_negra']
+                  'nombre_supuesto', 'grupo_e', 'grupo_ne', 'calidad', 'lista_negra', 'canal_real']
         w = csv.DictWriter(f, fieldnames=fields)
         w.writeheader()
         
@@ -312,13 +317,13 @@ def generate_correspondencias(db):
                 'grupo_e': item['grupo_e'],
                 'grupo_ne': item['grupo_ne'],
                 'calidad': item['calidad_clean'],
-                'lista_negra': item['in_blacklist']
+                'lista_negra': item['in_blacklist'],
+                'canal_real': item['blacklist_real_name']
             })
     print("    -> Fichero generado correctamente.")
 
 def generate_ezdakit_m3u(db):
     print(f"[5] Generando {FILE_EZDAKIT}...")
-    # NOTA: Usamos 'db' tal cual viene, para respetar el MISMO ORDEN que el CSV.
     
     entries = []
     for item in db:
@@ -328,7 +333,10 @@ def generate_ezdakit_m3u(db):
         
         if item['in_blacklist'] == "yes":
             grp = "ZZ_Canales_KO"
-            display_name += " >>> BLACKLIST"
+            
+            # Si tenemos nombre real en la blacklist, lo usamos
+            suffix = item['blacklist_real_name'] if item['blacklist_real_name'] else "BLACKLIST"
+            display_name += f" >>> {suffix}"
 
         entry = f'#EXTINF:-1 tvg-id="{item["final_tvg"]}" tvg-name="{display_name}" group-title="{grp}",{display_name}\n{item["url"]}'
         entries.append(entry)
@@ -471,7 +479,7 @@ def generate_eventos_files(events_list):
     
     m3u_entries = []
     
-    # Generamos el M3U recorriendo la lista YA ORDENADA. El orden será idéntico al CSV.
+    # Generamos el M3U recorriendo la lista YA ORDENADA
     for ev in events_list:
         if ev['lista_negra'] == "yes": continue
         
