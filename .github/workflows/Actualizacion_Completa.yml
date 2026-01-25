@@ -1,0 +1,64 @@
+name: Actualizacion_Completa
+
+on:
+  # schedule:
+  #   - cron: "0 * * * *"   # Desactivado temporalmente (quita las # para reactivar)
+  workflow_dispatch:      # Ejecución manual con opción Testing
+    inputs:
+      testing_mode:
+        description: 'Activar Modo Testing (archivos _testing)'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  run-update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Instalar dependencias
+        run: |
+          # Instalamos las librerías directamente aquí sin usar requirements.txt
+          pip install requests beautifulsoup4 cloudscraper
+
+      - name: Ejecutar Sistema de Actualización
+        # Si testing_mode es true, pasamos --testing. Si no, ejecución normal.
+        run: |
+          if [ "${{ github.event.inputs.testing_mode }}" == "true" ]; then
+            echo "Modo Manual detectado: TESTING activado"
+            python .github/scripts/update_system.py --testing
+          else
+            echo "Ejecución normal (Producción)"
+            python .github/scripts/update_system.py
+          fi
+
+      - name: Guardar cambios y Histórico
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          
+          # Solo guardamos historial de las listas RAW en producción
+          if [ "${{ github.event.inputs.testing_mode }}" != "true" ]; then
+             mkdir -p history
+             [ -f elcano.m3u ] && cp elcano.m3u "history/elcano_$(date +%F_%H-%M).m3u"
+             [ -f new_era.m3u ] && cp new_era.m3u "history/new_era_$(date +%F_%H-%M).m3u"
+             [ -f ezdakit.m3u ] && cp ezdakit.m3u "history/ezdakit_$(date +%F_%H-%M).m3u"
+             # Limpieza historial (mantiene los últimos 150 archivos)
+             ls -1t history/*.m3u | tail -n +151 | xargs -r rm
+          fi
+          
+          # Commit y Push
+          git add .
+          # Si hay cambios, hace commit. El mensaje indica si fue TEST o PROD.
+          git diff --staged --quiet || (git commit -m "System Update [Mode: ${{ github.event.inputs.testing_mode == 'true' && 'TEST' || 'PROD' }}] $(date +'%Y-%m-%d %H:%M')" && git push)
