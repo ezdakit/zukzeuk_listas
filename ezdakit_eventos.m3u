@@ -1,421 +1,389 @@
-#EXTM3U url-tvg="https://github.com/davidmuma/EPG_dobleM/raw/refs/heads/master/EPG_dobleM.xml,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/EPG_dobleM.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz" refresh="3600"
+#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="25-01 (Domingo) Open Australia WTA" tvg-name="01:45-A. Sabalenka-V. Mboko (M+ Deportes 2 HD) (FHD) (73d)",01:45-A. Sabalenka-V. Mboko (M+ Deportes 2 HD) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="25-01 (Domingo) Open Australia WTA" tvg-name="01:45-A. Sabalenka-V. Mboko (M+ Deportes 2 HD) (HD) (bfa)",01:45-A. Sabalenka-V. Mboko (M+ Deportes 2 HD) (HD) (bfa)
+#EXTINF:-1 group-title="25-01 (Domingo) Open Australia WTA1/8 de final" tvg-name="01:45-A. Sabalenka-V. Mboko (MOVISTAR DEPORTES 2) (HD) (bfa)",01:45-A. Sabalenka-V. Mboko (MOVISTAR DEPORTES 2) (HD) (bfa)
 http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
-#EXTINF:-1 group-title="25-01 (Domingo) Open Australia WTA" tvg-name="01:45-A. Sabalenka-V. Mboko (M+ Deportes 2 HD) (HD) (f0e)",01:45-A. Sabalenka-V. Mboko (M+ Deportes 2 HD) (HD) (f0e)
-http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
-#EXTINF:-1 group-title="25-01 (Domingo) Open Australia WTA" tvg-name="01:45-A. Sabalenka-V. Mboko (M+ Deportes 2 HD) (HD) (890)",01:45-A. Sabalenka-V. Mboko (M+ Deportes 2 HD) (HD) (890)
-http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
-#EXTINF:-1 group-title="25-01 (Domingo) Open Australia WTA" tvg-name="01:45-A. Sabalenka-V. Mboko (M+ Deportes 2 HD) (HD) (3af)",01:45-A. Sabalenka-V. Mboko (M+ Deportes 2 HD) (HD) (3af)
+#EXTINF:-1 group-title="25-01 (Domingo) Open Australia WTA1/8 de final" tvg-name="01:45-A. Sabalenka-V. Mboko (MOVISTAR DEPORTES 2) (HD) (3af)",01:45-A. Sabalenka-V. Mboko (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="25-01 (Domingo) Open Australia WTA" tvg-name="03:35-Y. Putintseva-I. Jovic (M+ Deportes 4) (HD) (8b5)",03:35-Y. Putintseva-I. Jovic (M+ Deportes 4) (HD) (8b5)
+#EXTINF:-1 group-title="25-01 (Domingo) Open Australia WTA1/8 de final" tvg-name="01:45-A. Sabalenka-V. Mboko (MOVISTAR DEPORTES 2) (FHD) (73d)",01:45-A. Sabalenka-V. Mboko (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="25-01 (Domingo) Open Australia WTA1/8 de final" tvg-name="01:45-A. Sabalenka-V. Mboko (MOVISTAR DEPORTES 2) (FHD) (f0e)",01:45-A. Sabalenka-V. Mboko (MOVISTAR DEPORTES 2) (FHD) (f0e)
+http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
+#EXTINF:-1 group-title="25-01 (Domingo) Open Australia WTA1/8 de final" tvg-name="01:45-A. Sabalenka-V. Mboko (MOVISTAR DEPORTES 2) (FHD) (890)",01:45-A. Sabalenka-V. Mboko (MOVISTAR DEPORTES 2) (FHD) (890)
+http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
+#EXTINF:-1 group-title="25-01 (Domingo) Open Australia WTA1/8 de final" tvg-name="03:35-Y. Putintseva-I. Jovic (MOVISTAR DEPORTES 4) (HD) (8b5)",03:35-Y. Putintseva-I. Jovic (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
-#EXTINF:-1 group-title="25-01 (Domingo) Open Australia" tvg-name="03:45-C. Alcaraz-T. Paul (M+ Deportes 2 HD) (FHD) (73d)",03:45-C. Alcaraz-T. Paul (M+ Deportes 2 HD) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="25-01 (Domingo) Open Australia" tvg-name="03:45-C. Alcaraz-T. Paul (M+ Deportes 2 HD) (HD) (bfa)",03:45-C. Alcaraz-T. Paul (M+ Deportes 2 HD) (HD) (bfa)
+#EXTINF:-1 group-title="25-01 (Domingo) Open Australia1/8 de final" tvg-name="03:45-C. Alcaraz-T. Paul (MOVISTAR DEPORTES 2) (HD) (bfa)",03:45-C. Alcaraz-T. Paul (MOVISTAR DEPORTES 2) (HD) (bfa)
 http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
-#EXTINF:-1 group-title="25-01 (Domingo) Open Australia" tvg-name="03:45-C. Alcaraz-T. Paul (M+ Deportes 2 HD) (HD) (f0e)",03:45-C. Alcaraz-T. Paul (M+ Deportes 2 HD) (HD) (f0e)
-http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
-#EXTINF:-1 group-title="25-01 (Domingo) Open Australia" tvg-name="03:45-C. Alcaraz-T. Paul (M+ Deportes 2 HD) (HD) (890)",03:45-C. Alcaraz-T. Paul (M+ Deportes 2 HD) (HD) (890)
-http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
-#EXTINF:-1 group-title="25-01 (Domingo) Open Australia" tvg-name="03:45-C. Alcaraz-T. Paul (M+ Deportes 2 HD) (HD) (3af)",03:45-C. Alcaraz-T. Paul (M+ Deportes 2 HD) (HD) (3af)
+#EXTINF:-1 group-title="25-01 (Domingo) Open Australia1/8 de final" tvg-name="03:45-C. Alcaraz-T. Paul (MOVISTAR DEPORTES 2) (HD) (3af)",03:45-C. Alcaraz-T. Paul (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="25-01 (Domingo) Open Australia WTA" tvg-name="06:05-C. Gauff-K. Muchova (M+ Deportes 3) (HD) (39f)",06:05-C. Gauff-K. Muchova (M+ Deportes 3) (HD) (39f)
+#EXTINF:-1 group-title="25-01 (Domingo) Open Australia1/8 de final" tvg-name="03:45-C. Alcaraz-T. Paul (MOVISTAR DEPORTES 2) (FHD) (73d)",03:45-C. Alcaraz-T. Paul (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="25-01 (Domingo) Open Australia1/8 de final" tvg-name="03:45-C. Alcaraz-T. Paul (MOVISTAR DEPORTES 2) (FHD) (f0e)",03:45-C. Alcaraz-T. Paul (MOVISTAR DEPORTES 2) (FHD) (f0e)
+http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
+#EXTINF:-1 group-title="25-01 (Domingo) Open Australia1/8 de final" tvg-name="03:45-C. Alcaraz-T. Paul (MOVISTAR DEPORTES 2) (FHD) (890)",03:45-C. Alcaraz-T. Paul (MOVISTAR DEPORTES 2) (FHD) (890)
+http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
+#EXTINF:-1 group-title="25-01 (Domingo) Open Australia WTA1/8 de final" tvg-name="06:05-C. Gauff-K. Muchova (MOVISTAR DEPORTES 3) (HD) (39f)",06:05-C. Gauff-K. Muchova (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="25-01 (Domingo) Open Australia" tvg-name="07:15-A. Zverev-F. Cerúndolo (M+ Deportes 4) (HD) (8b5)",07:15-A. Zverev-F. Cerúndolo (M+ Deportes 4) (HD) (8b5)
+#EXTINF:-1 group-title="25-01 (Domingo) Open Australia1/8 de final" tvg-name="07:15-A. Zverev-F. Cerúndolo (MOVISTAR DEPORTES 4) (HD) (8b5)",07:15-A. Zverev-F. Cerúndolo (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
-#EXTINF:-1 group-title="25-01 (Domingo) Open Australia" tvg-name="08:30-D. Medvedev-L. Tien (M+ Deportes 3) (HD) (39f)",08:30-D. Medvedev-L. Tien (M+ Deportes 3) (HD) (39f)
+#EXTINF:-1 group-title="25-01 (Domingo) Open Australia1/8 de final" tvg-name="08:30-D. Medvedev-L. Tien (MOVISTAR DEPORTES 3) (HD) (39f)",08:30-D. Medvedev-L. Tien (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="25-01 (Domingo) Open Australia" tvg-name="09:15-A. Bublik-A. De Miñaur (M+ Deportes 2 HD) (FHD) (73d)",09:15-A. Bublik-A. De Miñaur (M+ Deportes 2 HD) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="25-01 (Domingo) Open Australia" tvg-name="09:15-A. Bublik-A. De Miñaur (M+ Deportes 2 HD) (HD) (bfa)",09:15-A. Bublik-A. De Miñaur (M+ Deportes 2 HD) (HD) (bfa)
+#EXTINF:-1 group-title="25-01 (Domingo) Open Australia1/8 de final" tvg-name="09:15-A. Bublik-A. De Miñaur (MOVISTAR DEPORTES 2) (HD) (bfa)",09:15-A. Bublik-A. De Miñaur (MOVISTAR DEPORTES 2) (HD) (bfa)
 http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
-#EXTINF:-1 group-title="25-01 (Domingo) Open Australia" tvg-name="09:15-A. Bublik-A. De Miñaur (M+ Deportes 2 HD) (HD) (f0e)",09:15-A. Bublik-A. De Miñaur (M+ Deportes 2 HD) (HD) (f0e)
-http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
-#EXTINF:-1 group-title="25-01 (Domingo) Open Australia" tvg-name="09:15-A. Bublik-A. De Miñaur (M+ Deportes 2 HD) (HD) (890)",09:15-A. Bublik-A. De Miñaur (M+ Deportes 2 HD) (HD) (890)
-http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
-#EXTINF:-1 group-title="25-01 (Domingo) Open Australia" tvg-name="09:15-A. Bublik-A. De Miñaur (M+ Deportes 2 HD) (HD) (3af)",09:15-A. Bublik-A. De Miñaur (M+ Deportes 2 HD) (HD) (3af)
+#EXTINF:-1 group-title="25-01 (Domingo) Open Australia1/8 de final" tvg-name="09:15-A. Bublik-A. De Miñaur (MOVISTAR DEPORTES 2) (HD) (3af)",09:15-A. Bublik-A. De Miñaur (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="25-01 (Domingo) Open Australia WTA" tvg-name="11:10-E. Svitolina-M. Andreeva (M+ Deportes 2 HD) (FHD) (73d)",11:10-E. Svitolina-M. Andreeva (M+ Deportes 2 HD) (FHD) (73d)
+#EXTINF:-1 group-title="25-01 (Domingo) Open Australia1/8 de final" tvg-name="09:15-A. Bublik-A. De Miñaur (MOVISTAR DEPORTES 2) (FHD) (73d)",09:15-A. Bublik-A. De Miñaur (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="25-01 (Domingo) Open Australia WTA" tvg-name="11:10-E. Svitolina-M. Andreeva (M+ Deportes 2 HD) (HD) (bfa)",11:10-E. Svitolina-M. Andreeva (M+ Deportes 2 HD) (HD) (bfa)
-http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
-#EXTINF:-1 group-title="25-01 (Domingo) Open Australia WTA" tvg-name="11:10-E. Svitolina-M. Andreeva (M+ Deportes 2 HD) (HD) (f0e)",11:10-E. Svitolina-M. Andreeva (M+ Deportes 2 HD) (HD) (f0e)
+#EXTINF:-1 group-title="25-01 (Domingo) Open Australia1/8 de final" tvg-name="09:15-A. Bublik-A. De Miñaur (MOVISTAR DEPORTES 2) (FHD) (f0e)",09:15-A. Bublik-A. De Miñaur (MOVISTAR DEPORTES 2) (FHD) (f0e)
 http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
-#EXTINF:-1 group-title="25-01 (Domingo) Open Australia WTA" tvg-name="11:10-E. Svitolina-M. Andreeva (M+ Deportes 2 HD) (HD) (890)",11:10-E. Svitolina-M. Andreeva (M+ Deportes 2 HD) (HD) (890)
+#EXTINF:-1 group-title="25-01 (Domingo) Open Australia1/8 de final" tvg-name="09:15-A. Bublik-A. De Miñaur (MOVISTAR DEPORTES 2) (FHD) (890)",09:15-A. Bublik-A. De Miñaur (MOVISTAR DEPORTES 2) (FHD) (890)
 http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
-#EXTINF:-1 group-title="25-01 (Domingo) Open Australia WTA" tvg-name="11:10-E. Svitolina-M. Andreeva (M+ Deportes 2 HD) (HD) (3af)",11:10-E. Svitolina-M. Andreeva (M+ Deportes 2 HD) (HD) (3af)
+#EXTINF:-1 group-title="25-01 (Domingo) Open Australia WTA1/8 de final" tvg-name="11:10-E. Svitolina-M. Andreeva (MOVISTAR DEPORTES 2) (HD) (bfa)",11:10-E. Svitolina-M. Andreeva (MOVISTAR DEPORTES 2) (HD) (bfa)
+http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
+#EXTINF:-1 group-title="25-01 (Domingo) Open Australia WTA1/8 de final" tvg-name="11:10-E. Svitolina-M. Andreeva (MOVISTAR DEPORTES 2) (HD) (3af)",11:10-E. Svitolina-M. Andreeva (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1 HD) (FHD) (691)",12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1 HD) (FHD) (691)
-http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
-#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1 HD) (FHD) (414)",12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1 HD) (FHD) (414)
-http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
-#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1 HD) (HD) (5b7)",12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1 HD) (HD) (5b7)
-http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
-#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1 HD) (FHD) (b03)",12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1 HD) (FHD) (b03)
-http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
-#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1 HD) (FHD) (363)",12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1 HD) (FHD) (363)
-http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
-#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1 HD) (HD) (9af)",12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1 HD) (HD) (9af)
-http://127.0.0.1:6878/ace/getstream?id=9afc89481b721ce6c326c85e47148676077b8e62
-#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1 HD) (HD) (d5b)",12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1 HD) (HD) (d5b)
-http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
-#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1 HD) (FHD) (1e7)",12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1 HD) (FHD) (1e7)
-http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
-#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Espanyol Femenino-Costa Adeje Tenerife (DAZN 2 HD) (FHD) (430)",12:00-Espanyol Femenino-Costa Adeje Tenerife (DAZN 2 HD) (FHD) (430)
+#EXTINF:-1 group-title="25-01 (Domingo) Open Australia WTA1/8 de final" tvg-name="11:10-E. Svitolina-M. Andreeva (MOVISTAR DEPORTES 2) (FHD) (73d)",11:10-E. Svitolina-M. Andreeva (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="25-01 (Domingo) Open Australia WTA1/8 de final" tvg-name="11:10-E. Svitolina-M. Andreeva (MOVISTAR DEPORTES 2) (FHD) (f0e)",11:10-E. Svitolina-M. Andreeva (MOVISTAR DEPORTES 2) (FHD) (f0e)
+http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
+#EXTINF:-1 group-title="25-01 (Domingo) Open Australia WTA1/8 de final" tvg-name="11:10-E. Svitolina-M. Andreeva (MOVISTAR DEPORTES 2) (FHD) (890)",11:10-E. Svitolina-M. Andreeva (MOVISTAR DEPORTES 2) (FHD) (890)
+http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
+#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Espanyol Femenino-Costa Adeje Tenerife (DAZN 2) (FHD) (430)",12:00-Espanyol Femenino-Costa Adeje Tenerife (DAZN 2) (FHD) (430)
 http://127.0.0.1:6878/ace/getstream?id=43004e955731cd3afcc34d24e5178d4b427bff37
-#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Espanyol Femenino-Costa Adeje Tenerife (DAZN 2 HD) (HD) (f12)",12:00-Espanyol Femenino-Costa Adeje Tenerife (DAZN 2 HD) (HD) (f12)
+#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Espanyol Femenino-Costa Adeje Tenerife (DAZN 2) (HD) (f12)",12:00-Espanyol Femenino-Costa Adeje Tenerife (DAZN 2) (HD) (f12)
 http://127.0.0.1:6878/ace/getstream?id=f12038c7fe603ed93fa9475d60692dd95bb7b17f
-#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Espanyol Femenino-Costa Adeje Tenerife (DAZN 2 HD) (HD) (b0e)",12:00-Espanyol Femenino-Costa Adeje Tenerife (DAZN 2 HD) (HD) (b0e)
+#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Espanyol Femenino-Costa Adeje Tenerife (DAZN 2) (HD) (b0e)",12:00-Espanyol Femenino-Costa Adeje Tenerife (DAZN 2) (HD) (b0e)
 http://127.0.0.1:6878/ace/getstream?id=b0eabe0fdd02fdd165896236765a9b753a2ff516
-#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Espanyol Femenino-Costa Adeje Tenerife (DAZN 2 HD) (FHD) (2f9)",12:00-Espanyol Femenino-Costa Adeje Tenerife (DAZN 2 HD) (FHD) (2f9)
+#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Espanyol Femenino-Costa Adeje Tenerife (DAZN 2) (FHD) (2f9)",12:00-Espanyol Femenino-Costa Adeje Tenerife (DAZN 2) (FHD) (2f9)
 http://127.0.0.1:6878/ace/getstream?id=2f9211669499f413dab1a490198afab2a9b4b57c
-#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Sevilla FC Femenino-Levante Femenino (M+ Ellas Vamos HD) (FHD) (9b8)",12:00-Sevilla FC Femenino-Levante Femenino (M+ Ellas Vamos HD) (FHD) (9b8)
-http://127.0.0.1:6878/ace/getstream?id=9b84af74b2fa3690c519199326fc2f181b025cdd
-#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Sevilla FC Femenino-Levante Femenino (M+ Ellas Vamos HD) (FHD) (594)",12:00-Sevilla FC Femenino-Levante Femenino (M+ Ellas Vamos HD) (FHD) (594)
-http://127.0.0.1:6878/ace/getstream?id=594b59d435527327c9b6965f247995b907bfc285
-#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Sevilla FC Femenino-Levante Femenino (M+ Ellas Vamos HD) (HD) (b2e)",12:00-Sevilla FC Femenino-Levante Femenino (M+ Ellas Vamos HD) (HD) (b2e)
-http://127.0.0.1:6878/ace/getstream?id=b2ee974d9cd40f2f251656cf5cb9a7a93ed05e97
-#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Sevilla FC Femenino-Levante Femenino (M+ Ellas Vamos HD) (HD) (304)",12:00-Sevilla FC Femenino-Levante Femenino (M+ Ellas Vamos HD) (HD) (304)
+#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1) (HD) (5b7)",12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1) (HD) (5b7)
+http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
+#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1) (FHD) (1e7)",12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1) (FHD) (1e7)
+http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
+#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1) (HD) (d5b)",12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1) (HD) (d5b)
+http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
+#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1) (FHD) (363)",12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1) (FHD) (363)
+http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
+#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1) (FHD) (b03)",12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1) (FHD) (b03)
+http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
+#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1) (FHD) (691)",12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1) (FHD) (691)
+http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
+#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1) (HD) (9af)",12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1) (HD) (9af)
+http://127.0.0.1:6878/ace/getstream?id=9afc89481b721ce6c326c85e47148676077b8e62
+#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1) (FHD) (414)",12:00-Real Sociedad Femenino-Eibar Femenino (DAZN 1) (FHD) (414)
+http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
+#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Sevilla FC Femenino-Levante Femenino (MOVISTAR ELLAS) (HD) (304)",12:00-Sevilla FC Femenino-Levante Femenino (MOVISTAR ELLAS) (HD) (304)
 http://127.0.0.1:6878/ace/getstream?id=3040cfbef2d8170ff3909db6f21a6981d9ec74c8
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="14:00-At. Madrid-Mallorca (M+ LaLiga HD) (FHD) (8c3)",14:00-At. Madrid-Mallorca (M+ LaLiga HD) (FHD) (8c3)
-http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="14:00-At. Madrid-Mallorca (M+ LaLiga HD) (HD) (c93)",14:00-At. Madrid-Mallorca (M+ LaLiga HD) (HD) (c93)
-http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="14:00-At. Madrid-Mallorca (M+ LaLiga HD) (HD) (00c)",14:00-At. Madrid-Mallorca (M+ LaLiga HD) (HD) (00c)
-http://127.0.0.1:6878/ace/getstream?id=00c9bc9c5d7d87680a5a6bed349edfa775a89947
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="14:00-At. Madrid-Mallorca (M+ LaLiga HD) (HD) (4b5)",14:00-At. Madrid-Mallorca (M+ LaLiga HD) (HD) (4b5)
+#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Sevilla FC Femenino-Levante Femenino (MOVISTAR ELLAS) (FHD) (594)",12:00-Sevilla FC Femenino-Levante Femenino (MOVISTAR ELLAS) (FHD) (594)
+http://127.0.0.1:6878/ace/getstream?id=594b59d435527327c9b6965f247995b907bfc285
+#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Sevilla FC Femenino-Levante Femenino (MOVISTAR ELLAS) (FHD) (9b8)",12:00-Sevilla FC Femenino-Levante Femenino (MOVISTAR ELLAS) (FHD) (9b8)
+http://127.0.0.1:6878/ace/getstream?id=9b84af74b2fa3690c519199326fc2f181b025cdd
+#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="12:00-Sevilla FC Femenino-Levante Femenino (MOVISTAR ELLAS) (HD) (b2e)",12:00-Sevilla FC Femenino-Levante Femenino (MOVISTAR ELLAS) (HD) (b2e)
+http://127.0.0.1:6878/ace/getstream?id=b2ee974d9cd40f2f251656cf5cb9a7a93ed05e97
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="14:00-At. Madrid-Mallorca (M+ LALIGA) (FHD) (4b5)",14:00-At. Madrid-Mallorca (M+ LALIGA) (FHD) (4b5)
 http://127.0.0.1:6878/ace/getstream?id=4b528d10eaad747ddf52251206177573ee3e9f74
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="14:00-At. Madrid-Mallorca (M+ LaLiga HD) (HD) (31c)",14:00-At. Madrid-Mallorca (M+ LaLiga HD) (HD) (31c)
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="14:00-At. Madrid-Mallorca (M+ LALIGA) (FHD) (8c3)",14:00-At. Madrid-Mallorca (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="14:00-At. Madrid-Mallorca (M+ LALIGA) (HD) (31c)",14:00-At. Madrid-Mallorca (M+ LALIGA) (HD) (31c)
 http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="14:00-At. Madrid-Mallorca (Movistar Plus+ HD) (FHD) (b6f)",14:00-At. Madrid-Mallorca (Movistar Plus+ HD) (FHD) (b6f)
-http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="14:00-At. Madrid-Mallorca (Movistar Plus+ HD) (FHD) (199)",14:00-At. Madrid-Mallorca (Movistar Plus+ HD) (FHD) (199)
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="14:00-At. Madrid-Mallorca (M+ LALIGA) (FHD) (c93)",14:00-At. Madrid-Mallorca (M+ LALIGA) (FHD) (c93)
+http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="14:00-At. Madrid-Mallorca (MOVISTAR PLUS) (FHD) (199)",14:00-At. Madrid-Mallorca (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="14:00-At. Madrid-Mallorca (Movistar Plus+ HD) (FHD) (586)",14:00-At. Madrid-Mallorca (Movistar Plus+ HD) (FHD) (586)
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="14:00-At. Madrid-Mallorca (MOVISTAR PLUS) (FHD) (586)",14:00-At. Madrid-Mallorca (MOVISTAR PLUS) (FHD) (586)
 http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="14:00-At. Madrid-Mallorca (Movistar Plus+ HD) (FHD) (1ab)",14:00-At. Madrid-Mallorca (Movistar Plus+ HD) (FHD) (1ab)
-http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="14:00-At. Madrid-Mallorca (M+ LaLiga 2 HD) (FHD) (911)",14:00-At. Madrid-Mallorca (M+ LaLiga 2 HD) (FHD) (911)
-http://127.0.0.1:6878/ace/getstream?id=911ad127726234b97658498a8b790fdd7516541d
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="14:00-At. Madrid-Mallorca (M+ LaLiga 2 HD) (HD) (ad4)",14:00-At. Madrid-Mallorca (M+ LaLiga 2 HD) (HD) (ad4)
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="14:00-At. Madrid-Mallorca (MOVISTAR PLUS) (FHD) (b6f)",14:00-At. Madrid-Mallorca (MOVISTAR PLUS) (FHD) (b6f)
+http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="14:00-At. Madrid-Mallorca (M+ LALIGA 2) (HD) (ad4)",14:00-At. Madrid-Mallorca (M+ LALIGA 2) (HD) (ad4)
 http://127.0.0.1:6878/ace/getstream?id=ad42faa399df66dcd62a1cbc9d1c99ed4512d3b8
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="14:00-At. Madrid-Mallorca (M+ LaLiga 2 HD) (HD) (b8e)",14:00-At. Madrid-Mallorca (M+ LaLiga 2 HD) (HD) (b8e)
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="14:00-At. Madrid-Mallorca (M+ LALIGA 2) (HD) (b8e)",14:00-At. Madrid-Mallorca (M+ LALIGA 2) (HD) (b8e)
 http://127.0.0.1:6878/ace/getstream?id=b8eb9c9868d487402569bba2d97a8af113d033fe
-#EXTINF:-1 group-title="25-01 (Domingo) LaLiga Hypermotion" tvg-name="14:00-FC Andorra-Huesca (LaLiga TV Hypermotion HD) (HD) (a4f)",14:00-FC Andorra-Huesca (LaLiga TV Hypermotion HD) (HD) (a4f)
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="14:00-At. Madrid-Mallorca (M+ LALIGA 2) (FHD) (911)",14:00-At. Madrid-Mallorca (M+ LALIGA 2) (FHD) (911)
+http://127.0.0.1:6878/ace/getstream?id=911ad127726234b97658498a8b790fdd7516541d
+#EXTINF:-1 group-title="25-01 (Domingo) LaLiga Hypermotion" tvg-name="14:00-FC Andorra-Huesca (HYPERMOTION) (HD) (a4f)",14:00-FC Andorra-Huesca (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
-#EXTINF:-1 group-title="25-01 (Domingo) LaLiga Hypermotion" tvg-name="14:00-FC Andorra-Huesca (LaLiga TV Hypermotion HD) (HD) (87b)",14:00-FC Andorra-Huesca (LaLiga TV Hypermotion HD) (HD) (87b)
-http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="15:00-Newcastle-Aston Villa (DAZN 1 HD) (FHD) (691)",15:00-Newcastle-Aston Villa (DAZN 1 HD) (FHD) (691)
-http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="15:00-Newcastle-Aston Villa (DAZN 1 HD) (FHD) (414)",15:00-Newcastle-Aston Villa (DAZN 1 HD) (FHD) (414)
-http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="15:00-Newcastle-Aston Villa (DAZN 1 HD) (HD) (5b7)",15:00-Newcastle-Aston Villa (DAZN 1 HD) (HD) (5b7)
-http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="15:00-Newcastle-Aston Villa (DAZN 1 HD) (FHD) (b03)",15:00-Newcastle-Aston Villa (DAZN 1 HD) (FHD) (b03)
-http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="15:00-Newcastle-Aston Villa (DAZN 1 HD) (FHD) (363)",15:00-Newcastle-Aston Villa (DAZN 1 HD) (FHD) (363)
-http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="15:00-Newcastle-Aston Villa (DAZN 1 HD) (HD) (9af)",15:00-Newcastle-Aston Villa (DAZN 1 HD) (HD) (9af)
-http://127.0.0.1:6878/ace/getstream?id=9afc89481b721ce6c326c85e47148676077b8e62
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="15:00-Newcastle-Aston Villa (DAZN 1 HD) (HD) (d5b)",15:00-Newcastle-Aston Villa (DAZN 1 HD) (HD) (d5b)
-http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="15:00-Newcastle-Aston Villa (DAZN 1 HD) (FHD) (1e7)",15:00-Newcastle-Aston Villa (DAZN 1 HD) (FHD) (1e7)
-http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="15:00-Crystal Palace-Chelsea (DAZN 2 HD) (FHD) (430)",15:00-Crystal Palace-Chelsea (DAZN 2 HD) (FHD) (430)
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="15:00-Crystal Palace-Chelsea (DAZN 2) (FHD) (430)",15:00-Crystal Palace-Chelsea (DAZN 2) (FHD) (430)
 http://127.0.0.1:6878/ace/getstream?id=43004e955731cd3afcc34d24e5178d4b427bff37
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="15:00-Crystal Palace-Chelsea (DAZN 2 HD) (HD) (f12)",15:00-Crystal Palace-Chelsea (DAZN 2 HD) (HD) (f12)
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="15:00-Crystal Palace-Chelsea (DAZN 2) (HD) (f12)",15:00-Crystal Palace-Chelsea (DAZN 2) (HD) (f12)
 http://127.0.0.1:6878/ace/getstream?id=f12038c7fe603ed93fa9475d60692dd95bb7b17f
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="15:00-Crystal Palace-Chelsea (DAZN 2 HD) (HD) (b0e)",15:00-Crystal Palace-Chelsea (DAZN 2 HD) (HD) (b0e)
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="15:00-Crystal Palace-Chelsea (DAZN 2) (HD) (b0e)",15:00-Crystal Palace-Chelsea (DAZN 2) (HD) (b0e)
 http://127.0.0.1:6878/ace/getstream?id=b0eabe0fdd02fdd165896236765a9b753a2ff516
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="15:00-Crystal Palace-Chelsea (DAZN 2 HD) (FHD) (2f9)",15:00-Crystal Palace-Chelsea (DAZN 2 HD) (FHD) (2f9)
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="15:00-Crystal Palace-Chelsea (DAZN 2) (FHD) (2f9)",15:00-Crystal Palace-Chelsea (DAZN 2) (FHD) (2f9)
 http://127.0.0.1:6878/ace/getstream?id=2f9211669499f413dab1a490198afab2a9b4b57c
-#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="16:00-DUX Logroño Femenino-Deportivo Abanca (DAZN 4 HD) (FHD) (eb8)",16:00-DUX Logroño Femenino-Deportivo Abanca (DAZN 4 HD) (FHD) (eb8)
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="15:00-Newcastle-Aston Villa (DAZN 1) (HD) (5b7)",15:00-Newcastle-Aston Villa (DAZN 1) (HD) (5b7)
+http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="15:00-Newcastle-Aston Villa (DAZN 1) (FHD) (1e7)",15:00-Newcastle-Aston Villa (DAZN 1) (FHD) (1e7)
+http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="15:00-Newcastle-Aston Villa (DAZN 1) (HD) (d5b)",15:00-Newcastle-Aston Villa (DAZN 1) (HD) (d5b)
+http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="15:00-Newcastle-Aston Villa (DAZN 1) (FHD) (363)",15:00-Newcastle-Aston Villa (DAZN 1) (FHD) (363)
+http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="15:00-Newcastle-Aston Villa (DAZN 1) (FHD) (b03)",15:00-Newcastle-Aston Villa (DAZN 1) (FHD) (b03)
+http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="15:00-Newcastle-Aston Villa (DAZN 1) (FHD) (691)",15:00-Newcastle-Aston Villa (DAZN 1) (FHD) (691)
+http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="15:00-Newcastle-Aston Villa (DAZN 1) (HD) (9af)",15:00-Newcastle-Aston Villa (DAZN 1) (HD) (9af)
+http://127.0.0.1:6878/ace/getstream?id=9afc89481b721ce6c326c85e47148676077b8e62
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="15:00-Newcastle-Aston Villa (DAZN 1) (FHD) (414)",15:00-Newcastle-Aston Villa (DAZN 1) (FHD) (414)
+http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
+#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="16:00-DUX Logroño Femenino-Deportivo Abanca (DAZN 4) (FHD) (eb8)",16:00-DUX Logroño Femenino-Deportivo Abanca (DAZN 4) (FHD) (eb8)
 http://127.0.0.1:6878/ace/getstream?id=eb884f77ce8815cf1028c4d85e8b092c27ea1693
-#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="16:00-DUX Logroño Femenino-Deportivo Abanca (DAZN 4 HD) (HD) (7e9)",16:00-DUX Logroño Femenino-Deportivo Abanca (DAZN 4 HD) (HD) (7e9)
+#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="16:00-DUX Logroño Femenino-Deportivo Abanca (DAZN 4) (HD) (7e9)",16:00-DUX Logroño Femenino-Deportivo Abanca (DAZN 4) (HD) (7e9)
 http://127.0.0.1:6878/ace/getstream?id=7e90956539f4e1318a63f3960e4f75c7c7c5a3b8
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Real Oviedo (DAZN LaLiga HD) (FHD) (0e5)",16:15-FC Barcelona-Real Oviedo (DAZN LaLiga HD) (FHD) (0e5)
-http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Real Oviedo (DAZN LaLiga HD) (HD) (9c7)",16:15-FC Barcelona-Real Oviedo (DAZN LaLiga HD) (HD) (9c7)
-http://127.0.0.1:6878/ace/getstream?id=9c75f1d190c518cfe0f236415b8dccc1f676ef3b
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Real Oviedo (DAZN LaLiga HD) (HD) (4e6)",16:15-FC Barcelona-Real Oviedo (DAZN LaLiga HD) (HD) (4e6)
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Real Oviedo (DAZN LA LIGA 1) (HD) (4e6)",16:15-FC Barcelona-Real Oviedo (DAZN LA LIGA 1) (HD) (4e6)
 http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Real Oviedo (DAZN LaLiga HD) (HD) (e2b)",16:15-FC Barcelona-Real Oviedo (DAZN LaLiga HD) (HD) (e2b)
-http://127.0.0.1:6878/ace/getstream?id=e2b8a4aba2f4ea3dd68992fcdb65c9e62d910b05
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Real Oviedo (DAZN LaLiga HD) (HD) (495)",16:15-FC Barcelona-Real Oviedo (DAZN LaLiga HD) (HD) (495)
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Real Oviedo (DAZN LA LIGA 1) (FHD) (495)",16:15-FC Barcelona-Real Oviedo (DAZN LA LIGA 1) (FHD) (495)
 http://127.0.0.1:6878/ace/getstream?id=4955867fad3bc92e5b4c36045699fc277800fb18
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Real Oviedo (DAZN LaLiga HD) (HD) (dda)",16:15-FC Barcelona-Real Oviedo (DAZN LaLiga HD) (HD) (dda)
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Real Oviedo (DAZN LA LIGA 1) (HD) (9c7)",16:15-FC Barcelona-Real Oviedo (DAZN LA LIGA 1) (HD) (9c7)
+http://127.0.0.1:6878/ace/getstream?id=9c75f1d190c518cfe0f236415b8dccc1f676ef3b
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Real Oviedo (DAZN LA LIGA 1) (FHD) (0e5)",16:15-FC Barcelona-Real Oviedo (DAZN LA LIGA 1) (FHD) (0e5)
+http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Real Oviedo (DAZN LA LIGA 1) (FHD) (e2b)",16:15-FC Barcelona-Real Oviedo (DAZN LA LIGA 1) (FHD) (e2b)
+http://127.0.0.1:6878/ace/getstream?id=e2b8a4aba2f4ea3dd68992fcdb65c9e62d910b05
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Real Oviedo (DAZN LA LIGA 1) (HD) (dda)",16:15-FC Barcelona-Real Oviedo (DAZN LA LIGA 1) (HD) (dda)
 http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Real Oviedo (DAZN LaLiga 2 HD) (FHD) (509)",16:15-FC Barcelona-Real Oviedo (DAZN LaLiga 2 HD) (FHD) (509)
-http://127.0.0.1:6878/ace/getstream?id=5091ea94b75ba4b50b078b4102a3d0e158ef59c3
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Real Oviedo (DAZN LaLiga 2 HD) (HD) (c97)",16:15-FC Barcelona-Real Oviedo (DAZN LaLiga 2 HD) (HD) (c97)
-http://127.0.0.1:6878/ace/getstream?id=c976c7b37964322752db562b4ad65515509c8d36
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Real Oviedo (DAZN LaLiga 2 HD) (HD) (a23)",16:15-FC Barcelona-Real Oviedo (DAZN LaLiga 2 HD) (HD) (a23)
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Real Oviedo (DAZN LA LIGA 2) (FHD) (a23)",16:15-FC Barcelona-Real Oviedo (DAZN LA LIGA 2) (FHD) (a23)
 http://127.0.0.1:6878/ace/getstream?id=a231b2fa1f7754433efeb8bb8d69d7b9096dcba8
-#EXTINF:-1 group-title="25-01 (Domingo) LaLiga Hypermotion" tvg-name="16:15-Eibar-UD Almería (LaLiga TV Hypermotion HD) (HD) (a4f)",16:15-Eibar-UD Almería (LaLiga TV Hypermotion HD) (HD) (a4f)
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Real Oviedo (DAZN LA LIGA 2) (HD) (c97)",16:15-FC Barcelona-Real Oviedo (DAZN LA LIGA 2) (HD) (c97)
+http://127.0.0.1:6878/ace/getstream?id=c976c7b37964322752db562b4ad65515509c8d36
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Real Oviedo (DAZN LA LIGA 2) (FHD) (509)",16:15-FC Barcelona-Real Oviedo (DAZN LA LIGA 2) (FHD) (509)
+http://127.0.0.1:6878/ace/getstream?id=5091ea94b75ba4b50b078b4102a3d0e158ef59c3
+#EXTINF:-1 group-title="25-01 (Domingo) LaLiga Hypermotion" tvg-name="16:15-Eibar-UD Almería (HYPERMOTION) (HD) (a4f)",16:15-Eibar-UD Almería (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
-#EXTINF:-1 group-title="25-01 (Domingo) LaLiga Hypermotion" tvg-name="16:15-Eibar-UD Almería (LaLiga TV Hypermotion HD) (HD) (87b)",16:15-Eibar-UD Almería (LaLiga TV Hypermotion HD) (HD) (87b)
-http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (Movistar Plus+ HD) (FHD) (b6f)",17:30-Arsenal-Manchester Utd. (Movistar Plus+ HD) (FHD) (b6f)
-http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (Movistar Plus+ HD) (FHD) (199)",17:30-Arsenal-Manchester Utd. (Movistar Plus+ HD) (FHD) (199)
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (MOVISTAR PLUS) (FHD) (199)",17:30-Arsenal-Manchester Utd. (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (Movistar Plus+ HD) (FHD) (586)",17:30-Arsenal-Manchester Utd. (Movistar Plus+ HD) (FHD) (586)
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (MOVISTAR PLUS) (FHD) (586)",17:30-Arsenal-Manchester Utd. (MOVISTAR PLUS) (FHD) (586)
 http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (Movistar Plus+ HD) (FHD) (1ab)",17:30-Arsenal-Manchester Utd. (Movistar Plus+ HD) (FHD) (1ab)
-http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (DAZN 1 HD) (FHD) (691)",17:30-Arsenal-Manchester Utd. (DAZN 1 HD) (FHD) (691)
-http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (DAZN 1 HD) (FHD) (414)",17:30-Arsenal-Manchester Utd. (DAZN 1 HD) (FHD) (414)
-http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (DAZN 1 HD) (HD) (5b7)",17:30-Arsenal-Manchester Utd. (DAZN 1 HD) (HD) (5b7)
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (MOVISTAR PLUS) (FHD) (b6f)",17:30-Arsenal-Manchester Utd. (MOVISTAR PLUS) (FHD) (b6f)
+http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (DAZN 1) (HD) (5b7)",17:30-Arsenal-Manchester Utd. (DAZN 1) (HD) (5b7)
 http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (DAZN 1 HD) (FHD) (b03)",17:30-Arsenal-Manchester Utd. (DAZN 1 HD) (FHD) (b03)
-http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (DAZN 1 HD) (FHD) (363)",17:30-Arsenal-Manchester Utd. (DAZN 1 HD) (FHD) (363)
-http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (DAZN 1 HD) (HD) (9af)",17:30-Arsenal-Manchester Utd. (DAZN 1 HD) (HD) (9af)
-http://127.0.0.1:6878/ace/getstream?id=9afc89481b721ce6c326c85e47148676077b8e62
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (DAZN 1 HD) (HD) (d5b)",17:30-Arsenal-Manchester Utd. (DAZN 1 HD) (HD) (d5b)
-http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (DAZN 1 HD) (FHD) (1e7)",17:30-Arsenal-Manchester Utd. (DAZN 1 HD) (FHD) (1e7)
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (DAZN 1) (FHD) (1e7)",17:30-Arsenal-Manchester Utd. (DAZN 1) (FHD) (1e7)
 http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (M+ Liga de Campeones HD) (UHD) (152)",17:30-Arsenal-Manchester Utd. (M+ Liga de Campeones HD) (UHD) (152)
-http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (M+ Liga de Campeones HD) (FHD) (778)",17:30-Arsenal-Manchester Utd. (M+ Liga de Campeones HD) (FHD) (778)
-http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (M+ Liga de Campeones HD) (FHD) (afb)",17:30-Arsenal-Manchester Utd. (M+ Liga de Campeones HD) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (M+ Liga de Campeones HD) (FHD) (afb)",17:30-Arsenal-Manchester Utd. (M+ Liga de Campeones HD) (FHD) (afb)
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (DAZN 1) (HD) (d5b)",17:30-Arsenal-Manchester Utd. (DAZN 1) (HD) (d5b)
+http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (DAZN 1) (FHD) (363)",17:30-Arsenal-Manchester Utd. (DAZN 1) (FHD) (363)
+http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (DAZN 1) (FHD) (b03)",17:30-Arsenal-Manchester Utd. (DAZN 1) (FHD) (b03)
+http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (DAZN 1) (FHD) (691)",17:30-Arsenal-Manchester Utd. (DAZN 1) (FHD) (691)
+http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (DAZN 1) (HD) (9af)",17:30-Arsenal-Manchester Utd. (DAZN 1) (HD) (9af)
+http://127.0.0.1:6878/ace/getstream?id=9afc89481b721ce6c326c85e47148676077b8e62
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (DAZN 1) (FHD) (414)",17:30-Arsenal-Manchester Utd. (DAZN 1) (FHD) (414)
+http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (LIGA DE CAMPEONES) (FHD) (afb)",17:30-Arsenal-Manchester Utd. (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (M+ Liga de Campeones HD) (FHD) (0f7)",17:30-Arsenal-Manchester Utd. (M+ Liga de Campeones HD) (FHD) (0f7)
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (LIGA DE CAMPEONES) (FHD) (0f7)",17:30-Arsenal-Manchester Utd. (LIGA DE CAMPEONES) (FHD) (0f7)
 http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (M+ Liga de Campeones HD) (HD) (b02)",17:30-Arsenal-Manchester Utd. (M+ Liga de Campeones HD) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (M+ Liga de Campeones HD) (HD) (bf1)",17:30-Arsenal-Manchester Utd. (M+ Liga de Campeones HD) (HD) (bf1)
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (LIGA DE CAMPEONES) (UHD) (152)",17:30-Arsenal-Manchester Utd. (LIGA DE CAMPEONES) (UHD) (152)
+http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (LIGA DE CAMPEONES) (HD) (bf1)",17:30-Arsenal-Manchester Utd. (LIGA DE CAMPEONES) (HD) (bf1)
 http://127.0.0.1:6878/ace/getstream?id=bf10192dc72a98ee835a1b7ccac8b27737d02f25
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (M+ Liga de Campeones HD) (HD) (97d)",17:30-Arsenal-Manchester Utd. (M+ Liga de Campeones HD) (HD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (M+ Liga de Campeones HD) (HD) (e57)",17:30-Arsenal-Manchester Utd. (M+ Liga de Campeones HD) (HD) (e57)
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (LIGA DE CAMPEONES) (HD) (b02)",17:30-Arsenal-Manchester Utd. (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (LIGA DE CAMPEONES) (FHD) (778)",17:30-Arsenal-Manchester Utd. (LIGA DE CAMPEONES) (FHD) (778)
+http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (LIGA DE CAMPEONES) (HD) (e57)",17:30-Arsenal-Manchester Utd. (LIGA DE CAMPEONES) (HD) (e57)
 http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="25-01 (Domingo) Copa de España" tvg-name="18:00-Súper Agropal Palencia-Movistar Estudiantes (M+ Deportes 2 HD) (FHD) (73d)",18:00-Súper Agropal Palencia-Movistar Estudiantes (M+ Deportes 2 HD) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="25-01 (Domingo) Copa de España" tvg-name="18:00-Súper Agropal Palencia-Movistar Estudiantes (M+ Deportes 2 HD) (HD) (bfa)",18:00-Súper Agropal Palencia-Movistar Estudiantes (M+ Deportes 2 HD) (HD) (bfa)
+#EXTINF:-1 group-title="25-01 (Domingo) Premier League" tvg-name="17:30-Arsenal-Manchester Utd. (LIGA DE CAMPEONES) (FHD) (afb)",17:30-Arsenal-Manchester Utd. (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="25-01 (Domingo) Copa de EspañaFinal" tvg-name="18:00-Súper Agropal Palencia-Movistar Estudiantes (MOVISTAR DEPORTES 2) (HD) (bfa)",18:00-Súper Agropal Palencia-Movistar Estudiantes (MOVISTAR DEPORTES 2) (HD) (bfa)
 http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
-#EXTINF:-1 group-title="25-01 (Domingo) Copa de España" tvg-name="18:00-Súper Agropal Palencia-Movistar Estudiantes (M+ Deportes 2 HD) (HD) (f0e)",18:00-Súper Agropal Palencia-Movistar Estudiantes (M+ Deportes 2 HD) (HD) (f0e)
-http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
-#EXTINF:-1 group-title="25-01 (Domingo) Copa de España" tvg-name="18:00-Súper Agropal Palencia-Movistar Estudiantes (M+ Deportes 2 HD) (HD) (890)",18:00-Súper Agropal Palencia-Movistar Estudiantes (M+ Deportes 2 HD) (HD) (890)
-http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
-#EXTINF:-1 group-title="25-01 (Domingo) Copa de España" tvg-name="18:00-Súper Agropal Palencia-Movistar Estudiantes (M+ Deportes 2 HD) (HD) (3af)",18:00-Súper Agropal Palencia-Movistar Estudiantes (M+ Deportes 2 HD) (HD) (3af)
+#EXTINF:-1 group-title="25-01 (Domingo) Copa de EspañaFinal" tvg-name="18:00-Súper Agropal Palencia-Movistar Estudiantes (MOVISTAR DEPORTES 2) (HD) (3af)",18:00-Súper Agropal Palencia-Movistar Estudiantes (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="18:00-Granada Femenino-Alhama CF (DAZN 2 HD) (FHD) (430)",18:00-Granada Femenino-Alhama CF (DAZN 2 HD) (FHD) (430)
+#EXTINF:-1 group-title="25-01 (Domingo) Copa de EspañaFinal" tvg-name="18:00-Súper Agropal Palencia-Movistar Estudiantes (MOVISTAR DEPORTES 2) (FHD) (73d)",18:00-Súper Agropal Palencia-Movistar Estudiantes (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="25-01 (Domingo) Copa de EspañaFinal" tvg-name="18:00-Súper Agropal Palencia-Movistar Estudiantes (MOVISTAR DEPORTES 2) (FHD) (f0e)",18:00-Súper Agropal Palencia-Movistar Estudiantes (MOVISTAR DEPORTES 2) (FHD) (f0e)
+http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
+#EXTINF:-1 group-title="25-01 (Domingo) Copa de EspañaFinal" tvg-name="18:00-Súper Agropal Palencia-Movistar Estudiantes (MOVISTAR DEPORTES 2) (FHD) (890)",18:00-Súper Agropal Palencia-Movistar Estudiantes (MOVISTAR DEPORTES 2) (FHD) (890)
+http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
+#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="18:00-Granada Femenino-Alhama CF (DAZN 2) (FHD) (430)",18:00-Granada Femenino-Alhama CF (DAZN 2) (FHD) (430)
 http://127.0.0.1:6878/ace/getstream?id=43004e955731cd3afcc34d24e5178d4b427bff37
-#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="18:00-Granada Femenino-Alhama CF (DAZN 2 HD) (HD) (f12)",18:00-Granada Femenino-Alhama CF (DAZN 2 HD) (HD) (f12)
+#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="18:00-Granada Femenino-Alhama CF (DAZN 2) (HD) (f12)",18:00-Granada Femenino-Alhama CF (DAZN 2) (HD) (f12)
 http://127.0.0.1:6878/ace/getstream?id=f12038c7fe603ed93fa9475d60692dd95bb7b17f
-#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="18:00-Granada Femenino-Alhama CF (DAZN 2 HD) (HD) (b0e)",18:00-Granada Femenino-Alhama CF (DAZN 2 HD) (HD) (b0e)
+#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="18:00-Granada Femenino-Alhama CF (DAZN 2) (HD) (b0e)",18:00-Granada Femenino-Alhama CF (DAZN 2) (HD) (b0e)
 http://127.0.0.1:6878/ace/getstream?id=b0eabe0fdd02fdd165896236765a9b753a2ff516
-#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="18:00-Granada Femenino-Alhama CF (DAZN 2 HD) (FHD) (2f9)",18:00-Granada Femenino-Alhama CF (DAZN 2 HD) (FHD) (2f9)
+#EXTINF:-1 group-title="25-01 (Domingo) Liga F" tvg-name="18:00-Granada Femenino-Alhama CF (DAZN 2) (FHD) (2f9)",18:00-Granada Femenino-Alhama CF (DAZN 2) (FHD) (2f9)
 http://127.0.0.1:6878/ace/getstream?id=2f9211669499f413dab1a490198afab2a9b4b57c
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="18:30-Real Sociedad-Celta (M+ LaLiga HD) (FHD) (8c3)",18:30-Real Sociedad-Celta (M+ LaLiga HD) (FHD) (8c3)
-http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="18:30-Real Sociedad-Celta (M+ LaLiga HD) (HD) (c93)",18:30-Real Sociedad-Celta (M+ LaLiga HD) (HD) (c93)
-http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="18:30-Real Sociedad-Celta (M+ LaLiga HD) (HD) (00c)",18:30-Real Sociedad-Celta (M+ LaLiga HD) (HD) (00c)
-http://127.0.0.1:6878/ace/getstream?id=00c9bc9c5d7d87680a5a6bed349edfa775a89947
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="18:30-Real Sociedad-Celta (M+ LaLiga HD) (HD) (4b5)",18:30-Real Sociedad-Celta (M+ LaLiga HD) (HD) (4b5)
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="18:30-Real Sociedad-Celta (M+ LALIGA) (FHD) (4b5)",18:30-Real Sociedad-Celta (M+ LALIGA) (FHD) (4b5)
 http://127.0.0.1:6878/ace/getstream?id=4b528d10eaad747ddf52251206177573ee3e9f74
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="18:30-Real Sociedad-Celta (M+ LaLiga HD) (HD) (31c)",18:30-Real Sociedad-Celta (M+ LaLiga HD) (HD) (31c)
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="18:30-Real Sociedad-Celta (M+ LALIGA) (FHD) (8c3)",18:30-Real Sociedad-Celta (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="18:30-Real Sociedad-Celta (M+ LALIGA) (HD) (31c)",18:30-Real Sociedad-Celta (M+ LALIGA) (HD) (31c)
 http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
-#EXTINF:-1 group-title="25-01 (Domingo) LaLiga Hypermotion" tvg-name="18:30-Real Zaragoza-CD Castellón (LaLiga TV Hypermotion HD) (HD) (a4f)",18:30-Real Zaragoza-CD Castellón (LaLiga TV Hypermotion HD) (HD) (a4f)
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="18:30-Real Sociedad-Celta (M+ LALIGA) (FHD) (c93)",18:30-Real Sociedad-Celta (M+ LALIGA) (FHD) (c93)
+http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
+#EXTINF:-1 group-title="25-01 (Domingo) LaLiga Hypermotion" tvg-name="18:30-Real Zaragoza-CD Castellón (HYPERMOTION) (HD) (a4f)",18:30-Real Zaragoza-CD Castellón (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
-#EXTINF:-1 group-title="25-01 (Domingo) LaLiga Hypermotion" tvg-name="18:30-Real Zaragoza-CD Castellón (LaLiga TV Hypermotion HD) (HD) (87b)",18:30-Real Zaragoza-CD Castellón (LaLiga TV Hypermotion HD) (HD) (87b)
-http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
-#EXTINF:-1 group-title="25-01 (Domingo) Saudi Pro League" tvg-name="18:30-Al-Riyadh SC-Al Hilal (M+ Vamos HD) (FHD) (294)",18:30-Al-Riyadh SC-Al Hilal (M+ Vamos HD) (FHD) (294)
-http://127.0.0.1:6878/ace/getstream?id=2940120bf034db79a7f5849846ccea0255172eae
-#EXTINF:-1 group-title="25-01 (Domingo) Saudi Pro League" tvg-name="18:30-Al-Riyadh SC-Al Hilal (M+ Vamos HD) (FHD) (651)",18:30-Al-Riyadh SC-Al Hilal (M+ Vamos HD) (FHD) (651)
-http://127.0.0.1:6878/ace/getstream?id=651d6be899d1fafa107a265a9dc00ff914c1b548
-#EXTINF:-1 group-title="25-01 (Domingo) Saudi Pro League" tvg-name="18:30-Al-Riyadh SC-Al Hilal (M+ Vamos HD) (FHD) (4e9)",18:30-Al-Riyadh SC-Al Hilal (M+ Vamos HD) (FHD) (4e9)
-http://127.0.0.1:6878/ace/getstream?id=4e99e755aa32c4bc043a4bb1cd1de35f9bd94dde
-#EXTINF:-1 group-title="25-01 (Domingo) Saudi Pro League" tvg-name="18:30-Al-Riyadh SC-Al Hilal (M+ Vamos HD) (HD) (0e5)",18:30-Al-Riyadh SC-Al Hilal (M+ Vamos HD) (HD) (0e5)
-http://127.0.0.1:6878/ace/getstream?id=0e5d8c9724fa9163f49096b70484e315251eb785
-#EXTINF:-1 group-title="25-01 (Domingo) Saudi Pro League" tvg-name="18:30-Al-Riyadh SC-Al Hilal (M+ Vamos HD) (HD) (476)",18:30-Al-Riyadh SC-Al Hilal (M+ Vamos HD) (HD) (476)
+#EXTINF:-1 group-title="25-01 (Domingo) Saudi Pro League" tvg-name="18:30-Al-Riyadh SC-Al Hilal (MOVISTAR VAMOS) (FHD) (476)",18:30-Al-Riyadh SC-Al Hilal (MOVISTAR VAMOS) (FHD) (476)
 http://127.0.0.1:6878/ace/getstream?id=476b6f6583517bd75c15c4663bf45fab7c8da9cf
-#EXTINF:-1 group-title="25-01 (Domingo) Saudi Pro League" tvg-name="18:30-Al-Riyadh SC-Al Hilal (M+ Liga de Campeones 2 HD) (HD) (38f)",18:30-Al-Riyadh SC-Al Hilal (M+ Liga de Campeones 2 HD) (HD) (38f)
-http://127.0.0.1:6878/ace/getstream?id=38f7b2044e549df2039ff26cefa6f9a60c854d5e
-#EXTINF:-1 group-title="25-01 (Domingo) Saudi Pro League" tvg-name="18:30-Al-Riyadh SC-Al Hilal (M+ Liga de Campeones 2 HD) (HD) (74a)",18:30-Al-Riyadh SC-Al Hilal (M+ Liga de Campeones 2 HD) (HD) (74a)
-http://127.0.0.1:6878/ace/getstream?id=74ab4e4ec7e2da001f473ca40893b7307b8029c5
-#EXTINF:-1 group-title="25-01 (Domingo) Saudi Pro League" tvg-name="18:30-Al-Riyadh SC-Al Hilal (M+ Liga de Campeones 2 HD) (HD) (2b5)",18:30-Al-Riyadh SC-Al Hilal (M+ Liga de Campeones 2 HD) (HD) (2b5)
-http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
-#EXTINF:-1 group-title="25-01 (Domingo) Saudi Pro League" tvg-name="18:30-Al-Riyadh SC-Al Hilal (M+ Liga de Campeones 2 HD) (HD) (338)",18:30-Al-Riyadh SC-Al Hilal (M+ Liga de Campeones 2 HD) (HD) (338)
+#EXTINF:-1 group-title="25-01 (Domingo) Saudi Pro League" tvg-name="18:30-Al-Riyadh SC-Al Hilal (MOVISTAR VAMOS) (FHD) (651)",18:30-Al-Riyadh SC-Al Hilal (MOVISTAR VAMOS) (FHD) (651)
+http://127.0.0.1:6878/ace/getstream?id=651d6be899d1fafa107a265a9dc00ff914c1b548
+#EXTINF:-1 group-title="25-01 (Domingo) Saudi Pro League" tvg-name="18:30-Al-Riyadh SC-Al Hilal (MOVISTAR VAMOS) (HD) (0e5)",18:30-Al-Riyadh SC-Al Hilal (MOVISTAR VAMOS) (HD) (0e5)
+http://127.0.0.1:6878/ace/getstream?id=0e5d8c9724fa9163f49096b70484e315251eb785
+#EXTINF:-1 group-title="25-01 (Domingo) Saudi Pro League" tvg-name="18:30-Al-Riyadh SC-Al Hilal (MOVISTAR VAMOS) (FHD) (4e9)",18:30-Al-Riyadh SC-Al Hilal (MOVISTAR VAMOS) (FHD) (4e9)
+http://127.0.0.1:6878/ace/getstream?id=4e99e755aa32c4bc043a4bb1cd1de35f9bd94dde
+#EXTINF:-1 group-title="25-01 (Domingo) Saudi Pro League" tvg-name="18:30-Al-Riyadh SC-Al Hilal (MOVISTAR VAMOS) (FHD) (294)",18:30-Al-Riyadh SC-Al Hilal (MOVISTAR VAMOS) (FHD) (294)
+http://127.0.0.1:6878/ace/getstream?id=2940120bf034db79a7f5849846ccea0255172eae
+#EXTINF:-1 group-title="25-01 (Domingo) Saudi Pro League" tvg-name="18:30-Al-Riyadh SC-Al Hilal (LIGA DE CAMPEONES 2) (HD) (338)",18:30-Al-Riyadh SC-Al Hilal (LIGA DE CAMPEONES 2) (HD) (338)
 http://127.0.0.1:6878/ace/getstream?id=338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea
-#EXTINF:-1 group-title="25-01 (Domingo) NHL" tvg-name="19:30-Toronto Maple Leafs-Colorado Avalanche (M+ Deportes HD) (FHD) (f82)",19:30-Toronto Maple Leafs-Colorado Avalanche (M+ Deportes HD) (FHD) (f82)
+#EXTINF:-1 group-title="25-01 (Domingo) Saudi Pro League" tvg-name="18:30-Al-Riyadh SC-Al Hilal (LIGA DE CAMPEONES 2) (FHD) (74a)",18:30-Al-Riyadh SC-Al Hilal (LIGA DE CAMPEONES 2) (FHD) (74a)
+http://127.0.0.1:6878/ace/getstream?id=74ab4e4ec7e2da001f473ca40893b7307b8029c5
+#EXTINF:-1 group-title="25-01 (Domingo) Saudi Pro League" tvg-name="18:30-Al-Riyadh SC-Al Hilal (LIGA DE CAMPEONES 2) (FHD) (2b5)",18:30-Al-Riyadh SC-Al Hilal (LIGA DE CAMPEONES 2) (FHD) (2b5)
+http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
+#EXTINF:-1 group-title="25-01 (Domingo) Saudi Pro League" tvg-name="18:30-Al-Riyadh SC-Al Hilal (LIGA DE CAMPEONES 2) (HD) (38f)",18:30-Al-Riyadh SC-Al Hilal (LIGA DE CAMPEONES 2) (HD) (38f)
+http://127.0.0.1:6878/ace/getstream?id=38f7b2044e549df2039ff26cefa6f9a60c854d5e
+#EXTINF:-1 group-title="25-01 (Domingo) NHLRegular Season" tvg-name="19:30-Toronto Maple Leafs-Colorado Avalanche (MOVISTAR DEPORTES) (FHD) (f82)",19:30-Toronto Maple Leafs-Colorado Avalanche (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="25-01 (Domingo) NHL" tvg-name="19:30-Toronto Maple Leafs-Colorado Avalanche (M+ Deportes HD) (FHD) (5d3)",19:30-Toronto Maple Leafs-Colorado Avalanche (M+ Deportes HD) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="25-01 (Domingo) NHL" tvg-name="19:30-Toronto Maple Leafs-Colorado Avalanche (M+ Deportes HD) (FHD) (369)",19:30-Toronto Maple Leafs-Colorado Avalanche (M+ Deportes HD) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="25-01 (Domingo) NHL" tvg-name="19:30-Toronto Maple Leafs-Colorado Avalanche (M+ Deportes HD) (HD) (2f3)",19:30-Toronto Maple Leafs-Colorado Avalanche (M+ Deportes HD) (HD) (2f3)
-http://127.0.0.1:6878/ace/getstream?id=2f3cfd199a49819cbd129689a840dc3d23ab93aa
-#EXTINF:-1 group-title="25-01 (Domingo) NHL" tvg-name="19:30-Toronto Maple Leafs-Colorado Avalanche (M+ Deportes HD) (HD) (ebc)",19:30-Toronto Maple Leafs-Colorado Avalanche (M+ Deportes HD) (HD) (ebc)
-http://127.0.0.1:6878/ace/getstream?id=ebca4a63ce3bfda7b272964a1acc5227218184a4
-#EXTINF:-1 group-title="25-01 (Domingo) NHL" tvg-name="19:30-Toronto Maple Leafs-Colorado Avalanche (M+ Deportes HD) (HD) (3b5)",19:30-Toronto Maple Leafs-Colorado Avalanche (M+ Deportes HD) (HD) (3b5)
-http://127.0.0.1:6878/ace/getstream?id=3b50a1dca0977e3761d016edd79314ab797f74f6
-#EXTINF:-1 group-title="25-01 (Domingo) NHL" tvg-name="19:30-Toronto Maple Leafs-Colorado Avalanche (M+ Deportes HD) (HD) (77c)",19:30-Toronto Maple Leafs-Colorado Avalanche (M+ Deportes HD) (HD) (77c)
+#EXTINF:-1 group-title="25-01 (Domingo) NHLRegular Season" tvg-name="19:30-Toronto Maple Leafs-Colorado Avalanche (MOVISTAR DEPORTES) (FHD) (77c)",19:30-Toronto Maple Leafs-Colorado Avalanche (MOVISTAR DEPORTES) (FHD) (77c)
 http://127.0.0.1:6878/ace/getstream?id=77cf022557c56cdf8d8115f50e61f846ad72ee05
-#EXTINF:-1 group-title="25-01 (Domingo) NFL" tvg-name="21:00-Denver Broncos-New England Patriots (DAZN 1 HD) (FHD) (691)",21:00-Denver Broncos-New England Patriots (DAZN 1 HD) (FHD) (691)
-http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
-#EXTINF:-1 group-title="25-01 (Domingo) NFL" tvg-name="21:00-Denver Broncos-New England Patriots (DAZN 1 HD) (FHD) (414)",21:00-Denver Broncos-New England Patriots (DAZN 1 HD) (FHD) (414)
-http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
-#EXTINF:-1 group-title="25-01 (Domingo) NFL" tvg-name="21:00-Denver Broncos-New England Patriots (DAZN 1 HD) (HD) (5b7)",21:00-Denver Broncos-New England Patriots (DAZN 1 HD) (HD) (5b7)
-http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
-#EXTINF:-1 group-title="25-01 (Domingo) NFL" tvg-name="21:00-Denver Broncos-New England Patriots (DAZN 1 HD) (FHD) (b03)",21:00-Denver Broncos-New England Patriots (DAZN 1 HD) (FHD) (b03)
-http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
-#EXTINF:-1 group-title="25-01 (Domingo) NFL" tvg-name="21:00-Denver Broncos-New England Patriots (DAZN 1 HD) (FHD) (363)",21:00-Denver Broncos-New England Patriots (DAZN 1 HD) (FHD) (363)
-http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
-#EXTINF:-1 group-title="25-01 (Domingo) NFL" tvg-name="21:00-Denver Broncos-New England Patriots (DAZN 1 HD) (HD) (9af)",21:00-Denver Broncos-New England Patriots (DAZN 1 HD) (HD) (9af)
-http://127.0.0.1:6878/ace/getstream?id=9afc89481b721ce6c326c85e47148676077b8e62
-#EXTINF:-1 group-title="25-01 (Domingo) NFL" tvg-name="21:00-Denver Broncos-New England Patriots (DAZN 1 HD) (HD) (d5b)",21:00-Denver Broncos-New England Patriots (DAZN 1 HD) (HD) (d5b)
-http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
-#EXTINF:-1 group-title="25-01 (Domingo) NFL" tvg-name="21:00-Denver Broncos-New England Patriots (DAZN 1 HD) (FHD) (1e7)",21:00-Denver Broncos-New England Patriots (DAZN 1 HD) (FHD) (1e7)
-http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="21:00-Alavés-Real Betis (DAZN LaLiga HD) (FHD) (0e5)",21:00-Alavés-Real Betis (DAZN LaLiga HD) (FHD) (0e5)
-http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="21:00-Alavés-Real Betis (DAZN LaLiga HD) (HD) (9c7)",21:00-Alavés-Real Betis (DAZN LaLiga HD) (HD) (9c7)
-http://127.0.0.1:6878/ace/getstream?id=9c75f1d190c518cfe0f236415b8dccc1f676ef3b
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="21:00-Alavés-Real Betis (DAZN LaLiga HD) (HD) (4e6)",21:00-Alavés-Real Betis (DAZN LaLiga HD) (HD) (4e6)
+#EXTINF:-1 group-title="25-01 (Domingo) NHLRegular Season" tvg-name="19:30-Toronto Maple Leafs-Colorado Avalanche (MOVISTAR DEPORTES) (FHD) (5d3)",19:30-Toronto Maple Leafs-Colorado Avalanche (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="25-01 (Domingo) NHLRegular Season" tvg-name="19:30-Toronto Maple Leafs-Colorado Avalanche (MOVISTAR DEPORTES) (FHD) (3b5)",19:30-Toronto Maple Leafs-Colorado Avalanche (MOVISTAR DEPORTES) (FHD) (3b5)
+http://127.0.0.1:6878/ace/getstream?id=3b50a1dca0977e3761d016edd79314ab797f74f6
+#EXTINF:-1 group-title="25-01 (Domingo) NHLRegular Season" tvg-name="19:30-Toronto Maple Leafs-Colorado Avalanche (MOVISTAR DEPORTES) (HD) (2f3)",19:30-Toronto Maple Leafs-Colorado Avalanche (MOVISTAR DEPORTES) (HD) (2f3)
+http://127.0.0.1:6878/ace/getstream?id=2f3cfd199a49819cbd129689a840dc3d23ab93aa
+#EXTINF:-1 group-title="25-01 (Domingo) NHLRegular Season" tvg-name="19:30-Toronto Maple Leafs-Colorado Avalanche (MOVISTAR DEPORTES) (FHD) (369)",19:30-Toronto Maple Leafs-Colorado Avalanche (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="21:00-Alavés-Real Betis (DAZN LA LIGA 1) (HD) (4e6)",21:00-Alavés-Real Betis (DAZN LA LIGA 1) (HD) (4e6)
 http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="21:00-Alavés-Real Betis (DAZN LaLiga HD) (HD) (e2b)",21:00-Alavés-Real Betis (DAZN LaLiga HD) (HD) (e2b)
-http://127.0.0.1:6878/ace/getstream?id=e2b8a4aba2f4ea3dd68992fcdb65c9e62d910b05
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="21:00-Alavés-Real Betis (DAZN LaLiga HD) (HD) (495)",21:00-Alavés-Real Betis (DAZN LaLiga HD) (HD) (495)
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="21:00-Alavés-Real Betis (DAZN LA LIGA 1) (FHD) (495)",21:00-Alavés-Real Betis (DAZN LA LIGA 1) (FHD) (495)
 http://127.0.0.1:6878/ace/getstream?id=4955867fad3bc92e5b4c36045699fc277800fb18
-#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="21:00-Alavés-Real Betis (DAZN LaLiga HD) (HD) (dda)",21:00-Alavés-Real Betis (DAZN LaLiga HD) (HD) (dda)
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="21:00-Alavés-Real Betis (DAZN LA LIGA 1) (HD) (9c7)",21:00-Alavés-Real Betis (DAZN LA LIGA 1) (HD) (9c7)
+http://127.0.0.1:6878/ace/getstream?id=9c75f1d190c518cfe0f236415b8dccc1f676ef3b
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="21:00-Alavés-Real Betis (DAZN LA LIGA 1) (FHD) (0e5)",21:00-Alavés-Real Betis (DAZN LA LIGA 1) (FHD) (0e5)
+http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="21:00-Alavés-Real Betis (DAZN LA LIGA 1) (FHD) (e2b)",21:00-Alavés-Real Betis (DAZN LA LIGA 1) (FHD) (e2b)
+http://127.0.0.1:6878/ace/getstream?id=e2b8a4aba2f4ea3dd68992fcdb65c9e62d910b05
+#EXTINF:-1 group-title="25-01 (Domingo) La Liga EA Sports" tvg-name="21:00-Alavés-Real Betis (DAZN LA LIGA 1) (HD) (dda)",21:00-Alavés-Real Betis (DAZN LA LIGA 1) (HD) (dda)
 http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
-#EXTINF:-1 group-title="25-01 (Domingo) LaLiga Hypermotion" tvg-name="21:00-Deportivo-Racing Santander (LaLiga TV Hypermotion HD) (HD) (a4f)",21:00-Deportivo-Racing Santander (LaLiga TV Hypermotion HD) (HD) (a4f)
+#EXTINF:-1 group-title="25-01 (Domingo) LaLiga Hypermotion" tvg-name="21:00-Deportivo-Racing Santander (HYPERMOTION) (HD) (a4f)",21:00-Deportivo-Racing Santander (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
-#EXTINF:-1 group-title="25-01 (Domingo) LaLiga Hypermotion" tvg-name="21:00-Deportivo-Racing Santander (LaLiga TV Hypermotion HD) (HD) (87b)",21:00-Deportivo-Racing Santander (LaLiga TV Hypermotion HD) (HD) (87b)
-http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
-#EXTINF:-1 group-title="25-01 (Domingo) Primera División Argentina" tvg-name="22:30-Boca Juniors-Deportivo Riestra (M+ Liga de Campeones HD) (UHD) (152)",22:30-Boca Juniors-Deportivo Riestra (M+ Liga de Campeones HD) (UHD) (152)
-http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="25-01 (Domingo) Primera División Argentina" tvg-name="22:30-Boca Juniors-Deportivo Riestra (M+ Liga de Campeones HD) (FHD) (778)",22:30-Boca Juniors-Deportivo Riestra (M+ Liga de Campeones HD) (FHD) (778)
-http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="25-01 (Domingo) Primera División Argentina" tvg-name="22:30-Boca Juniors-Deportivo Riestra (M+ Liga de Campeones HD) (FHD) (afb)",22:30-Boca Juniors-Deportivo Riestra (M+ Liga de Campeones HD) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
-#EXTINF:-1 group-title="25-01 (Domingo) Primera División Argentina" tvg-name="22:30-Boca Juniors-Deportivo Riestra (M+ Liga de Campeones HD) (FHD) (afb)",22:30-Boca Juniors-Deportivo Riestra (M+ Liga de Campeones HD) (FHD) (afb)
+#EXTINF:-1 group-title="25-01 (Domingo) NFLConference Championships" tvg-name="21:00-Denver Broncos-New England Patriots (DAZN 1) (HD) (5b7)",21:00-Denver Broncos-New England Patriots (DAZN 1) (HD) (5b7)
+http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
+#EXTINF:-1 group-title="25-01 (Domingo) NFLConference Championships" tvg-name="21:00-Denver Broncos-New England Patriots (DAZN 1) (FHD) (1e7)",21:00-Denver Broncos-New England Patriots (DAZN 1) (FHD) (1e7)
+http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
+#EXTINF:-1 group-title="25-01 (Domingo) NFLConference Championships" tvg-name="21:00-Denver Broncos-New England Patriots (DAZN 1) (HD) (d5b)",21:00-Denver Broncos-New England Patriots (DAZN 1) (HD) (d5b)
+http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
+#EXTINF:-1 group-title="25-01 (Domingo) NFLConference Championships" tvg-name="21:00-Denver Broncos-New England Patriots (DAZN 1) (FHD) (363)",21:00-Denver Broncos-New England Patriots (DAZN 1) (FHD) (363)
+http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
+#EXTINF:-1 group-title="25-01 (Domingo) NFLConference Championships" tvg-name="21:00-Denver Broncos-New England Patriots (DAZN 1) (FHD) (b03)",21:00-Denver Broncos-New England Patriots (DAZN 1) (FHD) (b03)
+http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
+#EXTINF:-1 group-title="25-01 (Domingo) NFLConference Championships" tvg-name="21:00-Denver Broncos-New England Patriots (DAZN 1) (FHD) (691)",21:00-Denver Broncos-New England Patriots (DAZN 1) (FHD) (691)
+http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
+#EXTINF:-1 group-title="25-01 (Domingo) NFLConference Championships" tvg-name="21:00-Denver Broncos-New England Patriots (DAZN 1) (HD) (9af)",21:00-Denver Broncos-New England Patriots (DAZN 1) (HD) (9af)
+http://127.0.0.1:6878/ace/getstream?id=9afc89481b721ce6c326c85e47148676077b8e62
+#EXTINF:-1 group-title="25-01 (Domingo) NFLConference Championships" tvg-name="21:00-Denver Broncos-New England Patriots (DAZN 1) (FHD) (414)",21:00-Denver Broncos-New England Patriots (DAZN 1) (FHD) (414)
+http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
+#EXTINF:-1 group-title="25-01 (Domingo) Primera División ArgentinaTorneo Apertura" tvg-name="22:30-Boca Juniors-Deportivo Riestra (LIGA DE CAMPEONES) (FHD) (afb)",22:30-Boca Juniors-Deportivo Riestra (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
-#EXTINF:-1 group-title="25-01 (Domingo) Primera División Argentina" tvg-name="22:30-Boca Juniors-Deportivo Riestra (M+ Liga de Campeones HD) (FHD) (0f7)",22:30-Boca Juniors-Deportivo Riestra (M+ Liga de Campeones HD) (FHD) (0f7)
+#EXTINF:-1 group-title="25-01 (Domingo) Primera División ArgentinaTorneo Apertura" tvg-name="22:30-Boca Juniors-Deportivo Riestra (LIGA DE CAMPEONES) (FHD) (0f7)",22:30-Boca Juniors-Deportivo Riestra (LIGA DE CAMPEONES) (FHD) (0f7)
 http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
-#EXTINF:-1 group-title="25-01 (Domingo) Primera División Argentina" tvg-name="22:30-Boca Juniors-Deportivo Riestra (M+ Liga de Campeones HD) (HD) (b02)",22:30-Boca Juniors-Deportivo Riestra (M+ Liga de Campeones HD) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="25-01 (Domingo) Primera División Argentina" tvg-name="22:30-Boca Juniors-Deportivo Riestra (M+ Liga de Campeones HD) (HD) (bf1)",22:30-Boca Juniors-Deportivo Riestra (M+ Liga de Campeones HD) (HD) (bf1)
+#EXTINF:-1 group-title="25-01 (Domingo) Primera División ArgentinaTorneo Apertura" tvg-name="22:30-Boca Juniors-Deportivo Riestra (LIGA DE CAMPEONES) (UHD) (152)",22:30-Boca Juniors-Deportivo Riestra (LIGA DE CAMPEONES) (UHD) (152)
+http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
+#EXTINF:-1 group-title="25-01 (Domingo) Primera División ArgentinaTorneo Apertura" tvg-name="22:30-Boca Juniors-Deportivo Riestra (LIGA DE CAMPEONES) (HD) (bf1)",22:30-Boca Juniors-Deportivo Riestra (LIGA DE CAMPEONES) (HD) (bf1)
 http://127.0.0.1:6878/ace/getstream?id=bf10192dc72a98ee835a1b7ccac8b27737d02f25
-#EXTINF:-1 group-title="25-01 (Domingo) Primera División Argentina" tvg-name="22:30-Boca Juniors-Deportivo Riestra (M+ Liga de Campeones HD) (HD) (97d)",22:30-Boca Juniors-Deportivo Riestra (M+ Liga de Campeones HD) (HD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 group-title="25-01 (Domingo) Primera División Argentina" tvg-name="22:30-Boca Juniors-Deportivo Riestra (M+ Liga de Campeones HD) (HD) (e57)",22:30-Boca Juniors-Deportivo Riestra (M+ Liga de Campeones HD) (HD) (e57)
+#EXTINF:-1 group-title="25-01 (Domingo) Primera División ArgentinaTorneo Apertura" tvg-name="22:30-Boca Juniors-Deportivo Riestra (LIGA DE CAMPEONES) (HD) (b02)",22:30-Boca Juniors-Deportivo Riestra (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
+#EXTINF:-1 group-title="25-01 (Domingo) Primera División ArgentinaTorneo Apertura" tvg-name="22:30-Boca Juniors-Deportivo Riestra (LIGA DE CAMPEONES) (FHD) (778)",22:30-Boca Juniors-Deportivo Riestra (LIGA DE CAMPEONES) (FHD) (778)
+http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
+#EXTINF:-1 group-title="25-01 (Domingo) Primera División ArgentinaTorneo Apertura" tvg-name="22:30-Boca Juniors-Deportivo Riestra (LIGA DE CAMPEONES) (HD) (e57)",22:30-Boca Juniors-Deportivo Riestra (LIGA DE CAMPEONES) (HD) (e57)
 http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="26-01 (Lunes) NFL" tvg-name="00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2 HD) (FHD) (430)",00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2 HD) (FHD) (430)
+#EXTINF:-1 group-title="25-01 (Domingo) Primera División ArgentinaTorneo Apertura" tvg-name="22:30-Boca Juniors-Deportivo Riestra (LIGA DE CAMPEONES) (FHD) (afb)",22:30-Boca Juniors-Deportivo Riestra (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="26-01 (Lunes) NFLConference Championships" tvg-name="00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2) (FHD) (430)",00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2) (FHD) (430)
 http://127.0.0.1:6878/ace/getstream?id=43004e955731cd3afcc34d24e5178d4b427bff37
-#EXTINF:-1 group-title="26-01 (Lunes) NFL" tvg-name="00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2 HD) (HD) (f12)",00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2 HD) (HD) (f12)
+#EXTINF:-1 group-title="26-01 (Lunes) NFLConference Championships" tvg-name="00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2) (HD) (f12)",00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2) (HD) (f12)
 http://127.0.0.1:6878/ace/getstream?id=f12038c7fe603ed93fa9475d60692dd95bb7b17f
-#EXTINF:-1 group-title="26-01 (Lunes) NFL" tvg-name="00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2 HD) (HD) (b0e)",00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2 HD) (HD) (b0e)
+#EXTINF:-1 group-title="26-01 (Lunes) NFLConference Championships" tvg-name="00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2) (HD) (b0e)",00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2) (HD) (b0e)
 http://127.0.0.1:6878/ace/getstream?id=b0eabe0fdd02fdd165896236765a9b753a2ff516
-#EXTINF:-1 group-title="26-01 (Lunes) NFL" tvg-name="00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2 HD) (FHD) (2f9)",00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2 HD) (FHD) (2f9)
+#EXTINF:-1 group-title="26-01 (Lunes) NFLConference Championships" tvg-name="00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2) (FHD) (2f9)",00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2) (FHD) (2f9)
 http://127.0.0.1:6878/ace/getstream?id=2f9211669499f413dab1a490198afab2a9b4b57c
-#EXTINF:-1 group-title="26-01 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (Movistar Plus+ HD) (FHD) (b6f)",18:30-Al Nassr-Al Taawoun FC (Movistar Plus+ HD) (FHD) (b6f)
-http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
-#EXTINF:-1 group-title="26-01 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (Movistar Plus+ HD) (FHD) (199)",18:30-Al Nassr-Al Taawoun FC (Movistar Plus+ HD) (FHD) (199)
+#EXTINF:-1 group-title="26-01 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (MOVISTAR PLUS) (FHD) (199)",18:30-Al Nassr-Al Taawoun FC (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 group-title="26-01 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (Movistar Plus+ HD) (FHD) (586)",18:30-Al Nassr-Al Taawoun FC (Movistar Plus+ HD) (FHD) (586)
+#EXTINF:-1 group-title="26-01 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (MOVISTAR PLUS) (FHD) (586)",18:30-Al Nassr-Al Taawoun FC (MOVISTAR PLUS) (FHD) (586)
 http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
-#EXTINF:-1 group-title="26-01 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (Movistar Plus+ HD) (FHD) (1ab)",18:30-Al Nassr-Al Taawoun FC (Movistar Plus+ HD) (FHD) (1ab)
-http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
-#EXTINF:-1 group-title="26-01 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (M+ Liga de Campeones HD) (UHD) (152)",18:30-Al Nassr-Al Taawoun FC (M+ Liga de Campeones HD) (UHD) (152)
-http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="26-01 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (M+ Liga de Campeones HD) (FHD) (778)",18:30-Al Nassr-Al Taawoun FC (M+ Liga de Campeones HD) (FHD) (778)
-http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="26-01 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (M+ Liga de Campeones HD) (FHD) (afb)",18:30-Al Nassr-Al Taawoun FC (M+ Liga de Campeones HD) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
-#EXTINF:-1 group-title="26-01 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (M+ Liga de Campeones HD) (FHD) (afb)",18:30-Al Nassr-Al Taawoun FC (M+ Liga de Campeones HD) (FHD) (afb)
+#EXTINF:-1 group-title="26-01 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (MOVISTAR PLUS) (FHD) (b6f)",18:30-Al Nassr-Al Taawoun FC (MOVISTAR PLUS) (FHD) (b6f)
+http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
+#EXTINF:-1 group-title="26-01 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (FHD) (afb)",18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
-#EXTINF:-1 group-title="26-01 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (M+ Liga de Campeones HD) (FHD) (0f7)",18:30-Al Nassr-Al Taawoun FC (M+ Liga de Campeones HD) (FHD) (0f7)
+#EXTINF:-1 group-title="26-01 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (FHD) (0f7)",18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (FHD) (0f7)
 http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
-#EXTINF:-1 group-title="26-01 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (M+ Liga de Campeones HD) (HD) (b02)",18:30-Al Nassr-Al Taawoun FC (M+ Liga de Campeones HD) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="26-01 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (M+ Liga de Campeones HD) (HD) (bf1)",18:30-Al Nassr-Al Taawoun FC (M+ Liga de Campeones HD) (HD) (bf1)
+#EXTINF:-1 group-title="26-01 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (UHD) (152)",18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (UHD) (152)
+http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
+#EXTINF:-1 group-title="26-01 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (HD) (bf1)",18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (HD) (bf1)
 http://127.0.0.1:6878/ace/getstream?id=bf10192dc72a98ee835a1b7ccac8b27737d02f25
-#EXTINF:-1 group-title="26-01 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (M+ Liga de Campeones HD) (HD) (97d)",18:30-Al Nassr-Al Taawoun FC (M+ Liga de Campeones HD) (HD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 group-title="26-01 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (M+ Liga de Campeones HD) (HD) (e57)",18:30-Al Nassr-Al Taawoun FC (M+ Liga de Campeones HD) (HD) (e57)
+#EXTINF:-1 group-title="26-01 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (HD) (b02)",18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
+#EXTINF:-1 group-title="26-01 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (FHD) (778)",18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (FHD) (778)
+http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
+#EXTINF:-1 group-title="26-01 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (HD) (e57)",18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (HD) (e57)
 http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="26-01 (Lunes) LaLiga Hypermotion" tvg-name="20:30-AD Ceuta-Cultural Leonesa (LaLiga TV Hypermotion HD) (HD) (a4f)",20:30-AD Ceuta-Cultural Leonesa (LaLiga TV Hypermotion HD) (HD) (a4f)
+#EXTINF:-1 group-title="26-01 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (FHD) (afb)",18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="26-01 (Lunes) LaLiga Hypermotion" tvg-name="20:30-AD Ceuta-Cultural Leonesa (HYPERMOTION) (HD) (a4f)",20:30-AD Ceuta-Cultural Leonesa (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
-#EXTINF:-1 group-title="26-01 (Lunes) LaLiga Hypermotion" tvg-name="20:30-AD Ceuta-Cultural Leonesa (LaLiga TV Hypermotion HD) (HD) (87b)",20:30-AD Ceuta-Cultural Leonesa (LaLiga TV Hypermotion HD) (HD) (87b)
-http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
-#EXTINF:-1 group-title="26-01 (Lunes) La Liga EA Sports" tvg-name="21:00-Girona-Getafe (M+ LaLiga HD) (FHD) (8c3)",21:00-Girona-Getafe (M+ LaLiga HD) (FHD) (8c3)
-http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
-#EXTINF:-1 group-title="26-01 (Lunes) La Liga EA Sports" tvg-name="21:00-Girona-Getafe (M+ LaLiga HD) (HD) (c93)",21:00-Girona-Getafe (M+ LaLiga HD) (HD) (c93)
-http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
-#EXTINF:-1 group-title="26-01 (Lunes) La Liga EA Sports" tvg-name="21:00-Girona-Getafe (M+ LaLiga HD) (HD) (00c)",21:00-Girona-Getafe (M+ LaLiga HD) (HD) (00c)
-http://127.0.0.1:6878/ace/getstream?id=00c9bc9c5d7d87680a5a6bed349edfa775a89947
-#EXTINF:-1 group-title="26-01 (Lunes) La Liga EA Sports" tvg-name="21:00-Girona-Getafe (M+ LaLiga HD) (HD) (4b5)",21:00-Girona-Getafe (M+ LaLiga HD) (HD) (4b5)
+#EXTINF:-1 group-title="26-01 (Lunes) La Liga EA Sports" tvg-name="21:00-Girona-Getafe (M+ LALIGA) (FHD) (4b5)",21:00-Girona-Getafe (M+ LALIGA) (FHD) (4b5)
 http://127.0.0.1:6878/ace/getstream?id=4b528d10eaad747ddf52251206177573ee3e9f74
-#EXTINF:-1 group-title="26-01 (Lunes) La Liga EA Sports" tvg-name="21:00-Girona-Getafe (M+ LaLiga HD) (HD) (31c)",21:00-Girona-Getafe (M+ LaLiga HD) (HD) (31c)
+#EXTINF:-1 group-title="26-01 (Lunes) La Liga EA Sports" tvg-name="21:00-Girona-Getafe (M+ LALIGA) (FHD) (8c3)",21:00-Girona-Getafe (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="26-01 (Lunes) La Liga EA Sports" tvg-name="21:00-Girona-Getafe (M+ LALIGA) (HD) (31c)",21:00-Girona-Getafe (M+ LALIGA) (HD) (31c)
 http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
-#EXTINF:-1 group-title="26-01 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1 HD) (FHD) (691)",21:00-Everton-Leeds Utd (DAZN 1 HD) (FHD) (691)
-http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
-#EXTINF:-1 group-title="26-01 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1 HD) (FHD) (414)",21:00-Everton-Leeds Utd (DAZN 1 HD) (FHD) (414)
-http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
-#EXTINF:-1 group-title="26-01 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1 HD) (HD) (5b7)",21:00-Everton-Leeds Utd (DAZN 1 HD) (HD) (5b7)
+#EXTINF:-1 group-title="26-01 (Lunes) La Liga EA Sports" tvg-name="21:00-Girona-Getafe (M+ LALIGA) (FHD) (c93)",21:00-Girona-Getafe (M+ LALIGA) (FHD) (c93)
+http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
+#EXTINF:-1 group-title="26-01 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1) (HD) (5b7)",21:00-Everton-Leeds Utd (DAZN 1) (HD) (5b7)
 http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
-#EXTINF:-1 group-title="26-01 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1 HD) (FHD) (b03)",21:00-Everton-Leeds Utd (DAZN 1 HD) (FHD) (b03)
-http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
-#EXTINF:-1 group-title="26-01 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1 HD) (FHD) (363)",21:00-Everton-Leeds Utd (DAZN 1 HD) (FHD) (363)
-http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
-#EXTINF:-1 group-title="26-01 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1 HD) (HD) (9af)",21:00-Everton-Leeds Utd (DAZN 1 HD) (HD) (9af)
-http://127.0.0.1:6878/ace/getstream?id=9afc89481b721ce6c326c85e47148676077b8e62
-#EXTINF:-1 group-title="26-01 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1 HD) (HD) (d5b)",21:00-Everton-Leeds Utd (DAZN 1 HD) (HD) (d5b)
-http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
-#EXTINF:-1 group-title="26-01 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1 HD) (FHD) (1e7)",21:00-Everton-Leeds Utd (DAZN 1 HD) (FHD) (1e7)
+#EXTINF:-1 group-title="26-01 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1) (FHD) (1e7)",21:00-Everton-Leeds Utd (DAZN 1) (FHD) (1e7)
 http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
-#EXTINF:-1 group-title="27-01 (Martes) Euroliga" tvg-name="20:45-Paris Basketball-Real Madrid Baloncesto (M+ Deportes HD) (FHD) (f82)",20:45-Paris Basketball-Real Madrid Baloncesto (M+ Deportes HD) (FHD) (f82)
+#EXTINF:-1 group-title="26-01 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1) (HD) (d5b)",21:00-Everton-Leeds Utd (DAZN 1) (HD) (d5b)
+http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
+#EXTINF:-1 group-title="26-01 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1) (FHD) (363)",21:00-Everton-Leeds Utd (DAZN 1) (FHD) (363)
+http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
+#EXTINF:-1 group-title="26-01 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1) (FHD) (b03)",21:00-Everton-Leeds Utd (DAZN 1) (FHD) (b03)
+http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
+#EXTINF:-1 group-title="26-01 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1) (FHD) (691)",21:00-Everton-Leeds Utd (DAZN 1) (FHD) (691)
+http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
+#EXTINF:-1 group-title="26-01 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1) (HD) (9af)",21:00-Everton-Leeds Utd (DAZN 1) (HD) (9af)
+http://127.0.0.1:6878/ace/getstream?id=9afc89481b721ce6c326c85e47148676077b8e62
+#EXTINF:-1 group-title="26-01 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1) (FHD) (414)",21:00-Everton-Leeds Utd (DAZN 1) (FHD) (414)
+http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
+#EXTINF:-1 group-title="27-01 (Martes) EuroligaLiga Regular" tvg-name="20:45-Paris Basketball-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (f82)",20:45-Paris Basketball-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="27-01 (Martes) Euroliga" tvg-name="20:45-Paris Basketball-Real Madrid Baloncesto (M+ Deportes HD) (FHD) (5d3)",20:45-Paris Basketball-Real Madrid Baloncesto (M+ Deportes HD) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="27-01 (Martes) Euroliga" tvg-name="20:45-Paris Basketball-Real Madrid Baloncesto (M+ Deportes HD) (FHD) (369)",20:45-Paris Basketball-Real Madrid Baloncesto (M+ Deportes HD) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="27-01 (Martes) Euroliga" tvg-name="20:45-Paris Basketball-Real Madrid Baloncesto (M+ Deportes HD) (HD) (2f3)",20:45-Paris Basketball-Real Madrid Baloncesto (M+ Deportes HD) (HD) (2f3)
-http://127.0.0.1:6878/ace/getstream?id=2f3cfd199a49819cbd129689a840dc3d23ab93aa
-#EXTINF:-1 group-title="27-01 (Martes) Euroliga" tvg-name="20:45-Paris Basketball-Real Madrid Baloncesto (M+ Deportes HD) (HD) (ebc)",20:45-Paris Basketball-Real Madrid Baloncesto (M+ Deportes HD) (HD) (ebc)
-http://127.0.0.1:6878/ace/getstream?id=ebca4a63ce3bfda7b272964a1acc5227218184a4
-#EXTINF:-1 group-title="27-01 (Martes) Euroliga" tvg-name="20:45-Paris Basketball-Real Madrid Baloncesto (M+ Deportes HD) (HD) (3b5)",20:45-Paris Basketball-Real Madrid Baloncesto (M+ Deportes HD) (HD) (3b5)
-http://127.0.0.1:6878/ace/getstream?id=3b50a1dca0977e3761d016edd79314ab797f74f6
-#EXTINF:-1 group-title="27-01 (Martes) Euroliga" tvg-name="20:45-Paris Basketball-Real Madrid Baloncesto (M+ Deportes HD) (HD) (77c)",20:45-Paris Basketball-Real Madrid Baloncesto (M+ Deportes HD) (HD) (77c)
+#EXTINF:-1 group-title="27-01 (Martes) EuroligaLiga Regular" tvg-name="20:45-Paris Basketball-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (77c)",20:45-Paris Basketball-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (77c)
 http://127.0.0.1:6878/ace/getstream?id=77cf022557c56cdf8d8115f50e61f846ad72ee05
-#EXTINF:-1 group-title="27-01 (Martes) Coppa Italia" tvg-name="21:00-Fiorentina-Como 1907 (DAZN 1 HD) (FHD) (691)",21:00-Fiorentina-Como 1907 (DAZN 1 HD) (FHD) (691)
-http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
-#EXTINF:-1 group-title="27-01 (Martes) Coppa Italia" tvg-name="21:00-Fiorentina-Como 1907 (DAZN 1 HD) (FHD) (414)",21:00-Fiorentina-Como 1907 (DAZN 1 HD) (FHD) (414)
-http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
-#EXTINF:-1 group-title="27-01 (Martes) Coppa Italia" tvg-name="21:00-Fiorentina-Como 1907 (DAZN 1 HD) (HD) (5b7)",21:00-Fiorentina-Como 1907 (DAZN 1 HD) (HD) (5b7)
+#EXTINF:-1 group-title="27-01 (Martes) EuroligaLiga Regular" tvg-name="20:45-Paris Basketball-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (5d3)",20:45-Paris Basketball-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="27-01 (Martes) EuroligaLiga Regular" tvg-name="20:45-Paris Basketball-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (3b5)",20:45-Paris Basketball-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (3b5)
+http://127.0.0.1:6878/ace/getstream?id=3b50a1dca0977e3761d016edd79314ab797f74f6
+#EXTINF:-1 group-title="27-01 (Martes) EuroligaLiga Regular" tvg-name="20:45-Paris Basketball-Real Madrid Baloncesto (MOVISTAR DEPORTES) (HD) (2f3)",20:45-Paris Basketball-Real Madrid Baloncesto (MOVISTAR DEPORTES) (HD) (2f3)
+http://127.0.0.1:6878/ace/getstream?id=2f3cfd199a49819cbd129689a840dc3d23ab93aa
+#EXTINF:-1 group-title="27-01 (Martes) EuroligaLiga Regular" tvg-name="20:45-Paris Basketball-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (369)",20:45-Paris Basketball-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="27-01 (Martes) Coppa Italia1/8 de final" tvg-name="21:00-Fiorentina-Como 1907 (DAZN 1) (HD) (5b7)",21:00-Fiorentina-Como 1907 (DAZN 1) (HD) (5b7)
 http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
-#EXTINF:-1 group-title="27-01 (Martes) Coppa Italia" tvg-name="21:00-Fiorentina-Como 1907 (DAZN 1 HD) (FHD) (b03)",21:00-Fiorentina-Como 1907 (DAZN 1 HD) (FHD) (b03)
-http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
-#EXTINF:-1 group-title="27-01 (Martes) Coppa Italia" tvg-name="21:00-Fiorentina-Como 1907 (DAZN 1 HD) (FHD) (363)",21:00-Fiorentina-Como 1907 (DAZN 1 HD) (FHD) (363)
-http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
-#EXTINF:-1 group-title="27-01 (Martes) Coppa Italia" tvg-name="21:00-Fiorentina-Como 1907 (DAZN 1 HD) (HD) (9af)",21:00-Fiorentina-Como 1907 (DAZN 1 HD) (HD) (9af)
-http://127.0.0.1:6878/ace/getstream?id=9afc89481b721ce6c326c85e47148676077b8e62
-#EXTINF:-1 group-title="27-01 (Martes) Coppa Italia" tvg-name="21:00-Fiorentina-Como 1907 (DAZN 1 HD) (HD) (d5b)",21:00-Fiorentina-Como 1907 (DAZN 1 HD) (HD) (d5b)
-http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
-#EXTINF:-1 group-title="27-01 (Martes) Coppa Italia" tvg-name="21:00-Fiorentina-Como 1907 (DAZN 1 HD) (FHD) (1e7)",21:00-Fiorentina-Como 1907 (DAZN 1 HD) (FHD) (1e7)
+#EXTINF:-1 group-title="27-01 (Martes) Coppa Italia1/8 de final" tvg-name="21:00-Fiorentina-Como 1907 (DAZN 1) (FHD) (1e7)",21:00-Fiorentina-Como 1907 (DAZN 1) (FHD) (1e7)
 http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
-#EXTINF:-1 group-title="27-01 (Martes) Primera División Argentina" tvg-name="21:45-Vélez Sarsfield-Talleres Córdoba (M+ Vamos HD) (FHD) (294)",21:45-Vélez Sarsfield-Talleres Córdoba (M+ Vamos HD) (FHD) (294)
-http://127.0.0.1:6878/ace/getstream?id=2940120bf034db79a7f5849846ccea0255172eae
-#EXTINF:-1 group-title="27-01 (Martes) Primera División Argentina" tvg-name="21:45-Vélez Sarsfield-Talleres Córdoba (M+ Vamos HD) (FHD) (651)",21:45-Vélez Sarsfield-Talleres Córdoba (M+ Vamos HD) (FHD) (651)
-http://127.0.0.1:6878/ace/getstream?id=651d6be899d1fafa107a265a9dc00ff914c1b548
-#EXTINF:-1 group-title="27-01 (Martes) Primera División Argentina" tvg-name="21:45-Vélez Sarsfield-Talleres Córdoba (M+ Vamos HD) (FHD) (4e9)",21:45-Vélez Sarsfield-Talleres Córdoba (M+ Vamos HD) (FHD) (4e9)
-http://127.0.0.1:6878/ace/getstream?id=4e99e755aa32c4bc043a4bb1cd1de35f9bd94dde
-#EXTINF:-1 group-title="27-01 (Martes) Primera División Argentina" tvg-name="21:45-Vélez Sarsfield-Talleres Córdoba (M+ Vamos HD) (HD) (0e5)",21:45-Vélez Sarsfield-Talleres Córdoba (M+ Vamos HD) (HD) (0e5)
-http://127.0.0.1:6878/ace/getstream?id=0e5d8c9724fa9163f49096b70484e315251eb785
-#EXTINF:-1 group-title="27-01 (Martes) Primera División Argentina" tvg-name="21:45-Vélez Sarsfield-Talleres Córdoba (M+ Vamos HD) (HD) (476)",21:45-Vélez Sarsfield-Talleres Córdoba (M+ Vamos HD) (HD) (476)
+#EXTINF:-1 group-title="27-01 (Martes) Coppa Italia1/8 de final" tvg-name="21:00-Fiorentina-Como 1907 (DAZN 1) (HD) (d5b)",21:00-Fiorentina-Como 1907 (DAZN 1) (HD) (d5b)
+http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
+#EXTINF:-1 group-title="27-01 (Martes) Coppa Italia1/8 de final" tvg-name="21:00-Fiorentina-Como 1907 (DAZN 1) (FHD) (363)",21:00-Fiorentina-Como 1907 (DAZN 1) (FHD) (363)
+http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
+#EXTINF:-1 group-title="27-01 (Martes) Coppa Italia1/8 de final" tvg-name="21:00-Fiorentina-Como 1907 (DAZN 1) (FHD) (b03)",21:00-Fiorentina-Como 1907 (DAZN 1) (FHD) (b03)
+http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
+#EXTINF:-1 group-title="27-01 (Martes) Coppa Italia1/8 de final" tvg-name="21:00-Fiorentina-Como 1907 (DAZN 1) (FHD) (691)",21:00-Fiorentina-Como 1907 (DAZN 1) (FHD) (691)
+http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
+#EXTINF:-1 group-title="27-01 (Martes) Coppa Italia1/8 de final" tvg-name="21:00-Fiorentina-Como 1907 (DAZN 1) (HD) (9af)",21:00-Fiorentina-Como 1907 (DAZN 1) (HD) (9af)
+http://127.0.0.1:6878/ace/getstream?id=9afc89481b721ce6c326c85e47148676077b8e62
+#EXTINF:-1 group-title="27-01 (Martes) Coppa Italia1/8 de final" tvg-name="21:00-Fiorentina-Como 1907 (DAZN 1) (FHD) (414)",21:00-Fiorentina-Como 1907 (DAZN 1) (FHD) (414)
+http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
+#EXTINF:-1 group-title="27-01 (Martes) Primera División ArgentinaTorneo Apertura" tvg-name="21:45-Vélez Sarsfield-Talleres Córdoba (MOVISTAR VAMOS) (FHD) (476)",21:45-Vélez Sarsfield-Talleres Córdoba (MOVISTAR VAMOS) (FHD) (476)
 http://127.0.0.1:6878/ace/getstream?id=476b6f6583517bd75c15c4663bf45fab7c8da9cf
+#EXTINF:-1 group-title="27-01 (Martes) Primera División ArgentinaTorneo Apertura" tvg-name="21:45-Vélez Sarsfield-Talleres Córdoba (MOVISTAR VAMOS) (FHD) (651)",21:45-Vélez Sarsfield-Talleres Córdoba (MOVISTAR VAMOS) (FHD) (651)
+http://127.0.0.1:6878/ace/getstream?id=651d6be899d1fafa107a265a9dc00ff914c1b548
+#EXTINF:-1 group-title="27-01 (Martes) Primera División ArgentinaTorneo Apertura" tvg-name="21:45-Vélez Sarsfield-Talleres Córdoba (MOVISTAR VAMOS) (HD) (0e5)",21:45-Vélez Sarsfield-Talleres Córdoba (MOVISTAR VAMOS) (HD) (0e5)
+http://127.0.0.1:6878/ace/getstream?id=0e5d8c9724fa9163f49096b70484e315251eb785
+#EXTINF:-1 group-title="27-01 (Martes) Primera División ArgentinaTorneo Apertura" tvg-name="21:45-Vélez Sarsfield-Talleres Córdoba (MOVISTAR VAMOS) (FHD) (4e9)",21:45-Vélez Sarsfield-Talleres Córdoba (MOVISTAR VAMOS) (FHD) (4e9)
+http://127.0.0.1:6878/ace/getstream?id=4e99e755aa32c4bc043a4bb1cd1de35f9bd94dde
+#EXTINF:-1 group-title="27-01 (Martes) Primera División ArgentinaTorneo Apertura" tvg-name="21:45-Vélez Sarsfield-Talleres Córdoba (MOVISTAR VAMOS) (FHD) (294)",21:45-Vélez Sarsfield-Talleres Córdoba (MOVISTAR VAMOS) (FHD) (294)
+http://127.0.0.1:6878/ace/getstream?id=2940120bf034db79a7f5849846ccea0255172eae
