@@ -12,7 +12,6 @@ from pathlib import Path
 import io
 
 # --- GESTIÓN DEL MODO TESTING ---
-# Detectamos si se ha pasado el argumento --testing al script
 TEST_MODE = "--testing" in sys.argv
 SUFFIX = "_testing" if TEST_MODE else ""
 
@@ -25,30 +24,24 @@ if TEST_MODE:
 DIR_CANALES = "canales"
 DIR_HISTORY = "history"
 
-# Función auxiliar para inyectar el sufijo antes de la extensión
 def get_path(filename):
     base, ext = os.path.splitext(filename)
-    # Si el archivo está en una carpeta (ej: canales/lista.csv), manejamos el nombre
     if "/" in base:
         folder, name = base.rsplit("/", 1)
         return f"{folder}/{name}{SUFFIX}{ext}"
     return f"{base}{SUFFIX}{ext}"
 
-# Definición de archivos DE SALIDA (Aquí aplicamos el sufijo)
 FILE_ELCANO = get_path("elcano.m3u")
 FILE_NEW_ERA = get_path("new_era.m3u")
 FILE_EZDAKIT = get_path("ezdakit.m3u")
 FILE_EVENTOS = get_path("ezdakit_eventos.m3u")
-
-# Archivos dentro de carpeta canales
 FILE_BLACKLIST = get_path(f"{DIR_CANALES}/lista_negra.csv")
 FILE_CSV_OUT = get_path(f"{DIR_CANALES}/correspondencias.csv")
-FILE_DIAL_MAP = f"{DIR_CANALES}/listado_canales.csv" # Este es de lectura, usamos siempre el original
+FILE_DIAL_MAP = f"{DIR_CANALES}/listado_canales.csv"
 
-# --- URLS DE ORIGEN (SIEMPRE LAS DE PRODUCCIÓN) ---
+# --- URLS DE ORIGEN ---
 IPNS_HASH = "k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004"
 
-# He añadido más espejos para evitar el error de descarga
 URLS_ELCANO = [
     "https://ipfs.io/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.m3u",
     "https://gateway.pinata.cloud/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.m3u",
@@ -84,24 +77,19 @@ def download_file(urls, output_filename):
     
     for url in urls:
         try:
-            # print(f"  - Probando: {url}") # Descomentar para ver cada intento
             r = session.get(url, timeout=25)
-            
             if r.status_code == 200:
-                # Verificación básica de que es un M3U
                 if "#EXTM3U" in r.text[:200]:
                     Path(output_filename).write_text(r.text, encoding='utf-8')
                     print(f"  [ÉXITO] Descargado correctamente desde {url[:40]}...")
                     return True
                 else:
-                    print(f"  [AVISO] {url} devolvió 200 pero no parece un M3U válido (Header incorrecto).")
+                    print(f"  [AVISO] {url} no parece un M3U válido.")
             else:
-                print(f"  [FALLO] {url} devolvió Status Code: {r.status_code}")
-                
+                print(f"  [FALLO] {url} Status Code: {r.status_code}")
         except Exception as e:
             print(f"  [ERROR] {url}: {e}")
-            
-    print(f"[ERROR FATAL] Imposible descargar {output_filename} desde ninguna fuente.")
+    print(f"[ERROR FATAL] Imposible descargar {output_filename}")
     return False
 
 def read_file_safe(path_obj):
@@ -335,8 +323,14 @@ def scrape_agenda(blacklist_map):
             print(f"Probando {url}...")
             r = scraper.get(url, timeout=60)
             if r.status_code == 200:
+                # --- CORRECCIÓN CRÍTICA DE CODIFICACIÓN ---
+                # Forzamos UTF-8 porque el servidor a veces no envía el header correcto
+                # y requests asume ISO-8859-1, rompiendo tildes y ñ (EspaÃ±a).
+                r.encoding = 'utf-8' 
                 html = r.text
                 break
+            else:
+                print(f"Fallo: Status {r.status_code}")
         except Exception as e:
             print(f"Error: {e}")
             time.sleep(2)
@@ -412,13 +406,11 @@ def scrape_agenda(blacklist_map):
         Path(FILE_EVENTOS).write_text(full_content, encoding='utf-8')
         print(f"[ÉXITO] Generado {FILE_EVENTOS} con {len(entries)} eventos.")
         
-        # Historial
         Path(DIR_HISTORY).mkdir(exist_ok=True)
         ts = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
         history_name = f"ezdakit_eventos{SUFFIX}_{ts}.m3u"
         Path(f"{DIR_HISTORY}/{history_name}").write_text(full_content, encoding='utf-8')
         
-        # Limpieza
         files = sorted(glob.glob(f"{DIR_HISTORY}/ezdakit_eventos{SUFFIX}_*.m3u"))
         while len(files) > 50:
             os.remove(files[0])
