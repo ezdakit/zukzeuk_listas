@@ -1,63 +1,63 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
+#EXTINF:-1 group-title="01-26 (Lunes) NFL Conference Championships" tvg-name="00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2) (FHD) (fb2)",00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2) (FHD) (fb2)
+http://127.0.0.1:6878/ace/getstream?id=fb2dd566824658eeab27aae19a01c09430f1a97d
 #EXTINF:-1 group-title="01-26 (Lunes) NFL Conference Championships" tvg-name="00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2) (HD) (b0e)",00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2) (HD) (b0e)
 http://127.0.0.1:6878/ace/getstream?id=b0eabe0fdd02fdd165896236765a9b753a2ff516
 #EXTINF:-1 group-title="01-26 (Lunes) NFL Conference Championships" tvg-name="00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2) (FHD) (430)",00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2) (FHD) (430)
 http://127.0.0.1:6878/ace/getstream?id=43004e955731cd3afcc34d24e5178d4b427bff37
 #EXTINF:-1 group-title="01-26 (Lunes) NFL Conference Championships" tvg-name="00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2) (FHD) (2f9)",00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2) (FHD) (2f9)
 http://127.0.0.1:6878/ace/getstream?id=2f9211669499f413dab1a490198afab2a9b4b57c
-#EXTINF:-1 group-title="01-26 (Lunes) NFL Conference Championships" tvg-name="00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2) (FHD) (fb2)",00:30-Seattle Seahawks-Los Angeles Rams (DAZN 2) (FHD) (fb2)
-http://127.0.0.1:6878/ace/getstream?id=fb2dd566824658eeab27aae19a01c09430f1a97d
 #EXTINF:-1 group-title="01-26 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (MOVISTAR PLUS) (FHD) (586)",18:30-Al Nassr-Al Taawoun FC (MOVISTAR PLUS) (FHD) (586)
 http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
-#EXTINF:-1 group-title="01-26 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (MOVISTAR PLUS) (FHD) (b6f)",18:30-Al Nassr-Al Taawoun FC (MOVISTAR PLUS) (FHD) (b6f)
-http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
 #EXTINF:-1 group-title="01-26 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (MOVISTAR PLUS) (FHD) (199)",18:30-Al Nassr-Al Taawoun FC (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 group-title="01-26 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (FHD) (afb)",18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
-#EXTINF:-1 group-title="01-26 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (HD) (b02)",18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="01-26 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (FHD) (c16)",18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (FHD) (c16)
-http://127.0.0.1:6878/ace/getstream?id=c16b4fab1f724c94cad92081cbb7fc7c6fe8a2cc
+#EXTINF:-1 group-title="01-26 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (MOVISTAR PLUS) (FHD) (b6f)",18:30-Al Nassr-Al Taawoun FC (MOVISTAR PLUS) (FHD) (b6f)
+http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
 #EXTINF:-1 group-title="01-26 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (FHD) (afb)",18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
-#EXTINF:-1 group-title="01-26 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (FHD) (778)",18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (FHD) (778)
-http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="01-26 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (HD) (e57)",18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="01-26 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (UHD) (152)",18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (UHD) (152)
-http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
 #EXTINF:-1 group-title="01-26 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (FHD) (0f7)",18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (FHD) (0f7)
 http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
+#EXTINF:-1 group-title="01-26 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (UHD) (152)",18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (UHD) (152)
+http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
+#EXTINF:-1 group-title="01-26 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (FHD) (afb)",18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="01-26 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (FHD) (778)",18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (FHD) (778)
+http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
+#EXTINF:-1 group-title="01-26 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (HD) (b02)",18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
+#EXTINF:-1 group-title="01-26 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (HD) (e57)",18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="01-26 (Lunes) Saudi Pro League" tvg-name="18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (FHD) (c16)",18:30-Al Nassr-Al Taawoun FC (LIGA DE CAMPEONES) (FHD) (c16)
+http://127.0.0.1:6878/ace/getstream?id=c16b4fab1f724c94cad92081cbb7fc7c6fe8a2cc
 #EXTINF:-1 group-title="01-26 (Lunes) LaLiga Hypermotion" tvg-name="20:30-AD Ceuta-Cultural Leonesa (HYPERMOTION) (FHD) (87b)",20:30-AD Ceuta-Cultural Leonesa (HYPERMOTION) (FHD) (87b)
 http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="01-26 (Lunes) LaLiga Hypermotion" tvg-name="20:30-AD Ceuta-Cultural Leonesa (HYPERMOTION) (HD) (a4f)",20:30-AD Ceuta-Cultural Leonesa (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
-#EXTINF:-1 group-title="01-26 (Lunes) La Liga EA Sports" tvg-name="21:00-Girona-Getafe (M+ LALIGA) (FHD) (4b5)",21:00-Girona-Getafe (M+ LALIGA) (FHD) (4b5)
-http://127.0.0.1:6878/ace/getstream?id=4b528d10eaad747ddf52251206177573ee3e9f74
-#EXTINF:-1 group-title="01-26 (Lunes) La Liga EA Sports" tvg-name="21:00-Girona-Getafe (M+ LALIGA) (FHD) (00c)",21:00-Girona-Getafe (M+ LALIGA) (FHD) (00c)
-http://127.0.0.1:6878/ace/getstream?id=00c9bc9c5d7d87680a5a6bed349edfa775a89947
-#EXTINF:-1 group-title="01-26 (Lunes) La Liga EA Sports" tvg-name="21:00-Girona-Getafe (M+ LALIGA) (HD) (31c)",21:00-Girona-Getafe (M+ LALIGA) (HD) (31c)
-http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
-#EXTINF:-1 group-title="01-26 (Lunes) La Liga EA Sports" tvg-name="21:00-Girona-Getafe (M+ LALIGA) (FHD) (8c3)",21:00-Girona-Getafe (M+ LALIGA) (FHD) (8c3)
-http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
 #EXTINF:-1 group-title="01-26 (Lunes) La Liga EA Sports" tvg-name="21:00-Girona-Getafe (M+ LALIGA) (FHD) (c93)",21:00-Girona-Getafe (M+ LALIGA) (FHD) (c93)
 http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
+#EXTINF:-1 group-title="01-26 (Lunes) La Liga EA Sports" tvg-name="21:00-Girona-Getafe (M+ LALIGA) (HD) (31c)",21:00-Girona-Getafe (M+ LALIGA) (HD) (31c)
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
+#EXTINF:-1 group-title="01-26 (Lunes) La Liga EA Sports" tvg-name="21:00-Girona-Getafe (M+ LALIGA) (FHD) (00c)",21:00-Girona-Getafe (M+ LALIGA) (FHD) (00c)
+http://127.0.0.1:6878/ace/getstream?id=00c9bc9c5d7d87680a5a6bed349edfa775a89947
+#EXTINF:-1 group-title="01-26 (Lunes) La Liga EA Sports" tvg-name="21:00-Girona-Getafe (M+ LALIGA) (FHD) (8c3)",21:00-Girona-Getafe (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="01-26 (Lunes) La Liga EA Sports" tvg-name="21:00-Girona-Getafe (M+ LALIGA) (FHD) (4b5)",21:00-Girona-Getafe (M+ LALIGA) (FHD) (4b5)
+http://127.0.0.1:6878/ace/getstream?id=4b528d10eaad747ddf52251206177573ee3e9f74
 #EXTINF:-1 group-title="01-26 (Lunes) La Liga EA Sports" tvg-name="21:00-Girona-Getafe (M+ LALIGA) (FHD) (af4)",21:00-Girona-Getafe (M+ LALIGA) (FHD) (af4)
 http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
-#EXTINF:-1 group-title="01-26 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1) (FHD) (363)",21:00-Everton-Leeds Utd (DAZN 1) (FHD) (363)
-http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
 #EXTINF:-1 group-title="01-26 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1) (FHD) (691)",21:00-Everton-Leeds Utd (DAZN 1) (FHD) (691)
 http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
+#EXTINF:-1 group-title="01-26 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1) (FHD) (1e7)",21:00-Everton-Leeds Utd (DAZN 1) (FHD) (1e7)
+http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
 #EXTINF:-1 group-title="01-26 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1) (FHD) (b03)",21:00-Everton-Leeds Utd (DAZN 1) (FHD) (b03)
 http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
 #EXTINF:-1 group-title="01-26 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1) (HD) (d5b)",21:00-Everton-Leeds Utd (DAZN 1) (HD) (d5b)
 http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
-#EXTINF:-1 group-title="01-26 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1) (FHD) (1e7)",21:00-Everton-Leeds Utd (DAZN 1) (FHD) (1e7)
-http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
-#EXTINF:-1 group-title="01-26 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1) (HD) (5b7)",21:00-Everton-Leeds Utd (DAZN 1) (HD) (5b7)
-http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
 #EXTINF:-1 group-title="01-26 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1) (FHD) (414)",21:00-Everton-Leeds Utd (DAZN 1) (FHD) (414)
 http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
+#EXTINF:-1 group-title="01-26 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1) (HD) (5b7)",21:00-Everton-Leeds Utd (DAZN 1) (HD) (5b7)
+http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
+#EXTINF:-1 group-title="01-26 (Lunes) Premier League" tvg-name="21:00-Everton-Leeds Utd (DAZN 1) (FHD) (363)",21:00-Everton-Leeds Utd (DAZN 1) (FHD) (363)
+http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
