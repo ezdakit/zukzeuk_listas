@@ -115,9 +115,7 @@ def load_blacklist():
     print(f"[1] Cargando Lista Negra ({FILE_BLACKLIST})...")
     bl = {}
     path = Path(FILE_BLACKLIST)
-    if not path.exists():
-        print(f"    ⚠️ El archivo {FILE_BLACKLIST} no existe.")
-        return bl
+    if not path.exists(): return bl
     content = read_file_safe(path)
     reader = csv.DictReader(io.StringIO(content))
     for row in reader:
@@ -130,9 +128,7 @@ def load_dial_mapping():
     print(f"[2] Cargando Mapeo de Diales ({FILE_DIAL_MAP})...")
     mapping = {}
     path = Path(FILE_DIAL_MAP)
-    if not path.exists():
-        print(f"    ⚠️ El archivo {FILE_DIAL_MAP} no existe.")
-        return mapping
+    if not path.exists(): return mapping
     content = read_file_safe(path)
     reader = csv.DictReader(io.StringIO(content))
     for row in reader:
@@ -185,7 +181,7 @@ def build_master_list(blacklist):
     return master_db
 
 # ============================================================================================
-# SCRAPING DE EVENTOS
+# SCRAPING DE EVENTOS (MEJORADO CON PLAN B)
 # ============================================================================================
 
 def scrape_events(dial_map, master_db):
@@ -212,10 +208,7 @@ def scrape_events(dial_map, master_db):
         print("    ❌ ERROR: No se pudo obtener la agenda.")
         return []
 
-    # Guardar en debug para auditoría
     Path(f"{DIR_DEBUG}/agenda_debug.html").write_bytes(response_binary)
-
-    # Corregido: Usar contenido binario + from_encoding para evitar el UserWarning
     soup = BeautifulSoup(response_binary, 'html.parser', from_encoding='utf-8')
     days = soup.find_all('div', class_='events-day')
     print(f"    🔍 Diagnóstico: {len(days)} bloques de fechas encontrados.")
@@ -225,14 +218,34 @@ def scrape_events(dial_map, master_db):
         date_iso = day_div.get('data-date', 'Unknown')
         rows = day_div.find_all('tr', class_='event-row')
         for row in rows:
+            # 1. Extracción de Competición
             comp_div = row.find('div', class_='competition-info')
             competition = comp_div.get_text(strip=True) if comp_div else "Otros"
+            
             tds = row.find_all('td')
             if len(tds) < 3: continue
             
             hora = tds[0].get_text(strip=True)
-            evento = tds[2].get_text(strip=True)
             
+            # 2. Lógica Inteligente para el Nombre del Evento (Evitar concatenación sin espacios)
+            event_id = row.get('data-event-id', '').strip()
+            # Limpiamos la hora si el event_id la incluye (ej: 16:15-Evento -> Evento)
+            event_clean = re.sub(r'^\d{2}:\d{2}-', '', event_id)
+            
+            # PLAN B: Si el ID está mal, vacío o es insuficiente
+            if not event_clean or event_clean.endswith("--") or len(event_clean) < 3:
+                match_info = row.find('div', class_='match-info')
+                if match_info:
+                    teams = match_info.find_all('span', class_='team-name')
+                    if len(teams) >= 2:
+                        event_clean = f"{teams[0].get_text(strip=True)} - {teams[1].get_text(strip=True)}"
+                    else:
+                        # Fallback: Extraer texto con espacio para que no se peguen las palabras
+                        event_clean = match_info.get_text(" ", strip=True)
+                else:
+                    event_clean = tds[2].get_text(" ", strip=True)
+            
+            # 3. Buscar diales y vincular streams
             channels = row.find_all('span', class_='channel-link')
             for ch in channels:
                 m = re.search(r'\((?:M)?(\d+).*?\)', ch.get_text())
@@ -244,12 +257,12 @@ def scrape_events(dial_map, master_db):
                         for stream in streams:
                             events_list.append({
                                 'acestream_id': stream['ace_id'], 'dial_M': dial, 'tvg_id': map_info['tvg'],
-                                'fecha': date_iso, 'hora': hora, 'evento': evento,
+                                'fecha': date_iso, 'hora': hora, 'evento': event_clean,
                                 'competición': competition,
                                 'nombre_canal': map_info['name'], 'calidad_tag': stream['calidad_tag'],
                                 'in_bl': stream['in_bl'], 'prefix': stream['ace_id'][:3]
                             })
-    print(f"    -> {len(events_list)} eventos vinculados a canales ACEStream encontrados.")
+    print(f"    -> {len(events_list)} eventos vinculados encontrados.")
     return events_list
 
 # ============================================================================================
@@ -279,7 +292,7 @@ def generate_files(db, ev_list):
     # 3. Eventos
     if ev_list:
         print(f"[7] Generando {FILE_EVENTOS_CSV} y {FILE_EVENTOS_M3U}...")
-        ev_list.sort(key=lambda x: (x['fecha'], x['hora']))
+        ev_list.sort(key=lambda x: (x['fecha'], x['hora'], x['competición']))
         
         with open(FILE_EVENTOS_CSV, 'w', newline='', encoding='utf-8-sig') as f:
             fields = ['acestream_id','dial_M','tvg_id','fecha','hora','evento','competición','nombre_canal','calidad','lista_negra']
@@ -291,7 +304,9 @@ def generate_files(db, ev_list):
         m3u_ev = HEADER_M3U + "\n"
         for ev in ev_list:
             if ev['in_bl'] == 'no':
-                m3u_ev += f'#EXTINF:-1 group-title="{ev["fecha"]} {ev["competición"]}",{ev["hora"]}-{ev["evento"]} ({ev["nombre_canal"]}){ev["calidad_tag"]}\nhttp://127.0.0.1:6878/ace/getstream?id={ev["acestream_id"]}\n'
+                # El nombre final del M3U lleva Hora-Evento para ser claro
+                final_name = f"{ev['hora']}-{ev['evento']} ({ev['nombre_canal']}){ev['calidad_tag']}"
+                m3u_ev += f'#EXTINF:-1 group-title="{ev["fecha"]} {ev["competición"]}",{final_name}\nhttp://127.0.0.1:6878/ace/getstream?id={ev["acestream_id"]}\n'
         Path(FILE_EVENTOS_M3U).write_text(m3u_ev, encoding='utf-8')
     else:
         print("    ℹ️ No se generó M3U de eventos (lista vacía).")
