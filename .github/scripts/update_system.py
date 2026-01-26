@@ -248,7 +248,7 @@ def build_master_channel_list(blacklist):
         # Nombre para limpieza (Prioridad New Era)
         raw_name_for_clean = name_ne if name_ne else name_e
         
-        # Limpieza estándar (sin forzar nombre oficial)
+        # Limpieza estándar
         nombre_supuesto = clean_channel_name(raw_name_for_clean, aid[-4:])
         if not nombre_supuesto: nombre_supuesto = "Desconocido"
         
@@ -329,7 +329,6 @@ def generate_ezdakit_m3u(db):
     entries = []
     for item in db:
         prefix = item['ace_id'][:3]
-        # AQUÍ ESTÁ LA CLAVE: Usamos el nombre_supuesto (que viene del limpiado)
         display_name = f"{item['nombre_supuesto']}{item['calidad_tag']} ({item['source']}-{prefix})"
         grp = item['grupo_ne'] if item['grupo_ne'] else "OTROS"
         
@@ -409,7 +408,10 @@ def scrape_and_match(dial_map, master_db):
         for row in rows:
             event_raw = row.get('data-event-id')
             comp_div = row.find('div', class_='competition-info')
-            competition = comp_div.get_text(strip=True) if comp_div else ""
+            
+            # --- FIX: USAR SEPARATOR PARA EVITAR CONCATENACIÓN PEGADA ---
+            competition = comp_div.get_text(separator=' ', strip=True) if comp_div else ""
+            # -----------------------------------------------------------
             
             tds = row.find_all('td')
             hora_evento = "00:00"
@@ -432,7 +434,8 @@ def scrape_and_match(dial_map, master_db):
                     
                     map_info = dial_map.get(dial)
                     if not map_info:
-                        print(f"    [SKIP] Dial {dial} encontrado en web pero NO en listado_canales.csv")
+                        # Log silenciado para no saturar si es muy frecuente, descomentar si es necesario
+                        # print(f"    [SKIP] Dial {dial} encontrado en web pero NO en listado_canales.csv")
                         continue
                     
                     tvgid = map_info['tvg']
@@ -440,7 +443,7 @@ def scrape_and_match(dial_map, master_db):
                     
                     available_streams = tvg_index.get(tvgid, [])
                     if not available_streams:
-                        print(f"    [SKIP] Dial {dial} ({tvgid}) mapeado, pero SIN STREAMS en listas M3U.")
+                        # print(f"    [SKIP] Dial {dial} ({tvgid}) mapeado, pero SIN STREAMS en listas M3U.")
                         continue
                         
                     for stream in available_streams:
