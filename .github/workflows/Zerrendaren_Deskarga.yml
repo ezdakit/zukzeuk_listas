@@ -1,8 +1,8 @@
 name: Zerrendaren_Deskarga
 
 on:
-  #schedule:
-  #  - cron: "0 * * * *"   # Cada 60 minutos
+  schedule:
+    - cron: "0 * * * *"   # Cada 60 minutos
   workflow_dispatch:
 
 permissions:
