@@ -2,8 +2,8 @@ name: Actualizacion_Completa
 
 on:
   schedule:
-    - cron: "50 * * * *"  
-  workflow_dispatch:        # Ejecución manual con opción Testing
+    - cron: "*/5 * * * *"   # Ejecución cada 5 minutos
+  workflow_dispatch:        # Ejecución manual
     inputs:
       testing_mode:
         description: 'Activar Modo Testing (archivos _testing)'
@@ -47,5 +47,5 @@ jobs:
           git config --global user.email "github-actions@github.com"
           
           git add .
-          # Si hay cambios, hace commit.
+          # Si hay cambios, hace commit y push
           git diff --staged --quiet || (git commit -m "Auto-Update [Mode: ${{ github.event.inputs.testing_mode == 'true' && 'TEST' || 'PROD' }}] $(date +'%Y-%m-%d %H:%M')" && git push)
