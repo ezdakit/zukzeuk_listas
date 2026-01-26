@@ -31,19 +31,13 @@ IPNS_NEW_ERA = "k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004"
 
 def get_gateway_urls(hash_ipns, path_suffix=""):
     """
-    Genera URLs usando subdominios y añade un timestamp para romper la caché del gateway.
+    Genera la lista de URLs rotativas usando los 3 gateways seleccionados.
+    Se eliminan los parámetros no-cache para asegurar la compatibilidad total.
     """
-    # Generamos un timestamp único para cada ejecución (Cache Breaker)
-    cache_breaker = int(time.time())
-    
-    # Si el sufijo ya tiene parámetros (como ?tab=agenda), usamos &
-    separator = "&" if "?" in path_suffix else "?"
-    query_param = f"{separator}nocache={cache_breaker}"
-
     return [
-        f"https://ipfs.io/ipns/{hash_ipns}/{path_suffix}{query_param}",
-        f"https://{hash_ipns}.ipns.dweb.link/{path_suffix}{query_param}",
-        f"https://{hash_ipns}.ipns.w3s.link/{path_suffix}{query_param}"
+        f"https://ipfs.io/ipns/{hash_ipns}/{path_suffix}",
+        f"https://{hash_ipns}.ipns.dweb.link/{path_suffix}",
+        f"https://{hash_ipns}.ipns.w3s.link/{path_suffix}"
     ]
 
 URLS_ELCANO = get_gateway_urls(IPNS_ELCANO, "hashes.m3u")
@@ -85,15 +79,9 @@ def read_file_safe(path_obj):
 def download_file(urls, output_filename):
     print(f"   -> Descargando {output_filename}...")
     scraper = cloudscraper.create_scraper()
-    # Añadimos cabeceras para forzar al servidor a no usar caché
-    headers = {
-        'Cache-Control': 'no-cache, no-store, must-revalidate',
-        'Pragma': 'no-cache',
-        'Expires': '0'
-    }
     for url in urls:
         try:
-            r = scraper.get(url, timeout=30, headers=headers)
+            r = scraper.get(url, timeout=30)
             if r.status_code == 200:
                 r.encoding = 'utf-8'
                 Path(output_filename).write_text(r.text, encoding='utf-8')
@@ -195,7 +183,7 @@ def build_master_list(blacklist):
 # ============================================================================================
 
 def scrape_events(dial_map, master_db):
-    print(f"[6] Scraping de Agenda Deportiva (Anti-Caché)...")
+    print(f"[6] Scraping de Agenda Deportiva...")
     Path(DIR_DEBUG).mkdir(exist_ok=True)
     
     tvg_index = {}
@@ -204,19 +192,12 @@ def scrape_events(dial_map, master_db):
             tvg_index.setdefault(item['final_tvg'], []).append(item)
 
     scraper = cloudscraper.create_scraper()
-    # Forzamos cabeceras anti-caché
-    headers = {
-        'Cache-Control': 'no-cache, no-store, must-revalidate',
-        'Pragma': 'no-cache',
-        'Expires': '0'
-    }
-    
     final_days = []
 
     for url in URLS_AGENDA:
         try:
             print(f"    Probando gateway: {url.split('/')[2]}...")
-            r = scraper.get(url, timeout=35, headers=headers)
+            r = scraper.get(url, timeout=35)
             if r.status_code == 200:
                 Path(f"{DIR_DEBUG}/agenda_debug.html").write_bytes(r.content)
                 soup = BeautifulSoup(r.content, 'html.parser', from_encoding='utf-8')
@@ -237,7 +218,6 @@ def scrape_events(dial_map, master_db):
         rows = day_div.find_all('tr', class_='event-row')
         for row in rows:
             comp_div = row.find('div', class_='competition-info')
-            # Usamos espacio como separador para evitar palabras pegadas
             competition = comp_div.get_text(" ", strip=True) if comp_div else "Otros"
             
             tds = row.find_all('td')
