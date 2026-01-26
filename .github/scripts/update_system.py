@@ -18,35 +18,32 @@ TEST_MODE = "--testing" in sys.argv
 SUFFIX = "_testing" if TEST_MODE else ""
 
 print(f"######################################################################")
-print(f"### INICIANDO SISTEMA DE ACTUALIZACIÓN {'(MODO TESTING)' if TEST_MODE else '(PRODUCCIÓN)'}")
+print(f"### ZukZeuk SYSTEM: {'MODO TESTING 🛠️' if TEST_MODE else 'PRODUCCIÓN 🚀'}")
 print(f"### Sufijo de archivos: '{SUFFIX}'")
 print(f"######################################################################\n")
 
 DIR_CANALES = "canales"
 DIR_DEBUG = ".debug"
 
-IPNS_HASH_ELCANO = "k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr"
-IPNS_HASH_NEW_ERA = "k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004"
+# Hashes IPNS Originales
+IPNS_ELCANO = "k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr"
+IPNS_NEW_ERA = "k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004"
 
-URLS_ELCANO = [
-    f"https://ipfs.io/ipns/{IPNS_HASH_ELCANO}/hashes.m3u",
-    f"https://gateway.pinata.cloud/ipns/{IPNS_HASH_ELCANO}/hashes.m3u",
-    f"https://cloudflare-ipfs.com/ipns/{IPNS_HASH_ELCANO}/hashes.m3u"
-]
+# ============================================================================================
+# LÓGICA DE GATEWAYS (IMPLEMENTACIÓN SUBDOMINIOS)
+# ============================================================================================
 
-URLS_NEW_ERA = [
-    f"https://ipfs.io/ipns/{IPNS_HASH_NEW_ERA}/data/listas/lista_iptv.m3u",
-    f"https://gateway.pinata.cloud/ipns/{IPNS_HASH_NEW_ERA}/data/listas/lista_iptv.m3u",
-    f"https://cloudflare-ipfs.com/ipns/{IPNS_HASH_NEW_ERA}/data/listas/lista_iptv.m3u"
-]
+def get_gateway_urls(hash_ipns, path_suffix=""):
+    """Genera la lista de URLs rotativas usando los 3 gateways seleccionados."""
+    return [
+        f"https://ipfs.io/ipns/{hash_ipns}/{path_suffix}",           # Formato Path
+        f"https://{hash_ipns}.ipns.dweb.link/{path_suffix}",        # Formato Subdominio
+        f"https://{hash_ipns}.ipns.w3s.link/{path_suffix}"         # Formato Subdominio
+    ]
 
-# Gateways para la Agenda Deportiva
-URLS_AGENDA = [
-    f"https://ipfs.io/ipns/{IPNS_HASH_NEW_ERA}/?tab=agenda",
-    f"https://cloudflare-ipfs.com/ipns/{IPNS_HASH_NEW_ERA}/?tab=agenda",
-    f"https://gateway.pinata.cloud/ipns/{IPNS_HASH_NEW_ERA}/?tab=agenda",
-    f"https://cf-ipfs.com/ipns/{IPNS_HASH_NEW_ERA}/?tab=agenda"
-]
+URLS_ELCANO = get_gateway_urls(IPNS_ELCANO, "hashes.m3u")
+URLS_NEW_ERA = get_gateway_urls(IPNS_NEW_ERA, "data/listas/lista_iptv.m3u")
+URLS_AGENDA = get_gateway_urls(IPNS_NEW_ERA, "?tab=agenda")
 
 HEADER_M3U = """#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
@@ -89,7 +86,7 @@ def download_file(urls, output_filename):
             if r.status_code == 200:
                 r.encoding = 'utf-8'
                 Path(output_filename).write_text(r.text, encoding='utf-8')
-                print(f"      ✅ [OK] Fuente: {url[:50]}...")
+                print(f"      ✅ [OK] Gateway: {url.split('/')[2]}") # Muestra solo el host
                 return True
         except: pass
     return False
@@ -118,12 +115,11 @@ def load_blacklist():
     bl = {}
     path = Path(FILE_BLACKLIST)
     if not path.exists(): return bl
-    content = read_file_safe(path)
-    reader = csv.DictReader(io.StringIO(content))
+    reader = csv.DictReader(io.StringIO(read_file_safe(path)))
     for row in reader:
         aid = row.get('ace_id', '').strip()
         if aid: bl[aid] = row.get('canal_real', '').strip()
-    print(f"    -> {len(bl)} IDs cargados en Blacklist.")
+    print(f"    -> {len(bl)} IDs cargados.")
     return bl
 
 def load_dial_mapping():
@@ -131,16 +127,15 @@ def load_dial_mapping():
     mapping = {}
     path = Path(FILE_DIAL_MAP)
     if not path.exists(): return mapping
-    content = read_file_safe(path)
-    reader = csv.DictReader(io.StringIO(content))
+    reader = csv.DictReader(io.StringIO(read_file_safe(path)))
     for row in reader:
         dial = row.get('Dial_Movistar(M)', '').strip()
         if dial: mapping[dial] = {'tvg': row.get('TV_guide_id', ''), 'name': row.get('Canal', '')}
-    print(f"    -> {len(mapping)} canales mapeados desde el dial oficial.")
+    print(f"    -> {len(mapping)} canales mapeados.")
     return mapping
 
 # ============================================================================================
-# M3U CORE
+# FUSIÓN M3U
 # ============================================================================================
 
 def parse_m3u(file_path, tag):
@@ -152,7 +147,7 @@ def parse_m3u(file_path, tag):
         if line.startswith("#EXTINF"):
             raw_name = line.split(',')[-1].strip()
             url = lines[i+1].strip() if i+1 < len(lines) else ""
-            m = re.search(r"([0-9a-f_A-F]{40})", url)
+            m = re.search(r"([0-9a-fA-F]{40})", url)
             if m:
                 aid = m.group(1)
                 tid = re.search(r'tvg-id="([^"]+)"', line)
@@ -179,15 +174,15 @@ def build_master_list(blacklist):
             'in_bl': "yes" if aid in blacklist else "no", 'bl_real': blacklist.get(aid, "")
         })
     master_db.sort(key=lambda x: (x['grupo_ne'] or "ZZZ", x['nombre_supuesto']))
-    print(f"    -> Procesados {len(master_db)} canales únicos fusionados.")
+    print(f"    -> {len(master_db)} canales únicos procesados.")
     return master_db
 
 # ============================================================================================
-# SCRAPING DE EVENTOS (MEJORADO CON REDUNDANCIA Y FIX DE ESPACIOS)
+# SCRAPING AGENDA (REDUNDANTE Y ESPACIADO)
 # ============================================================================================
 
 def scrape_events(dial_map, master_db):
-    print(f"[6] Scraping de Agenda Deportiva...")
+    print(f"[6] Scraping de Agenda IPFS...")
     Path(DIR_DEBUG).mkdir(exist_ok=True)
     
     tvg_index = {}
@@ -197,33 +192,23 @@ def scrape_events(dial_map, master_db):
 
     scraper = cloudscraper.create_scraper()
     final_days = []
-    valid_gateway_used = ""
 
-    # Rotación inteligente: Si un gateway no devuelve bloques, probamos el siguiente
     for url in URLS_AGENDA:
         try:
-            print(f"    Probando gateway: {url[:45]}...")
+            print(f"    Probando gateway: {url.split('/')[2]}")
             r = scraper.get(url, timeout=35)
             if r.status_code == 200:
-                # Guardamos siempre el último intento para debug
                 Path(f"{DIR_DEBUG}/agenda_debug.html").write_bytes(r.content)
-                
                 soup = BeautifulSoup(r.content, 'html.parser', from_encoding='utf-8')
                 days = soup.find_all('div', class_='events-day')
-                
-                if len(days) > 0:
+                if days:
                     final_days = days
-                    valid_gateway_used = url
                     print(f"    ✅ Éxito: {len(days)} bloques de fechas encontrados.")
                     break
-                else:
-                    print(f"    ⚠️ Gateway fallido: 0 bloques encontrados (probablemente servido incorrectamente).")
-        except Exception as e:
-            print(f"    ❌ Error de conexión con gateway: {str(e)[:50]}")
-            pass
+        except: pass
 
     if not final_days:
-        print("    ❌ ERROR CRÍTICO: Ningún gateway IPFS devolvió contenido de agenda válido.")
+        print("    ❌ ERROR: Ningún gateway devolvió contenido válido.")
         return []
 
     events_list = []
@@ -231,7 +216,7 @@ def scrape_events(dial_map, master_db):
         date_iso = day_div.get('data-date', 'Unknown')
         rows = day_div.find_all('tr', class_='event-row')
         for row in rows:
-            # FIX ESPACIOS: Usar separador " " en get_text para evitar palabras pegadas
+            # FIX ESPACIOS: Usar separador en competición
             comp_div = row.find('div', class_='competition-info')
             competition = comp_div.get_text(" ", strip=True) if comp_div else "Otros"
             
@@ -239,24 +224,19 @@ def scrape_events(dial_map, master_db):
             if len(tds) < 3: continue
             
             hora = tds[0].get_text(strip=True)
-            
-            # Lógica inteligente para el nombre del evento
             event_id = row.get('data-event-id', '').strip()
             event_clean = re.sub(r'^\d{2}:\d{2}-', '', event_id)
             
-            # Plan B si el ID está vacío o pegado
+            # PLAN B: Si el ID falla o está pegado
             if not event_clean or "-" not in event_clean or len(event_clean) < 5:
                 match_info = row.find('div', class_='match-info')
                 if match_info:
                     teams = match_info.find_all('span', class_='team-name')
-                    if len(teams) >= 2:
-                        event_clean = f"{teams[0].get_text(strip=True)} - {teams[1].get_text(strip=True)}"
-                    else:
-                        event_clean = match_info.get_text(" ", strip=True)
+                    event_clean = f"{teams[0].get_text(strip=True)} - {teams[1].get_text(strip=True)}" if len(teams) >= 2 else match_info.get_text(" ", strip=True)
                 else:
                     event_clean = tds[2].get_text(" ", strip=True)
             
-            # Limpiar guiones redundantes del data-event-id si los hay
+            # Formatear guiones para legibilidad
             event_clean = event_clean.replace("-", " - ") if "-" in event_clean and " - " not in event_clean else event_clean
             event_clean = re.sub(r'\s+', ' ', event_clean).strip()
             
@@ -267,14 +247,12 @@ def scrape_events(dial_map, master_db):
                     dial = m.group(1)
                     map_info = dial_map.get(dial)
                     if map_info:
-                        streams = tvg_index.get(map_info['tvg'], [])
-                        for stream in streams:
+                        for stream in tvg_index.get(map_info['tvg'], []):
                             events_list.append({
                                 'acestream_id': stream['ace_id'], 'dial_M': dial, 'tvg_id': map_info['tvg'],
                                 'fecha': date_iso, 'hora': hora, 'evento': event_clean,
-                                'competición': competition,
-                                'nombre_canal': map_info['name'], 'calidad_tag': stream['calidad_tag'],
-                                'in_bl': stream['in_bl'], 'prefix': stream['ace_id'][:3]
+                                'competición': competition, 'nombre_canal': map_info['name'],
+                                'calidad_tag': stream['calidad_tag'], 'in_bl': stream['in_bl']
                             })
     print(f"    -> {len(events_list)} eventos vinculados encontrados.")
     return events_list
@@ -306,8 +284,7 @@ def generate_files(db, ev_list):
     # 3. Eventos
     if ev_list:
         print(f"[7] Generando {FILE_EVENTOS_CSV} y {FILE_EVENTOS_M3U}...")
-        ev_list.sort(key=lambda x: (x['fecha'], x['hora'], x['competición']))
-        
+        ev_list.sort(key=lambda x: (x['fecha'], x['hora']))
         with open(FILE_EVENTOS_CSV, 'w', newline='', encoding='utf-8-sig') as f:
             fields = ['acestream_id','dial_M','tvg_id','fecha','hora','evento','competición','nombre_canal','calidad','lista_negra']
             w = csv.DictWriter(f, fieldnames=fields)
@@ -318,11 +295,8 @@ def generate_files(db, ev_list):
         m3u_ev = HEADER_M3U + "\n"
         for ev in ev_list:
             if ev['in_bl'] == 'no':
-                final_name = f"{ev['hora']}-{ev['evento']} ({ev['nombre_canal']}){ev['calidad_tag']}"
-                m3u_ev += f'#EXTINF:-1 group-title="{ev["fecha"]} {ev["competición"]}",{final_name}\nhttp://127.0.0.1:6878/ace/getstream?id={ev["acestream_id"]}\n'
+                m3u_ev += f'#EXTINF:-1 group-title="{ev["fecha"]} {ev["competición"]}",{ev["hora"]}-{ev["evento"]} ({ev["nombre_canal"]}){ev["calidad_tag"]}\nhttp://127.0.0.1:6878/ace/getstream?id={ev["acestream_id"]}\n'
         Path(FILE_EVENTOS_M3U).write_text(m3u_ev, encoding='utf-8')
-    else:
-        print("    ℹ️ No se generó M3U de eventos (lista vacía).")
 
 if __name__ == "__main__":
     bl = load_blacklist()
