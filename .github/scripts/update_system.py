@@ -40,10 +40,12 @@ URLS_NEW_ERA = [
     f"https://cloudflare-ipfs.com/ipns/{IPNS_HASH_NEW_ERA}/data/listas/lista_iptv.m3u"
 ]
 
+# Gateways para la Agenda Deportiva
 URLS_AGENDA = [
     f"https://ipfs.io/ipns/{IPNS_HASH_NEW_ERA}/?tab=agenda",
-    f"https://cf-ipfs.com/ipns/{IPNS_HASH_NEW_ERA}/?tab=agenda",
-    f"https://cloudflare-ipfs.com/ipns/{IPNS_HASH_NEW_ERA}/?tab=agenda"
+    f"https://cloudflare-ipfs.com/ipns/{IPNS_HASH_NEW_ERA}/?tab=agenda",
+    f"https://gateway.pinata.cloud/ipns/{IPNS_HASH_NEW_ERA}/?tab=agenda",
+    f"https://cf-ipfs.com/ipns/{IPNS_HASH_NEW_ERA}/?tab=agenda"
 ]
 
 HEADER_M3U = """#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
@@ -150,7 +152,7 @@ def parse_m3u(file_path, tag):
         if line.startswith("#EXTINF"):
             raw_name = line.split(',')[-1].strip()
             url = lines[i+1].strip() if i+1 < len(lines) else ""
-            m = re.search(r"([0-9a-fA-F]{40})", url)
+            m = re.search(r"([0-9a-f_A-F]{40})", url)
             if m:
                 aid = m.group(1)
                 tid = re.search(r'tvg-id="([^"]+)"', line)
@@ -181,11 +183,11 @@ def build_master_list(blacklist):
     return master_db
 
 # ============================================================================================
-# SCRAPING DE EVENTOS (MEJORADO CON PLAN B)
+# SCRAPING DE EVENTOS (MEJORADO CON REDUNDANCIA Y FIX DE ESPACIOS)
 # ============================================================================================
 
 def scrape_events(dial_map, master_db):
-    print(f"[6] Scraping de Agenda IPFS...")
+    print(f"[6] Scraping de Agenda Deportiva...")
     Path(DIR_DEBUG).mkdir(exist_ok=True)
     
     tvg_index = {}
@@ -194,58 +196,70 @@ def scrape_events(dial_map, master_db):
             tvg_index.setdefault(item['final_tvg'], []).append(item)
 
     scraper = cloudscraper.create_scraper()
-    response_binary = None
+    final_days = []
+    valid_gateway_used = ""
+
+    # Rotación inteligente: Si un gateway no devuelve bloques, probamos el siguiente
     for url in URLS_AGENDA:
         try:
-            r = scraper.get(url, timeout=45)
+            print(f"    Probando gateway: {url[:45]}...")
+            r = scraper.get(url, timeout=35)
             if r.status_code == 200:
-                response_binary = r.content
-                print(f"    ✅ Agenda descargada desde: {url[:40]}...")
-                break
-        except: pass
+                # Guardamos siempre el último intento para debug
+                Path(f"{DIR_DEBUG}/agenda_debug.html").write_bytes(r.content)
+                
+                soup = BeautifulSoup(r.content, 'html.parser', from_encoding='utf-8')
+                days = soup.find_all('div', class_='events-day')
+                
+                if len(days) > 0:
+                    final_days = days
+                    valid_gateway_used = url
+                    print(f"    ✅ Éxito: {len(days)} bloques de fechas encontrados.")
+                    break
+                else:
+                    print(f"    ⚠️ Gateway fallido: 0 bloques encontrados (probablemente servido incorrectamente).")
+        except Exception as e:
+            print(f"    ❌ Error de conexión con gateway: {str(e)[:50]}")
+            pass
 
-    if not response_binary:
-        print("    ❌ ERROR: No se pudo obtener la agenda.")
+    if not final_days:
+        print("    ❌ ERROR CRÍTICO: Ningún gateway IPFS devolvió contenido de agenda válido.")
         return []
 
-    Path(f"{DIR_DEBUG}/agenda_debug.html").write_bytes(response_binary)
-    soup = BeautifulSoup(response_binary, 'html.parser', from_encoding='utf-8')
-    days = soup.find_all('div', class_='events-day')
-    print(f"    🔍 Diagnóstico: {len(days)} bloques de fechas encontrados.")
-    
     events_list = []
-    for day_div in days:
+    for day_div in final_days:
         date_iso = day_div.get('data-date', 'Unknown')
         rows = day_div.find_all('tr', class_='event-row')
         for row in rows:
-            # 1. Extracción de Competición
+            # FIX ESPACIOS: Usar separador " " en get_text para evitar palabras pegadas
             comp_div = row.find('div', class_='competition-info')
-            competition = comp_div.get_text(strip=True) if comp_div else "Otros"
+            competition = comp_div.get_text(" ", strip=True) if comp_div else "Otros"
             
             tds = row.find_all('td')
             if len(tds) < 3: continue
             
             hora = tds[0].get_text(strip=True)
             
-            # 2. Lógica Inteligente para el Nombre del Evento (Evitar concatenación sin espacios)
+            # Lógica inteligente para el nombre del evento
             event_id = row.get('data-event-id', '').strip()
-            # Limpiamos la hora si el event_id la incluye (ej: 16:15-Evento -> Evento)
             event_clean = re.sub(r'^\d{2}:\d{2}-', '', event_id)
             
-            # PLAN B: Si el ID está mal, vacío o es insuficiente
-            if not event_clean or event_clean.endswith("--") or len(event_clean) < 3:
+            # Plan B si el ID está vacío o pegado
+            if not event_clean or "-" not in event_clean or len(event_clean) < 5:
                 match_info = row.find('div', class_='match-info')
                 if match_info:
                     teams = match_info.find_all('span', class_='team-name')
                     if len(teams) >= 2:
                         event_clean = f"{teams[0].get_text(strip=True)} - {teams[1].get_text(strip=True)}"
                     else:
-                        # Fallback: Extraer texto con espacio para que no se peguen las palabras
                         event_clean = match_info.get_text(" ", strip=True)
                 else:
                     event_clean = tds[2].get_text(" ", strip=True)
             
-            # 3. Buscar diales y vincular streams
+            # Limpiar guiones redundantes del data-event-id si los hay
+            event_clean = event_clean.replace("-", " - ") if "-" in event_clean and " - " not in event_clean else event_clean
+            event_clean = re.sub(r'\s+', ' ', event_clean).strip()
+            
             channels = row.find_all('span', class_='channel-link')
             for ch in channels:
                 m = re.search(r'\((?:M)?(\d+).*?\)', ch.get_text())
@@ -304,7 +318,6 @@ def generate_files(db, ev_list):
         m3u_ev = HEADER_M3U + "\n"
         for ev in ev_list:
             if ev['in_bl'] == 'no':
-                # El nombre final del M3U lleva Hora-Evento para ser claro
                 final_name = f"{ev['hora']}-{ev['evento']} ({ev['nombre_canal']}){ev['calidad_tag']}"
                 m3u_ev += f'#EXTINF:-1 group-title="{ev["fecha"]} {ev["competición"]}",{final_name}\nhttp://127.0.0.1:6878/ace/getstream?id={ev["acestream_id"]}\n'
         Path(FILE_EVENTOS_M3U).write_text(m3u_ev, encoding='utf-8')
