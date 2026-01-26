@@ -25,20 +25,25 @@ print(f"######################################################################\n
 DIR_CANALES = "canales"
 DIR_DEBUG = ".debug"
 
-# Hashes IPNS Originales
+# Hashes IPNS
 IPNS_ELCANO = "k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr"
 IPNS_NEW_ERA = "k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004"
 
-# ============================================================================================
-# LÓGICA DE GATEWAYS (IMPLEMENTACIÓN SUBDOMINIOS)
-# ============================================================================================
-
 def get_gateway_urls(hash_ipns, path_suffix=""):
-    """Genera la lista de URLs rotativas usando los 3 gateways seleccionados."""
+    """
+    Genera URLs usando subdominios y añade un timestamp para romper la caché del gateway.
+    """
+    # Generamos un timestamp único para cada ejecución (Cache Breaker)
+    cache_breaker = int(time.time())
+    
+    # Si el sufijo ya tiene parámetros (como ?tab=agenda), usamos &
+    separator = "&" if "?" in path_suffix else "?"
+    query_param = f"{separator}nocache={cache_breaker}"
+
     return [
-        f"https://ipfs.io/ipns/{hash_ipns}/{path_suffix}",           # Formato Path
-        f"https://{hash_ipns}.ipns.dweb.link/{path_suffix}",        # Formato Subdominio
-        f"https://{hash_ipns}.ipns.w3s.link/{path_suffix}"         # Formato Subdominio
+        f"https://ipfs.io/ipns/{hash_ipns}/{path_suffix}{query_param}",
+        f"https://{hash_ipns}.ipns.dweb.link/{path_suffix}{query_param}",
+        f"https://{hash_ipns}.ipns.w3s.link/{path_suffix}{query_param}"
     ]
 
 URLS_ELCANO = get_gateway_urls(IPNS_ELCANO, "hashes.m3u")
@@ -80,13 +85,19 @@ def read_file_safe(path_obj):
 def download_file(urls, output_filename):
     print(f"   -> Descargando {output_filename}...")
     scraper = cloudscraper.create_scraper()
+    # Añadimos cabeceras para forzar al servidor a no usar caché
+    headers = {
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
+        'Pragma': 'no-cache',
+        'Expires': '0'
+    }
     for url in urls:
         try:
-            r = scraper.get(url, timeout=30)
+            r = scraper.get(url, timeout=30, headers=headers)
             if r.status_code == 200:
                 r.encoding = 'utf-8'
                 Path(output_filename).write_text(r.text, encoding='utf-8')
-                print(f"      ✅ [OK] Gateway: {url.split('/')[2]}") # Muestra solo el host
+                print(f"      ✅ [OK] Gateway: {url.split('/')[2]}")
                 return True
         except: pass
     return False
@@ -115,7 +126,8 @@ def load_blacklist():
     bl = {}
     path = Path(FILE_BLACKLIST)
     if not path.exists(): return bl
-    reader = csv.DictReader(io.StringIO(read_file_safe(path)))
+    content = read_file_safe(path)
+    reader = csv.DictReader(io.StringIO(content))
     for row in reader:
         aid = row.get('ace_id', '').strip()
         if aid: bl[aid] = row.get('canal_real', '').strip()
@@ -127,7 +139,8 @@ def load_dial_mapping():
     mapping = {}
     path = Path(FILE_DIAL_MAP)
     if not path.exists(): return mapping
-    reader = csv.DictReader(io.StringIO(read_file_safe(path)))
+    content = read_file_safe(path)
+    reader = csv.DictReader(io.StringIO(content))
     for row in reader:
         dial = row.get('Dial_Movistar(M)', '').strip()
         if dial: mapping[dial] = {'tvg': row.get('TV_guide_id', ''), 'name': row.get('Canal', '')}
@@ -178,11 +191,11 @@ def build_master_list(blacklist):
     return master_db
 
 # ============================================================================================
-# SCRAPING AGENDA (REDUNDANTE Y ESPACIADO)
+# SCRAPING AGENDA
 # ============================================================================================
 
 def scrape_events(dial_map, master_db):
-    print(f"[6] Scraping de Agenda IPFS...")
+    print(f"[6] Scraping de Agenda Deportiva (Anti-Caché)...")
     Path(DIR_DEBUG).mkdir(exist_ok=True)
     
     tvg_index = {}
@@ -191,12 +204,19 @@ def scrape_events(dial_map, master_db):
             tvg_index.setdefault(item['final_tvg'], []).append(item)
 
     scraper = cloudscraper.create_scraper()
+    # Forzamos cabeceras anti-caché
+    headers = {
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
+        'Pragma': 'no-cache',
+        'Expires': '0'
+    }
+    
     final_days = []
 
     for url in URLS_AGENDA:
         try:
-            print(f"    Probando gateway: {url.split('/')[2]}")
-            r = scraper.get(url, timeout=35)
+            print(f"    Probando gateway: {url.split('/')[2]}...")
+            r = scraper.get(url, timeout=35, headers=headers)
             if r.status_code == 200:
                 Path(f"{DIR_DEBUG}/agenda_debug.html").write_bytes(r.content)
                 soup = BeautifulSoup(r.content, 'html.parser', from_encoding='utf-8')
@@ -216,8 +236,8 @@ def scrape_events(dial_map, master_db):
         date_iso = day_div.get('data-date', 'Unknown')
         rows = day_div.find_all('tr', class_='event-row')
         for row in rows:
-            # FIX ESPACIOS: Usar separador en competición
             comp_div = row.find('div', class_='competition-info')
+            # Usamos espacio como separador para evitar palabras pegadas
             competition = comp_div.get_text(" ", strip=True) if comp_div else "Otros"
             
             tds = row.find_all('td')
@@ -227,7 +247,6 @@ def scrape_events(dial_map, master_db):
             event_id = row.get('data-event-id', '').strip()
             event_clean = re.sub(r'^\d{2}:\d{2}-', '', event_id)
             
-            # PLAN B: Si el ID falla o está pegado
             if not event_clean or "-" not in event_clean or len(event_clean) < 5:
                 match_info = row.find('div', class_='match-info')
                 if match_info:
@@ -236,7 +255,6 @@ def scrape_events(dial_map, master_db):
                 else:
                     event_clean = tds[2].get_text(" ", strip=True)
             
-            # Formatear guiones para legibilidad
             event_clean = event_clean.replace("-", " - ") if "-" in event_clean and " - " not in event_clean else event_clean
             event_clean = re.sub(r'\s+', ' ', event_clean).strip()
             
