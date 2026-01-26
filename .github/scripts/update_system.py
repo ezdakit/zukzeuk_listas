@@ -409,9 +409,8 @@ def scrape_and_match(dial_map, master_db):
             event_raw = row.get('data-event-id')
             comp_div = row.find('div', class_='competition-info')
             
-            # --- FIX: USAR SEPARATOR PARA EVITAR CONCATENACIÓN PEGADA ---
+            # --- SEPARATOR para evitar pegado de textos ---
             competition = comp_div.get_text(separator=' ', strip=True) if comp_div else ""
-            # -----------------------------------------------------------
             
             tds = row.find_all('td')
             hora_evento = "00:00"
@@ -427,15 +426,40 @@ def scrape_and_match(dial_map, master_db):
             processed_ace_ids = set()
             
             for ch in channels:
-                txt = ch.get_text()
-                match = re.search(r'\((?:M)?(\d+).*?\)', txt)
-                if match:
-                    dial = match.group(1)
+                txt = ch.get_text().strip()
+                dial = None
+
+                # -------------------------------------------------------------------------
+                # LÓGICA DE EXTRACCIÓN DE DIAL (4 REGLAS)
+                # -------------------------------------------------------------------------
+                
+                # REGLA 1 y 2: Patrón explícito Movistar (Mxxx...)
+                # Busca 'M' seguida de dígitos dentro de paréntesis.
+                # Ej: (M54 O11) -> 54, (M8) -> 8
+                m_match = re.search(r'\([^)]*?M(\d+)[^)]*?\)', txt)
+
+                if m_match:
+                    dial = m_match.group(1)
+                else:
+                    # REGLA 4: Patrón solo dígitos (zzz)
+                    # Ej: (60). NO debe coincidir si hay letras como O60.
+                    # Regex: Paréntesis, dígitos puros, paréntesis.
+                    d_match = re.search(r'\((\d+)\)', txt)
+                    if d_match:
+                        # Regla de exclusión de ORANGE
+                        if "ORANGE" not in txt.upper():
+                            dial = d_match.group(1)
                     
+                    # REGLA 3: Patrón (Oyyy). 
+                    # No coincide con m_match (no tiene M).
+                    # No coincide con d_match (tiene letra O).
+                    # Resultado: dial se mantiene None. Ignorado.
+
+                # -------------------------------------------------------------------------
+
+                if dial:
                     map_info = dial_map.get(dial)
                     if not map_info:
-                        # Log silenciado para no saturar si es muy frecuente, descomentar si es necesario
-                        # print(f"    [SKIP] Dial {dial} encontrado en web pero NO en listado_canales.csv")
                         continue
                     
                     tvgid = map_info['tvg']
@@ -443,7 +467,6 @@ def scrape_and_match(dial_map, master_db):
                     
                     available_streams = tvg_index.get(tvgid, [])
                     if not available_streams:
-                        # print(f"    [SKIP] Dial {dial} ({tvgid}) mapeado, pero SIN STREAMS en listas M3U.")
                         continue
                         
                     for stream in available_streams:
