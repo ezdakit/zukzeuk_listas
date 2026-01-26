@@ -2,11 +2,11 @@ name: Actualizacion_Completa
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # Ejecución cada 5 minutos
-  workflow_dispatch:        # Ejecución manual
+    - cron: "*/5 * * * *"   # Cada 5 minutos (Si te funcionaba antes, funcionará ahora)
+  workflow_dispatch:
     inputs:
       testing_mode:
-        description: 'Activar Modo Testing (archivos _testing)'
+        description: 'Activar Modo Testing'
         required: false
         default: false
         type: boolean
@@ -17,6 +17,11 @@ permissions:
 jobs:
   run-update:
     runs-on: ubuntu-latest
+    
+    # ESTA ES LA SOLUCIÓN: Definimos la variable ANTES de los pasos.
+    # Si inputs.testing_mode no existe (porque es Cron), usa 'false'.
+    env:
+      IS_TESTING: ${{ inputs.testing_mode || 'false' }}
 
     steps:
       - name: Checkout del repositorio
@@ -33,11 +38,14 @@ jobs:
 
       - name: Ejecutar Sistema de Actualización
         run: |
-          if [ "${{ github.event.inputs.testing_mode }}" == "true" ]; then
-            echo "Modo Manual detectado: TESTING activado"
+          # Ahora leemos la variable de entorno, no el contexto de GitHub directo
+          echo "Modo detectado: $IS_TESTING"
+          
+          if [ "$IS_TESTING" == "true" ]; then
+            echo "--> Ejecutando en MODO TESTING"
             python .github/scripts/update_system.py --testing
           else
-            echo "Ejecución normal (Producción)"
+            echo "--> Ejecutando en MODO PRODUCCIÓN (Cron/Normal)"
             python .github/scripts/update_system.py
           fi
 
@@ -47,5 +55,9 @@ jobs:
           git config --global user.email "github-actions@github.com"
           
           git add .
-          # Si hay cambios, hace commit y push
-          git diff --staged --quiet || (git commit -m "Auto-Update [Mode: ${{ github.event.inputs.testing_mode == 'true' && 'TEST' || 'PROD' }}] $(date +'%Y-%m-%d %H:%M')" && git push)
+          
+          # Mensaje dinámico según el modo
+          MODE_MSG="PROD"
+          if [ "$IS_TESTING" == "true" ]; then MODE_MSG="TEST"; fi
+          
+          git diff --staged --quiet || (git commit -m "Auto-Update [Mode: $MODE_MSG] $(date +'%Y-%m-%d %H:%M')" && git push)
