@@ -71,23 +71,20 @@ FILE_BLACKLIST = get_path(f"{DIR_CANALES}/lista_negra.csv")
 FILE_DIAL_MAP = get_path(f"{DIR_CANALES}/listado_canales.csv")
 
 # ============================================================================================
-# UTILIDADES Y FIX DE CODIFICACIÓN
+# UTILIDADES
 # ============================================================================================
 
 def read_file_safe(path_obj):
-    """Lectura forzada en UTF-8."""
     if not path_obj.exists(): return ""
     return path_obj.read_text(encoding='utf-8', errors='replace')
 
 def download_file(urls, output_filename):
-    """Descarga forzando la codificación UTF-8 de la respuesta."""
     print(f"   -> Descargando {output_filename}...")
     scraper = cloudscraper.create_scraper()
     for url in urls:
         try:
             r = scraper.get(url, timeout=30)
             if r.status_code == 200:
-                # FORZAR UTF-8 antes de acceder a r.text
                 r.encoding = 'utf-8'
                 Path(output_filename).write_text(r.text, encoding='utf-8')
                 print(f"      ✅ [OK] Fuente: {url[:50]}...")
@@ -118,24 +115,30 @@ def load_blacklist():
     print(f"[1] Cargando Lista Negra ({FILE_BLACKLIST})...")
     bl = {}
     path = Path(FILE_BLACKLIST)
-    if not path.exists(): return bl
+    if not path.exists():
+        print(f"    ⚠️ El archivo {FILE_BLACKLIST} no existe.")
+        return bl
     content = read_file_safe(path)
     reader = csv.DictReader(io.StringIO(content))
     for row in reader:
         aid = row.get('ace_id', '').strip()
         if aid: bl[aid] = row.get('canal_real', '').strip()
+    print(f"    -> {len(bl)} IDs cargados en Blacklist.")
     return bl
 
 def load_dial_mapping():
     print(f"[2] Cargando Mapeo de Diales ({FILE_DIAL_MAP})...")
     mapping = {}
     path = Path(FILE_DIAL_MAP)
-    if not path.exists(): return mapping
+    if not path.exists():
+        print(f"    ⚠️ El archivo {FILE_DIAL_MAP} no existe.")
+        return mapping
     content = read_file_safe(path)
     reader = csv.DictReader(io.StringIO(content))
     for row in reader:
         dial = row.get('Dial_Movistar(M)', '').strip()
         if dial: mapping[dial] = {'tvg': row.get('TV_guide_id', ''), 'name': row.get('Canal', '')}
+    print(f"    -> {len(mapping)} canales mapeados desde el dial oficial.")
     return mapping
 
 # ============================================================================================
@@ -178,10 +181,11 @@ def build_master_list(blacklist):
             'in_bl': "yes" if aid in blacklist else "no", 'bl_real': blacklist.get(aid, "")
         })
     master_db.sort(key=lambda x: (x['grupo_ne'] or "ZZZ", x['nombre_supuesto']))
+    print(f"    -> Procesados {len(master_db)} canales únicos fusionados.")
     return master_db
 
 # ============================================================================================
-# SCRAPING DE EVENTOS (FORZANDO UTF-8)
+# SCRAPING DE EVENTOS
 # ============================================================================================
 
 def scrape_events(dial_map, master_db):
@@ -194,26 +198,27 @@ def scrape_events(dial_map, master_db):
             tvg_index.setdefault(item['final_tvg'], []).append(item)
 
     scraper = cloudscraper.create_scraper()
-    html = None
+    response_binary = None
     for url in URLS_AGENDA:
         try:
             r = scraper.get(url, timeout=45)
             if r.status_code == 200:
-                # REGLA DE ORO: Forzar encoding antes de extraer texto
-                r.encoding = 'utf-8'
-                html = r.text
+                response_binary = r.content
                 print(f"    ✅ Agenda descargada desde: {url[:40]}...")
                 break
         except: pass
 
-    if not html:
+    if not response_binary:
         print("    ❌ ERROR: No se pudo obtener la agenda.")
         return []
 
-    Path(f"{DIR_DEBUG}/agenda_debug.html").write_text(html, encoding='utf-8')
+    # Guardar en debug para auditoría
+    Path(f"{DIR_DEBUG}/agenda_debug.html").write_bytes(response_binary)
 
-    soup = BeautifulSoup(html, 'html.parser', from_encoding='utf-8')
+    # Corregido: Usar contenido binario + from_encoding para evitar el UserWarning
+    soup = BeautifulSoup(response_binary, 'html.parser', from_encoding='utf-8')
     days = soup.find_all('div', class_='events-day')
+    print(f"    🔍 Diagnóstico: {len(days)} bloques de fechas encontrados.")
     
     events_list = []
     for day_div in days:
@@ -235,7 +240,8 @@ def scrape_events(dial_map, master_db):
                     dial = m.group(1)
                     map_info = dial_map.get(dial)
                     if map_info:
-                        for stream in tvg_index.get(map_info['tvg'], []):
+                        streams = tvg_index.get(map_info['tvg'], [])
+                        for stream in streams:
                             events_list.append({
                                 'acestream_id': stream['ace_id'], 'dial_M': dial, 'tvg_id': map_info['tvg'],
                                 'fecha': date_iso, 'hora': hora, 'evento': evento,
@@ -243,6 +249,7 @@ def scrape_events(dial_map, master_db):
                                 'nombre_canal': map_info['name'], 'calidad_tag': stream['calidad_tag'],
                                 'in_bl': stream['in_bl'], 'prefix': stream['ace_id'][:3]
                             })
+    print(f"    -> {len(events_list)} eventos vinculados a canales ACEStream encontrados.")
     return events_list
 
 # ============================================================================================
@@ -265,8 +272,7 @@ def generate_files(db, ev_list):
         grp = "ZZ_Canales_KO" if i["in_bl"]=="yes" else (i["grupo_ne"] or "OTROS")
         name = f"{i['nombre_supuesto']}{i['calidad_tag']}"
         if i["in_bl"] == "yes":
-            suffix = f" >>> {i['bl_real']}" if i['bl_real'] else " >>> BLACKLIST"
-            name += suffix
+            name += f" >>> {i['bl_real']}" if i['bl_real'] else " >>> BLACKLIST"
         m3u += f'#EXTINF:-1 tvg-id="{i["final_tvg"]}" group-title="{grp}",{name}\n{i["url"]}\n'
     Path(FILE_EZDAKIT).write_text(m3u, encoding='utf-8')
 
@@ -275,7 +281,6 @@ def generate_files(db, ev_list):
         print(f"[7] Generando {FILE_EVENTOS_CSV} y {FILE_EVENTOS_M3U}...")
         ev_list.sort(key=lambda x: (x['fecha'], x['hora']))
         
-        # CSV
         with open(FILE_EVENTOS_CSV, 'w', newline='', encoding='utf-8-sig') as f:
             fields = ['acestream_id','dial_M','tvg_id','fecha','hora','evento','competición','nombre_canal','calidad','lista_negra']
             w = csv.DictWriter(f, fieldnames=fields)
@@ -283,12 +288,13 @@ def generate_files(db, ev_list):
             for ev in ev_list:
                 w.writerow({'acestream_id':ev['acestream_id'],'dial_M':ev['dial_M'],'tvg_id':ev['tvg_id'],'fecha':ev['fecha'],'hora':ev['hora'],'evento':ev['evento'],'competición':ev['competición'],'nombre_canal':ev['nombre_canal'],'lista_negra':ev['in_bl']})
         
-        # M3U Eventos
         m3u_ev = HEADER_M3U + "\n"
         for ev in ev_list:
             if ev['in_bl'] == 'no':
                 m3u_ev += f'#EXTINF:-1 group-title="{ev["fecha"]} {ev["competición"]}",{ev["hora"]}-{ev["evento"]} ({ev["nombre_canal"]}){ev["calidad_tag"]}\nhttp://127.0.0.1:6878/ace/getstream?id={ev["acestream_id"]}\n'
         Path(FILE_EVENTOS_M3U).write_text(m3u_ev, encoding='utf-8')
+    else:
+        print("    ℹ️ No se generó M3U de eventos (lista vacía).")
 
 if __name__ == "__main__":
     bl = load_blacklist()
