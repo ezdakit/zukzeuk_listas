@@ -1,9 +1,9 @@
-name: Actualizacion_Completa
+name: Update_dena
 
 on:
   schedule:
     # Se ejecuta cada hora al minuto 35
-    - cron: "35 * * * *"
+    - cron: "45 * * * *"
   workflow_dispatch:
     inputs:
       testing_mode:
