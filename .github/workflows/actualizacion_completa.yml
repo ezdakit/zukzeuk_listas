@@ -2,7 +2,7 @@ name: Actualizacion_Completa
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # Cada 5 minutos (Si te funcionaba antes, funcionará ahora)
+    - cron: "*/120 * * * *"
   workflow_dispatch:
     inputs:
       testing_mode:
