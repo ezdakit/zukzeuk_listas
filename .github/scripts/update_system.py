@@ -24,6 +24,7 @@ print(f"######################################################################\n
 
 # Carpetas
 DIR_CANALES = "canales"
+DIR_DEBUG = ".debug"
 
 # Función para gestionar nombres de archivo con sufijo
 def get_path(filename):
@@ -149,7 +150,6 @@ def load_blacklist():
         aid = row.get('ace_id', '').strip()
         real = row.get('canal_real', '').strip()
         if aid:
-            # Guardamos el nombre real si existe, sino string vacío
             bl[aid] = real
     print(f"    -> {len(bl)} IDs en lista negra.")
     return bl
@@ -245,8 +245,10 @@ def build_master_channel_list(blacklist):
             if name_e in new_era_names_map:
                 tvg_e = new_era_names_map[name_e]
 
+        # Nombre para limpieza (Prioridad New Era)
         raw_name_for_clean = name_ne if name_ne else name_e
         
+        # Limpieza estándar (sin forzar nombre oficial)
         nombre_supuesto = clean_channel_name(raw_name_for_clean, aid[-4:])
         if not nombre_supuesto: nombre_supuesto = "Desconocido"
         
@@ -264,7 +266,7 @@ def build_master_channel_list(blacklist):
 
         # Gestión Blacklist
         in_bl = "yes" if aid in blacklist else "no"
-        bl_real_name = blacklist.get(aid, "") 
+        bl_real_name = blacklist.get(aid, "")
 
         master_db.append({
             'ace_id': aid,
@@ -285,7 +287,7 @@ def build_master_channel_list(blacklist):
             'blacklist_real_name': bl_real_name
         })
     
-    # ORDENACIÓN CENTRALIZADA (Grupo NE -> Nombre Supuesto)
+    # ORDENACIÓN CENTRALIZADA
     master_db.sort(key=lambda x: (x['grupo_ne'] or "ZZZ", x['nombre_supuesto']))
     
     print(f"    -> Procesados y ordenados {len(master_db)} canales únicos.")
@@ -327,6 +329,7 @@ def generate_ezdakit_m3u(db):
     entries = []
     for item in db:
         prefix = item['ace_id'][:3]
+        # AQUÍ ESTÁ LA CLAVE: Usamos el nombre_supuesto (que viene del limpiado)
         display_name = f"{item['nombre_supuesto']}{item['calidad_tag']} ({item['source']}-{prefix})"
         grp = item['grupo_ne'] if item['grupo_ne'] else "OTROS"
         
@@ -372,6 +375,16 @@ def scrape_and_match(dial_map, master_db):
         print("    [ERROR] No se pudo descargar la agenda. Se aborta generación de eventos.")
         return []
 
+    # --- DEBUG: GUARDAR HTML CRUDO ---
+    try:
+        Path(DIR_DEBUG).mkdir(exist_ok=True)
+        debug_file = f"{DIR_DEBUG}/agenda_dump{SUFFIX}.html"
+        Path(debug_file).write_text(html, encoding='utf-8')
+        print(f"    [DEBUG] HTML guardado en {debug_file}")
+    except Exception as e:
+        print(f"    [AVISO] No se pudo guardar debug HTML: {e}")
+    # ---------------------------------
+
     soup = BeautifulSoup(html, 'html.parser')
     days = soup.find_all('div', class_='events-day')
     if not days:
@@ -388,7 +401,8 @@ def scrape_and_match(dial_map, master_db):
         try:
             dt = datetime.datetime.strptime(date_iso, "%Y-%m-%d")
             fecha_csv = date_iso
-            dia_m3u = f"{dt.strftime('%d-%m')} ({dias_semana[dt.weekday()]})"
+            # MM-DD
+            dia_m3u = f"{dt.strftime('%m-%d')} ({dias_semana[dt.weekday()]})"
         except: continue
 
         rows = day_div.find_all('tr', class_='event-row')
@@ -417,32 +431,38 @@ def scrape_and_match(dial_map, master_db):
                     dial = match.group(1)
                     
                     map_info = dial_map.get(dial)
-                    if map_info:
-                        tvgid = map_info['tvg']
-                        nombre_canal_csv = map_info['name'] 
+                    if not map_info:
+                        print(f"    [SKIP] Dial {dial} encontrado en web pero NO en listado_canales.csv")
+                        continue
+                    
+                    tvgid = map_info['tvg']
+                    nombre_canal_csv = map_info['name'] 
+                    
+                    available_streams = tvg_index.get(tvgid, [])
+                    if not available_streams:
+                        print(f"    [SKIP] Dial {dial} ({tvgid}) mapeado, pero SIN STREAMS en listas M3U.")
+                        continue
                         
-                        available_streams = tvg_index.get(tvgid, [])
+                    for stream in available_streams:
+                        aid = stream['ace_id']
+                        if aid in processed_ace_ids: continue
+                        processed_ace_ids.add(aid)
                         
-                        for stream in available_streams:
-                            aid = stream['ace_id']
-                            if aid in processed_ace_ids: continue
-                            processed_ace_ids.add(aid)
-                            
-                            events_list.append({
-                                'acestream_id': aid,
-                                'dial_M': dial,
-                                'tvg_id': tvgid,
-                                'fecha': fecha_csv,
-                                'hora': hora_evento,
-                                'evento': event_raw,
-                                'competicion': competition,
-                                'nombre_canal': nombre_canal_csv, 
-                                'calidad': stream['calidad_clean'],
-                                'lista_negra': stream['in_blacklist'],
-                                'calidad_tag': stream['calidad_tag'],
-                                'dia_str_m3u': dia_m3u,
-                                'ace_prefix': aid[:3]
-                            })
+                        events_list.append({
+                            'acestream_id': aid,
+                            'dial_M': dial,
+                            'tvg_id': tvgid,
+                            'fecha': fecha_csv,
+                            'hora': hora_evento,
+                            'evento': event_raw,
+                            'competicion': competition,
+                            'nombre_canal': nombre_canal_csv, 
+                            'calidad': stream['calidad_clean'],
+                            'lista_negra': stream['in_blacklist'],
+                            'calidad_tag': stream['calidad_tag'],
+                            'dia_str_m3u': dia_m3u,
+                            'ace_prefix': aid[:3]
+                        })
 
     print(f"    -> Encontrados {len(events_list)} combinaciones evento-canal.")
     return events_list
