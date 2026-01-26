@@ -1,0 +1,51 @@
+name: Actualizacion_Completa
+
+on:
+  schedule:
+    - cron: "50 * * * *"  
+  workflow_dispatch:        # Ejecución manual con opción Testing
+    inputs:
+      testing_mode:
+        description: 'Activar Modo Testing (archivos _testing)'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  run-update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Instalar dependencias
+        run: |
+          pip install requests beautifulsoup4 cloudscraper
+
+      - name: Ejecutar Sistema de Actualización
+        run: |
+          if [ "${{ github.event.inputs.testing_mode }}" == "true" ]; then
+            echo "Modo Manual detectado: TESTING activado"
+            python .github/scripts/update_system.py --testing
+          else
+            echo "Ejecución normal (Producción)"
+            python .github/scripts/update_system.py
+          fi
+
+      - name: Guardar cambios (Commit & Push)
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          
+          git add .
+          # Si hay cambios, hace commit.
+          git diff --staged --quiet || (git commit -m "Auto-Update [Mode: ${{ github.event.inputs.testing_mode == 'true' && 'TEST' || 'PROD' }}] $(date +'%Y-%m-%d %H:%M')" && git push)
