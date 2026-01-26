@@ -1,10 +1,10 @@
+
 name: Test_Cron_ZukZeuk
 
 on:
-  workflow_dispatch: # Permite lanzarlo tú a mano también
+  workflow_dispatch:
   schedule:
-    # Se ejecuta cada 10 minutos (solo para pruebas)
-    - cron: "*/10 * * * *"
+    - cron: "*/5 * * * *"
 
 permissions:
   contents: write
@@ -15,10 +15,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Crear Fichero Prueba
         run: |
-          # Obtenemos hora y día en formato legible
           HORA=$(date +'%H:%M')
           DIA=$(date +'%Y-%m-%d')
           echo "Son las $HORA del día $DIA" > prueba.txt
@@ -27,7 +28,8 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
+
           git add prueba.txt
-          # El commit solo se hace si el texto ha cambiado (evita errores)
+          HORA=$(date +'%H:%M')
           git commit -m "Test Cron: $HORA" || exit 0
           git push
