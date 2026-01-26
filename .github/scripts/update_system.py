@@ -41,6 +41,7 @@ FILE_EZDAKIT = get_path("ezdakit.m3u")
 FILE_CORRESPONDENCIAS = get_path(f"{DIR_CANALES}/correspondencias.csv")
 FILE_EVENTOS_CSV = get_path(f"{DIR_CANALES}/eventos_canales.csv")
 FILE_EVENTOS_M3U = get_path("ezdakit_eventos.m3u")
+FILE_DESCARTES = get_path(f"{DIR_CANALES}/descartes.csv")
 
 # Ficheros de ENTRADA (Estricto: Si es testing busca _testing.csv)
 FILE_BLACKLIST = get_path(f"{DIR_CANALES}/lista_negra.csv") 
@@ -372,7 +373,7 @@ def scrape_and_match(dial_map, master_db):
             
     if not html:
         print("    [ERROR] No se pudo descargar la agenda. Se aborta generación de eventos.")
-        return []
+        return [], []
 
     # --- DEBUG: GUARDAR HTML CRUDO ---
     try:
@@ -388,9 +389,10 @@ def scrape_and_match(dial_map, master_db):
     days = soup.find_all('div', class_='events-day')
     if not days:
         print("    [ERROR] HTML sin eventos. Estructura web ha cambiado.")
-        return []
+        return [], []
 
     events_list = []
+    discarded_list = [] # LISTA PARA LOS DESCARTES
     dias_semana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
 
     for day_div in days:
@@ -429,44 +431,43 @@ def scrape_and_match(dial_map, master_db):
                 txt = ch.get_text().strip()
                 dial = None
 
-                # -------------------------------------------------------------------------
                 # LÓGICA DE EXTRACCIÓN DE DIAL (4 REGLAS)
-                # -------------------------------------------------------------------------
-                
-                # REGLA 1 y 2: Patrón explícito Movistar (Mxxx...)
-                # Busca 'M' seguida de dígitos dentro de paréntesis.
-                # Ej: (M54 O11) -> 54, (M8) -> 8
                 m_match = re.search(r'\([^)]*?M(\d+)[^)]*?\)', txt)
-
                 if m_match:
                     dial = m_match.group(1)
                 else:
-                    # REGLA 4: Patrón solo dígitos (zzz)
-                    # Ej: (60). NO debe coincidir si hay letras como O60.
-                    # Regex: Paréntesis, dígitos puros, paréntesis.
                     d_match = re.search(r'\((\d+)\)', txt)
                     if d_match:
-                        # Regla de exclusión de ORANGE
                         if "ORANGE" not in txt.upper():
                             dial = d_match.group(1)
-                    
-                    # REGLA 3: Patrón (Oyyy). 
-                    # No coincide con m_match (no tiene M).
-                    # No coincide con d_match (tiene letra O).
-                    # Resultado: dial se mantiene None. Ignorado.
-
-                # -------------------------------------------------------------------------
-
+                
+                # SI HEMOS ENCONTRADO UN DIAL, INTENTAMOS MAPEARLO
                 if dial:
                     map_info = dial_map.get(dial)
+                    
+                    # CASO 1 DESCARTE: DIAL NO ESTÁ EN LISTADO_CANALES.CSV
                     if not map_info:
+                        discarded_list.append({
+                            'dial_M': dial,
+                            'nombre_canal_descartado': txt,
+                            'evento_descartado': event_raw,
+                            'motivo': 'unlisted'
+                        })
                         continue
                     
                     tvgid = map_info['tvg']
                     nombre_canal_csv = map_info['name'] 
                     
                     available_streams = tvg_index.get(tvgid, [])
+                    
+                    # CASO 2 DESCARTE: CANAL MAPEADO PERO SIN STREAMS EN M3U
                     if not available_streams:
+                        discarded_list.append({
+                            'dial_M': dial,
+                            'nombre_canal_descartado': txt,
+                            'evento_descartado': event_raw,
+                            'motivo': 'no_streams'
+                        })
                         continue
                         
                     for stream in available_streams:
@@ -491,7 +492,26 @@ def scrape_and_match(dial_map, master_db):
                         })
 
     print(f"    -> Encontrados {len(events_list)} combinaciones evento-canal.")
-    return events_list
+    print(f"    -> Descartados {len(discarded_list)} intentos.")
+    return events_list, discarded_list
+
+def generate_descartes_csv(discarded_list):
+    print(f"[8] Generando {FILE_DESCARTES}...")
+    
+    Path(DIR_CANALES).mkdir(exist_ok=True)
+    with open(FILE_DESCARTES, 'w', newline='', encoding='utf-8-sig') as f:
+        fields = ['dial_M', 'nombre_canal_descartado', 'evento_descartado', 'motivo']
+        w = csv.DictWriter(f, fieldnames=fields)
+        w.writeheader()
+        
+        for d in discarded_list:
+            w.writerow({
+                'dial_M': d['dial_M'],
+                'nombre_canal_descartado': d['nombre_canal_descartado'],
+                'evento_descartado': d['evento_descartado'],
+                'motivo': d['motivo']
+            })
+    print(f"    -> Generado CSV de descartes con {len(discarded_list)} registros.")
 
 def generate_eventos_files(events_list):
     print(f"[7] Generando ficheros de eventos...")
@@ -556,8 +576,11 @@ def main():
     generate_correspondencias(master_db)
     generate_ezdakit_m3u(master_db)
     
-    events_list = scrape_and_match(dial_map, master_db)
+    # Desempaquetamos los dos resultados: eventos validos y descartes
+    events_list, discarded_list = scrape_and_match(dial_map, master_db)
+    
     generate_eventos_files(events_list)
+    generate_descartes_csv(discarded_list)
 
     print("\n######################################################################")
     print("### PROCESO COMPLETADO")
