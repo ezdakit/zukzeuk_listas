@@ -64,8 +64,7 @@ URLS_NEW_ERA = [
     f"https://cloudflare-ipfs.com/ipns/{IPNS_HASH}/data/listas/lista_iptv.m3u"
 ]
 
-# URLs Agenda (Limpias, sin parámetros extra para favorecer cache y respuesta rápida)
-# Corregido cf-ipfs.com -> cloudflare-ipfs.com
+# URLs Agenda (Limpias)
 URLS_AGENDA = [
     f"https://ipfs.io/ipns/{IPNS_HASH}/?tab=agenda",
     f"https://cloudflare-ipfs.com/ipns/{IPNS_HASH}/?tab=agenda",
@@ -99,7 +98,7 @@ def download_file(urls, output_filename):
     
     for url in urls:
         try:
-            r = session.get(url, timeout=60) # Timeout aumentado
+            r = session.get(url, timeout=60)
             if r.status_code == 200:
                 if "#EXTM3U" in r.text[:200]:
                     Path(output_filename).write_text(r.text, encoding='utf-8')
@@ -111,7 +110,6 @@ def download_file(urls, output_filename):
     return False
 
 def clean_channel_name(name, ace_id_suffix):
-    """Lógica de limpieza para generar el nombre_supuesto"""
     if not name: return ""
     name = re.sub(r'-->.*', '', name)
     
@@ -414,14 +412,13 @@ def generate_ezdakit_m3u(db):
 # ============================================================================================
 
 def get_fresh_agenda_html():
-    """Descarga inteligente: URLs limpias, check fecha, fallback."""
+    """Descarga inteligente: Solo acepta FRESH si fecha >= hoy. Si falla, busca siguiente."""
     scraper = cloudscraper.create_scraper(browser={'browser': 'chrome', 'platform': 'windows', 'desktop': True})
     
     now_utc = datetime.datetime.utcnow()
-    check_freshness = 6 <= now_utc.hour < 12 
     today_date = now_utc.date()
     
-    print(f"    [SMART FETCH] Hora UTC: {now_utc.strftime('%H:%M')}. Check de frescura activo: {check_freshness}")
+    print(f"    [SMART FETCH] Hora UTC: {now_utc.strftime('%H:%M')}.")
     
     log_entries = []
     last_working_html = None
@@ -429,10 +426,9 @@ def get_fresh_agenda_html():
     
     for url in URLS_AGENDA:
         try:
-            # SIN PARÁMETROS EXTRA PARA NO ROMPER IPNS/CACHE
             print(f"    Probando: {url} ...")
             
-            r = scraper.get(url, timeout=60) # Timeout 60s
+            r = scraper.get(url, timeout=60)
             if r.status_code == 200:
                 r.encoding = 'utf-8'
                 html_content = r.text
@@ -441,18 +437,20 @@ def get_fresh_agenda_html():
                 first_day_div = soup_temp.find('div', class_='events-day')
                 
                 status_msg = "OK"
-                is_fresh = True
+                # Check real de frescura
+                is_actually_fresh = False
                 
                 if first_day_div:
                     date_str = first_day_div.get('data-date')
                     try:
                         content_date = datetime.datetime.strptime(date_str, "%Y-%m-%d").date()
                         
-                        if check_freshness and content_date < today_date:
-                            status_msg = f"STALE (Data from {date_str})"
-                            is_fresh = False
-                        else:
+                        if content_date >= today_date:
                             status_msg = f"FRESH (Data from {date_str})"
+                            is_actually_fresh = True
+                        else:
+                            status_msg = f"STALE (Data from {date_str})"
+                            is_actually_fresh = False
                             
                     except:
                         status_msg = "WARN (Date parsing failed)"
@@ -464,16 +462,16 @@ def get_fresh_agenda_html():
                 
                 last_working_html = html_content
                 
-                if is_fresh:
+                if is_actually_fresh:
                     fresh_html = html_content
                     print(f"      -> {status_msg}. USANDO ESTE PROXY.")
                     log_entries[-1] += " [SELECTED]"
                     break 
                 else:
-                    print(f"      -> {status_msg}. Buscando siguiente...")
+                    # Si es STALE, no paramos, seguimos buscando uno mejor
+                    print(f"      -> {status_msg}. Buscando siguiente mejor opción...")
 
         except Exception as e:
-            # Simplificar error para log
             err_str = str(e).split('(')[0] if '(' in str(e) else str(e)
             print(f"      -> ERROR: {err_str}...")
             log_entries.append(f"[{now_utc.strftime('%Y-%m-%d %H:%M')}] {url} | ERROR: {err_str}")
@@ -483,7 +481,7 @@ def get_fresh_agenda_html():
     if fresh_html:
         return fresh_html
     elif last_working_html:
-        print("    [AVISO] No se encontraron proxies frescos. Usando el último funcional.")
+        print("    [AVISO] No se encontraron proxies actualizados. Usando el último funcional disponible (aunque sea antiguo).")
         return last_working_html
     else:
         print("    [ERROR] Ningún proxy respondió correctamente.")
