@@ -113,8 +113,8 @@ def download_file(urls, output_filename):
 
 def clean_channel_name(name, ace_id_suffix):
     """
-    Lógica de limpieza para generar el nombre_supuesto.
-    AHORA SIEMPRE DEVUELVE MAYÚSCULAS.
+    Normaliza el nombre del canal. 
+    IMPORTANTE: Devuelve MAYÚSCULAS para homogeneizar correspondencias.csv
     """
     if not name: return ""
     name = re.sub(r'-->.*', '', name)
@@ -136,7 +136,7 @@ def clean_channel_name(name, ace_id_suffix):
         name = name[:-4].strip()
     name = re.sub(r'\s+[0-9a-fA-F]{4}$', '', name)
     
-    # FORZAR MAYÚSCULAS AQUÍ
+    # FORZAMOS MAYÚSCULAS
     return name.upper()
 
 def determine_quality(name):
@@ -213,7 +213,7 @@ def load_forced_channels():
     for row in reader:
         aid = row.get('acestream_id', '').strip()
         if aid:
-            # Aseguramos que el nombre forzado también sea mayúsculas si no lo es ya
+            # Aseguramos que el nombre forzado sea UPPER para coincidir con clean_channel_name
             raw_name = row.get('nombre_supuesto', '').strip()
             
             forced[aid] = {
@@ -320,7 +320,7 @@ def build_master_channel_list(blacklist):
 
         raw_name_for_clean = name_ne if name_ne else name_e
         
-        # OJO: clean_channel_name ahora devuelve MAYUSCULAS
+        # OJO: Devuelve MAYÚSCULAS
         nombre_supuesto = clean_channel_name(raw_name_for_clean, aid[-4:])
         if not nombre_supuesto: nombre_supuesto = "DESCONOCIDO"
         
@@ -337,7 +337,7 @@ def build_master_channel_list(blacklist):
         if not final_tvg: final_tvg = "Unknown"
 
         if f_data:
-            nombre_supuesto = f_data['name'] # Ya viene en mayúsculas por la carga
+            nombre_supuesto = f_data['name'] # Ya viene en UPPER
             final_group = f_data['group']
             final_tvg = f_data['tvg']
             q_csv = f_data['quality'].upper()
@@ -495,7 +495,8 @@ def get_fresh_agenda_html():
 
 def find_best_match(text_web, candidates):
     """
-    Busca el mejor nombre en 'candidates' (QUE YA ESTÁN EN MAYÚSCULAS).
+    Busca el mejor nombre en 'candidates'.
+    Garantiza que el retorno sea uno de los valores de 'candidates' o 'No Match'.
     """
     if not text_web: return "Unknown"
     
@@ -503,50 +504,52 @@ def find_best_match(text_web, candidates):
     clean_web = re.sub(r'\s*\(.*?\)', '', text_web).strip()
     u_web = clean_web.upper()
 
-    # Como candidates ya es una lista de strings mayúsculas, hacemos un set para búsqueda rápida
-    candidates_set = set(candidates)
+    # Mapa de búsqueda: {NOMBRE_EN_MAYUS: Nombre_Original}
+    # Esto es vital para asegurar que devolvemos el string original de la lista
+    candidates_map = {c.upper(): c for c in candidates}
 
     # 2. Intento 1: Coincidencia exacta
-    if u_web in candidates_set:
-        return u_web
+    if u_web in candidates_map:
+        return candidates_map[u_web]
 
-    # 3. Intento 2: Heurísticas "M+" vs "MOVISTAR" (Todo en mayúsculas)
+    # 3. Intento 2: Heurísticas "M+" vs "MOVISTAR"
     
     # Caso A: Web "M+ DEPORTES" -> DB "MOVISTAR DEPORTES"
     if u_web.startswith("M+ "):
         replaced = u_web.replace("M+ ", "MOVISTAR ")
-        if replaced in candidates_set:
-            return replaced
+        if replaced in candidates_map:
+            return candidates_map[replaced]
         
         # Caso B: Web "M+ LIGA DE CAMPEONES 2" -> DB "LIGA DE CAMPEONES 2"
         stripped = u_web.replace("M+ ", "")
-        if stripped in candidates_set:
-            return stripped
+        if stripped in candidates_map:
+            return candidates_map[stripped]
 
     # Caso C: Web "MOVISTAR DEPORTES" -> DB "M+ DEPORTES"
     if u_web.startswith("MOVISTAR "):
         compressed = u_web.replace("MOVISTAR ", "M+ ")
-        if compressed in candidates_set:
-            return compressed
+        if compressed in candidates_map:
+            return candidates_map[compressed]
             
         # Caso D: Web "MOVISTAR DEPORTES" -> DB "DEPORTES" (raro pero posible)
         stripped = u_web.replace("MOVISTAR ", "")
-        if stripped in candidates_set:
-            return stripped
+        if stripped in candidates_map:
+            return candidates_map[stripped]
 
-    # 4. Intento 3: Fuzzy Match sobre la lista (que ya está en mayúsculas)
-    # Usamos clean_web original (aunque clean_web y u_web son casi iguales si no hay tildes raras)
-    # Preferible usar u_web para asegurar homogeneidad
-    matches = difflib.get_close_matches(u_web, candidates, n=1, cutoff=0.6)
+    # 4. Intento 3: Fuzzy Match sobre las claves del mapa
+    # Usamos u_web (mayúsculas) para buscar contra las claves (que son mayúsculas)
+    matches = difflib.get_close_matches(u_web, candidates_map.keys(), n=1, cutoff=0.6)
     if matches:
-        return matches[0]
+        # Recuperamos el nombre original usando la clave encontrada
+        best_key = matches[0]
+        return candidates_map[best_key]
     
     return "No Match"
 
 def scrape_and_match(dial_map, master_db):
     print(f"[6] Scraping de Agenda y cruce de datos...")
     
-    # 1. Lista de candidatos: Nombres supuestos ÚNICOS y ya en MAYÚSCULAS (gracias a clean_channel_name)
+    # 1. Lista de candidatos: Nombres supuestos ÚNICOS
     all_known_names = list(set([item['nombre_supuesto'] for item in master_db]))
     
     # 2. Índice TVG
@@ -603,9 +606,9 @@ def scrape_and_match(dial_map, master_db):
             for ch in channels:
                 txt = ch.get_text().strip()
                 
-                # --- NUEVA LÓGICA DE DETECCIÓN SIMPLIFICADA (TODO UPPERCASE) ---
+                # --- NUEVA LÓGICA DE DETECCIÓN ---
                 detected_fuzzy_name = find_best_match(txt, all_known_names)
-                # ---------------------------------------------------------------
+                # ---------------------------------
 
                 dial = None
                 m_match = re.search(r'\([^)]*?M(\d+)[^)]*?\)', txt)
