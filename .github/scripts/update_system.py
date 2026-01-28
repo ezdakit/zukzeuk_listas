@@ -113,8 +113,7 @@ def download_file(urls, output_filename):
 
 def clean_channel_name(name, ace_id_suffix):
     """
-    Limpieza básica del nombre del canal para generar el nombre_supuesto.
-    (Versión original sin forzado de mayúsculas).
+    Limpia el nombre del canal. REVERTIDO: No fuerza mayúsculas.
     """
     if not name: return ""
     name = re.sub(r'-->.*', '', name)
@@ -316,7 +315,7 @@ def build_master_channel_list(blacklist):
 
         raw_name_for_clean = name_ne if name_ne else name_e
         
-        # Volvemos a usar la limpieza simple (sin forzar UPPER)
+        # REVERTIDO: No fuerza mayúsculas
         nombre_supuesto = clean_channel_name(raw_name_for_clean, aid[-4:])
         if not nombre_supuesto: nombre_supuesto = "Desconocido"
         
@@ -491,49 +490,48 @@ def get_fresh_agenda_html():
 
 def find_best_match(text_web, candidates):
     """
-    Busca el nombre más parecido en 'candidates' (nombres supuestos de la DB).
-    Usa coincidencia exacta, normalización M+/MOVISTAR y Fuzzy Match.
-    DEVUELVE SIEMPRE UN NOMBRE DE LA LISTA 'candidates' o 'No Match'.
+    Busca el mejor nombre en 'candidates'.
+    NO ASUME MAYÚSCULAS NI HACE MAPAS COMPLEJOS.
+    Solo busca cuál se parece más y devuelve el valor REAL de la lista.
     """
     if not text_web: return "Unknown"
     
-    # 1. Limpieza básica del texto de la web
+    # Normalizamos el input de la web para buscar
     clean_web = re.sub(r'\s*\(.*?\)', '', text_web).strip()
     u_web = clean_web.upper()
-
-    # 2. Búsqueda exacta (case insensitive)
-    # candidatos originales vs versión upper para búsqueda
+    
+    # Creamos un mapa para búsqueda rápida insensible a mayúsculas
+    # Clave: CANDIDATO_UPPER -> Valor: Candidato_Original
     candidates_map = {c.upper(): c for c in candidates}
     
+    # 1. Búsqueda exacta (case insensitive)
     if u_web in candidates_map:
         return candidates_map[u_web]
 
-    # 3. Lógica difusa mejorada: "M+" vs "MOVISTAR"
-    # Si la web dice "M+", miramos si existe "MOVISTAR" en la lista
-    if u_web.startswith("M+ "):
-        replaced = u_web.replace("M+ ", "MOVISTAR ")
-        if replaced in candidates_map:
-            return candidates_map[replaced]
+    # 2. Búsqueda con heurística M+ / MOVISTAR
+    # Intentamos quitar "M+" o "MOVISTAR" del texto de la web y buscamos en la lista
+    stripped_m = u_web.replace("M+ ", "").strip()
+    stripped_mov = u_web.replace("MOVISTAR ", "").strip()
     
-    # Si la web dice "MOVISTAR", miramos si existe "M+" en la lista
-    if u_web.startswith("MOVISTAR "):
-        compressed = u_web.replace("MOVISTAR ", "M+ ")
-        if compressed in candidates_map:
-            return candidates_map[compressed]
-
-    # 4. Fuzzy Match (Matemático) como último recurso
-    # Busca contra las claves mayúsculas para ser más tolerante
+    # Si quitando M+ encontramos coincidencia, devolvemos ESE candidato original
+    if stripped_m in candidates_map:
+        return candidates_map[stripped_m]
+    if stripped_mov in candidates_map:
+        return candidates_map[stripped_mov]
+    
+    # 3. Fuzzy match como último recurso
+    # Buscamos contra las claves en mayúsculas
     matches = difflib.get_close_matches(u_web, candidates_map.keys(), n=1, cutoff=0.6)
     if matches:
-        best_key = matches[0]
-        return candidates_map[best_key]
+        best_upper = matches[0]
+        return candidates_map[best_upper]
     
     return "No Match"
 
 def scrape_and_match(dial_map, master_db):
     print(f"[6] Scraping de Agenda y cruce de datos...")
     
-    # 1. Lista de nombres supuestos (candidatos) de la base de datos maestra
+    # 1. Lista de candidatos: Nombres supuestos (TAL CUAL vienen en correspondencias.csv)
     all_known_names = list(set([item['nombre_supuesto'] for item in master_db]))
     
     # 2. Índice TVG
@@ -590,9 +588,10 @@ def scrape_and_match(dial_map, master_db):
             for ch in channels:
                 txt = ch.get_text().strip()
                 
-                # --- NUEVA LÓGICA: Obtener canal_agenda por similitud ---
+                # --- NUEVA LÓGICA: Buscar el mejor candidato ---
+                # Esto garantiza que 'detected_name' sea uno de 'all_known_names' o 'No Match'
                 detected_name = find_best_match(txt, all_known_names)
-                # --------------------------------------------------------
+                # ------------------------------------------------
 
                 dial = None
                 m_match = re.search(r'\([^)]*?M(\d+)[^)]*?\)', txt)
@@ -642,7 +641,7 @@ def scrape_and_match(dial_map, master_db):
                             'evento': event_raw,
                             'competicion': competition,
                             'nombre_canal': nombre_canal_csv,
-                            'canal_agenda': detected_name,  # NUEVA COLUMNA insertada
+                            'canal_agenda': detected_name,  # NUEVA COLUMNA (Valor de la lista)
                             'calidad': stream['calidad_clean'],
                             'lista_negra': stream['in_blacklist'],
                             'calidad_tag': stream['calidad_tag'],
