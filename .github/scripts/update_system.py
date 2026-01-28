@@ -113,7 +113,8 @@ def download_file(urls, output_filename):
 
 def clean_channel_name(name, ace_id_suffix):
     """
-    Normaliza el nombre del canal y FUERZA MAYÚSCULAS.
+    Limpieza básica del nombre del canal para generar el nombre_supuesto.
+    (Versión original sin forzado de mayúsculas).
     """
     if not name: return ""
     name = re.sub(r'-->.*', '', name)
@@ -135,8 +136,7 @@ def clean_channel_name(name, ace_id_suffix):
         name = name[:-4].strip()
     name = re.sub(r'\s+[0-9a-fA-F]{4}$', '', name)
     
-    # IMPORTANTE: Devolvemos siempre mayúsculas
-    return name.upper()
+    return name
 
 def determine_quality(name):
     u = name.upper()
@@ -212,12 +212,9 @@ def load_forced_channels():
     for row in reader:
         aid = row.get('acestream_id', '').strip()
         if aid:
-            # Forzamos mayúsculas
-            raw_name = row.get('nombre_supuesto', '').strip()
-            
             forced[aid] = {
                 'tvg': row.get('tvg-id', '').strip(),
-                'name': raw_name.upper(),
+                'name': row.get('nombre_supuesto', '').strip(),
                 'group': row.get('grupo', '').strip(),
                 'quality': row.get('calidad', '').strip()
             }
@@ -319,9 +316,9 @@ def build_master_channel_list(blacklist):
 
         raw_name_for_clean = name_ne if name_ne else name_e
         
-        # OJO: clean_channel_name ahora devuelve MAYUSCULAS
+        # Volvemos a usar la limpieza simple (sin forzar UPPER)
         nombre_supuesto = clean_channel_name(raw_name_for_clean, aid[-4:])
-        if not nombre_supuesto: nombre_supuesto = "DESCONOCIDO"
+        if not nombre_supuesto: nombre_supuesto = "Desconocido"
         
         quality_tag = determine_quality((name_ne + " " + name_e))
         clean_quality = quality_tag.strip().replace("(", "").replace(")", "")
@@ -336,7 +333,7 @@ def build_master_channel_list(blacklist):
         if not final_tvg: final_tvg = "Unknown"
 
         if f_data:
-            nombre_supuesto = f_data['name'] # Ya viene en UPPER
+            nombre_supuesto = f_data['name']
             final_group = f_data['group']
             final_tvg = f_data['tvg']
             q_csv = f_data['quality'].upper()
@@ -494,73 +491,49 @@ def get_fresh_agenda_html():
 
 def find_best_match(text_web, candidates):
     """
-    Busca el mejor nombre en 'candidates' (que ya están en MAYÚSCULAS).
-    Si hay coincidencia, devuelve el nombre tal cual está en 'candidates'.
+    Busca el nombre más parecido en 'candidates' (nombres supuestos de la DB).
+    Usa coincidencia exacta, normalización M+/MOVISTAR y Fuzzy Match.
+    DEVUELVE SIEMPRE UN NOMBRE DE LA LISTA 'candidates' o 'No Match'.
     """
     if not text_web: return "Unknown"
     
-    # 1. Limpieza de agenda y conversión a UPPER
-    # Quitar paréntesis del dial (M52) o (52)
-    clean_web = re.sub(r'\s*\(.*?\)', '', text_web).strip().upper()
-    
-    # Candidates ya viene en UPPER de la DB maestra
-    # Convertimos a set para búsqueda O(1)
-    candidates_set = set(candidates)
-    
-    # --- REGLA 1: COINCIDENCIA EXACTA ---
-    if clean_web in candidates_set:
-        return clean_web
-    
-    # --- REGLA 2: EQUIVALENCIA M+ <-> MOVISTAR ---
-    
-    # Si la agenda dice "M+ ALGO", buscamos "MOVISTAR ALGO" en la lista
-    if clean_web.startswith("M+ "):
-        replaced = clean_web.replace("M+ ", "MOVISTAR ")
-        if replaced in candidates_set:
-            return replaced
-            
-    # Si la agenda dice "MOVISTAR ALGO", buscamos "M+ ALGO" en la lista
-    if clean_web.startswith("MOVISTAR "):
-        replaced = clean_web.replace("MOVISTAR ", "M+ ")
-        if replaced in candidates_set:
-            return replaced
+    # 1. Limpieza básica del texto de la web
+    clean_web = re.sub(r'\s*\(.*?\)', '', text_web).strip()
+    u_web = clean_web.upper()
 
-    # --- REGLA 3: IGNORAR PREFIJO (Si difieren solo en el prefijo M+/MOVISTAR) ---
+    # 2. Búsqueda exacta (case insensitive)
+    # candidatos originales vs versión upper para búsqueda
+    candidates_map = {c.upper(): c for c in candidates}
     
-    # Caso A: Agenda tiene prefijo, Lista NO.
-    # Agenda: "M+ LALIGA" -> Buscamos "LALIGA"
-    stripped_m = clean_web.replace("M+ ", "")
-    if stripped_m in candidates_set:
-        return stripped_m
-        
-    stripped_mov = clean_web.replace("MOVISTAR ", "")
-    if stripped_mov in candidates_set:
-        return stripped_mov
-        
-    # Caso B: Agenda NO tiene prefijo, Lista SÍ.
-    # Agenda: "LALIGA" -> Buscamos "M+ LALIGA" o "MOVISTAR LALIGA" en la lista
-    # Como tenemos que buscar en la lista, iteramos (es rápido para <1000 items)
-    for cand in candidates:
-        # Si el candidato es "M+ LALIGA", le quitamos el prefijo para ver si queda "LALIGA"
-        cand_stripped_m = cand.replace("M+ ", "")
-        if cand_stripped_m == clean_web:
-            return cand
-            
-        cand_stripped_mov = cand.replace("MOVISTAR ", "")
-        if cand_stripped_mov == clean_web:
-            return cand
+    if u_web in candidates_map:
+        return candidates_map[u_web]
 
-    # --- FALLBACK: FUZZY MATCH ---
-    matches = difflib.get_close_matches(clean_web, candidates, n=1, cutoff=0.6)
+    # 3. Lógica difusa mejorada: "M+" vs "MOVISTAR"
+    # Si la web dice "M+", miramos si existe "MOVISTAR" en la lista
+    if u_web.startswith("M+ "):
+        replaced = u_web.replace("M+ ", "MOVISTAR ")
+        if replaced in candidates_map:
+            return candidates_map[replaced]
+    
+    # Si la web dice "MOVISTAR", miramos si existe "M+" en la lista
+    if u_web.startswith("MOVISTAR "):
+        compressed = u_web.replace("MOVISTAR ", "M+ ")
+        if compressed in candidates_map:
+            return candidates_map[compressed]
+
+    # 4. Fuzzy Match (Matemático) como último recurso
+    # Busca contra las claves mayúsculas para ser más tolerante
+    matches = difflib.get_close_matches(u_web, candidates_map.keys(), n=1, cutoff=0.6)
     if matches:
-        return matches[0]
-        
+        best_key = matches[0]
+        return candidates_map[best_key]
+    
     return "No Match"
 
 def scrape_and_match(dial_map, master_db):
     print(f"[6] Scraping de Agenda y cruce de datos...")
     
-    # 1. Lista de nombres supuestos únicos (ya en UPPER)
+    # 1. Lista de nombres supuestos (candidatos) de la base de datos maestra
     all_known_names = list(set([item['nombre_supuesto'] for item in master_db]))
     
     # 2. Índice TVG
@@ -617,10 +590,9 @@ def scrape_and_match(dial_map, master_db):
             for ch in channels:
                 txt = ch.get_text().strip()
                 
-                # --- NUEVA LÓGICA DE DETECCIÓN: CANAL AGENDA ---
-                # Usamos la función find_best_match con las reglas solicitadas
+                # --- NUEVA LÓGICA: Obtener canal_agenda por similitud ---
                 detected_name = find_best_match(txt, all_known_names)
-                # -----------------------------------------------
+                # --------------------------------------------------------
 
                 dial = None
                 m_match = re.search(r'\([^)]*?M(\d+)[^)]*?\)', txt)
@@ -670,7 +642,7 @@ def scrape_and_match(dial_map, master_db):
                             'evento': event_raw,
                             'competicion': competition,
                             'nombre_canal': nombre_canal_csv,
-                            'canal_agenda': detected_name,  # NUEVA COLUMNA
+                            'canal_agenda': detected_name,  # NUEVA COLUMNA insertada
                             'calidad': stream['calidad_clean'],
                             'lista_negra': stream['in_blacklist'],
                             'calidad_tag': stream['calidad_tag'],
@@ -719,7 +691,7 @@ def generate_eventos_files(events_list):
                 'evento': ev['evento'],
                 'competición': ev['competicion'],
                 'nombre_canal': ev['nombre_canal'],
-                'canal_agenda': ev['canal_agenda'], # Valor insertado
+                'canal_agenda': ev['canal_agenda'],
                 'calidad': ev['calidad'],
                 'lista_negra': ev['lista_negra']
             })
