@@ -42,11 +42,12 @@ FILE_CORRESPONDENCIAS = get_path(f"{DIR_CANALES}/correspondencias.csv")
 FILE_EVENTOS_CSV = get_path(f"{DIR_CANALES}/eventos_canales.csv")
 FILE_EVENTOS_M3U = get_path("ezdakit_eventos.m3u")
 FILE_DESCARTES = get_path(f"{DIR_CANALES}/descartes.csv")
+FILE_PROXIES_LOG = f"{DIR_DEBUG}/proxies.log" # Fichero de Log de Proxies
 
 # Ficheros de ENTRADA (Estricto: Si es testing busca _testing.csv)
 FILE_BLACKLIST = get_path(f"{DIR_CANALES}/lista_negra.csv") 
 FILE_DIAL_MAP = get_path(f"{DIR_CANALES}/listado_canales.csv")
-FILE_FORZADOS = get_path(f"{DIR_CANALES}/canales_forzados.csv") # <--- NUEVO FICHERO
+FILE_FORZADOS = get_path(f"{DIR_CANALES}/canales_forzados.csv")
 
 # URLs
 IPNS_HASH = "k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004"
@@ -62,10 +63,13 @@ URLS_NEW_ERA = [
     f"https://{IPNS_HASH}.ipns.dweb.link/data/listas/lista_iptv.m3u",
     f"https://cloudflare-ipfs.com/ipns/{IPNS_HASH}/data/listas/lista_iptv.m3u"
 ]
+# URLs Agenda (IPFS suele cachear, añadiremos cache buster en el request)
 URLS_AGENDA = [
     f"https://ipfs.io/ipns/{IPNS_HASH}/?tab=agenda",
     f"https://cf-ipfs.com/ipns/{IPNS_HASH}/?tab=agenda",
-    f"https://{IPNS_HASH}.ipns.dweb.link/?tab=agenda"
+    f"https://{IPNS_HASH}.ipns.dweb.link/?tab=agenda",
+    f"https://gateway.pinata.cloud/ipns/{IPNS_HASH}/?tab=agenda",
+    f"https://dweb.link/ipns/{IPNS_HASH}/?tab=agenda"
 ]
 
 HEADER_M3U = """#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
@@ -135,6 +139,44 @@ def determine_quality(name):
     return " (HD)"
 
 # ============================================================================================
+# LOGICA DE LOG DE PROXIES
+# ============================================================================================
+
+def update_proxies_log(new_entries):
+    """
+    Añade nuevas entradas al principio del log y limpia las antiguas (>30 días).
+    new_entries: Lista de strings sin salto de linea final.
+    """
+    Path(DIR_DEBUG).mkdir(exist_ok=True)
+    log_path = Path(FILE_PROXIES_LOG)
+    
+    existing_lines = []
+    if log_path.exists():
+        existing_lines = log_path.read_text(encoding='utf-8').splitlines()
+    
+    # Fecha de corte (30 días atrás)
+    cutoff_date = datetime.datetime.utcnow() - datetime.timedelta(days=30)
+    
+    kept_lines = []
+    for line in existing_lines:
+        # Formato esperado: [YYYY-MM-DD HH:MM] ...
+        match = re.match(r'^\[(\d{4}-\d{2}-\d{2})', line)
+        if match:
+            try:
+                line_date = datetime.datetime.strptime(match.group(1), "%Y-%m-%d")
+                if line_date >= cutoff_date:
+                    kept_lines.append(line)
+            except:
+                kept_lines.append(line) # Si falla parseo, la mantenemos por seguridad
+        else:
+            kept_lines.append(line) # Lineas sin fecha (raro) se mantienen
+            
+    # Unimos: Nuevas + Mantenidas
+    final_content = "\n".join(new_entries + kept_lines)
+    log_path.write_text(final_content, encoding='utf-8')
+    print(f"    [LOG] Proxies log actualizado ({len(new_entries)} nuevas, {len(kept_lines)} mantenidas).")
+
+# ============================================================================================
 # CARGA DE DATOS ESTÁTICOS
 # ============================================================================================
 
@@ -157,7 +199,6 @@ def load_blacklist():
     return bl
 
 def load_forced_channels():
-    """Carga los canales forzados que deben estar sí o sí en la lista"""
     print(f"[1.1] Cargando Canales Forzados ({FILE_FORZADOS})...")
     forced = {}
     path = Path(FILE_FORZADOS)
@@ -166,7 +207,6 @@ def load_forced_channels():
         return forced
     
     content = read_file_safe(path)
-    # Ajustamos para evitar el BOM si existe en la primera columna
     content = content.replace('\ufeff', '')
     
     reader = csv.DictReader(io.StringIO(content))
@@ -251,9 +291,8 @@ def build_master_channel_list(blacklist):
 
     elcano = parse_m3u(FILE_ELCANO, "E")
     newera = parse_m3u(FILE_NEW_ERA, "N")
-    forced_channels = load_forced_channels() # Cargar forzados
+    forced_channels = load_forced_channels()
     
-    # Unir todos los IDs: Elcano + NewEra + Forzados
     all_ids = set(elcano.keys()) | set(newera.keys()) | set(forced_channels.keys())
     master_db = []
     
@@ -264,7 +303,6 @@ def build_master_channel_list(blacklist):
         n_data = newera.get(aid, {})
         f_data = forced_channels.get(aid, None)
         
-        # 1. Determinar datos base (New Era prioridad sobre Elcano)
         name_ne = n_data.get('name', '')
         group_ne = n_data.get('group', '')
         tvg_ne = n_data.get('tvg', '')
@@ -277,10 +315,8 @@ def build_master_channel_list(blacklist):
             if name_e in new_era_names_map:
                 tvg_e = new_era_names_map[name_e]
 
-        # 2. Inicializar variables finales
         raw_name_for_clean = name_ne if name_ne else name_e
         
-        # Limpieza estándar
         nombre_supuesto = clean_channel_name(raw_name_for_clean, aid[-4:])
         if not nombre_supuesto: nombre_supuesto = "Desconocido"
         
@@ -296,27 +332,16 @@ def build_master_channel_list(blacklist):
         final_tvg = tvg_ne if (tvg_ne and tvg_ne != "Unknown") else tvg_e
         if not final_tvg: final_tvg = "Unknown"
 
-        # 3. Lógica de CANALES FORZADOS (Sobrescribe todo si existe en el CSV)
         if f_data:
             nombre_supuesto = f_data['name']
             final_group = f_data['group']
             final_tvg = f_data['tvg']
-            
-            # Calidad desde CSV
             q_csv = f_data['quality'].upper()
             clean_quality = q_csv
-            if q_csv:
-                quality_tag = f" ({q_csv})"
-            else:
-                quality_tag = ""
+            quality_tag = f" ({q_csv})" if q_csv else ""
+            final_source = "F"
+            if not final_url: final_url = f"acestream://{aid}"
 
-            final_source = "F" # Forced
-            
-            # Si no hay URL (porque no estaba en M3U descargados), la creamos
-            if not final_url:
-                final_url = f"acestream://{aid}"
-
-        # Gestión Blacklist
         in_bl = "yes" if aid in blacklist else "no"
         bl_real_name = blacklist.get(aid, "")
 
@@ -339,9 +364,7 @@ def build_master_channel_list(blacklist):
             'blacklist_real_name': bl_real_name
         })
     
-    # ORDENACIÓN CENTRALIZADA
     master_db.sort(key=lambda x: (x['grupo_ne'] or "ZZZ", x['nombre_supuesto']))
-    
     print(f"    -> Procesados y ordenados {len(master_db)} canales únicos.")
     return master_db
 
@@ -351,14 +374,12 @@ def build_master_channel_list(blacklist):
 
 def generate_correspondencias(db):
     print(f"[4] Generando {FILE_CORRESPONDENCIAS}...")
-    
     Path(DIR_CANALES).mkdir(exist_ok=True)
     with open(FILE_CORRESPONDENCIAS, 'w', newline='', encoding='utf-8-sig') as f:
         fields = ['acestream_id', 'nombre_e', 'nombre_ne', 'tvg-id_e', 'tvg-id_ne', 
                   'nombre_supuesto', 'grupo_e', 'grupo_ne', 'calidad', 'lista_negra', 'canal_real']
         w = csv.DictWriter(f, fieldnames=fields)
         w.writeheader()
-        
         for item in db:
             w.writerow({
                 'acestream_id': item['ace_id'],
@@ -377,18 +398,15 @@ def generate_correspondencias(db):
 
 def generate_ezdakit_m3u(db):
     print(f"[5] Generando {FILE_EZDAKIT}...")
-    
     entries = []
     for item in db:
         prefix = item['ace_id'][:3]
         display_name = f"{item['nombre_supuesto']}{item['calidad_tag']} ({item['source']}-{prefix})"
         grp = item['grupo_ne'] if item['grupo_ne'] else "OTROS"
-        
         if item['in_blacklist'] == "yes":
             grp = "ZZ_Canales_KO"
             suffix = item['blacklist_real_name'] if item['blacklist_real_name'] else "BLACKLIST"
             display_name += f" >>> {suffix}"
-
         entry = f'#EXTINF:-1 tvg-id="{item["final_tvg"]}" tvg-name="{display_name}" group-title="{grp}",{display_name}\n{item["url"]}'
         entries.append(entry)
         
@@ -400,6 +418,89 @@ def generate_ezdakit_m3u(db):
 # SCRAPING Y EVENTOS
 # ============================================================================================
 
+def get_fresh_agenda_html():
+    """Descarga inteligente con rotación, comprobación de fecha y fallback."""
+    scraper = cloudscraper.create_scraper(browser={'browser': 'chrome', 'platform': 'windows', 'desktop': True})
+    
+    # Datos de control
+    now_utc = datetime.datetime.utcnow()
+    check_freshness = 6 <= now_utc.hour < 12 # Ventana de comprobación estricta
+    today_date = now_utc.date()
+    
+    print(f"    [SMART FETCH] Hora UTC: {now_utc.strftime('%H:%M')}. Check de frescura activo: {check_freshness}")
+    
+    log_entries = []
+    last_working_html = None
+    last_working_url = None
+    fresh_html = None
+    
+    for url in URLS_AGENDA:
+        try:
+            # Cache busting
+            target_url = f"{url}&_={int(time.time())}"
+            print(f"    Probando: {target_url} ...")
+            
+            r = scraper.get(target_url, timeout=30)
+            if r.status_code == 200:
+                r.encoding = 'utf-8'
+                html_content = r.text
+                
+                # Análisis de fecha
+                soup_temp = BeautifulSoup(html_content, 'html.parser')
+                first_day_div = soup_temp.find('div', class_='events-day')
+                
+                status_msg = "OK"
+                is_fresh = True
+                
+                if first_day_div:
+                    date_str = first_day_div.get('data-date')
+                    try:
+                        content_date = datetime.datetime.strptime(date_str, "%Y-%m-%d").date()
+                        
+                        if check_freshness and content_date < today_date:
+                            status_msg = f"STALE (Data from {date_str})"
+                            is_fresh = False
+                        else:
+                            status_msg = f"FRESH (Data from {date_str})"
+                            
+                    except:
+                        status_msg = "WARN (Date parsing failed)"
+                else:
+                    status_msg = "WARN (No events found)"
+
+                # Logging
+                timestamp = now_utc.strftime('%Y-%m-%d %H:%M')
+                log_entries.append(f"[{timestamp}] {url} | {status_msg}")
+                
+                # Decisión
+                last_working_html = html_content
+                last_working_url = url
+                
+                if is_fresh:
+                    fresh_html = html_content
+                    print(f"      -> {status_msg}. USANDO ESTE PROXY.")
+                    log_entries[-1] += " [SELECTED]"
+                    break # Encontrado uno bueno, salimos
+                else:
+                    print(f"      -> {status_msg}. Buscando siguiente...")
+
+        except Exception as e:
+            print(f"      -> ERROR: {e}")
+            log_entries.append(f"[{now_utc.strftime('%Y-%m-%d %H:%M')}] {url} | ERROR: {str(e)}")
+
+    # Guardamos log
+    update_proxies_log(log_entries)
+
+    # Retorno
+    if fresh_html:
+        return fresh_html
+    elif last_working_html:
+        print("    [AVISO] No se encontraron proxies frescos. Usando el último funcional (aunque sea antiguo).")
+        return last_working_html
+    else:
+        print("    [ERROR] Ningún proxy respondió correctamente.")
+        return None
+
 def scrape_and_match(dial_map, master_db):
     print(f"[6] Scraping de Agenda y cruce de datos...")
     
@@ -409,21 +510,10 @@ def scrape_and_match(dial_map, master_db):
             if item['final_tvg'] not in tvg_index: tvg_index[item['final_tvg']] = []
             tvg_index[item['final_tvg']].append(item)
             
-    scraper = cloudscraper.create_scraper(browser={'browser': 'chrome', 'platform': 'windows', 'desktop': True})
-    html = None
-    for url in URLS_AGENDA:
-        try:
-            print(f"    Probando {url}...")
-            r = scraper.get(url, timeout=60)
-            if r.status_code == 200:
-                r.encoding = 'utf-8' # Forzar UTF-8
-                html = r.text
-                break
-        except:
-            pass
+    # USAMOS LA NUEVA FUNCIÓN DE DESCARGA
+    html = get_fresh_agenda_html()
             
     if not html:
-        print("    [ERROR] No se pudo descargar la agenda. Se aborta generación de eventos.")
         return [], []
 
     # --- DEBUG: GUARDAR HTML CRUDO ---
@@ -443,17 +533,16 @@ def scrape_and_match(dial_map, master_db):
         return [], []
 
     events_list = []
-    discarded_list = [] # LISTA PARA LOS DESCARTES
+    discarded_list = [] 
     dias_semana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
 
     for day_div in days:
-        date_iso = day_div.get('data-date') # YYYY-MM-DD
+        date_iso = day_div.get('data-date')
         if not date_iso: continue
         
         try:
             dt = datetime.datetime.strptime(date_iso, "%Y-%m-%d")
             fecha_csv = date_iso
-            # MM-DD
             dia_m3u = f"{dt.strftime('%m-%d')} ({dias_semana[dt.weekday()]})"
         except: continue
 
@@ -461,8 +550,6 @@ def scrape_and_match(dial_map, master_db):
         for row in rows:
             event_raw = row.get('data-event-id')
             comp_div = row.find('div', class_='competition-info')
-            
-            # --- SEPARATOR para evitar pegado de textos ---
             competition = comp_div.get_text(separator=' ', strip=True) if comp_div else ""
             
             tds = row.find_all('td')
@@ -482,7 +569,6 @@ def scrape_and_match(dial_map, master_db):
                 txt = ch.get_text().strip()
                 dial = None
 
-                # LÓGICA DE EXTRACCIÓN DE DIAL (4 REGLAS)
                 m_match = re.search(r'\([^)]*?M(\d+)[^)]*?\)', txt)
                 if m_match:
                     dial = m_match.group(1)
@@ -492,11 +578,8 @@ def scrape_and_match(dial_map, master_db):
                         if "ORANGE" not in txt.upper():
                             dial = d_match.group(1)
                 
-                # SI HEMOS ENCONTRADO UN DIAL, INTENTAMOS MAPEARLO
                 if dial:
                     map_info = dial_map.get(dial)
-                    
-                    # CASO 1 DESCARTE: DIAL NO ESTÁ EN LISTADO_CANALES.CSV
                     if not map_info:
                         discarded_list.append({
                             'dial_M': dial,
@@ -510,8 +593,6 @@ def scrape_and_match(dial_map, master_db):
                     nombre_canal_csv = map_info['name'] 
                     
                     available_streams = tvg_index.get(tvgid, [])
-                    
-                    # CASO 2 DESCARTE: CANAL MAPEADO PERO SIN STREAMS EN M3U
                     if not available_streams:
                         discarded_list.append({
                             'dial_M': dial,
@@ -548,13 +629,11 @@ def scrape_and_match(dial_map, master_db):
 
 def generate_descartes_csv(discarded_list):
     print(f"[8] Generando {FILE_DESCARTES}...")
-    
     Path(DIR_CANALES).mkdir(exist_ok=True)
     with open(FILE_DESCARTES, 'w', newline='', encoding='utf-8-sig') as f:
         fields = ['dial_M', 'nombre_canal_descartado', 'evento_descartado', 'motivo']
         w = csv.DictWriter(f, fieldnames=fields)
         w.writeheader()
-        
         for d in discarded_list:
             w.writerow({
                 'dial_M': d['dial_M'],
@@ -566,7 +645,6 @@ def generate_descartes_csv(discarded_list):
 
 def generate_eventos_files(events_list):
     print(f"[7] Generando ficheros de eventos...")
-    
     events_list.sort(key=lambda x: (x['fecha'], x['hora'], x['competicion'], x['evento']))
     
     Path(DIR_CANALES).mkdir(exist_ok=True)
