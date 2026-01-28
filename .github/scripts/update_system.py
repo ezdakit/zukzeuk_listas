@@ -6,6 +6,7 @@ import time
 import datetime
 import requests
 import cloudscraper
+import difflib  # <--- NUEVA IMPORTACIÓN PARA FUZZY MATCH
 from bs4 import BeautifulSoup
 from pathlib import Path
 import io
@@ -64,7 +65,7 @@ URLS_NEW_ERA = [
     f"https://cloudflare-ipfs.com/ipns/{IPNS_HASH}/data/listas/lista_iptv.m3u"
 ]
 
-# URLs Agenda (Limpias, sin parámetros, apuntando a la raíz)
+# URLs Agenda (Limpias)
 URLS_AGENDA = [
     f"https://ipfs.io/ipns/{IPNS_HASH}/",
     f"https://cloudflare-ipfs.com/ipns/{IPNS_HASH}/",
@@ -489,6 +490,11 @@ def get_fresh_agenda_html():
 def scrape_and_match(dial_map, master_db):
     print(f"[6] Scraping de Agenda y cruce de datos...")
     
+    # 1. Preparar lista de nombres normalizados para Fuzzy Match
+    # Obtenemos los 'nombre_supuesto' únicos de la base de datos maestra
+    all_known_names = list(set([item['nombre_supuesto'] for item in master_db]))
+
+    # 2. Preparar índice TVG como siempre
     tvg_index = {}
     for item in master_db:
         if item['final_tvg'] and item['final_tvg'] != "Unknown":
@@ -551,6 +557,26 @@ def scrape_and_match(dial_map, master_db):
             
             for ch in channels:
                 txt = ch.get_text().strip()
+                
+                # --- LÓGICA DE FUZZY MATCH (EXPERIEMENTAL) ---
+                # 1. Limpiamos paréntesis y basura para quedarnos con el nombre
+                clean_name_web = re.sub(r'\s*\(.*?\)', '', txt).strip()
+                
+                # 2. Buscamos el más parecido en nuestra DB
+                # cutoff=0.6 significa que debe parecerse al menos un 60%
+                fuzzy_matches = difflib.get_close_matches(clean_name_web.upper(), [n.upper() for n in all_known_names], n=1, cutoff=0.6)
+                
+                detected_fuzzy_name = "No Match"
+                if fuzzy_matches:
+                    # Recuperamos el nombre con el casing original de la lista known_names
+                    # (Esto es un poco ineficiente O(N) pero seguro)
+                    target_upper = fuzzy_matches[0]
+                    for orig in all_known_names:
+                        if orig.upper() == target_upper:
+                            detected_fuzzy_name = orig
+                            break
+                # ---------------------------------------------
+
                 dial = None
 
                 m_match = re.search(r'\([^)]*?M(\d+)[^)]*?\)', txt)
@@ -599,7 +625,8 @@ def scrape_and_match(dial_map, master_db):
                             'hora': hora_evento,
                             'evento': event_raw,
                             'competicion': competition,
-                            'nombre_canal': nombre_canal_csv, 
+                            'nombre_canal': nombre_canal_csv,
+                            'canal_agenda_detectado': detected_fuzzy_name, # <--- NUEVO CAMPO
                             'calidad': stream['calidad_clean'],
                             'lista_negra': stream['in_blacklist'],
                             'calidad_tag': stream['calidad_tag'],
@@ -633,8 +660,9 @@ def generate_eventos_files(events_list):
     
     Path(DIR_CANALES).mkdir(exist_ok=True)
     with open(FILE_EVENTOS_CSV, 'w', newline='', encoding='utf-8-sig') as f:
+        # AÑADIDO 'canal_agenda_detectado' AL CSV
         fields = ['acestream_id', 'dial_M', 'tvg_id', 'fecha', 'hora', 'evento', 
-                  'competición', 'nombre_canal', 'calidad', 'lista_negra']
+                  'competición', 'nombre_canal', 'canal_agenda_detectado', 'calidad', 'lista_negra']
         w = csv.DictWriter(f, fieldnames=fields)
         w.writeheader()
         for ev in events_list:
@@ -647,6 +675,7 @@ def generate_eventos_files(events_list):
                 'evento': ev['evento'],
                 'competición': ev['competicion'],
                 'nombre_canal': ev['nombre_canal'],
+                'canal_agenda_detectado': ev['canal_agenda_detectado'], # <--- DATO NUEVO
                 'calidad': ev['calidad'],
                 'lista_negra': ev['lista_negra']
             })
