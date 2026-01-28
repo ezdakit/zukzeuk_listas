@@ -42,9 +42,9 @@ FILE_CORRESPONDENCIAS = get_path(f"{DIR_CANALES}/correspondencias.csv")
 FILE_EVENTOS_CSV = get_path(f"{DIR_CANALES}/eventos_canales.csv")
 FILE_EVENTOS_M3U = get_path("ezdakit_eventos.m3u")
 FILE_DESCARTES = get_path(f"{DIR_CANALES}/descartes.csv")
-FILE_PROXIES_LOG = f"{DIR_DEBUG}/proxies.log" # Fichero de Log de Proxies
+FILE_PROXIES_LOG = f"{DIR_DEBUG}/proxies.log"
 
-# Ficheros de ENTRADA (Estricto: Si es testing busca _testing.csv)
+# Ficheros de ENTRADA
 FILE_BLACKLIST = get_path(f"{DIR_CANALES}/lista_negra.csv") 
 FILE_DIAL_MAP = get_path(f"{DIR_CANALES}/listado_canales.csv")
 FILE_FORZADOS = get_path(f"{DIR_CANALES}/canales_forzados.csv")
@@ -63,10 +63,12 @@ URLS_NEW_ERA = [
     f"https://{IPNS_HASH}.ipns.dweb.link/data/listas/lista_iptv.m3u",
     f"https://cloudflare-ipfs.com/ipns/{IPNS_HASH}/data/listas/lista_iptv.m3u"
 ]
-# URLs Agenda (IPFS suele cachear, añadiremos cache buster en el request)
+
+# URLs Agenda (Limpias, sin parámetros extra para favorecer cache y respuesta rápida)
+# Corregido cf-ipfs.com -> cloudflare-ipfs.com
 URLS_AGENDA = [
     f"https://ipfs.io/ipns/{IPNS_HASH}/?tab=agenda",
-    f"https://cf-ipfs.com/ipns/{IPNS_HASH}/?tab=agenda",
+    f"https://cloudflare-ipfs.com/ipns/{IPNS_HASH}/?tab=agenda",
     f"https://{IPNS_HASH}.ipns.dweb.link/?tab=agenda",
     f"https://gateway.pinata.cloud/ipns/{IPNS_HASH}/?tab=agenda",
     f"https://dweb.link/ipns/{IPNS_HASH}/?tab=agenda"
@@ -97,7 +99,7 @@ def download_file(urls, output_filename):
     
     for url in urls:
         try:
-            r = session.get(url, timeout=30)
+            r = session.get(url, timeout=60) # Timeout aumentado
             if r.status_code == 200:
                 if "#EXTM3U" in r.text[:200]:
                     Path(output_filename).write_text(r.text, encoding='utf-8')
@@ -143,10 +145,6 @@ def determine_quality(name):
 # ============================================================================================
 
 def update_proxies_log(new_entries):
-    """
-    Añade nuevas entradas al principio del log y limpia las antiguas (>30 días).
-    new_entries: Lista de strings sin salto de linea final.
-    """
     Path(DIR_DEBUG).mkdir(exist_ok=True)
     log_path = Path(FILE_PROXIES_LOG)
     
@@ -154,12 +152,10 @@ def update_proxies_log(new_entries):
     if log_path.exists():
         existing_lines = log_path.read_text(encoding='utf-8').splitlines()
     
-    # Fecha de corte (30 días atrás)
     cutoff_date = datetime.datetime.utcnow() - datetime.timedelta(days=30)
     
     kept_lines = []
     for line in existing_lines:
-        # Formato esperado: [YYYY-MM-DD HH:MM] ...
         match = re.match(r'^\[(\d{4}-\d{2}-\d{2})', line)
         if match:
             try:
@@ -167,11 +163,10 @@ def update_proxies_log(new_entries):
                 if line_date >= cutoff_date:
                     kept_lines.append(line)
             except:
-                kept_lines.append(line) # Si falla parseo, la mantenemos por seguridad
+                kept_lines.append(line)
         else:
-            kept_lines.append(line) # Lineas sin fecha (raro) se mantienen
+            kept_lines.append(line)
             
-    # Unimos: Nuevas + Mantenidas
     final_content = "\n".join(new_entries + kept_lines)
     log_path.write_text(final_content, encoding='utf-8')
     print(f"    [LOG] Proxies log actualizado ({len(new_entries)} nuevas, {len(kept_lines)} mantenidas).")
@@ -419,33 +414,29 @@ def generate_ezdakit_m3u(db):
 # ============================================================================================
 
 def get_fresh_agenda_html():
-    """Descarga inteligente con rotación, comprobación de fecha y fallback."""
+    """Descarga inteligente: URLs limpias, check fecha, fallback."""
     scraper = cloudscraper.create_scraper(browser={'browser': 'chrome', 'platform': 'windows', 'desktop': True})
     
-    # Datos de control
     now_utc = datetime.datetime.utcnow()
-    check_freshness = 6 <= now_utc.hour < 12 # Ventana de comprobación estricta
+    check_freshness = 6 <= now_utc.hour < 12 
     today_date = now_utc.date()
     
     print(f"    [SMART FETCH] Hora UTC: {now_utc.strftime('%H:%M')}. Check de frescura activo: {check_freshness}")
     
     log_entries = []
     last_working_html = None
-    last_working_url = None
     fresh_html = None
     
     for url in URLS_AGENDA:
         try:
-            # Cache busting
-            target_url = f"{url}&_={int(time.time())}"
-            print(f"    Probando: {target_url} ...")
+            # SIN PARÁMETROS EXTRA PARA NO ROMPER IPNS/CACHE
+            print(f"    Probando: {url} ...")
             
-            r = scraper.get(target_url, timeout=30)
+            r = scraper.get(url, timeout=60) # Timeout 60s
             if r.status_code == 200:
                 r.encoding = 'utf-8'
                 html_content = r.text
                 
-                # Análisis de fecha
                 soup_temp = BeautifulSoup(html_content, 'html.parser')
                 first_day_div = soup_temp.find('div', class_='events-day')
                 
@@ -468,34 +459,31 @@ def get_fresh_agenda_html():
                 else:
                     status_msg = "WARN (No events found)"
 
-                # Logging
                 timestamp = now_utc.strftime('%Y-%m-%d %H:%M')
                 log_entries.append(f"[{timestamp}] {url} | {status_msg}")
                 
-                # Decisión
                 last_working_html = html_content
-                last_working_url = url
                 
                 if is_fresh:
                     fresh_html = html_content
                     print(f"      -> {status_msg}. USANDO ESTE PROXY.")
                     log_entries[-1] += " [SELECTED]"
-                    break # Encontrado uno bueno, salimos
+                    break 
                 else:
                     print(f"      -> {status_msg}. Buscando siguiente...")
 
         except Exception as e:
-            print(f"      -> ERROR: {e}")
-            log_entries.append(f"[{now_utc.strftime('%Y-%m-%d %H:%M')}] {url} | ERROR: {str(e)}")
+            # Simplificar error para log
+            err_str = str(e).split('(')[0] if '(' in str(e) else str(e)
+            print(f"      -> ERROR: {err_str}...")
+            log_entries.append(f"[{now_utc.strftime('%Y-%m-%d %H:%M')}] {url} | ERROR: {err_str}")
 
-    # Guardamos log
     update_proxies_log(log_entries)
 
-    # Retorno
     if fresh_html:
         return fresh_html
     elif last_working_html:
-        print("    [AVISO] No se encontraron proxies frescos. Usando el último funcional (aunque sea antiguo).")
+        print("    [AVISO] No se encontraron proxies frescos. Usando el último funcional.")
         return last_working_html
     else:
         print("    [ERROR] Ningún proxy respondió correctamente.")
@@ -510,7 +498,6 @@ def scrape_and_match(dial_map, master_db):
             if item['final_tvg'] not in tvg_index: tvg_index[item['final_tvg']] = []
             tvg_index[item['final_tvg']].append(item)
             
-    # USAMOS LA NUEVA FUNCIÓN DE DESCARGA
     html = get_fresh_agenda_html()
             
     if not html:
