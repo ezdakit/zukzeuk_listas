@@ -64,13 +64,14 @@ URLS_NEW_ERA = [
     f"https://cloudflare-ipfs.com/ipns/{IPNS_HASH}/data/listas/lista_iptv.m3u"
 ]
 
-# URLs Agenda (Limpias)
+# URLs Agenda (Ampliadas con w3s.link y variantes dweb)
 URLS_AGENDA = [
     f"https://ipfs.io/ipns/{IPNS_HASH}/?tab=agenda",
     f"https://cloudflare-ipfs.com/ipns/{IPNS_HASH}/?tab=agenda",
-    f"https://{IPNS_HASH}.ipns.dweb.link/?tab=agenda",
-    f"https://gateway.pinata.cloud/ipns/{IPNS_HASH}/?tab=agenda",
-    f"https://dweb.link/ipns/{IPNS_HASH}/?tab=agenda"
+    f"https://w3s.link/ipns/{IPNS_HASH}/?tab=agenda",  # NUEVO: w3s.link
+    f"https://{IPNS_HASH}.ipns.dweb.link/?tab=agenda", # Subdominio dweb
+    f"https://dweb.link/ipns/{IPNS_HASH}/?tab=agenda", # Ruta dweb
+    f"https://gateway.pinata.cloud/ipns/{IPNS_HASH}/?tab=agenda"
 ]
 
 HEADER_M3U = """#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
@@ -412,7 +413,7 @@ def generate_ezdakit_m3u(db):
 # ============================================================================================
 
 def get_fresh_agenda_html():
-    """Descarga inteligente: Solo acepta FRESH si fecha >= hoy. Si falla, busca siguiente."""
+    """Descarga inteligente: URLs limpias, check fecha, fallback."""
     scraper = cloudscraper.create_scraper(browser={'browser': 'chrome', 'platform': 'windows', 'desktop': True})
     
     now_utc = datetime.datetime.utcnow()
@@ -437,7 +438,6 @@ def get_fresh_agenda_html():
                 first_day_div = soup_temp.find('div', class_='events-day')
                 
                 status_msg = "OK"
-                # Check real de frescura
                 is_actually_fresh = False
                 
                 if first_day_div:
@@ -445,6 +445,7 @@ def get_fresh_agenda_html():
                     try:
                         content_date = datetime.datetime.strptime(date_str, "%Y-%m-%d").date()
                         
+                        # LOGICA CORREGIDA: Si la fecha es de hoy o futuro -> FRESH
                         if content_date >= today_date:
                             status_msg = f"FRESH (Data from {date_str})"
                             is_actually_fresh = True
@@ -468,7 +469,6 @@ def get_fresh_agenda_html():
                     log_entries[-1] += " [SELECTED]"
                     break 
                 else:
-                    # Si es STALE, no paramos, seguimos buscando uno mejor
                     print(f"      -> {status_msg}. Buscando siguiente mejor opción...")
 
         except Exception as e:
