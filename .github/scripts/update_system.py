@@ -6,7 +6,7 @@ import time
 import datetime
 import requests
 import cloudscraper
-import difflib  # <--- NUEVA IMPORTACIÓN PARA FUZZY MATCH
+import difflib
 from bs4 import BeautifulSoup
 from pathlib import Path
 import io
@@ -112,6 +112,10 @@ def download_file(urls, output_filename):
     return False
 
 def clean_channel_name(name, ace_id_suffix):
+    """
+    Lógica de limpieza para generar el nombre_supuesto.
+    AHORA SIEMPRE DEVUELVE MAYÚSCULAS.
+    """
     if not name: return ""
     name = re.sub(r'-->.*', '', name)
     
@@ -132,7 +136,8 @@ def clean_channel_name(name, ace_id_suffix):
         name = name[:-4].strip()
     name = re.sub(r'\s+[0-9a-fA-F]{4}$', '', name)
     
-    return name
+    # FORZAR MAYÚSCULAS AQUÍ
+    return name.upper()
 
 def determine_quality(name):
     u = name.upper()
@@ -208,9 +213,12 @@ def load_forced_channels():
     for row in reader:
         aid = row.get('acestream_id', '').strip()
         if aid:
+            # Aseguramos que el nombre forzado también sea mayúsculas si no lo es ya
+            raw_name = row.get('nombre_supuesto', '').strip()
+            
             forced[aid] = {
                 'tvg': row.get('tvg-id', '').strip(),
-                'name': row.get('nombre_supuesto', '').strip(),
+                'name': raw_name.upper(),
                 'group': row.get('grupo', '').strip(),
                 'quality': row.get('calidad', '').strip()
             }
@@ -312,8 +320,9 @@ def build_master_channel_list(blacklist):
 
         raw_name_for_clean = name_ne if name_ne else name_e
         
+        # OJO: clean_channel_name ahora devuelve MAYUSCULAS
         nombre_supuesto = clean_channel_name(raw_name_for_clean, aid[-4:])
-        if not nombre_supuesto: nombre_supuesto = "Desconocido"
+        if not nombre_supuesto: nombre_supuesto = "DESCONOCIDO"
         
         quality_tag = determine_quality((name_ne + " " + name_e))
         clean_quality = quality_tag.strip().replace("(", "").replace(")", "")
@@ -328,7 +337,7 @@ def build_master_channel_list(blacklist):
         if not final_tvg: final_tvg = "Unknown"
 
         if f_data:
-            nombre_supuesto = f_data['name']
+            nombre_supuesto = f_data['name'] # Ya viene en mayúsculas por la carga
             final_group = f_data['group']
             final_tvg = f_data['tvg']
             q_csv = f_data['quality'].upper()
@@ -414,7 +423,6 @@ def generate_ezdakit_m3u(db):
 # ============================================================================================
 
 def get_fresh_agenda_html():
-    """Descarga inteligente: URLs limpias (ROOT), check fecha, fallback."""
     scraper = cloudscraper.create_scraper(browser={'browser': 'chrome', 'platform': 'windows', 'desktop': True})
     
     now_utc = datetime.datetime.utcnow()
@@ -445,14 +453,12 @@ def get_fresh_agenda_html():
                     date_str = first_day_div.get('data-date')
                     try:
                         content_date = datetime.datetime.strptime(date_str, "%Y-%m-%d").date()
-                        
                         if content_date >= today_date:
                             status_msg = f"FRESH (Data from {date_str})"
                             is_actually_fresh = True
                         else:
                             status_msg = f"STALE (Data from {date_str})"
                             is_actually_fresh = False
-                            
                     except:
                         status_msg = "WARN (Date parsing failed)"
                 else:
@@ -481,20 +487,69 @@ def get_fresh_agenda_html():
     if fresh_html:
         return fresh_html
     elif last_working_html:
-        print("    [AVISO] No se encontraron proxies actualizados. Usando el último funcional disponible (aunque sea antiguo).")
+        print("    [AVISO] No se encontraron proxies actualizados. Usando el último funcional.")
         return last_working_html
     else:
         print("    [ERROR] Ningún proxy respondió correctamente.")
         return None
 
+def find_best_match(text_web, candidates):
+    """
+    Busca el mejor nombre en 'candidates' (QUE YA ESTÁN EN MAYÚSCULAS).
+    """
+    if not text_web: return "Unknown"
+    
+    # 1. Limpieza básica y conversión a MAYÚSCULAS para comparar
+    clean_web = re.sub(r'\s*\(.*?\)', '', text_web).strip()
+    u_web = clean_web.upper()
+
+    # Como candidates ya es una lista de strings mayúsculas, hacemos un set para búsqueda rápida
+    candidates_set = set(candidates)
+
+    # 2. Intento 1: Coincidencia exacta
+    if u_web in candidates_set:
+        return u_web
+
+    # 3. Intento 2: Heurísticas "M+" vs "MOVISTAR" (Todo en mayúsculas)
+    
+    # Caso A: Web "M+ DEPORTES" -> DB "MOVISTAR DEPORTES"
+    if u_web.startswith("M+ "):
+        replaced = u_web.replace("M+ ", "MOVISTAR ")
+        if replaced in candidates_set:
+            return replaced
+        
+        # Caso B: Web "M+ LIGA DE CAMPEONES 2" -> DB "LIGA DE CAMPEONES 2"
+        stripped = u_web.replace("M+ ", "")
+        if stripped in candidates_set:
+            return stripped
+
+    # Caso C: Web "MOVISTAR DEPORTES" -> DB "M+ DEPORTES"
+    if u_web.startswith("MOVISTAR "):
+        compressed = u_web.replace("MOVISTAR ", "M+ ")
+        if compressed in candidates_set:
+            return compressed
+            
+        # Caso D: Web "MOVISTAR DEPORTES" -> DB "DEPORTES" (raro pero posible)
+        stripped = u_web.replace("MOVISTAR ", "")
+        if stripped in candidates_set:
+            return stripped
+
+    # 4. Intento 3: Fuzzy Match sobre la lista (que ya está en mayúsculas)
+    # Usamos clean_web original (aunque clean_web y u_web son casi iguales si no hay tildes raras)
+    # Preferible usar u_web para asegurar homogeneidad
+    matches = difflib.get_close_matches(u_web, candidates, n=1, cutoff=0.6)
+    if matches:
+        return matches[0]
+    
+    return "No Match"
+
 def scrape_and_match(dial_map, master_db):
     print(f"[6] Scraping de Agenda y cruce de datos...")
     
-    # 1. Preparar lista de nombres normalizados para Fuzzy Match
-    # Obtenemos los 'nombre_supuesto' únicos de la base de datos maestra
+    # 1. Lista de candidatos: Nombres supuestos ÚNICOS y ya en MAYÚSCULAS (gracias a clean_channel_name)
     all_known_names = list(set([item['nombre_supuesto'] for item in master_db]))
-
-    # 2. Preparar índice TVG como siempre
+    
+    # 2. Índice TVG
     tvg_index = {}
     for item in master_db:
         if item['final_tvg'] and item['final_tvg'] != "Unknown":
@@ -505,16 +560,6 @@ def scrape_and_match(dial_map, master_db):
             
     if not html:
         return [], []
-
-    # --- DEBUG: GUARDAR HTML CRUDO ---
-    try:
-        Path(DIR_DEBUG).mkdir(exist_ok=True)
-        debug_file = f"{DIR_DEBUG}/agenda_dump{SUFFIX}.html"
-        Path(debug_file).write_text(html, encoding='utf-8')
-        print(f"    [DEBUG] HTML guardado en {debug_file}")
-    except Exception as e:
-        print(f"    [AVISO] No se pudo guardar debug HTML: {e}")
-    # ---------------------------------
 
     soup = BeautifulSoup(html, 'html.parser')
     days = soup.find_all('div', class_='events-day')
@@ -558,27 +603,11 @@ def scrape_and_match(dial_map, master_db):
             for ch in channels:
                 txt = ch.get_text().strip()
                 
-                # --- LÓGICA DE FUZZY MATCH (EXPERIEMENTAL) ---
-                # 1. Limpiamos paréntesis y basura para quedarnos con el nombre
-                clean_name_web = re.sub(r'\s*\(.*?\)', '', txt).strip()
-                
-                # 2. Buscamos el más parecido en nuestra DB
-                # cutoff=0.6 significa que debe parecerse al menos un 60%
-                fuzzy_matches = difflib.get_close_matches(clean_name_web.upper(), [n.upper() for n in all_known_names], n=1, cutoff=0.6)
-                
-                detected_fuzzy_name = "No Match"
-                if fuzzy_matches:
-                    # Recuperamos el nombre con el casing original de la lista known_names
-                    # (Esto es un poco ineficiente O(N) pero seguro)
-                    target_upper = fuzzy_matches[0]
-                    for orig in all_known_names:
-                        if orig.upper() == target_upper:
-                            detected_fuzzy_name = orig
-                            break
-                # ---------------------------------------------
+                # --- NUEVA LÓGICA DE DETECCIÓN SIMPLIFICADA (TODO UPPERCASE) ---
+                detected_fuzzy_name = find_best_match(txt, all_known_names)
+                # ---------------------------------------------------------------
 
                 dial = None
-
                 m_match = re.search(r'\([^)]*?M(\d+)[^)]*?\)', txt)
                 if m_match:
                     dial = m_match.group(1)
@@ -626,7 +655,7 @@ def scrape_and_match(dial_map, master_db):
                             'evento': event_raw,
                             'competicion': competition,
                             'nombre_canal': nombre_canal_csv,
-                            'canal_agenda_detectado': detected_fuzzy_name, # <--- NUEVO CAMPO
+                            'canal_agenda_detectado': detected_fuzzy_name,
                             'calidad': stream['calidad_clean'],
                             'lista_negra': stream['in_blacklist'],
                             'calidad_tag': stream['calidad_tag'],
@@ -660,7 +689,6 @@ def generate_eventos_files(events_list):
     
     Path(DIR_CANALES).mkdir(exist_ok=True)
     with open(FILE_EVENTOS_CSV, 'w', newline='', encoding='utf-8-sig') as f:
-        # AÑADIDO 'canal_agenda_detectado' AL CSV
         fields = ['acestream_id', 'dial_M', 'tvg_id', 'fecha', 'hora', 'evento', 
                   'competición', 'nombre_canal', 'canal_agenda_detectado', 'calidad', 'lista_negra']
         w = csv.DictWriter(f, fieldnames=fields)
@@ -675,7 +703,7 @@ def generate_eventos_files(events_list):
                 'evento': ev['evento'],
                 'competición': ev['competicion'],
                 'nombre_canal': ev['nombre_canal'],
-                'canal_agenda_detectado': ev['canal_agenda_detectado'], # <--- DATO NUEVO
+                'canal_agenda_detectado': ev['canal_agenda_detectado'],
                 'calidad': ev['calidad'],
                 'lista_negra': ev['lista_negra']
             })
