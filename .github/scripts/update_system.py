@@ -46,6 +46,7 @@ FILE_DESCARTES = get_path(f"{DIR_CANALES}/descartes.csv")
 # Ficheros de ENTRADA (Estricto: Si es testing busca _testing.csv)
 FILE_BLACKLIST = get_path(f"{DIR_CANALES}/lista_negra.csv") 
 FILE_DIAL_MAP = get_path(f"{DIR_CANALES}/listado_canales.csv")
+FILE_FORZADOS = get_path(f"{DIR_CANALES}/canales_forzados.csv") # <--- NUEVO FICHERO
 
 # URLs
 IPNS_HASH = "k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004"
@@ -155,6 +156,32 @@ def load_blacklist():
     print(f"    -> {len(bl)} IDs en lista negra.")
     return bl
 
+def load_forced_channels():
+    """Carga los canales forzados que deben estar sí o sí en la lista"""
+    print(f"[1.1] Cargando Canales Forzados ({FILE_FORZADOS})...")
+    forced = {}
+    path = Path(FILE_FORZADOS)
+    if not path.exists():
+        print(f"    [AVISO] No existe {FILE_FORZADOS}. Se continúa sin canales forzados.")
+        return forced
+    
+    content = read_file_safe(path)
+    # Ajustamos para evitar el BOM si existe en la primera columna
+    content = content.replace('\ufeff', '')
+    
+    reader = csv.DictReader(io.StringIO(content))
+    for row in reader:
+        aid = row.get('acestream_id', '').strip()
+        if aid:
+            forced[aid] = {
+                'tvg': row.get('tvg-id', '').strip(),
+                'name': row.get('nombre_supuesto', '').strip(),
+                'group': row.get('grupo', '').strip(),
+                'quality': row.get('calidad', '').strip()
+            }
+    print(f"    -> {len(forced)} canales forzados cargados.")
+    return forced
+
 def load_dial_mapping():
     print(f"[2] Cargando Mapeo de Diales ({FILE_DIAL_MAP})...")
     mapping = {} 
@@ -177,7 +204,7 @@ def load_dial_mapping():
     return mapping
 
 # ============================================================================================
-# PROCESAMIENTO DE LISTAS (ELCANO / NEW ERA)
+# PROCESAMIENTO DE LISTAS (ELCANO / NEW ERA + FORZADOS)
 # ============================================================================================
 
 def parse_m3u(file_path, source_tag):
@@ -224,8 +251,10 @@ def build_master_channel_list(blacklist):
 
     elcano = parse_m3u(FILE_ELCANO, "E")
     newera = parse_m3u(FILE_NEW_ERA, "N")
+    forced_channels = load_forced_channels() # Cargar forzados
     
-    all_ids = set(elcano.keys()) | set(newera.keys())
+    # Unir todos los IDs: Elcano + NewEra + Forzados
+    all_ids = set(elcano.keys()) | set(newera.keys()) | set(forced_channels.keys())
     master_db = []
     
     new_era_names_map = {v['name']: v['tvg'] for v in newera.values() if v['tvg'] != "Unknown"}
@@ -233,7 +262,9 @@ def build_master_channel_list(blacklist):
     for aid in all_ids:
         e_data = elcano.get(aid, {})
         n_data = newera.get(aid, {})
+        f_data = forced_channels.get(aid, None)
         
+        # 1. Determinar datos base (New Era prioridad sobre Elcano)
         name_ne = n_data.get('name', '')
         group_ne = n_data.get('group', '')
         tvg_ne = n_data.get('tvg', '')
@@ -246,7 +277,7 @@ def build_master_channel_list(blacklist):
             if name_e in new_era_names_map:
                 tvg_e = new_era_names_map[name_e]
 
-        # Nombre para limpieza (Prioridad New Era)
+        # 2. Inicializar variables finales
         raw_name_for_clean = name_ne if name_ne else name_e
         
         # Limpieza estándar
@@ -264,6 +295,26 @@ def build_master_channel_list(blacklist):
         
         final_tvg = tvg_ne if (tvg_ne and tvg_ne != "Unknown") else tvg_e
         if not final_tvg: final_tvg = "Unknown"
+
+        # 3. Lógica de CANALES FORZADOS (Sobrescribe todo si existe en el CSV)
+        if f_data:
+            nombre_supuesto = f_data['name']
+            final_group = f_data['group']
+            final_tvg = f_data['tvg']
+            
+            # Calidad desde CSV
+            q_csv = f_data['quality'].upper()
+            clean_quality = q_csv
+            if q_csv:
+                quality_tag = f" ({q_csv})"
+            else:
+                quality_tag = ""
+
+            final_source = "F" # Forced
+            
+            # Si no hay URL (porque no estaba en M3U descargados), la creamos
+            if not final_url:
+                final_url = f"acestream://{aid}"
 
         # Gestión Blacklist
         in_bl = "yes" if aid in blacklist else "no"
