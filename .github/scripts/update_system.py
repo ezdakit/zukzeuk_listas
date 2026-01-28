@@ -64,7 +64,7 @@ URLS_NEW_ERA = [
     f"https://cloudflare-ipfs.com/ipns/{IPNS_HASH}/data/listas/lista_iptv.m3u"
 ]
 
-# URLs Agenda (Limpias)
+# URLs Agenda (Limpias, sin parámetros, apuntando a la raíz)
 URLS_AGENDA = [
     f"https://ipfs.io/ipns/{IPNS_HASH}/",
     f"https://cloudflare-ipfs.com/ipns/{IPNS_HASH}/",
@@ -111,10 +111,6 @@ def download_file(urls, output_filename):
     return False
 
 def clean_channel_name(name, ace_id_suffix):
-    """
-    Limpieza básica del nombre del canal para generar el nombre_supuesto.
-    SIN forzar mayúsculas, respetando el formato original.
-    """
     if not name: return ""
     name = re.sub(r'-->.*', '', name)
     
@@ -309,12 +305,12 @@ def build_master_channel_list(blacklist):
         group_e = e_data.get('group', '')
         tvg_e = e_data.get('tvg', '')
         
-        # Recuperación cruzada de TVG
         if not tvg_e or tvg_e == "Unknown":
             if name_e in new_era_names_map:
                 tvg_e = new_era_names_map[name_e]
 
         raw_name_for_clean = name_ne if name_ne else name_e
+        
         nombre_supuesto = clean_channel_name(raw_name_for_clean, aid[-4:])
         if not nombre_supuesto: nombre_supuesto = "Desconocido"
         
@@ -334,8 +330,9 @@ def build_master_channel_list(blacklist):
             nombre_supuesto = f_data['name']
             final_group = f_data['group']
             final_tvg = f_data['tvg']
-            clean_quality = f_data['quality']
-            quality_tag = f" ({clean_quality})" if clean_quality else ""
+            q_csv = f_data['quality'].upper()
+            clean_quality = q_csv
+            quality_tag = f" ({q_csv})" if q_csv else ""
             final_source = "F"
             if not final_url: final_url = f"acestream://{aid}"
 
@@ -416,6 +413,7 @@ def generate_ezdakit_m3u(db):
 # ============================================================================================
 
 def get_fresh_agenda_html():
+    """Descarga inteligente: URLs limpias (ROOT), check fecha, fallback."""
     scraper = cloudscraper.create_scraper(browser={'browser': 'chrome', 'platform': 'windows', 'desktop': True})
     
     now_utc = datetime.datetime.utcnow()
@@ -446,12 +444,14 @@ def get_fresh_agenda_html():
                     date_str = first_day_div.get('data-date')
                     try:
                         content_date = datetime.datetime.strptime(date_str, "%Y-%m-%d").date()
+                        
                         if content_date >= today_date:
                             status_msg = f"FRESH (Data from {date_str})"
                             is_actually_fresh = True
                         else:
                             status_msg = f"STALE (Data from {date_str})"
                             is_actually_fresh = False
+                            
                     except:
                         status_msg = "WARN (Date parsing failed)"
                 else:
@@ -480,7 +480,7 @@ def get_fresh_agenda_html():
     if fresh_html:
         return fresh_html
     elif last_working_html:
-        print("    [AVISO] No se encontraron proxies actualizados. Usando el último funcional.")
+        print("    [AVISO] No se encontraron proxies actualizados. Usando el último funcional disponible (aunque sea antiguo).")
         return last_working_html
     else:
         print("    [ERROR] Ningún proxy respondió correctamente.")
@@ -489,7 +489,6 @@ def get_fresh_agenda_html():
 def scrape_and_match(dial_map, master_db):
     print(f"[6] Scraping de Agenda y cruce de datos...")
     
-    # Índice de AceStreams por TVG para búsqueda rápida
     tvg_index = {}
     for item in master_db:
         if item['final_tvg'] and item['final_tvg'] != "Unknown":
@@ -500,6 +499,16 @@ def scrape_and_match(dial_map, master_db):
             
     if not html:
         return [], []
+
+    # --- DEBUG: GUARDAR HTML CRUDO ---
+    try:
+        Path(DIR_DEBUG).mkdir(exist_ok=True)
+        debug_file = f"{DIR_DEBUG}/agenda_dump{SUFFIX}.html"
+        Path(debug_file).write_text(html, encoding='utf-8')
+        print(f"    [DEBUG] HTML guardado en {debug_file}")
+    except Exception as e:
+        print(f"    [AVISO] No se pudo guardar debug HTML: {e}")
+    # ---------------------------------
 
     soup = BeautifulSoup(html, 'html.parser')
     days = soup.find_all('div', class_='events-day')
@@ -542,9 +551,8 @@ def scrape_and_match(dial_map, master_db):
             
             for ch in channels:
                 txt = ch.get_text().strip()
-                
-                # --- AQUÍ LA VUELTA A LA LÓGICA ORIGINAL: Solo Diales ---
                 dial = None
+
                 m_match = re.search(r'\([^)]*?M(\d+)[^)]*?\)', txt)
                 if m_match:
                     dial = m_match.group(1)
@@ -591,8 +599,7 @@ def scrape_and_match(dial_map, master_db):
                             'hora': hora_evento,
                             'evento': event_raw,
                             'competicion': competition,
-                            'nombre_canal': nombre_canal_csv,
-                            # SIN COLUMNA canal_agenda
+                            'nombre_canal': nombre_canal_csv, 
                             'calidad': stream['calidad_clean'],
                             'lista_negra': stream['in_blacklist'],
                             'calidad_tag': stream['calidad_tag'],
@@ -626,7 +633,6 @@ def generate_eventos_files(events_list):
     
     Path(DIR_CANALES).mkdir(exist_ok=True)
     with open(FILE_EVENTOS_CSV, 'w', newline='', encoding='utf-8-sig') as f:
-        # Volvemos a los campos originales
         fields = ['acestream_id', 'dial_M', 'tvg_id', 'fecha', 'hora', 'evento', 
                   'competición', 'nombre_canal', 'calidad', 'lista_negra']
         w = csv.DictWriter(f, fieldnames=fields)
