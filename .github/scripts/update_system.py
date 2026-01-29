@@ -1,9 +1,10 @@
 # ============================================================================================
 # SCRIPT DE ACTUALIZACIÓN DE CANALES Y AGENDA DEPORTIVA
 #
-# VERSIÓN: 1.4
+# VERSIÓN: 1.5
 #
 # CHANGELOG:
+# - [v1.5] Añadida regla de normalización final: "LALIGA" >> "M+ LALIGA".
 # - [v1.4] Refuerzo de limpieza con Regex para 'canal_agenda'. Logs de debug añadidos.
 # - [v1.3] Reglas de normalización específicas (ELLAS VAMOS, M+, etc.).
 # - [v1.2] Añadida columna 'canal_agenda' limpia.
@@ -31,7 +32,7 @@ SUFFIX = "_testing" if TEST_MODE else ""
 
 print(f"######################################################################")
 print(f"### INICIANDO SISTEMA DE ACTUALIZACIÓN {'(MODO TESTING)' if TEST_MODE else '(PRODUCCIÓN)'}")
-print(f"### VERSIÓN DEL SCRIPT: 1.4")
+print(f"### VERSIÓN DEL SCRIPT: 1.5")
 print(f"### Sufijo de archivos de salida: '{SUFFIX}'")
 print(f"######################################################################\n")
 
@@ -558,7 +559,7 @@ def scrape_and_match(dial_map, master_db):
             for ch in channels:
                 txt = ch.get_text().strip()
                 
-                # --- [v1.4] EXTRACCIÓN Y NORMALIZACIÓN DE CANAL AGENDA ---
+                # --- [v1.5] EXTRACCIÓN Y NORMALIZACIÓN DE CANAL AGENDA ---
                 dial = None
                 canal_agenda_clean = txt # Valor inicial
                 
@@ -597,6 +598,9 @@ def scrape_and_match(dial_map, master_db):
                 
                 # Regla 7: Eliminar "M+ " al principio (con regex)
                 canal_agenda_clean = re.sub(r'^M\+\s*', '', canal_agenda_clean)
+                
+                # [v1.5] Regla 8: "LALIGA" >> "M+ LALIGA" (Restaurar prefijo)
+                canal_agenda_clean = canal_agenda_clean.replace("LALIGA", "M+ LALIGA")
                 
                 canal_agenda_clean = canal_agenda_clean.strip()
                 # ---------------------------------------------------------
