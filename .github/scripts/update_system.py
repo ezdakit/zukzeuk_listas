@@ -1,3 +1,16 @@
+# ============================================================================================
+# SCRIPT DE ACTUALIZACIÓN DE CANALES Y AGENDA DEPORTIVA
+#
+# VERSIÓN: 1.2
+#
+# CHANGELOG:
+# - [v1.2] Añadida columna 'canal_agenda' en eventos_canales.csv. Contiene el nombre 
+#          de la web sin el texto del dial (ej: "(M52)") y forzado a mayúsculas.
+# - [v1.1] Añadido .upper() en clean_channel_name para forzar mayúsculas en nombre_supuesto
+#          en el fichero correspondencias.csv y M3U general.
+# - [v1.0] Versión estable original. Lógica de diales estricta, sin Fuzzy Match ni SQL.
+# ============================================================================================
+
 import os
 import sys
 import re
@@ -64,7 +77,7 @@ URLS_NEW_ERA = [
     f"https://cloudflare-ipfs.com/ipns/{IPNS_HASH}/data/listas/lista_iptv.m3u"
 ]
 
-# URLs Agenda (Limpias, sin parámetros, apuntando a la raíz)
+# URLs Agenda (Limpias)
 URLS_AGENDA = [
     f"https://ipfs.io/ipns/{IPNS_HASH}/",
     f"https://cloudflare-ipfs.com/ipns/{IPNS_HASH}/",
@@ -111,6 +124,10 @@ def download_file(urls, output_filename):
     return False
 
 def clean_channel_name(name, ace_id_suffix):
+    """
+    Limpieza básica del nombre del canal para generar el nombre_supuesto.
+    [v1.1] FUERZA MAYÚSCULAS AL FINAL.
+    """
     if not name: return ""
     name = re.sub(r'-->.*', '', name)
     
@@ -131,7 +148,8 @@ def clean_channel_name(name, ace_id_suffix):
         name = name[:-4].strip()
     name = re.sub(r'\s+[0-9a-fA-F]{4}$', '', name)
     
-    return name
+    # CAMBIO v1.1: Devolver siempre mayúsculas
+    return name.upper()
 
 def determine_quality(name):
     u = name.upper()
@@ -312,7 +330,7 @@ def build_master_channel_list(blacklist):
         raw_name_for_clean = name_ne if name_ne else name_e
         
         nombre_supuesto = clean_channel_name(raw_name_for_clean, aid[-4:])
-        if not nombre_supuesto: nombre_supuesto = "Desconocido"
+        if not nombre_supuesto: nombre_supuesto = "DESCONOCIDO"
         
         quality_tag = determine_quality((name_ne + " " + name_e))
         clean_quality = quality_tag.strip().replace("(", "").replace(")", "")
@@ -330,9 +348,8 @@ def build_master_channel_list(blacklist):
             nombre_supuesto = f_data['name']
             final_group = f_data['group']
             final_tvg = f_data['tvg']
-            q_csv = f_data['quality'].upper()
-            clean_quality = q_csv
-            quality_tag = f" ({q_csv})" if q_csv else ""
+            clean_quality = f_data['quality']
+            quality_tag = f" ({clean_quality})" if clean_quality else ""
             final_source = "F"
             if not final_url: final_url = f"acestream://{aid}"
 
@@ -413,7 +430,6 @@ def generate_ezdakit_m3u(db):
 # ============================================================================================
 
 def get_fresh_agenda_html():
-    """Descarga inteligente: URLs limpias (ROOT), check fecha, fallback."""
     scraper = cloudscraper.create_scraper(browser={'browser': 'chrome', 'platform': 'windows', 'desktop': True})
     
     now_utc = datetime.datetime.utcnow()
@@ -444,14 +460,12 @@ def get_fresh_agenda_html():
                     date_str = first_day_div.get('data-date')
                     try:
                         content_date = datetime.datetime.strptime(date_str, "%Y-%m-%d").date()
-                        
                         if content_date >= today_date:
                             status_msg = f"FRESH (Data from {date_str})"
                             is_actually_fresh = True
                         else:
                             status_msg = f"STALE (Data from {date_str})"
                             is_actually_fresh = False
-                            
                     except:
                         status_msg = "WARN (Date parsing failed)"
                 else:
@@ -480,7 +494,7 @@ def get_fresh_agenda_html():
     if fresh_html:
         return fresh_html
     elif last_working_html:
-        print("    [AVISO] No se encontraron proxies actualizados. Usando el último funcional disponible (aunque sea antiguo).")
+        print("    [AVISO] No se encontraron proxies actualizados. Usando el último funcional.")
         return last_working_html
     else:
         print("    [ERROR] Ningún proxy respondió correctamente.")
@@ -489,6 +503,7 @@ def get_fresh_agenda_html():
 def scrape_and_match(dial_map, master_db):
     print(f"[6] Scraping de Agenda y cruce de datos...")
     
+    # Índice de AceStreams por TVG para búsqueda rápida
     tvg_index = {}
     for item in master_db:
         if item['final_tvg'] and item['final_tvg'] != "Unknown":
@@ -499,16 +514,6 @@ def scrape_and_match(dial_map, master_db):
             
     if not html:
         return [], []
-
-    # --- DEBUG: GUARDAR HTML CRUDO ---
-    try:
-        Path(DIR_DEBUG).mkdir(exist_ok=True)
-        debug_file = f"{DIR_DEBUG}/agenda_dump{SUFFIX}.html"
-        Path(debug_file).write_text(html, encoding='utf-8')
-        print(f"    [DEBUG] HTML guardado en {debug_file}")
-    except Exception as e:
-        print(f"    [AVISO] No se pudo guardar debug HTML: {e}")
-    # ---------------------------------
 
     soup = BeautifulSoup(html, 'html.parser')
     days = soup.find_all('div', class_='events-day')
@@ -551,17 +556,32 @@ def scrape_and_match(dial_map, master_db):
             
             for ch in channels:
                 txt = ch.get_text().strip()
-                dial = None
-
-                m_match = re.search(r'\([^)]*?M(\d+)[^)]*?\)', txt)
-                if m_match:
-                    dial = m_match.group(1)
-                else:
-                    d_match = re.search(r'\((\d+)\)', txt)
-                    if d_match:
-                        if "ORANGE" not in txt.upper():
-                            dial = d_match.group(1)
                 
+                # --- [v1.2] EXTRAER NOMBRE CANAL AGENDA (LIMPIO) ---
+                dial = None
+                canal_agenda_clean = txt.upper() # Valor por defecto
+                
+                m_match = re.search(r'(\([^)]*?M(\d+)[^)]*?\))', txt)
+                d_match = re.search(r'(\((\d+)\))', txt)
+
+                if m_match:
+                    # Existe dial M (ej: (M52))
+                    dial = m_match.group(2)
+                    # Eliminamos el texto del dial del nombre y limpiamos
+                    removed_dial = txt.replace(m_match.group(1), "")
+                    canal_agenda_clean = removed_dial.strip().upper()
+                
+                elif d_match:
+                    # Existe dial numérico (ej: (52))
+                    if "ORANGE" not in txt.upper():
+                        dial = d_match.group(2)
+                        removed_dial = txt.replace(d_match.group(1), "")
+                        canal_agenda_clean = removed_dial.strip().upper()
+                    else:
+                        canal_agenda_clean = txt.upper() # Es Orange, no tocamos
+                else:
+                    canal_agenda_clean = txt.upper()
+
                 if dial:
                     map_info = dial_map.get(dial)
                     if not map_info:
@@ -599,7 +619,8 @@ def scrape_and_match(dial_map, master_db):
                             'hora': hora_evento,
                             'evento': event_raw,
                             'competicion': competition,
-                            'nombre_canal': nombre_canal_csv, 
+                            'nombre_canal': nombre_canal_csv,
+                            'canal_agenda': canal_agenda_clean, # NUEVA COLUMNA [v1.2]
                             'calidad': stream['calidad_clean'],
                             'lista_negra': stream['in_blacklist'],
                             'calidad_tag': stream['calidad_tag'],
@@ -633,8 +654,9 @@ def generate_eventos_files(events_list):
     
     Path(DIR_CANALES).mkdir(exist_ok=True)
     with open(FILE_EVENTOS_CSV, 'w', newline='', encoding='utf-8-sig') as f:
+        # [v1.2] Añadida columna canal_agenda
         fields = ['acestream_id', 'dial_M', 'tvg_id', 'fecha', 'hora', 'evento', 
-                  'competición', 'nombre_canal', 'calidad', 'lista_negra']
+                  'competición', 'nombre_canal', 'canal_agenda', 'calidad', 'lista_negra']
         w = csv.DictWriter(f, fieldnames=fields)
         w.writeheader()
         for ev in events_list:
@@ -647,6 +669,7 @@ def generate_eventos_files(events_list):
                 'evento': ev['evento'],
                 'competición': ev['competicion'],
                 'nombre_canal': ev['nombre_canal'],
+                'canal_agenda': ev['canal_agenda'],
                 'calidad': ev['calidad'],
                 'lista_negra': ev['lista_negra']
             })
