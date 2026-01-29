@@ -1,188 +1,184 @@
-Especificación Técnica: Sistema de Procesamiento de IPTV y Agenda Deportiva
-1. Arquitectura de Archivos y Entradas de Datos
-El sistema opera sobre una estructura de carpetas específica y requiere tres tipos de archivos CSV de configuración manual.
+Informe Técnico Actualizado (v1.8).
 
-A. Entradas Locales (Carpeta /canales)
-1. lista_negra.csv (Filtro de Exclusión)
-Propósito: Identificar transmisiones (IDs) que deben ser ignoradas en la generación de listas finales.
+Este documento refleja la arquitectura actual del sistema tras la implementación de la limpieza estricta de nombres y el cambio de paradigma en la vinculación (Matching por Nombre en lugar de por Dial).
 
-Lectura: Se carga en un diccionario hash: {'acestream_id': 'canal_real'}.
+Informe Técnico: Sistema Automatizado de Gestión de Canales IPTV y Agenda Deportiva (v1.8)
+1. Resumen del Sistema
+El sistema es un flujo de trabajo ejecutado por el script update_system.py con dos objetivos:
 
-Uso: Si un ID procesado existe en este diccionario, se marca internamente como in_blacklist = "yes".
+Fusión y Normalización: Generar una "Master DB" de canales limpia a partir de listas M3U externas.
 
-2. canales_forzados.csv (Sobreescritura Manual)
-Propósito: Definir metadatos inmutables para IDs específicos, anulando cualquier información proveniente de la web o listas M3U.
+Generación de Agenda: Scraping de una web deportiva para generar una lista M3U de eventos en vivo.
 
-Lectura: Se carga en un diccionario anidado clave-valor.
+Cambio Crítico v1.7+: La vinculación entre la web y los canales internos ya no se basa en el número de dial, sino en el Nombre del Canal Normalizado. El número de dial se utiliza únicamente como filtro de admisión (si no tiene dial, se ignora).
 
-Estructura de Datos:
+2. Entradas del Sistema (Inputs)
+2.1. Archivos Locales (canales/)
+listado_canales.csv (Base de Conocimiento):
 
-Python
-{
-  'acestream_id': {
-     'tvg': 'Valor de columna tvg-id',
-     'name': 'Valor de columna nombre_supuesto',
-     'group': 'Valor de columna grupo',
-     'quality': 'Valor de columna calidad'
-  }
-}
-Codificación: Se maneja explícitamente la eliminación del BOM (\ufeff) si existe.
+Función: Actúa como diccionario de traducción.
 
-3. listado_canales.csv (Mapeo de Diales)
-Propósito: Traductor de "Número de Dial Físico" a "Identificador Lógico de Canal".
+Carga Dual: El script carga este archivo en dos diccionarios en memoria:
 
-Lectura: Diccionario donde la clave es el número de dial.
+dial_map: Índice por número (para validaciones).
 
-Estructura:
+name_map: Índice por Nombre del Canal en Mayúsculas (para la vinculación).
 
-Python
-{
-  'Número_Dial (ej: 52)': {
-     'tvg': 'TV_guide_id (ej: M+ LaLiga)',
-     'name': 'Canal (Nombre legible)'
-  }
-}
-2. Algoritmos de Procesamiento de Canales (ETL)
-El núcleo del sistema fusiona múltiples fuentes (listas M3U) en una única "Base de Datos Maestra" (master_db).
+Columnas: Dial_Movistar(M), TV_guide_id, Canal.
 
-Paso 2.1: Descarga y Parsing de M3U
-Fuentes: "Elcano" y "New Era" (múltiples espejos/mirrors para redundancia).
+lista_negra.csv:
 
-Lógica de Extracción (Regex):
+Función: Filtro de exclusión por ID.
 
-ID: Se busca en la URL el patrón de 40 caracteres hexadecimales: ([0-9a-fA-F]{40}).
+Lógica: Si un ID está presente, se marca con in_blacklist='yes'.
 
-Metadatos: De la línea #EXTINF se extraen:
+canales_forzados.csv:
 
-tvg-id="..."
+Función: Override (sobreescritura) de metadatos.
 
-group-title="..."
+Prioridad: Máxima. Ignora datos de M3U externas.
 
-Nombre: Texto después de la última coma.
+2.2. Fuentes Remotas
+Listas M3U (Elcano/New Era): Fuentes raw de canales.
 
-Paso 2.2: Algoritmo de Limpieza de Nombres (clean_channel_name)
-Esta función transforma el nombre "sucio" de la lista M3U en el nombre_supuesto.
+Agenda HTML: Web alojada en IPFS (con sistema de rotación de proxies "Smart Fetch" para evitar datos obsoletos).
 
-Eliminación de Basura: Se elimina todo texto después de la cadena -->.
+3. Algoritmos de Procesamiento (ETL)
+Fase 1: Ingesta y Normalización de Canales (Master DB)
+Descarga y Parsing: Se extraen IDs, nombres y grupos de las listas externas.
 
-Lista de Términos Prohibidos (Case Insensitive): Se eliminan mediante reemplazo vacío las siguientes cadenas:
+Limpieza de Nombres (clean_channel_name):
 
-Resoluciones/Codecs: 1080p, 720p, FHD, UHD, 4K, 8K, HD, SD, 50fps, HEVC, AAC, H.265.
+Eliminación de sufijos técnicos (1080p, HEVC, etc.).
 
-Etiquetas: (ES), (SP), (RU), (Mxx), (Oxx), (BACKUP), |, vip, premium, ( original ).
+Eliminación de cadenas específicas ("BAR" como palabra completa, "(ES)", etc.).
 
-Tratamiento de BAR: Se usa el regex \bBAR\b. Esto significa que solo elimina la palabra "BAR" si es una palabra completa. Elimina "M+ LaLiga BAR" pero NO elimina "BARCELONA" ni "BARÇA".
+Conversión: Se fuerza todo el nombre a MAYÚSCULAS.
 
-Limpieza de Espacios: Se colapsan espacios dobles y se eliminan guiones o guiones bajos al final.
+Fusión: Se priorizan datos de "New Era" sobre "Elcano". Se inyectan datos de canales_forzados.csv si existen.
 
-Eliminación de Sufijo de ID: Si el nombre termina con los últimos 4 caracteres del ID de Acestream, se eliminan esos 4 caracteres.
+Resultado: Una lista de objetos en memoria (master_db) indexada por TVG-ID.
 
-Eliminación de Hexadecimales: Se elimina cualquier bloque de 4 caracteres hexadecimales al final del nombre (\s+[0-9a-fA-F]{4}$).
+Fase 2: Scraping y Normalización de Agenda (El Núcleo v1.8)
+Se descarga el HTML y se iteran los eventos. Para cada canal detectado en la web (texto raw), se sigue este estricto proceso:
 
-Paso 2.3: Fusión y Construcción de la Master DB
-Se itera sobre el conjunto único (set) de todos los IDs encontrados. Para cada ID:
+Paso 2.1: Captura de Datos Crudos
+Se lee el texto original del elemento HTML.
 
-Prioridad de Datos:
+Almacenamiento: Se guarda tal cual en la variable canal_agenda_real (para auditoría en CSV).
 
-Se intenta obtener datos (Nombre, Grupo, TVG) de la lista "New Era".
+Ejemplo: "M+ LaLiga TV (M52)"
 
-Si no existen, se usan los de "Elcano".
+Paso 2.2: Detección de Dial (Filtro de Admisión)
+Se busca un patrón de dial (M52) o (52) usando Regex.
 
-Recuperación Cruzada de TVG: Si un canal viene de Elcano sin tvg-id, el sistema busca si el nombre de ese canal existe en la lista New Era. Si hay coincidencia de nombre, se "roba" el tvg-id de New Era y se le asigna al ID de Elcano.
+Regla de Negocio: Si NO se detecta un dial, el evento se descarta inmediatamente (motivo: no_dial_detected).
 
-Generación de nombre_supuesto: Se aplica la función clean_channel_name explicada en 2.2.
+Nota: Aunque detectamos el número, ya no lo usamos para buscar el canal, solo para saber que es un evento válido de TV.
 
-Detección de Calidad: Se busca en el nombre original (antes de limpiar) para asignar etiquetas: (UHD) si contiene 4K/UHD, (FHD) si contiene 1080/FHD, (HD) por defecto.
+Paso 2.3: Limpieza y Normalización (canal_agenda)
+Se toma el texto original y se aplican transformaciones secuenciales estrictas usando Expresiones Regulares (Regex):
 
-Aplicación de canales_forzados (Override):
+Eliminación del Dial: Se borra el texto (M52) o (52).
 
-El sistema verifica si el ID actual existe en el diccionario de forzados.
+Mayúsculas: .upper().
 
-SI EXISTE: Se descartan todos los datos calculados anteriormente.
+Reglas de Reemplazo (Orden Específico):
 
-Se asigna directamente: nombre_supuesto = forzado['name'], final_group = forzado['group'], final_tvg = forzado['tvg'].
+ELLAS VAMOS -> MOVISTAR ELLAS
 
-La calidad se toma del CSV forzado y se convierte a mayúsculas.
+M+ DEPORTES -> MOVISTAR DEPORTES
 
-Verificación de Lista Negra: Se consulta el diccionario de lista_negra. Si está, in_blacklist = "yes".
+LALIGA TV HYPERMOTION -> HYPERMOTION
 
-Salidas Generadas en esta fase:
-correspondencias.csv: Volcado crudo de la master_db con columnas: ID, nombres originales, TVGs, nombre supuesto, grupo final, calidad, estado de blacklist.
+DAZN LALIGA -> DAZN LA LIGA (solo el texto, no afecta números posteriores).
 
-ezdakit.m3u: Lista general.
+Eliminación de : VER PARTIDO (con tolerancia a espacios).
 
-Si in_blacklist == "yes", el grupo se fuerza a ZZ_Canales_KO y se añade el nombre real al final del nombre visible.
+PLUS+ -> PLUS
 
-3. Algoritmos de Procesamiento de Agenda (Scraping)
-El script descarga el HTML de la agenda deportiva y ejecuta la lógica de detección de diales.
+Eliminación del prefijo M+ al inicio del nombre.
 
-Paso 3.1: Parsing HTML
-Se buscan bloques div con clase events-day para obtener la fecha (data-date).
+LALIGA -> M+ LALIGA (Re-inserción de prefijo para estandarizar).
 
-Se itera cada fila tr con clase event-row.
+Regla de Exactitud Final:
 
-Se extrae: Hora, Competición (div competition-info) y Evento (atributo data-event-id o tercera celda td).
+Si el resultado es exactamente DAZN LA LIGA, se convierte a DAZN LA LIGA 1. (Evita romper DAZN LA LIGA 2).
 
-Paso 3.2: Extracción y Limpieza de Dial
-Por cada canal listado en la web (span channel-link), se obtiene el texto visible (ej: "M+ LaLiga (M52)") y se aplica la siguiente lógica estricta para encontrar el número:
+Resultado: Variable canal_agenda.
 
-Intento 1 (Patrón Movistar): Regex \([^)]*?M(\d+)[^)]*?\). Busca una 'M' seguida de dígitos dentro de paréntesis.
+Ejemplo: M+ LALIGA TV
 
-Captura: (M52) -> 52. (M+52) -> 52.
+Paso 2.4: Vinculación (Matching)
+Búsqueda: Se busca el valor de canal_agenda en la columna Canal del archivo listado_canales.csv (usando el índice name_map).
 
-Intento 2 (Patrón Numérico Genérico): Regex \((\d+)\). Busca solo dígitos entre paréntesis.
+Resolución:
 
-Condición de Exclusión: Este intento se aborta si el texto del canal contiene la palabra "ORANGE" (en mayúsculas/minúsculas). Esto evita confundir diales de Orange con los de Movistar.
+Si hay coincidencia -> Se obtiene el TVG-ID.
 
-Captura: (52) -> 52.
+Si no hay coincidencia -> Se descarta (motivo: mapping_not_found_for: ...).
 
-Si no se extrae ningún número, el canal se marca como Descartado (motivo: unlisted).
+Obtención de Streams: Con el TVG-ID obtenido, se buscan todos los enlaces Acestream correspondientes en la master_db.
 
-Paso 3.3: Vinculación (Dial -> TVG -> IDs)
-Una vez obtenido el número de dial (ej: "52"):
+4. Salidas del Sistema (Outputs)
+4.1. canales/eventos_canales.csv (Auditoría Completa)
+Archivo CSV que registra cada enlace generado. Estructura de columnas crítica:
 
-Consulta al Mapa: Se busca "52" en el diccionario cargado de listado_canales.csv.
+acestream_id
 
-Si no existe: Descartado (motivo: unlisted).
+dial_M: El número detectado (solo informativo).
 
-Si existe: Se recupera el target_tvg (ej: "M+ LaLiga").
+tvg_id: El ID interno usado para el cruce.
 
-Búsqueda Inversa en Master DB:
+fecha, hora, evento, competición.
 
-El sistema recorre toda la master_db.
+nombre_canal: El nombre oficial según listado_canales.csv.
 
-Selecciona todos los IDs donde item['final_tvg'] == target_tvg.
+canal_agenda: El nombre procesado y normalizado (usado para el cruce).
 
-Nota: Esto permite una relación "Uno a Muchos". Un solo evento de agenda puede generar 5 líneas en el M3U final si existen 5 enlaces diferentes para ese canal (distintas calidades, backups, etc.).
+canal_agenda_real: El texto crudo original de la web (para debug).
 
-Filtrado de Vacíos: Si el dial existe pero no hay ningún canal en la base de datos con ese TVG, se marca como Descartado (motivo: no_streams).
+calidad, lista_negra.
 
-Salidas Generadas en esta fase:
-eventos_canales.csv: Registro detallado de cada stream encontrado para cada evento.
+4.2. ezdakit_eventos.m3u (Producto Final)
+Lista de reproducción para el usuario final.
 
-descartes.csv: Registro de fallos (diales no encontrados, canales sin streams, etc.).
+Nombre Visible: HORA-EVENTO (NOMBRE_OFICIAL) (CALIDAD) (ID_CORTO)
 
-ezdakit_eventos.m3u: Lista final de reproducción.
+Agrupación: Por día y competición.
 
-Agrupación: #EXTINF:-1 group-title="MES-DÍA COMPETICIÓN" ...
+4.3. canales/correspondencias.csv
+Volcado de la base de datos de canales disponibles.
 
-Nombre Visible: HORA-EVENTO (NOMBRE_CANAL_CSV)(CALIDAD) (PREFIJO_ID)
+Detalle: La columna nombre_supuesto contiene siempre nombres en MAYÚSCULAS.
 
-URL: Enlace local HTTP al motor Acestream (http://127.0.0.1:6878/ace/getstream?id=...).
+4.4. canales/descartes.csv
+Log de errores.
 
-4. Resumen de Flujo de Datos
-Entrada: Listas M3U Raw + CSVs Configuración.
+Registra eventos que tenían dial pero cuyo canal_agenda normalizado no coincidió con ninguna entrada en listado_canales.csv.
 
-Proceso 1: Limpieza de nombres (eliminación de "BAR", res, etc.) y fusión inteligente.
+5. Resumen Lógico para Reproducción (Prompting)
+Si necesitas regenerar este sistema, esta es la lógica nuclear:
 
-Proceso 2 (Override): canales_forzados.csv aplasta cualquier dato calculado.
+"El sistema debe cargar listado_canales.csv creando un mapa Nombre -> TVG_ID. Al procesar la agenda web:
 
-Almacenamiento: Se guarda todo en memoria (master_db) indexado por TVG-ID.
+Extraer texto crudo (canal_agenda_real).
 
-Entrada: Agenda Web.
+Verificar si existe patrón de dial (Mxx) o (xx). Si no, descartar.
 
-Proceso 3: Extracción de dial numérico (Regex).
+Eliminar el dial del texto y aplicar pipeline de normalización Regex (Mayúsculas, reemplazos específicos de Movistar/DAZN) para obtener canal_agenda.
 
-Cruce: Dial Numérico -> listado_canales.csv -> TVG-ID -> master_db -> IDs de Acestream.
+Buscar canal_agenda en el mapa de nombres para obtener el TVG_ID.
 
-Salida: Listas M3U formateadas.
+Usar TVG_ID para recuperar streams de la base de datos de canales."
+
+6. Control de Versiones
+Versión Actual del Script: 1.8
+
+Cambios Recientes:
+
+v1.8: Inclusión de campo canal_agenda_real.
+
+v1.7: Cambio de lógica de Matching (Dial -> Nombre).
+
+v1.4-v1.6: Refinamiento de reglas Regex de normalización.
