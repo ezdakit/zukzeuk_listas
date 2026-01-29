@@ -1,15 +1,14 @@
 # ============================================================================================
 # SCRIPT DE ACTUALIZACIÓN DE CANALES Y AGENDA DEPORTIVA
 #
-# VERSIÓN: 1.6
+# VERSIÓN: 1.7
 #
 # CHANGELOG:
-# - [v1.6] Añadida regla exacta: "DAZN LA LIGA" >> "DAZN LA LIGA 1" (Solo si coincide exacto).
+# - [v1.7] CAMBIO DE LÓGICA: El Dial ahora es solo filtro de admisión. 
+#          La vinculación (Matching) se realiza por NOMBRE (canal_agenda -> listado_canales).
+# - [v1.6] Añadida regla exacta: "DAZN LA LIGA" >> "DAZN LA LIGA 1".
 # - [v1.5] Añadida regla de normalización final: "LALIGA" >> "M+ LALIGA".
-# - [v1.4] Refuerzo de limpieza con Regex para 'canal_agenda'. Logs de debug añadidos.
-# - [v1.3] Reglas de normalización específicas (ELLAS VAMOS, M+, etc.).
-# - [v1.2] Añadida columna 'canal_agenda' limpia.
-# - [v1.1] Forzado de mayúsculas global en 'clean_channel_name'.
+# - [v1.4] Refuerzo de limpieza con Regex.
 # ============================================================================================
 
 import os
@@ -33,7 +32,7 @@ SUFFIX = "_testing" if TEST_MODE else ""
 
 print(f"######################################################################")
 print(f"### INICIANDO SISTEMA DE ACTUALIZACIÓN {'(MODO TESTING)' if TEST_MODE else '(PRODUCCIÓN)'}")
-print(f"### VERSIÓN DEL SCRIPT: 1.6")
+print(f"### VERSIÓN DEL SCRIPT: 1.7")
 print(f"### Sufijo de archivos de salida: '{SUFFIX}'")
 print(f"######################################################################\n")
 
@@ -236,13 +235,20 @@ def load_forced_channels():
     print(f"    -> {len(forced)} canales forzados cargados.")
     return forced
 
-def load_dial_mapping():
-    print(f"[2] Cargando Mapeo de Diales ({FILE_DIAL_MAP})...")
-    mapping = {} 
+def load_channel_maps():
+    """
+    [v1.7] Carga listado_canales.csv y genera dos mapas:
+    1. dial_map: Para validación de existencia (aunque se usa menos ahora).
+    2. name_map: Para vincular 'canal_agenda' -> 'tvg-id'.
+    """
+    print(f"[2] Cargando Mapas de Canales ({FILE_DIAL_MAP})...")
+    dial_map = {} 
+    name_map = {} # Nuevo mapa por NOMBRE
+    
     path = Path(FILE_DIAL_MAP)
     if not path.exists():
         print(f"    [ERROR] No existe {FILE_DIAL_MAP}. El scraping fallará.")
-        return mapping
+        return dial_map, name_map
         
     content = read_file_safe(path)
     reader = csv.DictReader(io.StringIO(content))
@@ -252,10 +258,14 @@ def load_dial_mapping():
         name = row.get('Canal', '').strip()
         
         if dial and tvg:
-            mapping[dial] = {'tvg': tvg, 'name': name}
+            dial_map[dial] = {'tvg': tvg, 'name': name}
+        
+        if name and tvg:
+            # Clave en mayúsculas para coincidir con canal_agenda
+            name_map[name.upper()] = tvg
             
-    print(f"    -> {len(mapping)} diales mapeados.")
-    return mapping
+    print(f"    -> {len(dial_map)} diales y {len(name_map)} nombres mapeados.")
+    return dial_map, name_map
 
 # ============================================================================================
 # PROCESAMIENTO DE LISTAS (ELCANO / NEW ERA + FORZADOS)
@@ -503,7 +513,7 @@ def get_fresh_agenda_html():
         print("    [ERROR] Ningún proxy respondió correctamente.")
         return None
 
-def scrape_and_match(dial_map, master_db):
+def scrape_and_match(dial_map, name_map, master_db):
     print(f"[6] Scraping de Agenda y cruce de datos...")
     
     # Índice de AceStreams por TVG para búsqueda rápida
@@ -610,51 +620,60 @@ def scrape_and_match(dial_map, master_db):
                     canal_agenda_clean = "DAZN LA LIGA 1"
                 # ---------------------------------------------------------
 
-                if dial:
-                    map_info = dial_map.get(dial)
-                    if not map_info:
-                        discarded_list.append({
-                            'dial_M': dial,
-                            'nombre_canal_descartado': txt,
-                            'evento_descartado': event_raw,
-                            'motivo': 'unlisted'
-                        })
-                        continue
+                # [v1.7] NUEVA LÓGICA DE CRUCE
+                # Condición 1: Debe tener Dial válido (Filtro de Admisión)
+                if not dial:
+                     # Se ignora silenciosamente o se descarta
+                     discarded_list.append({'dial_M': '?', 'nombre_canal_descartado': txt, 'evento_descartado': event_raw, 'motivo': 'no_dial_detected'})
+                     continue
+
+                # Condición 2: Buscar por NOMBRE en el mapa local
+                target_tvg = name_map.get(canal_agenda_clean)
+
+                if not target_tvg:
+                    discarded_list.append({
+                        'dial_M': dial,
+                        'nombre_canal_descartado': txt,
+                        'evento_descartado': event_raw,
+                        'motivo': f'mapping_not_found_for: {canal_agenda_clean}'
+                    })
+                    continue
+                
+                # Si llegamos aquí, tenemos TVG-ID válido
+                # El nombre "bonito" para el CSV será el propio canal_agenda_clean (coherente con el mapa)
+                nombre_canal_csv = canal_agenda_clean 
+
+                available_streams = tvg_index.get(target_tvg, [])
+                if not available_streams:
+                    discarded_list.append({
+                        'dial_M': dial,
+                        'nombre_canal_descartado': txt,
+                        'evento_descartado': event_raw,
+                        'motivo': 'no_streams'
+                    })
+                    continue
                     
-                    tvgid = map_info['tvg']
-                    nombre_canal_csv = map_info['name'] 
+                for stream in available_streams:
+                    aid = stream['ace_id']
+                    if aid in processed_ace_ids: continue
+                    processed_ace_ids.add(aid)
                     
-                    available_streams = tvg_index.get(tvgid, [])
-                    if not available_streams:
-                        discarded_list.append({
-                            'dial_M': dial,
-                            'nombre_canal_descartado': txt,
-                            'evento_descartado': event_raw,
-                            'motivo': 'no_streams'
-                        })
-                        continue
-                        
-                    for stream in available_streams:
-                        aid = stream['ace_id']
-                        if aid in processed_ace_ids: continue
-                        processed_ace_ids.add(aid)
-                        
-                        events_list.append({
-                            'acestream_id': aid,
-                            'dial_M': dial,
-                            'tvg_id': tvgid,
-                            'fecha': fecha_csv,
-                            'hora': hora_evento,
-                            'evento': event_raw,
-                            'competicion': competition,
-                            'nombre_canal': nombre_canal_csv,
-                            'canal_agenda': canal_agenda_clean, # Columna normalizada
-                            'calidad': stream['calidad_clean'],
-                            'lista_negra': stream['in_blacklist'],
-                            'calidad_tag': stream['calidad_tag'],
-                            'dia_str_m3u': dia_m3u,
-                            'ace_prefix': aid[:3]
-                        })
+                    events_list.append({
+                        'acestream_id': aid,
+                        'dial_M': dial,
+                        'tvg_id': target_tvg,
+                        'fecha': fecha_csv,
+                        'hora': hora_evento,
+                        'evento': event_raw,
+                        'competicion': competition,
+                        'nombre_canal': nombre_canal_csv,
+                        'canal_agenda': canal_agenda_clean, 
+                        'calidad': stream['calidad_clean'],
+                        'lista_negra': stream['in_blacklist'],
+                        'calidad_tag': stream['calidad_tag'],
+                        'dia_str_m3u': dia_m3u,
+                        'ace_prefix': aid[:3]
+                    })
 
     print(f"    -> Encontrados {len(events_list)} combinaciones evento-canal.")
     print(f"    -> Descartados {len(discarded_list)} intentos.")
@@ -733,15 +752,16 @@ def generate_eventos_files(events_list):
 def main():
     Path(DIR_CANALES).mkdir(exist_ok=True)
     blacklist = load_blacklist()
-    dial_map = load_dial_mapping()
+    # [v1.7] Carga doble mapa (dial y nombre)
+    dial_map, name_map = load_channel_maps()
     
     master_db = build_master_channel_list(blacklist)
     
     generate_correspondencias(master_db)
     generate_ezdakit_m3u(master_db)
     
-    # Desempaquetamos los dos resultados: eventos validos y descartes
-    events_list, discarded_list = scrape_and_match(dial_map, master_db)
+    # [v1.7] Pasamos name_map al scraping
+    events_list, discarded_list = scrape_and_match(dial_map, name_map, master_db)
     
     generate_eventos_files(events_list)
     generate_descartes_csv(discarded_list)
