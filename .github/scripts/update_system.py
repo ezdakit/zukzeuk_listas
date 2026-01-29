@@ -1,14 +1,13 @@
 # ============================================================================================
 # SCRIPT DE ACTUALIZACIÓN DE CANALES Y AGENDA DEPORTIVA
 #
-# VERSIÓN: 1.7
+# VERSIÓN: 1.8
 #
 # CHANGELOG:
-# - [v1.7] CAMBIO DE LÓGICA: El Dial ahora es solo filtro de admisión. 
-#          La vinculación (Matching) se realiza por NOMBRE (canal_agenda -> listado_canales).
+# - [v1.8] Nuevo campo 'canal_agenda_real' en CSV eventos (texto raw de la web sin procesar).
+# - [v1.7] CAMBIO DE LÓGICA: Vinculación por NOMBRE (canal_agenda -> listado_canales).
 # - [v1.6] Añadida regla exacta: "DAZN LA LIGA" >> "DAZN LA LIGA 1".
 # - [v1.5] Añadida regla de normalización final: "LALIGA" >> "M+ LALIGA".
-# - [v1.4] Refuerzo de limpieza con Regex.
 # ============================================================================================
 
 import os
@@ -32,7 +31,7 @@ SUFFIX = "_testing" if TEST_MODE else ""
 
 print(f"######################################################################")
 print(f"### INICIANDO SISTEMA DE ACTUALIZACIÓN {'(MODO TESTING)' if TEST_MODE else '(PRODUCCIÓN)'}")
-print(f"### VERSIÓN DEL SCRIPT: 1.7")
+print(f"### VERSIÓN DEL SCRIPT: 1.8")
 print(f"### Sufijo de archivos de salida: '{SUFFIX}'")
 print(f"######################################################################\n")
 
@@ -569,6 +568,7 @@ def scrape_and_match(dial_map, name_map, master_db):
             
             for ch in channels:
                 txt = ch.get_text().strip()
+                canal_agenda_real = txt # [v1.8] Guardamos valor crudo
                 
                 # --- [v1.6] EXTRACCIÓN Y NORMALIZACIÓN DE CANAL AGENDA ---
                 dial = None
@@ -640,7 +640,6 @@ def scrape_and_match(dial_map, name_map, master_db):
                     continue
                 
                 # Si llegamos aquí, tenemos TVG-ID válido
-                # El nombre "bonito" para el CSV será el propio canal_agenda_clean (coherente con el mapa)
                 nombre_canal_csv = canal_agenda_clean 
 
                 available_streams = tvg_index.get(target_tvg, [])
@@ -668,6 +667,7 @@ def scrape_and_match(dial_map, name_map, master_db):
                         'competicion': competition,
                         'nombre_canal': nombre_canal_csv,
                         'canal_agenda': canal_agenda_clean, 
+                        'canal_agenda_real': canal_agenda_real, # [v1.8] New Field
                         'calidad': stream['calidad_clean'],
                         'lista_negra': stream['in_blacklist'],
                         'calidad_tag': stream['calidad_tag'],
@@ -701,9 +701,9 @@ def generate_eventos_files(events_list):
     
     Path(DIR_CANALES).mkdir(exist_ok=True)
     with open(FILE_EVENTOS_CSV, 'w', newline='', encoding='utf-8-sig') as f:
-        # [v1.2] Añadida columna canal_agenda
+        # [v1.8] Añadida columna canal_agenda_real
         fields = ['acestream_id', 'dial_M', 'tvg_id', 'fecha', 'hora', 'evento', 
-                  'competición', 'nombre_canal', 'canal_agenda', 'calidad', 'lista_negra']
+                  'competición', 'nombre_canal', 'canal_agenda', 'canal_agenda_real', 'calidad', 'lista_negra']
         w = csv.DictWriter(f, fieldnames=fields)
         w.writeheader()
         for ev in events_list:
@@ -717,6 +717,7 @@ def generate_eventos_files(events_list):
                 'competición': ev['competicion'],
                 'nombre_canal': ev['nombre_canal'],
                 'canal_agenda': ev['canal_agenda'],
+                'canal_agenda_real': ev['canal_agenda_real'],
                 'calidad': ev['calidad'],
                 'lista_negra': ev['lista_negra']
             })
