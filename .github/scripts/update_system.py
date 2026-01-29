@@ -1,9 +1,10 @@
 # ============================================================================================
 # SCRIPT DE ACTUALIZACIÓN DE CANALES Y AGENDA DEPORTIVA
 #
-# VERSIÓN: 1.5
+# VERSIÓN: 1.6
 #
 # CHANGELOG:
+# - [v1.6] Añadida regla exacta: "DAZN LA LIGA" >> "DAZN LA LIGA 1" (Solo si coincide exacto).
 # - [v1.5] Añadida regla de normalización final: "LALIGA" >> "M+ LALIGA".
 # - [v1.4] Refuerzo de limpieza con Regex para 'canal_agenda'. Logs de debug añadidos.
 # - [v1.3] Reglas de normalización específicas (ELLAS VAMOS, M+, etc.).
@@ -32,7 +33,7 @@ SUFFIX = "_testing" if TEST_MODE else ""
 
 print(f"######################################################################")
 print(f"### INICIANDO SISTEMA DE ACTUALIZACIÓN {'(MODO TESTING)' if TEST_MODE else '(PRODUCCIÓN)'}")
-print(f"### VERSIÓN DEL SCRIPT: 1.5")
+print(f"### VERSIÓN DEL SCRIPT: 1.6")
 print(f"### Sufijo de archivos de salida: '{SUFFIX}'")
 print(f"######################################################################\n")
 
@@ -559,7 +560,7 @@ def scrape_and_match(dial_map, master_db):
             for ch in channels:
                 txt = ch.get_text().strip()
                 
-                # --- [v1.5] EXTRACCIÓN Y NORMALIZACIÓN DE CANAL AGENDA ---
+                # --- [v1.6] EXTRACCIÓN Y NORMALIZACIÓN DE CANAL AGENDA ---
                 dial = None
                 canal_agenda_clean = txt # Valor inicial
                 
@@ -587,22 +588,26 @@ def scrape_and_match(dial_map, master_db):
                 canal_agenda_clean = canal_agenda_clean.replace("M+ DEPORTES", "MOVISTAR DEPORTES")
                 # Regla 3: HYPERMOTION
                 canal_agenda_clean = canal_agenda_clean.replace("LALIGA TV HYPERMOTION", "HYPERMOTION")
-                # Regla 4: DAZN
+                # Regla 4: DAZN LALIGA (Sin tocar número)
                 canal_agenda_clean = canal_agenda_clean.replace("DAZN LALIGA", "DAZN LA LIGA")
                 
-                # Regla 5: Eliminar " : VER PARTIDO" (con regex para tolerar espacios extra)
+                # Regla 5: Eliminar " : VER PARTIDO"
                 canal_agenda_clean = re.sub(r'\s*:\s*VER PARTIDO\s*', '', canal_agenda_clean)
                 
                 # Regla 6: PLUS+
                 canal_agenda_clean = canal_agenda_clean.replace("PLUS+", "PLUS")
                 
-                # Regla 7: Eliminar "M+ " al principio (con regex)
+                # Regla 7: Eliminar "M+ " al principio
                 canal_agenda_clean = re.sub(r'^M\+\s*', '', canal_agenda_clean)
                 
-                # [v1.5] Regla 8: "LALIGA" >> "M+ LALIGA" (Restaurar prefijo)
+                # [v1.5] Regla 8: "LALIGA" >> "M+ LALIGA"
                 canal_agenda_clean = canal_agenda_clean.replace("LALIGA", "M+ LALIGA")
                 
                 canal_agenda_clean = canal_agenda_clean.strip()
+                
+                # [v1.6] Regla 9: DAZN LA LIGA >> DAZN LA LIGA 1 (Exacto)
+                if canal_agenda_clean == "DAZN LA LIGA":
+                    canal_agenda_clean = "DAZN LA LIGA 1"
                 # ---------------------------------------------------------
 
                 if dial:
