@@ -23,5 +23,21 @@
 #EXTGRP: group-title="TENNIS" group-logo="https://i.ibb.co/ynMKPMw2/logo-tennis.png"
 #EXTGRP: group-title="UFC" group-logo="https://pngimg.com/uploads/ufc/ufc_PNG64.png"
 
-#EXTINF:-1 group-title="EUROSPORT" tvg-logo="https://i.ibb.co/r2Yd7xD/euro1.png" tvg-name="Eurosport 1 1080p",Eurosport 1 1080p
-http://127.0.0.1:6878/ace/getstream?id=0db68ab752b50e6bb257eef22d102c1d29cd92ea
+#EXTINF:-1 group-title="LA LIGA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/laliga-tv-4-por-movistar-plus-es.png" tvg-name="M+ LaLiga 4 1080p",M+ LaLiga 4 1080p
+http://127.0.0.1:6878/ace/getstream?id=2a6b1fd8a24b23747db1ea534a51457708523602
+#EXTINF:-1 group-title="HYPERMOTION" tvg-logo="https://i.ibb.co/CBdGc9f/hypermotion1.png" tvg-name="LaLiga TV Hypermotion 1080p",LaLiga TV Hypermotion 1080p
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="OTROS" tvg-name="Mantenimiento",Mantenimiento
+http://127.0.0.1:6878/ace/getstream?id=456cc2aa7c2e7c3f98681c6b2da2efb465108665
+#EXTINF:-1 group-title="LIGA DE CAMPEONES" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%203.png" tvg-name="M+ Liga de Campeones 3 1080p",M+ Liga de Campeones 3 1080p
+http://127.0.0.1:6878/ace/getstream?id=9db029dff6a9c637d1f670e78dbc1a479b9b406e
+#EXTINF:-1 group-title="MOVISTAR DEPORTES" tvg-logo="https://i.ibb.co/CV4CLjz/deportes.png" tvg-name="M+ Deportes 1080p",M+ Deportes 1080p
+http://127.0.0.1:6878/ace/getstream?id=ebca4a63ce3bfda7b272964a1acc5227218184a4
+#EXTINF:-1 group-title="LIGA DE CAMPEONES" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%202.png" tvg-name="M+ Liga de Campeones 2 720p",M+ Liga de Campeones 2 720p
+http://127.0.0.1:6878/ace/getstream?id=38f7b2044e549df2039ff26cefa6f9a60c854d5e
+#EXTINF:-1 group-title="LIGA DE CAMPEONES" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%205.png" tvg-name="M+ Liga de Campeones 6 1080p",M+ Liga de Campeones 6 1080p
+http://127.0.0.1:6878/ace/getstream?id=14bedc2ff054ae16c0fae99cfeb9dcda21ac68a0
+#EXTINF:-1 group-title="HYPERMOTION" tvg-logo="https://i.ibb.co/CBdGc9f/hypermotion1.png" tvg-name="LaLiga TV Hypermotion 720p",LaLiga TV Hypermotion 720p
+http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
+#EXTINF:-1 group-title="DAZN" tvg-logo="https://i.ibb.co/FVzKq1y/dazn1.png" tvg-name="DAZN 1",DAZN 1
+http://127.0.0.1:6878/ace/getstream?id=7ba1f321f4d0791b7ebd42f41a07c1cd1479e784
