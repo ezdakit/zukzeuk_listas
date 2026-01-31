@@ -23,9 +23,9 @@
 #EXTGRP: group-title="TENNIS" group-logo="https://i.ibb.co/ynMKPMw2/logo-tennis.png"
 #EXTGRP: group-title="UFC" group-logo="https://pngimg.com/uploads/ufc/ufc_PNG64.png"
 
+#EXTINF:-1 group-title="DAZN" tvg-logo="https://i.ibb.co/FVzKq1y/dazn1.png" tvg-name="DAZN 1",DAZN 1
+http://127.0.0.1:6878/ace/getstream?id=9afc89481b721ce6c326c85e47148676077b8e62
 #EXTINF:-1 group-title="HYPERMOTION" tvg-logo="https://i.ibb.co/CBdGc9f/hypermotion1.png" tvg-name="LaLiga TV Hypermotion 1080p",LaLiga TV Hypermotion 1080p
 http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="HYPERMOTION" tvg-logo="https://i.ibb.co/CBdGc9f/hypermotion1.png" tvg-name="LaLiga TV Hypermotion 720p",LaLiga TV Hypermotion 720p
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
-#EXTINF:-1 group-title="DAZN" tvg-logo="https://i.ibb.co/FVzKq1y/dazn1.png" tvg-name="DAZN 1",DAZN 1
-http://127.0.0.1:6878/ace/getstream?id=9afc89481b721ce6c326c85e47148676077b8e62
