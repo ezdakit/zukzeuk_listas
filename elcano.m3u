@@ -23,23 +23,23 @@
 #EXTGRP: group-title="TENNIS" group-logo="https://i.ibb.co/ynMKPMw2/logo-tennis.png"
 #EXTGRP: group-title="UFC" group-logo="https://pngimg.com/uploads/ufc/ufc_PNG64.png"
 
-#EXTINF:-1 group-title="LA LIGA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/laliga-tv-4-por-movistar-plus-es.png" tvg-name="M+ LaLiga 4 720p",M+ LaLiga 4 720p
-http://127.0.0.1:6878/ace/getstream?id=1bcee22d5476f2eae9dc2cb24e3685152cf285cb
-#EXTINF:-1 group-title="DAZN" tvg-logo="https://i.ibb.co/Kz0GXSX/dazn2.png" tvg-name="DAZN 2",DAZN 2
-http://127.0.0.1:6878/ace/getstream?id=f12038c7fe603ed93fa9475d60692dd95bb7b17f
 #EXTINF:-1 group-title="LA LIGA" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKBCa6SydXxbOh3qbRLTAWW6FOnRo5nXa9kw&s" tvg-name="SKY Sports LaLiga SD",SKY Sports LaLiga SD
 http://127.0.0.1:6878/ace/getstream?id=a9bddffdff085cdc18b34218d5dc1093b88e3c0a
-#EXTINF:-1 group-title="LA LIGA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/laliga-tv-4-por-movistar-plus-es.png" tvg-name="M+ LaLiga 4 1080p",M+ LaLiga 4 1080p
-http://127.0.0.1:6878/ace/getstream?id=2a6b1fd8a24b23747db1ea534a51457708523602
-#EXTINF:-1 group-title="LA LIGA" tvg-logo="https://i.ibb.co/Tc97zSb/liga2.png" tvg-name="M+ LaLiga 2 1080p",M+ LaLiga 2 1080p
-http://127.0.0.1:6878/ace/getstream?id=51b363b1c4d42724e05240ad068ad219df8042ec
-#EXTINF:-1 group-title="LA LIGA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png" tvg-name="DAZN LaLiga",DAZN LaLiga
-http://127.0.0.1:6878/ace/getstream?id=9c75f1d190c518cfe0f236415b8dccc1f676ef3b
-#EXTINF:-1 group-title="DAZN" tvg-logo="https://i.ibb.co/Kz0GXSX/dazn2.png" tvg-name="DAZN 2 1080p",DAZN 2 1080p
-http://127.0.0.1:6878/ace/getstream?id=13a16a0630ae87bd97d6ba4165963c201c9a2e9c
 #EXTINF:-1 group-title="HYPERMOTION" tvg-logo="https://i.ibb.co/826y2Yv/Hypermotion3.png" tvg-name="LaLiga TV Hypermotion 3 1080p",LaLiga TV Hypermotion 3 1080p
 http://127.0.0.1:6878/ace/getstream?id=1fdb405a6942da0941266f24cdd1c71b11552f1f
+#EXTINF:-1 group-title="LA LIGA" tvg-logo="https://i.ibb.co/Tc97zSb/liga2.png" tvg-name="M+ LaLiga 2 1080p",M+ LaLiga 2 1080p
+http://127.0.0.1:6878/ace/getstream?id=51b363b1c4d42724e05240ad068ad219df8042ec
 #EXTINF:-1 group-title="DEPORTES" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e7/Liga_Endesa_2019_logo.svg" tvg-name="DAZN ACB 1",DAZN ACB 1
 http://127.0.0.1:6878/ace/getstream?id=7af3d01607359fd1777de3d34d8d505ee5591b82
+#EXTINF:-1 group-title="DAZN" tvg-logo="https://i.ibb.co/Kz0GXSX/dazn2.png" tvg-name="DAZN 2 1080p",DAZN 2 1080p
+http://127.0.0.1:6878/ace/getstream?id=13a16a0630ae87bd97d6ba4165963c201c9a2e9c
+#EXTINF:-1 group-title="LA LIGA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/laliga-tv-4-por-movistar-plus-es.png" tvg-name="M+ LaLiga 4 720p",M+ LaLiga 4 720p
+http://127.0.0.1:6878/ace/getstream?id=1bcee22d5476f2eae9dc2cb24e3685152cf285cb
+#EXTINF:-1 group-title="LA LIGA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png" tvg-name="DAZN LaLiga",DAZN LaLiga
+http://127.0.0.1:6878/ace/getstream?id=9c75f1d190c518cfe0f236415b8dccc1f676ef3b
+#EXTINF:-1 group-title="DAZN" tvg-logo="https://i.ibb.co/Kz0GXSX/dazn2.png" tvg-name="DAZN 2",DAZN 2
+http://127.0.0.1:6878/ace/getstream?id=f12038c7fe603ed93fa9475d60692dd95bb7b17f
+#EXTINF:-1 group-title="LA LIGA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/laliga-tv-4-por-movistar-plus-es.png" tvg-name="M+ LaLiga 4 1080p",M+ LaLiga 4 1080p
+http://127.0.0.1:6878/ace/getstream?id=2a6b1fd8a24b23747db1ea534a51457708523602
 #EXTINF:-1 group-title="LA LIGA" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-2-es.png" tvg-name="DAZN LaLiga 2 1080p",DAZN LaLiga 2 1080p
 http://127.0.0.1:6878/ace/getstream?id=a231b2fa1f7754433efeb8bb8d69d7b9096dcba8
