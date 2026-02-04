@@ -1,82 +1,82 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
+#EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="16:00-Real Madrid Academy-O. Marseille Academy (LIGA DE CAMPEONES) (FHD) (0f7)",16:00-Real Madrid Academy-O. Marseille Academy (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
+#EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="16:00-Real Madrid Academy-O. Marseille Academy (LIGA DE CAMPEONES) (HD) (e57)",16:00-Real Madrid Academy-O. Marseille Academy (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
 #EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="16:00-Real Madrid Academy-O. Marseille Academy (LIGA DE CAMPEONES) (FHD) (afb)",16:00-Real Madrid Academy-O. Marseille Academy (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
 #EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="16:00-Real Madrid Academy-O. Marseille Academy (LIGA DE CAMPEONES) (UHD) (152)",16:00-Real Madrid Academy-O. Marseille Academy (LIGA DE CAMPEONES) (UHD) (152)
 http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="16:00-Real Madrid Academy-O. Marseille Academy (LIGA DE CAMPEONES) (HD) (b02)",16:00-Real Madrid Academy-O. Marseille Academy (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="16:00-Real Madrid Academy-O. Marseille Academy (LIGA DE CAMPEONES) (HD) (e57)",16:00-Real Madrid Academy-O. Marseille Academy (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
 #EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="16:00-Real Madrid Academy-O. Marseille Academy (LIGA DE CAMPEONES) (FHD) (c16)",16:00-Real Madrid Academy-O. Marseille Academy (LIGA DE CAMPEONES) (FHD) (c16)
 http://127.0.0.1:6878/ace/getstream?id=c16b4fab1f724c94cad92081cbb7fc7c6fe8a2cc
-#EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="16:00-Real Madrid Academy-O. Marseille Academy (LIGA DE CAMPEONES) (FHD) (0f7)",16:00-Real Madrid Academy-O. Marseille Academy (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
 #EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="16:00-Real Madrid Academy-O. Marseille Academy (LIGA DE CAMPEONES) (FHD) (778)",16:00-Real Madrid Academy-O. Marseille Academy (LIGA DE CAMPEONES) (FHD) (778)
 http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
+#EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="16:00-Real Madrid Academy-O. Marseille Academy (LIGA DE CAMPEONES) (HD) (b02)",16:00-Real Madrid Academy-O. Marseille Academy (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
 #EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="16:00-Real Madrid Academy-O. Marseille Academy (LIGA DE CAMPEONES) (FHD) (afb)",16:00-Real Madrid Academy-O. Marseille Academy (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="16:30-Zilina Academy-Liverpool Academy (LIGA DE CAMPEONES 2) (FHD) (498)",16:30-Zilina Academy-Liverpool Academy (LIGA DE CAMPEONES 2) (FHD) (498)
+http://127.0.0.1:6878/ace/getstream?id=498c56bd00f535e440c392de5af992421a31355c
 #EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="16:30-Zilina Academy-Liverpool Academy (LIGA DE CAMPEONES 2) (HD) (338)",16:30-Zilina Academy-Liverpool Academy (LIGA DE CAMPEONES 2) (HD) (338)
 http://127.0.0.1:6878/ace/getstream?id=338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea
 #EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="16:30-Zilina Academy-Liverpool Academy (LIGA DE CAMPEONES 2) (FHD) (c6a)",16:30-Zilina Academy-Liverpool Academy (LIGA DE CAMPEONES 2) (FHD) (c6a)
 http://127.0.0.1:6878/ace/getstream?id=c6a3673f6a37b1bd3cf31fdd6404dd33d48cfccb
-#EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="16:30-Zilina Academy-Liverpool Academy (LIGA DE CAMPEONES 2) (FHD) (498)",16:30-Zilina Academy-Liverpool Academy (LIGA DE CAMPEONES 2) (FHD) (498)
-http://127.0.0.1:6878/ace/getstream?id=498c56bd00f535e440c392de5af992421a31355c
 #EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="16:30-Zilina Academy-Liverpool Academy (LIGA DE CAMPEONES 2) (HD) (38f)",16:30-Zilina Academy-Liverpool Academy (LIGA DE CAMPEONES 2) (HD) (38f)
 http://127.0.0.1:6878/ace/getstream?id=38f7b2044e549df2039ff26cefa6f9a60c854d5e
 #EXTINF:-1 group-title="02-03 (Martes) Euroliga Liga Regular" tvg-name="17:00-Dubai Basketball-Olympiacos Piraeus (MOVISTAR DEPORTES) (FHD) (5d3)",17:00-Dubai Basketball-Olympiacos Piraeus (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="02-03 (Martes) Euroliga Liga Regular" tvg-name="17:00-Dubai Basketball-Olympiacos Piraeus (MOVISTAR DEPORTES) (FHD) (369)",17:00-Dubai Basketball-Olympiacos Piraeus (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="02-03 (Martes) Euroliga Liga Regular" tvg-name="17:00-Dubai Basketball-Olympiacos Piraeus (MOVISTAR DEPORTES) (FHD) (3b5)",17:00-Dubai Basketball-Olympiacos Piraeus (MOVISTAR DEPORTES) (FHD) (3b5)
-http://127.0.0.1:6878/ace/getstream?id=3b50a1dca0977e3761d016edd79314ab797f74f6
 #EXTINF:-1 group-title="02-03 (Martes) Euroliga Liga Regular" tvg-name="17:00-Dubai Basketball-Olympiacos Piraeus (MOVISTAR DEPORTES) (FHD) (f82)",17:00-Dubai Basketball-Olympiacos Piraeus (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="18:00-Chelsea Academy-PSV Academy (LIGA DE CAMPEONES 3) (HD) (90f)",18:00-Chelsea Academy-PSV Academy (LIGA DE CAMPEONES 3) (HD) (90f)
-http://127.0.0.1:6878/ace/getstream?id=90f7941c6bf7ca4b18084a1dca7bc15b9b179373
+#EXTINF:-1 group-title="02-03 (Martes) Euroliga Liga Regular" tvg-name="17:00-Dubai Basketball-Olympiacos Piraeus (MOVISTAR DEPORTES) (FHD) (3b5)",17:00-Dubai Basketball-Olympiacos Piraeus (MOVISTAR DEPORTES) (FHD) (3b5)
+http://127.0.0.1:6878/ace/getstream?id=3b50a1dca0977e3761d016edd79314ab797f74f6
+#EXTINF:-1 group-title="02-03 (Martes) Euroliga Liga Regular" tvg-name="17:00-Dubai Basketball-Olympiacos Piraeus (MOVISTAR DEPORTES) (FHD) (369)",17:00-Dubai Basketball-Olympiacos Piraeus (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="18:00-Chelsea Academy-PSV Academy (LIGA DE CAMPEONES 3) (FHD) (9db)",18:00-Chelsea Academy-PSV Academy (LIGA DE CAMPEONES 3) (FHD) (9db)
 http://127.0.0.1:6878/ace/getstream?id=9db029dff6a9c637d1f670e78dbc1a479b9b406e
-#EXTINF:-1 group-title="02-03 (Martes) Euroliga Liga Regular" tvg-name="19:00-Zalgiris Kaunas-AS Monaco Basket (MOVISTAR DEPORTES 5) (FHD) (591)",19:00-Zalgiris Kaunas-AS Monaco Basket (MOVISTAR DEPORTES 5) (FHD) (591)
-http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
+#EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="18:00-Chelsea Academy-PSV Academy (LIGA DE CAMPEONES 3) (HD) (90f)",18:00-Chelsea Academy-PSV Academy (LIGA DE CAMPEONES 3) (HD) (90f)
+http://127.0.0.1:6878/ace/getstream?id=90f7941c6bf7ca4b18084a1dca7bc15b9b179373
 #EXTINF:-1 group-title="02-03 (Martes) Euroliga Liga Regular" tvg-name="19:00-Zalgiris Kaunas-AS Monaco Basket (MOVISTAR DEPORTES 5) (HD) (323)",19:00-Zalgiris Kaunas-AS Monaco Basket (MOVISTAR DEPORTES 5) (HD) (323)
 http://127.0.0.1:6878/ace/getstream?id=3230cdca852a10325222e3c546e499e31d547a90
+#EXTINF:-1 group-title="02-03 (Martes) Euroliga Liga Regular" tvg-name="19:00-Zalgiris Kaunas-AS Monaco Basket (MOVISTAR DEPORTES 5) (FHD) (591)",19:00-Zalgiris Kaunas-AS Monaco Basket (MOVISTAR DEPORTES 5) (FHD) (591)
+http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
 #EXTINF:-1 group-title="02-03 (Martes) Euroliga Liga Regular" tvg-name="19:00-Zalgiris Kaunas-AS Monaco Basket (MOVISTAR DEPORTES 5) (FHD) (6dc)",19:00-Zalgiris Kaunas-AS Monaco Basket (MOVISTAR DEPORTES 5) (FHD) (6dc)
 http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
+#EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="19:00-Athletic Club Academy-Eintracht Frankfurt Academy (LIGA DE CAMPEONES) (FHD) (0f7)",19:00-Athletic Club Academy-Eintracht Frankfurt Academy (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
+#EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="19:00-Athletic Club Academy-Eintracht Frankfurt Academy (LIGA DE CAMPEONES) (HD) (e57)",19:00-Athletic Club Academy-Eintracht Frankfurt Academy (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
 #EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="19:00-Athletic Club Academy-Eintracht Frankfurt Academy (LIGA DE CAMPEONES) (FHD) (afb)",19:00-Athletic Club Academy-Eintracht Frankfurt Academy (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
 #EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="19:00-Athletic Club Academy-Eintracht Frankfurt Academy (LIGA DE CAMPEONES) (UHD) (152)",19:00-Athletic Club Academy-Eintracht Frankfurt Academy (LIGA DE CAMPEONES) (UHD) (152)
 http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="19:00-Athletic Club Academy-Eintracht Frankfurt Academy (LIGA DE CAMPEONES) (HD) (b02)",19:00-Athletic Club Academy-Eintracht Frankfurt Academy (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="19:00-Athletic Club Academy-Eintracht Frankfurt Academy (LIGA DE CAMPEONES) (HD) (e57)",19:00-Athletic Club Academy-Eintracht Frankfurt Academy (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
 #EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="19:00-Athletic Club Academy-Eintracht Frankfurt Academy (LIGA DE CAMPEONES) (FHD) (c16)",19:00-Athletic Club Academy-Eintracht Frankfurt Academy (LIGA DE CAMPEONES) (FHD) (c16)
 http://127.0.0.1:6878/ace/getstream?id=c16b4fab1f724c94cad92081cbb7fc7c6fe8a2cc
-#EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="19:00-Athletic Club Academy-Eintracht Frankfurt Academy (LIGA DE CAMPEONES) (FHD) (0f7)",19:00-Athletic Club Academy-Eintracht Frankfurt Academy (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
 #EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="19:00-Athletic Club Academy-Eintracht Frankfurt Academy (LIGA DE CAMPEONES) (FHD) (778)",19:00-Athletic Club Academy-Eintracht Frankfurt Academy (LIGA DE CAMPEONES) (FHD) (778)
 http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
+#EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="19:00-Athletic Club Academy-Eintracht Frankfurt Academy (LIGA DE CAMPEONES) (HD) (b02)",19:00-Athletic Club Academy-Eintracht Frankfurt Academy (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
 #EXTINF:-1 group-title="02-03 (Martes) UEFA Youth League 1/16 de Final" tvg-name="19:00-Athletic Club Academy-Eintracht Frankfurt Academy (LIGA DE CAMPEONES) (FHD) (afb)",19:00-Athletic Club Academy-Eintracht Frankfurt Academy (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
 #EXTINF:-1 group-title="02-03 (Martes) Euroliga Liga Regular" tvg-name="20:00-Crvena Zvezda MTS Belgrade-Hapoel Tel Aviv BC (MOVISTAR DEPORTES 4) (HD) (8b5)",20:00-Crvena Zvezda MTS Belgrade-Hapoel Tel Aviv BC (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
 #EXTINF:-1 group-title="02-03 (Martes) Euroliga Liga Regular" tvg-name="20:15-Panathinaikos BC-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (5d3)",20:15-Panathinaikos BC-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="02-03 (Martes) Euroliga Liga Regular" tvg-name="20:15-Panathinaikos BC-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (369)",20:15-Panathinaikos BC-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="02-03 (Martes) Euroliga Liga Regular" tvg-name="20:15-Panathinaikos BC-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (3b5)",20:15-Panathinaikos BC-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (3b5)
-http://127.0.0.1:6878/ace/getstream?id=3b50a1dca0977e3761d016edd79314ab797f74f6
 #EXTINF:-1 group-title="02-03 (Martes) Euroliga Liga Regular" tvg-name="20:15-Panathinaikos BC-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (f82)",20:15-Panathinaikos BC-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="02-03 (Martes) Euroliga Liga Regular" tvg-name="20:15-Panathinaikos BC-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (3b5)",20:15-Panathinaikos BC-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (3b5)
+http://127.0.0.1:6878/ace/getstream?id=3b50a1dca0977e3761d016edd79314ab797f74f6
+#EXTINF:-1 group-title="02-03 (Martes) Euroliga Liga Regular" tvg-name="20:15-Panathinaikos BC-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (369)",20:15-Panathinaikos BC-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="02-03 (Martes) Euroliga Liga Regular" tvg-name="20:30-AX Olimpia Milano-Baskonia (MOVISTAR DEPORTES 3) (HD) (39f)",20:30-AX Olimpia Milano-Baskonia (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="02-03 (Martes) Euroliga Liga Regular" tvg-name="20:30-Barça Basket-Fenerbahce Istanbul (MOVISTAR PLUS) (FHD) (199)",20:30-Barça Basket-Fenerbahce Istanbul (MOVISTAR PLUS) (FHD) (199)
-http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 group-title="02-03 (Martes) Euroliga Liga Regular" tvg-name="20:30-Barça Basket-Fenerbahce Istanbul (MOVISTAR PLUS) (FHD) (586)",20:30-Barça Basket-Fenerbahce Istanbul (MOVISTAR PLUS) (FHD) (586)
-http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
 #EXTINF:-1 group-title="02-03 (Martes) Euroliga Liga Regular" tvg-name="20:30-Barça Basket-Fenerbahce Istanbul (MOVISTAR PLUS) (FHD) (b6f)",20:30-Barça Basket-Fenerbahce Istanbul (MOVISTAR PLUS) (FHD) (b6f)
 http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
+#EXTINF:-1 group-title="02-03 (Martes) Euroliga Liga Regular" tvg-name="20:30-Barça Basket-Fenerbahce Istanbul (MOVISTAR PLUS) (FHD) (586)",20:30-Barça Basket-Fenerbahce Istanbul (MOVISTAR PLUS) (FHD) (586)
+http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
+#EXTINF:-1 group-title="02-03 (Martes) Euroliga Liga Regular" tvg-name="20:30-Barça Basket-Fenerbahce Istanbul (MOVISTAR PLUS) (FHD) (199)",20:30-Barça Basket-Fenerbahce Istanbul (MOVISTAR PLUS) (FHD) (199)
+http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
 #EXTINF:-1 group-title="02-03 (Martes) Euroliga Liga Regular" tvg-name="20:30-Barça Basket-Fenerbahce Istanbul (MOVISTAR DEPORTES 2) (FHD) (73d)",20:30-Barça Basket-Fenerbahce Istanbul (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="02-03 (Martes) Euroliga Liga Regular" tvg-name="20:30-Barça Basket-Fenerbahce Istanbul (MOVISTAR DEPORTES 2) (HD) (3af)",20:30-Barça Basket-Fenerbahce Istanbul (MOVISTAR DEPORTES 2) (HD) (3af)
@@ -87,189 +87,189 @@ http://127.0.0.1:6878/ace/getstream?id=8f982a0d6e3196c12d0034142b65008321150f7c
 http://127.0.0.1:6878/ace/getstream?id=b0eabe0fdd02fdd165896236765a9b753a2ff516
 #EXTINF:-1 group-title="02-04 (Miércoles) NFL" tvg-name="02:00-NFC-AFC (DAZN 2) (FHD) (430)",02:00-NFC-AFC (DAZN 2) (FHD) (430)
 http://127.0.0.1:6878/ace/getstream?id=43004e955731cd3afcc34d24e5178d4b427bff37
-#EXTINF:-1 group-title="02-04 (Miércoles) NFL" tvg-name="02:00-NFC-AFC (DAZN 2) (FHD) (2f9)",02:00-NFC-AFC (DAZN 2) (FHD) (2f9)
-http://127.0.0.1:6878/ace/getstream?id=2f9211669499f413dab1a490198afab2a9b4b57c
 #EXTINF:-1 group-title="02-04 (Miércoles) NFL" tvg-name="02:00-NFC-AFC (DAZN 2) (FHD) (fb2)",02:00-NFC-AFC (DAZN 2) (FHD) (fb2)
 http://127.0.0.1:6878/ace/getstream?id=fb2dd566824658eeab27aae19a01c09430f1a97d
-#EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="16:00-HJK Helsinki Academy-Man City Academy (LIGA DE CAMPEONES 3) (HD) (90f)",16:00-HJK Helsinki Academy-Man City Academy (LIGA DE CAMPEONES 3) (HD) (90f)
-http://127.0.0.1:6878/ace/getstream?id=90f7941c6bf7ca4b18084a1dca7bc15b9b179373
+#EXTINF:-1 group-title="02-04 (Miércoles) NFL" tvg-name="02:00-NFC-AFC (DAZN 2) (FHD) (2f9)",02:00-NFC-AFC (DAZN 2) (FHD) (2f9)
+http://127.0.0.1:6878/ace/getstream?id=2f9211669499f413dab1a490198afab2a9b4b57c
 #EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="16:00-HJK Helsinki Academy-Man City Academy (LIGA DE CAMPEONES 3) (FHD) (9db)",16:00-HJK Helsinki Academy-Man City Academy (LIGA DE CAMPEONES 3) (FHD) (9db)
 http://127.0.0.1:6878/ace/getstream?id=9db029dff6a9c637d1f670e78dbc1a479b9b406e
+#EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="16:00-HJK Helsinki Academy-Man City Academy (LIGA DE CAMPEONES 3) (HD) (90f)",16:00-HJK Helsinki Academy-Man City Academy (LIGA DE CAMPEONES 3) (HD) (90f)
+http://127.0.0.1:6878/ace/getstream?id=90f7941c6bf7ca4b18084a1dca7bc15b9b179373
+#EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="17:00-Maccabi Haifa Academy-FC Barcelona Academy (LIGA DE CAMPEONES) (FHD) (0f7)",17:00-Maccabi Haifa Academy-FC Barcelona Academy (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
+#EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="17:00-Maccabi Haifa Academy-FC Barcelona Academy (LIGA DE CAMPEONES) (HD) (e57)",17:00-Maccabi Haifa Academy-FC Barcelona Academy (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
 #EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="17:00-Maccabi Haifa Academy-FC Barcelona Academy (LIGA DE CAMPEONES) (FHD) (afb)",17:00-Maccabi Haifa Academy-FC Barcelona Academy (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
 #EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="17:00-Maccabi Haifa Academy-FC Barcelona Academy (LIGA DE CAMPEONES) (UHD) (152)",17:00-Maccabi Haifa Academy-FC Barcelona Academy (LIGA DE CAMPEONES) (UHD) (152)
 http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="17:00-Maccabi Haifa Academy-FC Barcelona Academy (LIGA DE CAMPEONES) (HD) (b02)",17:00-Maccabi Haifa Academy-FC Barcelona Academy (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="17:00-Maccabi Haifa Academy-FC Barcelona Academy (LIGA DE CAMPEONES) (HD) (e57)",17:00-Maccabi Haifa Academy-FC Barcelona Academy (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
 #EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="17:00-Maccabi Haifa Academy-FC Barcelona Academy (LIGA DE CAMPEONES) (FHD) (c16)",17:00-Maccabi Haifa Academy-FC Barcelona Academy (LIGA DE CAMPEONES) (FHD) (c16)
 http://127.0.0.1:6878/ace/getstream?id=c16b4fab1f724c94cad92081cbb7fc7c6fe8a2cc
-#EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="17:00-Maccabi Haifa Academy-FC Barcelona Academy (LIGA DE CAMPEONES) (FHD) (0f7)",17:00-Maccabi Haifa Academy-FC Barcelona Academy (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
 #EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="17:00-Maccabi Haifa Academy-FC Barcelona Academy (LIGA DE CAMPEONES) (FHD) (778)",17:00-Maccabi Haifa Academy-FC Barcelona Academy (LIGA DE CAMPEONES) (FHD) (778)
 http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
+#EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="17:00-Maccabi Haifa Academy-FC Barcelona Academy (LIGA DE CAMPEONES) (HD) (b02)",17:00-Maccabi Haifa Academy-FC Barcelona Academy (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
 #EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="17:00-Maccabi Haifa Academy-FC Barcelona Academy (LIGA DE CAMPEONES) (FHD) (afb)",17:00-Maccabi Haifa Academy-FC Barcelona Academy (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
-#EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="18:00-FC Köln Academy-Inter Milan Academy (LIGA DE CAMPEONES 3) (HD) (90f)",18:00-FC Köln Academy-Inter Milan Academy (LIGA DE CAMPEONES 3) (HD) (90f)
-http://127.0.0.1:6878/ace/getstream?id=90f7941c6bf7ca4b18084a1dca7bc15b9b179373
 #EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="18:00-FC Köln Academy-Inter Milan Academy (LIGA DE CAMPEONES 3) (FHD) (9db)",18:00-FC Köln Academy-Inter Milan Academy (LIGA DE CAMPEONES 3) (FHD) (9db)
 http://127.0.0.1:6878/ace/getstream?id=9db029dff6a9c637d1f670e78dbc1a479b9b406e
+#EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="18:00-FC Köln Academy-Inter Milan Academy (LIGA DE CAMPEONES 3) (HD) (90f)",18:00-FC Köln Academy-Inter Milan Academy (LIGA DE CAMPEONES 3) (HD) (90f)
+http://127.0.0.1:6878/ace/getstream?id=90f7941c6bf7ca4b18084a1dca7bc15b9b179373
+#EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES) (FHD) (0f7)",18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
+#EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES) (HD) (e57)",18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
 #EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES) (FHD) (afb)",18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
 #EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES) (UHD) (152)",18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES) (UHD) (152)
 http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES) (HD) (b02)",18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES) (HD) (e57)",18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
 #EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES) (FHD) (c16)",18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES) (FHD) (c16)
 http://127.0.0.1:6878/ace/getstream?id=c16b4fab1f724c94cad92081cbb7fc7c6fe8a2cc
-#EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES) (FHD) (0f7)",18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
 #EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES) (FHD) (778)",18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES) (FHD) (778)
 http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
+#EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES) (HD) (b02)",18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
 #EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES) (FHD) (afb)",18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES 2) (FHD) (498)",18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES 2) (FHD) (498)
+http://127.0.0.1:6878/ace/getstream?id=498c56bd00f535e440c392de5af992421a31355c
 #EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES 2) (HD) (338)",18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES 2) (HD) (338)
 http://127.0.0.1:6878/ace/getstream?id=338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea
 #EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES 2) (FHD) (c6a)",18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES 2) (FHD) (c6a)
 http://127.0.0.1:6878/ace/getstream?id=c6a3673f6a37b1bd3cf31fdd6404dd33d48cfccb
-#EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES 2) (FHD) (498)",18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES 2) (FHD) (498)
-http://127.0.0.1:6878/ace/getstream?id=498c56bd00f535e440c392de5af992421a31355c
 #EXTINF:-1 group-title="02-04 (Miércoles) UEFA Youth League 1/16 de Final" tvg-name="18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES 2) (HD) (38f)",18:00-Real Betis Academy-Tottenham Academy (LIGA DE CAMPEONES 2) (HD) (38f)
 http://127.0.0.1:6878/ace/getstream?id=38f7b2044e549df2039ff26cefa6f9a60c854d5e
-#EXTINF:-1 group-title="02-04 (Miércoles) Euroliga Femenina Liga Regular" tvg-name="19:30-Umana Reyer Venice-Valencia Basket (MOVISTAR ELLAS) (HD) (b2e)",19:30-Umana Reyer Venice-Valencia Basket (MOVISTAR ELLAS) (HD) (b2e)
-http://127.0.0.1:6878/ace/getstream?id=b2ee974d9cd40f2f251656cf5cb9a7a93ed05e97
 #EXTINF:-1 group-title="02-04 (Miércoles) Euroliga Femenina Liga Regular" tvg-name="19:30-Umana Reyer Venice-Valencia Basket (MOVISTAR ELLAS) (FHD) (9b8)",19:30-Umana Reyer Venice-Valencia Basket (MOVISTAR ELLAS) (FHD) (9b8)
 http://127.0.0.1:6878/ace/getstream?id=9b84af74b2fa3690c519199326fc2f181b025cdd
+#EXTINF:-1 group-title="02-04 (Miércoles) Euroliga Femenina Liga Regular" tvg-name="19:30-Umana Reyer Venice-Valencia Basket (MOVISTAR ELLAS) (HD) (b2e)",19:30-Umana Reyer Venice-Valencia Basket (MOVISTAR ELLAS) (HD) (b2e)
+http://127.0.0.1:6878/ace/getstream?id=b2ee974d9cd40f2f251656cf5cb9a7a93ed05e97
 #EXTINF:-1 group-title="02-04 (Miércoles) Euroliga Femenina Liga Regular" tvg-name="19:30-Umana Reyer Venice-Valencia Basket (MOVISTAR ELLAS) (FHD) (594)",19:30-Umana Reyer Venice-Valencia Basket (MOVISTAR ELLAS) (FHD) (594)
 http://127.0.0.1:6878/ace/getstream?id=594b59d435527327c9b6965f247995b907bfc285
 #EXTINF:-1 group-title="02-04 (Miércoles) Euroliga Liga Regular" tvg-name="20:30-Virtus Bologna-ASVEL Lyon-Villeurbanne (MOVISTAR DEPORTES) (FHD) (5d3)",20:30-Virtus Bologna-ASVEL Lyon-Villeurbanne (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="02-04 (Miércoles) Euroliga Liga Regular" tvg-name="20:30-Virtus Bologna-ASVEL Lyon-Villeurbanne (MOVISTAR DEPORTES) (FHD) (369)",20:30-Virtus Bologna-ASVEL Lyon-Villeurbanne (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="02-04 (Miércoles) Euroliga Liga Regular" tvg-name="20:30-Virtus Bologna-ASVEL Lyon-Villeurbanne (MOVISTAR DEPORTES) (FHD) (3b5)",20:30-Virtus Bologna-ASVEL Lyon-Villeurbanne (MOVISTAR DEPORTES) (FHD) (3b5)
-http://127.0.0.1:6878/ace/getstream?id=3b50a1dca0977e3761d016edd79314ab797f74f6
 #EXTINF:-1 group-title="02-04 (Miércoles) Euroliga Liga Regular" tvg-name="20:30-Virtus Bologna-ASVEL Lyon-Villeurbanne (MOVISTAR DEPORTES) (FHD) (f82)",20:30-Virtus Bologna-ASVEL Lyon-Villeurbanne (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="02-04 (Miércoles) Euroliga Liga Regular" tvg-name="20:30-Virtus Bologna-ASVEL Lyon-Villeurbanne (MOVISTAR DEPORTES) (FHD) (3b5)",20:30-Virtus Bologna-ASVEL Lyon-Villeurbanne (MOVISTAR DEPORTES) (FHD) (3b5)
+http://127.0.0.1:6878/ace/getstream?id=3b50a1dca0977e3761d016edd79314ab797f74f6
+#EXTINF:-1 group-title="02-04 (Miércoles) Euroliga Liga Regular" tvg-name="20:30-Virtus Bologna-ASVEL Lyon-Villeurbanne (MOVISTAR DEPORTES) (FHD) (369)",20:30-Virtus Bologna-ASVEL Lyon-Villeurbanne (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="02-04 (Miércoles) Copa del Rey 1/4 de Final" tvg-name="21:00-Alavés-Real Sociedad (M+ LALIGA 2) (FHD) (911)",21:00-Alavés-Real Sociedad (M+ LALIGA 2) (FHD) (911)
+http://127.0.0.1:6878/ace/getstream?id=911ad127726234b97658498a8b790fdd7516541d
 #EXTINF:-1 group-title="02-04 (Miércoles) Copa del Rey 1/4 de Final" tvg-name="21:00-Alavés-Real Sociedad (M+ LALIGA 2) (HD) (b8e)",21:00-Alavés-Real Sociedad (M+ LALIGA 2) (HD) (b8e)
 http://127.0.0.1:6878/ace/getstream?id=b8eb9c9868d487402569bba2d97a8af113d033fe
 #EXTINF:-1 group-title="02-04 (Miércoles) Copa del Rey 1/4 de Final" tvg-name="21:00-Alavés-Real Sociedad (M+ LALIGA 2) (FHD) (caa)",21:00-Alavés-Real Sociedad (M+ LALIGA 2) (FHD) (caa)
 http://127.0.0.1:6878/ace/getstream?id=caa631e8850e3eb5e7c039063dd8a339ccef1176
 #EXTINF:-1 group-title="02-04 (Miércoles) Copa del Rey 1/4 de Final" tvg-name="21:00-Alavés-Real Sociedad (M+ LALIGA 2) (HD) (ad4)",21:00-Alavés-Real Sociedad (M+ LALIGA 2) (HD) (ad4)
 http://127.0.0.1:6878/ace/getstream?id=ad42faa399df66dcd62a1cbc9d1c99ed4512d3b8
-#EXTINF:-1 group-title="02-04 (Miércoles) Copa del Rey 1/4 de Final" tvg-name="21:00-Alavés-Real Sociedad (M+ LALIGA 2) (FHD) (911)",21:00-Alavés-Real Sociedad (M+ LALIGA 2) (FHD) (911)
-http://127.0.0.1:6878/ace/getstream?id=911ad127726234b97658498a8b790fdd7516541d
+#EXTINF:-1 group-title="02-04 (Miércoles) Copa del Rey 1/4 de Final" tvg-name="21:00-Valencia CF-Athletic Club (M+ LALIGA) (FHD) (00c)",21:00-Valencia CF-Athletic Club (M+ LALIGA) (FHD) (00c)
+http://127.0.0.1:6878/ace/getstream?id=00c9bc9c5d7d87680a5a6bed349edfa775a89947
+#EXTINF:-1 group-title="02-04 (Miércoles) Copa del Rey 1/4 de Final" tvg-name="21:00-Valencia CF-Athletic Club (M+ LALIGA) (FHD) (c93)",21:00-Valencia CF-Athletic Club (M+ LALIGA) (FHD) (c93)
+http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
+#EXTINF:-1 group-title="02-04 (Miércoles) Copa del Rey 1/4 de Final" tvg-name="21:00-Valencia CF-Athletic Club (M+ LALIGA) (HD) (31c)",21:00-Valencia CF-Athletic Club (M+ LALIGA) (HD) (31c)
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
+#EXTINF:-1 group-title="02-04 (Miércoles) Copa del Rey 1/4 de Final" tvg-name="21:00-Valencia CF-Athletic Club (M+ LALIGA) (FHD) (af4)",21:00-Valencia CF-Athletic Club (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
 #EXTINF:-1 group-title="02-04 (Miércoles) Copa del Rey 1/4 de Final" tvg-name="21:00-Valencia CF-Athletic Club (M+ LALIGA) (FHD) (8c3)",21:00-Valencia CF-Athletic Club (M+ LALIGA) (FHD) (8c3)
 http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
 #EXTINF:-1 group-title="02-04 (Miércoles) Copa del Rey 1/4 de Final" tvg-name="21:00-Valencia CF-Athletic Club (M+ LALIGA) (FHD) (4b5)",21:00-Valencia CF-Athletic Club (M+ LALIGA) (FHD) (4b5)
 http://127.0.0.1:6878/ace/getstream?id=4b528d10eaad747ddf52251206177573ee3e9f74
-#EXTINF:-1 group-title="02-04 (Miércoles) Copa del Rey 1/4 de Final" tvg-name="21:00-Valencia CF-Athletic Club (M+ LALIGA) (HD) (31c)",21:00-Valencia CF-Athletic Club (M+ LALIGA) (HD) (31c)
-http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
-#EXTINF:-1 group-title="02-04 (Miércoles) Copa del Rey 1/4 de Final" tvg-name="21:00-Valencia CF-Athletic Club (M+ LALIGA) (FHD) (c93)",21:00-Valencia CF-Athletic Club (M+ LALIGA) (FHD) (c93)
-http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
-#EXTINF:-1 group-title="02-04 (Miércoles) Copa del Rey 1/4 de Final" tvg-name="21:00-Valencia CF-Athletic Club (M+ LALIGA) (FHD) (00c)",21:00-Valencia CF-Athletic Club (M+ LALIGA) (FHD) (00c)
-http://127.0.0.1:6878/ace/getstream?id=00c9bc9c5d7d87680a5a6bed349edfa775a89947
-#EXTINF:-1 group-title="02-04 (Miércoles) Copa del Rey 1/4 de Final" tvg-name="21:00-Valencia CF-Athletic Club (M+ LALIGA) (FHD) (af4)",21:00-Valencia CF-Athletic Club (M+ LALIGA) (FHD) (af4)
-http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
+#EXTINF:-1 group-title="02-04 (Miércoles) Coppa Italia 1/4 de Final" tvg-name="21:00-Inter Milan-Torino (DAZN 1) (FHD) (691)",21:00-Inter Milan-Torino (DAZN 1) (FHD) (691)
+http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
+#EXTINF:-1 group-title="02-04 (Miércoles) Coppa Italia 1/4 de Final" tvg-name="21:00-Inter Milan-Torino (DAZN 1) (HD) (5b7)",21:00-Inter Milan-Torino (DAZN 1) (HD) (5b7)
+http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
 #EXTINF:-1 group-title="02-04 (Miércoles) Coppa Italia 1/4 de Final" tvg-name="21:00-Inter Milan-Torino (DAZN 1) (FHD) (b03)",21:00-Inter Milan-Torino (DAZN 1) (FHD) (b03)
 http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
 #EXTINF:-1 group-title="02-04 (Miércoles) Coppa Italia 1/4 de Final" tvg-name="21:00-Inter Milan-Torino (DAZN 1) (FHD) (414)",21:00-Inter Milan-Torino (DAZN 1) (FHD) (414)
 http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
-#EXTINF:-1 group-title="02-04 (Miércoles) Coppa Italia 1/4 de Final" tvg-name="21:00-Inter Milan-Torino (DAZN 1) (FHD) (1e7)",21:00-Inter Milan-Torino (DAZN 1) (FHD) (1e7)
-http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
-#EXTINF:-1 group-title="02-04 (Miércoles) Coppa Italia 1/4 de Final" tvg-name="21:00-Inter Milan-Torino (DAZN 1) (HD) (5b7)",21:00-Inter Milan-Torino (DAZN 1) (HD) (5b7)
-http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
-#EXTINF:-1 group-title="02-04 (Miércoles) Coppa Italia 1/4 de Final" tvg-name="21:00-Inter Milan-Torino (DAZN 1) (FHD) (691)",21:00-Inter Milan-Torino (DAZN 1) (FHD) (691)
-http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
 #EXTINF:-1 group-title="02-04 (Miércoles) Coppa Italia 1/4 de Final" tvg-name="21:00-Inter Milan-Torino (DAZN 1) (HD) (d5b)",21:00-Inter Milan-Torino (DAZN 1) (HD) (d5b)
 http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
 #EXTINF:-1 group-title="02-04 (Miércoles) Coppa Italia 1/4 de Final" tvg-name="21:00-Inter Milan-Torino (DAZN 1) (FHD) (363)",21:00-Inter Milan-Torino (DAZN 1) (FHD) (363)
 http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
+#EXTINF:-1 group-title="02-04 (Miércoles) Coppa Italia 1/4 de Final" tvg-name="21:00-Inter Milan-Torino (DAZN 1) (FHD) (1e7)",21:00-Inter Milan-Torino (DAZN 1) (FHD) (1e7)
+http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
+#EXTINF:-1 group-title="02-05 (Jueves) Serie A Brasil" tvg-name="00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (0f7)",00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
+#EXTINF:-1 group-title="02-05 (Jueves) Serie A Brasil" tvg-name="00:00-Santos-São Paulo (LIGA DE CAMPEONES) (HD) (e57)",00:00-Santos-São Paulo (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
 #EXTINF:-1 group-title="02-05 (Jueves) Serie A Brasil" tvg-name="00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (afb)",00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
 #EXTINF:-1 group-title="02-05 (Jueves) Serie A Brasil" tvg-name="00:00-Santos-São Paulo (LIGA DE CAMPEONES) (UHD) (152)",00:00-Santos-São Paulo (LIGA DE CAMPEONES) (UHD) (152)
 http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="02-05 (Jueves) Serie A Brasil" tvg-name="00:00-Santos-São Paulo (LIGA DE CAMPEONES) (HD) (b02)",00:00-Santos-São Paulo (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="02-05 (Jueves) Serie A Brasil" tvg-name="00:00-Santos-São Paulo (LIGA DE CAMPEONES) (HD) (e57)",00:00-Santos-São Paulo (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
 #EXTINF:-1 group-title="02-05 (Jueves) Serie A Brasil" tvg-name="00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (c16)",00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (c16)
 http://127.0.0.1:6878/ace/getstream?id=c16b4fab1f724c94cad92081cbb7fc7c6fe8a2cc
-#EXTINF:-1 group-title="02-05 (Jueves) Serie A Brasil" tvg-name="00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (0f7)",00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
 #EXTINF:-1 group-title="02-05 (Jueves) Serie A Brasil" tvg-name="00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (778)",00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (778)
 http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
+#EXTINF:-1 group-title="02-05 (Jueves) Serie A Brasil" tvg-name="00:00-Santos-São Paulo (LIGA DE CAMPEONES) (HD) (b02)",00:00-Santos-São Paulo (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
 #EXTINF:-1 group-title="02-05 (Jueves) Serie A Brasil" tvg-name="00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (afb)",00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
 #EXTINF:-1 group-title="02-05 (Jueves) Copa Davis Fase de Clasificación" tvg-name="18:00-Noruega-Gran Bretaña (MOVISTAR DEPORTES 2) (FHD) (73d)",18:00-Noruega-Gran Bretaña (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="02-05 (Jueves) Copa Davis Fase de Clasificación" tvg-name="18:00-Noruega-Gran Bretaña (MOVISTAR DEPORTES 2) (HD) (3af)",18:00-Noruega-Gran Bretaña (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="02-05 (Jueves) Saudi Pro League" tvg-name="18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (0f7)",18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
+#EXTINF:-1 group-title="02-05 (Jueves) Saudi Pro League" tvg-name="18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (HD) (e57)",18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
 #EXTINF:-1 group-title="02-05 (Jueves) Saudi Pro League" tvg-name="18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (afb)",18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
 #EXTINF:-1 group-title="02-05 (Jueves) Saudi Pro League" tvg-name="18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (UHD) (152)",18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (UHD) (152)
 http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="02-05 (Jueves) Saudi Pro League" tvg-name="18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (HD) (b02)",18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="02-05 (Jueves) Saudi Pro League" tvg-name="18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (HD) (e57)",18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
 #EXTINF:-1 group-title="02-05 (Jueves) Saudi Pro League" tvg-name="18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (c16)",18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (c16)
 http://127.0.0.1:6878/ace/getstream?id=c16b4fab1f724c94cad92081cbb7fc7c6fe8a2cc
-#EXTINF:-1 group-title="02-05 (Jueves) Saudi Pro League" tvg-name="18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (0f7)",18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
 #EXTINF:-1 group-title="02-05 (Jueves) Saudi Pro League" tvg-name="18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (778)",18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (778)
 http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
+#EXTINF:-1 group-title="02-05 (Jueves) Saudi Pro League" tvg-name="18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (HD) (b02)",18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
 #EXTINF:-1 group-title="02-05 (Jueves) Saudi Pro League" tvg-name="18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (afb)",18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
 #EXTINF:-1 group-title="02-05 (Jueves) Euroliga Liga Regular" tvg-name="20:00-Hapoel Tel Aviv BC-Valencia Basket (MOVISTAR DEPORTES) (FHD) (5d3)",20:00-Hapoel Tel Aviv BC-Valencia Basket (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="02-05 (Jueves) Euroliga Liga Regular" tvg-name="20:00-Hapoel Tel Aviv BC-Valencia Basket (MOVISTAR DEPORTES) (FHD) (369)",20:00-Hapoel Tel Aviv BC-Valencia Basket (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="02-05 (Jueves) Euroliga Liga Regular" tvg-name="20:00-Hapoel Tel Aviv BC-Valencia Basket (MOVISTAR DEPORTES) (FHD) (3b5)",20:00-Hapoel Tel Aviv BC-Valencia Basket (MOVISTAR DEPORTES) (FHD) (3b5)
-http://127.0.0.1:6878/ace/getstream?id=3b50a1dca0977e3761d016edd79314ab797f74f6
 #EXTINF:-1 group-title="02-05 (Jueves) Euroliga Liga Regular" tvg-name="20:00-Hapoel Tel Aviv BC-Valencia Basket (MOVISTAR DEPORTES) (FHD) (f82)",20:00-Hapoel Tel Aviv BC-Valencia Basket (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="02-05 (Jueves) Euroliga Liga Regular" tvg-name="20:00-Hapoel Tel Aviv BC-Valencia Basket (MOVISTAR DEPORTES) (FHD) (3b5)",20:00-Hapoel Tel Aviv BC-Valencia Basket (MOVISTAR DEPORTES) (FHD) (3b5)
+http://127.0.0.1:6878/ace/getstream?id=3b50a1dca0977e3761d016edd79314ab797f74f6
+#EXTINF:-1 group-title="02-05 (Jueves) Euroliga Liga Regular" tvg-name="20:00-Hapoel Tel Aviv BC-Valencia Basket (MOVISTAR DEPORTES) (FHD) (369)",20:00-Hapoel Tel Aviv BC-Valencia Basket (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="02-05 (Jueves) Euroliga Liga Regular" tvg-name="20:30-BC Partizan Beograd-Panathinaikos BC (MOVISTAR DEPORTES 4) (HD) (8b5)",20:30-BC Partizan Beograd-Panathinaikos BC (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
-#EXTINF:-1 group-title="02-05 (Jueves) Euroliga Liga Regular" tvg-name="20:30-FC Bayern Basketball-AS Monaco Basket (MOVISTAR DEPORTES 5) (FHD) (591)",20:30-FC Bayern Basketball-AS Monaco Basket (MOVISTAR DEPORTES 5) (FHD) (591)
-http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
 #EXTINF:-1 group-title="02-05 (Jueves) Euroliga Liga Regular" tvg-name="20:30-FC Bayern Basketball-AS Monaco Basket (MOVISTAR DEPORTES 5) (HD) (323)",20:30-FC Bayern Basketball-AS Monaco Basket (MOVISTAR DEPORTES 5) (HD) (323)
 http://127.0.0.1:6878/ace/getstream?id=3230cdca852a10325222e3c546e499e31d547a90
+#EXTINF:-1 group-title="02-05 (Jueves) Euroliga Liga Regular" tvg-name="20:30-FC Bayern Basketball-AS Monaco Basket (MOVISTAR DEPORTES 5) (FHD) (591)",20:30-FC Bayern Basketball-AS Monaco Basket (MOVISTAR DEPORTES 5) (FHD) (591)
+http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
 #EXTINF:-1 group-title="02-05 (Jueves) Euroliga Liga Regular" tvg-name="20:30-FC Bayern Basketball-AS Monaco Basket (MOVISTAR DEPORTES 5) (FHD) (6dc)",20:30-FC Bayern Basketball-AS Monaco Basket (MOVISTAR DEPORTES 5) (FHD) (6dc)
 http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
 #EXTINF:-1 group-title="02-05 (Jueves) Euroliga Liga Regular" tvg-name="20:45-Paris Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES 3) (HD) (39f)",20:45-Paris Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
+#EXTINF:-1 group-title="02-05 (Jueves) Copa del Rey 1/4 de Final" tvg-name="21:00-Real Betis-At. Madrid (M+ LALIGA) (FHD) (00c)",21:00-Real Betis-At. Madrid (M+ LALIGA) (FHD) (00c)
+http://127.0.0.1:6878/ace/getstream?id=00c9bc9c5d7d87680a5a6bed349edfa775a89947
+#EXTINF:-1 group-title="02-05 (Jueves) Copa del Rey 1/4 de Final" tvg-name="21:00-Real Betis-At. Madrid (M+ LALIGA) (FHD) (c93)",21:00-Real Betis-At. Madrid (M+ LALIGA) (FHD) (c93)
+http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
+#EXTINF:-1 group-title="02-05 (Jueves) Copa del Rey 1/4 de Final" tvg-name="21:00-Real Betis-At. Madrid (M+ LALIGA) (HD) (31c)",21:00-Real Betis-At. Madrid (M+ LALIGA) (HD) (31c)
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
+#EXTINF:-1 group-title="02-05 (Jueves) Copa del Rey 1/4 de Final" tvg-name="21:00-Real Betis-At. Madrid (M+ LALIGA) (FHD) (af4)",21:00-Real Betis-At. Madrid (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
 #EXTINF:-1 group-title="02-05 (Jueves) Copa del Rey 1/4 de Final" tvg-name="21:00-Real Betis-At. Madrid (M+ LALIGA) (FHD) (8c3)",21:00-Real Betis-At. Madrid (M+ LALIGA) (FHD) (8c3)
 http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
 #EXTINF:-1 group-title="02-05 (Jueves) Copa del Rey 1/4 de Final" tvg-name="21:00-Real Betis-At. Madrid (M+ LALIGA) (FHD) (4b5)",21:00-Real Betis-At. Madrid (M+ LALIGA) (FHD) (4b5)
 http://127.0.0.1:6878/ace/getstream?id=4b528d10eaad747ddf52251206177573ee3e9f74
-#EXTINF:-1 group-title="02-05 (Jueves) Copa del Rey 1/4 de Final" tvg-name="21:00-Real Betis-At. Madrid (M+ LALIGA) (HD) (31c)",21:00-Real Betis-At. Madrid (M+ LALIGA) (HD) (31c)
-http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
-#EXTINF:-1 group-title="02-05 (Jueves) Copa del Rey 1/4 de Final" tvg-name="21:00-Real Betis-At. Madrid (M+ LALIGA) (FHD) (c93)",21:00-Real Betis-At. Madrid (M+ LALIGA) (FHD) (c93)
-http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
-#EXTINF:-1 group-title="02-05 (Jueves) Copa del Rey 1/4 de Final" tvg-name="21:00-Real Betis-At. Madrid (M+ LALIGA) (FHD) (00c)",21:00-Real Betis-At. Madrid (M+ LALIGA) (FHD) (00c)
-http://127.0.0.1:6878/ace/getstream?id=00c9bc9c5d7d87680a5a6bed349edfa775a89947
-#EXTINF:-1 group-title="02-05 (Jueves) Copa del Rey 1/4 de Final" tvg-name="21:00-Real Betis-At. Madrid (M+ LALIGA) (FHD) (af4)",21:00-Real Betis-At. Madrid (M+ LALIGA) (FHD) (af4)
-http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
-#EXTINF:-1 group-title="02-05 (Jueves) Copa del Rey 1/4 de Final" tvg-name="21:00-Real Betis-At. Madrid (MOVISTAR PLUS) (FHD) (199)",21:00-Real Betis-At. Madrid (MOVISTAR PLUS) (FHD) (199)
-http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 group-title="02-05 (Jueves) Copa del Rey 1/4 de Final" tvg-name="21:00-Real Betis-At. Madrid (MOVISTAR PLUS) (FHD) (586)",21:00-Real Betis-At. Madrid (MOVISTAR PLUS) (FHD) (586)
-http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
 #EXTINF:-1 group-title="02-05 (Jueves) Copa del Rey 1/4 de Final" tvg-name="21:00-Real Betis-At. Madrid (MOVISTAR PLUS) (FHD) (b6f)",21:00-Real Betis-At. Madrid (MOVISTAR PLUS) (FHD) (b6f)
 http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
+#EXTINF:-1 group-title="02-05 (Jueves) Copa del Rey 1/4 de Final" tvg-name="21:00-Real Betis-At. Madrid (MOVISTAR PLUS) (FHD) (586)",21:00-Real Betis-At. Madrid (MOVISTAR PLUS) (FHD) (586)
+http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
+#EXTINF:-1 group-title="02-05 (Jueves) Copa del Rey 1/4 de Final" tvg-name="21:00-Real Betis-At. Madrid (MOVISTAR PLUS) (FHD) (199)",21:00-Real Betis-At. Madrid (MOVISTAR PLUS) (FHD) (199)
+http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
+#EXTINF:-1 group-title="02-05 (Jueves) Coppa Italia 1/4 de Final" tvg-name="21:00-Atalanta-Juventus (DAZN 1) (FHD) (691)",21:00-Atalanta-Juventus (DAZN 1) (FHD) (691)
+http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
+#EXTINF:-1 group-title="02-05 (Jueves) Coppa Italia 1/4 de Final" tvg-name="21:00-Atalanta-Juventus (DAZN 1) (HD) (5b7)",21:00-Atalanta-Juventus (DAZN 1) (HD) (5b7)
+http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
 #EXTINF:-1 group-title="02-05 (Jueves) Coppa Italia 1/4 de Final" tvg-name="21:00-Atalanta-Juventus (DAZN 1) (FHD) (b03)",21:00-Atalanta-Juventus (DAZN 1) (FHD) (b03)
 http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
 #EXTINF:-1 group-title="02-05 (Jueves) Coppa Italia 1/4 de Final" tvg-name="21:00-Atalanta-Juventus (DAZN 1) (FHD) (414)",21:00-Atalanta-Juventus (DAZN 1) (FHD) (414)
 http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
-#EXTINF:-1 group-title="02-05 (Jueves) Coppa Italia 1/4 de Final" tvg-name="21:00-Atalanta-Juventus (DAZN 1) (FHD) (1e7)",21:00-Atalanta-Juventus (DAZN 1) (FHD) (1e7)
-http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
-#EXTINF:-1 group-title="02-05 (Jueves) Coppa Italia 1/4 de Final" tvg-name="21:00-Atalanta-Juventus (DAZN 1) (HD) (5b7)",21:00-Atalanta-Juventus (DAZN 1) (HD) (5b7)
-http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
-#EXTINF:-1 group-title="02-05 (Jueves) Coppa Italia 1/4 de Final" tvg-name="21:00-Atalanta-Juventus (DAZN 1) (FHD) (691)",21:00-Atalanta-Juventus (DAZN 1) (FHD) (691)
-http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
 #EXTINF:-1 group-title="02-05 (Jueves) Coppa Italia 1/4 de Final" tvg-name="21:00-Atalanta-Juventus (DAZN 1) (HD) (d5b)",21:00-Atalanta-Juventus (DAZN 1) (HD) (d5b)
 http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
 #EXTINF:-1 group-title="02-05 (Jueves) Coppa Italia 1/4 de Final" tvg-name="21:00-Atalanta-Juventus (DAZN 1) (FHD) (363)",21:00-Atalanta-Juventus (DAZN 1) (FHD) (363)
 http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
+#EXTINF:-1 group-title="02-05 (Jueves) Coppa Italia 1/4 de Final" tvg-name="21:00-Atalanta-Juventus (DAZN 1) (FHD) (1e7)",21:00-Atalanta-Juventus (DAZN 1) (FHD) (1e7)
+http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
