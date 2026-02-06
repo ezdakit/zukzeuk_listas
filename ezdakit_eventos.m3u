@@ -1,56 +1,56 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="02-05 (Jueves) Serie A Brasil" tvg-name="00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (afb)",00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
-#EXTINF:-1 group-title="02-05 (Jueves) Serie A Brasil" tvg-name="00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (97d)",00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 group-title="02-05 (Jueves) Serie A Brasil" tvg-name="00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (778)",00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (778)
-http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="02-05 (Jueves) Serie A Brasil" tvg-name="00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (afb)",00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
 #EXTINF:-1 group-title="02-05 (Jueves) Serie A Brasil" tvg-name="00:00-Santos-São Paulo (LIGA DE CAMPEONES) (UHD) (152)",00:00-Santos-São Paulo (LIGA DE CAMPEONES) (UHD) (152)
 http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
+#EXTINF:-1 group-title="02-05 (Jueves) Serie A Brasil" tvg-name="00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (afb)",00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="02-05 (Jueves) Serie A Brasil" tvg-name="00:00-Santos-São Paulo (LIGA DE CAMPEONES) (HD) (e57)",00:00-Santos-São Paulo (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
 #EXTINF:-1 group-title="02-05 (Jueves) Serie A Brasil" tvg-name="00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (0f7)",00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (0f7)
 http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
 #EXTINF:-1 group-title="02-05 (Jueves) Serie A Brasil" tvg-name="00:00-Santos-São Paulo (LIGA DE CAMPEONES) (HD) (b02)",00:00-Santos-São Paulo (LIGA DE CAMPEONES) (HD) (b02)
 http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
+#EXTINF:-1 group-title="02-05 (Jueves) Serie A Brasil" tvg-name="00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (778)",00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (778)
+http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
 #EXTINF:-1 group-title="02-05 (Jueves) Serie A Brasil" tvg-name="00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (2b5)",00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (2b5)
 http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
-#EXTINF:-1 group-title="02-05 (Jueves) Serie A Brasil" tvg-name="00:00-Santos-São Paulo (LIGA DE CAMPEONES) (HD) (e57)",00:00-Santos-São Paulo (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="02-05 (Jueves) Serie A Brasil" tvg-name="00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (afb)",00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="02-05 (Jueves) Serie A Brasil" tvg-name="00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (97d)",00:00-Santos-São Paulo (LIGA DE CAMPEONES) (FHD) (97d)
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
 #EXTINF:-1 group-title="02-05 (Jueves) Copa Davis Fase de Clasificación" tvg-name="18:00-Noruega-Gran Bretaña (MOVISTAR DEPORTES 2) (HD) (3af)",18:00-Noruega-Gran Bretaña (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="02-05 (Jueves) Copa Davis Fase de Clasificación" tvg-name="18:00-Noruega-Gran Bretaña (MOVISTAR DEPORTES 2) (FHD) (73d)",18:00-Noruega-Gran Bretaña (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="02-05 (Jueves) Saudi Pro League" tvg-name="18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (afb)",18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
-#EXTINF:-1 group-title="02-05 (Jueves) Saudi Pro League" tvg-name="18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (97d)",18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 group-title="02-05 (Jueves) Saudi Pro League" tvg-name="18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (778)",18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (778)
-http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="02-05 (Jueves) Saudi Pro League" tvg-name="18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (afb)",18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
 #EXTINF:-1 group-title="02-05 (Jueves) Saudi Pro League" tvg-name="18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (UHD) (152)",18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (UHD) (152)
 http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
+#EXTINF:-1 group-title="02-05 (Jueves) Saudi Pro League" tvg-name="18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (afb)",18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="02-05 (Jueves) Saudi Pro League" tvg-name="18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (HD) (e57)",18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
 #EXTINF:-1 group-title="02-05 (Jueves) Saudi Pro League" tvg-name="18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (0f7)",18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (0f7)
 http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
 #EXTINF:-1 group-title="02-05 (Jueves) Saudi Pro League" tvg-name="18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (HD) (b02)",18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (HD) (b02)
 http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
+#EXTINF:-1 group-title="02-05 (Jueves) Saudi Pro League" tvg-name="18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (778)",18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (778)
+http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
 #EXTINF:-1 group-title="02-05 (Jueves) Saudi Pro League" tvg-name="18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (2b5)",18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (2b5)
 http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
-#EXTINF:-1 group-title="02-05 (Jueves) Saudi Pro League" tvg-name="18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (HD) (e57)",18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="02-05 (Jueves) Saudi Pro League" tvg-name="18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (afb)",18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="02-05 (Jueves) Saudi Pro League" tvg-name="18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (97d)",18:30-Al Akhdoud-Al Hilal (LIGA DE CAMPEONES) (FHD) (97d)
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
 #EXTINF:-1 group-title="02-05 (Jueves) Copa Davis Fase de Clasificación" tvg-name="20:00-Noruega-Gran Bretaña (MOVISTAR DEPORTES 2) (HD) (3af)",20:00-Noruega-Gran Bretaña (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="02-05 (Jueves) Copa Davis Fase de Clasificación" tvg-name="20:00-Noruega-Gran Bretaña (MOVISTAR DEPORTES 2) (FHD) (73d)",20:00-Noruega-Gran Bretaña (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="02-05 (Jueves) Euroliga Liga Regular" tvg-name="20:00-Hapoel Tel Aviv BC-Valencia Basket (MOVISTAR DEPORTES) (FHD) (f82)",20:00-Hapoel Tel Aviv BC-Valencia Basket (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="02-05 (Jueves) Euroliga Liga Regular" tvg-name="20:00-Hapoel Tel Aviv BC-Valencia Basket (MOVISTAR DEPORTES) (FHD) (5d3)",20:00-Hapoel Tel Aviv BC-Valencia Basket (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="02-05 (Jueves) Euroliga Liga Regular" tvg-name="20:00-Hapoel Tel Aviv BC-Valencia Basket (MOVISTAR DEPORTES) (FHD) (369)",20:00-Hapoel Tel Aviv BC-Valencia Basket (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="02-05 (Jueves) Euroliga Liga Regular" tvg-name="20:00-Hapoel Tel Aviv BC-Valencia Basket (MOVISTAR DEPORTES) (FHD) (5d3)",20:00-Hapoel Tel Aviv BC-Valencia Basket (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="02-05 (Jueves) Euroliga Liga Regular" tvg-name="20:00-Hapoel Tel Aviv BC-Valencia Basket (MOVISTAR DEPORTES) (FHD) (f82)",20:00-Hapoel Tel Aviv BC-Valencia Basket (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="02-05 (Jueves) Euroliga Liga Regular" tvg-name="20:30-BC Partizan Beograd-Panathinaikos BC (MOVISTAR DEPORTES 4) (HD) (8b5)",20:30-BC Partizan Beograd-Panathinaikos BC (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
 #EXTINF:-1 group-title="02-05 (Jueves) Euroliga Liga Regular" tvg-name="20:30-FC Bayern Basketball-AS Monaco Basket (MOVISTAR DEPORTES 5) (HD) (323)",20:30-FC Bayern Basketball-AS Monaco Basket (MOVISTAR DEPORTES 5) (HD) (323)
@@ -61,44 +61,44 @@ http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
 http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
 #EXTINF:-1 group-title="02-05 (Jueves) Euroliga Liga Regular" tvg-name="20:45-Paris Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES 3) (HD) (39f)",20:45-Paris Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
+#EXTINF:-1 group-title="02-05 (Jueves) Copa del Rey 1/4 de Final" tvg-name="21:00-Real Betis-At. Madrid (M+ LALIGA) (FHD) (af4)",21:00-Real Betis-At. Madrid (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
 #EXTINF:-1 group-title="02-05 (Jueves) Copa del Rey 1/4 de Final" tvg-name="21:00-Real Betis-At. Madrid (M+ LALIGA) (HD) (31c)",21:00-Real Betis-At. Madrid (M+ LALIGA) (HD) (31c)
 http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
 #EXTINF:-1 group-title="02-05 (Jueves) Copa del Rey 1/4 de Final" tvg-name="21:00-Real Betis-At. Madrid (M+ LALIGA) (FHD) (8c3)",21:00-Real Betis-At. Madrid (M+ LALIGA) (FHD) (8c3)
 http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
-#EXTINF:-1 group-title="02-05 (Jueves) Copa del Rey 1/4 de Final" tvg-name="21:00-Real Betis-At. Madrid (M+ LALIGA) (FHD) (af4)",21:00-Real Betis-At. Madrid (M+ LALIGA) (FHD) (af4)
-http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
 #EXTINF:-1 group-title="02-05 (Jueves) Copa del Rey 1/4 de Final" tvg-name="21:00-Real Betis-At. Madrid (MOVISTAR PLUS) (FHD) (b6f)",21:00-Real Betis-At. Madrid (MOVISTAR PLUS) (FHD) (b6f)
 http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
 #EXTINF:-1 group-title="02-05 (Jueves) Copa del Rey 1/4 de Final" tvg-name="21:00-Real Betis-At. Madrid (MOVISTAR PLUS) (FHD) (586)",21:00-Real Betis-At. Madrid (MOVISTAR PLUS) (FHD) (586)
 http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
 #EXTINF:-1 group-title="02-05 (Jueves) Copa del Rey 1/4 de Final" tvg-name="21:00-Real Betis-At. Madrid (MOVISTAR PLUS) (FHD) (199)",21:00-Real Betis-At. Madrid (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 group-title="02-05 (Jueves) Coppa Italia 1/4 de Final" tvg-name="21:00-Atalanta-Juventus (DAZN 1) (FHD) (363)",21:00-Atalanta-Juventus (DAZN 1) (FHD) (363)
-http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
 #EXTINF:-1 group-title="02-05 (Jueves) Coppa Italia 1/4 de Final" tvg-name="21:00-Atalanta-Juventus (DAZN 1) (FHD) (414)",21:00-Atalanta-Juventus (DAZN 1) (FHD) (414)
 http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
-#EXTINF:-1 group-title="02-05 (Jueves) Coppa Italia 1/4 de Final" tvg-name="21:00-Atalanta-Juventus (DAZN 1) (HD) (d5b)",21:00-Atalanta-Juventus (DAZN 1) (HD) (d5b)
-http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
-#EXTINF:-1 group-title="02-05 (Jueves) Coppa Italia 1/4 de Final" tvg-name="21:00-Atalanta-Juventus (DAZN 1) (FHD) (b03)",21:00-Atalanta-Juventus (DAZN 1) (FHD) (b03)
-http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
-#EXTINF:-1 group-title="02-05 (Jueves) Coppa Italia 1/4 de Final" tvg-name="21:00-Atalanta-Juventus (DAZN 1) (FHD) (691)",21:00-Atalanta-Juventus (DAZN 1) (FHD) (691)
-http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
-#EXTINF:-1 group-title="02-05 (Jueves) Coppa Italia 1/4 de Final" tvg-name="21:00-Atalanta-Juventus (DAZN 1) (FHD) (1e7)",21:00-Atalanta-Juventus (DAZN 1) (FHD) (1e7)
-http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
 #EXTINF:-1 group-title="02-05 (Jueves) Coppa Italia 1/4 de Final" tvg-name="21:00-Atalanta-Juventus (DAZN 1) (HD) (5b7)",21:00-Atalanta-Juventus (DAZN 1) (HD) (5b7)
 http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
+#EXTINF:-1 group-title="02-05 (Jueves) Coppa Italia 1/4 de Final" tvg-name="21:00-Atalanta-Juventus (DAZN 1) (FHD) (691)",21:00-Atalanta-Juventus (DAZN 1) (FHD) (691)
+http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
+#EXTINF:-1 group-title="02-05 (Jueves) Coppa Italia 1/4 de Final" tvg-name="21:00-Atalanta-Juventus (DAZN 1) (FHD) (363)",21:00-Atalanta-Juventus (DAZN 1) (FHD) (363)
+http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
+#EXTINF:-1 group-title="02-05 (Jueves) Coppa Italia 1/4 de Final" tvg-name="21:00-Atalanta-Juventus (DAZN 1) (FHD) (1e7)",21:00-Atalanta-Juventus (DAZN 1) (FHD) (1e7)
+http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
+#EXTINF:-1 group-title="02-05 (Jueves) Coppa Italia 1/4 de Final" tvg-name="21:00-Atalanta-Juventus (DAZN 1) (FHD) (b03)",21:00-Atalanta-Juventus (DAZN 1) (FHD) (b03)
+http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
+#EXTINF:-1 group-title="02-05 (Jueves) Coppa Italia 1/4 de Final" tvg-name="21:00-Atalanta-Juventus (DAZN 1) (HD) (d5b)",21:00-Atalanta-Juventus (DAZN 1) (HD) (d5b)
+http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
 #EXTINF:-1 group-title="02-06 (Viernes) Copa del Rey" tvg-name="13:00-Sorteo Semifinales (MOVISTAR PLUS) (FHD) (b6f)",13:00-Sorteo Semifinales (MOVISTAR PLUS) (FHD) (b6f)
 http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
 #EXTINF:-1 group-title="02-06 (Viernes) Copa del Rey" tvg-name="13:00-Sorteo Semifinales (MOVISTAR PLUS) (FHD) (586)",13:00-Sorteo Semifinales (MOVISTAR PLUS) (FHD) (586)
 http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
 #EXTINF:-1 group-title="02-06 (Viernes) Copa del Rey" tvg-name="13:00-Sorteo Semifinales (MOVISTAR PLUS) (FHD) (199)",13:00-Sorteo Semifinales (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
+#EXTINF:-1 group-title="02-06 (Viernes) Copa del Rey" tvg-name="13:00-Sorteo Semifinales (M+ LALIGA) (FHD) (af4)",13:00-Sorteo Semifinales (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
 #EXTINF:-1 group-title="02-06 (Viernes) Copa del Rey" tvg-name="13:00-Sorteo Semifinales (M+ LALIGA) (HD) (31c)",13:00-Sorteo Semifinales (M+ LALIGA) (HD) (31c)
 http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
 #EXTINF:-1 group-title="02-06 (Viernes) Copa del Rey" tvg-name="13:00-Sorteo Semifinales (M+ LALIGA) (FHD) (8c3)",13:00-Sorteo Semifinales (M+ LALIGA) (FHD) (8c3)
 http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
-#EXTINF:-1 group-title="02-06 (Viernes) Copa del Rey" tvg-name="13:00-Sorteo Semifinales (M+ LALIGA) (FHD) (af4)",13:00-Sorteo Semifinales (M+ LALIGA) (FHD) (af4)
-http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
 #EXTINF:-1 group-title="02-06 (Viernes) Copa Davis Fase de Clasificación" tvg-name="16:00-Alemania-Perú (MOVISTAR DEPORTES 4) (HD) (8b5)",16:00-Alemania-Perú (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
 #EXTINF:-1 group-title="02-06 (Viernes) Copa Davis Fase de Clasificación" tvg-name="16:00-Noruega-Gran Bretaña (MOVISTAR DEPORTES 2) (HD) (3af)",16:00-Noruega-Gran Bretaña (MOVISTAR DEPORTES 2) (HD) (3af)
@@ -131,38 +131,38 @@ http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
 http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
 #EXTINF:-1 group-title="02-06 (Viernes) Euroliga Liga Regular" tvg-name="20:30-Baskonia-Barça Basket (MOVISTAR PLUS) (FHD) (199)",20:30-Baskonia-Barça Basket (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 group-title="02-06 (Viernes) Euroliga Liga Regular" tvg-name="20:30-Baskonia-Barça Basket (MOVISTAR DEPORTES) (FHD) (f82)",20:30-Baskonia-Barça Basket (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="02-06 (Viernes) Euroliga Liga Regular" tvg-name="20:30-Baskonia-Barça Basket (MOVISTAR DEPORTES) (FHD) (5d3)",20:30-Baskonia-Barça Basket (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="02-06 (Viernes) Euroliga Liga Regular" tvg-name="20:30-Baskonia-Barça Basket (MOVISTAR DEPORTES) (FHD) (369)",20:30-Baskonia-Barça Basket (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="02-06 (Viernes) LaLiga Hypermotion" tvg-name="20:30-Leganés-Granada CF (HYPERMOTION) (FHD) (87b)",20:30-Leganés-Granada CF (HYPERMOTION) (FHD) (87b)
-http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="02-06 (Viernes) Euroliga Liga Regular" tvg-name="20:30-Baskonia-Barça Basket (MOVISTAR DEPORTES) (FHD) (5d3)",20:30-Baskonia-Barça Basket (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="02-06 (Viernes) Euroliga Liga Regular" tvg-name="20:30-Baskonia-Barça Basket (MOVISTAR DEPORTES) (FHD) (f82)",20:30-Baskonia-Barça Basket (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="02-06 (Viernes) LaLiga Hypermotion" tvg-name="20:30-Leganés-Granada CF (HYPERMOTION) (HD) (a4f)",20:30-Leganés-Granada CF (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
+#EXTINF:-1 group-title="02-06 (Viernes) LaLiga Hypermotion" tvg-name="20:30-Leganés-Granada CF (HYPERMOTION) (FHD) (87b)",20:30-Leganés-Granada CF (HYPERMOTION) (FHD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="02-06 (Viernes) La Liga EA Sports" tvg-name="21:00-Celta-Osasuna (DAZN LA LIGA 1) (HD) (4e6)",21:00-Celta-Osasuna (DAZN LA LIGA 1) (HD) (4e6)
 http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
-#EXTINF:-1 group-title="02-06 (Viernes) La Liga EA Sports" tvg-name="21:00-Celta-Osasuna (DAZN LA LIGA 1) (HD) (19f)",21:00-Celta-Osasuna (DAZN LA LIGA 1) (HD) (19f)
-http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
-#EXTINF:-1 group-title="02-06 (Viernes) La Liga EA Sports" tvg-name="21:00-Celta-Osasuna (DAZN LA LIGA 1) (HD) (dda)",21:00-Celta-Osasuna (DAZN LA LIGA 1) (HD) (dda)
-http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
 #EXTINF:-1 group-title="02-06 (Viernes) La Liga EA Sports" tvg-name="21:00-Celta-Osasuna (DAZN LA LIGA 1) (FHD) (0e5)",21:00-Celta-Osasuna (DAZN LA LIGA 1) (FHD) (0e5)
 http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
-#EXTINF:-1 group-title="02-06 (Viernes) Premier League" tvg-name="21:00-Leeds Utd-Nottingham Forest (DAZN 1) (FHD) (363)",21:00-Leeds Utd-Nottingham Forest (DAZN 1) (FHD) (363)
-http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
+#EXTINF:-1 group-title="02-06 (Viernes) La Liga EA Sports" tvg-name="21:00-Celta-Osasuna (DAZN LA LIGA 1) (HD) (dda)",21:00-Celta-Osasuna (DAZN LA LIGA 1) (HD) (dda)
+http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
+#EXTINF:-1 group-title="02-06 (Viernes) La Liga EA Sports" tvg-name="21:00-Celta-Osasuna (DAZN LA LIGA 1) (HD) (19f)",21:00-Celta-Osasuna (DAZN LA LIGA 1) (HD) (19f)
+http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
 #EXTINF:-1 group-title="02-06 (Viernes) Premier League" tvg-name="21:00-Leeds Utd-Nottingham Forest (DAZN 1) (FHD) (414)",21:00-Leeds Utd-Nottingham Forest (DAZN 1) (FHD) (414)
 http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
-#EXTINF:-1 group-title="02-06 (Viernes) Premier League" tvg-name="21:00-Leeds Utd-Nottingham Forest (DAZN 1) (HD) (d5b)",21:00-Leeds Utd-Nottingham Forest (DAZN 1) (HD) (d5b)
-http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
-#EXTINF:-1 group-title="02-06 (Viernes) Premier League" tvg-name="21:00-Leeds Utd-Nottingham Forest (DAZN 1) (FHD) (b03)",21:00-Leeds Utd-Nottingham Forest (DAZN 1) (FHD) (b03)
-http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
-#EXTINF:-1 group-title="02-06 (Viernes) Premier League" tvg-name="21:00-Leeds Utd-Nottingham Forest (DAZN 1) (FHD) (691)",21:00-Leeds Utd-Nottingham Forest (DAZN 1) (FHD) (691)
-http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
-#EXTINF:-1 group-title="02-06 (Viernes) Premier League" tvg-name="21:00-Leeds Utd-Nottingham Forest (DAZN 1) (FHD) (1e7)",21:00-Leeds Utd-Nottingham Forest (DAZN 1) (FHD) (1e7)
-http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
 #EXTINF:-1 group-title="02-06 (Viernes) Premier League" tvg-name="21:00-Leeds Utd-Nottingham Forest (DAZN 1) (HD) (5b7)",21:00-Leeds Utd-Nottingham Forest (DAZN 1) (HD) (5b7)
 http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
+#EXTINF:-1 group-title="02-06 (Viernes) Premier League" tvg-name="21:00-Leeds Utd-Nottingham Forest (DAZN 1) (FHD) (691)",21:00-Leeds Utd-Nottingham Forest (DAZN 1) (FHD) (691)
+http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
+#EXTINF:-1 group-title="02-06 (Viernes) Premier League" tvg-name="21:00-Leeds Utd-Nottingham Forest (DAZN 1) (FHD) (363)",21:00-Leeds Utd-Nottingham Forest (DAZN 1) (FHD) (363)
+http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
+#EXTINF:-1 group-title="02-06 (Viernes) Premier League" tvg-name="21:00-Leeds Utd-Nottingham Forest (DAZN 1) (FHD) (1e7)",21:00-Leeds Utd-Nottingham Forest (DAZN 1) (FHD) (1e7)
+http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
+#EXTINF:-1 group-title="02-06 (Viernes) Premier League" tvg-name="21:00-Leeds Utd-Nottingham Forest (DAZN 1) (FHD) (b03)",21:00-Leeds Utd-Nottingham Forest (DAZN 1) (FHD) (b03)
+http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
+#EXTINF:-1 group-title="02-06 (Viernes) Premier League" tvg-name="21:00-Leeds Utd-Nottingham Forest (DAZN 1) (HD) (d5b)",21:00-Leeds Utd-Nottingham Forest (DAZN 1) (HD) (d5b)
+http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
 #EXTINF:-1 group-title="02-06 (Viernes) Copa Davis Fase de Clasificación" tvg-name="22:00-Chile-Serbia (MOVISTAR DEPORTES 2) (HD) (3af)",22:00-Chile-Serbia (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="02-06 (Viernes) Copa Davis Fase de Clasificación" tvg-name="22:00-Chile-Serbia (MOVISTAR DEPORTES 2) (FHD) (73d)",22:00-Chile-Serbia (MOVISTAR DEPORTES 2) (FHD) (73d)
@@ -175,18 +175,18 @@ http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="02-07 (Sábado) Copa Davis Fase de Clasificación" tvg-name="00:00-Chile-Serbia (MOVISTAR DEPORTES 3) (HD) (39f)",00:00-Chile-Serbia (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="02-07 (Sábado) Título Mundial Peso Gallo" tvg-name="02:00-C. Medina Jimenez-A. Curiel (DAZN 2) (FHD) (430)",02:00-C. Medina Jimenez-A. Curiel (DAZN 2) (FHD) (430)
-http://127.0.0.1:6878/ace/getstream?id=43004e955731cd3afcc34d24e5178d4b427bff37
 #EXTINF:-1 group-title="02-07 (Sábado) Título Mundial Peso Gallo" tvg-name="02:00-C. Medina Jimenez-A. Curiel (DAZN 2) (FHD) (fb2)",02:00-C. Medina Jimenez-A. Curiel (DAZN 2) (FHD) (fb2)
 http://127.0.0.1:6878/ace/getstream?id=fb2dd566824658eeab27aae19a01c09430f1a97d
+#EXTINF:-1 group-title="02-07 (Sábado) Título Mundial Peso Gallo" tvg-name="02:00-C. Medina Jimenez-A. Curiel (DAZN 2) (FHD) (430)",02:00-C. Medina Jimenez-A. Curiel (DAZN 2) (FHD) (430)
+http://127.0.0.1:6878/ace/getstream?id=43004e955731cd3afcc34d24e5178d4b427bff37
 #EXTINF:-1 group-title="02-07 (Sábado) Título Mundial Peso Gallo" tvg-name="02:00-C. Medina Jimenez-A. Curiel (DAZN 2) (HD) (b0e)",02:00-C. Medina Jimenez-A. Curiel (DAZN 2) (HD) (b0e)
 http://127.0.0.1:6878/ace/getstream?id=b0eabe0fdd02fdd165896236765a9b753a2ff516
 #EXTINF:-1 group-title="02-07 (Sábado) Título Mundial Peso Gallo" tvg-name="02:00-C. Medina Jimenez-A. Curiel (DAZN 2) (FHD) (2f9)",02:00-C. Medina Jimenez-A. Curiel (DAZN 2) (FHD) (2f9)
 http://127.0.0.1:6878/ace/getstream?id=2f9211669499f413dab1a490198afab2a9b4b57c
-#EXTINF:-1 group-title="02-07 (Sábado) MotoGP" tvg-name="12:30-Gala de Presentación Temporada 2026 (DAZN 2) (FHD) (430)",12:30-Gala de Presentación Temporada 2026 (DAZN 2) (FHD) (430)
-http://127.0.0.1:6878/ace/getstream?id=43004e955731cd3afcc34d24e5178d4b427bff37
 #EXTINF:-1 group-title="02-07 (Sábado) MotoGP" tvg-name="12:30-Gala de Presentación Temporada 2026 (DAZN 2) (FHD) (fb2)",12:30-Gala de Presentación Temporada 2026 (DAZN 2) (FHD) (fb2)
 http://127.0.0.1:6878/ace/getstream?id=fb2dd566824658eeab27aae19a01c09430f1a97d
+#EXTINF:-1 group-title="02-07 (Sábado) MotoGP" tvg-name="12:30-Gala de Presentación Temporada 2026 (DAZN 2) (FHD) (430)",12:30-Gala de Presentación Temporada 2026 (DAZN 2) (FHD) (430)
+http://127.0.0.1:6878/ace/getstream?id=43004e955731cd3afcc34d24e5178d4b427bff37
 #EXTINF:-1 group-title="02-07 (Sábado) MotoGP" tvg-name="12:30-Gala de Presentación Temporada 2026 (DAZN 2) (HD) (b0e)",12:30-Gala de Presentación Temporada 2026 (DAZN 2) (HD) (b0e)
 http://127.0.0.1:6878/ace/getstream?id=b0eabe0fdd02fdd165896236765a9b753a2ff516
 #EXTINF:-1 group-title="02-07 (Sábado) MotoGP" tvg-name="12:30-Gala de Presentación Temporada 2026 (DAZN 2) (FHD) (2f9)",12:30-Gala de Presentación Temporada 2026 (DAZN 2) (FHD) (2f9)
@@ -201,32 +201,32 @@ http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="02-07 (Sábado) Copa Davis Fase de Clasificación" tvg-name="13:00-Hungría-Estados Unidos (MOVISTAR DEPORTES 2) (FHD) (73d)",13:00-Hungría-Estados Unidos (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="13:30-Manchester Utd.-Tottenham (DAZN 1) (FHD) (363)",13:30-Manchester Utd.-Tottenham (DAZN 1) (FHD) (363)
-http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
 #EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="13:30-Manchester Utd.-Tottenham (DAZN 1) (FHD) (414)",13:30-Manchester Utd.-Tottenham (DAZN 1) (FHD) (414)
 http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
-#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="13:30-Manchester Utd.-Tottenham (DAZN 1) (HD) (d5b)",13:30-Manchester Utd.-Tottenham (DAZN 1) (HD) (d5b)
-http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
-#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="13:30-Manchester Utd.-Tottenham (DAZN 1) (FHD) (b03)",13:30-Manchester Utd.-Tottenham (DAZN 1) (FHD) (b03)
-http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
-#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="13:30-Manchester Utd.-Tottenham (DAZN 1) (FHD) (691)",13:30-Manchester Utd.-Tottenham (DAZN 1) (FHD) (691)
-http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
-#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="13:30-Manchester Utd.-Tottenham (DAZN 1) (FHD) (1e7)",13:30-Manchester Utd.-Tottenham (DAZN 1) (FHD) (1e7)
-http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
 #EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="13:30-Manchester Utd.-Tottenham (DAZN 1) (HD) (5b7)",13:30-Manchester Utd.-Tottenham (DAZN 1) (HD) (5b7)
 http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
+#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="13:30-Manchester Utd.-Tottenham (DAZN 1) (FHD) (691)",13:30-Manchester Utd.-Tottenham (DAZN 1) (FHD) (691)
+http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
+#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="13:30-Manchester Utd.-Tottenham (DAZN 1) (FHD) (363)",13:30-Manchester Utd.-Tottenham (DAZN 1) (FHD) (363)
+http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
+#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="13:30-Manchester Utd.-Tottenham (DAZN 1) (FHD) (1e7)",13:30-Manchester Utd.-Tottenham (DAZN 1) (FHD) (1e7)
+http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
+#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="13:30-Manchester Utd.-Tottenham (DAZN 1) (FHD) (b03)",13:30-Manchester Utd.-Tottenham (DAZN 1) (FHD) (b03)
+http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
+#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="13:30-Manchester Utd.-Tottenham (DAZN 1) (HD) (d5b)",13:30-Manchester Utd.-Tottenham (DAZN 1) (HD) (d5b)
+http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
 #EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="14:00-Rayo Vallecano-Real Oviedo (DAZN LA LIGA 1) (HD) (4e6)",14:00-Rayo Vallecano-Real Oviedo (DAZN LA LIGA 1) (HD) (4e6)
 http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
-#EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="14:00-Rayo Vallecano-Real Oviedo (DAZN LA LIGA 1) (HD) (19f)",14:00-Rayo Vallecano-Real Oviedo (DAZN LA LIGA 1) (HD) (19f)
-http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
-#EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="14:00-Rayo Vallecano-Real Oviedo (DAZN LA LIGA 1) (HD) (dda)",14:00-Rayo Vallecano-Real Oviedo (DAZN LA LIGA 1) (HD) (dda)
-http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
 #EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="14:00-Rayo Vallecano-Real Oviedo (DAZN LA LIGA 1) (FHD) (0e5)",14:00-Rayo Vallecano-Real Oviedo (DAZN LA LIGA 1) (FHD) (0e5)
 http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
-#EXTINF:-1 group-title="02-07 (Sábado) LaLiga Hypermotion" tvg-name="14:00-FC Andorra-Real Sociedad B (HYPERMOTION) (FHD) (87b)",14:00-FC Andorra-Real Sociedad B (HYPERMOTION) (FHD) (87b)
-http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="14:00-Rayo Vallecano-Real Oviedo (DAZN LA LIGA 1) (HD) (dda)",14:00-Rayo Vallecano-Real Oviedo (DAZN LA LIGA 1) (HD) (dda)
+http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
+#EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="14:00-Rayo Vallecano-Real Oviedo (DAZN LA LIGA 1) (HD) (19f)",14:00-Rayo Vallecano-Real Oviedo (DAZN LA LIGA 1) (HD) (19f)
+http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
 #EXTINF:-1 group-title="02-07 (Sábado) LaLiga Hypermotion" tvg-name="14:00-FC Andorra-Real Sociedad B (HYPERMOTION) (HD) (a4f)",14:00-FC Andorra-Real Sociedad B (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
+#EXTINF:-1 group-title="02-07 (Sábado) LaLiga Hypermotion" tvg-name="14:00-FC Andorra-Real Sociedad B (HYPERMOTION) (FHD) (87b)",14:00-FC Andorra-Real Sociedad B (HYPERMOTION) (FHD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="02-07 (Sábado) Copa Davis Fase de Clasificación" tvg-name="15:00-Hungría-Estados Unidos (MOVISTAR DEPORTES 2) (HD) (3af)",15:00-Hungría-Estados Unidos (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="02-07 (Sábado) Copa Davis Fase de Clasificación" tvg-name="15:00-Hungría-Estados Unidos (MOVISTAR DEPORTES 2) (FHD) (73d)",15:00-Hungría-Estados Unidos (MOVISTAR DEPORTES 2) (FHD) (73d)
@@ -241,38 +241,38 @@ http://127.0.0.1:6878/ace/getstream?id=3230cdca852a10325222e3c546e499e31d547a90
 http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
 #EXTINF:-1 group-title="02-07 (Sábado) Copa Davis Fase de Clasificación" tvg-name="16:00-Bulgaria-Bélgica (MOVISTAR DEPORTES 5) (FHD) (591)",16:00-Bulgaria-Bélgica (MOVISTAR DEPORTES 5) (FHD) (591)
 http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
-#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="16:00-Arsenal-Sunderland (DAZN 1) (FHD) (363)",16:00-Arsenal-Sunderland (DAZN 1) (FHD) (363)
-http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
 #EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="16:00-Arsenal-Sunderland (DAZN 1) (FHD) (414)",16:00-Arsenal-Sunderland (DAZN 1) (FHD) (414)
 http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
-#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="16:00-Arsenal-Sunderland (DAZN 1) (HD) (d5b)",16:00-Arsenal-Sunderland (DAZN 1) (HD) (d5b)
-http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
-#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="16:00-Arsenal-Sunderland (DAZN 1) (FHD) (b03)",16:00-Arsenal-Sunderland (DAZN 1) (FHD) (b03)
-http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
-#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="16:00-Arsenal-Sunderland (DAZN 1) (FHD) (691)",16:00-Arsenal-Sunderland (DAZN 1) (FHD) (691)
-http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
-#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="16:00-Arsenal-Sunderland (DAZN 1) (FHD) (1e7)",16:00-Arsenal-Sunderland (DAZN 1) (FHD) (1e7)
-http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
 #EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="16:00-Arsenal-Sunderland (DAZN 1) (HD) (5b7)",16:00-Arsenal-Sunderland (DAZN 1) (HD) (5b7)
 http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
-#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="16:00-Bournemouth-Aston Villa (DAZN 2) (FHD) (430)",16:00-Bournemouth-Aston Villa (DAZN 2) (FHD) (430)
-http://127.0.0.1:6878/ace/getstream?id=43004e955731cd3afcc34d24e5178d4b427bff37
+#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="16:00-Arsenal-Sunderland (DAZN 1) (FHD) (691)",16:00-Arsenal-Sunderland (DAZN 1) (FHD) (691)
+http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
+#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="16:00-Arsenal-Sunderland (DAZN 1) (FHD) (363)",16:00-Arsenal-Sunderland (DAZN 1) (FHD) (363)
+http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
+#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="16:00-Arsenal-Sunderland (DAZN 1) (FHD) (1e7)",16:00-Arsenal-Sunderland (DAZN 1) (FHD) (1e7)
+http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
+#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="16:00-Arsenal-Sunderland (DAZN 1) (FHD) (b03)",16:00-Arsenal-Sunderland (DAZN 1) (FHD) (b03)
+http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
+#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="16:00-Arsenal-Sunderland (DAZN 1) (HD) (d5b)",16:00-Arsenal-Sunderland (DAZN 1) (HD) (d5b)
+http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
 #EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="16:00-Bournemouth-Aston Villa (DAZN 2) (FHD) (fb2)",16:00-Bournemouth-Aston Villa (DAZN 2) (FHD) (fb2)
 http://127.0.0.1:6878/ace/getstream?id=fb2dd566824658eeab27aae19a01c09430f1a97d
+#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="16:00-Bournemouth-Aston Villa (DAZN 2) (FHD) (430)",16:00-Bournemouth-Aston Villa (DAZN 2) (FHD) (430)
+http://127.0.0.1:6878/ace/getstream?id=43004e955731cd3afcc34d24e5178d4b427bff37
 #EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="16:00-Bournemouth-Aston Villa (DAZN 2) (HD) (b0e)",16:00-Bournemouth-Aston Villa (DAZN 2) (HD) (b0e)
 http://127.0.0.1:6878/ace/getstream?id=b0eabe0fdd02fdd165896236765a9b753a2ff516
 #EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="16:00-Bournemouth-Aston Villa (DAZN 2) (FHD) (2f9)",16:00-Bournemouth-Aston Villa (DAZN 2) (FHD) (2f9)
 http://127.0.0.1:6878/ace/getstream?id=2f9211669499f413dab1a490198afab2a9b4b57c
-#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="16:00-Fulham-Everton (DAZN 4) (FHD) (eb8)",16:00-Fulham-Everton (DAZN 4) (FHD) (eb8)
-http://127.0.0.1:6878/ace/getstream?id=eb884f77ce8815cf1028c4d85e8b092c27ea1693
 #EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="16:00-Fulham-Everton (DAZN 4) (HD) (7e9)",16:00-Fulham-Everton (DAZN 4) (HD) (7e9)
 http://127.0.0.1:6878/ace/getstream?id=7e90956539f4e1318a63f3960e4f75c7c7c5a3b8
+#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="16:00-Fulham-Everton (DAZN 4) (FHD) (eb8)",16:00-Fulham-Everton (DAZN 4) (FHD) (eb8)
+http://127.0.0.1:6878/ace/getstream?id=eb884f77ce8815cf1028c4d85e8b092c27ea1693
+#EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Mallorca (M+ LALIGA) (FHD) (af4)",16:15-FC Barcelona-Mallorca (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
 #EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Mallorca (M+ LALIGA) (HD) (31c)",16:15-FC Barcelona-Mallorca (M+ LALIGA) (HD) (31c)
 http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
 #EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Mallorca (M+ LALIGA) (FHD) (8c3)",16:15-FC Barcelona-Mallorca (M+ LALIGA) (FHD) (8c3)
 http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
-#EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Mallorca (M+ LALIGA) (FHD) (af4)",16:15-FC Barcelona-Mallorca (M+ LALIGA) (FHD) (af4)
-http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
 #EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Mallorca (MOVISTAR PLUS) (FHD) (b6f)",16:15-FC Barcelona-Mallorca (MOVISTAR PLUS) (FHD) (b6f)
 http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
 #EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Mallorca (MOVISTAR PLUS) (FHD) (586)",16:15-FC Barcelona-Mallorca (MOVISTAR PLUS) (FHD) (586)
@@ -281,14 +281,14 @@ http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
 #EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Mallorca (M+ LALIGA 2) (HD) (b8e)",16:15-FC Barcelona-Mallorca (M+ LALIGA 2) (HD) (b8e)
 http://127.0.0.1:6878/ace/getstream?id=b8eb9c9868d487402569bba2d97a8af113d033fe
-#EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Mallorca (M+ LALIGA 2) (FHD) (911)",16:15-FC Barcelona-Mallorca (M+ LALIGA 2) (FHD) (911)
-http://127.0.0.1:6878/ace/getstream?id=911ad127726234b97658498a8b790fdd7516541d
 #EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Mallorca (M+ LALIGA 2) (FHD) (caa)",16:15-FC Barcelona-Mallorca (M+ LALIGA 2) (FHD) (caa)
 http://127.0.0.1:6878/ace/getstream?id=caa631e8850e3eb5e7c039063dd8a339ccef1176
-#EXTINF:-1 group-title="02-07 (Sábado) LaLiga Hypermotion" tvg-name="16:15-UD Las Palmas-Burgos CF (HYPERMOTION) (FHD) (87b)",16:15-UD Las Palmas-Burgos CF (HYPERMOTION) (FHD) (87b)
-http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="16:15-FC Barcelona-Mallorca (M+ LALIGA 2) (FHD) (911)",16:15-FC Barcelona-Mallorca (M+ LALIGA 2) (FHD) (911)
+http://127.0.0.1:6878/ace/getstream?id=911ad127726234b97658498a8b790fdd7516541d
 #EXTINF:-1 group-title="02-07 (Sábado) LaLiga Hypermotion" tvg-name="16:15-UD Las Palmas-Burgos CF (HYPERMOTION) (HD) (a4f)",16:15-UD Las Palmas-Burgos CF (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
+#EXTINF:-1 group-title="02-07 (Sábado) LaLiga Hypermotion" tvg-name="16:15-UD Las Palmas-Burgos CF (HYPERMOTION) (FHD) (87b)",16:15-UD Las Palmas-Burgos CF (HYPERMOTION) (FHD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="02-07 (Sábado) Torneo de Montpellier" tvg-name="17:30-Semifinal 2 ATP 250 (MOVISTAR DEPORTES 3) (HD) (39f)",17:30-Semifinal 2 ATP 250 (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
 #EXTINF:-1 group-title="02-07 (Sábado) Copa Davis Fase de Clasificación" tvg-name="18:00-Alemania-Perú (MOVISTAR DEPORTES 4) (HD) (8b5)",18:00-Alemania-Perú (MOVISTAR DEPORTES 4) (HD) (8b5)
@@ -301,79 +301,79 @@ http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
 #EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="18:30-Sevilla FC-Girona (DAZN LA LIGA 1) (HD) (4e6)",18:30-Sevilla FC-Girona (DAZN LA LIGA 1) (HD) (4e6)
 http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
-#EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="18:30-Sevilla FC-Girona (DAZN LA LIGA 1) (HD) (19f)",18:30-Sevilla FC-Girona (DAZN LA LIGA 1) (HD) (19f)
-http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
-#EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="18:30-Sevilla FC-Girona (DAZN LA LIGA 1) (HD) (dda)",18:30-Sevilla FC-Girona (DAZN LA LIGA 1) (HD) (dda)
-http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
 #EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="18:30-Sevilla FC-Girona (DAZN LA LIGA 1) (FHD) (0e5)",18:30-Sevilla FC-Girona (DAZN LA LIGA 1) (FHD) (0e5)
 http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
-#EXTINF:-1 group-title="02-07 (Sábado) LaLiga Hypermotion" tvg-name="18:30-Real Zaragoza-Eibar (HYPERMOTION) (FHD) (87b)",18:30-Real Zaragoza-Eibar (HYPERMOTION) (FHD) (87b)
-http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="18:30-Sevilla FC-Girona (DAZN LA LIGA 1) (HD) (dda)",18:30-Sevilla FC-Girona (DAZN LA LIGA 1) (HD) (dda)
+http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
+#EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="18:30-Sevilla FC-Girona (DAZN LA LIGA 1) (HD) (19f)",18:30-Sevilla FC-Girona (DAZN LA LIGA 1) (HD) (19f)
+http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
 #EXTINF:-1 group-title="02-07 (Sábado) LaLiga Hypermotion" tvg-name="18:30-Real Zaragoza-Eibar (HYPERMOTION) (HD) (a4f)",18:30-Real Zaragoza-Eibar (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
-#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="18:30-Newcastle-Brentford (DAZN 1) (FHD) (363)",18:30-Newcastle-Brentford (DAZN 1) (FHD) (363)
-http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
+#EXTINF:-1 group-title="02-07 (Sábado) LaLiga Hypermotion" tvg-name="18:30-Real Zaragoza-Eibar (HYPERMOTION) (FHD) (87b)",18:30-Real Zaragoza-Eibar (HYPERMOTION) (FHD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="18:30-Newcastle-Brentford (DAZN 1) (FHD) (414)",18:30-Newcastle-Brentford (DAZN 1) (FHD) (414)
 http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
-#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="18:30-Newcastle-Brentford (DAZN 1) (HD) (d5b)",18:30-Newcastle-Brentford (DAZN 1) (HD) (d5b)
-http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
-#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="18:30-Newcastle-Brentford (DAZN 1) (FHD) (b03)",18:30-Newcastle-Brentford (DAZN 1) (FHD) (b03)
-http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
-#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="18:30-Newcastle-Brentford (DAZN 1) (FHD) (691)",18:30-Newcastle-Brentford (DAZN 1) (FHD) (691)
-http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
-#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="18:30-Newcastle-Brentford (DAZN 1) (FHD) (1e7)",18:30-Newcastle-Brentford (DAZN 1) (FHD) (1e7)
-http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
 #EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="18:30-Newcastle-Brentford (DAZN 1) (HD) (5b7)",18:30-Newcastle-Brentford (DAZN 1) (HD) (5b7)
 http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
-#EXTINF:-1 group-title="02-07 (Sábado) Saudi Pro League" tvg-name="18:30-Al Qadisiya-Al Fateh (LIGA DE CAMPEONES 2) (FHD) (498)",18:30-Al Qadisiya-Al Fateh (LIGA DE CAMPEONES 2) (FHD) (498)
-http://127.0.0.1:6878/ace/getstream?id=498c56bd00f535e440c392de5af992421a31355c
-#EXTINF:-1 group-title="02-07 (Sábado) Saudi Pro League" tvg-name="18:30-Al Qadisiya-Al Fateh (LIGA DE CAMPEONES 2) (FHD) (bb2)",18:30-Al Qadisiya-Al Fateh (LIGA DE CAMPEONES 2) (FHD) (bb2)
-http://127.0.0.1:6878/ace/getstream?id=bb26037a253866d341778181eff5c8637240d615
-#EXTINF:-1 group-title="02-07 (Sábado) Saudi Pro League" tvg-name="18:30-Al Qadisiya-Al Fateh (LIGA DE CAMPEONES 2) (FHD) (c6a)",18:30-Al Qadisiya-Al Fateh (LIGA DE CAMPEONES 2) (FHD) (c6a)
-http://127.0.0.1:6878/ace/getstream?id=c6a3673f6a37b1bd3cf31fdd6404dd33d48cfccb
-#EXTINF:-1 group-title="02-07 (Sábado) Saudi Pro League" tvg-name="18:30-Al Qadisiya-Al Fateh (LIGA DE CAMPEONES 2) (HD) (338)",18:30-Al Qadisiya-Al Fateh (LIGA DE CAMPEONES 2) (HD) (338)
-http://127.0.0.1:6878/ace/getstream?id=338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea
+#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="18:30-Newcastle-Brentford (DAZN 1) (FHD) (691)",18:30-Newcastle-Brentford (DAZN 1) (FHD) (691)
+http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
+#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="18:30-Newcastle-Brentford (DAZN 1) (FHD) (363)",18:30-Newcastle-Brentford (DAZN 1) (FHD) (363)
+http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
+#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="18:30-Newcastle-Brentford (DAZN 1) (FHD) (1e7)",18:30-Newcastle-Brentford (DAZN 1) (FHD) (1e7)
+http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
+#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="18:30-Newcastle-Brentford (DAZN 1) (FHD) (b03)",18:30-Newcastle-Brentford (DAZN 1) (FHD) (b03)
+http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
+#EXTINF:-1 group-title="02-07 (Sábado) Premier League" tvg-name="18:30-Newcastle-Brentford (DAZN 1) (HD) (d5b)",18:30-Newcastle-Brentford (DAZN 1) (HD) (d5b)
+http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
 #EXTINF:-1 group-title="02-07 (Sábado) Saudi Pro League" tvg-name="18:30-Al Qadisiya-Al Fateh (LIGA DE CAMPEONES 2) (FHD) (4fc)",18:30-Al Qadisiya-Al Fateh (LIGA DE CAMPEONES 2) (FHD) (4fc)
 http://127.0.0.1:6878/ace/getstream?id=4fc6d0331830ad8743abab2fe2473b63bdfbc49f
+#EXTINF:-1 group-title="02-07 (Sábado) Saudi Pro League" tvg-name="18:30-Al Qadisiya-Al Fateh (LIGA DE CAMPEONES 2) (FHD) (c6a)",18:30-Al Qadisiya-Al Fateh (LIGA DE CAMPEONES 2) (FHD) (c6a)
+http://127.0.0.1:6878/ace/getstream?id=c6a3673f6a37b1bd3cf31fdd6404dd33d48cfccb
+#EXTINF:-1 group-title="02-07 (Sábado) Saudi Pro League" tvg-name="18:30-Al Qadisiya-Al Fateh (LIGA DE CAMPEONES 2) (FHD) (bb2)",18:30-Al Qadisiya-Al Fateh (LIGA DE CAMPEONES 2) (FHD) (bb2)
+http://127.0.0.1:6878/ace/getstream?id=bb26037a253866d341778181eff5c8637240d615
+#EXTINF:-1 group-title="02-07 (Sábado) Saudi Pro League" tvg-name="18:30-Al Qadisiya-Al Fateh (LIGA DE CAMPEONES 2) (HD) (338)",18:30-Al Qadisiya-Al Fateh (LIGA DE CAMPEONES 2) (HD) (338)
+http://127.0.0.1:6878/ace/getstream?id=338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea
+#EXTINF:-1 group-title="02-07 (Sábado) Saudi Pro League" tvg-name="18:30-Al Qadisiya-Al Fateh (LIGA DE CAMPEONES 2) (FHD) (498)",18:30-Al Qadisiya-Al Fateh (LIGA DE CAMPEONES 2) (FHD) (498)
+http://127.0.0.1:6878/ace/getstream?id=498c56bd00f535e440c392de5af992421a31355c
 #EXTINF:-1 group-title="02-07 (Sábado) Copa Davis Fase de Clasificación" tvg-name="20:00-Alemania-Perú (MOVISTAR DEPORTES 4) (HD) (8b5)",20:00-Alemania-Perú (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
-#EXTINF:-1 group-title="02-07 (Sábado) Título Mundial Peso Pluma" tvg-name="20:00-N. Ball-B. Figueroa (DAZN 2) (FHD) (430)",20:00-N. Ball-B. Figueroa (DAZN 2) (FHD) (430)
-http://127.0.0.1:6878/ace/getstream?id=43004e955731cd3afcc34d24e5178d4b427bff37
 #EXTINF:-1 group-title="02-07 (Sábado) Título Mundial Peso Pluma" tvg-name="20:00-N. Ball-B. Figueroa (DAZN 2) (FHD) (fb2)",20:00-N. Ball-B. Figueroa (DAZN 2) (FHD) (fb2)
 http://127.0.0.1:6878/ace/getstream?id=fb2dd566824658eeab27aae19a01c09430f1a97d
+#EXTINF:-1 group-title="02-07 (Sábado) Título Mundial Peso Pluma" tvg-name="20:00-N. Ball-B. Figueroa (DAZN 2) (FHD) (430)",20:00-N. Ball-B. Figueroa (DAZN 2) (FHD) (430)
+http://127.0.0.1:6878/ace/getstream?id=43004e955731cd3afcc34d24e5178d4b427bff37
 #EXTINF:-1 group-title="02-07 (Sábado) Título Mundial Peso Pluma" tvg-name="20:00-N. Ball-B. Figueroa (DAZN 2) (HD) (b0e)",20:00-N. Ball-B. Figueroa (DAZN 2) (HD) (b0e)
 http://127.0.0.1:6878/ace/getstream?id=b0eabe0fdd02fdd165896236765a9b753a2ff516
 #EXTINF:-1 group-title="02-07 (Sábado) Título Mundial Peso Pluma" tvg-name="20:00-N. Ball-B. Figueroa (DAZN 2) (FHD) (2f9)",20:00-N. Ball-B. Figueroa (DAZN 2) (FHD) (2f9)
 http://127.0.0.1:6878/ace/getstream?id=2f9211669499f413dab1a490198afab2a9b4b57c
+#EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="21:00-Real Sociedad-Elche (M+ LALIGA) (FHD) (af4)",21:00-Real Sociedad-Elche (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
 #EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="21:00-Real Sociedad-Elche (M+ LALIGA) (HD) (31c)",21:00-Real Sociedad-Elche (M+ LALIGA) (HD) (31c)
 http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
 #EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="21:00-Real Sociedad-Elche (M+ LALIGA) (FHD) (8c3)",21:00-Real Sociedad-Elche (M+ LALIGA) (FHD) (8c3)
 http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
-#EXTINF:-1 group-title="02-07 (Sábado) La Liga EA Sports" tvg-name="21:00-Real Sociedad-Elche (M+ LALIGA) (FHD) (af4)",21:00-Real Sociedad-Elche (M+ LALIGA) (FHD) (af4)
-http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
-#EXTINF:-1 group-title="02-07 (Sábado) LaLiga Hypermotion" tvg-name="21:00-Cádiz CF-UD Almería (HYPERMOTION) (FHD) (87b)",21:00-Cádiz CF-UD Almería (HYPERMOTION) (FHD) (87b)
-http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="02-07 (Sábado) LaLiga Hypermotion" tvg-name="21:00-Cádiz CF-UD Almería (HYPERMOTION) (HD) (a4f)",21:00-Cádiz CF-UD Almería (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
+#EXTINF:-1 group-title="02-07 (Sábado) LaLiga Hypermotion" tvg-name="21:00-Cádiz CF-UD Almería (HYPERMOTION) (FHD) (87b)",21:00-Cádiz CF-UD Almería (HYPERMOTION) (FHD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="02-07 (Sábado) Copa Davis Fase de Clasificación" tvg-name="22:00-Chile-Serbia (MOVISTAR DEPORTES 2) (HD) (3af)",22:00-Chile-Serbia (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="02-07 (Sábado) Copa Davis Fase de Clasificación" tvg-name="22:00-Chile-Serbia (MOVISTAR DEPORTES 2) (FHD) (73d)",22:00-Chile-Serbia (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="02-07 (Sábado) Primera División Argentina Torneo Apertura" tvg-name="22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (FHD) (afb)",22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
-#EXTINF:-1 group-title="02-07 (Sábado) Primera División Argentina Torneo Apertura" tvg-name="22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (FHD) (97d)",22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (FHD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 group-title="02-07 (Sábado) Primera División Argentina Torneo Apertura" tvg-name="22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (FHD) (778)",22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (FHD) (778)
-http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="02-07 (Sábado) Primera División Argentina Torneo Apertura" tvg-name="22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (FHD) (afb)",22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
 #EXTINF:-1 group-title="02-07 (Sábado) Primera División Argentina Torneo Apertura" tvg-name="22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (UHD) (152)",22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (UHD) (152)
 http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
+#EXTINF:-1 group-title="02-07 (Sábado) Primera División Argentina Torneo Apertura" tvg-name="22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (FHD) (afb)",22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="02-07 (Sábado) Primera División Argentina Torneo Apertura" tvg-name="22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (HD) (e57)",22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
 #EXTINF:-1 group-title="02-07 (Sábado) Primera División Argentina Torneo Apertura" tvg-name="22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (FHD) (0f7)",22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (FHD) (0f7)
 http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
 #EXTINF:-1 group-title="02-07 (Sábado) Primera División Argentina Torneo Apertura" tvg-name="22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (HD) (b02)",22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (HD) (b02)
 http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
+#EXTINF:-1 group-title="02-07 (Sábado) Primera División Argentina Torneo Apertura" tvg-name="22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (FHD) (778)",22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (FHD) (778)
+http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
 #EXTINF:-1 group-title="02-07 (Sábado) Primera División Argentina Torneo Apertura" tvg-name="22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (FHD) (2b5)",22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (FHD) (2b5)
 http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
-#EXTINF:-1 group-title="02-07 (Sábado) Primera División Argentina Torneo Apertura" tvg-name="22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (HD) (e57)",22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="02-07 (Sábado) Primera División Argentina Torneo Apertura" tvg-name="22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (FHD) (afb)",22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="02-07 (Sábado) Primera División Argentina Torneo Apertura" tvg-name="22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (FHD) (97d)",22:00-Racing Avellaneda-Argentinos Juniors (LIGA DE CAMPEONES) (FHD) (97d)
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
