@@ -14,6 +14,10 @@ http://127.0.0.1:6878/ace/getstream?id=d669c6cee7173a1c8994075f7050a6526655b1dc
 http://127.0.0.1:6878/ace/getstream?id=48a589dbeab3544662fafd79888aada7d834cfe9
 #EXTINF:-1 tvg-logo="https://i.ibb.co/M6h4Qyd/euro2.png" group-title="EUROSPORT",Eurosport 2
 http://127.0.0.1:6878/ace/getstream?id=f5908690485ae2facecf3074446ba4315f07a193
+#EXTINF:-1 tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 1080p
+http://127.0.0.1:6878/ace/getstream?id=895d08633bb22c2573281655cf3ca44de476cc73
+#EXTINF:-1 tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 1080p
+http://127.0.0.1:6878/ace/getstream?id=d719181097d256073844390b3e094fbcb1bceaa4
 #EXTINF:-1 tvg-logo="https://i.ibb.co/CBdGc9f/hypermotion1.png" group-title="HYPERMOTION",LaLiga TV Hypermotion 720p
 http://127.0.0.1:6878/ace/getstream?id=1f75d92098580443857caa95a719103cb83781b0
 #EXTINF:-1 tvg-logo="https://i.ibb.co/CBdGc9f/hypermotion1.png" group-title="HYPERMOTION",LaLiga TV Hypermotion 1080p
@@ -33,9 +37,9 @@ http://127.0.0.1:6878/ace/getstream?id=b45cfe568e106a7df65c950805d6f123c989ce84
 #EXTINF:-1 tvg-logo="https://i.ibb.co/Tc97zSb/liga2.png" group-title="LA LIGA",M+ LaLiga 2
 http://127.0.0.1:6878/ace/getstream?id=2c01306506e268ba726f5c30222923b6168a5404
 #EXTINF:-1 tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" group-title="LA LIGA",M+ LaLiga 720p
-http://127.0.0.1:6878/ace/getstream?id=3ace1463a7cad979c3a4002b245487e9982e9f1a
-#EXTINF:-1 tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" group-title="LA LIGA",M+ LaLiga 720p
 http://127.0.0.1:6878/ace/getstream?id=f863873de9f7b2996dde19a0657dd89835af3007
+#EXTINF:-1 tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" group-title="LA LIGA",M+ LaLiga 720p
+http://127.0.0.1:6878/ace/getstream?id=3ace1463a7cad979c3a4002b245487e9982e9f1a
 #EXTINF:-1 tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" group-title="LA LIGA",M+ LaLiga 1080p
 http://127.0.0.1:6878/ace/getstream?id=0febfb5cac3384f487d55c559bbfc877db2d0357
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKBCa6SydXxbOh3qbRLTAWW6FOnRo5nXa9kw&s" group-title="LA LIGA",SKY Sports LaLiga 1080p
@@ -76,6 +80,10 @@ http://127.0.0.1:6878/ace/getstream?id=e6cd9205e26b3b6680f607030c702e911272524a
 http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
 #EXTINF:-1 tvg-logo="https://i.ibb.co/CV4CLjz/deportes.png" group-title="MOVISTAR DEPORTES",M+ Deportes 1080p
 http://127.0.0.1:6878/ace/getstream?id=c6a824a81b36f6c3529826477caf2ad94b45776d
+#EXTINF:-1 tvg-logo="https://i.ibb.co/rx9hnHz/ellas.png" group-title="MOVISTAR DEPORTES",M+ Ellas Vamos 1080p
+http://127.0.0.1:6878/ace/getstream?id=80e290013709091ec93d542754bff27cc90ac996
+#EXTINF:-1 tvg-logo="https://www.mundoplus.tv/wp-content/uploads/2023/03/golf2_movistarplus.jpg" group-title="MOVISTAR DEPORTES",M+ Golf 2
+http://127.0.0.1:6878/ace/getstream?id=ac321484243571f59e077f2a2521e648dc0c7b03
 #EXTINF:-1 tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" group-title="MOVISTAR DEPORTES",M+ Vamos 720p
 http://127.0.0.1:6878/ace/getstream?id=866a8af8faacf8fc9eb997ab5a68b4dfee4edc77
 #EXTINF:-1 tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" group-title="MOVISTAR DEPORTES",M+ Vamos 1080p
@@ -84,6 +92,8 @@ http://127.0.0.1:6878/ace/getstream?id=ad5ca6e24f87f47a9c3c5bc10c7e8e5af46767fc
 http://127.0.0.1:6878/ace/getstream?id=001a809c577ef916a57340151c6112ebcb7a894f
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/La_2_HD.png/250px-La_2_HD.png" group-title="TDT",LA 2 1080p
 http://127.0.0.1:6878/ace/getstream?id=9b461120d04b7651990c3b54a0821c60c3b94146
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Vf2GT70/la1.png" group-title="TDT",TVE La 1 720p
+http://127.0.0.1:6878/ace/getstream?id=02622fa2fab63847d88dc14fd9fa5c2fc35de8a8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e7/Liga_Endesa_2019_logo.svg" group-title="DEPORTES",ACB EVENTO 01 720p
 http://127.0.0.1:6878/ace/getstream?id=8faa686a99697b99261346e479ead172b1d9d5d2
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e7/Liga_Endesa_2019_logo.svg" group-title="DEPORTES",ACB EVENTO 02 720p
@@ -95,6 +105,8 @@ http://127.0.0.1:6878/ace/getstream?id=1e3451ef86d34c96aabece2ac7bcae70ba9ed767
 #EXTINF:-1 tvg-logo="https://cdn-bgp.bluestacks.com/BGP/us/gametiles_com.digiturk.ligtv.jpg" group-title="DEPORTES",Bein Sports TR 1080p
 http://127.0.0.1:6878/ace/getstream?id=e7ddca738693a902ce34fb80788b220676c15801
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/df/Logo_Primera_RFEF_2021.png/revision/latest?cb=20230620215900&path-prefix=es" group-title="DEPORTES",RFEF TV 1080p
-http://127.0.0.1:6878/ace/getstream?id=7b742628b9f7e82902bdbc1ff92eba1988875cfc
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/df/Logo_Primera_RFEF_2021.png/revision/latest?cb=20230620215900&path-prefix=es" group-title="DEPORTES",RFEF TV 1080p
 http://127.0.0.1:6878/ace/getstream?id=177796041773be99b489dd3ce86144f243e7355f
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/df/Logo_Primera_RFEF_2021.png/revision/latest?cb=20230620215900&path-prefix=es" group-title="DEPORTES",RFEF TV 1080p
+http://127.0.0.1:6878/ace/getstream?id=7b742628b9f7e82902bdbc1ff92eba1988875cfc
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/df/Logo_Primera_RFEF_2021.png/revision/latest?cb=20230620215900&path-prefix=es" group-title="DEPORTES",Teledeporte 1080p
+http://127.0.0.1:6878/ace/getstream?id=b35b3eb8e22365bf3469efd6d1f3b82618a6e18a
