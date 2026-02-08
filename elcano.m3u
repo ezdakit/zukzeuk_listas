@@ -1,4 +1,16 @@
-#EXTM3U
+#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
+#EXTVLCOPT:network-caching=1000
+
+#EXTGRP: group-title="DAZN" group-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Dazn-logo.png/601px-Dazn-logo.png"
+#EXTGRP: group-title="EUROSPORT" group-logo="https://logos-world.net/wp-content/uploads/2022/05/Eurosport-Logo.png"
+#EXTGRP: group-title="FORMULA 1" group-logo="https://i.ibb.co/2Ndmtbp/f1.png"
+#EXTGRP: group-title="HYPERMOTION" group-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/LaLiga_Hypermotion_2023_Vertical_Logo.svg/2335px-LaLiga_Hypermotion_2023_Vertical_Logo.svg.png"
+#EXTGRP: group-title="LA LIGA" group-logo="https://i.ibb.co/sp6dD8h2/laliga-logo.png"
+#EXTGRP: group-title="LIGA DE CAMPEONES" group-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Liga_de_Campeones_por_Movistar_Plus%2B_2023_Logo.svg/2560px-Liga_de_Campeones_por_Movistar_Plus%2B_2023_Logo.svg.png"
+#EXTGRP: group-title="MOVISTAR" group-logo="https://upload.wikimedia.org/wikipedia/commons/d/d9/Movistar%2B_Logo.png"
+#EXTGRP: group-title="MOVISTAR DEPORTES" group-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Deportes_por_Movistar_Plus%2B_2022_logo.svg/2560px-Deportes_por_Movistar_Plus%2B_2022_logo.svg.png"
+#EXTGRP: group-title="OTROS" group-logo="https://i.ibb.co/zVNFsy0F/logo-otros.png"
+#EXTGRP: group-title="TDT" group-logo="https://i.ibb.co/j9xn42jB/logo-tdt.png"
 
 #EXTINF:-1 tvg-id="DAZN 1 HD" tvg-logo="https://i.ibb.co/FVzKq1y/dazn1.png" group-title="DAZN",DAZN 1 720p
 http://127.0.0.1:6878/ace/getstream?id=a116ce3ff95c41c60e987e2b1aa247007f707884
@@ -104,5 +116,3 @@ http://127.0.0.1:6878/ace/getstream?id=7b742628b9f7e82902bdbc1ff92eba1988875cfc
 http://127.0.0.1:6878/ace/getstream?id=177796041773be99b489dd3ce86144f243e7355f
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/df/Logo_Primera_RFEF_2021.png/revision/latest?cb=20230620215900&path-prefix=es" group-title="DEPORTES",Teledeporte 1080p
 http://127.0.0.1:6878/ace/getstream?id=b35b3eb8e22365bf3469efd6d1f3b82618a6e18a
-#EXTINF:-1 tvg-logo="https://e7.pngegg.com/pngimages/875/55/png-clipart-maintenance-graphics-logo-text-logo.png" group-title="MANTENIMIENTO",Mantenimiento
-http://127.0.0.1:6878/ace/getstream?id=cf11e9f997b72f31b8a92153662ef42ae48e052f
