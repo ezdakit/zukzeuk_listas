@@ -1,68 +1,68 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="02-10 (Martes) Torneo de Dallas 1ª Ronda" tvg-name="02:00-T. Atmane-F. Tiafoe (MOVISTAR DEPORTES) (FHD) (5d3)",02:00-T. Atmane-F. Tiafoe (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="02-10 (Martes) Torneo de Dallas 1ª Ronda" tvg-name="02:00-T. Atmane-F. Tiafoe (MOVISTAR DEPORTES) (FHD) (369)",02:00-T. Atmane-F. Tiafoe (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="02-10 (Martes) Torneo de Dallas 1ª Ronda" tvg-name="02:00-T. Atmane-F. Tiafoe (MOVISTAR DEPORTES) (FHD) (5d3)",02:00-T. Atmane-F. Tiafoe (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="02-10 (Martes) Torneo de Dallas 1ª Ronda" tvg-name="02:00-T. Atmane-F. Tiafoe (MOVISTAR DEPORTES) (FHD) (f82)",02:00-T. Atmane-F. Tiafoe (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="02-10 (Martes) Torneo de Dallas 1ª Ronda" tvg-name="02:00-T. Atmane-F. Tiafoe (MOVISTAR DEPORTES) (HD) (6e0)",02:00-T. Atmane-F. Tiafoe (MOVISTAR DEPORTES) (HD) (6e0)
 http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
 #EXTINF:-1 group-title="02-10 (Martes) Torneo de Dallas 1ª Ronda" tvg-name="02:00-T. Atmane-F. Tiafoe (MOVISTAR DEPORTES) (FHD) (c6a)",02:00-T. Atmane-F. Tiafoe (MOVISTAR DEPORTES) (FHD) (c6a)
 http://127.0.0.1:6878/ace/getstream?id=c6a824a81b36f6c3529826477caf2ad94b45776d
-#EXTINF:-1 group-title="02-10 (Martes) Torneo de Dallas 1ª Ronda" tvg-name="03:30-M. Zheng-S. Korda (MOVISTAR DEPORTES) (FHD) (5d3)",03:30-M. Zheng-S. Korda (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="02-10 (Martes) Torneo de Dallas 1ª Ronda" tvg-name="03:30-M. Zheng-S. Korda (MOVISTAR DEPORTES) (FHD) (369)",03:30-M. Zheng-S. Korda (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="02-10 (Martes) Torneo de Dallas 1ª Ronda" tvg-name="03:30-M. Zheng-S. Korda (MOVISTAR DEPORTES) (FHD) (5d3)",03:30-M. Zheng-S. Korda (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="02-10 (Martes) Torneo de Dallas 1ª Ronda" tvg-name="03:30-M. Zheng-S. Korda (MOVISTAR DEPORTES) (FHD) (f82)",03:30-M. Zheng-S. Korda (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="02-10 (Martes) Torneo de Dallas 1ª Ronda" tvg-name="03:30-M. Zheng-S. Korda (MOVISTAR DEPORTES) (HD) (6e0)",03:30-M. Zheng-S. Korda (MOVISTAR DEPORTES) (HD) (6e0)
 http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
 #EXTINF:-1 group-title="02-10 (Martes) Torneo de Dallas 1ª Ronda" tvg-name="03:30-M. Zheng-S. Korda (MOVISTAR DEPORTES) (FHD) (c6a)",03:30-M. Zheng-S. Korda (MOVISTAR DEPORTES) (FHD) (c6a)
 http://127.0.0.1:6878/ace/getstream?id=c6a824a81b36f6c3529826477caf2ad94b45776d
-#EXTINF:-1 group-title="02-10 (Martes) Torneo de Rotterdam 1ª Ronda" tvg-name="11:00-Q. Halys-M. Rottgering (MOVISTAR DEPORTES 2) (HD) (3af)",11:00-Q. Halys-M. Rottgering (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="02-10 (Martes) Torneo de Rotterdam 1ª Ronda" tvg-name="11:00-Q. Halys-M. Rottgering (MOVISTAR DEPORTES 2) (FHD) (73d)",11:00-Q. Halys-M. Rottgering (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="02-10 (Martes) Torneo de Rotterdam 1ª Ronda" tvg-name="11:00-Q. Halys-M. Rottgering (MOVISTAR DEPORTES 2) (HD) (3af)",11:00-Q. Halys-M. Rottgering (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="02-10 (Martes) Torneo de Rotterdam 1ª Ronda" tvg-name="11:00-Q. Halys-M. Rottgering (MOVISTAR DEPORTES 2) (HD) (6b1)",11:00-Q. Halys-M. Rottgering (MOVISTAR DEPORTES 2) (HD) (6b1)
 http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
-#EXTINF:-1 group-title="02-10 (Martes) Torneo de Rotterdam 1ª Ronda" tvg-name="12:30-T. Griekspoor-G. Mpetshi Perricard (MOVISTAR DEPORTES 2) (HD) (3af)",12:30-T. Griekspoor-G. Mpetshi Perricard (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="02-10 (Martes) Torneo de Rotterdam 1ª Ronda" tvg-name="12:30-T. Griekspoor-G. Mpetshi Perricard (MOVISTAR DEPORTES 2) (FHD) (73d)",12:30-T. Griekspoor-G. Mpetshi Perricard (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="02-10 (Martes) Torneo de Rotterdam 1ª Ronda" tvg-name="12:30-T. Griekspoor-G. Mpetshi Perricard (MOVISTAR DEPORTES 2) (HD) (3af)",12:30-T. Griekspoor-G. Mpetshi Perricard (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="02-10 (Martes) Torneo de Rotterdam 1ª Ronda" tvg-name="12:30-T. Griekspoor-G. Mpetshi Perricard (MOVISTAR DEPORTES 2) (HD) (6b1)",12:30-T. Griekspoor-G. Mpetshi Perricard (MOVISTAR DEPORTES 2) (HD) (6b1)
 http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
-#EXTINF:-1 group-title="02-10 (Martes) Torneo de Rotterdam 1ª Ronda" tvg-name="14:30-H. Grenier-JL. Struff (MOVISTAR DEPORTES 2) (HD) (3af)",14:30-H. Grenier-JL. Struff (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="02-10 (Martes) Torneo de Rotterdam 1ª Ronda" tvg-name="14:30-H. Grenier-JL. Struff (MOVISTAR DEPORTES 2) (FHD) (73d)",14:30-H. Grenier-JL. Struff (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="02-10 (Martes) Torneo de Rotterdam 1ª Ronda" tvg-name="14:30-H. Grenier-JL. Struff (MOVISTAR DEPORTES 2) (HD) (3af)",14:30-H. Grenier-JL. Struff (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="02-10 (Martes) Torneo de Rotterdam 1ª Ronda" tvg-name="14:30-H. Grenier-JL. Struff (MOVISTAR DEPORTES 2) (HD) (6b1)",14:30-H. Grenier-JL. Struff (MOVISTAR DEPORTES 2) (HD) (6b1)
 http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
-#EXTINF:-1 group-title="02-10 (Martes) Torneo de Dallas" tvg-name="19:00-1ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)",19:00-1ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="02-10 (Martes) Torneo de Dallas" tvg-name="19:00-1ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (369)",19:00-1ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="02-10 (Martes) Torneo de Dallas" tvg-name="19:00-1ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)",19:00-1ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="02-10 (Martes) Torneo de Dallas" tvg-name="19:00-1ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)",19:00-1ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="02-10 (Martes) Torneo de Dallas" tvg-name="19:00-1ª Ronda ATP 500 (MOVISTAR DEPORTES) (HD) (6e0)",19:00-1ª Ronda ATP 500 (MOVISTAR DEPORTES) (HD) (6e0)
 http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
 #EXTINF:-1 group-title="02-10 (Martes) Torneo de Dallas" tvg-name="19:00-1ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (c6a)",19:00-1ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (c6a)
 http://127.0.0.1:6878/ace/getstream?id=c6a824a81b36f6c3529826477caf2ad94b45776d
-#EXTINF:-1 group-title="02-10 (Martes) Torneo de Rotterdam 1ª Ronda" tvg-name="19:30-A. De Miñaur-A. Fils (MOVISTAR DEPORTES 2) (HD) (3af)",19:30-A. De Miñaur-A. Fils (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="02-10 (Martes) Torneo de Rotterdam 1ª Ronda" tvg-name="19:30-A. De Miñaur-A. Fils (MOVISTAR DEPORTES 2) (FHD) (73d)",19:30-A. De Miñaur-A. Fils (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="02-10 (Martes) Torneo de Rotterdam 1ª Ronda" tvg-name="19:30-A. De Miñaur-A. Fils (MOVISTAR DEPORTES 2) (HD) (3af)",19:30-A. De Miñaur-A. Fils (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="02-10 (Martes) Torneo de Rotterdam 1ª Ronda" tvg-name="19:30-A. De Miñaur-A. Fils (MOVISTAR DEPORTES 2) (HD) (6b1)",19:30-A. De Miñaur-A. Fils (MOVISTAR DEPORTES 2) (HD) (6b1)
 http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
 #EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="20:30-Chelsea-Leeds Utd (DAZN 2) (FHD) (430)",20:30-Chelsea-Leeds Utd (DAZN 2) (FHD) (430)
 http://127.0.0.1:6878/ace/getstream?id=43004e955731cd3afcc34d24e5178d4b427bff37
+#EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="20:30-Chelsea-Leeds Utd (DAZN 2) (FHD) (fb2)",20:30-Chelsea-Leeds Utd (DAZN 2) (FHD) (fb2)
+http://127.0.0.1:6878/ace/getstream?id=fb2dd566824658eeab27aae19a01c09430f1a97d
 #EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="20:30-Chelsea-Leeds Utd (DAZN 2) (FHD) (2f9)",20:30-Chelsea-Leeds Utd (DAZN 2) (FHD) (2f9)
 http://127.0.0.1:6878/ace/getstream?id=2f9211669499f413dab1a490198afab2a9b4b57c
 #EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="20:30-Chelsea-Leeds Utd (DAZN 2) (HD) (b0e)",20:30-Chelsea-Leeds Utd (DAZN 2) (HD) (b0e)
 http://127.0.0.1:6878/ace/getstream?id=b0eabe0fdd02fdd165896236765a9b753a2ff516
-#EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="20:30-Chelsea-Leeds Utd (DAZN 2) (FHD) (fb2)",20:30-Chelsea-Leeds Utd (DAZN 2) (FHD) (fb2)
-http://127.0.0.1:6878/ace/getstream?id=fb2dd566824658eeab27aae19a01c09430f1a97d
 #EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="20:30-Chelsea-Leeds Utd (DAZN 2) (FHD) (01c)",20:30-Chelsea-Leeds Utd (DAZN 2) (FHD) (01c)
 http://127.0.0.1:6878/ace/getstream?id=01ce89b571b6c89bc19ccaafc913d483ac65c61d
 #EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="20:30-Everton-Bournemouth (DAZN 4) (HD) (7e9)",20:30-Everton-Bournemouth (DAZN 4) (HD) (7e9)
@@ -71,229 +71,237 @@ http://127.0.0.1:6878/ace/getstream?id=7e90956539f4e1318a63f3960e4f75c7c7c5a3b8
 http://127.0.0.1:6878/ace/getstream?id=eb884f77ce8815cf1028c4d85e8b092c27ea1693
 #EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="20:30-Everton-Bournemouth (DAZN 4) (FHD) (d66)",20:30-Everton-Bournemouth (DAZN 4) (FHD) (d66)
 http://127.0.0.1:6878/ace/getstream?id=d669c6cee7173a1c8994075f7050a6526655b1dc
-#EXTINF:-1 group-title="02-10 (Martes) Torneo de Rotterdam 1ª Ronda" tvg-name="21:00-Z. Bergs-F. Marozsan (MOVISTAR DEPORTES 2) (HD) (3af)",21:00-Z. Bergs-F. Marozsan (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="02-10 (Martes) Torneo de Rotterdam 1ª Ronda" tvg-name="21:00-Z. Bergs-F. Marozsan (MOVISTAR DEPORTES 2) (FHD) (73d)",21:00-Z. Bergs-F. Marozsan (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="02-10 (Martes) Torneo de Rotterdam 1ª Ronda" tvg-name="21:00-Z. Bergs-F. Marozsan (MOVISTAR DEPORTES 2) (HD) (3af)",21:00-Z. Bergs-F. Marozsan (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="02-10 (Martes) Torneo de Rotterdam 1ª Ronda" tvg-name="21:00-Z. Bergs-F. Marozsan (MOVISTAR DEPORTES 2) (HD) (6b1)",21:00-Z. Bergs-F. Marozsan (MOVISTAR DEPORTES 2) (HD) (6b1)
 http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
+#EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (MOVISTAR PLUS) (FHD) (199)",21:15-West Ham-Manchester Utd. (MOVISTAR PLUS) (FHD) (199)
+http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
 #EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (MOVISTAR PLUS) (FHD) (b6f)",21:15-West Ham-Manchester Utd. (MOVISTAR PLUS) (FHD) (b6f)
 http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
 #EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (MOVISTAR PLUS) (FHD) (586)",21:15-West Ham-Manchester Utd. (MOVISTAR PLUS) (FHD) (586)
 http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
-#EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (MOVISTAR PLUS) (FHD) (199)",21:15-West Ham-Manchester Utd. (MOVISTAR PLUS) (FHD) (199)
-http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
 #EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (MOVISTAR PLUS) (FHD) (ed7)",21:15-West Ham-Manchester Utd. (MOVISTAR PLUS) (FHD) (ed7)
 http://127.0.0.1:6878/ace/getstream?id=ed74406ccdb3c21941b919db6bffca7f1de015bb
 #EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (MOVISTAR PLUS) (HD) (d23)",21:15-West Ham-Manchester Utd. (MOVISTAR PLUS) (HD) (d23)
 http://127.0.0.1:6878/ace/getstream?id=d23497596720b47b096ec0f850d6d26a19d1a336
 #EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (DAZN 1) (FHD) (b03)",21:15-West Ham-Manchester Utd. (DAZN 1) (FHD) (b03)
 http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
-#EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (DAZN 1) (HD) (d5b)",21:15-West Ham-Manchester Utd. (DAZN 1) (HD) (d5b)
-http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
 #EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (DAZN 1) (FHD) (691)",21:15-West Ham-Manchester Utd. (DAZN 1) (FHD) (691)
 http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
-#EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (DAZN 1) (FHD) (414)",21:15-West Ham-Manchester Utd. (DAZN 1) (FHD) (414)
-http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
-#EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (DAZN 1) (HD) (5b7)",21:15-West Ham-Manchester Utd. (DAZN 1) (HD) (5b7)
-http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
-#EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (DAZN 1) (FHD) (1e7)",21:15-West Ham-Manchester Utd. (DAZN 1) (FHD) (1e7)
-http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
 #EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (DAZN 1) (FHD) (363)",21:15-West Ham-Manchester Utd. (DAZN 1) (FHD) (363)
 http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
+#EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (DAZN 1) (FHD) (1e7)",21:15-West Ham-Manchester Utd. (DAZN 1) (FHD) (1e7)
+http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
+#EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (DAZN 1) (FHD) (414)",21:15-West Ham-Manchester Utd. (DAZN 1) (FHD) (414)
+http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
+#EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (DAZN 1) (HD) (d5b)",21:15-West Ham-Manchester Utd. (DAZN 1) (HD) (d5b)
+http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
+#EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (DAZN 1) (HD) (5b7)",21:15-West Ham-Manchester Utd. (DAZN 1) (HD) (5b7)
+http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
 #EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (DAZN 1) (FHD) (ddd)",21:15-West Ham-Manchester Utd. (DAZN 1) (FHD) (ddd)
 http://127.0.0.1:6878/ace/getstream?id=dddff67edfa7061f643ec5ae0be110169850363d
 #EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (DAZN 1) (HD) (a11)",21:15-West Ham-Manchester Utd. (DAZN 1) (HD) (a11)
 http://127.0.0.1:6878/ace/getstream?id=a116ce3ff95c41c60e987e2b1aa247007f707884
-#EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (FHD) (afb)",21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
-#EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (FHD) (afb)",21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
 #EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (HD) (e57)",21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (HD) (e57)
 http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (UHD) (152)",21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (UHD) (152)
-http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (HD) (b02)",21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (HD) (2b5)",21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (HD) (2b5)
-http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
 #EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (FHD) (778)",21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (FHD) (778)
 http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (HD) (97d)",21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (HD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (HD) (b02)",21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
 #EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (FHD) (0f7)",21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (FHD) (0f7)
 http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
+#EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (FHD) (afb)",21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (HD) (97d)",21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (HD) (97d)
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (HD) (2b5)",21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (HD) (2b5)
+http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
+#EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (UHD) (152)",21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (UHD) (152)
+http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
+#EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (FHD) (afb)",21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (FHD) (91b)",21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (FHD) (91b)
+http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
 #EXTINF:-1 group-title="02-10 (Martes) Premier League" tvg-name="21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (HD) (63e)",21:15-West Ham-Manchester Utd. (LIGA DE CAMPEONES) (HD) (63e)
 http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
-#EXTINF:-1 group-title="02-11 (Miércoles) Serie A Brasil" tvg-name="01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (FHD) (afb)",01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
-#EXTINF:-1 group-title="02-11 (Miércoles) Serie A Brasil" tvg-name="01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (FHD) (afb)",01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
 #EXTINF:-1 group-title="02-11 (Miércoles) Serie A Brasil" tvg-name="01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (HD) (e57)",01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (HD) (e57)
 http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="02-11 (Miércoles) Serie A Brasil" tvg-name="01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (UHD) (152)",01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (UHD) (152)
-http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="02-11 (Miércoles) Serie A Brasil" tvg-name="01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (HD) (b02)",01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="02-11 (Miércoles) Serie A Brasil" tvg-name="01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (HD) (2b5)",01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (HD) (2b5)
-http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
 #EXTINF:-1 group-title="02-11 (Miércoles) Serie A Brasil" tvg-name="01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (FHD) (778)",01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (FHD) (778)
 http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="02-11 (Miércoles) Serie A Brasil" tvg-name="01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (HD) (97d)",01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (HD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="02-11 (Miércoles) Serie A Brasil" tvg-name="01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (HD) (b02)",01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
 #EXTINF:-1 group-title="02-11 (Miércoles) Serie A Brasil" tvg-name="01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (FHD) (0f7)",01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (FHD) (0f7)
 http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
+#EXTINF:-1 group-title="02-11 (Miércoles) Serie A Brasil" tvg-name="01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (FHD) (afb)",01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="02-11 (Miércoles) Serie A Brasil" tvg-name="01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (HD) (97d)",01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (HD) (97d)
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="02-11 (Miércoles) Serie A Brasil" tvg-name="01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (HD) (2b5)",01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (HD) (2b5)
+http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
+#EXTINF:-1 group-title="02-11 (Miércoles) Serie A Brasil" tvg-name="01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (UHD) (152)",01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (UHD) (152)
+http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
+#EXTINF:-1 group-title="02-11 (Miércoles) Serie A Brasil" tvg-name="01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (FHD) (afb)",01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="02-11 (Miércoles) Serie A Brasil" tvg-name="01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (FHD) (91b)",01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (FHD) (91b)
+http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
 #EXTINF:-1 group-title="02-11 (Miércoles) Serie A Brasil" tvg-name="01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (HD) (63e)",01:30-Vitória-CR Flamengo (LIGA DE CAMPEONES) (HD) (63e)
 http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
-#EXTINF:-1 group-title="02-11 (Miércoles) Torneo de Rotterdam" tvg-name="11:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (3af)",11:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="02-11 (Miércoles) Torneo de Rotterdam" tvg-name="11:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (FHD) (73d)",11:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="02-11 (Miércoles) Torneo de Rotterdam" tvg-name="11:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (3af)",11:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="02-11 (Miércoles) Torneo de Rotterdam" tvg-name="11:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (6b1)",11:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (6b1)
 http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
-#EXTINF:-1 group-title="02-11 (Miércoles) Torneo de Dallas" tvg-name="19:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)",19:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="02-11 (Miércoles) Torneo de Dallas" tvg-name="19:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (369)",19:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="02-11 (Miércoles) Torneo de Dallas" tvg-name="19:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)",19:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="02-11 (Miércoles) Torneo de Dallas" tvg-name="19:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)",19:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="02-11 (Miércoles) Torneo de Dallas" tvg-name="19:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (HD) (6e0)",19:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (HD) (6e0)
 http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
 #EXTINF:-1 group-title="02-11 (Miércoles) Torneo de Dallas" tvg-name="19:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (c6a)",19:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (c6a)
 http://127.0.0.1:6878/ace/getstream?id=c6a824a81b36f6c3529826477caf2ad94b45776d
-#EXTINF:-1 group-title="02-11 (Miércoles) Premier League" tvg-name="20:30-Crystal Palace-Burnley (DAZN 3) (HD) (d1d)",20:30-Crystal Palace-Burnley (DAZN 3) (HD) (d1d)
-http://127.0.0.1:6878/ace/getstream?id=d1d9ec2361a6ac8edc0b2841866383768cc28df9
 #EXTINF:-1 group-title="02-11 (Miércoles) Premier League" tvg-name="20:30-Crystal Palace-Burnley (DAZN 3) (FHD) (4e4)",20:30-Crystal Palace-Burnley (DAZN 3) (FHD) (4e4)
 http://127.0.0.1:6878/ace/getstream?id=4e401fdceebffdf1f09aef954844d09f6c62f460
+#EXTINF:-1 group-title="02-11 (Miércoles) Premier League" tvg-name="20:30-Crystal Palace-Burnley (DAZN 3) (HD) (d1d)",20:30-Crystal Palace-Burnley (DAZN 3) (HD) (d1d)
+http://127.0.0.1:6878/ace/getstream?id=d1d9ec2361a6ac8edc0b2841866383768cc28df9
+#EXTINF:-1 group-title="02-11 (Miércoles) Premier League" tvg-name="20:30-Crystal Palace-Burnley (DAZN 3) (FHD) (908)",20:30-Crystal Palace-Burnley (DAZN 3) (FHD) (908)
+http://127.0.0.1:6878/ace/getstream?id=908bc5e7ae52afc06e40793b6db749dba11a1780
 #EXTINF:-1 group-title="02-11 (Miércoles) Premier League" tvg-name="20:30-Manchester City-Fulham (DAZN 2) (FHD) (430)",20:30-Manchester City-Fulham (DAZN 2) (FHD) (430)
 http://127.0.0.1:6878/ace/getstream?id=43004e955731cd3afcc34d24e5178d4b427bff37
+#EXTINF:-1 group-title="02-11 (Miércoles) Premier League" tvg-name="20:30-Manchester City-Fulham (DAZN 2) (FHD) (fb2)",20:30-Manchester City-Fulham (DAZN 2) (FHD) (fb2)
+http://127.0.0.1:6878/ace/getstream?id=fb2dd566824658eeab27aae19a01c09430f1a97d
 #EXTINF:-1 group-title="02-11 (Miércoles) Premier League" tvg-name="20:30-Manchester City-Fulham (DAZN 2) (FHD) (2f9)",20:30-Manchester City-Fulham (DAZN 2) (FHD) (2f9)
 http://127.0.0.1:6878/ace/getstream?id=2f9211669499f413dab1a490198afab2a9b4b57c
 #EXTINF:-1 group-title="02-11 (Miércoles) Premier League" tvg-name="20:30-Manchester City-Fulham (DAZN 2) (HD) (b0e)",20:30-Manchester City-Fulham (DAZN 2) (HD) (b0e)
 http://127.0.0.1:6878/ace/getstream?id=b0eabe0fdd02fdd165896236765a9b753a2ff516
-#EXTINF:-1 group-title="02-11 (Miércoles) Premier League" tvg-name="20:30-Manchester City-Fulham (DAZN 2) (FHD) (fb2)",20:30-Manchester City-Fulham (DAZN 2) (FHD) (fb2)
-http://127.0.0.1:6878/ace/getstream?id=fb2dd566824658eeab27aae19a01c09430f1a97d
 #EXTINF:-1 group-title="02-11 (Miércoles) Premier League" tvg-name="20:30-Manchester City-Fulham (DAZN 2) (FHD) (01c)",20:30-Manchester City-Fulham (DAZN 2) (FHD) (01c)
 http://127.0.0.1:6878/ace/getstream?id=01ce89b571b6c89bc19ccaafc913d483ac65c61d
+#EXTINF:-1 group-title="02-11 (Miércoles) Copa del Rey Semifinales" tvg-name="21:00-Athletic Club-Real Sociedad (MOVISTAR PLUS) (FHD) (199)",21:00-Athletic Club-Real Sociedad (MOVISTAR PLUS) (FHD) (199)
+http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
 #EXTINF:-1 group-title="02-11 (Miércoles) Copa del Rey Semifinales" tvg-name="21:00-Athletic Club-Real Sociedad (MOVISTAR PLUS) (FHD) (b6f)",21:00-Athletic Club-Real Sociedad (MOVISTAR PLUS) (FHD) (b6f)
 http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
 #EXTINF:-1 group-title="02-11 (Miércoles) Copa del Rey Semifinales" tvg-name="21:00-Athletic Club-Real Sociedad (MOVISTAR PLUS) (FHD) (586)",21:00-Athletic Club-Real Sociedad (MOVISTAR PLUS) (FHD) (586)
 http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
-#EXTINF:-1 group-title="02-11 (Miércoles) Copa del Rey Semifinales" tvg-name="21:00-Athletic Club-Real Sociedad (MOVISTAR PLUS) (FHD) (199)",21:00-Athletic Club-Real Sociedad (MOVISTAR PLUS) (FHD) (199)
-http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
 #EXTINF:-1 group-title="02-11 (Miércoles) Copa del Rey Semifinales" tvg-name="21:00-Athletic Club-Real Sociedad (MOVISTAR PLUS) (FHD) (ed7)",21:00-Athletic Club-Real Sociedad (MOVISTAR PLUS) (FHD) (ed7)
 http://127.0.0.1:6878/ace/getstream?id=ed74406ccdb3c21941b919db6bffca7f1de015bb
 #EXTINF:-1 group-title="02-11 (Miércoles) Copa del Rey Semifinales" tvg-name="21:00-Athletic Club-Real Sociedad (MOVISTAR PLUS) (HD) (d23)",21:00-Athletic Club-Real Sociedad (MOVISTAR PLUS) (HD) (d23)
 http://127.0.0.1:6878/ace/getstream?id=d23497596720b47b096ec0f850d6d26a19d1a336
 #EXTINF:-1 group-title="02-11 (Miércoles) Copa del Rey Semifinales" tvg-name="21:00-Athletic Club-Real Sociedad (M+ LALIGA) (FHD) (8c3)",21:00-Athletic Club-Real Sociedad (M+ LALIGA) (FHD) (8c3)
 http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
-#EXTINF:-1 group-title="02-11 (Miércoles) Copa del Rey Semifinales" tvg-name="21:00-Athletic Club-Real Sociedad (M+ LALIGA) (FHD) (af4)",21:00-Athletic Club-Real Sociedad (M+ LALIGA) (FHD) (af4)
-http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
 #EXTINF:-1 group-title="02-11 (Miércoles) Copa del Rey Semifinales" tvg-name="21:00-Athletic Club-Real Sociedad (M+ LALIGA) (HD) (31c)",21:00-Athletic Club-Real Sociedad (M+ LALIGA) (HD) (31c)
 http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
+#EXTINF:-1 group-title="02-11 (Miércoles) Copa del Rey Semifinales" tvg-name="21:00-Athletic Club-Real Sociedad (M+ LALIGA) (FHD) (af4)",21:00-Athletic Club-Real Sociedad (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
 #EXTINF:-1 group-title="02-11 (Miércoles) Premier League" tvg-name="21:15-Sunderland-Liverpool (DAZN 1) (FHD) (b03)",21:15-Sunderland-Liverpool (DAZN 1) (FHD) (b03)
 http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
-#EXTINF:-1 group-title="02-11 (Miércoles) Premier League" tvg-name="21:15-Sunderland-Liverpool (DAZN 1) (HD) (d5b)",21:15-Sunderland-Liverpool (DAZN 1) (HD) (d5b)
-http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
 #EXTINF:-1 group-title="02-11 (Miércoles) Premier League" tvg-name="21:15-Sunderland-Liverpool (DAZN 1) (FHD) (691)",21:15-Sunderland-Liverpool (DAZN 1) (FHD) (691)
 http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
-#EXTINF:-1 group-title="02-11 (Miércoles) Premier League" tvg-name="21:15-Sunderland-Liverpool (DAZN 1) (FHD) (414)",21:15-Sunderland-Liverpool (DAZN 1) (FHD) (414)
-http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
-#EXTINF:-1 group-title="02-11 (Miércoles) Premier League" tvg-name="21:15-Sunderland-Liverpool (DAZN 1) (HD) (5b7)",21:15-Sunderland-Liverpool (DAZN 1) (HD) (5b7)
-http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
-#EXTINF:-1 group-title="02-11 (Miércoles) Premier League" tvg-name="21:15-Sunderland-Liverpool (DAZN 1) (FHD) (1e7)",21:15-Sunderland-Liverpool (DAZN 1) (FHD) (1e7)
-http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
 #EXTINF:-1 group-title="02-11 (Miércoles) Premier League" tvg-name="21:15-Sunderland-Liverpool (DAZN 1) (FHD) (363)",21:15-Sunderland-Liverpool (DAZN 1) (FHD) (363)
 http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
+#EXTINF:-1 group-title="02-11 (Miércoles) Premier League" tvg-name="21:15-Sunderland-Liverpool (DAZN 1) (FHD) (1e7)",21:15-Sunderland-Liverpool (DAZN 1) (FHD) (1e7)
+http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
+#EXTINF:-1 group-title="02-11 (Miércoles) Premier League" tvg-name="21:15-Sunderland-Liverpool (DAZN 1) (FHD) (414)",21:15-Sunderland-Liverpool (DAZN 1) (FHD) (414)
+http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
+#EXTINF:-1 group-title="02-11 (Miércoles) Premier League" tvg-name="21:15-Sunderland-Liverpool (DAZN 1) (HD) (d5b)",21:15-Sunderland-Liverpool (DAZN 1) (HD) (d5b)
+http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
+#EXTINF:-1 group-title="02-11 (Miércoles) Premier League" tvg-name="21:15-Sunderland-Liverpool (DAZN 1) (HD) (5b7)",21:15-Sunderland-Liverpool (DAZN 1) (HD) (5b7)
+http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
 #EXTINF:-1 group-title="02-11 (Miércoles) Premier League" tvg-name="21:15-Sunderland-Liverpool (DAZN 1) (FHD) (ddd)",21:15-Sunderland-Liverpool (DAZN 1) (FHD) (ddd)
 http://127.0.0.1:6878/ace/getstream?id=dddff67edfa7061f643ec5ae0be110169850363d
 #EXTINF:-1 group-title="02-11 (Miércoles) Premier League" tvg-name="21:15-Sunderland-Liverpool (DAZN 1) (HD) (a11)",21:15-Sunderland-Liverpool (DAZN 1) (HD) (a11)
 http://127.0.0.1:6878/ace/getstream?id=a116ce3ff95c41c60e987e2b1aa247007f707884
-#EXTINF:-1 group-title="02-12 (Jueves) Torneo de Rotterdam" tvg-name="11:00-3ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (3af)",11:00-3ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="02-12 (Jueves) Torneo de Rotterdam" tvg-name="11:00-3ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (FHD) (73d)",11:00-3ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="02-12 (Jueves) Torneo de Rotterdam" tvg-name="11:00-3ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (3af)",11:00-3ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="02-12 (Jueves) Torneo de Rotterdam" tvg-name="11:00-3ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (6b1)",11:00-3ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (6b1)
 http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
 #EXTINF:-1 group-title="02-12 (Jueves) Euroliga Liga Regular" tvg-name="18:30-Anadolu Efes Istanbul-Virtus Bologna (MOVISTAR DEPORTES 6) (HD) (8f9)",18:30-Anadolu Efes Istanbul-Virtus Bologna (MOVISTAR DEPORTES 6) (HD) (8f9)
 http://127.0.0.1:6878/ace/getstream?id=8f982a0d6e3196c12d0034142b65008321150f7c
-#EXTINF:-1 group-title="02-12 (Jueves) Torneo de Dallas" tvg-name="19:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)",19:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="02-12 (Jueves) Torneo de Dallas" tvg-name="19:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (369)",19:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="02-12 (Jueves) Torneo de Dallas" tvg-name="19:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)",19:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="02-12 (Jueves) Torneo de Dallas" tvg-name="19:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)",19:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="02-12 (Jueves) Torneo de Dallas" tvg-name="19:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (HD) (6e0)",19:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (HD) (6e0)
 http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
 #EXTINF:-1 group-title="02-12 (Jueves) Torneo de Dallas" tvg-name="19:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (c6a)",19:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (c6a)
 http://127.0.0.1:6878/ace/getstream?id=c6a824a81b36f6c3529826477caf2ad94b45776d
-#EXTINF:-1 group-title="02-12 (Jueves) Euroliga Liga Regular" tvg-name="20:15-Olympiacos Piraeus-Crvena Zvezda MTS Belgrade (MOVISTAR DEPORTES 5) (FHD) (591)",20:15-Olympiacos Piraeus-Crvena Zvezda MTS Belgrade (MOVISTAR DEPORTES 5) (FHD) (591)
-http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
 #EXTINF:-1 group-title="02-12 (Jueves) Euroliga Liga Regular" tvg-name="20:15-Olympiacos Piraeus-Crvena Zvezda MTS Belgrade (MOVISTAR DEPORTES 5) (FHD) (6dc)",20:15-Olympiacos Piraeus-Crvena Zvezda MTS Belgrade (MOVISTAR DEPORTES 5) (FHD) (6dc)
 http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
+#EXTINF:-1 group-title="02-12 (Jueves) Euroliga Liga Regular" tvg-name="20:15-Olympiacos Piraeus-Crvena Zvezda MTS Belgrade (MOVISTAR DEPORTES 5) (FHD) (591)",20:15-Olympiacos Piraeus-Crvena Zvezda MTS Belgrade (MOVISTAR DEPORTES 5) (FHD) (591)
+http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
 #EXTINF:-1 group-title="02-12 (Jueves) Euroliga Liga Regular" tvg-name="20:15-Olympiacos Piraeus-Crvena Zvezda MTS Belgrade (MOVISTAR DEPORTES 5) (HD) (323)",20:15-Olympiacos Piraeus-Crvena Zvezda MTS Belgrade (MOVISTAR DEPORTES 5) (HD) (323)
 http://127.0.0.1:6878/ace/getstream?id=3230cdca852a10325222e3c546e499e31d547a90
-#EXTINF:-1 group-title="02-12 (Jueves) Euroliga Liga Regular" tvg-name="20:30-Valencia Basket-ASVEL Lyon-Villeurbanne (MOVISTAR DEPORTES) (FHD) (5d3)",20:30-Valencia Basket-ASVEL Lyon-Villeurbanne (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="02-12 (Jueves) Euroliga Liga Regular" tvg-name="20:30-Valencia Basket-ASVEL Lyon-Villeurbanne (MOVISTAR DEPORTES) (FHD) (369)",20:30-Valencia Basket-ASVEL Lyon-Villeurbanne (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="02-12 (Jueves) Euroliga Liga Regular" tvg-name="20:30-Valencia Basket-ASVEL Lyon-Villeurbanne (MOVISTAR DEPORTES) (FHD) (5d3)",20:30-Valencia Basket-ASVEL Lyon-Villeurbanne (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="02-12 (Jueves) Euroliga Liga Regular" tvg-name="20:30-Valencia Basket-ASVEL Lyon-Villeurbanne (MOVISTAR DEPORTES) (FHD) (f82)",20:30-Valencia Basket-ASVEL Lyon-Villeurbanne (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="02-12 (Jueves) Euroliga Liga Regular" tvg-name="20:30-Valencia Basket-ASVEL Lyon-Villeurbanne (MOVISTAR DEPORTES) (HD) (6e0)",20:30-Valencia Basket-ASVEL Lyon-Villeurbanne (MOVISTAR DEPORTES) (HD) (6e0)
 http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
 #EXTINF:-1 group-title="02-12 (Jueves) Euroliga Liga Regular" tvg-name="20:30-Valencia Basket-ASVEL Lyon-Villeurbanne (MOVISTAR DEPORTES) (FHD) (c6a)",20:30-Valencia Basket-ASVEL Lyon-Villeurbanne (MOVISTAR DEPORTES) (FHD) (c6a)
 http://127.0.0.1:6878/ace/getstream?id=c6a824a81b36f6c3529826477caf2ad94b45776d
+#EXTINF:-1 group-title="02-12 (Jueves) Copa del Rey Semifinales" tvg-name="21:00-At. Madrid-FC Barcelona (MOVISTAR PLUS) (FHD) (199)",21:00-At. Madrid-FC Barcelona (MOVISTAR PLUS) (FHD) (199)
+http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
 #EXTINF:-1 group-title="02-12 (Jueves) Copa del Rey Semifinales" tvg-name="21:00-At. Madrid-FC Barcelona (MOVISTAR PLUS) (FHD) (b6f)",21:00-At. Madrid-FC Barcelona (MOVISTAR PLUS) (FHD) (b6f)
 http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
 #EXTINF:-1 group-title="02-12 (Jueves) Copa del Rey Semifinales" tvg-name="21:00-At. Madrid-FC Barcelona (MOVISTAR PLUS) (FHD) (586)",21:00-At. Madrid-FC Barcelona (MOVISTAR PLUS) (FHD) (586)
 http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
-#EXTINF:-1 group-title="02-12 (Jueves) Copa del Rey Semifinales" tvg-name="21:00-At. Madrid-FC Barcelona (MOVISTAR PLUS) (FHD) (199)",21:00-At. Madrid-FC Barcelona (MOVISTAR PLUS) (FHD) (199)
-http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
 #EXTINF:-1 group-title="02-12 (Jueves) Copa del Rey Semifinales" tvg-name="21:00-At. Madrid-FC Barcelona (MOVISTAR PLUS) (FHD) (ed7)",21:00-At. Madrid-FC Barcelona (MOVISTAR PLUS) (FHD) (ed7)
 http://127.0.0.1:6878/ace/getstream?id=ed74406ccdb3c21941b919db6bffca7f1de015bb
 #EXTINF:-1 group-title="02-12 (Jueves) Copa del Rey Semifinales" tvg-name="21:00-At. Madrid-FC Barcelona (MOVISTAR PLUS) (HD) (d23)",21:00-At. Madrid-FC Barcelona (MOVISTAR PLUS) (HD) (d23)
 http://127.0.0.1:6878/ace/getstream?id=d23497596720b47b096ec0f850d6d26a19d1a336
 #EXTINF:-1 group-title="02-12 (Jueves) Copa del Rey Semifinales" tvg-name="21:00-At. Madrid-FC Barcelona (M+ LALIGA) (FHD) (8c3)",21:00-At. Madrid-FC Barcelona (M+ LALIGA) (FHD) (8c3)
 http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
-#EXTINF:-1 group-title="02-12 (Jueves) Copa del Rey Semifinales" tvg-name="21:00-At. Madrid-FC Barcelona (M+ LALIGA) (FHD) (af4)",21:00-At. Madrid-FC Barcelona (M+ LALIGA) (FHD) (af4)
-http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
 #EXTINF:-1 group-title="02-12 (Jueves) Copa del Rey Semifinales" tvg-name="21:00-At. Madrid-FC Barcelona (M+ LALIGA) (HD) (31c)",21:00-At. Madrid-FC Barcelona (M+ LALIGA) (HD) (31c)
 http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
+#EXTINF:-1 group-title="02-12 (Jueves) Copa del Rey Semifinales" tvg-name="21:00-At. Madrid-FC Barcelona (M+ LALIGA) (FHD) (af4)",21:00-At. Madrid-FC Barcelona (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
 #EXTINF:-1 group-title="02-12 (Jueves) Premier League" tvg-name="21:00-Brentford-Arsenal (DAZN 1) (FHD) (b03)",21:00-Brentford-Arsenal (DAZN 1) (FHD) (b03)
 http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
-#EXTINF:-1 group-title="02-12 (Jueves) Premier League" tvg-name="21:00-Brentford-Arsenal (DAZN 1) (HD) (d5b)",21:00-Brentford-Arsenal (DAZN 1) (HD) (d5b)
-http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
 #EXTINF:-1 group-title="02-12 (Jueves) Premier League" tvg-name="21:00-Brentford-Arsenal (DAZN 1) (FHD) (691)",21:00-Brentford-Arsenal (DAZN 1) (FHD) (691)
 http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
-#EXTINF:-1 group-title="02-12 (Jueves) Premier League" tvg-name="21:00-Brentford-Arsenal (DAZN 1) (FHD) (414)",21:00-Brentford-Arsenal (DAZN 1) (FHD) (414)
-http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
-#EXTINF:-1 group-title="02-12 (Jueves) Premier League" tvg-name="21:00-Brentford-Arsenal (DAZN 1) (HD) (5b7)",21:00-Brentford-Arsenal (DAZN 1) (HD) (5b7)
-http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
-#EXTINF:-1 group-title="02-12 (Jueves) Premier League" tvg-name="21:00-Brentford-Arsenal (DAZN 1) (FHD) (1e7)",21:00-Brentford-Arsenal (DAZN 1) (FHD) (1e7)
-http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
 #EXTINF:-1 group-title="02-12 (Jueves) Premier League" tvg-name="21:00-Brentford-Arsenal (DAZN 1) (FHD) (363)",21:00-Brentford-Arsenal (DAZN 1) (FHD) (363)
 http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
+#EXTINF:-1 group-title="02-12 (Jueves) Premier League" tvg-name="21:00-Brentford-Arsenal (DAZN 1) (FHD) (1e7)",21:00-Brentford-Arsenal (DAZN 1) (FHD) (1e7)
+http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
+#EXTINF:-1 group-title="02-12 (Jueves) Premier League" tvg-name="21:00-Brentford-Arsenal (DAZN 1) (FHD) (414)",21:00-Brentford-Arsenal (DAZN 1) (FHD) (414)
+http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
+#EXTINF:-1 group-title="02-12 (Jueves) Premier League" tvg-name="21:00-Brentford-Arsenal (DAZN 1) (HD) (d5b)",21:00-Brentford-Arsenal (DAZN 1) (HD) (d5b)
+http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
+#EXTINF:-1 group-title="02-12 (Jueves) Premier League" tvg-name="21:00-Brentford-Arsenal (DAZN 1) (HD) (5b7)",21:00-Brentford-Arsenal (DAZN 1) (HD) (5b7)
+http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
 #EXTINF:-1 group-title="02-12 (Jueves) Premier League" tvg-name="21:00-Brentford-Arsenal (DAZN 1) (FHD) (ddd)",21:00-Brentford-Arsenal (DAZN 1) (FHD) (ddd)
 http://127.0.0.1:6878/ace/getstream?id=dddff67edfa7061f643ec5ae0be110169850363d
 #EXTINF:-1 group-title="02-12 (Jueves) Premier League" tvg-name="21:00-Brentford-Arsenal (DAZN 1) (HD) (a11)",21:00-Brentford-Arsenal (DAZN 1) (HD) (a11)
 http://127.0.0.1:6878/ace/getstream?id=a116ce3ff95c41c60e987e2b1aa247007f707884
-#EXTINF:-1 group-title="02-12 (Jueves) Serie A Brasil" tvg-name="23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (FHD) (afb)",23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
-#EXTINF:-1 group-title="02-12 (Jueves) Serie A Brasil" tvg-name="23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (FHD) (afb)",23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
 #EXTINF:-1 group-title="02-12 (Jueves) Serie A Brasil" tvg-name="23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (HD) (e57)",23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (HD) (e57)
 http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="02-12 (Jueves) Serie A Brasil" tvg-name="23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (UHD) (152)",23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (UHD) (152)
-http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="02-12 (Jueves) Serie A Brasil" tvg-name="23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (HD) (b02)",23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="02-12 (Jueves) Serie A Brasil" tvg-name="23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (HD) (2b5)",23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (HD) (2b5)
-http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
 #EXTINF:-1 group-title="02-12 (Jueves) Serie A Brasil" tvg-name="23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (FHD) (778)",23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (FHD) (778)
 http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="02-12 (Jueves) Serie A Brasil" tvg-name="23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (HD) (97d)",23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (HD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="02-12 (Jueves) Serie A Brasil" tvg-name="23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (HD) (b02)",23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
 #EXTINF:-1 group-title="02-12 (Jueves) Serie A Brasil" tvg-name="23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (FHD) (0f7)",23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (FHD) (0f7)
 http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
+#EXTINF:-1 group-title="02-12 (Jueves) Serie A Brasil" tvg-name="23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (FHD) (afb)",23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="02-12 (Jueves) Serie A Brasil" tvg-name="23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (HD) (97d)",23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (HD) (97d)
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="02-12 (Jueves) Serie A Brasil" tvg-name="23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (HD) (2b5)",23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (HD) (2b5)
+http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
+#EXTINF:-1 group-title="02-12 (Jueves) Serie A Brasil" tvg-name="23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (UHD) (152)",23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (UHD) (152)
+http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
+#EXTINF:-1 group-title="02-12 (Jueves) Serie A Brasil" tvg-name="23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (FHD) (afb)",23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="02-12 (Jueves) Serie A Brasil" tvg-name="23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (FHD) (91b)",23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (FHD) (91b)
+http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
 #EXTINF:-1 group-title="02-12 (Jueves) Serie A Brasil" tvg-name="23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (HD) (63e)",23:30-Fluminense-Botafogo (LIGA DE CAMPEONES) (HD) (63e)
 http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
