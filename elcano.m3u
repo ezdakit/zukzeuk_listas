@@ -27,13 +27,13 @@ http://127.0.0.1:6878/ace/getstream?id=f5908690485ae2facecf3074446ba4315f07a193
 #EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 720p *
 http://127.0.0.1:6878/ace/getstream?id=27d11bbeb3026231d52de16b1fac48da7a099247
 #EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 1080p *
-http://127.0.0.1:6878/ace/getstream?id=895d08633bb22c2573281655cf3ca44de476cc73
-#EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 1080p *
 http://127.0.0.1:6878/ace/getstream?id=d719181097d256073844390b3e094fbcb1bceaa4
-#EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 1080p **
-http://127.0.0.1:6878/ace/getstream?id=bcf9dc38f92e90a71b87bd54b3bac91b76d09a69
+#EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 1080p *
+http://127.0.0.1:6878/ace/getstream?id=895d08633bb22c2573281655cf3ca44de476cc73
 #EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 1080p **
 http://127.0.0.1:6878/ace/getstream?id=b08e158ea3f5c72084f5ff8e3c30ca2e4d1ff6d1
+#EXTINF:-1 tvg-id="DAZN F1 HD" tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" group-title="FORMULA 1",DAZN F1 1080p **
+http://127.0.0.1:6878/ace/getstream?id=bcf9dc38f92e90a71b87bd54b3bac91b76d09a69
 #EXTINF:-1 tvg-id="DAZN LaLiga HD" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png" group-title="LA LIGA",DAZN LaLiga 1080p **
 http://127.0.0.1:6878/ace/getstream?id=e2b8a4aba2f4ea3dd68992fcdb65c9e62d910b05
 #EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" group-title="LA LIGA",M+ LaLiga 720p *
@@ -42,8 +42,6 @@ http://127.0.0.1:6878/ace/getstream?id=f863873de9f7b2996dde19a0657dd89835af3007
 http://127.0.0.1:6878/ace/getstream?id=0febfb5cac3384f487d55c559bbfc877db2d0357
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKBCa6SydXxbOh3qbRLTAWW6FOnRo5nXa9kw&s" group-title="LA LIGA",SKY Sports LaLiga 1080p *
 http://127.0.0.1:6878/ace/getstream?id=d58f619d860d29cd47720055b9bb842199971da1
-#EXTINF:-1 tvg-id="M+ Liga de Campeones HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 720p *
-http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
 #EXTINF:-1 tvg-id="M+ Liga de Campeones HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 720p **
 http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
 #EXTINF:-1 tvg-id="M+ Liga de Campeones HD" tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png" group-title="LIGA DE CAMPEONES",M+ Liga de Campeones 1080p *
@@ -96,6 +94,10 @@ http://127.0.0.1:6878/ace/getstream?id=ad5ca6e24f87f47a9c3c5bc10c7e8e5af46767fc
 http://127.0.0.1:6878/ace/getstream?id=476b6f6583517bd75c15c4663bf45fab7c8da9cf
 #EXTINF:-1 tvg-id="La 1 HD" tvg-logo="https://i.ibb.co/Vf2GT70/la1.png" group-title="TDT",La 1 TVE 720p *
 http://127.0.0.1:6878/ace/getstream?id=02622fa2fab63847d88dc14fd9fa5c2fc35de8a8
+#EXTINF:-1 tvg-logo="https://www.acb.com/docs/descarga/logos/liga_endesa/JPG/ligaendesa_vertical_positivo.jpg" group-title="DEPORTES",ACB EVENTO 01 720p *
+http://127.0.0.1:6878/ace/getstream?id=8faa686a99697b99261346e479ead172b1d9d5d2
+#EXTINF:-1 tvg-logo="https://www.acb.com/docs/descarga/logos/liga_endesa/JPG/ligaendesa_vertical_positivo.jpg" group-title="DEPORTES",ACB EVENTO 01 720p **
+http://127.0.0.1:6878/ace/getstream?id=23bee556c002d0726c1f0cac98a1901cff0a9239
 #EXTINF:-1 tvg-logo="https://img.3cat.cat/multimedia/jpg/1/5/1697802708951.jpg" group-title="DEPORTES",Esport3 720p *
 http://127.0.0.1:6878/ace/getstream?id=ff03650163b9456d59ed5f262aa3ab2e19831e6d
 #EXTINF:-1 tvg-logo="https://img.3cat.cat/multimedia/jpg/1/5/1697802708951.jpg" group-title="DEPORTES",Esport3 1080p *
