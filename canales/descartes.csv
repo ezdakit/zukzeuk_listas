@@ -1,6 +1,4 @@
 ﻿dial_M,nombre_canal_descartado,evento_descartado,motivo
-?,Tennis TV YouTube,00:00-V. Kopriva-D. Svrcina,no_dial_detected
-?,Tennis TV YouTube,00:00-T. Svajda-M. McDonald,no_dial_detected
 ?,CONCACAF YouTube,00:00-Belice-Saint-Martin,no_dial_detected
 ?,CONCACAF YouTube,00:00-Bermudas-Costa Rica,no_dial_detected
 ?,LPF Play,00:30-CA Talleres-Dep. Armenio,no_dial_detected
@@ -17,7 +15,9 @@
 ?,NBA League Pass,01:00-Orlando Magic-Washington Wizards,no_dial_detected
 ?,NBA League Pass,01:00-Cleveland Cavaliers-Detroit Pistons,no_dial_detected
 ?,NBA League Pass,01:00-Charlotte Hornets-Dallas Mavericks,no_dial_detected
+?,Tennis TV YouTube,01:05-V. Kopriva-D. Svrcina,no_dial_detected
 ?,Fanatiz (Ver en directo),01:15-Atlético Tucumán-Racing Avellaneda,no_dial_detected
+?,Tennis TV YouTube,01:30-T. Svajda-M. McDonald,no_dial_detected
 ?,NBA League Pass,01:30-Miami Heat-Brooklyn Nets,no_dial_detected
 ?,NBA League Pass,01:30-Toronto Raptors-New York Knicks,no_dial_detected
 ?,DAZN (Ver en directo),02:00-Winnipeg Jets-Chicago Blackhawks,no_dial_detected
@@ -49,10 +49,13 @@
 ?,Premier Padel YouTube,1ª Ronda Premier Padel Tour,no_dial_detected
 ?,OneFootball,12:00-Vietnam-India,no_dial_detected
 ?,AFC Asian Cup YouTube,12:00-Vietnam-India,no_dial_detected
+?,Real Betis Balompié YouTube,12:00-Real Betis Academy-Cádiz CF Academy,no_dial_detected
+?,Real Betis TV,12:00-Real Betis Academy-Cádiz CF Academy,no_dial_detected
 ?,HBO MAX,UCI ProSeries Albenga › Laigueglia (193 km),no_dial_detected
 ?,DAZN (Ver en directo),UCI ProSeries Albenga › Laigueglia (193 km),no_dial_detected
 ?,Eurosport 1,UCI ProSeries Albenga › Laigueglia (193 km),no_dial_detected
 ?,Alhaurín TV,16:30-CD Alhaurino-Melilla B,no_dial_detected
+?,Web Directo,16:30-CD Alhaurino-Melilla B,no_dial_detected
 ?,EHF TV,17:00-Turquía-República Checa,no_dial_detected
 ?,EHF TV,18:00-Eslovenia-Alemania,no_dial_detected
 ?,EHF TV,18:00-Serbia-Suecia,no_dial_detected
@@ -81,11 +84,11 @@
 ?,OneFootball PPV,20:00-Frosinone-Pescara,no_dial_detected
 ?,OneFootball PPV,20:00-Palermo SSD-Mantova 1911,no_dial_detected
 ?,EHF TV,20:00-Islas Feroe-Portugal,no_dial_detected
+?,FIBA YouTube,20:00-Villeneuve d'Ascq LM-Athinaikos,no_dial_detected
+?,Canal Blau YouTube,20:00-Vilanova Geltrú-Peralada,no_dial_detected
 ?,ATP Tennis TV,1ª Ronda ATP Masters 1000,no_dial_detected
 ?,WTA TV,1ª Ronda WTA 1000,no_dial_detected
 ?,Tennis Channel - Orange TV (131),1ª Ronda WTA 1000,no_dial_detected
-?,FIBA YouTube,20:00-Villeneuve d'Ascq LM-Athinaikos,no_dial_detected
-?,Canal Blau YouTube,20:00-Vilanova Geltrú-Peralada,no_dial_detected
 ?,EHF TV,20:10-Bélgica-Macedonia Norte,no_dial_detected
 ?,DAZN (Ver en directo),20:30-Manchester City-Nottingham Forest,no_dial_detected
 ?,M+ Vamos (8 y 50),20:30-Manchester City-Nottingham Forest,no_dial_detected
@@ -109,6 +112,7 @@
 ?,LPF Play,21:00-UAI Urquiza-Dock Sud,no_dial_detected
 ?,LPF Play,21:00-CSD Liniers-Deportivo Camioneros,no_dial_detected
 ?,CONCACAF YouTube,21:00-Costa Rica-Trinidad y Tobago,no_dial_detected
+?,DAZN App Gratis (Ver gratis),21:00-Sambenedettese-Ascoli,no_dial_detected
 ?,Orange Fútbol 1 (107),21:00-Real Sociedad-Athletic Club,no_dial_detected
 ?,La 1 TVE,21:00-Real Sociedad-Athletic Club,no_dial_detected
 ?,RTVE Play,21:00-Real Sociedad-Athletic Club,no_dial_detected
@@ -142,6 +146,7 @@
 ?,Movistar+ Lite,01:00-Lanús-Boca Juniors,no_dial_detected
 ?,NBA League Pass,01:30-Philadelphia 76ers-Utah Jazz,no_dial_detected
 ?,NBA League Pass,01:30-Boston Celtics-Charlotte Hornets,no_dial_detected
+?,RCN Nuestra Tele,02:00-Fortaleza-Jaguares FC,no_dial_detected
 ?,CONCACAF YouTube,02:00-Canadá-Nicaragua,no_dial_detected
 ?,CONCACAF YouTube,02:00-Honduras-Trinidad y Tobago,no_dial_detected
 ?,DAZN App Gratis (Ver gratis),02:00-UNAN Managua-Diriangén FC,no_dial_detected
@@ -221,6 +226,7 @@
 ?,LaLiga+ Plus,02:00-Quimsa-Ferro Básquet,no_dial_detected
 ?,NBA League Pass,02:00-San Antonio Spurs-Detroit Pistons,no_dial_detected
 ?,NBA League Pass,02:00-Minnesota Timberwolves-Toronto Raptors,no_dial_detected
+?,RCN Nuestra Tele,02:20-Junior-Alianza,no_dial_detected
 ?,DAZN (Ver en directo),G.P. Australia (Albert Park) Libres 1,no_dial_detected
 69,DAZN F1 (M69 O104),G.P. Australia (Albert Park) Libres 1,mapping_not_found_for: DAZN F1
 ?,OneFootball,03:00-Bangladesh-Corea del Norte,no_dial_detected
@@ -256,6 +262,8 @@
 ?,Red Bull TV,1/4 de final femenino Premier Padel Tour,no_dial_detected
 53,M+ Vamos 3 (53),1/4 de final femenino Premier Padel Tour,mapping_not_found_for: VAMOS 3
 ?,HBO MAX,Jornada 1 PGA Tour,no_dial_detected
+?,Liga U YouTube,16:00-Joventut Badalona B-San Pablo Burgos B,no_dial_detected
+?,Liga U YouTube,16:15-BAXI Manresa B-Gran Canaria B,no_dial_detected
 ?,Red Bull TV,1/4 de final femenino Premier Padel Tour,no_dial_detected
 53,M+ Vamos 3 (53),1/4 de final femenino Premier Padel Tour,mapping_not_found_for: VAMOS 3
 ?,DAZN App Gratis (Ver gratis),18:15-Alemania-Bélgica,no_dial_detected
@@ -274,8 +282,6 @@
 ?,Baloncesto España YouTube,19:30-CAB Estepona-Movistar Estudiantes,no_dial_detected
 ?,FEB TV,19:30-CAB Estepona-Movistar Estudiantes,no_dial_detected
 ?,LaLiga+ Plus,20:00-Osasuna Magna-Manzanares FS,no_dial_detected
-?,ATP Tennis TV,2ª Ronda ATP Masters 1000,no_dial_detected
-?,Movistar+,2ª Ronda ATP Masters 1000,no_dial_detected
 ?,Baloncesto España YouTube,20:00-Spar Girona-Casademont Zaragoza,no_dial_detected
 ?,FEB TV,20:00-Spar Girona-Casademont Zaragoza,no_dial_detected
 ?,Aragón Deporte,20:00-Spar Girona-Casademont Zaragoza,no_dial_detected
@@ -286,12 +292,14 @@
 ?,FEB TV,20:00-Spar Gran Canaria-IDK Euskotren,no_dial_detected
 ?,Baloncesto España YouTube,20:00-Lointek Gernika-Valencia Basket,no_dial_detected
 ?,FEB TV,20:00-Lointek Gernika-Valencia Basket,no_dial_detected
-?,WTA TV,2ª Ronda WTA 1000,no_dial_detected
-?,Tennis Channel - Orange TV (131),2ª Ronda WTA 1000,no_dial_detected
 195,M+ Deportes 8 (M195),Phoenix Raceway Clasificación,mapping_not_found_for: MOVISTAR DEPORTES 8
 ?,CONCACAF YouTube,20:00-Anguila-República Dominicana,no_dial_detected
 ?,OneFootball,20:00-Al Ahli-Al-Ittihad Jeddah Club,no_dial_detected
 304,M+ #Vamos Bar (304),20:00-Al Ahli-Al-Ittihad Jeddah Club,mapping_not_found_for: #VAMOS BAR
+?,ATP Tennis TV,2ª Ronda ATP Masters 1000,no_dial_detected
+?,Movistar+,2ª Ronda ATP Masters 1000,no_dial_detected
+?,WTA TV,2ª Ronda WTA 1000,no_dial_detected
+?,Tennis Channel - Orange TV (131),2ª Ronda WTA 1000,no_dial_detected
 ?,Baloncesto España YouTube,20:15-BAXI Ferrol-Perfumerías Avenida,no_dial_detected
 ?,FEB TV,20:15-BAXI Ferrol-Perfumerías Avenida,no_dial_detected
 ?,Canal por confirmar,20:30-Jimbee Cartagena FS-Kairat Almaty,no_dial_detected
@@ -307,6 +315,8 @@
 ?,GolStadium (acceder),20:30-Cádiz CF-Real Zaragoza,no_dial_detected
 ?,Aragón TV,20:30-Cádiz CF-Real Zaragoza,no_dial_detected
 ?,LaLiga TV M2,20:30-Cádiz CF-Real Zaragoza,no_dial_detected
+?,Liga U YouTube,20:30-Casademont Zaragoza B-Fundación CB Canarias,no_dial_detected
+?,Liga U YouTube,20:30-UCAM Murcia CB B-Stellantis&You Granada,no_dial_detected
 ?,LaLiga+ Plus,20:30-Bada Huesca-Bidasoa Irún,no_dial_detected
 ?,Aragón Deporte,20:30-Bada Huesca-Bidasoa Irún,no_dial_detected
 ?,DAZN (Ver en directo),20:30-FC Bayern-Borussia M'gladbach,no_dial_detected
@@ -329,4 +339,5 @@
 ?,LaLiga+ Plus,21:15-Betis Deportivo-Sevilla At.,no_dial_detected
 ?,TV FootballClub (Acceder),21:15-Betis Deportivo-Sevilla At.,no_dial_detected
 52,Primera Federación (M52 O125),21:15-Betis Deportivo-Sevilla At.,mapping_not_found_for: PRIMERA FEDERACIÓN
+?,Fanatiz (Ver en directo),21:30-Atlético Grau-FC Cajamarca,no_dial_detected
 ?,Fanatiz (Ver en directo),23:45-Vélez Sarsfield-Newell's Old Boys,no_dial_detected
