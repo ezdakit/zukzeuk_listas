@@ -1,24 +1,24 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (HD) (e57)",14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (FHD) (97d)",14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (FHD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (FHD) (afb)",14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
 #EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (HD) (b02)",14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (HD) (b02)
 http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (FHD) (afb)",14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
 #EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (FHD) (778)",14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (FHD) (778)
 http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (FHD) (0f7)",14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
-#EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (UHD) (152)",14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (UHD) (152)
-http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
 #EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (HD) (2b5)",14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (HD) (2b5)
 http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
+#EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (FHD) (afb)",14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (FHD) (afb)",14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (UHD) (152)",14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (UHD) (152)
+http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
+#EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (FHD) (97d)",14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (FHD) (97d)
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (HD) (e57)",14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (FHD) (0f7)",14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
 #EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (HD) (63e)",14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (HD) (63e)
 http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
 #EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (FHD) (91b)",14:00-Real Madrid Academy-Sporting CP Academy (LIGA DE CAMPEONES) (FHD) (91b)
@@ -27,14 +27,14 @@ http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
 http://127.0.0.1:6878/ace/getstream?id=43249349740032bee068b5bbff7b078f642812db
 #EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="16:00-Inter Milan Academy-Benfica Academy (LIGA DE CAMPEONES 3) (FHD) (1de)",16:00-Inter Milan Academy-Benfica Academy (LIGA DE CAMPEONES 3) (FHD) (1de)
 http://127.0.0.1:6878/ace/getstream?id=1dece791d28be6a5af78537ac4864ec01fa0a6d8
-#EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="16:00-Inter Milan Academy-Benfica Academy (LIGA DE CAMPEONES 3) (FHD) (17b)",16:00-Inter Milan Academy-Benfica Academy (LIGA DE CAMPEONES 3) (FHD) (17b)
-http://127.0.0.1:6878/ace/getstream?id=17b8bc4bf8e29547b0071c742e3d7da3bcbc484d
-#EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="16:00-Inter Milan Academy-Benfica Academy (LIGA DE CAMPEONES 3) (FHD) (079)",16:00-Inter Milan Academy-Benfica Academy (LIGA DE CAMPEONES 3) (FHD) (079)
-http://127.0.0.1:6878/ace/getstream?id=07976f79d17a439d7aff46cf0d4cfdf80311caf5
 #EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="16:00-Inter Milan Academy-Benfica Academy (LIGA DE CAMPEONES 3) (FHD) (66b)",16:00-Inter Milan Academy-Benfica Academy (LIGA DE CAMPEONES 3) (FHD) (66b)
 http://127.0.0.1:6878/ace/getstream?id=66b373c0da20ac615996dbd1c340087f50a9a39e
+#EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="16:00-Inter Milan Academy-Benfica Academy (LIGA DE CAMPEONES 3) (FHD) (17b)",16:00-Inter Milan Academy-Benfica Academy (LIGA DE CAMPEONES 3) (FHD) (17b)
+http://127.0.0.1:6878/ace/getstream?id=17b8bc4bf8e29547b0071c742e3d7da3bcbc484d
 #EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="16:00-Inter Milan Academy-Benfica Academy (LIGA DE CAMPEONES 3) (HD) (90f)",16:00-Inter Milan Academy-Benfica Academy (LIGA DE CAMPEONES 3) (HD) (90f)
 http://127.0.0.1:6878/ace/getstream?id=90f7941c6bf7ca4b18084a1dca7bc15b9b179373
+#EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="16:00-Inter Milan Academy-Benfica Academy (LIGA DE CAMPEONES 3) (FHD) (079)",16:00-Inter Milan Academy-Benfica Academy (LIGA DE CAMPEONES 3) (FHD) (079)
+http://127.0.0.1:6878/ace/getstream?id=07976f79d17a439d7aff46cf0d4cfdf80311caf5
 #EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="16:00-Inter Milan Academy-Benfica Academy (LIGA DE CAMPEONES 3) (HD) (5b7)",16:00-Inter Milan Academy-Benfica Academy (LIGA DE CAMPEONES 3) (HD) (5b7)
 http://127.0.0.1:6878/ace/getstream?id=5b7f54b12e0f96ceba1299f44eac4b0f97403e4e
 #EXTINF:-1 group-title="03-18 (Miércoles) UEFA Youth League 1/4 de Final" tvg-name="16:00-Inter Milan Academy-Benfica Academy (LIGA DE CAMPEONES 3) (HD) (cfc)",16:00-Inter Milan Academy-Benfica Academy (LIGA DE CAMPEONES 3) (HD) (cfc)
@@ -51,24 +51,24 @@ http://127.0.0.1:6878/ace/getstream?id=498c56bd00f535e440c392de5af992421a31355c
 http://127.0.0.1:6878/ace/getstream?id=4fc6d0331830ad8743abab2fe2473b63bdfbc49f
 #EXTINF:-1 group-title="03-18 (Miércoles) Europa League 1/8 de final" tvg-name="16:30-SC Braga-Ferencvaros (LIGA DE CAMPEONES 2) (FHD) (815)",16:30-SC Braga-Ferencvaros (LIGA DE CAMPEONES 2) (FHD) (815)
 http://127.0.0.1:6878/ace/getstream?id=8156912ae14f6174a19c8a4efcf36a06e847f632
-#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (HD) (e57)",18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (FHD) (97d)",18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (FHD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (FHD) (afb)",18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
 #EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (HD) (b02)",18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (HD) (b02)
 http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (FHD) (afb)",18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
 #EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (FHD) (778)",18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (FHD) (778)
 http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (FHD) (0f7)",18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
-#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (UHD) (152)",18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (UHD) (152)
-http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
 #EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (HD) (2b5)",18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (HD) (2b5)
 http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
+#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (FHD) (afb)",18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (FHD) (afb)",18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (UHD) (152)",18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (UHD) (152)
+http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
+#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (FHD) (97d)",18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (FHD) (97d)
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (HD) (e57)",18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (FHD) (0f7)",18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
 #EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (HD) (63e)",18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (HD) (63e)
 http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
 #EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (FHD) (91b)",18:45-FC Barcelona-Newcastle (LIGA DE CAMPEONES) (FHD) (91b)
@@ -81,10 +81,10 @@ http://127.0.0.1:6878/ace/getstream?id=6fbab1d8d6bf93c4bc7552714aa3bb54ebf7b661
 http://127.0.0.1:6878/ace/getstream?id=77998f8161373611ff6b348e7eda5b4e97d3ec29
 #EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-FC Bayern-Atalanta (LIGA DE CAMPEONES 4) (HD) (5ba)",21:00-FC Bayern-Atalanta (LIGA DE CAMPEONES 4) (HD) (5ba)
 http://127.0.0.1:6878/ace/getstream?id=5ba9368d80d2f87ac1c6d71df4e7e6e26e6911f2
-#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-FC Bayern-Atalanta (LIGA DE CAMPEONES 4) (HD) (64f)",21:00-FC Bayern-Atalanta (LIGA DE CAMPEONES 4) (HD) (64f)
-http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-FC Bayern-Atalanta (LIGA DE CAMPEONES 4) (HD) (e9f)",21:00-FC Bayern-Atalanta (LIGA DE CAMPEONES 4) (HD) (e9f)
 http://127.0.0.1:6878/ace/getstream?id=e9f4493d2d851f4636720f639113e05b4a21a74c
+#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-FC Bayern-Atalanta (LIGA DE CAMPEONES 4) (HD) (64f)",21:00-FC Bayern-Atalanta (LIGA DE CAMPEONES 4) (HD) (64f)
+http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-FC Bayern-Atalanta (LIGA DE CAMPEONES 4) (FHD) (91a)",21:00-FC Bayern-Atalanta (LIGA DE CAMPEONES 4) (FHD) (91a)
 http://127.0.0.1:6878/ace/getstream?id=91ac4585368992720ec17ffa5b4389368c6dcac1
 #EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-FC Bayern-Atalanta (LIGA DE CAMPEONES 5) (FHD) (cb6)",21:00-FC Bayern-Atalanta (LIGA DE CAMPEONES 5) (FHD) (cb6)
@@ -95,14 +95,14 @@ http://127.0.0.1:6878/ace/getstream?id=5620c0ce3dcbf14a6375cb2c2d681207f45eb97d
 http://127.0.0.1:6878/ace/getstream?id=5bed693c6a22de55f1061c509bba5e3aeb2ea2aa
 #EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 3) (FHD) (1de)",21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 3) (FHD) (1de)
 http://127.0.0.1:6878/ace/getstream?id=1dece791d28be6a5af78537ac4864ec01fa0a6d8
-#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 3) (FHD) (17b)",21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 3) (FHD) (17b)
-http://127.0.0.1:6878/ace/getstream?id=17b8bc4bf8e29547b0071c742e3d7da3bcbc484d
-#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 3) (FHD) (079)",21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 3) (FHD) (079)
-http://127.0.0.1:6878/ace/getstream?id=07976f79d17a439d7aff46cf0d4cfdf80311caf5
 #EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 3) (FHD) (66b)",21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 3) (FHD) (66b)
 http://127.0.0.1:6878/ace/getstream?id=66b373c0da20ac615996dbd1c340087f50a9a39e
+#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 3) (FHD) (17b)",21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 3) (FHD) (17b)
+http://127.0.0.1:6878/ace/getstream?id=17b8bc4bf8e29547b0071c742e3d7da3bcbc484d
 #EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 3) (HD) (90f)",21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 3) (HD) (90f)
 http://127.0.0.1:6878/ace/getstream?id=90f7941c6bf7ca4b18084a1dca7bc15b9b179373
+#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 3) (FHD) (079)",21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 3) (FHD) (079)
+http://127.0.0.1:6878/ace/getstream?id=07976f79d17a439d7aff46cf0d4cfdf80311caf5
 #EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 3) (HD) (5b7)",21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 3) (HD) (5b7)
 http://127.0.0.1:6878/ace/getstream?id=5b7f54b12e0f96ceba1299f44eac4b0f97403e4e
 #EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 3) (HD) (cfc)",21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 3) (HD) (cfc)
@@ -113,30 +113,30 @@ http://127.0.0.1:6878/ace/getstream?id=6fbab1d8d6bf93c4bc7552714aa3bb54ebf7b661
 http://127.0.0.1:6878/ace/getstream?id=77998f8161373611ff6b348e7eda5b4e97d3ec29
 #EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 4) (HD) (5ba)",21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 4) (HD) (5ba)
 http://127.0.0.1:6878/ace/getstream?id=5ba9368d80d2f87ac1c6d71df4e7e6e26e6911f2
-#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 4) (HD) (64f)",21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 4) (HD) (64f)
-http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 4) (HD) (e9f)",21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 4) (HD) (e9f)
 http://127.0.0.1:6878/ace/getstream?id=e9f4493d2d851f4636720f639113e05b4a21a74c
+#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 4) (HD) (64f)",21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 4) (HD) (64f)
+http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 4) (FHD) (91a)",21:00-Liverpool-Galatasaray (LIGA DE CAMPEONES 4) (FHD) (91a)
 http://127.0.0.1:6878/ace/getstream?id=91ac4585368992720ec17ffa5b4389368c6dcac1
-#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (HD) (e57)",21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (FHD) (97d)",21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (FHD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (FHD) (afb)",21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
 #EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (HD) (b02)",21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (HD) (b02)
 http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (FHD) (afb)",21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
 #EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (FHD) (778)",21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (FHD) (778)
 http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (FHD) (0f7)",21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
-#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (UHD) (152)",21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (UHD) (152)
-http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
 #EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (HD) (2b5)",21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (HD) (2b5)
 http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
+#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (FHD) (afb)",21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (FHD) (afb)",21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (UHD) (152)",21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (UHD) (152)
+http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
+#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (FHD) (97d)",21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (FHD) (97d)
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (HD) (e57)",21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (FHD) (0f7)",21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
 #EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (HD) (63e)",21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (HD) (63e)
 http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
 #EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (FHD) (91b)",21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES) (FHD) (91b)
@@ -149,10 +149,10 @@ http://127.0.0.1:6878/ace/getstream?id=6fbab1d8d6bf93c4bc7552714aa3bb54ebf7b661
 http://127.0.0.1:6878/ace/getstream?id=77998f8161373611ff6b348e7eda5b4e97d3ec29
 #EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES 4) (HD) (5ba)",21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES 4) (HD) (5ba)
 http://127.0.0.1:6878/ace/getstream?id=5ba9368d80d2f87ac1c6d71df4e7e6e26e6911f2
-#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES 4) (HD) (64f)",21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES 4) (HD) (64f)
-http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES 4) (HD) (e9f)",21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES 4) (HD) (e9f)
 http://127.0.0.1:6878/ace/getstream?id=e9f4493d2d851f4636720f639113e05b4a21a74c
+#EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES 4) (HD) (64f)",21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES 4) (HD) (64f)
+http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-18 (Miércoles) Champions League 1/8 de final" tvg-name="21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES 4) (FHD) (91a)",21:00-Tottenham-At. Madrid (LIGA DE CAMPEONES 4) (FHD) (91a)
 http://127.0.0.1:6878/ace/getstream?id=91ac4585368992720ec17ffa5b4389368c6dcac1
 #EXTINF:-1 group-title="03-18 (Miércoles) Serie A Brasil" tvg-name="23:00-Palmeiras-Botafogo (LIGA DE CAMPEONES 2) (HD) (338)",23:00-Palmeiras-Botafogo (LIGA DE CAMPEONES 2) (HD) (338)
@@ -169,36 +169,36 @@ http://127.0.0.1:6878/ace/getstream?id=4fc6d0331830ad8743abab2fe2473b63bdfbc49f
 http://127.0.0.1:6878/ace/getstream?id=8156912ae14f6174a19c8a4efcf36a06e847f632
 #EXTINF:-1 group-title="03-19 (Jueves) CONCACAF Champions Cup 1/8 de final" tvg-name="00:00-Inter Miami CF-Nashville SC (LIGA DE CAMPEONES 3) (FHD) (1de)",00:00-Inter Miami CF-Nashville SC (LIGA DE CAMPEONES 3) (FHD) (1de)
 http://127.0.0.1:6878/ace/getstream?id=1dece791d28be6a5af78537ac4864ec01fa0a6d8
-#EXTINF:-1 group-title="03-19 (Jueves) CONCACAF Champions Cup 1/8 de final" tvg-name="00:00-Inter Miami CF-Nashville SC (LIGA DE CAMPEONES 3) (FHD) (17b)",00:00-Inter Miami CF-Nashville SC (LIGA DE CAMPEONES 3) (FHD) (17b)
-http://127.0.0.1:6878/ace/getstream?id=17b8bc4bf8e29547b0071c742e3d7da3bcbc484d
-#EXTINF:-1 group-title="03-19 (Jueves) CONCACAF Champions Cup 1/8 de final" tvg-name="00:00-Inter Miami CF-Nashville SC (LIGA DE CAMPEONES 3) (FHD) (079)",00:00-Inter Miami CF-Nashville SC (LIGA DE CAMPEONES 3) (FHD) (079)
-http://127.0.0.1:6878/ace/getstream?id=07976f79d17a439d7aff46cf0d4cfdf80311caf5
 #EXTINF:-1 group-title="03-19 (Jueves) CONCACAF Champions Cup 1/8 de final" tvg-name="00:00-Inter Miami CF-Nashville SC (LIGA DE CAMPEONES 3) (FHD) (66b)",00:00-Inter Miami CF-Nashville SC (LIGA DE CAMPEONES 3) (FHD) (66b)
 http://127.0.0.1:6878/ace/getstream?id=66b373c0da20ac615996dbd1c340087f50a9a39e
+#EXTINF:-1 group-title="03-19 (Jueves) CONCACAF Champions Cup 1/8 de final" tvg-name="00:00-Inter Miami CF-Nashville SC (LIGA DE CAMPEONES 3) (FHD) (17b)",00:00-Inter Miami CF-Nashville SC (LIGA DE CAMPEONES 3) (FHD) (17b)
+http://127.0.0.1:6878/ace/getstream?id=17b8bc4bf8e29547b0071c742e3d7da3bcbc484d
 #EXTINF:-1 group-title="03-19 (Jueves) CONCACAF Champions Cup 1/8 de final" tvg-name="00:00-Inter Miami CF-Nashville SC (LIGA DE CAMPEONES 3) (HD) (90f)",00:00-Inter Miami CF-Nashville SC (LIGA DE CAMPEONES 3) (HD) (90f)
 http://127.0.0.1:6878/ace/getstream?id=90f7941c6bf7ca4b18084a1dca7bc15b9b179373
+#EXTINF:-1 group-title="03-19 (Jueves) CONCACAF Champions Cup 1/8 de final" tvg-name="00:00-Inter Miami CF-Nashville SC (LIGA DE CAMPEONES 3) (FHD) (079)",00:00-Inter Miami CF-Nashville SC (LIGA DE CAMPEONES 3) (FHD) (079)
+http://127.0.0.1:6878/ace/getstream?id=07976f79d17a439d7aff46cf0d4cfdf80311caf5
 #EXTINF:-1 group-title="03-19 (Jueves) CONCACAF Champions Cup 1/8 de final" tvg-name="00:00-Inter Miami CF-Nashville SC (LIGA DE CAMPEONES 3) (HD) (5b7)",00:00-Inter Miami CF-Nashville SC (LIGA DE CAMPEONES 3) (HD) (5b7)
 http://127.0.0.1:6878/ace/getstream?id=5b7f54b12e0f96ceba1299f44eac4b0f97403e4e
 #EXTINF:-1 group-title="03-19 (Jueves) CONCACAF Champions Cup 1/8 de final" tvg-name="00:00-Inter Miami CF-Nashville SC (LIGA DE CAMPEONES 3) (HD) (cfc)",00:00-Inter Miami CF-Nashville SC (LIGA DE CAMPEONES 3) (HD) (cfc)
 http://127.0.0.1:6878/ace/getstream?id=cfc371890bfb502737a26de5215e50929c52d0f9
-#EXTINF:-1 group-title="03-19 (Jueves) Serie A Brasil" tvg-name="01:30-Santos-Internacional (LIGA DE CAMPEONES) (HD) (e57)",01:30-Santos-Internacional (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="03-19 (Jueves) Serie A Brasil" tvg-name="01:30-Santos-Internacional (LIGA DE CAMPEONES) (FHD) (97d)",01:30-Santos-Internacional (LIGA DE CAMPEONES) (FHD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 group-title="03-19 (Jueves) Serie A Brasil" tvg-name="01:30-Santos-Internacional (LIGA DE CAMPEONES) (FHD) (afb)",01:30-Santos-Internacional (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
 #EXTINF:-1 group-title="03-19 (Jueves) Serie A Brasil" tvg-name="01:30-Santos-Internacional (LIGA DE CAMPEONES) (HD) (b02)",01:30-Santos-Internacional (LIGA DE CAMPEONES) (HD) (b02)
 http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="03-19 (Jueves) Serie A Brasil" tvg-name="01:30-Santos-Internacional (LIGA DE CAMPEONES) (FHD) (afb)",01:30-Santos-Internacional (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
 #EXTINF:-1 group-title="03-19 (Jueves) Serie A Brasil" tvg-name="01:30-Santos-Internacional (LIGA DE CAMPEONES) (FHD) (778)",01:30-Santos-Internacional (LIGA DE CAMPEONES) (FHD) (778)
 http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="03-19 (Jueves) Serie A Brasil" tvg-name="01:30-Santos-Internacional (LIGA DE CAMPEONES) (FHD) (0f7)",01:30-Santos-Internacional (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
-#EXTINF:-1 group-title="03-19 (Jueves) Serie A Brasil" tvg-name="01:30-Santos-Internacional (LIGA DE CAMPEONES) (UHD) (152)",01:30-Santos-Internacional (LIGA DE CAMPEONES) (UHD) (152)
-http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
 #EXTINF:-1 group-title="03-19 (Jueves) Serie A Brasil" tvg-name="01:30-Santos-Internacional (LIGA DE CAMPEONES) (HD) (2b5)",01:30-Santos-Internacional (LIGA DE CAMPEONES) (HD) (2b5)
 http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
+#EXTINF:-1 group-title="03-19 (Jueves) Serie A Brasil" tvg-name="01:30-Santos-Internacional (LIGA DE CAMPEONES) (FHD) (afb)",01:30-Santos-Internacional (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="03-19 (Jueves) Serie A Brasil" tvg-name="01:30-Santos-Internacional (LIGA DE CAMPEONES) (FHD) (afb)",01:30-Santos-Internacional (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="03-19 (Jueves) Serie A Brasil" tvg-name="01:30-Santos-Internacional (LIGA DE CAMPEONES) (UHD) (152)",01:30-Santos-Internacional (LIGA DE CAMPEONES) (UHD) (152)
+http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
+#EXTINF:-1 group-title="03-19 (Jueves) Serie A Brasil" tvg-name="01:30-Santos-Internacional (LIGA DE CAMPEONES) (FHD) (97d)",01:30-Santos-Internacional (LIGA DE CAMPEONES) (FHD) (97d)
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="03-19 (Jueves) Serie A Brasil" tvg-name="01:30-Santos-Internacional (LIGA DE CAMPEONES) (HD) (e57)",01:30-Santos-Internacional (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="03-19 (Jueves) Serie A Brasil" tvg-name="01:30-Santos-Internacional (LIGA DE CAMPEONES) (FHD) (0f7)",01:30-Santos-Internacional (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
 #EXTINF:-1 group-title="03-19 (Jueves) Serie A Brasil" tvg-name="01:30-Santos-Internacional (LIGA DE CAMPEONES) (HD) (63e)",01:30-Santos-Internacional (LIGA DE CAMPEONES) (HD) (63e)
 http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
 #EXTINF:-1 group-title="03-19 (Jueves) Serie A Brasil" tvg-name="01:30-Santos-Internacional (LIGA DE CAMPEONES) (FHD) (91b)",01:30-Santos-Internacional (LIGA DE CAMPEONES) (FHD) (91b)
@@ -213,10 +213,10 @@ http://127.0.0.1:6878/ace/getstream?id=6fbab1d8d6bf93c4bc7552714aa3bb54ebf7b661
 http://127.0.0.1:6878/ace/getstream?id=77998f8161373611ff6b348e7eda5b4e97d3ec29
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="18:45-AEK FC-NK Celje (LIGA DE CAMPEONES 4) (HD) (5ba)",18:45-AEK FC-NK Celje (LIGA DE CAMPEONES 4) (HD) (5ba)
 http://127.0.0.1:6878/ace/getstream?id=5ba9368d80d2f87ac1c6d71df4e7e6e26e6911f2
-#EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="18:45-AEK FC-NK Celje (LIGA DE CAMPEONES 4) (HD) (64f)",18:45-AEK FC-NK Celje (LIGA DE CAMPEONES 4) (HD) (64f)
-http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="18:45-AEK FC-NK Celje (LIGA DE CAMPEONES 4) (HD) (e9f)",18:45-AEK FC-NK Celje (LIGA DE CAMPEONES 4) (HD) (e9f)
 http://127.0.0.1:6878/ace/getstream?id=e9f4493d2d851f4636720f639113e05b4a21a74c
+#EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="18:45-AEK FC-NK Celje (LIGA DE CAMPEONES 4) (HD) (64f)",18:45-AEK FC-NK Celje (LIGA DE CAMPEONES 4) (HD) (64f)
+http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="18:45-AEK FC-NK Celje (LIGA DE CAMPEONES 4) (FHD) (91a)",18:45-AEK FC-NK Celje (LIGA DE CAMPEONES 4) (FHD) (91a)
 http://127.0.0.1:6878/ace/getstream?id=91ac4585368992720ec17ffa5b4389368c6dcac1
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="18:45-AEK Larnaca-Crystal Palace (LIGA DE CAMPEONES 4) (HD) (6fb)",18:45-AEK Larnaca-Crystal Palace (LIGA DE CAMPEONES 4) (HD) (6fb)
@@ -225,10 +225,10 @@ http://127.0.0.1:6878/ace/getstream?id=6fbab1d8d6bf93c4bc7552714aa3bb54ebf7b661
 http://127.0.0.1:6878/ace/getstream?id=77998f8161373611ff6b348e7eda5b4e97d3ec29
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="18:45-AEK Larnaca-Crystal Palace (LIGA DE CAMPEONES 4) (HD) (5ba)",18:45-AEK Larnaca-Crystal Palace (LIGA DE CAMPEONES 4) (HD) (5ba)
 http://127.0.0.1:6878/ace/getstream?id=5ba9368d80d2f87ac1c6d71df4e7e6e26e6911f2
-#EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="18:45-AEK Larnaca-Crystal Palace (LIGA DE CAMPEONES 4) (HD) (64f)",18:45-AEK Larnaca-Crystal Palace (LIGA DE CAMPEONES 4) (HD) (64f)
-http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="18:45-AEK Larnaca-Crystal Palace (LIGA DE CAMPEONES 4) (HD) (e9f)",18:45-AEK Larnaca-Crystal Palace (LIGA DE CAMPEONES 4) (HD) (e9f)
 http://127.0.0.1:6878/ace/getstream?id=e9f4493d2d851f4636720f639113e05b4a21a74c
+#EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="18:45-AEK Larnaca-Crystal Palace (LIGA DE CAMPEONES 4) (HD) (64f)",18:45-AEK Larnaca-Crystal Palace (LIGA DE CAMPEONES 4) (HD) (64f)
+http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="18:45-AEK Larnaca-Crystal Palace (LIGA DE CAMPEONES 4) (FHD) (91a)",18:45-AEK Larnaca-Crystal Palace (LIGA DE CAMPEONES 4) (FHD) (91a)
 http://127.0.0.1:6878/ace/getstream?id=91ac4585368992720ec17ffa5b4389368c6dcac1
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="18:45-Mainz 05-Sigma Olomouc (LIGA DE CAMPEONES 4) (HD) (6fb)",18:45-Mainz 05-Sigma Olomouc (LIGA DE CAMPEONES 4) (HD) (6fb)
@@ -237,10 +237,10 @@ http://127.0.0.1:6878/ace/getstream?id=6fbab1d8d6bf93c4bc7552714aa3bb54ebf7b661
 http://127.0.0.1:6878/ace/getstream?id=77998f8161373611ff6b348e7eda5b4e97d3ec29
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="18:45-Mainz 05-Sigma Olomouc (LIGA DE CAMPEONES 4) (HD) (5ba)",18:45-Mainz 05-Sigma Olomouc (LIGA DE CAMPEONES 4) (HD) (5ba)
 http://127.0.0.1:6878/ace/getstream?id=5ba9368d80d2f87ac1c6d71df4e7e6e26e6911f2
-#EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="18:45-Mainz 05-Sigma Olomouc (LIGA DE CAMPEONES 4) (HD) (64f)",18:45-Mainz 05-Sigma Olomouc (LIGA DE CAMPEONES 4) (HD) (64f)
-http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="18:45-Mainz 05-Sigma Olomouc (LIGA DE CAMPEONES 4) (HD) (e9f)",18:45-Mainz 05-Sigma Olomouc (LIGA DE CAMPEONES 4) (HD) (e9f)
 http://127.0.0.1:6878/ace/getstream?id=e9f4493d2d851f4636720f639113e05b4a21a74c
+#EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="18:45-Mainz 05-Sigma Olomouc (LIGA DE CAMPEONES 4) (HD) (64f)",18:45-Mainz 05-Sigma Olomouc (LIGA DE CAMPEONES 4) (HD) (64f)
+http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="18:45-Mainz 05-Sigma Olomouc (LIGA DE CAMPEONES 4) (FHD) (91a)",18:45-Mainz 05-Sigma Olomouc (LIGA DE CAMPEONES 4) (FHD) (91a)
 http://127.0.0.1:6878/ace/getstream?id=91ac4585368992720ec17ffa5b4389368c6dcac1
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="18:45-Raków Częstochowa-Fiorentina (LIGA DE CAMPEONES 4) (HD) (6fb)",18:45-Raków Częstochowa-Fiorentina (LIGA DE CAMPEONES 4) (HD) (6fb)
@@ -249,10 +249,10 @@ http://127.0.0.1:6878/ace/getstream?id=6fbab1d8d6bf93c4bc7552714aa3bb54ebf7b661
 http://127.0.0.1:6878/ace/getstream?id=77998f8161373611ff6b348e7eda5b4e97d3ec29
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="18:45-Raków Częstochowa-Fiorentina (LIGA DE CAMPEONES 4) (HD) (5ba)",18:45-Raków Częstochowa-Fiorentina (LIGA DE CAMPEONES 4) (HD) (5ba)
 http://127.0.0.1:6878/ace/getstream?id=5ba9368d80d2f87ac1c6d71df4e7e6e26e6911f2
-#EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="18:45-Raków Częstochowa-Fiorentina (LIGA DE CAMPEONES 4) (HD) (64f)",18:45-Raków Częstochowa-Fiorentina (LIGA DE CAMPEONES 4) (HD) (64f)
-http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="18:45-Raków Częstochowa-Fiorentina (LIGA DE CAMPEONES 4) (HD) (e9f)",18:45-Raków Częstochowa-Fiorentina (LIGA DE CAMPEONES 4) (HD) (e9f)
 http://127.0.0.1:6878/ace/getstream?id=e9f4493d2d851f4636720f639113e05b4a21a74c
+#EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="18:45-Raków Częstochowa-Fiorentina (LIGA DE CAMPEONES 4) (HD) (64f)",18:45-Raków Częstochowa-Fiorentina (LIGA DE CAMPEONES 4) (HD) (64f)
+http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="18:45-Raków Częstochowa-Fiorentina (LIGA DE CAMPEONES 4) (FHD) (91a)",18:45-Raków Częstochowa-Fiorentina (LIGA DE CAMPEONES 4) (FHD) (91a)
 http://127.0.0.1:6878/ace/getstream?id=91ac4585368992720ec17ffa5b4389368c6dcac1
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-FC Midtjylland-Nottingham Forest (LIGA DE CAMPEONES 4) (HD) (6fb)",18:45-FC Midtjylland-Nottingham Forest (LIGA DE CAMPEONES 4) (HD) (6fb)
@@ -261,10 +261,10 @@ http://127.0.0.1:6878/ace/getstream?id=6fbab1d8d6bf93c4bc7552714aa3bb54ebf7b661
 http://127.0.0.1:6878/ace/getstream?id=77998f8161373611ff6b348e7eda5b4e97d3ec29
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-FC Midtjylland-Nottingham Forest (LIGA DE CAMPEONES 4) (HD) (5ba)",18:45-FC Midtjylland-Nottingham Forest (LIGA DE CAMPEONES 4) (HD) (5ba)
 http://127.0.0.1:6878/ace/getstream?id=5ba9368d80d2f87ac1c6d71df4e7e6e26e6911f2
-#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-FC Midtjylland-Nottingham Forest (LIGA DE CAMPEONES 4) (HD) (64f)",18:45-FC Midtjylland-Nottingham Forest (LIGA DE CAMPEONES 4) (HD) (64f)
-http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-FC Midtjylland-Nottingham Forest (LIGA DE CAMPEONES 4) (HD) (e9f)",18:45-FC Midtjylland-Nottingham Forest (LIGA DE CAMPEONES 4) (HD) (e9f)
 http://127.0.0.1:6878/ace/getstream?id=e9f4493d2d851f4636720f639113e05b4a21a74c
+#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-FC Midtjylland-Nottingham Forest (LIGA DE CAMPEONES 4) (HD) (64f)",18:45-FC Midtjylland-Nottingham Forest (LIGA DE CAMPEONES 4) (HD) (64f)
+http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-FC Midtjylland-Nottingham Forest (LIGA DE CAMPEONES 4) (FHD) (91a)",18:45-FC Midtjylland-Nottingham Forest (LIGA DE CAMPEONES 4) (FHD) (91a)
 http://127.0.0.1:6878/ace/getstream?id=91ac4585368992720ec17ffa5b4389368c6dcac1
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-FC Midtjylland-Nottingham Forest (LIGA DE CAMPEONES 5) (FHD) (cb6)",18:45-FC Midtjylland-Nottingham Forest (LIGA DE CAMPEONES 5) (FHD) (cb6)
@@ -279,36 +279,36 @@ http://127.0.0.1:6878/ace/getstream?id=6fbab1d8d6bf93c4bc7552714aa3bb54ebf7b661
 http://127.0.0.1:6878/ace/getstream?id=77998f8161373611ff6b348e7eda5b4e97d3ec29
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-Freiburg-Genk (LIGA DE CAMPEONES 4) (HD) (5ba)",18:45-Freiburg-Genk (LIGA DE CAMPEONES 4) (HD) (5ba)
 http://127.0.0.1:6878/ace/getstream?id=5ba9368d80d2f87ac1c6d71df4e7e6e26e6911f2
-#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-Freiburg-Genk (LIGA DE CAMPEONES 4) (HD) (64f)",18:45-Freiburg-Genk (LIGA DE CAMPEONES 4) (HD) (64f)
-http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-Freiburg-Genk (LIGA DE CAMPEONES 4) (HD) (e9f)",18:45-Freiburg-Genk (LIGA DE CAMPEONES 4) (HD) (e9f)
 http://127.0.0.1:6878/ace/getstream?id=e9f4493d2d851f4636720f639113e05b4a21a74c
+#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-Freiburg-Genk (LIGA DE CAMPEONES 4) (HD) (64f)",18:45-Freiburg-Genk (LIGA DE CAMPEONES 4) (HD) (64f)
+http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-Freiburg-Genk (LIGA DE CAMPEONES 4) (FHD) (91a)",18:45-Freiburg-Genk (LIGA DE CAMPEONES 4) (FHD) (91a)
 http://127.0.0.1:6878/ace/getstream?id=91ac4585368992720ec17ffa5b4389368c6dcac1
-#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (MOVISTAR PLUS) (FHD) (b6f)",18:45-O. Lyonnais-Celta (MOVISTAR PLUS) (FHD) (b6f)
-http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
-#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (MOVISTAR PLUS) (FHD) (586)",18:45-O. Lyonnais-Celta (MOVISTAR PLUS) (FHD) (586)
-http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (MOVISTAR PLUS) (FHD) (199)",18:45-O. Lyonnais-Celta (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (HD) (e57)",18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (FHD) (97d)",18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (FHD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (FHD) (afb)",18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (MOVISTAR PLUS) (FHD) (586)",18:45-O. Lyonnais-Celta (MOVISTAR PLUS) (FHD) (586)
+http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
+#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (MOVISTAR PLUS) (FHD) (b6f)",18:45-O. Lyonnais-Celta (MOVISTAR PLUS) (FHD) (b6f)
+http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (HD) (b02)",18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (HD) (b02)
 http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (FHD) (afb)",18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (FHD) (778)",18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (FHD) (778)
 http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (FHD) (0f7)",18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
-#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (UHD) (152)",18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (UHD) (152)
-http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (HD) (2b5)",18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (HD) (2b5)
 http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
+#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (FHD) (afb)",18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (FHD) (afb)",18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (UHD) (152)",18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (UHD) (152)
+http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
+#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (FHD) (97d)",18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (FHD) (97d)
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (HD) (e57)",18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (FHD) (0f7)",18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (HD) (63e)",18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (HD) (63e)
 http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (FHD) (91b)",18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES) (FHD) (91b)
@@ -321,18 +321,18 @@ http://127.0.0.1:6878/ace/getstream?id=6fbab1d8d6bf93c4bc7552714aa3bb54ebf7b661
 http://127.0.0.1:6878/ace/getstream?id=77998f8161373611ff6b348e7eda5b4e97d3ec29
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES 4) (HD) (5ba)",18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES 4) (HD) (5ba)
 http://127.0.0.1:6878/ace/getstream?id=5ba9368d80d2f87ac1c6d71df4e7e6e26e6911f2
-#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES 4) (HD) (64f)",18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES 4) (HD) (64f)
-http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES 4) (HD) (e9f)",18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES 4) (HD) (e9f)
 http://127.0.0.1:6878/ace/getstream?id=e9f4493d2d851f4636720f639113e05b4a21a74c
+#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES 4) (HD) (64f)",18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES 4) (HD) (64f)
+http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES 4) (FHD) (91a)",18:45-O. Lyonnais-Celta (LIGA DE CAMPEONES 4) (FHD) (91a)
 http://127.0.0.1:6878/ace/getstream?id=91ac4585368992720ec17ffa5b4389368c6dcac1
+#EXTINF:-1 group-title="03-19 (Jueves) Euroliga Liga Regular" tvg-name="20:15-Olympiacos Piraeus-Baskonia (MOVISTAR DEPORTES) (FHD) (5d3)",20:15-Olympiacos Piraeus-Baskonia (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="03-19 (Jueves) Euroliga Liga Regular" tvg-name="20:15-Olympiacos Piraeus-Baskonia (MOVISTAR DEPORTES) (FHD) (369)",20:15-Olympiacos Piraeus-Baskonia (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="03-19 (Jueves) Euroliga Liga Regular" tvg-name="20:15-Olympiacos Piraeus-Baskonia (MOVISTAR DEPORTES) (FHD) (f82)",20:15-Olympiacos Piraeus-Baskonia (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="03-19 (Jueves) Euroliga Liga Regular" tvg-name="20:15-Olympiacos Piraeus-Baskonia (MOVISTAR DEPORTES) (FHD) (5d3)",20:15-Olympiacos Piraeus-Baskonia (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="03-19 (Jueves) Euroliga Liga Regular" tvg-name="20:45-Paris Basketball-BC Partizan Beograd (MOVISTAR DEPORTES 4) (HD) (8b5)",20:45-Paris Basketball-BC Partizan Beograd (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="21:00-Rayo Vallecano-Samsunspor (LIGA DE CAMPEONES 2) (HD) (338)",21:00-Rayo Vallecano-Samsunspor (LIGA DE CAMPEONES 2) (HD) (338)
@@ -353,10 +353,10 @@ http://127.0.0.1:6878/ace/getstream?id=6fbab1d8d6bf93c4bc7552714aa3bb54ebf7b661
 http://127.0.0.1:6878/ace/getstream?id=77998f8161373611ff6b348e7eda5b4e97d3ec29
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="21:00-Rayo Vallecano-Samsunspor (LIGA DE CAMPEONES 4) (HD) (5ba)",21:00-Rayo Vallecano-Samsunspor (LIGA DE CAMPEONES 4) (HD) (5ba)
 http://127.0.0.1:6878/ace/getstream?id=5ba9368d80d2f87ac1c6d71df4e7e6e26e6911f2
-#EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="21:00-Rayo Vallecano-Samsunspor (LIGA DE CAMPEONES 4) (HD) (64f)",21:00-Rayo Vallecano-Samsunspor (LIGA DE CAMPEONES 4) (HD) (64f)
-http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="21:00-Rayo Vallecano-Samsunspor (LIGA DE CAMPEONES 4) (HD) (e9f)",21:00-Rayo Vallecano-Samsunspor (LIGA DE CAMPEONES 4) (HD) (e9f)
 http://127.0.0.1:6878/ace/getstream?id=e9f4493d2d851f4636720f639113e05b4a21a74c
+#EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="21:00-Rayo Vallecano-Samsunspor (LIGA DE CAMPEONES 4) (HD) (64f)",21:00-Rayo Vallecano-Samsunspor (LIGA DE CAMPEONES 4) (HD) (64f)
+http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="21:00-Rayo Vallecano-Samsunspor (LIGA DE CAMPEONES 4) (FHD) (91a)",21:00-Rayo Vallecano-Samsunspor (LIGA DE CAMPEONES 4) (FHD) (91a)
 http://127.0.0.1:6878/ace/getstream?id=91ac4585368992720ec17ffa5b4389368c6dcac1
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="21:00-Shakhtar Donetsk-Lech Poznan (LIGA DE CAMPEONES 4) (HD) (6fb)",21:00-Shakhtar Donetsk-Lech Poznan (LIGA DE CAMPEONES 4) (HD) (6fb)
@@ -365,10 +365,10 @@ http://127.0.0.1:6878/ace/getstream?id=6fbab1d8d6bf93c4bc7552714aa3bb54ebf7b661
 http://127.0.0.1:6878/ace/getstream?id=77998f8161373611ff6b348e7eda5b4e97d3ec29
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="21:00-Shakhtar Donetsk-Lech Poznan (LIGA DE CAMPEONES 4) (HD) (5ba)",21:00-Shakhtar Donetsk-Lech Poznan (LIGA DE CAMPEONES 4) (HD) (5ba)
 http://127.0.0.1:6878/ace/getstream?id=5ba9368d80d2f87ac1c6d71df4e7e6e26e6911f2
-#EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="21:00-Shakhtar Donetsk-Lech Poznan (LIGA DE CAMPEONES 4) (HD) (64f)",21:00-Shakhtar Donetsk-Lech Poznan (LIGA DE CAMPEONES 4) (HD) (64f)
-http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="21:00-Shakhtar Donetsk-Lech Poznan (LIGA DE CAMPEONES 4) (HD) (e9f)",21:00-Shakhtar Donetsk-Lech Poznan (LIGA DE CAMPEONES 4) (HD) (e9f)
 http://127.0.0.1:6878/ace/getstream?id=e9f4493d2d851f4636720f639113e05b4a21a74c
+#EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="21:00-Shakhtar Donetsk-Lech Poznan (LIGA DE CAMPEONES 4) (HD) (64f)",21:00-Shakhtar Donetsk-Lech Poznan (LIGA DE CAMPEONES 4) (HD) (64f)
+http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="21:00-Shakhtar Donetsk-Lech Poznan (LIGA DE CAMPEONES 4) (FHD) (91a)",21:00-Shakhtar Donetsk-Lech Poznan (LIGA DE CAMPEONES 4) (FHD) (91a)
 http://127.0.0.1:6878/ace/getstream?id=91ac4585368992720ec17ffa5b4389368c6dcac1
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="21:00-Sparta Praha-AZ Alkmaar (LIGA DE CAMPEONES 4) (HD) (6fb)",21:00-Sparta Praha-AZ Alkmaar (LIGA DE CAMPEONES 4) (HD) (6fb)
@@ -377,10 +377,10 @@ http://127.0.0.1:6878/ace/getstream?id=6fbab1d8d6bf93c4bc7552714aa3bb54ebf7b661
 http://127.0.0.1:6878/ace/getstream?id=77998f8161373611ff6b348e7eda5b4e97d3ec29
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="21:00-Sparta Praha-AZ Alkmaar (LIGA DE CAMPEONES 4) (HD) (5ba)",21:00-Sparta Praha-AZ Alkmaar (LIGA DE CAMPEONES 4) (HD) (5ba)
 http://127.0.0.1:6878/ace/getstream?id=5ba9368d80d2f87ac1c6d71df4e7e6e26e6911f2
-#EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="21:00-Sparta Praha-AZ Alkmaar (LIGA DE CAMPEONES 4) (HD) (64f)",21:00-Sparta Praha-AZ Alkmaar (LIGA DE CAMPEONES 4) (HD) (64f)
-http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="21:00-Sparta Praha-AZ Alkmaar (LIGA DE CAMPEONES 4) (HD) (e9f)",21:00-Sparta Praha-AZ Alkmaar (LIGA DE CAMPEONES 4) (HD) (e9f)
 http://127.0.0.1:6878/ace/getstream?id=e9f4493d2d851f4636720f639113e05b4a21a74c
+#EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="21:00-Sparta Praha-AZ Alkmaar (LIGA DE CAMPEONES 4) (HD) (64f)",21:00-Sparta Praha-AZ Alkmaar (LIGA DE CAMPEONES 4) (HD) (64f)
+http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="21:00-Sparta Praha-AZ Alkmaar (LIGA DE CAMPEONES 4) (FHD) (91a)",21:00-Sparta Praha-AZ Alkmaar (LIGA DE CAMPEONES 4) (FHD) (91a)
 http://127.0.0.1:6878/ace/getstream?id=91ac4585368992720ec17ffa5b4389368c6dcac1
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="21:00-Strasbourg Alsace-HNK Rijeka (LIGA DE CAMPEONES 4) (HD) (6fb)",21:00-Strasbourg Alsace-HNK Rijeka (LIGA DE CAMPEONES 4) (HD) (6fb)
@@ -389,10 +389,10 @@ http://127.0.0.1:6878/ace/getstream?id=6fbab1d8d6bf93c4bc7552714aa3bb54ebf7b661
 http://127.0.0.1:6878/ace/getstream?id=77998f8161373611ff6b348e7eda5b4e97d3ec29
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="21:00-Strasbourg Alsace-HNK Rijeka (LIGA DE CAMPEONES 4) (HD) (5ba)",21:00-Strasbourg Alsace-HNK Rijeka (LIGA DE CAMPEONES 4) (HD) (5ba)
 http://127.0.0.1:6878/ace/getstream?id=5ba9368d80d2f87ac1c6d71df4e7e6e26e6911f2
-#EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="21:00-Strasbourg Alsace-HNK Rijeka (LIGA DE CAMPEONES 4) (HD) (64f)",21:00-Strasbourg Alsace-HNK Rijeka (LIGA DE CAMPEONES 4) (HD) (64f)
-http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="21:00-Strasbourg Alsace-HNK Rijeka (LIGA DE CAMPEONES 4) (HD) (e9f)",21:00-Strasbourg Alsace-HNK Rijeka (LIGA DE CAMPEONES 4) (HD) (e9f)
 http://127.0.0.1:6878/ace/getstream?id=e9f4493d2d851f4636720f639113e05b4a21a74c
+#EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="21:00-Strasbourg Alsace-HNK Rijeka (LIGA DE CAMPEONES 4) (HD) (64f)",21:00-Strasbourg Alsace-HNK Rijeka (LIGA DE CAMPEONES 4) (HD) (64f)
+http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Conference League 1/8 de final" tvg-name="21:00-Strasbourg Alsace-HNK Rijeka (LIGA DE CAMPEONES 4) (FHD) (91a)",21:00-Strasbourg Alsace-HNK Rijeka (LIGA DE CAMPEONES 4) (FHD) (91a)
 http://127.0.0.1:6878/ace/getstream?id=91ac4585368992720ec17ffa5b4389368c6dcac1
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-AS Roma-Bologna (LIGA DE CAMPEONES 4) (HD) (6fb)",21:00-AS Roma-Bologna (LIGA DE CAMPEONES 4) (HD) (6fb)
@@ -401,10 +401,10 @@ http://127.0.0.1:6878/ace/getstream?id=6fbab1d8d6bf93c4bc7552714aa3bb54ebf7b661
 http://127.0.0.1:6878/ace/getstream?id=77998f8161373611ff6b348e7eda5b4e97d3ec29
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-AS Roma-Bologna (LIGA DE CAMPEONES 4) (HD) (5ba)",21:00-AS Roma-Bologna (LIGA DE CAMPEONES 4) (HD) (5ba)
 http://127.0.0.1:6878/ace/getstream?id=5ba9368d80d2f87ac1c6d71df4e7e6e26e6911f2
-#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-AS Roma-Bologna (LIGA DE CAMPEONES 4) (HD) (64f)",21:00-AS Roma-Bologna (LIGA DE CAMPEONES 4) (HD) (64f)
-http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-AS Roma-Bologna (LIGA DE CAMPEONES 4) (HD) (e9f)",21:00-AS Roma-Bologna (LIGA DE CAMPEONES 4) (HD) (e9f)
 http://127.0.0.1:6878/ace/getstream?id=e9f4493d2d851f4636720f639113e05b4a21a74c
+#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-AS Roma-Bologna (LIGA DE CAMPEONES 4) (HD) (64f)",21:00-AS Roma-Bologna (LIGA DE CAMPEONES 4) (HD) (64f)
+http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-AS Roma-Bologna (LIGA DE CAMPEONES 4) (FHD) (91a)",21:00-AS Roma-Bologna (LIGA DE CAMPEONES 4) (FHD) (91a)
 http://127.0.0.1:6878/ace/getstream?id=91ac4585368992720ec17ffa5b4389368c6dcac1
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Aston Villa-Lille (LIGA DE CAMPEONES 4) (HD) (6fb)",21:00-Aston Villa-Lille (LIGA DE CAMPEONES 4) (HD) (6fb)
@@ -413,10 +413,10 @@ http://127.0.0.1:6878/ace/getstream?id=6fbab1d8d6bf93c4bc7552714aa3bb54ebf7b661
 http://127.0.0.1:6878/ace/getstream?id=77998f8161373611ff6b348e7eda5b4e97d3ec29
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Aston Villa-Lille (LIGA DE CAMPEONES 4) (HD) (5ba)",21:00-Aston Villa-Lille (LIGA DE CAMPEONES 4) (HD) (5ba)
 http://127.0.0.1:6878/ace/getstream?id=5ba9368d80d2f87ac1c6d71df4e7e6e26e6911f2
-#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Aston Villa-Lille (LIGA DE CAMPEONES 4) (HD) (64f)",21:00-Aston Villa-Lille (LIGA DE CAMPEONES 4) (HD) (64f)
-http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Aston Villa-Lille (LIGA DE CAMPEONES 4) (HD) (e9f)",21:00-Aston Villa-Lille (LIGA DE CAMPEONES 4) (HD) (e9f)
 http://127.0.0.1:6878/ace/getstream?id=e9f4493d2d851f4636720f639113e05b4a21a74c
+#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Aston Villa-Lille (LIGA DE CAMPEONES 4) (HD) (64f)",21:00-Aston Villa-Lille (LIGA DE CAMPEONES 4) (HD) (64f)
+http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Aston Villa-Lille (LIGA DE CAMPEONES 4) (FHD) (91a)",21:00-Aston Villa-Lille (LIGA DE CAMPEONES 4) (FHD) (91a)
 http://127.0.0.1:6878/ace/getstream?id=91ac4585368992720ec17ffa5b4389368c6dcac1
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-FC Porto-Stuttgart (LIGA DE CAMPEONES 4) (HD) (6fb)",21:00-FC Porto-Stuttgart (LIGA DE CAMPEONES 4) (HD) (6fb)
@@ -425,10 +425,10 @@ http://127.0.0.1:6878/ace/getstream?id=6fbab1d8d6bf93c4bc7552714aa3bb54ebf7b661
 http://127.0.0.1:6878/ace/getstream?id=77998f8161373611ff6b348e7eda5b4e97d3ec29
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-FC Porto-Stuttgart (LIGA DE CAMPEONES 4) (HD) (5ba)",21:00-FC Porto-Stuttgart (LIGA DE CAMPEONES 4) (HD) (5ba)
 http://127.0.0.1:6878/ace/getstream?id=5ba9368d80d2f87ac1c6d71df4e7e6e26e6911f2
-#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-FC Porto-Stuttgart (LIGA DE CAMPEONES 4) (HD) (64f)",21:00-FC Porto-Stuttgart (LIGA DE CAMPEONES 4) (HD) (64f)
-http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-FC Porto-Stuttgart (LIGA DE CAMPEONES 4) (HD) (e9f)",21:00-FC Porto-Stuttgart (LIGA DE CAMPEONES 4) (HD) (e9f)
 http://127.0.0.1:6878/ace/getstream?id=e9f4493d2d851f4636720f639113e05b4a21a74c
+#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-FC Porto-Stuttgart (LIGA DE CAMPEONES 4) (HD) (64f)",21:00-FC Porto-Stuttgart (LIGA DE CAMPEONES 4) (HD) (64f)
+http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-FC Porto-Stuttgart (LIGA DE CAMPEONES 4) (FHD) (91a)",21:00-FC Porto-Stuttgart (LIGA DE CAMPEONES 4) (FHD) (91a)
 http://127.0.0.1:6878/ace/getstream?id=91ac4585368992720ec17ffa5b4389368c6dcac1
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-FC Porto-Stuttgart (LIGA DE CAMPEONES 5) (FHD) (cb6)",21:00-FC Porto-Stuttgart (LIGA DE CAMPEONES 5) (FHD) (cb6)
@@ -437,24 +437,24 @@ http://127.0.0.1:6878/ace/getstream?id=cb6410a6355a645cfc6f6f5a7c7d71298fcbc2c5
 http://127.0.0.1:6878/ace/getstream?id=5620c0ce3dcbf14a6375cb2c2d681207f45eb97d
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-FC Porto-Stuttgart (LIGA DE CAMPEONES 5) (FHD) (5be)",21:00-FC Porto-Stuttgart (LIGA DE CAMPEONES 5) (FHD) (5be)
 http://127.0.0.1:6878/ace/getstream?id=5bed693c6a22de55f1061c509bba5e3aeb2ea2aa
-#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (HD) (e57)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (FHD) (97d)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (FHD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (FHD) (afb)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (HD) (b02)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (HD) (b02)
 http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (FHD) (afb)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (FHD) (778)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (FHD) (778)
 http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (FHD) (0f7)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
-#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (UHD) (152)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (UHD) (152)
-http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (HD) (2b5)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (HD) (2b5)
 http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
+#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (FHD) (afb)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (FHD) (afb)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (UHD) (152)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (UHD) (152)
+http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
+#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (FHD) (97d)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (FHD) (97d)
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (HD) (e57)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (FHD) (0f7)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (HD) (63e)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (HD) (63e)
 http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (FHD) (91b)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES) (FHD) (91b)
@@ -463,14 +463,14 @@ http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
 http://127.0.0.1:6878/ace/getstream?id=43249349740032bee068b5bbff7b078f642812db
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 3) (FHD) (1de)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 3) (FHD) (1de)
 http://127.0.0.1:6878/ace/getstream?id=1dece791d28be6a5af78537ac4864ec01fa0a6d8
-#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 3) (FHD) (17b)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 3) (FHD) (17b)
-http://127.0.0.1:6878/ace/getstream?id=17b8bc4bf8e29547b0071c742e3d7da3bcbc484d
-#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 3) (FHD) (079)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 3) (FHD) (079)
-http://127.0.0.1:6878/ace/getstream?id=07976f79d17a439d7aff46cf0d4cfdf80311caf5
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 3) (FHD) (66b)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 3) (FHD) (66b)
 http://127.0.0.1:6878/ace/getstream?id=66b373c0da20ac615996dbd1c340087f50a9a39e
+#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 3) (FHD) (17b)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 3) (FHD) (17b)
+http://127.0.0.1:6878/ace/getstream?id=17b8bc4bf8e29547b0071c742e3d7da3bcbc484d
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 3) (HD) (90f)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 3) (HD) (90f)
 http://127.0.0.1:6878/ace/getstream?id=90f7941c6bf7ca4b18084a1dca7bc15b9b179373
+#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 3) (FHD) (079)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 3) (FHD) (079)
+http://127.0.0.1:6878/ace/getstream?id=07976f79d17a439d7aff46cf0d4cfdf80311caf5
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 3) (HD) (5b7)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 3) (HD) (5b7)
 http://127.0.0.1:6878/ace/getstream?id=5b7f54b12e0f96ceba1299f44eac4b0f97403e4e
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 3) (HD) (cfc)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 3) (HD) (cfc)
@@ -481,41 +481,41 @@ http://127.0.0.1:6878/ace/getstream?id=6fbab1d8d6bf93c4bc7552714aa3bb54ebf7b661
 http://127.0.0.1:6878/ace/getstream?id=77998f8161373611ff6b348e7eda5b4e97d3ec29
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 4) (HD) (5ba)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 4) (HD) (5ba)
 http://127.0.0.1:6878/ace/getstream?id=5ba9368d80d2f87ac1c6d71df4e7e6e26e6911f2
-#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 4) (HD) (64f)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 4) (HD) (64f)
-http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 4) (HD) (e9f)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 4) (HD) (e9f)
 http://127.0.0.1:6878/ace/getstream?id=e9f4493d2d851f4636720f639113e05b4a21a74c
+#EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 4) (HD) (64f)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 4) (HD) (64f)
+http://127.0.0.1:6878/ace/getstream?id=64f01629d4a19e70efd9e6778c397282ba087547
 #EXTINF:-1 group-title="03-19 (Jueves) Europa League 1/8 de final" tvg-name="21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 4) (FHD) (91a)",21:00-Real Betis-Panathinaikos (LIGA DE CAMPEONES 4) (FHD) (91a)
 http://127.0.0.1:6878/ace/getstream?id=91ac4585368992720ec17ffa5b4389368c6dcac1
 #EXTINF:-1 group-title="03-20 (Viernes) Euroliga Liga Regular" tvg-name="18:45-Fenerbahce Istanbul-AX Olimpia Milano (MOVISTAR DEPORTES 4) (HD) (8b5)",18:45-Fenerbahce Istanbul-AX Olimpia Milano (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
-#EXTINF:-1 group-title="03-20 (Viernes) Euroliga Liga Regular" tvg-name="19:00-Zalgiris Kaunas-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (b6f)",19:00-Zalgiris Kaunas-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (b6f)
-http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
-#EXTINF:-1 group-title="03-20 (Viernes) Euroliga Liga Regular" tvg-name="19:00-Zalgiris Kaunas-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (586)",19:00-Zalgiris Kaunas-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (586)
-http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
 #EXTINF:-1 group-title="03-20 (Viernes) Euroliga Liga Regular" tvg-name="19:00-Zalgiris Kaunas-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (199)",19:00-Zalgiris Kaunas-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
+#EXTINF:-1 group-title="03-20 (Viernes) Euroliga Liga Regular" tvg-name="19:00-Zalgiris Kaunas-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (586)",19:00-Zalgiris Kaunas-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (586)
+http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
+#EXTINF:-1 group-title="03-20 (Viernes) Euroliga Liga Regular" tvg-name="19:00-Zalgiris Kaunas-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (b6f)",19:00-Zalgiris Kaunas-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (b6f)
+http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
+#EXTINF:-1 group-title="03-20 (Viernes) Euroliga Liga Regular" tvg-name="19:00-Zalgiris Kaunas-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (5d3)",19:00-Zalgiris Kaunas-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="03-20 (Viernes) Euroliga Liga Regular" tvg-name="19:00-Zalgiris Kaunas-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (369)",19:00-Zalgiris Kaunas-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="03-20 (Viernes) Euroliga Liga Regular" tvg-name="19:00-Zalgiris Kaunas-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (f82)",19:00-Zalgiris Kaunas-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="03-20 (Viernes) Euroliga Liga Regular" tvg-name="19:00-Zalgiris Kaunas-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (5d3)",19:00-Zalgiris Kaunas-Real Madrid Baloncesto (MOVISTAR DEPORTES) (FHD) (5d3)
+#EXTINF:-1 group-title="03-20 (Viernes) Euroliga Liga Regular" tvg-name="20:15-Panathinaikos BC-Crvena Zvezda MTS Belgrade (MOVISTAR DEPORTES) (FHD) (5d3)",20:15-Panathinaikos BC-Crvena Zvezda MTS Belgrade (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="03-20 (Viernes) Euroliga Liga Regular" tvg-name="20:15-Panathinaikos BC-Crvena Zvezda MTS Belgrade (MOVISTAR DEPORTES) (FHD) (369)",20:15-Panathinaikos BC-Crvena Zvezda MTS Belgrade (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="03-20 (Viernes) Euroliga Liga Regular" tvg-name="20:15-Panathinaikos BC-Crvena Zvezda MTS Belgrade (MOVISTAR DEPORTES) (FHD) (f82)",20:15-Panathinaikos BC-Crvena Zvezda MTS Belgrade (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="03-20 (Viernes) Euroliga Liga Regular" tvg-name="20:15-Panathinaikos BC-Crvena Zvezda MTS Belgrade (MOVISTAR DEPORTES) (FHD) (5d3)",20:15-Panathinaikos BC-Crvena Zvezda MTS Belgrade (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="03-20 (Viernes) LaLiga Hypermotion" tvg-name="20:30-Huesca-UD Almería (HYPERMOTION) (HD) (87b)",20:30-Huesca-UD Almería (HYPERMOTION) (HD) (87b)
-http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="03-20 (Viernes) LaLiga Hypermotion" tvg-name="20:30-Huesca-UD Almería (HYPERMOTION) (HD) (a4f)",20:30-Huesca-UD Almería (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
-#EXTINF:-1 group-title="03-20 (Viernes) La Liga EA Sports" tvg-name="21:00-Villarreal-Real Sociedad (M+ LALIGA) (FHD) (8c3)",21:00-Villarreal-Real Sociedad (M+ LALIGA) (FHD) (8c3)
-http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
-#EXTINF:-1 group-title="03-20 (Viernes) La Liga EA Sports" tvg-name="21:00-Villarreal-Real Sociedad (M+ LALIGA) (FHD) (af4)",21:00-Villarreal-Real Sociedad (M+ LALIGA) (FHD) (af4)
-http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
+#EXTINF:-1 group-title="03-20 (Viernes) LaLiga Hypermotion" tvg-name="20:30-Huesca-UD Almería (HYPERMOTION) (HD) (87b)",20:30-Huesca-UD Almería (HYPERMOTION) (HD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="03-20 (Viernes) La Liga EA Sports" tvg-name="21:00-Villarreal-Real Sociedad (M+ LALIGA) (HD) (31c)",21:00-Villarreal-Real Sociedad (M+ LALIGA) (HD) (31c)
 http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
+#EXTINF:-1 group-title="03-20 (Viernes) La Liga EA Sports" tvg-name="21:00-Villarreal-Real Sociedad (M+ LALIGA) (FHD) (af4)",21:00-Villarreal-Real Sociedad (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
+#EXTINF:-1 group-title="03-20 (Viernes) La Liga EA Sports" tvg-name="21:00-Villarreal-Real Sociedad (M+ LALIGA) (FHD) (8c3)",21:00-Villarreal-Real Sociedad (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
 #EXTINF:-1 group-title="03-20 (Viernes) México Open" tvg-name="22:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 4) (HD) (8b5)",22:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
