@@ -1,44 +1,46 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="03-23 (Lunes) Serie A Brasil" tvg-name="00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (HD) (2b5)",00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (HD) (2b5)
-http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
-#EXTINF:-1 group-title="03-23 (Lunes) Serie A Brasil" tvg-name="00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (FHD) (778)",00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (FHD) (778)
-http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="03-23 (Lunes) Serie A Brasil" tvg-name="00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (HD) (97d)",00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (HD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="03-23 (Lunes) Serie A Brasil" tvg-name="00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (HD) (b02)",00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
 #EXTINF:-1 group-title="03-23 (Lunes) Serie A Brasil" tvg-name="00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (FHD) (0f7)",00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (FHD) (0f7)
 http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
+#EXTINF:-1 group-title="03-23 (Lunes) Serie A Brasil" tvg-name="00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (HD) (2b5)",00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (HD) (2b5)
+http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
+#EXTINF:-1 group-title="03-23 (Lunes) Serie A Brasil" tvg-name="00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (HD) (97d)",00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (HD) (97d)
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="03-23 (Lunes) Serie A Brasil" tvg-name="00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (FHD) (afb)",00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
 #EXTINF:-1 group-title="03-23 (Lunes) Serie A Brasil" tvg-name="00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (UHD) (152)",00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (UHD) (152)
 http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
 #EXTINF:-1 group-title="03-23 (Lunes) Serie A Brasil" tvg-name="00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (FHD) (afb)",00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
-#EXTINF:-1 group-title="03-23 (Lunes) Serie A Brasil" tvg-name="00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (HD) (b02)",00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="03-23 (Lunes) Serie A Brasil" tvg-name="00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (FHD) (afb)",00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="03-23 (Lunes) Serie A Brasil" tvg-name="00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (FHD) (778)",00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (FHD) (778)
+http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
 #EXTINF:-1 group-title="03-23 (Lunes) Serie A Brasil" tvg-name="00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (HD) (e57)",00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (HD) (e57)
 http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="03-23 (Lunes) Serie A Brasil" tvg-name="00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (HD) (63e)",00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (HD) (63e)
-http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
 #EXTINF:-1 group-title="03-23 (Lunes) Serie A Brasil" tvg-name="00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (FHD) (91b)",00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (FHD) (91b)
 http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
+#EXTINF:-1 group-title="03-23 (Lunes) Serie A Brasil" tvg-name="00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (HD) (63e)",00:30-Corinthians-CR Flamengo (LIGA DE CAMPEONES) (HD) (63e)
+http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="01:00-M. Berrettini-V. Vacherot (MOVISTAR DEPORTES 3) (HD) (39f)",01:00-M. Berrettini-V. Vacherot (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="01:00-M. Berrettini-V. Vacherot (MOVISTAR DEPORTES 3) (HD) (e9c)",01:00-M. Berrettini-V. Vacherot (MOVISTAR DEPORTES 3) (HD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="01:00-M. Berrettini-V. Vacherot (MOVISTAR DEPORTES 3) (FHD) (f4d)",01:00-M. Berrettini-V. Vacherot (MOVISTAR DEPORTES 3) (FHD) (f4d)
 http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
+#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="01:00-M. Berrettini-V. Vacherot (MOVISTAR DEPORTES 3) (HD) (e9c)",01:00-M. Berrettini-V. Vacherot (MOVISTAR DEPORTES 3) (HD) (e9c)
+http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="01:00-M. Berrettini-V. Vacherot (MOVISTAR DEPORTES 3) (FHD) (799)",01:00-M. Berrettini-V. Vacherot (MOVISTAR DEPORTES 3) (FHD) (799)
 http://127.0.0.1:6878/ace/getstream?id=799c6b5ee1cf41af077d14e3f9c45a32697eb903
-#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="02:00-A. Fils-S. Tsitsipas (MOVISTAR DEPORTES 2) (FHD) (73d)",02:00-A. Fils-S. Tsitsipas (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="02:00-A. Fils-S. Tsitsipas (MOVISTAR DEPORTES 2) (HD) (3af)",02:00-A. Fils-S. Tsitsipas (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="02:00-A. Fils-S. Tsitsipas (MOVISTAR DEPORTES 2) (FHD) (377)",02:00-A. Fils-S. Tsitsipas (MOVISTAR DEPORTES 2) (FHD) (377)
-http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
+#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="02:00-A. Fils-S. Tsitsipas (MOVISTAR DEPORTES 2) (FHD) (73d)",02:00-A. Fils-S. Tsitsipas (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="02:00-A. Fils-S. Tsitsipas (MOVISTAR DEPORTES 2) (HD) (6b1)",02:00-A. Fils-S. Tsitsipas (MOVISTAR DEPORTES 2) (HD) (6b1)
 http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
+#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="02:00-A. Fils-S. Tsitsipas (MOVISTAR DEPORTES 2) (FHD) (377)",02:00-A. Fils-S. Tsitsipas (MOVISTAR DEPORTES 2) (FHD) (377)
+http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
+#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="02:00-A. Fils-S. Tsitsipas (MOVISTAR DEPORTES 2) (FHD) (890)",02:00-A. Fils-S. Tsitsipas (MOVISTAR DEPORTES 2) (FHD) (890)
+http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="02:00-A. Fils-S. Tsitsipas (MOVISTAR DEPORTES 2) (HD) (bfa)",02:00-A. Fils-S. Tsitsipas (MOVISTAR DEPORTES 2) (HD) (bfa)
 http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="02:00-A. Fils-S. Tsitsipas (MOVISTAR DEPORTES 2) (FHD) (f0e)",02:00-A. Fils-S. Tsitsipas (MOVISTAR DEPORTES 2) (FHD) (f0e)
@@ -53,50 +55,54 @@ http://127.0.0.1:6878/ace/getstream?id=2a5d90651e212106434edea5bfbba1a843b7b97c
 http://127.0.0.1:6878/ace/getstream?id=590a1f4546e3a0d5d419b62b8177b44d6ce0339f
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="17:00-F. Cerúndolo-D. Medvedev (MOVISTAR DEPORTES 3) (HD) (39f)",17:00-F. Cerúndolo-D. Medvedev (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="17:00-F. Cerúndolo-D. Medvedev (MOVISTAR DEPORTES 3) (HD) (e9c)",17:00-F. Cerúndolo-D. Medvedev (MOVISTAR DEPORTES 3) (HD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="17:00-F. Cerúndolo-D. Medvedev (MOVISTAR DEPORTES 3) (FHD) (f4d)",17:00-F. Cerúndolo-D. Medvedev (MOVISTAR DEPORTES 3) (FHD) (f4d)
 http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
+#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="17:00-F. Cerúndolo-D. Medvedev (MOVISTAR DEPORTES 3) (HD) (e9c)",17:00-F. Cerúndolo-D. Medvedev (MOVISTAR DEPORTES 3) (HD) (e9c)
+http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="17:00-F. Cerúndolo-D. Medvedev (MOVISTAR DEPORTES 3) (FHD) (799)",17:00-F. Cerúndolo-D. Medvedev (MOVISTAR DEPORTES 3) (FHD) (799)
 http://127.0.0.1:6878/ace/getstream?id=799c6b5ee1cf41af077d14e3f9c45a32697eb903
-#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="17:30-F. Auger-Aliassime-T. Atmane (MOVISTAR DEPORTES 2) (FHD) (73d)",17:30-F. Auger-Aliassime-T. Atmane (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="17:30-F. Auger-Aliassime-T. Atmane (MOVISTAR DEPORTES 2) (HD) (3af)",17:30-F. Auger-Aliassime-T. Atmane (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="17:30-F. Auger-Aliassime-T. Atmane (MOVISTAR DEPORTES 2) (FHD) (377)",17:30-F. Auger-Aliassime-T. Atmane (MOVISTAR DEPORTES 2) (FHD) (377)
-http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
+#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="17:30-F. Auger-Aliassime-T. Atmane (MOVISTAR DEPORTES 2) (FHD) (73d)",17:30-F. Auger-Aliassime-T. Atmane (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="17:30-F. Auger-Aliassime-T. Atmane (MOVISTAR DEPORTES 2) (HD) (6b1)",17:30-F. Auger-Aliassime-T. Atmane (MOVISTAR DEPORTES 2) (HD) (6b1)
 http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
+#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="17:30-F. Auger-Aliassime-T. Atmane (MOVISTAR DEPORTES 2) (FHD) (377)",17:30-F. Auger-Aliassime-T. Atmane (MOVISTAR DEPORTES 2) (FHD) (377)
+http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
+#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="17:30-F. Auger-Aliassime-T. Atmane (MOVISTAR DEPORTES 2) (FHD) (890)",17:30-F. Auger-Aliassime-T. Atmane (MOVISTAR DEPORTES 2) (FHD) (890)
+http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="17:30-F. Auger-Aliassime-T. Atmane (MOVISTAR DEPORTES 2) (HD) (bfa)",17:30-F. Auger-Aliassime-T. Atmane (MOVISTAR DEPORTES 2) (HD) (bfa)
 http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="17:30-F. Auger-Aliassime-T. Atmane (MOVISTAR DEPORTES 2) (FHD) (f0e)",17:30-F. Auger-Aliassime-T. Atmane (MOVISTAR DEPORTES 2) (FHD) (f0e)
 http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
-#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="19:00-F. Tiafoe-J. Mensik (MOVISTAR DEPORTES 2) (FHD) (73d)",19:00-F. Tiafoe-J. Mensik (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="19:00-F. Tiafoe-J. Mensik (MOVISTAR DEPORTES 2) (HD) (3af)",19:00-F. Tiafoe-J. Mensik (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="19:00-F. Tiafoe-J. Mensik (MOVISTAR DEPORTES 2) (FHD) (377)",19:00-F. Tiafoe-J. Mensik (MOVISTAR DEPORTES 2) (FHD) (377)
-http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
+#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="19:00-F. Tiafoe-J. Mensik (MOVISTAR DEPORTES 2) (FHD) (73d)",19:00-F. Tiafoe-J. Mensik (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="19:00-F. Tiafoe-J. Mensik (MOVISTAR DEPORTES 2) (HD) (6b1)",19:00-F. Tiafoe-J. Mensik (MOVISTAR DEPORTES 2) (HD) (6b1)
 http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
+#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="19:00-F. Tiafoe-J. Mensik (MOVISTAR DEPORTES 2) (FHD) (377)",19:00-F. Tiafoe-J. Mensik (MOVISTAR DEPORTES 2) (FHD) (377)
+http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
+#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="19:00-F. Tiafoe-J. Mensik (MOVISTAR DEPORTES 2) (FHD) (890)",19:00-F. Tiafoe-J. Mensik (MOVISTAR DEPORTES 2) (FHD) (890)
+http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="19:00-F. Tiafoe-J. Mensik (MOVISTAR DEPORTES 2) (HD) (bfa)",19:00-F. Tiafoe-J. Mensik (MOVISTAR DEPORTES 2) (HD) (bfa)
 http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="19:00-F. Tiafoe-J. Mensik (MOVISTAR DEPORTES 2) (FHD) (f0e)",19:00-F. Tiafoe-J. Mensik (MOVISTAR DEPORTES 2) (FHD) (f0e)
 http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
-#EXTINF:-1 group-title="03-23 (Lunes) Liga F" tvg-name="19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (FHD) (1e7)",19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (FHD) (1e7)
-http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
-#EXTINF:-1 group-title="03-23 (Lunes) Liga F" tvg-name="19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (FHD) (414)",19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (FHD) (414)
-http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
 #EXTINF:-1 group-title="03-23 (Lunes) Liga F" tvg-name="19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (FHD) (363)",19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (FHD) (363)
 http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
-#EXTINF:-1 group-title="03-23 (Lunes) Liga F" tvg-name="19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (FHD) (b03)",19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (FHD) (b03)
-http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
+#EXTINF:-1 group-title="03-23 (Lunes) Liga F" tvg-name="19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (FHD) (1e7)",19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (FHD) (1e7)
+http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
 #EXTINF:-1 group-title="03-23 (Lunes) Liga F" tvg-name="19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (HD) (5b7)",19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (HD) (5b7)
 http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
-#EXTINF:-1 group-title="03-23 (Lunes) Liga F" tvg-name="19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (FHD) (691)",19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (FHD) (691)
-http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
+#EXTINF:-1 group-title="03-23 (Lunes) Liga F" tvg-name="19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (FHD) (414)",19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (FHD) (414)
+http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
 #EXTINF:-1 group-title="03-23 (Lunes) Liga F" tvg-name="19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (HD) (d5b)",19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (HD) (d5b)
 http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
+#EXTINF:-1 group-title="03-23 (Lunes) Liga F" tvg-name="19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (FHD) (b03)",19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (FHD) (b03)
+http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
+#EXTINF:-1 group-title="03-23 (Lunes) Liga F" tvg-name="19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (FHD) (691)",19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (FHD) (691)
+http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
 #EXTINF:-1 group-title="03-23 (Lunes) Liga F" tvg-name="19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (HD) (a11)",19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (HD) (a11)
 http://127.0.0.1:6878/ace/getstream?id=a116ce3ff95c41c60e987e2b1aa247007f707884
 #EXTINF:-1 group-title="03-23 (Lunes) Liga F" tvg-name="19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (FHD) (ddd)",19:30-Granada Femenino-Deportivo Abanca (DAZN 1) (FHD) (ddd)
@@ -111,24 +117,26 @@ http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
 #EXTINF:-1 group-title="03-23 (Lunes) LaLiga Hypermotion" tvg-name="20:30-CD Castellón-Cultural Leonesa (HYPERMOTION) (FHD) (463)",20:30-CD Castellón-Cultural Leonesa (HYPERMOTION) (FHD) (463)
 http://127.0.0.1:6878/ace/getstream?id=4636ed75106cb00e9c70cc2029edf0a4df7ad73f
-#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="21:00-A. Tabilo-A. Michelsen (MOVISTAR DEPORTES 5) (HD) (323)",21:00-A. Tabilo-A. Michelsen (MOVISTAR DEPORTES 5) (HD) (323)
-http://127.0.0.1:6878/ace/getstream?id=3230cdca852a10325222e3c546e499e31d547a90
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="21:00-A. Tabilo-A. Michelsen (MOVISTAR DEPORTES 5) (FHD) (591)",21:00-A. Tabilo-A. Michelsen (MOVISTAR DEPORTES 5) (FHD) (591)
 http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="21:00-A. Tabilo-A. Michelsen (MOVISTAR DEPORTES 5) (FHD) (6dc)",21:00-A. Tabilo-A. Michelsen (MOVISTAR DEPORTES 5) (FHD) (6dc)
 http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
+#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="21:00-A. Tabilo-A. Michelsen (MOVISTAR DEPORTES 5) (HD) (323)",21:00-A. Tabilo-A. Michelsen (MOVISTAR DEPORTES 5) (HD) (323)
+http://127.0.0.1:6878/ace/getstream?id=3230cdca852a10325222e3c546e499e31d547a90
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="21:00-A. Tabilo-A. Michelsen (MOVISTAR DEPORTES 5) (FHD) (646)",21:00-A. Tabilo-A. Michelsen (MOVISTAR DEPORTES 5) (FHD) (646)
 http://127.0.0.1:6878/ace/getstream?id=646a1ed4ece843de1979f7888cbdd4d937506a28
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="21:00-A. Tabilo-A. Michelsen (MOVISTAR DEPORTES 5) (HD) (7b3)",21:00-A. Tabilo-A. Michelsen (MOVISTAR DEPORTES 5) (HD) (7b3)
 http://127.0.0.1:6878/ace/getstream?id=7b361369a40046ad3011086f9d4ae2982fb4d5aa
-#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="21:00-M. Cilic-A. Zverev (MOVISTAR DEPORTES 2) (FHD) (73d)",21:00-M. Cilic-A. Zverev (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="21:00-M. Cilic-A. Zverev (MOVISTAR DEPORTES 2) (HD) (3af)",21:00-M. Cilic-A. Zverev (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="21:00-M. Cilic-A. Zverev (MOVISTAR DEPORTES 2) (FHD) (377)",21:00-M. Cilic-A. Zverev (MOVISTAR DEPORTES 2) (FHD) (377)
-http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
+#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="21:00-M. Cilic-A. Zverev (MOVISTAR DEPORTES 2) (FHD) (73d)",21:00-M. Cilic-A. Zverev (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="21:00-M. Cilic-A. Zverev (MOVISTAR DEPORTES 2) (HD) (6b1)",21:00-M. Cilic-A. Zverev (MOVISTAR DEPORTES 2) (HD) (6b1)
 http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
+#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="21:00-M. Cilic-A. Zverev (MOVISTAR DEPORTES 2) (FHD) (377)",21:00-M. Cilic-A. Zverev (MOVISTAR DEPORTES 2) (FHD) (377)
+http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
+#EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="21:00-M. Cilic-A. Zverev (MOVISTAR DEPORTES 2) (FHD) (890)",21:00-M. Cilic-A. Zverev (MOVISTAR DEPORTES 2) (FHD) (890)
+http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="21:00-M. Cilic-A. Zverev (MOVISTAR DEPORTES 2) (HD) (bfa)",21:00-M. Cilic-A. Zverev (MOVISTAR DEPORTES 2) (HD) (bfa)
 http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="21:00-M. Cilic-A. Zverev (MOVISTAR DEPORTES 2) (FHD) (f0e)",21:00-M. Cilic-A. Zverev (MOVISTAR DEPORTES 2) (FHD) (f0e)
@@ -141,40 +149,50 @@ http://127.0.0.1:6878/ace/getstream?id=4abe06c5cce7cb3c6bef2c3bccaafefd3299794f
 http://127.0.0.1:6878/ace/getstream?id=2a5d90651e212106434edea5bfbba1a843b7b97c
 #EXTINF:-1 group-title="03-23 (Lunes) Masters Miami 3ª Ronda" tvg-name="22:00-Q. Halys-K. Majchrzak (MOVISTAR DEPORTES 4) (HD) (590)",22:00-Q. Halys-K. Majchrzak (MOVISTAR DEPORTES 4) (HD) (590)
 http://127.0.0.1:6878/ace/getstream?id=590a1f4546e3a0d5d419b62b8177b44d6ce0339f
-#EXTINF:-1 group-title="03-24 (Martes) Masters Miami 3ª Ronda" tvg-name="00:00-C. Moutet-J. Sinner (MOVISTAR PLUS) (FHD) (586)",00:00-C. Moutet-J. Sinner (MOVISTAR PLUS) (FHD) (586)
-http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
 #EXTINF:-1 group-title="03-24 (Martes) Masters Miami 3ª Ronda" tvg-name="00:00-C. Moutet-J. Sinner (MOVISTAR PLUS) (FHD) (b6f)",00:00-C. Moutet-J. Sinner (MOVISTAR PLUS) (FHD) (b6f)
 http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
 #EXTINF:-1 group-title="03-24 (Martes) Masters Miami 3ª Ronda" tvg-name="00:00-C. Moutet-J. Sinner (MOVISTAR PLUS) (FHD) (199)",00:00-C. Moutet-J. Sinner (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 group-title="03-24 (Martes) Masters Miami 3ª Ronda" tvg-name="00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 2) (FHD) (73d)",00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="03-24 (Martes) Masters Miami 3ª Ronda" tvg-name="00:00-C. Moutet-J. Sinner (MOVISTAR PLUS) (FHD) (586)",00:00-C. Moutet-J. Sinner (MOVISTAR PLUS) (FHD) (586)
+http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
+#EXTINF:-1 group-title="03-24 (Martes) Masters Miami 3ª Ronda" tvg-name="00:00-C. Moutet-J. Sinner (MOVISTAR PLUS) (HD) (d23)",00:00-C. Moutet-J. Sinner (MOVISTAR PLUS) (HD) (d23)
+http://127.0.0.1:6878/ace/getstream?id=d23497596720b47b096ec0f850d6d26a19d1a336
+#EXTINF:-1 group-title="03-24 (Martes) Masters Miami 3ª Ronda" tvg-name="00:00-C. Moutet-J. Sinner (MOVISTAR PLUS) (FHD) (ed7)",00:00-C. Moutet-J. Sinner (MOVISTAR PLUS) (FHD) (ed7)
+http://127.0.0.1:6878/ace/getstream?id=ed74406ccdb3c21941b919db6bffca7f1de015bb
+#EXTINF:-1 group-title="03-24 (Martes) Masters Miami 3ª Ronda" tvg-name="00:00-C. Moutet-J. Sinner (MOVISTAR PLUS) (FHD) (1ab)",00:00-C. Moutet-J. Sinner (MOVISTAR PLUS) (FHD) (1ab)
+http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
 #EXTINF:-1 group-title="03-24 (Martes) Masters Miami 3ª Ronda" tvg-name="00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 2) (HD) (3af)",00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="03-24 (Martes) Masters Miami 3ª Ronda" tvg-name="00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 2) (FHD) (377)",00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 2) (FHD) (377)
-http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
+#EXTINF:-1 group-title="03-24 (Martes) Masters Miami 3ª Ronda" tvg-name="00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 2) (FHD) (73d)",00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="03-24 (Martes) Masters Miami 3ª Ronda" tvg-name="00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 2) (HD) (6b1)",00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 2) (HD) (6b1)
 http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
+#EXTINF:-1 group-title="03-24 (Martes) Masters Miami 3ª Ronda" tvg-name="00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 2) (FHD) (377)",00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 2) (FHD) (377)
+http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
+#EXTINF:-1 group-title="03-24 (Martes) Masters Miami 3ª Ronda" tvg-name="00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 2) (FHD) (890)",00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 2) (FHD) (890)
+http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
 #EXTINF:-1 group-title="03-24 (Martes) Masters Miami 3ª Ronda" tvg-name="00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 2) (HD) (bfa)",00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 2) (HD) (bfa)
 http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
 #EXTINF:-1 group-title="03-24 (Martes) Masters Miami 3ª Ronda" tvg-name="00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 2) (FHD) (f0e)",00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 2) (FHD) (f0e)
 http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
 #EXTINF:-1 group-title="03-24 (Martes) Masters Miami 3ª Ronda" tvg-name="00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 3) (HD) (39f)",00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="03-24 (Martes) Masters Miami 3ª Ronda" tvg-name="00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 3) (HD) (e9c)",00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 3) (HD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
 #EXTINF:-1 group-title="03-24 (Martes) Masters Miami 3ª Ronda" tvg-name="00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 3) (FHD) (f4d)",00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 3) (FHD) (f4d)
 http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
+#EXTINF:-1 group-title="03-24 (Martes) Masters Miami 3ª Ronda" tvg-name="00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 3) (HD) (e9c)",00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 3) (HD) (e9c)
+http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
 #EXTINF:-1 group-title="03-24 (Martes) Masters Miami 3ª Ronda" tvg-name="00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 3) (FHD) (799)",00:00-C. Moutet-J. Sinner (MOVISTAR DEPORTES 3) (FHD) (799)
 http://127.0.0.1:6878/ace/getstream?id=799c6b5ee1cf41af077d14e3f9c45a32697eb903
-#EXTINF:-1 group-title="03-24 (Martes) Masters Miami" tvg-name="16:05-1/8 de final ATP Masters 1000 (MOVISTAR DEPORTES 2) (FHD) (73d)",16:05-1/8 de final ATP Masters 1000 (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="03-24 (Martes) Masters Miami" tvg-name="16:05-1/8 de final ATP Masters 1000 (MOVISTAR DEPORTES 2) (HD) (3af)",16:05-1/8 de final ATP Masters 1000 (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="03-24 (Martes) Masters Miami" tvg-name="16:05-1/8 de final ATP Masters 1000 (MOVISTAR DEPORTES 2) (FHD) (377)",16:05-1/8 de final ATP Masters 1000 (MOVISTAR DEPORTES 2) (FHD) (377)
-http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
+#EXTINF:-1 group-title="03-24 (Martes) Masters Miami" tvg-name="16:05-1/8 de final ATP Masters 1000 (MOVISTAR DEPORTES 2) (FHD) (73d)",16:05-1/8 de final ATP Masters 1000 (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="03-24 (Martes) Masters Miami" tvg-name="16:05-1/8 de final ATP Masters 1000 (MOVISTAR DEPORTES 2) (HD) (6b1)",16:05-1/8 de final ATP Masters 1000 (MOVISTAR DEPORTES 2) (HD) (6b1)
 http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
+#EXTINF:-1 group-title="03-24 (Martes) Masters Miami" tvg-name="16:05-1/8 de final ATP Masters 1000 (MOVISTAR DEPORTES 2) (FHD) (377)",16:05-1/8 de final ATP Masters 1000 (MOVISTAR DEPORTES 2) (FHD) (377)
+http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
+#EXTINF:-1 group-title="03-24 (Martes) Masters Miami" tvg-name="16:05-1/8 de final ATP Masters 1000 (MOVISTAR DEPORTES 2) (FHD) (890)",16:05-1/8 de final ATP Masters 1000 (MOVISTAR DEPORTES 2) (FHD) (890)
+http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
 #EXTINF:-1 group-title="03-24 (Martes) Masters Miami" tvg-name="16:05-1/8 de final ATP Masters 1000 (MOVISTAR DEPORTES 2) (HD) (bfa)",16:05-1/8 de final ATP Masters 1000 (MOVISTAR DEPORTES 2) (HD) (bfa)
 http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
 #EXTINF:-1 group-title="03-24 (Martes) Masters Miami" tvg-name="16:05-1/8 de final ATP Masters 1000 (MOVISTAR DEPORTES 2) (FHD) (f0e)",16:05-1/8 de final ATP Masters 1000 (MOVISTAR DEPORTES 2) (FHD) (f0e)
@@ -189,26 +207,34 @@ http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 http://127.0.0.1:6878/ace/getstream?id=c6a824a81b36f6c3529826477caf2ad94b45776d
 #EXTINF:-1 group-title="03-24 (Martes) Euroliga Liga Regular" tvg-name="18:30-Maccabi Tel Aviv BC-Fenerbahce Istanbul (MOVISTAR DEPORTES) (HD) (6e0)",18:30-Maccabi Tel Aviv BC-Fenerbahce Istanbul (MOVISTAR DEPORTES) (HD) (6e0)
 http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
-#EXTINF:-1 group-title="03-24 (Martes) Euroliga Liga Regular" tvg-name="18:30-Maccabi Tel Aviv BC-Fenerbahce Istanbul (MOVISTAR DEPORTES) (HD) (2f3)",18:30-Maccabi Tel Aviv BC-Fenerbahce Istanbul (MOVISTAR DEPORTES) (HD) (2f3)
-http://127.0.0.1:6878/ace/getstream?id=2f3cfd199a49819cbd129689a840dc3d23ab93aa
 #EXTINF:-1 group-title="03-24 (Martes) Euroliga Liga Regular" tvg-name="18:30-Maccabi Tel Aviv BC-Fenerbahce Istanbul (MOVISTAR DEPORTES) (FHD) (ebc)",18:30-Maccabi Tel Aviv BC-Fenerbahce Istanbul (MOVISTAR DEPORTES) (FHD) (ebc)
 http://127.0.0.1:6878/ace/getstream?id=ebca4a63ce3bfda7b272964a1acc5227218184a4
+#EXTINF:-1 group-title="03-24 (Martes) Euroliga Liga Regular" tvg-name="18:30-Maccabi Tel Aviv BC-Fenerbahce Istanbul (MOVISTAR DEPORTES) (HD) (2f3)",18:30-Maccabi Tel Aviv BC-Fenerbahce Istanbul (MOVISTAR DEPORTES) (HD) (2f3)
+http://127.0.0.1:6878/ace/getstream?id=2f3cfd199a49819cbd129689a840dc3d23ab93aa
 #EXTINF:-1 group-title="03-24 (Martes) Euroliga Liga Regular" tvg-name="19:30-Dubai Basketball-Panathinaikos BC (MOVISTAR DEPORTES 6) (HD) (8f9)",19:30-Dubai Basketball-Panathinaikos BC (MOVISTAR DEPORTES 6) (HD) (8f9)
 http://127.0.0.1:6878/ace/getstream?id=8f982a0d6e3196c12d0034142b65008321150f7c
+#EXTINF:-1 group-title="03-24 (Martes) Euroliga Liga Regular" tvg-name="19:30-Dubai Basketball-Panathinaikos BC (MOVISTAR DEPORTES 6) (FHD) (e6c)",19:30-Dubai Basketball-Panathinaikos BC (MOVISTAR DEPORTES 6) (FHD) (e6c)
+http://127.0.0.1:6878/ace/getstream?id=e6cd9205e26b3b6680f607030c702e911272524a
 #EXTINF:-1 group-title="03-24 (Martes) Euroliga Liga Regular" tvg-name="20:30-Barça Basket-Anadolu Efes Istanbul (MOVISTAR DEPORTES 3) (HD) (39f)",20:30-Barça Basket-Anadolu Efes Istanbul (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="03-24 (Martes) Euroliga Liga Regular" tvg-name="20:30-Barça Basket-Anadolu Efes Istanbul (MOVISTAR DEPORTES 3) (HD) (e9c)",20:30-Barça Basket-Anadolu Efes Istanbul (MOVISTAR DEPORTES 3) (HD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
 #EXTINF:-1 group-title="03-24 (Martes) Euroliga Liga Regular" tvg-name="20:30-Barça Basket-Anadolu Efes Istanbul (MOVISTAR DEPORTES 3) (FHD) (f4d)",20:30-Barça Basket-Anadolu Efes Istanbul (MOVISTAR DEPORTES 3) (FHD) (f4d)
 http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
+#EXTINF:-1 group-title="03-24 (Martes) Euroliga Liga Regular" tvg-name="20:30-Barça Basket-Anadolu Efes Istanbul (MOVISTAR DEPORTES 3) (HD) (e9c)",20:30-Barça Basket-Anadolu Efes Istanbul (MOVISTAR DEPORTES 3) (HD) (e9c)
+http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
 #EXTINF:-1 group-title="03-24 (Martes) Euroliga Liga Regular" tvg-name="20:30-Barça Basket-Anadolu Efes Istanbul (MOVISTAR DEPORTES 3) (FHD) (799)",20:30-Barça Basket-Anadolu Efes Istanbul (MOVISTAR DEPORTES 3) (FHD) (799)
 http://127.0.0.1:6878/ace/getstream?id=799c6b5ee1cf41af077d14e3f9c45a32697eb903
-#EXTINF:-1 group-title="03-24 (Martes) Euroliga Liga Regular" tvg-name="20:30-Valencia Basket-Olympiacos Piraeus (MOVISTAR PLUS) (FHD) (586)",20:30-Valencia Basket-Olympiacos Piraeus (MOVISTAR PLUS) (FHD) (586)
-http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
 #EXTINF:-1 group-title="03-24 (Martes) Euroliga Liga Regular" tvg-name="20:30-Valencia Basket-Olympiacos Piraeus (MOVISTAR PLUS) (FHD) (b6f)",20:30-Valencia Basket-Olympiacos Piraeus (MOVISTAR PLUS) (FHD) (b6f)
 http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
 #EXTINF:-1 group-title="03-24 (Martes) Euroliga Liga Regular" tvg-name="20:30-Valencia Basket-Olympiacos Piraeus (MOVISTAR PLUS) (FHD) (199)",20:30-Valencia Basket-Olympiacos Piraeus (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
+#EXTINF:-1 group-title="03-24 (Martes) Euroliga Liga Regular" tvg-name="20:30-Valencia Basket-Olympiacos Piraeus (MOVISTAR PLUS) (FHD) (586)",20:30-Valencia Basket-Olympiacos Piraeus (MOVISTAR PLUS) (FHD) (586)
+http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
+#EXTINF:-1 group-title="03-24 (Martes) Euroliga Liga Regular" tvg-name="20:30-Valencia Basket-Olympiacos Piraeus (MOVISTAR PLUS) (HD) (d23)",20:30-Valencia Basket-Olympiacos Piraeus (MOVISTAR PLUS) (HD) (d23)
+http://127.0.0.1:6878/ace/getstream?id=d23497596720b47b096ec0f850d6d26a19d1a336
+#EXTINF:-1 group-title="03-24 (Martes) Euroliga Liga Regular" tvg-name="20:30-Valencia Basket-Olympiacos Piraeus (MOVISTAR PLUS) (FHD) (ed7)",20:30-Valencia Basket-Olympiacos Piraeus (MOVISTAR PLUS) (FHD) (ed7)
+http://127.0.0.1:6878/ace/getstream?id=ed74406ccdb3c21941b919db6bffca7f1de015bb
+#EXTINF:-1 group-title="03-24 (Martes) Euroliga Liga Regular" tvg-name="20:30-Valencia Basket-Olympiacos Piraeus (MOVISTAR PLUS) (FHD) (1ab)",20:30-Valencia Basket-Olympiacos Piraeus (MOVISTAR PLUS) (FHD) (1ab)
+http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
 #EXTINF:-1 group-title="03-24 (Martes) Euroliga Liga Regular" tvg-name="20:30-Valencia Basket-Olympiacos Piraeus (MOVISTAR DEPORTES 4) (HD) (8b5)",20:30-Valencia Basket-Olympiacos Piraeus (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
 #EXTINF:-1 group-title="03-24 (Martes) Euroliga Liga Regular" tvg-name="20:30-Valencia Basket-Olympiacos Piraeus (MOVISTAR DEPORTES 4) (FHD) (4ab)",20:30-Valencia Basket-Olympiacos Piraeus (MOVISTAR DEPORTES 4) (FHD) (4ab)
@@ -227,147 +253,309 @@ http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 http://127.0.0.1:6878/ace/getstream?id=c6a824a81b36f6c3529826477caf2ad94b45776d
 #EXTINF:-1 group-title="03-24 (Martes) Euroliga Liga Regular" tvg-name="21:00-Real Madrid Baloncesto-Hapoel Tel Aviv BC (MOVISTAR DEPORTES) (HD) (6e0)",21:00-Real Madrid Baloncesto-Hapoel Tel Aviv BC (MOVISTAR DEPORTES) (HD) (6e0)
 http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
-#EXTINF:-1 group-title="03-24 (Martes) Euroliga Liga Regular" tvg-name="21:00-Real Madrid Baloncesto-Hapoel Tel Aviv BC (MOVISTAR DEPORTES) (HD) (2f3)",21:00-Real Madrid Baloncesto-Hapoel Tel Aviv BC (MOVISTAR DEPORTES) (HD) (2f3)
-http://127.0.0.1:6878/ace/getstream?id=2f3cfd199a49819cbd129689a840dc3d23ab93aa
 #EXTINF:-1 group-title="03-24 (Martes) Euroliga Liga Regular" tvg-name="21:00-Real Madrid Baloncesto-Hapoel Tel Aviv BC (MOVISTAR DEPORTES) (FHD) (ebc)",21:00-Real Madrid Baloncesto-Hapoel Tel Aviv BC (MOVISTAR DEPORTES) (FHD) (ebc)
 http://127.0.0.1:6878/ace/getstream?id=ebca4a63ce3bfda7b272964a1acc5227218184a4
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="09:30-At. Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (4e6)",09:30-At. Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (4e6)
-http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="09:30-At. Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (dda)",09:30-At. Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (dda)
-http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="09:30-At. Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (19f)",09:30-At. Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (19f)
-http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
+#EXTINF:-1 group-title="03-24 (Martes) Euroliga Liga Regular" tvg-name="21:00-Real Madrid Baloncesto-Hapoel Tel Aviv BC (MOVISTAR DEPORTES) (HD) (2f3)",21:00-Real Madrid Baloncesto-Hapoel Tel Aviv BC (MOVISTAR DEPORTES) (HD) (2f3)
+http://127.0.0.1:6878/ace/getstream?id=2f3cfd199a49819cbd129689a840dc3d23ab93aa
 #EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="09:30-At. Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (FHD) (0e5)",09:30-At. Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (FHD) (0e5)
 http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="10:00-Galatasaray Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (4e6)",10:00-Galatasaray Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (4e6)
-http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="10:00-Galatasaray Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (dda)",10:00-Galatasaray Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (dda)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="09:30-At. Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (dda)",09:30-At. Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (dda)
 http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="10:00-Galatasaray Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (19f)",10:00-Galatasaray Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (19f)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="09:30-At. Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (4e6)",09:30-At. Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (4e6)
+http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="09:30-At. Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (19f)",09:30-At. Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (19f)
 http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="09:30-At. Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (eb4)",09:30-At. Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (eb4)
+http://127.0.0.1:6878/ace/getstream?id=eb4975702ceadca7ed74f8707e17a9f55569dbb9
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="09:30-At. Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (FHD) (cc1)",09:30-At. Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (FHD) (cc1)
+http://127.0.0.1:6878/ace/getstream?id=cc108ae39f92c48f6c946763047bd1c9b7b7d889
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="09:30-At. Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (9c7)",09:30-At. Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (9c7)
+http://127.0.0.1:6878/ace/getstream?id=9c75f1d190c518cfe0f236415b8dccc1f676ef3b
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="09:30-At. Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (FHD) (495)",09:30-At. Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (FHD) (495)
+http://127.0.0.1:6878/ace/getstream?id=4955867fad3bc92e5b4c36045699fc277800fb18
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="09:30-At. Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (FHD) (e2b)",09:30-At. Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (FHD) (e2b)
+http://127.0.0.1:6878/ace/getstream?id=e2b8a4aba2f4ea3dd68992fcdb65c9e62d910b05
 #EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="10:00-Galatasaray Academy-Inter Milan Academy (DAZN LA LIGA 1) (FHD) (0e5)",10:00-Galatasaray Academy-Inter Milan Academy (DAZN LA LIGA 1) (FHD) (0e5)
 http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="10:30-Bayer Leverkusen Academy-PSG Academy (DAZN LA LIGA 1) (HD) (4e6)",10:30-Bayer Leverkusen Academy-PSG Academy (DAZN LA LIGA 1) (HD) (4e6)
-http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="10:30-Bayer Leverkusen Academy-PSG Academy (DAZN LA LIGA 1) (HD) (dda)",10:30-Bayer Leverkusen Academy-PSG Academy (DAZN LA LIGA 1) (HD) (dda)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="10:00-Galatasaray Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (dda)",10:00-Galatasaray Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (dda)
 http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="10:30-Bayer Leverkusen Academy-PSG Academy (DAZN LA LIGA 1) (HD) (19f)",10:30-Bayer Leverkusen Academy-PSG Academy (DAZN LA LIGA 1) (HD) (19f)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="10:00-Galatasaray Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (4e6)",10:00-Galatasaray Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (4e6)
+http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="10:00-Galatasaray Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (19f)",10:00-Galatasaray Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (19f)
 http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="10:00-Galatasaray Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (eb4)",10:00-Galatasaray Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (eb4)
+http://127.0.0.1:6878/ace/getstream?id=eb4975702ceadca7ed74f8707e17a9f55569dbb9
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="10:00-Galatasaray Academy-Inter Milan Academy (DAZN LA LIGA 1) (FHD) (cc1)",10:00-Galatasaray Academy-Inter Milan Academy (DAZN LA LIGA 1) (FHD) (cc1)
+http://127.0.0.1:6878/ace/getstream?id=cc108ae39f92c48f6c946763047bd1c9b7b7d889
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="10:00-Galatasaray Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (9c7)",10:00-Galatasaray Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (9c7)
+http://127.0.0.1:6878/ace/getstream?id=9c75f1d190c518cfe0f236415b8dccc1f676ef3b
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="10:00-Galatasaray Academy-Inter Milan Academy (DAZN LA LIGA 1) (FHD) (495)",10:00-Galatasaray Academy-Inter Milan Academy (DAZN LA LIGA 1) (FHD) (495)
+http://127.0.0.1:6878/ace/getstream?id=4955867fad3bc92e5b4c36045699fc277800fb18
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="10:00-Galatasaray Academy-Inter Milan Academy (DAZN LA LIGA 1) (FHD) (e2b)",10:00-Galatasaray Academy-Inter Milan Academy (DAZN LA LIGA 1) (FHD) (e2b)
+http://127.0.0.1:6878/ace/getstream?id=e2b8a4aba2f4ea3dd68992fcdb65c9e62d910b05
 #EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="10:30-Bayer Leverkusen Academy-PSG Academy (DAZN LA LIGA 1) (FHD) (0e5)",10:30-Bayer Leverkusen Academy-PSG Academy (DAZN LA LIGA 1) (FHD) (0e5)
 http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="11:00-Palmeiras Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (4e6)",11:00-Palmeiras Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (4e6)
-http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="11:00-Palmeiras Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (dda)",11:00-Palmeiras Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (dda)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="10:30-Bayer Leverkusen Academy-PSG Academy (DAZN LA LIGA 1) (HD) (dda)",10:30-Bayer Leverkusen Academy-PSG Academy (DAZN LA LIGA 1) (HD) (dda)
 http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="11:00-Palmeiras Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (19f)",11:00-Palmeiras Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (19f)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="10:30-Bayer Leverkusen Academy-PSG Academy (DAZN LA LIGA 1) (HD) (4e6)",10:30-Bayer Leverkusen Academy-PSG Academy (DAZN LA LIGA 1) (HD) (4e6)
+http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="10:30-Bayer Leverkusen Academy-PSG Academy (DAZN LA LIGA 1) (HD) (19f)",10:30-Bayer Leverkusen Academy-PSG Academy (DAZN LA LIGA 1) (HD) (19f)
 http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="10:30-Bayer Leverkusen Academy-PSG Academy (DAZN LA LIGA 1) (HD) (eb4)",10:30-Bayer Leverkusen Academy-PSG Academy (DAZN LA LIGA 1) (HD) (eb4)
+http://127.0.0.1:6878/ace/getstream?id=eb4975702ceadca7ed74f8707e17a9f55569dbb9
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="10:30-Bayer Leverkusen Academy-PSG Academy (DAZN LA LIGA 1) (FHD) (cc1)",10:30-Bayer Leverkusen Academy-PSG Academy (DAZN LA LIGA 1) (FHD) (cc1)
+http://127.0.0.1:6878/ace/getstream?id=cc108ae39f92c48f6c946763047bd1c9b7b7d889
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="10:30-Bayer Leverkusen Academy-PSG Academy (DAZN LA LIGA 1) (HD) (9c7)",10:30-Bayer Leverkusen Academy-PSG Academy (DAZN LA LIGA 1) (HD) (9c7)
+http://127.0.0.1:6878/ace/getstream?id=9c75f1d190c518cfe0f236415b8dccc1f676ef3b
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="10:30-Bayer Leverkusen Academy-PSG Academy (DAZN LA LIGA 1) (FHD) (495)",10:30-Bayer Leverkusen Academy-PSG Academy (DAZN LA LIGA 1) (FHD) (495)
+http://127.0.0.1:6878/ace/getstream?id=4955867fad3bc92e5b4c36045699fc277800fb18
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="10:30-Bayer Leverkusen Academy-PSG Academy (DAZN LA LIGA 1) (FHD) (e2b)",10:30-Bayer Leverkusen Academy-PSG Academy (DAZN LA LIGA 1) (FHD) (e2b)
+http://127.0.0.1:6878/ace/getstream?id=e2b8a4aba2f4ea3dd68992fcdb65c9e62d910b05
 #EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="11:00-Palmeiras Academy-Boca Juniors Academy (DAZN LA LIGA 1) (FHD) (0e5)",11:00-Palmeiras Academy-Boca Juniors Academy (DAZN LA LIGA 1) (FHD) (0e5)
 http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="11:30-CR Flamengo Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (4e6)",11:30-CR Flamengo Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (4e6)
-http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="11:30-CR Flamengo Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (dda)",11:30-CR Flamengo Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (dda)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="11:00-Palmeiras Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (dda)",11:00-Palmeiras Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (dda)
 http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="11:30-CR Flamengo Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (19f)",11:30-CR Flamengo Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (19f)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="11:00-Palmeiras Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (4e6)",11:00-Palmeiras Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (4e6)
+http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="11:00-Palmeiras Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (19f)",11:00-Palmeiras Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (19f)
 http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="11:00-Palmeiras Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (eb4)",11:00-Palmeiras Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (eb4)
+http://127.0.0.1:6878/ace/getstream?id=eb4975702ceadca7ed74f8707e17a9f55569dbb9
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="11:00-Palmeiras Academy-Boca Juniors Academy (DAZN LA LIGA 1) (FHD) (cc1)",11:00-Palmeiras Academy-Boca Juniors Academy (DAZN LA LIGA 1) (FHD) (cc1)
+http://127.0.0.1:6878/ace/getstream?id=cc108ae39f92c48f6c946763047bd1c9b7b7d889
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="11:00-Palmeiras Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (9c7)",11:00-Palmeiras Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (9c7)
+http://127.0.0.1:6878/ace/getstream?id=9c75f1d190c518cfe0f236415b8dccc1f676ef3b
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="11:00-Palmeiras Academy-Boca Juniors Academy (DAZN LA LIGA 1) (FHD) (495)",11:00-Palmeiras Academy-Boca Juniors Academy (DAZN LA LIGA 1) (FHD) (495)
+http://127.0.0.1:6878/ace/getstream?id=4955867fad3bc92e5b4c36045699fc277800fb18
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="11:00-Palmeiras Academy-Boca Juniors Academy (DAZN LA LIGA 1) (FHD) (e2b)",11:00-Palmeiras Academy-Boca Juniors Academy (DAZN LA LIGA 1) (FHD) (e2b)
+http://127.0.0.1:6878/ace/getstream?id=e2b8a4aba2f4ea3dd68992fcdb65c9e62d910b05
 #EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="11:30-CR Flamengo Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (FHD) (0e5)",11:30-CR Flamengo Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (FHD) (0e5)
 http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="12:00-Espanyol Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (4e6)",12:00-Espanyol Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (4e6)
-http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="12:00-Espanyol Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (dda)",12:00-Espanyol Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (dda)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="11:30-CR Flamengo Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (dda)",11:30-CR Flamengo Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (dda)
 http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="12:00-Espanyol Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (19f)",12:00-Espanyol Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (19f)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="11:30-CR Flamengo Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (4e6)",11:30-CR Flamengo Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (4e6)
+http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="11:30-CR Flamengo Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (19f)",11:30-CR Flamengo Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (19f)
 http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="11:30-CR Flamengo Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (eb4)",11:30-CR Flamengo Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (eb4)
+http://127.0.0.1:6878/ace/getstream?id=eb4975702ceadca7ed74f8707e17a9f55569dbb9
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="11:30-CR Flamengo Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (FHD) (cc1)",11:30-CR Flamengo Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (FHD) (cc1)
+http://127.0.0.1:6878/ace/getstream?id=cc108ae39f92c48f6c946763047bd1c9b7b7d889
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="11:30-CR Flamengo Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (9c7)",11:30-CR Flamengo Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (9c7)
+http://127.0.0.1:6878/ace/getstream?id=9c75f1d190c518cfe0f236415b8dccc1f676ef3b
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="11:30-CR Flamengo Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (FHD) (495)",11:30-CR Flamengo Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (FHD) (495)
+http://127.0.0.1:6878/ace/getstream?id=4955867fad3bc92e5b4c36045699fc277800fb18
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="11:30-CR Flamengo Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (FHD) (e2b)",11:30-CR Flamengo Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (FHD) (e2b)
+http://127.0.0.1:6878/ace/getstream?id=e2b8a4aba2f4ea3dd68992fcdb65c9e62d910b05
 #EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="12:00-Espanyol Academy-Valencia CF Academy (DAZN LA LIGA 1) (FHD) (0e5)",12:00-Espanyol Academy-Valencia CF Academy (DAZN LA LIGA 1) (FHD) (0e5)
 http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="12:30-FC Barcelona Academy-Shanghai Port Academy (DAZN LA LIGA 1) (HD) (4e6)",12:30-FC Barcelona Academy-Shanghai Port Academy (DAZN LA LIGA 1) (HD) (4e6)
-http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="12:30-FC Barcelona Academy-Shanghai Port Academy (DAZN LA LIGA 1) (HD) (dda)",12:30-FC Barcelona Academy-Shanghai Port Academy (DAZN LA LIGA 1) (HD) (dda)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="12:00-Espanyol Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (dda)",12:00-Espanyol Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (dda)
 http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="12:30-FC Barcelona Academy-Shanghai Port Academy (DAZN LA LIGA 1) (HD) (19f)",12:30-FC Barcelona Academy-Shanghai Port Academy (DAZN LA LIGA 1) (HD) (19f)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="12:00-Espanyol Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (4e6)",12:00-Espanyol Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (4e6)
+http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="12:00-Espanyol Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (19f)",12:00-Espanyol Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (19f)
 http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="12:00-Espanyol Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (eb4)",12:00-Espanyol Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (eb4)
+http://127.0.0.1:6878/ace/getstream?id=eb4975702ceadca7ed74f8707e17a9f55569dbb9
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="12:00-Espanyol Academy-Valencia CF Academy (DAZN LA LIGA 1) (FHD) (cc1)",12:00-Espanyol Academy-Valencia CF Academy (DAZN LA LIGA 1) (FHD) (cc1)
+http://127.0.0.1:6878/ace/getstream?id=cc108ae39f92c48f6c946763047bd1c9b7b7d889
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="12:00-Espanyol Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (9c7)",12:00-Espanyol Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (9c7)
+http://127.0.0.1:6878/ace/getstream?id=9c75f1d190c518cfe0f236415b8dccc1f676ef3b
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="12:00-Espanyol Academy-Valencia CF Academy (DAZN LA LIGA 1) (FHD) (495)",12:00-Espanyol Academy-Valencia CF Academy (DAZN LA LIGA 1) (FHD) (495)
+http://127.0.0.1:6878/ace/getstream?id=4955867fad3bc92e5b4c36045699fc277800fb18
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="12:00-Espanyol Academy-Valencia CF Academy (DAZN LA LIGA 1) (FHD) (e2b)",12:00-Espanyol Academy-Valencia CF Academy (DAZN LA LIGA 1) (FHD) (e2b)
+http://127.0.0.1:6878/ace/getstream?id=e2b8a4aba2f4ea3dd68992fcdb65c9e62d910b05
 #EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="12:30-FC Barcelona Academy-Shanghai Port Academy (DAZN LA LIGA 1) (FHD) (0e5)",12:30-FC Barcelona Academy-Shanghai Port Academy (DAZN LA LIGA 1) (FHD) (0e5)
 http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="13:00-Real Madrid Academy-WAC Casablanca Academy (DAZN LA LIGA 1) (HD) (4e6)",13:00-Real Madrid Academy-WAC Casablanca Academy (DAZN LA LIGA 1) (HD) (4e6)
-http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="13:00-Real Madrid Academy-WAC Casablanca Academy (DAZN LA LIGA 1) (HD) (dda)",13:00-Real Madrid Academy-WAC Casablanca Academy (DAZN LA LIGA 1) (HD) (dda)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="12:30-FC Barcelona Academy-Shanghai Port Academy (DAZN LA LIGA 1) (HD) (dda)",12:30-FC Barcelona Academy-Shanghai Port Academy (DAZN LA LIGA 1) (HD) (dda)
 http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="13:00-Real Madrid Academy-WAC Casablanca Academy (DAZN LA LIGA 1) (HD) (19f)",13:00-Real Madrid Academy-WAC Casablanca Academy (DAZN LA LIGA 1) (HD) (19f)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="12:30-FC Barcelona Academy-Shanghai Port Academy (DAZN LA LIGA 1) (HD) (4e6)",12:30-FC Barcelona Academy-Shanghai Port Academy (DAZN LA LIGA 1) (HD) (4e6)
+http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="12:30-FC Barcelona Academy-Shanghai Port Academy (DAZN LA LIGA 1) (HD) (19f)",12:30-FC Barcelona Academy-Shanghai Port Academy (DAZN LA LIGA 1) (HD) (19f)
 http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="12:30-FC Barcelona Academy-Shanghai Port Academy (DAZN LA LIGA 1) (HD) (eb4)",12:30-FC Barcelona Academy-Shanghai Port Academy (DAZN LA LIGA 1) (HD) (eb4)
+http://127.0.0.1:6878/ace/getstream?id=eb4975702ceadca7ed74f8707e17a9f55569dbb9
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="12:30-FC Barcelona Academy-Shanghai Port Academy (DAZN LA LIGA 1) (FHD) (cc1)",12:30-FC Barcelona Academy-Shanghai Port Academy (DAZN LA LIGA 1) (FHD) (cc1)
+http://127.0.0.1:6878/ace/getstream?id=cc108ae39f92c48f6c946763047bd1c9b7b7d889
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="12:30-FC Barcelona Academy-Shanghai Port Academy (DAZN LA LIGA 1) (HD) (9c7)",12:30-FC Barcelona Academy-Shanghai Port Academy (DAZN LA LIGA 1) (HD) (9c7)
+http://127.0.0.1:6878/ace/getstream?id=9c75f1d190c518cfe0f236415b8dccc1f676ef3b
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="12:30-FC Barcelona Academy-Shanghai Port Academy (DAZN LA LIGA 1) (FHD) (495)",12:30-FC Barcelona Academy-Shanghai Port Academy (DAZN LA LIGA 1) (FHD) (495)
+http://127.0.0.1:6878/ace/getstream?id=4955867fad3bc92e5b4c36045699fc277800fb18
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="12:30-FC Barcelona Academy-Shanghai Port Academy (DAZN LA LIGA 1) (FHD) (e2b)",12:30-FC Barcelona Academy-Shanghai Port Academy (DAZN LA LIGA 1) (FHD) (e2b)
+http://127.0.0.1:6878/ace/getstream?id=e2b8a4aba2f4ea3dd68992fcdb65c9e62d910b05
 #EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="13:00-Real Madrid Academy-WAC Casablanca Academy (DAZN LA LIGA 1) (FHD) (0e5)",13:00-Real Madrid Academy-WAC Casablanca Academy (DAZN LA LIGA 1) (FHD) (0e5)
 http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="16:00-Arsenal Academy-Galatasaray Academy (DAZN LA LIGA 1) (HD) (4e6)",16:00-Arsenal Academy-Galatasaray Academy (DAZN LA LIGA 1) (HD) (4e6)
-http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="16:00-Arsenal Academy-Galatasaray Academy (DAZN LA LIGA 1) (HD) (dda)",16:00-Arsenal Academy-Galatasaray Academy (DAZN LA LIGA 1) (HD) (dda)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="13:00-Real Madrid Academy-WAC Casablanca Academy (DAZN LA LIGA 1) (HD) (dda)",13:00-Real Madrid Academy-WAC Casablanca Academy (DAZN LA LIGA 1) (HD) (dda)
 http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="16:00-Arsenal Academy-Galatasaray Academy (DAZN LA LIGA 1) (HD) (19f)",16:00-Arsenal Academy-Galatasaray Academy (DAZN LA LIGA 1) (HD) (19f)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="13:00-Real Madrid Academy-WAC Casablanca Academy (DAZN LA LIGA 1) (HD) (4e6)",13:00-Real Madrid Academy-WAC Casablanca Academy (DAZN LA LIGA 1) (HD) (4e6)
+http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="13:00-Real Madrid Academy-WAC Casablanca Academy (DAZN LA LIGA 1) (HD) (19f)",13:00-Real Madrid Academy-WAC Casablanca Academy (DAZN LA LIGA 1) (HD) (19f)
 http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="13:00-Real Madrid Academy-WAC Casablanca Academy (DAZN LA LIGA 1) (HD) (eb4)",13:00-Real Madrid Academy-WAC Casablanca Academy (DAZN LA LIGA 1) (HD) (eb4)
+http://127.0.0.1:6878/ace/getstream?id=eb4975702ceadca7ed74f8707e17a9f55569dbb9
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="13:00-Real Madrid Academy-WAC Casablanca Academy (DAZN LA LIGA 1) (FHD) (cc1)",13:00-Real Madrid Academy-WAC Casablanca Academy (DAZN LA LIGA 1) (FHD) (cc1)
+http://127.0.0.1:6878/ace/getstream?id=cc108ae39f92c48f6c946763047bd1c9b7b7d889
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="13:00-Real Madrid Academy-WAC Casablanca Academy (DAZN LA LIGA 1) (HD) (9c7)",13:00-Real Madrid Academy-WAC Casablanca Academy (DAZN LA LIGA 1) (HD) (9c7)
+http://127.0.0.1:6878/ace/getstream?id=9c75f1d190c518cfe0f236415b8dccc1f676ef3b
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="13:00-Real Madrid Academy-WAC Casablanca Academy (DAZN LA LIGA 1) (FHD) (495)",13:00-Real Madrid Academy-WAC Casablanca Academy (DAZN LA LIGA 1) (FHD) (495)
+http://127.0.0.1:6878/ace/getstream?id=4955867fad3bc92e5b4c36045699fc277800fb18
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="13:00-Real Madrid Academy-WAC Casablanca Academy (DAZN LA LIGA 1) (FHD) (e2b)",13:00-Real Madrid Academy-WAC Casablanca Academy (DAZN LA LIGA 1) (FHD) (e2b)
+http://127.0.0.1:6878/ace/getstream?id=e2b8a4aba2f4ea3dd68992fcdb65c9e62d910b05
 #EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="16:00-Arsenal Academy-Galatasaray Academy (DAZN LA LIGA 1) (FHD) (0e5)",16:00-Arsenal Academy-Galatasaray Academy (DAZN LA LIGA 1) (FHD) (0e5)
 http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="16:30-Bayer Leverkusen Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (4e6)",16:30-Bayer Leverkusen Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (4e6)
-http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="16:30-Bayer Leverkusen Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (dda)",16:30-Bayer Leverkusen Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (dda)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="16:00-Arsenal Academy-Galatasaray Academy (DAZN LA LIGA 1) (HD) (dda)",16:00-Arsenal Academy-Galatasaray Academy (DAZN LA LIGA 1) (HD) (dda)
 http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="16:30-Bayer Leverkusen Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (19f)",16:30-Bayer Leverkusen Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (19f)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="16:00-Arsenal Academy-Galatasaray Academy (DAZN LA LIGA 1) (HD) (4e6)",16:00-Arsenal Academy-Galatasaray Academy (DAZN LA LIGA 1) (HD) (4e6)
+http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="16:00-Arsenal Academy-Galatasaray Academy (DAZN LA LIGA 1) (HD) (19f)",16:00-Arsenal Academy-Galatasaray Academy (DAZN LA LIGA 1) (HD) (19f)
 http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="16:00-Arsenal Academy-Galatasaray Academy (DAZN LA LIGA 1) (HD) (eb4)",16:00-Arsenal Academy-Galatasaray Academy (DAZN LA LIGA 1) (HD) (eb4)
+http://127.0.0.1:6878/ace/getstream?id=eb4975702ceadca7ed74f8707e17a9f55569dbb9
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="16:00-Arsenal Academy-Galatasaray Academy (DAZN LA LIGA 1) (FHD) (cc1)",16:00-Arsenal Academy-Galatasaray Academy (DAZN LA LIGA 1) (FHD) (cc1)
+http://127.0.0.1:6878/ace/getstream?id=cc108ae39f92c48f6c946763047bd1c9b7b7d889
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="16:00-Arsenal Academy-Galatasaray Academy (DAZN LA LIGA 1) (HD) (9c7)",16:00-Arsenal Academy-Galatasaray Academy (DAZN LA LIGA 1) (HD) (9c7)
+http://127.0.0.1:6878/ace/getstream?id=9c75f1d190c518cfe0f236415b8dccc1f676ef3b
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="16:00-Arsenal Academy-Galatasaray Academy (DAZN LA LIGA 1) (FHD) (495)",16:00-Arsenal Academy-Galatasaray Academy (DAZN LA LIGA 1) (FHD) (495)
+http://127.0.0.1:6878/ace/getstream?id=4955867fad3bc92e5b4c36045699fc277800fb18
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="16:00-Arsenal Academy-Galatasaray Academy (DAZN LA LIGA 1) (FHD) (e2b)",16:00-Arsenal Academy-Galatasaray Academy (DAZN LA LIGA 1) (FHD) (e2b)
+http://127.0.0.1:6878/ace/getstream?id=e2b8a4aba2f4ea3dd68992fcdb65c9e62d910b05
 #EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="16:30-Bayer Leverkusen Academy-Inter Milan Academy (DAZN LA LIGA 1) (FHD) (0e5)",16:30-Bayer Leverkusen Academy-Inter Milan Academy (DAZN LA LIGA 1) (FHD) (0e5)
 http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="17:00-River Plate Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (4e6)",17:00-River Plate Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (4e6)
-http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="17:00-River Plate Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (dda)",17:00-River Plate Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (dda)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="16:30-Bayer Leverkusen Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (dda)",16:30-Bayer Leverkusen Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (dda)
 http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="17:00-River Plate Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (19f)",17:00-River Plate Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (19f)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="16:30-Bayer Leverkusen Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (4e6)",16:30-Bayer Leverkusen Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (4e6)
+http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="16:30-Bayer Leverkusen Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (19f)",16:30-Bayer Leverkusen Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (19f)
 http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="16:30-Bayer Leverkusen Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (eb4)",16:30-Bayer Leverkusen Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (eb4)
+http://127.0.0.1:6878/ace/getstream?id=eb4975702ceadca7ed74f8707e17a9f55569dbb9
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="16:30-Bayer Leverkusen Academy-Inter Milan Academy (DAZN LA LIGA 1) (FHD) (cc1)",16:30-Bayer Leverkusen Academy-Inter Milan Academy (DAZN LA LIGA 1) (FHD) (cc1)
+http://127.0.0.1:6878/ace/getstream?id=cc108ae39f92c48f6c946763047bd1c9b7b7d889
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="16:30-Bayer Leverkusen Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (9c7)",16:30-Bayer Leverkusen Academy-Inter Milan Academy (DAZN LA LIGA 1) (HD) (9c7)
+http://127.0.0.1:6878/ace/getstream?id=9c75f1d190c518cfe0f236415b8dccc1f676ef3b
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="16:30-Bayer Leverkusen Academy-Inter Milan Academy (DAZN LA LIGA 1) (FHD) (495)",16:30-Bayer Leverkusen Academy-Inter Milan Academy (DAZN LA LIGA 1) (FHD) (495)
+http://127.0.0.1:6878/ace/getstream?id=4955867fad3bc92e5b4c36045699fc277800fb18
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="16:30-Bayer Leverkusen Academy-Inter Milan Academy (DAZN LA LIGA 1) (FHD) (e2b)",16:30-Bayer Leverkusen Academy-Inter Milan Academy (DAZN LA LIGA 1) (FHD) (e2b)
+http://127.0.0.1:6878/ace/getstream?id=e2b8a4aba2f4ea3dd68992fcdb65c9e62d910b05
 #EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="17:00-River Plate Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (FHD) (0e5)",17:00-River Plate Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (FHD) (0e5)
 http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="17:30-CR Flamengo Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (4e6)",17:30-CR Flamengo Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (4e6)
-http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="17:30-CR Flamengo Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (dda)",17:30-CR Flamengo Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (dda)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="17:00-River Plate Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (dda)",17:00-River Plate Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (dda)
 http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="17:30-CR Flamengo Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (19f)",17:30-CR Flamengo Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (19f)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="17:00-River Plate Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (4e6)",17:00-River Plate Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (4e6)
+http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="17:00-River Plate Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (19f)",17:00-River Plate Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (19f)
 http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="17:00-River Plate Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (eb4)",17:00-River Plate Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (eb4)
+http://127.0.0.1:6878/ace/getstream?id=eb4975702ceadca7ed74f8707e17a9f55569dbb9
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="17:00-River Plate Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (FHD) (cc1)",17:00-River Plate Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (FHD) (cc1)
+http://127.0.0.1:6878/ace/getstream?id=cc108ae39f92c48f6c946763047bd1c9b7b7d889
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="17:00-River Plate Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (9c7)",17:00-River Plate Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (HD) (9c7)
+http://127.0.0.1:6878/ace/getstream?id=9c75f1d190c518cfe0f236415b8dccc1f676ef3b
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="17:00-River Plate Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (FHD) (495)",17:00-River Plate Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (FHD) (495)
+http://127.0.0.1:6878/ace/getstream?id=4955867fad3bc92e5b4c36045699fc277800fb18
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="17:00-River Plate Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (FHD) (e2b)",17:00-River Plate Academy-Inter Miami CF Academy (DAZN LA LIGA 1) (FHD) (e2b)
+http://127.0.0.1:6878/ace/getstream?id=e2b8a4aba2f4ea3dd68992fcdb65c9e62d910b05
 #EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="17:30-CR Flamengo Academy-Boca Juniors Academy (DAZN LA LIGA 1) (FHD) (0e5)",17:30-CR Flamengo Academy-Boca Juniors Academy (DAZN LA LIGA 1) (FHD) (0e5)
 http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="18:00-Espanyol Academy-Villarreal Academy (DAZN LA LIGA 1) (HD) (4e6)",18:00-Espanyol Academy-Villarreal Academy (DAZN LA LIGA 1) (HD) (4e6)
-http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="18:00-Espanyol Academy-Villarreal Academy (DAZN LA LIGA 1) (HD) (dda)",18:00-Espanyol Academy-Villarreal Academy (DAZN LA LIGA 1) (HD) (dda)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="17:30-CR Flamengo Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (dda)",17:30-CR Flamengo Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (dda)
 http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="18:00-Espanyol Academy-Villarreal Academy (DAZN LA LIGA 1) (HD) (19f)",18:00-Espanyol Academy-Villarreal Academy (DAZN LA LIGA 1) (HD) (19f)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="17:30-CR Flamengo Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (4e6)",17:30-CR Flamengo Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (4e6)
+http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="17:30-CR Flamengo Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (19f)",17:30-CR Flamengo Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (19f)
 http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="17:30-CR Flamengo Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (eb4)",17:30-CR Flamengo Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (eb4)
+http://127.0.0.1:6878/ace/getstream?id=eb4975702ceadca7ed74f8707e17a9f55569dbb9
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="17:30-CR Flamengo Academy-Boca Juniors Academy (DAZN LA LIGA 1) (FHD) (cc1)",17:30-CR Flamengo Academy-Boca Juniors Academy (DAZN LA LIGA 1) (FHD) (cc1)
+http://127.0.0.1:6878/ace/getstream?id=cc108ae39f92c48f6c946763047bd1c9b7b7d889
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="17:30-CR Flamengo Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (9c7)",17:30-CR Flamengo Academy-Boca Juniors Academy (DAZN LA LIGA 1) (HD) (9c7)
+http://127.0.0.1:6878/ace/getstream?id=9c75f1d190c518cfe0f236415b8dccc1f676ef3b
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="17:30-CR Flamengo Academy-Boca Juniors Academy (DAZN LA LIGA 1) (FHD) (495)",17:30-CR Flamengo Academy-Boca Juniors Academy (DAZN LA LIGA 1) (FHD) (495)
+http://127.0.0.1:6878/ace/getstream?id=4955867fad3bc92e5b4c36045699fc277800fb18
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="17:30-CR Flamengo Academy-Boca Juniors Academy (DAZN LA LIGA 1) (FHD) (e2b)",17:30-CR Flamengo Academy-Boca Juniors Academy (DAZN LA LIGA 1) (FHD) (e2b)
+http://127.0.0.1:6878/ace/getstream?id=e2b8a4aba2f4ea3dd68992fcdb65c9e62d910b05
 #EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="18:00-Espanyol Academy-Villarreal Academy (DAZN LA LIGA 1) (FHD) (0e5)",18:00-Espanyol Academy-Villarreal Academy (DAZN LA LIGA 1) (FHD) (0e5)
 http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
-#EXTINF:-1 group-title="03-25 (Miércoles) Masters Miami" tvg-name="18:05-1/4 de Final ATP Masters 1000 (MOVISTAR DEPORTES 2) (FHD) (73d)",18:05-1/4 de Final ATP Masters 1000 (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="18:00-Espanyol Academy-Villarreal Academy (DAZN LA LIGA 1) (HD) (dda)",18:00-Espanyol Academy-Villarreal Academy (DAZN LA LIGA 1) (HD) (dda)
+http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="18:00-Espanyol Academy-Villarreal Academy (DAZN LA LIGA 1) (HD) (4e6)",18:00-Espanyol Academy-Villarreal Academy (DAZN LA LIGA 1) (HD) (4e6)
+http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="18:00-Espanyol Academy-Villarreal Academy (DAZN LA LIGA 1) (HD) (19f)",18:00-Espanyol Academy-Villarreal Academy (DAZN LA LIGA 1) (HD) (19f)
+http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="18:00-Espanyol Academy-Villarreal Academy (DAZN LA LIGA 1) (HD) (eb4)",18:00-Espanyol Academy-Villarreal Academy (DAZN LA LIGA 1) (HD) (eb4)
+http://127.0.0.1:6878/ace/getstream?id=eb4975702ceadca7ed74f8707e17a9f55569dbb9
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="18:00-Espanyol Academy-Villarreal Academy (DAZN LA LIGA 1) (FHD) (cc1)",18:00-Espanyol Academy-Villarreal Academy (DAZN LA LIGA 1) (FHD) (cc1)
+http://127.0.0.1:6878/ace/getstream?id=cc108ae39f92c48f6c946763047bd1c9b7b7d889
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="18:00-Espanyol Academy-Villarreal Academy (DAZN LA LIGA 1) (HD) (9c7)",18:00-Espanyol Academy-Villarreal Academy (DAZN LA LIGA 1) (HD) (9c7)
+http://127.0.0.1:6878/ace/getstream?id=9c75f1d190c518cfe0f236415b8dccc1f676ef3b
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="18:00-Espanyol Academy-Villarreal Academy (DAZN LA LIGA 1) (FHD) (495)",18:00-Espanyol Academy-Villarreal Academy (DAZN LA LIGA 1) (FHD) (495)
+http://127.0.0.1:6878/ace/getstream?id=4955867fad3bc92e5b4c36045699fc277800fb18
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="18:00-Espanyol Academy-Villarreal Academy (DAZN LA LIGA 1) (FHD) (e2b)",18:00-Espanyol Academy-Villarreal Academy (DAZN LA LIGA 1) (FHD) (e2b)
+http://127.0.0.1:6878/ace/getstream?id=e2b8a4aba2f4ea3dd68992fcdb65c9e62d910b05
 #EXTINF:-1 group-title="03-25 (Miércoles) Masters Miami" tvg-name="18:05-1/4 de Final ATP Masters 1000 (MOVISTAR DEPORTES 2) (HD) (3af)",18:05-1/4 de Final ATP Masters 1000 (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="03-25 (Miércoles) Masters Miami" tvg-name="18:05-1/4 de Final ATP Masters 1000 (MOVISTAR DEPORTES 2) (FHD) (377)",18:05-1/4 de Final ATP Masters 1000 (MOVISTAR DEPORTES 2) (FHD) (377)
-http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
+#EXTINF:-1 group-title="03-25 (Miércoles) Masters Miami" tvg-name="18:05-1/4 de Final ATP Masters 1000 (MOVISTAR DEPORTES 2) (FHD) (73d)",18:05-1/4 de Final ATP Masters 1000 (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="03-25 (Miércoles) Masters Miami" tvg-name="18:05-1/4 de Final ATP Masters 1000 (MOVISTAR DEPORTES 2) (HD) (6b1)",18:05-1/4 de Final ATP Masters 1000 (MOVISTAR DEPORTES 2) (HD) (6b1)
 http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
+#EXTINF:-1 group-title="03-25 (Miércoles) Masters Miami" tvg-name="18:05-1/4 de Final ATP Masters 1000 (MOVISTAR DEPORTES 2) (FHD) (377)",18:05-1/4 de Final ATP Masters 1000 (MOVISTAR DEPORTES 2) (FHD) (377)
+http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
+#EXTINF:-1 group-title="03-25 (Miércoles) Masters Miami" tvg-name="18:05-1/4 de Final ATP Masters 1000 (MOVISTAR DEPORTES 2) (FHD) (890)",18:05-1/4 de Final ATP Masters 1000 (MOVISTAR DEPORTES 2) (FHD) (890)
+http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
 #EXTINF:-1 group-title="03-25 (Miércoles) Masters Miami" tvg-name="18:05-1/4 de Final ATP Masters 1000 (MOVISTAR DEPORTES 2) (HD) (bfa)",18:05-1/4 de Final ATP Masters 1000 (MOVISTAR DEPORTES 2) (HD) (bfa)
 http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
 #EXTINF:-1 group-title="03-25 (Miércoles) Masters Miami" tvg-name="18:05-1/4 de Final ATP Masters 1000 (MOVISTAR DEPORTES 2) (FHD) (f0e)",18:05-1/4 de Final ATP Masters 1000 (MOVISTAR DEPORTES 2) (FHD) (f0e)
 http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="18:30-Sevilla FC Academy-At. Madrid Academy (DAZN LA LIGA 1) (HD) (4e6)",18:30-Sevilla FC Academy-At. Madrid Academy (DAZN LA LIGA 1) (HD) (4e6)
-http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="18:30-Sevilla FC Academy-At. Madrid Academy (DAZN LA LIGA 1) (HD) (dda)",18:30-Sevilla FC Academy-At. Madrid Academy (DAZN LA LIGA 1) (HD) (dda)
-http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="18:30-Sevilla FC Academy-At. Madrid Academy (DAZN LA LIGA 1) (HD) (19f)",18:30-Sevilla FC Academy-At. Madrid Academy (DAZN LA LIGA 1) (HD) (19f)
-http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
 #EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="18:30-Sevilla FC Academy-At. Madrid Academy (DAZN LA LIGA 1) (FHD) (0e5)",18:30-Sevilla FC Academy-At. Madrid Academy (DAZN LA LIGA 1) (FHD) (0e5)
 http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="19:00-Real Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (4e6)",19:00-Real Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (4e6)
-http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="19:00-Real Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (dda)",19:00-Real Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (dda)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="18:30-Sevilla FC Academy-At. Madrid Academy (DAZN LA LIGA 1) (HD) (dda)",18:30-Sevilla FC Academy-At. Madrid Academy (DAZN LA LIGA 1) (HD) (dda)
 http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="19:00-Real Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (19f)",19:00-Real Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (19f)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="18:30-Sevilla FC Academy-At. Madrid Academy (DAZN LA LIGA 1) (HD) (4e6)",18:30-Sevilla FC Academy-At. Madrid Academy (DAZN LA LIGA 1) (HD) (4e6)
+http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="18:30-Sevilla FC Academy-At. Madrid Academy (DAZN LA LIGA 1) (HD) (19f)",18:30-Sevilla FC Academy-At. Madrid Academy (DAZN LA LIGA 1) (HD) (19f)
 http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="18:30-Sevilla FC Academy-At. Madrid Academy (DAZN LA LIGA 1) (HD) (eb4)",18:30-Sevilla FC Academy-At. Madrid Academy (DAZN LA LIGA 1) (HD) (eb4)
+http://127.0.0.1:6878/ace/getstream?id=eb4975702ceadca7ed74f8707e17a9f55569dbb9
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="18:30-Sevilla FC Academy-At. Madrid Academy (DAZN LA LIGA 1) (FHD) (cc1)",18:30-Sevilla FC Academy-At. Madrid Academy (DAZN LA LIGA 1) (FHD) (cc1)
+http://127.0.0.1:6878/ace/getstream?id=cc108ae39f92c48f6c946763047bd1c9b7b7d889
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="18:30-Sevilla FC Academy-At. Madrid Academy (DAZN LA LIGA 1) (HD) (9c7)",18:30-Sevilla FC Academy-At. Madrid Academy (DAZN LA LIGA 1) (HD) (9c7)
+http://127.0.0.1:6878/ace/getstream?id=9c75f1d190c518cfe0f236415b8dccc1f676ef3b
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="18:30-Sevilla FC Academy-At. Madrid Academy (DAZN LA LIGA 1) (FHD) (495)",18:30-Sevilla FC Academy-At. Madrid Academy (DAZN LA LIGA 1) (FHD) (495)
+http://127.0.0.1:6878/ace/getstream?id=4955867fad3bc92e5b4c36045699fc277800fb18
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="18:30-Sevilla FC Academy-At. Madrid Academy (DAZN LA LIGA 1) (FHD) (e2b)",18:30-Sevilla FC Academy-At. Madrid Academy (DAZN LA LIGA 1) (FHD) (e2b)
+http://127.0.0.1:6878/ace/getstream?id=e2b8a4aba2f4ea3dd68992fcdb65c9e62d910b05
 #EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="19:00-Real Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (FHD) (0e5)",19:00-Real Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (FHD) (0e5)
 http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="19:30-FC Barcelona Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (4e6)",19:30-FC Barcelona Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (4e6)
-http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="19:30-FC Barcelona Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (dda)",19:30-FC Barcelona Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (dda)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="19:00-Real Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (dda)",19:00-Real Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (dda)
 http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
-#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="19:30-FC Barcelona Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (19f)",19:30-FC Barcelona Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (19f)
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="19:00-Real Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (4e6)",19:00-Real Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (4e6)
+http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="19:00-Real Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (19f)",19:00-Real Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (19f)
 http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="19:00-Real Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (eb4)",19:00-Real Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (eb4)
+http://127.0.0.1:6878/ace/getstream?id=eb4975702ceadca7ed74f8707e17a9f55569dbb9
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="19:00-Real Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (FHD) (cc1)",19:00-Real Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (FHD) (cc1)
+http://127.0.0.1:6878/ace/getstream?id=cc108ae39f92c48f6c946763047bd1c9b7b7d889
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="19:00-Real Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (9c7)",19:00-Real Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (HD) (9c7)
+http://127.0.0.1:6878/ace/getstream?id=9c75f1d190c518cfe0f236415b8dccc1f676ef3b
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="19:00-Real Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (FHD) (495)",19:00-Real Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (FHD) (495)
+http://127.0.0.1:6878/ace/getstream?id=4955867fad3bc92e5b4c36045699fc277800fb18
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="19:00-Real Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (FHD) (e2b)",19:00-Real Madrid Academy-Real Betis Academy (DAZN LA LIGA 1) (FHD) (e2b)
+http://127.0.0.1:6878/ace/getstream?id=e2b8a4aba2f4ea3dd68992fcdb65c9e62d910b05
 #EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="19:30-FC Barcelona Academy-Valencia CF Academy (DAZN LA LIGA 1) (FHD) (0e5)",19:30-FC Barcelona Academy-Valencia CF Academy (DAZN LA LIGA 1) (FHD) (0e5)
 http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="19:30-FC Barcelona Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (dda)",19:30-FC Barcelona Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (dda)
+http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="19:30-FC Barcelona Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (4e6)",19:30-FC Barcelona Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (4e6)
+http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="19:30-FC Barcelona Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (19f)",19:30-FC Barcelona Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (19f)
+http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="19:30-FC Barcelona Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (eb4)",19:30-FC Barcelona Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (eb4)
+http://127.0.0.1:6878/ace/getstream?id=eb4975702ceadca7ed74f8707e17a9f55569dbb9
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="19:30-FC Barcelona Academy-Valencia CF Academy (DAZN LA LIGA 1) (FHD) (cc1)",19:30-FC Barcelona Academy-Valencia CF Academy (DAZN LA LIGA 1) (FHD) (cc1)
+http://127.0.0.1:6878/ace/getstream?id=cc108ae39f92c48f6c946763047bd1c9b7b7d889
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="19:30-FC Barcelona Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (9c7)",19:30-FC Barcelona Academy-Valencia CF Academy (DAZN LA LIGA 1) (HD) (9c7)
+http://127.0.0.1:6878/ace/getstream?id=9c75f1d190c518cfe0f236415b8dccc1f676ef3b
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="19:30-FC Barcelona Academy-Valencia CF Academy (DAZN LA LIGA 1) (FHD) (495)",19:30-FC Barcelona Academy-Valencia CF Academy (DAZN LA LIGA 1) (FHD) (495)
+http://127.0.0.1:6878/ace/getstream?id=4955867fad3bc92e5b4c36045699fc277800fb18
+#EXTINF:-1 group-title="03-25 (Miércoles) LaLiga Futures Fase de grupos" tvg-name="19:30-FC Barcelona Academy-Valencia CF Academy (DAZN LA LIGA 1) (FHD) (e2b)",19:30-FC Barcelona Academy-Valencia CF Academy (DAZN LA LIGA 1) (FHD) (e2b)
+http://127.0.0.1:6878/ace/getstream?id=e2b8a4aba2f4ea3dd68992fcdb65c9e62d910b05
