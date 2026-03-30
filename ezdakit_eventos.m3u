@@ -1,43 +1,43 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="03-31 (Martes) LaLiga Hypermotion" tvg-name="19:00-Mirandés-Albacete (HYPERMOTION) (HD) (87b)",19:00-Mirandés-Albacete (HYPERMOTION) (HD) (87b)
-http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="03-31 (Martes) LaLiga Hypermotion" tvg-name="19:00-Mirandés-Albacete (HYPERMOTION) (HD) (a4f)",19:00-Mirandés-Albacete (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
-#EXTINF:-1 group-title="03-31 (Martes) LaLiga Hypermotion" tvg-name="20:00-Deportivo-Córdoba (HYPERMOTION) (HD) (87b)",20:00-Deportivo-Córdoba (HYPERMOTION) (HD) (87b)
+#EXTINF:-1 group-title="03-31 (Martes) LaLiga Hypermotion" tvg-name="19:00-Mirandés-Albacete (HYPERMOTION) (HD) (87b)",19:00-Mirandés-Albacete (HYPERMOTION) (HD) (87b)
 http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="03-31 (Martes) LaLiga Hypermotion" tvg-name="20:00-Deportivo-Córdoba (HYPERMOTION) (HD) (a4f)",20:00-Deportivo-Córdoba (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
-#EXTINF:-1 group-title="03-31 (Martes) Euroliga Liga Regular" tvg-name="20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (FHD) (5d3)",20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="03-31 (Martes) Euroliga Liga Regular" tvg-name="20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (FHD) (369)",20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="03-31 (Martes) LaLiga Hypermotion" tvg-name="20:00-Deportivo-Córdoba (HYPERMOTION) (HD) (87b)",20:00-Deportivo-Córdoba (HYPERMOTION) (HD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="03-31 (Martes) Euroliga Liga Regular" tvg-name="20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (FHD) (f82)",20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="03-31 (Martes) LaLiga Hypermotion" tvg-name="21:30-Real Valladolid-Cádiz CF (HYPERMOTION) (HD) (87b)",21:30-Real Valladolid-Cádiz CF (HYPERMOTION) (HD) (87b)
-http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="03-31 (Martes) Euroliga Liga Regular" tvg-name="20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (FHD) (369)",20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="03-31 (Martes) Euroliga Liga Regular" tvg-name="20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (FHD) (5d3)",20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="03-31 (Martes) LaLiga Hypermotion" tvg-name="21:30-Real Valladolid-Cádiz CF (HYPERMOTION) (HD) (a4f)",21:30-Real Valladolid-Cádiz CF (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
-#EXTINF:-1 group-title="04-01 (Miércoles) Euroliga Liga Regular" tvg-name="19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (FHD) (5d3)",19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="04-01 (Miércoles) Euroliga Liga Regular" tvg-name="19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (FHD) (369)",19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="03-31 (Martes) LaLiga Hypermotion" tvg-name="21:30-Real Valladolid-Cádiz CF (HYPERMOTION) (HD) (87b)",21:30-Real Valladolid-Cádiz CF (HYPERMOTION) (HD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="04-01 (Miércoles) Euroliga Liga Regular" tvg-name="19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (FHD) (f82)",19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="19:00-FC Andorra-Málaga (HYPERMOTION) (HD) (87b)",19:00-FC Andorra-Málaga (HYPERMOTION) (HD) (87b)
-http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="04-01 (Miércoles) Euroliga Liga Regular" tvg-name="19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (FHD) (369)",19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="04-01 (Miércoles) Euroliga Liga Regular" tvg-name="19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (FHD) (5d3)",19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="19:00-FC Andorra-Málaga (HYPERMOTION) (HD) (a4f)",19:00-FC Andorra-Málaga (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
-#EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="20:00-Burgos CF-AD Ceuta (HYPERMOTION) (HD) (87b)",20:00-Burgos CF-AD Ceuta (HYPERMOTION) (HD) (87b)
+#EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="19:00-FC Andorra-Málaga (HYPERMOTION) (HD) (87b)",19:00-FC Andorra-Málaga (HYPERMOTION) (HD) (87b)
 http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="20:00-Burgos CF-AD Ceuta (HYPERMOTION) (HD) (a4f)",20:00-Burgos CF-AD Ceuta (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
-#EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="20:00-Huesca-Cultural Leonesa (HYPERMOTION) (HD) (87b)",20:00-Huesca-Cultural Leonesa (HYPERMOTION) (HD) (87b)
+#EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="20:00-Burgos CF-AD Ceuta (HYPERMOTION) (HD) (87b)",20:00-Burgos CF-AD Ceuta (HYPERMOTION) (HD) (87b)
 http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="20:00-Huesca-Cultural Leonesa (HYPERMOTION) (HD) (a4f)",20:00-Huesca-Cultural Leonesa (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
-#EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="21:30-Racing Santander-Sporting Gijón (HYPERMOTION) (HD) (87b)",21:30-Racing Santander-Sporting Gijón (HYPERMOTION) (HD) (87b)
+#EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="20:00-Huesca-Cultural Leonesa (HYPERMOTION) (HD) (87b)",20:00-Huesca-Cultural Leonesa (HYPERMOTION) (HD) (87b)
 http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="21:30-Racing Santander-Sporting Gijón (HYPERMOTION) (HD) (a4f)",21:30-Racing Santander-Sporting Gijón (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
+#EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="21:30-Racing Santander-Sporting Gijón (HYPERMOTION) (HD) (87b)",21:30-Racing Santander-Sporting Gijón (HYPERMOTION) (HD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
