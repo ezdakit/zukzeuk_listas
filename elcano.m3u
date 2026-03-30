@@ -1,44 +1,174 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTGRP: group-title="BALONCESTO" group-logo="https://www.soyvisual.org/sites/default/files/styles/twitter_card/public/images/photos/dep_0002.jpg"
-#EXTGRP: group-title="DAZN" group-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Dazn-logo.png/601px-Dazn-logo.png"
-#EXTGRP: group-title="EUROSPORT" group-logo="https://logos-world.net/wp-content/uploads/2022/05/Eurosport-Logo.png"
-#EXTGRP: group-title="FORMULA 1" group-logo="https://i.ibb.co/2Ndmtbp/f1.png"
-#EXTGRP: group-title="HYPERMOTION" group-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/LaLiga_Hypermotion_2023_Vertical_Logo.svg/2335px-LaLiga_Hypermotion_2023_Vertical_Logo.svg.png"
-#EXTGRP: group-title="LA LIGA" group-logo="https://i.ibb.co/sp6dD8h2/laliga-logo.png"
-#EXTGRP: group-title="LIGA DE CAMPEONES" group-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Liga_de_Campeones_por_Movistar_Plus%2B_2023_Logo.svg/2560px-Liga_de_Campeones_por_Movistar_Plus%2B_2023_Logo.svg.png"
-#EXTGRP: group-title="MOVISTAR" group-logo="https://upload.wikimedia.org/wikipedia/commons/d/d9/Movistar%2B_Logo.png"
-#EXTGRP: group-title="MOVISTAR DEPORTES" group-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Deportes_por_Movistar_Plus%2B_2022_logo.svg/2560px-Deportes_por_Movistar_Plus%2B_2022_logo.svg.png"
-#EXTGRP: group-title="OTROS" group-logo="https://i.ibb.co/zVNFsy0F/logo-otros.png"
-#EXTGRP: group-title="RFEF TV" group-logo="https://rfef.es/themes/custom/rfef/img/rfef-share.png"
-#EXTGRP: group-title="TDT" group-logo="https://i.ibb.co/j9xn42jB/logo-tdt.png"
 
-#EXTINF:-1 tvg-id="DAZN Baloncesto" tvg-logo="https://www.acb.com/docs/descarga/logos/liga_endesa/JPG/ligaendesa_vertical_positivo.jpg" group-title="BALONCESTO",ACB EVENTO 01 720p *
+#EXTINF:-1 group-title="OTROS",24H TV HD **
+http://127.0.0.1:6878/ace/getstream?id=16598735f228c6dff542125d0e308150b50fc715
+#EXTINF:-1 group-title="OTROS",ACB Evento 01 720 *
 http://127.0.0.1:6878/ace/getstream?id=8faa686a99697b99261346e479ead172b1d9d5d2
-#EXTINF:-1 tvg-id="DAZN Baloncesto" tvg-logo="https://www.acb.com/docs/descarga/logos/liga_endesa/JPG/ligaendesa_vertical_positivo.jpg" group-title="BALONCESTO",ACB EVENTO 01 **
-http://127.0.0.1:6878/ace/getstream?id=53962d7fb865aff73b34a3afb2905cd492f60d75
-#EXTINF:-1 tvg-id="DAZN Baloncesto" tvg-logo="https://www.acb.com/docs/descarga/logos/liga_endesa/JPG/ligaendesa_vertical_positivo.jpg" group-title="BALONCESTO",ACB EVENTO 01 **
+#EXTINF:-1 group-title="OTROS",ACB EVENTO 01 **
 http://127.0.0.1:6878/ace/getstream?id=0995b9b77ac6198dd92141369707fb99da09bdb2
-#EXTINF:-1 tvg-id="DAZN Baloncesto" tvg-logo="https://www.acb.com/docs/descarga/logos/liga_endesa/JPG/ligaendesa_vertical_positivo.jpg" group-title="BALONCESTO",ACB EVENTO 02 720p *
+#EXTINF:-1 group-title="OTROS",ACB EVENTO 01 **
+http://127.0.0.1:6878/ace/getstream?id=53962d7fb865aff73b34a3afb2905cd492f60d75
+#EXTINF:-1 group-title="OTROS",ACB Evento 02 720 *
 http://127.0.0.1:6878/ace/getstream?id=d7e6b6bb1666740a21099fe6ceb0178a14f58e0c
-#EXTINF:-1 tvg-id="DAZN Baloncesto" tvg-logo="https://www.acb.com/docs/descarga/logos/liga_endesa/JPG/ligaendesa_vertical_positivo.jpg" group-title="BALONCESTO",ACB EVENTO 02 **
+#EXTINF:-1 group-title="OTROS",ACB EVENTO 02 **
 http://127.0.0.1:6878/ace/getstream?id=22b702984a0db43fd371c30e2df150b2336551cd
-#EXTINF:-1 tvg-id="DAZN Baloncesto" tvg-logo="https://www.acb.com/docs/descarga/logos/liga_endesa/JPG/ligaendesa_vertical_positivo.jpg" group-title="BALONCESTO",ACB EVENTO 03 720p *
-http://127.0.0.1:6878/ace/getstream?id=119087e842ea8857124b9405b10bb6cfffd2900c
-#EXTINF:-1 tvg-id="DAZN Baloncesto" tvg-logo="https://www.acb.com/docs/descarga/logos/liga_endesa/JPG/ligaendesa_vertical_positivo.jpg" group-title="BALONCESTO",ACB EVENTO 03 **
+#EXTINF:-1 group-title="OTROS",ACB EVENTO 03 **
 http://127.0.0.1:6878/ace/getstream?id=02ec118ee4586d96df9115ffc486be9a499d00d9
-#EXTINF:-1 tvg-id="M+ Vamos HD" tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" group-title="MOVISTAR DEPORTES",M+ Vamos 720p **
+#EXTINF:-1 group-title="OTROS",Bein Sports TR 1080 *
+http://127.0.0.1:6878/ace/getstream?id=e7ddca738693a902ce34fb80788b220676c15801
+#EXTINF:-1 group-title="OTROS",Campeones 720 *
+http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
+#EXTINF:-1 group-title="OTROS",Campeones 720 **
+http://127.0.0.1:6878/ace/getstream?id=43249349740032bee068b5bbff7b078f642812db
+#EXTINF:-1 group-title="OTROS",Campeones 1080 *
+http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
+#EXTINF:-1 group-title="OTROS",Campeones 1080 **
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="OTROS",Campeones 3 720 *
+http://127.0.0.1:6878/ace/getstream?id=5b7f54b12e0f96ceba1299f44eac4b0f97403e4e
+#EXTINF:-1 group-title="OTROS",Campeones 4 1080 *
+http://127.0.0.1:6878/ace/getstream?id=91ac4585368992720ec17ffa5b4389368c6dcac1
+#EXTINF:-1 group-title="OTROS",Campeones 6 1080 *
+http://127.0.0.1:6878/ace/getstream?id=497e2d0301fc289ccbd43080a580f63b718770e2
+#EXTINF:-1 group-title="OTROS",Campeones 7 1080 *
+http://127.0.0.1:6878/ace/getstream?id=f22268a7d4a279feee02243d93a65cca2825c8e1
+#EXTINF:-1 group-title="OTROS",Dazn1 **
+http://127.0.0.1:6878/ace/getstream?id=9afc89481b721ce6c326c85e47148676077b8e62
+#EXTINF:-1 group-title="OTROS",Dazn1 **
+http://127.0.0.1:6878/ace/getstream?id=7ba1f321f4d0791b7ebd42f41a07c1cd1479e784
+#EXTINF:-1 group-title="OTROS",DAZN 1 720 *
+http://127.0.0.1:6878/ace/getstream?id=a116ce3ff95c41c60e987e2b1aa247007f707884
+#EXTINF:-1 group-title="OTROS",DAZN 1 1080 *
+http://127.0.0.1:6878/ace/getstream?id=dddff67edfa7061f643ec5ae0be110169850363d
+#EXTINF:-1 group-title="OTROS",DAZN 2 1080 *
+http://127.0.0.1:6878/ace/getstream?id=01ce89b571b6c89bc19ccaafc913d483ac65c61d
+#EXTINF:-1 group-title="OTROS",Dazn 2 1080 **
+http://127.0.0.1:6878/ace/getstream?id=d60b8c154828cb990b7bb1570764b215bd979e74
+#EXTINF:-1 group-title="OTROS",DAZN 3 1080 *
+http://127.0.0.1:6878/ace/getstream?id=908bc5e7ae52afc06e40793b6db749dba11a1780
+#EXTINF:-1 group-title="OTROS",DAZN 4 1080 *
+http://127.0.0.1:6878/ace/getstream?id=d669c6cee7173a1c8994075f7050a6526655b1dc
+#EXTINF:-1 group-title="OTROS",DAZN F1 720 *
+http://127.0.0.1:6878/ace/getstream?id=27d11bbeb3026231d52de16b1fac48da7a099247
+#EXTINF:-1 group-title="OTROS",Dazn f1 720 **
+http://127.0.0.1:6878/ace/getstream?id=88d7cdd80be237ae21314f7f1b6582991498e8ba
+#EXTINF:-1 group-title="OTROS",DAZN F1 1080 *
+http://127.0.0.1:6878/ace/getstream?id=895d08633bb22c2573281655cf3ca44de476cc73
+#EXTINF:-1 group-title="OTROS",DAZN F1 1080 *
+http://127.0.0.1:6878/ace/getstream?id=d719181097d256073844390b3e094fbcb1bceaa4
+#EXTINF:-1 group-title="OTROS",DAZN LaLiga 2 720 *
+http://127.0.0.1:6878/ace/getstream?id=a70a1605f69c8379e04094df96922a42adfbb431
+#EXTINF:-1 group-title="OTROS",DAZN LaLiga **
+http://127.0.0.1:6878/ace/getstream?id=9c75f1d190c518cfe0f236415b8dccc1f676ef3b
+#EXTINF:-1 group-title="OTROS",Dazn MotoGP 1080 *
+http://127.0.0.1:6878/ace/getstream?id=20d4b3586bb822c3618cf8fb665a304869c5e1a5
+#EXTINF:-1 group-title="OTROS",daznliga2 720 **
+http://127.0.0.1:6878/ace/getstream?id=c976c7b37964322752db562b4ad65515509c8d36
+#EXTINF:-1 group-title="OTROS",deporte3 1080 **
+http://127.0.0.1:6878/ace/getstream?id=799c6b5ee1cf41af077d14e3f9c45a32697eb903
+#EXTINF:-1 group-title="OTROS",Deporte5 **
+http://127.0.0.1:6878/ace/getstream?id=7b361369a40046ad3011086f9d4ae2982fb4d5aa
+#EXTINF:-1 group-title="OTROS",deporte 720 **
+http://127.0.0.1:6878/ace/getstream?id=2f3cfd199a49819cbd129689a840dc3d23ab93aa
+#EXTINF:-1 group-title="OTROS",Direct Sport 1 1080 *
+http://127.0.0.1:6878/ace/getstream?id=ec54923a1ce7c156923dd10ad68bdb82b8c14841
+#EXTINF:-1 group-title="OTROS",Direct Sport+ 1080 *
+http://127.0.0.1:6878/ace/getstream?id=b159aee4a9cca5a2d48350cf6894259ecb44c90c
+#EXTINF:-1 group-title="OTROS",Esport3 720 **
+http://127.0.0.1:6878/ace/getstream?id=ed6524f8f73c30cf102fde66f2cb520f4b5842e3
+#EXTINF:-1 group-title="OTROS",Esport3 1080 **
+http://127.0.0.1:6878/ace/getstream?id=8f59ce96e4c902ba2f5193af07546d7ff17fc3bc
+#EXTINF:-1 group-title="OTROS",Eurosport720 **
+http://127.0.0.1:6878/ace/getstream?id=a7b42f9d65636d1b1d9316d3e91ebe12b192658c
+#EXTINF:-1 group-title="OTROS",Eurosport1080 **
+http://127.0.0.1:6878/ace/getstream?id=0db68ab752b50e6bb257eef22d102c1d29cd92ea
+#EXTINF:-1 group-title="OTROS",Eurosport2720 **
+http://127.0.0.1:6878/ace/getstream?id=5c910d614894635153a7d42de98cc2e4a958a53f
+#EXTINF:-1 group-title="OTROS",Eurosport21080 **
+http://127.0.0.1:6878/ace/getstream?id=24f940fef7e270b6b3ae5d9dc713a80c8345cfba
+#EXTINF:-1 group-title="OTROS",EUROSPORT 1 1080 *
+http://127.0.0.1:6878/ace/getstream?id=48a589dbeab3544662fafd79888aada7d834cfe9
+#EXTINF:-1 group-title="OTROS",EUROSPORT 2 *
+http://127.0.0.1:6878/ace/getstream?id=f5908690485ae2facecf3074446ba4315f07a193
+#EXTINF:-1 group-title="OTROS",F1 720 **
+http://127.0.0.1:6878/ace/getstream?id=ed6188dcbb491efeb2092c1a6199226c27f61727
+#EXTINF:-1 group-title="OTROS",F1 1080 2 **
+http://127.0.0.1:6878/ace/getstream?id=bcf9dc38f92e90a71b87bd54b3bac91b76d09a69
+#EXTINF:-1 group-title="OTROS",F1 1080 **
+http://127.0.0.1:6878/ace/getstream?id=b08e158ea3f5c72084f5ff8e3c30ca2e4d1ff6d1
+#EXTINF:-1 group-title="OTROS",LA 1 **
+http://127.0.0.1:6878/ace/getstream?id=1fddc49dd11ae7bb16f2b94648a9b4f0efc80349
+#EXTINF:-1 group-title="OTROS",laliga 720 **
+http://127.0.0.1:6878/ace/getstream?id=14b6cd8769cd485f2cffdca64be9698d9bfeac58
+#EXTINF:-1 group-title="OTROS",laliga 1080 **
+http://127.0.0.1:6878/ace/getstream?id=00c9bc9c5d7d87680a5a6bed349edfa775a89947
+#EXTINF:-1 group-title="OTROS",laliga 1080 **
+http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
+#EXTINF:-1 group-title="OTROS",Laliga Hypermotion 720 *
+http://127.0.0.1:6878/ace/getstream?id=1f75d92098580443857caa95a719103cb83781b0
+#EXTINF:-1 group-title="OTROS",Laliga Hypermotion 1080 *
+http://127.0.0.1:6878/ace/getstream?id=4636ed75106cb00e9c70cc2029edf0a4df7ad73f
+#EXTINF:-1 group-title="OTROS",laliga tv hypermotion21080 **
+http://127.0.0.1:6878/ace/getstream?id=709075831bf5c41ed0a20dfbd640aab6c28971f8
+#EXTINF:-1 group-title="OTROS",M+ Deportes 720 *
+http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
+#EXTINF:-1 group-title="OTROS",M+ Deportes 1080 *
+http://127.0.0.1:6878/ace/getstream?id=c6a824a81b36f6c3529826477caf2ad94b45776d
+#EXTINF:-1 group-title="OTROS",M+ Deportes 2 1080 *
+http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
+#EXTINF:-1 group-title="OTROS",M+ Deportes 3 720 *
+http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
+#EXTINF:-1 group-title="OTROS",M+ Deportes 3 1080 *
+http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
+#EXTINF:-1 group-title="OTROS",M+ Deportes 4 720 *
+http://127.0.0.1:6878/ace/getstream?id=2a5d90651e212106434edea5bfbba1a843b7b97c
+#EXTINF:-1 group-title="OTROS",M+ Deportes 4 1080 *
+http://127.0.0.1:6878/ace/getstream?id=4abe06c5cce7cb3c6bef2c3bccaafefd3299794f
+#EXTINF:-1 group-title="OTROS",M+ Deportes 5 1080 *
+http://127.0.0.1:6878/ace/getstream?id=646a1ed4ece843de1979f7888cbdd4d937506a28
+#EXTINF:-1 group-title="OTROS",M+ Deportes 8 720 *
+http://127.0.0.1:6878/ace/getstream?id=f5c100695175ba52099664ddb4c5fc4ae0ebe99a
+#EXTINF:-1 group-title="OTROS",M+ Deportes 8 1080 *
+http://127.0.0.1:6878/ace/getstream?id=abe6834b6e2509d2ff5b5b04f7ecb1db6e81083a
+#EXTINF:-1 group-title="OTROS",M+ Golf 720 *
+http://127.0.0.1:6878/ace/getstream?id=f60535a458b3c114283e2f433379144345beddd6
+#EXTINF:-1 group-title="OTROS",M+ LaLiga 720 *
+http://127.0.0.1:6878/ace/getstream?id=3ace1463a7cad979c3a4002b245487e9982e9f1a
+#EXTINF:-1 group-title="OTROS",M+ LALIGA TV 2 *
+http://127.0.0.1:6878/ace/getstream?id=2c01306506e268ba726f5c30222923b6168a5404
+#EXTINF:-1 group-title="OTROS",M+ LALIGA TV 2 *
+http://127.0.0.1:6878/ace/getstream?id=b45cfe568e106a7df65c950805d6f123c989ce84
+#EXTINF:-1 group-title="OTROS",MOVISTAR PLUS 720 *
+http://127.0.0.1:6878/ace/getstream?id=d23497596720b47b096ec0f850d6d26a19d1a336
+#EXTINF:-1 group-title="OTROS",MOVISTAR PLUS 1080 *
+http://127.0.0.1:6878/ace/getstream?id=ed74406ccdb3c21941b919db6bffca7f1de015bb
+#EXTINF:-1 group-title="OTROS",RFEFTV 1080 *
+http://127.0.0.1:6878/ace/getstream?id=7b742628b9f7e82902bdbc1ff92eba1988875cfc
+#EXTINF:-1 group-title="OTROS",SKY Sports LaLiga 1080 *
+http://127.0.0.1:6878/ace/getstream?id=d58f619d860d29cd47720055b9bb842199971da1
+#EXTINF:-1 group-title="OTROS",SKY Sports LaLiga SD **
+http://127.0.0.1:6878/ace/getstream?id=a9bddffdff085cdc18b34218d5dc1093b88e3c0a
+#EXTINF:-1 group-title="OTROS",SKY SPORTS MAIN EVENT **
+http://127.0.0.1:6878/ace/getstream?id=e4b259b6dedb674283ab124117ce793360d3a1c0
+#EXTINF:-1 group-title="OTROS",Teledeporte 720 **
+http://127.0.0.1:6878/ace/getstream?id=b0d1489c9f3239349665ad5ab423363f2b02e5ae
+#EXTINF:-1 group-title="OTROS",TELEDEPORTE 1080 *
+http://127.0.0.1:6878/ace/getstream?id=b35b3eb8e22365bf3469efd6d1f3b82618a6e18a
+#EXTINF:-1 group-title="OTROS",Teledeporte 1080 **
+http://127.0.0.1:6878/ace/getstream?id=77cf022557c56cdf8d8115f50e61f846ad72ee05
+#EXTINF:-1 group-title="OTROS",Test *
+http://127.0.0.1:6878/ace/getstream?id=cdec5a77931bda91a1e400d31b9d9e1e5d35d3fd
+#EXTINF:-1 group-title="OTROS",TVE La 1 720 *
+http://127.0.0.1:6878/ace/getstream?id=02622fa2fab63847d88dc14fd9fa5c2fc35de8a8
+#EXTINF:-1 group-title="OTROS",vamos720 **
 http://127.0.0.1:6878/ace/getstream?id=0e5d8c9724fa9163f49096b70484e315251eb785
-#EXTINF:-1 tvg-id="M+ Vamos HD" tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" group-title="MOVISTAR DEPORTES",M+ Vamos 1080p *
-http://127.0.0.1:6878/ace/getstream?id=ad5ca6e24f87f47a9c3c5bc10c7e8e5af46767fc
-#EXTINF:-1 tvg-id="M+ Vamos HD" tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" group-title="MOVISTAR DEPORTES",M+ Vamos 1080p **
+#EXTINF:-1 group-title="OTROS",vamos1080 **
 http://127.0.0.1:6878/ace/getstream?id=476b6f6583517bd75c15c4663bf45fab7c8da9cf
-#EXTINF:-1 tvg-id="M+ Vamos 2" tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" group-title="MOVISTAR DEPORTES",M+ VAMOS 2 720p *
+#EXTINF:-1 group-title="OTROS",VAMOS 1080 *
+http://127.0.0.1:6878/ace/getstream?id=ad5ca6e24f87f47a9c3c5bc10c7e8e5af46767fc
+#EXTINF:-1 group-title="OTROS",Vamos 2 720 *
 http://127.0.0.1:6878/ace/getstream?id=f51674b1dd1ab5a668fa97a0f13a490632f0d7ca
-#EXTINF:-1 tvg-id="M+ Vamos 2" tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" group-title="MOVISTAR DEPORTES",M+ VAMOS 2 1080p *
+#EXTINF:-1 group-title="OTROS",Vamos 2 1080 *
 http://127.0.0.1:6878/ace/getstream?id=5e310dbffed8c941d20ad819cb8ef43c34b07884
-#EXTINF:-1 tvg-id="M+ Vamos 3" tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" group-title="MOVISTAR DEPORTES",M+ VAMOS 3 720p **
-http://127.0.0.1:6878/ace/getstream?id=837883625d40e1eb5566eefaf74811046491f53a
-#EXTINF:-1 tvg-id="M+ Vamos 3" tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" group-title="MOVISTAR DEPORTES",M+ VAMOS 3 1080p **
-http://127.0.0.1:6878/ace/getstream?id=b7b1c1eeb4be09c63fbc2f319c9760851c274455
