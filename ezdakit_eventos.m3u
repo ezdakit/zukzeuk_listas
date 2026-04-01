@@ -1,64 +1,64 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="03-31 (Martes) LaLiga Hypermotion" tvg-name="19:00-Mirandés-Albacete (HYPERMOTION) (FHD) (87b)",19:00-Mirandés-Albacete (HYPERMOTION) (FHD) (87b)
-http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="03-31 (Martes) LaLiga Hypermotion" tvg-name="19:00-Mirandés-Albacete (HYPERMOTION) (HD) (a4f)",19:00-Mirandés-Albacete (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
-#EXTINF:-1 group-title="03-31 (Martes) LaLiga Hypermotion" tvg-name="19:00-Mirandés-Albacete (HYPERMOTION) (FHD) (463)",19:00-Mirandés-Albacete (HYPERMOTION) (FHD) (463)
-http://127.0.0.1:6878/ace/getstream?id=4636ed75106cb00e9c70cc2029edf0a4df7ad73f
+#EXTINF:-1 group-title="03-31 (Martes) LaLiga Hypermotion" tvg-name="19:00-Mirandés-Albacete (HYPERMOTION) (FHD) (87b)",19:00-Mirandés-Albacete (HYPERMOTION) (FHD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="03-31 (Martes) LaLiga Hypermotion" tvg-name="19:00-Mirandés-Albacete (HYPERMOTION) (HD) (1f7)",19:00-Mirandés-Albacete (HYPERMOTION) (HD) (1f7)
 http://127.0.0.1:6878/ace/getstream?id=1f75d92098580443857caa95a719103cb83781b0
+#EXTINF:-1 group-title="03-31 (Martes) LaLiga Hypermotion" tvg-name="19:00-Mirandés-Albacete (HYPERMOTION) (FHD) (463)",19:00-Mirandés-Albacete (HYPERMOTION) (FHD) (463)
+http://127.0.0.1:6878/ace/getstream?id=4636ed75106cb00e9c70cc2029edf0a4df7ad73f
 #EXTINF:-1 group-title="03-31 (Martes) LaLiga Hypermotion" tvg-name="20:00-Deportivo-Córdoba (HYPERMOTION 2) (FHD) (8a0)",20:00-Deportivo-Córdoba (HYPERMOTION 2) (FHD) (8a0)
 http://127.0.0.1:6878/ace/getstream?id=8a05571c0c8fe53f160fb7d116cdf97243679e86
 #EXTINF:-1 group-title="03-31 (Martes) LaLiga Hypermotion" tvg-name="20:00-Deportivo-Córdoba (HYPERMOTION 2) (HD) (3a2)",20:00-Deportivo-Córdoba (HYPERMOTION 2) (HD) (3a2)
 http://127.0.0.1:6878/ace/getstream?id=3a21e651c0bffe810cfc8537065cb81f5ed68a55
 #EXTINF:-1 group-title="03-31 (Martes) LaLiga Hypermotion" tvg-name="20:00-Deportivo-Córdoba (HYPERMOTION 2) (FHD) (709)",20:00-Deportivo-Córdoba (HYPERMOTION 2) (FHD) (709)
 http://127.0.0.1:6878/ace/getstream?id=709075831bf5c41ed0a20dfbd640aab6c28971f8
-#EXTINF:-1 group-title="03-31 (Martes) Euroliga Liga Regular" tvg-name="20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (FHD) (f82)",20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="03-31 (Martes) Euroliga Liga Regular" tvg-name="20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (FHD) (369)",20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="03-31 (Martes) Euroliga Liga Regular" tvg-name="20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (FHD) (f82)",20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="03-31 (Martes) Euroliga Liga Regular" tvg-name="20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (FHD) (5d3)",20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="03-31 (Martes) Euroliga Liga Regular" tvg-name="20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (HD) (6e0)",20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (HD) (6e0)
-http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
 #EXTINF:-1 group-title="03-31 (Martes) Euroliga Liga Regular" tvg-name="20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (FHD) (c6a)",20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (FHD) (c6a)
 http://127.0.0.1:6878/ace/getstream?id=c6a824a81b36f6c3529826477caf2ad94b45776d
+#EXTINF:-1 group-title="03-31 (Martes) Euroliga Liga Regular" tvg-name="20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (HD) (6e0)",20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (HD) (6e0)
+http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
 #EXTINF:-1 group-title="03-31 (Martes) Euroliga Liga Regular" tvg-name="20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (HD) (2f3)",20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (HD) (2f3)
 http://127.0.0.1:6878/ace/getstream?id=2f3cfd199a49819cbd129689a840dc3d23ab93aa
 #EXTINF:-1 group-title="03-31 (Martes) Euroliga Liga Regular" tvg-name="20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (FHD) (ebc)",20:45-Virtus Bologna-Paris Basketball (MOVISTAR DEPORTES) (FHD) (ebc)
 http://127.0.0.1:6878/ace/getstream?id=ebca4a63ce3bfda7b272964a1acc5227218184a4
-#EXTINF:-1 group-title="03-31 (Martes) LaLiga Hypermotion" tvg-name="21:30-Real Valladolid-Cádiz CF (HYPERMOTION) (FHD) (87b)",21:30-Real Valladolid-Cádiz CF (HYPERMOTION) (FHD) (87b)
-http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="03-31 (Martes) LaLiga Hypermotion" tvg-name="21:30-Real Valladolid-Cádiz CF (HYPERMOTION) (HD) (a4f)",21:30-Real Valladolid-Cádiz CF (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
-#EXTINF:-1 group-title="03-31 (Martes) LaLiga Hypermotion" tvg-name="21:30-Real Valladolid-Cádiz CF (HYPERMOTION) (FHD) (463)",21:30-Real Valladolid-Cádiz CF (HYPERMOTION) (FHD) (463)
-http://127.0.0.1:6878/ace/getstream?id=4636ed75106cb00e9c70cc2029edf0a4df7ad73f
+#EXTINF:-1 group-title="03-31 (Martes) LaLiga Hypermotion" tvg-name="21:30-Real Valladolid-Cádiz CF (HYPERMOTION) (FHD) (87b)",21:30-Real Valladolid-Cádiz CF (HYPERMOTION) (FHD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="03-31 (Martes) LaLiga Hypermotion" tvg-name="21:30-Real Valladolid-Cádiz CF (HYPERMOTION) (HD) (1f7)",21:30-Real Valladolid-Cádiz CF (HYPERMOTION) (HD) (1f7)
 http://127.0.0.1:6878/ace/getstream?id=1f75d92098580443857caa95a719103cb83781b0
-#EXTINF:-1 group-title="04-01 (Miércoles) Euroliga Liga Regular" tvg-name="19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (FHD) (f82)",19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="03-31 (Martes) LaLiga Hypermotion" tvg-name="21:30-Real Valladolid-Cádiz CF (HYPERMOTION) (FHD) (463)",21:30-Real Valladolid-Cádiz CF (HYPERMOTION) (FHD) (463)
+http://127.0.0.1:6878/ace/getstream?id=4636ed75106cb00e9c70cc2029edf0a4df7ad73f
 #EXTINF:-1 group-title="04-01 (Miércoles) Euroliga Liga Regular" tvg-name="19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (FHD) (369)",19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="04-01 (Miércoles) Euroliga Liga Regular" tvg-name="19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (FHD) (f82)",19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="04-01 (Miércoles) Euroliga Liga Regular" tvg-name="19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (FHD) (5d3)",19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="04-01 (Miércoles) Euroliga Liga Regular" tvg-name="19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (HD) (6e0)",19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (HD) (6e0)
-http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
 #EXTINF:-1 group-title="04-01 (Miércoles) Euroliga Liga Regular" tvg-name="19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (FHD) (c6a)",19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (FHD) (c6a)
 http://127.0.0.1:6878/ace/getstream?id=c6a824a81b36f6c3529826477caf2ad94b45776d
+#EXTINF:-1 group-title="04-01 (Miércoles) Euroliga Liga Regular" tvg-name="19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (HD) (6e0)",19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (HD) (6e0)
+http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
 #EXTINF:-1 group-title="04-01 (Miércoles) Euroliga Liga Regular" tvg-name="19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (HD) (2f3)",19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (HD) (2f3)
 http://127.0.0.1:6878/ace/getstream?id=2f3cfd199a49819cbd129689a840dc3d23ab93aa
 #EXTINF:-1 group-title="04-01 (Miércoles) Euroliga Liga Regular" tvg-name="19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (FHD) (ebc)",19:00-FC Bayern Basketball-Fenerbahce Istanbul (MOVISTAR DEPORTES) (FHD) (ebc)
 http://127.0.0.1:6878/ace/getstream?id=ebca4a63ce3bfda7b272964a1acc5227218184a4
-#EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="19:00-FC Andorra-Málaga (HYPERMOTION) (FHD) (87b)",19:00-FC Andorra-Málaga (HYPERMOTION) (FHD) (87b)
-http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="19:00-FC Andorra-Málaga (HYPERMOTION) (HD) (a4f)",19:00-FC Andorra-Málaga (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
-#EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="19:00-FC Andorra-Málaga (HYPERMOTION) (FHD) (463)",19:00-FC Andorra-Málaga (HYPERMOTION) (FHD) (463)
-http://127.0.0.1:6878/ace/getstream?id=4636ed75106cb00e9c70cc2029edf0a4df7ad73f
+#EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="19:00-FC Andorra-Málaga (HYPERMOTION) (FHD) (87b)",19:00-FC Andorra-Málaga (HYPERMOTION) (FHD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="19:00-FC Andorra-Málaga (HYPERMOTION) (HD) (1f7)",19:00-FC Andorra-Málaga (HYPERMOTION) (HD) (1f7)
 http://127.0.0.1:6878/ace/getstream?id=1f75d92098580443857caa95a719103cb83781b0
+#EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="19:00-FC Andorra-Málaga (HYPERMOTION) (FHD) (463)",19:00-FC Andorra-Málaga (HYPERMOTION) (FHD) (463)
+http://127.0.0.1:6878/ace/getstream?id=4636ed75106cb00e9c70cc2029edf0a4df7ad73f
 #EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="20:00-Burgos CF-AD Ceuta (HYPERMOTION 3) (FHD) (1ba)",20:00-Burgos CF-AD Ceuta (HYPERMOTION 3) (FHD) (1ba)
 http://127.0.0.1:6878/ace/getstream?id=1ba18731a8e18bb4b3a5dfa5bb7b0f05762849a6
 #EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="20:00-Burgos CF-AD Ceuta (HYPERMOTION 3) (FHD) (1fd)",20:00-Burgos CF-AD Ceuta (HYPERMOTION 3) (FHD) (1fd)
@@ -69,58 +69,58 @@ http://127.0.0.1:6878/ace/getstream?id=8a05571c0c8fe53f160fb7d116cdf97243679e86
 http://127.0.0.1:6878/ace/getstream?id=3a21e651c0bffe810cfc8537065cb81f5ed68a55
 #EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="20:00-Huesca-Cultural Leonesa (HYPERMOTION 2) (FHD) (709)",20:00-Huesca-Cultural Leonesa (HYPERMOTION 2) (FHD) (709)
 http://127.0.0.1:6878/ace/getstream?id=709075831bf5c41ed0a20dfbd640aab6c28971f8
-#EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="21:30-Racing Santander-Sporting Gijón (HYPERMOTION) (FHD) (87b)",21:30-Racing Santander-Sporting Gijón (HYPERMOTION) (FHD) (87b)
-http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="21:30-Racing Santander-Sporting Gijón (HYPERMOTION) (HD) (a4f)",21:30-Racing Santander-Sporting Gijón (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
-#EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="21:30-Racing Santander-Sporting Gijón (HYPERMOTION) (FHD) (463)",21:30-Racing Santander-Sporting Gijón (HYPERMOTION) (FHD) (463)
-http://127.0.0.1:6878/ace/getstream?id=4636ed75106cb00e9c70cc2029edf0a4df7ad73f
+#EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="21:30-Racing Santander-Sporting Gijón (HYPERMOTION) (FHD) (87b)",21:30-Racing Santander-Sporting Gijón (HYPERMOTION) (FHD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="21:30-Racing Santander-Sporting Gijón (HYPERMOTION) (HD) (1f7)",21:30-Racing Santander-Sporting Gijón (HYPERMOTION) (HD) (1f7)
 http://127.0.0.1:6878/ace/getstream?id=1f75d92098580443857caa95a719103cb83781b0
+#EXTINF:-1 group-title="04-01 (Miércoles) LaLiga Hypermotion" tvg-name="21:30-Racing Santander-Sporting Gijón (HYPERMOTION) (FHD) (463)",21:30-Racing Santander-Sporting Gijón (HYPERMOTION) (FHD) (463)
+http://127.0.0.1:6878/ace/getstream?id=4636ed75106cb00e9c70cc2029edf0a4df7ad73f
 #EXTINF:-1 group-title="04-02 (Jueves) Serie A Brasil" tvg-name="00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (FHD) (afb)",00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
-#EXTINF:-1 group-title="04-02 (Jueves) Serie A Brasil" tvg-name="00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (HD) (e57)",00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="04-02 (Jueves) Serie A Brasil" tvg-name="00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (FHD) (778)",00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (FHD) (778)
-http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="04-02 (Jueves) Serie A Brasil" tvg-name="00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (HD) (97d)",00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (HD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 group-title="04-02 (Jueves) Serie A Brasil" tvg-name="00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (HD) (b02)",00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="04-02 (Jueves) Serie A Brasil" tvg-name="00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (UHD) (152)",00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (UHD) (152)
-http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="04-02 (Jueves) Serie A Brasil" tvg-name="00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (FHD) (afb)",00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
 #EXTINF:-1 group-title="04-02 (Jueves) Serie A Brasil" tvg-name="00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (HD) (2b5)",00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (HD) (2b5)
 http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
+#EXTINF:-1 group-title="04-02 (Jueves) Serie A Brasil" tvg-name="00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (HD) (e57)",00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="04-02 (Jueves) Serie A Brasil" tvg-name="00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (HD) (97d)",00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (HD) (97d)
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="04-02 (Jueves) Serie A Brasil" tvg-name="00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (UHD) (152)",00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (UHD) (152)
+http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
 #EXTINF:-1 group-title="04-02 (Jueves) Serie A Brasil" tvg-name="00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (FHD) (0f7)",00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (FHD) (0f7)
 http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
-#EXTINF:-1 group-title="04-02 (Jueves) Euroliga Liga Regular" tvg-name="19:00-Hapoel Tel Aviv BC-Panathinaikos BC (MOVISTAR DEPORTES) (FHD) (f82)",19:00-Hapoel Tel Aviv BC-Panathinaikos BC (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="04-02 (Jueves) Serie A Brasil" tvg-name="00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (HD) (b02)",00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
+#EXTINF:-1 group-title="04-02 (Jueves) Serie A Brasil" tvg-name="00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (FHD) (afb)",00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="04-02 (Jueves) Serie A Brasil" tvg-name="00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (FHD) (778)",00:30-Internacional-São Paulo (LIGA DE CAMPEONES) (FHD) (778)
+http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
 #EXTINF:-1 group-title="04-02 (Jueves) Euroliga Liga Regular" tvg-name="19:00-Hapoel Tel Aviv BC-Panathinaikos BC (MOVISTAR DEPORTES) (FHD) (369)",19:00-Hapoel Tel Aviv BC-Panathinaikos BC (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="04-02 (Jueves) Euroliga Liga Regular" tvg-name="19:00-Hapoel Tel Aviv BC-Panathinaikos BC (MOVISTAR DEPORTES) (FHD) (f82)",19:00-Hapoel Tel Aviv BC-Panathinaikos BC (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="04-02 (Jueves) Euroliga Liga Regular" tvg-name="19:00-Hapoel Tel Aviv BC-Panathinaikos BC (MOVISTAR DEPORTES) (FHD) (5d3)",19:00-Hapoel Tel Aviv BC-Panathinaikos BC (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="04-02 (Jueves) Euroliga Liga Regular" tvg-name="19:00-Hapoel Tel Aviv BC-Panathinaikos BC (MOVISTAR DEPORTES) (HD) (6e0)",19:00-Hapoel Tel Aviv BC-Panathinaikos BC (MOVISTAR DEPORTES) (HD) (6e0)
-http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
 #EXTINF:-1 group-title="04-02 (Jueves) Euroliga Liga Regular" tvg-name="19:00-Hapoel Tel Aviv BC-Panathinaikos BC (MOVISTAR DEPORTES) (FHD) (c6a)",19:00-Hapoel Tel Aviv BC-Panathinaikos BC (MOVISTAR DEPORTES) (FHD) (c6a)
 http://127.0.0.1:6878/ace/getstream?id=c6a824a81b36f6c3529826477caf2ad94b45776d
+#EXTINF:-1 group-title="04-02 (Jueves) Euroliga Liga Regular" tvg-name="19:00-Hapoel Tel Aviv BC-Panathinaikos BC (MOVISTAR DEPORTES) (HD) (6e0)",19:00-Hapoel Tel Aviv BC-Panathinaikos BC (MOVISTAR DEPORTES) (HD) (6e0)
+http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
 #EXTINF:-1 group-title="04-02 (Jueves) Euroliga Liga Regular" tvg-name="19:00-Hapoel Tel Aviv BC-Panathinaikos BC (MOVISTAR DEPORTES) (HD) (2f3)",19:00-Hapoel Tel Aviv BC-Panathinaikos BC (MOVISTAR DEPORTES) (HD) (2f3)
 http://127.0.0.1:6878/ace/getstream?id=2f3cfd199a49819cbd129689a840dc3d23ab93aa
 #EXTINF:-1 group-title="04-02 (Jueves) Euroliga Liga Regular" tvg-name="19:00-Hapoel Tel Aviv BC-Panathinaikos BC (MOVISTAR DEPORTES) (FHD) (ebc)",19:00-Hapoel Tel Aviv BC-Panathinaikos BC (MOVISTAR DEPORTES) (FHD) (ebc)
 http://127.0.0.1:6878/ace/getstream?id=ebca4a63ce3bfda7b272964a1acc5227218184a4
-#EXTINF:-1 group-title="04-02 (Jueves) LaLiga Hypermotion" tvg-name="19:00-UD Las Palmas-Granada CF (HYPERMOTION) (FHD) (87b)",19:00-UD Las Palmas-Granada CF (HYPERMOTION) (FHD) (87b)
-http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="04-02 (Jueves) LaLiga Hypermotion" tvg-name="19:00-UD Las Palmas-Granada CF (HYPERMOTION) (HD) (a4f)",19:00-UD Las Palmas-Granada CF (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
-#EXTINF:-1 group-title="04-02 (Jueves) LaLiga Hypermotion" tvg-name="19:00-UD Las Palmas-Granada CF (HYPERMOTION) (FHD) (463)",19:00-UD Las Palmas-Granada CF (HYPERMOTION) (FHD) (463)
-http://127.0.0.1:6878/ace/getstream?id=4636ed75106cb00e9c70cc2029edf0a4df7ad73f
+#EXTINF:-1 group-title="04-02 (Jueves) LaLiga Hypermotion" tvg-name="19:00-UD Las Palmas-Granada CF (HYPERMOTION) (FHD) (87b)",19:00-UD Las Palmas-Granada CF (HYPERMOTION) (FHD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="04-02 (Jueves) LaLiga Hypermotion" tvg-name="19:00-UD Las Palmas-Granada CF (HYPERMOTION) (HD) (1f7)",19:00-UD Las Palmas-Granada CF (HYPERMOTION) (HD) (1f7)
 http://127.0.0.1:6878/ace/getstream?id=1f75d92098580443857caa95a719103cb83781b0
-#EXTINF:-1 group-title="04-02 (Jueves) Euroliga Liga Regular" tvg-name="20:00-Crvena Zvezda MTS Belgrade-BC Partizan Beograd (MOVISTAR DEPORTES 2) (FHD) (73d)",20:00-Crvena Zvezda MTS Belgrade-BC Partizan Beograd (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="04-02 (Jueves) LaLiga Hypermotion" tvg-name="19:00-UD Las Palmas-Granada CF (HYPERMOTION) (FHD) (463)",19:00-UD Las Palmas-Granada CF (HYPERMOTION) (FHD) (463)
+http://127.0.0.1:6878/ace/getstream?id=4636ed75106cb00e9c70cc2029edf0a4df7ad73f
 #EXTINF:-1 group-title="04-02 (Jueves) Euroliga Liga Regular" tvg-name="20:00-Crvena Zvezda MTS Belgrade-BC Partizan Beograd (MOVISTAR DEPORTES 2) (HD) (3af)",20:00-Crvena Zvezda MTS Belgrade-BC Partizan Beograd (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="04-02 (Jueves) Euroliga Liga Regular" tvg-name="20:00-Crvena Zvezda MTS Belgrade-BC Partizan Beograd (MOVISTAR DEPORTES 2) (FHD) (73d)",20:00-Crvena Zvezda MTS Belgrade-BC Partizan Beograd (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="04-02 (Jueves) Euroliga Liga Regular" tvg-name="20:00-Crvena Zvezda MTS Belgrade-BC Partizan Beograd (MOVISTAR DEPORTES 4) (HD) (8b5)",20:00-Crvena Zvezda MTS Belgrade-BC Partizan Beograd (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
 #EXTINF:-1 group-title="04-02 (Jueves) Euroliga Liga Regular" tvg-name="20:00-Dubai Basketball-AS Monaco Basket (MOVISTAR DEPORTES 3) (HD) (39f)",20:00-Dubai Basketball-AS Monaco Basket (MOVISTAR DEPORTES 3) (HD) (39f)
@@ -135,23 +135,23 @@ http://127.0.0.1:6878/ace/getstream?id=709075831bf5c41ed0a20dfbd640aab6c28971f8
 http://127.0.0.1:6878/ace/getstream?id=1ba18731a8e18bb4b3a5dfa5bb7b0f05762849a6
 #EXTINF:-1 group-title="04-02 (Jueves) LaLiga Hypermotion" tvg-name="20:00-Real Sociedad B-Eibar (HYPERMOTION 3) (FHD) (1fd)",20:00-Real Sociedad B-Eibar (HYPERMOTION 3) (FHD) (1fd)
 http://127.0.0.1:6878/ace/getstream?id=1fdb405a6942da0941266f24cdd1c71b11552f1f
-#EXTINF:-1 group-title="04-02 (Jueves) Euroliga Liga Regular" tvg-name="20:45-Paris Basketball-AX Olimpia Milano (MOVISTAR DEPORTES 5) (FHD) (591)",20:45-Paris Basketball-AX Olimpia Milano (MOVISTAR DEPORTES 5) (FHD) (591)
-http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
 #EXTINF:-1 group-title="04-02 (Jueves) Euroliga Liga Regular" tvg-name="20:45-Paris Basketball-AX Olimpia Milano (MOVISTAR DEPORTES 5) (HD) (323)",20:45-Paris Basketball-AX Olimpia Milano (MOVISTAR DEPORTES 5) (HD) (323)
 http://127.0.0.1:6878/ace/getstream?id=3230cdca852a10325222e3c546e499e31d547a90
+#EXTINF:-1 group-title="04-02 (Jueves) Euroliga Liga Regular" tvg-name="20:45-Paris Basketball-AX Olimpia Milano (MOVISTAR DEPORTES 5) (FHD) (591)",20:45-Paris Basketball-AX Olimpia Milano (MOVISTAR DEPORTES 5) (FHD) (591)
+http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
 #EXTINF:-1 group-title="04-02 (Jueves) Euroliga Liga Regular" tvg-name="20:45-Paris Basketball-AX Olimpia Milano (MOVISTAR DEPORTES 5) (FHD) (6dc)",20:45-Paris Basketball-AX Olimpia Milano (MOVISTAR DEPORTES 5) (FHD) (6dc)
 http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
-#EXTINF:-1 group-title="04-02 (Jueves) Euroliga Liga Regular" tvg-name="21:00-Maccabi Tel Aviv BC-Anadolu Efes Istanbul (MOVISTAR DEPORTES 2) (FHD) (73d)",21:00-Maccabi Tel Aviv BC-Anadolu Efes Istanbul (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="04-02 (Jueves) Euroliga Liga Regular" tvg-name="21:00-Maccabi Tel Aviv BC-Anadolu Efes Istanbul (MOVISTAR DEPORTES 2) (HD) (3af)",21:00-Maccabi Tel Aviv BC-Anadolu Efes Istanbul (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="04-02 (Jueves) Euroliga Liga Regular" tvg-name="21:00-Maccabi Tel Aviv BC-Anadolu Efes Istanbul (MOVISTAR DEPORTES 2) (FHD) (73d)",21:00-Maccabi Tel Aviv BC-Anadolu Efes Istanbul (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="04-02 (Jueves) Euroliga Liga Regular" tvg-name="21:00-Maccabi Tel Aviv BC-Anadolu Efes Istanbul (MOVISTAR DEPORTES 4) (HD) (8b5)",21:00-Maccabi Tel Aviv BC-Anadolu Efes Istanbul (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
-#EXTINF:-1 group-title="04-02 (Jueves) LaLiga Hypermotion" tvg-name="21:30-Leganés-Real Zaragoza (HYPERMOTION) (FHD) (87b)",21:30-Leganés-Real Zaragoza (HYPERMOTION) (FHD) (87b)
-http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="04-02 (Jueves) LaLiga Hypermotion" tvg-name="21:30-Leganés-Real Zaragoza (HYPERMOTION) (HD) (a4f)",21:30-Leganés-Real Zaragoza (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
-#EXTINF:-1 group-title="04-02 (Jueves) LaLiga Hypermotion" tvg-name="21:30-Leganés-Real Zaragoza (HYPERMOTION) (FHD) (463)",21:30-Leganés-Real Zaragoza (HYPERMOTION) (FHD) (463)
-http://127.0.0.1:6878/ace/getstream?id=4636ed75106cb00e9c70cc2029edf0a4df7ad73f
+#EXTINF:-1 group-title="04-02 (Jueves) LaLiga Hypermotion" tvg-name="21:30-Leganés-Real Zaragoza (HYPERMOTION) (FHD) (87b)",21:30-Leganés-Real Zaragoza (HYPERMOTION) (FHD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="04-02 (Jueves) LaLiga Hypermotion" tvg-name="21:30-Leganés-Real Zaragoza (HYPERMOTION) (HD) (1f7)",21:30-Leganés-Real Zaragoza (HYPERMOTION) (HD) (1f7)
 http://127.0.0.1:6878/ace/getstream?id=1f75d92098580443857caa95a719103cb83781b0
+#EXTINF:-1 group-title="04-02 (Jueves) LaLiga Hypermotion" tvg-name="21:30-Leganés-Real Zaragoza (HYPERMOTION) (FHD) (463)",21:30-Leganés-Real Zaragoza (HYPERMOTION) (FHD) (463)
+http://127.0.0.1:6878/ace/getstream?id=4636ed75106cb00e9c70cc2029edf0a4df7ad73f
