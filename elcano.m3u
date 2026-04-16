@@ -15,11 +15,9 @@
 #EXTGRP: group-title="TDT" group-logo="https://i.ibb.co/j9xn42jB/logo-tdt.png"
 
 #EXTINF:-1 tvg-logo="https://www.adriaeco.eu/wp-content/uploads/2021/08/DAZN.png" group-title="DAZN",DAZN Serie A 1080p *
-http://127.0.0.1:6878/ace/getstream?id=6bb383508fd46eda68a47b0e21fb5a069d63b0c1
-#EXTINF:-1 tvg-logo="https://www.adriaeco.eu/wp-content/uploads/2021/08/DAZN.png" group-title="DAZN",DAZN Serie A 1080p *
 http://127.0.0.1:6878/ace/getstream?id=9e6ef3ee002ce4d62062bcad7eebff4dcb0b82ef
 #EXTINF:-1 tvg-logo="https://www.adriaeco.eu/wp-content/uploads/2021/08/DAZN.png" group-title="DAZN",DAZN Serie A 1080p *
-http://127.0.0.1:6878/ace/getstream?id=ce9663f8be34ec8f9b90803ea09a483cbad96500
+http://127.0.0.1:6878/ace/getstream?id=6bb383508fd46eda68a47b0e21fb5a069d63b0c1
 #EXTINF:-1 tvg-logo="https://www.adriaeco.eu/wp-content/uploads/2021/08/DAZN.png" group-title="DAZN",DAZN Serie A 1080p **
 http://127.0.0.1:6878/ace/getstream?id=54fbbb487c134a36622ed39f60184049190d8674
 #EXTINF:-1 tvg-logo="https://www.adriaeco.eu/wp-content/uploads/2021/08/DAZN.png" group-title="DAZN",DAZN Serie A 1080p **
@@ -136,6 +134,8 @@ http://127.0.0.1:6878/ace/getstream?id=ed6524f8f73c30cf102fde66f2cb520f4b5842e3
 http://127.0.0.1:6878/ace/getstream?id=8f59ce96e4c902ba2f5193af07546d7ff17fc3bc
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTExzu7xibD1sz89l8PlnxvB8oUMOOhDLKywQ&s" group-title="DEPORTES",RALLY TV **
 http://127.0.0.1:6878/ace/getstream?id=12404b00d2787995d639ccf71a80da5d39d153f9
+#EXTINF:-1 tvg-logo="https://r2.thesportsdb.com/images/media/channel/logo/70ud6o1656963115.png" group-title="DEPORTES",SKY CALCIO 1080p *
+http://127.0.0.1:6878/ace/getstream?id=e684fd05921ec8478c6447ced3a0cbc9a07366e0
 #EXTINF:-1 tvg-id="Teledeporte" tvg-logo="https://img2.rtve.es/n/15966755" group-title="DEPORTES",Teledeporte 720p **
 http://127.0.0.1:6878/ace/getstream?id=b0d1489c9f3239349665ad5ab423363f2b02e5ae
 #EXTINF:-1 tvg-id="Teledeporte" tvg-logo="https://img2.rtve.es/n/15966755" group-title="DEPORTES",Teledeporte 1080p **
