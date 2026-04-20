@@ -63,7 +63,8 @@ FILE_DIAL_MAP = get_path(f"{DIR_CANALES}/listado_canales.csv")
 FILE_FORZADOS = get_path(f"{DIR_CANALES}/canales_forzados.csv")
 
 # URLs
-IPNS_HASH = "k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004"
+IPNS_HASH = "k2k4r8lm8tkmuxbc8lkmq1in3v0oya1p6pe9o5bu0hu30br5ko08k2gb"
+#anterior: k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004
 URLS_ELCANO = [
     "https://ipfs.io/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.m3u",
     "https://gateway.pinata.cloud/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.m3u",
