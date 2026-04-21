@@ -1,315 +1,67 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="04-21 (Martes) Primera División Argentina Torneo Apertura" tvg-name="00:30-San Lorenzo-Vélez Sarsfield (LIGA DE CAMPEONES) (FHD) (0f7)",00:30-San Lorenzo-Vélez Sarsfield (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
-#EXTINF:-1 group-title="04-21 (Martes) Primera División Argentina Torneo Apertura" tvg-name="00:30-San Lorenzo-Vélez Sarsfield (LIGA DE CAMPEONES) (HD) (b02)",00:30-San Lorenzo-Vélez Sarsfield (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="04-21 (Martes) Primera División Argentina Torneo Apertura" tvg-name="00:30-San Lorenzo-Vélez Sarsfield (LIGA DE CAMPEONES) (HD) (e57)",00:30-San Lorenzo-Vélez Sarsfield (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="04-21 (Martes) Primera División Argentina Torneo Apertura" tvg-name="00:30-San Lorenzo-Vélez Sarsfield (LIGA DE CAMPEONES) (FHD) (afb)",00:30-San Lorenzo-Vélez Sarsfield (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
-#EXTINF:-1 group-title="04-21 (Martes) Primera División Argentina Torneo Apertura" tvg-name="00:30-San Lorenzo-Vélez Sarsfield (LIGA DE CAMPEONES) (FHD) (afb)",00:30-San Lorenzo-Vélez Sarsfield (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
-#EXTINF:-1 group-title="04-21 (Martes) Primera División Argentina Torneo Apertura" tvg-name="00:30-San Lorenzo-Vélez Sarsfield (LIGA DE CAMPEONES) (FHD) (97d)",00:30-San Lorenzo-Vélez Sarsfield (LIGA DE CAMPEONES) (FHD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 group-title="04-21 (Martes) Primera División Argentina Torneo Apertura" tvg-name="00:30-San Lorenzo-Vélez Sarsfield (LIGA DE CAMPEONES) (FHD) (2b5)",00:30-San Lorenzo-Vélez Sarsfield (LIGA DE CAMPEONES) (FHD) (2b5)
-http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
-#EXTINF:-1 group-title="04-21 (Martes) Primera División Argentina Torneo Apertura" tvg-name="00:30-San Lorenzo-Vélez Sarsfield (LIGA DE CAMPEONES) (FHD) (778)",00:30-San Lorenzo-Vélez Sarsfield (LIGA DE CAMPEONES) (FHD) (778)
-http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="04-21 (Martes) Primera División Argentina Torneo Apertura" tvg-name="00:30-San Lorenzo-Vélez Sarsfield (LIGA DE CAMPEONES) (UHD) (152)",00:30-San Lorenzo-Vélez Sarsfield (LIGA DE CAMPEONES) (UHD) (152)
-http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="04-21 (Martes) Primera División Argentina Torneo Apertura" tvg-name="00:30-San Lorenzo-Vélez Sarsfield (LIGA DE CAMPEONES) (FHD) (91b)",00:30-San Lorenzo-Vélez Sarsfield (LIGA DE CAMPEONES) (FHD) (91b)
-http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
-#EXTINF:-1 group-title="04-21 (Martes) Primera División Argentina Torneo Apertura" tvg-name="00:30-San Lorenzo-Vélez Sarsfield (LIGA DE CAMPEONES) (HD) (63e)",00:30-San Lorenzo-Vélez Sarsfield (LIGA DE CAMPEONES) (HD) (63e)
-http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="11:10-P. Marcinko-V. Jiménez (MOVISTAR DEPORTES 2) (FHD) (73d)",11:10-P. Marcinko-V. Jiménez (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="11:10-P. Marcinko-V. Jiménez (MOVISTAR DEPORTES 2) (HD) (3af)",11:10-P. Marcinko-V. Jiménez (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="11:10-P. Marcinko-V. Jiménez (MOVISTAR DEPORTES 2) (FHD) (377)",11:10-P. Marcinko-V. Jiménez (MOVISTAR DEPORTES 2) (FHD) (377)
-http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="11:10-P. Marcinko-V. Jiménez (MOVISTAR DEPORTES 2) (FHD) (f0e)",11:10-P. Marcinko-V. Jiménez (MOVISTAR DEPORTES 2) (FHD) (f0e)
-http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="11:10-P. Marcinko-V. Jiménez (MOVISTAR DEPORTES 2) (FHD) (890)",11:10-P. Marcinko-V. Jiménez (MOVISTAR DEPORTES 2) (FHD) (890)
-http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="11:10-T. Maria-L. Samson (MOVISTAR DEPORTES 3) (HD) (39f)",11:10-T. Maria-L. Samson (MOVISTAR DEPORTES 3) (HD) (39f)
-http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="11:10-T. Maria-L. Samson (MOVISTAR DEPORTES 3) (HD) (e9c)",11:10-T. Maria-L. Samson (MOVISTAR DEPORTES 3) (HD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="11:10-T. Maria-L. Samson (MOVISTAR DEPORTES 3) (FHD) (f4d)",11:10-T. Maria-L. Samson (MOVISTAR DEPORTES 3) (FHD) (f4d)
-http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="11:10-T. Maria-L. Samson (MOVISTAR DEPORTES 3) (FHD) (799)",11:10-T. Maria-L. Samson (MOVISTAR DEPORTES 3) (FHD) (799)
-http://127.0.0.1:6878/ace/getstream?id=799c6b5ee1cf41af077d14e3f9c45a32697eb903
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="12:45-L. Siegemund-I. Begu (MOVISTAR DEPORTES 3) (HD) (39f)",12:45-L. Siegemund-I. Begu (MOVISTAR DEPORTES 3) (HD) (39f)
-http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="12:45-L. Siegemund-I. Begu (MOVISTAR DEPORTES 3) (HD) (e9c)",12:45-L. Siegemund-I. Begu (MOVISTAR DEPORTES 3) (HD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="12:45-L. Siegemund-I. Begu (MOVISTAR DEPORTES 3) (FHD) (f4d)",12:45-L. Siegemund-I. Begu (MOVISTAR DEPORTES 3) (FHD) (f4d)
-http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="12:45-L. Siegemund-I. Begu (MOVISTAR DEPORTES 3) (FHD) (799)",12:45-L. Siegemund-I. Begu (MOVISTAR DEPORTES 3) (FHD) (799)
-http://127.0.0.1:6878/ace/getstream?id=799c6b5ee1cf41af077d14e3f9c45a32697eb903
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="12:55-B. Haddad Maia-J. Bouzas (MOVISTAR DEPORTES 2) (FHD) (73d)",12:55-B. Haddad Maia-J. Bouzas (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="12:55-B. Haddad Maia-J. Bouzas (MOVISTAR DEPORTES 2) (HD) (3af)",12:55-B. Haddad Maia-J. Bouzas (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="12:55-B. Haddad Maia-J. Bouzas (MOVISTAR DEPORTES 2) (FHD) (377)",12:55-B. Haddad Maia-J. Bouzas (MOVISTAR DEPORTES 2) (FHD) (377)
-http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="12:55-B. Haddad Maia-J. Bouzas (MOVISTAR DEPORTES 2) (FHD) (f0e)",12:55-B. Haddad Maia-J. Bouzas (MOVISTAR DEPORTES 2) (FHD) (f0e)
-http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="12:55-B. Haddad Maia-J. Bouzas (MOVISTAR DEPORTES 2) (FHD) (890)",12:55-B. Haddad Maia-J. Bouzas (MOVISTAR DEPORTES 2) (FHD) (890)
-http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="14:30-A. Bondar-V. Golubic (MOVISTAR DEPORTES 3) (HD) (39f)",14:30-A. Bondar-V. Golubic (MOVISTAR DEPORTES 3) (HD) (39f)
-http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="14:30-A. Bondar-V. Golubic (MOVISTAR DEPORTES 3) (HD) (e9c)",14:30-A. Bondar-V. Golubic (MOVISTAR DEPORTES 3) (HD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="14:30-A. Bondar-V. Golubic (MOVISTAR DEPORTES 3) (FHD) (f4d)",14:30-A. Bondar-V. Golubic (MOVISTAR DEPORTES 3) (FHD) (f4d)
-http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="14:30-A. Bondar-V. Golubic (MOVISTAR DEPORTES 3) (FHD) (799)",14:30-A. Bondar-V. Golubic (MOVISTAR DEPORTES 3) (FHD) (799)
-http://127.0.0.1:6878/ace/getstream?id=799c6b5ee1cf41af077d14e3f9c45a32697eb903
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="14:30-P. Badosa-J. Grabher (MOVISTAR DEPORTES 2) (FHD) (73d)",14:30-P. Badosa-J. Grabher (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="14:30-P. Badosa-J. Grabher (MOVISTAR DEPORTES 2) (HD) (3af)",14:30-P. Badosa-J. Grabher (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="14:30-P. Badosa-J. Grabher (MOVISTAR DEPORTES 2) (FHD) (377)",14:30-P. Badosa-J. Grabher (MOVISTAR DEPORTES 2) (FHD) (377)
-http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="14:30-P. Badosa-J. Grabher (MOVISTAR DEPORTES 2) (FHD) (f0e)",14:30-P. Badosa-J. Grabher (MOVISTAR DEPORTES 2) (FHD) (f0e)
-http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="14:30-P. Badosa-J. Grabher (MOVISTAR DEPORTES 2) (FHD) (890)",14:30-P. Badosa-J. Grabher (MOVISTAR DEPORTES 2) (FHD) (890)
-http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="16:20-R. Montgomery-M. Linette (MOVISTAR DEPORTES 3) (HD) (39f)",16:20-R. Montgomery-M. Linette (MOVISTAR DEPORTES 3) (HD) (39f)
-http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="16:20-R. Montgomery-M. Linette (MOVISTAR DEPORTES 3) (HD) (e9c)",16:20-R. Montgomery-M. Linette (MOVISTAR DEPORTES 3) (HD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="16:20-R. Montgomery-M. Linette (MOVISTAR DEPORTES 3) (FHD) (f4d)",16:20-R. Montgomery-M. Linette (MOVISTAR DEPORTES 3) (FHD) (f4d)
-http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="16:20-R. Montgomery-M. Linette (MOVISTAR DEPORTES 3) (FHD) (799)",16:20-R. Montgomery-M. Linette (MOVISTAR DEPORTES 3) (FHD) (799)
-http://127.0.0.1:6878/ace/getstream?id=799c6b5ee1cf41af077d14e3f9c45a32697eb903
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="17:20-K. Quevedo-V. Williams (MOVISTAR DEPORTES 2) (FHD) (73d)",17:20-K. Quevedo-V. Williams (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="17:20-K. Quevedo-V. Williams (MOVISTAR DEPORTES 2) (HD) (3af)",17:20-K. Quevedo-V. Williams (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="17:20-K. Quevedo-V. Williams (MOVISTAR DEPORTES 2) (FHD) (377)",17:20-K. Quevedo-V. Williams (MOVISTAR DEPORTES 2) (FHD) (377)
-http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="17:20-K. Quevedo-V. Williams (MOVISTAR DEPORTES 2) (FHD) (f0e)",17:20-K. Quevedo-V. Williams (MOVISTAR DEPORTES 2) (FHD) (f0e)
-http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="17:20-K. Quevedo-V. Williams (MOVISTAR DEPORTES 2) (FHD) (890)",17:20-K. Quevedo-V. Williams (MOVISTAR DEPORTES 2) (FHD) (890)
-http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="18:05-A. Zakharova-MC. Osorio (MOVISTAR DEPORTES 3) (HD) (39f)",18:05-A. Zakharova-MC. Osorio (MOVISTAR DEPORTES 3) (HD) (39f)
-http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="18:05-A. Zakharova-MC. Osorio (MOVISTAR DEPORTES 3) (HD) (e9c)",18:05-A. Zakharova-MC. Osorio (MOVISTAR DEPORTES 3) (HD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="18:05-A. Zakharova-MC. Osorio (MOVISTAR DEPORTES 3) (FHD) (f4d)",18:05-A. Zakharova-MC. Osorio (MOVISTAR DEPORTES 3) (FHD) (f4d)
-http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="18:05-A. Zakharova-MC. Osorio (MOVISTAR DEPORTES 3) (FHD) (799)",18:05-A. Zakharova-MC. Osorio (MOVISTAR DEPORTES 3) (FHD) (799)
-http://127.0.0.1:6878/ace/getstream?id=799c6b5ee1cf41af077d14e3f9c45a32697eb903
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="19:00-Athletic Club-Osasuna (M+ LALIGA 2) (FHD) (caa)",19:00-Athletic Club-Osasuna (M+ LALIGA 2) (FHD) (caa)
-http://127.0.0.1:6878/ace/getstream?id=caa631e8850e3eb5e7c039063dd8a339ccef1176
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="19:00-Athletic Club-Osasuna (M+ LALIGA 2) (FHD) (911)",19:00-Athletic Club-Osasuna (M+ LALIGA 2) (FHD) (911)
-http://127.0.0.1:6878/ace/getstream?id=911ad127726234b97658498a8b790fdd7516541d
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="19:00-Athletic Club-Osasuna (M+ LALIGA 2) (HD) (b8e)",19:00-Athletic Club-Osasuna (M+ LALIGA 2) (HD) (b8e)
-http://127.0.0.1:6878/ace/getstream?id=b8eb9c9868d487402569bba2d97a8af113d033fe
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="19:00-Mallorca-Valencia CF (M+ LALIGA) (HD) (31c)",19:00-Mallorca-Valencia CF (M+ LALIGA) (HD) (31c)
-http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="19:00-Mallorca-Valencia CF (M+ LALIGA) (FHD) (af4)",19:00-Mallorca-Valencia CF (M+ LALIGA) (FHD) (af4)
-http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="19:00-Mallorca-Valencia CF (M+ LALIGA) (FHD) (8c3)",19:00-Mallorca-Valencia CF (M+ LALIGA) (FHD) (8c3)
-http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="19:00-Mallorca-Valencia CF (M+ LALIGA) (HD) (f86)",19:00-Mallorca-Valencia CF (M+ LALIGA) (HD) (f86)
-http://127.0.0.1:6878/ace/getstream?id=f863873de9f7b2996dde19a0657dd89835af3007
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="19:00-Mallorca-Valencia CF (M+ LALIGA) (HD) (3ac)",19:00-Mallorca-Valencia CF (M+ LALIGA) (HD) (3ac)
-http://127.0.0.1:6878/ace/getstream?id=3ace1463a7cad979c3a4002b245487e9982e9f1a
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="19:00-Mallorca-Valencia CF (M+ LALIGA) (FHD) (00c)",19:00-Mallorca-Valencia CF (M+ LALIGA) (FHD) (00c)
-http://127.0.0.1:6878/ace/getstream?id=00c9bc9c5d7d87680a5a6bed349edfa775a89947
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="19:00-Mallorca-Valencia CF (M+ LALIGA) (FHD) (c93)",19:00-Mallorca-Valencia CF (M+ LALIGA) (FHD) (c93)
-http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="19:00-Mallorca-Valencia CF (M+ LALIGA) (FHD) (4b5)",19:00-Mallorca-Valencia CF (M+ LALIGA) (FHD) (4b5)
-http://127.0.0.1:6878/ace/getstream?id=4b528d10eaad747ddf52251206177573ee3e9f74
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="19:40-P. Stearns-L. Boisson (MOVISTAR DEPORTES 2) (FHD) (73d)",19:40-P. Stearns-L. Boisson (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="19:40-P. Stearns-L. Boisson (MOVISTAR DEPORTES 2) (HD) (3af)",19:40-P. Stearns-L. Boisson (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="19:40-P. Stearns-L. Boisson (MOVISTAR DEPORTES 2) (FHD) (377)",19:40-P. Stearns-L. Boisson (MOVISTAR DEPORTES 2) (FHD) (377)
-http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="19:40-P. Stearns-L. Boisson (MOVISTAR DEPORTES 2) (FHD) (f0e)",19:40-P. Stearns-L. Boisson (MOVISTAR DEPORTES 2) (FHD) (f0e)
-http://127.0.0.1:6878/ace/getstream?id=f0ee7a2b43c1df5ea9e4fac5bf876d5bef4372b0
-#EXTINF:-1 group-title="04-21 (Martes) WTA Madrid 1ª Ronda" tvg-name="19:40-P. Stearns-L. Boisson (MOVISTAR DEPORTES 2) (FHD) (890)",19:40-P. Stearns-L. Boisson (MOVISTAR DEPORTES 2) (FHD) (890)
-http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
-#EXTINF:-1 group-title="04-21 (Martes) Euroliga Play-In" tvg-name="20:00-Panathinaikos BC-AS Monaco Basket (MOVISTAR DEPORTES) (FHD) (5d3)",20:00-Panathinaikos BC-AS Monaco Basket (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="04-21 (Martes) Euroliga Play-In" tvg-name="20:00-Panathinaikos BC-AS Monaco Basket (MOVISTAR DEPORTES) (FHD) (369)",20:00-Panathinaikos BC-AS Monaco Basket (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="04-21 (Martes) Euroliga Play-In" tvg-name="20:00-Panathinaikos BC-AS Monaco Basket (MOVISTAR DEPORTES) (FHD) (f82)",20:00-Panathinaikos BC-AS Monaco Basket (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="04-21 (Martes) Euroliga Play-In" tvg-name="20:00-Panathinaikos BC-AS Monaco Basket (MOVISTAR DEPORTES) (HD) (6e0)",20:00-Panathinaikos BC-AS Monaco Basket (MOVISTAR DEPORTES) (HD) (6e0)
-http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
-#EXTINF:-1 group-title="04-21 (Martes) Euroliga Play-In" tvg-name="20:00-Panathinaikos BC-AS Monaco Basket (MOVISTAR DEPORTES) (HD) (2f3)",20:00-Panathinaikos BC-AS Monaco Basket (MOVISTAR DEPORTES) (HD) (2f3)
-http://127.0.0.1:6878/ace/getstream?id=2f3cfd199a49819cbd129689a840dc3d23ab93aa
-#EXTINF:-1 group-title="04-21 (Martes) Euroliga Play-In" tvg-name="20:00-Panathinaikos BC-AS Monaco Basket (MOVISTAR DEPORTES) (FHD) (ebc)",20:00-Panathinaikos BC-AS Monaco Basket (MOVISTAR DEPORTES) (FHD) (ebc)
-http://127.0.0.1:6878/ace/getstream?id=ebca4a63ce3bfda7b272964a1acc5227218184a4
-#EXTINF:-1 group-title="04-21 (Martes) Euroliga Play-In" tvg-name="20:45-Barça Basket-Crvena Zvezda MTS Belgrade (MOVISTAR DEPORTES 4) (HD) (8b5)",20:45-Barça Basket-Crvena Zvezda MTS Belgrade (MOVISTAR DEPORTES 4) (HD) (8b5)
-http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
-#EXTINF:-1 group-title="04-21 (Martes) Coppa Italia Semifinales" tvg-name="21:00-Inter Milan-Como 1907 (DAZN 1) (FHD) (363)",21:00-Inter Milan-Como 1907 (DAZN 1) (FHD) (363)
-http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
-#EXTINF:-1 group-title="04-21 (Martes) Coppa Italia Semifinales" tvg-name="21:00-Inter Milan-Como 1907 (DAZN 1) (FHD) (691)",21:00-Inter Milan-Como 1907 (DAZN 1) (FHD) (691)
-http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
-#EXTINF:-1 group-title="04-21 (Martes) Coppa Italia Semifinales" tvg-name="21:00-Inter Milan-Como 1907 (DAZN 1) (FHD) (b03)",21:00-Inter Milan-Como 1907 (DAZN 1) (FHD) (b03)
-http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
-#EXTINF:-1 group-title="04-21 (Martes) Coppa Italia Semifinales" tvg-name="21:00-Inter Milan-Como 1907 (DAZN 1) (FHD) (1e7)",21:00-Inter Milan-Como 1907 (DAZN 1) (FHD) (1e7)
-http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
-#EXTINF:-1 group-title="04-21 (Martes) Coppa Italia Semifinales" tvg-name="21:00-Inter Milan-Como 1907 (DAZN 1) (HD) (d5b)",21:00-Inter Milan-Como 1907 (DAZN 1) (HD) (d5b)
-http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
-#EXTINF:-1 group-title="04-21 (Martes) Coppa Italia Semifinales" tvg-name="21:00-Inter Milan-Como 1907 (DAZN 1) (FHD) (414)",21:00-Inter Milan-Como 1907 (DAZN 1) (FHD) (414)
-http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
-#EXTINF:-1 group-title="04-21 (Martes) Coppa Italia Semifinales" tvg-name="21:00-Inter Milan-Como 1907 (DAZN 1) (HD) (5b7)",21:00-Inter Milan-Como 1907 (DAZN 1) (HD) (5b7)
-http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
-#EXTINF:-1 group-title="04-21 (Martes) Coppa Italia Semifinales" tvg-name="21:00-Inter Milan-Como 1907 (DAZN 1) (HD) (7ba)",21:00-Inter Milan-Como 1907 (DAZN 1) (HD) (7ba)
-http://127.0.0.1:6878/ace/getstream?id=7ba1f321f4d0791b7ebd42f41a07c1cd1479e784
-#EXTINF:-1 group-title="04-21 (Martes) Coppa Italia Semifinales" tvg-name="21:00-Inter Milan-Como 1907 (DAZN 1) (HD) (9af)",21:00-Inter Milan-Como 1907 (DAZN 1) (HD) (9af)
-http://127.0.0.1:6878/ace/getstream?id=9afc89481b721ce6c326c85e47148676077b8e62
-#EXTINF:-1 group-title="04-21 (Martes) Premier League" tvg-name="21:00-Brighton-Chelsea (DAZN 2) (FHD) (430)",21:00-Brighton-Chelsea (DAZN 2) (FHD) (430)
-http://127.0.0.1:6878/ace/getstream?id=43004e955731cd3afcc34d24e5178d4b427bff37
-#EXTINF:-1 group-title="04-21 (Martes) Premier League" tvg-name="21:00-Brighton-Chelsea (DAZN 2) (HD) (b0e)",21:00-Brighton-Chelsea (DAZN 2) (HD) (b0e)
-http://127.0.0.1:6878/ace/getstream?id=b0eabe0fdd02fdd165896236765a9b753a2ff516
-#EXTINF:-1 group-title="04-21 (Martes) Premier League" tvg-name="21:00-Brighton-Chelsea (DAZN 2) (FHD) (2f9)",21:00-Brighton-Chelsea (DAZN 2) (FHD) (2f9)
-http://127.0.0.1:6878/ace/getstream?id=2f9211669499f413dab1a490198afab2a9b4b57c
-#EXTINF:-1 group-title="04-21 (Martes) Premier League" tvg-name="21:00-Brighton-Chelsea (DAZN 2) (FHD) (fb2)",21:00-Brighton-Chelsea (DAZN 2) (FHD) (fb2)
-http://127.0.0.1:6878/ace/getstream?id=fb2dd566824658eeab27aae19a01c09430f1a97d
-#EXTINF:-1 group-title="04-21 (Martes) Premier League" tvg-name="21:00-Brighton-Chelsea (DAZN 2) (FHD) (d60)",21:00-Brighton-Chelsea (DAZN 2) (FHD) (d60)
-http://127.0.0.1:6878/ace/getstream?id=d60b8c154828cb990b7bb1570764b215bd979e74
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="21:30-Girona-Real Betis (M+ LALIGA) (HD) (31c)",21:30-Girona-Real Betis (M+ LALIGA) (HD) (31c)
-http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="21:30-Girona-Real Betis (M+ LALIGA) (FHD) (af4)",21:30-Girona-Real Betis (M+ LALIGA) (FHD) (af4)
-http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="21:30-Girona-Real Betis (M+ LALIGA) (FHD) (8c3)",21:30-Girona-Real Betis (M+ LALIGA) (FHD) (8c3)
-http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="21:30-Girona-Real Betis (M+ LALIGA) (HD) (f86)",21:30-Girona-Real Betis (M+ LALIGA) (HD) (f86)
-http://127.0.0.1:6878/ace/getstream?id=f863873de9f7b2996dde19a0657dd89835af3007
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="21:30-Girona-Real Betis (M+ LALIGA) (HD) (3ac)",21:30-Girona-Real Betis (M+ LALIGA) (HD) (3ac)
-http://127.0.0.1:6878/ace/getstream?id=3ace1463a7cad979c3a4002b245487e9982e9f1a
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="21:30-Girona-Real Betis (M+ LALIGA) (FHD) (00c)",21:30-Girona-Real Betis (M+ LALIGA) (FHD) (00c)
-http://127.0.0.1:6878/ace/getstream?id=00c9bc9c5d7d87680a5a6bed349edfa775a89947
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="21:30-Girona-Real Betis (M+ LALIGA) (FHD) (c93)",21:30-Girona-Real Betis (M+ LALIGA) (FHD) (c93)
-http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="21:30-Girona-Real Betis (M+ LALIGA) (FHD) (4b5)",21:30-Girona-Real Betis (M+ LALIGA) (FHD) (4b5)
-http://127.0.0.1:6878/ace/getstream?id=4b528d10eaad747ddf52251206177573ee3e9f74
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="21:30-Girona-Real Betis (MOVISTAR PLUS) (FHD) (586)",21:30-Girona-Real Betis (MOVISTAR PLUS) (FHD) (586)
-http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="21:30-Girona-Real Betis (MOVISTAR PLUS) (FHD) (b6f)",21:30-Girona-Real Betis (MOVISTAR PLUS) (FHD) (b6f)
-http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="21:30-Girona-Real Betis (MOVISTAR PLUS) (FHD) (199)",21:30-Girona-Real Betis (MOVISTAR PLUS) (FHD) (199)
-http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="21:30-Girona-Real Betis (MOVISTAR PLUS) (FHD) (ed7)",21:30-Girona-Real Betis (MOVISTAR PLUS) (FHD) (ed7)
-http://127.0.0.1:6878/ace/getstream?id=ed74406ccdb3c21941b919db6bffca7f1de015bb
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="21:30-Real Madrid-Alavés (DAZN LA LIGA 1) (HD) (4e6)",21:30-Real Madrid-Alavés (DAZN LA LIGA 1) (HD) (4e6)
-http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="21:30-Real Madrid-Alavés (DAZN LA LIGA 1) (FHD) (0e5)",21:30-Real Madrid-Alavés (DAZN LA LIGA 1) (FHD) (0e5)
-http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="21:30-Real Madrid-Alavés (DAZN LA LIGA 1) (HD) (dda)",21:30-Real Madrid-Alavés (DAZN LA LIGA 1) (HD) (dda)
-http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="21:30-Real Madrid-Alavés (DAZN LA LIGA 1) (HD) (19f)",21:30-Real Madrid-Alavés (DAZN LA LIGA 1) (HD) (19f)
+#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="19:00-Levante-Sevilla FC (DAZN LA LIGA 1) (HD) (19f)",19:00-Levante-Sevilla FC (DAZN LA LIGA 1) (HD) (19f)
 http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="21:30-Real Madrid-Alavés (DAZN LA LIGA 1) (FHD) (e2b)",21:30-Real Madrid-Alavés (DAZN LA LIGA 1) (FHD) (e2b)
+#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="19:00-Levante-Sevilla FC (DAZN LA LIGA 1) (FHD) (0e5)",19:00-Levante-Sevilla FC (DAZN LA LIGA 1) (FHD) (0e5)
+http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
+#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="19:00-Levante-Sevilla FC (DAZN LA LIGA 1) (HD) (4e6)",19:00-Levante-Sevilla FC (DAZN LA LIGA 1) (HD) (4e6)
+http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
+#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="19:00-Levante-Sevilla FC (DAZN LA LIGA 1) (HD) (dda)",19:00-Levante-Sevilla FC (DAZN LA LIGA 1) (HD) (dda)
+http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
+#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="19:00-Levante-Sevilla FC (DAZN LA LIGA 1) (FHD) (e2b)",19:00-Levante-Sevilla FC (DAZN LA LIGA 1) (FHD) (e2b)
 http://127.0.0.1:6878/ace/getstream?id=e2b8a4aba2f4ea3dd68992fcdb65c9e62d910b05
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="21:30-Real Madrid-Alavés (DAZN LA LIGA 2) (FHD) (635)",21:30-Real Madrid-Alavés (DAZN LA LIGA 2) (FHD) (635)
+#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (FHD) (af4)",20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
+#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (HD) (31c)",20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (HD) (31c)
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
+#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (FHD) (8c3)",20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (HD) (f86)",20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (HD) (f86)
+http://127.0.0.1:6878/ace/getstream?id=f863873de9f7b2996dde19a0657dd89835af3007
+#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (HD) (3ac)",20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (HD) (3ac)
+http://127.0.0.1:6878/ace/getstream?id=3ace1463a7cad979c3a4002b245487e9982e9f1a
+#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (FHD) (4b5)",20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (FHD) (4b5)
+http://127.0.0.1:6878/ace/getstream?id=4b528d10eaad747ddf52251206177573ee3e9f74
+#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (FHD) (c93)",20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (FHD) (c93)
+http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
+#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (FHD) (00c)",20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (FHD) (00c)
+http://127.0.0.1:6878/ace/getstream?id=00c9bc9c5d7d87680a5a6bed349edfa775a89947
+#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="21:30-Real Oviedo-Villarreal (DAZN LA LIGA 2) (FHD) (635)",21:30-Real Oviedo-Villarreal (DAZN LA LIGA 2) (FHD) (635)
 http://127.0.0.1:6878/ace/getstream?id=635b61c1f240449163260cd914d10d886a54fee3
-#EXTINF:-1 group-title="04-21 (Martes) La Liga EA Sports" tvg-name="21:30-Real Madrid-Alavés (DAZN LA LIGA 2) (FHD) (509)",21:30-Real Madrid-Alavés (DAZN LA LIGA 2) (FHD) (509)
+#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="21:30-Real Oviedo-Villarreal (DAZN LA LIGA 2) (FHD) (509)",21:30-Real Oviedo-Villarreal (DAZN LA LIGA 2) (FHD) (509)
 http://127.0.0.1:6878/ace/getstream?id=5091ea94b75ba4b50b078b4102a3d0e158ef59c3
-#EXTINF:-1 group-title="04-22 (Miércoles) Eurocup Final" tvg-name="19:00-Besiktas JK Istanbul-JL Bourg (MOVISTAR DEPORTES 6) (HD) (8f9)",19:00-Besiktas JK Istanbul-JL Bourg (MOVISTAR DEPORTES 6) (HD) (8f9)
+#EXTINF:-1 group-title="04-24 (Viernes) Bruselas Open" tvg-name="11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 6) (HD) (8f9)",11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 6) (HD) (8f9)
 http://127.0.0.1:6878/ace/getstream?id=8f982a0d6e3196c12d0034142b65008321150f7c
-#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="19:00-Elche-At. Madrid (DAZN LA LIGA 1) (HD) (4e6)",19:00-Elche-At. Madrid (DAZN LA LIGA 1) (HD) (4e6)
-http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
-#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="19:00-Elche-At. Madrid (DAZN LA LIGA 1) (FHD) (0e5)",19:00-Elche-At. Madrid (DAZN LA LIGA 1) (FHD) (0e5)
-http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
-#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="19:00-Elche-At. Madrid (DAZN LA LIGA 1) (HD) (dda)",19:00-Elche-At. Madrid (DAZN LA LIGA 1) (HD) (dda)
-http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
-#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="19:00-Elche-At. Madrid (DAZN LA LIGA 1) (HD) (19f)",19:00-Elche-At. Madrid (DAZN LA LIGA 1) (HD) (19f)
+#EXTINF:-1 group-title="04-24 (Viernes) Bruselas Open" tvg-name="13:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 6) (HD) (8f9)",13:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 6) (HD) (8f9)
+http://127.0.0.1:6878/ace/getstream?id=8f982a0d6e3196c12d0034142b65008321150f7c
+#EXTINF:-1 group-title="04-24 (Viernes) Bruselas Open" tvg-name="15:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 6) (HD) (8f9)",15:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 6) (HD) (8f9)
+http://127.0.0.1:6878/ace/getstream?id=8f982a0d6e3196c12d0034142b65008321150f7c
+#EXTINF:-1 group-title="04-24 (Viernes) Bruselas Open" tvg-name="18:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 6) (HD) (8f9)",18:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 6) (HD) (8f9)
+http://127.0.0.1:6878/ace/getstream?id=8f982a0d6e3196c12d0034142b65008321150f7c
+#EXTINF:-1 group-title="04-24 (Viernes) Bruselas Open" tvg-name="20:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 6) (HD) (8f9)",20:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 6) (HD) (8f9)
+http://127.0.0.1:6878/ace/getstream?id=8f982a0d6e3196c12d0034142b65008321150f7c
+#EXTINF:-1 group-title="04-24 (Viernes) LaLiga Hypermotion" tvg-name="20:30-Albacete-Eibar (HYPERMOTION) (HD) (a4f)",20:30-Albacete-Eibar (HYPERMOTION) (HD) (a4f)
+http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
+#EXTINF:-1 group-title="04-24 (Viernes) LaLiga Hypermotion" tvg-name="20:30-Albacete-Eibar (HYPERMOTION) (FHD) (87b)",20:30-Albacete-Eibar (HYPERMOTION) (FHD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="04-24 (Viernes) LaLiga Hypermotion" tvg-name="20:30-Albacete-Eibar (HYPERMOTION) (HD) (1f7)",20:30-Albacete-Eibar (HYPERMOTION) (HD) (1f7)
+http://127.0.0.1:6878/ace/getstream?id=1f75d92098580443857caa95a719103cb83781b0
+#EXTINF:-1 group-title="04-24 (Viernes) LaLiga Hypermotion" tvg-name="20:30-Albacete-Eibar (HYPERMOTION) (FHD) (463)",20:30-Albacete-Eibar (HYPERMOTION) (FHD) (463)
+http://127.0.0.1:6878/ace/getstream?id=4636ed75106cb00e9c70cc2029edf0a4df7ad73f
+#EXTINF:-1 group-title="04-24 (Viernes) La Liga EA Sports" tvg-name="21:00-Real Betis-Real Madrid (DAZN LA LIGA 1) (HD) (19f)",21:00-Real Betis-Real Madrid (DAZN LA LIGA 1) (HD) (19f)
 http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
-#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="19:00-Elche-At. Madrid (DAZN LA LIGA 1) (FHD) (e2b)",19:00-Elche-At. Madrid (DAZN LA LIGA 1) (FHD) (e2b)
-http://127.0.0.1:6878/ace/getstream?id=e2b8a4aba2f4ea3dd68992fcdb65c9e62d910b05
-#EXTINF:-1 group-title="04-22 (Miércoles) Liga F" tvg-name="19:00-Espanyol Femenino-FC Barcelona Femenino (DAZN 2) (FHD) (430)",19:00-Espanyol Femenino-FC Barcelona Femenino (DAZN 2) (FHD) (430)
-http://127.0.0.1:6878/ace/getstream?id=43004e955731cd3afcc34d24e5178d4b427bff37
-#EXTINF:-1 group-title="04-22 (Miércoles) Liga F" tvg-name="19:00-Espanyol Femenino-FC Barcelona Femenino (DAZN 2) (HD) (b0e)",19:00-Espanyol Femenino-FC Barcelona Femenino (DAZN 2) (HD) (b0e)
-http://127.0.0.1:6878/ace/getstream?id=b0eabe0fdd02fdd165896236765a9b753a2ff516
-#EXTINF:-1 group-title="04-22 (Miércoles) Liga F" tvg-name="19:00-Espanyol Femenino-FC Barcelona Femenino (DAZN 2) (FHD) (2f9)",19:00-Espanyol Femenino-FC Barcelona Femenino (DAZN 2) (FHD) (2f9)
-http://127.0.0.1:6878/ace/getstream?id=2f9211669499f413dab1a490198afab2a9b4b57c
-#EXTINF:-1 group-title="04-22 (Miércoles) Liga F" tvg-name="19:00-Espanyol Femenino-FC Barcelona Femenino (DAZN 2) (FHD) (fb2)",19:00-Espanyol Femenino-FC Barcelona Femenino (DAZN 2) (FHD) (fb2)
-http://127.0.0.1:6878/ace/getstream?id=fb2dd566824658eeab27aae19a01c09430f1a97d
-#EXTINF:-1 group-title="04-22 (Miércoles) Liga F" tvg-name="19:00-Espanyol Femenino-FC Barcelona Femenino (DAZN 2) (FHD) (d60)",19:00-Espanyol Femenino-FC Barcelona Femenino (DAZN 2) (FHD) (d60)
-http://127.0.0.1:6878/ace/getstream?id=d60b8c154828cb990b7bb1570764b215bd979e74
-#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="20:00-Real Sociedad-Getafe (DAZN LA LIGA 2) (FHD) (635)",20:00-Real Sociedad-Getafe (DAZN LA LIGA 2) (FHD) (635)
-http://127.0.0.1:6878/ace/getstream?id=635b61c1f240449163260cd914d10d886a54fee3
-#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="20:00-Real Sociedad-Getafe (DAZN LA LIGA 2) (FHD) (509)",20:00-Real Sociedad-Getafe (DAZN LA LIGA 2) (FHD) (509)
-http://127.0.0.1:6878/ace/getstream?id=5091ea94b75ba4b50b078b4102a3d0e158ef59c3
-#EXTINF:-1 group-title="04-22 (Miércoles) Primera FEB Liga Regular" tvg-name="20:00-Movistar Estudiantes-Melilla Sport Capital (MOVISTAR DEPORTES) (FHD) (5d3)",20:00-Movistar Estudiantes-Melilla Sport Capital (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="04-22 (Miércoles) Primera FEB Liga Regular" tvg-name="20:00-Movistar Estudiantes-Melilla Sport Capital (MOVISTAR DEPORTES) (FHD) (369)",20:00-Movistar Estudiantes-Melilla Sport Capital (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="04-22 (Miércoles) Primera FEB Liga Regular" tvg-name="20:00-Movistar Estudiantes-Melilla Sport Capital (MOVISTAR DEPORTES) (FHD) (f82)",20:00-Movistar Estudiantes-Melilla Sport Capital (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="04-22 (Miércoles) Primera FEB Liga Regular" tvg-name="20:00-Movistar Estudiantes-Melilla Sport Capital (MOVISTAR DEPORTES) (HD) (6e0)",20:00-Movistar Estudiantes-Melilla Sport Capital (MOVISTAR DEPORTES) (HD) (6e0)
-http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
-#EXTINF:-1 group-title="04-22 (Miércoles) Primera FEB Liga Regular" tvg-name="20:00-Movistar Estudiantes-Melilla Sport Capital (MOVISTAR DEPORTES) (HD) (2f3)",20:00-Movistar Estudiantes-Melilla Sport Capital (MOVISTAR DEPORTES) (HD) (2f3)
-http://127.0.0.1:6878/ace/getstream?id=2f3cfd199a49819cbd129689a840dc3d23ab93aa
-#EXTINF:-1 group-title="04-22 (Miércoles) Primera FEB Liga Regular" tvg-name="20:00-Movistar Estudiantes-Melilla Sport Capital (MOVISTAR DEPORTES) (FHD) (ebc)",20:00-Movistar Estudiantes-Melilla Sport Capital (MOVISTAR DEPORTES) (FHD) (ebc)
-http://127.0.0.1:6878/ace/getstream?id=ebca4a63ce3bfda7b272964a1acc5227218184a4
-#EXTINF:-1 group-title="04-22 (Miércoles) Coppa Italia Semifinales" tvg-name="21:00-Atalanta-Lazio (DAZN 4) (HD) (7e9)",21:00-Atalanta-Lazio (DAZN 4) (HD) (7e9)
-http://127.0.0.1:6878/ace/getstream?id=7e90956539f4e1318a63f3960e4f75c7c7c5a3b8
-#EXTINF:-1 group-title="04-22 (Miércoles) Coppa Italia Semifinales" tvg-name="21:00-Atalanta-Lazio (DAZN 4) (FHD) (eb8)",21:00-Atalanta-Lazio (DAZN 4) (FHD) (eb8)
-http://127.0.0.1:6878/ace/getstream?id=eb884f77ce8815cf1028c4d85e8b092c27ea1693
-#EXTINF:-1 group-title="04-22 (Miércoles) Premier League" tvg-name="21:00-Bournemouth-Leeds Utd (DAZN 3) (HD) (d1d)",21:00-Bournemouth-Leeds Utd (DAZN 3) (HD) (d1d)
-http://127.0.0.1:6878/ace/getstream?id=d1d9ec2361a6ac8edc0b2841866383768cc28df9
-#EXTINF:-1 group-title="04-22 (Miércoles) Premier League" tvg-name="21:00-Bournemouth-Leeds Utd (DAZN 3) (FHD) (4e4)",21:00-Bournemouth-Leeds Utd (DAZN 3) (FHD) (4e4)
-http://127.0.0.1:6878/ace/getstream?id=4e401fdceebffdf1f09aef954844d09f6c62f460
-#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="21:30-FC Barcelona-Celta (M+ LALIGA) (HD) (31c)",21:30-FC Barcelona-Celta (M+ LALIGA) (HD) (31c)
-http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
-#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="21:30-FC Barcelona-Celta (M+ LALIGA) (FHD) (af4)",21:30-FC Barcelona-Celta (M+ LALIGA) (FHD) (af4)
-http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
-#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="21:30-FC Barcelona-Celta (M+ LALIGA) (FHD) (8c3)",21:30-FC Barcelona-Celta (M+ LALIGA) (FHD) (8c3)
-http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
-#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="21:30-FC Barcelona-Celta (M+ LALIGA) (HD) (f86)",21:30-FC Barcelona-Celta (M+ LALIGA) (HD) (f86)
-http://127.0.0.1:6878/ace/getstream?id=f863873de9f7b2996dde19a0657dd89835af3007
-#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="21:30-FC Barcelona-Celta (M+ LALIGA) (HD) (3ac)",21:30-FC Barcelona-Celta (M+ LALIGA) (HD) (3ac)
-http://127.0.0.1:6878/ace/getstream?id=3ace1463a7cad979c3a4002b245487e9982e9f1a
-#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="21:30-FC Barcelona-Celta (M+ LALIGA) (FHD) (00c)",21:30-FC Barcelona-Celta (M+ LALIGA) (FHD) (00c)
-http://127.0.0.1:6878/ace/getstream?id=00c9bc9c5d7d87680a5a6bed349edfa775a89947
-#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="21:30-FC Barcelona-Celta (M+ LALIGA) (FHD) (c93)",21:30-FC Barcelona-Celta (M+ LALIGA) (FHD) (c93)
-http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
-#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="21:30-FC Barcelona-Celta (M+ LALIGA) (FHD) (4b5)",21:30-FC Barcelona-Celta (M+ LALIGA) (FHD) (4b5)
-http://127.0.0.1:6878/ace/getstream?id=4b528d10eaad747ddf52251206177573ee3e9f74
-#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="21:30-FC Barcelona-Celta (M+ LALIGA 2) (FHD) (caa)",21:30-FC Barcelona-Celta (M+ LALIGA 2) (FHD) (caa)
-http://127.0.0.1:6878/ace/getstream?id=caa631e8850e3eb5e7c039063dd8a339ccef1176
-#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="21:30-FC Barcelona-Celta (M+ LALIGA 2) (FHD) (911)",21:30-FC Barcelona-Celta (M+ LALIGA 2) (FHD) (911)
-http://127.0.0.1:6878/ace/getstream?id=911ad127726234b97658498a8b790fdd7516541d
-#EXTINF:-1 group-title="04-22 (Miércoles) La Liga EA Sports" tvg-name="21:30-FC Barcelona-Celta (M+ LALIGA 2) (HD) (b8e)",21:30-FC Barcelona-Celta (M+ LALIGA 2) (HD) (b8e)
-http://127.0.0.1:6878/ace/getstream?id=b8eb9c9868d487402569bba2d97a8af113d033fe
-#EXTINF:-1 group-title="04-23 (Jueves) La Liga EA Sports" tvg-name="19:00-Levante-Sevilla FC (DAZN LA LIGA 1) (HD) (4e6)",19:00-Levante-Sevilla FC (DAZN LA LIGA 1) (HD) (4e6)
-http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
-#EXTINF:-1 group-title="04-23 (Jueves) La Liga EA Sports" tvg-name="19:00-Levante-Sevilla FC (DAZN LA LIGA 1) (FHD) (0e5)",19:00-Levante-Sevilla FC (DAZN LA LIGA 1) (FHD) (0e5)
+#EXTINF:-1 group-title="04-24 (Viernes) La Liga EA Sports" tvg-name="21:00-Real Betis-Real Madrid (DAZN LA LIGA 1) (FHD) (0e5)",21:00-Real Betis-Real Madrid (DAZN LA LIGA 1) (FHD) (0e5)
 http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
-#EXTINF:-1 group-title="04-23 (Jueves) La Liga EA Sports" tvg-name="19:00-Levante-Sevilla FC (DAZN LA LIGA 1) (HD) (dda)",19:00-Levante-Sevilla FC (DAZN LA LIGA 1) (HD) (dda)
+#EXTINF:-1 group-title="04-24 (Viernes) La Liga EA Sports" tvg-name="21:00-Real Betis-Real Madrid (DAZN LA LIGA 1) (HD) (4e6)",21:00-Real Betis-Real Madrid (DAZN LA LIGA 1) (HD) (4e6)
+http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
+#EXTINF:-1 group-title="04-24 (Viernes) La Liga EA Sports" tvg-name="21:00-Real Betis-Real Madrid (DAZN LA LIGA 1) (HD) (dda)",21:00-Real Betis-Real Madrid (DAZN LA LIGA 1) (HD) (dda)
 http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
-#EXTINF:-1 group-title="04-23 (Jueves) La Liga EA Sports" tvg-name="19:00-Levante-Sevilla FC (DAZN LA LIGA 1) (HD) (19f)",19:00-Levante-Sevilla FC (DAZN LA LIGA 1) (HD) (19f)
-http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
-#EXTINF:-1 group-title="04-23 (Jueves) La Liga EA Sports" tvg-name="19:00-Levante-Sevilla FC (DAZN LA LIGA 1) (FHD) (e2b)",19:00-Levante-Sevilla FC (DAZN LA LIGA 1) (FHD) (e2b)
+#EXTINF:-1 group-title="04-24 (Viernes) La Liga EA Sports" tvg-name="21:00-Real Betis-Real Madrid (DAZN LA LIGA 1) (FHD) (e2b)",21:00-Real Betis-Real Madrid (DAZN LA LIGA 1) (FHD) (e2b)
 http://127.0.0.1:6878/ace/getstream?id=e2b8a4aba2f4ea3dd68992fcdb65c9e62d910b05
-#EXTINF:-1 group-title="04-23 (Jueves) La Liga EA Sports" tvg-name="20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (HD) (31c)",20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (HD) (31c)
-http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
-#EXTINF:-1 group-title="04-23 (Jueves) La Liga EA Sports" tvg-name="20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (FHD) (af4)",20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (FHD) (af4)
-http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
-#EXTINF:-1 group-title="04-23 (Jueves) La Liga EA Sports" tvg-name="20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (FHD) (8c3)",20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (FHD) (8c3)
-http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
-#EXTINF:-1 group-title="04-23 (Jueves) La Liga EA Sports" tvg-name="20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (HD) (f86)",20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (HD) (f86)
-http://127.0.0.1:6878/ace/getstream?id=f863873de9f7b2996dde19a0657dd89835af3007
-#EXTINF:-1 group-title="04-23 (Jueves) La Liga EA Sports" tvg-name="20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (HD) (3ac)",20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (HD) (3ac)
-http://127.0.0.1:6878/ace/getstream?id=3ace1463a7cad979c3a4002b245487e9982e9f1a
-#EXTINF:-1 group-title="04-23 (Jueves) La Liga EA Sports" tvg-name="20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (FHD) (00c)",20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (FHD) (00c)
-http://127.0.0.1:6878/ace/getstream?id=00c9bc9c5d7d87680a5a6bed349edfa775a89947
-#EXTINF:-1 group-title="04-23 (Jueves) La Liga EA Sports" tvg-name="20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (FHD) (c93)",20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (FHD) (c93)
-http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
-#EXTINF:-1 group-title="04-23 (Jueves) La Liga EA Sports" tvg-name="20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (FHD) (4b5)",20:00-Rayo Vallecano-Espanyol (M+ LALIGA) (FHD) (4b5)
-http://127.0.0.1:6878/ace/getstream?id=4b528d10eaad747ddf52251206177573ee3e9f74
-#EXTINF:-1 group-title="04-23 (Jueves) La Liga EA Sports" tvg-name="21:30-Real Oviedo-Villarreal (DAZN LA LIGA 2) (FHD) (635)",21:30-Real Oviedo-Villarreal (DAZN LA LIGA 2) (FHD) (635)
+#EXTINF:-1 group-title="04-24 (Viernes) La Liga EA Sports" tvg-name="21:00-Real Betis-Real Madrid (DAZN LA LIGA 2) (FHD) (635)",21:00-Real Betis-Real Madrid (DAZN LA LIGA 2) (FHD) (635)
 http://127.0.0.1:6878/ace/getstream?id=635b61c1f240449163260cd914d10d886a54fee3
-#EXTINF:-1 group-title="04-23 (Jueves) La Liga EA Sports" tvg-name="21:30-Real Oviedo-Villarreal (DAZN LA LIGA 2) (FHD) (509)",21:30-Real Oviedo-Villarreal (DAZN LA LIGA 2) (FHD) (509)
+#EXTINF:-1 group-title="04-24 (Viernes) La Liga EA Sports" tvg-name="21:00-Real Betis-Real Madrid (DAZN LA LIGA 2) (FHD) (509)",21:00-Real Betis-Real Madrid (DAZN LA LIGA 2) (FHD) (509)
 http://127.0.0.1:6878/ace/getstream?id=5091ea94b75ba4b50b078b4102a3d0e158ef59c3
+#EXTINF:-1 group-title="04-24 (Viernes) Bruselas Open" tvg-name="22:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 6) (HD) (8f9)",22:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 6) (HD) (8f9)
+http://127.0.0.1:6878/ace/getstream?id=8f982a0d6e3196c12d0034142b65008321150f7c
