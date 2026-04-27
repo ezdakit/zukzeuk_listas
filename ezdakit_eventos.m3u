@@ -1,40 +1,40 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="04-27 (Lunes) Serie A Brasil" tvg-name="01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (HD) (e57)",01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="04-27 (Lunes) Serie A Brasil" tvg-name="01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (HD) (97d)",01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (HD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 group-title="04-27 (Lunes) Serie A Brasil" tvg-name="01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (HD) (b02)",01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
 #EXTINF:-1 group-title="04-27 (Lunes) Serie A Brasil" tvg-name="01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (FHD) (afb)",01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
-#EXTINF:-1 group-title="04-27 (Lunes) Serie A Brasil" tvg-name="01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (FHD) (afb)",01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="04-27 (Lunes) Serie A Brasil" tvg-name="01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (HD) (b02)",01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
 #EXTINF:-1 group-title="04-27 (Lunes) Serie A Brasil" tvg-name="01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (FHD) (2b5)",01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (FHD) (2b5)
 http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
+#EXTINF:-1 group-title="04-27 (Lunes) Serie A Brasil" tvg-name="01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (HD) (97d)",01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (HD) (97d)
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
 #EXTINF:-1 group-title="04-27 (Lunes) Serie A Brasil" tvg-name="01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (FHD) (778)",01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (FHD) (778)
 http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="04-27 (Lunes) Serie A Brasil" tvg-name="01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (FHD) (0f7)",01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
 #EXTINF:-1 group-title="04-27 (Lunes) Serie A Brasil" tvg-name="01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (UHD) (152)",01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (UHD) (152)
 http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="04-27 (Lunes) Serie A Brasil" tvg-name="01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (FHD) (91b)",01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (FHD) (91b)
-http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
+#EXTINF:-1 group-title="04-27 (Lunes) Serie A Brasil" tvg-name="01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (HD) (e57)",01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="04-27 (Lunes) Serie A Brasil" tvg-name="01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (FHD) (afb)",01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="04-27 (Lunes) Serie A Brasil" tvg-name="01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (FHD) (0f7)",01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
 #EXTINF:-1 group-title="04-27 (Lunes) Serie A Brasil" tvg-name="01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (HD) (63e)",01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (HD) (63e)
 http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
+#EXTINF:-1 group-title="04-27 (Lunes) Serie A Brasil" tvg-name="01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (FHD) (91b)",01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (FHD) (91b)
+http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
 #EXTINF:-1 group-title="04-27 (Lunes) Serie A Brasil" tvg-name="01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (HD) (432)",01:30-Atlético Mineiro-CR Flamengo (LIGA DE CAMPEONES) (HD) (432)
 http://127.0.0.1:6878/ace/getstream?id=43249349740032bee068b5bbff7b078f642812db
-#EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="11:00-A. Davidovich-C. Ruud (MOVISTAR DEPORTES 2) (HD) (3af)",11:00-A. Davidovich-C. Ruud (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="11:00-A. Davidovich-C. Ruud (MOVISTAR DEPORTES 2) (FHD) (73d)",11:00-A. Davidovich-C. Ruud (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="11:00-A. Davidovich-C. Ruud (MOVISTAR DEPORTES 2) (HD) (3af)",11:00-A. Davidovich-C. Ruud (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="11:00-A. Davidovich-C. Ruud (MOVISTAR DEPORTES 2) (HD) (6b1)",11:00-A. Davidovich-C. Ruud (MOVISTAR DEPORTES 2) (HD) (6b1)
 http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
-#EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="11:00-A. Davidovich-C. Ruud (MOVISTAR DEPORTES 2) (HD) (bfa)",11:00-A. Davidovich-C. Ruud (MOVISTAR DEPORTES 2) (HD) (bfa)
-http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
 #EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="11:00-A. Davidovich-C. Ruud (MOVISTAR DEPORTES 2) (FHD) (890)",11:00-A. Davidovich-C. Ruud (MOVISTAR DEPORTES 2) (FHD) (890)
 http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
+#EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="11:00-A. Davidovich-C. Ruud (MOVISTAR DEPORTES 2) (HD) (bfa)",11:00-A. Davidovich-C. Ruud (MOVISTAR DEPORTES 2) (HD) (bfa)
+http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
 #EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="11:00-A. Li-L. Fernández (MOVISTAR DEPORTES 4) (HD) (8b5)",11:00-A. Li-L. Fernández (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
 #EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="11:00-A. Li-L. Fernández (MOVISTAR DEPORTES 4) (FHD) (4ab)",11:00-A. Li-L. Fernández (MOVISTAR DEPORTES 4) (FHD) (4ab)
@@ -43,30 +43,30 @@ http://127.0.0.1:6878/ace/getstream?id=4abe06c5cce7cb3c6bef2c3bccaafefd3299794f
 http://127.0.0.1:6878/ace/getstream?id=590a1f4546e3a0d5d419b62b8177b44d6ce0339f
 #EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="11:00-B. Bencic-H. Baptiste (MOVISTAR DEPORTES 3) (HD) (39f)",11:00-B. Bencic-H. Baptiste (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="11:00-B. Bencic-H. Baptiste (MOVISTAR DEPORTES 3) (HD) (e9c)",11:00-B. Bencic-H. Baptiste (MOVISTAR DEPORTES 3) (HD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
 #EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="11:00-B. Bencic-H. Baptiste (MOVISTAR DEPORTES 3) (FHD) (f4d)",11:00-B. Bencic-H. Baptiste (MOVISTAR DEPORTES 3) (FHD) (f4d)
 http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
+#EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="11:00-B. Bencic-H. Baptiste (MOVISTAR DEPORTES 3) (HD) (e9c)",11:00-B. Bencic-H. Baptiste (MOVISTAR DEPORTES 3) (HD) (e9c)
+http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
 #EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="11:00-B. Bencic-H. Baptiste (MOVISTAR DEPORTES 3) (FHD) (799)",11:00-B. Bencic-H. Baptiste (MOVISTAR DEPORTES 3) (FHD) (799)
 http://127.0.0.1:6878/ace/getstream?id=799c6b5ee1cf41af077d14e3f9c45a32697eb903
 #EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="12:30-S. Tsitsipas-D. Mérida Aguilar (MOVISTAR DEPORTES 3) (HD) (39f)",12:30-S. Tsitsipas-D. Mérida Aguilar (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="12:30-S. Tsitsipas-D. Mérida Aguilar (MOVISTAR DEPORTES 3) (HD) (e9c)",12:30-S. Tsitsipas-D. Mérida Aguilar (MOVISTAR DEPORTES 3) (HD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
 #EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="12:30-S. Tsitsipas-D. Mérida Aguilar (MOVISTAR DEPORTES 3) (FHD) (f4d)",12:30-S. Tsitsipas-D. Mérida Aguilar (MOVISTAR DEPORTES 3) (FHD) (f4d)
 http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
+#EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="12:30-S. Tsitsipas-D. Mérida Aguilar (MOVISTAR DEPORTES 3) (HD) (e9c)",12:30-S. Tsitsipas-D. Mérida Aguilar (MOVISTAR DEPORTES 3) (HD) (e9c)
+http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
 #EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="12:30-S. Tsitsipas-D. Mérida Aguilar (MOVISTAR DEPORTES 3) (FHD) (799)",12:30-S. Tsitsipas-D. Mérida Aguilar (MOVISTAR DEPORTES 3) (FHD) (799)
 http://127.0.0.1:6878/ace/getstream?id=799c6b5ee1cf41af077d14e3f9c45a32697eb903
-#EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="13:00-A. Sabalenka-N. Osaka (MOVISTAR DEPORTES 2) (HD) (3af)",13:00-A. Sabalenka-N. Osaka (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="13:00-A. Sabalenka-N. Osaka (MOVISTAR DEPORTES 2) (FHD) (73d)",13:00-A. Sabalenka-N. Osaka (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="13:00-A. Sabalenka-N. Osaka (MOVISTAR DEPORTES 2) (HD) (3af)",13:00-A. Sabalenka-N. Osaka (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="13:00-A. Sabalenka-N. Osaka (MOVISTAR DEPORTES 2) (HD) (6b1)",13:00-A. Sabalenka-N. Osaka (MOVISTAR DEPORTES 2) (HD) (6b1)
 http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
-#EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="13:00-A. Sabalenka-N. Osaka (MOVISTAR DEPORTES 2) (HD) (bfa)",13:00-A. Sabalenka-N. Osaka (MOVISTAR DEPORTES 2) (HD) (bfa)
-http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
 #EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="13:00-A. Sabalenka-N. Osaka (MOVISTAR DEPORTES 2) (FHD) (890)",13:00-A. Sabalenka-N. Osaka (MOVISTAR DEPORTES 2) (FHD) (890)
 http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
+#EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="13:00-A. Sabalenka-N. Osaka (MOVISTAR DEPORTES 2) (HD) (bfa)",13:00-A. Sabalenka-N. Osaka (MOVISTAR DEPORTES 2) (HD) (bfa)
+http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
 #EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="13:00-S. Sierra-K. Pliskova (MOVISTAR DEPORTES 4) (HD) (8b5)",13:00-S. Sierra-K. Pliskova (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
 #EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="13:00-S. Sierra-K. Pliskova (MOVISTAR DEPORTES 4) (FHD) (4ab)",13:00-S. Sierra-K. Pliskova (MOVISTAR DEPORTES 4) (FHD) (4ab)
@@ -75,10 +75,10 @@ http://127.0.0.1:6878/ace/getstream?id=4abe06c5cce7cb3c6bef2c3bccaafefd3299794f
 http://127.0.0.1:6878/ace/getstream?id=590a1f4546e3a0d5d419b62b8177b44d6ce0339f
 #EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="14:00-D. Medvedev-N. Budkov Kjaer (MOVISTAR DEPORTES 3) (HD) (39f)",14:00-D. Medvedev-N. Budkov Kjaer (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="14:00-D. Medvedev-N. Budkov Kjaer (MOVISTAR DEPORTES 3) (HD) (e9c)",14:00-D. Medvedev-N. Budkov Kjaer (MOVISTAR DEPORTES 3) (HD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
 #EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="14:00-D. Medvedev-N. Budkov Kjaer (MOVISTAR DEPORTES 3) (FHD) (f4d)",14:00-D. Medvedev-N. Budkov Kjaer (MOVISTAR DEPORTES 3) (FHD) (f4d)
 http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
+#EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="14:00-D. Medvedev-N. Budkov Kjaer (MOVISTAR DEPORTES 3) (HD) (e9c)",14:00-D. Medvedev-N. Budkov Kjaer (MOVISTAR DEPORTES 3) (HD) (e9c)
+http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
 #EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="14:00-D. Medvedev-N. Budkov Kjaer (MOVISTAR DEPORTES 3) (FHD) (799)",14:00-D. Medvedev-N. Budkov Kjaer (MOVISTAR DEPORTES 3) (FHD) (799)
 http://127.0.0.1:6878/ace/getstream?id=799c6b5ee1cf41af077d14e3f9c45a32697eb903
 #EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="15:00-M. Andreeva-A. Bondar (MOVISTAR DEPORTES 4) (HD) (8b5)",15:00-M. Andreeva-A. Bondar (MOVISTAR DEPORTES 4) (HD) (8b5)
@@ -87,16 +87,16 @@ http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
 http://127.0.0.1:6878/ace/getstream?id=4abe06c5cce7cb3c6bef2c3bccaafefd3299794f
 #EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="15:00-M. Andreeva-A. Bondar (MOVISTAR DEPORTES 4) (HD) (590)",15:00-M. Andreeva-A. Bondar (MOVISTAR DEPORTES 4) (HD) (590)
 http://127.0.0.1:6878/ace/getstream?id=590a1f4546e3a0d5d419b62b8177b44d6ce0339f
-#EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="16:00-L. Noskova-C. Gauff (MOVISTAR DEPORTES 2) (HD) (3af)",16:00-L. Noskova-C. Gauff (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="16:00-L. Noskova-C. Gauff (MOVISTAR DEPORTES 2) (FHD) (73d)",16:00-L. Noskova-C. Gauff (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="16:00-L. Noskova-C. Gauff (MOVISTAR DEPORTES 2) (HD) (3af)",16:00-L. Noskova-C. Gauff (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="16:00-L. Noskova-C. Gauff (MOVISTAR DEPORTES 2) (HD) (6b1)",16:00-L. Noskova-C. Gauff (MOVISTAR DEPORTES 2) (HD) (6b1)
 http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
-#EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="16:00-L. Noskova-C. Gauff (MOVISTAR DEPORTES 2) (HD) (bfa)",16:00-L. Noskova-C. Gauff (MOVISTAR DEPORTES 2) (HD) (bfa)
-http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
 #EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="16:00-L. Noskova-C. Gauff (MOVISTAR DEPORTES 2) (FHD) (890)",16:00-L. Noskova-C. Gauff (MOVISTAR DEPORTES 2) (FHD) (890)
 http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
+#EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="16:00-L. Noskova-C. Gauff (MOVISTAR DEPORTES 2) (HD) (bfa)",16:00-L. Noskova-C. Gauff (MOVISTAR DEPORTES 2) (HD) (bfa)
+http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
 #EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="16:30-A. Blockx-F. Auger-Aliassime (MOVISTAR DEPORTES 4) (HD) (8b5)",16:30-A. Blockx-F. Auger-Aliassime (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
 #EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="16:30-A. Blockx-F. Auger-Aliassime (MOVISTAR DEPORTES 4) (FHD) (4ab)",16:30-A. Blockx-F. Auger-Aliassime (MOVISTAR DEPORTES 4) (FHD) (4ab)
@@ -111,76 +111,76 @@ http://127.0.0.1:6878/ace/getstream?id=4abe06c5cce7cb3c6bef2c3bccaafefd3299794f
 http://127.0.0.1:6878/ace/getstream?id=590a1f4546e3a0d5d419b62b8177b44d6ce0339f
 #EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="19:00-M. Kostyuk-C. McNally (MOVISTAR DEPORTES 3) (HD) (39f)",19:00-M. Kostyuk-C. McNally (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="19:00-M. Kostyuk-C. McNally (MOVISTAR DEPORTES 3) (HD) (e9c)",19:00-M. Kostyuk-C. McNally (MOVISTAR DEPORTES 3) (HD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
 #EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="19:00-M. Kostyuk-C. McNally (MOVISTAR DEPORTES 3) (FHD) (f4d)",19:00-M. Kostyuk-C. McNally (MOVISTAR DEPORTES 3) (FHD) (f4d)
 http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
+#EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="19:00-M. Kostyuk-C. McNally (MOVISTAR DEPORTES 3) (HD) (e9c)",19:00-M. Kostyuk-C. McNally (MOVISTAR DEPORTES 3) (HD) (e9c)
+http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
 #EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="19:00-M. Kostyuk-C. McNally (MOVISTAR DEPORTES 3) (FHD) (799)",19:00-M. Kostyuk-C. McNally (MOVISTAR DEPORTES 3) (FHD) (799)
 http://127.0.0.1:6878/ace/getstream?id=799c6b5ee1cf41af077d14e3f9c45a32697eb903
-#EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="20:00-T. Atmane-A. Zverev (MOVISTAR DEPORTES 2) (HD) (3af)",20:00-T. Atmane-A. Zverev (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="20:00-T. Atmane-A. Zverev (MOVISTAR DEPORTES 2) (FHD) (73d)",20:00-T. Atmane-A. Zverev (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="20:00-T. Atmane-A. Zverev (MOVISTAR DEPORTES 2) (HD) (3af)",20:00-T. Atmane-A. Zverev (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="20:00-T. Atmane-A. Zverev (MOVISTAR DEPORTES 2) (HD) (6b1)",20:00-T. Atmane-A. Zverev (MOVISTAR DEPORTES 2) (HD) (6b1)
 http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
-#EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="20:00-T. Atmane-A. Zverev (MOVISTAR DEPORTES 2) (HD) (bfa)",20:00-T. Atmane-A. Zverev (MOVISTAR DEPORTES 2) (HD) (bfa)
-http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
 #EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="20:00-T. Atmane-A. Zverev (MOVISTAR DEPORTES 2) (FHD) (890)",20:00-T. Atmane-A. Zverev (MOVISTAR DEPORTES 2) (FHD) (890)
 http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
-#EXTINF:-1 group-title="04-27 (Lunes) LaLiga Hypermotion" tvg-name="20:30-Cádiz CF-UD Las Palmas (HYPERMOTION) (HD) (87b)",20:30-Cádiz CF-UD Las Palmas (HYPERMOTION) (HD) (87b)
-http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="20:00-T. Atmane-A. Zverev (MOVISTAR DEPORTES 2) (HD) (bfa)",20:00-T. Atmane-A. Zverev (MOVISTAR DEPORTES 2) (HD) (bfa)
+http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
 #EXTINF:-1 group-title="04-27 (Lunes) LaLiga Hypermotion" tvg-name="20:30-Cádiz CF-UD Las Palmas (HYPERMOTION) (HD) (a4f)",20:30-Cádiz CF-UD Las Palmas (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
+#EXTINF:-1 group-title="04-27 (Lunes) LaLiga Hypermotion" tvg-name="20:30-Cádiz CF-UD Las Palmas (HYPERMOTION) (HD) (87b)",20:30-Cádiz CF-UD Las Palmas (HYPERMOTION) (HD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="04-27 (Lunes) LaLiga Hypermotion" tvg-name="20:30-Cádiz CF-UD Las Palmas (HYPERMOTION) (HD) (1f7)",20:30-Cádiz CF-UD Las Palmas (HYPERMOTION) (HD) (1f7)
 http://127.0.0.1:6878/ace/getstream?id=1f75d92098580443857caa95a719103cb83781b0
 #EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="20:30-K. Khachanov-J. Mensik (MOVISTAR DEPORTES 3) (HD) (39f)",20:30-K. Khachanov-J. Mensik (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="20:30-K. Khachanov-J. Mensik (MOVISTAR DEPORTES 3) (HD) (e9c)",20:30-K. Khachanov-J. Mensik (MOVISTAR DEPORTES 3) (HD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
 #EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="20:30-K. Khachanov-J. Mensik (MOVISTAR DEPORTES 3) (FHD) (f4d)",20:30-K. Khachanov-J. Mensik (MOVISTAR DEPORTES 3) (FHD) (f4d)
 http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
+#EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="20:30-K. Khachanov-J. Mensik (MOVISTAR DEPORTES 3) (HD) (e9c)",20:30-K. Khachanov-J. Mensik (MOVISTAR DEPORTES 3) (HD) (e9c)
+http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
 #EXTINF:-1 group-title="04-27 (Lunes) Masters Madrid 3ª Ronda" tvg-name="20:30-K. Khachanov-J. Mensik (MOVISTAR DEPORTES 3) (FHD) (799)",20:30-K. Khachanov-J. Mensik (MOVISTAR DEPORTES 3) (FHD) (799)
 http://127.0.0.1:6878/ace/getstream?id=799c6b5ee1cf41af077d14e3f9c45a32697eb903
-#EXTINF:-1 group-title="04-27 (Lunes) La Liga EA Sports" tvg-name="21:00-Espanyol-Levante (M+ LALIGA) (FHD) (8c3)",21:00-Espanyol-Levante (M+ LALIGA) (FHD) (8c3)
-http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
 #EXTINF:-1 group-title="04-27 (Lunes) La Liga EA Sports" tvg-name="21:00-Espanyol-Levante (M+ LALIGA) (FHD) (af4)",21:00-Espanyol-Levante (M+ LALIGA) (FHD) (af4)
 http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
 #EXTINF:-1 group-title="04-27 (Lunes) La Liga EA Sports" tvg-name="21:00-Espanyol-Levante (M+ LALIGA) (HD) (31c)",21:00-Espanyol-Levante (M+ LALIGA) (HD) (31c)
 http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
+#EXTINF:-1 group-title="04-27 (Lunes) La Liga EA Sports" tvg-name="21:00-Espanyol-Levante (M+ LALIGA) (FHD) (8c3)",21:00-Espanyol-Levante (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
 #EXTINF:-1 group-title="04-27 (Lunes) La Liga EA Sports" tvg-name="21:00-Espanyol-Levante (M+ LALIGA) (HD) (3ac)",21:00-Espanyol-Levante (M+ LALIGA) (HD) (3ac)
 http://127.0.0.1:6878/ace/getstream?id=3ace1463a7cad979c3a4002b245487e9982e9f1a
-#EXTINF:-1 group-title="04-27 (Lunes) La Liga EA Sports" tvg-name="21:00-Espanyol-Levante (M+ LALIGA) (FHD) (c93)",21:00-Espanyol-Levante (M+ LALIGA) (FHD) (c93)
-http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
 #EXTINF:-1 group-title="04-27 (Lunes) La Liga EA Sports" tvg-name="21:00-Espanyol-Levante (M+ LALIGA) (FHD) (00c)",21:00-Espanyol-Levante (M+ LALIGA) (FHD) (00c)
 http://127.0.0.1:6878/ace/getstream?id=00c9bc9c5d7d87680a5a6bed349edfa775a89947
+#EXTINF:-1 group-title="04-27 (Lunes) La Liga EA Sports" tvg-name="21:00-Espanyol-Levante (M+ LALIGA) (FHD) (c93)",21:00-Espanyol-Levante (M+ LALIGA) (FHD) (c93)
+http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
 #EXTINF:-1 group-title="04-27 (Lunes) La Liga EA Sports" tvg-name="21:00-Espanyol-Levante (M+ LALIGA) (FHD) (4b5)",21:00-Espanyol-Levante (M+ LALIGA) (FHD) (4b5)
 http://127.0.0.1:6878/ace/getstream?id=4b528d10eaad747ddf52251206177573ee3e9f74
-#EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="21:00-A. Potapova-E. Rybakina (MOVISTAR DEPORTES 2) (HD) (3af)",21:00-A. Potapova-E. Rybakina (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="21:00-A. Potapova-E. Rybakina (MOVISTAR DEPORTES 2) (FHD) (73d)",21:00-A. Potapova-E. Rybakina (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="21:00-A. Potapova-E. Rybakina (MOVISTAR DEPORTES 2) (HD) (3af)",21:00-A. Potapova-E. Rybakina (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="21:00-A. Potapova-E. Rybakina (MOVISTAR DEPORTES 2) (HD) (6b1)",21:00-A. Potapova-E. Rybakina (MOVISTAR DEPORTES 2) (HD) (6b1)
 http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
-#EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="21:00-A. Potapova-E. Rybakina (MOVISTAR DEPORTES 2) (HD) (bfa)",21:00-A. Potapova-E. Rybakina (MOVISTAR DEPORTES 2) (HD) (bfa)
-http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
 #EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="21:00-A. Potapova-E. Rybakina (MOVISTAR DEPORTES 2) (FHD) (890)",21:00-A. Potapova-E. Rybakina (MOVISTAR DEPORTES 2) (FHD) (890)
 http://127.0.0.1:6878/ace/getstream?id=890901fa742b19d8808cf49f19db2d3016437c56
+#EXTINF:-1 group-title="04-27 (Lunes) WTA Madrid 1/8 de final" tvg-name="21:00-A. Potapova-E. Rybakina (MOVISTAR DEPORTES 2) (HD) (bfa)",21:00-A. Potapova-E. Rybakina (MOVISTAR DEPORTES 2) (HD) (bfa)
+http://127.0.0.1:6878/ace/getstream?id=bfa01c11c5c6b7a616a516de4f2c769a89d26b25
+#EXTINF:-1 group-title="04-28 (Martes) Eurocup Final" tvg-name="19:30-JL Bourg-Besiktas JK Istanbul (MOVISTAR DEPORTES 5) (FHD) (6dc)",19:30-JL Bourg-Besiktas JK Istanbul (MOVISTAR DEPORTES 5) (FHD) (6dc)
+http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
 #EXTINF:-1 group-title="04-28 (Martes) Eurocup Final" tvg-name="19:30-JL Bourg-Besiktas JK Istanbul (MOVISTAR DEPORTES 5) (FHD) (591)",19:30-JL Bourg-Besiktas JK Istanbul (MOVISTAR DEPORTES 5) (FHD) (591)
 http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
 #EXTINF:-1 group-title="04-28 (Martes) Eurocup Final" tvg-name="19:30-JL Bourg-Besiktas JK Istanbul (MOVISTAR DEPORTES 5) (HD) (323)",19:30-JL Bourg-Besiktas JK Istanbul (MOVISTAR DEPORTES 5) (HD) (323)
 http://127.0.0.1:6878/ace/getstream?id=3230cdca852a10325222e3c546e499e31d547a90
-#EXTINF:-1 group-title="04-28 (Martes) Eurocup Final" tvg-name="19:30-JL Bourg-Besiktas JK Istanbul (MOVISTAR DEPORTES 5) (FHD) (6dc)",19:30-JL Bourg-Besiktas JK Istanbul (MOVISTAR DEPORTES 5) (FHD) (6dc)
-http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
 #EXTINF:-1 group-title="04-28 (Martes) Euroliga Playoffs" tvg-name="19:45-Fenerbahce Istanbul-Zalgiris Kaunas (MOVISTAR DEPORTES 4) (HD) (8b5)",19:45-Fenerbahce Istanbul-Zalgiris Kaunas (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
 #EXTINF:-1 group-title="04-28 (Martes) Euroliga Playoffs" tvg-name="19:45-Fenerbahce Istanbul-Zalgiris Kaunas (MOVISTAR DEPORTES 4) (FHD) (4ab)",19:45-Fenerbahce Istanbul-Zalgiris Kaunas (MOVISTAR DEPORTES 4) (FHD) (4ab)
 http://127.0.0.1:6878/ace/getstream?id=4abe06c5cce7cb3c6bef2c3bccaafefd3299794f
 #EXTINF:-1 group-title="04-28 (Martes) Euroliga Playoffs" tvg-name="19:45-Fenerbahce Istanbul-Zalgiris Kaunas (MOVISTAR DEPORTES 4) (HD) (590)",19:45-Fenerbahce Istanbul-Zalgiris Kaunas (MOVISTAR DEPORTES 4) (HD) (590)
 http://127.0.0.1:6878/ace/getstream?id=590a1f4546e3a0d5d419b62b8177b44d6ce0339f
-#EXTINF:-1 group-title="04-28 (Martes) Euroliga Playoffs" tvg-name="20:00-Olympiacos Piraeus-AS Monaco Basket (MOVISTAR DEPORTES) (FHD) (f82)",20:00-Olympiacos Piraeus-AS Monaco Basket (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="04-28 (Martes) Euroliga Playoffs" tvg-name="20:00-Olympiacos Piraeus-AS Monaco Basket (MOVISTAR DEPORTES) (FHD) (369)",20:00-Olympiacos Piraeus-AS Monaco Basket (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="04-28 (Martes) Euroliga Playoffs" tvg-name="20:00-Olympiacos Piraeus-AS Monaco Basket (MOVISTAR DEPORTES) (FHD) (f82)",20:00-Olympiacos Piraeus-AS Monaco Basket (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="04-28 (Martes) Euroliga Playoffs" tvg-name="20:00-Olympiacos Piraeus-AS Monaco Basket (MOVISTAR DEPORTES) (FHD) (5d3)",20:00-Olympiacos Piraeus-AS Monaco Basket (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="04-28 (Martes) Euroliga Playoffs" tvg-name="20:00-Olympiacos Piraeus-AS Monaco Basket (MOVISTAR DEPORTES) (HD) (6e0)",20:00-Olympiacos Piraeus-AS Monaco Basket (MOVISTAR DEPORTES) (HD) (6e0)
@@ -193,56 +193,54 @@ http://127.0.0.1:6878/ace/getstream?id=2f3cfd199a49819cbd129689a840dc3d23ab93aa
 http://127.0.0.1:6878/ace/getstream?id=ebca4a63ce3bfda7b272964a1acc5227218184a4
 #EXTINF:-1 group-title="04-28 (Martes) Saudi Pro League" tvg-name="20:00-Al Hilal-Damac FC (LIGA DE CAMPEONES 2) (FHD) (498)",20:00-Al Hilal-Damac FC (LIGA DE CAMPEONES 2) (FHD) (498)
 http://127.0.0.1:6878/ace/getstream?id=498c56bd00f535e440c392de5af992421a31355c
-#EXTINF:-1 group-title="04-28 (Martes) Saudi Pro League" tvg-name="20:00-Al Hilal-Damac FC (LIGA DE CAMPEONES 2) (FHD) (4fc)",20:00-Al Hilal-Damac FC (LIGA DE CAMPEONES 2) (FHD) (4fc)
-http://127.0.0.1:6878/ace/getstream?id=4fc6d0331830ad8743abab2fe2473b63bdfbc49f
-#EXTINF:-1 group-title="04-28 (Martes) Saudi Pro League" tvg-name="20:00-Al Hilal-Damac FC (LIGA DE CAMPEONES 2) (HD) (bb2)",20:00-Al Hilal-Damac FC (LIGA DE CAMPEONES 2) (HD) (bb2)
-http://127.0.0.1:6878/ace/getstream?id=bb26037a253866d341778181eff5c8637240d615
-#EXTINF:-1 group-title="04-28 (Martes) Saudi Pro League" tvg-name="20:00-Al Hilal-Damac FC (LIGA DE CAMPEONES 2) (HD) (338)",20:00-Al Hilal-Damac FC (LIGA DE CAMPEONES 2) (HD) (338)
-http://127.0.0.1:6878/ace/getstream?id=338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea
 #EXTINF:-1 group-title="04-28 (Martes) Saudi Pro League" tvg-name="20:00-Al Hilal-Damac FC (LIGA DE CAMPEONES 2) (FHD) (c6a)",20:00-Al Hilal-Damac FC (LIGA DE CAMPEONES 2) (FHD) (c6a)
 http://127.0.0.1:6878/ace/getstream?id=c6a3673f6a37b1bd3cf31fdd6404dd33d48cfccb
-#EXTINF:-1 group-title="04-28 (Martes) Champions League Semifinales" tvg-name="21:00-PSG-FC Bayern (MOVISTAR PLUS) (FHD) (199)",21:00-PSG-FC Bayern (MOVISTAR PLUS) (FHD) (199)
-http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 group-title="04-28 (Martes) Champions League Semifinales" tvg-name="21:00-PSG-FC Bayern (MOVISTAR PLUS) (FHD) (586)",21:00-PSG-FC Bayern (MOVISTAR PLUS) (FHD) (586)
-http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
+#EXTINF:-1 group-title="04-28 (Martes) Saudi Pro League" tvg-name="20:00-Al Hilal-Damac FC (LIGA DE CAMPEONES 2) (FHD) (4fc)",20:00-Al Hilal-Damac FC (LIGA DE CAMPEONES 2) (FHD) (4fc)
+http://127.0.0.1:6878/ace/getstream?id=4fc6d0331830ad8743abab2fe2473b63bdfbc49f
+#EXTINF:-1 group-title="04-28 (Martes) Saudi Pro League" tvg-name="20:00-Al Hilal-Damac FC (LIGA DE CAMPEONES 2) (HD) (338)",20:00-Al Hilal-Damac FC (LIGA DE CAMPEONES 2) (HD) (338)
+http://127.0.0.1:6878/ace/getstream?id=338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea
+#EXTINF:-1 group-title="04-28 (Martes) Saudi Pro League" tvg-name="20:00-Al Hilal-Damac FC (LIGA DE CAMPEONES 2) (HD) (bb2)",20:00-Al Hilal-Damac FC (LIGA DE CAMPEONES 2) (HD) (bb2)
+http://127.0.0.1:6878/ace/getstream?id=bb26037a253866d341778181eff5c8637240d615
 #EXTINF:-1 group-title="04-28 (Martes) Champions League Semifinales" tvg-name="21:00-PSG-FC Bayern (MOVISTAR PLUS) (FHD) (b6f)",21:00-PSG-FC Bayern (MOVISTAR PLUS) (FHD) (b6f)
 http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
-#EXTINF:-1 group-title="04-28 (Martes) Champions League Semifinales" tvg-name="21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (HD) (e57)",21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="04-28 (Martes) Champions League Semifinales" tvg-name="21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (HD) (97d)",21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (HD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 group-title="04-28 (Martes) Champions League Semifinales" tvg-name="21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (HD) (b02)",21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
+#EXTINF:-1 group-title="04-28 (Martes) Champions League Semifinales" tvg-name="21:00-PSG-FC Bayern (MOVISTAR PLUS) (FHD) (586)",21:00-PSG-FC Bayern (MOVISTAR PLUS) (FHD) (586)
+http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
+#EXTINF:-1 group-title="04-28 (Martes) Champions League Semifinales" tvg-name="21:00-PSG-FC Bayern (MOVISTAR PLUS) (FHD) (199)",21:00-PSG-FC Bayern (MOVISTAR PLUS) (FHD) (199)
+http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
 #EXTINF:-1 group-title="04-28 (Martes) Champions League Semifinales" tvg-name="21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (FHD) (afb)",21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
-#EXTINF:-1 group-title="04-28 (Martes) Champions League Semifinales" tvg-name="21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (FHD) (afb)",21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="04-28 (Martes) Champions League Semifinales" tvg-name="21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (HD) (b02)",21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
 #EXTINF:-1 group-title="04-28 (Martes) Champions League Semifinales" tvg-name="21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (FHD) (2b5)",21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (FHD) (2b5)
 http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
+#EXTINF:-1 group-title="04-28 (Martes) Champions League Semifinales" tvg-name="21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (HD) (97d)",21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (HD) (97d)
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
 #EXTINF:-1 group-title="04-28 (Martes) Champions League Semifinales" tvg-name="21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (FHD) (778)",21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (FHD) (778)
 http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="04-28 (Martes) Champions League Semifinales" tvg-name="21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (FHD) (0f7)",21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
 #EXTINF:-1 group-title="04-28 (Martes) Champions League Semifinales" tvg-name="21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (UHD) (152)",21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (UHD) (152)
 http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="04-28 (Martes) Champions League Semifinales" tvg-name="21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (FHD) (91b)",21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (FHD) (91b)
-http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
+#EXTINF:-1 group-title="04-28 (Martes) Champions League Semifinales" tvg-name="21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (HD) (e57)",21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="04-28 (Martes) Champions League Semifinales" tvg-name="21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (FHD) (afb)",21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="04-28 (Martes) Champions League Semifinales" tvg-name="21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (FHD) (0f7)",21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
 #EXTINF:-1 group-title="04-28 (Martes) Champions League Semifinales" tvg-name="21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (HD) (63e)",21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (HD) (63e)
 http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
+#EXTINF:-1 group-title="04-28 (Martes) Champions League Semifinales" tvg-name="21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (FHD) (91b)",21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (FHD) (91b)
+http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
 #EXTINF:-1 group-title="04-28 (Martes) Champions League Semifinales" tvg-name="21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (HD) (432)",21:00-PSG-FC Bayern (LIGA DE CAMPEONES) (HD) (432)
 http://127.0.0.1:6878/ace/getstream?id=43249349740032bee068b5bbff7b078f642812db
 #EXTINF:-1 group-title="04-29 (Miércoles) Copa Libertadores Fase de grupos" tvg-name="00:00-Lanús-LDU Quito (LIGA DE CAMPEONES 2) (FHD) (498)",00:00-Lanús-LDU Quito (LIGA DE CAMPEONES 2) (FHD) (498)
 http://127.0.0.1:6878/ace/getstream?id=498c56bd00f535e440c392de5af992421a31355c
-#EXTINF:-1 group-title="04-29 (Miércoles) Copa Libertadores Fase de grupos" tvg-name="00:00-Lanús-LDU Quito (LIGA DE CAMPEONES 2) (FHD) (4fc)",00:00-Lanús-LDU Quito (LIGA DE CAMPEONES 2) (FHD) (4fc)
-http://127.0.0.1:6878/ace/getstream?id=4fc6d0331830ad8743abab2fe2473b63bdfbc49f
-#EXTINF:-1 group-title="04-29 (Miércoles) Copa Libertadores Fase de grupos" tvg-name="00:00-Lanús-LDU Quito (LIGA DE CAMPEONES 2) (HD) (bb2)",00:00-Lanús-LDU Quito (LIGA DE CAMPEONES 2) (HD) (bb2)
-http://127.0.0.1:6878/ace/getstream?id=bb26037a253866d341778181eff5c8637240d615
-#EXTINF:-1 group-title="04-29 (Miércoles) Copa Libertadores Fase de grupos" tvg-name="00:00-Lanús-LDU Quito (LIGA DE CAMPEONES 2) (HD) (338)",00:00-Lanús-LDU Quito (LIGA DE CAMPEONES 2) (HD) (338)
-http://127.0.0.1:6878/ace/getstream?id=338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea
 #EXTINF:-1 group-title="04-29 (Miércoles) Copa Libertadores Fase de grupos" tvg-name="00:00-Lanús-LDU Quito (LIGA DE CAMPEONES 2) (FHD) (c6a)",00:00-Lanús-LDU Quito (LIGA DE CAMPEONES 2) (FHD) (c6a)
 http://127.0.0.1:6878/ace/getstream?id=c6a3673f6a37b1bd3cf31fdd6404dd33d48cfccb
-#EXTINF:-1 group-title="04-29 (Miércoles) Saudi Pro League" tvg-name="18:10-Al Taawoun FC-Al-Ittihad Jeddah Club (LIGA DE CAMPEONES 3) (FHD) (66b)",18:10-Al Taawoun FC-Al-Ittihad Jeddah Club (LIGA DE CAMPEONES 3) (FHD) (66b)
-http://127.0.0.1:6878/ace/getstream?id=66b373c0da20ac615996dbd1c340087f50a9a39e
+#EXTINF:-1 group-title="04-29 (Miércoles) Copa Libertadores Fase de grupos" tvg-name="00:00-Lanús-LDU Quito (LIGA DE CAMPEONES 2) (FHD) (4fc)",00:00-Lanús-LDU Quito (LIGA DE CAMPEONES 2) (FHD) (4fc)
+http://127.0.0.1:6878/ace/getstream?id=4fc6d0331830ad8743abab2fe2473b63bdfbc49f
+#EXTINF:-1 group-title="04-29 (Miércoles) Copa Libertadores Fase de grupos" tvg-name="00:00-Lanús-LDU Quito (LIGA DE CAMPEONES 2) (HD) (338)",00:00-Lanús-LDU Quito (LIGA DE CAMPEONES 2) (HD) (338)
+http://127.0.0.1:6878/ace/getstream?id=338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea
+#EXTINF:-1 group-title="04-29 (Miércoles) Copa Libertadores Fase de grupos" tvg-name="00:00-Lanús-LDU Quito (LIGA DE CAMPEONES 2) (HD) (bb2)",00:00-Lanús-LDU Quito (LIGA DE CAMPEONES 2) (HD) (bb2)
+http://127.0.0.1:6878/ace/getstream?id=bb26037a253866d341778181eff5c8637240d615
 #EXTINF:-1 group-title="04-29 (Miércoles) Saudi Pro League" tvg-name="18:10-Al Taawoun FC-Al-Ittihad Jeddah Club (LIGA DE CAMPEONES 3) (FHD) (079)",18:10-Al Taawoun FC-Al-Ittihad Jeddah Club (LIGA DE CAMPEONES 3) (FHD) (079)
 http://127.0.0.1:6878/ace/getstream?id=07976f79d17a439d7aff46cf0d4cfdf80311caf5
 #EXTINF:-1 group-title="04-29 (Miércoles) Saudi Pro League" tvg-name="18:10-Al Taawoun FC-Al-Ittihad Jeddah Club (LIGA DE CAMPEONES 3) (HD) (90f)",18:10-Al Taawoun FC-Al-Ittihad Jeddah Club (LIGA DE CAMPEONES 3) (HD) (90f)
@@ -251,20 +249,22 @@ http://127.0.0.1:6878/ace/getstream?id=90f7941c6bf7ca4b18084a1dca7bc15b9b179373
 http://127.0.0.1:6878/ace/getstream?id=1dece791d28be6a5af78537ac4864ec01fa0a6d8
 #EXTINF:-1 group-title="04-29 (Miércoles) Saudi Pro League" tvg-name="18:10-Al Taawoun FC-Al-Ittihad Jeddah Club (LIGA DE CAMPEONES 3) (FHD) (17b)",18:10-Al Taawoun FC-Al-Ittihad Jeddah Club (LIGA DE CAMPEONES 3) (FHD) (17b)
 http://127.0.0.1:6878/ace/getstream?id=17b8bc4bf8e29547b0071c742e3d7da3bcbc484d
+#EXTINF:-1 group-title="04-29 (Miércoles) Saudi Pro League" tvg-name="18:10-Al Taawoun FC-Al-Ittihad Jeddah Club (LIGA DE CAMPEONES 3) (FHD) (66b)",18:10-Al Taawoun FC-Al-Ittihad Jeddah Club (LIGA DE CAMPEONES 3) (FHD) (66b)
+http://127.0.0.1:6878/ace/getstream?id=66b373c0da20ac615996dbd1c340087f50a9a39e
 #EXTINF:-1 group-title="04-29 (Miércoles) Saudi Pro League" tvg-name="20:00-Al Nassr-Al Ahli (LIGA DE CAMPEONES 2) (FHD) (498)",20:00-Al Nassr-Al Ahli (LIGA DE CAMPEONES 2) (FHD) (498)
 http://127.0.0.1:6878/ace/getstream?id=498c56bd00f535e440c392de5af992421a31355c
-#EXTINF:-1 group-title="04-29 (Miércoles) Saudi Pro League" tvg-name="20:00-Al Nassr-Al Ahli (LIGA DE CAMPEONES 2) (FHD) (4fc)",20:00-Al Nassr-Al Ahli (LIGA DE CAMPEONES 2) (FHD) (4fc)
-http://127.0.0.1:6878/ace/getstream?id=4fc6d0331830ad8743abab2fe2473b63bdfbc49f
-#EXTINF:-1 group-title="04-29 (Miércoles) Saudi Pro League" tvg-name="20:00-Al Nassr-Al Ahli (LIGA DE CAMPEONES 2) (HD) (bb2)",20:00-Al Nassr-Al Ahli (LIGA DE CAMPEONES 2) (HD) (bb2)
-http://127.0.0.1:6878/ace/getstream?id=bb26037a253866d341778181eff5c8637240d615
-#EXTINF:-1 group-title="04-29 (Miércoles) Saudi Pro League" tvg-name="20:00-Al Nassr-Al Ahli (LIGA DE CAMPEONES 2) (HD) (338)",20:00-Al Nassr-Al Ahli (LIGA DE CAMPEONES 2) (HD) (338)
-http://127.0.0.1:6878/ace/getstream?id=338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea
 #EXTINF:-1 group-title="04-29 (Miércoles) Saudi Pro League" tvg-name="20:00-Al Nassr-Al Ahli (LIGA DE CAMPEONES 2) (FHD) (c6a)",20:00-Al Nassr-Al Ahli (LIGA DE CAMPEONES 2) (FHD) (c6a)
 http://127.0.0.1:6878/ace/getstream?id=c6a3673f6a37b1bd3cf31fdd6404dd33d48cfccb
-#EXTINF:-1 group-title="04-29 (Miércoles) Euroliga Playoffs" tvg-name="20:45-Real Madrid Baloncesto-Hapoel Tel Aviv BC (MOVISTAR DEPORTES) (FHD) (f82)",20:45-Real Madrid Baloncesto-Hapoel Tel Aviv BC (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="04-29 (Miércoles) Saudi Pro League" tvg-name="20:00-Al Nassr-Al Ahli (LIGA DE CAMPEONES 2) (FHD) (4fc)",20:00-Al Nassr-Al Ahli (LIGA DE CAMPEONES 2) (FHD) (4fc)
+http://127.0.0.1:6878/ace/getstream?id=4fc6d0331830ad8743abab2fe2473b63bdfbc49f
+#EXTINF:-1 group-title="04-29 (Miércoles) Saudi Pro League" tvg-name="20:00-Al Nassr-Al Ahli (LIGA DE CAMPEONES 2) (HD) (338)",20:00-Al Nassr-Al Ahli (LIGA DE CAMPEONES 2) (HD) (338)
+http://127.0.0.1:6878/ace/getstream?id=338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea
+#EXTINF:-1 group-title="04-29 (Miércoles) Saudi Pro League" tvg-name="20:00-Al Nassr-Al Ahli (LIGA DE CAMPEONES 2) (HD) (bb2)",20:00-Al Nassr-Al Ahli (LIGA DE CAMPEONES 2) (HD) (bb2)
+http://127.0.0.1:6878/ace/getstream?id=bb26037a253866d341778181eff5c8637240d615
 #EXTINF:-1 group-title="04-29 (Miércoles) Euroliga Playoffs" tvg-name="20:45-Real Madrid Baloncesto-Hapoel Tel Aviv BC (MOVISTAR DEPORTES) (FHD) (369)",20:45-Real Madrid Baloncesto-Hapoel Tel Aviv BC (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="04-29 (Miércoles) Euroliga Playoffs" tvg-name="20:45-Real Madrid Baloncesto-Hapoel Tel Aviv BC (MOVISTAR DEPORTES) (FHD) (f82)",20:45-Real Madrid Baloncesto-Hapoel Tel Aviv BC (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="04-29 (Miércoles) Euroliga Playoffs" tvg-name="20:45-Real Madrid Baloncesto-Hapoel Tel Aviv BC (MOVISTAR DEPORTES) (FHD) (5d3)",20:45-Real Madrid Baloncesto-Hapoel Tel Aviv BC (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="04-29 (Miércoles) Euroliga Playoffs" tvg-name="20:45-Real Madrid Baloncesto-Hapoel Tel Aviv BC (MOVISTAR DEPORTES) (HD) (6e0)",20:45-Real Madrid Baloncesto-Hapoel Tel Aviv BC (MOVISTAR DEPORTES) (HD) (6e0)
@@ -275,27 +275,27 @@ http://127.0.0.1:6878/ace/getstream?id=c6a824a81b36f6c3529826477caf2ad94b45776d
 http://127.0.0.1:6878/ace/getstream?id=2f3cfd199a49819cbd129689a840dc3d23ab93aa
 #EXTINF:-1 group-title="04-29 (Miércoles) Euroliga Playoffs" tvg-name="20:45-Real Madrid Baloncesto-Hapoel Tel Aviv BC (MOVISTAR DEPORTES) (FHD) (ebc)",20:45-Real Madrid Baloncesto-Hapoel Tel Aviv BC (MOVISTAR DEPORTES) (FHD) (ebc)
 http://127.0.0.1:6878/ace/getstream?id=ebca4a63ce3bfda7b272964a1acc5227218184a4
-#EXTINF:-1 group-title="04-29 (Miércoles) Champions League Semifinales" tvg-name="21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (HD) (e57)",21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="04-29 (Miércoles) Champions League Semifinales" tvg-name="21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (HD) (97d)",21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (HD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 group-title="04-29 (Miércoles) Champions League Semifinales" tvg-name="21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (HD) (b02)",21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
 #EXTINF:-1 group-title="04-29 (Miércoles) Champions League Semifinales" tvg-name="21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (FHD) (afb)",21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
-#EXTINF:-1 group-title="04-29 (Miércoles) Champions League Semifinales" tvg-name="21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (FHD) (afb)",21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="04-29 (Miércoles) Champions League Semifinales" tvg-name="21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (HD) (b02)",21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
 #EXTINF:-1 group-title="04-29 (Miércoles) Champions League Semifinales" tvg-name="21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (FHD) (2b5)",21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (FHD) (2b5)
 http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
+#EXTINF:-1 group-title="04-29 (Miércoles) Champions League Semifinales" tvg-name="21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (HD) (97d)",21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (HD) (97d)
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
 #EXTINF:-1 group-title="04-29 (Miércoles) Champions League Semifinales" tvg-name="21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (FHD) (778)",21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (FHD) (778)
 http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="04-29 (Miércoles) Champions League Semifinales" tvg-name="21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (FHD) (0f7)",21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
 #EXTINF:-1 group-title="04-29 (Miércoles) Champions League Semifinales" tvg-name="21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (UHD) (152)",21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (UHD) (152)
 http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="04-29 (Miércoles) Champions League Semifinales" tvg-name="21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (FHD) (91b)",21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (FHD) (91b)
-http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
+#EXTINF:-1 group-title="04-29 (Miércoles) Champions League Semifinales" tvg-name="21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (HD) (e57)",21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="04-29 (Miércoles) Champions League Semifinales" tvg-name="21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (FHD) (afb)",21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="04-29 (Miércoles) Champions League Semifinales" tvg-name="21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (FHD) (0f7)",21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
 #EXTINF:-1 group-title="04-29 (Miércoles) Champions League Semifinales" tvg-name="21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (HD) (63e)",21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (HD) (63e)
 http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
+#EXTINF:-1 group-title="04-29 (Miércoles) Champions League Semifinales" tvg-name="21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (FHD) (91b)",21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (FHD) (91b)
+http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
 #EXTINF:-1 group-title="04-29 (Miércoles) Champions League Semifinales" tvg-name="21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (HD) (432)",21:00-At. Madrid-Arsenal (LIGA DE CAMPEONES) (HD) (432)
 http://127.0.0.1:6878/ace/getstream?id=43249349740032bee068b5bbff7b078f642812db
