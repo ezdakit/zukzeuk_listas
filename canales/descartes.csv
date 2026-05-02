@@ -21,8 +21,8 @@
 ?,A-Leagues YouTube,07:00-Auckland FC-Melbourne City,no_dial_detected
 ?,J.LEAGUE International YouTube,08:00-Gamba Osaka-Vissel Kobe,no_dial_detected
 ?,A-Leagues YouTube,09:00-Melbourne Victory Women-Melbourne City Women,no_dial_detected
-?,Teledeporte,Semifinales,no_dial_detected
-?,RTVE Play,Semifinales,no_dial_detected
+?,Teledeporte,10:00-Torreblanca Melilla-Poio Pescamar FS,no_dial_detected
+?,RTVE Play,10:00-Torreblanca Melilla-Poio Pescamar FS,no_dial_detected
 ?,HBO MAX,"Etapa 7 Antalya › Antalya (152,8 km)",no_dial_detected
 ?,DAZN (Ver en directo),"Etapa 7 Antalya › Antalya (152,8 km)",no_dial_detected
 ?,Eurosport 2,"Etapa 7 Antalya › Antalya (152,8 km)",no_dial_detected
@@ -45,7 +45,7 @@
 ?,RTVE Play,12:30-T. Korpatsch-M. Bassols,no_dial_detected
 ?,DAZN (Ver en directo),12:30-Napoli Femenino-Juventus Femminile,no_dial_detected
 ?,DAZN App Gratis (Ver gratis),12:30-Napoli Femenino-Juventus Femminile,no_dial_detected
-?,RTVE Play,Semifinales,no_dial_detected
+?,RTVE Play,12:30-Alcorcón FS-Atlético Torcal FS,no_dial_detected
 ?,Chelsea App,13:00-Birmingham Academy-Chelsea Academy,no_dial_detected
 ?,HBO MAX,13:00-J. Della Maddalena-C. Prates,no_dial_detected
 ?,FANSEAT,13:00-FC Rosengard-Malmö FF Women,no_dial_detected
@@ -171,6 +171,7 @@
 74,DAZN Baloncesto 2 (M74 O127),18:30-Basquet Girona-Casademont Zaragoza,mapping_not_found_for: DAZN BALONCESTO 2
 ?,DAZN (Ver en directo),18:30-Sevilla FC Femenino-Real Madrid Femenino,no_dial_detected
 149,DAZN 2 Bar (M149),18:30-Sevilla FC Femenino-Real Madrid Femenino,mapping_not_found_for: DAZN 2 BAR
+?,La Ocho Mediterráneo,18:30-UD Alzira-CD Utiel,no_dial_detected
 ?,Terreta Audiovisual YouTube,18:30-Jove Español-CD Buñol,no_dial_detected
 ?,DAZN (Ver en directo),18:30-Arsenal-Fulham,no_dial_detected
 148,DAZN 1 Bar (M148),18:30-Arsenal-Fulham,mapping_not_found_for: DAZN 1 BAR
@@ -265,7 +266,7 @@
 ?,LPF Play,01:00-Hebraica Futsal-San Lorenzo Futsal,no_dial_detected
 ?,Apple TV,01:15-Inter Miami CF-Orlando City,no_dial_detected
 ?,Antel TV Internacional,01:30-CA Fénix-Oriental,no_dial_detected
-?,NBA League Pass,01:30-Philadelphia 76ers-Boston Celtics,no_dial_detected
+?,NBA League Pass,01:30-Boston Celtics-Philadelphia 76ers,no_dial_detected
 ?,Fanatiz (Ver en directo),01:30-At. Paranaense-Grêmio,no_dial_detected
 ?,Apple TV,01:30-New York RB-FC Dallas,no_dial_detected
 ?,Apple TV,01:30-Philadelphia Union-Nashville SC,no_dial_detected
@@ -479,6 +480,11 @@
 ?,Aragón Deporte,16:30-Huesca Academy-Damm,no_dial_detected
 ?,Aragón Deporte,16:30-Racing Zaragoza-Gimnastic Manresa,no_dial_detected
 ?,GOL (Síguelo en directo),16:45-AZ Alkmaar-Twente,no_dial_detected
+?,ATP Tennis TV,17:00-J. Sinner-A. Zverev,no_dial_detected
+?,M+ Vamos (8 y 50),17:00-J. Sinner-A. Zverev,no_dial_detected
+304,M+ #Vamos Bar (304),17:00-J. Sinner-A. Zverev,mapping_not_found_for: #VAMOS BAR
+?,Teledeporte,17:00-J. Sinner-A. Zverev,no_dial_detected
+?,RTVE Play,17:00-J. Sinner-A. Zverev,no_dial_detected
 ?,DAZN (Ver en directo),17:00-Y. Al-Ghena-B. Townsend,no_dial_detected
 ?,Antel TV Internacional,17:00-Boston River-Central Español,no_dial_detected
 ?,Real Sporting de Gijón YouTube,17:00-Sporting Gijón B-EI San Martín,no_dial_detected
@@ -515,12 +521,6 @@
 ?,TV FootballClub (Acceder),18:15-Sabadell-Real Murcia,no_dial_detected
 53,Primera Federación (M53 O125),18:15-Sabadell-Real Murcia,mapping_not_found_for: PRIMERA FEDERACIÓN
 ?,Esport3 (Cataluña),18:15-Sabadell-Real Murcia,no_dial_detected
-?,ATP Tennis TV,18:30-J. Sinner-A. Zverev,no_dial_detected
-?,M+ Vamos (8 y 50),18:30-J. Sinner-A. Zverev,no_dial_detected
-304,M+ #Vamos Bar (304),18:30-J. Sinner-A. Zverev,mapping_not_found_for: #VAMOS BAR
-?,Movistar+ Lite,18:30-J. Sinner-A. Zverev,no_dial_detected
-?,Teledeporte,18:30-J. Sinner-A. Zverev,no_dial_detected
-?,RTVE Play,18:30-J. Sinner-A. Zverev,no_dial_detected
 ?,Baloncesto España YouTube,18:30-Casademont Zaragoza-CAB Estepona,no_dial_detected
 ?,FEB TV,18:30-Casademont Zaragoza-CAB Estepona,no_dial_detected
 ?,Aragón Deporte,18:30-Casademont Zaragoza-CAB Estepona,no_dial_detected
@@ -593,6 +593,8 @@
 ?,FIFA+,21:30-Ureña SC-Zamora FC B,no_dial_detected
 ?,FIFA+,21:30-Atlético El Vigía-Real Frontera,no_dial_detected
 ?,FIFA+,21:30-Atlético Barinas-Puerto Cabello B,no_dial_detected
+?,NBA League Pass,21:30-Detroit Pistons-Orlando Magic,no_dial_detected
+?,DAZN (Ver en directo),21:30-Detroit Pistons-Orlando Magic,no_dial_detected
 ?,DAZN (Ver en directo),G.P. Miami (Miami) Carrera,no_dial_detected
 69,DAZN F1 (M69 O104),G.P. Miami (Miami) Carrera,mapping_not_found_for: DAZN F1
 ?,LPF Play,22:00-Racing Córdoba-Deportivo Madryn,no_dial_detected
@@ -604,9 +606,13 @@
 ?,CONMEBOL YouTube,22:00-Perú-Venezuela,no_dial_detected
 ?,Fanatiz (Ver en directo),22:30-Alianza Atlético-Sport Huancayo,no_dial_detected
 ?,Zapping Internacional,22:30-Delfín SC-Mushuc Runa,no_dial_detected
+?,RCN Nuestra Tele,22:30-Deportes Tolima-Deportivo Cali,no_dial_detected
+?,RCN Nuestra Tele,22:30-Medellín-Águilas Doradas Rionegro,no_dial_detected
 ?,Win Sports TV YouTube,22:30-Santa Fe-Inter Bogotá,no_dial_detected
+?,RCN Nuestra Tele,22:30-Santa Fe-Inter Bogotá,no_dial_detected
 ?,RCN Nuestra Tele,22:30-Alianza-Millonarios,no_dial_detected
 ?,Win Sports TV YouTube,22:30-Fortaleza-Bucaramanga,no_dial_detected
+?,RCN Nuestra Tele,22:30-Fortaleza-Bucaramanga,no_dial_detected
 ?,LPF Play,22:30-Newell's Old Boys FS-América del Sud FS,no_dial_detected
 ?,NWSL+,23:00-NJ/NY Gotham FC-Racing Louisville,no_dial_detected
 ?,OneFootball,23:30-Real Monarchs-Portland Timbers 2,no_dial_detected
@@ -630,6 +636,7 @@
 ?,OneFootball,01:00-FC Cincinnati 2-Toronto FC II,no_dial_detected
 ?,LPF Play,01:30-CSD Pinocho-Independiente Futsal,no_dial_detected
 ?,LPF Play,01:30-Club Glorias-Boca Juniors FS,no_dial_detected
+?,NBA League Pass,01:30-Cleveland Cavaliers-Toronto Raptors,no_dial_detected
 ?,Fanatiz (Ver en directo),01:30-Mirassol-Corinthians,no_dial_detected
 ?,OneFootball,02:00-Colorado Rapids 2-Houston Dynamo 2,no_dial_detected
 ?,OneFootball,02:00-Sporting KC II-Tacoma Defiance,no_dial_detected
