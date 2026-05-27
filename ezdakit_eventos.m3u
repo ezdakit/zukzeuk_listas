@@ -1,109 +1,125 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="05-27 (Miércoles) Copa Sudamericana Fase de grupos" tvg-name="00:00-Caracas FC-Botafogo (LIGA DE CAMPEONES 2) (FHD) (c6a)",00:00-Caracas FC-Botafogo (LIGA DE CAMPEONES 2) (FHD) (c6a)
-http://127.0.0.1:6878/ace/getstream?id=c6a3673f6a37b1bd3cf31fdd6404dd33d48cfccb
 #EXTINF:-1 group-title="05-27 (Miércoles) Copa Sudamericana Fase de grupos" tvg-name="00:00-Caracas FC-Botafogo (LIGA DE CAMPEONES 2) (FHD) (4fc)",00:00-Caracas FC-Botafogo (LIGA DE CAMPEONES 2) (FHD) (4fc)
 http://127.0.0.1:6878/ace/getstream?id=4fc6d0331830ad8743abab2fe2473b63bdfbc49f
-#EXTINF:-1 group-title="05-27 (Miércoles) Copa Sudamericana Fase de grupos" tvg-name="00:00-Caracas FC-Botafogo (LIGA DE CAMPEONES 2) (HD) (bb2)",00:00-Caracas FC-Botafogo (LIGA DE CAMPEONES 2) (HD) (bb2)
-http://127.0.0.1:6878/ace/getstream?id=bb26037a253866d341778181eff5c8637240d615
 #EXTINF:-1 group-title="05-27 (Miércoles) Copa Sudamericana Fase de grupos" tvg-name="00:00-Caracas FC-Botafogo (LIGA DE CAMPEONES 2) (FHD) (498)",00:00-Caracas FC-Botafogo (LIGA DE CAMPEONES 2) (FHD) (498)
 http://127.0.0.1:6878/ace/getstream?id=498c56bd00f535e440c392de5af992421a31355c
 #EXTINF:-1 group-title="05-27 (Miércoles) Copa Sudamericana Fase de grupos" tvg-name="00:00-Caracas FC-Botafogo (LIGA DE CAMPEONES 2) (HD) (338)",00:00-Caracas FC-Botafogo (LIGA DE CAMPEONES 2) (HD) (338)
 http://127.0.0.1:6878/ace/getstream?id=338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea
+#EXTINF:-1 group-title="05-27 (Miércoles) Copa Sudamericana Fase de grupos" tvg-name="00:00-Caracas FC-Botafogo (LIGA DE CAMPEONES 2) (HD) (bb2)",00:00-Caracas FC-Botafogo (LIGA DE CAMPEONES 2) (HD) (bb2)
+http://127.0.0.1:6878/ace/getstream?id=bb26037a253866d341778181eff5c8637240d615
+#EXTINF:-1 group-title="05-27 (Miércoles) Copa Sudamericana Fase de grupos" tvg-name="00:00-Caracas FC-Botafogo (LIGA DE CAMPEONES 2) (FHD) (c6a)",00:00-Caracas FC-Botafogo (LIGA DE CAMPEONES 2) (FHD) (c6a)
+http://127.0.0.1:6878/ace/getstream?id=c6a3673f6a37b1bd3cf31fdd6404dd33d48cfccb
 #EXTINF:-1 group-title="05-27 (Miércoles) Albania Open" tvg-name="10:00-1/4 de final femenino FIP Platinum (MOVISTAR DEPORTES) (FHD) (369)",10:00-1/4 de final femenino FIP Platinum (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="05-27 (Miércoles) Albania Open" tvg-name="10:00-1/4 de final femenino FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)",10:00-1/4 de final femenino FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="05-27 (Miércoles) Albania Open" tvg-name="10:00-1/4 de final femenino FIP Platinum (MOVISTAR DEPORTES) (FHD) (f82)",10:00-1/4 de final femenino FIP Platinum (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="05-27 (Miércoles) Albania Open" tvg-name="10:00-1/4 de final femenino FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)",10:00-1/4 de final femenino FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="05-27 (Miércoles) Roland Garros" tvg-name="11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (ef2)",11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (ef2)
 http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
-#EXTINF:-1 group-title="05-27 (Miércoles) Roland Garros" tvg-name="11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (HD) (547)",11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (HD) (547)
-http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
 #EXTINF:-1 group-title="05-27 (Miércoles) Roland Garros" tvg-name="11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (bae)",11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (bae)
 http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
+#EXTINF:-1 group-title="05-27 (Miércoles) Roland Garros" tvg-name="11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (HD) (547)",11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (HD) (547)
+http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
 #EXTINF:-1 group-title="05-27 (Miércoles) Roland Garros" tvg-name="11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (714)",11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (714)
 http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
+#EXTINF:-1 group-title="05-27 (Miércoles) Roland Garros" tvg-name="11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (48a)",11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (48a)
+http://127.0.0.1:6878/ace/getstream?id=48a589dbeab3544662fafd79888aada7d834cfe9
+#EXTINF:-1 group-title="05-27 (Miércoles) Roland Garros" tvg-name="11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (852)",11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (852)
+http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
 #EXTINF:-1 group-title="05-27 (Miércoles) Roland Garros WTA" tvg-name="11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (ef2)",11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (ef2)
 http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
-#EXTINF:-1 group-title="05-27 (Miércoles) Roland Garros WTA" tvg-name="11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (HD) (547)",11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (HD) (547)
-http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
 #EXTINF:-1 group-title="05-27 (Miércoles) Roland Garros WTA" tvg-name="11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (bae)",11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (bae)
 http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
+#EXTINF:-1 group-title="05-27 (Miércoles) Roland Garros WTA" tvg-name="11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (HD) (547)",11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (HD) (547)
+http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
 #EXTINF:-1 group-title="05-27 (Miércoles) Roland Garros WTA" tvg-name="11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (714)",11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (714)
 http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
+#EXTINF:-1 group-title="05-27 (Miércoles) Roland Garros WTA" tvg-name="11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (48a)",11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (48a)
+http://127.0.0.1:6878/ace/getstream?id=48a589dbeab3544662fafd79888aada7d834cfe9
+#EXTINF:-1 group-title="05-27 (Miércoles) Roland Garros WTA" tvg-name="11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (852)",11:05-2ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (852)
+http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
 #EXTINF:-1 group-title="05-27 (Miércoles) Albania Open" tvg-name="12:00-1/4 de final masculino FIP Platinum (MOVISTAR DEPORTES) (FHD) (369)",12:00-1/4 de final masculino FIP Platinum (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="05-27 (Miércoles) Albania Open" tvg-name="12:00-1/4 de final masculino FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)",12:00-1/4 de final masculino FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="05-27 (Miércoles) Albania Open" tvg-name="12:00-1/4 de final masculino FIP Platinum (MOVISTAR DEPORTES) (FHD) (f82)",12:00-1/4 de final masculino FIP Platinum (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="05-27 (Miércoles) Albania Open" tvg-name="12:00-1/4 de final masculino FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)",12:00-1/4 de final masculino FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="05-27 (Miércoles) Albania Open" tvg-name="12:00-1/4 de final masculino FIP Platinum (MOVISTAR DEPORTES 2) (FHD) (73d)",12:00-1/4 de final masculino FIP Platinum (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="05-27 (Miércoles) Albania Open" tvg-name="12:00-1/4 de final masculino FIP Platinum (MOVISTAR DEPORTES 2) (HD) (3af)",12:00-1/4 de final masculino FIP Platinum (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="05-27 (Miércoles) Albania Open" tvg-name="14:00-1/4 de final femenino FIP Platinum (MOVISTAR DEPORTES) (FHD) (369)",14:00-1/4 de final femenino FIP Platinum (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="05-27 (Miércoles) Albania Open" tvg-name="14:00-1/4 de final femenino FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)",14:00-1/4 de final femenino FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="05-27 (Miércoles) Albania Open" tvg-name="14:00-1/4 de final femenino FIP Platinum (MOVISTAR DEPORTES) (FHD) (f82)",14:00-1/4 de final femenino FIP Platinum (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="05-27 (Miércoles) Albania Open" tvg-name="14:00-1/4 de final femenino FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)",14:00-1/4 de final femenino FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="05-27 (Miércoles) Albania Open" tvg-name="14:00-1/4 de final femenino FIP Platinum (MOVISTAR DEPORTES 2) (FHD) (73d)",14:00-1/4 de final femenino FIP Platinum (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="05-27 (Miércoles) Albania Open" tvg-name="14:00-1/4 de final femenino FIP Platinum (MOVISTAR DEPORTES 2) (HD) (3af)",14:00-1/4 de final femenino FIP Platinum (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="05-27 (Miércoles) Albania Open" tvg-name="20:00-1/4 de final masculino FIP Platinum (MOVISTAR DEPORTES) (FHD) (369)",20:00-1/4 de final masculino FIP Platinum (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="05-27 (Miércoles) Albania Open" tvg-name="20:00-1/4 de final masculino FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)",20:00-1/4 de final masculino FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="05-27 (Miércoles) Albania Open" tvg-name="20:00-1/4 de final masculino FIP Platinum (MOVISTAR DEPORTES) (FHD) (f82)",20:00-1/4 de final masculino FIP Platinum (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="05-27 (Miércoles) Albania Open" tvg-name="20:00-1/4 de final masculino FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)",20:00-1/4 de final masculino FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="05-29 (Viernes) Roland Garros" tvg-name="11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (ef2)",11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (ef2)
 http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
-#EXTINF:-1 group-title="05-29 (Viernes) Roland Garros" tvg-name="11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (HD) (547)",11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (HD) (547)
-http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
 #EXTINF:-1 group-title="05-29 (Viernes) Roland Garros" tvg-name="11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (bae)",11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (bae)
 http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
+#EXTINF:-1 group-title="05-29 (Viernes) Roland Garros" tvg-name="11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (HD) (547)",11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (HD) (547)
+http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
 #EXTINF:-1 group-title="05-29 (Viernes) Roland Garros" tvg-name="11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (714)",11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (714)
 http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
+#EXTINF:-1 group-title="05-29 (Viernes) Roland Garros" tvg-name="11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (48a)",11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (48a)
+http://127.0.0.1:6878/ace/getstream?id=48a589dbeab3544662fafd79888aada7d834cfe9
+#EXTINF:-1 group-title="05-29 (Viernes) Roland Garros" tvg-name="11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (852)",11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (852)
+http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
 #EXTINF:-1 group-title="05-29 (Viernes) Roland Garros WTA" tvg-name="11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (ef2)",11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (ef2)
 http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
-#EXTINF:-1 group-title="05-29 (Viernes) Roland Garros WTA" tvg-name="11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (HD) (547)",11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (HD) (547)
-http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
 #EXTINF:-1 group-title="05-29 (Viernes) Roland Garros WTA" tvg-name="11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (bae)",11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (bae)
 http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
+#EXTINF:-1 group-title="05-29 (Viernes) Roland Garros WTA" tvg-name="11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (HD) (547)",11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (HD) (547)
+http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
 #EXTINF:-1 group-title="05-29 (Viernes) Roland Garros WTA" tvg-name="11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (714)",11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (714)
 http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
+#EXTINF:-1 group-title="05-29 (Viernes) Roland Garros WTA" tvg-name="11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (48a)",11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (48a)
+http://127.0.0.1:6878/ace/getstream?id=48a589dbeab3544662fafd79888aada7d834cfe9
+#EXTINF:-1 group-title="05-29 (Viernes) Roland Garros WTA" tvg-name="11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (852)",11:05-3ª Ronda Grand Slam (EUROSPORT 4K) (FHD) (852)
+http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
 #EXTINF:-1 group-title="05-29 (Viernes) Albania Open" tvg-name="13:00-Semifinal Femenina FIP Platinum (MOVISTAR DEPORTES) (FHD) (369)",13:00-Semifinal Femenina FIP Platinum (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="05-29 (Viernes) Albania Open" tvg-name="13:00-Semifinal Femenina FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)",13:00-Semifinal Femenina FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="05-29 (Viernes) Albania Open" tvg-name="13:00-Semifinal Femenina FIP Platinum (MOVISTAR DEPORTES) (FHD) (f82)",13:00-Semifinal Femenina FIP Platinum (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="05-29 (Viernes) Albania Open" tvg-name="13:00-Semifinal Femenina FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)",13:00-Semifinal Femenina FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="05-29 (Viernes) Albania Open" tvg-name="15:00-Semifinal Femenina FIP Platinum (MOVISTAR DEPORTES) (FHD) (369)",15:00-Semifinal Femenina FIP Platinum (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="05-29 (Viernes) Albania Open" tvg-name="15:00-Semifinal Femenina FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)",15:00-Semifinal Femenina FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="05-29 (Viernes) Albania Open" tvg-name="15:00-Semifinal Femenina FIP Platinum (MOVISTAR DEPORTES) (FHD) (f82)",15:00-Semifinal Femenina FIP Platinum (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="05-29 (Viernes) Albania Open" tvg-name="15:00-Semifinal Femenina FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)",15:00-Semifinal Femenina FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="05-29 (Viernes) Albania Open" tvg-name="17:00-Semifinal Masculina FIP Platinum (MOVISTAR DEPORTES) (FHD) (369)",17:00-Semifinal Masculina FIP Platinum (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="05-29 (Viernes) Albania Open" tvg-name="17:00-Semifinal Masculina FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)",17:00-Semifinal Masculina FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="05-29 (Viernes) Albania Open" tvg-name="17:00-Semifinal Masculina FIP Platinum (MOVISTAR DEPORTES) (FHD) (f82)",17:00-Semifinal Masculina FIP Platinum (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="05-29 (Viernes) Albania Open" tvg-name="17:00-Semifinal Masculina FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)",17:00-Semifinal Masculina FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="05-29 (Viernes) Albania Open" tvg-name="19:00-Semifinal Masculina FIP Platinum (MOVISTAR DEPORTES) (FHD) (369)",19:00-Semifinal Masculina FIP Platinum (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="05-29 (Viernes) Albania Open" tvg-name="19:00-Semifinal Masculina FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)",19:00-Semifinal Masculina FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="05-29 (Viernes) Albania Open" tvg-name="19:00-Semifinal Masculina FIP Platinum (MOVISTAR DEPORTES) (FHD) (f82)",19:00-Semifinal Masculina FIP Platinum (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="05-29 (Viernes) Liga Endesa Liga Regular" tvg-name="20:30-Baskonia-Unicaja Málaga (MOVISTAR PLUS) (FHD) (b6f)",20:30-Baskonia-Unicaja Málaga (MOVISTAR PLUS) (FHD) (b6f)
-http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
-#EXTINF:-1 group-title="05-29 (Viernes) Liga Endesa Liga Regular" tvg-name="20:30-Baskonia-Unicaja Málaga (MOVISTAR PLUS) (FHD) (586)",20:30-Baskonia-Unicaja Málaga (MOVISTAR PLUS) (FHD) (586)
-http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
+#EXTINF:-1 group-title="05-29 (Viernes) Albania Open" tvg-name="19:00-Semifinal Masculina FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)",19:00-Semifinal Masculina FIP Platinum (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="05-29 (Viernes) Liga Endesa Liga Regular" tvg-name="20:30-Baskonia-Unicaja Málaga (MOVISTAR PLUS) (FHD) (199)",20:30-Baskonia-Unicaja Málaga (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
+#EXTINF:-1 group-title="05-29 (Viernes) Liga Endesa Liga Regular" tvg-name="20:30-Baskonia-Unicaja Málaga (MOVISTAR PLUS) (FHD) (586)",20:30-Baskonia-Unicaja Málaga (MOVISTAR PLUS) (FHD) (586)
+http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
+#EXTINF:-1 group-title="05-29 (Viernes) Liga Endesa Liga Regular" tvg-name="20:30-Baskonia-Unicaja Málaga (MOVISTAR PLUS) (FHD) (b6f)",20:30-Baskonia-Unicaja Málaga (MOVISTAR PLUS) (FHD) (b6f)
+http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
 #EXTINF:-1 group-title="05-29 (Viernes) Liga Endesa Liga Regular" tvg-name="20:30-Baskonia-Unicaja Málaga (MOVISTAR PLUS) (FHD) (1ab)",20:30-Baskonia-Unicaja Málaga (MOVISTAR PLUS) (FHD) (1ab)
 http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
