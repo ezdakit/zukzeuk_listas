@@ -1,165 +1,73 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="06-01 (Lunes) Roland Garros 1/8 de final" tvg-name="11:10-F. Cobolli-Z. Svajda (EUROSPORT 4K) (FHD) (714)",11:10-F. Cobolli-Z. Svajda (EUROSPORT 4K) (FHD) (714)
-http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
-#EXTINF:-1 group-title="06-01 (Lunes) Roland Garros 1/8 de final" tvg-name="11:10-F. Cobolli-Z. Svajda (EUROSPORT 4K) (FHD) (ef2)",11:10-F. Cobolli-Z. Svajda (EUROSPORT 4K) (FHD) (ef2)
-http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
-#EXTINF:-1 group-title="06-01 (Lunes) Roland Garros 1/8 de final" tvg-name="11:10-F. Cobolli-Z. Svajda (EUROSPORT 4K) (HD) (547)",11:10-F. Cobolli-Z. Svajda (EUROSPORT 4K) (HD) (547)
+#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA" tvg-name="11:05-1/4 de Final Grand Slam (EUROSPORT 4K) (HD) (547)",11:05-1/4 de Final Grand Slam (EUROSPORT 4K) (HD) (547)
 http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
-#EXTINF:-1 group-title="06-01 (Lunes) Roland Garros 1/8 de final" tvg-name="11:10-F. Cobolli-Z. Svajda (EUROSPORT 4K) (FHD) (bae)",11:10-F. Cobolli-Z. Svajda (EUROSPORT 4K) (FHD) (bae)
-http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
-#EXTINF:-1 group-title="06-01 (Lunes) Roland Garros 1/8 de final" tvg-name="11:10-F. Cobolli-Z. Svajda (EUROSPORT 4K) (HD) (313)",11:10-F. Cobolli-Z. Svajda (EUROSPORT 4K) (HD) (313)
-http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
-#EXTINF:-1 group-title="06-01 (Lunes) Roland Garros 1/8 de final" tvg-name="11:10-F. Cobolli-Z. Svajda (EUROSPORT 4K) (FHD) (852)",11:10-F. Cobolli-Z. Svajda (EUROSPORT 4K) (FHD) (852)
-http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
-#EXTINF:-1 group-title="06-01 (Lunes) Roland Garros WTA 1/8 de final" tvg-name="13:00-M. Chwalinska-D. Parry (EUROSPORT 4K) (FHD) (714)",13:00-M. Chwalinska-D. Parry (EUROSPORT 4K) (FHD) (714)
+#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA" tvg-name="11:05-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (714)",11:05-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (714)
 http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
-#EXTINF:-1 group-title="06-01 (Lunes) Roland Garros WTA 1/8 de final" tvg-name="13:00-M. Chwalinska-D. Parry (EUROSPORT 4K) (FHD) (ef2)",13:00-M. Chwalinska-D. Parry (EUROSPORT 4K) (FHD) (ef2)
-http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
-#EXTINF:-1 group-title="06-01 (Lunes) Roland Garros WTA 1/8 de final" tvg-name="13:00-M. Chwalinska-D. Parry (EUROSPORT 4K) (HD) (547)",13:00-M. Chwalinska-D. Parry (EUROSPORT 4K) (HD) (547)
-http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
-#EXTINF:-1 group-title="06-01 (Lunes) Roland Garros WTA 1/8 de final" tvg-name="13:00-M. Chwalinska-D. Parry (EUROSPORT 4K) (FHD) (bae)",13:00-M. Chwalinska-D. Parry (EUROSPORT 4K) (FHD) (bae)
+#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA" tvg-name="11:05-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (bae)",11:05-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (bae)
 http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
-#EXTINF:-1 group-title="06-01 (Lunes) Roland Garros WTA 1/8 de final" tvg-name="13:00-M. Chwalinska-D. Parry (EUROSPORT 4K) (HD) (313)",13:00-M. Chwalinska-D. Parry (EUROSPORT 4K) (HD) (313)
-http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
-#EXTINF:-1 group-title="06-01 (Lunes) Roland Garros WTA 1/8 de final" tvg-name="13:00-M. Chwalinska-D. Parry (EUROSPORT 4K) (FHD) (852)",13:00-M. Chwalinska-D. Parry (EUROSPORT 4K) (FHD) (852)
+#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA" tvg-name="11:05-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (ef2)",11:05-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (ef2)
+http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
+#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA" tvg-name="11:05-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (852)",11:05-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (852)
 http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
-#EXTINF:-1 group-title="06-01 (Lunes) Roland Garros 1/8 de final" tvg-name="17:10-F. Auger-Aliassime-A. Tabilo (EUROSPORT 4K) (FHD) (714)",17:10-F. Auger-Aliassime-A. Tabilo (EUROSPORT 4K) (FHD) (714)
+#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA" tvg-name="11:05-1/4 de Final Grand Slam (EUROSPORT 4K) (HD) (313)",11:05-1/4 de Final Grand Slam (EUROSPORT 4K) (HD) (313)
+http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
+#EXTINF:-1 group-title="06-02 (Martes) Roland Garros" tvg-name="15:30-1/4 de Final Grand Slam (EUROSPORT 4K) (HD) (547)",15:30-1/4 de Final Grand Slam (EUROSPORT 4K) (HD) (547)
+http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
+#EXTINF:-1 group-title="06-02 (Martes) Roland Garros" tvg-name="15:30-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (714)",15:30-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (714)
 http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
-#EXTINF:-1 group-title="06-01 (Lunes) Roland Garros 1/8 de final" tvg-name="17:10-F. Auger-Aliassime-A. Tabilo (EUROSPORT 4K) (FHD) (ef2)",17:10-F. Auger-Aliassime-A. Tabilo (EUROSPORT 4K) (FHD) (ef2)
-http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
-#EXTINF:-1 group-title="06-01 (Lunes) Roland Garros 1/8 de final" tvg-name="17:10-F. Auger-Aliassime-A. Tabilo (EUROSPORT 4K) (HD) (547)",17:10-F. Auger-Aliassime-A. Tabilo (EUROSPORT 4K) (HD) (547)
-http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
-#EXTINF:-1 group-title="06-01 (Lunes) Roland Garros 1/8 de final" tvg-name="17:10-F. Auger-Aliassime-A. Tabilo (EUROSPORT 4K) (FHD) (bae)",17:10-F. Auger-Aliassime-A. Tabilo (EUROSPORT 4K) (FHD) (bae)
+#EXTINF:-1 group-title="06-02 (Martes) Roland Garros" tvg-name="15:30-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (bae)",15:30-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (bae)
 http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
-#EXTINF:-1 group-title="06-01 (Lunes) Roland Garros 1/8 de final" tvg-name="17:10-F. Auger-Aliassime-A. Tabilo (EUROSPORT 4K) (HD) (313)",17:10-F. Auger-Aliassime-A. Tabilo (EUROSPORT 4K) (HD) (313)
-http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
-#EXTINF:-1 group-title="06-01 (Lunes) Roland Garros 1/8 de final" tvg-name="17:10-F. Auger-Aliassime-A. Tabilo (EUROSPORT 4K) (FHD) (852)",17:10-F. Auger-Aliassime-A. Tabilo (EUROSPORT 4K) (FHD) (852)
-http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
-#EXTINF:-1 group-title="06-01 (Lunes) Roland Garros WTA 1/8 de final" tvg-name="20:15-A. Sabalenka-N. Osaka (EUROSPORT 4K) (FHD) (714)",20:15-A. Sabalenka-N. Osaka (EUROSPORT 4K) (FHD) (714)
-http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
-#EXTINF:-1 group-title="06-01 (Lunes) Roland Garros WTA 1/8 de final" tvg-name="20:15-A. Sabalenka-N. Osaka (EUROSPORT 4K) (FHD) (ef2)",20:15-A. Sabalenka-N. Osaka (EUROSPORT 4K) (FHD) (ef2)
+#EXTINF:-1 group-title="06-02 (Martes) Roland Garros" tvg-name="15:30-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (ef2)",15:30-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (ef2)
 http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
-#EXTINF:-1 group-title="06-01 (Lunes) Roland Garros WTA 1/8 de final" tvg-name="20:15-A. Sabalenka-N. Osaka (EUROSPORT 4K) (HD) (547)",20:15-A. Sabalenka-N. Osaka (EUROSPORT 4K) (HD) (547)
-http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
-#EXTINF:-1 group-title="06-01 (Lunes) Roland Garros WTA 1/8 de final" tvg-name="20:15-A. Sabalenka-N. Osaka (EUROSPORT 4K) (FHD) (bae)",20:15-A. Sabalenka-N. Osaka (EUROSPORT 4K) (FHD) (bae)
-http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
-#EXTINF:-1 group-title="06-01 (Lunes) Roland Garros WTA 1/8 de final" tvg-name="20:15-A. Sabalenka-N. Osaka (EUROSPORT 4K) (HD) (313)",20:15-A. Sabalenka-N. Osaka (EUROSPORT 4K) (HD) (313)
-http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
-#EXTINF:-1 group-title="06-01 (Lunes) Roland Garros WTA 1/8 de final" tvg-name="20:15-A. Sabalenka-N. Osaka (EUROSPORT 4K) (FHD) (852)",20:15-A. Sabalenka-N. Osaka (EUROSPORT 4K) (FHD) (852)
+#EXTINF:-1 group-title="06-02 (Martes) Roland Garros" tvg-name="15:30-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (852)",15:30-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (852)
 http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Canadá-Uzbekistán (LIGA DE CAMPEONES 2) (FHD) (c6a)",03:00-Canadá-Uzbekistán (LIGA DE CAMPEONES 2) (FHD) (c6a)
-http://127.0.0.1:6878/ace/getstream?id=c6a3673f6a37b1bd3cf31fdd6404dd33d48cfccb
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Canadá-Uzbekistán (LIGA DE CAMPEONES 2) (HD) (338)",03:00-Canadá-Uzbekistán (LIGA DE CAMPEONES 2) (HD) (338)
-http://127.0.0.1:6878/ace/getstream?id=338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Canadá-Uzbekistán (LIGA DE CAMPEONES 2) (FHD) (4fc)",03:00-Canadá-Uzbekistán (LIGA DE CAMPEONES 2) (FHD) (4fc)
-http://127.0.0.1:6878/ace/getstream?id=4fc6d0331830ad8743abab2fe2473b63bdfbc49f
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Canadá-Uzbekistán (LIGA DE CAMPEONES 2) (FHD) (498)",03:00-Canadá-Uzbekistán (LIGA DE CAMPEONES 2) (FHD) (498)
-http://127.0.0.1:6878/ace/getstream?id=498c56bd00f535e440c392de5af992421a31355c
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Canadá-Uzbekistán (LIGA DE CAMPEONES 2) (HD) (bb2)",03:00-Canadá-Uzbekistán (LIGA DE CAMPEONES 2) (HD) (bb2)
-http://127.0.0.1:6878/ace/getstream?id=bb26037a253866d341778181eff5c8637240d615
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Canadá-Uzbekistán (LIGA DE CAMPEONES 2) (FHD) (74a)",03:00-Canadá-Uzbekistán (LIGA DE CAMPEONES 2) (FHD) (74a)
-http://127.0.0.1:6878/ace/getstream?id=74ab4e4ec7e2da001f473ca40893b7307b8029c5
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (FHD) (afb)",03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (FHD) (0f7)",03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (HD) (b02)",03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (UHD) (152)",03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (UHD) (152)
-http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (FHD) (778)",03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (FHD) (778)
-http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (HD) (2b5)",03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (HD) (2b5)
+#EXTINF:-1 group-title="06-02 (Martes) Roland Garros" tvg-name="15:30-1/4 de Final Grand Slam (EUROSPORT 4K) (HD) (313)",15:30-1/4 de Final Grand Slam (EUROSPORT 4K) (HD) (313)
+http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
+#EXTINF:-1 group-title="06-04 (Jueves) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (HD) (2b5)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (HD) (2b5)
 http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (HD) (e57)",03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (FHD) (afb)",03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (FHD) (afb)
+#EXTINF:-1 group-title="06-04 (Jueves) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (afb)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="06-04 (Jueves) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (HD) (b02)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
+#EXTINF:-1 group-title="06-04 (Jueves) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (0f7)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
+#EXTINF:-1 group-title="06-04 (Jueves) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (afb)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (FHD) (97d)",03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (FHD) (97d)
+#EXTINF:-1 group-title="06-04 (Jueves) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (97d)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (97d)
 http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (HD) (931)",03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (HD) (931)
-http://127.0.0.1:6878/ace/getstream?id=931fd4c24398a24beb9b6ede856ca34339ff2c22
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (FHD) (91a)",03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (FHD) (91a)
+#EXTINF:-1 group-title="06-04 (Jueves) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (HD) (e57)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="06-04 (Jueves) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (UHD) (152)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (UHD) (152)
+http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
+#EXTINF:-1 group-title="06-04 (Jueves) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (778)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (778)
+http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
+#EXTINF:-1 group-title="06-04 (Jueves) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (91a)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (91a)
 http://127.0.0.1:6878/ace/getstream?id=91af434b0bb521189286f8cbbab1aed39d7536fe
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA 1/4 de Final" tvg-name="11:00-M. Andreeva-S. Cirstea (EUROSPORT 4K) (FHD) (714)",11:00-M. Andreeva-S. Cirstea (EUROSPORT 4K) (FHD) (714)
-http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA 1/4 de Final" tvg-name="11:00-M. Andreeva-S. Cirstea (EUROSPORT 4K) (FHD) (ef2)",11:00-M. Andreeva-S. Cirstea (EUROSPORT 4K) (FHD) (ef2)
-http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA 1/4 de Final" tvg-name="11:00-M. Andreeva-S. Cirstea (EUROSPORT 4K) (HD) (547)",11:00-M. Andreeva-S. Cirstea (EUROSPORT 4K) (HD) (547)
+#EXTINF:-1 group-title="06-04 (Jueves) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (HD) (931)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (HD) (931)
+http://127.0.0.1:6878/ace/getstream?id=931fd4c24398a24beb9b6ede856ca34339ff2c22
+#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros WTA" tvg-name="15:00-Semifinal 1 Grand Slam (EUROSPORT 4K) (HD) (547)",15:00-Semifinal 1 Grand Slam (EUROSPORT 4K) (HD) (547)
 http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA 1/4 de Final" tvg-name="11:00-M. Andreeva-S. Cirstea (EUROSPORT 4K) (FHD) (bae)",11:00-M. Andreeva-S. Cirstea (EUROSPORT 4K) (FHD) (bae)
-http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA 1/4 de Final" tvg-name="11:00-M. Andreeva-S. Cirstea (EUROSPORT 4K) (HD) (313)",11:00-M. Andreeva-S. Cirstea (EUROSPORT 4K) (HD) (313)
-http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA 1/4 de Final" tvg-name="11:00-M. Andreeva-S. Cirstea (EUROSPORT 4K) (FHD) (852)",11:00-M. Andreeva-S. Cirstea (EUROSPORT 4K) (FHD) (852)
-http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA 1/4 de Final" tvg-name="12:30-E. Svitolina-M. Kostyuk (EUROSPORT 4K) (FHD) (714)",12:30-E. Svitolina-M. Kostyuk (EUROSPORT 4K) (FHD) (714)
+#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros WTA" tvg-name="15:00-Semifinal 1 Grand Slam (EUROSPORT 4K) (FHD) (714)",15:00-Semifinal 1 Grand Slam (EUROSPORT 4K) (FHD) (714)
 http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA 1/4 de Final" tvg-name="12:30-E. Svitolina-M. Kostyuk (EUROSPORT 4K) (FHD) (ef2)",12:30-E. Svitolina-M. Kostyuk (EUROSPORT 4K) (FHD) (ef2)
-http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA 1/4 de Final" tvg-name="12:30-E. Svitolina-M. Kostyuk (EUROSPORT 4K) (HD) (547)",12:30-E. Svitolina-M. Kostyuk (EUROSPORT 4K) (HD) (547)
-http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA 1/4 de Final" tvg-name="12:30-E. Svitolina-M. Kostyuk (EUROSPORT 4K) (FHD) (bae)",12:30-E. Svitolina-M. Kostyuk (EUROSPORT 4K) (FHD) (bae)
+#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros WTA" tvg-name="15:00-Semifinal 1 Grand Slam (EUROSPORT 4K) (FHD) (bae)",15:00-Semifinal 1 Grand Slam (EUROSPORT 4K) (FHD) (bae)
 http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA 1/4 de Final" tvg-name="12:30-E. Svitolina-M. Kostyuk (EUROSPORT 4K) (HD) (313)",12:30-E. Svitolina-M. Kostyuk (EUROSPORT 4K) (HD) (313)
-http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA 1/4 de Final" tvg-name="12:30-E. Svitolina-M. Kostyuk (EUROSPORT 4K) (FHD) (852)",12:30-E. Svitolina-M. Kostyuk (EUROSPORT 4K) (FHD) (852)
+#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros WTA" tvg-name="15:00-Semifinal 1 Grand Slam (EUROSPORT 4K) (FHD) (ef2)",15:00-Semifinal 1 Grand Slam (EUROSPORT 4K) (FHD) (ef2)
+http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
+#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros WTA" tvg-name="15:00-Semifinal 1 Grand Slam (EUROSPORT 4K) (FHD) (852)",15:00-Semifinal 1 Grand Slam (EUROSPORT 4K) (FHD) (852)
 http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros 1/4 de Final" tvg-name="14:00-R. Jódar-A. Zverev (EUROSPORT 4K) (FHD) (714)",14:00-R. Jódar-A. Zverev (EUROSPORT 4K) (FHD) (714)
+#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros WTA" tvg-name="15:00-Semifinal 1 Grand Slam (EUROSPORT 4K) (HD) (313)",15:00-Semifinal 1 Grand Slam (EUROSPORT 4K) (HD) (313)
+http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
+#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros WTA" tvg-name="17:00-Semifinal 2 Grand Slam (EUROSPORT 4K) (HD) (547)",17:00-Semifinal 2 Grand Slam (EUROSPORT 4K) (HD) (547)
+http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
+#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros WTA" tvg-name="17:00-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (714)",17:00-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (714)
 http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros 1/4 de Final" tvg-name="14:00-R. Jódar-A. Zverev (EUROSPORT 4K) (FHD) (ef2)",14:00-R. Jódar-A. Zverev (EUROSPORT 4K) (FHD) (ef2)
-http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros 1/4 de Final" tvg-name="14:00-R. Jódar-A. Zverev (EUROSPORT 4K) (HD) (547)",14:00-R. Jódar-A. Zverev (EUROSPORT 4K) (HD) (547)
-http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros 1/4 de Final" tvg-name="14:00-R. Jódar-A. Zverev (EUROSPORT 4K) (FHD) (bae)",14:00-R. Jódar-A. Zverev (EUROSPORT 4K) (FHD) (bae)
+#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros WTA" tvg-name="17:00-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (bae)",17:00-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (bae)
 http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros 1/4 de Final" tvg-name="14:00-R. Jódar-A. Zverev (EUROSPORT 4K) (HD) (313)",14:00-R. Jódar-A. Zverev (EUROSPORT 4K) (HD) (313)
-http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros 1/4 de Final" tvg-name="14:00-R. Jódar-A. Zverev (EUROSPORT 4K) (FHD) (852)",14:00-R. Jódar-A. Zverev (EUROSPORT 4K) (FHD) (852)
-http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros 1/4 de Final" tvg-name="20:15-J. Mensik-J. Fonseca (EUROSPORT 4K) (FHD) (714)",20:15-J. Mensik-J. Fonseca (EUROSPORT 4K) (FHD) (714)
-http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros 1/4 de Final" tvg-name="20:15-J. Mensik-J. Fonseca (EUROSPORT 4K) (FHD) (ef2)",20:15-J. Mensik-J. Fonseca (EUROSPORT 4K) (FHD) (ef2)
+#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros WTA" tvg-name="17:00-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (ef2)",17:00-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (ef2)
 http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros 1/4 de Final" tvg-name="20:15-J. Mensik-J. Fonseca (EUROSPORT 4K) (HD) (547)",20:15-J. Mensik-J. Fonseca (EUROSPORT 4K) (HD) (547)
-http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros 1/4 de Final" tvg-name="20:15-J. Mensik-J. Fonseca (EUROSPORT 4K) (FHD) (bae)",20:15-J. Mensik-J. Fonseca (EUROSPORT 4K) (FHD) (bae)
-http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros 1/4 de Final" tvg-name="20:15-J. Mensik-J. Fonseca (EUROSPORT 4K) (HD) (313)",20:15-J. Mensik-J. Fonseca (EUROSPORT 4K) (HD) (313)
-http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros 1/4 de Final" tvg-name="20:15-J. Mensik-J. Fonseca (EUROSPORT 4K) (FHD) (852)",20:15-J. Mensik-J. Fonseca (EUROSPORT 4K) (FHD) (852)
+#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros WTA" tvg-name="17:00-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (852)",17:00-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (852)
 http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
-#EXTINF:-1 group-title="06-02 (Martes) Liga Endesa Playoffs 1/4 Final" tvg-name="21:00-Real Madrid Baloncesto-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (199)",21:00-Real Madrid Baloncesto-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (199)
-http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 group-title="06-02 (Martes) Liga Endesa Playoffs 1/4 Final" tvg-name="21:00-Real Madrid Baloncesto-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (b6f)",21:00-Real Madrid Baloncesto-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (b6f)
-http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
-#EXTINF:-1 group-title="06-02 (Martes) Liga Endesa Playoffs 1/4 Final" tvg-name="21:00-Real Madrid Baloncesto-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (586)",21:00-Real Madrid Baloncesto-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (586)
-http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
-#EXTINF:-1 group-title="06-02 (Martes) Liga Endesa Playoffs 1/4 Final" tvg-name="21:00-Real Madrid Baloncesto-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (1ab)",21:00-Real Madrid Baloncesto-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (1ab)
-http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA" tvg-name="11:00-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (714)",11:00-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (714)
-http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA" tvg-name="11:00-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (ef2)",11:00-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (ef2)
-http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA" tvg-name="11:00-1/4 de Final Grand Slam (EUROSPORT 4K) (HD) (547)",11:00-1/4 de Final Grand Slam (EUROSPORT 4K) (HD) (547)
-http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA" tvg-name="11:00-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (bae)",11:00-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (bae)
-http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA" tvg-name="11:00-1/4 de Final Grand Slam (EUROSPORT 4K) (HD) (313)",11:00-1/4 de Final Grand Slam (EUROSPORT 4K) (HD) (313)
+#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros WTA" tvg-name="17:00-Semifinal 2 Grand Slam (EUROSPORT 4K) (HD) (313)",17:00-Semifinal 2 Grand Slam (EUROSPORT 4K) (HD) (313)
 http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA" tvg-name="11:00-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (852)",11:00-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (852)
-http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros" tvg-name="15:30-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (714)",15:30-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (714)
-http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros" tvg-name="15:30-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (ef2)",15:30-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (ef2)
-http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros" tvg-name="15:30-1/4 de Final Grand Slam (EUROSPORT 4K) (HD) (547)",15:30-1/4 de Final Grand Slam (EUROSPORT 4K) (HD) (547)
-http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros" tvg-name="15:30-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (bae)",15:30-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (bae)
-http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros" tvg-name="15:30-1/4 de Final Grand Slam (EUROSPORT 4K) (HD) (313)",15:30-1/4 de Final Grand Slam (EUROSPORT 4K) (HD) (313)
-http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros" tvg-name="15:30-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (852)",15:30-1/4 de Final Grand Slam (EUROSPORT 4K) (FHD) (852)
-http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
