@@ -1,217 +1,415 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Canadá-Uzbekistán (LIGA DE CAMPEONES 2) (FHD) (4fc)",03:00-Canadá-Uzbekistán (LIGA DE CAMPEONES 2) (FHD) (4fc)
-http://127.0.0.1:6878/ace/getstream?id=4fc6d0331830ad8743abab2fe2473b63bdfbc49f
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Canadá-Uzbekistán (LIGA DE CAMPEONES 2) (FHD) (498)",03:00-Canadá-Uzbekistán (LIGA DE CAMPEONES 2) (FHD) (498)
-http://127.0.0.1:6878/ace/getstream?id=498c56bd00f535e440c392de5af992421a31355c
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Canadá-Uzbekistán (LIGA DE CAMPEONES 2) (HD) (338)",03:00-Canadá-Uzbekistán (LIGA DE CAMPEONES 2) (HD) (338)
-http://127.0.0.1:6878/ace/getstream?id=338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Canadá-Uzbekistán (LIGA DE CAMPEONES 2) (HD) (bb2)",03:00-Canadá-Uzbekistán (LIGA DE CAMPEONES 2) (HD) (bb2)
-http://127.0.0.1:6878/ace/getstream?id=bb26037a253866d341778181eff5c8637240d615
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Canadá-Uzbekistán (LIGA DE CAMPEONES 2) (FHD) (c6a)",03:00-Canadá-Uzbekistán (LIGA DE CAMPEONES 2) (FHD) (c6a)
-http://127.0.0.1:6878/ace/getstream?id=c6a3673f6a37b1bd3cf31fdd6404dd33d48cfccb
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Canadá-Uzbekistán (LIGA DE CAMPEONES 2) (FHD) (74a)",03:00-Canadá-Uzbekistán (LIGA DE CAMPEONES 2) (FHD) (74a)
-http://127.0.0.1:6878/ace/getstream?id=74ab4e4ec7e2da001f473ca40893b7307b8029c5
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (HD) (e57)",03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (FHD) (afb)",03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (FHD) (778)",03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (FHD) (778)
+#EXTINF:-1 group-title="06-03 (Miércoles) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (778)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (778)
 http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (FHD) (0f7)",03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (FHD) (afb)",03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (FHD) (afb)
+#EXTINF:-1 group-title="06-03 (Miércoles) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (afb)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (UHD) (152)",03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (UHD) (152)
+#EXTINF:-1 group-title="06-03 (Miércoles) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (UHD) (152)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (UHD) (152)
 http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (HD) (b02)",03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (FHD) (97d)",03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (FHD) (97d)
+#EXTINF:-1 group-title="06-03 (Miércoles) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (0f7)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
+#EXTINF:-1 group-title="06-03 (Miércoles) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (97d)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (97d)
 http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (HD) (2b5)",03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (HD) (2b5)
+#EXTINF:-1 group-title="06-03 (Miércoles) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (HD) (2b5)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (HD) (2b5)
 http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (HD) (931)",03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (HD) (931)
-http://127.0.0.1:6878/ace/getstream?id=931fd4c24398a24beb9b6ede856ca34339ff2c22
-#EXTINF:-1 group-title="06-02 (Martes) Amistoso" tvg-name="03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (FHD) (91a)",03:00-Trinidad y Tobago-Corea del Sur (LIGA DE CAMPEONES) (FHD) (91a)
+#EXTINF:-1 group-title="06-03 (Miércoles) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (HD) (b02)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
+#EXTINF:-1 group-title="06-03 (Miércoles) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (afb)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="06-03 (Miércoles) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (HD) (e57)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="06-03 (Miércoles) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (91a)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (91a)
 http://127.0.0.1:6878/ace/getstream?id=91af434b0bb521189286f8cbbab1aed39d7536fe
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA 1/4 de Final" tvg-name="11:00-M. Andreeva-S. Cirstea (EUROSPORT 4K) (HD) (547)",11:00-M. Andreeva-S. Cirstea (EUROSPORT 4K) (HD) (547)
-http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA 1/4 de Final" tvg-name="11:00-M. Andreeva-S. Cirstea (EUROSPORT 4K) (FHD) (ef2)",11:00-M. Andreeva-S. Cirstea (EUROSPORT 4K) (FHD) (ef2)
-http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA 1/4 de Final" tvg-name="11:00-M. Andreeva-S. Cirstea (EUROSPORT 4K) (FHD) (bae)",11:00-M. Andreeva-S. Cirstea (EUROSPORT 4K) (FHD) (bae)
-http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA 1/4 de Final" tvg-name="11:00-M. Andreeva-S. Cirstea (EUROSPORT 4K) (FHD) (714)",11:00-M. Andreeva-S. Cirstea (EUROSPORT 4K) (FHD) (714)
+#EXTINF:-1 group-title="06-03 (Miércoles) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (HD) (931)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (HD) (931)
+http://127.0.0.1:6878/ace/getstream?id=931fd4c24398a24beb9b6ede856ca34339ff2c22
+#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros" tvg-name="12:00-Final Dobles Mixtos Grand Slam (EUROSPORT 4K) (FHD) (714)",12:00-Final Dobles Mixtos Grand Slam (EUROSPORT 4K) (FHD) (714)
 http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA 1/4 de Final" tvg-name="11:00-M. Andreeva-S. Cirstea (EUROSPORT 4K) (HD) (313)",11:00-M. Andreeva-S. Cirstea (EUROSPORT 4K) (HD) (313)
-http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA 1/4 de Final" tvg-name="11:00-M. Andreeva-S. Cirstea (EUROSPORT 4K) (FHD) (852)",11:00-M. Andreeva-S. Cirstea (EUROSPORT 4K) (FHD) (852)
-http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA 1/4 de Final" tvg-name="12:30-E. Svitolina-M. Kostyuk (EUROSPORT 4K) (HD) (547)",12:30-E. Svitolina-M. Kostyuk (EUROSPORT 4K) (HD) (547)
-http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA 1/4 de Final" tvg-name="12:30-E. Svitolina-M. Kostyuk (EUROSPORT 4K) (FHD) (ef2)",12:30-E. Svitolina-M. Kostyuk (EUROSPORT 4K) (FHD) (ef2)
+#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros" tvg-name="12:00-Final Dobles Mixtos Grand Slam (EUROSPORT 4K) (FHD) (ef2)",12:00-Final Dobles Mixtos Grand Slam (EUROSPORT 4K) (FHD) (ef2)
 http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA 1/4 de Final" tvg-name="12:30-E. Svitolina-M. Kostyuk (EUROSPORT 4K) (FHD) (bae)",12:30-E. Svitolina-M. Kostyuk (EUROSPORT 4K) (FHD) (bae)
-http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA 1/4 de Final" tvg-name="12:30-E. Svitolina-M. Kostyuk (EUROSPORT 4K) (FHD) (714)",12:30-E. Svitolina-M. Kostyuk (EUROSPORT 4K) (FHD) (714)
-http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA 1/4 de Final" tvg-name="12:30-E. Svitolina-M. Kostyuk (EUROSPORT 4K) (HD) (313)",12:30-E. Svitolina-M. Kostyuk (EUROSPORT 4K) (HD) (313)
-http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros WTA 1/4 de Final" tvg-name="12:30-E. Svitolina-M. Kostyuk (EUROSPORT 4K) (FHD) (852)",12:30-E. Svitolina-M. Kostyuk (EUROSPORT 4K) (FHD) (852)
-http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros 1/4 de Final" tvg-name="14:00-R. Jódar-A. Zverev (EUROSPORT 4K) (HD) (547)",14:00-R. Jódar-A. Zverev (EUROSPORT 4K) (HD) (547)
+#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros" tvg-name="12:00-Final Dobles Mixtos Grand Slam (EUROSPORT 4K) (HD) (547)",12:00-Final Dobles Mixtos Grand Slam (EUROSPORT 4K) (HD) (547)
 http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros 1/4 de Final" tvg-name="14:00-R. Jódar-A. Zverev (EUROSPORT 4K) (FHD) (ef2)",14:00-R. Jódar-A. Zverev (EUROSPORT 4K) (FHD) (ef2)
-http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros 1/4 de Final" tvg-name="14:00-R. Jódar-A. Zverev (EUROSPORT 4K) (FHD) (bae)",14:00-R. Jódar-A. Zverev (EUROSPORT 4K) (FHD) (bae)
+#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros" tvg-name="12:00-Final Dobles Mixtos Grand Slam (EUROSPORT 4K) (FHD) (bae)",12:00-Final Dobles Mixtos Grand Slam (EUROSPORT 4K) (FHD) (bae)
 http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros 1/4 de Final" tvg-name="14:00-R. Jódar-A. Zverev (EUROSPORT 4K) (FHD) (714)",14:00-R. Jódar-A. Zverev (EUROSPORT 4K) (FHD) (714)
-http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros 1/4 de Final" tvg-name="14:00-R. Jódar-A. Zverev (EUROSPORT 4K) (HD) (313)",14:00-R. Jódar-A. Zverev (EUROSPORT 4K) (HD) (313)
+#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros" tvg-name="12:00-Final Dobles Mixtos Grand Slam (EUROSPORT 4K) (HD) (313)",12:00-Final Dobles Mixtos Grand Slam (EUROSPORT 4K) (HD) (313)
 http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros 1/4 de Final" tvg-name="14:00-R. Jódar-A. Zverev (EUROSPORT 4K) (FHD) (852)",14:00-R. Jódar-A. Zverev (EUROSPORT 4K) (FHD) (852)
+#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros" tvg-name="12:00-Final Dobles Mixtos Grand Slam (EUROSPORT 4K) (FHD) (852)",12:00-Final Dobles Mixtos Grand Slam (EUROSPORT 4K) (FHD) (852)
 http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros 1/4 de Final" tvg-name="20:15-J. Mensik-J. Fonseca (EUROSPORT 4K) (HD) (547)",20:15-J. Mensik-J. Fonseca (EUROSPORT 4K) (HD) (547)
+#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA Semifinal 1" tvg-name="15:00-M. Kostyuk-M. Andreeva (EUROSPORT 4K) (FHD) (714)",15:00-M. Kostyuk-M. Andreeva (EUROSPORT 4K) (FHD) (714)
+http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
+#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA Semifinal 1" tvg-name="15:00-M. Kostyuk-M. Andreeva (EUROSPORT 4K) (FHD) (ef2)",15:00-M. Kostyuk-M. Andreeva (EUROSPORT 4K) (FHD) (ef2)
+http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
+#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA Semifinal 1" tvg-name="15:00-M. Kostyuk-M. Andreeva (EUROSPORT 4K) (HD) (547)",15:00-M. Kostyuk-M. Andreeva (EUROSPORT 4K) (HD) (547)
 http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros 1/4 de Final" tvg-name="20:15-J. Mensik-J. Fonseca (EUROSPORT 4K) (FHD) (ef2)",20:15-J. Mensik-J. Fonseca (EUROSPORT 4K) (FHD) (ef2)
-http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros 1/4 de Final" tvg-name="20:15-J. Mensik-J. Fonseca (EUROSPORT 4K) (FHD) (bae)",20:15-J. Mensik-J. Fonseca (EUROSPORT 4K) (FHD) (bae)
+#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA Semifinal 1" tvg-name="15:00-M. Kostyuk-M. Andreeva (EUROSPORT 4K) (FHD) (bae)",15:00-M. Kostyuk-M. Andreeva (EUROSPORT 4K) (FHD) (bae)
 http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros 1/4 de Final" tvg-name="20:15-J. Mensik-J. Fonseca (EUROSPORT 4K) (FHD) (714)",20:15-J. Mensik-J. Fonseca (EUROSPORT 4K) (FHD) (714)
-http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros 1/4 de Final" tvg-name="20:15-J. Mensik-J. Fonseca (EUROSPORT 4K) (HD) (313)",20:15-J. Mensik-J. Fonseca (EUROSPORT 4K) (HD) (313)
+#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA Semifinal 1" tvg-name="15:00-M. Kostyuk-M. Andreeva (EUROSPORT 4K) (HD) (313)",15:00-M. Kostyuk-M. Andreeva (EUROSPORT 4K) (HD) (313)
 http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
-#EXTINF:-1 group-title="06-02 (Martes) Roland Garros 1/4 de Final" tvg-name="20:15-J. Mensik-J. Fonseca (EUROSPORT 4K) (FHD) (852)",20:15-J. Mensik-J. Fonseca (EUROSPORT 4K) (FHD) (852)
+#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA Semifinal 1" tvg-name="15:00-M. Kostyuk-M. Andreeva (EUROSPORT 4K) (FHD) (852)",15:00-M. Kostyuk-M. Andreeva (EUROSPORT 4K) (FHD) (852)
 http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
-#EXTINF:-1 group-title="06-02 (Martes) Liga Endesa Playoffs 1/4 Final" tvg-name="21:00-Real Madrid Baloncesto-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (199)",21:00-Real Madrid Baloncesto-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (199)
+#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA" tvg-name="17:15-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (714)",17:15-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (714)
+http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
+#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA" tvg-name="17:15-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (ef2)",17:15-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (ef2)
+http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
+#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA" tvg-name="17:15-Semifinal 2 Grand Slam (EUROSPORT 4K) (HD) (547)",17:15-Semifinal 2 Grand Slam (EUROSPORT 4K) (HD) (547)
+http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
+#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA" tvg-name="17:15-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (bae)",17:15-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (bae)
+http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
+#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA" tvg-name="17:15-Semifinal 2 Grand Slam (EUROSPORT 4K) (HD) (313)",17:15-Semifinal 2 Grand Slam (EUROSPORT 4K) (HD) (313)
+http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
+#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA" tvg-name="17:15-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (852)",17:15-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (852)
+http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
+#EXTINF:-1 group-title="06-03 (Miércoles) Liga Endesa Playoffs 1/4 Final" tvg-name="21:00-La Laguna Tenerife-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (199)",21:00-La Laguna Tenerife-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 group-title="06-02 (Martes) Liga Endesa Playoffs 1/4 Final" tvg-name="21:00-Real Madrid Baloncesto-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (586)",21:00-Real Madrid Baloncesto-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (586)
+#EXTINF:-1 group-title="06-03 (Miércoles) Liga Endesa Playoffs 1/4 Final" tvg-name="21:00-La Laguna Tenerife-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (586)",21:00-La Laguna Tenerife-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (586)
 http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
-#EXTINF:-1 group-title="06-02 (Martes) Liga Endesa Playoffs 1/4 Final" tvg-name="21:00-Real Madrid Baloncesto-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (b6f)",21:00-Real Madrid Baloncesto-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (b6f)
+#EXTINF:-1 group-title="06-03 (Miércoles) Liga Endesa Playoffs 1/4 Final" tvg-name="21:00-La Laguna Tenerife-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (b6f)",21:00-La Laguna Tenerife-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (b6f)
 http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
-#EXTINF:-1 group-title="06-02 (Martes) Liga Endesa Playoffs 1/4 Final" tvg-name="21:00-Real Madrid Baloncesto-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (1ab)",21:00-Real Madrid Baloncesto-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (1ab)
+#EXTINF:-1 group-title="06-03 (Miércoles) Liga Endesa Playoffs 1/4 Final" tvg-name="21:00-La Laguna Tenerife-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (1ab)",21:00-La Laguna Tenerife-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (1ab)
 http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
-#EXTINF:-1 group-title="06-03 (Miércoles) NHL Stanley Cup Final" tvg-name="02:00-Carolina Hurricanes-Vegas Golden Knights (MOVISTAR DEPORTES) (FHD) (5d3)",02:00-Carolina Hurricanes-Vegas Golden Knights (MOVISTAR DEPORTES) (FHD) (5d3)
+#EXTINF:-1 group-title="06-05 (Viernes) NHL Stanley Cup Final" tvg-name="02:00-Carolina Hurricanes-Vegas Golden Knights (MOVISTAR DEPORTES) (FHD) (5d3)",02:00-Carolina Hurricanes-Vegas Golden Knights (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="06-03 (Miércoles) NHL Stanley Cup Final" tvg-name="02:00-Carolina Hurricanes-Vegas Golden Knights (MOVISTAR DEPORTES) (FHD) (f82)",02:00-Carolina Hurricanes-Vegas Golden Knights (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="06-03 (Miércoles) NHL Stanley Cup Final" tvg-name="02:00-Carolina Hurricanes-Vegas Golden Knights (MOVISTAR DEPORTES) (FHD) (369)",02:00-Carolina Hurricanes-Vegas Golden Knights (MOVISTAR DEPORTES) (FHD) (369)
+#EXTINF:-1 group-title="06-05 (Viernes) NHL Stanley Cup Final" tvg-name="02:00-Carolina Hurricanes-Vegas Golden Knights (MOVISTAR DEPORTES) (FHD) (369)",02:00-Carolina Hurricanes-Vegas Golden Knights (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="06-03 (Miércoles) NHL Stanley Cup Final" tvg-name="02:00-Carolina Hurricanes-Vegas Golden Knights (MOVISTAR DEPORTES) (FHD) (cf5)",02:00-Carolina Hurricanes-Vegas Golden Knights (MOVISTAR DEPORTES) (FHD) (cf5)
-http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
-#EXTINF:-1 group-title="06-03 (Miércoles) NHL Stanley Cup Final" tvg-name="02:00-Carolina Hurricanes-Vegas Golden Knights (MOVISTAR DEPORTES) (HD) (7f8)",02:00-Carolina Hurricanes-Vegas Golden Knights (MOVISTAR DEPORTES) (HD) (7f8)
+#EXTINF:-1 group-title="06-05 (Viernes) NHL Stanley Cup Final" tvg-name="02:00-Carolina Hurricanes-Vegas Golden Knights (MOVISTAR DEPORTES) (FHD) (f82)",02:00-Carolina Hurricanes-Vegas Golden Knights (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="06-05 (Viernes) NHL Stanley Cup Final" tvg-name="02:00-Carolina Hurricanes-Vegas Golden Knights (MOVISTAR DEPORTES) (HD) (7f8)",02:00-Carolina Hurricanes-Vegas Golden Knights (MOVISTAR DEPORTES) (HD) (7f8)
 http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA 1/4 de Final" tvg-name="11:00-A. Kalinskaya-M. Chwalinska (EUROSPORT 4K) (HD) (547)",11:00-A. Kalinskaya-M. Chwalinska (EUROSPORT 4K) (HD) (547)
-http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA 1/4 de Final" tvg-name="11:00-A. Kalinskaya-M. Chwalinska (EUROSPORT 4K) (FHD) (ef2)",11:00-A. Kalinskaya-M. Chwalinska (EUROSPORT 4K) (FHD) (ef2)
-http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA 1/4 de Final" tvg-name="11:00-A. Kalinskaya-M. Chwalinska (EUROSPORT 4K) (FHD) (bae)",11:00-A. Kalinskaya-M. Chwalinska (EUROSPORT 4K) (FHD) (bae)
-http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA 1/4 de Final" tvg-name="11:00-A. Kalinskaya-M. Chwalinska (EUROSPORT 4K) (FHD) (714)",11:00-A. Kalinskaya-M. Chwalinska (EUROSPORT 4K) (FHD) (714)
+#EXTINF:-1 group-title="06-05 (Viernes) NHL Stanley Cup Final" tvg-name="02:00-Carolina Hurricanes-Vegas Golden Knights (MOVISTAR DEPORTES) (FHD) (cf5)",02:00-Carolina Hurricanes-Vegas Golden Knights (MOVISTAR DEPORTES) (FHD) (cf5)
+http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
+#EXTINF:-1 group-title="06-05 (Viernes) Super Rugby Pacific" tvg-name="09:05-Hurricanes-Brumbies (MOVISTAR DEPORTES) (FHD) (5d3)",09:05-Hurricanes-Brumbies (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-05 (Viernes) Super Rugby Pacific" tvg-name="09:05-Hurricanes-Brumbies (MOVISTAR DEPORTES) (FHD) (369)",09:05-Hurricanes-Brumbies (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="06-05 (Viernes) Super Rugby Pacific" tvg-name="09:05-Hurricanes-Brumbies (MOVISTAR DEPORTES) (FHD) (f82)",09:05-Hurricanes-Brumbies (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="06-05 (Viernes) Super Rugby Pacific" tvg-name="09:05-Hurricanes-Brumbies (MOVISTAR DEPORTES) (HD) (7f8)",09:05-Hurricanes-Brumbies (MOVISTAR DEPORTES) (HD) (7f8)
+http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
+#EXTINF:-1 group-title="06-05 (Viernes) Super Rugby Pacific" tvg-name="09:05-Hurricanes-Brumbies (MOVISTAR DEPORTES) (FHD) (cf5)",09:05-Hurricanes-Brumbies (MOVISTAR DEPORTES) (FHD) (cf5)
+http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="10:00-Elche Academy-Villarreal Academy (M+ LALIGA) (HD) (31c)",10:00-Elche Academy-Villarreal Academy (M+ LALIGA) (HD) (31c)
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="10:00-Elche Academy-Villarreal Academy (M+ LALIGA) (FHD) (8c3)",10:00-Elche Academy-Villarreal Academy (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="10:00-Elche Academy-Villarreal Academy (M+ LALIGA) (FHD) (af4)",10:00-Elche Academy-Villarreal Academy (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="10:00-Elche Academy-Villarreal Academy (M+ LALIGA) (FHD) (d3b)",10:00-Elche Academy-Villarreal Academy (M+ LALIGA) (FHD) (d3b)
+http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="10:00-Elche Academy-Villarreal Academy (M+ LALIGA) (HD) (5ad)",10:00-Elche Academy-Villarreal Academy (M+ LALIGA) (HD) (5ad)
+http://127.0.0.1:6878/ace/getstream?id=5ad75216a63a31fef23ddc3532edc66c2fc0936c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="10:00-Elche Academy-Villarreal Academy (HYPERMOTION) (HD) (87b)",10:00-Elche Academy-Villarreal Academy (HYPERMOTION) (HD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="10:00-Elche Academy-Villarreal Academy (HYPERMOTION) (HD) (a4f)",10:00-Elche Academy-Villarreal Academy (HYPERMOTION) (HD) (a4f)
+http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="10:00-Elche Academy-Villarreal Academy (HYPERMOTION) (HD) (2c5)",10:00-Elche Academy-Villarreal Academy (HYPERMOTION) (HD) (2c5)
+http://127.0.0.1:6878/ace/getstream?id=2c54a4def58f41fc0d2163450a63f12955b656aa
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="10:00-Elche Academy-Villarreal Academy (HYPERMOTION) (FHD) (e4c)",10:00-Elche Academy-Villarreal Academy (HYPERMOTION) (FHD) (e4c)
+http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
+#EXTINF:-1 group-title="06-05 (Viernes) Italia Major" tvg-name="10:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 2) (HD) (3af)",10:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="06-05 (Viernes) Italia Major" tvg-name="10:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 2) (FHD) (73d)",10:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="10:30-Real Betis Academy-Celta Academy (M+ LALIGA) (HD) (31c)",10:30-Real Betis Academy-Celta Academy (M+ LALIGA) (HD) (31c)
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="10:30-Real Betis Academy-Celta Academy (M+ LALIGA) (FHD) (8c3)",10:30-Real Betis Academy-Celta Academy (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="10:30-Real Betis Academy-Celta Academy (M+ LALIGA) (FHD) (af4)",10:30-Real Betis Academy-Celta Academy (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="10:30-Real Betis Academy-Celta Academy (M+ LALIGA) (FHD) (d3b)",10:30-Real Betis Academy-Celta Academy (M+ LALIGA) (FHD) (d3b)
+http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="10:30-Real Betis Academy-Celta Academy (M+ LALIGA) (HD) (5ad)",10:30-Real Betis Academy-Celta Academy (M+ LALIGA) (HD) (5ad)
+http://127.0.0.1:6878/ace/getstream?id=5ad75216a63a31fef23ddc3532edc66c2fc0936c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="10:30-Real Betis Academy-Celta Academy (HYPERMOTION) (HD) (87b)",10:30-Real Betis Academy-Celta Academy (HYPERMOTION) (HD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="10:30-Real Betis Academy-Celta Academy (HYPERMOTION) (HD) (a4f)",10:30-Real Betis Academy-Celta Academy (HYPERMOTION) (HD) (a4f)
+http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="10:30-Real Betis Academy-Celta Academy (HYPERMOTION) (HD) (2c5)",10:30-Real Betis Academy-Celta Academy (HYPERMOTION) (HD) (2c5)
+http://127.0.0.1:6878/ace/getstream?id=2c54a4def58f41fc0d2163450a63f12955b656aa
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="10:30-Real Betis Academy-Celta Academy (HYPERMOTION) (FHD) (e4c)",10:30-Real Betis Academy-Celta Academy (HYPERMOTION) (FHD) (e4c)
+http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="11:00-FC Barcelona Academy-Rayo Vallecano Academy (M+ LALIGA) (HD) (31c)",11:00-FC Barcelona Academy-Rayo Vallecano Academy (M+ LALIGA) (HD) (31c)
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="11:00-FC Barcelona Academy-Rayo Vallecano Academy (M+ LALIGA) (FHD) (8c3)",11:00-FC Barcelona Academy-Rayo Vallecano Academy (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="11:00-FC Barcelona Academy-Rayo Vallecano Academy (M+ LALIGA) (FHD) (af4)",11:00-FC Barcelona Academy-Rayo Vallecano Academy (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="11:00-FC Barcelona Academy-Rayo Vallecano Academy (M+ LALIGA) (FHD) (d3b)",11:00-FC Barcelona Academy-Rayo Vallecano Academy (M+ LALIGA) (FHD) (d3b)
+http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="11:00-FC Barcelona Academy-Rayo Vallecano Academy (M+ LALIGA) (HD) (5ad)",11:00-FC Barcelona Academy-Rayo Vallecano Academy (M+ LALIGA) (HD) (5ad)
+http://127.0.0.1:6878/ace/getstream?id=5ad75216a63a31fef23ddc3532edc66c2fc0936c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="11:00-FC Barcelona Academy-Rayo Vallecano Academy (HYPERMOTION) (HD) (87b)",11:00-FC Barcelona Academy-Rayo Vallecano Academy (HYPERMOTION) (HD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="11:00-FC Barcelona Academy-Rayo Vallecano Academy (HYPERMOTION) (HD) (a4f)",11:00-FC Barcelona Academy-Rayo Vallecano Academy (HYPERMOTION) (HD) (a4f)
+http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="11:00-FC Barcelona Academy-Rayo Vallecano Academy (HYPERMOTION) (HD) (2c5)",11:00-FC Barcelona Academy-Rayo Vallecano Academy (HYPERMOTION) (HD) (2c5)
+http://127.0.0.1:6878/ace/getstream?id=2c54a4def58f41fc0d2163450a63f12955b656aa
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="11:00-FC Barcelona Academy-Rayo Vallecano Academy (HYPERMOTION) (FHD) (e4c)",11:00-FC Barcelona Academy-Rayo Vallecano Academy (HYPERMOTION) (FHD) (e4c)
+http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="11:30-Real Madrid Academy-Levante Academy (M+ LALIGA) (HD) (31c)",11:30-Real Madrid Academy-Levante Academy (M+ LALIGA) (HD) (31c)
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="11:30-Real Madrid Academy-Levante Academy (M+ LALIGA) (FHD) (8c3)",11:30-Real Madrid Academy-Levante Academy (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="11:30-Real Madrid Academy-Levante Academy (M+ LALIGA) (FHD) (af4)",11:30-Real Madrid Academy-Levante Academy (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="11:30-Real Madrid Academy-Levante Academy (M+ LALIGA) (FHD) (d3b)",11:30-Real Madrid Academy-Levante Academy (M+ LALIGA) (FHD) (d3b)
+http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="11:30-Real Madrid Academy-Levante Academy (M+ LALIGA) (HD) (5ad)",11:30-Real Madrid Academy-Levante Academy (M+ LALIGA) (HD) (5ad)
+http://127.0.0.1:6878/ace/getstream?id=5ad75216a63a31fef23ddc3532edc66c2fc0936c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="11:30-Real Madrid Academy-Levante Academy (HYPERMOTION) (HD) (87b)",11:30-Real Madrid Academy-Levante Academy (HYPERMOTION) (HD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="11:30-Real Madrid Academy-Levante Academy (HYPERMOTION) (HD) (a4f)",11:30-Real Madrid Academy-Levante Academy (HYPERMOTION) (HD) (a4f)
+http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="11:30-Real Madrid Academy-Levante Academy (HYPERMOTION) (HD) (2c5)",11:30-Real Madrid Academy-Levante Academy (HYPERMOTION) (HD) (2c5)
+http://127.0.0.1:6878/ace/getstream?id=2c54a4def58f41fc0d2163450a63f12955b656aa
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="11:30-Real Madrid Academy-Levante Academy (HYPERMOTION) (FHD) (e4c)",11:30-Real Madrid Academy-Levante Academy (HYPERMOTION) (FHD) (e4c)
+http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="12:00-Sevilla FC Academy-At. Madrid Academy (M+ LALIGA) (HD) (31c)",12:00-Sevilla FC Academy-At. Madrid Academy (M+ LALIGA) (HD) (31c)
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="12:00-Sevilla FC Academy-At. Madrid Academy (M+ LALIGA) (FHD) (8c3)",12:00-Sevilla FC Academy-At. Madrid Academy (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="12:00-Sevilla FC Academy-At. Madrid Academy (M+ LALIGA) (FHD) (af4)",12:00-Sevilla FC Academy-At. Madrid Academy (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="12:00-Sevilla FC Academy-At. Madrid Academy (M+ LALIGA) (FHD) (d3b)",12:00-Sevilla FC Academy-At. Madrid Academy (M+ LALIGA) (FHD) (d3b)
+http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="12:00-Sevilla FC Academy-At. Madrid Academy (M+ LALIGA) (HD) (5ad)",12:00-Sevilla FC Academy-At. Madrid Academy (M+ LALIGA) (HD) (5ad)
+http://127.0.0.1:6878/ace/getstream?id=5ad75216a63a31fef23ddc3532edc66c2fc0936c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="12:00-Sevilla FC Academy-At. Madrid Academy (HYPERMOTION) (HD) (87b)",12:00-Sevilla FC Academy-At. Madrid Academy (HYPERMOTION) (HD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="12:00-Sevilla FC Academy-At. Madrid Academy (HYPERMOTION) (HD) (a4f)",12:00-Sevilla FC Academy-At. Madrid Academy (HYPERMOTION) (HD) (a4f)
+http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="12:00-Sevilla FC Academy-At. Madrid Academy (HYPERMOTION) (HD) (2c5)",12:00-Sevilla FC Academy-At. Madrid Academy (HYPERMOTION) (HD) (2c5)
+http://127.0.0.1:6878/ace/getstream?id=2c54a4def58f41fc0d2163450a63f12955b656aa
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="12:00-Sevilla FC Academy-At. Madrid Academy (HYPERMOTION) (FHD) (e4c)",12:00-Sevilla FC Academy-At. Madrid Academy (HYPERMOTION) (FHD) (e4c)
+http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
+#EXTINF:-1 group-title="06-05 (Viernes) Italia Major" tvg-name="12:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 2) (HD) (3af)",12:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="06-05 (Viernes) Italia Major" tvg-name="12:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 2) (FHD) (73d)",12:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="06-05 (Viernes) Italia Major" tvg-name="12:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 4) (HD) (8b5)",12:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 4) (HD) (8b5)
+http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
+#EXTINF:-1 group-title="06-05 (Viernes) Italia Major" tvg-name="12:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 4) (FHD) (7be)",12:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 4) (FHD) (7be)
+http://127.0.0.1:6878/ace/getstream?id=7bede102385c65a545db531af476ef18c31f6258
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="12:30-FC Barcelona Academy-Valencia CF Academy (M+ LALIGA) (HD) (31c)",12:30-FC Barcelona Academy-Valencia CF Academy (M+ LALIGA) (HD) (31c)
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="12:30-FC Barcelona Academy-Valencia CF Academy (M+ LALIGA) (FHD) (8c3)",12:30-FC Barcelona Academy-Valencia CF Academy (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="12:30-FC Barcelona Academy-Valencia CF Academy (M+ LALIGA) (FHD) (af4)",12:30-FC Barcelona Academy-Valencia CF Academy (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="12:30-FC Barcelona Academy-Valencia CF Academy (M+ LALIGA) (FHD) (d3b)",12:30-FC Barcelona Academy-Valencia CF Academy (M+ LALIGA) (FHD) (d3b)
+http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="12:30-FC Barcelona Academy-Valencia CF Academy (M+ LALIGA) (HD) (5ad)",12:30-FC Barcelona Academy-Valencia CF Academy (M+ LALIGA) (HD) (5ad)
+http://127.0.0.1:6878/ace/getstream?id=5ad75216a63a31fef23ddc3532edc66c2fc0936c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="12:30-FC Barcelona Academy-Valencia CF Academy (HYPERMOTION) (HD) (87b)",12:30-FC Barcelona Academy-Valencia CF Academy (HYPERMOTION) (HD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="12:30-FC Barcelona Academy-Valencia CF Academy (HYPERMOTION) (HD) (a4f)",12:30-FC Barcelona Academy-Valencia CF Academy (HYPERMOTION) (HD) (a4f)
+http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="12:30-FC Barcelona Academy-Valencia CF Academy (HYPERMOTION) (HD) (2c5)",12:30-FC Barcelona Academy-Valencia CF Academy (HYPERMOTION) (HD) (2c5)
+http://127.0.0.1:6878/ace/getstream?id=2c54a4def58f41fc0d2163450a63f12955b656aa
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="12:30-FC Barcelona Academy-Valencia CF Academy (HYPERMOTION) (FHD) (e4c)",12:30-FC Barcelona Academy-Valencia CF Academy (HYPERMOTION) (FHD) (e4c)
+http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="13:00-Athletic Club Academy-Real Madrid Academy (M+ LALIGA) (HD) (31c)",13:00-Athletic Club Academy-Real Madrid Academy (M+ LALIGA) (HD) (31c)
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="13:00-Athletic Club Academy-Real Madrid Academy (M+ LALIGA) (FHD) (8c3)",13:00-Athletic Club Academy-Real Madrid Academy (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="13:00-Athletic Club Academy-Real Madrid Academy (M+ LALIGA) (FHD) (af4)",13:00-Athletic Club Academy-Real Madrid Academy (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="13:00-Athletic Club Academy-Real Madrid Academy (M+ LALIGA) (FHD) (d3b)",13:00-Athletic Club Academy-Real Madrid Academy (M+ LALIGA) (FHD) (d3b)
+http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="13:00-Athletic Club Academy-Real Madrid Academy (M+ LALIGA) (HD) (5ad)",13:00-Athletic Club Academy-Real Madrid Academy (M+ LALIGA) (HD) (5ad)
+http://127.0.0.1:6878/ace/getstream?id=5ad75216a63a31fef23ddc3532edc66c2fc0936c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="13:00-Athletic Club Academy-Real Madrid Academy (HYPERMOTION) (HD) (87b)",13:00-Athletic Club Academy-Real Madrid Academy (HYPERMOTION) (HD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="13:00-Athletic Club Academy-Real Madrid Academy (HYPERMOTION) (HD) (a4f)",13:00-Athletic Club Academy-Real Madrid Academy (HYPERMOTION) (HD) (a4f)
+http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="13:00-Athletic Club Academy-Real Madrid Academy (HYPERMOTION) (HD) (2c5)",13:00-Athletic Club Academy-Real Madrid Academy (HYPERMOTION) (HD) (2c5)
+http://127.0.0.1:6878/ace/getstream?id=2c54a4def58f41fc0d2163450a63f12955b656aa
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="13:00-Athletic Club Academy-Real Madrid Academy (HYPERMOTION) (FHD) (e4c)",13:00-Athletic Club Academy-Real Madrid Academy (HYPERMOTION) (FHD) (e4c)
+http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
+#EXTINF:-1 group-title="06-05 (Viernes) Italia Major" tvg-name="14:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 2) (HD) (3af)",14:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="06-05 (Viernes) Italia Major" tvg-name="14:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 2) (FHD) (73d)",14:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="06-05 (Viernes) Italia Major" tvg-name="14:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 4) (HD) (8b5)",14:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 4) (HD) (8b5)
+http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
+#EXTINF:-1 group-title="06-05 (Viernes) Italia Major" tvg-name="14:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 4) (FHD) (7be)",14:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 4) (FHD) (7be)
+http://127.0.0.1:6878/ace/getstream?id=7bede102385c65a545db531af476ef18c31f6258
+#EXTINF:-1 group-title="06-05 (Viernes) Roland Garros" tvg-name="14:30-Semifinal 1 Grand Slam (EUROSPORT 4K) (FHD) (714)",14:30-Semifinal 1 Grand Slam (EUROSPORT 4K) (FHD) (714)
 http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA 1/4 de Final" tvg-name="11:00-A. Kalinskaya-M. Chwalinska (EUROSPORT 4K) (HD) (313)",11:00-A. Kalinskaya-M. Chwalinska (EUROSPORT 4K) (HD) (313)
-http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA 1/4 de Final" tvg-name="11:00-A. Kalinskaya-M. Chwalinska (EUROSPORT 4K) (FHD) (852)",11:00-A. Kalinskaya-M. Chwalinska (EUROSPORT 4K) (FHD) (852)
-http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA 1/4 de Final" tvg-name="12:30-A. Sabalenka-D. Shnaider (EUROSPORT 4K) (HD) (547)",12:30-A. Sabalenka-D. Shnaider (EUROSPORT 4K) (HD) (547)
-http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA 1/4 de Final" tvg-name="12:30-A. Sabalenka-D. Shnaider (EUROSPORT 4K) (FHD) (ef2)",12:30-A. Sabalenka-D. Shnaider (EUROSPORT 4K) (FHD) (ef2)
+#EXTINF:-1 group-title="06-05 (Viernes) Roland Garros" tvg-name="14:30-Semifinal 1 Grand Slam (EUROSPORT 4K) (FHD) (ef2)",14:30-Semifinal 1 Grand Slam (EUROSPORT 4K) (FHD) (ef2)
 http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA 1/4 de Final" tvg-name="12:30-A. Sabalenka-D. Shnaider (EUROSPORT 4K) (FHD) (bae)",12:30-A. Sabalenka-D. Shnaider (EUROSPORT 4K) (FHD) (bae)
-http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA 1/4 de Final" tvg-name="12:30-A. Sabalenka-D. Shnaider (EUROSPORT 4K) (FHD) (714)",12:30-A. Sabalenka-D. Shnaider (EUROSPORT 4K) (FHD) (714)
-http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA 1/4 de Final" tvg-name="12:30-A. Sabalenka-D. Shnaider (EUROSPORT 4K) (HD) (313)",12:30-A. Sabalenka-D. Shnaider (EUROSPORT 4K) (HD) (313)
-http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros WTA 1/4 de Final" tvg-name="12:30-A. Sabalenka-D. Shnaider (EUROSPORT 4K) (FHD) (852)",12:30-A. Sabalenka-D. Shnaider (EUROSPORT 4K) (FHD) (852)
-http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros 1/4 de Final" tvg-name="14:30-F. Auger-Aliassime-F. Cobolli (EUROSPORT 4K) (HD) (547)",14:30-F. Auger-Aliassime-F. Cobolli (EUROSPORT 4K) (HD) (547)
+#EXTINF:-1 group-title="06-05 (Viernes) Roland Garros" tvg-name="14:30-Semifinal 1 Grand Slam (EUROSPORT 4K) (HD) (547)",14:30-Semifinal 1 Grand Slam (EUROSPORT 4K) (HD) (547)
 http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros 1/4 de Final" tvg-name="14:30-F. Auger-Aliassime-F. Cobolli (EUROSPORT 4K) (FHD) (ef2)",14:30-F. Auger-Aliassime-F. Cobolli (EUROSPORT 4K) (FHD) (ef2)
-http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros 1/4 de Final" tvg-name="14:30-F. Auger-Aliassime-F. Cobolli (EUROSPORT 4K) (FHD) (bae)",14:30-F. Auger-Aliassime-F. Cobolli (EUROSPORT 4K) (FHD) (bae)
+#EXTINF:-1 group-title="06-05 (Viernes) Roland Garros" tvg-name="14:30-Semifinal 1 Grand Slam (EUROSPORT 4K) (FHD) (bae)",14:30-Semifinal 1 Grand Slam (EUROSPORT 4K) (FHD) (bae)
 http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros 1/4 de Final" tvg-name="14:30-F. Auger-Aliassime-F. Cobolli (EUROSPORT 4K) (FHD) (714)",14:30-F. Auger-Aliassime-F. Cobolli (EUROSPORT 4K) (FHD) (714)
-http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros 1/4 de Final" tvg-name="14:30-F. Auger-Aliassime-F. Cobolli (EUROSPORT 4K) (HD) (313)",14:30-F. Auger-Aliassime-F. Cobolli (EUROSPORT 4K) (HD) (313)
+#EXTINF:-1 group-title="06-05 (Viernes) Roland Garros" tvg-name="14:30-Semifinal 1 Grand Slam (EUROSPORT 4K) (HD) (313)",14:30-Semifinal 1 Grand Slam (EUROSPORT 4K) (HD) (313)
 http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros 1/4 de Final" tvg-name="14:30-F. Auger-Aliassime-F. Cobolli (EUROSPORT 4K) (FHD) (852)",14:30-F. Auger-Aliassime-F. Cobolli (EUROSPORT 4K) (FHD) (852)
+#EXTINF:-1 group-title="06-05 (Viernes) Roland Garros" tvg-name="14:30-Semifinal 1 Grand Slam (EUROSPORT 4K) (FHD) (852)",14:30-Semifinal 1 Grand Slam (EUROSPORT 4K) (FHD) (852)
 http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros 1/4 de Final" tvg-name="20:15-M. Berrettini-M. Arnaldi (EUROSPORT 4K) (HD) (547)",20:15-M. Berrettini-M. Arnaldi (EUROSPORT 4K) (HD) (547)
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="17:00-Mallorca Academy-Girona Academy (M+ LALIGA) (HD) (31c)",17:00-Mallorca Academy-Girona Academy (M+ LALIGA) (HD) (31c)
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="17:00-Mallorca Academy-Girona Academy (M+ LALIGA) (FHD) (8c3)",17:00-Mallorca Academy-Girona Academy (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="17:00-Mallorca Academy-Girona Academy (M+ LALIGA) (FHD) (af4)",17:00-Mallorca Academy-Girona Academy (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="17:00-Mallorca Academy-Girona Academy (M+ LALIGA) (FHD) (d3b)",17:00-Mallorca Academy-Girona Academy (M+ LALIGA) (FHD) (d3b)
+http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="17:00-Mallorca Academy-Girona Academy (M+ LALIGA) (HD) (5ad)",17:00-Mallorca Academy-Girona Academy (M+ LALIGA) (HD) (5ad)
+http://127.0.0.1:6878/ace/getstream?id=5ad75216a63a31fef23ddc3532edc66c2fc0936c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="17:00-Mallorca Academy-Girona Academy (HYPERMOTION) (HD) (87b)",17:00-Mallorca Academy-Girona Academy (HYPERMOTION) (HD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="17:00-Mallorca Academy-Girona Academy (HYPERMOTION) (HD) (a4f)",17:00-Mallorca Academy-Girona Academy (HYPERMOTION) (HD) (a4f)
+http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="17:00-Mallorca Academy-Girona Academy (HYPERMOTION) (HD) (2c5)",17:00-Mallorca Academy-Girona Academy (HYPERMOTION) (HD) (2c5)
+http://127.0.0.1:6878/ace/getstream?id=2c54a4def58f41fc0d2163450a63f12955b656aa
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="17:00-Mallorca Academy-Girona Academy (HYPERMOTION) (FHD) (e4c)",17:00-Mallorca Academy-Girona Academy (HYPERMOTION) (FHD) (e4c)
+http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
+#EXTINF:-1 group-title="06-05 (Viernes) Italia Major" tvg-name="17:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 2) (HD) (3af)",17:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="06-05 (Viernes) Italia Major" tvg-name="17:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 2) (FHD) (73d)",17:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="17:30-Osasuna Academy-Villarreal Academy (M+ LALIGA) (HD) (31c)",17:30-Osasuna Academy-Villarreal Academy (M+ LALIGA) (HD) (31c)
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="17:30-Osasuna Academy-Villarreal Academy (M+ LALIGA) (FHD) (8c3)",17:30-Osasuna Academy-Villarreal Academy (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="17:30-Osasuna Academy-Villarreal Academy (M+ LALIGA) (FHD) (af4)",17:30-Osasuna Academy-Villarreal Academy (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="17:30-Osasuna Academy-Villarreal Academy (M+ LALIGA) (FHD) (d3b)",17:30-Osasuna Academy-Villarreal Academy (M+ LALIGA) (FHD) (d3b)
+http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="17:30-Osasuna Academy-Villarreal Academy (M+ LALIGA) (HD) (5ad)",17:30-Osasuna Academy-Villarreal Academy (M+ LALIGA) (HD) (5ad)
+http://127.0.0.1:6878/ace/getstream?id=5ad75216a63a31fef23ddc3532edc66c2fc0936c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="17:30-Osasuna Academy-Villarreal Academy (HYPERMOTION) (HD) (87b)",17:30-Osasuna Academy-Villarreal Academy (HYPERMOTION) (HD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="17:30-Osasuna Academy-Villarreal Academy (HYPERMOTION) (HD) (a4f)",17:30-Osasuna Academy-Villarreal Academy (HYPERMOTION) (HD) (a4f)
+http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="17:30-Osasuna Academy-Villarreal Academy (HYPERMOTION) (HD) (2c5)",17:30-Osasuna Academy-Villarreal Academy (HYPERMOTION) (HD) (2c5)
+http://127.0.0.1:6878/ace/getstream?id=2c54a4def58f41fc0d2163450a63f12955b656aa
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="17:30-Osasuna Academy-Villarreal Academy (HYPERMOTION) (FHD) (e4c)",17:30-Osasuna Academy-Villarreal Academy (HYPERMOTION) (FHD) (e4c)
+http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="18:00-FC Barcelona Academy-Real Oviedo Academy (M+ LALIGA) (HD) (31c)",18:00-FC Barcelona Academy-Real Oviedo Academy (M+ LALIGA) (HD) (31c)
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="18:00-FC Barcelona Academy-Real Oviedo Academy (M+ LALIGA) (FHD) (8c3)",18:00-FC Barcelona Academy-Real Oviedo Academy (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="18:00-FC Barcelona Academy-Real Oviedo Academy (M+ LALIGA) (FHD) (af4)",18:00-FC Barcelona Academy-Real Oviedo Academy (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="18:00-FC Barcelona Academy-Real Oviedo Academy (M+ LALIGA) (FHD) (d3b)",18:00-FC Barcelona Academy-Real Oviedo Academy (M+ LALIGA) (FHD) (d3b)
+http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="18:00-FC Barcelona Academy-Real Oviedo Academy (M+ LALIGA) (HD) (5ad)",18:00-FC Barcelona Academy-Real Oviedo Academy (M+ LALIGA) (HD) (5ad)
+http://127.0.0.1:6878/ace/getstream?id=5ad75216a63a31fef23ddc3532edc66c2fc0936c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="18:00-FC Barcelona Academy-Real Oviedo Academy (HYPERMOTION) (HD) (87b)",18:00-FC Barcelona Academy-Real Oviedo Academy (HYPERMOTION) (HD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="18:00-FC Barcelona Academy-Real Oviedo Academy (HYPERMOTION) (HD) (a4f)",18:00-FC Barcelona Academy-Real Oviedo Academy (HYPERMOTION) (HD) (a4f)
+http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="18:00-FC Barcelona Academy-Real Oviedo Academy (HYPERMOTION) (HD) (2c5)",18:00-FC Barcelona Academy-Real Oviedo Academy (HYPERMOTION) (HD) (2c5)
+http://127.0.0.1:6878/ace/getstream?id=2c54a4def58f41fc0d2163450a63f12955b656aa
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="18:00-FC Barcelona Academy-Real Oviedo Academy (HYPERMOTION) (FHD) (e4c)",18:00-FC Barcelona Academy-Real Oviedo Academy (HYPERMOTION) (FHD) (e4c)
+http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="18:30-Real Madrid Academy-Getafe Academy (M+ LALIGA) (HD) (31c)",18:30-Real Madrid Academy-Getafe Academy (M+ LALIGA) (HD) (31c)
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="18:30-Real Madrid Academy-Getafe Academy (M+ LALIGA) (FHD) (8c3)",18:30-Real Madrid Academy-Getafe Academy (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="18:30-Real Madrid Academy-Getafe Academy (M+ LALIGA) (FHD) (af4)",18:30-Real Madrid Academy-Getafe Academy (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="18:30-Real Madrid Academy-Getafe Academy (M+ LALIGA) (FHD) (d3b)",18:30-Real Madrid Academy-Getafe Academy (M+ LALIGA) (FHD) (d3b)
+http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="18:30-Real Madrid Academy-Getafe Academy (M+ LALIGA) (HD) (5ad)",18:30-Real Madrid Academy-Getafe Academy (M+ LALIGA) (HD) (5ad)
+http://127.0.0.1:6878/ace/getstream?id=5ad75216a63a31fef23ddc3532edc66c2fc0936c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="18:30-Real Madrid Academy-Getafe Academy (HYPERMOTION) (HD) (87b)",18:30-Real Madrid Academy-Getafe Academy (HYPERMOTION) (HD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="18:30-Real Madrid Academy-Getafe Academy (HYPERMOTION) (HD) (a4f)",18:30-Real Madrid Academy-Getafe Academy (HYPERMOTION) (HD) (a4f)
+http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="18:30-Real Madrid Academy-Getafe Academy (HYPERMOTION) (HD) (2c5)",18:30-Real Madrid Academy-Getafe Academy (HYPERMOTION) (HD) (2c5)
+http://127.0.0.1:6878/ace/getstream?id=2c54a4def58f41fc0d2163450a63f12955b656aa
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="18:30-Real Madrid Academy-Getafe Academy (HYPERMOTION) (FHD) (e4c)",18:30-Real Madrid Academy-Getafe Academy (HYPERMOTION) (FHD) (e4c)
+http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="19:00-Espanyol Academy-Real Betis Academy (M+ LALIGA) (HD) (31c)",19:00-Espanyol Academy-Real Betis Academy (M+ LALIGA) (HD) (31c)
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="19:00-Espanyol Academy-Real Betis Academy (M+ LALIGA) (FHD) (8c3)",19:00-Espanyol Academy-Real Betis Academy (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="19:00-Espanyol Academy-Real Betis Academy (M+ LALIGA) (FHD) (af4)",19:00-Espanyol Academy-Real Betis Academy (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="19:00-Espanyol Academy-Real Betis Academy (M+ LALIGA) (FHD) (d3b)",19:00-Espanyol Academy-Real Betis Academy (M+ LALIGA) (FHD) (d3b)
+http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="19:00-Espanyol Academy-Real Betis Academy (M+ LALIGA) (HD) (5ad)",19:00-Espanyol Academy-Real Betis Academy (M+ LALIGA) (HD) (5ad)
+http://127.0.0.1:6878/ace/getstream?id=5ad75216a63a31fef23ddc3532edc66c2fc0936c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="19:00-Espanyol Academy-Real Betis Academy (HYPERMOTION) (HD) (87b)",19:00-Espanyol Academy-Real Betis Academy (HYPERMOTION) (HD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="19:00-Espanyol Academy-Real Betis Academy (HYPERMOTION) (HD) (a4f)",19:00-Espanyol Academy-Real Betis Academy (HYPERMOTION) (HD) (a4f)
+http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="19:00-Espanyol Academy-Real Betis Academy (HYPERMOTION) (HD) (2c5)",19:00-Espanyol Academy-Real Betis Academy (HYPERMOTION) (HD) (2c5)
+http://127.0.0.1:6878/ace/getstream?id=2c54a4def58f41fc0d2163450a63f12955b656aa
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="19:00-Espanyol Academy-Real Betis Academy (HYPERMOTION) (FHD) (e4c)",19:00-Espanyol Academy-Real Betis Academy (HYPERMOTION) (FHD) (e4c)
+http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
+#EXTINF:-1 group-title="06-05 (Viernes) Roland Garros" tvg-name="19:00-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (714)",19:00-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (714)
+http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
+#EXTINF:-1 group-title="06-05 (Viernes) Roland Garros" tvg-name="19:00-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (ef2)",19:00-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (ef2)
+http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
+#EXTINF:-1 group-title="06-05 (Viernes) Roland Garros" tvg-name="19:00-Semifinal 2 Grand Slam (EUROSPORT 4K) (HD) (547)",19:00-Semifinal 2 Grand Slam (EUROSPORT 4K) (HD) (547)
 http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros 1/4 de Final" tvg-name="20:15-M. Berrettini-M. Arnaldi (EUROSPORT 4K) (FHD) (ef2)",20:15-M. Berrettini-M. Arnaldi (EUROSPORT 4K) (FHD) (ef2)
-http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros 1/4 de Final" tvg-name="20:15-M. Berrettini-M. Arnaldi (EUROSPORT 4K) (FHD) (bae)",20:15-M. Berrettini-M. Arnaldi (EUROSPORT 4K) (FHD) (bae)
+#EXTINF:-1 group-title="06-05 (Viernes) Roland Garros" tvg-name="19:00-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (bae)",19:00-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (bae)
 http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros 1/4 de Final" tvg-name="20:15-M. Berrettini-M. Arnaldi (EUROSPORT 4K) (FHD) (714)",20:15-M. Berrettini-M. Arnaldi (EUROSPORT 4K) (FHD) (714)
-http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros 1/4 de Final" tvg-name="20:15-M. Berrettini-M. Arnaldi (EUROSPORT 4K) (HD) (313)",20:15-M. Berrettini-M. Arnaldi (EUROSPORT 4K) (HD) (313)
+#EXTINF:-1 group-title="06-05 (Viernes) Roland Garros" tvg-name="19:00-Semifinal 2 Grand Slam (EUROSPORT 4K) (HD) (313)",19:00-Semifinal 2 Grand Slam (EUROSPORT 4K) (HD) (313)
 http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
-#EXTINF:-1 group-title="06-03 (Miércoles) Roland Garros 1/4 de Final" tvg-name="20:15-M. Berrettini-M. Arnaldi (EUROSPORT 4K) (FHD) (852)",20:15-M. Berrettini-M. Arnaldi (EUROSPORT 4K) (FHD) (852)
+#EXTINF:-1 group-title="06-05 (Viernes) Roland Garros" tvg-name="19:00-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (852)",19:00-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (852)
 http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
-#EXTINF:-1 group-title="06-04 (Jueves) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (HD) (e57)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="06-04 (Jueves) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (afb)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
-#EXTINF:-1 group-title="06-04 (Jueves) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (778)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (778)
-http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="06-04 (Jueves) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (0f7)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
-#EXTINF:-1 group-title="06-04 (Jueves) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (afb)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
-#EXTINF:-1 group-title="06-04 (Jueves) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (UHD) (152)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (UHD) (152)
-http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="06-04 (Jueves) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (HD) (b02)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="06-04 (Jueves) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (97d)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 group-title="06-04 (Jueves) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (HD) (2b5)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (HD) (2b5)
-http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
-#EXTINF:-1 group-title="06-04 (Jueves) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (HD) (931)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (HD) (931)
-http://127.0.0.1:6878/ace/getstream?id=931fd4c24398a24beb9b6ede856ca34339ff2c22
-#EXTINF:-1 group-title="06-04 (Jueves) Amistoso" tvg-name="03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (91a)",03:00-Corea del Sur-El Salvador (LIGA DE CAMPEONES) (FHD) (91a)
-http://127.0.0.1:6878/ace/getstream?id=91af434b0bb521189286f8cbbab1aed39d7536fe
-#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros" tvg-name="12:00-Final Dobles Mixtos Grand Slam (EUROSPORT 4K) (HD) (547)",12:00-Final Dobles Mixtos Grand Slam (EUROSPORT 4K) (HD) (547)
-http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
-#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros" tvg-name="12:00-Final Dobles Mixtos Grand Slam (EUROSPORT 4K) (FHD) (ef2)",12:00-Final Dobles Mixtos Grand Slam (EUROSPORT 4K) (FHD) (ef2)
-http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
-#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros" tvg-name="12:00-Final Dobles Mixtos Grand Slam (EUROSPORT 4K) (FHD) (bae)",12:00-Final Dobles Mixtos Grand Slam (EUROSPORT 4K) (FHD) (bae)
-http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
-#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros" tvg-name="12:00-Final Dobles Mixtos Grand Slam (EUROSPORT 4K) (FHD) (714)",12:00-Final Dobles Mixtos Grand Slam (EUROSPORT 4K) (FHD) (714)
-http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
-#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros" tvg-name="12:00-Final Dobles Mixtos Grand Slam (EUROSPORT 4K) (HD) (313)",12:00-Final Dobles Mixtos Grand Slam (EUROSPORT 4K) (HD) (313)
-http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
-#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros" tvg-name="12:00-Final Dobles Mixtos Grand Slam (EUROSPORT 4K) (FHD) (852)",12:00-Final Dobles Mixtos Grand Slam (EUROSPORT 4K) (FHD) (852)
-http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
-#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros WTA" tvg-name="15:00-Semifinal 1 Grand Slam (EUROSPORT 4K) (HD) (547)",15:00-Semifinal 1 Grand Slam (EUROSPORT 4K) (HD) (547)
-http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
-#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros WTA" tvg-name="15:00-Semifinal 1 Grand Slam (EUROSPORT 4K) (FHD) (ef2)",15:00-Semifinal 1 Grand Slam (EUROSPORT 4K) (FHD) (ef2)
-http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
-#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros WTA" tvg-name="15:00-Semifinal 1 Grand Slam (EUROSPORT 4K) (FHD) (bae)",15:00-Semifinal 1 Grand Slam (EUROSPORT 4K) (FHD) (bae)
-http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
-#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros WTA" tvg-name="15:00-Semifinal 1 Grand Slam (EUROSPORT 4K) (FHD) (714)",15:00-Semifinal 1 Grand Slam (EUROSPORT 4K) (FHD) (714)
-http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
-#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros WTA" tvg-name="15:00-Semifinal 1 Grand Slam (EUROSPORT 4K) (HD) (313)",15:00-Semifinal 1 Grand Slam (EUROSPORT 4K) (HD) (313)
-http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
-#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros WTA" tvg-name="15:00-Semifinal 1 Grand Slam (EUROSPORT 4K) (FHD) (852)",15:00-Semifinal 1 Grand Slam (EUROSPORT 4K) (FHD) (852)
-http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
-#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros WTA" tvg-name="17:15-Semifinal 2 Grand Slam (EUROSPORT 4K) (HD) (547)",17:15-Semifinal 2 Grand Slam (EUROSPORT 4K) (HD) (547)
-http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
-#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros WTA" tvg-name="17:15-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (ef2)",17:15-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (ef2)
-http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
-#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros WTA" tvg-name="17:15-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (bae)",17:15-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (bae)
-http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
-#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros WTA" tvg-name="17:15-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (714)",17:15-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (714)
-http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
-#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros WTA" tvg-name="17:15-Semifinal 2 Grand Slam (EUROSPORT 4K) (HD) (313)",17:15-Semifinal 2 Grand Slam (EUROSPORT 4K) (HD) (313)
-http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
-#EXTINF:-1 group-title="06-04 (Jueves) Roland Garros WTA" tvg-name="17:15-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (852)",17:15-Semifinal 2 Grand Slam (EUROSPORT 4K) (FHD) (852)
-http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
-#EXTINF:-1 group-title="06-04 (Jueves) Liga Endesa Playoffs 1/4 Final" tvg-name="21:00-La Laguna Tenerife-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (199)",21:00-La Laguna Tenerife-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (199)
-http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 group-title="06-04 (Jueves) Liga Endesa Playoffs 1/4 Final" tvg-name="21:00-La Laguna Tenerife-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (586)",21:00-La Laguna Tenerife-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (586)
-http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
-#EXTINF:-1 group-title="06-04 (Jueves) Liga Endesa Playoffs 1/4 Final" tvg-name="21:00-La Laguna Tenerife-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (b6f)",21:00-La Laguna Tenerife-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (b6f)
-http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
-#EXTINF:-1 group-title="06-04 (Jueves) Liga Endesa Playoffs 1/4 Final" tvg-name="21:00-La Laguna Tenerife-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (1ab)",21:00-La Laguna Tenerife-Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (1ab)
-http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
+#EXTINF:-1 group-title="06-05 (Viernes) Italia Major" tvg-name="19:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 2) (HD) (3af)",19:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="06-05 (Viernes) Italia Major" tvg-name="19:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 2) (FHD) (73d)",19:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="19:30-FC Barcelona Academy-Alavés Academy (M+ LALIGA) (HD) (31c)",19:30-FC Barcelona Academy-Alavés Academy (M+ LALIGA) (HD) (31c)
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="19:30-FC Barcelona Academy-Alavés Academy (M+ LALIGA) (FHD) (8c3)",19:30-FC Barcelona Academy-Alavés Academy (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="19:30-FC Barcelona Academy-Alavés Academy (M+ LALIGA) (FHD) (af4)",19:30-FC Barcelona Academy-Alavés Academy (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="19:30-FC Barcelona Academy-Alavés Academy (M+ LALIGA) (FHD) (d3b)",19:30-FC Barcelona Academy-Alavés Academy (M+ LALIGA) (FHD) (d3b)
+http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="19:30-FC Barcelona Academy-Alavés Academy (M+ LALIGA) (HD) (5ad)",19:30-FC Barcelona Academy-Alavés Academy (M+ LALIGA) (HD) (5ad)
+http://127.0.0.1:6878/ace/getstream?id=5ad75216a63a31fef23ddc3532edc66c2fc0936c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="19:30-FC Barcelona Academy-Alavés Academy (HYPERMOTION) (HD) (87b)",19:30-FC Barcelona Academy-Alavés Academy (HYPERMOTION) (HD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="19:30-FC Barcelona Academy-Alavés Academy (HYPERMOTION) (HD) (a4f)",19:30-FC Barcelona Academy-Alavés Academy (HYPERMOTION) (HD) (a4f)
+http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="19:30-FC Barcelona Academy-Alavés Academy (HYPERMOTION) (HD) (2c5)",19:30-FC Barcelona Academy-Alavés Academy (HYPERMOTION) (HD) (2c5)
+http://127.0.0.1:6878/ace/getstream?id=2c54a4def58f41fc0d2163450a63f12955b656aa
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="19:30-FC Barcelona Academy-Alavés Academy (HYPERMOTION) (FHD) (e4c)",19:30-FC Barcelona Academy-Alavés Academy (HYPERMOTION) (FHD) (e4c)
+http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="20:00-Real Madrid Academy-Real Sociedad Academy (M+ LALIGA) (HD) (31c)",20:00-Real Madrid Academy-Real Sociedad Academy (M+ LALIGA) (HD) (31c)
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="20:00-Real Madrid Academy-Real Sociedad Academy (M+ LALIGA) (FHD) (8c3)",20:00-Real Madrid Academy-Real Sociedad Academy (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="20:00-Real Madrid Academy-Real Sociedad Academy (M+ LALIGA) (FHD) (af4)",20:00-Real Madrid Academy-Real Sociedad Academy (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="20:00-Real Madrid Academy-Real Sociedad Academy (M+ LALIGA) (FHD) (d3b)",20:00-Real Madrid Academy-Real Sociedad Academy (M+ LALIGA) (FHD) (d3b)
+http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="20:00-Real Madrid Academy-Real Sociedad Academy (M+ LALIGA) (HD) (5ad)",20:00-Real Madrid Academy-Real Sociedad Academy (M+ LALIGA) (HD) (5ad)
+http://127.0.0.1:6878/ace/getstream?id=5ad75216a63a31fef23ddc3532edc66c2fc0936c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="20:00-Real Madrid Academy-Real Sociedad Academy (HYPERMOTION) (HD) (87b)",20:00-Real Madrid Academy-Real Sociedad Academy (HYPERMOTION) (HD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="20:00-Real Madrid Academy-Real Sociedad Academy (HYPERMOTION) (HD) (a4f)",20:00-Real Madrid Academy-Real Sociedad Academy (HYPERMOTION) (HD) (a4f)
+http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="20:00-Real Madrid Academy-Real Sociedad Academy (HYPERMOTION) (HD) (2c5)",20:00-Real Madrid Academy-Real Sociedad Academy (HYPERMOTION) (HD) (2c5)
+http://127.0.0.1:6878/ace/getstream?id=2c54a4def58f41fc0d2163450a63f12955b656aa
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="20:00-Real Madrid Academy-Real Sociedad Academy (HYPERMOTION) (FHD) (e4c)",20:00-Real Madrid Academy-Real Sociedad Academy (HYPERMOTION) (FHD) (e4c)
+http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="20:30-At. Madrid Academy-Villarreal Academy (M+ LALIGA) (HD) (31c)",20:30-At. Madrid Academy-Villarreal Academy (M+ LALIGA) (HD) (31c)
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="20:30-At. Madrid Academy-Villarreal Academy (M+ LALIGA) (FHD) (8c3)",20:30-At. Madrid Academy-Villarreal Academy (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="20:30-At. Madrid Academy-Villarreal Academy (M+ LALIGA) (FHD) (af4)",20:30-At. Madrid Academy-Villarreal Academy (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="20:30-At. Madrid Academy-Villarreal Academy (M+ LALIGA) (FHD) (d3b)",20:30-At. Madrid Academy-Villarreal Academy (M+ LALIGA) (FHD) (d3b)
+http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="20:30-At. Madrid Academy-Villarreal Academy (M+ LALIGA) (HD) (5ad)",20:30-At. Madrid Academy-Villarreal Academy (M+ LALIGA) (HD) (5ad)
+http://127.0.0.1:6878/ace/getstream?id=5ad75216a63a31fef23ddc3532edc66c2fc0936c
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="20:30-At. Madrid Academy-Villarreal Academy (HYPERMOTION) (HD) (87b)",20:30-At. Madrid Academy-Villarreal Academy (HYPERMOTION) (HD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="20:30-At. Madrid Academy-Villarreal Academy (HYPERMOTION) (HD) (a4f)",20:30-At. Madrid Academy-Villarreal Academy (HYPERMOTION) (HD) (a4f)
+http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="20:30-At. Madrid Academy-Villarreal Academy (HYPERMOTION) (HD) (2c5)",20:30-At. Madrid Academy-Villarreal Academy (HYPERMOTION) (HD) (2c5)
+http://127.0.0.1:6878/ace/getstream?id=2c54a4def58f41fc0d2163450a63f12955b656aa
+#EXTINF:-1 group-title="06-05 (Viernes) LaLiga Futures Fase de grupos" tvg-name="20:30-At. Madrid Academy-Villarreal Academy (HYPERMOTION) (FHD) (e4c)",20:30-At. Madrid Academy-Villarreal Academy (HYPERMOTION) (FHD) (e4c)
+http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
+#EXTINF:-1 group-title="06-05 (Viernes) Italia Major" tvg-name="21:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 2) (HD) (3af)",21:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="06-05 (Viernes) Italia Major" tvg-name="21:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 2) (FHD) (73d)",21:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
