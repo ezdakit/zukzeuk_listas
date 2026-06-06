@@ -1,24 +1,28 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="02:00-Argentina-Honduras (LIGA DE CAMPEONES) (HD) (e57)",02:00-Argentina-Honduras (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="02:00-Argentina-Honduras (LIGA DE CAMPEONES) (FHD) (0f7)",02:00-Argentina-Honduras (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
-#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="02:00-Argentina-Honduras (LIGA DE CAMPEONES) (HD) (b02)",02:00-Argentina-Honduras (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="02:00-Argentina-Honduras (LIGA DE CAMPEONES) (UHD) (152)",02:00-Argentina-Honduras (LIGA DE CAMPEONES) (UHD) (152)
-http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="02:00-Argentina-Honduras (LIGA DE CAMPEONES) (FHD) (afb)",02:00-Argentina-Honduras (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
-#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="02:00-Argentina-Honduras (LIGA DE CAMPEONES) (FHD) (afb)",02:00-Argentina-Honduras (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
 #EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="02:00-Argentina-Honduras (LIGA DE CAMPEONES) (FHD) (778)",02:00-Argentina-Honduras (LIGA DE CAMPEONES) (FHD) (778)
 http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="02:00-Argentina-Honduras (LIGA DE CAMPEONES) (HD) (2b5)",02:00-Argentina-Honduras (LIGA DE CAMPEONES) (HD) (2b5)
-http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
+#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="02:00-Argentina-Honduras (LIGA DE CAMPEONES) (UHD) (152)",02:00-Argentina-Honduras (LIGA DE CAMPEONES) (UHD) (152)
+http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
 #EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="02:00-Argentina-Honduras (LIGA DE CAMPEONES) (FHD) (97d)",02:00-Argentina-Honduras (LIGA DE CAMPEONES) (FHD) (97d)
 http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="02:00-Argentina-Honduras (LIGA DE CAMPEONES) (HD) (b02)",02:00-Argentina-Honduras (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
+#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="02:00-Argentina-Honduras (LIGA DE CAMPEONES) (FHD) (0f7)",02:00-Argentina-Honduras (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
+#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="02:00-Argentina-Honduras (LIGA DE CAMPEONES) (HD) (2b5)",02:00-Argentina-Honduras (LIGA DE CAMPEONES) (HD) (2b5)
+http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
+#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="02:00-Argentina-Honduras (LIGA DE CAMPEONES) (FHD) (afb)",02:00-Argentina-Honduras (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="02:00-Argentina-Honduras (LIGA DE CAMPEONES) (FHD) (afb)",02:00-Argentina-Honduras (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="02:00-Argentina-Honduras (LIGA DE CAMPEONES) (HD) (e57)",02:00-Argentina-Honduras (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="02:00-Argentina-Honduras (LIGA DE CAMPEONES) (HD) (63e)",02:00-Argentina-Honduras (LIGA DE CAMPEONES) (HD) (63e)
+http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
+#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="02:00-Argentina-Honduras (LIGA DE CAMPEONES) (FHD) (91b)",02:00-Argentina-Honduras (LIGA DE CAMPEONES) (FHD) (91b)
+http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
 #EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="02:00-Argentina-Honduras (LIGA DE CAMPEONES) (HD) (931)",02:00-Argentina-Honduras (LIGA DE CAMPEONES) (HD) (931)
 http://127.0.0.1:6878/ace/getstream?id=931fd4c24398a24beb9b6ede856ca34339ff2c22
 #EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="02:00-Argentina-Honduras (LIGA DE CAMPEONES) (FHD) (91a)",02:00-Argentina-Honduras (LIGA DE CAMPEONES) (FHD) (91a)
@@ -29,20 +33,28 @@ http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="06-06 (Sábado) NHL Stanley Cup Final" tvg-name="02:00-Vegas Golden Knights-Carolina Hurricanes (MOVISTAR DEPORTES) (FHD) (5d3)",02:00-Vegas Golden Knights-Carolina Hurricanes (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="06-06 (Sábado) NHL Stanley Cup Final" tvg-name="02:00-Vegas Golden Knights-Carolina Hurricanes (MOVISTAR DEPORTES) (HD) (7f8)",02:00-Vegas Golden Knights-Carolina Hurricanes (MOVISTAR DEPORTES) (HD) (7f8)
-http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
+#EXTINF:-1 group-title="06-06 (Sábado) NHL Stanley Cup Final" tvg-name="02:00-Vegas Golden Knights-Carolina Hurricanes (MOVISTAR DEPORTES) (HD) (6e0)",02:00-Vegas Golden Knights-Carolina Hurricanes (MOVISTAR DEPORTES) (HD) (6e0)
+http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
+#EXTINF:-1 group-title="06-06 (Sábado) NHL Stanley Cup Final" tvg-name="02:00-Vegas Golden Knights-Carolina Hurricanes (MOVISTAR DEPORTES) (FHD) (c6a)",02:00-Vegas Golden Knights-Carolina Hurricanes (MOVISTAR DEPORTES) (FHD) (c6a)
+http://127.0.0.1:6878/ace/getstream?id=c6a824a81b36f6c3529826477caf2ad94b45776d
 #EXTINF:-1 group-title="06-06 (Sábado) NHL Stanley Cup Final" tvg-name="02:00-Vegas Golden Knights-Carolina Hurricanes (MOVISTAR DEPORTES) (FHD) (cf5)",02:00-Vegas Golden Knights-Carolina Hurricanes (MOVISTAR DEPORTES) (FHD) (cf5)
 http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
 #EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="10:00-Semifinales (M+ LALIGA) (FHD) (af4)",10:00-Semifinales (M+ LALIGA) (FHD) (af4)
 http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
-#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="10:00-Semifinales (M+ LALIGA) (FHD) (8c3)",10:00-Semifinales (M+ LALIGA) (FHD) (8c3)
-http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
 #EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="10:00-Semifinales (M+ LALIGA) (HD) (31c)",10:00-Semifinales (M+ LALIGA) (HD) (31c)
 http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
-#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="10:00-Semifinales (M+ LALIGA) (FHD) (d3b)",10:00-Semifinales (M+ LALIGA) (FHD) (d3b)
-http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
+#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="10:00-Semifinales (M+ LALIGA) (FHD) (8c3)",10:00-Semifinales (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="10:00-Semifinales (M+ LALIGA) (FHD) (0fe)",10:00-Semifinales (M+ LALIGA) (FHD) (0fe)
+http://127.0.0.1:6878/ace/getstream?id=0febfb5cac3384f487d55c559bbfc877db2d0357
+#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="10:00-Semifinales (M+ LALIGA) (HD) (3ac)",10:00-Semifinales (M+ LALIGA) (HD) (3ac)
+http://127.0.0.1:6878/ace/getstream?id=3ace1463a7cad979c3a4002b245487e9982e9f1a
+#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="10:00-Semifinales (M+ LALIGA) (HD) (f86)",10:00-Semifinales (M+ LALIGA) (HD) (f86)
+http://127.0.0.1:6878/ace/getstream?id=f863873de9f7b2996dde19a0657dd89835af3007
 #EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="10:00-Semifinales (M+ LALIGA) (HD) (5ad)",10:00-Semifinales (M+ LALIGA) (HD) (5ad)
 http://127.0.0.1:6878/ace/getstream?id=5ad75216a63a31fef23ddc3532edc66c2fc0936c
+#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="10:00-Semifinales (M+ LALIGA) (FHD) (d3b)",10:00-Semifinales (M+ LALIGA) (FHD) (d3b)
+http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
 #EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="10:00-Semifinales (HYPERMOTION) (HD) (87b)",10:00-Semifinales (HYPERMOTION) (HD) (87b)
 http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="10:00-Semifinales (HYPERMOTION) (HD) (a4f)",10:00-Semifinales (HYPERMOTION) (HD) (a4f)
@@ -53,14 +65,20 @@ http://127.0.0.1:6878/ace/getstream?id=4636ed75106cb00e9c70cc2029edf0a4df7ad73f
 http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
 #EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="10:30-Semifinales (M+ LALIGA) (FHD) (af4)",10:30-Semifinales (M+ LALIGA) (FHD) (af4)
 http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
-#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="10:30-Semifinales (M+ LALIGA) (FHD) (8c3)",10:30-Semifinales (M+ LALIGA) (FHD) (8c3)
-http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
 #EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="10:30-Semifinales (M+ LALIGA) (HD) (31c)",10:30-Semifinales (M+ LALIGA) (HD) (31c)
 http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
-#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="10:30-Semifinales (M+ LALIGA) (FHD) (d3b)",10:30-Semifinales (M+ LALIGA) (FHD) (d3b)
-http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
+#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="10:30-Semifinales (M+ LALIGA) (FHD) (8c3)",10:30-Semifinales (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="10:30-Semifinales (M+ LALIGA) (FHD) (0fe)",10:30-Semifinales (M+ LALIGA) (FHD) (0fe)
+http://127.0.0.1:6878/ace/getstream?id=0febfb5cac3384f487d55c559bbfc877db2d0357
+#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="10:30-Semifinales (M+ LALIGA) (HD) (3ac)",10:30-Semifinales (M+ LALIGA) (HD) (3ac)
+http://127.0.0.1:6878/ace/getstream?id=3ace1463a7cad979c3a4002b245487e9982e9f1a
+#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="10:30-Semifinales (M+ LALIGA) (HD) (f86)",10:30-Semifinales (M+ LALIGA) (HD) (f86)
+http://127.0.0.1:6878/ace/getstream?id=f863873de9f7b2996dde19a0657dd89835af3007
 #EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="10:30-Semifinales (M+ LALIGA) (HD) (5ad)",10:30-Semifinales (M+ LALIGA) (HD) (5ad)
 http://127.0.0.1:6878/ace/getstream?id=5ad75216a63a31fef23ddc3532edc66c2fc0936c
+#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="10:30-Semifinales (M+ LALIGA) (FHD) (d3b)",10:30-Semifinales (M+ LALIGA) (FHD) (d3b)
+http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
 #EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="10:30-Semifinales (HYPERMOTION) (HD) (87b)",10:30-Semifinales (HYPERMOTION) (HD) (87b)
 http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="10:30-Semifinales (HYPERMOTION) (HD) (a4f)",10:30-Semifinales (HYPERMOTION) (HD) (a4f)
@@ -69,26 +87,34 @@ http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
 http://127.0.0.1:6878/ace/getstream?id=4636ed75106cb00e9c70cc2029edf0a4df7ad73f
 #EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="10:30-Semifinales (HYPERMOTION) (FHD) (e4c)",10:30-Semifinales (HYPERMOTION) (FHD) (e4c)
 http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
+#EXTINF:-1 group-title="06-06 (Sábado) Roland Garros WTA" tvg-name="11:00-Final Dobles Femeninos Grand Slam (EUROSPORT 4K) (FHD) (714)",11:00-Final Dobles Femeninos Grand Slam (EUROSPORT 4K) (FHD) (714)
+http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
 #EXTINF:-1 group-title="06-06 (Sábado) Roland Garros WTA" tvg-name="11:00-Final Dobles Femeninos Grand Slam (EUROSPORT 4K) (FHD) (ef2)",11:00-Final Dobles Femeninos Grand Slam (EUROSPORT 4K) (FHD) (ef2)
 http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
 #EXTINF:-1 group-title="06-06 (Sábado) Roland Garros WTA" tvg-name="11:00-Final Dobles Femeninos Grand Slam (EUROSPORT 4K) (FHD) (bae)",11:00-Final Dobles Femeninos Grand Slam (EUROSPORT 4K) (FHD) (bae)
 http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
 #EXTINF:-1 group-title="06-06 (Sábado) Roland Garros WTA" tvg-name="11:00-Final Dobles Femeninos Grand Slam (EUROSPORT 4K) (HD) (547)",11:00-Final Dobles Femeninos Grand Slam (EUROSPORT 4K) (HD) (547)
 http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
-#EXTINF:-1 group-title="06-06 (Sábado) Roland Garros WTA" tvg-name="11:00-Final Dobles Femeninos Grand Slam (EUROSPORT 4K) (FHD) (714)",11:00-Final Dobles Femeninos Grand Slam (EUROSPORT 4K) (FHD) (714)
-http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
-#EXTINF:-1 group-title="06-06 (Sábado) Roland Garros WTA" tvg-name="11:00-Final Dobles Femeninos Grand Slam (EUROSPORT 4K) (FHD) (852)",11:00-Final Dobles Femeninos Grand Slam (EUROSPORT 4K) (FHD) (852)
-http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
+#EXTINF:-1 group-title="06-06 (Sábado) Roland Garros WTA" tvg-name="11:00-Final Dobles Femeninos Grand Slam (EUROSPORT 4K) (FHD) (48a)",11:00-Final Dobles Femeninos Grand Slam (EUROSPORT 4K) (FHD) (48a)
+http://127.0.0.1:6878/ace/getstream?id=48a589dbeab3544662fafd79888aada7d834cfe9
+#EXTINF:-1 group-title="06-06 (Sábado) Roland Garros WTA" tvg-name="11:00-Final Dobles Femeninos Grand Slam (EUROSPORT 4K) (HD) (313)",11:00-Final Dobles Femeninos Grand Slam (EUROSPORT 4K) (HD) (313)
+http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
 #EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="12:30-3er Puesto (M+ LALIGA) (FHD) (af4)",12:30-3er Puesto (M+ LALIGA) (FHD) (af4)
 http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
-#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="12:30-3er Puesto (M+ LALIGA) (FHD) (8c3)",12:30-3er Puesto (M+ LALIGA) (FHD) (8c3)
-http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
 #EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="12:30-3er Puesto (M+ LALIGA) (HD) (31c)",12:30-3er Puesto (M+ LALIGA) (HD) (31c)
 http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
-#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="12:30-3er Puesto (M+ LALIGA) (FHD) (d3b)",12:30-3er Puesto (M+ LALIGA) (FHD) (d3b)
-http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
+#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="12:30-3er Puesto (M+ LALIGA) (FHD) (8c3)",12:30-3er Puesto (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="12:30-3er Puesto (M+ LALIGA) (FHD) (0fe)",12:30-3er Puesto (M+ LALIGA) (FHD) (0fe)
+http://127.0.0.1:6878/ace/getstream?id=0febfb5cac3384f487d55c559bbfc877db2d0357
+#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="12:30-3er Puesto (M+ LALIGA) (HD) (3ac)",12:30-3er Puesto (M+ LALIGA) (HD) (3ac)
+http://127.0.0.1:6878/ace/getstream?id=3ace1463a7cad979c3a4002b245487e9982e9f1a
+#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="12:30-3er Puesto (M+ LALIGA) (HD) (f86)",12:30-3er Puesto (M+ LALIGA) (HD) (f86)
+http://127.0.0.1:6878/ace/getstream?id=f863873de9f7b2996dde19a0657dd89835af3007
 #EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="12:30-3er Puesto (M+ LALIGA) (HD) (5ad)",12:30-3er Puesto (M+ LALIGA) (HD) (5ad)
 http://127.0.0.1:6878/ace/getstream?id=5ad75216a63a31fef23ddc3532edc66c2fc0936c
+#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="12:30-3er Puesto (M+ LALIGA) (FHD) (d3b)",12:30-3er Puesto (M+ LALIGA) (FHD) (d3b)
+http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
 #EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="12:30-3er Puesto (HYPERMOTION) (HD) (87b)",12:30-3er Puesto (HYPERMOTION) (HD) (87b)
 http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="12:30-3er Puesto (HYPERMOTION) (HD) (a4f)",12:30-3er Puesto (HYPERMOTION) (HD) (a4f)
@@ -99,14 +125,20 @@ http://127.0.0.1:6878/ace/getstream?id=4636ed75106cb00e9c70cc2029edf0a4df7ad73f
 http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
 #EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="13:00-Final (M+ LALIGA) (FHD) (af4)",13:00-Final (M+ LALIGA) (FHD) (af4)
 http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
-#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="13:00-Final (M+ LALIGA) (FHD) (8c3)",13:00-Final (M+ LALIGA) (FHD) (8c3)
-http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
 #EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="13:00-Final (M+ LALIGA) (HD) (31c)",13:00-Final (M+ LALIGA) (HD) (31c)
 http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
-#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="13:00-Final (M+ LALIGA) (FHD) (d3b)",13:00-Final (M+ LALIGA) (FHD) (d3b)
-http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
+#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="13:00-Final (M+ LALIGA) (FHD) (8c3)",13:00-Final (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="13:00-Final (M+ LALIGA) (FHD) (0fe)",13:00-Final (M+ LALIGA) (FHD) (0fe)
+http://127.0.0.1:6878/ace/getstream?id=0febfb5cac3384f487d55c559bbfc877db2d0357
+#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="13:00-Final (M+ LALIGA) (HD) (3ac)",13:00-Final (M+ LALIGA) (HD) (3ac)
+http://127.0.0.1:6878/ace/getstream?id=3ace1463a7cad979c3a4002b245487e9982e9f1a
+#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="13:00-Final (M+ LALIGA) (HD) (f86)",13:00-Final (M+ LALIGA) (HD) (f86)
+http://127.0.0.1:6878/ace/getstream?id=f863873de9f7b2996dde19a0657dd89835af3007
 #EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="13:00-Final (M+ LALIGA) (HD) (5ad)",13:00-Final (M+ LALIGA) (HD) (5ad)
 http://127.0.0.1:6878/ace/getstream?id=5ad75216a63a31fef23ddc3532edc66c2fc0936c
+#EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="13:00-Final (M+ LALIGA) (FHD) (d3b)",13:00-Final (M+ LALIGA) (FHD) (d3b)
+http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
 #EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="13:00-Final (HYPERMOTION) (HD) (87b)",13:00-Final (HYPERMOTION) (HD) (87b)
 http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
 #EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="13:00-Final (HYPERMOTION) (HD) (a4f)",13:00-Final (HYPERMOTION) (HD) (a4f)
@@ -115,38 +147,42 @@ http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
 http://127.0.0.1:6878/ace/getstream?id=4636ed75106cb00e9c70cc2029edf0a4df7ad73f
 #EXTINF:-1 group-title="06-06 (Sábado) LaLiga Futures" tvg-name="13:00-Final (HYPERMOTION) (FHD) (e4c)",13:00-Final (HYPERMOTION) (FHD) (e4c)
 http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
-#EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="15:00-3er Puesto (DAZN 1) (FHD) (1e7)",15:00-3er Puesto (DAZN 1) (FHD) (1e7)
-http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
-#EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="15:00-3er Puesto (DAZN 1) (FHD) (414)",15:00-3er Puesto (DAZN 1) (FHD) (414)
-http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
-#EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="15:00-3er Puesto (DAZN 1) (FHD) (363)",15:00-3er Puesto (DAZN 1) (FHD) (363)
-http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
-#EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="15:00-3er Puesto (DAZN 1) (FHD) (691)",15:00-3er Puesto (DAZN 1) (FHD) (691)
-http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
 #EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="15:00-3er Puesto (DAZN 1) (FHD) (b03)",15:00-3er Puesto (DAZN 1) (FHD) (b03)
 http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
-#EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="15:00-3er Puesto (DAZN 1) (HD) (d5b)",15:00-3er Puesto (DAZN 1) (HD) (d5b)
-http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
+#EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="15:00-3er Puesto (DAZN 1) (FHD) (691)",15:00-3er Puesto (DAZN 1) (FHD) (691)
+http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
+#EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="15:00-3er Puesto (DAZN 1) (FHD) (414)",15:00-3er Puesto (DAZN 1) (FHD) (414)
+http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
 #EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="15:00-3er Puesto (DAZN 1) (HD) (5b7)",15:00-3er Puesto (DAZN 1) (HD) (5b7)
 http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
+#EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="15:00-3er Puesto (DAZN 1) (HD) (d5b)",15:00-3er Puesto (DAZN 1) (HD) (d5b)
+http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
+#EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="15:00-3er Puesto (DAZN 1) (FHD) (363)",15:00-3er Puesto (DAZN 1) (FHD) (363)
+http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
+#EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="15:00-3er Puesto (DAZN 1) (FHD) (1e7)",15:00-3er Puesto (DAZN 1) (FHD) (1e7)
+http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
+#EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="15:00-3er Puesto (DAZN 1) (HD) (a11)",15:00-3er Puesto (DAZN 1) (HD) (a11)
+http://127.0.0.1:6878/ace/getstream?id=a116ce3ff95c41c60e987e2b1aa247007f707884
 #EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="15:00-3er Puesto (DAZN 1) (FHD) (781)",15:00-3er Puesto (DAZN 1) (FHD) (781)
 http://127.0.0.1:6878/ace/getstream?id=78124d96a1a4601e7910f50e36a16e35efcfb398
+#EXTINF:-1 group-title="06-06 (Sábado) Roland Garros Final" tvg-name="15:00-F. Cobolli-A. Zverev (EUROSPORT 4K) (FHD) (714)",15:00-F. Cobolli-A. Zverev (EUROSPORT 4K) (FHD) (714)
+http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
 #EXTINF:-1 group-title="06-06 (Sábado) Roland Garros Final" tvg-name="15:00-F. Cobolli-A. Zverev (EUROSPORT 4K) (FHD) (ef2)",15:00-F. Cobolli-A. Zverev (EUROSPORT 4K) (FHD) (ef2)
 http://127.0.0.1:6878/ace/getstream?id=ef2abf419586d9876370be127ad592dbb41b126a
 #EXTINF:-1 group-title="06-06 (Sábado) Roland Garros Final" tvg-name="15:00-F. Cobolli-A. Zverev (EUROSPORT 4K) (FHD) (bae)",15:00-F. Cobolli-A. Zverev (EUROSPORT 4K) (FHD) (bae)
 http://127.0.0.1:6878/ace/getstream?id=bae98f69fbf867550b4f73b4eb176dae84d7f909
 #EXTINF:-1 group-title="06-06 (Sábado) Roland Garros Final" tvg-name="15:00-F. Cobolli-A. Zverev (EUROSPORT 4K) (HD) (547)",15:00-F. Cobolli-A. Zverev (EUROSPORT 4K) (HD) (547)
 http://127.0.0.1:6878/ace/getstream?id=547ab7146a86d6119c9332c011669544720124e3
-#EXTINF:-1 group-title="06-06 (Sábado) Roland Garros Final" tvg-name="15:00-F. Cobolli-A. Zverev (EUROSPORT 4K) (FHD) (714)",15:00-F. Cobolli-A. Zverev (EUROSPORT 4K) (FHD) (714)
-http://127.0.0.1:6878/ace/getstream?id=714e14e6d6e27660fd25a75b57b0ac5580fe705d
-#EXTINF:-1 group-title="06-06 (Sábado) Roland Garros Final" tvg-name="15:00-F. Cobolli-A. Zverev (EUROSPORT 4K) (FHD) (852)",15:00-F. Cobolli-A. Zverev (EUROSPORT 4K) (FHD) (852)
-http://127.0.0.1:6878/ace/getstream?id=8522af51ae7189b12effabbb448dcb707195ce1a
-#EXTINF:-1 group-title="06-06 (Sábado) IAAF Diamond League" tvg-name="17:00-Estocolmo (Suecia) (MOVISTAR PLUS) (FHD) (b6f)",17:00-Estocolmo (Suecia) (MOVISTAR PLUS) (FHD) (b6f)
-http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
+#EXTINF:-1 group-title="06-06 (Sábado) Roland Garros Final" tvg-name="15:00-F. Cobolli-A. Zverev (EUROSPORT 4K) (FHD) (48a)",15:00-F. Cobolli-A. Zverev (EUROSPORT 4K) (FHD) (48a)
+http://127.0.0.1:6878/ace/getstream?id=48a589dbeab3544662fafd79888aada7d834cfe9
+#EXTINF:-1 group-title="06-06 (Sábado) Roland Garros Final" tvg-name="15:00-F. Cobolli-A. Zverev (EUROSPORT 4K) (HD) (313)",15:00-F. Cobolli-A. Zverev (EUROSPORT 4K) (HD) (313)
+http://127.0.0.1:6878/ace/getstream?id=313213b3b99c0f7437f68c8ea5a7b2b6d7b8a153
 #EXTINF:-1 group-title="06-06 (Sábado) IAAF Diamond League" tvg-name="17:00-Estocolmo (Suecia) (MOVISTAR PLUS) (FHD) (586)",17:00-Estocolmo (Suecia) (MOVISTAR PLUS) (FHD) (586)
 http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
 #EXTINF:-1 group-title="06-06 (Sábado) IAAF Diamond League" tvg-name="17:00-Estocolmo (Suecia) (MOVISTAR PLUS) (FHD) (199)",17:00-Estocolmo (Suecia) (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
+#EXTINF:-1 group-title="06-06 (Sábado) IAAF Diamond League" tvg-name="17:00-Estocolmo (Suecia) (MOVISTAR PLUS) (FHD) (b6f)",17:00-Estocolmo (Suecia) (MOVISTAR PLUS) (FHD) (b6f)
+http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
 #EXTINF:-1 group-title="06-06 (Sábado) IAAF Diamond League" tvg-name="17:00-Estocolmo (Suecia) (MOVISTAR PLUS) (FHD) (1ab)",17:00-Estocolmo (Suecia) (MOVISTAR PLUS) (FHD) (1ab)
 http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
 #EXTINF:-1 group-title="06-06 (Sábado) IAAF Diamond League" tvg-name="17:00-Estocolmo (Suecia) (MOVISTAR DEPORTES) (FHD) (369)",17:00-Estocolmo (Suecia) (MOVISTAR DEPORTES) (FHD) (369)
@@ -155,52 +191,60 @@ http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="06-06 (Sábado) IAAF Diamond League" tvg-name="17:00-Estocolmo (Suecia) (MOVISTAR DEPORTES) (FHD) (5d3)",17:00-Estocolmo (Suecia) (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="06-06 (Sábado) IAAF Diamond League" tvg-name="17:00-Estocolmo (Suecia) (MOVISTAR DEPORTES) (HD) (7f8)",17:00-Estocolmo (Suecia) (MOVISTAR DEPORTES) (HD) (7f8)
-http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
+#EXTINF:-1 group-title="06-06 (Sábado) IAAF Diamond League" tvg-name="17:00-Estocolmo (Suecia) (MOVISTAR DEPORTES) (HD) (6e0)",17:00-Estocolmo (Suecia) (MOVISTAR DEPORTES) (HD) (6e0)
+http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
+#EXTINF:-1 group-title="06-06 (Sábado) IAAF Diamond League" tvg-name="17:00-Estocolmo (Suecia) (MOVISTAR DEPORTES) (FHD) (c6a)",17:00-Estocolmo (Suecia) (MOVISTAR DEPORTES) (FHD) (c6a)
+http://127.0.0.1:6878/ace/getstream?id=c6a824a81b36f6c3529826477caf2ad94b45776d
 #EXTINF:-1 group-title="06-06 (Sábado) IAAF Diamond League" tvg-name="17:00-Estocolmo (Suecia) (MOVISTAR DEPORTES) (FHD) (cf5)",17:00-Estocolmo (Suecia) (MOVISTAR DEPORTES) (FHD) (cf5)
 http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
-#EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="18:00-Final (DAZN 1) (FHD) (1e7)",18:00-Final (DAZN 1) (FHD) (1e7)
-http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
-#EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="18:00-Final (DAZN 1) (FHD) (414)",18:00-Final (DAZN 1) (FHD) (414)
-http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
-#EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="18:00-Final (DAZN 1) (FHD) (363)",18:00-Final (DAZN 1) (FHD) (363)
-http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
-#EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="18:00-Final (DAZN 1) (FHD) (691)",18:00-Final (DAZN 1) (FHD) (691)
-http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
 #EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="18:00-Final (DAZN 1) (FHD) (b03)",18:00-Final (DAZN 1) (FHD) (b03)
 http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
-#EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="18:00-Final (DAZN 1) (HD) (d5b)",18:00-Final (DAZN 1) (HD) (d5b)
-http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
+#EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="18:00-Final (DAZN 1) (FHD) (691)",18:00-Final (DAZN 1) (FHD) (691)
+http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
+#EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="18:00-Final (DAZN 1) (FHD) (414)",18:00-Final (DAZN 1) (FHD) (414)
+http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
 #EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="18:00-Final (DAZN 1) (HD) (5b7)",18:00-Final (DAZN 1) (HD) (5b7)
 http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
+#EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="18:00-Final (DAZN 1) (HD) (d5b)",18:00-Final (DAZN 1) (HD) (d5b)
+http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
+#EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="18:00-Final (DAZN 1) (FHD) (363)",18:00-Final (DAZN 1) (FHD) (363)
+http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
+#EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="18:00-Final (DAZN 1) (FHD) (1e7)",18:00-Final (DAZN 1) (FHD) (1e7)
+http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
+#EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="18:00-Final (DAZN 1) (HD) (a11)",18:00-Final (DAZN 1) (HD) (a11)
+http://127.0.0.1:6878/ace/getstream?id=a116ce3ff95c41c60e987e2b1aa247007f707884
 #EXTINF:-1 group-title="06-06 (Sábado) EHF Women's Champions League" tvg-name="18:00-Final (DAZN 1) (FHD) (781)",18:00-Final (DAZN 1) (FHD) (781)
 http://127.0.0.1:6878/ace/getstream?id=78124d96a1a4601e7910f50e36a16e35efcfb398
-#EXTINF:-1 group-title="06-06 (Sábado) Liga Endesa Playoffs 1/4 Final" tvg-name="19:00-Baskonia-Joventut Badalona (MOVISTAR PLUS) (FHD) (b6f)",19:00-Baskonia-Joventut Badalona (MOVISTAR PLUS) (FHD) (b6f)
-http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
 #EXTINF:-1 group-title="06-06 (Sábado) Liga Endesa Playoffs 1/4 Final" tvg-name="19:00-Baskonia-Joventut Badalona (MOVISTAR PLUS) (FHD) (586)",19:00-Baskonia-Joventut Badalona (MOVISTAR PLUS) (FHD) (586)
 http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
 #EXTINF:-1 group-title="06-06 (Sábado) Liga Endesa Playoffs 1/4 Final" tvg-name="19:00-Baskonia-Joventut Badalona (MOVISTAR PLUS) (FHD) (199)",19:00-Baskonia-Joventut Badalona (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
+#EXTINF:-1 group-title="06-06 (Sábado) Liga Endesa Playoffs 1/4 Final" tvg-name="19:00-Baskonia-Joventut Badalona (MOVISTAR PLUS) (FHD) (b6f)",19:00-Baskonia-Joventut Badalona (MOVISTAR PLUS) (FHD) (b6f)
+http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
 #EXTINF:-1 group-title="06-06 (Sábado) Liga Endesa Playoffs 1/4 Final" tvg-name="19:00-Baskonia-Joventut Badalona (MOVISTAR PLUS) (FHD) (1ab)",19:00-Baskonia-Joventut Badalona (MOVISTAR PLUS) (FHD) (1ab)
 http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
-#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (HD) (e57)",21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (FHD) (0f7)",21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
-#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (HD) (b02)",21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (UHD) (152)",21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (UHD) (152)
-http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (FHD) (afb)",21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
-#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (FHD) (afb)",21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
 #EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (FHD) (778)",21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (FHD) (778)
 http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (HD) (2b5)",21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (HD) (2b5)
-http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
+#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (UHD) (152)",21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (UHD) (152)
+http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
 #EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (FHD) (97d)",21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (FHD) (97d)
 http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (HD) (b02)",21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
+#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (FHD) (0f7)",21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
+#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (HD) (2b5)",21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (HD) (2b5)
+http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
+#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (FHD) (afb)",21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (FHD) (afb)",21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (HD) (e57)",21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (HD) (63e)",21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (HD) (63e)
+http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
+#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (FHD) (91b)",21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (FHD) (91b)
+http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
 #EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (HD) (931)",21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (HD) (931)
 http://127.0.0.1:6878/ace/getstream?id=931fd4c24398a24beb9b6ede856ca34339ff2c22
 #EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (FHD) (91a)",21:00-Marruecos-Noruega (LIGA DE CAMPEONES) (FHD) (91a)
@@ -213,38 +257,42 @@ http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
 http://127.0.0.1:6878/ace/getstream?id=4636ed75106cb00e9c70cc2029edf0a4df7ad73f
 #EXTINF:-1 group-title="06-06 (Sábado) LaLiga Hypermotion Playoffs Semi-Final" tvg-name="21:00-UD Las Palmas-Málaga (HYPERMOTION) (FHD) (e4c)",21:00-UD Las Palmas-Málaga (HYPERMOTION) (FHD) (e4c)
 http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
-#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="22:00-Ecuador-Guatemala (LIGA DE CAMPEONES 2) (FHD) (4fc)",22:00-Ecuador-Guatemala (LIGA DE CAMPEONES 2) (FHD) (4fc)
-http://127.0.0.1:6878/ace/getstream?id=4fc6d0331830ad8743abab2fe2473b63bdfbc49f
-#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="22:00-Ecuador-Guatemala (LIGA DE CAMPEONES 2) (HD) (bb2)",22:00-Ecuador-Guatemala (LIGA DE CAMPEONES 2) (HD) (bb2)
-http://127.0.0.1:6878/ace/getstream?id=bb26037a253866d341778181eff5c8637240d615
 #EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="22:00-Ecuador-Guatemala (LIGA DE CAMPEONES 2) (FHD) (c6a)",22:00-Ecuador-Guatemala (LIGA DE CAMPEONES 2) (FHD) (c6a)
 http://127.0.0.1:6878/ace/getstream?id=c6a3673f6a37b1bd3cf31fdd6404dd33d48cfccb
 #EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="22:00-Ecuador-Guatemala (LIGA DE CAMPEONES 2) (FHD) (498)",22:00-Ecuador-Guatemala (LIGA DE CAMPEONES 2) (FHD) (498)
 http://127.0.0.1:6878/ace/getstream?id=498c56bd00f535e440c392de5af992421a31355c
 #EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="22:00-Ecuador-Guatemala (LIGA DE CAMPEONES 2) (HD) (338)",22:00-Ecuador-Guatemala (LIGA DE CAMPEONES 2) (HD) (338)
 http://127.0.0.1:6878/ace/getstream?id=338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea
+#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="22:00-Ecuador-Guatemala (LIGA DE CAMPEONES 2) (HD) (bb2)",22:00-Ecuador-Guatemala (LIGA DE CAMPEONES 2) (HD) (bb2)
+http://127.0.0.1:6878/ace/getstream?id=bb26037a253866d341778181eff5c8637240d615
+#EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="22:00-Ecuador-Guatemala (LIGA DE CAMPEONES 2) (FHD) (4fc)",22:00-Ecuador-Guatemala (LIGA DE CAMPEONES 2) (FHD) (4fc)
+http://127.0.0.1:6878/ace/getstream?id=4fc6d0331830ad8743abab2fe2473b63bdfbc49f
 #EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="22:00-Ecuador-Guatemala (LIGA DE CAMPEONES 2) (FHD) (815)",22:00-Ecuador-Guatemala (LIGA DE CAMPEONES 2) (FHD) (815)
 http://127.0.0.1:6878/ace/getstream?id=8156912ae14f6174a19c8a4efcf36a06e847f632
 #EXTINF:-1 group-title="06-06 (Sábado) Amistoso" tvg-name="22:00-Ecuador-Guatemala (LIGA DE CAMPEONES 2) (FHD) (74a)",22:00-Ecuador-Guatemala (LIGA DE CAMPEONES 2) (FHD) (74a)
 http://127.0.0.1:6878/ace/getstream?id=74ab4e4ec7e2da001f473ca40893b7307b8029c5
-#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (e57)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (0f7)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
-#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (b02)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (UHD) (152)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (UHD) (152)
-http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (afb)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
-#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (afb)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
 #EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (778)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (778)
 http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (2b5)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (2b5)
-http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
+#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (UHD) (152)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (UHD) (152)
+http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
 #EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (97d)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (97d)
 http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (b02)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
+#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (0f7)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
+#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (2b5)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (2b5)
+http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
+#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (afb)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (afb)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (e57)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (63e)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (63e)
+http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
+#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (91b)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (91b)
+http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
 #EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (931)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (931)
 http://127.0.0.1:6878/ace/getstream?id=931fd4c24398a24beb9b6ede856ca34339ff2c22
 #EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (91a)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (91a)
