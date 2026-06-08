@@ -1,41 +1,59 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="06-08 (Lunes) LaLiga Hypermotion Playoffs Semi-Final" tvg-name="21:00-UD Almería-CD Castellón (HYPERMOTION) (HD) (a4f)",21:00-UD Almería-CD Castellón (HYPERMOTION) (HD) (a4f)
-http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
-#EXTINF:-1 group-title="06-08 (Lunes) LaLiga Hypermotion Playoffs Semi-Final" tvg-name="21:00-UD Almería-CD Castellón (HYPERMOTION) (HD) (87b)",21:00-UD Almería-CD Castellón (HYPERMOTION) (HD) (87b)
-http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
-#EXTINF:-1 group-title="06-08 (Lunes) LaLiga Hypermotion Playoffs Semi-Final" tvg-name="21:00-UD Almería-CD Castellón (HYPERMOTION) (HD) (1f7)",21:00-UD Almería-CD Castellón (HYPERMOTION) (HD) (1f7)
-http://127.0.0.1:6878/ace/getstream?id=1f75d92098580443857caa95a719103cb83781b0
-#EXTINF:-1 group-title="06-08 (Lunes) LaLiga Hypermotion Playoffs Semi-Final" tvg-name="21:00-UD Almería-CD Castellón (HYPERMOTION) (FHD) (e4c)",21:00-UD Almería-CD Castellón (HYPERMOTION) (FHD) (e4c)
-http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
-#EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (97d)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (778)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (778)
+#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (2b5)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (2b5)
+http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
+#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (afb)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (778)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (778)
 http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (HD) (e57)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (0f7)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
-#EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (afb)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (afb)
+#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (afb)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (0f7)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
+#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (97d)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (97d)
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (UHD) (152)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (UHD) (152)
+http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
+#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (e57)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (b02)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
+#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (63e)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (63e)
+http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
+#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (91a)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (FHD) (91a)
+http://127.0.0.1:6878/ace/getstream?id=91af434b0bb521189286f8cbbab1aed39d7536fe
+#EXTINF:-1 group-title="06-08 (Lunes) Amistoso" tvg-name="01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (931)",01:00-Colombia-Jordania (LIGA DE CAMPEONES) (HD) (931)
+http://127.0.0.1:6878/ace/getstream?id=931fd4c24398a24beb9b6ede856ca34339ff2c22
+#EXTINF:-1 group-title="06-09 (Martes) LaLiga Hypermotion Playoffs Semi-Final" tvg-name="21:00-UD Almería-CD Castellón (HYPERMOTION) (HD) (87b)",21:00-UD Almería-CD Castellón (HYPERMOTION) (HD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="06-09 (Martes) LaLiga Hypermotion Playoffs Semi-Final" tvg-name="21:00-UD Almería-CD Castellón (HYPERMOTION) (HD) (a4f)",21:00-UD Almería-CD Castellón (HYPERMOTION) (HD) (a4f)
+http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
 #EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (HD) (2b5)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (HD) (2b5)
 http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
-#EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (HD) (b02)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (UHD) (152)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (UHD) (152)
-http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
 #EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (afb)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (778)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (778)
+http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
+#EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (afb)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (0f7)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
+#EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (97d)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (97d)
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (UHD) (152)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (UHD) (152)
+http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
+#EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (HD) (e57)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (HD) (b02)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
 #EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (HD) (63e)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (HD) (63e)
 http://127.0.0.1:6878/ace/getstream?id=63e4713e8379f2ebf5e6ed9aa00fbf78ebae7439
+#EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (91a)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (91a)
+http://127.0.0.1:6878/ace/getstream?id=91af434b0bb521189286f8cbbab1aed39d7536fe
 #EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (HD) (931)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (HD) (931)
 http://127.0.0.1:6878/ace/getstream?id=931fd4c24398a24beb9b6ede856ca34339ff2c22
-#EXTINF:-1 group-title="06-10 (Miércoles) LaLiga Hypermotion Playoffs Semi-Final" tvg-name="21:00-Málaga-UD Las Palmas (HYPERMOTION) (HD) (a4f)",21:00-Málaga-UD Las Palmas (HYPERMOTION) (HD) (a4f)
-http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
 #EXTINF:-1 group-title="06-10 (Miércoles) LaLiga Hypermotion Playoffs Semi-Final" tvg-name="21:00-Málaga-UD Las Palmas (HYPERMOTION) (HD) (87b)",21:00-Málaga-UD Las Palmas (HYPERMOTION) (HD) (87b)
 http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
-#EXTINF:-1 group-title="06-10 (Miércoles) LaLiga Hypermotion Playoffs Semi-Final" tvg-name="21:00-Málaga-UD Las Palmas (HYPERMOTION) (HD) (1f7)",21:00-Málaga-UD Las Palmas (HYPERMOTION) (HD) (1f7)
-http://127.0.0.1:6878/ace/getstream?id=1f75d92098580443857caa95a719103cb83781b0
-#EXTINF:-1 group-title="06-10 (Miércoles) LaLiga Hypermotion Playoffs Semi-Final" tvg-name="21:00-Málaga-UD Las Palmas (HYPERMOTION) (FHD) (e4c)",21:00-Málaga-UD Las Palmas (HYPERMOTION) (FHD) (e4c)
-http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
+#EXTINF:-1 group-title="06-10 (Miércoles) LaLiga Hypermotion Playoffs Semi-Final" tvg-name="21:00-Málaga-UD Las Palmas (HYPERMOTION) (HD) (a4f)",21:00-Málaga-UD Las Palmas (HYPERMOTION) (HD) (a4f)
+http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
