@@ -1,107 +1,107 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="06-10 (Miércoles) NHL Stanley Cup Final" tvg-name="02:00-Vegas Golden Knights-Carolina Hurricanes (MOVISTAR DEPORTES) (FHD) (f82)",02:00-Vegas Golden Knights-Carolina Hurricanes (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="06-10 (Miércoles) NHL Stanley Cup Final" tvg-name="02:00-Vegas Golden Knights-Carolina Hurricanes (MOVISTAR DEPORTES) (FHD) (5d3)",02:00-Vegas Golden Knights-Carolina Hurricanes (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="06-10 (Miércoles) NHL Stanley Cup Final" tvg-name="02:00-Vegas Golden Knights-Carolina Hurricanes (MOVISTAR DEPORTES) (FHD) (369)",02:00-Vegas Golden Knights-Carolina Hurricanes (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (0f7)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
+#EXTINF:-1 group-title="06-10 (Miércoles) NHL Stanley Cup Final" tvg-name="02:00-Vegas Golden Knights-Carolina Hurricanes (MOVISTAR DEPORTES) (FHD) (5d3)",02:00-Vegas Golden Knights-Carolina Hurricanes (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-10 (Miércoles) NHL Stanley Cup Final" tvg-name="02:00-Vegas Golden Knights-Carolina Hurricanes (MOVISTAR DEPORTES) (FHD) (f82)",02:00-Vegas Golden Knights-Carolina Hurricanes (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (UHD) (152)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (UHD) (152)
+http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
 #EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (HD) (2b5)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (HD) (2b5)
 http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
 #EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (afb)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
-#EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (UHD) (152)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (UHD) (152)
-http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (97d)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (778)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (778)
-http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (afb)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
 #EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (HD) (e57)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (HD) (e57)
 http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (778)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (778)
+http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
+#EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (0f7)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
 #EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (HD) (b02)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (HD) (b02)
 http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
+#EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (afb)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (HD) (97d)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (HD) (97d)
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
 #EXTINF:-1 group-title="06-10 (Miércoles) Amistoso" tvg-name="03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (91a)",03:00-Argentina-Islandia (LIGA DE CAMPEONES) (FHD) (91a)
 http://127.0.0.1:6878/ace/getstream?id=91af434b0bb521189286f8cbbab1aed39d7536fe
 #EXTINF:-1 group-title="06-10 (Miércoles) LaLiga Hypermotion Playoffs Semi-Final" tvg-name="21:00-Málaga-UD Las Palmas (HYPERMOTION) (HD) (a4f)",21:00-Málaga-UD Las Palmas (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
 #EXTINF:-1 group-title="06-10 (Miércoles) LaLiga Hypermotion Playoffs Semi-Final" tvg-name="21:00-Málaga-UD Las Palmas (HYPERMOTION) (HD) (87b)",21:00-Málaga-UD Las Palmas (HYPERMOTION) (HD) (87b)
 http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
-#EXTINF:-1 group-title="06-10 (Miércoles) LaLiga Hypermotion Playoffs Semi-Final" tvg-name="21:00-Málaga-UD Las Palmas (HYPERMOTION) (HD) (2c5)",21:00-Málaga-UD Las Palmas (HYPERMOTION) (HD) (2c5)
-http://127.0.0.1:6878/ace/getstream?id=2c54a4def58f41fc0d2163450a63f12955b656aa
 #EXTINF:-1 group-title="06-10 (Miércoles) LaLiga Hypermotion Playoffs Semi-Final" tvg-name="21:00-Málaga-UD Las Palmas (HYPERMOTION) (FHD) (e4c)",21:00-Málaga-UD Las Palmas (HYPERMOTION) (FHD) (e4c)
 http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
-#EXTINF:-1 group-title="06-11 (Jueves) Liga Endesa Semifinales" tvg-name="20:00-Barça Basket-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (586)",20:00-Barça Basket-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (586)
-http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
+#EXTINF:-1 group-title="06-10 (Miércoles) LaLiga Hypermotion Playoffs Semi-Final" tvg-name="21:00-Málaga-UD Las Palmas (HYPERMOTION) (HD) (2c5)",21:00-Málaga-UD Las Palmas (HYPERMOTION) (HD) (2c5)
+http://127.0.0.1:6878/ace/getstream?id=2c54a4def58f41fc0d2163450a63f12955b656aa
 #EXTINF:-1 group-title="06-11 (Jueves) Liga Endesa Semifinales" tvg-name="20:00-Barça Basket-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (b6f)",20:00-Barça Basket-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (b6f)
 http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
+#EXTINF:-1 group-title="06-11 (Jueves) Liga Endesa Semifinales" tvg-name="20:00-Barça Basket-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (586)",20:00-Barça Basket-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (586)
+http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
 #EXTINF:-1 group-title="06-11 (Jueves) Liga Endesa Semifinales" tvg-name="20:00-Barça Basket-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (199)",20:00-Barça Basket-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
 #EXTINF:-1 group-title="06-11 (Jueves) Liga Endesa Semifinales" tvg-name="20:00-Barça Basket-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (1ab)",20:00-Barça Basket-La Laguna Tenerife (MOVISTAR PLUS) (FHD) (1ab)
 http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
-#EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="10:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",10:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="10:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",10:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="10:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",10:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="10:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",10:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="10:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",10:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="06-12 (Viernes) Torneo de Hertogenbosch" tvg-name="11:00-1/4 de Final ATP 250 (MOVISTAR DEPORTES 3) (HD) (39f)",11:00-1/4 de Final ATP 250 (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
 #EXTINF:-1 group-title="06-12 (Viernes) Torneo de Stuttgart" tvg-name="11:05-1/4 de Final ATP 250 (MOVISTAR DEPORTES 2) (HD) (3af)",11:05-1/4 de Final ATP 250 (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="06-12 (Viernes) Torneo de Stuttgart" tvg-name="11:05-1/4 de Final ATP 250 (MOVISTAR DEPORTES 2) (FHD) (73d)",11:05-1/4 de Final ATP 250 (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="12:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",12:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="12:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",12:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="12:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",12:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="12:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",12:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="12:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",12:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="12:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 4) (HD) (8b5)",12:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
-#EXTINF:-1 group-title="06-12 (Viernes) Fórmula 1" tvg-name="13:30-G.P. Barcelona-Cataluña (Montmeló) Libres 1 (MOVISTAR PLUS) (FHD) (586)",13:30-G.P. Barcelona-Cataluña (Montmeló) Libres 1 (MOVISTAR PLUS) (FHD) (586)
-http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
 #EXTINF:-1 group-title="06-12 (Viernes) Fórmula 1" tvg-name="13:30-G.P. Barcelona-Cataluña (Montmeló) Libres 1 (MOVISTAR PLUS) (FHD) (b6f)",13:30-G.P. Barcelona-Cataluña (Montmeló) Libres 1 (MOVISTAR PLUS) (FHD) (b6f)
 http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
+#EXTINF:-1 group-title="06-12 (Viernes) Fórmula 1" tvg-name="13:30-G.P. Barcelona-Cataluña (Montmeló) Libres 1 (MOVISTAR PLUS) (FHD) (586)",13:30-G.P. Barcelona-Cataluña (Montmeló) Libres 1 (MOVISTAR PLUS) (FHD) (586)
+http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
 #EXTINF:-1 group-title="06-12 (Viernes) Fórmula 1" tvg-name="13:30-G.P. Barcelona-Cataluña (Montmeló) Libres 1 (MOVISTAR PLUS) (FHD) (199)",13:30-G.P. Barcelona-Cataluña (Montmeló) Libres 1 (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
 #EXTINF:-1 group-title="06-12 (Viernes) Fórmula 1" tvg-name="13:30-G.P. Barcelona-Cataluña (Montmeló) Libres 1 (MOVISTAR PLUS) (FHD) (1ab)",13:30-G.P. Barcelona-Cataluña (Montmeló) Libres 1 (MOVISTAR PLUS) (FHD) (1ab)
 http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
-#EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="14:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",14:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="14:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",14:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="14:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",14:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="16:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",16:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="16:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",16:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
+#EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="14:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",14:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="14:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",14:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="16:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",16:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="06-12 (Viernes) Fórmula 1" tvg-name="17:00-G.P. Barcelona-Cataluña (Montmeló) Libres 2 (MOVISTAR PLUS) (FHD) (586)",17:00-G.P. Barcelona-Cataluña (Montmeló) Libres 2 (MOVISTAR PLUS) (FHD) (586)
-http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
+#EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="16:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",16:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="16:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",16:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="06-12 (Viernes) Fórmula 1" tvg-name="17:00-G.P. Barcelona-Cataluña (Montmeló) Libres 2 (MOVISTAR PLUS) (FHD) (b6f)",17:00-G.P. Barcelona-Cataluña (Montmeló) Libres 2 (MOVISTAR PLUS) (FHD) (b6f)
 http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
+#EXTINF:-1 group-title="06-12 (Viernes) Fórmula 1" tvg-name="17:00-G.P. Barcelona-Cataluña (Montmeló) Libres 2 (MOVISTAR PLUS) (FHD) (586)",17:00-G.P. Barcelona-Cataluña (Montmeló) Libres 2 (MOVISTAR PLUS) (FHD) (586)
+http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
 #EXTINF:-1 group-title="06-12 (Viernes) Fórmula 1" tvg-name="17:00-G.P. Barcelona-Cataluña (Montmeló) Libres 2 (MOVISTAR PLUS) (FHD) (199)",17:00-G.P. Barcelona-Cataluña (Montmeló) Libres 2 (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
 #EXTINF:-1 group-title="06-12 (Viernes) Fórmula 1" tvg-name="17:00-G.P. Barcelona-Cataluña (Montmeló) Libres 2 (MOVISTAR PLUS) (FHD) (1ab)",17:00-G.P. Barcelona-Cataluña (Montmeló) Libres 2 (MOVISTAR PLUS) (FHD) (1ab)
 http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
-#EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="18:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",18:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="18:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",18:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="18:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",18:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="20:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",20:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="20:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",20:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
+#EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="18:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",18:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="18:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",18:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="20:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",20:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="20:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",20:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-12 (Viernes) Valencia Open" tvg-name="20:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",20:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="06-12 (Viernes) Gallagher Premiership" tvg-name="20:45-Northampton Saints-Leicester Tigers (MOVISTAR DEPORTES 3) (HD) (39f)",20:45-Northampton Saints-Leicester Tigers (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
