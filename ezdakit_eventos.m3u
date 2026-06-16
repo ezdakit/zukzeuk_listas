@@ -1,179 +1,49 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Halle 1ª Ronda" tvg-name="11:40-K. Khachanov-E. Quinn (MOVISTAR DEPORTES 4) (HD) (8b5)",11:40-K. Khachanov-E. Quinn (MOVISTAR DEPORTES 4) (HD) (8b5)
-http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Halle 1ª Ronda" tvg-name="11:40-K. Khachanov-E. Quinn (MOVISTAR DEPORTES 4) (FHD) (7be)",11:40-K. Khachanov-E. Quinn (MOVISTAR DEPORTES 4) (FHD) (7be)
-http://127.0.0.1:6878/ace/getstream?id=7bede102385c65a545db531af476ef18c31f6258
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Halle 1ª Ronda" tvg-name="11:40-M. Bellucci-A. Bublik (MOVISTAR DEPORTES) (FHD) (f82)",11:40-M. Bellucci-A. Bublik (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Halle 1ª Ronda" tvg-name="11:40-M. Bellucci-A. Bublik (MOVISTAR DEPORTES) (FHD) (5d3)",11:40-M. Bellucci-A. Bublik (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Halle 1ª Ronda" tvg-name="11:40-M. Bellucci-A. Bublik (MOVISTAR DEPORTES) (FHD) (369)",11:40-M. Bellucci-A. Bublik (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Halle 1ª Ronda" tvg-name="11:40-M. Bellucci-A. Bublik (MOVISTAR DEPORTES) (FHD) (cf5)",11:40-M. Bellucci-A. Bublik (MOVISTAR DEPORTES) (FHD) (cf5)
-http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="12:40-B. Nakashima-M. Fucsovics (MOVISTAR DEPORTES 3) (HD) (39f)",12:40-B. Nakashima-M. Fucsovics (MOVISTAR DEPORTES 3) (HD) (39f)
-http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="12:40-B. Nakashima-M. Fucsovics (MOVISTAR DEPORTES 3) (HD) (e9c)",12:40-B. Nakashima-M. Fucsovics (MOVISTAR DEPORTES 3) (HD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="12:40-B. Nakashima-M. Fucsovics (MOVISTAR DEPORTES 3) (FHD) (84a)",12:40-B. Nakashima-M. Fucsovics (MOVISTAR DEPORTES 3) (FHD) (84a)
-http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="12:40-J. Mensik-A. Mannarino (MOVISTAR DEPORTES 2) (FHD) (73d)",12:40-J. Mensik-A. Mannarino (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="12:40-J. Mensik-A. Mannarino (MOVISTAR DEPORTES 2) (HD) (3af)",12:40-J. Mensik-A. Mannarino (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="12:40-J. Mensik-A. Mannarino (MOVISTAR DEPORTES 2) (HD) (6b1)",12:40-J. Mensik-A. Mannarino (MOVISTAR DEPORTES 2) (HD) (6b1)
-http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="12:40-J. Mensik-A. Mannarino (MOVISTAR DEPORTES 2) (FHD) (377)",12:40-J. Mensik-A. Mannarino (MOVISTAR DEPORTES 2) (FHD) (377)
-http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="12:40-J. Mensik-A. Mannarino (MOVISTAR DEPORTES 2) (HD) (fd2)",12:40-J. Mensik-A. Mannarino (MOVISTAR DEPORTES 2) (HD) (fd2)
-http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="12:40-J. Mensik-A. Mannarino (MOVISTAR DEPORTES 2) (FHD) (8cd)",12:40-J. Mensik-A. Mannarino (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Halle 1ª Ronda" tvg-name="13:10-J. Fonseca-Y. Hanfmann (MOVISTAR DEPORTES) (FHD) (f82)",13:10-J. Fonseca-Y. Hanfmann (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Halle 1ª Ronda" tvg-name="13:10-J. Fonseca-Y. Hanfmann (MOVISTAR DEPORTES) (FHD) (5d3)",13:10-J. Fonseca-Y. Hanfmann (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Halle 1ª Ronda" tvg-name="13:10-J. Fonseca-Y. Hanfmann (MOVISTAR DEPORTES) (FHD) (369)",13:10-J. Fonseca-Y. Hanfmann (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Halle 1ª Ronda" tvg-name="13:10-J. Fonseca-Y. Hanfmann (MOVISTAR DEPORTES) (FHD) (cf5)",13:10-J. Fonseca-Y. Hanfmann (MOVISTAR DEPORTES) (FHD) (cf5)
-http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Halle 1ª Ronda" tvg-name="14:00-A. Rublev-H. Hurkacz (MOVISTAR DEPORTES 4) (HD) (8b5)",14:00-A. Rublev-H. Hurkacz (MOVISTAR DEPORTES 4) (HD) (8b5)
-http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Halle 1ª Ronda" tvg-name="14:00-A. Rublev-H. Hurkacz (MOVISTAR DEPORTES 4) (FHD) (7be)",14:00-A. Rublev-H. Hurkacz (MOVISTAR DEPORTES 4) (FHD) (7be)
-http://127.0.0.1:6878/ace/getstream?id=7bede102385c65a545db531af476ef18c31f6258
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="14:10-A. Fery-T. Samuel (MOVISTAR DEPORTES 3) (HD) (39f)",14:10-A. Fery-T. Samuel (MOVISTAR DEPORTES 3) (HD) (39f)
-http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="14:10-A. Fery-T. Samuel (MOVISTAR DEPORTES 3) (HD) (e9c)",14:10-A. Fery-T. Samuel (MOVISTAR DEPORTES 3) (HD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="14:10-A. Fery-T. Samuel (MOVISTAR DEPORTES 3) (FHD) (84a)",14:10-A. Fery-T. Samuel (MOVISTAR DEPORTES 3) (FHD) (84a)
-http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Halle 1ª Ronda" tvg-name="15:10-A. Zverev-V. Kopriva (MOVISTAR DEPORTES) (FHD) (f82)",15:10-A. Zverev-V. Kopriva (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Halle 1ª Ronda" tvg-name="15:10-A. Zverev-V. Kopriva (MOVISTAR DEPORTES) (FHD) (5d3)",15:10-A. Zverev-V. Kopriva (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Halle 1ª Ronda" tvg-name="15:10-A. Zverev-V. Kopriva (MOVISTAR DEPORTES) (FHD) (369)",15:10-A. Zverev-V. Kopriva (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Halle 1ª Ronda" tvg-name="15:10-A. Zverev-V. Kopriva (MOVISTAR DEPORTES) (FHD) (cf5)",15:10-A. Zverev-V. Kopriva (MOVISTAR DEPORTES) (FHD) (cf5)
-http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="15:25-A. Kovacevic-F. Cerúndolo (MOVISTAR DEPORTES 3) (HD) (39f)",15:25-A. Kovacevic-F. Cerúndolo (MOVISTAR DEPORTES 3) (HD) (39f)
-http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="15:25-A. Kovacevic-F. Cerúndolo (MOVISTAR DEPORTES 3) (HD) (e9c)",15:25-A. Kovacevic-F. Cerúndolo (MOVISTAR DEPORTES 3) (HD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="15:25-A. Kovacevic-F. Cerúndolo (MOVISTAR DEPORTES 3) (FHD) (84a)",15:25-A. Kovacevic-F. Cerúndolo (MOVISTAR DEPORTES 3) (FHD) (84a)
-http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="15:35-G. Mpetshi Perricard-C. Moutet (MOVISTAR DEPORTES 2) (FHD) (73d)",15:35-G. Mpetshi Perricard-C. Moutet (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="15:35-G. Mpetshi Perricard-C. Moutet (MOVISTAR DEPORTES 2) (HD) (3af)",15:35-G. Mpetshi Perricard-C. Moutet (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="15:35-G. Mpetshi Perricard-C. Moutet (MOVISTAR DEPORTES 2) (HD) (6b1)",15:35-G. Mpetshi Perricard-C. Moutet (MOVISTAR DEPORTES 2) (HD) (6b1)
-http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="15:35-G. Mpetshi Perricard-C. Moutet (MOVISTAR DEPORTES 2) (FHD) (377)",15:35-G. Mpetshi Perricard-C. Moutet (MOVISTAR DEPORTES 2) (FHD) (377)
-http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="15:35-G. Mpetshi Perricard-C. Moutet (MOVISTAR DEPORTES 2) (HD) (fd2)",15:35-G. Mpetshi Perricard-C. Moutet (MOVISTAR DEPORTES 2) (HD) (fd2)
-http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="15:35-G. Mpetshi Perricard-C. Moutet (MOVISTAR DEPORTES 2) (FHD) (8cd)",15:35-G. Mpetshi Perricard-C. Moutet (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="16:45-A. De Miñaur-G. Diallo (MOVISTAR DEPORTES 2) (FHD) (73d)",16:45-A. De Miñaur-G. Diallo (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="16:45-A. De Miñaur-G. Diallo (MOVISTAR DEPORTES 2) (HD) (3af)",16:45-A. De Miñaur-G. Diallo (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="16:45-A. De Miñaur-G. Diallo (MOVISTAR DEPORTES 2) (HD) (6b1)",16:45-A. De Miñaur-G. Diallo (MOVISTAR DEPORTES 2) (HD) (6b1)
-http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="16:45-A. De Miñaur-G. Diallo (MOVISTAR DEPORTES 2) (FHD) (377)",16:45-A. De Miñaur-G. Diallo (MOVISTAR DEPORTES 2) (FHD) (377)
-http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="16:45-A. De Miñaur-G. Diallo (MOVISTAR DEPORTES 2) (HD) (fd2)",16:45-A. De Miñaur-G. Diallo (MOVISTAR DEPORTES 2) (HD) (fd2)
-http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="16:45-A. De Miñaur-G. Diallo (MOVISTAR DEPORTES 2) (FHD) (8cd)",16:45-A. De Miñaur-G. Diallo (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Halle 1ª Ronda" tvg-name="17:40-TM. Etcheverry-D. Medvedev (MOVISTAR DEPORTES) (FHD) (f82)",17:40-TM. Etcheverry-D. Medvedev (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Halle 1ª Ronda" tvg-name="17:40-TM. Etcheverry-D. Medvedev (MOVISTAR DEPORTES) (FHD) (5d3)",17:40-TM. Etcheverry-D. Medvedev (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Halle 1ª Ronda" tvg-name="17:40-TM. Etcheverry-D. Medvedev (MOVISTAR DEPORTES) (FHD) (369)",17:40-TM. Etcheverry-D. Medvedev (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Halle 1ª Ronda" tvg-name="17:40-TM. Etcheverry-D. Medvedev (MOVISTAR DEPORTES) (FHD) (cf5)",17:40-TM. Etcheverry-D. Medvedev (MOVISTAR DEPORTES) (FHD) (cf5)
-http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="17:45-U. Humbert-M. Cilic (MOVISTAR DEPORTES 3) (HD) (39f)",17:45-U. Humbert-M. Cilic (MOVISTAR DEPORTES 3) (HD) (39f)
-http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="17:45-U. Humbert-M. Cilic (MOVISTAR DEPORTES 3) (HD) (e9c)",17:45-U. Humbert-M. Cilic (MOVISTAR DEPORTES 3) (HD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="17:45-U. Humbert-M. Cilic (MOVISTAR DEPORTES 3) (FHD) (84a)",17:45-U. Humbert-M. Cilic (MOVISTAR DEPORTES 3) (FHD) (84a)
-http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="19:05-C. Norrie-A. Davidovich (MOVISTAR PLUS) (FHD) (b6f)",19:05-C. Norrie-A. Davidovich (MOVISTAR PLUS) (FHD) (b6f)
-http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="19:05-C. Norrie-A. Davidovich (MOVISTAR PLUS) (FHD) (586)",19:05-C. Norrie-A. Davidovich (MOVISTAR PLUS) (FHD) (586)
-http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="19:05-C. Norrie-A. Davidovich (MOVISTAR PLUS) (FHD) (199)",19:05-C. Norrie-A. Davidovich (MOVISTAR PLUS) (FHD) (199)
-http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="19:05-C. Norrie-A. Davidovich (MOVISTAR DEPORTES 2) (FHD) (73d)",19:05-C. Norrie-A. Davidovich (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="19:05-C. Norrie-A. Davidovich (MOVISTAR DEPORTES 2) (HD) (3af)",19:05-C. Norrie-A. Davidovich (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="19:05-C. Norrie-A. Davidovich (MOVISTAR DEPORTES 2) (HD) (6b1)",19:05-C. Norrie-A. Davidovich (MOVISTAR DEPORTES 2) (HD) (6b1)
-http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="19:05-C. Norrie-A. Davidovich (MOVISTAR DEPORTES 2) (FHD) (377)",19:05-C. Norrie-A. Davidovich (MOVISTAR DEPORTES 2) (FHD) (377)
-http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="19:05-C. Norrie-A. Davidovich (MOVISTAR DEPORTES 2) (HD) (fd2)",19:05-C. Norrie-A. Davidovich (MOVISTAR DEPORTES 2) (HD) (fd2)
-http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="19:05-C. Norrie-A. Davidovich (MOVISTAR DEPORTES 2) (FHD) (8cd)",19:05-C. Norrie-A. Davidovich (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="19:25-K. Majchrzak-J. Lehecka (MOVISTAR DEPORTES 2) (FHD) (73d)",19:25-K. Majchrzak-J. Lehecka (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="19:25-K. Majchrzak-J. Lehecka (MOVISTAR DEPORTES 2) (HD) (3af)",19:25-K. Majchrzak-J. Lehecka (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="19:25-K. Majchrzak-J. Lehecka (MOVISTAR DEPORTES 2) (HD) (6b1)",19:25-K. Majchrzak-J. Lehecka (MOVISTAR DEPORTES 2) (HD) (6b1)
-http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="19:25-K. Majchrzak-J. Lehecka (MOVISTAR DEPORTES 2) (FHD) (377)",19:25-K. Majchrzak-J. Lehecka (MOVISTAR DEPORTES 2) (FHD) (377)
-http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="19:25-K. Majchrzak-J. Lehecka (MOVISTAR DEPORTES 2) (HD) (fd2)",19:25-K. Majchrzak-J. Lehecka (MOVISTAR DEPORTES 2) (HD) (fd2)
-http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
-#EXTINF:-1 group-title="06-16 (Martes) Torneo de Queen's 1ª Ronda" tvg-name="19:25-K. Majchrzak-J. Lehecka (MOVISTAR DEPORTES 2) (FHD) (8cd)",19:25-K. Majchrzak-J. Lehecka (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="06-17 (Miércoles) Torneo de Halle" tvg-name="11:35-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)",11:35-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="06-17 (Miércoles) Torneo de Halle" tvg-name="11:35-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)",11:35-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-17 (Miércoles) Torneo de Halle" tvg-name="11:35-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)",11:35-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="06-17 (Miércoles) Torneo de Halle" tvg-name="11:35-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (369)",11:35-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="06-17 (Miércoles) Torneo de Halle" tvg-name="11:35-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (cf5)",11:35-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (cf5)
 http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
-#EXTINF:-1 group-title="06-17 (Miércoles) Torneo de Queen's" tvg-name="13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (FHD) (73d)",13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="06-17 (Miércoles) Torneo de Queen's" tvg-name="13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (3af)",13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="06-17 (Miércoles) Torneo de Queen's" tvg-name="13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (FHD) (73d)",13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="06-17 (Miércoles) Torneo de Queen's" tvg-name="13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (6b1)",13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (6b1)
 http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
 #EXTINF:-1 group-title="06-17 (Miércoles) Torneo de Queen's" tvg-name="13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (FHD) (377)",13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (FHD) (377)
 http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
-#EXTINF:-1 group-title="06-17 (Miércoles) Torneo de Queen's" tvg-name="13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (fd2)",13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (fd2)
-http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
 #EXTINF:-1 group-title="06-17 (Miércoles) Torneo de Queen's" tvg-name="13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (FHD) (8cd)",13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (FHD) (8cd)
 http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="06-18 (Jueves) Torneo de Halle" tvg-name="11:35-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)",11:35-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="06-18 (Jueves) Torneo de Halle" tvg-name="11:35-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)",11:35-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="06-18 (Jueves) Torneo de Halle" tvg-name="11:35-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (369)",11:35-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="06-18 (Jueves) Torneo de Halle" tvg-name="11:35-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (cf5)",11:35-2ª Ronda ATP 500 (MOVISTAR DEPORTES) (FHD) (cf5)
-http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
-#EXTINF:-1 group-title="06-18 (Jueves) Torneo de Queen's" tvg-name="13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (FHD) (73d)",13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="06-18 (Jueves) Torneo de Queen's" tvg-name="13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (3af)",13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="06-18 (Jueves) Torneo de Queen's" tvg-name="13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (6b1)",13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (6b1)
-http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
-#EXTINF:-1 group-title="06-18 (Jueves) Torneo de Queen's" tvg-name="13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (FHD) (377)",13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (FHD) (377)
-http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
-#EXTINF:-1 group-title="06-18 (Jueves) Torneo de Queen's" tvg-name="13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (fd2)",13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (fd2)
+#EXTINF:-1 group-title="06-17 (Miércoles) Torneo de Queen's" tvg-name="13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (fd2)",13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (HD) (fd2)
 http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
-#EXTINF:-1 group-title="06-18 (Jueves) Torneo de Queen's" tvg-name="13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (FHD) (8cd)",13:00-2ª Ronda ATP 500 (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="06-18 (Jueves) Liga Endesa Final" tvg-name="20:00-Valencia Basket-Barça Basket (MOVISTAR PLUS) (FHD) (b6f)",20:00-Valencia Basket-Barça Basket (MOVISTAR PLUS) (FHD) (b6f)
+#EXTINF:-1 group-title="06-17 (Miércoles) Liga Endesa Final" tvg-name="20:00-Valencia Basket-Barça Basket (MOVISTAR PLUS) (FHD) (b6f)",20:00-Valencia Basket-Barça Basket (MOVISTAR PLUS) (FHD) (b6f)
 http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
-#EXTINF:-1 group-title="06-18 (Jueves) Liga Endesa Final" tvg-name="20:00-Valencia Basket-Barça Basket (MOVISTAR PLUS) (FHD) (586)",20:00-Valencia Basket-Barça Basket (MOVISTAR PLUS) (FHD) (586)
+#EXTINF:-1 group-title="06-17 (Miércoles) Liga Endesa Final" tvg-name="20:00-Valencia Basket-Barça Basket (MOVISTAR PLUS) (FHD) (586)",20:00-Valencia Basket-Barça Basket (MOVISTAR PLUS) (FHD) (586)
 http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
-#EXTINF:-1 group-title="06-18 (Jueves) Liga Endesa Final" tvg-name="20:00-Valencia Basket-Barça Basket (MOVISTAR PLUS) (FHD) (199)",20:00-Valencia Basket-Barça Basket (MOVISTAR PLUS) (FHD) (199)
+#EXTINF:-1 group-title="06-17 (Miércoles) Liga Endesa Final" tvg-name="20:00-Valencia Basket-Barça Basket (MOVISTAR PLUS) (FHD) (199)",20:00-Valencia Basket-Barça Basket (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle" tvg-name="11:35-1/4 de Final ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)",11:35-1/4 de Final ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle" tvg-name="11:35-1/4 de Final ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)",11:35-1/4 de Final ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle" tvg-name="11:35-1/4 de Final ATP 500 (MOVISTAR DEPORTES) (FHD) (369)",11:35-1/4 de Final ATP 500 (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle" tvg-name="11:35-1/4 de Final ATP 500 (MOVISTAR DEPORTES) (FHD) (cf5)",11:35-1/4 de Final ATP 500 (MOVISTAR DEPORTES) (FHD) (cf5)
+http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's" tvg-name="13:00-1/4 de Final ATP 500 (MOVISTAR DEPORTES 2) (HD) (3af)",13:00-1/4 de Final ATP 500 (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's" tvg-name="13:00-1/4 de Final ATP 500 (MOVISTAR DEPORTES 2) (FHD) (73d)",13:00-1/4 de Final ATP 500 (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's" tvg-name="13:00-1/4 de Final ATP 500 (MOVISTAR DEPORTES 2) (HD) (6b1)",13:00-1/4 de Final ATP 500 (MOVISTAR DEPORTES 2) (HD) (6b1)
+http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's" tvg-name="13:00-1/4 de Final ATP 500 (MOVISTAR DEPORTES 2) (FHD) (377)",13:00-1/4 de Final ATP 500 (MOVISTAR DEPORTES 2) (FHD) (377)
+http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's" tvg-name="13:00-1/4 de Final ATP 500 (MOVISTAR DEPORTES 2) (FHD) (8cd)",13:00-1/4 de Final ATP 500 (MOVISTAR DEPORTES 2) (FHD) (8cd)
+http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's" tvg-name="13:00-1/4 de Final ATP 500 (MOVISTAR DEPORTES 2) (HD) (fd2)",13:00-1/4 de Final ATP 500 (MOVISTAR DEPORTES 2) (HD) (fd2)
+http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
