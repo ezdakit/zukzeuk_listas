@@ -1,136 +1,234 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="06-19 (Viernes) Super Rugby Pacific" tvg-name="09:05-Hurricanes-Chiefs (MOVISTAR DEPORTES) (FHD) (f82)",09:05-Hurricanes-Chiefs (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="06-19 (Viernes) Super Rugby Pacific" tvg-name="09:05-Hurricanes-Chiefs (MOVISTAR DEPORTES) (FHD) (5d3)",09:05-Hurricanes-Chiefs (MOVISTAR DEPORTES) (FHD) (5d3)
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle 1/4 de Final" tvg-name="11:30-B. Shelton-T. Fritz (MOVISTAR DEPORTES) (FHD) (5d3)",11:30-B. Shelton-T. Fritz (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="06-19 (Viernes) Super Rugby Pacific" tvg-name="09:05-Hurricanes-Chiefs (MOVISTAR DEPORTES) (FHD) (369)",09:05-Hurricanes-Chiefs (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="06-19 (Viernes) Super Rugby Pacific" tvg-name="09:05-Hurricanes-Chiefs (MOVISTAR DEPORTES) (HD) (7f8)",09:05-Hurricanes-Chiefs (MOVISTAR DEPORTES) (HD) (7f8)
-http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
-#EXTINF:-1 group-title="06-19 (Viernes) Super Rugby Pacific" tvg-name="09:05-Hurricanes-Chiefs (MOVISTAR DEPORTES) (FHD) (cf5)",09:05-Hurricanes-Chiefs (MOVISTAR DEPORTES) (FHD) (cf5)
-http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
-#EXTINF:-1 group-title="06-19 (Viernes) DTM" tvg-name="13:30-Lausitzring Carrera 1 (DAZN 1) (HD) (5b7)",13:30-Lausitzring Carrera 1 (DAZN 1) (HD) (5b7)
-http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
-#EXTINF:-1 group-title="06-19 (Viernes) DTM" tvg-name="13:30-Lausitzring Carrera 1 (DAZN 1) (FHD) (414)",13:30-Lausitzring Carrera 1 (DAZN 1) (FHD) (414)
-http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
-#EXTINF:-1 group-title="06-19 (Viernes) DTM" tvg-name="13:30-Lausitzring Carrera 1 (DAZN 1) (FHD) (1e7)",13:30-Lausitzring Carrera 1 (DAZN 1) (FHD) (1e7)
-http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
-#EXTINF:-1 group-title="06-19 (Viernes) DTM" tvg-name="13:30-Lausitzring Carrera 1 (DAZN 1) (FHD) (691)",13:30-Lausitzring Carrera 1 (DAZN 1) (FHD) (691)
-http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
-#EXTINF:-1 group-title="06-19 (Viernes) DTM" tvg-name="13:30-Lausitzring Carrera 1 (DAZN 1) (FHD) (363)",13:30-Lausitzring Carrera 1 (DAZN 1) (FHD) (363)
-http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
-#EXTINF:-1 group-title="06-19 (Viernes) DTM" tvg-name="13:30-Lausitzring Carrera 1 (DAZN 1) (FHD) (b03)",13:30-Lausitzring Carrera 1 (DAZN 1) (FHD) (b03)
-http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
-#EXTINF:-1 group-title="06-19 (Viernes) DTM" tvg-name="13:30-Lausitzring Carrera 1 (DAZN 1) (HD) (d5b)",13:30-Lausitzring Carrera 1 (DAZN 1) (HD) (d5b)
-http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
-#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's" tvg-name="14:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)",14:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle 1/4 de Final" tvg-name="11:30-B. Shelton-T. Fritz (MOVISTAR DEPORTES) (FHD) (f82)",11:30-B. Shelton-T. Fritz (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's" tvg-name="14:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)",14:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's" tvg-name="14:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES) (FHD) (369)",14:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES) (FHD) (369)
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle 1/4 de Final" tvg-name="11:30-B. Shelton-T. Fritz (MOVISTAR DEPORTES) (FHD) (369)",11:30-B. Shelton-T. Fritz (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's" tvg-name="14:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES) (HD) (7f8)",14:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES) (HD) (7f8)
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle 1/4 de Final" tvg-name="11:30-B. Shelton-T. Fritz (MOVISTAR DEPORTES) (HD) (7f8)",11:30-B. Shelton-T. Fritz (MOVISTAR DEPORTES) (HD) (7f8)
 http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
-#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's" tvg-name="14:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES) (FHD) (cf5)",14:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES) (FHD) (cf5)
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle 1/4 de Final" tvg-name="11:30-B. Shelton-T. Fritz (MOVISTAR DEPORTES) (FHD) (cf5)",11:30-B. Shelton-T. Fritz (MOVISTAR DEPORTES) (FHD) (cf5)
 http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
-#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle" tvg-name="15:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES 2) (HD) (3af)",15:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES 2) (HD) (3af)
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's 1/4 de Final" tvg-name="12:30-A. De Miñaur-B. Nakashima (MOVISTAR DEPORTES 2) (HD) (3af)",12:30-A. De Miñaur-B. Nakashima (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle" tvg-name="15:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES 2) (FHD) (73d)",15:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES 2) (FHD) (73d)
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's 1/4 de Final" tvg-name="12:30-A. De Miñaur-B. Nakashima (MOVISTAR DEPORTES 2) (FHD) (73d)",12:30-A. De Miñaur-B. Nakashima (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle" tvg-name="15:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES 2) (HD) (6b1)",15:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES 2) (HD) (6b1)
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's 1/4 de Final" tvg-name="12:30-A. De Miñaur-B. Nakashima (MOVISTAR DEPORTES 2) (HD) (6b1)",12:30-A. De Miñaur-B. Nakashima (MOVISTAR DEPORTES 2) (HD) (6b1)
 http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
-#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle" tvg-name="15:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES 2) (FHD) (8cd)",15:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES 2) (FHD) (8cd)
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's 1/4 de Final" tvg-name="12:30-A. De Miñaur-B. Nakashima (MOVISTAR DEPORTES 2) (FHD) (8cd)",12:30-A. De Miñaur-B. Nakashima (MOVISTAR DEPORTES 2) (FHD) (8cd)
 http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle" tvg-name="15:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES 2) (HD) (fd2)",15:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES 2) (HD) (fd2)
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's 1/4 de Final" tvg-name="12:30-A. De Miñaur-B. Nakashima (MOVISTAR DEPORTES 2) (HD) (fd2)",12:30-A. De Miñaur-B. Nakashima (MOVISTAR DEPORTES 2) (HD) (fd2)
 http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
-#EXTINF:-1 group-title="06-19 (Viernes) Gallagher Premiership" tvg-name="16:00-Northampton Saints-Exeter Chiefs (MOVISTAR DEPORTES 3) (HD) (39f)",16:00-Northampton Saints-Exeter Chiefs (MOVISTAR DEPORTES 3) (HD) (39f)
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle 1/4 de Final" tvg-name="13:00-A. Zverev-R. Collignon (MOVISTAR DEPORTES) (FHD) (5d3)",13:00-A. Zverev-R. Collignon (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle 1/4 de Final" tvg-name="13:00-A. Zverev-R. Collignon (MOVISTAR DEPORTES) (FHD) (f82)",13:00-A. Zverev-R. Collignon (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle 1/4 de Final" tvg-name="13:00-A. Zverev-R. Collignon (MOVISTAR DEPORTES) (FHD) (369)",13:00-A. Zverev-R. Collignon (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle 1/4 de Final" tvg-name="13:00-A. Zverev-R. Collignon (MOVISTAR DEPORTES) (HD) (7f8)",13:00-A. Zverev-R. Collignon (MOVISTAR DEPORTES) (HD) (7f8)
+http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle 1/4 de Final" tvg-name="13:00-A. Zverev-R. Collignon (MOVISTAR DEPORTES) (FHD) (cf5)",13:00-A. Zverev-R. Collignon (MOVISTAR DEPORTES) (FHD) (cf5)
+http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's 2ª Ronda" tvg-name="14:00-H. Medjedovic-U. Humbert (MOVISTAR DEPORTES 2) (HD) (3af)",14:00-H. Medjedovic-U. Humbert (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's 2ª Ronda" tvg-name="14:00-H. Medjedovic-U. Humbert (MOVISTAR DEPORTES 2) (FHD) (73d)",14:00-H. Medjedovic-U. Humbert (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's 2ª Ronda" tvg-name="14:00-H. Medjedovic-U. Humbert (MOVISTAR DEPORTES 2) (HD) (6b1)",14:00-H. Medjedovic-U. Humbert (MOVISTAR DEPORTES 2) (HD) (6b1)
+http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's 2ª Ronda" tvg-name="14:00-H. Medjedovic-U. Humbert (MOVISTAR DEPORTES 2) (FHD) (8cd)",14:00-H. Medjedovic-U. Humbert (MOVISTAR DEPORTES 2) (FHD) (8cd)
+http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's 2ª Ronda" tvg-name="14:00-H. Medjedovic-U. Humbert (MOVISTAR DEPORTES 2) (HD) (fd2)",14:00-H. Medjedovic-U. Humbert (MOVISTAR DEPORTES 2) (HD) (fd2)
+http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle 1/4 de Final" tvg-name="14:30-D. Altmaier-D. Medvedev (MOVISTAR DEPORTES) (FHD) (5d3)",14:30-D. Altmaier-D. Medvedev (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle 1/4 de Final" tvg-name="14:30-D. Altmaier-D. Medvedev (MOVISTAR DEPORTES) (FHD) (f82)",14:30-D. Altmaier-D. Medvedev (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle 1/4 de Final" tvg-name="14:30-D. Altmaier-D. Medvedev (MOVISTAR DEPORTES) (FHD) (369)",14:30-D. Altmaier-D. Medvedev (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle 1/4 de Final" tvg-name="14:30-D. Altmaier-D. Medvedev (MOVISTAR DEPORTES) (HD) (7f8)",14:30-D. Altmaier-D. Medvedev (MOVISTAR DEPORTES) (HD) (7f8)
+http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle 1/4 de Final" tvg-name="14:30-D. Altmaier-D. Medvedev (MOVISTAR DEPORTES) (FHD) (cf5)",14:30-D. Altmaier-D. Medvedev (MOVISTAR DEPORTES) (FHD) (cf5)
+http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's 1/4 de Final" tvg-name="14:30-A. Fery-F. Cerúndolo (MOVISTAR DEPORTES 2) (HD) (3af)",14:30-A. Fery-F. Cerúndolo (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's 1/4 de Final" tvg-name="14:30-A. Fery-F. Cerúndolo (MOVISTAR DEPORTES 2) (FHD) (73d)",14:30-A. Fery-F. Cerúndolo (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's 1/4 de Final" tvg-name="14:30-A. Fery-F. Cerúndolo (MOVISTAR DEPORTES 2) (HD) (6b1)",14:30-A. Fery-F. Cerúndolo (MOVISTAR DEPORTES 2) (HD) (6b1)
+http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's 1/4 de Final" tvg-name="14:30-A. Fery-F. Cerúndolo (MOVISTAR DEPORTES 2) (FHD) (8cd)",14:30-A. Fery-F. Cerúndolo (MOVISTAR DEPORTES 2) (FHD) (8cd)
+http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's 1/4 de Final" tvg-name="14:30-A. Fery-F. Cerúndolo (MOVISTAR DEPORTES 2) (HD) (fd2)",14:30-A. Fery-F. Cerúndolo (MOVISTAR DEPORTES 2) (HD) (fd2)
+http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle 1/4 de Final" tvg-name="16:00-F. Tiafoe-F. Auger-Aliassime (MOVISTAR DEPORTES) (FHD) (5d3)",16:00-F. Tiafoe-F. Auger-Aliassime (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle 1/4 de Final" tvg-name="16:00-F. Tiafoe-F. Auger-Aliassime (MOVISTAR DEPORTES) (FHD) (f82)",16:00-F. Tiafoe-F. Auger-Aliassime (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle 1/4 de Final" tvg-name="16:00-F. Tiafoe-F. Auger-Aliassime (MOVISTAR DEPORTES) (FHD) (369)",16:00-F. Tiafoe-F. Auger-Aliassime (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle 1/4 de Final" tvg-name="16:00-F. Tiafoe-F. Auger-Aliassime (MOVISTAR DEPORTES) (HD) (7f8)",16:00-F. Tiafoe-F. Auger-Aliassime (MOVISTAR DEPORTES) (HD) (7f8)
+http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle 1/4 de Final" tvg-name="16:00-F. Tiafoe-F. Auger-Aliassime (MOVISTAR DEPORTES) (FHD) (cf5)",16:00-F. Tiafoe-F. Auger-Aliassime (MOVISTAR DEPORTES) (FHD) (cf5)
+http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's 1/4 de Final" tvg-name="16:00-T. Paul-A. Davidovich (MOVISTAR DEPORTES 2) (HD) (3af)",16:00-T. Paul-A. Davidovich (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's 1/4 de Final" tvg-name="16:00-T. Paul-A. Davidovich (MOVISTAR DEPORTES 2) (FHD) (73d)",16:00-T. Paul-A. Davidovich (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's 1/4 de Final" tvg-name="16:00-T. Paul-A. Davidovich (MOVISTAR DEPORTES 2) (HD) (6b1)",16:00-T. Paul-A. Davidovich (MOVISTAR DEPORTES 2) (HD) (6b1)
+http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's 1/4 de Final" tvg-name="16:00-T. Paul-A. Davidovich (MOVISTAR DEPORTES 2) (FHD) (8cd)",16:00-T. Paul-A. Davidovich (MOVISTAR DEPORTES 2) (FHD) (8cd)
+http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's 1/4 de Final" tvg-name="16:00-T. Paul-A. Davidovich (MOVISTAR DEPORTES 2) (HD) (fd2)",16:00-T. Paul-A. Davidovich (MOVISTAR DEPORTES 2) (HD) (fd2)
+http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
+#EXTINF:-1 group-title="06-19 (Viernes) Velada" tvg-name="17:30-Professional Fighters League Jeddah (Arabia Saudí) (MOVISTAR DEPORTES 3) (HD) (39f)",17:30-Professional Fighters League Jeddah (Arabia Saudí) (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="06-19 (Viernes) Gallagher Premiership" tvg-name="16:00-Northampton Saints-Exeter Chiefs (MOVISTAR DEPORTES 3) (HD) (e9c)",16:00-Northampton Saints-Exeter Chiefs (MOVISTAR DEPORTES 3) (HD) (e9c)
+#EXTINF:-1 group-title="06-19 (Viernes) Velada" tvg-name="17:30-Professional Fighters League Jeddah (Arabia Saudí) (MOVISTAR DEPORTES 3) (HD) (e9c)",17:30-Professional Fighters League Jeddah (Arabia Saudí) (MOVISTAR DEPORTES 3) (HD) (e9c)
 http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
-#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's" tvg-name="16:00-Semifinal 2 ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)",16:00-Semifinal 2 ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's" tvg-name="16:00-Semifinal 2 ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)",16:00-Semifinal 2 ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's 1/4 de Final" tvg-name="18:30-TBD-R. Hijikata (MOVISTAR DEPORTES 2) (HD) (3af)",18:30-TBD-R. Hijikata (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's 1/4 de Final" tvg-name="18:30-TBD-R. Hijikata (MOVISTAR DEPORTES 2) (FHD) (73d)",18:30-TBD-R. Hijikata (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's 1/4 de Final" tvg-name="18:30-TBD-R. Hijikata (MOVISTAR DEPORTES 2) (HD) (6b1)",18:30-TBD-R. Hijikata (MOVISTAR DEPORTES 2) (HD) (6b1)
+http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's 1/4 de Final" tvg-name="18:30-TBD-R. Hijikata (MOVISTAR DEPORTES 2) (FHD) (8cd)",18:30-TBD-R. Hijikata (MOVISTAR DEPORTES 2) (FHD) (8cd)
+http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
+#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's 1/4 de Final" tvg-name="18:30-TBD-R. Hijikata (MOVISTAR DEPORTES 2) (HD) (fd2)",18:30-TBD-R. Hijikata (MOVISTAR DEPORTES 2) (HD) (fd2)
+http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
+#EXTINF:-1 group-title="06-19 (Viernes) Top 14" tvg-name="21:05-Stade Toulouse-Racing 92 (MOVISTAR DEPORTES 3) (HD) (39f)",21:05-Stade Toulouse-Racing 92 (MOVISTAR DEPORTES 3) (HD) (39f)
+http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
+#EXTINF:-1 group-title="06-19 (Viernes) Top 14" tvg-name="21:05-Stade Toulouse-Racing 92 (MOVISTAR DEPORTES 3) (HD) (e9c)",21:05-Stade Toulouse-Racing 92 (MOVISTAR DEPORTES 3) (HD) (e9c)
+http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
+#EXTINF:-1 group-title="06-20 (Sábado) Super Rugby Pacific" tvg-name="09:05-Hurricanes-Chiefs (MOVISTAR DEPORTES) (FHD) (5d3)",09:05-Hurricanes-Chiefs (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's" tvg-name="16:00-Semifinal 2 ATP 500 (MOVISTAR DEPORTES) (FHD) (369)",16:00-Semifinal 2 ATP 500 (MOVISTAR DEPORTES) (FHD) (369)
+#EXTINF:-1 group-title="06-20 (Sábado) Super Rugby Pacific" tvg-name="09:05-Hurricanes-Chiefs (MOVISTAR DEPORTES) (FHD) (f82)",09:05-Hurricanes-Chiefs (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="06-20 (Sábado) Super Rugby Pacific" tvg-name="09:05-Hurricanes-Chiefs (MOVISTAR DEPORTES) (FHD) (369)",09:05-Hurricanes-Chiefs (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's" tvg-name="16:00-Semifinal 2 ATP 500 (MOVISTAR DEPORTES) (HD) (7f8)",16:00-Semifinal 2 ATP 500 (MOVISTAR DEPORTES) (HD) (7f8)
+#EXTINF:-1 group-title="06-20 (Sábado) Super Rugby Pacific" tvg-name="09:05-Hurricanes-Chiefs (MOVISTAR DEPORTES) (HD) (7f8)",09:05-Hurricanes-Chiefs (MOVISTAR DEPORTES) (HD) (7f8)
 http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
-#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Queen's" tvg-name="16:00-Semifinal 2 ATP 500 (MOVISTAR DEPORTES) (FHD) (cf5)",16:00-Semifinal 2 ATP 500 (MOVISTAR DEPORTES) (FHD) (cf5)
+#EXTINF:-1 group-title="06-20 (Sábado) Super Rugby Pacific" tvg-name="09:05-Hurricanes-Chiefs (MOVISTAR DEPORTES) (FHD) (cf5)",09:05-Hurricanes-Chiefs (MOVISTAR DEPORTES) (FHD) (cf5)
 http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
-#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle" tvg-name="17:30-Semifinal 2 ATP 500 (MOVISTAR DEPORTES 2) (HD) (3af)",17:30-Semifinal 2 ATP 500 (MOVISTAR DEPORTES 2) (HD) (3af)
+#EXTINF:-1 group-title="06-20 (Sábado) DTM" tvg-name="13:30-Lausitzring Carrera 1 (DAZN 1) (HD) (d5b)",13:30-Lausitzring Carrera 1 (DAZN 1) (HD) (d5b)
+http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
+#EXTINF:-1 group-title="06-20 (Sábado) DTM" tvg-name="13:30-Lausitzring Carrera 1 (DAZN 1) (FHD) (b03)",13:30-Lausitzring Carrera 1 (DAZN 1) (FHD) (b03)
+http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
+#EXTINF:-1 group-title="06-20 (Sábado) DTM" tvg-name="13:30-Lausitzring Carrera 1 (DAZN 1) (FHD) (363)",13:30-Lausitzring Carrera 1 (DAZN 1) (FHD) (363)
+http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
+#EXTINF:-1 group-title="06-20 (Sábado) DTM" tvg-name="13:30-Lausitzring Carrera 1 (DAZN 1) (FHD) (1e7)",13:30-Lausitzring Carrera 1 (DAZN 1) (FHD) (1e7)
+http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
+#EXTINF:-1 group-title="06-20 (Sábado) DTM" tvg-name="13:30-Lausitzring Carrera 1 (DAZN 1) (HD) (5b7)",13:30-Lausitzring Carrera 1 (DAZN 1) (HD) (5b7)
+http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
+#EXTINF:-1 group-title="06-20 (Sábado) DTM" tvg-name="13:30-Lausitzring Carrera 1 (DAZN 1) (FHD) (691)",13:30-Lausitzring Carrera 1 (DAZN 1) (FHD) (691)
+http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
+#EXTINF:-1 group-title="06-20 (Sábado) DTM" tvg-name="13:30-Lausitzring Carrera 1 (DAZN 1) (FHD) (414)",13:30-Lausitzring Carrera 1 (DAZN 1) (FHD) (414)
+http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
+#EXTINF:-1 group-title="06-20 (Sábado) Torneo de Queen's" tvg-name="14:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)",14:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-20 (Sábado) Torneo de Queen's" tvg-name="14:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)",14:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="06-20 (Sábado) Torneo de Queen's" tvg-name="14:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES) (FHD) (369)",14:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="06-20 (Sábado) Torneo de Queen's" tvg-name="14:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES) (HD) (7f8)",14:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES) (HD) (7f8)
+http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
+#EXTINF:-1 group-title="06-20 (Sábado) Torneo de Queen's" tvg-name="14:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES) (FHD) (cf5)",14:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES) (FHD) (cf5)
+http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
+#EXTINF:-1 group-title="06-20 (Sábado) Torneo de Halle" tvg-name="15:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES 2) (HD) (3af)",15:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle" tvg-name="17:30-Semifinal 2 ATP 500 (MOVISTAR DEPORTES 2) (FHD) (73d)",17:30-Semifinal 2 ATP 500 (MOVISTAR DEPORTES 2) (FHD) (73d)
+#EXTINF:-1 group-title="06-20 (Sábado) Torneo de Halle" tvg-name="15:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES 2) (FHD) (73d)",15:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle" tvg-name="17:30-Semifinal 2 ATP 500 (MOVISTAR DEPORTES 2) (HD) (6b1)",17:30-Semifinal 2 ATP 500 (MOVISTAR DEPORTES 2) (HD) (6b1)
+#EXTINF:-1 group-title="06-20 (Sábado) Torneo de Halle" tvg-name="15:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES 2) (HD) (6b1)",15:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES 2) (HD) (6b1)
 http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
-#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle" tvg-name="17:30-Semifinal 2 ATP 500 (MOVISTAR DEPORTES 2) (FHD) (8cd)",17:30-Semifinal 2 ATP 500 (MOVISTAR DEPORTES 2) (FHD) (8cd)
+#EXTINF:-1 group-title="06-20 (Sábado) Torneo de Halle" tvg-name="15:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES 2) (FHD) (8cd)",15:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES 2) (FHD) (8cd)
 http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="06-19 (Viernes) Torneo de Halle" tvg-name="17:30-Semifinal 2 ATP 500 (MOVISTAR DEPORTES 2) (HD) (fd2)",17:30-Semifinal 2 ATP 500 (MOVISTAR DEPORTES 2) (HD) (fd2)
+#EXTINF:-1 group-title="06-20 (Sábado) Torneo de Halle" tvg-name="15:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES 2) (HD) (fd2)",15:00-Semifinal 1 ATP 500 (MOVISTAR DEPORTES 2) (HD) (fd2)
 http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
-#EXTINF:-1 group-title="06-19 (Viernes) IndyCar" tvg-name="20:00-Grand Prix at Road America Clasificación (MOVISTAR DEPORTES 4) (HD) (8b5)",20:00-Grand Prix at Road America Clasificación (MOVISTAR DEPORTES 4) (HD) (8b5)
+#EXTINF:-1 group-title="06-20 (Sábado) Gallagher Premiership" tvg-name="16:00-Northampton Saints-Exeter Chiefs (MOVISTAR DEPORTES 3) (HD) (39f)",16:00-Northampton Saints-Exeter Chiefs (MOVISTAR DEPORTES 3) (HD) (39f)
+http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
+#EXTINF:-1 group-title="06-20 (Sábado) Gallagher Premiership" tvg-name="16:00-Northampton Saints-Exeter Chiefs (MOVISTAR DEPORTES 3) (HD) (e9c)",16:00-Northampton Saints-Exeter Chiefs (MOVISTAR DEPORTES 3) (HD) (e9c)
+http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
+#EXTINF:-1 group-title="06-20 (Sábado) Torneo de Queen's" tvg-name="16:00-Semifinal 2 ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)",16:00-Semifinal 2 ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-20 (Sábado) Torneo de Queen's" tvg-name="16:00-Semifinal 2 ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)",16:00-Semifinal 2 ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="06-20 (Sábado) Torneo de Queen's" tvg-name="16:00-Semifinal 2 ATP 500 (MOVISTAR DEPORTES) (FHD) (369)",16:00-Semifinal 2 ATP 500 (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="06-20 (Sábado) Torneo de Queen's" tvg-name="16:00-Semifinal 2 ATP 500 (MOVISTAR DEPORTES) (HD) (7f8)",16:00-Semifinal 2 ATP 500 (MOVISTAR DEPORTES) (HD) (7f8)
+http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
+#EXTINF:-1 group-title="06-20 (Sábado) Torneo de Queen's" tvg-name="16:00-Semifinal 2 ATP 500 (MOVISTAR DEPORTES) (FHD) (cf5)",16:00-Semifinal 2 ATP 500 (MOVISTAR DEPORTES) (FHD) (cf5)
+http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
+#EXTINF:-1 group-title="06-20 (Sábado) Torneo de Halle" tvg-name="17:30-Semifinal 2 ATP 500 (MOVISTAR DEPORTES 2) (HD) (3af)",17:30-Semifinal 2 ATP 500 (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="06-20 (Sábado) Torneo de Halle" tvg-name="17:30-Semifinal 2 ATP 500 (MOVISTAR DEPORTES 2) (FHD) (73d)",17:30-Semifinal 2 ATP 500 (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="06-20 (Sábado) Torneo de Halle" tvg-name="17:30-Semifinal 2 ATP 500 (MOVISTAR DEPORTES 2) (HD) (6b1)",17:30-Semifinal 2 ATP 500 (MOVISTAR DEPORTES 2) (HD) (6b1)
+http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
+#EXTINF:-1 group-title="06-20 (Sábado) Torneo de Halle" tvg-name="17:30-Semifinal 2 ATP 500 (MOVISTAR DEPORTES 2) (FHD) (8cd)",17:30-Semifinal 2 ATP 500 (MOVISTAR DEPORTES 2) (FHD) (8cd)
+http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
+#EXTINF:-1 group-title="06-20 (Sábado) Torneo de Halle" tvg-name="17:30-Semifinal 2 ATP 500 (MOVISTAR DEPORTES 2) (HD) (fd2)",17:30-Semifinal 2 ATP 500 (MOVISTAR DEPORTES 2) (HD) (fd2)
+http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
+#EXTINF:-1 group-title="06-20 (Sábado) IndyCar" tvg-name="20:00-Grand Prix at Road America Clasificación (MOVISTAR DEPORTES 4) (HD) (8b5)",20:00-Grand Prix at Road America Clasificación (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
-#EXTINF:-1 group-title="06-19 (Viernes) LaLiga Hypermotion Playoffs Final" tvg-name="21:00-UD Almería-Málaga (HYPERMOTION) (HD) (87b)",21:00-UD Almería-Málaga (HYPERMOTION) (HD) (87b)
-http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
-#EXTINF:-1 group-title="06-19 (Viernes) LaLiga Hypermotion Playoffs Final" tvg-name="21:00-UD Almería-Málaga (HYPERMOTION) (HD) (a4f)",21:00-UD Almería-Málaga (HYPERMOTION) (HD) (a4f)
+#EXTINF:-1 group-title="06-20 (Sábado) LaLiga Hypermotion Playoffs Final" tvg-name="21:00-UD Almería-Málaga (HYPERMOTION) (HD) (a4f)",21:00-UD Almería-Málaga (HYPERMOTION) (HD) (a4f)
 http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
-#EXTINF:-1 group-title="06-19 (Viernes) LaLiga Hypermotion Playoffs Final" tvg-name="21:00-UD Almería-Málaga (MOVISTAR PLUS) (FHD) (586)",21:00-UD Almería-Málaga (MOVISTAR PLUS) (FHD) (586)
-http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
-#EXTINF:-1 group-title="06-19 (Viernes) LaLiga Hypermotion Playoffs Final" tvg-name="21:00-UD Almería-Málaga (MOVISTAR PLUS) (FHD) (199)",21:00-UD Almería-Málaga (MOVISTAR PLUS) (FHD) (199)
+#EXTINF:-1 group-title="06-20 (Sábado) LaLiga Hypermotion Playoffs Final" tvg-name="21:00-UD Almería-Málaga (HYPERMOTION) (HD) (87b)",21:00-UD Almería-Málaga (HYPERMOTION) (HD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="06-20 (Sábado) LaLiga Hypermotion Playoffs Final" tvg-name="21:00-UD Almería-Málaga (MOVISTAR PLUS) (FHD) (199)",21:00-UD Almería-Málaga (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 group-title="06-19 (Viernes) LaLiga Hypermotion Playoffs Final" tvg-name="21:00-UD Almería-Málaga (MOVISTAR PLUS) (FHD) (b6f)",21:00-UD Almería-Málaga (MOVISTAR PLUS) (FHD) (b6f)
+#EXTINF:-1 group-title="06-20 (Sábado) LaLiga Hypermotion Playoffs Final" tvg-name="21:00-UD Almería-Málaga (MOVISTAR PLUS) (FHD) (b6f)",21:00-UD Almería-Málaga (MOVISTAR PLUS) (FHD) (b6f)
 http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
-#EXTINF:-1 group-title="06-19 (Viernes) LaLiga Hypermotion Playoffs Final" tvg-name="21:00-UD Almería-Málaga (MOVISTAR PLUS) (FHD) (1ab)",21:00-UD Almería-Málaga (MOVISTAR PLUS) (FHD) (1ab)
-http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
-#EXTINF:-1 group-title="06-19 (Viernes) Top 14" tvg-name="21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 2) (HD) (3af)",21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="06-19 (Viernes) Top 14" tvg-name="21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 2) (FHD) (73d)",21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="06-19 (Viernes) Top 14" tvg-name="21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 2) (HD) (6b1)",21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 2) (HD) (6b1)
-http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
-#EXTINF:-1 group-title="06-19 (Viernes) Top 14" tvg-name="21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 2) (FHD) (8cd)",21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="06-19 (Viernes) Top 14" tvg-name="21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 2) (HD) (fd2)",21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 2) (HD) (fd2)
-http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
-#EXTINF:-1 group-title="06-19 (Viernes) Top 14" tvg-name="21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 5) (FHD) (591)",21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 5) (FHD) (591)
-http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
-#EXTINF:-1 group-title="06-19 (Viernes) Top 14" tvg-name="21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 5) (FHD) (6dc)",21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 5) (FHD) (6dc)
-http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
-#EXTINF:-1 group-title="06-19 (Viernes) Top 14" tvg-name="21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 5) (HD) (323)",21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 5) (HD) (323)
-http://127.0.0.1:6878/ace/getstream?id=3230cdca852a10325222e3c546e499e31d547a90
-#EXTINF:-1 group-title="06-21 (Domingo) Torneo de Queen's" tvg-name="13:00-Final ATP 500 (MOVISTAR PLUS) (FHD) (586)",13:00-Final ATP 500 (MOVISTAR PLUS) (FHD) (586)
+#EXTINF:-1 group-title="06-20 (Sábado) LaLiga Hypermotion Playoffs Final" tvg-name="21:00-UD Almería-Málaga (MOVISTAR PLUS) (FHD) (586)",21:00-UD Almería-Málaga (MOVISTAR PLUS) (FHD) (586)
 http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
+#EXTINF:-1 group-title="06-20 (Sábado) LaLiga Hypermotion Playoffs Final" tvg-name="21:00-UD Almería-Málaga (MOVISTAR PLUS) (FHD) (1ab)",21:00-UD Almería-Málaga (MOVISTAR PLUS) (FHD) (1ab)
+http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
+#EXTINF:-1 group-title="06-20 (Sábado) Top 14" tvg-name="21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 2) (HD) (3af)",21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="06-20 (Sábado) Top 14" tvg-name="21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 2) (FHD) (73d)",21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="06-20 (Sábado) Top 14" tvg-name="21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 2) (HD) (6b1)",21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 2) (HD) (6b1)
+http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
+#EXTINF:-1 group-title="06-20 (Sábado) Top 14" tvg-name="21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 2) (FHD) (8cd)",21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 2) (FHD) (8cd)
+http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
+#EXTINF:-1 group-title="06-20 (Sábado) Top 14" tvg-name="21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 2) (HD) (fd2)",21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 2) (HD) (fd2)
+http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
+#EXTINF:-1 group-title="06-20 (Sábado) Top 14" tvg-name="21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 5) (FHD) (591)",21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 5) (FHD) (591)
+http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
+#EXTINF:-1 group-title="06-20 (Sábado) Top 14" tvg-name="21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 5) (HD) (323)",21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 5) (HD) (323)
+http://127.0.0.1:6878/ace/getstream?id=3230cdca852a10325222e3c546e499e31d547a90
+#EXTINF:-1 group-title="06-20 (Sábado) Top 14" tvg-name="21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 5) (FHD) (6dc)",21:05-Montpellier HR-Stade Français Paris (MOVISTAR DEPORTES 5) (FHD) (6dc)
+http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
 #EXTINF:-1 group-title="06-21 (Domingo) Torneo de Queen's" tvg-name="13:00-Final ATP 500 (MOVISTAR PLUS) (FHD) (199)",13:00-Final ATP 500 (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
 #EXTINF:-1 group-title="06-21 (Domingo) Torneo de Queen's" tvg-name="13:00-Final ATP 500 (MOVISTAR PLUS) (FHD) (b6f)",13:00-Final ATP 500 (MOVISTAR PLUS) (FHD) (b6f)
 http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
+#EXTINF:-1 group-title="06-21 (Domingo) Torneo de Queen's" tvg-name="13:00-Final ATP 500 (MOVISTAR PLUS) (FHD) (586)",13:00-Final ATP 500 (MOVISTAR PLUS) (FHD) (586)
+http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
 #EXTINF:-1 group-title="06-21 (Domingo) Torneo de Queen's" tvg-name="13:00-Final ATP 500 (MOVISTAR PLUS) (FHD) (1ab)",13:00-Final ATP 500 (MOVISTAR PLUS) (FHD) (1ab)
 http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
-#EXTINF:-1 group-title="06-21 (Domingo) Torneo de Queen's" tvg-name="13:00-Final ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)",13:00-Final ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="06-21 (Domingo) Torneo de Queen's" tvg-name="13:00-Final ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)",13:00-Final ATP 500 (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-21 (Domingo) Torneo de Queen's" tvg-name="13:00-Final ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)",13:00-Final ATP 500 (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="06-21 (Domingo) Torneo de Queen's" tvg-name="13:00-Final ATP 500 (MOVISTAR DEPORTES) (FHD) (369)",13:00-Final ATP 500 (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="06-21 (Domingo) Torneo de Queen's" tvg-name="13:00-Final ATP 500 (MOVISTAR DEPORTES) (HD) (7f8)",13:00-Final ATP 500 (MOVISTAR DEPORTES) (HD) (7f8)
 http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
 #EXTINF:-1 group-title="06-21 (Domingo) Torneo de Queen's" tvg-name="13:00-Final ATP 500 (MOVISTAR DEPORTES) (FHD) (cf5)",13:00-Final ATP 500 (MOVISTAR DEPORTES) (FHD) (cf5)
 http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
-#EXTINF:-1 group-title="06-21 (Domingo) DTM" tvg-name="13:30-Lausitzring Carrera 2 (DAZN 1) (HD) (5b7)",13:30-Lausitzring Carrera 2 (DAZN 1) (HD) (5b7)
-http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
-#EXTINF:-1 group-title="06-21 (Domingo) DTM" tvg-name="13:30-Lausitzring Carrera 2 (DAZN 1) (FHD) (414)",13:30-Lausitzring Carrera 2 (DAZN 1) (FHD) (414)
-http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
-#EXTINF:-1 group-title="06-21 (Domingo) DTM" tvg-name="13:30-Lausitzring Carrera 2 (DAZN 1) (FHD) (1e7)",13:30-Lausitzring Carrera 2 (DAZN 1) (FHD) (1e7)
-http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
-#EXTINF:-1 group-title="06-21 (Domingo) DTM" tvg-name="13:30-Lausitzring Carrera 2 (DAZN 1) (FHD) (691)",13:30-Lausitzring Carrera 2 (DAZN 1) (FHD) (691)
-http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
-#EXTINF:-1 group-title="06-21 (Domingo) DTM" tvg-name="13:30-Lausitzring Carrera 2 (DAZN 1) (FHD) (363)",13:30-Lausitzring Carrera 2 (DAZN 1) (FHD) (363)
-http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
-#EXTINF:-1 group-title="06-21 (Domingo) DTM" tvg-name="13:30-Lausitzring Carrera 2 (DAZN 1) (FHD) (b03)",13:30-Lausitzring Carrera 2 (DAZN 1) (FHD) (b03)
-http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
 #EXTINF:-1 group-title="06-21 (Domingo) DTM" tvg-name="13:30-Lausitzring Carrera 2 (DAZN 1) (HD) (d5b)",13:30-Lausitzring Carrera 2 (DAZN 1) (HD) (d5b)
 http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
+#EXTINF:-1 group-title="06-21 (Domingo) DTM" tvg-name="13:30-Lausitzring Carrera 2 (DAZN 1) (FHD) (b03)",13:30-Lausitzring Carrera 2 (DAZN 1) (FHD) (b03)
+http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
+#EXTINF:-1 group-title="06-21 (Domingo) DTM" tvg-name="13:30-Lausitzring Carrera 2 (DAZN 1) (FHD) (363)",13:30-Lausitzring Carrera 2 (DAZN 1) (FHD) (363)
+http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
+#EXTINF:-1 group-title="06-21 (Domingo) DTM" tvg-name="13:30-Lausitzring Carrera 2 (DAZN 1) (FHD) (1e7)",13:30-Lausitzring Carrera 2 (DAZN 1) (FHD) (1e7)
+http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
+#EXTINF:-1 group-title="06-21 (Domingo) DTM" tvg-name="13:30-Lausitzring Carrera 2 (DAZN 1) (HD) (5b7)",13:30-Lausitzring Carrera 2 (DAZN 1) (HD) (5b7)
+http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
+#EXTINF:-1 group-title="06-21 (Domingo) DTM" tvg-name="13:30-Lausitzring Carrera 2 (DAZN 1) (FHD) (691)",13:30-Lausitzring Carrera 2 (DAZN 1) (FHD) (691)
+http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
+#EXTINF:-1 group-title="06-21 (Domingo) DTM" tvg-name="13:30-Lausitzring Carrera 2 (DAZN 1) (FHD) (414)",13:30-Lausitzring Carrera 2 (DAZN 1) (FHD) (414)
+http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
 #EXTINF:-1 group-title="06-21 (Domingo) Torneo de Halle" tvg-name="15:00-Final ATP 500 (MOVISTAR DEPORTES 2) (HD) (3af)",15:00-Final ATP 500 (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
 #EXTINF:-1 group-title="06-21 (Domingo) Torneo de Halle" tvg-name="15:00-Final ATP 500 (MOVISTAR DEPORTES 2) (FHD) (73d)",15:00-Final ATP 500 (MOVISTAR DEPORTES 2) (FHD) (73d)
