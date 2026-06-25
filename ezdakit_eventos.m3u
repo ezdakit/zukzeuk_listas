@@ -1,85 +1,85 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="09:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",09:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="09:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",09:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="09:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",09:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="09:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",09:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="09:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",09:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="09:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 4) (HD) (8b5)",09:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
-#EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 4) (HD) (8b5)",11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
 #EXTINF:-1 group-title="06-25 (Jueves) Torneo de Eastbourne" tvg-name="15:00-Semifinal 1 ATP 250 (MOVISTAR DEPORTES 3) (HD) (39f)",15:00-Semifinal 1 ATP 250 (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="06-25 (Jueves) Torneo de Mallorca" tvg-name="15:30-Semifinal 1 ATP 250 (MOVISTAR DEPORTES 2) (FHD) (73d)",15:30-Semifinal 1 ATP 250 (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="06-25 (Jueves) Torneo de Mallorca" tvg-name="15:30-Semifinal 1 ATP 250 (MOVISTAR DEPORTES 2) (HD) (3af)",15:30-Semifinal 1 ATP 250 (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="06-25 (Jueves) Torneo de Mallorca" tvg-name="15:30-Semifinal 1 ATP 250 (MOVISTAR DEPORTES 2) (FHD) (73d)",15:30-Semifinal 1 ATP 250 (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="06-25 (Jueves) Torneo de Eastbourne" tvg-name="17:00-Semifinal 2 ATP 250 (MOVISTAR DEPORTES 3) (HD) (39f)",17:00-Semifinal 2 ATP 250 (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="17:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",17:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="17:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",17:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="17:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",17:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="17:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",17:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="17:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",17:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="17:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 4) (HD) (8b5)",17:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
-#EXTINF:-1 group-title="06-25 (Jueves) Torneo de Mallorca" tvg-name="17:30-Semifinal 2 ATP 250 (MOVISTAR DEPORTES 2) (FHD) (73d)",17:30-Semifinal 2 ATP 250 (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="06-25 (Jueves) Torneo de Mallorca" tvg-name="17:30-Semifinal 2 ATP 250 (MOVISTAR DEPORTES 2) (HD) (3af)",17:30-Semifinal 2 ATP 250 (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="19:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",19:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="19:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",19:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="06-25 (Jueves) Torneo de Mallorca" tvg-name="17:30-Semifinal 2 ATP 250 (MOVISTAR DEPORTES 2) (FHD) (73d)",17:30-Semifinal 2 ATP 250 (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="19:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",19:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="22:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",22:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="22:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",22:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
+#EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="19:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",19:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="19:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",19:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="22:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",22:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="06-27 (Sábado) Valladolid Open" tvg-name="09:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",09:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="06-27 (Sábado) Valladolid Open" tvg-name="09:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",09:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
+#EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="22:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",22:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="06-25 (Jueves) Valladolid Open" tvg-name="22:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",22:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="06-27 (Sábado) Valladolid Open" tvg-name="09:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",09:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="06-27 (Sábado) Valladolid Open" tvg-name="11:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",11:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="06-27 (Sábado) Valladolid Open" tvg-name="11:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",11:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
+#EXTINF:-1 group-title="06-27 (Sábado) Valladolid Open" tvg-name="09:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",09:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="06-27 (Sábado) Valladolid Open" tvg-name="09:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",09:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="06-27 (Sábado) Valladolid Open" tvg-name="11:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",11:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-27 (Sábado) Valladolid Open" tvg-name="11:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",11:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="06-27 (Sábado) Valladolid Open" tvg-name="11:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",11:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="06-27 (Sábado) Torneo de Eastbourne" tvg-name="15:00-Final ATP 250 (MOVISTAR DEPORTES 3) (HD) (39f)",15:00-Final ATP 250 (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="06-27 (Sábado) Torneo de Mallorca" tvg-name="15:00-Final ATP 250 (MOVISTAR DEPORTES 2) (FHD) (73d)",15:00-Final ATP 250 (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="06-27 (Sábado) Torneo de Mallorca" tvg-name="15:00-Final ATP 250 (MOVISTAR DEPORTES 2) (HD) (3af)",15:00-Final ATP 250 (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="06-27 (Sábado) Valladolid Open" tvg-name="18:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",18:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="06-27 (Sábado) Valladolid Open" tvg-name="18:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",18:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="06-27 (Sábado) Torneo de Mallorca" tvg-name="15:00-Final ATP 250 (MOVISTAR DEPORTES 2) (FHD) (73d)",15:00-Final ATP 250 (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="06-27 (Sábado) Valladolid Open" tvg-name="18:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",18:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="06-27 (Sábado) Valladolid Open" tvg-name="20:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",20:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="06-27 (Sábado) Valladolid Open" tvg-name="20:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",20:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
+#EXTINF:-1 group-title="06-27 (Sábado) Valladolid Open" tvg-name="18:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",18:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="06-27 (Sábado) Valladolid Open" tvg-name="18:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",18:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="06-27 (Sábado) Valladolid Open" tvg-name="20:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",20:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="06-27 (Sábado) Top 14" tvg-name="21:00-Stade Toulouse-Montpellier HR (MOVISTAR DEPORTES 2) (FHD) (73d)",21:00-Stade Toulouse-Montpellier HR (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="06-27 (Sábado) Valladolid Open" tvg-name="20:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",20:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="06-27 (Sábado) Valladolid Open" tvg-name="20:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",20:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="06-27 (Sábado) Top 14" tvg-name="21:00-Stade Toulouse-Montpellier HR (MOVISTAR DEPORTES 2) (HD) (3af)",21:00-Stade Toulouse-Montpellier HR (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="06-27 (Sábado) Top 14" tvg-name="21:00-Stade Toulouse-Montpellier HR (MOVISTAR DEPORTES 2) (FHD) (73d)",21:00-Stade Toulouse-Montpellier HR (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
