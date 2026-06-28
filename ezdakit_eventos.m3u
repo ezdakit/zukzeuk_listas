@@ -1,12 +1,12 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="06-28 (Domingo) Velada" tvg-name="02:00-Professional Fighters League San Diego (Estados Unidos) (MOVISTAR DEPORTES) (FHD) (f82)",02:00-Professional Fighters League San Diego (Estados Unidos) (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="06-28 (Domingo) Velada" tvg-name="02:00-Professional Fighters League San Diego (Estados Unidos) (MOVISTAR DEPORTES) (FHD) (5d3)",02:00-Professional Fighters League San Diego (Estados Unidos) (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="06-28 (Domingo) Velada" tvg-name="02:00-Professional Fighters League San Diego (Estados Unidos) (MOVISTAR DEPORTES) (FHD) (369)",02:00-Professional Fighters League San Diego (Estados Unidos) (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="06-28 (Domingo) Velada" tvg-name="02:00-Professional Fighters League San Diego (Estados Unidos) (MOVISTAR DEPORTES) (FHD) (5d3)",02:00-Professional Fighters League San Diego (Estados Unidos) (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-28 (Domingo) Velada" tvg-name="02:00-Professional Fighters League San Diego (Estados Unidos) (MOVISTAR DEPORTES) (FHD) (f82)",02:00-Professional Fighters League San Diego (Estados Unidos) (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="06-28 (Domingo) Velada" tvg-name="02:00-Professional Fighters League San Diego (Estados Unidos) (MOVISTAR DEPORTES) (FHD) (cf5)",02:00-Professional Fighters League San Diego (Estados Unidos) (MOVISTAR DEPORTES) (FHD) (cf5)
 http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
 #EXTINF:-1 group-title="06-28 (Domingo) Torneo de Eastbourne Final" tvg-name="12:00-Z. Bergs-U. Humbert (MOVISTAR DEPORTES 3) (HD) (39f)",12:00-Z. Bergs-U. Humbert (MOVISTAR DEPORTES 3) (HD) (39f)
@@ -17,30 +17,30 @@ http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
 http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
 #EXTINF:-1 group-title="06-28 (Domingo) Torneo de Eastbourne Final" tvg-name="12:00-Z. Bergs-U. Humbert (MOVISTAR DEPORTES 3) (HD) (d44)",12:00-Z. Bergs-U. Humbert (MOVISTAR DEPORTES 3) (HD) (d44)
 http://127.0.0.1:6878/ace/getstream?id=d448a45840bfd60678abb2a45dd6044c9c8d11f8
-#EXTINF:-1 group-title="06-28 (Domingo) Valladolid Open" tvg-name="17:00-Final Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",17:00-Final Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="06-28 (Domingo) Valladolid Open" tvg-name="17:00-Final Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",17:00-Final Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="06-28 (Domingo) Valladolid Open" tvg-name="17:00-Final Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",17:00-Final Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="06-28 (Domingo) Valladolid Open" tvg-name="17:00-Final Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",17:00-Final Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-28 (Domingo) Valladolid Open" tvg-name="17:00-Final Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",17:00-Final Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="06-28 (Domingo) Valladolid Open" tvg-name="17:00-Final Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (cf5)",17:00-Final Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (cf5)
 http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
-#EXTINF:-1 group-title="06-28 (Domingo) IAAF Diamond League" tvg-name="18:00-París (Francia) (MOVISTAR DEPORTES 2) (FHD) (73d)",18:00-París (Francia) (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="06-28 (Domingo) IAAF Diamond League" tvg-name="18:00-París (Francia) (MOVISTAR DEPORTES 2) (HD) (3af)",18:00-París (Francia) (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="06-28 (Domingo) IAAF Diamond League" tvg-name="18:00-París (Francia) (MOVISTAR DEPORTES 2) (FHD) (73d)",18:00-París (Francia) (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="06-28 (Domingo) IAAF Diamond League" tvg-name="18:00-París (Francia) (MOVISTAR DEPORTES 2) (FHD) (377)",18:00-París (Francia) (MOVISTAR DEPORTES 2) (FHD) (377)
 http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
-#EXTINF:-1 group-title="06-28 (Domingo) IAAF Diamond League" tvg-name="18:00-París (Francia) (MOVISTAR DEPORTES 2) (FHD) (8cd)",18:00-París (Francia) (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
 #EXTINF:-1 group-title="06-28 (Domingo) IAAF Diamond League" tvg-name="18:00-París (Francia) (MOVISTAR DEPORTES 2) (HD) (fd2)",18:00-París (Francia) (MOVISTAR DEPORTES 2) (HD) (fd2)
 http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
-#EXTINF:-1 group-title="06-28 (Domingo) Valladolid Open" tvg-name="19:00-Final Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",19:00-Final Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="06-28 (Domingo) Valladolid Open" tvg-name="19:00-Final Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",19:00-Final Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-28 (Domingo) IAAF Diamond League" tvg-name="18:00-París (Francia) (MOVISTAR DEPORTES 2) (FHD) (8cd)",18:00-París (Francia) (MOVISTAR DEPORTES 2) (FHD) (8cd)
+http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
 #EXTINF:-1 group-title="06-28 (Domingo) Valladolid Open" tvg-name="19:00-Final Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",19:00-Final Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="06-28 (Domingo) Valladolid Open" tvg-name="19:00-Final Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",19:00-Final Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-28 (Domingo) Valladolid Open" tvg-name="19:00-Final Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",19:00-Final Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="06-28 (Domingo) Valladolid Open" tvg-name="19:00-Final Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (cf5)",19:00-Final Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (cf5)
 http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="12:00-D. Shapovalov-P. Carreño (MOVISTAR DEPORTES 3) (HD) (39f)",12:00-D. Shapovalov-P. Carreño (MOVISTAR DEPORTES 3) (HD) (39f)
@@ -51,18 +51,18 @@ http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
 http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="12:00-D. Shapovalov-P. Carreño (MOVISTAR DEPORTES 3) (HD) (d44)",12:00-D. Shapovalov-P. Carreño (MOVISTAR DEPORTES 3) (HD) (d44)
 http://127.0.0.1:6878/ace/getstream?id=d448a45840bfd60678abb2a45dd6044c9c8d11f8
+#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="12:00-M. Trungelliti-M. Damm (MOVISTAR DEPORTES 5) (FHD) (6dc)",12:00-M. Trungelliti-M. Damm (MOVISTAR DEPORTES 5) (FHD) (6dc)
+http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="12:00-M. Trungelliti-M. Damm (MOVISTAR DEPORTES 5) (HD) (323)",12:00-M. Trungelliti-M. Damm (MOVISTAR DEPORTES 5) (HD) (323)
 http://127.0.0.1:6878/ace/getstream?id=3230cdca852a10325222e3c546e499e31d547a90
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="12:00-M. Trungelliti-M. Damm (MOVISTAR DEPORTES 5) (FHD) (591)",12:00-M. Trungelliti-M. Damm (MOVISTAR DEPORTES 5) (FHD) (591)
 http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
-#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="12:00-M. Trungelliti-M. Damm (MOVISTAR DEPORTES 5) (FHD) (6dc)",12:00-M. Trungelliti-M. Damm (MOVISTAR DEPORTES 5) (FHD) (6dc)
-http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
-#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="12:00-R. Jódar-F. Gill (MOVISTAR DEPORTES) (FHD) (f82)",12:00-R. Jódar-F. Gill (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="12:00-R. Jódar-F. Gill (MOVISTAR DEPORTES) (FHD) (5d3)",12:00-R. Jódar-F. Gill (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="12:00-R. Jódar-F. Gill (MOVISTAR DEPORTES) (FHD) (369)",12:00-R. Jódar-F. Gill (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="12:00-R. Jódar-F. Gill (MOVISTAR DEPORTES) (FHD) (5d3)",12:00-R. Jódar-F. Gill (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="12:00-R. Jódar-F. Gill (MOVISTAR DEPORTES) (FHD) (f82)",12:00-R. Jódar-F. Gill (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="12:00-R. Jódar-F. Gill (MOVISTAR DEPORTES) (FHD) (cf5)",12:00-R. Jódar-F. Gill (MOVISTAR DEPORTES) (FHD) (cf5)
 http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="12:00-B. Bencic-M. Stojsavljevic (MOVISTAR DEPORTES 6) (HD) (8f9)",12:00-B. Bencic-M. Stojsavljevic (MOVISTAR DEPORTES 6) (HD) (8f9)
@@ -73,20 +73,20 @@ http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
 http://127.0.0.1:6878/ace/getstream?id=8f982a0d6e3196c12d0034142b65008321150f7c
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="13:30-X. Wang-E. Cocciaretto (MOVISTAR DEPORTES 4) (HD) (8b5)",13:30-X. Wang-E. Cocciaretto (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
-#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="14:00-S. Kwon-M. Landaluce (MOVISTAR DEPORTES) (FHD) (f82)",14:00-S. Kwon-M. Landaluce (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="14:00-S. Kwon-M. Landaluce (MOVISTAR DEPORTES) (FHD) (5d3)",14:00-S. Kwon-M. Landaluce (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="14:00-S. Kwon-M. Landaluce (MOVISTAR DEPORTES) (FHD) (369)",14:00-S. Kwon-M. Landaluce (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="14:00-S. Kwon-M. Landaluce (MOVISTAR DEPORTES) (FHD) (5d3)",14:00-S. Kwon-M. Landaluce (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="14:00-S. Kwon-M. Landaluce (MOVISTAR DEPORTES) (FHD) (f82)",14:00-S. Kwon-M. Landaluce (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="14:00-S. Kwon-M. Landaluce (MOVISTAR DEPORTES) (FHD) (cf5)",14:00-S. Kwon-M. Landaluce (MOVISTAR DEPORTES) (FHD) (cf5)
 http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
+#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="14:00-S. Kwon-M. Landaluce (MOVISTAR DEPORTES 5) (FHD) (6dc)",14:00-S. Kwon-M. Landaluce (MOVISTAR DEPORTES 5) (FHD) (6dc)
+http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="14:00-S. Kwon-M. Landaluce (MOVISTAR DEPORTES 5) (HD) (323)",14:00-S. Kwon-M. Landaluce (MOVISTAR DEPORTES 5) (HD) (323)
 http://127.0.0.1:6878/ace/getstream?id=3230cdca852a10325222e3c546e499e31d547a90
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="14:00-S. Kwon-M. Landaluce (MOVISTAR DEPORTES 5) (FHD) (591)",14:00-S. Kwon-M. Landaluce (MOVISTAR DEPORTES 5) (FHD) (591)
 http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
-#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="14:00-S. Kwon-M. Landaluce (MOVISTAR DEPORTES 5) (FHD) (6dc)",14:00-S. Kwon-M. Landaluce (MOVISTAR DEPORTES 5) (FHD) (6dc)
-http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="14:00-J. Ostapenko-H. Dart (MOVISTAR DEPORTES 3) (HD) (39f)",14:00-J. Ostapenko-H. Dart (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="14:00-J. Ostapenko-H. Dart (MOVISTAR DEPORTES 3) (HD) (e9c)",14:00-J. Ostapenko-H. Dart (MOVISTAR DEPORTES 3) (HD) (e9c)
@@ -95,22 +95,22 @@ http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
 http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="14:00-J. Ostapenko-H. Dart (MOVISTAR DEPORTES 3) (HD) (d44)",14:00-J. Ostapenko-H. Dart (MOVISTAR DEPORTES 3) (HD) (d44)
 http://127.0.0.1:6878/ace/getstream?id=d448a45840bfd60678abb2a45dd6044c9c8d11f8
+#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="14:30-J. Sinner-M. Kecmanovic (MOVISTAR PLUS) (FHD) (586)",14:30-J. Sinner-M. Kecmanovic (MOVISTAR PLUS) (FHD) (586)
+http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="14:30-J. Sinner-M. Kecmanovic (MOVISTAR PLUS) (FHD) (b6f)",14:30-J. Sinner-M. Kecmanovic (MOVISTAR PLUS) (FHD) (b6f)
 http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="14:30-J. Sinner-M. Kecmanovic (MOVISTAR PLUS) (FHD) (199)",14:30-J. Sinner-M. Kecmanovic (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="14:30-J. Sinner-M. Kecmanovic (MOVISTAR PLUS) (FHD) (586)",14:30-J. Sinner-M. Kecmanovic (MOVISTAR PLUS) (FHD) (586)
-http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
-#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="14:30-J. Sinner-M. Kecmanovic (MOVISTAR DEPORTES 2) (FHD) (73d)",14:30-J. Sinner-M. Kecmanovic (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="14:30-J. Sinner-M. Kecmanovic (MOVISTAR DEPORTES 2) (HD) (3af)",14:30-J. Sinner-M. Kecmanovic (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="14:30-J. Sinner-M. Kecmanovic (MOVISTAR DEPORTES 2) (FHD) (73d)",14:30-J. Sinner-M. Kecmanovic (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="14:30-J. Sinner-M. Kecmanovic (MOVISTAR DEPORTES 2) (FHD) (377)",14:30-J. Sinner-M. Kecmanovic (MOVISTAR DEPORTES 2) (FHD) (377)
 http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
-#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="14:30-J. Sinner-M. Kecmanovic (MOVISTAR DEPORTES 2) (FHD) (8cd)",14:30-J. Sinner-M. Kecmanovic (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="14:30-J. Sinner-M. Kecmanovic (MOVISTAR DEPORTES 2) (HD) (fd2)",14:30-J. Sinner-M. Kecmanovic (MOVISTAR DEPORTES 2) (HD) (fd2)
 http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
+#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="14:30-J. Sinner-M. Kecmanovic (MOVISTAR DEPORTES 2) (FHD) (8cd)",14:30-J. Sinner-M. Kecmanovic (MOVISTAR DEPORTES 2) (FHD) (8cd)
+http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="15:30-A. Davidovich-JM. Cerúndolo (MOVISTAR DEPORTES 3) (HD) (39f)",15:30-A. Davidovich-JM. Cerúndolo (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="15:30-A. Davidovich-JM. Cerúndolo (MOVISTAR DEPORTES 3) (HD) (e9c)",15:30-A. Davidovich-JM. Cerúndolo (MOVISTAR DEPORTES 3) (HD) (e9c)
@@ -119,46 +119,46 @@ http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
 http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="15:30-A. Davidovich-JM. Cerúndolo (MOVISTAR DEPORTES 3) (HD) (d44)",15:30-A. Davidovich-JM. Cerúndolo (MOVISTAR DEPORTES 3) (HD) (d44)
 http://127.0.0.1:6878/ace/getstream?id=d448a45840bfd60678abb2a45dd6044c9c8d11f8
-#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="15:30-R. Bautista-Agut-J. Fonseca (MOVISTAR DEPORTES) (FHD) (f82)",15:30-R. Bautista-Agut-J. Fonseca (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="15:30-R. Bautista-Agut-J. Fonseca (MOVISTAR DEPORTES) (FHD) (5d3)",15:30-R. Bautista-Agut-J. Fonseca (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="15:30-R. Bautista-Agut-J. Fonseca (MOVISTAR DEPORTES) (FHD) (369)",15:30-R. Bautista-Agut-J. Fonseca (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="15:30-R. Bautista-Agut-J. Fonseca (MOVISTAR DEPORTES) (FHD) (5d3)",15:30-R. Bautista-Agut-J. Fonseca (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="15:30-R. Bautista-Agut-J. Fonseca (MOVISTAR DEPORTES) (FHD) (f82)",15:30-R. Bautista-Agut-J. Fonseca (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="15:30-R. Bautista-Agut-J. Fonseca (MOVISTAR DEPORTES) (FHD) (cf5)",15:30-R. Bautista-Agut-J. Fonseca (MOVISTAR DEPORTES) (FHD) (cf5)
 http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="15:30-R. Bautista-Agut-J. Fonseca (MOVISTAR DEPORTES 6) (HD) (8f9)",15:30-R. Bautista-Agut-J. Fonseca (MOVISTAR DEPORTES 6) (HD) (8f9)
 http://127.0.0.1:6878/ace/getstream?id=8f982a0d6e3196c12d0034142b65008321150f7c
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="16:00-L. Tararudee-L. Tagger (MOVISTAR DEPORTES 4) (HD) (8b5)",16:00-L. Tararudee-L. Tagger (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
+#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="16:00-O. Oliynykova-M. Kessler (MOVISTAR DEPORTES 5) (FHD) (6dc)",16:00-O. Oliynykova-M. Kessler (MOVISTAR DEPORTES 5) (FHD) (6dc)
+http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="16:00-O. Oliynykova-M. Kessler (MOVISTAR DEPORTES 5) (HD) (323)",16:00-O. Oliynykova-M. Kessler (MOVISTAR DEPORTES 5) (HD) (323)
 http://127.0.0.1:6878/ace/getstream?id=3230cdca852a10325222e3c546e499e31d547a90
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="16:00-O. Oliynykova-M. Kessler (MOVISTAR DEPORTES 5) (FHD) (591)",16:00-O. Oliynykova-M. Kessler (MOVISTAR DEPORTES 5) (FHD) (591)
 http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
-#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="16:00-O. Oliynykova-M. Kessler (MOVISTAR DEPORTES 5) (FHD) (6dc)",16:00-O. Oliynykova-M. Kessler (MOVISTAR DEPORTES 5) (FHD) (6dc)
-http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
+#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="16:30-A. Sabalenka-T. Kostovic (MOVISTAR PLUS) (FHD) (586)",16:30-A. Sabalenka-T. Kostovic (MOVISTAR PLUS) (FHD) (586)
+http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="16:30-A. Sabalenka-T. Kostovic (MOVISTAR PLUS) (FHD) (b6f)",16:30-A. Sabalenka-T. Kostovic (MOVISTAR PLUS) (FHD) (b6f)
 http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="16:30-A. Sabalenka-T. Kostovic (MOVISTAR PLUS) (FHD) (199)",16:30-A. Sabalenka-T. Kostovic (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="16:30-A. Sabalenka-T. Kostovic (MOVISTAR PLUS) (FHD) (586)",16:30-A. Sabalenka-T. Kostovic (MOVISTAR PLUS) (FHD) (586)
-http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
-#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="16:30-A. Sabalenka-T. Kostovic (MOVISTAR DEPORTES 2) (FHD) (73d)",16:30-A. Sabalenka-T. Kostovic (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="16:30-A. Sabalenka-T. Kostovic (MOVISTAR DEPORTES 2) (HD) (3af)",16:30-A. Sabalenka-T. Kostovic (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="16:30-A. Sabalenka-T. Kostovic (MOVISTAR DEPORTES 2) (FHD) (73d)",16:30-A. Sabalenka-T. Kostovic (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="16:30-A. Sabalenka-T. Kostovic (MOVISTAR DEPORTES 2) (FHD) (377)",16:30-A. Sabalenka-T. Kostovic (MOVISTAR DEPORTES 2) (FHD) (377)
 http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
-#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="16:30-A. Sabalenka-T. Kostovic (MOVISTAR DEPORTES 2) (FHD) (8cd)",16:30-A. Sabalenka-T. Kostovic (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="16:30-A. Sabalenka-T. Kostovic (MOVISTAR DEPORTES 2) (HD) (fd2)",16:30-A. Sabalenka-T. Kostovic (MOVISTAR DEPORTES 2) (HD) (fd2)
 http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
+#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="16:30-A. Sabalenka-T. Kostovic (MOVISTAR DEPORTES 2) (FHD) (8cd)",16:30-A. Sabalenka-T. Kostovic (MOVISTAR DEPORTES 2) (FHD) (8cd)
+http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
+#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="17:30-D. Yastremska-A. Ito (MOVISTAR DEPORTES 5) (FHD) (6dc)",17:30-D. Yastremska-A. Ito (MOVISTAR DEPORTES 5) (FHD) (6dc)
+http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="17:30-D. Yastremska-A. Ito (MOVISTAR DEPORTES 5) (HD) (323)",17:30-D. Yastremska-A. Ito (MOVISTAR DEPORTES 5) (HD) (323)
 http://127.0.0.1:6878/ace/getstream?id=3230cdca852a10325222e3c546e499e31d547a90
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="17:30-D. Yastremska-A. Ito (MOVISTAR DEPORTES 5) (FHD) (591)",17:30-D. Yastremska-A. Ito (MOVISTAR DEPORTES 5) (FHD) (591)
 http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
-#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="17:30-D. Yastremska-A. Ito (MOVISTAR DEPORTES 5) (FHD) (6dc)",17:30-D. Yastremska-A. Ito (MOVISTAR DEPORTES 5) (FHD) (6dc)
-http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="17:30-F. Jones-D. Parry (MOVISTAR DEPORTES 3) (HD) (39f)",17:30-F. Jones-D. Parry (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="17:30-F. Jones-D. Parry (MOVISTAR DEPORTES 3) (HD) (e9c)",17:30-F. Jones-D. Parry (MOVISTAR DEPORTES 3) (HD) (e9c)
@@ -171,40 +171,40 @@ http://127.0.0.1:6878/ace/getstream?id=d448a45840bfd60678abb2a45dd6044c9c8d11f8
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon WTA 1ª Ronda" tvg-name="17:30-L. Fernández-J. Tjen (MOVISTAR DEPORTES 6) (HD) (8f9)",17:30-L. Fernández-J. Tjen (MOVISTAR DEPORTES 6) (HD) (8f9)
 http://127.0.0.1:6878/ace/getstream?id=8f982a0d6e3196c12d0034142b65008321150f7c
-#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="18:00-Y. Wu-N. Djokovic (MOVISTAR DEPORTES 2) (FHD) (73d)",18:00-Y. Wu-N. Djokovic (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="18:00-Y. Wu-N. Djokovic (MOVISTAR DEPORTES 2) (HD) (3af)",18:00-Y. Wu-N. Djokovic (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="18:00-Y. Wu-N. Djokovic (MOVISTAR DEPORTES 2) (FHD) (73d)",18:00-Y. Wu-N. Djokovic (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="18:00-Y. Wu-N. Djokovic (MOVISTAR DEPORTES 2) (FHD) (377)",18:00-Y. Wu-N. Djokovic (MOVISTAR DEPORTES 2) (FHD) (377)
 http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
-#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="18:00-Y. Wu-N. Djokovic (MOVISTAR DEPORTES 2) (FHD) (8cd)",18:00-Y. Wu-N. Djokovic (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
 #EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="18:00-Y. Wu-N. Djokovic (MOVISTAR DEPORTES 2) (HD) (fd2)",18:00-Y. Wu-N. Djokovic (MOVISTAR DEPORTES 2) (HD) (fd2)
 http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
+#EXTINF:-1 group-title="06-29 (Lunes) Wimbledon 1ª Ronda" tvg-name="18:00-Y. Wu-N. Djokovic (MOVISTAR DEPORTES 2) (FHD) (8cd)",18:00-Y. Wu-N. Djokovic (MOVISTAR DEPORTES 2) (FHD) (8cd)
+http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
+#EXTINF:-1 group-title="06-30 (Martes) Wimbledon" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR PLUS) (FHD) (586)",12:05-1ª Ronda Grand Slam (MOVISTAR PLUS) (FHD) (586)
+http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR PLUS) (FHD) (b6f)",12:05-1ª Ronda Grand Slam (MOVISTAR PLUS) (FHD) (b6f)
 http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR PLUS) (FHD) (199)",12:05-1ª Ronda Grand Slam (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 group-title="06-30 (Martes) Wimbledon" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR PLUS) (FHD) (586)",12:05-1ª Ronda Grand Slam (MOVISTAR PLUS) (FHD) (586)
-http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
-#EXTINF:-1 group-title="06-30 (Martes) Wimbledon" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES) (FHD) (f82)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="06-30 (Martes) Wimbledon" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES) (FHD) (5d3)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES) (FHD) (369)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="06-30 (Martes) Wimbledon" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES) (FHD) (5d3)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-30 (Martes) Wimbledon" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES) (FHD) (f82)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES) (FHD) (cf5)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES) (FHD) (cf5)
 http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
-#EXTINF:-1 group-title="06-30 (Martes) Wimbledon" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (73d)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (3af)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="06-30 (Martes) Wimbledon" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (73d)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (377)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (377)
 http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
-#EXTINF:-1 group-title="06-30 (Martes) Wimbledon" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (8cd)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (fd2)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (fd2)
 http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
+#EXTINF:-1 group-title="06-30 (Martes) Wimbledon" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (8cd)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (8cd)
+http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 3) (HD) (39f)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 3) (HD) (e9c)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 3) (HD) (e9c)
@@ -215,38 +215,38 @@ http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
 http://127.0.0.1:6878/ace/getstream?id=d448a45840bfd60678abb2a45dd6044c9c8d11f8
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 4) (HD) (8b5)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
+#EXTINF:-1 group-title="06-30 (Martes) Wimbledon" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 5) (FHD) (6dc)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 5) (FHD) (6dc)
+http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 5) (HD) (323)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 5) (HD) (323)
 http://127.0.0.1:6878/ace/getstream?id=3230cdca852a10325222e3c546e499e31d547a90
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 5) (FHD) (591)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 5) (FHD) (591)
 http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
-#EXTINF:-1 group-title="06-30 (Martes) Wimbledon" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 5) (FHD) (6dc)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 5) (FHD) (6dc)
-http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 6) (HD) (8f9)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 6) (HD) (8f9)
 http://127.0.0.1:6878/ace/getstream?id=8f982a0d6e3196c12d0034142b65008321150f7c
+#EXTINF:-1 group-title="06-30 (Martes) Wimbledon WTA" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR PLUS) (FHD) (586)",12:05-1ª Ronda Grand Slam (MOVISTAR PLUS) (FHD) (586)
+http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon WTA" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR PLUS) (FHD) (b6f)",12:05-1ª Ronda Grand Slam (MOVISTAR PLUS) (FHD) (b6f)
 http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon WTA" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR PLUS) (FHD) (199)",12:05-1ª Ronda Grand Slam (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 group-title="06-30 (Martes) Wimbledon WTA" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR PLUS) (FHD) (586)",12:05-1ª Ronda Grand Slam (MOVISTAR PLUS) (FHD) (586)
-http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
-#EXTINF:-1 group-title="06-30 (Martes) Wimbledon WTA" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES) (FHD) (f82)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="06-30 (Martes) Wimbledon WTA" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES) (FHD) (5d3)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon WTA" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES) (FHD) (369)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="06-30 (Martes) Wimbledon WTA" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES) (FHD) (5d3)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="06-30 (Martes) Wimbledon WTA" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES) (FHD) (f82)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon WTA" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES) (FHD) (cf5)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES) (FHD) (cf5)
 http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
-#EXTINF:-1 group-title="06-30 (Martes) Wimbledon WTA" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (73d)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon WTA" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (3af)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="06-30 (Martes) Wimbledon WTA" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (73d)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon WTA" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (377)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (377)
 http://127.0.0.1:6878/ace/getstream?id=3774d8feab016ca766b35ea8488e7514ca30e0ee
-#EXTINF:-1 group-title="06-30 (Martes) Wimbledon WTA" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (8cd)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon WTA" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (fd2)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (fd2)
 http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
+#EXTINF:-1 group-title="06-30 (Martes) Wimbledon WTA" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (8cd)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (8cd)
+http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon WTA" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 3) (HD) (39f)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon WTA" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 3) (HD) (e9c)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 3) (HD) (e9c)
@@ -257,29 +257,29 @@ http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
 http://127.0.0.1:6878/ace/getstream?id=d448a45840bfd60678abb2a45dd6044c9c8d11f8
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon WTA" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 4) (HD) (8b5)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
+#EXTINF:-1 group-title="06-30 (Martes) Wimbledon WTA" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 5) (FHD) (6dc)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 5) (FHD) (6dc)
+http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon WTA" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 5) (HD) (323)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 5) (HD) (323)
 http://127.0.0.1:6878/ace/getstream?id=3230cdca852a10325222e3c546e499e31d547a90
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon WTA" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 5) (FHD) (591)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 5) (FHD) (591)
 http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
-#EXTINF:-1 group-title="06-30 (Martes) Wimbledon WTA" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 5) (FHD) (6dc)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 5) (FHD) (6dc)
-http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
 #EXTINF:-1 group-title="06-30 (Martes) Wimbledon WTA" tvg-name="12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 6) (HD) (8f9)",12:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 6) (HD) (8f9)
 http://127.0.0.1:6878/ace/getstream?id=8f982a0d6e3196c12d0034142b65008321150f7c
-#EXTINF:-1 group-title="06-30 (Martes) La Liga EA Sports" tvg-name="19:00-Sorteo Calendario 2026/2027 (M+ LALIGA) (HD) (31c)",19:00-Sorteo Calendario 2026/2027 (M+ LALIGA) (HD) (31c)
-http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
 #EXTINF:-1 group-title="06-30 (Martes) La Liga EA Sports" tvg-name="19:00-Sorteo Calendario 2026/2027 (M+ LALIGA) (FHD) (af4)",19:00-Sorteo Calendario 2026/2027 (M+ LALIGA) (FHD) (af4)
 http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
 #EXTINF:-1 group-title="06-30 (Martes) La Liga EA Sports" tvg-name="19:00-Sorteo Calendario 2026/2027 (M+ LALIGA) (FHD) (8c3)",19:00-Sorteo Calendario 2026/2027 (M+ LALIGA) (FHD) (8c3)
 http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
-#EXTINF:-1 group-title="06-30 (Martes) LaLiga Hypermotion" tvg-name="19:00-Sorteo Calendario 2026/2027 (M+ LALIGA) (HD) (31c)",19:00-Sorteo Calendario 2026/2027 (M+ LALIGA) (HD) (31c)
+#EXTINF:-1 group-title="06-30 (Martes) La Liga EA Sports" tvg-name="19:00-Sorteo Calendario 2026/2027 (M+ LALIGA) (HD) (31c)",19:00-Sorteo Calendario 2026/2027 (M+ LALIGA) (HD) (31c)
 http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
 #EXTINF:-1 group-title="06-30 (Martes) LaLiga Hypermotion" tvg-name="19:00-Sorteo Calendario 2026/2027 (M+ LALIGA) (FHD) (af4)",19:00-Sorteo Calendario 2026/2027 (M+ LALIGA) (FHD) (af4)
 http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
 #EXTINF:-1 group-title="06-30 (Martes) LaLiga Hypermotion" tvg-name="19:00-Sorteo Calendario 2026/2027 (M+ LALIGA) (FHD) (8c3)",19:00-Sorteo Calendario 2026/2027 (M+ LALIGA) (FHD) (8c3)
 http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
-#EXTINF:-1 group-title="06-30 (Martes) Liga F" tvg-name="19:00-Sorteo Calendario 2026/2027 (M+ LALIGA) (HD) (31c)",19:00-Sorteo Calendario 2026/2027 (M+ LALIGA) (HD) (31c)
+#EXTINF:-1 group-title="06-30 (Martes) LaLiga Hypermotion" tvg-name="19:00-Sorteo Calendario 2026/2027 (M+ LALIGA) (HD) (31c)",19:00-Sorteo Calendario 2026/2027 (M+ LALIGA) (HD) (31c)
 http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
 #EXTINF:-1 group-title="06-30 (Martes) Liga F" tvg-name="19:00-Sorteo Calendario 2026/2027 (M+ LALIGA) (FHD) (af4)",19:00-Sorteo Calendario 2026/2027 (M+ LALIGA) (FHD) (af4)
 http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
 #EXTINF:-1 group-title="06-30 (Martes) Liga F" tvg-name="19:00-Sorteo Calendario 2026/2027 (M+ LALIGA) (FHD) (8c3)",19:00-Sorteo Calendario 2026/2027 (M+ LALIGA) (FHD) (8c3)
 http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="06-30 (Martes) Liga F" tvg-name="19:00-Sorteo Calendario 2026/2027 (M+ LALIGA) (HD) (31c)",19:00-Sorteo Calendario 2026/2027 (M+ LALIGA) (HD) (31c)
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
