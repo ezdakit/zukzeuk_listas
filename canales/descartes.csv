@@ -21,25 +21,24 @@
 ?,Red Bull TV,1/4 de final masculino Premier Padel Tour,no_dial_detected
 ?,M+ Vamos (8 y 50),1/4 de final masculino Premier Padel Tour,no_dial_detected
 304,M+ #Vamos Bar (304),1/4 de final masculino Premier Padel Tour,mapping_not_found_for: #VAMOS BAR
-194,M+ Deportes 7 (194),12:00-B. Bencic-A. Kalinskaya,mapping_not_found_for: MOVISTAR DEPORTES 7
+194,M+ Deportes 7 (194),12:05-B. Bencic-A. Kalinskaya,mapping_not_found_for: MOVISTAR DEPORTES 7
 ?,DAZN (Ver en directo),12:30-Australia-Guam,no_dial_detected
 ?,DAZN (Ver en directo),12:30-Corea del Sur-China Taipéi,no_dial_detected
 68,Movistar Golf (M68),Jornada 2,mapping_not_found_for: MOVISTAR GOLF
 ?,DAZN (Ver en directo),G.P. Gran Bretaña (Silverstone) Libres 1,no_dial_detected
 70,DAZN F1 (M70 O104),G.P. Gran Bretaña (Silverstone) Libres 1,mapping_not_found_for: DAZN F1
 ?,DAZN (Ver en directo),13:30-China-Japón,no_dial_detected
-194,M+ Deportes 7 (194),13:30-JL. Struff-D. Medvedev,mapping_not_found_for: MOVISTAR DEPORTES 7
 ?,HBO MAX,Jornada 2 PGA Tour,no_dial_detected
 ?,FIBA YouTube,13:45-China-Venezuela,no_dial_detected
 ?,Red Bull TV,1/4 de final masculino Premier Padel Tour,no_dial_detected
-?,M+ Vamos (8 y 50),14:00-J. Pegula-J. Bouzas,no_dial_detected
-304,M+ #Vamos Bar (304),14:00-J. Pegula-J. Bouzas,mapping_not_found_for: #VAMOS BAR
 ?,FIBA YouTube,14:15-Estados Unidos-Puerto Rico,no_dial_detected
 ?,DAZN (Ver en directo),14:15-Estados Unidos-Puerto Rico,no_dial_detected
-444,M+ Wimbledon UHD (444),14:30-A. Rinderknech-N. Djokovic,mapping_not_found_for: WIMBLEDON UHD
+444,M+ Wimbledon UHD (444),14:40-A. Rinderknech-N. Djokovic,mapping_not_found_for: WIMBLEDON UHD
+?,M+ Vamos (8 y 50),14:40-J. Pegula-J. Bouzas,no_dial_detected
+304,M+ #Vamos Bar (304),14:40-J. Pegula-J. Bouzas,mapping_not_found_for: #VAMOS BAR
 ?,DAZN (Ver en directo),G.P. Gran Bretaña (Silverstone) Clasificación,no_dial_detected
 70,DAZN F1 (M70 O104),G.P. Gran Bretaña (Silverstone) Clasificación,mapping_not_found_for: DAZN F1
-194,M+ Deportes 7 (194),15:30-K. Muchova-M. Sawangkaew,mapping_not_found_for: MOVISTAR DEPORTES 7
+194,M+ Deportes 7 (194),15:10-JL. Struff-D. Medvedev,mapping_not_found_for: MOVISTAR DEPORTES 7
 ?,DAZN (Ver en directo),G.P. Gran Bretaña (Silverstone) Clasificación,no_dial_detected
 70,DAZN F1 (M70 O104),G.P. Gran Bretaña (Silverstone) Clasificación,mapping_not_found_for: DAZN F1
 68,Movistar Golf 2 (M68),Jornada 2,mapping_not_found_for: MOVISTAR GOLF 2
@@ -49,6 +48,7 @@
 ?,FIBA YouTube,17:00-Lituania-Serbia,no_dial_detected
 ?,DAZN (Ver en directo),17:00-Lituania-Serbia,no_dial_detected
 ?,Red Bull TV,1/4 de final masculino Premier Padel Tour,no_dial_detected
+194,M+ Deportes 7 (194),17:10-K. Muchova-M. Sawangkaew,mapping_not_found_for: MOVISTAR DEPORTES 7
 ?,DAZN (Ver en directo),G.P. Gran Bretaña (Silverstone) Clasificación al sprint,no_dial_detected
 70,DAZN F1 (M70 O104),G.P. Gran Bretaña (Silverstone) Clasificación al sprint,mapping_not_found_for: DAZN F1
 ?,DAZN (Ver en directo),17:30-Finlandia-Hungría,no_dial_detected
@@ -92,6 +92,10 @@
 ?,DAZN (Ver en directo),02:00-Colombia-Chile,no_dial_detected
 ?,DAZN (Ver en directo),02:00-República Dominicana-Estados Unidos,no_dial_detected
 ?,DAZN (Ver en directo),02:00-Bahamas-Jamaica,no_dial_detected
+?,HBO MAX,Shanghai (China) Clasificación,no_dial_detected
+?,Twitch SoyMotor,Shanghai (China) Clasificación,no_dial_detected
+?,Teledeporte,Shanghai (China) Clasificación,no_dial_detected
+?,RTVE Play,Shanghai (China) Clasificación,no_dial_detected
 ?,NWSL+,02:00-Washington Spirit-Houston Dash,no_dial_detected
 ?,NBA League Pass,02:00-Miami Heat-San Antonio Spurs,no_dial_detected
 ?,NWSL+,03:30-Denver Summit FC-Kansas City Current,no_dial_detected
@@ -101,10 +105,6 @@
 ?,NWSL+,04:00-Angel City FC-Orlando Pride,no_dial_detected
 ?,DAZN (Ver en directo),04:30-México-Nicaragua,no_dial_detected
 ?,NBA League Pass,04:30-Golden State Warriors-Los Angeles Lakers,no_dial_detected
-?,HBO MAX,Shanghai (China) Clasificación,no_dial_detected
-?,Twitch SoyMotor,Shanghai (China) Clasificación,no_dial_detected
-?,Teledeporte,Shanghai (China) Clasificación,no_dial_detected
-?,RTVE Play,Shanghai (China) Clasificación,no_dial_detected
 ?,HBO MAX,Shanghai (China) Carrera 1,no_dial_detected
 ?,DAZN (Ver en directo),Shanghai (China) Carrera 1,no_dial_detected
 ?,RTVE Play,Shanghai (China) Carrera 1,no_dial_detected
@@ -242,11 +242,11 @@
 ?,Zapping Internacional,02:00-Macará-LDU Quito,no_dial_detected
 ?,Zapping Internacional,02:00-Orense SC-Técnico Universitario,no_dial_detected
 ?,Zapping Internacional,02:00-Libertad FC-Leones del Norte,no_dial_detected
-?,NWSL+,02:45-San Diego Wave FC-NJ/NY Gotham FC,no_dial_detected
-?,OneFootball,02:45-North Texas SC-St. Louis City SC 2,no_dial_detected
 ?,HBO MAX,Shanghai (China) Clasificación,no_dial_detected
 ?,Twitch SoyMotor,Shanghai (China) Clasificación,no_dial_detected
 ?,RTVE Play,Shanghai (China) Clasificación,no_dial_detected
+?,NWSL+,02:45-San Diego Wave FC-NJ/NY Gotham FC,no_dial_detected
+?,OneFootball,02:45-North Texas SC-St. Louis City SC 2,no_dial_detected
 ?,HBO MAX,Shanghai (China) Carrera 2,no_dial_detected
 ?,DAZN (Ver en directo),Shanghai (China) Carrera 2,no_dial_detected
 ?,RTVE Play,Shanghai (China) Carrera 2,no_dial_detected
