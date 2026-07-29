@@ -1,23 +1,57 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="07-29 (Miércoles) Serie A Brasil" tvg-name="00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (HD) (bb2)",00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (HD) (bb2)
+#EXTINF:-1 group-title="07-29 (Miércoles) Primera División Argentina Torneo Clausura" tvg-name="02:15-Rosario Central-Racing Avellaneda (LIGA DE CAMPEONES) (FHD) (afb)",02:15-Rosario Central-Racing Avellaneda (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="07-29 (Miércoles) Primera División Argentina Torneo Clausura" tvg-name="02:15-Rosario Central-Racing Avellaneda (LIGA DE CAMPEONES) (UHD) (152)",02:15-Rosario Central-Racing Avellaneda (LIGA DE CAMPEONES) (UHD) (152)
+http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
+#EXTINF:-1 group-title="07-29 (Miércoles) Primera División Argentina Torneo Clausura" tvg-name="02:15-Rosario Central-Racing Avellaneda (LIGA DE CAMPEONES) (FHD) (778)",02:15-Rosario Central-Racing Avellaneda (LIGA DE CAMPEONES) (FHD) (778)
+http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
+#EXTINF:-1 group-title="07-29 (Miércoles) Primera División Argentina Torneo Clausura" tvg-name="02:15-Rosario Central-Racing Avellaneda (LIGA DE CAMPEONES) (HD) (e57)",02:15-Rosario Central-Racing Avellaneda (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="07-29 (Miércoles) Primera División Argentina Torneo Clausura" tvg-name="02:15-Rosario Central-Racing Avellaneda (LIGA DE CAMPEONES) (HD) (b02)",02:15-Rosario Central-Racing Avellaneda (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
+#EXTINF:-1 group-title="07-29 (Miércoles) Primera División Argentina Torneo Clausura" tvg-name="02:15-Rosario Central-Racing Avellaneda (LIGA DE CAMPEONES) (FHD) (afb)",02:15-Rosario Central-Racing Avellaneda (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="07-29 (Miércoles) Primera División Argentina Torneo Clausura" tvg-name="02:15-Rosario Central-Racing Avellaneda (LIGA DE CAMPEONES) (HD) (97d)",02:15-Rosario Central-Racing Avellaneda (LIGA DE CAMPEONES) (HD) (97d)
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="07-29 (Miércoles) Primera División Argentina Torneo Clausura" tvg-name="02:15-Rosario Central-Racing Avellaneda (LIGA DE CAMPEONES) (FHD) (0f7)",02:15-Rosario Central-Racing Avellaneda (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
+#EXTINF:-1 group-title="07-29 (Miércoles) Primera División Argentina Torneo Clausura" tvg-name="02:15-Rosario Central-Racing Avellaneda (LIGA DE CAMPEONES) (HD) (2b5)",02:15-Rosario Central-Racing Avellaneda (LIGA DE CAMPEONES) (HD) (2b5)
+http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
+#EXTINF:-1 group-title="07-29 (Miércoles) Torneo de Washington 1ª Ronda" tvg-name="19:00-A. De Miñaur-S. Tsitsipas (MOVISTAR DEPORTES 3) (HD) (39f)",19:00-A. De Miñaur-S. Tsitsipas (MOVISTAR DEPORTES 3) (HD) (39f)
+http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
+#EXTINF:-1 group-title="07-29 (Miércoles) Torneo de Washington 1ª Ronda" tvg-name="19:00-A. De Miñaur-S. Tsitsipas (MOVISTAR DEPORTES 3) (HD) (e9c)",19:00-A. De Miñaur-S. Tsitsipas (MOVISTAR DEPORTES 3) (HD) (e9c)
+http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
+#EXTINF:-1 group-title="07-29 (Miércoles) Torneo de Washington 2ª Ronda" tvg-name="19:00-A. Vukic-L. Musetti (MOVISTAR DEPORTES 2) (HD) (3af)",19:00-A. Vukic-L. Musetti (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="07-29 (Miércoles) Torneo de Washington 2ª Ronda" tvg-name="19:00-A. Vukic-L. Musetti (MOVISTAR DEPORTES 2) (FHD) (73d)",19:00-A. Vukic-L. Musetti (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="07-29 (Miércoles) Torneo de Washington 2ª Ronda" tvg-name="20:30-T. Fritz-K. Majchrzak (MOVISTAR DEPORTES 2) (HD) (3af)",20:30-T. Fritz-K. Majchrzak (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="07-29 (Miércoles) Torneo de Washington 2ª Ronda" tvg-name="20:30-T. Fritz-K. Majchrzak (MOVISTAR DEPORTES 2) (FHD) (73d)",20:30-T. Fritz-K. Majchrzak (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="07-30 (Jueves) Serie A Brasil" tvg-name="00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (HD) (bb2)",00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (HD) (bb2)
 http://127.0.0.1:6878/ace/getstream?id=bb26037a253866d341778181eff5c8637240d615
-#EXTINF:-1 group-title="07-29 (Miércoles) Serie A Brasil" tvg-name="00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (FHD) (c6a)",00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (FHD) (c6a)
-http://127.0.0.1:6878/ace/getstream?id=c6a3673f6a37b1bd3cf31fdd6404dd33d48cfccb
-#EXTINF:-1 group-title="07-29 (Miércoles) Serie A Brasil" tvg-name="00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (HD) (338)",00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (HD) (338)
+#EXTINF:-1 group-title="07-30 (Jueves) Serie A Brasil" tvg-name="00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (HD) (338)",00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (HD) (338)
 http://127.0.0.1:6878/ace/getstream?id=338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea
-#EXTINF:-1 group-title="07-29 (Miércoles) Serie A Brasil" tvg-name="00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (FHD) (4fc)",00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (FHD) (4fc)
+#EXTINF:-1 group-title="07-30 (Jueves) Serie A Brasil" tvg-name="00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (FHD) (4fc)",00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (FHD) (4fc)
 http://127.0.0.1:6878/ace/getstream?id=4fc6d0331830ad8743abab2fe2473b63bdfbc49f
-#EXTINF:-1 group-title="07-29 (Miércoles) Serie A Brasil" tvg-name="00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (FHD) (498)",00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (FHD) (498)
+#EXTINF:-1 group-title="07-30 (Jueves) Serie A Brasil" tvg-name="00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (FHD) (c6a)",00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (FHD) (c6a)
+http://127.0.0.1:6878/ace/getstream?id=c6a3673f6a37b1bd3cf31fdd6404dd33d48cfccb
+#EXTINF:-1 group-title="07-30 (Jueves) Serie A Brasil" tvg-name="00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (FHD) (498)",00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (FHD) (498)
 http://127.0.0.1:6878/ace/getstream?id=498c56bd00f535e440c392de5af992421a31355c
+#EXTINF:-1 group-title="07-30 (Jueves) Torneo de Washington 2ª Ronda" tvg-name="02:00-R. Jódar-K. Nishikori (MOVISTAR DEPORTES 2) (HD) (3af)",02:00-R. Jódar-K. Nishikori (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="07-30 (Jueves) Torneo de Washington 2ª Ronda" tvg-name="02:00-R. Jódar-K. Nishikori (MOVISTAR DEPORTES 2) (FHD) (73d)",02:00-R. Jódar-K. Nishikori (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="07-31 (Viernes) Serie A Brasil" tvg-name="00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (HD) (bb2)",00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (HD) (bb2)
 http://127.0.0.1:6878/ace/getstream?id=bb26037a253866d341778181eff5c8637240d615
-#EXTINF:-1 group-title="07-31 (Viernes) Serie A Brasil" tvg-name="00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (c6a)",00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (c6a)
-http://127.0.0.1:6878/ace/getstream?id=c6a3673f6a37b1bd3cf31fdd6404dd33d48cfccb
 #EXTINF:-1 group-title="07-31 (Viernes) Serie A Brasil" tvg-name="00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (HD) (338)",00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (HD) (338)
 http://127.0.0.1:6878/ace/getstream?id=338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea
 #EXTINF:-1 group-title="07-31 (Viernes) Serie A Brasil" tvg-name="00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (4fc)",00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (4fc)
 http://127.0.0.1:6878/ace/getstream?id=4fc6d0331830ad8743abab2fe2473b63bdfbc49f
+#EXTINF:-1 group-title="07-31 (Viernes) Serie A Brasil" tvg-name="00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (c6a)",00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (c6a)
+http://127.0.0.1:6878/ace/getstream?id=c6a3673f6a37b1bd3cf31fdd6404dd33d48cfccb
 #EXTINF:-1 group-title="07-31 (Viernes) Serie A Brasil" tvg-name="00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (498)",00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (498)
 http://127.0.0.1:6878/ace/getstream?id=498c56bd00f535e440c392de5af992421a31355c
