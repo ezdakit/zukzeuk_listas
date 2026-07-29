@@ -1,23 +1,23 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="07-29 (Miércoles) Serie A Brasil" tvg-name="00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (FHD) (4fc)",00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (FHD) (4fc)
-http://127.0.0.1:6878/ace/getstream?id=4fc6d0331830ad8743abab2fe2473b63bdfbc49f
-#EXTINF:-1 group-title="07-29 (Miércoles) Serie A Brasil" tvg-name="00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (HD) (338)",00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (HD) (338)
-http://127.0.0.1:6878/ace/getstream?id=338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea
 #EXTINF:-1 group-title="07-29 (Miércoles) Serie A Brasil" tvg-name="00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (FHD) (c6a)",00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (FHD) (c6a)
 http://127.0.0.1:6878/ace/getstream?id=c6a3673f6a37b1bd3cf31fdd6404dd33d48cfccb
+#EXTINF:-1 group-title="07-29 (Miércoles) Serie A Brasil" tvg-name="00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (FHD) (4fc)",00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (FHD) (4fc)
+http://127.0.0.1:6878/ace/getstream?id=4fc6d0331830ad8743abab2fe2473b63bdfbc49f
 #EXTINF:-1 group-title="07-29 (Miércoles) Serie A Brasil" tvg-name="00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (HD) (bb2)",00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (HD) (bb2)
 http://127.0.0.1:6878/ace/getstream?id=bb26037a253866d341778181eff5c8637240d615
 #EXTINF:-1 group-title="07-29 (Miércoles) Serie A Brasil" tvg-name="00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (FHD) (498)",00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (FHD) (498)
 http://127.0.0.1:6878/ace/getstream?id=498c56bd00f535e440c392de5af992421a31355c
-#EXTINF:-1 group-title="07-31 (Viernes) Serie A Brasil" tvg-name="00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (4fc)",00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (4fc)
-http://127.0.0.1:6878/ace/getstream?id=4fc6d0331830ad8743abab2fe2473b63bdfbc49f
-#EXTINF:-1 group-title="07-31 (Viernes) Serie A Brasil" tvg-name="00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (HD) (338)",00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (HD) (338)
+#EXTINF:-1 group-title="07-29 (Miércoles) Serie A Brasil" tvg-name="00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (HD) (338)",00:30-Internacional-CR Flamengo (LIGA DE CAMPEONES 2) (HD) (338)
 http://127.0.0.1:6878/ace/getstream?id=338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea
 #EXTINF:-1 group-title="07-31 (Viernes) Serie A Brasil" tvg-name="00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (c6a)",00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (c6a)
 http://127.0.0.1:6878/ace/getstream?id=c6a3673f6a37b1bd3cf31fdd6404dd33d48cfccb
+#EXTINF:-1 group-title="07-31 (Viernes) Serie A Brasil" tvg-name="00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (4fc)",00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (4fc)
+http://127.0.0.1:6878/ace/getstream?id=4fc6d0331830ad8743abab2fe2473b63bdfbc49f
 #EXTINF:-1 group-title="07-31 (Viernes) Serie A Brasil" tvg-name="00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (HD) (bb2)",00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (HD) (bb2)
 http://127.0.0.1:6878/ace/getstream?id=bb26037a253866d341778181eff5c8637240d615
 #EXTINF:-1 group-title="07-31 (Viernes) Serie A Brasil" tvg-name="00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (498)",00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (498)
 http://127.0.0.1:6878/ace/getstream?id=498c56bd00f535e440c392de5af992421a31355c
+#EXTINF:-1 group-title="07-31 (Viernes) Serie A Brasil" tvg-name="00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (HD) (338)",00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (HD) (338)
+http://127.0.0.1:6878/ace/getstream?id=338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea
