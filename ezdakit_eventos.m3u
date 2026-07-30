@@ -1,62 +1,62 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="07-30 (Jueves) Serie A Brasil" tvg-name="00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (498)",00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (498)
-http://127.0.0.1:6878/ace/getstream?id=498c56bd00f535e440c392de5af992421a31355c
+#EXTINF:-1 group-title="07-30 (Jueves) Serie A Brasil" tvg-name="00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (4fc)",00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (4fc)
+http://127.0.0.1:6878/ace/getstream?id=4fc6d0331830ad8743abab2fe2473b63bdfbc49f
 #EXTINF:-1 group-title="07-30 (Jueves) Serie A Brasil" tvg-name="00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (HD) (338)",00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (HD) (338)
 http://127.0.0.1:6878/ace/getstream?id=338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea
 #EXTINF:-1 group-title="07-30 (Jueves) Serie A Brasil" tvg-name="00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (c6a)",00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (c6a)
 http://127.0.0.1:6878/ace/getstream?id=c6a3673f6a37b1bd3cf31fdd6404dd33d48cfccb
-#EXTINF:-1 group-title="07-30 (Jueves) Serie A Brasil" tvg-name="00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (4fc)",00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (4fc)
-http://127.0.0.1:6878/ace/getstream?id=4fc6d0331830ad8743abab2fe2473b63bdfbc49f
+#EXTINF:-1 group-title="07-30 (Jueves) Serie A Brasil" tvg-name="00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (498)",00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (FHD) (498)
+http://127.0.0.1:6878/ace/getstream?id=498c56bd00f535e440c392de5af992421a31355c
 #EXTINF:-1 group-title="07-30 (Jueves) Serie A Brasil" tvg-name="00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (HD) (bb2)",00:30-Corinthians-At. Paranaense (LIGA DE CAMPEONES 2) (HD) (bb2)
 http://127.0.0.1:6878/ace/getstream?id=bb26037a253866d341778181eff5c8637240d615
-#EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="10:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",10:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="10:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",10:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="10:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",10:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="11:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",11:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+#EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="10:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",10:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="11:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",11:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="11:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",11:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="11:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",11:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="11:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (39f)",11:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (39f)
 http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
 #EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="11:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (e9c)",11:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (e9c)
 http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
-#EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="13:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",13:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="13:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",13:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="13:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",13:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="14:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",14:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+#EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="13:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",13:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="14:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",14:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="14:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",14:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="16:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",16:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+#EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="14:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",14:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="16:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",16:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="16:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",16:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="18:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",18:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+#EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="16:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",16:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="18:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",18:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="18:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",18:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="20:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",20:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+#EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="18:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",18:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="20:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",20:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="20:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",20:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="07-30 (Jueves) Pretoria Open" tvg-name="20:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",20:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="07-30 (Jueves) Velada" tvg-name="22:00-Professional Fighters League Nueva York (Estados Unidos) (MOVISTAR DEPORTES 4) (HD) (8b5)",22:00-Professional Fighters League Nueva York (Estados Unidos) (MOVISTAR DEPORTES 4) (HD) (8b5)
 http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
 #EXTINF:-1 group-title="08-01 (Sábado) Torneo Los Cabos" tvg-name="04:30-Semifinal 1 ATP 250 (MOVISTAR DEPORTES 3) (HD) (39f)",04:30-Semifinal 1 ATP 250 (MOVISTAR DEPORTES 3) (HD) (39f)
@@ -71,37 +71,37 @@ http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="08-01 (Sábado) ITF Torneo de Maspalomas" tvg-name="12:00-Semifinal 1 ITF W100 (MOVISTAR DEPORTES 2) (HD) (3af)",12:00-Semifinal 1 ITF W100 (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="08-01 (Sábado) Pretoria Open" tvg-name="13:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",13:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="08-01 (Sábado) Pretoria Open" tvg-name="13:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",13:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="08-01 (Sábado) Pretoria Open" tvg-name="13:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",13:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="08-01 (Sábado) Pretoria Open" tvg-name="13:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",13:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="08-01 (Sábado) ITF Torneo de Maspalomas" tvg-name="13:30-Semifinal 2 ITF W100 (MOVISTAR DEPORTES 2) (FHD) (73d)",13:30-Semifinal 2 ITF W100 (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="08-01 (Sábado) ITF Torneo de Maspalomas" tvg-name="13:30-Semifinal 2 ITF W100 (MOVISTAR DEPORTES 2) (HD) (3af)",13:30-Semifinal 2 ITF W100 (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="08-01 (Sábado) Amistoso" tvg-name="15:00-Manchester Utd.-At. Madrid (MOVISTAR PLUS) (FHD) (586)",15:00-Manchester Utd.-At. Madrid (MOVISTAR PLUS) (FHD) (586)
-http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
 #EXTINF:-1 group-title="08-01 (Sábado) Amistoso" tvg-name="15:00-Manchester Utd.-At. Madrid (MOVISTAR PLUS) (FHD) (b6f)",15:00-Manchester Utd.-At. Madrid (MOVISTAR PLUS) (FHD) (b6f)
 http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
 #EXTINF:-1 group-title="08-01 (Sábado) Amistoso" tvg-name="15:00-Manchester Utd.-At. Madrid (MOVISTAR PLUS) (FHD) (199)",15:00-Manchester Utd.-At. Madrid (MOVISTAR PLUS) (FHD) (199)
 http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 group-title="08-01 (Sábado) Pretoria Open" tvg-name="15:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",15:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="08-01 (Sábado) Amistoso" tvg-name="15:00-Manchester Utd.-At. Madrid (MOVISTAR PLUS) (FHD) (586)",15:00-Manchester Utd.-At. Madrid (MOVISTAR PLUS) (FHD) (586)
+http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
 #EXTINF:-1 group-title="08-01 (Sábado) Pretoria Open" tvg-name="15:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",15:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="08-01 (Sábado) Pretoria Open" tvg-name="15:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",15:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="08-01 (Sábado) Pretoria Open" tvg-name="17:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",17:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+#EXTINF:-1 group-title="08-01 (Sábado) Pretoria Open" tvg-name="15:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",15:00-Semifinal Femenina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="08-01 (Sábado) Pretoria Open" tvg-name="17:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",17:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="08-01 (Sábado) Pretoria Open" tvg-name="17:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",17:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="08-01 (Sábado) Pretoria Open" tvg-name="19:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",19:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+#EXTINF:-1 group-title="08-01 (Sábado) Pretoria Open" tvg-name="17:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",17:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
 http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="08-01 (Sábado) Pretoria Open" tvg-name="19:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",19:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="08-01 (Sábado) Pretoria Open" tvg-name="19:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",19:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="08-01 (Sábado) Pretoria Open" tvg-name="19:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",19:00-Semifinal Masculina Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
