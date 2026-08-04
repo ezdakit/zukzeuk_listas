@@ -1,211 +1,93 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="00:50-A. Kovacevic-N. Borges (MOVISTAR DEPORTES 4) (HD) (8b5)",00:50-A. Kovacevic-N. Borges (MOVISTAR DEPORTES 4) (HD) (8b5)
-http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="00:50-A. Kovacevic-N. Borges (MOVISTAR DEPORTES 4) (FHD) (4ab)",00:50-A. Kovacevic-N. Borges (MOVISTAR DEPORTES 4) (FHD) (4ab)
-http://127.0.0.1:6878/ace/getstream?id=4abe06c5cce7cb3c6bef2c3bccaafefd3299794f
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="00:50-A. Kovacevic-N. Borges (MOVISTAR DEPORTES 4) (FHD) (7be)",00:50-A. Kovacevic-N. Borges (MOVISTAR DEPORTES 4) (FHD) (7be)
-http://127.0.0.1:6878/ace/getstream?id=7bede102385c65a545db531af476ef18c31f6258
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="01:50-G. Diallo-K. Jacquet (MOVISTAR DEPORTES 4) (HD) (8b5)",01:50-G. Diallo-K. Jacquet (MOVISTAR DEPORTES 4) (HD) (8b5)
-http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="01:50-G. Diallo-K. Jacquet (MOVISTAR DEPORTES 4) (FHD) (4ab)",01:50-G. Diallo-K. Jacquet (MOVISTAR DEPORTES 4) (FHD) (4ab)
-http://127.0.0.1:6878/ace/getstream?id=4abe06c5cce7cb3c6bef2c3bccaafefd3299794f
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="01:50-G. Diallo-K. Jacquet (MOVISTAR DEPORTES 4) (FHD) (7be)",01:50-G. Diallo-K. Jacquet (MOVISTAR DEPORTES 4) (FHD) (7be)
-http://127.0.0.1:6878/ace/getstream?id=7bede102385c65a545db531af476ef18c31f6258
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="02:05-M. Zheng-M. Kecmanovic (MOVISTAR DEPORTES 3) (HD) (39f)",02:05-M. Zheng-M. Kecmanovic (MOVISTAR DEPORTES 3) (HD) (39f)
-http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="02:05-M. Zheng-M. Kecmanovic (MOVISTAR DEPORTES 3) (FHD) (f4d)",02:05-M. Zheng-M. Kecmanovic (MOVISTAR DEPORTES 3) (FHD) (f4d)
-http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="02:05-M. Zheng-M. Kecmanovic (MOVISTAR DEPORTES 3) (HD) (e9c)",02:05-M. Zheng-M. Kecmanovic (MOVISTAR DEPORTES 3) (HD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="02:05-M. Zheng-M. Kecmanovic (MOVISTAR DEPORTES 3) (HD) (d44)",02:05-M. Zheng-M. Kecmanovic (MOVISTAR DEPORTES 3) (HD) (d44)
-http://127.0.0.1:6878/ace/getstream?id=d448a45840bfd60678abb2a45dd6044c9c8d11f8
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="02:05-M. Zheng-M. Kecmanovic (MOVISTAR DEPORTES 3) (FHD) (84a)",02:05-M. Zheng-M. Kecmanovic (MOVISTAR DEPORTES 3) (FHD) (84a)
-http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="02:05-S. Shimabukuro-M. Cilic (MOVISTAR DEPORTES 2) (HD) (3af)",02:05-S. Shimabukuro-M. Cilic (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="02:05-S. Shimabukuro-M. Cilic (MOVISTAR DEPORTES 2) (FHD) (73d)",02:05-S. Shimabukuro-M. Cilic (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="02:05-S. Shimabukuro-M. Cilic (MOVISTAR DEPORTES 2) (HD) (6b1)",02:05-S. Shimabukuro-M. Cilic (MOVISTAR DEPORTES 2) (HD) (6b1)
-http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="02:05-S. Shimabukuro-M. Cilic (MOVISTAR DEPORTES 2) (FHD) (8cd)",02:05-S. Shimabukuro-M. Cilic (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="03:20-M. Fucsovics-C. Moutet (MOVISTAR DEPORTES 3) (HD) (39f)",03:20-M. Fucsovics-C. Moutet (MOVISTAR DEPORTES 3) (HD) (39f)
-http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="03:20-M. Fucsovics-C. Moutet (MOVISTAR DEPORTES 3) (FHD) (f4d)",03:20-M. Fucsovics-C. Moutet (MOVISTAR DEPORTES 3) (FHD) (f4d)
-http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="03:20-M. Fucsovics-C. Moutet (MOVISTAR DEPORTES 3) (HD) (e9c)",03:20-M. Fucsovics-C. Moutet (MOVISTAR DEPORTES 3) (HD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="03:20-M. Fucsovics-C. Moutet (MOVISTAR DEPORTES 3) (HD) (d44)",03:20-M. Fucsovics-C. Moutet (MOVISTAR DEPORTES 3) (HD) (d44)
-http://127.0.0.1:6878/ace/getstream?id=d448a45840bfd60678abb2a45dd6044c9c8d11f8
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="03:20-M. Fucsovics-C. Moutet (MOVISTAR DEPORTES 3) (FHD) (84a)",03:20-M. Fucsovics-C. Moutet (MOVISTAR DEPORTES 3) (FHD) (84a)
-http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="04:00-C. Ugo Carabelli-C. Norrie (MOVISTAR DEPORTES 2) (HD) (3af)",04:00-C. Ugo Carabelli-C. Norrie (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="04:00-C. Ugo Carabelli-C. Norrie (MOVISTAR DEPORTES 2) (FHD) (73d)",04:00-C. Ugo Carabelli-C. Norrie (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="04:00-C. Ugo Carabelli-C. Norrie (MOVISTAR DEPORTES 2) (HD) (6b1)",04:00-C. Ugo Carabelli-C. Norrie (MOVISTAR DEPORTES 2) (HD) (6b1)
-http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="04:00-C. Ugo Carabelli-C. Norrie (MOVISTAR DEPORTES 2) (FHD) (8cd)",04:00-C. Ugo Carabelli-C. Norrie (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="04:20-K. Majchrzak-G. Monfils (MOVISTAR DEPORTES 4) (HD) (8b5)",04:20-K. Majchrzak-G. Monfils (MOVISTAR DEPORTES 4) (HD) (8b5)
-http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="04:20-K. Majchrzak-G. Monfils (MOVISTAR DEPORTES 4) (FHD) (4ab)",04:20-K. Majchrzak-G. Monfils (MOVISTAR DEPORTES 4) (FHD) (4ab)
-http://127.0.0.1:6878/ace/getstream?id=4abe06c5cce7cb3c6bef2c3bccaafefd3299794f
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="04:20-K. Majchrzak-G. Monfils (MOVISTAR DEPORTES 4) (FHD) (7be)",04:20-K. Majchrzak-G. Monfils (MOVISTAR DEPORTES 4) (FHD) (7be)
-http://127.0.0.1:6878/ace/getstream?id=7bede102385c65a545db531af476ef18c31f6258
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="17:00-A. Walton-J. Brooksby (MOVISTAR DEPORTES) (FHD) (369)",17:00-A. Walton-J. Brooksby (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="17:00-A. Walton-J. Brooksby (MOVISTAR DEPORTES) (FHD) (f82)",17:00-A. Walton-J. Brooksby (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="17:00-A. Walton-J. Brooksby (MOVISTAR DEPORTES) (FHD) (5d3)",17:00-A. Walton-J. Brooksby (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="17:00-A. Walton-J. Brooksby (MOVISTAR DEPORTES) (HD) (6e0)",17:00-A. Walton-J. Brooksby (MOVISTAR DEPORTES) (HD) (6e0)
-http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="17:00-A. Walton-J. Brooksby (MOVISTAR DEPORTES) (FHD) (c6a)",17:00-A. Walton-J. Brooksby (MOVISTAR DEPORTES) (FHD) (c6a)
-http://127.0.0.1:6878/ace/getstream?id=c6a824a81b36f6c3529826477caf2ad94b45776d
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="17:00-H. Hurkacz-M. Giron (MOVISTAR DEPORTES 2) (HD) (3af)",17:00-H. Hurkacz-M. Giron (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="17:00-H. Hurkacz-M. Giron (MOVISTAR DEPORTES 2) (FHD) (73d)",17:00-H. Hurkacz-M. Giron (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="17:00-H. Hurkacz-M. Giron (MOVISTAR DEPORTES 2) (HD) (6b1)",17:00-H. Hurkacz-M. Giron (MOVISTAR DEPORTES 2) (HD) (6b1)
-http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="17:00-H. Hurkacz-M. Giron (MOVISTAR DEPORTES 2) (FHD) (8cd)",17:00-H. Hurkacz-M. Giron (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="17:00-M. Damm-S. Tsitsipas (MOVISTAR DEPORTES 3) (HD) (39f)",17:00-M. Damm-S. Tsitsipas (MOVISTAR DEPORTES 3) (HD) (39f)
-http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="17:00-M. Damm-S. Tsitsipas (MOVISTAR DEPORTES 3) (FHD) (f4d)",17:00-M. Damm-S. Tsitsipas (MOVISTAR DEPORTES 3) (FHD) (f4d)
-http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="17:00-M. Damm-S. Tsitsipas (MOVISTAR DEPORTES 3) (HD) (e9c)",17:00-M. Damm-S. Tsitsipas (MOVISTAR DEPORTES 3) (HD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="17:00-M. Damm-S. Tsitsipas (MOVISTAR DEPORTES 3) (HD) (d44)",17:00-M. Damm-S. Tsitsipas (MOVISTAR DEPORTES 3) (HD) (d44)
-http://127.0.0.1:6878/ace/getstream?id=d448a45840bfd60678abb2a45dd6044c9c8d11f8
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="17:00-M. Damm-S. Tsitsipas (MOVISTAR DEPORTES 3) (FHD) (84a)",17:00-M. Damm-S. Tsitsipas (MOVISTAR DEPORTES 3) (FHD) (84a)
-http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="18:30-D. Mérida Aguilar-L. Draxl (MOVISTAR PLUS) (FHD) (586)",18:30-D. Mérida Aguilar-L. Draxl (MOVISTAR PLUS) (FHD) (586)
-http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="18:30-D. Mérida Aguilar-L. Draxl (MOVISTAR PLUS) (FHD) (b6f)",18:30-D. Mérida Aguilar-L. Draxl (MOVISTAR PLUS) (FHD) (b6f)
-http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="18:30-D. Mérida Aguilar-L. Draxl (MOVISTAR PLUS) (FHD) (199)",18:30-D. Mérida Aguilar-L. Draxl (MOVISTAR PLUS) (FHD) (199)
-http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="18:30-D. Mérida Aguilar-L. Draxl (MOVISTAR DEPORTES 2) (HD) (3af)",18:30-D. Mérida Aguilar-L. Draxl (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="18:30-D. Mérida Aguilar-L. Draxl (MOVISTAR DEPORTES 2) (FHD) (73d)",18:30-D. Mérida Aguilar-L. Draxl (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="18:30-D. Mérida Aguilar-L. Draxl (MOVISTAR DEPORTES 2) (HD) (6b1)",18:30-D. Mérida Aguilar-L. Draxl (MOVISTAR DEPORTES 2) (HD) (6b1)
-http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="18:30-D. Mérida Aguilar-L. Draxl (MOVISTAR DEPORTES 2) (FHD) (8cd)",18:30-D. Mérida Aguilar-L. Draxl (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="18:30-P. Carreño-V. Royer (MOVISTAR DEPORTES) (FHD) (369)",18:30-P. Carreño-V. Royer (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="18:30-P. Carreño-V. Royer (MOVISTAR DEPORTES) (FHD) (f82)",18:30-P. Carreño-V. Royer (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="18:30-P. Carreño-V. Royer (MOVISTAR DEPORTES) (FHD) (5d3)",18:30-P. Carreño-V. Royer (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="18:30-P. Carreño-V. Royer (MOVISTAR DEPORTES) (HD) (6e0)",18:30-P. Carreño-V. Royer (MOVISTAR DEPORTES) (HD) (6e0)
-http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="18:30-P. Carreño-V. Royer (MOVISTAR DEPORTES) (FHD) (c6a)",18:30-P. Carreño-V. Royer (MOVISTAR DEPORTES) (FHD) (c6a)
-http://127.0.0.1:6878/ace/getstream?id=c6a824a81b36f6c3529826477caf2ad94b45776d
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="18:30-Z. Svajda-D. Shapovalov (MOVISTAR DEPORTES 3) (HD) (39f)",18:30-Z. Svajda-D. Shapovalov (MOVISTAR DEPORTES 3) (HD) (39f)
-http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="18:30-Z. Svajda-D. Shapovalov (MOVISTAR DEPORTES 3) (FHD) (f4d)",18:30-Z. Svajda-D. Shapovalov (MOVISTAR DEPORTES 3) (FHD) (f4d)
-http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="18:30-Z. Svajda-D. Shapovalov (MOVISTAR DEPORTES 3) (HD) (e9c)",18:30-Z. Svajda-D. Shapovalov (MOVISTAR DEPORTES 3) (HD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="18:30-Z. Svajda-D. Shapovalov (MOVISTAR DEPORTES 3) (HD) (d44)",18:30-Z. Svajda-D. Shapovalov (MOVISTAR DEPORTES 3) (HD) (d44)
-http://127.0.0.1:6878/ace/getstream?id=d448a45840bfd60678abb2a45dd6044c9c8d11f8
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="18:30-Z. Svajda-D. Shapovalov (MOVISTAR DEPORTES 3) (FHD) (84a)",18:30-Z. Svajda-D. Shapovalov (MOVISTAR DEPORTES 3) (FHD) (84a)
-http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="20:00-G. Mpetshi Perricard-B. Van de Zandschulp (MOVISTAR DEPORTES) (FHD) (369)",20:00-G. Mpetshi Perricard-B. Van de Zandschulp (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="20:00-G. Mpetshi Perricard-B. Van de Zandschulp (MOVISTAR DEPORTES) (FHD) (f82)",20:00-G. Mpetshi Perricard-B. Van de Zandschulp (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="20:00-G. Mpetshi Perricard-B. Van de Zandschulp (MOVISTAR DEPORTES) (FHD) (5d3)",20:00-G. Mpetshi Perricard-B. Van de Zandschulp (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="20:00-G. Mpetshi Perricard-B. Van de Zandschulp (MOVISTAR DEPORTES) (HD) (6e0)",20:00-G. Mpetshi Perricard-B. Van de Zandschulp (MOVISTAR DEPORTES) (HD) (6e0)
-http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="20:00-G. Mpetshi Perricard-B. Van de Zandschulp (MOVISTAR DEPORTES) (FHD) (c6a)",20:00-G. Mpetshi Perricard-B. Van de Zandschulp (MOVISTAR DEPORTES) (FHD) (c6a)
-http://127.0.0.1:6878/ace/getstream?id=c6a824a81b36f6c3529826477caf2ad94b45776d
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="20:00-T. Atmane-J. Draper (MOVISTAR DEPORTES 3) (HD) (39f)",20:00-T. Atmane-J. Draper (MOVISTAR DEPORTES 3) (HD) (39f)
-http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="20:00-T. Atmane-J. Draper (MOVISTAR DEPORTES 3) (FHD) (f4d)",20:00-T. Atmane-J. Draper (MOVISTAR DEPORTES 3) (FHD) (f4d)
-http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="20:00-T. Atmane-J. Draper (MOVISTAR DEPORTES 3) (HD) (e9c)",20:00-T. Atmane-J. Draper (MOVISTAR DEPORTES 3) (HD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="20:00-T. Atmane-J. Draper (MOVISTAR DEPORTES 3) (HD) (d44)",20:00-T. Atmane-J. Draper (MOVISTAR DEPORTES 3) (HD) (d44)
-http://127.0.0.1:6878/ace/getstream?id=d448a45840bfd60678abb2a45dd6044c9c8d11f8
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 1ª Ronda" tvg-name="20:00-T. Atmane-J. Draper (MOVISTAR DEPORTES 3) (FHD) (84a)",20:00-T. Atmane-J. Draper (MOVISTAR DEPORTES 3) (FHD) (84a)
-http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 2ª Ronda" tvg-name="20:00-J. Shang-A. Rublev (MOVISTAR DEPORTES 2) (HD) (3af)",20:00-J. Shang-A. Rublev (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 2ª Ronda" tvg-name="20:00-J. Shang-A. Rublev (MOVISTAR DEPORTES 2) (FHD) (73d)",20:00-J. Shang-A. Rublev (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 2ª Ronda" tvg-name="20:00-J. Shang-A. Rublev (MOVISTAR DEPORTES 2) (HD) (6b1)",20:00-J. Shang-A. Rublev (MOVISTAR DEPORTES 2) (HD) (6b1)
-http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 2ª Ronda" tvg-name="20:00-J. Shang-A. Rublev (MOVISTAR DEPORTES 2) (FHD) (8cd)",20:00-J. Shang-A. Rublev (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 2ª Ronda" tvg-name="21:30-J. Munar-A. Blockx (MOVISTAR DEPORTES) (FHD) (369)",21:30-J. Munar-A. Blockx (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 2ª Ronda" tvg-name="21:30-J. Munar-A. Blockx (MOVISTAR DEPORTES) (FHD) (f82)",21:30-J. Munar-A. Blockx (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 2ª Ronda" tvg-name="21:30-J. Munar-A. Blockx (MOVISTAR DEPORTES) (FHD) (5d3)",21:30-J. Munar-A. Blockx (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 2ª Ronda" tvg-name="21:30-J. Munar-A. Blockx (MOVISTAR DEPORTES) (HD) (6e0)",21:30-J. Munar-A. Blockx (MOVISTAR DEPORTES) (HD) (6e0)
-http://127.0.0.1:6878/ace/getstream?id=6e031aed136bf97d8667fcd5fc49c73256928281
-#EXTINF:-1 group-title="08-04 (Martes) Masters Canadá 2ª Ronda" tvg-name="21:30-J. Munar-A. Blockx (MOVISTAR DEPORTES) (FHD) (c6a)",21:30-J. Munar-A. Blockx (MOVISTAR DEPORTES) (FHD) (c6a)
-http://127.0.0.1:6878/ace/getstream?id=c6a824a81b36f6c3529826477caf2ad94b45776d
-#EXTINF:-1 group-title="08-05 (Miércoles) Masters Canadá 2ª Ronda" tvg-name="00:00-J. Duckworth-A. De Miñaur (MOVISTAR DEPORTES 2) (HD) (3af)",00:00-J. Duckworth-A. De Miñaur (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="08-05 (Miércoles) Masters Canadá 2ª Ronda" tvg-name="00:00-J. Duckworth-A. De Miñaur (MOVISTAR DEPORTES 2) (FHD) (73d)",00:00-J. Duckworth-A. De Miñaur (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="08-05 (Miércoles) Masters Canadá 2ª Ronda" tvg-name="00:00-J. Duckworth-A. De Miñaur (MOVISTAR DEPORTES 2) (HD) (6b1)",00:00-J. Duckworth-A. De Miñaur (MOVISTAR DEPORTES 2) (HD) (6b1)
-http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
-#EXTINF:-1 group-title="08-05 (Miércoles) Masters Canadá 2ª Ronda" tvg-name="00:00-J. Duckworth-A. De Miñaur (MOVISTAR DEPORTES 2) (FHD) (8cd)",00:00-J. Duckworth-A. De Miñaur (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="08-05 (Miércoles) Masters Canadá 2ª Ronda" tvg-name="01:00-F. Tiafoe-M. Cilic (MOVISTAR DEPORTES 3) (HD) (39f)",01:00-F. Tiafoe-M. Cilic (MOVISTAR DEPORTES 3) (HD) (39f)
-http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="08-05 (Miércoles) Masters Canadá 2ª Ronda" tvg-name="01:00-F. Tiafoe-M. Cilic (MOVISTAR DEPORTES 3) (FHD) (f4d)",01:00-F. Tiafoe-M. Cilic (MOVISTAR DEPORTES 3) (FHD) (f4d)
-http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
-#EXTINF:-1 group-title="08-05 (Miércoles) Masters Canadá 2ª Ronda" tvg-name="01:00-F. Tiafoe-M. Cilic (MOVISTAR DEPORTES 3) (HD) (e9c)",01:00-F. Tiafoe-M. Cilic (MOVISTAR DEPORTES 3) (HD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
-#EXTINF:-1 group-title="08-05 (Miércoles) Masters Canadá 2ª Ronda" tvg-name="01:00-F. Tiafoe-M. Cilic (MOVISTAR DEPORTES 3) (HD) (d44)",01:00-F. Tiafoe-M. Cilic (MOVISTAR DEPORTES 3) (HD) (d44)
-http://127.0.0.1:6878/ace/getstream?id=d448a45840bfd60678abb2a45dd6044c9c8d11f8
-#EXTINF:-1 group-title="08-05 (Miércoles) Masters Canadá 2ª Ronda" tvg-name="01:00-F. Tiafoe-M. Cilic (MOVISTAR DEPORTES 3) (FHD) (84a)",01:00-F. Tiafoe-M. Cilic (MOVISTAR DEPORTES 3) (FHD) (84a)
-http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
-#EXTINF:-1 group-title="08-05 (Miércoles) Masters Canadá 2ª Ronda" tvg-name="01:30-F. Cobolli-Y. Hanfmann (MOVISTAR DEPORTES 2) (HD) (3af)",01:30-F. Cobolli-Y. Hanfmann (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="08-05 (Miércoles) Masters Canadá 2ª Ronda" tvg-name="01:30-F. Cobolli-Y. Hanfmann (MOVISTAR DEPORTES 2) (FHD) (73d)",01:30-F. Cobolli-Y. Hanfmann (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="08-05 (Miércoles) Masters Canadá 2ª Ronda" tvg-name="01:30-F. Cobolli-Y. Hanfmann (MOVISTAR DEPORTES 2) (HD) (6b1)",01:30-F. Cobolli-Y. Hanfmann (MOVISTAR DEPORTES 2) (HD) (6b1)
-http://127.0.0.1:6878/ace/getstream?id=6b15368775693c33c49fab02e7900c1976a5da90
-#EXTINF:-1 group-title="08-05 (Miércoles) Masters Canadá 2ª Ronda" tvg-name="01:30-F. Cobolli-Y. Hanfmann (MOVISTAR DEPORTES 2) (FHD) (8cd)",01:30-F. Cobolli-Y. Hanfmann (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="08-05 (Miércoles) Masters Canadá 2ª Ronda" tvg-name="02:30-L. Darderi-G. Diallo (MOVISTAR DEPORTES 3) (HD) (39f)",02:30-L. Darderi-G. Diallo (MOVISTAR DEPORTES 3) (HD) (39f)
-http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="08-05 (Miércoles) Masters Canadá 2ª Ronda" tvg-name="02:30-L. Darderi-G. Diallo (MOVISTAR DEPORTES 3) (FHD) (f4d)",02:30-L. Darderi-G. Diallo (MOVISTAR DEPORTES 3) (FHD) (f4d)
-http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
-#EXTINF:-1 group-title="08-05 (Miércoles) Masters Canadá 2ª Ronda" tvg-name="02:30-L. Darderi-G. Diallo (MOVISTAR DEPORTES 3) (HD) (e9c)",02:30-L. Darderi-G. Diallo (MOVISTAR DEPORTES 3) (HD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
-#EXTINF:-1 group-title="08-05 (Miércoles) Masters Canadá 2ª Ronda" tvg-name="02:30-L. Darderi-G. Diallo (MOVISTAR DEPORTES 3) (HD) (d44)",02:30-L. Darderi-G. Diallo (MOVISTAR DEPORTES 3) (HD) (d44)
-http://127.0.0.1:6878/ace/getstream?id=d448a45840bfd60678abb2a45dd6044c9c8d11f8
-#EXTINF:-1 group-title="08-05 (Miércoles) Masters Canadá 2ª Ronda" tvg-name="02:30-L. Darderi-G. Diallo (MOVISTAR DEPORTES 3) (FHD) (84a)",02:30-L. Darderi-G. Diallo (MOVISTAR DEPORTES 3) (FHD) (84a)
-http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
-#EXTINF:-1 group-title="08-06 (Jueves) Primera División Argentina Torneo Clausura" tvg-name="00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (HD) (97d)",00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (HD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 group-title="08-06 (Jueves) Primera División Argentina Torneo Clausura" tvg-name="00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (FHD) (afb)",00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
-#EXTINF:-1 group-title="08-06 (Jueves) Primera División Argentina Torneo Clausura" tvg-name="00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (HD) (2b5)",00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (HD) (2b5)
+#EXTINF:-1 group-title="08-05 (Miércoles) Primera División Argentina Torneo Clausura" tvg-name="00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (HD) (2b5)",00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (HD) (2b5)
 http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
-#EXTINF:-1 group-title="08-06 (Jueves) Primera División Argentina Torneo Clausura" tvg-name="00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (UHD) (152)",00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (UHD) (152)
-http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="08-06 (Jueves) Primera División Argentina Torneo Clausura" tvg-name="00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (FHD) (afb)",00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
-#EXTINF:-1 group-title="08-06 (Jueves) Primera División Argentina Torneo Clausura" tvg-name="00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (HD) (b02)",00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="08-06 (Jueves) Primera División Argentina Torneo Clausura" tvg-name="00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (HD) (e57)",00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="08-06 (Jueves) Primera División Argentina Torneo Clausura" tvg-name="00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (FHD) (0f7)",00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (FHD) (0f7)
+#EXTINF:-1 group-title="08-05 (Miércoles) Primera División Argentina Torneo Clausura" tvg-name="00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (FHD) (afb)",00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="08-05 (Miércoles) Primera División Argentina Torneo Clausura" tvg-name="00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (FHD) (0f7)",00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (FHD) (0f7)
 http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
-#EXTINF:-1 group-title="08-06 (Jueves) Primera División Argentina Torneo Clausura" tvg-name="00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (FHD) (778)",00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (FHD) (778)
+#EXTINF:-1 group-title="08-05 (Miércoles) Primera División Argentina Torneo Clausura" tvg-name="00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (UHD) (152)",00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (UHD) (152)
+http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
+#EXTINF:-1 group-title="08-05 (Miércoles) Primera División Argentina Torneo Clausura" tvg-name="00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (HD) (97d)",00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (HD) (97d)
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="08-05 (Miércoles) Primera División Argentina Torneo Clausura" tvg-name="00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (FHD) (afb)",00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="08-05 (Miércoles) Primera División Argentina Torneo Clausura" tvg-name="00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (HD) (e57)",00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="08-05 (Miércoles) Primera División Argentina Torneo Clausura" tvg-name="00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (HD) (b02)",00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
+#EXTINF:-1 group-title="08-05 (Miércoles) Primera División Argentina Torneo Clausura" tvg-name="00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (FHD) (778)",00:00-Boca Juniors-Estudiantes LP (LIGA DE CAMPEONES) (FHD) (778)
 http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (39f)",11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (39f)
+http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (FHD) (f4d)",11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (FHD) (f4d)
+http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (e9c)",11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (e9c)
+http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (d44)",11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (d44)
+http://127.0.0.1:6878/ace/getstream?id=d448a45840bfd60678abb2a45dd6044c9c8d11f8
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (FHD) (84a)",11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (FHD) (84a)
+http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 4) (HD) (8b5)",11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 4) (HD) (8b5)
+http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 4) (FHD) (4ab)",11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 4) (FHD) (4ab)
+http://127.0.0.1:6878/ace/getstream?id=4abe06c5cce7cb3c6bef2c3bccaafefd3299794f
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 4) (FHD) (7be)",11:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 4) (FHD) (7be)
+http://127.0.0.1:6878/ace/getstream?id=7bede102385c65a545db531af476ef18c31f6258
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="13:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (39f)",13:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (39f)
+http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="13:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (FHD) (f4d)",13:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (FHD) (f4d)
+http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="13:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (e9c)",13:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (e9c)
+http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="13:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (d44)",13:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (d44)
+http://127.0.0.1:6878/ace/getstream?id=d448a45840bfd60678abb2a45dd6044c9c8d11f8
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="13:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (FHD) (84a)",13:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (FHD) (84a)
+http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="13:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 4) (HD) (8b5)",13:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 4) (HD) (8b5)
+http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="13:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 4) (FHD) (4ab)",13:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 4) (FHD) (4ab)
+http://127.0.0.1:6878/ace/getstream?id=4abe06c5cce7cb3c6bef2c3bccaafefd3299794f
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="13:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 4) (FHD) (7be)",13:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 4) (FHD) (7be)
+http://127.0.0.1:6878/ace/getstream?id=7bede102385c65a545db531af476ef18c31f6258
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="15:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (39f)",15:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (39f)
+http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="15:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (FHD) (f4d)",15:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (FHD) (f4d)
+http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="15:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (e9c)",15:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (e9c)
+http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="15:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (d44)",15:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (d44)
+http://127.0.0.1:6878/ace/getstream?id=d448a45840bfd60678abb2a45dd6044c9c8d11f8
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="15:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (FHD) (84a)",15:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (FHD) (84a)
+http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="16:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (39f)",16:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (39f)
+http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="16:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (FHD) (f4d)",16:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (FHD) (f4d)
+http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="16:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (e9c)",16:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (e9c)
+http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="16:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (d44)",16:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (d44)
+http://127.0.0.1:6878/ace/getstream?id=d448a45840bfd60678abb2a45dd6044c9c8d11f8
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="16:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (FHD) (84a)",16:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES 3) (FHD) (84a)
+http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="18:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (39f)",18:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (39f)
+http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="18:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (FHD) (f4d)",18:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (FHD) (f4d)
+http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="18:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (e9c)",18:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (e9c)
+http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="18:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (d44)",18:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (d44)
+http://127.0.0.1:6878/ace/getstream?id=d448a45840bfd60678abb2a45dd6044c9c8d11f8
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="18:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (FHD) (84a)",18:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (FHD) (84a)
+http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="20:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (39f)",20:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (39f)
+http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="20:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (FHD) (f4d)",20:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (FHD) (f4d)
+http://127.0.0.1:6878/ace/getstream?id=f4d9011721fad5098febbe4d7c078a582e176a01
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="20:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (e9c)",20:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (e9c)
+http://127.0.0.1:6878/ace/getstream?id=e9ce6e62ff97f1da7f10fd449a3c8e8ee90b253d
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="20:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (d44)",20:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (HD) (d44)
+http://127.0.0.1:6878/ace/getstream?id=d448a45840bfd60678abb2a45dd6044c9c8d11f8
+#EXTINF:-1 group-title="08-07 (Viernes) Londres Open" tvg-name="20:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (FHD) (84a)",20:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES 3) (FHD) (84a)
+http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
