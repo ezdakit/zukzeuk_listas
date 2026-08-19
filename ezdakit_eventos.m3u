@@ -1,128 +1,110 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="08-19 (Miércoles) Copa Libertadores 1/8 de final" tvg-name="00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (FHD) (0f7)",00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
-#EXTINF:-1 group-title="08-19 (Miércoles) Copa Libertadores 1/8 de final" tvg-name="00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (FHD) (778)",00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (FHD) (778)
-http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="08-19 (Miércoles) Copa Libertadores 1/8 de final" tvg-name="00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (HD) (b02)",00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="08-19 (Miércoles) Copa Libertadores 1/8 de final" tvg-name="00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (FHD) (afb)",00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
 #EXTINF:-1 group-title="08-19 (Miércoles) Copa Libertadores 1/8 de final" tvg-name="00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (HD) (2b5)",00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (HD) (2b5)
 http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
 #EXTINF:-1 group-title="08-19 (Miércoles) Copa Libertadores 1/8 de final" tvg-name="00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (UHD) (152)",00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (UHD) (152)
 http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="08-19 (Miércoles) Copa Libertadores 1/8 de final" tvg-name="00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (HD) (e57)",00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="08-19 (Miércoles) Copa Libertadores 1/8 de final" tvg-name="00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (FHD) (97d)",00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (FHD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
 #EXTINF:-1 group-title="08-19 (Miércoles) Copa Libertadores 1/8 de final" tvg-name="00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (FHD) (afb)",00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
-#EXTINF:-1 group-title="08-19 (Miércoles) Copa Libertadores 1/8 de final" tvg-name="00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (FHD) (91b)",00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (FHD) (91b)
-http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
+#EXTINF:-1 group-title="08-19 (Miércoles) Copa Libertadores 1/8 de final" tvg-name="00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (HD) (97d)",00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (HD) (97d)
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="08-19 (Miércoles) Copa Libertadores 1/8 de final" tvg-name="00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (FHD) (0f7)",00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
+#EXTINF:-1 group-title="08-19 (Miércoles) Copa Libertadores 1/8 de final" tvg-name="00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (HD) (b02)",00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
+#EXTINF:-1 group-title="08-19 (Miércoles) Copa Libertadores 1/8 de final" tvg-name="00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (FHD) (778)",00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (FHD) (778)
+http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
+#EXTINF:-1 group-title="08-19 (Miércoles) Copa Libertadores 1/8 de final" tvg-name="00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (HD) (e57)",00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="08-19 (Miércoles) Copa Libertadores 1/8 de final" tvg-name="00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (FHD) (afb)",00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
 #EXTINF:-1 group-title="08-19 (Miércoles) Copa Libertadores 1/8 de final" tvg-name="00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (HD) (931)",00:00-Cerro Porteño-Palmeiras (LIGA DE CAMPEONES) (HD) (931)
 http://127.0.0.1:6878/ace/getstream?id=931fd4c24398a24beb9b6ede856ca34339ff2c22
-#EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (FHD) (0f7)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
-#EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (FHD) (778)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (FHD) (778)
-http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (HD) (b02)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (FHD) (afb)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
 #EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (HD) (2b5)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (HD) (2b5)
 http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
 #EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (UHD) (152)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (UHD) (152)
 http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (HD) (e57)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (FHD) (97d)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (FHD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
 #EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (FHD) (afb)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
-#EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (FHD) (91b)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (FHD) (91b)
-http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
+#EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (HD) (97d)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (HD) (97d)
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (FHD) (0f7)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
+#EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (HD) (b02)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
+#EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (FHD) (778)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (FHD) (778)
+http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
+#EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (HD) (e57)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (FHD) (afb)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
 #EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (HD) (931)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES) (HD) (931)
 http://127.0.0.1:6878/ace/getstream?id=931fd4c24398a24beb9b6ede856ca34339ff2c22
-#EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES 2) (HD) (338)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES 2) (HD) (338)
-http://127.0.0.1:6878/ace/getstream?id=338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea
+#EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES 2) (FHD) (498)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES 2) (FHD) (498)
+http://127.0.0.1:6878/ace/getstream?id=498c56bd00f535e440c392de5af992421a31355c
 #EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES 2) (FHD) (c6a)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES 2) (FHD) (c6a)
 http://127.0.0.1:6878/ace/getstream?id=c6a3673f6a37b1bd3cf31fdd6404dd33d48cfccb
 #EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES 2) (FHD) (4fc)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES 2) (FHD) (4fc)
 http://127.0.0.1:6878/ace/getstream?id=4fc6d0331830ad8743abab2fe2473b63bdfbc49f
-#EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES 2) (FHD) (498)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES 2) (FHD) (498)
-http://127.0.0.1:6878/ace/getstream?id=498c56bd00f535e440c392de5af992421a31355c
 #EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES 2) (FHD) (bb2)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES 2) (FHD) (bb2)
 http://127.0.0.1:6878/ace/getstream?id=bb26037a253866d341778181eff5c8637240d615
-#EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES 2) (FHD) (815)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES 2) (FHD) (815)
-http://127.0.0.1:6878/ace/getstream?id=8156912ae14f6174a19c8a4efcf36a06e847f632
+#EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES 2) (HD) (338)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES 2) (HD) (338)
+http://127.0.0.1:6878/ace/getstream?id=338b5de78b0b40a6f9ca3cc0cf9be93341b9ceea
 #EXTINF:-1 group-title="08-19 (Miércoles) Copa Sudamericana 1/8 de final" tvg-name="02:30-Santa Fe-River Plate (LIGA DE CAMPEONES 2) (HD) (38f)",02:30-Santa Fe-River Plate (LIGA DE CAMPEONES 2) (HD) (38f)
 http://127.0.0.1:6878/ace/getstream?id=38f7b2044e549df2039ff26cefa6f9a60c854d5e
-#EXTINF:-1 group-title="08-19 (Miércoles) La Liga EA Sports" tvg-name="21:00-Rayo Vallecano-Alavés (DAZN LA LIGA 1) (HD) (4e6)",21:00-Rayo Vallecano-Alavés (DAZN LA LIGA 1) (HD) (4e6)
-http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
-#EXTINF:-1 group-title="08-19 (Miércoles) La Liga EA Sports" tvg-name="21:00-Rayo Vallecano-Alavés (DAZN LA LIGA 1) (FHD) (0e5)",21:00-Rayo Vallecano-Alavés (DAZN LA LIGA 1) (FHD) (0e5)
-http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
 #EXTINF:-1 group-title="08-19 (Miércoles) La Liga EA Sports" tvg-name="21:00-Rayo Vallecano-Alavés (DAZN LA LIGA 1) (HD) (dda)",21:00-Rayo Vallecano-Alavés (DAZN LA LIGA 1) (HD) (dda)
 http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
 #EXTINF:-1 group-title="08-19 (Miércoles) La Liga EA Sports" tvg-name="21:00-Rayo Vallecano-Alavés (DAZN LA LIGA 1) (HD) (19f)",21:00-Rayo Vallecano-Alavés (DAZN LA LIGA 1) (HD) (19f)
 http://127.0.0.1:6878/ace/getstream?id=19f28f60c908f987b1a03da078e63320d7bf29e8
-#EXTINF:-1 group-title="08-19 (Miércoles) La Liga EA Sports" tvg-name="21:00-Rayo Vallecano-Alavés (DAZN LA LIGA 1) (FHD) (cc1)",21:00-Rayo Vallecano-Alavés (DAZN LA LIGA 1) (FHD) (cc1)
-http://127.0.0.1:6878/ace/getstream?id=cc108ae39f92c48f6c946763047bd1c9b7b7d889
-#EXTINF:-1 group-title="08-19 (Miércoles) La Liga EA Sports" tvg-name="21:00-Rayo Vallecano-Alavés (DAZN LA LIGA 1) (FHD) (7f9)",21:00-Rayo Vallecano-Alavés (DAZN LA LIGA 1) (FHD) (7f9)
-http://127.0.0.1:6878/ace/getstream?id=7f9857c45764ef2c7cdfb619b89db3056a57a51f
-#EXTINF:-1 group-title="08-19 (Miércoles) La Liga EA Sports" tvg-name="21:00-Rayo Vallecano-Alavés (DAZN LA LIGA 1) (HD) (385)",21:00-Rayo Vallecano-Alavés (DAZN LA LIGA 1) (HD) (385)
-http://127.0.0.1:6878/ace/getstream?id=385abcf801b787eec6ed6624908758bb165c0a55
-#EXTINF:-1 group-title="08-21 (Viernes) Copa Libertadores 1/8 de final" tvg-name="02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (FHD) (0f7)",02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
-#EXTINF:-1 group-title="08-21 (Viernes) Copa Libertadores 1/8 de final" tvg-name="02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (FHD) (778)",02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (FHD) (778)
-http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="08-21 (Viernes) Copa Libertadores 1/8 de final" tvg-name="02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (HD) (b02)",02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="08-21 (Viernes) Copa Libertadores 1/8 de final" tvg-name="02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (FHD) (afb)",02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="08-19 (Miércoles) La Liga EA Sports" tvg-name="21:00-Rayo Vallecano-Alavés (DAZN LA LIGA 1) (HD) (4e6)",21:00-Rayo Vallecano-Alavés (DAZN LA LIGA 1) (HD) (4e6)
+http://127.0.0.1:6878/ace/getstream?id=4e6d9cf7d177366045d33cd8311d8b1d7f4bed1f
+#EXTINF:-1 group-title="08-19 (Miércoles) La Liga EA Sports" tvg-name="21:00-Rayo Vallecano-Alavés (DAZN LA LIGA 1) (FHD) (0e5)",21:00-Rayo Vallecano-Alavés (DAZN LA LIGA 1) (FHD) (0e5)
+http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
 #EXTINF:-1 group-title="08-21 (Viernes) Copa Libertadores 1/8 de final" tvg-name="02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (HD) (2b5)",02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (HD) (2b5)
 http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
 #EXTINF:-1 group-title="08-21 (Viernes) Copa Libertadores 1/8 de final" tvg-name="02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (UHD) (152)",02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (UHD) (152)
 http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="08-21 (Viernes) Copa Libertadores 1/8 de final" tvg-name="02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (HD) (e57)",02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="08-21 (Viernes) Copa Libertadores 1/8 de final" tvg-name="02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (FHD) (97d)",02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (FHD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
 #EXTINF:-1 group-title="08-21 (Viernes) Copa Libertadores 1/8 de final" tvg-name="02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (FHD) (afb)",02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (FHD) (afb)
 http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
-#EXTINF:-1 group-title="08-21 (Viernes) Copa Libertadores 1/8 de final" tvg-name="02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (FHD) (91b)",02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (FHD) (91b)
-http://127.0.0.1:6878/ace/getstream?id=91b2a1fe85f5bb4a6cf9ef6d01cc65883d986920
+#EXTINF:-1 group-title="08-21 (Viernes) Copa Libertadores 1/8 de final" tvg-name="02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (HD) (97d)",02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (HD) (97d)
+http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
+#EXTINF:-1 group-title="08-21 (Viernes) Copa Libertadores 1/8 de final" tvg-name="02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (FHD) (0f7)",02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
+#EXTINF:-1 group-title="08-21 (Viernes) Copa Libertadores 1/8 de final" tvg-name="02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (HD) (b02)",02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
+#EXTINF:-1 group-title="08-21 (Viernes) Copa Libertadores 1/8 de final" tvg-name="02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (FHD) (778)",02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (FHD) (778)
+http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
+#EXTINF:-1 group-title="08-21 (Viernes) Copa Libertadores 1/8 de final" tvg-name="02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (HD) (e57)",02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="08-21 (Viernes) Copa Libertadores 1/8 de final" tvg-name="02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (FHD) (afb)",02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
 #EXTINF:-1 group-title="08-21 (Viernes) Copa Libertadores 1/8 de final" tvg-name="02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (HD) (931)",02:30-Corinthians-Rosario Central (LIGA DE CAMPEONES) (HD) (931)
 http://127.0.0.1:6878/ace/getstream?id=931fd4c24398a24beb9b6ede856ca34339ff2c22
-#EXTINF:-1 group-title="08-21 (Viernes) IAAF Diamond League" tvg-name="20:00-Lausanne (Suiza) (MOVISTAR DEPORTES) (FHD) (369)",20:00-Lausanne (Suiza) (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="08-21 (Viernes) IAAF Diamond League" tvg-name="20:00-Lausanne (Suiza) (MOVISTAR DEPORTES) (FHD) (f82)",20:00-Lausanne (Suiza) (MOVISTAR DEPORTES) (FHD) (f82)
 http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
 #EXTINF:-1 group-title="08-21 (Viernes) IAAF Diamond League" tvg-name="20:00-Lausanne (Suiza) (MOVISTAR DEPORTES) (FHD) (5d3)",20:00-Lausanne (Suiza) (MOVISTAR DEPORTES) (FHD) (5d3)
 http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="08-21 (Viernes) IAAF Diamond League" tvg-name="20:00-Lausanne (Suiza) (MOVISTAR DEPORTES) (FHD) (c6a)",20:00-Lausanne (Suiza) (MOVISTAR DEPORTES) (FHD) (c6a)
-http://127.0.0.1:6878/ace/getstream?id=c6a824a81b36f6c3529826477caf2ad94b45776d
-#EXTINF:-1 group-title="08-21 (Viernes) IAAF Diamond League" tvg-name="20:00-Lausanne (Suiza) (MOVISTAR DEPORTES) (FHD) (cf5)",20:00-Lausanne (Suiza) (MOVISTAR DEPORTES) (FHD) (cf5)
-http://127.0.0.1:6878/ace/getstream?id=cf5327fe9c962a29dfff3868f4349ff2b0b4662f
-#EXTINF:-1 group-title="08-21 (Viernes) La Liga EA Sports" tvg-name="21:00-Real Betis-Real Sociedad (M+ LALIGA) (HD) (31c)",21:00-Real Betis-Real Sociedad (M+ LALIGA) (HD) (31c)
-http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
-#EXTINF:-1 group-title="08-21 (Viernes) La Liga EA Sports" tvg-name="21:00-Real Betis-Real Sociedad (M+ LALIGA) (FHD) (8c3)",21:00-Real Betis-Real Sociedad (M+ LALIGA) (FHD) (8c3)
-http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="08-21 (Viernes) IAAF Diamond League" tvg-name="20:00-Lausanne (Suiza) (MOVISTAR DEPORTES) (FHD) (369)",20:00-Lausanne (Suiza) (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
 #EXTINF:-1 group-title="08-21 (Viernes) La Liga EA Sports" tvg-name="21:00-Real Betis-Real Sociedad (M+ LALIGA) (FHD) (af4)",21:00-Real Betis-Real Sociedad (M+ LALIGA) (FHD) (af4)
 http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
+#EXTINF:-1 group-title="08-21 (Viernes) La Liga EA Sports" tvg-name="21:00-Real Betis-Real Sociedad (M+ LALIGA) (FHD) (8c3)",21:00-Real Betis-Real Sociedad (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="08-21 (Viernes) La Liga EA Sports" tvg-name="21:00-Real Betis-Real Sociedad (M+ LALIGA) (HD) (31c)",21:00-Real Betis-Real Sociedad (M+ LALIGA) (HD) (31c)
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
 #EXTINF:-1 group-title="08-21 (Viernes) La Liga EA Sports" tvg-name="21:00-Real Betis-Real Sociedad (M+ LALIGA) (FHD) (a64)",21:00-Real Betis-Real Sociedad (M+ LALIGA) (FHD) (a64)
 http://127.0.0.1:6878/ace/getstream?id=a64e02a6d914f098cbe1b724ff4f7aef83419a4a
 #EXTINF:-1 group-title="08-21 (Viernes) La Liga EA Sports" tvg-name="21:00-Real Betis-Real Sociedad (M+ LALIGA) (FHD) (3ce)",21:00-Real Betis-Real Sociedad (M+ LALIGA) (FHD) (3ce)
 http://127.0.0.1:6878/ace/getstream?id=3ce95bc9d6fc63676d828bb2cfc7a1f1854fd259
-#EXTINF:-1 group-title="08-21 (Viernes) LaLiga Hypermotion" tvg-name="21:00-Córdoba-Girona (HYPERMOTION) (HD) (a4f)",21:00-Córdoba-Girona (HYPERMOTION) (HD) (a4f)
-http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
 #EXTINF:-1 group-title="08-21 (Viernes) LaLiga Hypermotion" tvg-name="21:00-Córdoba-Girona (HYPERMOTION) (HD) (87b)",21:00-Córdoba-Girona (HYPERMOTION) (HD) (87b)
 http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
-#EXTINF:-1 group-title="08-21 (Viernes) LaLiga Hypermotion" tvg-name="21:00-Córdoba-Girona (HYPERMOTION) (HD) (1f7)",21:00-Córdoba-Girona (HYPERMOTION) (HD) (1f7)
-http://127.0.0.1:6878/ace/getstream?id=1f75d92098580443857caa95a719103cb83781b0
+#EXTINF:-1 group-title="08-21 (Viernes) LaLiga Hypermotion" tvg-name="21:00-Córdoba-Girona (HYPERMOTION) (HD) (a4f)",21:00-Córdoba-Girona (HYPERMOTION) (HD) (a4f)
+http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
 #EXTINF:-1 group-title="08-21 (Viernes) LaLiga Hypermotion" tvg-name="21:00-Córdoba-Girona (HYPERMOTION) (FHD) (463)",21:00-Córdoba-Girona (HYPERMOTION) (FHD) (463)
 http://127.0.0.1:6878/ace/getstream?id=4636ed75106cb00e9c70cc2029edf0a4df7ad73f
+#EXTINF:-1 group-title="08-21 (Viernes) LaLiga Hypermotion" tvg-name="21:00-Córdoba-Girona (HYPERMOTION) (HD) (1f7)",21:00-Córdoba-Girona (HYPERMOTION) (HD) (1f7)
+http://127.0.0.1:6878/ace/getstream?id=1f75d92098580443857caa95a719103cb83781b0
 #EXTINF:-1 group-title="08-21 (Viernes) LaLiga Hypermotion" tvg-name="21:00-Córdoba-Girona (HYPERMOTION) (HD) (2c5)",21:00-Córdoba-Girona (HYPERMOTION) (HD) (2c5)
 http://127.0.0.1:6878/ace/getstream?id=2c54a4def58f41fc0d2163450a63f12955b656aa
 #EXTINF:-1 group-title="08-21 (Viernes) LaLiga Hypermotion" tvg-name="21:00-Córdoba-Girona (HYPERMOTION) (FHD) (e4c)",21:00-Córdoba-Girona (HYPERMOTION) (FHD) (e4c)
