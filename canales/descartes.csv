@@ -1,6 +1,4 @@
 ﻿dial_M,nombre_canal_descartado,evento_descartado,motivo
-?,ATP Tennis TV,00:00-B. Nakashima-F. Tiafoe,no_dial_detected
-51,M+ Vamos 2 (51),00:00-B. Nakashima-F. Tiafoe,mapping_not_found_for: VAMOS 2
 ?,LPF Play,00:00-Argentinos Quilmes-Villa San Carlos,no_dial_detected
 ?,HBO MAX,00:00-A. Hernandez-G. Rodrigues,no_dial_detected
 ?,DAZN (Ver en directo),00:00-A. Hernandez-G. Rodrigues,no_dial_detected
@@ -14,9 +12,9 @@
 ?,LPF Play,01:00-América del Sud FS-Hebraica Futsal,no_dial_detected
 ?,OneFootball PPV,01:07-Chivas Guadalajara-Tijuana,no_dial_detected
 ?,RCN Nuestra Tele,01:10-Santa Fe-América de Cali,no_dial_detected
+?,ATP Tennis TV,01:15-B. Nakashima-F. Tiafoe,no_dial_detected
+51,M+ Vamos 2 (51),01:15-B. Nakashima-F. Tiafoe,mapping_not_found_for: VAMOS 2
 ?,Antel TV Internacional,01:30-Tacuarembó-CA Fénix,no_dial_detected
-?,WTA TV,01:30-S. Bejlek-C. Gauff,no_dial_detected
-?,Tennis Channel - Orange TV (131),01:30-S. Bejlek-C. Gauff,no_dial_detected
 ?,NWSL+,01:30-North Carolina Courage-Boston Legacy FC,no_dial_detected
 ?,FIBA YouTube,01:30-Canadá-Nueva Zelanda,no_dial_detected
 ?,DAZN (Ver en directo),01:30-Tampa Bay Buccaneers-Kansas City Chiefs,no_dial_detected
@@ -44,6 +42,8 @@
 ?,LPF Play,03:00-CA Central Norte-Estudiantes BA,no_dial_detected
 ?,Amazon Prime Video (Ver en directo),03:00-Los Angeles Sparks-Connecticut Sun,no_dial_detected
 ?,RCN Nuestra Tele,03:15-Medellín-Cúcuta,no_dial_detected
+?,WTA TV,03:20-S. Bejlek-C. Gauff,no_dial_detected
+?,Tennis Channel - Orange TV (131),03:20-S. Bejlek-C. Gauff,no_dial_detected
 ?,Apple TV,03:30-Vancouver Whitecaps-FC Dallas,no_dial_detected
 ?,DAZN (Ver en directo),04:00-Arizona Cardinals-Dallas Cowboys,no_dial_detected
 ?,DAZN App Gratis (Ver gratis),04:00-Arizona Cardinals-Dallas Cowboys,no_dial_detected
@@ -83,7 +83,10 @@
 70,DAZN F1 (M70 O104),G.P. Holanda (Zandvoort),mapping_not_found_for: DAZN F1
 ?,FANSEAT,15:00-Vittsjö GIK-IFK Norrköping Kvinnor,no_dial_detected
 ?,DAZN (Ver en directo),15:00-Manchester City-Bournemouth,no_dial_detected
+148,DAZN 1 Bar (M148),15:00-Manchester City-Bournemouth,mapping_not_found_for: DAZN 1 BAR
+?,GOL (Síguelo en directo),15:00-Manchester City-Bournemouth,no_dial_detected
 ?,DAZN (Ver en directo),15:00-Brighton-Aston Villa,no_dial_detected
+149,DAZN 2 Bar (M149),15:00-Brighton-Aston Villa,mapping_not_found_for: DAZN 2 BAR
 ?,DAZN (Ver en directo),15:00-Angers-Lille,no_dial_detected
 ?,HBO MAX,Jornada 4,no_dial_detected
 68,Movistar Golf (M68),Jornada 4,mapping_not_found_for: MOVISTAR GOLF
@@ -104,6 +107,8 @@
 ?,La 2 TVE,"Etapa 2 Monaco › Manosque (214,3 km)",no_dial_detected
 ?,RTVE Play,"Etapa 2 Monaco › Manosque (214,3 km)",no_dial_detected
 ?,Eurosport 1,"Etapa 2 Monaco › Manosque (214,3 km)",no_dial_detected
+?,Teledeporte,16:30-España-Azerbaiyán,no_dial_detected
+?,RTVE Play,16:30-España-Azerbaiyán,no_dial_detected
 ?,DAZN (Ver en directo),16:45-SC Cambuur-Feyenoord,no_dial_detected
 ?,DAZN (Ver en directo),17:00-At. Madrid-Villarreal,no_dial_detected
 ?,LaLiga TV Bar,17:00-At. Madrid-Villarreal,no_dial_detected
@@ -115,6 +120,7 @@
 ?,DAZN (Ver en directo),17:15-Le Havre AC-AS Monaco,no_dial_detected
 ?,DAZN (Ver en directo),17:30-Newcastle-Liverpool,no_dial_detected
 308,M+ #Vamos Bar 2 (308),17:30-Newcastle-Liverpool,mapping_not_found_for: #VAMOS BAR 2
+148,DAZN 1 Bar (M148),17:30-Newcastle-Liverpool,mapping_not_found_for: DAZN 1 BAR
 ?,OneFootball PPV,18:00-RFS Riga-Riga FC,no_dial_detected
 ?,OneFootball PPV,18:00-Fortuna Düsseldorf-Freiburg,no_dial_detected
 ?,GOL (Síguelo en directo),18:00-Fortuna Düsseldorf-Freiburg,no_dial_detected
@@ -151,7 +157,6 @@
 ?,Fanatiz (Ver en directo),20:00-Sport Boys A.-Cienciano,no_dial_detected
 ?,Antel TV Internacional,20:00-Montevideo City Torque-Montevideo Wanderers,no_dial_detected
 ?,Antel TV Internacional,20:00-CA Atenas-Huracán FC,no_dial_detected
-?,ATP Tennis TV,1ª Ronda ATP 250,no_dial_detected
 ?,NWSL+,20:00-Chicago Red Stars-Racing Louisville,no_dial_detected
 ?,LPF Play,20:00-Everton de La Plata-Uribelarrea FC,no_dial_detected
 ?,GOL (Síguelo en directo),20:15-Pogoń Szczecin-Wisła Kraków,no_dial_detected
@@ -161,14 +166,15 @@
 ?,DAZN (Ver en directo),20:45-Atalanta-Sassuolo,no_dial_detected
 ?,DAZN (Ver en directo),20:45-Torino-AC Milan,no_dial_detected
 ?,LaLiga TV M4,20:45-Torino-AC Milan,no_dial_detected
+?,LaLiga TV M5,20:45-Torino-AC Milan,no_dial_detected
 ?,DAZN (Ver en directo),20:45-PSG-Rennes,no_dial_detected
 ?,OneFootball PPV,21:00-AC Cesena-Sampdoria,no_dial_detected
 ?,OneFootball PPV,21:00-Palermo SSD-Juve Stabia,no_dial_detected
 ?,LPF Play,21:00-Temperley-Midland,no_dial_detected
+?,LPF Play,21:00-Sarmiento La Banda-Sportivo Belgrano,no_dial_detected
 ?,Zapping Internacional,21:00-Delfín SC-Aucas,no_dial_detected
 ?,RCN Nuestra Tele,21:00-Fortaleza-Atlético Nacional,no_dial_detected
-?,WTA TV,Final WTA 1000,no_dial_detected
-?,Tennis Channel - Orange TV (131),Final WTA 1000,no_dial_detected
+?,ATP Tennis TV,21:00-G. Mpetshi Perricard-J. Brooksby,no_dial_detected
 ?,Teledeporte,21:00-España-Bélgica,no_dial_detected
 ?,RTVE Play,21:00-España-Bélgica,no_dial_detected
 ?,DAZN (Ver en directo),New Hampshire Speedway (Loudon) Carrera,no_dial_detected
@@ -187,12 +193,11 @@
 ?,NWSL+,22:00-Washington Spirit-Orlando Pride,no_dial_detected
 ?,OneFootball,22:00-Chicago Fire 2-Inter Miami CF II,no_dial_detected
 ?,Fanatiz (Ver en directo),22:00-Belgrano-Defensa y Justicia,no_dial_detected
-?,ATP Tennis TV,Final ATP Masters 1000,no_dial_detected
-?,M+ Vamos (8 y 50),Final ATP Masters 1000,no_dial_detected
-307,M+ #Vamos Bar (307),Final ATP Masters 1000,mapping_not_found_for: #VAMOS BAR
+?,ATP Tennis TV,22:30-A. Fils-F. Tiafoe,no_dial_detected
+?,M+ Vamos (8 y 50),22:30-A. Fils-F. Tiafoe,no_dial_detected
+307,M+ #Vamos Bar (307),22:30-A. Fils-F. Tiafoe,mapping_not_found_for: #VAMOS BAR
 ?,Fanatiz (Ver en directo),22:30-Melgar-Alianza Lima,no_dial_detected
 ?,Apple TV,22:30-New England Revolution-New York City,no_dial_detected
-?,WTA TV,1ª Ronda WTA 500,no_dial_detected
 ?,RCN Nuestra Tele,23:05-Deportivo Pasto-Llaneros,no_dial_detected
 ?,Antel TV Internacional,23:30-Nacional-Progreso,no_dial_detected
 ?,Fanatiz (Ver en directo),23:30-Santos-Mirassol,no_dial_detected
@@ -200,7 +205,10 @@
 ?,NWSL+,00:00-Bay FC-Houston Dash,no_dial_detected
 ?,Fanatiz (Ver en directo),00:15-River Plate-Vélez Sarsfield,no_dial_detected
 51,M+ Vamos 2 (51),00:15-River Plate-Vélez Sarsfield,mapping_not_found_for: VAMOS 2
+?,ATP Tennis TV,00:30-P. Carreño-A.D. Vallejo,no_dial_detected
 ?,Fanatiz (Ver en directo),00:30-Coritiba-Corinthians,no_dial_detected
+?,WTA TV,01:00-C. Gauff-J. Pegula,no_dial_detected
+?,Tennis Channel - Orange TV (131),01:00-C. Gauff-J. Pegula,no_dial_detected
 ?,OneFootball,01:00-New York RB II-Toronto FC II,no_dial_detected
 ?,OneFootball,01:00-St. Louis City SC 2-Houston Dynamo 2,no_dial_detected
 ?,OneFootball,01:00-Huntsville City FC-Columbus Crew 2,no_dial_detected
@@ -211,6 +219,7 @@
 ?,LPF Play,01:15-Boca Juniors FS-Estudiantil Porteño FS,no_dial_detected
 ?,Fanatiz (Ver en directo),01:30-Universitario-CD Los Chankas,no_dial_detected
 ?,Zapping Internacional,02:00-LDU Quito-Emelec,no_dial_detected
+?,ATP Tennis TV,02:00-R. Hijikata-D. Blanch,no_dial_detected
 ?,NWSL+,02:00-Angel City FC-NJ/NY Gotham FC,no_dial_detected
 ?,DAZN (Ver en directo),02:00-Tennessee Titans-Seattle Seahawks,no_dial_detected
 ?,DAZN App Gratis (Ver gratis),02:00-Tennessee Titans-Seattle Seahawks,no_dial_detected
@@ -219,7 +228,9 @@
 ?,LPF Play,02:30-San Lorenzo Futsal-Club Jorge Newbery FS,no_dial_detected
 ?,Fanatiz (Ver en directo),02:30-Racing Avellaneda-Boca Juniors,no_dial_detected
 ?,RCN Nuestra Tele,03:15-Junior-Once Caldas,no_dial_detected
+?,WTA TV,03:30-L. Tagger-Y. Starodubtseva,no_dial_detected
 ?,OneFootball,04:00-Ventura County-Portland Timbers 2,no_dial_detected
+?,WTA TV,05:00-M. Sherif-O. Oliynykova,no_dial_detected
 ?,Eurovision Sports TV,10:30-Marruecos-Túnez,no_dial_detected
 ?,HBO MAX,Etapa 5 Les Carroz › Flaine (16 km),no_dial_detected
 ?,HBO MAX,Etapa 3,no_dial_detected
@@ -249,11 +260,13 @@
 ?,DAZN (Ver en directo),20:45-AS Roma-Fiorentina,no_dial_detected
 ?,LaLiga TV M4,20:45-AS Roma-Fiorentina,no_dial_detected
 ?,OneFootball PPV,20:45-Hallescher-Schalke 04,no_dial_detected
+?,GOL (Síguelo en directo),20:45-Hallescher-Schalke 04,no_dial_detected
 ?,LPF Play,21:00-Atlético Güemes-At. Rafaela,no_dial_detected
 ?,Eurovision Sports TV,21:00-Italia-Argelia,no_dial_detected
 ?,Eurovision Sports TV,21:00-Turquía-Macedonia Norte,no_dial_detected
 ?,Eurovision Sports TV,21:00-Albania-Kosovo,no_dial_detected
 ?,DAZN (Ver en directo),21:00-Fulham-Chelsea,no_dial_detected
+148,DAZN 1 Bar (M148),21:00-Fulham-Chelsea,mapping_not_found_for: DAZN 1 BAR
 ?,OneFootball PPV,21:15-Breidablik UBK-Fram Reykjavík,no_dial_detected
 ?,DAZN (Ver en directo),21:30-Málaga-Deportivo,no_dial_detected
 ?,LaLiga TV Bar,21:30-Málaga-Deportivo,no_dial_detected
