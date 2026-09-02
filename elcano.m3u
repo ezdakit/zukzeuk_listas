@@ -14,7 +14,5 @@
 #EXTGRP: group-title="RFEF TV" group-logo="https://rfef.es/themes/custom/rfef/img/rfef-share.png"
 #EXTGRP: group-title="TDT" group-logo="https://i.ibb.co/j9xn42jB/logo-tdt.png"
 
-#EXTINF:-1 group-title="OTROS",luz *
-http://127.0.0.1:6878/ace/getstream?id=4adbc671d7a22ba1f8d277f3f37c91b47845a8a1
-#EXTINF:-1 group-title="OTROS",LUZ **
+#EXTINF:-1 group-title="OTROS",LUZ
 http://127.0.0.1:6878/ace/getstream?id=4ccb69f37f4cc27c05aef975c200715d9b3d31b4
