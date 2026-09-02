@@ -1,335 +1,161 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="01:10-I. Swiatek-Xi. Wang (MOVISTAR DEPORTES) (FHD) (369)",01:10-I. Swiatek-Xi. Wang (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="01:10-I. Swiatek-Xi. Wang (MOVISTAR DEPORTES) (FHD) (5d3)",01:10-I. Swiatek-Xi. Wang (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="01:10-I. Swiatek-Xi. Wang (MOVISTAR DEPORTES) (FHD) (f82)",01:10-I. Swiatek-Xi. Wang (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="01:10-I. Swiatek-Xi. Wang (MOVISTAR DEPORTES) (HD) (7f8)",01:10-I. Swiatek-Xi. Wang (MOVISTAR DEPORTES) (HD) (7f8)
-http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="01:15-F. Auger-Aliassime-R. Hijikata (MOVISTAR DEPORTES 3) (HD) (39f)",01:15-F. Auger-Aliassime-R. Hijikata (MOVISTAR DEPORTES 3) (HD) (39f)
-http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="01:15-F. Auger-Aliassime-R. Hijikata (MOVISTAR DEPORTES 3) (HD) (d44)",01:15-F. Auger-Aliassime-R. Hijikata (MOVISTAR DEPORTES 3) (HD) (d44)
-http://127.0.0.1:6878/ace/getstream?id=d448a45840bfd60678abb2a45dd6044c9c8d11f8
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="01:15-F. Auger-Aliassime-R. Hijikata (MOVISTAR DEPORTES 3) (FHD) (84a)",01:15-F. Auger-Aliassime-R. Hijikata (MOVISTAR DEPORTES 3) (FHD) (84a)
-http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="01:20-B. Shelton-T. Griekspoor (MOVISTAR DEPORTES 2) (FHD) (73d)",01:20-B. Shelton-T. Griekspoor (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="01:20-B. Shelton-T. Griekspoor (MOVISTAR DEPORTES 2) (HD) (3af)",01:20-B. Shelton-T. Griekspoor (MOVISTAR DEPORTES 2) (HD) (3af)
+#EXTINF:-1 group-title="09-02 (Miércoles) US Open" tvg-name="17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (3af)",17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="01:20-B. Shelton-T. Griekspoor (MOVISTAR DEPORTES 2) (FHD) (8cd)",01:20-B. Shelton-T. Griekspoor (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="01:20-B. Shelton-T. Griekspoor (MOVISTAR DEPORTES 2) (FHD) (3ee)",01:20-B. Shelton-T. Griekspoor (MOVISTAR DEPORTES 2) (FHD) (3ee)
-http://127.0.0.1:6878/ace/getstream?id=3ee6a0b0e3cacea68107f61bf398f651d8159eed
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="01:20-B. Shelton-T. Griekspoor (MOVISTAR DEPORTES 2) (HD) (fd2)",01:20-B. Shelton-T. Griekspoor (MOVISTAR DEPORTES 2) (HD) (fd2)
-http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="01:20-G. Dimitrov-A. Popyrin (MOVISTAR DEPORTES 6) (HD) (8f9)",01:20-G. Dimitrov-A. Popyrin (MOVISTAR DEPORTES 6) (HD) (8f9)
-http://127.0.0.1:6878/ace/getstream?id=8f982a0d6e3196c12d0034142b65008321150f7c
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="01:20-G. Dimitrov-A. Popyrin (MOVISTAR DEPORTES 6) (FHD) (765)",01:20-G. Dimitrov-A. Popyrin (MOVISTAR DEPORTES 6) (FHD) (765)
-http://127.0.0.1:6878/ace/getstream?id=765f6a743bcfde948418aaf0de6e66de6a9fbaa6
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="01:25-J. Mensik-S. Mochizuki (MOVISTAR DEPORTES 4) (HD) (8b5)",01:25-J. Mensik-S. Mochizuki (MOVISTAR DEPORTES 4) (HD) (8b5)
-http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="01:25-J. Mensik-S. Mochizuki (MOVISTAR DEPORTES 4) (FHD) (7be)",01:25-J. Mensik-S. Mochizuki (MOVISTAR DEPORTES 4) (FHD) (7be)
-http://127.0.0.1:6878/ace/getstream?id=7bede102385c65a545db531af476ef18c31f6258
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="03:00-M. Damm-F. Tiafoe (MOVISTAR DEPORTES) (FHD) (369)",03:00-M. Damm-F. Tiafoe (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="03:00-M. Damm-F. Tiafoe (MOVISTAR DEPORTES) (FHD) (5d3)",03:00-M. Damm-F. Tiafoe (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="03:00-M. Damm-F. Tiafoe (MOVISTAR DEPORTES) (FHD) (f82)",03:00-M. Damm-F. Tiafoe (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="03:00-M. Damm-F. Tiafoe (MOVISTAR DEPORTES) (HD) (7f8)",03:00-M. Damm-F. Tiafoe (MOVISTAR DEPORTES) (HD) (7f8)
-http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="04:25-N. Osaka-A. Zakharova (MOVISTAR DEPORTES 2) (FHD) (73d)",04:25-N. Osaka-A. Zakharova (MOVISTAR DEPORTES 2) (FHD) (73d)
+#EXTINF:-1 group-title="09-02 (Miércoles) US Open" tvg-name="17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (73d)",17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (73d)
 http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="04:25-N. Osaka-A. Zakharova (MOVISTAR DEPORTES 2) (HD) (3af)",04:25-N. Osaka-A. Zakharova (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="04:25-N. Osaka-A. Zakharova (MOVISTAR DEPORTES 2) (FHD) (8cd)",04:25-N. Osaka-A. Zakharova (MOVISTAR DEPORTES 2) (FHD) (8cd)
+#EXTINF:-1 group-title="09-02 (Miércoles) US Open" tvg-name="17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (8cd)",17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (8cd)
 http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="04:25-N. Osaka-A. Zakharova (MOVISTAR DEPORTES 2) (FHD) (3ee)",04:25-N. Osaka-A. Zakharova (MOVISTAR DEPORTES 2) (FHD) (3ee)
-http://127.0.0.1:6878/ace/getstream?id=3ee6a0b0e3cacea68107f61bf398f651d8159eed
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="04:25-N. Osaka-A. Zakharova (MOVISTAR DEPORTES 2) (HD) (fd2)",04:25-N. Osaka-A. Zakharova (MOVISTAR DEPORTES 2) (HD) (fd2)
+#EXTINF:-1 group-title="09-02 (Miércoles) US Open" tvg-name="17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (fd2)",17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (fd2)
 http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="17:00-D. Sweeny-C. Moutet (MOVISTAR DEPORTES) (FHD) (369)",17:00-D. Sweeny-C. Moutet (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="17:00-D. Sweeny-C. Moutet (MOVISTAR DEPORTES) (FHD) (5d3)",17:00-D. Sweeny-C. Moutet (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="17:00-D. Sweeny-C. Moutet (MOVISTAR DEPORTES) (FHD) (f82)",17:00-D. Sweeny-C. Moutet (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="17:00-D. Sweeny-C. Moutet (MOVISTAR DEPORTES) (HD) (7f8)",17:00-D. Sweeny-C. Moutet (MOVISTAR DEPORTES) (HD) (7f8)
-http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="17:00-F. Comesana-F. Cobolli (MOVISTAR DEPORTES 6) (HD) (8f9)",17:00-F. Comesana-F. Cobolli (MOVISTAR DEPORTES 6) (HD) (8f9)
-http://127.0.0.1:6878/ace/getstream?id=8f982a0d6e3196c12d0034142b65008321150f7c
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="17:00-F. Comesana-F. Cobolli (MOVISTAR DEPORTES 6) (FHD) (765)",17:00-F. Comesana-F. Cobolli (MOVISTAR DEPORTES 6) (FHD) (765)
-http://127.0.0.1:6878/ace/getstream?id=765f6a743bcfde948418aaf0de6e66de6a9fbaa6
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="17:00-F. Misolic-F. Cerúndolo (MOVISTAR DEPORTES 5) (HD) (323)",17:00-F. Misolic-F. Cerúndolo (MOVISTAR DEPORTES 5) (HD) (323)
-http://127.0.0.1:6878/ace/getstream?id=3230cdca852a10325222e3c546e499e31d547a90
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="17:00-F. Misolic-F. Cerúndolo (MOVISTAR DEPORTES 5) (FHD) (591)",17:00-F. Misolic-F. Cerúndolo (MOVISTAR DEPORTES 5) (FHD) (591)
-http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="17:00-F. Misolic-F. Cerúndolo (MOVISTAR DEPORTES 5) (FHD) (6dc)",17:00-F. Misolic-F. Cerúndolo (MOVISTAR DEPORTES 5) (FHD) (6dc)
-http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="17:00-F. Misolic-F. Cerúndolo (MOVISTAR DEPORTES 5) (FHD) (15e)",17:00-F. Misolic-F. Cerúndolo (MOVISTAR DEPORTES 5) (FHD) (15e)
-http://127.0.0.1:6878/ace/getstream?id=15ec214bb10925dadd16a1716bb2042af6008a93
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="17:00-M. Sakkari-R. Montgomery (MOVISTAR DEPORTES 3) (HD) (39f)",17:00-M. Sakkari-R. Montgomery (MOVISTAR DEPORTES 3) (HD) (39f)
-http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="17:00-M. Sakkari-R. Montgomery (MOVISTAR DEPORTES 3) (HD) (d44)",17:00-M. Sakkari-R. Montgomery (MOVISTAR DEPORTES 3) (HD) (d44)
-http://127.0.0.1:6878/ace/getstream?id=d448a45840bfd60678abb2a45dd6044c9c8d11f8
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="17:00-M. Sakkari-R. Montgomery (MOVISTAR DEPORTES 3) (FHD) (84a)",17:00-M. Sakkari-R. Montgomery (MOVISTAR DEPORTES 3) (FHD) (84a)
-http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="17:30-M. Keys-A. Korneeva (MOVISTAR DEPORTES 4) (HD) (8b5)",17:30-M. Keys-A. Korneeva (MOVISTAR DEPORTES 4) (HD) (8b5)
-http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="17:30-M. Keys-A. Korneeva (MOVISTAR DEPORTES 4) (FHD) (7be)",17:30-M. Keys-A. Korneeva (MOVISTAR DEPORTES 4) (FHD) (7be)
-http://127.0.0.1:6878/ace/getstream?id=7bede102385c65a545db531af476ef18c31f6258
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="18:30-Z. Bergs-C. Taberner (MOVISTAR DEPORTES 3) (HD) (39f)",18:30-Z. Bergs-C. Taberner (MOVISTAR DEPORTES 3) (HD) (39f)
-http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="18:30-Z. Bergs-C. Taberner (MOVISTAR DEPORTES 3) (HD) (d44)",18:30-Z. Bergs-C. Taberner (MOVISTAR DEPORTES 3) (HD) (d44)
-http://127.0.0.1:6878/ace/getstream?id=d448a45840bfd60678abb2a45dd6044c9c8d11f8
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="18:30-Z. Bergs-C. Taberner (MOVISTAR DEPORTES 3) (FHD) (84a)",18:30-Z. Bergs-C. Taberner (MOVISTAR DEPORTES 3) (FHD) (84a)
-http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="18:30-D. Kasatkina-P. Badosa (MOVISTAR PLUS) (FHD) (586)",18:30-D. Kasatkina-P. Badosa (MOVISTAR PLUS) (FHD) (586)
-http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="18:30-D. Kasatkina-P. Badosa (MOVISTAR PLUS) (FHD) (b6f)",18:30-D. Kasatkina-P. Badosa (MOVISTAR PLUS) (FHD) (b6f)
-http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="18:30-D. Kasatkina-P. Badosa (MOVISTAR PLUS) (FHD) (199)",18:30-D. Kasatkina-P. Badosa (MOVISTAR PLUS) (FHD) (199)
-http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="18:30-D. Kasatkina-P. Badosa (MOVISTAR PLUS) (FHD) (1ab)",18:30-D. Kasatkina-P. Badosa (MOVISTAR PLUS) (FHD) (1ab)
-http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="18:30-D. Kasatkina-P. Badosa (MOVISTAR DEPORTES 2) (FHD) (73d)",18:30-D. Kasatkina-P. Badosa (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="18:30-D. Kasatkina-P. Badosa (MOVISTAR DEPORTES 2) (HD) (3af)",18:30-D. Kasatkina-P. Badosa (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="18:30-D. Kasatkina-P. Badosa (MOVISTAR DEPORTES 2) (FHD) (8cd)",18:30-D. Kasatkina-P. Badosa (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="18:30-D. Kasatkina-P. Badosa (MOVISTAR DEPORTES 2) (FHD) (3ee)",18:30-D. Kasatkina-P. Badosa (MOVISTAR DEPORTES 2) (FHD) (3ee)
-http://127.0.0.1:6878/ace/getstream?id=3ee6a0b0e3cacea68107f61bf398f651d8159eed
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="18:30-D. Kasatkina-P. Badosa (MOVISTAR DEPORTES 2) (HD) (fd2)",18:30-D. Kasatkina-P. Badosa (MOVISTAR DEPORTES 2) (HD) (fd2)
-http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="19:00-T. Fritz-D. Blanch (MOVISTAR DEPORTES 4) (HD) (8b5)",19:00-T. Fritz-D. Blanch (MOVISTAR DEPORTES 4) (HD) (8b5)
-http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="19:00-T. Fritz-D. Blanch (MOVISTAR DEPORTES 4) (FHD) (7be)",19:00-T. Fritz-D. Blanch (MOVISTAR DEPORTES 4) (FHD) (7be)
-http://127.0.0.1:6878/ace/getstream?id=7bede102385c65a545db531af476ef18c31f6258
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="19:00-A. Potapova-D. Semenistaja (MOVISTAR DEPORTES 5) (HD) (323)",19:00-A. Potapova-D. Semenistaja (MOVISTAR DEPORTES 5) (HD) (323)
-http://127.0.0.1:6878/ace/getstream?id=3230cdca852a10325222e3c546e499e31d547a90
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="19:00-A. Potapova-D. Semenistaja (MOVISTAR DEPORTES 5) (FHD) (591)",19:00-A. Potapova-D. Semenistaja (MOVISTAR DEPORTES 5) (FHD) (591)
-http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="19:00-A. Potapova-D. Semenistaja (MOVISTAR DEPORTES 5) (FHD) (6dc)",19:00-A. Potapova-D. Semenistaja (MOVISTAR DEPORTES 5) (FHD) (6dc)
-http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="19:00-A. Potapova-D. Semenistaja (MOVISTAR DEPORTES 5) (FHD) (15e)",19:00-A. Potapova-D. Semenistaja (MOVISTAR DEPORTES 5) (FHD) (15e)
-http://127.0.0.1:6878/ace/getstream?id=15ec214bb10925dadd16a1716bb2042af6008a93
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="19:00-D. Vidmanova-J. Bouzas (MOVISTAR DEPORTES) (FHD) (369)",19:00-D. Vidmanova-J. Bouzas (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="19:00-D. Vidmanova-J. Bouzas (MOVISTAR DEPORTES) (FHD) (5d3)",19:00-D. Vidmanova-J. Bouzas (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="19:00-D. Vidmanova-J. Bouzas (MOVISTAR DEPORTES) (FHD) (f82)",19:00-D. Vidmanova-J. Bouzas (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="19:00-D. Vidmanova-J. Bouzas (MOVISTAR DEPORTES) (HD) (7f8)",19:00-D. Vidmanova-J. Bouzas (MOVISTAR DEPORTES) (HD) (7f8)
-http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="19:00-M. Andreeva-J. Tjen (MOVISTAR DEPORTES 6) (HD) (8f9)",19:00-M. Andreeva-J. Tjen (MOVISTAR DEPORTES 6) (HD) (8f9)
-http://127.0.0.1:6878/ace/getstream?id=8f982a0d6e3196c12d0034142b65008321150f7c
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="19:00-M. Andreeva-J. Tjen (MOVISTAR DEPORTES 6) (FHD) (765)",19:00-M. Andreeva-J. Tjen (MOVISTAR DEPORTES 6) (FHD) (765)
-http://127.0.0.1:6878/ace/getstream?id=765f6a743bcfde948418aaf0de6e66de6a9fbaa6
-#EXTINF:-1 group-title="09-01 (Martes) Saudi Pro League" tvg-name="20:00-Al Hilal-Al Ahli (LIGA DE CAMPEONES) (HD) (e57)",20:00-Al Hilal-Al Ahli (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="09-01 (Martes) Saudi Pro League" tvg-name="20:00-Al Hilal-Al Ahli (LIGA DE CAMPEONES) (HD) (b02)",20:00-Al Hilal-Al Ahli (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="09-01 (Martes) Saudi Pro League" tvg-name="20:00-Al Hilal-Al Ahli (LIGA DE CAMPEONES) (FHD) (0f7)",20:00-Al Hilal-Al Ahli (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
-#EXTINF:-1 group-title="09-01 (Martes) Saudi Pro League" tvg-name="20:00-Al Hilal-Al Ahli (LIGA DE CAMPEONES) (FHD) (778)",20:00-Al Hilal-Al Ahli (LIGA DE CAMPEONES) (FHD) (778)
-http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="09-01 (Martes) Saudi Pro League" tvg-name="20:00-Al Hilal-Al Ahli (LIGA DE CAMPEONES) (FHD) (afb)",20:00-Al Hilal-Al Ahli (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
-#EXTINF:-1 group-title="09-01 (Martes) Saudi Pro League" tvg-name="20:00-Al Hilal-Al Ahli (LIGA DE CAMPEONES) (FHD) (97d)",20:00-Al Hilal-Al Ahli (LIGA DE CAMPEONES) (FHD) (97d)
-http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 group-title="09-01 (Martes) Saudi Pro League" tvg-name="20:00-Al Hilal-Al Ahli (LIGA DE CAMPEONES) (FHD) (afb)",20:00-Al Hilal-Al Ahli (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
-#EXTINF:-1 group-title="09-01 (Martes) Saudi Pro League" tvg-name="20:00-Al Hilal-Al Ahli (LIGA DE CAMPEONES) (HD) (2b5)",20:00-Al Hilal-Al Ahli (LIGA DE CAMPEONES) (HD) (2b5)
-http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
-#EXTINF:-1 group-title="09-01 (Martes) Saudi Pro League" tvg-name="20:00-Al Hilal-Al Ahli (LIGA DE CAMPEONES) (UHD) (152)",20:00-Al Hilal-Al Ahli (LIGA DE CAMPEONES) (UHD) (152)
-http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="09-01 (Martes) Saudi Pro League" tvg-name="20:00-Al Hilal-Al Ahli (LIGA DE CAMPEONES) (HD) (931)",20:00-Al Hilal-Al Ahli (LIGA DE CAMPEONES) (HD) (931)
-http://127.0.0.1:6878/ace/getstream?id=931fd4c24398a24beb9b6ede856ca34339ff2c22
-#EXTINF:-1 group-title="09-01 (Martes) Saudi Pro League" tvg-name="20:00-Al Hilal-Al Ahli (LIGA DE CAMPEONES) (FHD) (91a)",20:00-Al Hilal-Al Ahli (LIGA DE CAMPEONES) (FHD) (91a)
-http://127.0.0.1:6878/ace/getstream?id=91af434b0bb521189286f8cbbab1aed39d7536fe
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="20:00-R. Jódar-T. Kokkinakis (MOVISTAR PLUS) (FHD) (586)",20:00-R. Jódar-T. Kokkinakis (MOVISTAR PLUS) (FHD) (586)
-http://127.0.0.1:6878/ace/getstream?id=5866e83279307bf919068ae7a0d250e4e424e464
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="20:00-R. Jódar-T. Kokkinakis (MOVISTAR PLUS) (FHD) (b6f)",20:00-R. Jódar-T. Kokkinakis (MOVISTAR PLUS) (FHD) (b6f)
-http://127.0.0.1:6878/ace/getstream?id=b6ffbbc72a5b6b579faf79ebac229af7a25b933b
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="20:00-R. Jódar-T. Kokkinakis (MOVISTAR PLUS) (FHD) (199)",20:00-R. Jódar-T. Kokkinakis (MOVISTAR PLUS) (FHD) (199)
-http://127.0.0.1:6878/ace/getstream?id=199190e3f28c1de0be34bccf0d3568dc65209b99
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="20:00-R. Jódar-T. Kokkinakis (MOVISTAR PLUS) (FHD) (1ab)",20:00-R. Jódar-T. Kokkinakis (MOVISTAR PLUS) (FHD) (1ab)
-http://127.0.0.1:6878/ace/getstream?id=1ab443f5b4beb6d586f19e8b25b9f9646cf2ab78
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="20:00-R. Jódar-T. Kokkinakis (MOVISTAR DEPORTES 2) (FHD) (73d)",20:00-R. Jódar-T. Kokkinakis (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="20:00-R. Jódar-T. Kokkinakis (MOVISTAR DEPORTES 2) (HD) (3af)",20:00-R. Jódar-T. Kokkinakis (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="20:00-R. Jódar-T. Kokkinakis (MOVISTAR DEPORTES 2) (FHD) (8cd)",20:00-R. Jódar-T. Kokkinakis (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="20:00-R. Jódar-T. Kokkinakis (MOVISTAR DEPORTES 2) (FHD) (3ee)",20:00-R. Jódar-T. Kokkinakis (MOVISTAR DEPORTES 2) (FHD) (3ee)
-http://127.0.0.1:6878/ace/getstream?id=3ee6a0b0e3cacea68107f61bf398f651d8159eed
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="20:00-R. Jódar-T. Kokkinakis (MOVISTAR DEPORTES 2) (HD) (fd2)",20:00-R. Jódar-T. Kokkinakis (MOVISTAR DEPORTES 2) (HD) (fd2)
-http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="20:30-Z. Svajda-D. Altmaier (MOVISTAR DEPORTES 3) (HD) (39f)",20:30-Z. Svajda-D. Altmaier (MOVISTAR DEPORTES 3) (HD) (39f)
-http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="20:30-Z. Svajda-D. Altmaier (MOVISTAR DEPORTES 3) (HD) (d44)",20:30-Z. Svajda-D. Altmaier (MOVISTAR DEPORTES 3) (HD) (d44)
-http://127.0.0.1:6878/ace/getstream?id=d448a45840bfd60678abb2a45dd6044c9c8d11f8
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="20:30-Z. Svajda-D. Altmaier (MOVISTAR DEPORTES 3) (FHD) (84a)",20:30-Z. Svajda-D. Altmaier (MOVISTAR DEPORTES 3) (FHD) (84a)
-http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="20:30-K. Quevedo-E. Mertens (MOVISTAR DEPORTES 5) (HD) (323)",20:30-K. Quevedo-E. Mertens (MOVISTAR DEPORTES 5) (HD) (323)
-http://127.0.0.1:6878/ace/getstream?id=3230cdca852a10325222e3c546e499e31d547a90
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="20:30-K. Quevedo-E. Mertens (MOVISTAR DEPORTES 5) (FHD) (591)",20:30-K. Quevedo-E. Mertens (MOVISTAR DEPORTES 5) (FHD) (591)
-http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="20:30-K. Quevedo-E. Mertens (MOVISTAR DEPORTES 5) (FHD) (6dc)",20:30-K. Quevedo-E. Mertens (MOVISTAR DEPORTES 5) (FHD) (6dc)
-http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="20:30-K. Quevedo-E. Mertens (MOVISTAR DEPORTES 5) (FHD) (15e)",20:30-K. Quevedo-E. Mertens (MOVISTAR DEPORTES 5) (FHD) (15e)
-http://127.0.0.1:6878/ace/getstream?id=15ec214bb10925dadd16a1716bb2042af6008a93
-#EXTINF:-1 group-title="09-01 (Martes) Coppa Italia" tvg-name="21:00-Torino-Monza (DAZN 1) (FHD) (1e7)",21:00-Torino-Monza (DAZN 1) (FHD) (1e7)
-http://127.0.0.1:6878/ace/getstream?id=1e7f5efc1913efaf7042a9b1a49d1f9adc5bc187
-#EXTINF:-1 group-title="09-01 (Martes) Coppa Italia" tvg-name="21:00-Torino-Monza (DAZN 1) (FHD) (414)",21:00-Torino-Monza (DAZN 1) (FHD) (414)
-http://127.0.0.1:6878/ace/getstream?id=4141892f5df7d6474bf0279895ce02b7336c9928
-#EXTINF:-1 group-title="09-01 (Martes) Coppa Italia" tvg-name="21:00-Torino-Monza (DAZN 1) (FHD) (363)",21:00-Torino-Monza (DAZN 1) (FHD) (363)
-http://127.0.0.1:6878/ace/getstream?id=36394be1db2e20b5997d987c32fd38c7f0f194b7
-#EXTINF:-1 group-title="09-01 (Martes) Coppa Italia" tvg-name="21:00-Torino-Monza (DAZN 1) (FHD) (691)",21:00-Torino-Monza (DAZN 1) (FHD) (691)
-http://127.0.0.1:6878/ace/getstream?id=691739972eb3468cf16b25e84dafdeaa40dead6d
-#EXTINF:-1 group-title="09-01 (Martes) Coppa Italia" tvg-name="21:00-Torino-Monza (DAZN 1) (HD) (d5b)",21:00-Torino-Monza (DAZN 1) (HD) (d5b)
-http://127.0.0.1:6878/ace/getstream?id=d5b2c6b940cf3df5e8f9dc6f000f0ea23a10b151
-#EXTINF:-1 group-title="09-01 (Martes) Coppa Italia" tvg-name="21:00-Torino-Monza (DAZN 1) (FHD) (b03)",21:00-Torino-Monza (DAZN 1) (FHD) (b03)
-http://127.0.0.1:6878/ace/getstream?id=b03f9310155cf3b4eafc1dfba763781abc3ff025
-#EXTINF:-1 group-title="09-01 (Martes) Coppa Italia" tvg-name="21:00-Torino-Monza (DAZN 1) (HD) (5b7)",21:00-Torino-Monza (DAZN 1) (HD) (5b7)
-http://127.0.0.1:6878/ace/getstream?id=5b776533534b767a84dfda263825ad10f30a8ec7
-#EXTINF:-1 group-title="09-01 (Martes) Coppa Italia" tvg-name="21:00-Torino-Monza (DAZN 1) (HD) (f9c)",21:00-Torino-Monza (DAZN 1) (HD) (f9c)
-http://127.0.0.1:6878/ace/getstream?id=f9c6a0e04cb062098571c6cbaa6fa4b60cc7e0cb
-#EXTINF:-1 group-title="09-01 (Martes) Coppa Italia" tvg-name="21:00-Torino-Monza (DAZN 1) (FHD) (781)",21:00-Torino-Monza (DAZN 1) (FHD) (781)
-http://127.0.0.1:6878/ace/getstream?id=78124d96a1a4601e7910f50e36a16e35efcfb398
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="22:00-J. Choinski-B. Van de Zandschulp (MOVISTAR DEPORTES 5) (HD) (323)",22:00-J. Choinski-B. Van de Zandschulp (MOVISTAR DEPORTES 5) (HD) (323)
-http://127.0.0.1:6878/ace/getstream?id=3230cdca852a10325222e3c546e499e31d547a90
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="22:00-J. Choinski-B. Van de Zandschulp (MOVISTAR DEPORTES 5) (FHD) (591)",22:00-J. Choinski-B. Van de Zandschulp (MOVISTAR DEPORTES 5) (FHD) (591)
-http://127.0.0.1:6878/ace/getstream?id=5913205fb6d6d162a50222709aab6129eb7cf916
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="22:00-J. Choinski-B. Van de Zandschulp (MOVISTAR DEPORTES 5) (FHD) (6dc)",22:00-J. Choinski-B. Van de Zandschulp (MOVISTAR DEPORTES 5) (FHD) (6dc)
-http://127.0.0.1:6878/ace/getstream?id=6dc4ac4eeae18e9daec433b01db82435cf84c57c
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="22:00-J. Choinski-B. Van de Zandschulp (MOVISTAR DEPORTES 5) (FHD) (15e)",22:00-J. Choinski-B. Van de Zandschulp (MOVISTAR DEPORTES 5) (FHD) (15e)
-http://127.0.0.1:6878/ace/getstream?id=15ec214bb10925dadd16a1716bb2042af6008a93
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="22:30-M. Giron-I. Buse (MOVISTAR DEPORTES 4) (HD) (8b5)",22:30-M. Giron-I. Buse (MOVISTAR DEPORTES 4) (HD) (8b5)
-http://127.0.0.1:6878/ace/getstream?id=8b5f9d967384afab226dd759e6e9dfaee9993869
-#EXTINF:-1 group-title="09-01 (Martes) US Open 1ª Ronda" tvg-name="22:30-M. Giron-I. Buse (MOVISTAR DEPORTES 4) (FHD) (7be)",22:30-M. Giron-I. Buse (MOVISTAR DEPORTES 4) (FHD) (7be)
-http://127.0.0.1:6878/ace/getstream?id=7bede102385c65a545db531af476ef18c31f6258
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="22:30-O. Oliynykova-R. Brantmeier (MOVISTAR DEPORTES 3) (HD) (39f)",22:30-O. Oliynykova-R. Brantmeier (MOVISTAR DEPORTES 3) (HD) (39f)
-http://127.0.0.1:6878/ace/getstream?id=39fefdecfc953dcf6e7c589739bf486c2e605ed0
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="22:30-O. Oliynykova-R. Brantmeier (MOVISTAR DEPORTES 3) (HD) (d44)",22:30-O. Oliynykova-R. Brantmeier (MOVISTAR DEPORTES 3) (HD) (d44)
-http://127.0.0.1:6878/ace/getstream?id=d448a45840bfd60678abb2a45dd6044c9c8d11f8
-#EXTINF:-1 group-title="09-01 (Martes) US Open WTA 1ª Ronda" tvg-name="22:30-O. Oliynykova-R. Brantmeier (MOVISTAR DEPORTES 3) (FHD) (84a)",22:30-O. Oliynykova-R. Brantmeier (MOVISTAR DEPORTES 3) (FHD) (84a)
-http://127.0.0.1:6878/ace/getstream?id=84aed52c5deb78f58595d88250e7a2bd04dfd810
-#EXTINF:-1 group-title="09-02 (Miércoles) US Open 1ª Ronda" tvg-name="01:00-A.D. Vallejo-G. Monfils (MOVISTAR DEPORTES 2) (FHD) (73d)",01:00-A.D. Vallejo-G. Monfils (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="09-02 (Miércoles) US Open 1ª Ronda" tvg-name="01:00-A.D. Vallejo-G. Monfils (MOVISTAR DEPORTES 2) (HD) (3af)",01:00-A.D. Vallejo-G. Monfils (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="09-02 (Miércoles) US Open 1ª Ronda" tvg-name="01:00-A.D. Vallejo-G. Monfils (MOVISTAR DEPORTES 2) (FHD) (8cd)",01:00-A.D. Vallejo-G. Monfils (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="09-02 (Miércoles) US Open 1ª Ronda" tvg-name="01:00-A.D. Vallejo-G. Monfils (MOVISTAR DEPORTES 2) (FHD) (3ee)",01:00-A.D. Vallejo-G. Monfils (MOVISTAR DEPORTES 2) (FHD) (3ee)
-http://127.0.0.1:6878/ace/getstream?id=3ee6a0b0e3cacea68107f61bf398f651d8159eed
-#EXTINF:-1 group-title="09-02 (Miércoles) US Open 1ª Ronda" tvg-name="01:00-A.D. Vallejo-G. Monfils (MOVISTAR DEPORTES 2) (HD) (fd2)",01:00-A.D. Vallejo-G. Monfils (MOVISTAR DEPORTES 2) (HD) (fd2)
-http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
-#EXTINF:-1 group-title="09-02 (Miércoles) US Open WTA 1ª Ronda" tvg-name="01:00-Z. Sonmez-C. Gauff (MOVISTAR DEPORTES) (FHD) (369)",01:00-Z. Sonmez-C. Gauff (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="09-02 (Miércoles) US Open WTA 1ª Ronda" tvg-name="01:00-Z. Sonmez-C. Gauff (MOVISTAR DEPORTES) (FHD) (5d3)",01:00-Z. Sonmez-C. Gauff (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="09-02 (Miércoles) US Open WTA 1ª Ronda" tvg-name="01:00-Z. Sonmez-C. Gauff (MOVISTAR DEPORTES) (FHD) (f82)",01:00-Z. Sonmez-C. Gauff (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="09-02 (Miércoles) US Open WTA 1ª Ronda" tvg-name="01:00-Z. Sonmez-C. Gauff (MOVISTAR DEPORTES) (HD) (7f8)",01:00-Z. Sonmez-C. Gauff (MOVISTAR DEPORTES) (HD) (7f8)
-http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
-#EXTINF:-1 group-title="09-02 (Miércoles) US Open 1ª Ronda" tvg-name="02:30-A. Zverev-L. Sonego (MOVISTAR DEPORTES) (FHD) (369)",02:30-A. Zverev-L. Sonego (MOVISTAR DEPORTES) (FHD) (369)
-http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
-#EXTINF:-1 group-title="09-02 (Miércoles) US Open 1ª Ronda" tvg-name="02:30-A. Zverev-L. Sonego (MOVISTAR DEPORTES) (FHD) (5d3)",02:30-A. Zverev-L. Sonego (MOVISTAR DEPORTES) (FHD) (5d3)
-http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
-#EXTINF:-1 group-title="09-02 (Miércoles) US Open 1ª Ronda" tvg-name="02:30-A. Zverev-L. Sonego (MOVISTAR DEPORTES) (FHD) (f82)",02:30-A. Zverev-L. Sonego (MOVISTAR DEPORTES) (FHD) (f82)
-http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
-#EXTINF:-1 group-title="09-02 (Miércoles) US Open 1ª Ronda" tvg-name="02:30-A. Zverev-L. Sonego (MOVISTAR DEPORTES) (HD) (7f8)",02:30-A. Zverev-L. Sonego (MOVISTAR DEPORTES) (HD) (7f8)
-http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
-#EXTINF:-1 group-title="09-02 (Miércoles) US Open WTA 1ª Ronda" tvg-name="03:00-M. Stoiana-A. Eala (MOVISTAR DEPORTES 2) (FHD) (73d)",03:00-M. Stoiana-A. Eala (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="09-02 (Miércoles) US Open WTA 1ª Ronda" tvg-name="03:00-M. Stoiana-A. Eala (MOVISTAR DEPORTES 2) (HD) (3af)",03:00-M. Stoiana-A. Eala (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="09-02 (Miércoles) US Open WTA 1ª Ronda" tvg-name="03:00-M. Stoiana-A. Eala (MOVISTAR DEPORTES 2) (FHD) (8cd)",03:00-M. Stoiana-A. Eala (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="09-02 (Miércoles) US Open WTA 1ª Ronda" tvg-name="03:00-M. Stoiana-A. Eala (MOVISTAR DEPORTES 2) (FHD) (3ee)",03:00-M. Stoiana-A. Eala (MOVISTAR DEPORTES 2) (FHD) (3ee)
-http://127.0.0.1:6878/ace/getstream?id=3ee6a0b0e3cacea68107f61bf398f651d8159eed
-#EXTINF:-1 group-title="09-02 (Miércoles) US Open WTA 1ª Ronda" tvg-name="03:00-M. Stoiana-A. Eala (MOVISTAR DEPORTES 2) (HD) (fd2)",03:00-M. Stoiana-A. Eala (MOVISTAR DEPORTES 2) (HD) (fd2)
-http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
-#EXTINF:-1 group-title="09-02 (Miércoles) US Open" tvg-name="17:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (73d)",17:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="09-02 (Miércoles) US Open" tvg-name="17:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (3af)",17:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="09-02 (Miércoles) US Open" tvg-name="17:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (8cd)",17:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="09-02 (Miércoles) US Open" tvg-name="17:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (3ee)",17:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (3ee)
-http://127.0.0.1:6878/ace/getstream?id=3ee6a0b0e3cacea68107f61bf398f651d8159eed
-#EXTINF:-1 group-title="09-02 (Miércoles) US Open" tvg-name="17:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (fd2)",17:05-1ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (fd2)
-http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
-#EXTINF:-1 group-title="09-02 (Miércoles) US Open WTA" tvg-name="17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (73d)",17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="09-02 (Miércoles) US Open WTA" tvg-name="17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (3af)",17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (3af)
 http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="09-02 (Miércoles) US Open WTA" tvg-name="17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (73d)",17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
 #EXTINF:-1 group-title="09-02 (Miércoles) US Open WTA" tvg-name="17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (8cd)",17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (8cd)
 http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="09-02 (Miércoles) US Open WTA" tvg-name="17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (3ee)",17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (3ee)
-http://127.0.0.1:6878/ace/getstream?id=3ee6a0b0e3cacea68107f61bf398f651d8159eed
 #EXTINF:-1 group-title="09-02 (Miércoles) US Open WTA" tvg-name="17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (fd2)",17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (fd2)
 http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
-#EXTINF:-1 group-title="09-03 (Jueves) US Open" tvg-name="17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (73d)",17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="09-03 (Jueves) US Open" tvg-name="17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (3af)",17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="09-03 (Jueves) US Open" tvg-name="17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (8cd)",17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="09-03 (Jueves) US Open" tvg-name="17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (3ee)",17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (3ee)
-http://127.0.0.1:6878/ace/getstream?id=3ee6a0b0e3cacea68107f61bf398f651d8159eed
-#EXTINF:-1 group-title="09-03 (Jueves) US Open" tvg-name="17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (fd2)",17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (fd2)
-http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
-#EXTINF:-1 group-title="09-03 (Jueves) US Open WTA" tvg-name="17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (73d)",17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (73d)
-http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
-#EXTINF:-1 group-title="09-03 (Jueves) US Open WTA" tvg-name="17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (3af)",17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (3af)
-http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
-#EXTINF:-1 group-title="09-03 (Jueves) US Open WTA" tvg-name="17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (8cd)",17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (8cd)
-http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
-#EXTINF:-1 group-title="09-03 (Jueves) US Open WTA" tvg-name="17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (3ee)",17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (3ee)
-http://127.0.0.1:6878/ace/getstream?id=3ee6a0b0e3cacea68107f61bf398f651d8159eed
-#EXTINF:-1 group-title="09-03 (Jueves) US Open WTA" tvg-name="17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (fd2)",17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (fd2)
-http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
-#EXTINF:-1 group-title="09-03 (Jueves) Saudi Pro League" tvg-name="18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (HD) (e57)",18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (HD) (e57)
-http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
-#EXTINF:-1 group-title="09-03 (Jueves) Saudi Pro League" tvg-name="18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (HD) (b02)",18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (HD) (b02)
-http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
-#EXTINF:-1 group-title="09-03 (Jueves) Saudi Pro League" tvg-name="18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (FHD) (0f7)",18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (FHD) (0f7)
-http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
-#EXTINF:-1 group-title="09-03 (Jueves) Saudi Pro League" tvg-name="18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (FHD) (778)",18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (FHD) (778)
+#EXTINF:-1 group-title="09-02 (Miércoles) Saudi Pro League" tvg-name="18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (FHD) (778)",18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (FHD) (778)
 http://127.0.0.1:6878/ace/getstream?id=778f08cbae9596ed9e8b2ae0af33ee7a6fe24c6a
-#EXTINF:-1 group-title="09-03 (Jueves) Saudi Pro League" tvg-name="18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (FHD) (afb)",18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
-#EXTINF:-1 group-title="09-03 (Jueves) Saudi Pro League" tvg-name="18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (FHD) (97d)",18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (FHD) (97d)
+#EXTINF:-1 group-title="09-02 (Miércoles) Saudi Pro League" tvg-name="18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (FHD) (97d)",18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (FHD) (97d)
 http://127.0.0.1:6878/ace/getstream?id=97df5b7824948972d041d8ca2a4d29c90b641bc9
-#EXTINF:-1 group-title="09-03 (Jueves) Saudi Pro League" tvg-name="18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (FHD) (afb)",18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (FHD) (afb)
-http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
-#EXTINF:-1 group-title="09-03 (Jueves) Saudi Pro League" tvg-name="18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (HD) (2b5)",18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (HD) (2b5)
+#EXTINF:-1 group-title="09-02 (Miércoles) Saudi Pro League" tvg-name="18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (HD) (2b5)",18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (HD) (2b5)
 http://127.0.0.1:6878/ace/getstream?id=2b51710cee513e8939785fa3e7980f32d4e0415f
-#EXTINF:-1 group-title="09-03 (Jueves) Saudi Pro League" tvg-name="18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (UHD) (152)",18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (UHD) (152)
+#EXTINF:-1 group-title="09-02 (Miércoles) Saudi Pro League" tvg-name="18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (FHD) (0f7)",18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (FHD) (0f7)
+http://127.0.0.1:6878/ace/getstream?id=0f7842f8b6c26571e5a974407b61623e56e6a052
+#EXTINF:-1 group-title="09-02 (Miércoles) Saudi Pro League" tvg-name="18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (FHD) (afb)",18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf1ef8812e7b0a0977fa3a0a2d3a6d3cbd6c6f
+#EXTINF:-1 group-title="09-02 (Miércoles) Saudi Pro League" tvg-name="18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (FHD) (afb)",18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (FHD) (afb)
+http://127.0.0.1:6878/ace/getstream?id=afbf2a479c5a5072698139f0f556ef3e77a99bd0
+#EXTINF:-1 group-title="09-02 (Miércoles) Saudi Pro League" tvg-name="18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (HD) (b02)",18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (HD) (b02)
+http://127.0.0.1:6878/ace/getstream?id=b028202ff335911db3118bceac027df3e8ef6c32
+#EXTINF:-1 group-title="09-02 (Miércoles) Saudi Pro League" tvg-name="18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (UHD) (152)",18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (UHD) (152)
 http://127.0.0.1:6878/ace/getstream?id=152169ce99e1fd27f2249c18384a121079cdef29
-#EXTINF:-1 group-title="09-03 (Jueves) Saudi Pro League" tvg-name="18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (HD) (931)",18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (HD) (931)
+#EXTINF:-1 group-title="09-02 (Miércoles) Saudi Pro League" tvg-name="18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (HD) (e57)",18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (HD) (e57)
+http://127.0.0.1:6878/ace/getstream?id=e572a5178ff72eed7d1d751a18b4b3419699f370
+#EXTINF:-1 group-title="09-02 (Miércoles) Saudi Pro League" tvg-name="18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (HD) (931)",18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (HD) (931)
 http://127.0.0.1:6878/ace/getstream?id=931fd4c24398a24beb9b6ede856ca34339ff2c22
-#EXTINF:-1 group-title="09-03 (Jueves) Saudi Pro League" tvg-name="18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (FHD) (91a)",18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (FHD) (91a)
+#EXTINF:-1 group-title="09-02 (Miércoles) Saudi Pro League" tvg-name="18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (FHD) (91a)",18:30-NEOM SC-Khaleej FC (LIGA DE CAMPEONES) (FHD) (91a)
 http://127.0.0.1:6878/ace/getstream?id=91af434b0bb521189286f8cbbab1aed39d7536fe
-#EXTINF:-1 group-title="09-03 (Jueves) La Liga EA Sports" tvg-name="21:00-Real Sociedad-Celta (M+ LALIGA) (HD) (31c)",21:00-Real Sociedad-Celta (M+ LALIGA) (HD) (31c)
-http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
-#EXTINF:-1 group-title="09-03 (Jueves) La Liga EA Sports" tvg-name="21:00-Real Sociedad-Celta (M+ LALIGA) (FHD) (8c3)",21:00-Real Sociedad-Celta (M+ LALIGA) (FHD) (8c3)
+#EXTINF:-1 group-title="09-02 (Miércoles) La Liga EA Sports" tvg-name="21:00-Real Sociedad-Celta (M+ LALIGA) (FHD) (8c3)",21:00-Real Sociedad-Celta (M+ LALIGA) (FHD) (8c3)
 http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
-#EXTINF:-1 group-title="09-03 (Jueves) La Liga EA Sports" tvg-name="21:00-Real Sociedad-Celta (M+ LALIGA) (FHD) (af4)",21:00-Real Sociedad-Celta (M+ LALIGA) (FHD) (af4)
+#EXTINF:-1 group-title="09-02 (Miércoles) La Liga EA Sports" tvg-name="21:00-Real Sociedad-Celta (M+ LALIGA) (HD) (31c)",21:00-Real Sociedad-Celta (M+ LALIGA) (HD) (31c)
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
+#EXTINF:-1 group-title="09-02 (Miércoles) La Liga EA Sports" tvg-name="21:00-Real Sociedad-Celta (M+ LALIGA) (FHD) (af4)",21:00-Real Sociedad-Celta (M+ LALIGA) (FHD) (af4)
 http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
-#EXTINF:-1 group-title="09-03 (Jueves) La Liga EA Sports" tvg-name="21:00-Real Sociedad-Celta (M+ LALIGA) (HD) (3ac)",21:00-Real Sociedad-Celta (M+ LALIGA) (HD) (3ac)
+#EXTINF:-1 group-title="09-02 (Miércoles) La Liga EA Sports" tvg-name="21:00-Real Sociedad-Celta (M+ LALIGA) (HD) (3ac)",21:00-Real Sociedad-Celta (M+ LALIGA) (HD) (3ac)
 http://127.0.0.1:6878/ace/getstream?id=3ace1463a7cad979c3a4002b245487e9982e9f1a
-#EXTINF:-1 group-title="09-03 (Jueves) La Liga EA Sports" tvg-name="21:00-Real Sociedad-Celta (M+ LALIGA) (FHD) (3ce)",21:00-Real Sociedad-Celta (M+ LALIGA) (FHD) (3ce)
-http://127.0.0.1:6878/ace/getstream?id=3ce95bc9d6fc63676d828bb2cfc7a1f1854fd259
-#EXTINF:-1 group-title="09-03 (Jueves) La Liga EA Sports" tvg-name="21:00-Real Sociedad-Celta (M+ LALIGA) (FHD) (a64)",21:00-Real Sociedad-Celta (M+ LALIGA) (FHD) (a64)
-http://127.0.0.1:6878/ace/getstream?id=a64e02a6d914f098cbe1b724ff4f7aef83419a4a
-#EXTINF:-1 group-title="09-03 (Jueves) La Liga EA Sports" tvg-name="21:00-Real Sociedad-Celta (M+ LALIGA) (HD) (5ad)",21:00-Real Sociedad-Celta (M+ LALIGA) (HD) (5ad)
-http://127.0.0.1:6878/ace/getstream?id=5ad75216a63a31fef23ddc3532edc66c2fc0936c
-#EXTINF:-1 group-title="09-03 (Jueves) La Liga EA Sports" tvg-name="21:00-Real Sociedad-Celta (M+ LALIGA) (FHD) (d3b)",21:00-Real Sociedad-Celta (M+ LALIGA) (FHD) (d3b)
+#EXTINF:-1 group-title="09-02 (Miércoles) La Liga EA Sports" tvg-name="21:00-Real Sociedad-Celta (M+ LALIGA) (FHD) (d3b)",21:00-Real Sociedad-Celta (M+ LALIGA) (FHD) (d3b)
 http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
+#EXTINF:-1 group-title="09-02 (Miércoles) La Liga EA Sports" tvg-name="21:00-Real Sociedad-Celta (M+ LALIGA) (FHD) (a64)",21:00-Real Sociedad-Celta (M+ LALIGA) (FHD) (a64)
+http://127.0.0.1:6878/ace/getstream?id=a64e02a6d914f098cbe1b724ff4f7aef83419a4a
+#EXTINF:-1 group-title="09-02 (Miércoles) La Liga EA Sports" tvg-name="21:00-Real Sociedad-Celta (M+ LALIGA) (HD) (5ad)",21:00-Real Sociedad-Celta (M+ LALIGA) (HD) (5ad)
+http://127.0.0.1:6878/ace/getstream?id=5ad75216a63a31fef23ddc3532edc66c2fc0936c
+#EXTINF:-1 group-title="09-02 (Miércoles) La Liga EA Sports" tvg-name="21:00-Real Sociedad-Celta (M+ LALIGA) (FHD) (3ce)",21:00-Real Sociedad-Celta (M+ LALIGA) (FHD) (3ce)
+http://127.0.0.1:6878/ace/getstream?id=3ce95bc9d6fc63676d828bb2cfc7a1f1854fd259
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="09:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",09:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="09:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",09:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="09:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",09:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="09:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (HD) (7f8)",09:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (HD) (7f8)
+http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="10:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",10:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="10:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",10:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="10:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",10:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="10:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (HD) (7f8)",10:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (HD) (7f8)
+http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="12:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",12:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="12:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",12:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="12:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",12:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="12:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (HD) (7f8)",12:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (HD) (7f8)
+http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="13:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",13:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="13:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",13:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="13:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",13:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="13:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (HD) (7f8)",13:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (HD) (7f8)
+http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="15:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",15:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="15:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",15:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="15:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",15:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="15:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (HD) (7f8)",15:00-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (HD) (7f8)
+http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="16:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",16:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="16:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",16:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="16:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",16:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="16:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (HD) (7f8)",16:30-1/4 de final femenino Premier Padel Tour (MOVISTAR DEPORTES) (HD) (7f8)
+http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
+#EXTINF:-1 group-title="09-04 (Viernes) US Open" tvg-name="17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (3af)",17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="09-04 (Viernes) US Open" tvg-name="17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (73d)",17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="09-04 (Viernes) US Open" tvg-name="17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (8cd)",17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (8cd)
+http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
+#EXTINF:-1 group-title="09-04 (Viernes) US Open" tvg-name="17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (fd2)",17:05-2ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (fd2)
+http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
+#EXTINF:-1 group-title="09-04 (Viernes) US Open WTA" tvg-name="17:05-3ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (3af)",17:05-3ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (3af)
+http://127.0.0.1:6878/ace/getstream?id=3afe1af18f8ff78e9946856911b00c67477052b5
+#EXTINF:-1 group-title="09-04 (Viernes) US Open WTA" tvg-name="17:05-3ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (73d)",17:05-3ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (73d)
+http://127.0.0.1:6878/ace/getstream?id=73d38feaa770d788848ec098470e32670fe55a61
+#EXTINF:-1 group-title="09-04 (Viernes) US Open WTA" tvg-name="17:05-3ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (8cd)",17:05-3ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (FHD) (8cd)
+http://127.0.0.1:6878/ace/getstream?id=8cd8fd69c6755ec452e9e74b33a0d1a653452191
+#EXTINF:-1 group-title="09-04 (Viernes) US Open WTA" tvg-name="17:05-3ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (fd2)",17:05-3ª Ronda Grand Slam (MOVISTAR DEPORTES 2) (HD) (fd2)
+http://127.0.0.1:6878/ace/getstream?id=fd2aea1aa8fcddebfda1644118c6806230a1d539
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="18:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",18:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="18:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",18:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="18:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",18:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="18:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (HD) (7f8)",18:00-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (HD) (7f8)
+http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="19:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)",19:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (f82)
+http://127.0.0.1:6878/ace/getstream?id=f828a32d8ea03a3cabd3ce3ebecb249ec111c7e5
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="19:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)",19:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (5d3)
+http://127.0.0.1:6878/ace/getstream?id=5d3f582738467aaf213e408601aca5cc13fa9359
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="19:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)",19:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (FHD) (369)
+http://127.0.0.1:6878/ace/getstream?id=3692ea4cdda97eb0062ed5d656ebd61f149ebd0b
+#EXTINF:-1 group-title="09-04 (Viernes) Madrid Open" tvg-name="19:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (HD) (7f8)",19:30-1/4 de final masculino Premier Padel Tour (MOVISTAR DEPORTES) (HD) (7f8)
+http://127.0.0.1:6878/ace/getstream?id=7f8b4f57bf234510d3f607492508d68167d4b0ab
+#EXTINF:-1 group-title="09-04 (Viernes) LaLiga Hypermotion" tvg-name="20:30-UD Las Palmas-Leganés (HYPERMOTION) (HD) (87b)",20:30-UD Las Palmas-Leganés (HYPERMOTION) (HD) (87b)
+http://127.0.0.1:6878/ace/getstream?id=87bb542f974b6b9e89d0f2e20ed6dc93426f4be0
+#EXTINF:-1 group-title="09-04 (Viernes) LaLiga Hypermotion" tvg-name="20:30-UD Las Palmas-Leganés (HYPERMOTION) (HD) (a4f)",20:30-UD Las Palmas-Leganés (HYPERMOTION) (HD) (a4f)
+http://127.0.0.1:6878/ace/getstream?id=a4f072c9b614323ac1258a175f868a909ea3c8cd
+#EXTINF:-1 group-title="09-04 (Viernes) LaLiga Hypermotion" tvg-name="20:30-UD Las Palmas-Leganés (HYPERMOTION) (FHD) (e4c)",20:30-UD Las Palmas-Leganés (HYPERMOTION) (FHD) (e4c)
+http://127.0.0.1:6878/ace/getstream?id=e4cbd1a425120b1f44b523a55bd1a98c31cad9fe
+#EXTINF:-1 group-title="09-04 (Viernes) LaLiga Hypermotion" tvg-name="20:30-UD Las Palmas-Leganés (HYPERMOTION) (HD) (2c5)",20:30-UD Las Palmas-Leganés (HYPERMOTION) (HD) (2c5)
+http://127.0.0.1:6878/ace/getstream?id=2c54a4def58f41fc0d2163450a63f12955b656aa
+#EXTINF:-1 group-title="09-04 (Viernes) La Liga EA Sports" tvg-name="21:00-Real Betis-Real Madrid (M+ LALIGA) (FHD) (8c3)",21:00-Real Betis-Real Madrid (M+ LALIGA) (FHD) (8c3)
+http://127.0.0.1:6878/ace/getstream?id=8c30b600cc48899991b452805df48b68d998e61c
+#EXTINF:-1 group-title="09-04 (Viernes) La Liga EA Sports" tvg-name="21:00-Real Betis-Real Madrid (M+ LALIGA) (HD) (31c)",21:00-Real Betis-Real Madrid (M+ LALIGA) (HD) (31c)
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
+#EXTINF:-1 group-title="09-04 (Viernes) La Liga EA Sports" tvg-name="21:00-Real Betis-Real Madrid (M+ LALIGA) (FHD) (af4)",21:00-Real Betis-Real Madrid (M+ LALIGA) (FHD) (af4)
+http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
+#EXTINF:-1 group-title="09-04 (Viernes) La Liga EA Sports" tvg-name="21:00-Real Betis-Real Madrid (M+ LALIGA) (HD) (3ac)",21:00-Real Betis-Real Madrid (M+ LALIGA) (HD) (3ac)
+http://127.0.0.1:6878/ace/getstream?id=3ace1463a7cad979c3a4002b245487e9982e9f1a
+#EXTINF:-1 group-title="09-04 (Viernes) La Liga EA Sports" tvg-name="21:00-Real Betis-Real Madrid (M+ LALIGA) (FHD) (d3b)",21:00-Real Betis-Real Madrid (M+ LALIGA) (FHD) (d3b)
+http://127.0.0.1:6878/ace/getstream?id=d3b11d6c18ad43df5cd42c1dafb4dd12d8f829e8
+#EXTINF:-1 group-title="09-04 (Viernes) La Liga EA Sports" tvg-name="21:00-Real Betis-Real Madrid (M+ LALIGA) (FHD) (a64)",21:00-Real Betis-Real Madrid (M+ LALIGA) (FHD) (a64)
+http://127.0.0.1:6878/ace/getstream?id=a64e02a6d914f098cbe1b724ff4f7aef83419a4a
+#EXTINF:-1 group-title="09-04 (Viernes) La Liga EA Sports" tvg-name="21:00-Real Betis-Real Madrid (M+ LALIGA) (HD) (5ad)",21:00-Real Betis-Real Madrid (M+ LALIGA) (HD) (5ad)
+http://127.0.0.1:6878/ace/getstream?id=5ad75216a63a31fef23ddc3532edc66c2fc0936c
+#EXTINF:-1 group-title="09-04 (Viernes) La Liga EA Sports" tvg-name="21:00-Real Betis-Real Madrid (M+ LALIGA) (FHD) (3ce)",21:00-Real Betis-Real Madrid (M+ LALIGA) (FHD) (3ce)
+http://127.0.0.1:6878/ace/getstream?id=3ce95bc9d6fc63676d828bb2cfc7a1f1854fd259
