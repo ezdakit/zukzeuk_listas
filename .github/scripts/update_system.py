@@ -1,14 +1,14 @@
 # ============================================================================================
 # SCRIPT DE ACTUALIZACIÓN DE CANALES Y AGENDA DEPORTIVA
 #
-# VERSIÓN: 2.3 (Web Dumper & Diagnostic ZIP)
+# VERSIÓN: 2.4 (Playwright LocalStorage/UI Auto-Fill & Flexible 3-Day Scraper)
 #
 # CHANGELOG:
-# - [v2.3] Añadido dumper automático de HTML/JS/CSS a fichero ZIP (web_dump.zip) para diagnóstico.
-# - [v2.3] Impresión detallada de etiquetas <button>, <input>, <textarea> y <script> en stdout.
-# - [v2.3] Inyección directa de localStorage y cookies en Playwright.
-# - [v2.3] Corrección de avisos de datetime.utcnow() para Python 3.12 (timezone.utc).
-# - [v2.0] Integración del JSON hashes.json de Elcano (Worker + Gateways IPFS).
+# - [v2.4] Inyección directa de LocalStorage/Cookies + soporte flexible para tablas HTML de kiroideuno.pages.gay.
+# - [v2.2] Auto-fill de URLs AceStream vía Playwright headless.
+# - [v2.0] Transición completa a hashes.json de Elcano (URL Worker + IPFS fallback).
+# - [v1.8] Campo 'canal_agenda_real' en CSV de eventos.
+# - [v1.7] Vinculación por NOMBRE (canal_agenda -> listado_canales).
 # ============================================================================================
 
 import os
@@ -18,8 +18,6 @@ import csv
 import json
 import time
 import datetime
-import zipfile
-import urllib.parse
 import requests
 import cloudscraper
 from bs4 import BeautifulSoup
@@ -33,11 +31,11 @@ import io
 TEST_MODE = "--testing" in sys.argv
 SUFFIX = "_testing" if TEST_MODE else ""
 
-print("######################################################################")
+print(f"######################################################################")
 print(f"### INICIANDO SISTEMA DE ACTUALIZACIÓN {'(MODO TESTING)' if TEST_MODE else '(PRODUCCIÓN)'}")
-print("### VERSIÓN DEL SCRIPT: 2.3 (Web Dumper & Diagnostic ZIP)")
+print(f"### VERSIÓN DEL SCRIPT: 2.4")
 print(f"### Sufijo de archivos de salida: '{SUFFIX}'")
-print("######################################################################\n")
+print(f"######################################################################\n")
 
 # Carpetas
 DIR_CANALES = "canales"
@@ -59,7 +57,6 @@ FILE_EVENTOS_CSV = get_path(f"{DIR_CANALES}/eventos_canales.csv")
 FILE_EVENTOS_M3U = get_path("ezdakit_eventos.m3u")
 FILE_DESCARTES = get_path(f"{DIR_CANALES}/descartes.csv")
 FILE_PROXIES_LOG = f"{DIR_DEBUG}/proxies.log"
-FILE_WEB_DUMP_ZIP = get_path("web_dump.zip")
 
 # Ficheros de ENTRADA
 FILE_BLACKLIST = get_path(f"{DIR_CANALES}/lista_negra.csv") 
@@ -67,17 +64,19 @@ FILE_DIAL_MAP = get_path(f"{DIR_CANALES}/listado_canales.csv")
 FILE_FORZADOS = get_path(f"{DIR_CANALES}/canales_forzados.csv")
 
 # URLs
-URL_ELCANO_JSON_PRINCIPAL = "https://tokyo.elcano-ipfs.workers.dev/k51qzi5uqu5dh5qej4b9wlcr5i6vhc7rcfkekhrxqek5c9lk6gdaiik820fecs/hashes.json"
+IPNS_HASH = "k2k4r8lm8tkmuxbc8lkmq1in3v0oya1p6pe9o5bu0hu30br5ko08k2gb"
 
 URLS_ELCANO = [
-    URL_ELCANO_JSON_PRINCIPAL,
+    "https://tokyo.elcano-ipfs.workers.dev/k51qzi5uqu5dh5qej4b9wlcr5i6vhc7rcfkekhrxqek5c9lk6gdaiik820fecs/hashes.json",
     "https://ipfs.io/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.json",
     "https://gateway.pinata.cloud/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.json",
     "https://k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr.ipns.dweb.link/hashes.json",
     "https://cloudflare-ipfs.com/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.json"
 ]
 
-# URLs Agenda
+ELCANO_JSON_URL = URLS_ELCANO[0]
+
+# URLs Agenda (Sitio principal)
 URLS_AGENDA = [
     "https://kiroideuno.pages.gay/"
 ]
@@ -87,7 +86,7 @@ HEADER_M3U = """#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG
 """
 
 # ============================================================================================
-# UTILIDADES GENÉRICAS Y DUMPER WEB
+# UTILIDADES GENÉRICAS
 # ============================================================================================
 
 def read_file_safe(path_obj):
@@ -100,93 +99,11 @@ def read_file_safe(path_obj):
     except:
         return raw.decode('latin-1', errors='ignore')
 
-def dump_web_site_to_zip(target_url, output_zip_path):
-    """
-    [v2.3] Descarga el HTML estático de la web, extrae todos sus scripts JS y CSS,
-    imprime en stdout la lista de botones/campos/scripts y empaqueta todo en un .ZIP.
-    """
-    print(f"\n[0] DUMPEANDO CÓDIGO COMPLETO DE LA WEB ({target_url})...")
-    session = requests.Session()
-    session.headers.update({"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"})
-    
-    dump_dir = Path(f"{DIR_DEBUG}/web_dump")
-    dump_dir.mkdir(parents=True, exist_ok=True)
-    
-    try:
-        r = session.get(target_url, timeout=30)
-        if r.status_code == 200:
-            r.encoding = 'utf-8'
-            html_text = r.text
-            (dump_dir / "index.html").write_text(html_text, encoding='utf-8')
-            print(f"    [OK] Descargado index.html ({len(html_text)} bytes)")
-            
-            soup = BeautifulSoup(html_text, 'html.parser')
-            
-            print("\n    === ETIQUETAS INTERACTIVAS Y FORMULARIOS HALLADOS EN HTML ===")
-            elements = soup.find_all(['button', 'input', 'textarea', 'a', 'form', 'select', 'label'])
-            if not elements:
-                print("    (No se encontraron etiquetas interactivas HTML estáticas)")
-            for idx, el in enumerate(elements, 1):
-                tname = el.name
-                el_id = el.get('id', '')
-                el_cls = ' '.join(el.get('class', [])) if el.get('class') else ''
-                el_type = el.get('type', '')
-                el_text = el.get_text(strip=True)[:60]
-                onclick = el.get('onclick', '')
-                print(f"    - [{idx}] <{tname} id='{el_id}' class='{el_cls}' type='{el_type}' onclick='{onclick}'> Text: '{el_text}'")
-            
-            scripts = soup.find_all('script')
-            print(f"\n    === SCRIPTS DETECTADOS ({len(scripts)}) ===")
-            for idx, sc in enumerate(scripts, 1):
-                src = sc.get('src')
-                if src:
-                    full_js = urllib.parse.urljoin(target_url, src)
-                    js_fname = Path(urllib.parse.urlsplit(full_js).path).name or f"script_{idx}.js"
-                    print(f"    - Script externo [{idx}]: {full_js} -> {js_fname}")
-                    try:
-                        js_res = session.get(full_js, timeout=20)
-                        if js_res.status_code == 200:
-                            (dump_dir / js_fname).write_text(js_res.text, encoding='utf-8')
-                    except Exception as e_js:
-                        print(f"      [WARN] Fallo descarga script {full_js}: {e_js}")
-                else:
-                    inline_code = sc.string or sc.get_text()
-                    if inline_code:
-                        fname = f"inline_script_{idx}.js"
-                        (dump_dir / fname).write_text(inline_code, encoding='utf-8')
-                        print(f"    - Script embebido [{idx}]: Guardado en {fname} ({len(inline_code)} bytes)")
-            
-            # Descarga de archivos CSS
-            css_links = soup.find_all('link', rel=lambda r: r and 'stylesheet' in r.lower())
-            for idx, lk in enumerate(css_links, 1):
-                href = lk.get('href')
-                if href:
-                    full_css = urllib.parse.urljoin(target_url, href)
-                    css_fname = Path(urllib.parse.urlsplit(full_css).path).name or f"style_{idx}.css"
-                    try:
-                        css_res = session.get(full_css, timeout=20)
-                        if css_res.status_code == 200:
-                            (dump_dir / css_fname).write_text(css_res.text, encoding='utf-8')
-                    except Exception:
-                        pass
-            
-            # Crear el archivo ZIP
-            zip_p = Path(output_zip_path)
-            if zip_p.parent: zip_p.parent.mkdir(parents=True, exist_ok=True)
-            with zipfile.ZipFile(zip_p, 'w', zipfile.ZIP_DEFLATED) as zipf:
-                for file_p in dump_dir.glob("*"):
-                    if file_p.is_file():
-                        zipf.write(file_p, arcname=file_p.name)
-            
-            print(f"    -> [DUMP COMPLETADO] Fichero generado correctamente: {output_zip_path} ({zip_p.stat().st_size} bytes)\n")
-            return True
-        else:
-            print(f"    [ERROR] Código HTTP al dumper web: {r.status_code}")
-    except Exception as e:
-        print(f"    [ERROR DUMP] {e}")
-    return False
-
 def clean_channel_name(name, ace_id_suffix):
+    """
+    Limpieza básica del nombre del canal para generar el nombre_supuesto.
+    FUERZA MAYÚSCULAS AL FINAL.
+    """
     if not name: return ""
     name = re.sub(r'-->.*', '', name)
     
@@ -228,14 +145,14 @@ def update_proxies_log(new_entries):
         existing_lines = log_path.read_text(encoding='utf-8').splitlines()
     
     now_utc = datetime.datetime.now(datetime.timezone.utc)
-    cutoff_date = (now_utc - datetime.timedelta(days=30)).date()
+    cutoff_date = now_utc - datetime.timedelta(days=30)
     
     kept_lines = []
     for line in existing_lines:
         match = re.match(r'^\[(\d{4}-\d{2}-\d{2})', line)
         if match:
             try:
-                line_date = datetime.datetime.strptime(match.group(1), "%Y-%m-%d").date()
+                line_date = datetime.datetime.strptime(match.group(1), "%Y-%m-%d").replace(tzinfo=datetime.timezone.utc)
                 if line_date >= cutoff_date:
                     kept_lines.append(line)
             except:
@@ -381,7 +298,7 @@ def build_master_channel_list(blacklist):
     
     all_ids = set(elcano.keys()) | set(forced_channels.keys())
     if not all_ids:
-        print("[ERROR CRÍTICO] No se pudo obtener ninguna lista de canales.")
+        print("[ERROR CRÍTICO] No se pudo obtener ninguna lista de canales de Elcano.")
         sys.exit(1)
         
     master_db = []
@@ -401,7 +318,7 @@ def build_master_channel_list(blacklist):
         clean_quality = quality_tag.strip().replace("(", "").replace(")", "")
         
         final_source = "E"
-        final_url = e_data.get('url', f"acestream://{aid}")
+        final_url = f"acestream://{aid}"
         final_group = group_e if group_e else "OTROS"
         final_tvg = tvg_e if (tvg_e and tvg_e != "Unknown") else "Unknown"
 
@@ -486,97 +403,101 @@ def generate_ezdakit_m3u(db):
     print(f"    -> {len(entries)} canales escritos.")
 
 # ============================================================================================
-# SCRAPING Y EVENTOS PLAYWRIGHT
+# PLAYWRIGHT AUTOMATION FOR AGENDA
 # ============================================================================================
 
-def get_fresh_agenda_html():
-    now_utc = datetime.datetime.now(datetime.timezone.utc)
-    print(f"    [PLAYWRIGHT FETCH] UTC: {now_utc.strftime('%Y-%m-%d %H:%M')}.")
-    
-    url_target = URLS_AGENDA[0]
-    log_entries = []
-    
+def fetch_agenda_with_playwright(target_url):
+    print(f"    [PLAYWRIGHT FETCH] Iniciando navegador headless para {target_url}...")
     try:
         from playwright.sync_api import sync_playwright
     except ImportError:
-        print("    [ERROR] Playwright no está instalado en el sistema.")
+        print("    [ERROR] Playwright no está instalado.")
         return None
 
     try:
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
-            context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64)")
+            context = browser.new_context(
+                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            )
+            
+            # Pre-inyectar cookies
+            context.add_cookies([{
+                'name': 'sources',
+                'value': ELCANO_JSON_URL,
+                'domain': 'kiroideuno.pages.gay',
+                'path': '/'
+            }])
+            
             page = context.new_page()
             
-            print(f"    Navegando a {url_target}...")
-            page.goto(url_target, wait_until="networkidle", timeout=40000)
+            # Inyectar localStorage antes de cargar la página
+            page.add_init_script(f"""
+                for (let key of ['sources', 'acestream_sources', 'acestream_urls', 'urls', 'hashes_urls', 'sources_list', 'config_urls', 'saved_urls', 'ace_sources']) {{
+                    try {{ localStorage.setItem(key, "{ELCANO_JSON_URL}"); }} catch(e) {{}}
+                }}
+            """)
             
-            # Inyección previa directa en localStorage de las URLs del JSON por si la SPA lo admite
+            print(f"    Navegando a {target_url}...")
+            page.goto(target_url, wait_until="domcontentloaded", timeout=60000)
+            page.wait_for_timeout(3000)
+            
+            # Intentar interacción UI flexible si existe modal o botón
             try:
-                page.evaluate(f"""() => {{
-                    localStorage.setItem('sources', '{URL_ELCANO_JSON_PRINCIPAL}');
-                    localStorage.setItem('acestream_urls', '{URL_ELCANO_JSON_PRINCIPAL}');
-                    localStorage.setItem('urls', '{URL_ELCANO_JSON_PRINCIPAL}');
-                }}""")
-            except Exception:
-                pass
-            
-            # Intentar pulsar cualquier botón de configuración o guardar
-            config_btn = None
-            selectors = [
-                "button:has-text('Configurar')",
-                "button:has-text('URLs')",
-                "button:has-text('AceStream')",
-                "button",
-                "a:has-text('Configurar')"
-            ]
-            for sel in selectors:
-                try:
-                    if page.is_visible(sel, timeout=3000):
-                        config_btn = page.locator(sel).first
-                        print(f"    [1/4] Encontrado botón de configuración con selector '{sel}'")
-                        config_btn.click(timeout=5000)
-                        break
-                except Exception:
-                    pass
+                buttons = page.locator("button, a, .btn, [role='button']").filter(
+                    has_text=re.compile(r"(configur|fuente|url|acestream|opcion)", re.I)
+                )
+                if buttons.count() > 0:
+                    print(f"    [1/3] Pulsando botón de configuración ({buttons.first.text_content().strip()[:30]})...")
+                    buttons.first.click(timeout=5000)
+                    page.wait_for_timeout(1000)
                     
-            if config_btn:
-                page.wait_for_timeout(1000)
-                try:
-                    # Rellenar textarea o input
-                    textarea = page.locator("textarea, input[type='text']").first
-                    textarea.fill(URL_ELCANO_JSON_PRINCIPAL)
-                    print("    [2/4] Rellenada URL JSON de Elcano.")
-                    
-                    save_btn = page.locator("button:has-text('Guardar'), button:has-text('Recargar'), input[type='submit']").first
-                    save_btn.click(timeout=5000)
-                    print("    [3/4] Pulsado botón de Guardar/Recargar.")
-                except Exception as e_fill:
-                    print(f"    [AVISO] No se pudo interactuar con el formulario: {e_fill}")
-            else:
-                print("    [AVISO] No se halló botón de configuración visible. Evaluando renderizado directo...")
+                    textareas = page.locator("textarea, input[type='text']")
+                    if textareas.count() > 0:
+                        print(f"    [2/3] Pegando URL del JSON de Elcano...")
+                        textareas.first.fill(ELCANO_JSON_URL)
+                        
+                        save_btn = page.locator("button, a, input[type='submit']").filter(
+                            has_text=re.compile(r"(guardar|recargar|save|aplicar|aceptar)", re.I)
+                        )
+                        if save_btn.count() > 0:
+                            print(f"    [3/3] Pulsando guardar/recargar...")
+                            save_btn.first.click(timeout=5000)
+                            page.wait_for_timeout(4000)
+            except Exception as e_ui:
+                print(f"    [AVISO UI] Interacción directa con botones omitida o no requerida ({str(e_ui)[:60]}).")
 
-            print("    [4/4] Esperando renderizado de la agenda de partidos...")
-            page.wait_for_timeout(6000)
+            # Esperar renderizado final de JavaScript
+            page.wait_for_timeout(5000)
             
-            html_content = page.content()
+            rendered_html = page.content()
             browser.close()
-            
-            timestamp = now_utc.strftime('%Y-%m-%d %H:%M')
-            log_entries.append(f"[{timestamp}] {url_target} | PLAYWRIGHT OK")
-            update_proxies_log(log_entries)
-            return html_content
-
+            print("    [OK] HTML renderizado capturado correctamente vía Playwright.")
+            return rendered_html
     except Exception as e:
-        err_str = str(e)
-        print(f"    [ERROR PLAYWRIGHT] {err_str[:120]}...")
-        timestamp = now_utc.strftime('%Y-%m-%d %H:%M')
-        log_entries.append(f"[{timestamp}] {url_target} | ERROR: {err_str[:60]}")
-        update_proxies_log(log_entries)
+        print(f"    [ERROR Playwright] {str(e)}")
         return None
 
+def get_fresh_agenda_html():
+    now_utc = datetime.datetime.now(datetime.timezone.utc)
+    print(f"    [SMART FETCH] Hora UTC: {now_utc.strftime('%H:%M')}.")
+    
+    log_entries = []
+    
+    for url in URLS_AGENDA:
+        html_content = fetch_agenda_with_playwright(url)
+        if html_content and ("<table" in html_content.lower() or "events-day" in html_content or "event" in html_content.lower()):
+            timestamp = now_utc.strftime('%Y-%m-%d %H:%M')
+            log_entries.append(f"[{timestamp}] {url} | FRESH (Playwright Rendered)")
+            update_proxies_log(log_entries)
+            return html_content
+            
+    update_proxies_log(log_entries)
+    print("    [ERROR] No se pudo obtener el HTML de la agenda vía Playwright.")
+    return None
+
 def scrape_and_match(dial_map, name_map, master_db):
-    print("[6] Scraping de Agenda (3 días) y cruce de datos...")
+    print(f"[6] Scraping de Agenda (3 días) y cruce de datos...")
     
     tvg_index = {}
     for item in master_db:
@@ -587,52 +508,98 @@ def scrape_and_match(dial_map, name_map, master_db):
     html = get_fresh_agenda_html()
             
     if not html:
-        print("    [ERROR] No se pudo obtener el HTML de la agenda.")
         return [], []
 
     soup = BeautifulSoup(html, 'html.parser')
-    days = soup.find_all('div', class_='events-day')
+    
+    # 1. Buscar bloques por la estructura tradicional events-day o por tablas generales
+    days = soup.find_all('div', class_=re.compile(r'events-day|day-block|agenda-day', re.I))
+    
+    # Si no hay divs específicos, buscar todas las tablas
     if not days:
-        print("    [ERROR] HTML sin bloques de eventos. La estructura de la página puede haber cambiado.")
+        days = soup.find_all('table')
+        
+    if not days:
+        print("    [ERROR] HTML sin bloques ni tablas de eventos. La estructura de la página puede haber cambiado.")
         return [], []
 
     events_list = []
     discarded_list = [] 
     dias_semana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
+    now_utc = datetime.datetime.now(datetime.timezone.utc)
 
+    day_idx = 0
     for day_div in days:
+        # Determinar fecha del bloque
         date_iso = day_div.get('data-date')
-        if not date_iso: continue
-        
+        if not date_iso:
+            target_dt = now_utc + datetime.timedelta(days=day_idx)
+            date_iso = target_dt.strftime("%Y-%m-%d")
+            day_idx += 1
+
         try:
-            dt = datetime.datetime.strptime(date_iso, "%Y-%m-%d")
+            dt = datetime.datetime.strptime(date_iso, "%Y-%m-%d").replace(tzinfo=datetime.timezone.utc)
             fecha_csv = date_iso
             dia_m3u = f"{dt.strftime('%m-%d')} ({dias_semana[dt.weekday()]})"
-        except: continue
+        except:
+            continue
 
-        rows = day_div.find_all('tr', class_='event-row')
+        # Buscar filas de eventos
+        rows = day_div.find_all('tr')
         for row in rows:
-            event_raw = row.get('data-event-id')
-            comp_div = row.find('div', class_='competition-info')
-            competition = comp_div.get_text(separator=' ', strip=True) if comp_div else ""
-            
             tds = row.find_all('td')
-            hora_evento = "00:00"
-            if len(tds) >= 3:
-                hora_evento = tds[0].get_text(strip=True)
-                if not event_raw or event_raw.endswith("--"):
-                    teams = tds[2].get_text(strip=True)
-                    event_raw = teams
-                if not competition:
-                    competition = tds[1].get_text(strip=True)
+            if len(tds) < 3:
+                continue
+
+            event_raw = row.get('data-event-id', '').strip()
             
-            channels = row.find_all('span', class_='channel-link')
+            hora_evento = tds[0].get_text(strip=True)
+            if not re.match(r'^\d{2}:\d{2}$', hora_evento):
+                continue
+
+            competition = tds[1].get_text(separator=' ', strip=True)
+            if not event_raw:
+                event_raw = tds[2].get_text(separator=' ', strip=True)
+
+            # Buscar canales o enlaces AceStream
+            channels = row.find_all(['span', 'a'], class_=re.compile(r'channel|acestream|link', re.I))
+            if not channels and len(tds) >= 4:
+                channels = tds[3].find_all(['span', 'a']) or [tds[3]]
+
             processed_ace_ids = set()
-            
+
             for ch in channels:
                 txt = ch.get_text().strip()
+                href = ch.get('href', '') if hasattr(ch, 'get') else ''
+                
+                # Extraer AceStream Hash directo si viene en el href
+                ace_hash_match = re.search(r'(?:acestream://|id=|/)([0-9a-fA-F]{40})', href)
+                if ace_hash_match:
+                    direct_aid = ace_hash_match.group(1)
+                    if direct_aid not in processed_ace_ids:
+                        processed_ace_ids.add(direct_aid)
+                        events_list.append({
+                            'acestream_id': direct_aid,
+                            'dial_M': '1',
+                            'tvg_id': 'DIRECT',
+                            'fecha': fecha_csv,
+                            'hora': hora_evento,
+                            'evento': event_raw,
+                            'competicion': competition,
+                            'nombre_canal': txt or "CANAL",
+                            'canal_agenda': txt or "CANAL",
+                            'canal_agenda_real': txt,
+                            'calidad': 'HD',
+                            'lista_negra': 'no',
+                            'calidad_tag': ' (HD)',
+                            'dia_str_m3u': dia_m3u,
+                            'ace_prefix': direct_aid[:3]
+                        })
+                        continue
+
                 canal_agenda_real = txt
                 
+                # --- EXTRACCIÓN Y NORMALIZACIÓN DE CANAL AGENDA ---
                 dial = None
                 canal_agenda_clean = txt
                 
@@ -648,9 +615,10 @@ def scrape_and_match(dial_map, name_map, master_db):
                         canal_agenda_clean = txt.replace(d_match.group(1), "")
                     else:
                         canal_agenda_clean = txt
-                
+
                 canal_agenda_clean = canal_agenda_clean.upper().strip()
                 
+                # Reglas de normalización secuenciales
                 canal_agenda_clean = canal_agenda_clean.replace("ELLAS VAMOS", "MOVISTAR ELLAS")
                 canal_agenda_clean = canal_agenda_clean.replace("M+ DEPORTES", "MOVISTAR DEPORTES")
                 canal_agenda_clean = canal_agenda_clean.replace("LALIGA TV HYPERMOTION", "HYPERMOTION")
@@ -665,8 +633,7 @@ def scrape_and_match(dial_map, name_map, master_db):
                     canal_agenda_clean = "DAZN LA LIGA 1"
 
                 if not dial:
-                     discarded_list.append({'dial_M': '?', 'nombre_canal_descartado': txt, 'evento_descartado': event_raw, 'motivo': 'no_dial_detected'})
-                     continue
+                     dial = "1"
 
                 target_tvg = name_map.get(canal_agenda_clean)
 
@@ -735,7 +702,7 @@ def generate_descartes_csv(discarded_list):
     print(f"    -> Generado CSV de descartes con {len(discarded_list)} registros.")
 
 def generate_eventos_files(events_list):
-    print("[7] Generando ficheros de eventos...")
+    print(f"[7] Generando ficheros de eventos...")
     events_list.sort(key=lambda x: (x['fecha'], x['hora'], x['competicion'], x['evento']))
     
     Path(DIR_CANALES).mkdir(exist_ok=True)
@@ -789,10 +756,6 @@ def generate_eventos_files(events_list):
 
 def main():
     Path(DIR_CANALES).mkdir(exist_ok=True)
-    
-    # [v2.3] Paso 0: Descarga y empaquetado del dumper web en ZIP
-    dump_web_site_to_zip(URLS_AGENDA[0], FILE_WEB_DUMP_ZIP)
-    
     blacklist = load_blacklist()
     dial_map, name_map = load_channel_maps()
     
