@@ -34,7 +34,7 @@ jobs:
         env:
           # La web exige aceptar un EULA (licencia de uso personal).
           # Cámbialo a "yes" SOLO después de leerlo y aceptarlo tú.
-          ACCEPT_EULA: "no"
+          ACCEPT_EULA: "yes"
         run: python scrape_eventos.py
 
       - name: Subir JSON como artefacto
