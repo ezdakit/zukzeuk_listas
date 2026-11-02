@@ -1,0 +1,2671 @@
+{
+  "fuente": "https://kiroideuno.pages.gay",
+  "acestream_json": "https://tokyo.elcano-ipfs.workers.dev/k51qzi5uqu5dh5qej4b9wlcr5i6vhc7rcfkekhrxqek5c9lk6gdaiik820fecs/hashes.json",
+  "generado_utc": "2026-11-02T21:27:54+00:00",
+  "tablas": [
+    {
+      "id": "tablaAyer",
+      "titulo": "Eventos de Ayer",
+      "visible": false,
+      "columnas": [
+        "Hora",
+        "Competición",
+        "Evento",
+        "Canales",
+        "Eventos Acestream"
+      ],
+      "filas": []
+    },
+    {
+      "id": "tablaHoy",
+      "titulo": "Eventos de Hoy (02/11/2026)",
+      "visible": true,
+      "columnas": [
+        "Hora",
+        "Competición",
+        "Evento",
+        "Canales",
+        "Eventos Acestream"
+      ],
+      "filas": [
+        {
+          "Hora": "02:20",
+          "Competición": "NFL | Liga Regular",
+          "Evento": "Washington Commanders Philadelphia Eagles",
+          "Canales": "DAZN 2 (M73) | Cuatro",
+          "Eventos Acestream": "DAZN 2 720p ** | DAZN 2 1080p * | DAZN 2 1080p ** | CUATRO 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "DAZN 2 720p **",
+                "href": "acestream://eff7c84667c69e18353d8c97ab956915e2403feb"
+              },
+              {
+                "texto": "DAZN 2 1080p *",
+                "href": "acestream://6c7907fd3bd1f39145061b432be822e371f81e71"
+              },
+              {
+                "texto": "DAZN 2 1080p **",
+                "href": "acestream://84d140989b5f3bc7034f73dba5c6c94d01b1c05a"
+              },
+              {
+                "texto": "CUATRO 1080p **",
+                "href": "acestream://9b7fe817f03d3e9349c71353187a23d63f2d8893"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "02:30",
+          "Competición": "NBA | Liga Regular",
+          "Evento": "Golden State Warriors Los Angeles Clippers",
+          "Canales": "NBA League Pass",
+          "Eventos Acestream": "NBA League Pass 1080p * | NBA League Pass 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "NBA League Pass 1080p *",
+                "href": "acestream://e70a62fd486ce0d4970bec6849023c781efb7c31"
+              },
+              {
+                "texto": "NBA League Pass 1080p **",
+                "href": "acestream://d4ffff16fcb461fc8d926a5698ee2e23d0cf3620"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "03:00",
+          "Competición": "NBA | Liga Regular",
+          "Evento": "Los Angeles Lakers Toronto Raptors",
+          "Canales": "NBA League Pass",
+          "Eventos Acestream": "NBA League Pass 1080p * | NBA League Pass 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "NBA League Pass 1080p *",
+                "href": "acestream://e70a62fd486ce0d4970bec6849023c781efb7c31"
+              },
+              {
+                "texto": "NBA League Pass 1080p **",
+                "href": "acestream://d4ffff16fcb461fc8d926a5698ee2e23d0cf3620"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "07:10",
+          "Competición": "WTA Torneo de Hong Kong | 1ª Ronda",
+          "Evento": "V. Golubic K. Boulter",
+          "Canales": "Tennis Channel - Orange TV (131)",
+          "Eventos Acestream": "Tennis Channel 1080p * | Tennis Channel 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "Tennis Channel 1080p *",
+                "href": "acestream://a374064c68314cd8bc488257067db9148b3c54e0"
+              },
+              {
+                "texto": "Tennis Channel 1080p **",
+                "href": "acestream://0a0d41e8d606f38757c1453a15df5dcd0491507b"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "09:15",
+          "Competición": "WTA Torneo de Hong Kong | 1ª Ronda",
+          "Evento": "CY. Lee M. Sakkari",
+          "Canales": "Tennis Channel - Orange TV (131)",
+          "Eventos Acestream": "Tennis Channel 1080p * | Tennis Channel 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "Tennis Channel 1080p *",
+                "href": "acestream://a374064c68314cd8bc488257067db9148b3c54e0"
+              },
+              {
+                "texto": "Tennis Channel 1080p **",
+                "href": "acestream://0a0d41e8d606f38757c1453a15df5dcd0491507b"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "11:10",
+          "Competición": "Masters París | 1ª Ronda",
+          "Evento": "L. Musetti H. Hurkacz",
+          "Canales": "M+ Deportes 2 (64)",
+          "Eventos Acestream": "M+ Deportes 2 720p ** | M+ Deportes 2 1080p * | M+ Deportes 2 1080p ** | M+ Deportes 2 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Deportes 2 720p **",
+                "href": "acestream://49612f9e8190d4eb79f666af2c537c6fe9ec4014"
+              },
+              {
+                "texto": "M+ Deportes 2 1080p *",
+                "href": "acestream://77290ae42871331705d95f8ac4eb597412f6008c"
+              },
+              {
+                "texto": "M+ Deportes 2 1080p **",
+                "href": "acestream://882f5331b0b20056f3d8e685ed2498909f4115c8"
+              },
+              {
+                "texto": "M+ Deportes 2 1080p **",
+                "href": "acestream://4a2384051213222a0e29111dc5d94cac35b3a521"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "11:10",
+          "Competición": "Masters París | 1ª Ronda",
+          "Evento": "L. Darderi R. Hijikata",
+          "Canales": "M+ Deportes 4 (191)",
+          "Eventos Acestream": "M+ Deportes 4 720p * | M+ Deportes 4 1080p *",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Deportes 4 720p *",
+                "href": "acestream://3964457f69465b0b04dcd3c1218103b0197cbb39"
+              },
+              {
+                "texto": "M+ Deportes 4 1080p *",
+                "href": "acestream://a8f257fe23dc566e85edc3d87a089fefc38bdcfe"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "11:10",
+          "Competición": "Masters París | 1ª Ronda",
+          "Evento": "I. Buse Z. Bergs",
+          "Canales": "M+ Deportes 3 (65)",
+          "Eventos Acestream": "M+ Deportes 3 720p * | M+ Deportes 3 720p ** | M+ Deportes 3 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Deportes 3 720p *",
+                "href": "acestream://8492609b5378ef969bb30c148087a46a31f0b5d0"
+              },
+              {
+                "texto": "M+ Deportes 3 720p **",
+                "href": "acestream://cdba3600fddcc84521046737da10394250036bed"
+              },
+              {
+                "texto": "M+ Deportes 3 1080p **",
+                "href": "acestream://54bbef244c11ceab869f2d962fb9a744d295ee6b"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "11:40",
+          "Competición": "WTA Torneo de Hong Kong | 1ª Ronda",
+          "Evento": "V. Williams M. Stoiana",
+          "Canales": "Tennis Channel - Orange TV (131)",
+          "Eventos Acestream": "Tennis Channel 1080p * | Tennis Channel 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "Tennis Channel 1080p *",
+                "href": "acestream://a374064c68314cd8bc488257067db9148b3c54e0"
+              },
+              {
+                "texto": "Tennis Channel 1080p **",
+                "href": "acestream://0a0d41e8d606f38757c1453a15df5dcd0491507b"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "PD",
+          "Competición": "Campeonato del Mundo | Campeonato del Mundo",
+          "Evento": "Fase de grupos",
+          "Canales": "Canal por confirmar",
+          "Eventos Acestream": "-"
+        },
+        {
+          "Hora": "12:30",
+          "Competición": "Masters París | 1ª Ronda",
+          "Evento": "L. Van Assche M. Navone",
+          "Canales": "M+ Deportes 4 (191)",
+          "Eventos Acestream": "M+ Deportes 4 720p * | M+ Deportes 4 1080p *",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Deportes 4 720p *",
+                "href": "acestream://3964457f69465b0b04dcd3c1218103b0197cbb39"
+              },
+              {
+                "texto": "M+ Deportes 4 1080p *",
+                "href": "acestream://a8f257fe23dc566e85edc3d87a089fefc38bdcfe"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "13:15",
+          "Competición": "Masters París | 1ª Ronda",
+          "Evento": "A. Tabilo R. Jódar",
+          "Canales": "Movistar Plus+ (M7) | M+ Deportes 2 (64)",
+          "Eventos Acestream": "MOVISTAR PLUS 720p * | MOVISTAR PLUS 1080p * | MOVISTAR PLUS 1080p ** | M+ Deportes 2 720p ** | M+ Deportes 2 1080p * | M+ Deportes 2 1080p ** | M+ Deportes 2 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "MOVISTAR PLUS 720p *",
+                "href": "acestream://3fc7a941ed2c1459dfd55f74ed72640e946f213d"
+              },
+              {
+                "texto": "MOVISTAR PLUS 1080p *",
+                "href": "acestream://42b45039548159e5e9900672a488e73a94838bc8"
+              },
+              {
+                "texto": "MOVISTAR PLUS 1080p **",
+                "href": "acestream://2c2118129349debdf4dafb2d1906e3c0b33e44df"
+              },
+              {
+                "texto": "M+ Deportes 2 720p **",
+                "href": "acestream://49612f9e8190d4eb79f666af2c537c6fe9ec4014"
+              },
+              {
+                "texto": "M+ Deportes 2 1080p *",
+                "href": "acestream://77290ae42871331705d95f8ac4eb597412f6008c"
+              },
+              {
+                "texto": "M+ Deportes 2 1080p **",
+                "href": "acestream://882f5331b0b20056f3d8e685ed2498909f4115c8"
+              },
+              {
+                "texto": "M+ Deportes 2 1080p **",
+                "href": "acestream://4a2384051213222a0e29111dc5d94cac35b3a521"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "13:15",
+          "Competición": "WTA Torneo de Hong Kong | 1ª Ronda",
+          "Evento": "X. Wang A. Karunaratne",
+          "Canales": "Tennis Channel - Orange TV (131)",
+          "Eventos Acestream": "Tennis Channel 1080p * | Tennis Channel 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "Tennis Channel 1080p *",
+                "href": "acestream://a374064c68314cd8bc488257067db9148b3c54e0"
+              },
+              {
+                "texto": "Tennis Channel 1080p **",
+                "href": "acestream://0a0d41e8d606f38757c1453a15df5dcd0491507b"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "14:00",
+          "Competición": "Masters París | 1ª Ronda",
+          "Evento": "D. Mérida A. Blockx",
+          "Canales": "M+ Deportes 3 (65)",
+          "Eventos Acestream": "M+ Deportes 3 720p * | M+ Deportes 3 720p ** | M+ Deportes 3 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Deportes 3 720p *",
+                "href": "acestream://8492609b5378ef969bb30c148087a46a31f0b5d0"
+              },
+              {
+                "texto": "M+ Deportes 3 720p **",
+                "href": "acestream://cdba3600fddcc84521046737da10394250036bed"
+              },
+              {
+                "texto": "M+ Deportes 3 1080p **",
+                "href": "acestream://54bbef244c11ceab869f2d962fb9a744d295ee6b"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "14:50",
+          "Competición": "Masters París | 1ª Ronda",
+          "Evento": "C. Norrie M. Arnaldi",
+          "Canales": "M+ Deportes 4 (191)",
+          "Eventos Acestream": "M+ Deportes 4 720p * | M+ Deportes 4 1080p *",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Deportes 4 720p *",
+                "href": "acestream://3964457f69465b0b04dcd3c1218103b0197cbb39"
+              },
+              {
+                "texto": "M+ Deportes 4 1080p *",
+                "href": "acestream://a8f257fe23dc566e85edc3d87a089fefc38bdcfe"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "14:55",
+          "Competición": "Masters París | 1ª Ronda",
+          "Evento": "C. Ruud JM. Cerúndolo",
+          "Canales": "M+ Deportes 2 (64)",
+          "Eventos Acestream": "M+ Deportes 2 720p ** | M+ Deportes 2 1080p * | M+ Deportes 2 1080p ** | M+ Deportes 2 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Deportes 2 720p **",
+                "href": "acestream://49612f9e8190d4eb79f666af2c537c6fe9ec4014"
+              },
+              {
+                "texto": "M+ Deportes 2 1080p *",
+                "href": "acestream://77290ae42871331705d95f8ac4eb597412f6008c"
+              },
+              {
+                "texto": "M+ Deportes 2 1080p **",
+                "href": "acestream://882f5331b0b20056f3d8e685ed2498909f4115c8"
+              },
+              {
+                "texto": "M+ Deportes 2 1080p **",
+                "href": "acestream://4a2384051213222a0e29111dc5d94cac35b3a521"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "16:10",
+          "Competición": "Masters París | 1ª Ronda",
+          "Evento": "M. Bellucci L. Sonego",
+          "Canales": "M+ Deportes 3 (65)",
+          "Eventos Acestream": "M+ Deportes 3 720p * | M+ Deportes 3 720p ** | M+ Deportes 3 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Deportes 3 720p *",
+                "href": "acestream://8492609b5378ef969bb30c148087a46a31f0b5d0"
+              },
+              {
+                "texto": "M+ Deportes 3 720p **",
+                "href": "acestream://cdba3600fddcc84521046737da10394250036bed"
+              },
+              {
+                "texto": "M+ Deportes 3 1080p **",
+                "href": "acestream://54bbef244c11ceab869f2d962fb9a744d295ee6b"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "16:15",
+          "Competición": "LaLiga Hypermotion",
+          "Evento": "Real Oviedo UD Las Palmas",
+          "Canales": "LALIGA TV Hypermotion (M56 O120) | Orange Fútbol 2 (108)",
+          "Eventos Acestream": "LaLiga TV Hypermotion 720p * | LaLiga TV Hypermotion 720p ** | LaLiga TV Hypermotion 1080p *",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "LaLiga TV Hypermotion 720p *",
+                "href": "acestream://dfe4449fc3e0c867eb9be2f50d8efdb9a699410c"
+              },
+              {
+                "texto": "LaLiga TV Hypermotion 720p **",
+                "href": "acestream://9e94331bb2d541dc3a2ecc5226168ffee5b3b440"
+              },
+              {
+                "texto": "LaLiga TV Hypermotion 1080p *",
+                "href": "acestream://b9633df95d61d51348a2e8a9f88a2c123d140f67"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "16:55",
+          "Competición": "Masters París | 1ª Ronda",
+          "Evento": "K. Jacquet T. Machac",
+          "Canales": "M+ Deportes 4 (191)",
+          "Eventos Acestream": "M+ Deportes 4 720p * | M+ Deportes 4 1080p *",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Deportes 4 720p *",
+                "href": "acestream://3964457f69465b0b04dcd3c1218103b0197cbb39"
+              },
+              {
+                "texto": "M+ Deportes 4 1080p *",
+                "href": "acestream://a8f257fe23dc566e85edc3d87a089fefc38bdcfe"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "18:15",
+          "Competición": "Primera Federación | Grupo 2",
+          "Evento": "Real Jaén Algeciras CF",
+          "Canales": "Primera Federación (M53 O125)",
+          "Eventos Acestream": "RFEF TV 1080p * | RFEF TV 1080p * | RFEF TV 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "RFEF TV 1080p *",
+                "href": "acestream://f91cf99e803b9bec591621157fbc4027e4e9b799"
+              },
+              {
+                "texto": "RFEF TV 1080p *",
+                "href": "acestream://dd48492dbc619b29670a5e25fe8acf9834e9d023"
+              },
+              {
+                "texto": "RFEF TV 1080p **",
+                "href": "acestream://3d001b30e28db897b25ce918371d52d3b5b7988f"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "18:30",
+          "Competición": "LaLiga Hypermotion",
+          "Evento": "Real Valladolid Leganés",
+          "Canales": "LALIGA TV Hypermotion (M56 O120)",
+          "Eventos Acestream": "LaLiga TV Hypermotion 720p * | LaLiga TV Hypermotion 720p ** | LaLiga TV Hypermotion 1080p *",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "LaLiga TV Hypermotion 720p *",
+                "href": "acestream://dfe4449fc3e0c867eb9be2f50d8efdb9a699410c"
+              },
+              {
+                "texto": "LaLiga TV Hypermotion 720p **",
+                "href": "acestream://9e94331bb2d541dc3a2ecc5226168ffee5b3b440"
+              },
+              {
+                "texto": "LaLiga TV Hypermotion 1080p *",
+                "href": "acestream://b9633df95d61d51348a2e8a9f88a2c123d140f67"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "18:40",
+          "Competición": "Masters París | 1ª Ronda",
+          "Evento": "A. Molcan T. Droguet",
+          "Canales": "M+ Deportes 4 (191)",
+          "Eventos Acestream": "M+ Deportes 4 720p * | M+ Deportes 4 1080p *",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Deportes 4 720p *",
+                "href": "acestream://3964457f69465b0b04dcd3c1218103b0197cbb39"
+              },
+              {
+                "texto": "M+ Deportes 4 1080p *",
+                "href": "acestream://a8f257fe23dc566e85edc3d87a089fefc38bdcfe"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "19:00",
+          "Competición": "Masters París | 1ª Ronda",
+          "Evento": "D. Shapovalov K. Khachanov",
+          "Canales": "M+ Deportes 2 (64)",
+          "Eventos Acestream": "M+ Deportes 2 720p ** | M+ Deportes 2 1080p * | M+ Deportes 2 1080p ** | M+ Deportes 2 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Deportes 2 720p **",
+                "href": "acestream://49612f9e8190d4eb79f666af2c537c6fe9ec4014"
+              },
+              {
+                "texto": "M+ Deportes 2 1080p *",
+                "href": "acestream://77290ae42871331705d95f8ac4eb597412f6008c"
+              },
+              {
+                "texto": "M+ Deportes 2 1080p **",
+                "href": "acestream://882f5331b0b20056f3d8e685ed2498909f4115c8"
+              },
+              {
+                "texto": "M+ Deportes 2 1080p **",
+                "href": "acestream://4a2384051213222a0e29111dc5d94cac35b3a521"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "20:00",
+          "Competición": "Liga F",
+          "Evento": "Costa Adeje Tenerife Athletic Femenino",
+          "Canales": "Teledeporte",
+          "Eventos Acestream": "Teledeporte 720p ** | Teledeporte 1080p * | Teledeporte 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "Teledeporte 720p **",
+                "href": "acestream://bb0ec8a302119f3fd48edf7ccfdd99d3089ac171"
+              },
+              {
+                "texto": "Teledeporte 1080p *",
+                "href": "acestream://03eaa3007ce82840838fa8164f8e0131044d71a3"
+              },
+              {
+                "texto": "Teledeporte 1080p **",
+                "href": "acestream://18be1bb5539df74077c03c6e0dc63ef180cc9cf1"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "20:30",
+          "Competición": "Masters París | 1ª Ronda",
+          "Evento": "U. Humbert B. Van de Zandschulp",
+          "Canales": "M+ Deportes 2 (64)",
+          "Eventos Acestream": "M+ Deportes 2 720p ** | M+ Deportes 2 1080p * | M+ Deportes 2 1080p ** | M+ Deportes 2 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Deportes 2 720p **",
+                "href": "acestream://49612f9e8190d4eb79f666af2c537c6fe9ec4014"
+              },
+              {
+                "texto": "M+ Deportes 2 1080p *",
+                "href": "acestream://77290ae42871331705d95f8ac4eb597412f6008c"
+              },
+              {
+                "texto": "M+ Deportes 2 1080p **",
+                "href": "acestream://882f5331b0b20056f3d8e685ed2498909f4115c8"
+              },
+              {
+                "texto": "M+ Deportes 2 1080p **",
+                "href": "acestream://4a2384051213222a0e29111dc5d94cac35b3a521"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "20:30",
+          "Competición": "Primera Federación | Grupo 2",
+          "Evento": "Huesca Nástic Tarragona",
+          "Canales": "Primera Federación (M53 O125)",
+          "Eventos Acestream": "RFEF TV 1080p * | RFEF TV 1080p * | RFEF TV 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "RFEF TV 1080p *",
+                "href": "acestream://f91cf99e803b9bec591621157fbc4027e4e9b799"
+              },
+              {
+                "texto": "RFEF TV 1080p *",
+                "href": "acestream://dd48492dbc619b29670a5e25fe8acf9834e9d023"
+              },
+              {
+                "texto": "RFEF TV 1080p **",
+                "href": "acestream://3d001b30e28db897b25ce918371d52d3b5b7988f"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "21:00",
+          "Competición": "La Liga EA Sports",
+          "Evento": "Deportivo Osasuna",
+          "Canales": "M+ LALIGA (M54 O110) | M+ LALIGA HDR (M440 O111)",
+          "Eventos Acestream": "M+ LaLiga 720p * | M+ LaLiga 720p * | M+ LaLiga 720p ** | M+ LaLiga 1080p * | M+ LaLiga 1080p ** | M+ LaLiga 1080p ** | M+ LaLiga 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ LaLiga 720p *",
+                "href": "acestream://1cb21bc211dd9122259a72d9715bcee36dc34ca6"
+              },
+              {
+                "texto": "M+ LaLiga 720p *",
+                "href": "acestream://2816e0c7e4f6a19a0cc9d1c363936a186ab89771"
+              },
+              {
+                "texto": "M+ LaLiga 720p **",
+                "href": "acestream://79388a57f472807e60c4ca92cbc8a4e56dd6e4c2"
+              },
+              {
+                "texto": "M+ LaLiga 1080p *",
+                "href": "acestream://08c23a83ea87c2fcd76c2f31b58b64d64ae57a75"
+              },
+              {
+                "texto": "M+ LaLiga 1080p **",
+                "href": "acestream://e48e16ce43e47e5457aaf21956d80f5807f607e2"
+              },
+              {
+                "texto": "M+ LaLiga 1080p **",
+                "href": "acestream://a2e41ad1aa0074ee977650085b20cf7ba2eeeb77"
+              },
+              {
+                "texto": "M+ LaLiga 1080p **",
+                "href": "acestream://f360890431ea544545be7594a7eb91d53a59b433"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "21:00",
+          "Competición": "LaLiga Hypermotion",
+          "Evento": "Mallorca Cádiz CF",
+          "Canales": "LALIGA TV Hypermotion (M56 O120) | Orange Fútbol 2 (108)",
+          "Eventos Acestream": "LaLiga TV Hypermotion 720p * | LaLiga TV Hypermotion 720p ** | LaLiga TV Hypermotion 1080p *",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "LaLiga TV Hypermotion 720p *",
+                "href": "acestream://dfe4449fc3e0c867eb9be2f50d8efdb9a699410c"
+              },
+              {
+                "texto": "LaLiga TV Hypermotion 720p **",
+                "href": "acestream://9e94331bb2d541dc3a2ecc5226168ffee5b3b440"
+              },
+              {
+                "texto": "LaLiga TV Hypermotion 1080p *",
+                "href": "acestream://b9633df95d61d51348a2e8a9f88a2c123d140f67"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "tablaManana",
+      "titulo": "Eventos de Mañana (03/11/2026)",
+      "visible": true,
+      "columnas": [
+        "Hora",
+        "Competición",
+        "Evento",
+        "Canales",
+        "Eventos Acestream"
+      ],
+      "filas": [
+        {
+          "Hora": "01:00",
+          "Competición": "NBA | Liga Regular",
+          "Evento": "Cleveland Cavaliers Oklahoma C. Thunder",
+          "Canales": "NBA League Pass",
+          "Eventos Acestream": "NBA League Pass 1080p * | NBA League Pass 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "NBA League Pass 1080p *",
+                "href": "acestream://e70a62fd486ce0d4970bec6849023c781efb7c31"
+              },
+              {
+                "texto": "NBA League Pass 1080p **",
+                "href": "acestream://d4ffff16fcb461fc8d926a5698ee2e23d0cf3620"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "01:30",
+          "Competición": "NBA | Liga Regular",
+          "Evento": "Indiana Pacers Atlanta Hawks",
+          "Canales": "NBA League Pass",
+          "Eventos Acestream": "NBA League Pass 1080p * | NBA League Pass 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "NBA League Pass 1080p *",
+                "href": "acestream://e70a62fd486ce0d4970bec6849023c781efb7c31"
+              },
+              {
+                "texto": "NBA League Pass 1080p **",
+                "href": "acestream://d4ffff16fcb461fc8d926a5698ee2e23d0cf3620"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "01:30",
+          "Competición": "NBA | Liga Regular",
+          "Evento": "Orlando Magic Washington Wizards",
+          "Canales": "NBA League Pass",
+          "Eventos Acestream": "NBA League Pass 1080p * | NBA League Pass 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "NBA League Pass 1080p *",
+                "href": "acestream://e70a62fd486ce0d4970bec6849023c781efb7c31"
+              },
+              {
+                "texto": "NBA League Pass 1080p **",
+                "href": "acestream://d4ffff16fcb461fc8d926a5698ee2e23d0cf3620"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "01:30",
+          "Competición": "NBA | Liga Regular",
+          "Evento": "Philadelphia 76ers Chicago Bulls",
+          "Canales": "NBA League Pass",
+          "Eventos Acestream": "NBA League Pass 1080p * | NBA League Pass 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "NBA League Pass 1080p *",
+                "href": "acestream://e70a62fd486ce0d4970bec6849023c781efb7c31"
+              },
+              {
+                "texto": "NBA League Pass 1080p **",
+                "href": "acestream://d4ffff16fcb461fc8d926a5698ee2e23d0cf3620"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "01:30",
+          "Competición": "NBA | Liga Regular",
+          "Evento": "New York Knicks Brooklyn Nets",
+          "Canales": "NBA League Pass",
+          "Eventos Acestream": "NBA League Pass 1080p * | NBA League Pass 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "NBA League Pass 1080p *",
+                "href": "acestream://e70a62fd486ce0d4970bec6849023c781efb7c31"
+              },
+              {
+                "texto": "NBA League Pass 1080p **",
+                "href": "acestream://d4ffff16fcb461fc8d926a5698ee2e23d0cf3620"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "01:30",
+          "Competición": "NBA | Liga Regular",
+          "Evento": "Charlotte Hornets Detroit Pistons",
+          "Canales": "NBA League Pass",
+          "Eventos Acestream": "NBA League Pass 1080p * | NBA League Pass 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "NBA League Pass 1080p *",
+                "href": "acestream://e70a62fd486ce0d4970bec6849023c781efb7c31"
+              },
+              {
+                "texto": "NBA League Pass 1080p **",
+                "href": "acestream://d4ffff16fcb461fc8d926a5698ee2e23d0cf3620"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "02:00",
+          "Competición": "NBA | Liga Regular",
+          "Evento": "Minnesota Timberwolves Milwaukee Bucks",
+          "Canales": "NBA League Pass",
+          "Eventos Acestream": "NBA League Pass 1080p * | NBA League Pass 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "NBA League Pass 1080p *",
+                "href": "acestream://e70a62fd486ce0d4970bec6849023c781efb7c31"
+              },
+              {
+                "texto": "NBA League Pass 1080p **",
+                "href": "acestream://d4ffff16fcb461fc8d926a5698ee2e23d0cf3620"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "02:00",
+          "Competición": "NBA | Liga Regular",
+          "Evento": "Dallas Mavericks Sacramento Kings",
+          "Canales": "NBA League Pass",
+          "Eventos Acestream": "NBA League Pass 1080p * | NBA League Pass 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "NBA League Pass 1080p *",
+                "href": "acestream://e70a62fd486ce0d4970bec6849023c781efb7c31"
+              },
+              {
+                "texto": "NBA League Pass 1080p **",
+                "href": "acestream://d4ffff16fcb461fc8d926a5698ee2e23d0cf3620"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "02:00",
+          "Competición": "NBA | Liga Regular",
+          "Evento": "Memphis Grizzlies New Orleans Pelicans",
+          "Canales": "NBA League Pass",
+          "Eventos Acestream": "NBA League Pass 1080p * | NBA League Pass 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "NBA League Pass 1080p *",
+                "href": "acestream://e70a62fd486ce0d4970bec6849023c781efb7c31"
+              },
+              {
+                "texto": "NBA League Pass 1080p **",
+                "href": "acestream://d4ffff16fcb461fc8d926a5698ee2e23d0cf3620"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "02:30",
+          "Competición": "NBA | Liga Regular",
+          "Evento": "San Antonio Spurs Utah Jazz",
+          "Canales": "NBA League Pass",
+          "Eventos Acestream": "NBA League Pass 1080p * | NBA League Pass 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "NBA League Pass 1080p *",
+                "href": "acestream://e70a62fd486ce0d4970bec6849023c781efb7c31"
+              },
+              {
+                "texto": "NBA League Pass 1080p **",
+                "href": "acestream://d4ffff16fcb461fc8d926a5698ee2e23d0cf3620"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "02:30",
+          "Competición": "NBA | Liga Regular",
+          "Evento": "Houston Rockets Boston Celtics",
+          "Canales": "NBA League Pass",
+          "Eventos Acestream": "NBA League Pass 1080p * | NBA League Pass 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "NBA League Pass 1080p *",
+                "href": "acestream://e70a62fd486ce0d4970bec6849023c781efb7c31"
+              },
+              {
+                "texto": "NBA League Pass 1080p **",
+                "href": "acestream://d4ffff16fcb461fc8d926a5698ee2e23d0cf3620"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "03:00",
+          "Competición": "NBA | Liga Regular",
+          "Evento": "Denver Nuggets Portland Trail Blazers",
+          "Canales": "NBA League Pass",
+          "Eventos Acestream": "NBA League Pass 1080p * | NBA League Pass 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "NBA League Pass 1080p *",
+                "href": "acestream://e70a62fd486ce0d4970bec6849023c781efb7c31"
+              },
+              {
+                "texto": "NBA League Pass 1080p **",
+                "href": "acestream://d4ffff16fcb461fc8d926a5698ee2e23d0cf3620"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "04:00",
+          "Competición": "NBA | Liga Regular",
+          "Evento": "Los Angeles Lakers Miami Heat",
+          "Canales": "NBA League Pass",
+          "Eventos Acestream": "NBA League Pass 1080p * | NBA League Pass 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "NBA League Pass 1080p *",
+                "href": "acestream://e70a62fd486ce0d4970bec6849023c781efb7c31"
+              },
+              {
+                "texto": "NBA League Pass 1080p **",
+                "href": "acestream://d4ffff16fcb461fc8d926a5698ee2e23d0cf3620"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "04:00",
+          "Competición": "NBA | Liga Regular",
+          "Evento": "Los Angeles Clippers Toronto Raptors",
+          "Canales": "NBA League Pass",
+          "Eventos Acestream": "NBA League Pass 1080p * | NBA League Pass 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "NBA League Pass 1080p *",
+                "href": "acestream://e70a62fd486ce0d4970bec6849023c781efb7c31"
+              },
+              {
+                "texto": "NBA League Pass 1080p **",
+                "href": "acestream://d4ffff16fcb461fc8d926a5698ee2e23d0cf3620"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "04:00",
+          "Competición": "NBA | Liga Regular",
+          "Evento": "Golden State Warriors Phoenix Suns",
+          "Canales": "NBA League Pass",
+          "Eventos Acestream": "NBA League Pass 1080p * | NBA League Pass 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "NBA League Pass 1080p *",
+                "href": "acestream://e70a62fd486ce0d4970bec6849023c781efb7c31"
+              },
+              {
+                "texto": "NBA League Pass 1080p **",
+                "href": "acestream://d4ffff16fcb461fc8d926a5698ee2e23d0cf3620"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "07:05",
+          "Competición": "WTA Torneo de Hong Kong",
+          "Evento": "1ª Ronda | WTA 250",
+          "Canales": "Tennis Channel - Orange TV (131)",
+          "Eventos Acestream": "Tennis Channel 1080p * | Tennis Channel 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "Tennis Channel 1080p *",
+                "href": "acestream://a374064c68314cd8bc488257067db9148b3c54e0"
+              },
+              {
+                "texto": "Tennis Channel 1080p **",
+                "href": "acestream://0a0d41e8d606f38757c1453a15df5dcd0491507b"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "PD",
+          "Competición": "Campeonato del Mundo",
+          "Evento": "Fase de grupos",
+          "Canales": "Canal por confirmar",
+          "Eventos Acestream": "-"
+        },
+        {
+          "Hora": "13:00",
+          "Competición": "UEFA Youth League | Fase Liga",
+          "Evento": "Villarreal Academy PSG Academy",
+          "Canales": "Canal por confirmar",
+          "Eventos Acestream": "-"
+        },
+        {
+          "Hora": "16:00",
+          "Competición": "UEFA Youth League | Fase Liga",
+          "Evento": "At. Madrid Academy Bayern Academy",
+          "Canales": "M+ Vamos (8 y 50) | M+ Liga de Campeones 2 (M61 O117)",
+          "Eventos Acestream": "M+ Vamos 720p * | M+ Vamos 720p ** | M+ Vamos 1080p * | M+ Vamos 1080p ** | M+ Liga de Campeones 2 720p ** | M+ Liga de Campeones 2 1080p ** | M+ Liga de Campeones 2 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Vamos 720p *",
+                "href": "acestream://eae4f313851a829e416ac4c8c4b8d962343e18f7"
+              },
+              {
+                "texto": "M+ Vamos 720p **",
+                "href": "acestream://acae841dea2c2b1181ed66625cdc62e0772a18be"
+              },
+              {
+                "texto": "M+ Vamos 1080p *",
+                "href": "acestream://81beeabdc46e0aa59165f513e5c3a8e65e6bd1a9"
+              },
+              {
+                "texto": "M+ Vamos 1080p **",
+                "href": "acestream://b3a60072e264e2d628efa551d7f58c2a8e9a9fcb"
+              },
+              {
+                "texto": "M+ Liga de Campeones 2 720p **",
+                "href": "acestream://4d43baa9e2a5b40d5e2a47017dd87fad160f57a8"
+              },
+              {
+                "texto": "M+ Liga de Campeones 2 1080p **",
+                "href": "acestream://f805809d276ce04968a82b88ed839e71b6f483ab"
+              },
+              {
+                "texto": "M+ Liga de Campeones 2 1080p **",
+                "href": "acestream://7998690466d735902a989522d58def971108378d"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "18:00",
+          "Competición": "Euroliga Femenina | Liga Regular",
+          "Evento": "Valencia Basket Fenerbahce Istanbul",
+          "Canales": "À Punt Mèdia | M+ Baloncesto 2 (M67)",
+          "Eventos Acestream": "M+ Baloncesto 2 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Baloncesto 2 1080p **",
+                "href": "acestream://40814041b787c550ee3293b1a4b6a18f9a44d6bb"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "18:00",
+          "Competición": "Copa de la Reina | 3ª Ronda",
+          "Evento": "Celta Femenino Espanyol Femenino",
+          "Canales": "Teledeporte | Esport3 (Cataluña)",
+          "Eventos Acestream": "Teledeporte 720p ** | Teledeporte 1080p * | Teledeporte 1080p ** | Esport3 720p * | Esport3 720p ** | Esport3 1080p *",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "Teledeporte 720p **",
+                "href": "acestream://bb0ec8a302119f3fd48edf7ccfdd99d3089ac171"
+              },
+              {
+                "texto": "Teledeporte 1080p *",
+                "href": "acestream://03eaa3007ce82840838fa8164f8e0131044d71a3"
+              },
+              {
+                "texto": "Teledeporte 1080p **",
+                "href": "acestream://18be1bb5539df74077c03c6e0dc63ef180cc9cf1"
+              },
+              {
+                "texto": "Esport3 720p *",
+                "href": "acestream://210392911eb349a40f364519e8364db8e2a319b8"
+              },
+              {
+                "texto": "Esport3 720p **",
+                "href": "acestream://4b51030b131869ed9b543e2f9cf80aabfc770668"
+              },
+              {
+                "texto": "Esport3 1080p *",
+                "href": "acestream://5cb49ceb649f889c8d0b21de02a3500fa73bc5f5"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "18:45",
+          "Competición": "Champions League | Fase Liga",
+          "Evento": "Shakhtar Donetsk Sporting CP",
+          "Canales": "M+ Liga de Campeones 2 (M61 O117)",
+          "Eventos Acestream": "M+ Liga de Campeones 2 720p ** | M+ Liga de Campeones 2 1080p ** | M+ Liga de Campeones 2 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Liga de Campeones 2 720p **",
+                "href": "acestream://4d43baa9e2a5b40d5e2a47017dd87fad160f57a8"
+              },
+              {
+                "texto": "M+ Liga de Campeones 2 1080p **",
+                "href": "acestream://f805809d276ce04968a82b88ed839e71b6f483ab"
+              },
+              {
+                "texto": "M+ Liga de Campeones 2 1080p **",
+                "href": "acestream://7998690466d735902a989522d58def971108378d"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "18:45",
+          "Competición": "Champions League | Fase Liga",
+          "Evento": "Galatasaray Stuttgart",
+          "Canales": "M+ Liga de Campeones 3 (M62 O118)",
+          "Eventos Acestream": "M+ Liga de Campeones 3 720p ** | M+ Liga de Campeones 3 1080p ** | M+ Liga de Campeones 3 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Liga de Campeones 3 720p **",
+                "href": "acestream://6a53508fcfa4958dc64e19458eb7a18b40d6f97d"
+              },
+              {
+                "texto": "M+ Liga de Campeones 3 1080p **",
+                "href": "acestream://58c5dd86de9795971e128043f43cd018b6d7d04e"
+              },
+              {
+                "texto": "M+ Liga de Campeones 3 1080p **",
+                "href": "acestream://0a0b5378b86ba925ee783e21060939f37d1acd12"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "19:00",
+          "Competición": "Copa del Rey | 1ª Ronda",
+          "Evento": "CD Pamplona Eibar",
+          "Canales": "Canal por confirmar",
+          "Eventos Acestream": "-"
+        },
+        {
+          "Hora": "19:00",
+          "Competición": "Copa del Rey | 1ª Ronda",
+          "Evento": "Anaitasuna CD Alavés",
+          "Canales": "Canal por confirmar",
+          "Eventos Acestream": "-"
+        },
+        {
+          "Hora": "19:30",
+          "Competición": "Euroliga Femenina | Liga Regular",
+          "Evento": "Basket Landes Casademont Zaragoza",
+          "Canales": "M+ Vamos (8 y 50) | M+ Baloncesto (M66)",
+          "Eventos Acestream": "M+ Vamos 720p * | M+ Vamos 720p ** | M+ Vamos 1080p * | M+ Vamos 1080p ** | M+ Baloncesto 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Vamos 720p *",
+                "href": "acestream://eae4f313851a829e416ac4c8c4b8d962343e18f7"
+              },
+              {
+                "texto": "M+ Vamos 720p **",
+                "href": "acestream://acae841dea2c2b1181ed66625cdc62e0772a18be"
+              },
+              {
+                "texto": "M+ Vamos 1080p *",
+                "href": "acestream://81beeabdc46e0aa59165f513e5c3a8e65e6bd1a9"
+              },
+              {
+                "texto": "M+ Vamos 1080p **",
+                "href": "acestream://b3a60072e264e2d628efa551d7f58c2a8e9a9fcb"
+              },
+              {
+                "texto": "M+ Baloncesto 1080p **",
+                "href": "acestream://5541b2bda8e75301c470c17b51979238545d3fc9"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "21:00",
+          "Competición": "Champions League | Fase Liga",
+          "Evento": "Villarreal PSG",
+          "Canales": "M+ Liga de Campeones 3 (M62 O118)",
+          "Eventos Acestream": "M+ Liga de Campeones 3 720p ** | M+ Liga de Campeones 3 1080p ** | M+ Liga de Campeones 3 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Liga de Campeones 3 720p **",
+                "href": "acestream://6a53508fcfa4958dc64e19458eb7a18b40d6f97d"
+              },
+              {
+                "texto": "M+ Liga de Campeones 3 1080p **",
+                "href": "acestream://58c5dd86de9795971e128043f43cd018b6d7d04e"
+              },
+              {
+                "texto": "M+ Liga de Campeones 3 1080p **",
+                "href": "acestream://0a0b5378b86ba925ee783e21060939f37d1acd12"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "21:00",
+          "Competición": "Champions League | Fase Liga",
+          "Evento": "At. Madrid FC Bayern",
+          "Canales": "Movistar Plus+ (M7) | Orange Fútbol 1 (107) | M+ Liga de Campeones (M60 O115)",
+          "Eventos Acestream": "MOVISTAR PLUS 720p * | MOVISTAR PLUS 1080p * | MOVISTAR PLUS 1080p ** | M+ Liga de Campeones 720p ** | M+ Liga de Campeones 1080p ** | M+ Liga de Campeones 1080p ** | M+ Liga de Campeones 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "MOVISTAR PLUS 720p *",
+                "href": "acestream://3fc7a941ed2c1459dfd55f74ed72640e946f213d"
+              },
+              {
+                "texto": "MOVISTAR PLUS 1080p *",
+                "href": "acestream://42b45039548159e5e9900672a488e73a94838bc8"
+              },
+              {
+                "texto": "MOVISTAR PLUS 1080p **",
+                "href": "acestream://2c2118129349debdf4dafb2d1906e3c0b33e44df"
+              },
+              {
+                "texto": "M+ Liga de Campeones 720p **",
+                "href": "acestream://a5992c3ab361edb2815a98dc195997b33e706b3d"
+              },
+              {
+                "texto": "M+ Liga de Campeones 1080p **",
+                "href": "acestream://84e4c2ab4a6a399408bc81bfc9ffbf10f7b90580"
+              },
+              {
+                "texto": "M+ Liga de Campeones 1080p **",
+                "href": "acestream://a197b53a1bd96cf3622ac6199d4a11a07b6b6fb7"
+              },
+              {
+                "texto": "M+ Liga de Campeones 1080p **",
+                "href": "acestream://f7f8a7f54e2b85bcb8296092609f84b53fdb5061"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "21:00",
+          "Competición": "Champions League | Fase Liga",
+          "Evento": "FC Barcelona Aston Villa",
+          "Canales": "M+ Liga de Campeones 2 (M61 O117)",
+          "Eventos Acestream": "M+ Liga de Campeones 2 720p ** | M+ Liga de Campeones 2 1080p ** | M+ Liga de Campeones 2 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Liga de Campeones 2 720p **",
+                "href": "acestream://4d43baa9e2a5b40d5e2a47017dd87fad160f57a8"
+              },
+              {
+                "texto": "M+ Liga de Campeones 2 1080p **",
+                "href": "acestream://f805809d276ce04968a82b88ed839e71b6f483ab"
+              },
+              {
+                "texto": "M+ Liga de Campeones 2 1080p **",
+                "href": "acestream://7998690466d735902a989522d58def971108378d"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "21:00",
+          "Competición": "Champions League | Fase Liga",
+          "Evento": "Manchester Utd. AS Roma",
+          "Canales": "M+ Liga de Campeones 8 (M184 O436)",
+          "Eventos Acestream": "-"
+        },
+        {
+          "Hora": "21:00",
+          "Competición": "Champions League | Fase Liga",
+          "Evento": "Feyenoord Inter Milan",
+          "Canales": "M+ Liga de Campeones 5 (M181 O433)",
+          "Eventos Acestream": "M+ Liga de Campeones 5 1080p ** | M+ Liga de Campeones 5 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Liga de Campeones 5 1080p **",
+                "href": "acestream://f64445071c56c7acd893919f9098dfc74f518aec"
+              },
+              {
+                "texto": "M+ Liga de Campeones 5 1080p **",
+                "href": "acestream://6bae4e20f02fe6c3251db7d6fe89d199ad92dcca"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "21:00",
+          "Competición": "Champions League | Fase Liga",
+          "Evento": "LASK Linz Slovan Bratislava",
+          "Canales": "M+ Liga de Campeones 7 (M183 O435)",
+          "Eventos Acestream": "M+ Liga de Campeones 7 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Liga de Campeones 7 1080p **",
+                "href": "acestream://e21dc151fd86e383796ea37fcd714d88de37a4d3"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "21:00",
+          "Competición": "Champions League | Fase Liga",
+          "Evento": "Bodø/Glimt Lille",
+          "Canales": "M+ Liga de Campeones 6 (M182 O434)",
+          "Eventos Acestream": "M+ Liga de Campeones 6 1080p ** | M+ Liga de Campeones 6 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Liga de Campeones 6 1080p **",
+                "href": "acestream://d4103186fd1e5621da852a4e0f1429bf059091b2"
+              },
+              {
+                "texto": "M+ Liga de Campeones 6 1080p **",
+                "href": "acestream://461eb000d199b3122fa63e53cca9c17a92456477"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "tablaPasado",
+      "titulo": "Eventos de Pasado Mañana (04/11/2026)",
+      "visible": true,
+      "columnas": [
+        "Hora",
+        "Competición",
+        "Evento",
+        "Canales",
+        "Eventos Acestream"
+      ],
+      "filas": [
+        {
+          "Hora": "07:05",
+          "Competición": "WTA Torneo de Hong Kong",
+          "Evento": "2ª Ronda | WTA 250",
+          "Canales": "Tennis Channel - Orange TV (131)",
+          "Eventos Acestream": "Tennis Channel 1080p * | Tennis Channel 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "Tennis Channel 1080p *",
+                "href": "acestream://a374064c68314cd8bc488257067db9148b3c54e0"
+              },
+              {
+                "texto": "Tennis Channel 1080p **",
+                "href": "acestream://0a0d41e8d606f38757c1453a15df5dcd0491507b"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "11:00",
+          "Competición": "UEFA Youth League | Fase Liga",
+          "Evento": "AEK FC Academy Real Madrid Academy",
+          "Canales": "Real Madrid TV",
+          "Eventos Acestream": "-"
+        },
+        {
+          "Hora": "PD",
+          "Competición": "Campeonato del Mundo",
+          "Evento": "Fase de grupos",
+          "Canales": "Canal por confirmar",
+          "Eventos Acestream": "-"
+        },
+        {
+          "Hora": "18:00",
+          "Competición": "Eurocup | Liga Regular",
+          "Evento": "Lietkabelis Panevezys Kids&Us Manresa",
+          "Canales": "M+ Vamos (8 y 50) | M+ Baloncesto (M66)",
+          "Eventos Acestream": "M+ Vamos 720p * | M+ Vamos 720p ** | M+ Vamos 1080p * | M+ Vamos 1080p ** | M+ Baloncesto 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Vamos 720p *",
+                "href": "acestream://eae4f313851a829e416ac4c8c4b8d962343e18f7"
+              },
+              {
+                "texto": "M+ Vamos 720p **",
+                "href": "acestream://acae841dea2c2b1181ed66625cdc62e0772a18be"
+              },
+              {
+                "texto": "M+ Vamos 1080p *",
+                "href": "acestream://81beeabdc46e0aa59165f513e5c3a8e65e6bd1a9"
+              },
+              {
+                "texto": "M+ Vamos 1080p **",
+                "href": "acestream://b3a60072e264e2d628efa551d7f58c2a8e9a9fcb"
+              },
+              {
+                "texto": "M+ Baloncesto 1080p **",
+                "href": "acestream://5541b2bda8e75301c470c17b51979238545d3fc9"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "18:45",
+          "Competición": "Champions League | Fase Liga",
+          "Evento": "Fenerbahçe Liverpool",
+          "Canales": "M+ Liga de Campeones 3 (M62 O118)",
+          "Eventos Acestream": "M+ Liga de Campeones 3 720p ** | M+ Liga de Campeones 3 1080p ** | M+ Liga de Campeones 3 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Liga de Campeones 3 720p **",
+                "href": "acestream://6a53508fcfa4958dc64e19458eb7a18b40d6f97d"
+              },
+              {
+                "texto": "M+ Liga de Campeones 3 1080p **",
+                "href": "acestream://58c5dd86de9795971e128043f43cd018b6d7d04e"
+              },
+              {
+                "texto": "M+ Liga de Campeones 3 1080p **",
+                "href": "acestream://0a0b5378b86ba925ee783e21060939f37d1acd12"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "19:00",
+          "Competición": "Copa del Rey | 1ª Ronda",
+          "Evento": "Portugalete Real Unión",
+          "Canales": "Canal por confirmar",
+          "Eventos Acestream": "-"
+        },
+        {
+          "Hora": "19:30",
+          "Competición": "Tercera Federación | Grupo 6",
+          "Evento": "At. Saguntino Jove Español",
+          "Canales": "La Ocho Mediterráneo",
+          "Eventos Acestream": "-"
+        },
+        {
+          "Hora": "20:00",
+          "Competición": "Copa del Rey | 1ª Ronda",
+          "Evento": "Amorebieta UD Logroñés",
+          "Canales": "Canal por confirmar",
+          "Eventos Acestream": "-"
+        },
+        {
+          "Hora": "20:30",
+          "Competición": "Copa del Rey | 1ª Ronda",
+          "Evento": "Utebo Sabadell",
+          "Canales": "Canal por confirmar",
+          "Eventos Acestream": "-"
+        },
+        {
+          "Hora": "20:30",
+          "Competición": "Copa del Rey | 1ª Ronda",
+          "Evento": "CD Minera FC Cartagena",
+          "Canales": "Canal por confirmar",
+          "Eventos Acestream": "-"
+        },
+        {
+          "Hora": "20:30",
+          "Competición": "Copa del Rey | 1ª Ronda",
+          "Evento": "Reus FC Reddis Barakaldo",
+          "Canales": "Canal por confirmar",
+          "Eventos Acestream": "-"
+        },
+        {
+          "Hora": "20:30",
+          "Competición": "Eurocup | Liga Regular",
+          "Evento": "San Pablo Burgos Rostock Seawolves",
+          "Canales": "M+ Baloncesto 2 (M67)",
+          "Eventos Acestream": "M+ Baloncesto 2 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Baloncesto 2 1080p **",
+                "href": "acestream://40814041b787c550ee3293b1a4b6a18f9a44d6bb"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "20:45",
+          "Competición": "Copa del Rey | 1ª Ronda",
+          "Evento": "Calvo Sotelo Puertollano Albacete",
+          "Canales": "Canal por confirmar",
+          "Eventos Acestream": "-"
+        },
+        {
+          "Hora": "20:45",
+          "Competición": "Euroliga | Liga Regular",
+          "Evento": "Real Madrid Baloncesto Panathinaikos BC",
+          "Canales": "Movistar Plus+ (M7) | M+ Baloncesto (M66)",
+          "Eventos Acestream": "MOVISTAR PLUS 720p * | MOVISTAR PLUS 1080p * | MOVISTAR PLUS 1080p ** | M+ Baloncesto 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "MOVISTAR PLUS 720p *",
+                "href": "acestream://3fc7a941ed2c1459dfd55f74ed72640e946f213d"
+              },
+              {
+                "texto": "MOVISTAR PLUS 1080p *",
+                "href": "acestream://42b45039548159e5e9900672a488e73a94838bc8"
+              },
+              {
+                "texto": "MOVISTAR PLUS 1080p **",
+                "href": "acestream://2c2118129349debdf4dafb2d1906e3c0b33e44df"
+              },
+              {
+                "texto": "M+ Baloncesto 1080p **",
+                "href": "acestream://5541b2bda8e75301c470c17b51979238545d3fc9"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "21:00",
+          "Competición": "Champions League | Fase Liga",
+          "Evento": "PSV Eindhoven Club Brugge",
+          "Canales": "M+ Liga de Campeones 6 (M182 O434)",
+          "Eventos Acestream": "M+ Liga de Campeones 6 1080p ** | M+ Liga de Campeones 6 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Liga de Campeones 6 1080p **",
+                "href": "acestream://d4103186fd1e5621da852a4e0f1429bf059091b2"
+              },
+              {
+                "texto": "M+ Liga de Campeones 6 1080p **",
+                "href": "acestream://461eb000d199b3122fa63e53cca9c17a92456477"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "21:00",
+          "Competición": "Champions League | Fase Liga",
+          "Evento": "Borussia Dortmund Real Betis",
+          "Canales": "M+ Liga de Campeones 2 (M61 O117)",
+          "Eventos Acestream": "M+ Liga de Campeones 2 720p ** | M+ Liga de Campeones 2 1080p ** | M+ Liga de Campeones 2 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Liga de Campeones 2 720p **",
+                "href": "acestream://4d43baa9e2a5b40d5e2a47017dd87fad160f57a8"
+              },
+              {
+                "texto": "M+ Liga de Campeones 2 1080p **",
+                "href": "acestream://f805809d276ce04968a82b88ed839e71b6f483ab"
+              },
+              {
+                "texto": "M+ Liga de Campeones 2 1080p **",
+                "href": "acestream://7998690466d735902a989522d58def971108378d"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "21:00",
+          "Competición": "Champions League | Fase Liga",
+          "Evento": "FC Porto Napoli",
+          "Canales": "M+ Liga de Campeones 3 (M62 O118)",
+          "Eventos Acestream": "M+ Liga de Campeones 3 720p ** | M+ Liga de Campeones 3 1080p ** | M+ Liga de Campeones 3 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Liga de Campeones 3 720p **",
+                "href": "acestream://6a53508fcfa4958dc64e19458eb7a18b40d6f97d"
+              },
+              {
+                "texto": "M+ Liga de Campeones 3 1080p **",
+                "href": "acestream://58c5dd86de9795971e128043f43cd018b6d7d04e"
+              },
+              {
+                "texto": "M+ Liga de Campeones 3 1080p **",
+                "href": "acestream://0a0b5378b86ba925ee783e21060939f37d1acd12"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "21:00",
+          "Competición": "Champions League | Fase Liga",
+          "Evento": "Lens Como 1907",
+          "Canales": "M+ Liga de Campeones 7 (M183 O435)",
+          "Eventos Acestream": "M+ Liga de Campeones 7 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Liga de Campeones 7 1080p **",
+                "href": "acestream://e21dc151fd86e383796ea37fcd714d88de37a4d3"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "21:00",
+          "Competición": "Champions League | Fase Liga",
+          "Evento": "RB Leipzig Manchester City",
+          "Canales": "M+ Liga de Campeones 5 (M181 O433)",
+          "Eventos Acestream": "M+ Liga de Campeones 5 1080p ** | M+ Liga de Campeones 5 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Liga de Campeones 5 1080p **",
+                "href": "acestream://f64445071c56c7acd893919f9098dfc74f518aec"
+              },
+              {
+                "texto": "M+ Liga de Campeones 5 1080p **",
+                "href": "acestream://6bae4e20f02fe6c3251db7d6fe89d199ad92dcca"
+              }
+            ]
+          }
+        },
+        {
+          "Hora": "21:00",
+          "Competición": "Champions League | Fase Liga",
+          "Evento": "Slavia Praha Arsenal",
+          "Canales": "M+ Liga de Campeones 8 (M184 O436)",
+          "Eventos Acestream": "-"
+        },
+        {
+          "Hora": "21:00",
+          "Competición": "Champions League | Fase Liga",
+          "Evento": "Viking FK Sabah FK",
+          "Canales": "M+ Liga de Campeones 9 (M185 O437)",
+          "Eventos Acestream": "-"
+        },
+        {
+          "Hora": "21:00",
+          "Competición": "Copa del Rey | 1ª Ronda",
+          "Evento": "CD Badajoz CD Tenerife",
+          "Canales": "Canal por confirmar",
+          "Eventos Acestream": "-"
+        },
+        {
+          "Hora": "23:30",
+          "Competición": "Serie A Brasil",
+          "Evento": "At. Paranaense Vasco da Gama",
+          "Canales": "M+ Liga de Campeones 4 (M180 O119)",
+          "Eventos Acestream": "M+ Liga de Campeones 4 720p ** | M+ Liga de Campeones 4 1080p **",
+          "_enlaces": {
+            "Eventos Acestream": [
+              {
+                "texto": "M+ Liga de Campeones 4 720p **",
+                "href": "acestream://80811895fe50eda570f367c8e2c3fc6a8f6d13f0"
+              },
+              {
+                "texto": "M+ Liga de Campeones 4 1080p **",
+                "href": "acestream://5bda0cd15ed353abfdc5561a945f2f3903c9fa9e"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "tablaAcestream",
+      "titulo": "Enlaces AceStream Disponibles",
+      "visible": true,
+      "columnas": [
+        "Nombre",
+        "Content ID",
+        "Eventos"
+      ],
+      "filas": [
+        {
+          "Nombre": "DAZN Baloncesto 720p **",
+          "Content ID": "1f05f3cd31190e600737e55e4fd36e1bc31554d9",
+          "Eventos": "DAZN Baloncesto (M73 O126)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "DAZN Baloncesto (M73 O126)",
+                "href": "acestream://1f05f3cd31190e600737e55e4fd36e1bc31554d9"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "DAZN Baloncesto 1080p **",
+          "Content ID": "c82ee0456ca8c9009c0a3c277cda5f1516c99e87",
+          "Eventos": "DAZN Baloncesto (M73 O126)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "DAZN Baloncesto (M73 O126)",
+                "href": "acestream://c82ee0456ca8c9009c0a3c277cda5f1516c99e87"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "DAZN Baloncesto 2 1080p **",
+          "Content ID": "35878518a92d879d2ed1a986e279bcf7e88005cb",
+          "Eventos": "DAZN Baloncesto 2 (M74 O127)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "DAZN Baloncesto 2 (M74 O127)",
+                "href": "acestream://35878518a92d879d2ed1a986e279bcf7e88005cb"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "DAZN Baloncesto 3 1080p **",
+          "Content ID": "a9a1818bf61aaad7ab24358239d6a0bfd24d4d9a",
+          "Eventos": "DAZN Baloncesto 3 (M75 O128)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "DAZN Baloncesto 3 (M75 O128)",
+                "href": "acestream://a9a1818bf61aaad7ab24358239d6a0bfd24d4d9a"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Baloncesto 1080p **",
+          "Content ID": "5541b2bda8e75301c470c17b51979238545d3fc9",
+          "Eventos": "M+ Baloncesto (M66)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Baloncesto (M66)",
+                "href": "acestream://5541b2bda8e75301c470c17b51979238545d3fc9"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Baloncesto 2 1080p **",
+          "Content ID": "40814041b787c550ee3293b1a4b6a18f9a44d6bb",
+          "Eventos": "M+ Baloncesto 2 (M67)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Baloncesto 2 (M67)",
+                "href": "acestream://40814041b787c550ee3293b1a4b6a18f9a44d6bb"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Baloncesto 3 1080p **",
+          "Content ID": "2661526775171c9a2fda873a507ae5ba67131115",
+          "Eventos": "M+ Baloncesto 3 (M194)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Baloncesto 3 (M194)",
+                "href": "acestream://2661526775171c9a2fda873a507ae5ba67131115"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "DAZN 1 720p **",
+          "Content ID": "ef24e97a33af196cac24d12e9122163303cea35c",
+          "Eventos": "DAZN 1 (M71 O113)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "DAZN 1 (M71 O113)",
+                "href": "acestream://ef24e97a33af196cac24d12e9122163303cea35c"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "DAZN 1 1080p **",
+          "Content ID": "d386fba698b673e29fe836633a658b946d224bd3",
+          "Eventos": "DAZN 1 (M71 O113)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "DAZN 1 (M71 O113)",
+                "href": "acestream://d386fba698b673e29fe836633a658b946d224bd3"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "DAZN 2 720p **",
+          "Content ID": "eff7c84667c69e18353d8c97ab956915e2403feb",
+          "Eventos": "DAZN 2 (M72)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "DAZN 2 (M72)",
+                "href": "acestream://eff7c84667c69e18353d8c97ab956915e2403feb"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "DAZN 2 1080p *",
+          "Content ID": "6c7907fd3bd1f39145061b432be822e371f81e71",
+          "Eventos": "DAZN 2 (M72)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "DAZN 2 (M72)",
+                "href": "acestream://6c7907fd3bd1f39145061b432be822e371f81e71"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "DAZN 2 1080p **",
+          "Content ID": "84d140989b5f3bc7034f73dba5c6c94d01b1c05a",
+          "Eventos": "DAZN 2 (M72)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "DAZN 2 (M72)",
+                "href": "acestream://84d140989b5f3bc7034f73dba5c6c94d01b1c05a"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "LaLiga TV Hypermotion 720p *",
+          "Content ID": "dfe4449fc3e0c867eb9be2f50d8efdb9a699410c",
+          "Eventos": "LALIGA TV Hypermotion (M56 O120)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "LALIGA TV Hypermotion (M56 O120)",
+                "href": "acestream://dfe4449fc3e0c867eb9be2f50d8efdb9a699410c"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "LaLiga TV Hypermotion 720p **",
+          "Content ID": "9e94331bb2d541dc3a2ecc5226168ffee5b3b440",
+          "Eventos": "LALIGA TV Hypermotion (M56 O120)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "LALIGA TV Hypermotion (M56 O120)",
+                "href": "acestream://9e94331bb2d541dc3a2ecc5226168ffee5b3b440"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "LaLiga TV Hypermotion 1080p *",
+          "Content ID": "b9633df95d61d51348a2e8a9f88a2c123d140f67",
+          "Eventos": "LALIGA TV Hypermotion (M56 O120)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "LALIGA TV Hypermotion (M56 O120)",
+                "href": "acestream://b9633df95d61d51348a2e8a9f88a2c123d140f67"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ LaLiga 720p *",
+          "Content ID": "1cb21bc211dd9122259a72d9715bcee36dc34ca6",
+          "Eventos": "M+ LALIGA (M54 O110)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ LALIGA (M54 O110)",
+                "href": "acestream://1cb21bc211dd9122259a72d9715bcee36dc34ca6"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ LaLiga 720p *",
+          "Content ID": "2816e0c7e4f6a19a0cc9d1c363936a186ab89771",
+          "Eventos": "M+ LALIGA (M54 O110)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ LALIGA (M54 O110)",
+                "href": "acestream://2816e0c7e4f6a19a0cc9d1c363936a186ab89771"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ LaLiga 720p **",
+          "Content ID": "79388a57f472807e60c4ca92cbc8a4e56dd6e4c2",
+          "Eventos": "M+ LALIGA (M54 O110)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ LALIGA (M54 O110)",
+                "href": "acestream://79388a57f472807e60c4ca92cbc8a4e56dd6e4c2"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ LaLiga 1080p *",
+          "Content ID": "08c23a83ea87c2fcd76c2f31b58b64d64ae57a75",
+          "Eventos": "M+ LALIGA (M54 O110)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ LALIGA (M54 O110)",
+                "href": "acestream://08c23a83ea87c2fcd76c2f31b58b64d64ae57a75"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ LaLiga 1080p **",
+          "Content ID": "e48e16ce43e47e5457aaf21956d80f5807f607e2",
+          "Eventos": "M+ LALIGA (M54 O110)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ LALIGA (M54 O110)",
+                "href": "acestream://e48e16ce43e47e5457aaf21956d80f5807f607e2"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ LaLiga 1080p **",
+          "Content ID": "a2e41ad1aa0074ee977650085b20cf7ba2eeeb77",
+          "Eventos": "M+ LALIGA (M54 O110)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ LALIGA (M54 O110)",
+                "href": "acestream://a2e41ad1aa0074ee977650085b20cf7ba2eeeb77"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ LaLiga 1080p **",
+          "Content ID": "f360890431ea544545be7594a7eb91d53a59b433",
+          "Eventos": "M+ LALIGA (M54 O110)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ LALIGA (M54 O110)",
+                "href": "acestream://f360890431ea544545be7594a7eb91d53a59b433"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Liga de Campeones 720p **",
+          "Content ID": "a5992c3ab361edb2815a98dc195997b33e706b3d",
+          "Eventos": "M+ Liga de Campeones (M60 O115)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Liga de Campeones (M60 O115)",
+                "href": "acestream://a5992c3ab361edb2815a98dc195997b33e706b3d"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Liga de Campeones 1080p **",
+          "Content ID": "84e4c2ab4a6a399408bc81bfc9ffbf10f7b90580",
+          "Eventos": "M+ Liga de Campeones (M60 O115)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Liga de Campeones (M60 O115)",
+                "href": "acestream://84e4c2ab4a6a399408bc81bfc9ffbf10f7b90580"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Liga de Campeones 1080p **",
+          "Content ID": "a197b53a1bd96cf3622ac6199d4a11a07b6b6fb7",
+          "Eventos": "M+ Liga de Campeones (M60 O115)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Liga de Campeones (M60 O115)",
+                "href": "acestream://a197b53a1bd96cf3622ac6199d4a11a07b6b6fb7"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Liga de Campeones 1080p **",
+          "Content ID": "f7f8a7f54e2b85bcb8296092609f84b53fdb5061",
+          "Eventos": "M+ Liga de Campeones (M60 O115)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Liga de Campeones (M60 O115)",
+                "href": "acestream://f7f8a7f54e2b85bcb8296092609f84b53fdb5061"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Liga de Campeones 2 720p **",
+          "Content ID": "4d43baa9e2a5b40d5e2a47017dd87fad160f57a8",
+          "Eventos": "M+ Liga de Campeones 2 (M61 O117)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Liga de Campeones 2 (M61 O117)",
+                "href": "acestream://4d43baa9e2a5b40d5e2a47017dd87fad160f57a8"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Liga de Campeones 2 1080p **",
+          "Content ID": "f805809d276ce04968a82b88ed839e71b6f483ab",
+          "Eventos": "M+ Liga de Campeones 2 (M61 O117)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Liga de Campeones 2 (M61 O117)",
+                "href": "acestream://f805809d276ce04968a82b88ed839e71b6f483ab"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Liga de Campeones 2 1080p **",
+          "Content ID": "7998690466d735902a989522d58def971108378d",
+          "Eventos": "M+ Liga de Campeones 2 (M61 O117)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Liga de Campeones 2 (M61 O117)",
+                "href": "acestream://7998690466d735902a989522d58def971108378d"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Liga de Campeones 3 720p **",
+          "Content ID": "6a53508fcfa4958dc64e19458eb7a18b40d6f97d",
+          "Eventos": "M+ Liga de Campeones 3 (M62 O118)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Liga de Campeones 3 (M62 O118)",
+                "href": "acestream://6a53508fcfa4958dc64e19458eb7a18b40d6f97d"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Liga de Campeones 3 1080p **",
+          "Content ID": "58c5dd86de9795971e128043f43cd018b6d7d04e",
+          "Eventos": "M+ Liga de Campeones 3 (M62 O118)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Liga de Campeones 3 (M62 O118)",
+                "href": "acestream://58c5dd86de9795971e128043f43cd018b6d7d04e"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Liga de Campeones 3 1080p **",
+          "Content ID": "0a0b5378b86ba925ee783e21060939f37d1acd12",
+          "Eventos": "M+ Liga de Campeones 3 (M62 O118)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Liga de Campeones 3 (M62 O118)",
+                "href": "acestream://0a0b5378b86ba925ee783e21060939f37d1acd12"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Liga de Campeones 4 720p **",
+          "Content ID": "80811895fe50eda570f367c8e2c3fc6a8f6d13f0",
+          "Eventos": "M+ Liga de Campeones 4 (M180 O119)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Liga de Campeones 4 (M180 O119)",
+                "href": "acestream://80811895fe50eda570f367c8e2c3fc6a8f6d13f0"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Liga de Campeones 4 1080p **",
+          "Content ID": "5bda0cd15ed353abfdc5561a945f2f3903c9fa9e",
+          "Eventos": "M+ Liga de Campeones 4 (M180 O119)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Liga de Campeones 4 (M180 O119)",
+                "href": "acestream://5bda0cd15ed353abfdc5561a945f2f3903c9fa9e"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Liga de Campeones 5 1080p **",
+          "Content ID": "f64445071c56c7acd893919f9098dfc74f518aec",
+          "Eventos": "M+ Liga de Campeones 5 (M181 O433)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Liga de Campeones 5 (M181 O433)",
+                "href": "acestream://f64445071c56c7acd893919f9098dfc74f518aec"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Liga de Campeones 5 1080p **",
+          "Content ID": "6bae4e20f02fe6c3251db7d6fe89d199ad92dcca",
+          "Eventos": "M+ Liga de Campeones 5 (M181 O433)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Liga de Campeones 5 (M181 O433)",
+                "href": "acestream://6bae4e20f02fe6c3251db7d6fe89d199ad92dcca"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Liga de Campeones 6 1080p **",
+          "Content ID": "d4103186fd1e5621da852a4e0f1429bf059091b2",
+          "Eventos": "M+ Liga de Campeones 6 (M182 O434)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Liga de Campeones 6 (M182 O434)",
+                "href": "acestream://d4103186fd1e5621da852a4e0f1429bf059091b2"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Liga de Campeones 6 1080p **",
+          "Content ID": "461eb000d199b3122fa63e53cca9c17a92456477",
+          "Eventos": "M+ Liga de Campeones 6 (M182 O434)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Liga de Campeones 6 (M182 O434)",
+                "href": "acestream://461eb000d199b3122fa63e53cca9c17a92456477"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Liga de Campeones 7 1080p **",
+          "Content ID": "e21dc151fd86e383796ea37fcd714d88de37a4d3",
+          "Eventos": "M+ Liga de Campeones 7 (M183 O435)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Liga de Campeones 7 (M183 O435)",
+                "href": "acestream://e21dc151fd86e383796ea37fcd714d88de37a4d3"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "MOVISTAR PLUS 720p *",
+          "Content ID": "3fc7a941ed2c1459dfd55f74ed72640e946f213d",
+          "Eventos": "Movistar Plus+ (M7)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "Movistar Plus+ (M7)",
+                "href": "acestream://3fc7a941ed2c1459dfd55f74ed72640e946f213d"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "MOVISTAR PLUS 1080p *",
+          "Content ID": "42b45039548159e5e9900672a488e73a94838bc8",
+          "Eventos": "Movistar Plus+ (M7)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "Movistar Plus+ (M7)",
+                "href": "acestream://42b45039548159e5e9900672a488e73a94838bc8"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "MOVISTAR PLUS 1080p **",
+          "Content ID": "2c2118129349debdf4dafb2d1906e3c0b33e44df",
+          "Eventos": "Movistar Plus+ (M7)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "Movistar Plus+ (M7)",
+                "href": "acestream://2c2118129349debdf4dafb2d1906e3c0b33e44df"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Deportes 1080p *",
+          "Content ID": "9e94de396fbebe7a4e67a7ca3bae2b7183a671c4",
+          "Eventos": "M+ Deportes (63)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Deportes (63)",
+                "href": "acestream://9e94de396fbebe7a4e67a7ca3bae2b7183a671c4"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Deportes 1080p **",
+          "Content ID": "53e24f37472eb73b58ef21dd0638b1239fa1959f",
+          "Eventos": "M+ Deportes (63)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Deportes (63)",
+                "href": "acestream://53e24f37472eb73b58ef21dd0638b1239fa1959f"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Deportes 2 720p **",
+          "Content ID": "49612f9e8190d4eb79f666af2c537c6fe9ec4014",
+          "Eventos": "M+ Deportes 2 (64)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Deportes 2 (64)",
+                "href": "acestream://49612f9e8190d4eb79f666af2c537c6fe9ec4014"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Deportes 2 1080p *",
+          "Content ID": "77290ae42871331705d95f8ac4eb597412f6008c",
+          "Eventos": "M+ Deportes 2 (64)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Deportes 2 (64)",
+                "href": "acestream://77290ae42871331705d95f8ac4eb597412f6008c"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Deportes 2 1080p **",
+          "Content ID": "882f5331b0b20056f3d8e685ed2498909f4115c8",
+          "Eventos": "M+ Deportes 2 (64)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Deportes 2 (64)",
+                "href": "acestream://882f5331b0b20056f3d8e685ed2498909f4115c8"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Deportes 2 1080p **",
+          "Content ID": "4a2384051213222a0e29111dc5d94cac35b3a521",
+          "Eventos": "M+ Deportes 2 (64)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Deportes 2 (64)",
+                "href": "acestream://4a2384051213222a0e29111dc5d94cac35b3a521"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Deportes 3 720p *",
+          "Content ID": "8492609b5378ef969bb30c148087a46a31f0b5d0",
+          "Eventos": "M+ Deportes 3 (65)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Deportes 3 (65)",
+                "href": "acestream://8492609b5378ef969bb30c148087a46a31f0b5d0"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Deportes 3 720p **",
+          "Content ID": "cdba3600fddcc84521046737da10394250036bed",
+          "Eventos": "M+ Deportes 3 (65)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Deportes 3 (65)",
+                "href": "acestream://cdba3600fddcc84521046737da10394250036bed"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Deportes 3 1080p **",
+          "Content ID": "54bbef244c11ceab869f2d962fb9a744d295ee6b",
+          "Eventos": "M+ Deportes 3 (65)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Deportes 3 (65)",
+                "href": "acestream://54bbef244c11ceab869f2d962fb9a744d295ee6b"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Deportes 4 720p *",
+          "Content ID": "3964457f69465b0b04dcd3c1218103b0197cbb39",
+          "Eventos": "M+ Deportes 4 (66)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Deportes 4 (66)",
+                "href": "acestream://3964457f69465b0b04dcd3c1218103b0197cbb39"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Deportes 4 1080p *",
+          "Content ID": "a8f257fe23dc566e85edc3d87a089fefc38bdcfe",
+          "Eventos": "M+ Deportes 4 (66)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Deportes 4 (66)",
+                "href": "acestream://a8f257fe23dc566e85edc3d87a089fefc38bdcfe"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Deportes 5 1080p **",
+          "Content ID": "754801b615847e5f173463ade01cf8456248826e",
+          "Eventos": "M+ Deportes 5 (192)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Deportes 5 (192)",
+                "href": "acestream://754801b615847e5f173463ade01cf8456248826e"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Vamos 720p *",
+          "Content ID": "eae4f313851a829e416ac4c8c4b8d962343e18f7",
+          "Eventos": "M+ Vamos (8 y 50)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Vamos (8 y 50)",
+                "href": "acestream://eae4f313851a829e416ac4c8c4b8d962343e18f7"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Vamos 720p **",
+          "Content ID": "acae841dea2c2b1181ed66625cdc62e0772a18be",
+          "Eventos": "M+ Vamos (8 y 50)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Vamos (8 y 50)",
+                "href": "acestream://acae841dea2c2b1181ed66625cdc62e0772a18be"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Vamos 1080p *",
+          "Content ID": "81beeabdc46e0aa59165f513e5c3a8e65e6bd1a9",
+          "Eventos": "M+ Vamos (8 y 50)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Vamos (8 y 50)",
+                "href": "acestream://81beeabdc46e0aa59165f513e5c3a8e65e6bd1a9"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "M+ Vamos 1080p **",
+          "Content ID": "b3a60072e264e2d628efa551d7f58c2a8e9a9fcb",
+          "Eventos": "M+ Vamos (8 y 50)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "M+ Vamos (8 y 50)",
+                "href": "acestream://b3a60072e264e2d628efa551d7f58c2a8e9a9fcb"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "RFEF TV 1080p *",
+          "Content ID": "f91cf99e803b9bec591621157fbc4027e4e9b799",
+          "Eventos": "RFEF.es",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "RFEF.es",
+                "href": "acestream://f91cf99e803b9bec591621157fbc4027e4e9b799"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "RFEF TV 1080p *",
+          "Content ID": "dd48492dbc619b29670a5e25fe8acf9834e9d023",
+          "Eventos": "RFEF.es",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "RFEF.es",
+                "href": "acestream://dd48492dbc619b29670a5e25fe8acf9834e9d023"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "RFEF TV 1080p **",
+          "Content ID": "3d001b30e28db897b25ce918371d52d3b5b7988f",
+          "Eventos": "RFEF.es",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "RFEF.es",
+                "href": "acestream://3d001b30e28db897b25ce918371d52d3b5b7988f"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "CUATRO 1080p **",
+          "Content ID": "9b7fe817f03d3e9349c71353187a23d63f2d8893",
+          "Eventos": "Cuatro",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "Cuatro",
+                "href": "acestream://9b7fe817f03d3e9349c71353187a23d63f2d8893"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "A Punt 1080p **",
+          "Content ID": "b8dc7cfd9ce6ccf3e3f580b80d698c8e2313e745",
+          "Eventos": "A Punt 1080p **",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "A Punt 1080p **",
+                "href": "acestream://b8dc7cfd9ce6ccf3e3f580b80d698c8e2313e745"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "A Punt 1080p **",
+          "Content ID": "554d4d00579e0c6be530ff2996395f253090e51a",
+          "Eventos": "A Punt 1080p **",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "A Punt 1080p **",
+                "href": "acestream://554d4d00579e0c6be530ff2996395f253090e51a"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "Esport3 720p *",
+          "Content ID": "210392911eb349a40f364519e8364db8e2a319b8",
+          "Eventos": "Esport3 (Cataluña)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "Esport3 (Cataluña)",
+                "href": "acestream://210392911eb349a40f364519e8364db8e2a319b8"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "Esport3 720p **",
+          "Content ID": "4b51030b131869ed9b543e2f9cf80aabfc770668",
+          "Eventos": "Esport3 (Cataluña)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "Esport3 (Cataluña)",
+                "href": "acestream://4b51030b131869ed9b543e2f9cf80aabfc770668"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "Esport3 1080p *",
+          "Content ID": "5cb49ceb649f889c8d0b21de02a3500fa73bc5f5",
+          "Eventos": "Esport3 (Cataluña)",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "Esport3 (Cataluña)",
+                "href": "acestream://5cb49ceb649f889c8d0b21de02a3500fa73bc5f5"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "Teledeporte 720p **",
+          "Content ID": "bb0ec8a302119f3fd48edf7ccfdd99d3089ac171",
+          "Eventos": "Teledeporte",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "Teledeporte",
+                "href": "acestream://bb0ec8a302119f3fd48edf7ccfdd99d3089ac171"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "Teledeporte 1080p *",
+          "Content ID": "03eaa3007ce82840838fa8164f8e0131044d71a3",
+          "Eventos": "Teledeporte",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "Teledeporte",
+                "href": "acestream://03eaa3007ce82840838fa8164f8e0131044d71a3"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "Teledeporte 1080p **",
+          "Content ID": "18be1bb5539df74077c03c6e0dc63ef180cc9cf1",
+          "Eventos": "Teledeporte",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "Teledeporte",
+                "href": "acestream://18be1bb5539df74077c03c6e0dc63ef180cc9cf1"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "À Punt 1080p *",
+          "Content ID": "fc2dbc3174ce581a393819110aafd971997b3641",
+          "Eventos": "À Punt 1080p *",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "À Punt 1080p *",
+                "href": "acestream://fc2dbc3174ce581a393819110aafd971997b3641"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "À Punt 1080p *",
+          "Content ID": "3c55076201059c5c8a6a1bee5bbd8de065dfee89",
+          "Eventos": "À Punt 1080p *",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "À Punt 1080p *",
+                "href": "acestream://3c55076201059c5c8a6a1bee5bbd8de065dfee89"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "NBA League Pass 1080p *",
+          "Content ID": "e70a62fd486ce0d4970bec6849023c781efb7c31",
+          "Eventos": "NBA League Pass",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "NBA League Pass",
+                "href": "acestream://e70a62fd486ce0d4970bec6849023c781efb7c31"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "NBA League Pass 1080p **",
+          "Content ID": "d4ffff16fcb461fc8d926a5698ee2e23d0cf3620",
+          "Eventos": "NBA League Pass",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "NBA League Pass",
+                "href": "acestream://d4ffff16fcb461fc8d926a5698ee2e23d0cf3620"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "Sky Sport Tennis 1080p **",
+          "Content ID": "039f58a3795e1d490fc0ef263840154dcd61fa58",
+          "Eventos": "Sky Sport Tennis 1080p **",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "Sky Sport Tennis 1080p **",
+                "href": "acestream://039f58a3795e1d490fc0ef263840154dcd61fa58"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "Tennis Channel 1080p *",
+          "Content ID": "a374064c68314cd8bc488257067db9148b3c54e0",
+          "Eventos": "Tennis Channel",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "Tennis Channel",
+                "href": "acestream://a374064c68314cd8bc488257067db9148b3c54e0"
+              }
+            ]
+          }
+        },
+        {
+          "Nombre": "Tennis Channel 1080p **",
+          "Content ID": "0a0d41e8d606f38757c1453a15df5dcd0491507b",
+          "Eventos": "Tennis Channel",
+          "_enlaces": {
+            "Eventos": [
+              {
+                "texto": "Tennis Channel",
+                "href": "acestream://0a0d41e8d606f38757c1453a15df5dcd0491507b"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
