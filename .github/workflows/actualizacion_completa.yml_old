@@ -1,0 +1,63 @@
+name: Actualizacion_Completa
+
+on:
+  schedule:
+    - cron: "*/60 * * * *"
+  workflow_dispatch:
+    inputs:
+      testing_mode:
+        description: 'Activar Modo Testing'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  run-update:
+    runs-on: ubuntu-latest
+    
+    # ESTA ES LA SOLUCIÓN: Definimos la variable ANTES de los pasos.
+    # Si inputs.testing_mode no existe (porque es Cron), usa 'false'.
+    env:
+      IS_TESTING: ${{ inputs.testing_mode || 'false' }}
+
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Instalar dependencias
+        run: |
+          pip install requests beautifulsoup4 cloudscraper
+
+      - name: Ejecutar Sistema de Actualización
+        run: |
+          # Ahora leemos la variable de entorno, no el contexto de GitHub directo
+          echo "Modo detectado: $IS_TESTING"
+          
+          if [ "$IS_TESTING" == "true" ]; then
+            echo "--> Ejecutando en MODO TESTING"
+            python .github/scripts/update_system.py --testing
+          else
+            echo "--> Ejecutando en MODO PRODUCCIÓN (Cron/Normal)"
+            python .github/scripts/update_system.py
+          fi
+
+      - name: Guardar cambios (Commit & Push)
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          
+          git add .
+          
+          # Mensaje dinámico según el modo
+          MODE_MSG="PROD"
+          if [ "$IS_TESTING" == "true" ]; then MODE_MSG="TEST"; fi
+          
+          git diff --staged --quiet || (git commit -m "Auto-Update [Mode: $MODE_MSG] $(date +'%Y-%m-%d %H:%M')" && git push)
