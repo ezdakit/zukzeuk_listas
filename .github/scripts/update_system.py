@@ -1,7 +1,7 @@
 # ============================================================================================
 # SCRIPT DE ACTUALIZACIÓN DE CANALES Y AGENDA DEPORTIVA
 #
-# VERSIÓN: 1.8
+# VERSIÓN: 2.0
 #
 # CHANGELOG:
 # - [v1.8] Nuevo campo 'canal_agenda_real' en CSV eventos (texto raw de la web sin procesar).
@@ -14,6 +14,7 @@ import os
 import sys
 import re
 import csv
+import json
 import time
 import datetime
 import requests
@@ -31,7 +32,7 @@ SUFFIX = "_testing" if TEST_MODE else ""
 
 print(f"######################################################################")
 print(f"### INICIANDO SISTEMA DE ACTUALIZACIÓN {'(MODO TESTING)' if TEST_MODE else '(PRODUCCIÓN)'}")
-print(f"### VERSIÓN DEL SCRIPT: 1.8")
+print(f"### VERSIÓN DEL SCRIPT: 2.0")
 print(f"### Sufijo de archivos de salida: '{SUFFIX}'")
 print(f"######################################################################\n")
 
@@ -48,7 +49,7 @@ def get_path(filename):
     return f"{base}{SUFFIX}{ext}"
 
 # Ficheros de SALIDA (Llevan sufijo en testing)
-FILE_ELCANO = get_path("elcano.m3u")
+FILE_ELCANO = get_path("elcano.json")
 FILE_NEW_ERA = get_path("new_era.m3u")
 FILE_EZDAKIT = get_path("ezdakit.m3u")
 FILE_CORRESPONDENCIAS = get_path(f"{DIR_CANALES}/correspondencias.csv")
@@ -66,10 +67,11 @@ FILE_FORZADOS = get_path(f"{DIR_CANALES}/canales_forzados.csv")
 IPNS_HASH = "k2k4r8lm8tkmuxbc8lkmq1in3v0oya1p6pe9o5bu0hu30br5ko08k2gb"
 #anterior: k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004
 URLS_ELCANO = [
-    "https://ipfs.io/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.m3u",
-    "https://gateway.pinata.cloud/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.m3u",
-    "https://k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr.ipns.dweb.link/hashes.m3u",
-    "https://cloudflare-ipfs.com/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.m3u"
+    "https://tokyo.elcano-ipfs.workers.dev/k51qzi5uqu5dh5qej4b9wlcr5i6vhc7rcfkekhrxqek5c9lk6gdaiik820fecs/hashes.json",
+    "https://ipfs.io/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.json",
+    "https://gateway.pinata.cloud/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.json",
+    "https://k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr.ipns.dweb.link/hashes.json",
+    "https://cloudflare-ipfs.com/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.json"
 ]
 URLS_NEW_ERA = [
     f"https://ipfs.io/ipns/{IPNS_HASH}/data/listas/lista_iptv.m3u",
@@ -271,6 +273,62 @@ def load_channel_maps():
 # PROCESAMIENTO DE LISTAS (ELCANO / NEW ERA + FORZADOS)
 # ============================================================================================
 
+def fetch_elcano_json(urls, output_filename):
+    """
+    [v2.0] Descarga el archivo JSON de Elcano (hashes.json) probando secuencialmente la lista de gateways.
+    Guarda la copia local y devuelve el objeto Python parseado.
+    """
+    print(f"   -> Descargando fuente Elcano JSON ({output_filename})...")
+    session = requests.Session()
+    session.headers.update({"User-Agent": "Mozilla/5.0"})
+    
+    for url in urls:
+        try:
+            r = session.get(url, timeout=30)
+            if r.status_code == 200:
+                try:
+                    data_json = r.json()
+                    if "hashes" in data_json or isinstance(data_json, list):
+                        Path(output_filename).write_text(r.text, encoding='utf-8')
+                        print(f"      [OK] Fuente JSON obtenida desde: {url[:60]}...")
+                        return data_json
+                except json.JSONDecodeError:
+                    pass
+        except Exception:
+            pass
+    print(f"      [ERROR] No se pudo descargar Elcano JSON desde ninguna URL.")
+    return None
+
+def parse_elcano_data(json_data, source_tag="E"):
+    """
+    [v2.0] Parsea el objeto JSON descargado desde hashes.json.
+    Extrae hash (AceStream ID), title, group y tvg_id directamente.
+    """
+    data = {}
+    if not json_data:
+        return data
+    
+    items = json_data.get("hashes", []) if isinstance(json_data, dict) else json_data
+    
+    for item in items:
+        if not isinstance(item, dict): continue
+        aid = item.get("hash", "").strip()
+        if not aid or len(aid) != 40: continue
+        
+        raw_name = item.get("title", "").strip()
+        tvg_id = item.get("tvg_id", "").strip() or "Unknown"
+        group = item.get("group", "").strip()
+        url = f"acestream://{aid}"
+        
+        data[aid] = {
+            'name': raw_name,
+            'tvg': tvg_id,
+            'group': group,
+            'url': url,
+            'source': source_tag
+        }
+    return data
+
 def parse_m3u(file_path, source_tag):
     data = {}
     path = Path(file_path)
@@ -307,14 +365,20 @@ def parse_m3u(file_path, source_tag):
     return data
 
 def build_master_channel_list(blacklist):
-    print(f"[3] Procesando y fusionando listas M3U...")
+    print(f"[3] Procesando y fusionando listas de canales (Elcano JSON + New Era M3U + Forzados)...")
     
-    if not download_file(URLS_ELCANO, FILE_ELCANO) and not download_file(URLS_NEW_ERA, FILE_NEW_ERA):
-        print("[ERROR CRÍTICO] No se pudo descargar ninguna lista.")
-        sys.exit(1)
-
-    elcano = parse_m3u(FILE_ELCANO, "E")
+    elcano_json_data = fetch_elcano_json(URLS_ELCANO, FILE_ELCANO)
+    elcano = parse_elcano_data(elcano_json_data, "E")
+    
+    download_file(URLS_NEW_ERA, FILE_NEW_ERA)
     newera = parse_m3u(FILE_NEW_ERA, "N")
+    
+    forced_channels = load_forced_channels()
+    
+    all_ids = set(elcano.keys()) | set(newera.keys()) | set(forced_channels.keys())
+    if not all_ids:
+        print("[ERROR CRÍTICO] No se pudo obtener ninguna lista de canales (Elcano / New Era).")
+        sys.exit(1)
     forced_channels = load_forced_channels()
     
     all_ids = set(elcano.keys()) | set(newera.keys()) | set(forced_channels.keys())
