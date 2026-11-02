@@ -1,0 +1,53 @@
+name: Scrape eventos Acestream
+
+on:
+  workflow_dispatch:        # ejecución manual desde la pestaña Actions
+  schedule:
+    - cron: "0 */6 * * *"   # cada 6 horas (opcional, bórralo si no lo quieres)
+
+permissions:
+  contents: write           # necesario para el paso opcional de commit
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright
+
+      - name: Instalar Chromium para Playwright
+        run: playwright install --with-deps chromium
+
+      - name: Ejecutar script
+        run: python scrape_eventos.py
+
+      - name: Subir JSON como artefacto
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eventos
+          path: |
+            eventos.json
+            debug/
+          if-no-files-found: warn
+
+      # Opcional: guardar el JSON en el repositorio
+      - name: Commit del JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add eventos.json
+          git diff --staged --quiet || (git commit -m "Actualizar eventos" && git push)
