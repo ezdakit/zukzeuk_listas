@@ -1,13 +1,14 @@
 # ============================================================================================
 # SCRIPT DE ACTUALIZACIÓN DE CANALES Y AGENDA DEPORTIVA
 #
-# VERSIÓN: 2.0
+# VERSIÓN: 2.1
 #
 # CHANGELOG:
+# - [v2.1] Integración con kiroideuno.pages.gay (agenda de 3 días) usando cookies de sesión.
+# - [v2.1] Eliminada fuente New Era M3U inactiva.
+# - [v2.0] Integración con Elcano JSON (hashes.json).
 # - [v1.8] Nuevo campo 'canal_agenda_real' en CSV eventos (texto raw de la web sin procesar).
-# - [v1.7] CAMBIO DE LÓGICA: Vinculación por NOMBRE (canal_agenda -> listado_canales).
-# - [v1.6] Añadida regla exacta: "DAZN LA LIGA" >> "DAZN LA LIGA 1".
-# - [v1.5] Añadida regla de normalización final: "LALIGA" >> "M+ LALIGA".
+# - [v1.7] Vinculación por NOMBRE (canal_agenda -> listado_canales).
 # ============================================================================================
 
 import os
@@ -32,7 +33,7 @@ SUFFIX = "_testing" if TEST_MODE else ""
 
 print(f"######################################################################")
 print(f"### INICIANDO SISTEMA DE ACTUALIZACIÓN {'(MODO TESTING)' if TEST_MODE else '(PRODUCCIÓN)'}")
-print(f"### VERSIÓN DEL SCRIPT: 2.0")
+print(f"### VERSIÓN DEL SCRIPT: 2.1")
 print(f"### Sufijo de archivos de salida: '{SUFFIX}'")
 print(f"######################################################################\n")
 
@@ -50,7 +51,6 @@ def get_path(filename):
 
 # Ficheros de SALIDA (Llevan sufijo en testing)
 FILE_ELCANO = get_path("elcano.json")
-FILE_NEW_ERA = get_path("new_era.m3u")
 FILE_EZDAKIT = get_path("ezdakit.m3u")
 FILE_CORRESPONDENCIAS = get_path(f"{DIR_CANALES}/correspondencias.csv")
 FILE_EVENTOS_CSV = get_path(f"{DIR_CANALES}/eventos_canales.csv")
@@ -63,31 +63,21 @@ FILE_BLACKLIST = get_path(f"{DIR_CANALES}/lista_negra.csv")
 FILE_DIAL_MAP = get_path(f"{DIR_CANALES}/listado_canales.csv")
 FILE_FORZADOS = get_path(f"{DIR_CANALES}/canales_forzados.csv")
 
-# URLs
-IPNS_HASH = "k2k4r8lm8tkmuxbc8lkmq1in3v0oya1p6pe9o5bu0hu30br5ko08k2gb"
-#anterior: k2k4r8oqlcjxsritt5mczkcn4mmvcmymbqw7113fz2flkrerfwfps004
+# URL Hash Elcano Worker
+ELCANO_WORKER_URL = "https://tokyo.elcano-ipfs.workers.dev/k51qzi5uqu5dh5qej4b9wlcr5i6vhc7rcfkekhrxqek5c9lk6gdaiik820fecs/hashes.json"
+
+# URLs Elcano JSON
 URLS_ELCANO = [
-    "https://tokyo.elcano-ipfs.workers.dev/k51qzi5uqu5dh5qej4b9wlcr5i6vhc7rcfkekhrxqek5c9lk6gdaiik820fecs/hashes.json",
+    ELCANO_WORKER_URL,
     "https://ipfs.io/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.json",
     "https://gateway.pinata.cloud/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.json",
     "https://k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr.ipns.dweb.link/hashes.json",
     "https://cloudflare-ipfs.com/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.json"
 ]
-URLS_NEW_ERA = [
-    f"https://ipfs.io/ipns/{IPNS_HASH}/data/listas/lista_iptv.m3u",
-    f"https://gateway.pinata.cloud/ipns/{IPNS_HASH}/data/listas/lista_iptv.m3u",
-    f"https://{IPNS_HASH}.ipns.dweb.link/data/listas/lista_iptv.m3u",
-    f"https://cloudflare-ipfs.com/ipns/{IPNS_HASH}/data/listas/lista_iptv.m3u"
-]
 
-# URLs Agenda (Limpias)
+# URLs Agenda (Kiroideuno)
 URLS_AGENDA = [
-    f"https://ipfs.io/ipns/{IPNS_HASH}/",
-    f"https://cloudflare-ipfs.com/ipns/{IPNS_HASH}/",
-    f"https://w3s.link/ipns/{IPNS_HASH}/",
-    f"https://{IPNS_HASH}.ipns.dweb.link/",
-    f"https://dweb.link/ipns/{IPNS_HASH}/",
-    f"https://gateway.pinata.cloud/ipns/{IPNS_HASH}/"
+    "https://kiroideuno.pages.gay/"
 ]
 
 HEADER_M3U = """#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
@@ -108,28 +98,10 @@ def read_file_safe(path_obj):
     except:
         return raw.decode('latin-1', errors='ignore')
 
-def download_file(urls, output_filename):
-    print(f"   -> Descargando {output_filename}...")
-    session = requests.Session()
-    session.headers.update({"User-Agent": "Mozilla/5.0"})
-    
-    for url in urls:
-        try:
-            r = session.get(url, timeout=60)
-            if r.status_code == 200:
-                if "#EXTM3U" in r.text[:200]:
-                    Path(output_filename).write_text(r.text, encoding='utf-8')
-                    print(f"      [OK] Fuente: {url[:40]}...")
-                    return True
-        except:
-            pass
-    print(f"      [ERROR] No se pudo descargar {output_filename}")
-    return False
-
 def clean_channel_name(name, ace_id_suffix):
     """
     Limpieza básica del nombre del canal para generar el nombre_supuesto.
-    [v1.1] FUERZA MAYÚSCULAS AL FINAL.
+    Devuelve siempre el nombre en MAYÚSCULAS.
     """
     if not name: return ""
     name = re.sub(r'-->.*', '', name)
@@ -151,7 +123,6 @@ def clean_channel_name(name, ace_id_suffix):
         name = name[:-4].strip()
     name = re.sub(r'\s+[0-9a-fA-F]{4}$', '', name)
     
-    # CAMBIO v1.1: Devolver siempre mayúsculas
     return name.upper()
 
 def determine_quality(name):
@@ -240,12 +211,12 @@ def load_forced_channels():
 def load_channel_maps():
     """
     [v1.7] Carga listado_canales.csv y genera dos mapas:
-    1. dial_map: Para validación de existencia (aunque se usa menos ahora).
+    1. dial_map: Para validación de diales.
     2. name_map: Para vincular 'canal_agenda' -> 'tvg-id'.
     """
     print(f"[2] Cargando Mapas de Canales ({FILE_DIAL_MAP})...")
     dial_map = {} 
-    name_map = {} # Nuevo mapa por NOMBRE
+    name_map = {}
     
     path = Path(FILE_DIAL_MAP)
     if not path.exists():
@@ -263,24 +234,22 @@ def load_channel_maps():
             dial_map[dial] = {'tvg': tvg, 'name': name}
         
         if name and tvg:
-            # Clave en mayúsculas para coincidir con canal_agenda
             name_map[name.upper()] = tvg
             
     print(f"    -> {len(dial_map)} diales y {len(name_map)} nombres mapeados.")
     return dial_map, name_map
 
 # ============================================================================================
-# PROCESAMIENTO DE LISTAS (ELCANO / NEW ERA + FORZADOS)
+# PROCESAMIENTO DE LISTA JSON (ELCANO + FORZADOS)
 # ============================================================================================
 
 def fetch_elcano_json(urls, output_filename):
     """
-    [v2.0] Descarga el archivo JSON de Elcano (hashes.json) probando secuencialmente la lista de gateways.
-    Guarda la copia local y devuelve el objeto Python parseado.
+    [v2.0] Descarga el archivo JSON de Elcano (hashes.json) probando secuencialmente los gateways.
     """
     print(f"   -> Descargando fuente Elcano JSON ({output_filename})...")
     session = requests.Session()
-    session.headers.update({"User-Agent": "Mozilla/5.0"})
+    session.headers.update({"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"})
     
     for url in urls:
         try:
@@ -302,7 +271,6 @@ def fetch_elcano_json(urls, output_filename):
 def parse_elcano_data(json_data, source_tag="E"):
     """
     [v2.0] Parsea el objeto JSON descargado desde hashes.json.
-    Extrae hash (AceStream ID), title, group y tvg_id directamente.
     """
     data = {}
     if not json_data:
@@ -329,97 +297,38 @@ def parse_elcano_data(json_data, source_tag="E"):
         }
     return data
 
-def parse_m3u(file_path, source_tag):
-    data = {}
-    path = Path(file_path)
-    if not path.exists(): return data
-    
-    content = read_file_safe(path)
-    lines = content.splitlines()
-    i = 0
-    while i < len(lines):
-        line = lines[i].strip()
-        if line.startswith("#EXTINF"):
-            inf = line
-            url = None
-            for k in range(i+1, len(lines)):
-                if lines[k].strip() and not lines[k].startswith("#"):
-                    url = lines[k].strip(); break
-            
-            if url:
-                m = re.search(r"(?:acestream://|id=|/)([0-9a-fA-F]{40})", url)
-                if m:
-                    aid = m.group(1)
-                    mt = re.search(r'tvg-id="([^"]+)"', inf)
-                    mg = re.search(r'group-title="([^"]+)"', inf)
-                    raw_name = inf.split(',')[-1].strip()
-                    
-                    data[aid] = {
-                        'name': raw_name,
-                        'tvg': mt.group(1).strip() if mt else "Unknown",
-                        'group': mg.group(1).strip() if mg else "",
-                        'url': url,
-                        'source': source_tag
-                    }
-        i += 1
-    return data
-
 def build_master_channel_list(blacklist):
-    print(f"[3] Procesando y fusionando listas de canales (Elcano JSON + New Era M3U + Forzados)...")
+    print(f"[3] Procesando y construyendo lista maestra de canales (Elcano JSON + Forzados)...")
     
     elcano_json_data = fetch_elcano_json(URLS_ELCANO, FILE_ELCANO)
     elcano = parse_elcano_data(elcano_json_data, "E")
-    
-    download_file(URLS_NEW_ERA, FILE_NEW_ERA)
-    newera = parse_m3u(FILE_NEW_ERA, "N")
-    
     forced_channels = load_forced_channels()
     
-    all_ids = set(elcano.keys()) | set(newera.keys()) | set(forced_channels.keys())
+    all_ids = set(elcano.keys()) | set(forced_channels.keys())
     if not all_ids:
-        print("[ERROR CRÍTICO] No se pudo obtener ninguna lista de canales (Elcano / New Era).")
+        print("[ERROR CRÍTICO] No se pudo obtener ninguna lista de canales de Elcano.")
         sys.exit(1)
-    forced_channels = load_forced_channels()
-    
-    all_ids = set(elcano.keys()) | set(newera.keys()) | set(forced_channels.keys())
+        
     master_db = []
-    
-    new_era_names_map = {v['name']: v['tvg'] for v in newera.values() if v['tvg'] != "Unknown"}
 
     for aid in all_ids:
         e_data = elcano.get(aid, {})
-        n_data = newera.get(aid, {})
         f_data = forced_channels.get(aid, None)
-        
-        name_ne = n_data.get('name', '')
-        group_ne = n_data.get('group', '')
-        tvg_ne = n_data.get('tvg', '')
         
         name_e = e_data.get('name', '')
         group_e = e_data.get('group', '')
         tvg_e = e_data.get('tvg', '')
-        
-        if not tvg_e or tvg_e == "Unknown":
-            if name_e in new_era_names_map:
-                tvg_e = new_era_names_map[name_e]
 
-        raw_name_for_clean = name_ne if name_ne else name_e
-        
-        # [v1.1] clean_channel_name ahora devuelve MAYUSCULAS
-        nombre_supuesto = clean_channel_name(raw_name_for_clean, aid[-4:])
+        nombre_supuesto = clean_channel_name(name_e, aid[-4:])
         if not nombre_supuesto: nombre_supuesto = "DESCONOCIDO"
         
-        quality_tag = determine_quality((name_ne + " " + name_e))
+        quality_tag = determine_quality(name_e)
         clean_quality = quality_tag.strip().replace("(", "").replace(")", "")
         
-        final_source = "N" if aid in newera else "E"
-        final_url = n_data.get('url') if aid in newera else e_data.get('url')
-        
-        final_group = group_ne if group_ne else group_e
-        if not final_group: final_group = "OTROS"
-        
-        final_tvg = tvg_ne if (tvg_ne and tvg_ne != "Unknown") else tvg_e
-        if not final_tvg: final_tvg = "Unknown"
+        final_source = "E"
+        final_url = e_data.get('url', f"acestream://{aid}")
+        final_group = group_e if group_e else "OTROS"
+        final_tvg = tvg_e if (tvg_e and tvg_e != "Unknown") else "Unknown"
 
         if f_data:
             nombre_supuesto = f_data['name']
@@ -436,11 +345,11 @@ def build_master_channel_list(blacklist):
         master_db.append({
             'ace_id': aid,
             'nombre_e': name_e,
-            'nombre_ne': name_ne,
+            'nombre_ne': '',
             'tvg_e': tvg_e,
-            'tvg_ne': tvg_ne,
+            'tvg_ne': '',
             'grupo_e': group_e,
-            'grupo_ne': group_ne,
+            'grupo_ne': '',
             'nombre_supuesto': nombre_supuesto,
             'calidad_tag': quality_tag,     
             'calidad_clean': clean_quality, 
@@ -452,7 +361,7 @@ def build_master_channel_list(blacklist):
             'blacklist_real_name': bl_real_name
         })
     
-    master_db.sort(key=lambda x: (x['grupo_ne'] or "ZZZ", x['nombre_supuesto']))
+    master_db.sort(key=lambda x: (x['final_group'] or "ZZZ", x['nombre_supuesto']))
     print(f"    -> Procesados y ordenados {len(master_db)} canales únicos.")
     return master_db
 
@@ -490,7 +399,7 @@ def generate_ezdakit_m3u(db):
     for item in db:
         prefix = item['ace_id'][:3]
         display_name = f"{item['nombre_supuesto']}{item['calidad_tag']} ({item['source']}-{prefix})"
-        grp = item['grupo_ne'] if item['grupo_ne'] else "OTROS"
+        grp = item['final_group'] if item['final_group'] else "OTROS"
         if item['in_blacklist'] == "yes":
             grp = "ZZ_Canales_KO"
             suffix = item['blacklist_real_name'] if item['blacklist_real_name'] else "BLACKLIST"
@@ -503,11 +412,14 @@ def generate_ezdakit_m3u(db):
     print(f"    -> {len(entries)} canales escritos.")
 
 # ============================================================================================
-# SCRAPING Y EVENTOS
+# SCRAPING Y EVENTOS MULTIDÍA (KIROIDEUNO)
 # ============================================================================================
 
 def get_fresh_agenda_html():
     scraper = cloudscraper.create_scraper(browser={'browser': 'chrome', 'platform': 'windows', 'desktop': True})
+    
+    # Inyección de cookie para persistir la URL de hashes.json en kiroideuno.pages.gay
+    scraper.cookies.set("sources", ELCANO_WORKER_URL, domain="kiroideuno.pages.gay")
     
     now_utc = datetime.datetime.utcnow()
     today_date = now_utc.date()
@@ -555,11 +467,11 @@ def get_fresh_agenda_html():
                 
                 if is_actually_fresh:
                     fresh_html = html_content
-                    print(f"      -> {status_msg}. USANDO ESTE PROXY.")
+                    print(f"      -> {status_msg}. USANDO ESTA FUENTE.")
                     log_entries[-1] += " [SELECTED]"
                     break 
                 else:
-                    print(f"      -> {status_msg}. Buscando siguiente mejor opción...")
+                    print(f"      -> {status_msg}. Buscando opción alternativa...")
 
         except Exception as e:
             err_str = str(e).split('(')[0] if '(' in str(e) else str(e)
@@ -571,16 +483,15 @@ def get_fresh_agenda_html():
     if fresh_html:
         return fresh_html
     elif last_working_html:
-        print("    [AVISO] No se encontraron proxies actualizados. Usando el último funcional.")
+        print("    [AVISO] No se encontraron datos frescos de hoy. Usando la última respuesta obtenida.")
         return last_working_html
     else:
-        print("    [ERROR] Ningún proxy respondió correctamente.")
+        print("    [ERROR] No se pudo acceder a la web de la agenda.")
         return None
 
 def scrape_and_match(dial_map, name_map, master_db):
-    print(f"[6] Scraping de Agenda y cruce de datos...")
+    print(f"[6] Scraping de Agenda (3 días) y cruce de datos...")
     
-    # Índice de AceStreams por TVG para búsqueda rápida
     tvg_index = {}
     for item in master_db:
         if item['final_tvg'] and item['final_tvg'] != "Unknown":
@@ -595,7 +506,7 @@ def scrape_and_match(dial_map, name_map, master_db):
     soup = BeautifulSoup(html, 'html.parser')
     days = soup.find_all('div', class_='events-day')
     if not days:
-        print("    [ERROR] HTML sin eventos. Estructura web ha cambiado.")
+        print("    [ERROR] HTML sin bloques de eventos. La estructura de la página puede haber cambiado.")
         return [], []
 
     events_list = []
@@ -633,16 +544,14 @@ def scrape_and_match(dial_map, name_map, master_db):
             
             for ch in channels:
                 txt = ch.get_text().strip()
-                canal_agenda_real = txt # [v1.8] Guardamos valor crudo
+                canal_agenda_real = txt
                 
-                # --- [v1.6] EXTRACCIÓN Y NORMALIZACIÓN DE CANAL AGENDA ---
                 dial = None
-                canal_agenda_clean = txt # Valor inicial
+                canal_agenda_clean = txt
                 
                 m_match = re.search(r'(\([^)]*?M(\d+)[^)]*?\))', txt)
                 d_match = re.search(r'(\((\d+)\))', txt)
 
-                # 1. Extracción del Dial y Limpieza base
                 if m_match:
                     dial = m_match.group(2)
                     canal_agenda_clean = txt.replace(m_match.group(1), "")
@@ -651,48 +560,28 @@ def scrape_and_match(dial_map, name_map, master_db):
                         dial = d_match.group(2)
                         canal_agenda_clean = txt.replace(d_match.group(1), "")
                     else:
-                        canal_agenda_clean = txt # Es Orange
+                        canal_agenda_clean = txt
                 
-                # 2. Normalización Estricta [v1.4 - REGEX]
+                # Normalización Estricta
                 canal_agenda_clean = canal_agenda_clean.upper().strip()
                 
-                # Reglas secuenciales robustas:
-                # Regla 1: ELLAS VAMOS
                 canal_agenda_clean = canal_agenda_clean.replace("ELLAS VAMOS", "MOVISTAR ELLAS")
-                # Regla 2: M+ DEPORTES
                 canal_agenda_clean = canal_agenda_clean.replace("M+ DEPORTES", "MOVISTAR DEPORTES")
-                # Regla 3: HYPERMOTION
                 canal_agenda_clean = canal_agenda_clean.replace("LALIGA TV HYPERMOTION", "HYPERMOTION")
-                # Regla 4: DAZN LALIGA (Sin tocar número)
                 canal_agenda_clean = canal_agenda_clean.replace("DAZN LALIGA", "DAZN LA LIGA")
-                
-                # Regla 5: Eliminar " : VER PARTIDO"
                 canal_agenda_clean = re.sub(r'\s*:\s*VER PARTIDO\s*', '', canal_agenda_clean)
-                
-                # Regla 6: PLUS+
                 canal_agenda_clean = canal_agenda_clean.replace("PLUS+", "PLUS")
-                
-                # Regla 7: Eliminar "M+ " al principio
                 canal_agenda_clean = re.sub(r'^M\+\s*', '', canal_agenda_clean)
-                
-                # [v1.5] Regla 8: "LALIGA" >> "M+ LALIGA"
                 canal_agenda_clean = canal_agenda_clean.replace("LALIGA", "M+ LALIGA")
-                
                 canal_agenda_clean = canal_agenda_clean.strip()
                 
-                # [v1.6] Regla 9: DAZN LA LIGA >> DAZN LA LIGA 1 (Exacto)
                 if canal_agenda_clean == "DAZN LA LIGA":
                     canal_agenda_clean = "DAZN LA LIGA 1"
-                # ---------------------------------------------------------
 
-                # [v1.7] NUEVA LÓGICA DE CRUCE
-                # Condición 1: Debe tener Dial válido (Filtro de Admisión)
                 if not dial:
-                     # Se ignora silenciosamente o se descarta
                      discarded_list.append({'dial_M': '?', 'nombre_canal_descartado': txt, 'evento_descartado': event_raw, 'motivo': 'no_dial_detected'})
                      continue
 
-                # Condición 2: Buscar por NOMBRE en el mapa local
                 target_tvg = name_map.get(canal_agenda_clean)
 
                 if not target_tvg:
@@ -704,7 +593,6 @@ def scrape_and_match(dial_map, name_map, master_db):
                     })
                     continue
                 
-                # Si llegamos aquí, tenemos TVG-ID válido
                 nombre_canal_csv = canal_agenda_clean 
 
                 available_streams = tvg_index.get(target_tvg, [])
@@ -732,7 +620,7 @@ def scrape_and_match(dial_map, name_map, master_db):
                         'competicion': competition,
                         'nombre_canal': nombre_canal_csv,
                         'canal_agenda': canal_agenda_clean, 
-                        'canal_agenda_real': canal_agenda_real, # [v1.8] New Field
+                        'canal_agenda_real': canal_agenda_real,
                         'calidad': stream['calidad_clean'],
                         'lista_negra': stream['in_blacklist'],
                         'calidad_tag': stream['calidad_tag'],
@@ -740,7 +628,7 @@ def scrape_and_match(dial_map, name_map, master_db):
                         'ace_prefix': aid[:3]
                     })
 
-    print(f"    -> Encontrados {len(events_list)} combinaciones evento-canal.")
+    print(f"    -> Encontradas {len(events_list)} combinaciones evento-canal (3 días).")
     print(f"    -> Descartados {len(discarded_list)} intentos.")
     return events_list, discarded_list
 
@@ -766,7 +654,6 @@ def generate_eventos_files(events_list):
     
     Path(DIR_CANALES).mkdir(exist_ok=True)
     with open(FILE_EVENTOS_CSV, 'w', newline='', encoding='utf-8-sig') as f:
-        # [v1.8] Añadida columna canal_agenda_real
         fields = ['acestream_id', 'dial_M', 'tvg_id', 'fecha', 'hora', 'evento', 
                   'competición', 'nombre_canal', 'canal_agenda', 'canal_agenda_real', 'calidad', 'lista_negra']
         w = csv.DictWriter(f, fieldnames=fields)
@@ -810,7 +697,6 @@ def generate_eventos_files(events_list):
     else:
         print("    [ALERTA] No se generaron entradas M3U.")
 
-
 # ============================================================================================
 # MAIN
 # ============================================================================================
@@ -818,7 +704,6 @@ def generate_eventos_files(events_list):
 def main():
     Path(DIR_CANALES).mkdir(exist_ok=True)
     blacklist = load_blacklist()
-    # [v1.7] Carga doble mapa (dial y nombre)
     dial_map, name_map = load_channel_maps()
     
     master_db = build_master_channel_list(blacklist)
@@ -826,7 +711,6 @@ def main():
     generate_correspondencias(master_db)
     generate_ezdakit_m3u(master_db)
     
-    # [v1.7] Pasamos name_map al scraping
     events_list, discarded_list = scrape_and_match(dial_map, name_map, master_db)
     
     generate_eventos_files(events_list)

@@ -2,7 +2,7 @@ name: Actualizacion_Completa
 
 on:
   schedule:
-    - cron: "*/60 * * * *"
+    - cron: "0 * * * *"
   workflow_dispatch:
     inputs:
       testing_mode:
@@ -18,8 +18,6 @@ jobs:
   run-update:
     runs-on: ubuntu-latest
     
-    # ESTA ES LA SOLUCIÓN: Definimos la variable ANTES de los pasos.
-    # Si inputs.testing_mode no existe (porque es Cron), usa 'false'.
     env:
       IS_TESTING: ${{ inputs.testing_mode || 'false' }}
 
@@ -38,7 +36,6 @@ jobs:
 
       - name: Ejecutar Sistema de Actualización
         run: |
-          # Ahora leemos la variable de entorno, no el contexto de GitHub directo
           echo "Modo detectado: $IS_TESTING"
           
           if [ "$IS_TESTING" == "true" ]; then
@@ -51,12 +48,11 @@ jobs:
 
       - name: Guardar cambios (Commit & Push)
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
           git add .
           
-          # Mensaje dinámico según el modo
           MODE_MSG="PROD"
           if [ "$IS_TESTING" == "true" ]; then MODE_MSG="TEST"; fi
           
