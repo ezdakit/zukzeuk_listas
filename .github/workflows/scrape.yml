@@ -6,7 +6,12 @@ on:
   #   - cron: "0 */6 * * *"   # opcional: cada 6 horas
 
 permissions:
-  contents: read
+  contents: write           # necesario para hacer commit/push de los ficheros generados
+
+# Evita que dos ejecuciones simultáneas se pisen al hacer push
+concurrency:
+  group: scrape-eventos
+  cancel-in-progress: false
 
 jobs:
   scrape:
@@ -34,15 +39,32 @@ jobs:
         env:
           # La web exige aceptar un EULA (licencia de uso personal).
           # Cámbialo a "yes" SOLO después de leerlo y aceptarlo tú.
-          ACCEPT_EULA: "yes"
+          ACCEPT_EULA: "no"
         run: python scrape_eventos.py
 
-      - name: Subir JSON como artefacto
+      # Se ejecuta aunque el scraping falle, para no perder elcano.json / ezdakit.m3u
+      # (el script no sobrescribe eventos.json ni el m3u de eventos si salen vacíos).
+      - name: Subir ficheros a la raíz del repositorio
         if: always()
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for f in elcano.json ezdakit.m3u eventos.json ezdakit_eventos.m3u; do
+            [ -f "$f" ] && git add "$f"
+          done
+          if git diff --cached --quiet; then
+            echo "Sin cambios que subir"
+          else
+            git commit -m "Actualizar listas y eventos ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      # Solo si algo falla: capturas/HTML para depurar (ya no se sube eventos.json como artefacto)
+      - name: Subir debug si falla
+        if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: eventos
-          path: |
-            eventos.json
-            debug/
+          name: debug
+          path: debug/
           if-no-files-found: warn
