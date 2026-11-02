@@ -43,7 +43,9 @@ EVENTS_M3U = os.getenv("EVENTS_M3U", "ezdakit_eventos.m3u")
 EVENTS_URL_TEMPLATE = os.getenv(
     "EVENTS_URL_TEMPLATE", "http://127.0.0.1:6878/ace/getstream?id={hash}"
 )
-CHANNELS_URL_TEMPLATE = os.getenv("CHANNELS_URL_TEMPLATE", "acestream://{hash}")
+CHANNELS_URL_TEMPLATE = os.getenv(
+    "CHANNELS_URL_TEMPLATE", "http://127.0.0.1:6878/ace/getstream?id={hash}"
+)
 TZ = ZoneInfo(os.getenv("TZ_NAME", "Europe/Madrid"))
 DEBUG_DIR = os.getenv("DEBUG_DIR", "debug")
 WAIT_FILL_SECONDS = int(os.getenv("WAIT_FILL_SECONDS", "90"))
