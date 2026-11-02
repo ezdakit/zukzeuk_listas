@@ -1,14 +1,16 @@
 # ============================================================================================
 # SCRIPT DE ACTUALIZACIÓN DE CANALES Y AGENDA DEPORTIVA
 #
-# VERSIÓN: 2.1
+# VERSIÓN: 2.2
 #
 # CHANGELOG:
-# - [v2.1] Integración con kiroideuno.pages.gay (agenda de 3 días) usando cookies de sesión.
-# - [v2.1] Eliminada fuente New Era M3U inactiva.
-# - [v2.0] Integración con Elcano JSON (hashes.json).
-# - [v1.8] Nuevo campo 'canal_agenda_real' en CSV eventos (texto raw de la web sin procesar).
-# - [v1.7] Vinculación por NOMBRE (canal_agenda -> listado_canales).
+# - [v2.2] Integración con Playwright para automatizar la navegación en kiroideuno.pages.gay:
+#          1. Abre la web https://kiroideuno.pages.gay/
+#          2. Pulsa el botón "Configurar URLs de AceStream"
+#          3. Introduce la URL de hashes.json de Elcano en el cuadro de texto
+#          4. Pulsa "Guardar y recargar" y espera a que JS rellene las 3 tablas de eventos
+# - [v2.1] Eliminado New Era y soporte multidía (3 días).
+# - [v2.0] Integración de Elcano JSON (hashes.json).
 # ============================================================================================
 
 import os
@@ -24,6 +26,13 @@ from bs4 import BeautifulSoup
 from pathlib import Path
 import io
 
+# Intentar importar Playwright para renderizado de JS en navegador headless
+try:
+    from playwright.sync_api import sync_playwright
+    PLAYWRIGHT_AVAILABLE = True
+except ImportError:
+    PLAYWRIGHT_AVAILABLE = False
+
 # ============================================================================================
 # CONFIGURACIÓN Y MODO TESTING
 # ============================================================================================
@@ -33,7 +42,7 @@ SUFFIX = "_testing" if TEST_MODE else ""
 
 print(f"######################################################################")
 print(f"### INICIANDO SISTEMA DE ACTUALIZACIÓN {'(MODO TESTING)' if TEST_MODE else '(PRODUCCIÓN)'}")
-print(f"### VERSIÓN DEL SCRIPT: 2.1")
+print(f"### VERSIÓN DEL SCRIPT: 2.2 (Playwright Auto-Fill & Scraping)")
 print(f"### Sufijo de archivos de salida: '{SUFFIX}'")
 print(f"######################################################################\n")
 
@@ -63,22 +72,19 @@ FILE_BLACKLIST = get_path(f"{DIR_CANALES}/lista_negra.csv")
 FILE_DIAL_MAP = get_path(f"{DIR_CANALES}/listado_canales.csv")
 FILE_FORZADOS = get_path(f"{DIR_CANALES}/canales_forzados.csv")
 
-# URL Hash Elcano Worker
-ELCANO_WORKER_URL = "https://tokyo.elcano-ipfs.workers.dev/k51qzi5uqu5dh5qej4b9wlcr5i6vhc7rcfkekhrxqek5c9lk6gdaiik820fecs/hashes.json"
+# URLs
+HASHES_JSON_URL = "https://tokyo.elcano-ipfs.workers.dev/k51qzi5uqu5dh5qej4b9wlcr5i6vhc7rcfkekhrxqek5c9lk6gdaiik820fecs/hashes.json"
 
-# URLs Elcano JSON
 URLS_ELCANO = [
-    ELCANO_WORKER_URL,
+    HASHES_JSON_URL,
     "https://ipfs.io/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.json",
     "https://gateway.pinata.cloud/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.json",
     "https://k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr.ipns.dweb.link/hashes.json",
     "https://cloudflare-ipfs.com/ipns/k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr/hashes.json"
 ]
 
-# URLs Agenda (Kiroideuno)
-URLS_AGENDA = [
-    "https://kiroideuno.pages.gay/"
-]
+# Agenda Web
+AGENDA_WEB_URL = "https://kiroideuno.pages.gay/"
 
 HEADER_M3U = """#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
@@ -101,7 +107,7 @@ def read_file_safe(path_obj):
 def clean_channel_name(name, ace_id_suffix):
     """
     Limpieza básica del nombre del canal para generar el nombre_supuesto.
-    Devuelve siempre el nombre en MAYÚSCULAS.
+    Devuelve siempre MAYÚSCULAS.
     """
     if not name: return ""
     name = re.sub(r'-->.*', '', name)
@@ -143,14 +149,14 @@ def update_proxies_log(new_entries):
     if log_path.exists():
         existing_lines = log_path.read_text(encoding='utf-8').splitlines()
     
-    cutoff_date = datetime.datetime.utcnow() - datetime.timedelta(days=30)
+    cutoff_date = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=30)
     
     kept_lines = []
     for line in existing_lines:
         match = re.match(r'^\[(\d{4}-\d{2}-\d{2})', line)
         if match:
             try:
-                line_date = datetime.datetime.strptime(match.group(1), "%Y-%m-%d")
+                line_date = datetime.datetime.strptime(match.group(1), "%Y-%m-%d").replace(tzinfo=datetime.timezone.utc)
                 if line_date >= cutoff_date:
                     kept_lines.append(line)
             except:
@@ -209,11 +215,6 @@ def load_forced_channels():
     return forced
 
 def load_channel_maps():
-    """
-    [v1.7] Carga listado_canales.csv y genera dos mapas:
-    1. dial_map: Para validación de diales.
-    2. name_map: Para vincular 'canal_agenda' -> 'tvg-id'.
-    """
     print(f"[2] Cargando Mapas de Canales ({FILE_DIAL_MAP})...")
     dial_map = {} 
     name_map = {}
@@ -240,16 +241,13 @@ def load_channel_maps():
     return dial_map, name_map
 
 # ============================================================================================
-# PROCESAMIENTO DE LISTA JSON (ELCANO + FORZADOS)
+# PROCESAMIENTO DE LISTAS (ELCANO JSON + FORZADOS)
 # ============================================================================================
 
 def fetch_elcano_json(urls, output_filename):
-    """
-    [v2.0] Descarga el archivo JSON de Elcano (hashes.json) probando secuencialmente los gateways.
-    """
     print(f"   -> Descargando fuente Elcano JSON ({output_filename})...")
     session = requests.Session()
-    session.headers.update({"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"})
+    session.headers.update({"User-Agent": "Mozilla/5.0"})
     
     for url in urls:
         try:
@@ -269,9 +267,6 @@ def fetch_elcano_json(urls, output_filename):
     return None
 
 def parse_elcano_data(json_data, source_tag="E"):
-    """
-    [v2.0] Parsea el objeto JSON descargado desde hashes.json.
-    """
     data = {}
     if not json_data:
         return data
@@ -308,7 +303,7 @@ def build_master_channel_list(blacklist):
     if not all_ids:
         print("[ERROR CRÍTICO] No se pudo obtener ninguna lista de canales de Elcano.")
         sys.exit(1)
-        
+
     master_db = []
 
     for aid in all_ids:
@@ -319,7 +314,8 @@ def build_master_channel_list(blacklist):
         group_e = e_data.get('group', '')
         tvg_e = e_data.get('tvg', '')
 
-        nombre_supuesto = clean_channel_name(name_e, aid[-4:])
+        raw_name_for_clean = name_e
+        nombre_supuesto = clean_channel_name(raw_name_for_clean, aid[-4:])
         if not nombre_supuesto: nombre_supuesto = "DESCONOCIDO"
         
         quality_tag = determine_quality(name_e)
@@ -381,12 +377,12 @@ def generate_correspondencias(db):
             w.writerow({
                 'acestream_id': item['ace_id'],
                 'nombre_e': item['nombre_e'],
-                'nombre_ne': item['nombre_ne'],
+                'nombre_ne': '',
                 'tvg-id_e': item['tvg_e'],
-                'tvg-id_ne': item['tvg_ne'],
+                'tvg-id_ne': '',
                 'nombre_supuesto': item['nombre_supuesto'],
                 'grupo_e': item['grupo_e'],
-                'grupo_ne': item['grupo_ne'],
+                'grupo_ne': '',
                 'calidad': item['calidad_clean'],
                 'lista_negra': item['in_blacklist'],
                 'canal_real': item['blacklist_real_name']
@@ -412,82 +408,89 @@ def generate_ezdakit_m3u(db):
     print(f"    -> {len(entries)} canales escritos.")
 
 # ============================================================================================
-# SCRAPING Y EVENTOS MULTIDÍA (KIROIDEUNO)
+# SCRAPING AUTOMATIZADO CON PLAYWRIGHT
 # ============================================================================================
 
 def get_fresh_agenda_html():
-    scraper = cloudscraper.create_scraper(browser={'browser': 'chrome', 'platform': 'windows', 'desktop': True})
+    """
+    [v2.2] Utiliza Playwright para interactuar con la web kiroideuno.pages.gay:
+    1. Abre la URL.
+    2. Hace clic en "Configurar URLs de AceStream".
+    3. Pega HASHES_JSON_URL en el cuadro de texto.
+    4. Hace clic en "Guardar y recargar".
+    5. Espera a que el JS renderice las 3 tablas de eventos con sus links.
+    6. Devuelve el HTML completamente renderizado.
+    """
+    now_utc = datetime.datetime.now(datetime.timezone.utc)
+    timestamp_str = now_utc.strftime('%Y-%m-%d %H:%M')
     
-    # Inyección de cookie para persistir la URL de hashes.json en kiroideuno.pages.gay
-    scraper.cookies.set("sources", ELCANO_WORKER_URL, domain="kiroideuno.pages.gay")
+    print(f"    [PLAYWRIGHT FETCH] UTC: {timestamp_str}.")
+    print(f"    Navegando a {AGENDA_WEB_URL}...")
     
-    now_utc = datetime.datetime.utcnow()
-    today_date = now_utc.date()
-    
-    print(f"    [SMART FETCH] Hora UTC: {now_utc.strftime('%H:%M')}.")
-    
-    log_entries = []
-    last_working_html = None
-    fresh_html = None
-    
-    for url in URLS_AGENDA:
+    if not PLAYWRIGHT_AVAILABLE:
+        print("    [AVISO] Playwright no está instalado localmente. Intentando fallback con cloudscraper...")
+        scraper = cloudscraper.create_scraper(browser={'browser': 'chrome', 'platform': 'windows', 'desktop': True})
         try:
-            print(f"    Probando: {url} ...")
-            
-            r = scraper.get(url, timeout=60)
-            if r.status_code == 200:
-                r.encoding = 'utf-8'
-                html_content = r.text
-                
-                soup_temp = BeautifulSoup(html_content, 'html.parser')
-                first_day_div = soup_temp.find('div', class_='events-day')
-                
-                status_msg = "OK"
-                is_actually_fresh = False
-                
-                if first_day_div:
-                    date_str = first_day_div.get('data-date')
-                    try:
-                        content_date = datetime.datetime.strptime(date_str, "%Y-%m-%d").date()
-                        if content_date >= today_date:
-                            status_msg = f"FRESH (Data from {date_str})"
-                            is_actually_fresh = True
-                        else:
-                            status_msg = f"STALE (Data from {date_str})"
-                            is_actually_fresh = False
-                    except:
-                        status_msg = "WARN (Date parsing failed)"
-                else:
-                    status_msg = "WARN (No events found)"
-
-                timestamp = now_utc.strftime('%Y-%m-%d %H:%M')
-                log_entries.append(f"[{timestamp}] {url} | {status_msg}")
-                
-                last_working_html = html_content
-                
-                if is_actually_fresh:
-                    fresh_html = html_content
-                    print(f"      -> {status_msg}. USANDO ESTA FUENTE.")
-                    log_entries[-1] += " [SELECTED]"
-                    break 
-                else:
-                    print(f"      -> {status_msg}. Buscando opción alternativa...")
-
+            r = scraper.get(AGENDA_WEB_URL, timeout=30, cookies={'sources': HASHES_JSON_URL})
+            return r.text if r.status_code == 200 else None
         except Exception as e:
-            err_str = str(e).split('(')[0] if '(' in str(e) else str(e)
-            print(f"      -> ERROR: {err_str}...")
-            log_entries.append(f"[{now_utc.strftime('%Y-%m-%d %H:%M')}] {url} | ERROR: {err_str}")
+            print(f"    [ERROR FALLBACK] {e}")
+            return None
+
+    log_entries = []
+    html_content = None
+    
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
+            page = context.new_page()
+            
+            # Paso 1: Abrir la página
+            page.goto(AGENDA_WEB_URL, wait_until="domcontentloaded", timeout=60000)
+            page.wait_for_timeout(2000)
+            
+            # Paso 2: Pulsar el botón "Configurar URLs de AceStream"
+            config_btn = page.locator("button:has-text('Configurar'), button:has-text('URLs')")
+            if config_btn.count() > 0:
+                print("    [1/4] Pulsando botón 'Configurar URLs de AceStream'...")
+                config_btn.first.click()
+                page.wait_for_timeout(1000)
+            
+            # Paso 3: Pegar la URL del JSON en el textarea
+            textarea = page.locator("textarea")
+            if textarea.count() > 0:
+                print(f"    [2/4] Pegando URL de JSON: {HASHES_JSON_URL[:50]}...")
+                textarea.first.fill(HASHES_JSON_URL)
+                page.wait_for_timeout(500)
+            
+            # Paso 4: Pulsar el botón "Guardar y recargar"
+            save_btn = page.locator("button:has-text('Guardar'), button:has-text('recargar')")
+            if save_btn.count() > 0:
+                print("    [3/4] Pulsando botón 'Guardar y recargar'...")
+                save_btn.first.click()
+                page.wait_for_timeout(5000) # Esperar a la recarga y fetch de JS
+            
+            # Paso 5: Esperar a que se rendericen las tablas/eventos
+            print("    [4/4] Esperando a que el JavaScript rellene las 3 tablas de eventos...")
+            try:
+                page.wait_for_selector("div.events-day, table, tr.event-row", timeout=15000)
+            except:
+                pass
+            
+            html_content = page.content()
+            browser.close()
+            
+            log_entries.append(f"[{timestamp_str}] {AGENDA_WEB_URL} | FRESH (Playwright Render OK)")
+            print("      -> [OK] Renderizado de eventos completado con éxito.")
+
+    except Exception as e:
+        err_msg = str(e).split('\n')[0]
+        print(f"      -> ERROR Playwright: {err_msg}")
+        log_entries.append(f"[{timestamp_str}] {AGENDA_WEB_URL} | ERROR: {err_msg}")
 
     update_proxies_log(log_entries)
-
-    if fresh_html:
-        return fresh_html
-    elif last_working_html:
-        print("    [AVISO] No se encontraron datos frescos de hoy. Usando la última respuesta obtenida.")
-        return last_working_html
-    else:
-        print("    [ERROR] No se pudo acceder a la web de la agenda.")
-        return None
+    return html_content
 
 def scrape_and_match(dial_map, name_map, master_db):
     print(f"[6] Scraping de Agenda (3 días) y cruce de datos...")
@@ -501,10 +504,15 @@ def scrape_and_match(dial_map, name_map, master_db):
     html = get_fresh_agenda_html()
             
     if not html:
+        print("    [ERROR] No se pudo obtener el HTML de la agenda.")
         return [], []
 
     soup = BeautifulSoup(html, 'html.parser')
     days = soup.find_all('div', class_='events-day')
+    if not days:
+        # Fallback si las tablas están estructuradas por clases de día o table
+        days = soup.find_all(['table', 'section', 'div'], class_=re.compile(r'event|day|tabla', re.I))
+
     if not days:
         print("    [ERROR] HTML sin bloques de eventos. La estructura de la página puede haber cambiado.")
         return [], []
@@ -513,20 +521,25 @@ def scrape_and_match(dial_map, name_map, master_db):
     discarded_list = [] 
     dias_semana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
 
-    for day_div in days:
+    for day_idx, day_div in enumerate(days):
         date_iso = day_div.get('data-date')
-        if not date_iso: continue
         
+        if not date_iso:
+            # Calcular fecha estimada para los 3 días
+            target_dt = datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(days=day_idx)
+            date_iso = target_dt.strftime("%Y-%m-%d")
+
         try:
             dt = datetime.datetime.strptime(date_iso, "%Y-%m-%d")
             fecha_csv = date_iso
             dia_m3u = f"{dt.strftime('%m-%d')} ({dias_semana[dt.weekday()]})"
-        except: continue
+        except:
+            continue
 
-        rows = day_div.find_all('tr', class_='event-row')
+        rows = day_div.find_all('tr', class_=re.compile(r'event|row', re.I))
         for row in rows:
             event_raw = row.get('data-event-id')
-            comp_div = row.find('div', class_='competition-info')
+            comp_div = row.find('div', class_=re.compile(r'comp', re.I))
             competition = comp_div.get_text(separator=' ', strip=True) if comp_div else ""
             
             tds = row.find_all('td')
@@ -539,7 +552,7 @@ def scrape_and_match(dial_map, name_map, master_db):
                 if not competition:
                     competition = tds[1].get_text(strip=True)
             
-            channels = row.find_all('span', class_='channel-link')
+            channels = row.find_all(['span', 'td', 'a'], class_=re.compile(r'channel|link|acestream', re.I))
             processed_ace_ids = set()
             
             for ch in channels:
@@ -562,9 +575,9 @@ def scrape_and_match(dial_map, name_map, master_db):
                     else:
                         canal_agenda_clean = txt
                 
-                # Normalización Estricta
                 canal_agenda_clean = canal_agenda_clean.upper().strip()
                 
+                # Reglas secuenciales de normalización
                 canal_agenda_clean = canal_agenda_clean.replace("ELLAS VAMOS", "MOVISTAR ELLAS")
                 canal_agenda_clean = canal_agenda_clean.replace("M+ DEPORTES", "MOVISTAR DEPORTES")
                 canal_agenda_clean = canal_agenda_clean.replace("LALIGA TV HYPERMOTION", "HYPERMOTION")
@@ -572,15 +585,14 @@ def scrape_and_match(dial_map, name_map, master_db):
                 canal_agenda_clean = re.sub(r'\s*:\s*VER PARTIDO\s*', '', canal_agenda_clean)
                 canal_agenda_clean = canal_agenda_clean.replace("PLUS+", "PLUS")
                 canal_agenda_clean = re.sub(r'^M\+\s*', '', canal_agenda_clean)
-                canal_agenda_clean = canal_agenda_clean.replace("LALIGA", "M+ LALIGA")
-                canal_agenda_clean = canal_agenda_clean.strip()
+                canal_agenda_clean = canal_agenda_clean.replace("LALIGA", "M+ LALIGA").strip()
                 
                 if canal_agenda_clean == "DAZN LA LIGA":
                     canal_agenda_clean = "DAZN LA LIGA 1"
 
                 if not dial:
-                     discarded_list.append({'dial_M': '?', 'nombre_canal_descartado': txt, 'evento_descartado': event_raw, 'motivo': 'no_dial_detected'})
-                     continue
+                    discarded_list.append({'dial_M': '?', 'nombre_canal_descartado': txt, 'evento_descartado': event_raw, 'motivo': 'no_dial_detected'})
+                    continue
 
                 target_tvg = name_map.get(canal_agenda_clean)
 
@@ -628,7 +640,7 @@ def scrape_and_match(dial_map, name_map, master_db):
                         'ace_prefix': aid[:3]
                     })
 
-    print(f"    -> Encontradas {len(events_list)} combinaciones evento-canal (3 días).")
+    print(f"    -> Encontrados {len(events_list)} combinaciones evento-canal.")
     print(f"    -> Descartados {len(discarded_list)} intentos.")
     return events_list, discarded_list
 

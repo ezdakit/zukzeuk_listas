@@ -32,7 +32,8 @@ jobs:
 
       - name: Instalar dependencias
         run: |
-          pip install requests beautifulsoup4 cloudscraper
+          pip install requests beautifulsoup4 cloudscraper playwright
+          playwright install --with-deps chromium
 
       - name: Ejecutar Sistema de Actualización
         run: |
