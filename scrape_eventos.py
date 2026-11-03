@@ -29,7 +29,15 @@ from zoneinfo import ZoneInfo
 from playwright.sync_api import TimeoutError as PWTimeout
 from playwright.sync_api import sync_playwright
 
-SITE_URL = os.getenv("SITE_URL", "https://kiroideuno.pages.gay")
+# URLs de la web, por orden de preferencia (la segunda es un espejo de la primera).
+# Se puede sobrescribir con SITE_URLS="url1,url2".
+SITE_URLS = [
+    u.strip()
+    for u in os.getenv(
+        "SITE_URLS", "https://kiroideuno.pages.gay/,https://andrenalina.wasmer.app/"
+    ).split(",")
+    if u.strip()
+]
 ACESTREAM_JSON_URL = os.getenv(
     "ACESTREAM_JSON_URL",
     "https://tokyo.elcano-ipfs.workers.dev/"
@@ -388,6 +396,76 @@ def write_json(path, data):
         f.write("\n")
 
 
+def scrape_site(site_url, tag):
+    """Abre una URL de la web, configura el JSON de AceStream y devuelve las tablas.
+    Lanza una excepción si la web no carga o no termina de rellenarse."""
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        context = browser.new_context(
+            viewport={"width": 1400, "height": 900},
+            locale="es-ES",
+            timezone_id="Europe/Madrid",
+        )
+        page = context.new_page()
+        try:
+            log(f"Abriendo {site_url}")
+            page.goto(site_url, wait_until="domcontentloaded", timeout=60000)
+            handle_eula(page)
+            page.wait_for_load_state("networkidle", timeout=60000)
+            save_debug(page, f"{tag}_01_inicial")
+
+            # Abrir el panel de configuración si está cerrado
+            if not page.locator("#urlsInput").is_visible():
+                log("Abriendo panel de configuración")
+                page.locator("#btnToggleConfig").click()
+            page.locator("#urlsInput").wait_for(state="visible", timeout=15000)
+
+            log("Escribiendo la URL del JSON de AceStream")
+            page.locator("#urlsInput").fill(ACESTREAM_JSON_URL)
+            save_debug(page, f"{tag}_02_url_pegada")
+
+            log("Pulsando 'Guardar y Recargar'")
+            try:
+                with page.expect_navigation(wait_until="domcontentloaded", timeout=30000):
+                    page.locator("#btnSaveUrls").click()
+            except PWTimeout:
+                log("No se detectó navegación explícita; se continúa")
+
+            # Tras recargar, el EULA ya está aceptado (cookie), pero por si acaso:
+            handle_eula(page)
+            page.wait_for_load_state("networkidle", timeout=60000)
+
+            log(f"Esperando a que cargue la página (máx {WAIT_FILL_SECONDS}s)")
+            tables = []
+            prev = None
+            ready = False
+            deadline = time.time() + WAIT_FILL_SECONDS
+            while time.time() < deadline:
+                tables = page.evaluate(EXTRACT_JS, TABLE_IDS)
+                if tables_ready(tables):
+                    # Carga estable: mismo nº de filas en dos lecturas seguidas
+                    sig = tuple(len(t["filas"]) for t in tables)
+                    if sig == prev:
+                        ready = True
+                        break
+                    prev = sig
+                else:
+                    prev = None
+                time.sleep(2)
+
+            save_debug(page, f"{tag}_03_final")
+            if not ready:
+                raise RuntimeError(
+                    "la página no terminó de cargar (tablaAcestream o columna Acestream vacías)"
+                )
+            return tables
+        except Exception:
+            save_debug(page, f"{tag}_error")
+            raise
+        finally:
+            browser.close()
+
+
 def tables_ready(tables):
     """La página terminó de cargar: hay hashes en los eventos Y la última tabla
     (tablaAcestream, con todos los enlaces disponibles) ya tiene filas."""
@@ -409,68 +487,19 @@ def main():
         log(f"ERROR con Elcano: {e}")
         errores.append("elcano")
 
-    # 2) scraping de la web
-    tables = []
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        context = browser.new_context(
-            viewport={"width": 1400, "height": 900},
-            locale="es-ES",
-            timezone_id="Europe/Madrid",
-        )
-        page = context.new_page()
+    # 2) scraping de la web: se prueba cada URL hasta que una cargue por completo
+    tables, site_used = [], None
+    for i, url in enumerate(SITE_URLS, 1):
         try:
-            log(f"Abriendo {SITE_URL}")
-            page.goto(SITE_URL, wait_until="domcontentloaded", timeout=60000)
-            handle_eula(page)
-            page.wait_for_load_state("networkidle", timeout=60000)
-            save_debug(page, "01_inicial")
-
-            # Abrir el panel de configuración si está cerrado
-            if not page.locator("#urlsInput").is_visible():
-                log("Abriendo panel de configuración")
-                page.locator("#btnToggleConfig").click()
-            page.locator("#urlsInput").wait_for(state="visible", timeout=15000)
-
-            log("Escribiendo la URL del JSON de AceStream")
-            page.locator("#urlsInput").fill(ACESTREAM_JSON_URL)
-            save_debug(page, "02_url_pegada")
-
-            log("Pulsando 'Guardar y Recargar'")
-            try:
-                with page.expect_navigation(wait_until="domcontentloaded", timeout=30000):
-                    page.locator("#btnSaveUrls").click()
-            except PWTimeout:
-                log("No se detectó navegación explícita; se continúa")
-
-            # Tras recargar, el EULA ya está aceptado (cookie), pero por si acaso:
-            handle_eula(page)
-            page.wait_for_load_state("networkidle", timeout=60000)
-
-            log(f"Esperando a que se rellene '{ACESTREAM_COLUMN}' (máx {WAIT_FILL_SECONDS}s)")
-            tables = []
-            prev = None
-            deadline = time.time() + WAIT_FILL_SECONDS
-            while time.time() < deadline:
-                tables = page.evaluate(EXTRACT_JS, TABLE_IDS)
-                if tables_ready(tables):
-                    # Carga estable: mismo nº de filas en dos lecturas seguidas
-                    sig = tuple(len(t["filas"]) for t in tables)
-                    if sig == prev:
-                        break
-                    prev = sig
-                else:
-                    prev = None
-                time.sleep(2)
-            else:
-                log("AVISO: la página no terminó de cargar (tablaAcestream vacía o columna Acestream vacía)")
-
-            save_debug(page, "03_final")
-        except Exception:
-            save_debug(page, "error")
-            raise
-        finally:
-            browser.close()
+            tables = scrape_site(url, f"{i}")
+            site_used = url
+            break
+        except Exception as e:  # noqa: BLE001
+            log(f"ERROR con {url}: {type(e).__name__}: {e}")
+            if i < len(SITE_URLS):
+                log("Probando la siguiente URL de respaldo")
+    if site_used is None:
+        log("No se pudo cargar ninguna de las URLs de la web")
 
     # 3) eventos.json + ezdakit_eventos.m3u (solo si la página terminó de cargar,
     #    para no machacar con datos vacíos la última versión buena)
@@ -480,7 +509,7 @@ def main():
             n = build_events_m3u(tables, elcano or {"hashes": []}, EVENTS_M3U)
             log(f"Guardado {EVENTS_M3U}: {n} entradas")
             resultado = {
-                "fuente": SITE_URL,
+                "fuente": site_used,
                 "acestream_json": ACESTREAM_JSON_URL,
                 "generado_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                 "tablas": tables,
