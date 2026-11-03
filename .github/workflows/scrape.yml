@@ -1,9 +1,9 @@
 name: Scrape eventos Acestream
 
 on:
-  workflow_dispatch:        # ejecución manual desde la pestaña Actions
   schedule:
     - cron: "22 */3 * * *" 
+  workflow_dispatch:        # ejecución manual desde la pestaña Actions
 
 permissions:
   contents: write           # necesario para hacer commit/push de los ficheros generados
