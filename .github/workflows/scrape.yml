@@ -15,15 +15,15 @@ concurrency:
 
 jobs:
   scrape:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # fijado: ubuntu-latest migra a Ubuntu 26 y Playwright --with-deps podría no soportarlo aún
     timeout-minutes: 15
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Configurar Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -39,7 +39,7 @@ jobs:
         env:
           # La web exige aceptar un EULA (licencia de uso personal).
           # Cámbialo a "yes" SOLO después de leerlo y aceptarlo tú.
-          ACCEPT_EULA: "yes"
+          ACCEPT_EULA: "no"
         run: python scrape_eventos.py
 
       # Se ejecuta aunque el scraping falle, para no perder elcano.json / ezdakit.m3u
@@ -63,7 +63,7 @@ jobs:
       # Solo si algo falla: capturas/HTML para depurar (ya no se sube eventos.json como artefacto)
       - name: Subir debug si falla
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: debug
           path: debug/

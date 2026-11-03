@@ -182,8 +182,8 @@ def fetch_elcano():
         try:
             with urllib.request.urlopen(req, timeout=30) as r:
                 data = json.loads(r.read().decode("utf-8"))
-            if not isinstance(data.get("hashes"), list):
-                raise ValueError("el JSON no contiene la lista 'hashes'")
+            if not isinstance(data.get("hashes"), list) or not data["hashes"]:
+                raise ValueError("el JSON no contiene una lista 'hashes' con datos")
             return data
         except Exception as e:  # noqa: BLE001
             last = e
@@ -244,6 +244,8 @@ def build_channels_m3u(elcano, path):
             f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{attr(name)}" group-title="{group}",{name}'
         )
         lines.append(CHANNELS_URL_TEMPLATE.format(hash=h))
+    if not lines:
+        raise ValueError("lista de canales vacía: no se sobrescribe " + path)
     write_m3u(path, lines)
     return len(lines) // 2
 
@@ -374,6 +376,8 @@ def build_events_m3u(tables, elcano, path):
         group = f'{e["fecha"]} {e["comp"]}'
         lines.append(f'#EXTINF:-1 group-title="{attr(group)}" tvg-name="{attr(name)}",{name}')
         lines.append(EVENTS_URL_TEMPLATE.format(hash=e["hash"]))
+    if not lines:
+        raise ValueError("ningún evento con hash: no se sobrescribe " + path)
     write_m3u(path, lines)
     return len(lines) // 2
 
@@ -382,6 +386,13 @@ def write_json(path, data):
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
         f.write("\n")
+
+
+def tables_ready(tables):
+    """La página terminó de cargar: hay hashes en los eventos Y la última tabla
+    (tablaAcestream, con todos los enlaces disponibles) ya tiene filas."""
+    ultima = next((t for t in tables if t["id"] == "tablaAcestream"), None)
+    return bool(ultima and ultima["filas"]) and acestream_filled(tables)
 
 
 def main():
@@ -438,17 +449,21 @@ def main():
 
             log(f"Esperando a que se rellene '{ACESTREAM_COLUMN}' (máx {WAIT_FILL_SECONDS}s)")
             tables = []
+            prev = None
             deadline = time.time() + WAIT_FILL_SECONDS
             while time.time() < deadline:
                 tables = page.evaluate(EXTRACT_JS, TABLE_IDS)
-                if tables and acestream_filled(tables):
-                    # pequeña pausa para que terminen de pintarse todas las tablas
-                    time.sleep(3)
-                    tables = page.evaluate(EXTRACT_JS, TABLE_IDS)
-                    break
+                if tables_ready(tables):
+                    # Carga estable: mismo nº de filas en dos lecturas seguidas
+                    sig = tuple(len(t["filas"]) for t in tables)
+                    if sig == prev:
+                        break
+                    prev = sig
+                else:
+                    prev = None
                 time.sleep(2)
             else:
-                log("AVISO: la columna Acestream sigue vacía tras la espera")
+                log("AVISO: la página no terminó de cargar (tablaAcestream vacía o columna Acestream vacía)")
 
             save_debug(page, "03_final")
         except Exception:
@@ -457,26 +472,27 @@ def main():
         finally:
             browser.close()
 
-    # 3) eventos.json + ezdakit_eventos.m3u (solo si la columna Acestream se rellenó,
+    # 3) eventos.json + ezdakit_eventos.m3u (solo si la página terminó de cargar,
     #    para no machacar con datos vacíos la última versión buena)
-    if acestream_filled(tables):
-        resultado = {
-            "fuente": SITE_URL,
-            "acestream_json": ACESTREAM_JSON_URL,
-            "generado_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-            "tablas": tables,
-        }
-        write_json(OUTPUT_FILE, resultado)
-        total = sum(len(t["filas"]) for t in tables)
-        log(f"Guardado {OUTPUT_FILE}: {len(tables)} tablas, {total} filas")
+    if tables_ready(tables):
         try:
+            # Primero el M3U (falla si no hay entradas); solo entonces eventos.json
             n = build_events_m3u(tables, elcano or {"hashes": []}, EVENTS_M3U)
             log(f"Guardado {EVENTS_M3U}: {n} entradas")
+            resultado = {
+                "fuente": SITE_URL,
+                "acestream_json": ACESTREAM_JSON_URL,
+                "generado_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                "tablas": tables,
+            }
+            write_json(OUTPUT_FILE, resultado)
+            total = sum(len(t["filas"]) for t in tables)
+            log(f"Guardado {OUTPUT_FILE}: {len(tables)} tablas, {total} filas")
         except Exception as e:  # noqa: BLE001
-            log(f"ERROR generando {EVENTS_M3U}: {e}")
-            errores.append("m3u_eventos")
+            log(f"ERROR generando eventos (se conservan los ficheros anteriores): {e}")
+            errores.append("eventos")
     else:
-        log("La columna Acestream está vacía: no se actualizan eventos.json ni el m3u de eventos")
+        log("La carga no se completó: no se actualizan eventos.json ni el m3u de eventos")
         errores.append("eventos")
 
     if errores:
