@@ -1,172 +1,6 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="11-02 (Lunes) NFL Liga Regular" tvg-name="02:20-Washington Commanders Philadelphia Eagles (DAZN 2) (HD) (eff)",02:20-Washington Commanders Philadelphia Eagles (DAZN 2) (HD) (eff)
-http://127.0.0.1:6878/ace/getstream?id=eff7c84667c69e18353d8c97ab956915e2403feb
-#EXTINF:-1 group-title="11-02 (Lunes) NFL Liga Regular" tvg-name="02:20-Washington Commanders Philadelphia Eagles (DAZN 2) (FHD) (6c7)",02:20-Washington Commanders Philadelphia Eagles (DAZN 2) (FHD) (6c7)
-http://127.0.0.1:6878/ace/getstream?id=6c7907fd3bd1f39145061b432be822e371f81e71
-#EXTINF:-1 group-title="11-02 (Lunes) NFL Liga Regular" tvg-name="02:20-Washington Commanders Philadelphia Eagles (DAZN 2) (FHD) (84d)",02:20-Washington Commanders Philadelphia Eagles (DAZN 2) (FHD) (84d)
-http://127.0.0.1:6878/ace/getstream?id=84d140989b5f3bc7034f73dba5c6c94d01b1c05a
-#EXTINF:-1 group-title="11-02 (Lunes) NFL Liga Regular" tvg-name="02:20-Washington Commanders Philadelphia Eagles (CUATRO) (FHD) (9b7)",02:20-Washington Commanders Philadelphia Eagles (CUATRO) (FHD) (9b7)
-http://127.0.0.1:6878/ace/getstream?id=9b7fe817f03d3e9349c71353187a23d63f2d8893
-#EXTINF:-1 group-title="11-02 (Lunes) NBA Liga Regular" tvg-name="02:30-Golden State Warriors Los Angeles Clippers (NBA LEAGUE PASS) (FHD) (e70)",02:30-Golden State Warriors Los Angeles Clippers (NBA LEAGUE PASS) (FHD) (e70)
-http://127.0.0.1:6878/ace/getstream?id=e70a62fd486ce0d4970bec6849023c781efb7c31
-#EXTINF:-1 group-title="11-02 (Lunes) NBA Liga Regular" tvg-name="02:30-Golden State Warriors Los Angeles Clippers (NBA LEAGUE PASS) (FHD) (d4f)",02:30-Golden State Warriors Los Angeles Clippers (NBA LEAGUE PASS) (FHD) (d4f)
-http://127.0.0.1:6878/ace/getstream?id=d4ffff16fcb461fc8d926a5698ee2e23d0cf3620
-#EXTINF:-1 group-title="11-02 (Lunes) NBA Liga Regular" tvg-name="03:00-Los Angeles Lakers Toronto Raptors (NBA LEAGUE PASS) (FHD) (e70)",03:00-Los Angeles Lakers Toronto Raptors (NBA LEAGUE PASS) (FHD) (e70)
-http://127.0.0.1:6878/ace/getstream?id=e70a62fd486ce0d4970bec6849023c781efb7c31
-#EXTINF:-1 group-title="11-02 (Lunes) NBA Liga Regular" tvg-name="03:00-Los Angeles Lakers Toronto Raptors (NBA LEAGUE PASS) (FHD) (d4f)",03:00-Los Angeles Lakers Toronto Raptors (NBA LEAGUE PASS) (FHD) (d4f)
-http://127.0.0.1:6878/ace/getstream?id=d4ffff16fcb461fc8d926a5698ee2e23d0cf3620
-#EXTINF:-1 group-title="11-02 (Lunes) WTA Torneo de Hong Kong 1ª Ronda" tvg-name="07:10-V. Golubic K. Boulter (TENNIS CHANNEL) (FHD) (a37)",07:10-V. Golubic K. Boulter (TENNIS CHANNEL) (FHD) (a37)
-http://127.0.0.1:6878/ace/getstream?id=a374064c68314cd8bc488257067db9148b3c54e0
-#EXTINF:-1 group-title="11-02 (Lunes) WTA Torneo de Hong Kong 1ª Ronda" tvg-name="07:10-V. Golubic K. Boulter (TENNIS CHANNEL) (FHD) (0a0)",07:10-V. Golubic K. Boulter (TENNIS CHANNEL) (FHD) (0a0)
-http://127.0.0.1:6878/ace/getstream?id=0a0d41e8d606f38757c1453a15df5dcd0491507b
-#EXTINF:-1 group-title="11-02 (Lunes) WTA Torneo de Hong Kong 1ª Ronda" tvg-name="09:15-CY. Lee M. Sakkari (TENNIS CHANNEL) (FHD) (a37)",09:15-CY. Lee M. Sakkari (TENNIS CHANNEL) (FHD) (a37)
-http://127.0.0.1:6878/ace/getstream?id=a374064c68314cd8bc488257067db9148b3c54e0
-#EXTINF:-1 group-title="11-02 (Lunes) WTA Torneo de Hong Kong 1ª Ronda" tvg-name="09:15-CY. Lee M. Sakkari (TENNIS CHANNEL) (FHD) (0a0)",09:15-CY. Lee M. Sakkari (TENNIS CHANNEL) (FHD) (0a0)
-http://127.0.0.1:6878/ace/getstream?id=0a0d41e8d606f38757c1453a15df5dcd0491507b
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="11:10-L. Musetti H. Hurkacz (M+ DEPORTES 2) (HD) (496)",11:10-L. Musetti H. Hurkacz (M+ DEPORTES 2) (HD) (496)
-http://127.0.0.1:6878/ace/getstream?id=49612f9e8190d4eb79f666af2c537c6fe9ec4014
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="11:10-L. Musetti H. Hurkacz (M+ DEPORTES 2) (FHD) (772)",11:10-L. Musetti H. Hurkacz (M+ DEPORTES 2) (FHD) (772)
-http://127.0.0.1:6878/ace/getstream?id=77290ae42871331705d95f8ac4eb597412f6008c
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="11:10-L. Musetti H. Hurkacz (M+ DEPORTES 2) (FHD) (882)",11:10-L. Musetti H. Hurkacz (M+ DEPORTES 2) (FHD) (882)
-http://127.0.0.1:6878/ace/getstream?id=882f5331b0b20056f3d8e685ed2498909f4115c8
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="11:10-L. Musetti H. Hurkacz (M+ DEPORTES 2) (FHD) (4a2)",11:10-L. Musetti H. Hurkacz (M+ DEPORTES 2) (FHD) (4a2)
-http://127.0.0.1:6878/ace/getstream?id=4a2384051213222a0e29111dc5d94cac35b3a521
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="11:10-L. Darderi R. Hijikata (M+ DEPORTES 4) (HD) (396)",11:10-L. Darderi R. Hijikata (M+ DEPORTES 4) (HD) (396)
-http://127.0.0.1:6878/ace/getstream?id=3964457f69465b0b04dcd3c1218103b0197cbb39
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="11:10-L. Darderi R. Hijikata (M+ DEPORTES 4) (FHD) (a8f)",11:10-L. Darderi R. Hijikata (M+ DEPORTES 4) (FHD) (a8f)
-http://127.0.0.1:6878/ace/getstream?id=a8f257fe23dc566e85edc3d87a089fefc38bdcfe
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="11:10-I. Buse Z. Bergs (M+ DEPORTES 3) (HD) (849)",11:10-I. Buse Z. Bergs (M+ DEPORTES 3) (HD) (849)
-http://127.0.0.1:6878/ace/getstream?id=8492609b5378ef969bb30c148087a46a31f0b5d0
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="11:10-I. Buse Z. Bergs (M+ DEPORTES 3) (HD) (cdb)",11:10-I. Buse Z. Bergs (M+ DEPORTES 3) (HD) (cdb)
-http://127.0.0.1:6878/ace/getstream?id=cdba3600fddcc84521046737da10394250036bed
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="11:10-I. Buse Z. Bergs (M+ DEPORTES 3) (FHD) (54b)",11:10-I. Buse Z. Bergs (M+ DEPORTES 3) (FHD) (54b)
-http://127.0.0.1:6878/ace/getstream?id=54bbef244c11ceab869f2d962fb9a744d295ee6b
-#EXTINF:-1 group-title="11-02 (Lunes) WTA Torneo de Hong Kong 1ª Ronda" tvg-name="11:40-V. Williams M. Stoiana (TENNIS CHANNEL) (FHD) (a37)",11:40-V. Williams M. Stoiana (TENNIS CHANNEL) (FHD) (a37)
-http://127.0.0.1:6878/ace/getstream?id=a374064c68314cd8bc488257067db9148b3c54e0
-#EXTINF:-1 group-title="11-02 (Lunes) WTA Torneo de Hong Kong 1ª Ronda" tvg-name="11:40-V. Williams M. Stoiana (TENNIS CHANNEL) (FHD) (0a0)",11:40-V. Williams M. Stoiana (TENNIS CHANNEL) (FHD) (0a0)
-http://127.0.0.1:6878/ace/getstream?id=0a0d41e8d606f38757c1453a15df5dcd0491507b
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="12:30-L. Van Assche M. Navone (M+ DEPORTES 4) (HD) (396)",12:30-L. Van Assche M. Navone (M+ DEPORTES 4) (HD) (396)
-http://127.0.0.1:6878/ace/getstream?id=3964457f69465b0b04dcd3c1218103b0197cbb39
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="12:30-L. Van Assche M. Navone (M+ DEPORTES 4) (FHD) (a8f)",12:30-L. Van Assche M. Navone (M+ DEPORTES 4) (FHD) (a8f)
-http://127.0.0.1:6878/ace/getstream?id=a8f257fe23dc566e85edc3d87a089fefc38bdcfe
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="13:15-A. Tabilo R. Jódar (MOVISTAR PLUS) (HD) (3fc)",13:15-A. Tabilo R. Jódar (MOVISTAR PLUS) (HD) (3fc)
-http://127.0.0.1:6878/ace/getstream?id=3fc7a941ed2c1459dfd55f74ed72640e946f213d
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="13:15-A. Tabilo R. Jódar (MOVISTAR PLUS) (FHD) (42b)",13:15-A. Tabilo R. Jódar (MOVISTAR PLUS) (FHD) (42b)
-http://127.0.0.1:6878/ace/getstream?id=42b45039548159e5e9900672a488e73a94838bc8
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="13:15-A. Tabilo R. Jódar (MOVISTAR PLUS) (FHD) (2c2)",13:15-A. Tabilo R. Jódar (MOVISTAR PLUS) (FHD) (2c2)
-http://127.0.0.1:6878/ace/getstream?id=2c2118129349debdf4dafb2d1906e3c0b33e44df
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="13:15-A. Tabilo R. Jódar (M+ DEPORTES 2) (HD) (496)",13:15-A. Tabilo R. Jódar (M+ DEPORTES 2) (HD) (496)
-http://127.0.0.1:6878/ace/getstream?id=49612f9e8190d4eb79f666af2c537c6fe9ec4014
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="13:15-A. Tabilo R. Jódar (M+ DEPORTES 2) (FHD) (772)",13:15-A. Tabilo R. Jódar (M+ DEPORTES 2) (FHD) (772)
-http://127.0.0.1:6878/ace/getstream?id=77290ae42871331705d95f8ac4eb597412f6008c
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="13:15-A. Tabilo R. Jódar (M+ DEPORTES 2) (FHD) (882)",13:15-A. Tabilo R. Jódar (M+ DEPORTES 2) (FHD) (882)
-http://127.0.0.1:6878/ace/getstream?id=882f5331b0b20056f3d8e685ed2498909f4115c8
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="13:15-A. Tabilo R. Jódar (M+ DEPORTES 2) (FHD) (4a2)",13:15-A. Tabilo R. Jódar (M+ DEPORTES 2) (FHD) (4a2)
-http://127.0.0.1:6878/ace/getstream?id=4a2384051213222a0e29111dc5d94cac35b3a521
-#EXTINF:-1 group-title="11-02 (Lunes) WTA Torneo de Hong Kong 1ª Ronda" tvg-name="13:15-X. Wang A. Karunaratne (TENNIS CHANNEL) (FHD) (a37)",13:15-X. Wang A. Karunaratne (TENNIS CHANNEL) (FHD) (a37)
-http://127.0.0.1:6878/ace/getstream?id=a374064c68314cd8bc488257067db9148b3c54e0
-#EXTINF:-1 group-title="11-02 (Lunes) WTA Torneo de Hong Kong 1ª Ronda" tvg-name="13:15-X. Wang A. Karunaratne (TENNIS CHANNEL) (FHD) (0a0)",13:15-X. Wang A. Karunaratne (TENNIS CHANNEL) (FHD) (0a0)
-http://127.0.0.1:6878/ace/getstream?id=0a0d41e8d606f38757c1453a15df5dcd0491507b
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="14:00-D. Mérida A. Blockx (M+ DEPORTES 3) (HD) (849)",14:00-D. Mérida A. Blockx (M+ DEPORTES 3) (HD) (849)
-http://127.0.0.1:6878/ace/getstream?id=8492609b5378ef969bb30c148087a46a31f0b5d0
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="14:00-D. Mérida A. Blockx (M+ DEPORTES 3) (HD) (cdb)",14:00-D. Mérida A. Blockx (M+ DEPORTES 3) (HD) (cdb)
-http://127.0.0.1:6878/ace/getstream?id=cdba3600fddcc84521046737da10394250036bed
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="14:00-D. Mérida A. Blockx (M+ DEPORTES 3) (FHD) (54b)",14:00-D. Mérida A. Blockx (M+ DEPORTES 3) (FHD) (54b)
-http://127.0.0.1:6878/ace/getstream?id=54bbef244c11ceab869f2d962fb9a744d295ee6b
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="14:50-C. Norrie M. Arnaldi (M+ DEPORTES 4) (HD) (396)",14:50-C. Norrie M. Arnaldi (M+ DEPORTES 4) (HD) (396)
-http://127.0.0.1:6878/ace/getstream?id=3964457f69465b0b04dcd3c1218103b0197cbb39
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="14:50-C. Norrie M. Arnaldi (M+ DEPORTES 4) (FHD) (a8f)",14:50-C. Norrie M. Arnaldi (M+ DEPORTES 4) (FHD) (a8f)
-http://127.0.0.1:6878/ace/getstream?id=a8f257fe23dc566e85edc3d87a089fefc38bdcfe
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="14:55-C. Ruud JM. Cerúndolo (M+ DEPORTES 2) (HD) (496)",14:55-C. Ruud JM. Cerúndolo (M+ DEPORTES 2) (HD) (496)
-http://127.0.0.1:6878/ace/getstream?id=49612f9e8190d4eb79f666af2c537c6fe9ec4014
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="14:55-C. Ruud JM. Cerúndolo (M+ DEPORTES 2) (FHD) (772)",14:55-C. Ruud JM. Cerúndolo (M+ DEPORTES 2) (FHD) (772)
-http://127.0.0.1:6878/ace/getstream?id=77290ae42871331705d95f8ac4eb597412f6008c
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="14:55-C. Ruud JM. Cerúndolo (M+ DEPORTES 2) (FHD) (882)",14:55-C. Ruud JM. Cerúndolo (M+ DEPORTES 2) (FHD) (882)
-http://127.0.0.1:6878/ace/getstream?id=882f5331b0b20056f3d8e685ed2498909f4115c8
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="14:55-C. Ruud JM. Cerúndolo (M+ DEPORTES 2) (FHD) (4a2)",14:55-C. Ruud JM. Cerúndolo (M+ DEPORTES 2) (FHD) (4a2)
-http://127.0.0.1:6878/ace/getstream?id=4a2384051213222a0e29111dc5d94cac35b3a521
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="16:10-M. Bellucci L. Sonego (M+ DEPORTES 3) (HD) (849)",16:10-M. Bellucci L. Sonego (M+ DEPORTES 3) (HD) (849)
-http://127.0.0.1:6878/ace/getstream?id=8492609b5378ef969bb30c148087a46a31f0b5d0
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="16:10-M. Bellucci L. Sonego (M+ DEPORTES 3) (HD) (cdb)",16:10-M. Bellucci L. Sonego (M+ DEPORTES 3) (HD) (cdb)
-http://127.0.0.1:6878/ace/getstream?id=cdba3600fddcc84521046737da10394250036bed
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="16:10-M. Bellucci L. Sonego (M+ DEPORTES 3) (FHD) (54b)",16:10-M. Bellucci L. Sonego (M+ DEPORTES 3) (FHD) (54b)
-http://127.0.0.1:6878/ace/getstream?id=54bbef244c11ceab869f2d962fb9a744d295ee6b
-#EXTINF:-1 group-title="11-02 (Lunes) LaLiga Hypermotion" tvg-name="16:15-Real Oviedo UD Las Palmas (LALIGA TV HYPERMOTION) (HD) (dfe)",16:15-Real Oviedo UD Las Palmas (LALIGA TV HYPERMOTION) (HD) (dfe)
-http://127.0.0.1:6878/ace/getstream?id=dfe4449fc3e0c867eb9be2f50d8efdb9a699410c
-#EXTINF:-1 group-title="11-02 (Lunes) LaLiga Hypermotion" tvg-name="16:15-Real Oviedo UD Las Palmas (LALIGA TV HYPERMOTION) (HD) (9e9)",16:15-Real Oviedo UD Las Palmas (LALIGA TV HYPERMOTION) (HD) (9e9)
-http://127.0.0.1:6878/ace/getstream?id=9e94331bb2d541dc3a2ecc5226168ffee5b3b440
-#EXTINF:-1 group-title="11-02 (Lunes) LaLiga Hypermotion" tvg-name="16:15-Real Oviedo UD Las Palmas (LALIGA TV HYPERMOTION) (FHD) (b96)",16:15-Real Oviedo UD Las Palmas (LALIGA TV HYPERMOTION) (FHD) (b96)
-http://127.0.0.1:6878/ace/getstream?id=b9633df95d61d51348a2e8a9f88a2c123d140f67
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="16:55-K. Jacquet T. Machac (M+ DEPORTES 4) (HD) (396)",16:55-K. Jacquet T. Machac (M+ DEPORTES 4) (HD) (396)
-http://127.0.0.1:6878/ace/getstream?id=3964457f69465b0b04dcd3c1218103b0197cbb39
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="16:55-K. Jacquet T. Machac (M+ DEPORTES 4) (FHD) (a8f)",16:55-K. Jacquet T. Machac (M+ DEPORTES 4) (FHD) (a8f)
-http://127.0.0.1:6878/ace/getstream?id=a8f257fe23dc566e85edc3d87a089fefc38bdcfe
-#EXTINF:-1 group-title="11-02 (Lunes) Primera Federación Grupo 2" tvg-name="18:15-Real Jaén Algeciras CF (RFEF TV) (FHD) (f91)",18:15-Real Jaén Algeciras CF (RFEF TV) (FHD) (f91)
-http://127.0.0.1:6878/ace/getstream?id=f91cf99e803b9bec591621157fbc4027e4e9b799
-#EXTINF:-1 group-title="11-02 (Lunes) Primera Federación Grupo 2" tvg-name="18:15-Real Jaén Algeciras CF (RFEF TV) (FHD) (dd4)",18:15-Real Jaén Algeciras CF (RFEF TV) (FHD) (dd4)
-http://127.0.0.1:6878/ace/getstream?id=dd48492dbc619b29670a5e25fe8acf9834e9d023
-#EXTINF:-1 group-title="11-02 (Lunes) Primera Federación Grupo 2" tvg-name="18:15-Real Jaén Algeciras CF (RFEF TV) (FHD) (3d0)",18:15-Real Jaén Algeciras CF (RFEF TV) (FHD) (3d0)
-http://127.0.0.1:6878/ace/getstream?id=3d001b30e28db897b25ce918371d52d3b5b7988f
-#EXTINF:-1 group-title="11-02 (Lunes) LaLiga Hypermotion" tvg-name="18:30-Real Valladolid Leganés (LALIGA TV HYPERMOTION) (HD) (dfe)",18:30-Real Valladolid Leganés (LALIGA TV HYPERMOTION) (HD) (dfe)
-http://127.0.0.1:6878/ace/getstream?id=dfe4449fc3e0c867eb9be2f50d8efdb9a699410c
-#EXTINF:-1 group-title="11-02 (Lunes) LaLiga Hypermotion" tvg-name="18:30-Real Valladolid Leganés (LALIGA TV HYPERMOTION) (HD) (9e9)",18:30-Real Valladolid Leganés (LALIGA TV HYPERMOTION) (HD) (9e9)
-http://127.0.0.1:6878/ace/getstream?id=9e94331bb2d541dc3a2ecc5226168ffee5b3b440
-#EXTINF:-1 group-title="11-02 (Lunes) LaLiga Hypermotion" tvg-name="18:30-Real Valladolid Leganés (LALIGA TV HYPERMOTION) (FHD) (b96)",18:30-Real Valladolid Leganés (LALIGA TV HYPERMOTION) (FHD) (b96)
-http://127.0.0.1:6878/ace/getstream?id=b9633df95d61d51348a2e8a9f88a2c123d140f67
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="18:35-A. Molcan T. Droguet (M+ DEPORTES 4) (HD) (396)",18:35-A. Molcan T. Droguet (M+ DEPORTES 4) (HD) (396)
-http://127.0.0.1:6878/ace/getstream?id=3964457f69465b0b04dcd3c1218103b0197cbb39
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="18:35-A. Molcan T. Droguet (M+ DEPORTES 4) (FHD) (a8f)",18:35-A. Molcan T. Droguet (M+ DEPORTES 4) (FHD) (a8f)
-http://127.0.0.1:6878/ace/getstream?id=a8f257fe23dc566e85edc3d87a089fefc38bdcfe
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="19:20-D. Shapovalov K. Khachanov (M+ DEPORTES 2) (HD) (496)",19:20-D. Shapovalov K. Khachanov (M+ DEPORTES 2) (HD) (496)
-http://127.0.0.1:6878/ace/getstream?id=49612f9e8190d4eb79f666af2c537c6fe9ec4014
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="19:20-D. Shapovalov K. Khachanov (M+ DEPORTES 2) (FHD) (772)",19:20-D. Shapovalov K. Khachanov (M+ DEPORTES 2) (FHD) (772)
-http://127.0.0.1:6878/ace/getstream?id=77290ae42871331705d95f8ac4eb597412f6008c
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="19:20-D. Shapovalov K. Khachanov (M+ DEPORTES 2) (FHD) (882)",19:20-D. Shapovalov K. Khachanov (M+ DEPORTES 2) (FHD) (882)
-http://127.0.0.1:6878/ace/getstream?id=882f5331b0b20056f3d8e685ed2498909f4115c8
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="19:20-D. Shapovalov K. Khachanov (M+ DEPORTES 2) (FHD) (4a2)",19:20-D. Shapovalov K. Khachanov (M+ DEPORTES 2) (FHD) (4a2)
-http://127.0.0.1:6878/ace/getstream?id=4a2384051213222a0e29111dc5d94cac35b3a521
-#EXTINF:-1 group-title="11-02 (Lunes) Liga F" tvg-name="20:00-Costa Adeje Tenerife Athletic Femenino (TELEDEPORTE) (HD) (bb0)",20:00-Costa Adeje Tenerife Athletic Femenino (TELEDEPORTE) (HD) (bb0)
-http://127.0.0.1:6878/ace/getstream?id=bb0ec8a302119f3fd48edf7ccfdd99d3089ac171
-#EXTINF:-1 group-title="11-02 (Lunes) Liga F" tvg-name="20:00-Costa Adeje Tenerife Athletic Femenino (TELEDEPORTE) (FHD) (03e)",20:00-Costa Adeje Tenerife Athletic Femenino (TELEDEPORTE) (FHD) (03e)
-http://127.0.0.1:6878/ace/getstream?id=03eaa3007ce82840838fa8164f8e0131044d71a3
-#EXTINF:-1 group-title="11-02 (Lunes) Liga F" tvg-name="20:00-Costa Adeje Tenerife Athletic Femenino (TELEDEPORTE) (FHD) (18b)",20:00-Costa Adeje Tenerife Athletic Femenino (TELEDEPORTE) (FHD) (18b)
-http://127.0.0.1:6878/ace/getstream?id=18be1bb5539df74077c03c6e0dc63ef180cc9cf1
-#EXTINF:-1 group-title="11-02 (Lunes) Primera Federación Grupo 2" tvg-name="20:30-Huesca Nástic Tarragona (RFEF TV) (FHD) (f91)",20:30-Huesca Nástic Tarragona (RFEF TV) (FHD) (f91)
-http://127.0.0.1:6878/ace/getstream?id=f91cf99e803b9bec591621157fbc4027e4e9b799
-#EXTINF:-1 group-title="11-02 (Lunes) Primera Federación Grupo 2" tvg-name="20:30-Huesca Nástic Tarragona (RFEF TV) (FHD) (dd4)",20:30-Huesca Nástic Tarragona (RFEF TV) (FHD) (dd4)
-http://127.0.0.1:6878/ace/getstream?id=dd48492dbc619b29670a5e25fe8acf9834e9d023
-#EXTINF:-1 group-title="11-02 (Lunes) Primera Federación Grupo 2" tvg-name="20:30-Huesca Nástic Tarragona (RFEF TV) (FHD) (3d0)",20:30-Huesca Nástic Tarragona (RFEF TV) (FHD) (3d0)
-http://127.0.0.1:6878/ace/getstream?id=3d001b30e28db897b25ce918371d52d3b5b7988f
-#EXTINF:-1 group-title="11-02 (Lunes) La Liga EA Sports" tvg-name="21:00-Deportivo Osasuna (M+ LALIGA) (HD) (1cb)",21:00-Deportivo Osasuna (M+ LALIGA) (HD) (1cb)
-http://127.0.0.1:6878/ace/getstream?id=1cb21bc211dd9122259a72d9715bcee36dc34ca6
-#EXTINF:-1 group-title="11-02 (Lunes) La Liga EA Sports" tvg-name="21:00-Deportivo Osasuna (M+ LALIGA) (HD) (281)",21:00-Deportivo Osasuna (M+ LALIGA) (HD) (281)
-http://127.0.0.1:6878/ace/getstream?id=2816e0c7e4f6a19a0cc9d1c363936a186ab89771
-#EXTINF:-1 group-title="11-02 (Lunes) La Liga EA Sports" tvg-name="21:00-Deportivo Osasuna (M+ LALIGA) (HD) (793)",21:00-Deportivo Osasuna (M+ LALIGA) (HD) (793)
-http://127.0.0.1:6878/ace/getstream?id=79388a57f472807e60c4ca92cbc8a4e56dd6e4c2
-#EXTINF:-1 group-title="11-02 (Lunes) La Liga EA Sports" tvg-name="21:00-Deportivo Osasuna (M+ LALIGA) (FHD) (08c)",21:00-Deportivo Osasuna (M+ LALIGA) (FHD) (08c)
-http://127.0.0.1:6878/ace/getstream?id=08c23a83ea87c2fcd76c2f31b58b64d64ae57a75
-#EXTINF:-1 group-title="11-02 (Lunes) La Liga EA Sports" tvg-name="21:00-Deportivo Osasuna (M+ LALIGA) (FHD) (e48)",21:00-Deportivo Osasuna (M+ LALIGA) (FHD) (e48)
-http://127.0.0.1:6878/ace/getstream?id=e48e16ce43e47e5457aaf21956d80f5807f607e2
-#EXTINF:-1 group-title="11-02 (Lunes) La Liga EA Sports" tvg-name="21:00-Deportivo Osasuna (M+ LALIGA) (FHD) (a2e)",21:00-Deportivo Osasuna (M+ LALIGA) (FHD) (a2e)
-http://127.0.0.1:6878/ace/getstream?id=a2e41ad1aa0074ee977650085b20cf7ba2eeeb77
-#EXTINF:-1 group-title="11-02 (Lunes) La Liga EA Sports" tvg-name="21:00-Deportivo Osasuna (M+ LALIGA) (FHD) (f36)",21:00-Deportivo Osasuna (M+ LALIGA) (FHD) (f36)
-http://127.0.0.1:6878/ace/getstream?id=f360890431ea544545be7594a7eb91d53a59b433
-#EXTINF:-1 group-title="11-02 (Lunes) LaLiga Hypermotion" tvg-name="21:00-Mallorca Cádiz CF (LALIGA TV HYPERMOTION) (HD) (dfe)",21:00-Mallorca Cádiz CF (LALIGA TV HYPERMOTION) (HD) (dfe)
-http://127.0.0.1:6878/ace/getstream?id=dfe4449fc3e0c867eb9be2f50d8efdb9a699410c
-#EXTINF:-1 group-title="11-02 (Lunes) LaLiga Hypermotion" tvg-name="21:00-Mallorca Cádiz CF (LALIGA TV HYPERMOTION) (HD) (9e9)",21:00-Mallorca Cádiz CF (LALIGA TV HYPERMOTION) (HD) (9e9)
-http://127.0.0.1:6878/ace/getstream?id=9e94331bb2d541dc3a2ecc5226168ffee5b3b440
-#EXTINF:-1 group-title="11-02 (Lunes) LaLiga Hypermotion" tvg-name="21:00-Mallorca Cádiz CF (LALIGA TV HYPERMOTION) (FHD) (b96)",21:00-Mallorca Cádiz CF (LALIGA TV HYPERMOTION) (FHD) (b96)
-http://127.0.0.1:6878/ace/getstream?id=b9633df95d61d51348a2e8a9f88a2c123d140f67
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="21:55-U. Humbert B. Van de Zandschulp (M+ DEPORTES 2) (HD) (496)",21:55-U. Humbert B. Van de Zandschulp (M+ DEPORTES 2) (HD) (496)
-http://127.0.0.1:6878/ace/getstream?id=49612f9e8190d4eb79f666af2c537c6fe9ec4014
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="21:55-U. Humbert B. Van de Zandschulp (M+ DEPORTES 2) (FHD) (772)",21:55-U. Humbert B. Van de Zandschulp (M+ DEPORTES 2) (FHD) (772)
-http://127.0.0.1:6878/ace/getstream?id=77290ae42871331705d95f8ac4eb597412f6008c
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="21:55-U. Humbert B. Van de Zandschulp (M+ DEPORTES 2) (FHD) (882)",21:55-U. Humbert B. Van de Zandschulp (M+ DEPORTES 2) (FHD) (882)
-http://127.0.0.1:6878/ace/getstream?id=882f5331b0b20056f3d8e685ed2498909f4115c8
-#EXTINF:-1 group-title="11-02 (Lunes) Masters París 1ª Ronda" tvg-name="21:55-U. Humbert B. Van de Zandschulp (M+ DEPORTES 2) (FHD) (4a2)",21:55-U. Humbert B. Van de Zandschulp (M+ DEPORTES 2) (FHD) (4a2)
-http://127.0.0.1:6878/ace/getstream?id=4a2384051213222a0e29111dc5d94cac35b3a521
 #EXTINF:-1 group-title="11-03 (Martes) NBA Liga Regular" tvg-name="01:00-Cleveland Cavaliers Oklahoma C. Thunder (NBA LEAGUE PASS) (FHD) (e70)",01:00-Cleveland Cavaliers Oklahoma C. Thunder (NBA LEAGUE PASS) (FHD) (e70)
 http://127.0.0.1:6878/ace/getstream?id=e70a62fd486ce0d4970bec6849023c781efb7c31
 #EXTINF:-1 group-title="11-03 (Martes) NBA Liga Regular" tvg-name="01:00-Cleveland Cavaliers Oklahoma C. Thunder (NBA LEAGUE PASS) (FHD) (d4f)",01:00-Cleveland Cavaliers Oklahoma C. Thunder (NBA LEAGUE PASS) (FHD) (d4f)
@@ -227,9 +61,21 @@ http://127.0.0.1:6878/ace/getstream?id=d4ffff16fcb461fc8d926a5698ee2e23d0cf3620
 http://127.0.0.1:6878/ace/getstream?id=e70a62fd486ce0d4970bec6849023c781efb7c31
 #EXTINF:-1 group-title="11-03 (Martes) NBA Liga Regular" tvg-name="04:00-Golden State Warriors Phoenix Suns (NBA LEAGUE PASS) (FHD) (d4f)",04:00-Golden State Warriors Phoenix Suns (NBA LEAGUE PASS) (FHD) (d4f)
 http://127.0.0.1:6878/ace/getstream?id=d4ffff16fcb461fc8d926a5698ee2e23d0cf3620
-#EXTINF:-1 group-title="11-03 (Martes) WTA Torneo de Hong Kong" tvg-name="07:05-1ª Ronda WTA 250 (TENNIS CHANNEL) (FHD) (a37)",07:05-1ª Ronda WTA 250 (TENNIS CHANNEL) (FHD) (a37)
+#EXTINF:-1 group-title="11-03 (Martes) WTA Torneo de Hong Kong" tvg-name="07:00-T. Gibson O. Oliynykova (TENNIS CHANNEL) (FHD) (a37)",07:00-T. Gibson O. Oliynykova (TENNIS CHANNEL) (FHD) (a37)
 http://127.0.0.1:6878/ace/getstream?id=a374064c68314cd8bc488257067db9148b3c54e0
-#EXTINF:-1 group-title="11-03 (Martes) WTA Torneo de Hong Kong" tvg-name="07:05-1ª Ronda WTA 250 (TENNIS CHANNEL) (FHD) (0a0)",07:05-1ª Ronda WTA 250 (TENNIS CHANNEL) (FHD) (0a0)
+#EXTINF:-1 group-title="11-03 (Martes) WTA Torneo de Hong Kong" tvg-name="07:00-T. Gibson O. Oliynykova (TENNIS CHANNEL) (FHD) (0a0)",07:00-T. Gibson O. Oliynykova (TENNIS CHANNEL) (FHD) (0a0)
+http://127.0.0.1:6878/ace/getstream?id=0a0d41e8d606f38757c1453a15df5dcd0491507b
+#EXTINF:-1 group-title="11-03 (Martes) WTA Torneo de Hong Kong" tvg-name="08:30-S. Cirstea M. Timofeeva (TENNIS CHANNEL) (FHD) (a37)",08:30-S. Cirstea M. Timofeeva (TENNIS CHANNEL) (FHD) (a37)
+http://127.0.0.1:6878/ace/getstream?id=a374064c68314cd8bc488257067db9148b3c54e0
+#EXTINF:-1 group-title="11-03 (Martes) WTA Torneo de Hong Kong" tvg-name="08:30-S. Cirstea M. Timofeeva (TENNIS CHANNEL) (FHD) (0a0)",08:30-S. Cirstea M. Timofeeva (TENNIS CHANNEL) (FHD) (0a0)
+http://127.0.0.1:6878/ace/getstream?id=0a0d41e8d606f38757c1453a15df5dcd0491507b
+#EXTINF:-1 group-title="11-03 (Martes) WTA Torneo de Hong Kong" tvg-name="11:30-A. Parks A. Eala (TENNIS CHANNEL) (FHD) (a37)",11:30-A. Parks A. Eala (TENNIS CHANNEL) (FHD) (a37)
+http://127.0.0.1:6878/ace/getstream?id=a374064c68314cd8bc488257067db9148b3c54e0
+#EXTINF:-1 group-title="11-03 (Martes) WTA Torneo de Hong Kong" tvg-name="11:30-A. Parks A. Eala (TENNIS CHANNEL) (FHD) (0a0)",11:30-A. Parks A. Eala (TENNIS CHANNEL) (FHD) (0a0)
+http://127.0.0.1:6878/ace/getstream?id=0a0d41e8d606f38757c1453a15df5dcd0491507b
+#EXTINF:-1 group-title="11-03 (Martes) WTA Torneo de Hong Kong" tvg-name="13:00-E. Pridankina P. Badosa (TENNIS CHANNEL) (FHD) (a37)",13:00-E. Pridankina P. Badosa (TENNIS CHANNEL) (FHD) (a37)
+http://127.0.0.1:6878/ace/getstream?id=a374064c68314cd8bc488257067db9148b3c54e0
+#EXTINF:-1 group-title="11-03 (Martes) WTA Torneo de Hong Kong" tvg-name="13:00-E. Pridankina P. Badosa (TENNIS CHANNEL) (FHD) (0a0)",13:00-E. Pridankina P. Badosa (TENNIS CHANNEL) (FHD) (0a0)
 http://127.0.0.1:6878/ace/getstream?id=0a0d41e8d606f38757c1453a15df5dcd0491507b
 #EXTINF:-1 group-title="11-03 (Martes) UEFA Youth League Fase Liga" tvg-name="16:00-At. Madrid Academy Bayern Academy (M+ VAMOS) (HD) (eae)",16:00-At. Madrid Academy Bayern Academy (M+ VAMOS) (HD) (eae)
 http://127.0.0.1:6878/ace/getstream?id=eae4f313851a829e416ac4c8c4b8d962343e18f7
@@ -239,8 +85,6 @@ http://127.0.0.1:6878/ace/getstream?id=acae841dea2c2b1181ed66625cdc62e0772a18be
 http://127.0.0.1:6878/ace/getstream?id=81beeabdc46e0aa59165f513e5c3a8e65e6bd1a9
 #EXTINF:-1 group-title="11-03 (Martes) UEFA Youth League Fase Liga" tvg-name="16:00-At. Madrid Academy Bayern Academy (M+ VAMOS) (FHD) (b3a)",16:00-At. Madrid Academy Bayern Academy (M+ VAMOS) (FHD) (b3a)
 http://127.0.0.1:6878/ace/getstream?id=b3a60072e264e2d628efa551d7f58c2a8e9a9fcb
-#EXTINF:-1 group-title="11-03 (Martes) UEFA Youth League Fase Liga" tvg-name="16:00-At. Madrid Academy Bayern Academy (M+ LIGA DE CAMPEONES 2) (HD) (4d4)",16:00-At. Madrid Academy Bayern Academy (M+ LIGA DE CAMPEONES 2) (HD) (4d4)
-http://127.0.0.1:6878/ace/getstream?id=4d43baa9e2a5b40d5e2a47017dd87fad160f57a8
 #EXTINF:-1 group-title="11-03 (Martes) UEFA Youth League Fase Liga" tvg-name="16:00-At. Madrid Academy Bayern Academy (M+ LIGA DE CAMPEONES 2) (FHD) (f80)",16:00-At. Madrid Academy Bayern Academy (M+ LIGA DE CAMPEONES 2) (FHD) (f80)
 http://127.0.0.1:6878/ace/getstream?id=f805809d276ce04968a82b88ed839e71b6f483ab
 #EXTINF:-1 group-title="11-03 (Martes) UEFA Youth League Fase Liga" tvg-name="16:00-At. Madrid Academy Bayern Academy (M+ LIGA DE CAMPEONES 2) (FHD) (799)",16:00-At. Madrid Academy Bayern Academy (M+ LIGA DE CAMPEONES 2) (FHD) (799)
@@ -253,14 +97,8 @@ http://127.0.0.1:6878/ace/getstream?id=bb0ec8a302119f3fd48edf7ccfdd99d3089ac171
 http://127.0.0.1:6878/ace/getstream?id=03eaa3007ce82840838fa8164f8e0131044d71a3
 #EXTINF:-1 group-title="11-03 (Martes) Copa de la Reina 3ª Ronda" tvg-name="18:00-Celta Femenino Espanyol Femenino (TELEDEPORTE) (FHD) (18b)",18:00-Celta Femenino Espanyol Femenino (TELEDEPORTE) (FHD) (18b)
 http://127.0.0.1:6878/ace/getstream?id=18be1bb5539df74077c03c6e0dc63ef180cc9cf1
-#EXTINF:-1 group-title="11-03 (Martes) Copa de la Reina 3ª Ronda" tvg-name="18:00-Celta Femenino Espanyol Femenino (ESPORT3) (HD) (210)",18:00-Celta Femenino Espanyol Femenino (ESPORT3) (HD) (210)
-http://127.0.0.1:6878/ace/getstream?id=210392911eb349a40f364519e8364db8e2a319b8
 #EXTINF:-1 group-title="11-03 (Martes) Copa de la Reina 3ª Ronda" tvg-name="18:00-Celta Femenino Espanyol Femenino (ESPORT3) (HD) (4b5)",18:00-Celta Femenino Espanyol Femenino (ESPORT3) (HD) (4b5)
 http://127.0.0.1:6878/ace/getstream?id=4b51030b131869ed9b543e2f9cf80aabfc770668
-#EXTINF:-1 group-title="11-03 (Martes) Copa de la Reina 3ª Ronda" tvg-name="18:00-Celta Femenino Espanyol Femenino (ESPORT3) (FHD) (5cb)",18:00-Celta Femenino Espanyol Femenino (ESPORT3) (FHD) (5cb)
-http://127.0.0.1:6878/ace/getstream?id=5cb49ceb649f889c8d0b21de02a3500fa73bc5f5
-#EXTINF:-1 group-title="11-03 (Martes) Champions League Fase Liga" tvg-name="18:45-Shakhtar Donetsk Sporting CP (M+ LIGA DE CAMPEONES 2) (HD) (4d4)",18:45-Shakhtar Donetsk Sporting CP (M+ LIGA DE CAMPEONES 2) (HD) (4d4)
-http://127.0.0.1:6878/ace/getstream?id=4d43baa9e2a5b40d5e2a47017dd87fad160f57a8
 #EXTINF:-1 group-title="11-03 (Martes) Champions League Fase Liga" tvg-name="18:45-Shakhtar Donetsk Sporting CP (M+ LIGA DE CAMPEONES 2) (FHD) (f80)",18:45-Shakhtar Donetsk Sporting CP (M+ LIGA DE CAMPEONES 2) (FHD) (f80)
 http://127.0.0.1:6878/ace/getstream?id=f805809d276ce04968a82b88ed839e71b6f483ab
 #EXTINF:-1 group-title="11-03 (Martes) Champions League Fase Liga" tvg-name="18:45-Shakhtar Donetsk Sporting CP (M+ LIGA DE CAMPEONES 2) (FHD) (799)",18:45-Shakhtar Donetsk Sporting CP (M+ LIGA DE CAMPEONES 2) (FHD) (799)
@@ -279,8 +117,6 @@ http://127.0.0.1:6878/ace/getstream?id=acae841dea2c2b1181ed66625cdc62e0772a18be
 http://127.0.0.1:6878/ace/getstream?id=81beeabdc46e0aa59165f513e5c3a8e65e6bd1a9
 #EXTINF:-1 group-title="11-03 (Martes) Euroliga Femenina Liga Regular" tvg-name="19:30-Basket Landes Casademont Zaragoza (M+ VAMOS) (FHD) (b3a)",19:30-Basket Landes Casademont Zaragoza (M+ VAMOS) (FHD) (b3a)
 http://127.0.0.1:6878/ace/getstream?id=b3a60072e264e2d628efa551d7f58c2a8e9a9fcb
-#EXTINF:-1 group-title="11-03 (Martes) Euroliga Femenina Liga Regular" tvg-name="19:30-Basket Landes Casademont Zaragoza (M+ BALONCESTO) (FHD) (554)",19:30-Basket Landes Casademont Zaragoza (M+ BALONCESTO) (FHD) (554)
-http://127.0.0.1:6878/ace/getstream?id=5541b2bda8e75301c470c17b51979238545d3fc9
 #EXTINF:-1 group-title="11-03 (Martes) Champions League Fase Liga" tvg-name="21:00-Villarreal PSG (M+ LIGA DE CAMPEONES 3) (HD) (6a5)",21:00-Villarreal PSG (M+ LIGA DE CAMPEONES 3) (HD) (6a5)
 http://127.0.0.1:6878/ace/getstream?id=6a53508fcfa4958dc64e19458eb7a18b40d6f97d
 #EXTINF:-1 group-title="11-03 (Martes) Champions League Fase Liga" tvg-name="21:00-Villarreal PSG (M+ LIGA DE CAMPEONES 3) (FHD) (58c)",21:00-Villarreal PSG (M+ LIGA DE CAMPEONES 3) (FHD) (58c)
@@ -295,14 +131,12 @@ http://127.0.0.1:6878/ace/getstream?id=42b45039548159e5e9900672a488e73a94838bc8
 http://127.0.0.1:6878/ace/getstream?id=2c2118129349debdf4dafb2d1906e3c0b33e44df
 #EXTINF:-1 group-title="11-03 (Martes) Champions League Fase Liga" tvg-name="21:00-At. Madrid FC Bayern (M+ LIGA DE CAMPEONES) (HD) (a59)",21:00-At. Madrid FC Bayern (M+ LIGA DE CAMPEONES) (HD) (a59)
 http://127.0.0.1:6878/ace/getstream?id=a5992c3ab361edb2815a98dc195997b33e706b3d
+#EXTINF:-1 group-title="11-03 (Martes) Champions League Fase Liga" tvg-name="21:00-At. Madrid FC Bayern (M+ LIGA DE CAMPEONES) (FHD) (f7f)",21:00-At. Madrid FC Bayern (M+ LIGA DE CAMPEONES) (FHD) (f7f)
+http://127.0.0.1:6878/ace/getstream?id=f7f8a7f54e2b85bcb8296092609f84b53fdb5061
 #EXTINF:-1 group-title="11-03 (Martes) Champions League Fase Liga" tvg-name="21:00-At. Madrid FC Bayern (M+ LIGA DE CAMPEONES) (FHD) (84e)",21:00-At. Madrid FC Bayern (M+ LIGA DE CAMPEONES) (FHD) (84e)
 http://127.0.0.1:6878/ace/getstream?id=84e4c2ab4a6a399408bc81bfc9ffbf10f7b90580
 #EXTINF:-1 group-title="11-03 (Martes) Champions League Fase Liga" tvg-name="21:00-At. Madrid FC Bayern (M+ LIGA DE CAMPEONES) (FHD) (a19)",21:00-At. Madrid FC Bayern (M+ LIGA DE CAMPEONES) (FHD) (a19)
 http://127.0.0.1:6878/ace/getstream?id=a197b53a1bd96cf3622ac6199d4a11a07b6b6fb7
-#EXTINF:-1 group-title="11-03 (Martes) Champions League Fase Liga" tvg-name="21:00-At. Madrid FC Bayern (M+ LIGA DE CAMPEONES) (FHD) (f7f)",21:00-At. Madrid FC Bayern (M+ LIGA DE CAMPEONES) (FHD) (f7f)
-http://127.0.0.1:6878/ace/getstream?id=f7f8a7f54e2b85bcb8296092609f84b53fdb5061
-#EXTINF:-1 group-title="11-03 (Martes) Champions League Fase Liga" tvg-name="21:00-FC Barcelona Aston Villa (M+ LIGA DE CAMPEONES 2) (HD) (4d4)",21:00-FC Barcelona Aston Villa (M+ LIGA DE CAMPEONES 2) (HD) (4d4)
-http://127.0.0.1:6878/ace/getstream?id=4d43baa9e2a5b40d5e2a47017dd87fad160f57a8
 #EXTINF:-1 group-title="11-03 (Martes) Champions League Fase Liga" tvg-name="21:00-FC Barcelona Aston Villa (M+ LIGA DE CAMPEONES 2) (FHD) (f80)",21:00-FC Barcelona Aston Villa (M+ LIGA DE CAMPEONES 2) (FHD) (f80)
 http://127.0.0.1:6878/ace/getstream?id=f805809d276ce04968a82b88ed839e71b6f483ab
 #EXTINF:-1 group-title="11-03 (Martes) Champions League Fase Liga" tvg-name="21:00-FC Barcelona Aston Villa (M+ LIGA DE CAMPEONES 2) (FHD) (799)",21:00-FC Barcelona Aston Villa (M+ LIGA DE CAMPEONES 2) (FHD) (799)
@@ -313,10 +147,10 @@ http://127.0.0.1:6878/ace/getstream?id=f64445071c56c7acd893919f9098dfc74f518aec
 http://127.0.0.1:6878/ace/getstream?id=6bae4e20f02fe6c3251db7d6fe89d199ad92dcca
 #EXTINF:-1 group-title="11-03 (Martes) Champions League Fase Liga" tvg-name="21:00-LASK Linz Slovan Bratislava (M+ LIGA DE CAMPEONES 7) (FHD) (e21)",21:00-LASK Linz Slovan Bratislava (M+ LIGA DE CAMPEONES 7) (FHD) (e21)
 http://127.0.0.1:6878/ace/getstream?id=e21dc151fd86e383796ea37fcd714d88de37a4d3
-#EXTINF:-1 group-title="11-03 (Martes) Champions League Fase Liga" tvg-name="21:00-Bodø/Glimt Lille (M+ LIGA DE CAMPEONES 6) (FHD) (d41)",21:00-Bodø/Glimt Lille (M+ LIGA DE CAMPEONES 6) (FHD) (d41)
-http://127.0.0.1:6878/ace/getstream?id=d4103186fd1e5621da852a4e0f1429bf059091b2
 #EXTINF:-1 group-title="11-03 (Martes) Champions League Fase Liga" tvg-name="21:00-Bodø/Glimt Lille (M+ LIGA DE CAMPEONES 6) (FHD) (461)",21:00-Bodø/Glimt Lille (M+ LIGA DE CAMPEONES 6) (FHD) (461)
 http://127.0.0.1:6878/ace/getstream?id=461eb000d199b3122fa63e53cca9c17a92456477
+#EXTINF:-1 group-title="11-03 (Martes) Champions League Fase Liga" tvg-name="21:00-Bodø/Glimt Lille (M+ LIGA DE CAMPEONES 6) (FHD) (d41)",21:00-Bodø/Glimt Lille (M+ LIGA DE CAMPEONES 6) (FHD) (d41)
+http://127.0.0.1:6878/ace/getstream?id=d4103186fd1e5621da852a4e0f1429bf059091b2
 #EXTINF:-1 group-title="11-04 (Miércoles) WTA Torneo de Hong Kong" tvg-name="07:05-2ª Ronda WTA 250 (TENNIS CHANNEL) (FHD) (a37)",07:05-2ª Ronda WTA 250 (TENNIS CHANNEL) (FHD) (a37)
 http://127.0.0.1:6878/ace/getstream?id=a374064c68314cd8bc488257067db9148b3c54e0
 #EXTINF:-1 group-title="11-04 (Miércoles) WTA Torneo de Hong Kong" tvg-name="07:05-2ª Ronda WTA 250 (TENNIS CHANNEL) (FHD) (0a0)",07:05-2ª Ronda WTA 250 (TENNIS CHANNEL) (FHD) (0a0)
@@ -329,8 +163,6 @@ http://127.0.0.1:6878/ace/getstream?id=acae841dea2c2b1181ed66625cdc62e0772a18be
 http://127.0.0.1:6878/ace/getstream?id=81beeabdc46e0aa59165f513e5c3a8e65e6bd1a9
 #EXTINF:-1 group-title="11-04 (Miércoles) Eurocup Liga Regular" tvg-name="18:00-Lietkabelis Panevezys Kids&Us Manresa (M+ VAMOS) (FHD) (b3a)",18:00-Lietkabelis Panevezys Kids&Us Manresa (M+ VAMOS) (FHD) (b3a)
 http://127.0.0.1:6878/ace/getstream?id=b3a60072e264e2d628efa551d7f58c2a8e9a9fcb
-#EXTINF:-1 group-title="11-04 (Miércoles) Eurocup Liga Regular" tvg-name="18:00-Lietkabelis Panevezys Kids&Us Manresa (M+ BALONCESTO) (FHD) (554)",18:00-Lietkabelis Panevezys Kids&Us Manresa (M+ BALONCESTO) (FHD) (554)
-http://127.0.0.1:6878/ace/getstream?id=5541b2bda8e75301c470c17b51979238545d3fc9
 #EXTINF:-1 group-title="11-04 (Miércoles) Champions League Fase Liga" tvg-name="18:45-Fenerbahçe Liverpool (M+ LIGA DE CAMPEONES 3) (HD) (6a5)",18:45-Fenerbahçe Liverpool (M+ LIGA DE CAMPEONES 3) (HD) (6a5)
 http://127.0.0.1:6878/ace/getstream?id=6a53508fcfa4958dc64e19458eb7a18b40d6f97d
 #EXTINF:-1 group-title="11-04 (Miércoles) Champions League Fase Liga" tvg-name="18:45-Fenerbahçe Liverpool (M+ LIGA DE CAMPEONES 3) (FHD) (58c)",18:45-Fenerbahçe Liverpool (M+ LIGA DE CAMPEONES 3) (FHD) (58c)
@@ -345,14 +177,10 @@ http://127.0.0.1:6878/ace/getstream?id=3fc7a941ed2c1459dfd55f74ed72640e946f213d
 http://127.0.0.1:6878/ace/getstream?id=42b45039548159e5e9900672a488e73a94838bc8
 #EXTINF:-1 group-title="11-04 (Miércoles) Euroliga Liga Regular" tvg-name="20:45-Real Madrid Baloncesto Panathinaikos BC (MOVISTAR PLUS) (FHD) (2c2)",20:45-Real Madrid Baloncesto Panathinaikos BC (MOVISTAR PLUS) (FHD) (2c2)
 http://127.0.0.1:6878/ace/getstream?id=2c2118129349debdf4dafb2d1906e3c0b33e44df
-#EXTINF:-1 group-title="11-04 (Miércoles) Euroliga Liga Regular" tvg-name="20:45-Real Madrid Baloncesto Panathinaikos BC (M+ BALONCESTO) (FHD) (554)",20:45-Real Madrid Baloncesto Panathinaikos BC (M+ BALONCESTO) (FHD) (554)
-http://127.0.0.1:6878/ace/getstream?id=5541b2bda8e75301c470c17b51979238545d3fc9
-#EXTINF:-1 group-title="11-04 (Miércoles) Champions League Fase Liga" tvg-name="21:00-PSV Eindhoven Club Brugge (M+ LIGA DE CAMPEONES 6) (FHD) (d41)",21:00-PSV Eindhoven Club Brugge (M+ LIGA DE CAMPEONES 6) (FHD) (d41)
-http://127.0.0.1:6878/ace/getstream?id=d4103186fd1e5621da852a4e0f1429bf059091b2
 #EXTINF:-1 group-title="11-04 (Miércoles) Champions League Fase Liga" tvg-name="21:00-PSV Eindhoven Club Brugge (M+ LIGA DE CAMPEONES 6) (FHD) (461)",21:00-PSV Eindhoven Club Brugge (M+ LIGA DE CAMPEONES 6) (FHD) (461)
 http://127.0.0.1:6878/ace/getstream?id=461eb000d199b3122fa63e53cca9c17a92456477
-#EXTINF:-1 group-title="11-04 (Miércoles) Champions League Fase Liga" tvg-name="21:00-Borussia Dortmund Real Betis (M+ LIGA DE CAMPEONES 2) (HD) (4d4)",21:00-Borussia Dortmund Real Betis (M+ LIGA DE CAMPEONES 2) (HD) (4d4)
-http://127.0.0.1:6878/ace/getstream?id=4d43baa9e2a5b40d5e2a47017dd87fad160f57a8
+#EXTINF:-1 group-title="11-04 (Miércoles) Champions League Fase Liga" tvg-name="21:00-PSV Eindhoven Club Brugge (M+ LIGA DE CAMPEONES 6) (FHD) (d41)",21:00-PSV Eindhoven Club Brugge (M+ LIGA DE CAMPEONES 6) (FHD) (d41)
+http://127.0.0.1:6878/ace/getstream?id=d4103186fd1e5621da852a4e0f1429bf059091b2
 #EXTINF:-1 group-title="11-04 (Miércoles) Champions League Fase Liga" tvg-name="21:00-Borussia Dortmund Real Betis (M+ LIGA DE CAMPEONES 2) (FHD) (f80)",21:00-Borussia Dortmund Real Betis (M+ LIGA DE CAMPEONES 2) (FHD) (f80)
 http://127.0.0.1:6878/ace/getstream?id=f805809d276ce04968a82b88ed839e71b6f483ab
 #EXTINF:-1 group-title="11-04 (Miércoles) Champions League Fase Liga" tvg-name="21:00-Borussia Dortmund Real Betis (M+ LIGA DE CAMPEONES 2) (FHD) (799)",21:00-Borussia Dortmund Real Betis (M+ LIGA DE CAMPEONES 2) (FHD) (799)
@@ -373,3 +201,145 @@ http://127.0.0.1:6878/ace/getstream?id=6bae4e20f02fe6c3251db7d6fe89d199ad92dcca
 http://127.0.0.1:6878/ace/getstream?id=80811895fe50eda570f367c8e2c3fc6a8f6d13f0
 #EXTINF:-1 group-title="11-04 (Miércoles) Serie A Brasil" tvg-name="23:30-At. Paranaense Vasco da Gama (M+ LIGA DE CAMPEONES 4) (FHD) (5bd)",23:30-At. Paranaense Vasco da Gama (M+ LIGA DE CAMPEONES 4) (FHD) (5bd)
 http://127.0.0.1:6878/ace/getstream?id=5bda0cd15ed353abfdc5561a945f2f3903c9fa9e
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="01:00-Washington Wizards Atlanta Hawks (NBA LEAGUE PASS) (FHD) (e70)",01:00-Washington Wizards Atlanta Hawks (NBA LEAGUE PASS) (FHD) (e70)
+http://127.0.0.1:6878/ace/getstream?id=e70a62fd486ce0d4970bec6849023c781efb7c31
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="01:00-Washington Wizards Atlanta Hawks (NBA LEAGUE PASS) (FHD) (d4f)",01:00-Washington Wizards Atlanta Hawks (NBA LEAGUE PASS) (FHD) (d4f)
+http://127.0.0.1:6878/ace/getstream?id=d4ffff16fcb461fc8d926a5698ee2e23d0cf3620
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="01:00-Detroit Pistons Philadelphia 76ers (NBA LEAGUE PASS) (FHD) (e70)",01:00-Detroit Pistons Philadelphia 76ers (NBA LEAGUE PASS) (FHD) (e70)
+http://127.0.0.1:6878/ace/getstream?id=e70a62fd486ce0d4970bec6849023c781efb7c31
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="01:00-Detroit Pistons Philadelphia 76ers (NBA LEAGUE PASS) (FHD) (d4f)",01:00-Detroit Pistons Philadelphia 76ers (NBA LEAGUE PASS) (FHD) (d4f)
+http://127.0.0.1:6878/ace/getstream?id=d4ffff16fcb461fc8d926a5698ee2e23d0cf3620
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="01:30-Brooklyn Nets Charlotte Hornets (NBA LEAGUE PASS) (FHD) (e70)",01:30-Brooklyn Nets Charlotte Hornets (NBA LEAGUE PASS) (FHD) (e70)
+http://127.0.0.1:6878/ace/getstream?id=e70a62fd486ce0d4970bec6849023c781efb7c31
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="01:30-Brooklyn Nets Charlotte Hornets (NBA LEAGUE PASS) (FHD) (d4f)",01:30-Brooklyn Nets Charlotte Hornets (NBA LEAGUE PASS) (FHD) (d4f)
+http://127.0.0.1:6878/ace/getstream?id=d4ffff16fcb461fc8d926a5698ee2e23d0cf3620
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="01:30-Boston Celtics Milwaukee Bucks (NBA LEAGUE PASS) (FHD) (e70)",01:30-Boston Celtics Milwaukee Bucks (NBA LEAGUE PASS) (FHD) (e70)
+http://127.0.0.1:6878/ace/getstream?id=e70a62fd486ce0d4970bec6849023c781efb7c31
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="01:30-Boston Celtics Milwaukee Bucks (NBA LEAGUE PASS) (FHD) (d4f)",01:30-Boston Celtics Milwaukee Bucks (NBA LEAGUE PASS) (FHD) (d4f)
+http://127.0.0.1:6878/ace/getstream?id=d4ffff16fcb461fc8d926a5698ee2e23d0cf3620
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="01:30-New York Knicks Chicago Bulls (NBA LEAGUE PASS) (FHD) (e70)",01:30-New York Knicks Chicago Bulls (NBA LEAGUE PASS) (FHD) (e70)
+http://127.0.0.1:6878/ace/getstream?id=e70a62fd486ce0d4970bec6849023c781efb7c31
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="01:30-New York Knicks Chicago Bulls (NBA LEAGUE PASS) (FHD) (d4f)",01:30-New York Knicks Chicago Bulls (NBA LEAGUE PASS) (FHD) (d4f)
+http://127.0.0.1:6878/ace/getstream?id=d4ffff16fcb461fc8d926a5698ee2e23d0cf3620
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="02:00-New Orleans Pelicans Utah Jazz (NBA LEAGUE PASS) (FHD) (e70)",02:00-New Orleans Pelicans Utah Jazz (NBA LEAGUE PASS) (FHD) (e70)
+http://127.0.0.1:6878/ace/getstream?id=e70a62fd486ce0d4970bec6849023c781efb7c31
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="02:00-New Orleans Pelicans Utah Jazz (NBA LEAGUE PASS) (FHD) (d4f)",02:00-New Orleans Pelicans Utah Jazz (NBA LEAGUE PASS) (FHD) (d4f)
+http://127.0.0.1:6878/ace/getstream?id=d4ffff16fcb461fc8d926a5698ee2e23d0cf3620
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="02:00-Memphis Grizzlies Indiana Pacers (NBA LEAGUE PASS) (FHD) (e70)",02:00-Memphis Grizzlies Indiana Pacers (NBA LEAGUE PASS) (FHD) (e70)
+http://127.0.0.1:6878/ace/getstream?id=e70a62fd486ce0d4970bec6849023c781efb7c31
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="02:00-Memphis Grizzlies Indiana Pacers (NBA LEAGUE PASS) (FHD) (d4f)",02:00-Memphis Grizzlies Indiana Pacers (NBA LEAGUE PASS) (FHD) (d4f)
+http://127.0.0.1:6878/ace/getstream?id=d4ffff16fcb461fc8d926a5698ee2e23d0cf3620
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="02:00-Oklahoma C. Thunder Cleveland Cavaliers (NBA LEAGUE PASS) (FHD) (e70)",02:00-Oklahoma C. Thunder Cleveland Cavaliers (NBA LEAGUE PASS) (FHD) (e70)
+http://127.0.0.1:6878/ace/getstream?id=e70a62fd486ce0d4970bec6849023c781efb7c31
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="02:00-Oklahoma C. Thunder Cleveland Cavaliers (NBA LEAGUE PASS) (FHD) (d4f)",02:00-Oklahoma C. Thunder Cleveland Cavaliers (NBA LEAGUE PASS) (FHD) (d4f)
+http://127.0.0.1:6878/ace/getstream?id=d4ffff16fcb461fc8d926a5698ee2e23d0cf3620
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="02:30-Houston Rockets Minnesota Timberwolves (NBA LEAGUE PASS) (FHD) (e70)",02:30-Houston Rockets Minnesota Timberwolves (NBA LEAGUE PASS) (FHD) (e70)
+http://127.0.0.1:6878/ace/getstream?id=e70a62fd486ce0d4970bec6849023c781efb7c31
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="02:30-Houston Rockets Minnesota Timberwolves (NBA LEAGUE PASS) (FHD) (d4f)",02:30-Houston Rockets Minnesota Timberwolves (NBA LEAGUE PASS) (FHD) (d4f)
+http://127.0.0.1:6878/ace/getstream?id=d4ffff16fcb461fc8d926a5698ee2e23d0cf3620
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="03:00-Phoenix Suns Portland Trail Blazers (NBA LEAGUE PASS) (FHD) (e70)",03:00-Phoenix Suns Portland Trail Blazers (NBA LEAGUE PASS) (FHD) (e70)
+http://127.0.0.1:6878/ace/getstream?id=e70a62fd486ce0d4970bec6849023c781efb7c31
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="03:00-Phoenix Suns Portland Trail Blazers (NBA LEAGUE PASS) (FHD) (d4f)",03:00-Phoenix Suns Portland Trail Blazers (NBA LEAGUE PASS) (FHD) (d4f)
+http://127.0.0.1:6878/ace/getstream?id=d4ffff16fcb461fc8d926a5698ee2e23d0cf3620
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="03:00-Denver Nuggets Toronto Raptors (NBA LEAGUE PASS) (FHD) (e70)",03:00-Denver Nuggets Toronto Raptors (NBA LEAGUE PASS) (FHD) (e70)
+http://127.0.0.1:6878/ace/getstream?id=e70a62fd486ce0d4970bec6849023c781efb7c31
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="03:00-Denver Nuggets Toronto Raptors (NBA LEAGUE PASS) (FHD) (d4f)",03:00-Denver Nuggets Toronto Raptors (NBA LEAGUE PASS) (FHD) (d4f)
+http://127.0.0.1:6878/ace/getstream?id=d4ffff16fcb461fc8d926a5698ee2e23d0cf3620
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="03:30-San Antonio Spurs Dallas Mavericks (NBA LEAGUE PASS) (FHD) (e70)",03:30-San Antonio Spurs Dallas Mavericks (NBA LEAGUE PASS) (FHD) (e70)
+http://127.0.0.1:6878/ace/getstream?id=e70a62fd486ce0d4970bec6849023c781efb7c31
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="03:30-San Antonio Spurs Dallas Mavericks (NBA LEAGUE PASS) (FHD) (d4f)",03:30-San Antonio Spurs Dallas Mavericks (NBA LEAGUE PASS) (FHD) (d4f)
+http://127.0.0.1:6878/ace/getstream?id=d4ffff16fcb461fc8d926a5698ee2e23d0cf3620
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="04:00-Sacramento Kings Los Angeles Lakers (NBA LEAGUE PASS) (FHD) (e70)",04:00-Sacramento Kings Los Angeles Lakers (NBA LEAGUE PASS) (FHD) (e70)
+http://127.0.0.1:6878/ace/getstream?id=e70a62fd486ce0d4970bec6849023c781efb7c31
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="04:00-Sacramento Kings Los Angeles Lakers (NBA LEAGUE PASS) (FHD) (d4f)",04:00-Sacramento Kings Los Angeles Lakers (NBA LEAGUE PASS) (FHD) (d4f)
+http://127.0.0.1:6878/ace/getstream?id=d4ffff16fcb461fc8d926a5698ee2e23d0cf3620
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="04:30-Los Angeles Clippers Miami Heat (NBA LEAGUE PASS) (FHD) (e70)",04:30-Los Angeles Clippers Miami Heat (NBA LEAGUE PASS) (FHD) (e70)
+http://127.0.0.1:6878/ace/getstream?id=e70a62fd486ce0d4970bec6849023c781efb7c31
+#EXTINF:-1 group-title="11-05 (Jueves) NBA Liga Regular" tvg-name="04:30-Los Angeles Clippers Miami Heat (NBA LEAGUE PASS) (FHD) (d4f)",04:30-Los Angeles Clippers Miami Heat (NBA LEAGUE PASS) (FHD) (d4f)
+http://127.0.0.1:6878/ace/getstream?id=d4ffff16fcb461fc8d926a5698ee2e23d0cf3620
+#EXTINF:-1 group-title="11-05 (Jueves) WTA Torneo de Hong Kong" tvg-name="07:05-2ª Ronda WTA 250 (TENNIS CHANNEL) (FHD) (a37)",07:05-2ª Ronda WTA 250 (TENNIS CHANNEL) (FHD) (a37)
+http://127.0.0.1:6878/ace/getstream?id=a374064c68314cd8bc488257067db9148b3c54e0
+#EXTINF:-1 group-title="11-05 (Jueves) WTA Torneo de Hong Kong" tvg-name="07:05-2ª Ronda WTA 250 (TENNIS CHANNEL) (FHD) (0a0)",07:05-2ª Ronda WTA 250 (TENNIS CHANNEL) (FHD) (0a0)
+http://127.0.0.1:6878/ace/getstream?id=0a0d41e8d606f38757c1453a15df5dcd0491507b
+#EXTINF:-1 group-title="11-05 (Jueves) Euroliga Liga Regular" tvg-name="18:15-Anadolu Efes Istanbul Paris Basketball (M+ BALONCESTO 3) (FHD) (266)",18:15-Anadolu Efes Istanbul Paris Basketball (M+ BALONCESTO 3) (FHD) (266)
+http://127.0.0.1:6878/ace/getstream?id=2661526775171c9a2fda873a507ae5ba67131115
+#EXTINF:-1 group-title="11-05 (Jueves) Europa League Fase Liga" tvg-name="18:45-Real Sociedad O. Lyonnais (MOVISTAR PLUS) (HD) (3fc)",18:45-Real Sociedad O. Lyonnais (MOVISTAR PLUS) (HD) (3fc)
+http://127.0.0.1:6878/ace/getstream?id=3fc7a941ed2c1459dfd55f74ed72640e946f213d
+#EXTINF:-1 group-title="11-05 (Jueves) Europa League Fase Liga" tvg-name="18:45-Real Sociedad O. Lyonnais (MOVISTAR PLUS) (FHD) (42b)",18:45-Real Sociedad O. Lyonnais (MOVISTAR PLUS) (FHD) (42b)
+http://127.0.0.1:6878/ace/getstream?id=42b45039548159e5e9900672a488e73a94838bc8
+#EXTINF:-1 group-title="11-05 (Jueves) Europa League Fase Liga" tvg-name="18:45-Real Sociedad O. Lyonnais (MOVISTAR PLUS) (FHD) (2c2)",18:45-Real Sociedad O. Lyonnais (MOVISTAR PLUS) (FHD) (2c2)
+http://127.0.0.1:6878/ace/getstream?id=2c2118129349debdf4dafb2d1906e3c0b33e44df
+#EXTINF:-1 group-title="11-05 (Jueves) Europa League Fase Liga" tvg-name="18:45-Real Sociedad O. Lyonnais (M+ LIGA DE CAMPEONES) (HD) (a59)",18:45-Real Sociedad O. Lyonnais (M+ LIGA DE CAMPEONES) (HD) (a59)
+http://127.0.0.1:6878/ace/getstream?id=a5992c3ab361edb2815a98dc195997b33e706b3d
+#EXTINF:-1 group-title="11-05 (Jueves) Europa League Fase Liga" tvg-name="18:45-Real Sociedad O. Lyonnais (M+ LIGA DE CAMPEONES) (FHD) (f7f)",18:45-Real Sociedad O. Lyonnais (M+ LIGA DE CAMPEONES) (FHD) (f7f)
+http://127.0.0.1:6878/ace/getstream?id=f7f8a7f54e2b85bcb8296092609f84b53fdb5061
+#EXTINF:-1 group-title="11-05 (Jueves) Europa League Fase Liga" tvg-name="18:45-Real Sociedad O. Lyonnais (M+ LIGA DE CAMPEONES) (FHD) (84e)",18:45-Real Sociedad O. Lyonnais (M+ LIGA DE CAMPEONES) (FHD) (84e)
+http://127.0.0.1:6878/ace/getstream?id=84e4c2ab4a6a399408bc81bfc9ffbf10f7b90580
+#EXTINF:-1 group-title="11-05 (Jueves) Europa League Fase Liga" tvg-name="18:45-Real Sociedad O. Lyonnais (M+ LIGA DE CAMPEONES) (FHD) (a19)",18:45-Real Sociedad O. Lyonnais (M+ LIGA DE CAMPEONES) (FHD) (a19)
+http://127.0.0.1:6878/ace/getstream?id=a197b53a1bd96cf3622ac6199d4a11a07b6b6fb7
+#EXTINF:-1 group-title="11-05 (Jueves) Europa League Fase Liga" tvg-name="18:45-AC Milan Ferencvaros (M+ LIGA DE CAMPEONES 2) (FHD) (f80)",18:45-AC Milan Ferencvaros (M+ LIGA DE CAMPEONES 2) (FHD) (f80)
+http://127.0.0.1:6878/ace/getstream?id=f805809d276ce04968a82b88ed839e71b6f483ab
+#EXTINF:-1 group-title="11-05 (Jueves) Europa League Fase Liga" tvg-name="18:45-AC Milan Ferencvaros (M+ LIGA DE CAMPEONES 2) (FHD) (799)",18:45-AC Milan Ferencvaros (M+ LIGA DE CAMPEONES 2) (FHD) (799)
+http://127.0.0.1:6878/ace/getstream?id=7998690466d735902a989522d58def971108378d
+#EXTINF:-1 group-title="11-05 (Jueves) Europa League Fase Liga" tvg-name="18:45-NEC Nijmegen AC Omonia (M+ LIGA DE CAMPEONES 7) (FHD) (e21)",18:45-NEC Nijmegen AC Omonia (M+ LIGA DE CAMPEONES 7) (FHD) (e21)
+http://127.0.0.1:6878/ace/getstream?id=e21dc151fd86e383796ea37fcd714d88de37a4d3
+#EXTINF:-1 group-title="11-05 (Jueves) Europa League Fase Liga" tvg-name="18:45-Sparta Praha Bournemouth (M+ LIGA DE CAMPEONES 4) (HD) (808)",18:45-Sparta Praha Bournemouth (M+ LIGA DE CAMPEONES 4) (HD) (808)
+http://127.0.0.1:6878/ace/getstream?id=80811895fe50eda570f367c8e2c3fc6a8f6d13f0
+#EXTINF:-1 group-title="11-05 (Jueves) Europa League Fase Liga" tvg-name="18:45-Sparta Praha Bournemouth (M+ LIGA DE CAMPEONES 4) (FHD) (5bd)",18:45-Sparta Praha Bournemouth (M+ LIGA DE CAMPEONES 4) (FHD) (5bd)
+http://127.0.0.1:6878/ace/getstream?id=5bda0cd15ed353abfdc5561a945f2f3903c9fa9e
+#EXTINF:-1 group-title="11-05 (Jueves) Europa League Fase Liga" tvg-name="18:45-Rennes Olympiacos (M+ LIGA DE CAMPEONES 2) (FHD) (f80)",18:45-Rennes Olympiacos (M+ LIGA DE CAMPEONES 2) (FHD) (f80)
+http://127.0.0.1:6878/ace/getstream?id=f805809d276ce04968a82b88ed839e71b6f483ab
+#EXTINF:-1 group-title="11-05 (Jueves) Europa League Fase Liga" tvg-name="18:45-Rennes Olympiacos (M+ LIGA DE CAMPEONES 2) (FHD) (799)",18:45-Rennes Olympiacos (M+ LIGA DE CAMPEONES 2) (FHD) (799)
+http://127.0.0.1:6878/ace/getstream?id=7998690466d735902a989522d58def971108378d
+#EXTINF:-1 group-title="11-05 (Jueves) Europa League Fase Liga" tvg-name="18:45-Crystal Palace Hoffenheim (M+ LIGA DE CAMPEONES 5) (FHD) (f64)",18:45-Crystal Palace Hoffenheim (M+ LIGA DE CAMPEONES 5) (FHD) (f64)
+http://127.0.0.1:6878/ace/getstream?id=f64445071c56c7acd893919f9098dfc74f518aec
+#EXTINF:-1 group-title="11-05 (Jueves) Europa League Fase Liga" tvg-name="18:45-Crystal Palace Hoffenheim (M+ LIGA DE CAMPEONES 5) (FHD) (6ba)",18:45-Crystal Palace Hoffenheim (M+ LIGA DE CAMPEONES 5) (FHD) (6ba)
+http://127.0.0.1:6878/ace/getstream?id=6bae4e20f02fe6c3251db7d6fe89d199ad92dcca
+#EXTINF:-1 group-title="11-05 (Jueves) Europa League Fase Liga" tvg-name="18:45-Lillestrøm SK Viktoria Plzen (M+ LIGA DE CAMPEONES 6) (FHD) (461)",18:45-Lillestrøm SK Viktoria Plzen (M+ LIGA DE CAMPEONES 6) (FHD) (461)
+http://127.0.0.1:6878/ace/getstream?id=461eb000d199b3122fa63e53cca9c17a92456477
+#EXTINF:-1 group-title="11-05 (Jueves) Europa League Fase Liga" tvg-name="18:45-Lillestrøm SK Viktoria Plzen (M+ LIGA DE CAMPEONES 6) (FHD) (d41)",18:45-Lillestrøm SK Viktoria Plzen (M+ LIGA DE CAMPEONES 6) (FHD) (d41)
+http://127.0.0.1:6878/ace/getstream?id=d4103186fd1e5621da852a4e0f1429bf059091b2
+#EXTINF:-1 group-title="11-05 (Jueves) Euroliga Liga Regular" tvg-name="19:00-Fenerbahce Istanbul Baskonia (M+ BALONCESTO 2) (FHD) (408)",19:00-Fenerbahce Istanbul Baskonia (M+ BALONCESTO 2) (FHD) (408)
+http://127.0.0.1:6878/ace/getstream?id=40814041b787c550ee3293b1a4b6a18f9a44d6bb
+#EXTINF:-1 group-title="11-05 (Jueves) Euroliga Liga Regular" tvg-name="19:00-Hapoel Tel Aviv BC Barça Basket (M+ VAMOS) (HD) (eae)",19:00-Hapoel Tel Aviv BC Barça Basket (M+ VAMOS) (HD) (eae)
+http://127.0.0.1:6878/ace/getstream?id=eae4f313851a829e416ac4c8c4b8d962343e18f7
+#EXTINF:-1 group-title="11-05 (Jueves) Euroliga Liga Regular" tvg-name="19:00-Hapoel Tel Aviv BC Barça Basket (M+ VAMOS) (HD) (aca)",19:00-Hapoel Tel Aviv BC Barça Basket (M+ VAMOS) (HD) (aca)
+http://127.0.0.1:6878/ace/getstream?id=acae841dea2c2b1181ed66625cdc62e0772a18be
+#EXTINF:-1 group-title="11-05 (Jueves) Euroliga Liga Regular" tvg-name="19:00-Hapoel Tel Aviv BC Barça Basket (M+ VAMOS) (FHD) (81b)",19:00-Hapoel Tel Aviv BC Barça Basket (M+ VAMOS) (FHD) (81b)
+http://127.0.0.1:6878/ace/getstream?id=81beeabdc46e0aa59165f513e5c3a8e65e6bd1a9
+#EXTINF:-1 group-title="11-05 (Jueves) Euroliga Liga Regular" tvg-name="19:00-Hapoel Tel Aviv BC Barça Basket (M+ VAMOS) (FHD) (b3a)",19:00-Hapoel Tel Aviv BC Barça Basket (M+ VAMOS) (FHD) (b3a)
+http://127.0.0.1:6878/ace/getstream?id=b3a60072e264e2d628efa551d7f58c2a8e9a9fcb
+#EXTINF:-1 group-title="11-05 (Jueves) Copa de la Reina 3ª Ronda" tvg-name="20:00-Sporting Huelva FC Badalona Women (TELEDEPORTE) (HD) (bb0)",20:00-Sporting Huelva FC Badalona Women (TELEDEPORTE) (HD) (bb0)
+http://127.0.0.1:6878/ace/getstream?id=bb0ec8a302119f3fd48edf7ccfdd99d3089ac171
+#EXTINF:-1 group-title="11-05 (Jueves) Copa de la Reina 3ª Ronda" tvg-name="20:00-Sporting Huelva FC Badalona Women (TELEDEPORTE) (FHD) (03e)",20:00-Sporting Huelva FC Badalona Women (TELEDEPORTE) (FHD) (03e)
+http://127.0.0.1:6878/ace/getstream?id=03eaa3007ce82840838fa8164f8e0131044d71a3
+#EXTINF:-1 group-title="11-05 (Jueves) Copa de la Reina 3ª Ronda" tvg-name="20:00-Sporting Huelva FC Badalona Women (TELEDEPORTE) (FHD) (18b)",20:00-Sporting Huelva FC Badalona Women (TELEDEPORTE) (FHD) (18b)
+http://127.0.0.1:6878/ace/getstream?id=18be1bb5539df74077c03c6e0dc63ef180cc9cf1
+#EXTINF:-1 group-title="11-05 (Jueves) Copa de la Reina 3ª Ronda" tvg-name="20:00-Sporting Huelva FC Badalona Women (ESPORT3) (HD) (4b5)",20:00-Sporting Huelva FC Badalona Women (ESPORT3) (HD) (4b5)
+http://127.0.0.1:6878/ace/getstream?id=4b51030b131869ed9b543e2f9cf80aabfc770668
+#EXTINF:-1 group-title="11-05 (Jueves) Europa League Fase Liga" tvg-name="21:00-Bayer Leverkusen O. Marseille (M+ LIGA DE CAMPEONES 5) (FHD) (f64)",21:00-Bayer Leverkusen O. Marseille (M+ LIGA DE CAMPEONES 5) (FHD) (f64)
+http://127.0.0.1:6878/ace/getstream?id=f64445071c56c7acd893919f9098dfc74f518aec
+#EXTINF:-1 group-title="11-05 (Jueves) Europa League Fase Liga" tvg-name="21:00-Bayer Leverkusen O. Marseille (M+ LIGA DE CAMPEONES 5) (FHD) (6ba)",21:00-Bayer Leverkusen O. Marseille (M+ LIGA DE CAMPEONES 5) (FHD) (6ba)
+http://127.0.0.1:6878/ace/getstream?id=6bae4e20f02fe6c3251db7d6fe89d199ad92dcca
+#EXTINF:-1 group-title="11-05 (Jueves) Europa League Fase Liga" tvg-name="21:00-AZ Alkmaar Juventus (M+ LIGA DE CAMPEONES 4) (HD) (808)",21:00-AZ Alkmaar Juventus (M+ LIGA DE CAMPEONES 4) (HD) (808)
+http://127.0.0.1:6878/ace/getstream?id=80811895fe50eda570f367c8e2c3fc6a8f6d13f0
+#EXTINF:-1 group-title="11-05 (Jueves) Europa League Fase Liga" tvg-name="21:00-AZ Alkmaar Juventus (M+ LIGA DE CAMPEONES 4) (FHD) (5bd)",21:00-AZ Alkmaar Juventus (M+ LIGA DE CAMPEONES 4) (FHD) (5bd)
+http://127.0.0.1:6878/ace/getstream?id=5bda0cd15ed353abfdc5561a945f2f3903c9fa9e
+#EXTINF:-1 group-title="11-05 (Jueves) Europa League Fase Liga" tvg-name="21:00-Celtic FC Besiktas (M+ LIGA DE CAMPEONES 6) (FHD) (461)",21:00-Celtic FC Besiktas (M+ LIGA DE CAMPEONES 6) (FHD) (461)
+http://127.0.0.1:6878/ace/getstream?id=461eb000d199b3122fa63e53cca9c17a92456477
+#EXTINF:-1 group-title="11-05 (Jueves) Europa League Fase Liga" tvg-name="21:00-Celtic FC Besiktas (M+ LIGA DE CAMPEONES 6) (FHD) (d41)",21:00-Celtic FC Besiktas (M+ LIGA DE CAMPEONES 6) (FHD) (d41)
+http://127.0.0.1:6878/ace/getstream?id=d4103186fd1e5621da852a4e0f1429bf059091b2
+#EXTINF:-1 group-title="11-05 (Jueves) Europa League Fase Liga" tvg-name="21:00-Hapoel Beer Sheva OFI Creta (M+ LIGA DE CAMPEONES 7) (FHD) (e21)",21:00-Hapoel Beer Sheva OFI Creta (M+ LIGA DE CAMPEONES 7) (FHD) (e21)
+http://127.0.0.1:6878/ace/getstream?id=e21dc151fd86e383796ea37fcd714d88de37a4d3
+#EXTINF:-1 group-title="11-05 (Jueves) Conference League Fase Liga" tvg-name="21:00-Getafe Brighton (M+ LIGA DE CAMPEONES 2) (FHD) (f80)",21:00-Getafe Brighton (M+ LIGA DE CAMPEONES 2) (FHD) (f80)
+http://127.0.0.1:6878/ace/getstream?id=f805809d276ce04968a82b88ed839e71b6f483ab
+#EXTINF:-1 group-title="11-05 (Jueves) Conference League Fase Liga" tvg-name="21:00-Getafe Brighton (M+ LIGA DE CAMPEONES 2) (FHD) (799)",21:00-Getafe Brighton (M+ LIGA DE CAMPEONES 2) (FHD) (799)
+http://127.0.0.1:6878/ace/getstream?id=7998690466d735902a989522d58def971108378d
+#EXTINF:-1 group-title="11-05 (Jueves) Eurocup Liga Regular" tvg-name="21:00-La Laguna Tenerife U-BT Cluj Napoca (M+ BALONCESTO 3) (FHD) (266)",21:00-La Laguna Tenerife U-BT Cluj Napoca (M+ BALONCESTO 3) (FHD) (266)
+http://127.0.0.1:6878/ace/getstream?id=2661526775171c9a2fda873a507ae5ba67131115
+#EXTINF:-1 group-title="11-05 (Jueves) Serie A Brasil" tvg-name="23:30-Palmeiras Remo (M+ LIGA DE CAMPEONES 3) (HD) (6a5)",23:30-Palmeiras Remo (M+ LIGA DE CAMPEONES 3) (HD) (6a5)
+http://127.0.0.1:6878/ace/getstream?id=6a53508fcfa4958dc64e19458eb7a18b40d6f97d
+#EXTINF:-1 group-title="11-05 (Jueves) Serie A Brasil" tvg-name="23:30-Palmeiras Remo (M+ LIGA DE CAMPEONES 3) (FHD) (58c)",23:30-Palmeiras Remo (M+ LIGA DE CAMPEONES 3) (FHD) (58c)
+http://127.0.0.1:6878/ace/getstream?id=58c5dd86de9795971e128043f43cd018b6d7d04e
+#EXTINF:-1 group-title="11-05 (Jueves) Serie A Brasil" tvg-name="23:30-Palmeiras Remo (M+ LIGA DE CAMPEONES 3) (FHD) (0a0)",23:30-Palmeiras Remo (M+ LIGA DE CAMPEONES 3) (FHD) (0a0)
+http://127.0.0.1:6878/ace/getstream?id=0a0b5378b86ba925ee783e21060939f37d1acd12
