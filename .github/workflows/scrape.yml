@@ -16,7 +16,7 @@ concurrency:
 jobs:
   scrape:
     runs-on: ubuntu-24.04   # fijado: ubuntu-latest migra a Ubuntu 26 y Playwright --with-deps podría no soportarlo aún
-    timeout-minutes: 15
+    timeout-minutes: 20
 
     steps:
       - name: Checkout
@@ -38,13 +38,26 @@ jobs:
 
       # Nodo IPFS (Kubo) para leer el hashes.json directamente por IPNS, sin proxy.
       # Es opcional: si falla, el script usa pasarelas públicas IPFS como respaldo.
+      # dist.ipfs.tech ya no existe (Shipyard cerró su infraestructura el 30/09/2026):
+      # el binario se descarga de GitHub Releases. Kubo ya no tiene mantenedores,
+      # así que si quieres reproducibilidad total, fija KUBO_VERSION (p. ej. "v0.XX.X").
       - name: Instalar y arrancar nodo IPFS
         continue-on-error: true
+        timeout-minutes: 4
+        env:
+          GH_TOKEN: ${{ github.token }}
+          KUBO_VERSION: ""      # vacío = última release publicada
         run: |
           set -e
-          v=$(curl -fsS https://dist.ipfs.tech/kubo/versions | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$' | sort -V | tail -n1)
+          v="$KUBO_VERSION"
+          if [ -z "$v" ]; then
+            v=$(gh release view --repo ipfs/kubo --json tagName -q .tagName)
+          fi
+          [ -n "$v" ] || { echo "No se pudo obtener la versión de Kubo"; exit 1; }
           echo "Instalando Kubo $v"
-          curl -fsSL "https://dist.ipfs.tech/kubo/$v/kubo_${v}_linux-amd64.tar.gz" | tar -xz -C "$RUNNER_TEMP"
+          gh release download "$v" --repo ipfs/kubo \
+            --pattern "kubo_${v}_linux-amd64.tar.gz" --dir "$RUNNER_TEMP"
+          tar -xzf "$RUNNER_TEMP/kubo_${v}_linux-amd64.tar.gz" -C "$RUNNER_TEMP"
           sudo install "$RUNNER_TEMP/kubo/ipfs" /usr/local/bin/ipfs
           ipfs init --profile=server
           nohup ipfs daemon > "$RUNNER_TEMP/ipfs.log" 2>&1 &

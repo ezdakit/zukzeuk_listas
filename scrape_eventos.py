@@ -54,7 +54,7 @@ IPFS_CLI_TIMEOUT = int(os.getenv("IPFS_CLI_TIMEOUT", "60"))
 # Pasarelas públicas de respaldo (ellas mismas son nodos IPFS), separadas por comas
 IPFS_GATEWAYS = [
     g.strip().rstrip("/")
-    for g in os.getenv("IPFS_GATEWAYS", "https://dweb.link,https://ipfs.io").split(",")
+    for g in os.getenv("IPFS_GATEWAYS", "https://dweb.link,https://ipfs.io,https://w3s.link,https://gateway.pinata.cloud").split(",")
     if g.strip()
 ]
 # Último recurso opcional (p. ej. el proxy antiguo). Vacío = no se usa ningún proxy.
@@ -621,6 +621,16 @@ def main():
         log(f"Guardado {ELCANO_FILE} ({len(elcano['hashes'])} hashes) y {CHANNELS_M3U} ({n} canales)")
     except Exception as e:  # noqa: BLE001
         log(f"ERROR con Elcano: {e}")
+        # Respaldo: última copia buena de elcano.json (commiteada en el repo).
+        # No se reescribe ni elcano.json ni ezdakit.m3u con ella.
+        try:
+            with open(ELCANO_FILE, "rb") as f:
+                elcano = _validate_elcano(f.read())
+            elcano_src, elcano_cid = f"{ELCANO_FILE} (copia local antigua)", None
+            log(f"AVISO: se usa la copia anterior de {ELCANO_FILE}; los hashes pueden estar desactualizados")
+        except Exception as e2:  # noqa: BLE001
+            log(f"No hay copia local utilizable de {ELCANO_FILE}: {e2}")
+            elcano = None
         errores.append("elcano")
 
     # 2) scraping de la web: se prueba cada URL hasta que una cargue por completo
