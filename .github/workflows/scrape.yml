@@ -42,30 +42,36 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           KUBO_VERSION: ""
-          # Forzamos una ruta aislada y limpia para evitar bloqueos del sistema
           IPFS_PATH: ${{ runner.temp }}/.ipfs
         run: |
           set -e
           
-          # 1. Matar cualquier demonio zombie y limpiar bloqueos previos
-          killall ipfs || true
+          echo "Limpiando entorno..."
+          # Forzar el cierre inmediato de procesos previos
+          killall -9 ipfs || true
           rm -rf "$IPFS_PATH"
           
-          # 2. Instalar Kubo
           v=$(gh release view --repo ipfs/kubo --json tagName -q .tagName)
           echo "Instalando Kubo $v"
           gh release download "$v" --repo ipfs/kubo --pattern "kubo_${v}_linux-amd64.tar.gz" --dir "$RUNNER_TEMP"
           tar -xzf "$RUNNER_TEMP/kubo_${v}_linux-amd64.tar.gz" -C "$RUNNER_TEMP"
           sudo install "$RUNNER_TEMP/kubo/ipfs" /usr/local/bin/ipfs
           
-          # 3. Inicializar y arrancar en la ruta limpia
+          echo "Inicializando nodo..."
           ipfs init --profile=server
-          nohup ipfs daemon > "$RUNNER_TEMP/ipfs.log" 2>&1 &
+          
+          # Eliminar cualquier bloqueo residual generado durante el init
+          rm -f "$IPFS_PATH/repo.lock"
+          
+          echo "Arrancando demonio en background..."
+          # --routing=dhtclient evita sobrecargar la red y acelera el arranque en Github Actions
+          nohup ipfs daemon --routing=dhtclient > "$RUNNER_TEMP/ipfs.log" 2>&1 &
+          
+          # PAUSA CRÍTICA: dar tiempo al demonio a exponer la API antes de lanzarle comandos
+          sleep 5
           
           echo "Esperando conexión a la red P2P..."
-          # Bucle de espera ampliado: saltos de 2 segundos (máximo 60s)
           for i in $(seq 1 30); do ipfs swarm peers >/dev/null 2>&1 && break; sleep 2; done
-          # Umbral de conexión reducido a 3 peers (suficiente para resolver DHT)
           for i in $(seq 1 30); do [ "$(ipfs swarm peers 2>/dev/null | wc -l)" -ge 3 ] && break; sleep 2; done
           
           PEERS=$(ipfs swarm peers 2>/dev/null | wc -l)
