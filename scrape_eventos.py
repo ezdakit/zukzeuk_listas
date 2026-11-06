@@ -345,17 +345,20 @@ def build_events_m3u(agenda, equivalencias, elcano, path):
                 if not h:
                     continue
                 titulo = item.get("title", "")
-                if not any(coincide_canal(titulo, s) for s in subcanales):
+                coincidentes = [s for s in subcanales if coincide_canal(titulo, s)]
+                if not coincidentes:
                     continue
+                # Si coinciden varios, nos quedamos con el más específico (el más largo)
+                nombre_canal = max(coincidentes, key=lambda s: len(_tokens(s)))
 
-                k = (e["fecha"], e["hora"], e["partido"], web_channel, h)
+                k = (e["fecha"], e["hora"], e["partido"], nombre_canal, h)
                 if k in vistos:
                     continue
                 vistos.add(k)
                 usado = True
 
                 _, calidad, _ = split_title(titulo)
-                name = f"{e['hora']} - {e['partido']} ({web_channel})"
+                name = f"{e['hora']} - {e['partido']} ({nombre_canal})"
                 if calidad: name += f" ({calidad})"
                 name += f" ({h[:3]})"
                 group = f"{e['fecha']} | {e['competicion']}"
