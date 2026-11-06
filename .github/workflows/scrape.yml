@@ -3,20 +3,19 @@ name: Scrape eventos Acestream
 on:
   schedule:
     - cron: "22 */3 * * *" 
-  workflow_dispatch:        # ejecución manual desde la pestaña Actions
+  workflow_dispatch:
 
 permissions:
-  contents: write           # necesario para hacer commit/push de los ficheros generados
+  contents: write
 
-# Evita que dos ejecuciones simultáneas se pisen al hacer push
 concurrency:
   group: scrape-eventos
   cancel-in-progress: false
 
 jobs:
   scrape:
-    runs-on: ubuntu-24.04   # fijado: ubuntu-latest migra a Ubuntu 26 y Playwright --with-deps podría no soportarlo aún
-    timeout-minutes: 20
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
 
     steps:
       - name: Checkout
@@ -30,11 +29,7 @@ jobs:
       - name: Instalar dependencias
         run: |
           python -m pip install --upgrade pip
-          # Si quieres evitar roturas por actualizaciones, fija la versión: pip install playwright==X.Y.Z
-          pip install playwright
-
-      - name: Instalar Chromium para Playwright
-        run: playwright install --with-deps chromium
+          pip install requests beautifulsoup4
 
       - name: Instalar y arrancar nodo IPFS
         continue-on-error: true
@@ -47,7 +42,6 @@ jobs:
           set -e
           
           echo "Limpiando entorno..."
-          # Forzar el cierre inmediato de procesos previos
           killall -9 ipfs || true
           rm -rf "$IPFS_PATH"
           
@@ -59,15 +53,11 @@ jobs:
           
           echo "Inicializando nodo..."
           ipfs init --profile=server
-          
-          # Eliminar cualquier bloqueo residual generado durante el init
           rm -f "$IPFS_PATH/repo.lock"
           
           echo "Arrancando demonio en background..."
-          # --routing=dhtclient evita sobrecargar la red y acelera el arranque en Github Actions
           nohup ipfs daemon --routing=dhtclient > "$RUNNER_TEMP/ipfs.log" 2>&1 &
           
-          # PAUSA CRÍTICA: dar tiempo al demonio a exponer la API antes de lanzarle comandos
           sleep 5
           
           echo "Esperando conexión a la red P2P..."
@@ -84,15 +74,9 @@ jobs:
 
       - name: Ejecutar script
         env:
-          # La web exige aceptar un EULA (licencia de uso personal).
-          # Cámbialo a "yes" SOLO después de leerlo y aceptarlo tú.
-          ACCEPT_EULA: "yes"
-          # Le pasamos al script de Python la ruta limpia donde levantamos IPFS
           IPFS_PATH: ${{ runner.temp }}/.ipfs
         run: python scrape_eventos.py
 
-      # Se ejecuta aunque el scraping falle, para no perder elcano.json / ezdakit.m3u
-      # (el script no sobrescribe eventos.json ni el m3u de eventos si salen vacíos).
       - name: Subir ficheros a la raíz del repositorio
         if: always()
         run: |
@@ -108,12 +92,3 @@ jobs:
             git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
             git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
-
-      # Solo si algo falla: capturas/HTML para depurar (ya no se sube eventos.json como artefacto)
-      - name: Subir debug si falla
-        if: failure()
-        uses: actions/upload-artifact@v6
-        with:
-          name: debug
-          path: debug/
-          if-no-files-found: warn
