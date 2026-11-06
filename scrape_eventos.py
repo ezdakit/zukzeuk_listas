@@ -12,13 +12,17 @@ Ficheros que genera (en el directorio actual, pensado para la raíz del repo):
 Pasos que replica en la web:
   1. Abrir la web (y aceptar el EULA, si ACCEPT_EULA=yes).
   2. Abrir "Configuración" si el panel está cerrado.
-  3. Escribir la URL del hashes.json en #urlsInput.
+  3. Descargar el hashes.json directamente de IPFS (nodo local o pasarelas
+     públicas, sin proxy) y escribir su URL en #urlsInput; el script intercepta
+     esa petición de la web y le sirve el JSON ya descargado.
   4. Pulsar #btnSaveUrls ("Guardar y Recargar").
   5. Esperar a que se rellene la columna y extraer las tablas.
 """
 import json
 import os
 import re
+import shutil
+import subprocess
 import sys
 import time
 import unicodedata
@@ -38,11 +42,26 @@ SITE_URLS = [
     ).split(",")
     if u.strip()
 ]
-ACESTREAM_JSON_URL = os.getenv(
-    "ACESTREAM_JSON_URL",
-    "https://tokyo.elcano-ipfs.workers.dev/"
-    "k51qzi5uqu5dh5qej4b9wlcr5i6vhc7rcfkekhrxqek5c9lk6gdaiik820fecs/hashes.json",
+# --- Elcano / IPFS (acceso directo, sin proxy) ---------------------------------
+# k51... es un nombre IPNS que apunta a un directorio IPFS que contiene hashes.json
+ELCANO_IPNS_KEY = os.getenv(
+    "ELCANO_IPNS_KEY", "k51qzi5uqu5dh5qej4b9wlcr5i6vhc7rcfkekhrxqek5c9lk6gdaiik820fecs"
 )
+ELCANO_FILE_PATH = os.getenv("ELCANO_FILE_PATH", "hashes.json")
+IPNS_PATH = f"/ipns/{ELCANO_IPNS_KEY}/{ELCANO_FILE_PATH}"
+# Segundos máximos para resolver el IPNS y leer el fichero con el nodo local
+IPFS_CLI_TIMEOUT = int(os.getenv("IPFS_CLI_TIMEOUT", "60"))
+# Pasarelas públicas de respaldo (ellas mismas son nodos IPFS), separadas por comas
+IPFS_GATEWAYS = [
+    g.strip().rstrip("/")
+    for g in os.getenv("IPFS_GATEWAYS", "https://dweb.link,https://ipfs.io").split(",")
+    if g.strip()
+]
+# Último recurso opcional (p. ej. el proxy antiguo). Vacío = no se usa ningún proxy.
+ELCANO_FALLBACK_URL = os.getenv("ELCANO_FALLBACK_URL", "").strip()
+# URL "virtual" que se escribe en la web. Esa petición se intercepta y se responde
+# con el JSON descargado de IPFS, así la web no depende de ninguna pasarela ni proxy.
+PAGE_JSON_URL = os.getenv("PAGE_JSON_URL", "https://elcano.ipfs.invalid/hashes.json")
 OUTPUT_FILE = os.getenv("OUTPUT_FILE", "eventos.json")
 ELCANO_FILE = os.getenv("ELCANO_FILE", "elcano.json")
 CHANNELS_M3U = os.getenv("CHANNELS_M3U", "ezdakit.m3u")
@@ -54,7 +73,8 @@ EVENTS_URL_TEMPLATE = os.getenv(
 CHANNELS_URL_TEMPLATE = os.getenv(
     "CHANNELS_URL_TEMPLATE", "http://127.0.0.1:6878/ace/getstream?id={hash}"
 )
-TZ = ZoneInfo(os.getenv("TZ_NAME", "Europe/Madrid"))
+TZ_NAME = os.getenv("TZ_NAME", "Europe/Madrid")
+TZ = ZoneInfo(TZ_NAME)
 DEBUG_DIR = os.getenv("DEBUG_DIR", "debug")
 WAIT_FILL_SECONDS = int(os.getenv("WAIT_FILL_SECONDS", "90"))
 ACCEPT_EULA = os.getenv("ACCEPT_EULA", "no").strip().lower() == "yes"
@@ -122,6 +142,16 @@ def log(msg):
     print(f"[{datetime.now().strftime('%H:%M:%S')}] {msg}", flush=True)
 
 
+def wait_idle(page, timeout=20000):
+    """Espera a que la red se calme, pero no falla si nunca llega a 'idle'
+    (la web puede mantener peticiones periódicas); la espera real la hace
+    el bucle de lectura de tablas."""
+    try:
+        page.wait_for_load_state("networkidle", timeout=timeout)
+    except PWTimeout:
+        log("networkidle no alcanzado; se continúa")
+
+
 def save_debug(page, name):
     os.makedirs(DEBUG_DIR, exist_ok=True)
     try:
@@ -179,25 +209,86 @@ def acestream_filled(tables):
 # ----------------------------------------------------------------------------
 # Elcano: descarga de hashes.json y generación de ezdakit.m3u
 # ----------------------------------------------------------------------------
+def _validate_elcano(raw):
+    data = json.loads(raw.decode("utf-8"))
+    if not isinstance(data.get("hashes"), list) or not data["hashes"]:
+        raise ValueError("el JSON no contiene una lista 'hashes' con datos")
+    return data
+
+
+CID_RE = re.compile(r"/ipfs/([A-Za-z0-9]+)")
+
+
+def _from_ipfs_cli():
+    """Lee el fichero con el nodo IPFS local (Kubo). Falla rápido si no hay demonio.
+    Primero resuelve el IPNS al CID raíz actual y luego lee el fichero de ese CID,
+    así el CID registrado es exactamente el del contenido que se ha leído.
+    Devuelve (bytes, cid)."""
+    if not shutil.which("ipfs"):
+        raise RuntimeError("el binario 'ipfs' no está instalado")
+
+    def run(*args):
+        r = subprocess.run(
+            ["ipfs", *args, f"--timeout={IPFS_CLI_TIMEOUT}s"],
+            capture_output=True,
+            timeout=IPFS_CLI_TIMEOUT + 15,
+        )
+        if r.returncode != 0:
+            msg = r.stderr.decode("utf-8", "replace").strip()[:300]
+            raise RuntimeError(msg or f"'ipfs {args[0]}' terminó con código {r.returncode}")
+        return r.stdout
+
+    resuelto = run("resolve", f"/ipns/{ELCANO_IPNS_KEY}").decode("utf-8").strip()
+    m = CID_RE.search(resuelto)
+    if not m:
+        raise RuntimeError(f"respuesta inesperada de 'ipfs resolve': {resuelto!r}")
+    cid = m.group(1)
+    return run("cat", f"/ipfs/{cid}/{ELCANO_FILE_PATH}"), cid
+
+
+def _cid_from_headers(headers):
+    """CID raíz según las cabeceras de una pasarela (None si no lo indica)."""
+    roots = (headers.get("X-Ipfs-Roots") or "").split(",")[0].strip()
+    if roots:
+        return roots
+    etag = (headers.get("ETag") or "").strip()
+    etag = etag[2:] if etag.startswith("W/") else etag
+    etag = etag.strip('"')
+    if etag.startswith(("Qm", "bafy", "bafk")):
+        return etag
+    return None
+
+
+def _from_http(url, timeout=30):
+    """Descarga por HTTP. Devuelve (bytes, cid_o_None)."""
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; ezdakit-scraper)"})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.read(), _cid_from_headers(r.headers)
+
+
 def fetch_elcano():
-    """Descarga el hashes.json de Elcano (con reintentos) y lo devuelve como dict."""
-    req = urllib.request.Request(
-        ACESTREAM_JSON_URL,
-        headers={"User-Agent": "Mozilla/5.0 (compatible; ezdakit-scraper)"},
-    )
-    last = None
-    for intento in range(1, 4):
-        try:
-            with urllib.request.urlopen(req, timeout=30) as r:
-                data = json.loads(r.read().decode("utf-8"))
-            if not isinstance(data.get("hashes"), list) or not data["hashes"]:
-                raise ValueError("el JSON no contiene una lista 'hashes' con datos")
-            return data
-        except Exception as e:  # noqa: BLE001
-            last = e
-            log(f"Descarga de elcano.json fallida (intento {intento}/3): {e}")
-            time.sleep(3 * intento)
-    raise RuntimeError(f"No se pudo descargar {ACESTREAM_JSON_URL}: {last}")
+    """Descarga el hashes.json de Elcano directamente de IPFS.
+    Orden: nodo local -> pasarelas públicas -> (opcional) ELCANO_FALLBACK_URL.
+    Devuelve (datos, nombre_de_la_fuente_usada, cid_o_None)."""
+    fuentes = [("nodo IPFS local", _from_ipfs_cli)]
+    for gw in IPFS_GATEWAYS:
+        fuentes.append((gw, lambda gw=gw: _from_http(f"{gw}{IPNS_PATH}")))
+    if ELCANO_FALLBACK_URL:
+        fuentes.append((ELCANO_FALLBACK_URL, lambda: _from_http(ELCANO_FALLBACK_URL)))
+
+    rondas = 2
+    for ronda in range(1, rondas + 1):
+        for nombre, obtener in fuentes:
+            try:
+                raw, cid = obtener()
+                data = _validate_elcano(raw)
+                log(f"hashes.json obtenido de: {nombre} (CID: {cid or 'no indicado'})")
+                return data, nombre, cid
+            except Exception as e:  # noqa: BLE001
+                log(f"  {nombre} (ronda {ronda}/{rondas}): {type(e).__name__}: {e}")
+        if ronda < rondas:
+            time.sleep(5)
+    raise RuntimeError(f"No se pudo obtener {IPNS_PATH} de ninguna fuente")
 
 
 def quality_label(height):
@@ -396,22 +487,58 @@ def write_json(path, data):
         f.write("\n")
 
 
-def scrape_site(site_url, tag):
+def write_if_changed(path, resultado):
+    """Escribe el JSON solo si las tablas (o el CID de Elcano) han cambiado (ignora generado_utc),
+    para no generar un commit en cada ejecución sin cambios reales."""
+    try:
+        with open(path, encoding="utf-8") as f:
+            old = json.load(f)
+        cid_old, cid_new = old.get("elcano_cid"), resultado.get("elcano_cid")
+        cid_cambia = bool(cid_old and cid_new and cid_old != cid_new)
+        if old.get("tablas") == resultado["tablas"] and not cid_cambia:
+            log(f"{path}: sin cambios en las tablas, no se reescribe")
+            return False
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
+    write_json(path, resultado)
+    return True
+
+
+def scrape_site(site_url, tag, elcano):
     """Abre una URL de la web, configura el JSON de AceStream y devuelve las tablas.
-    Lanza una excepción si la web no carga o no termina de rellenarse."""
+    Lanza una excepción si la web no carga o no termina de rellenarse.
+    La petición de la web a PAGE_JSON_URL se intercepta y se responde con `elcano`
+    (descargado antes de IPFS), de modo que no hace falta proxy ni pasarela."""
+    body = json.dumps(elcano, ensure_ascii=False)
+    served = {"n": 0}
+
+    def serve_json(route):
+        served["n"] += 1
+        route.fulfill(
+            status=200,
+            content_type="application/json; charset=utf-8",
+            headers={
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Headers": "*",
+                "Access-Control-Allow-Methods": "GET, OPTIONS",
+            },
+            body=body,
+        )
+
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(
             viewport={"width": 1400, "height": 900},
             locale="es-ES",
-            timezone_id="Europe/Madrid",
+            timezone_id=TZ_NAME,
         )
+        context.route(PAGE_JSON_URL, serve_json)
         page = context.new_page()
         try:
             log(f"Abriendo {site_url}")
             page.goto(site_url, wait_until="domcontentloaded", timeout=60000)
             handle_eula(page)
-            page.wait_for_load_state("networkidle", timeout=60000)
+            wait_idle(page)
             save_debug(page, f"{tag}_01_inicial")
 
             # Abrir el panel de configuración si está cerrado
@@ -421,7 +548,7 @@ def scrape_site(site_url, tag):
             page.locator("#urlsInput").wait_for(state="visible", timeout=15000)
 
             log("Escribiendo la URL del JSON de AceStream")
-            page.locator("#urlsInput").fill(ACESTREAM_JSON_URL)
+            page.locator("#urlsInput").fill(PAGE_JSON_URL)
             save_debug(page, f"{tag}_02_url_pegada")
 
             log("Pulsando 'Guardar y Recargar'")
@@ -433,7 +560,7 @@ def scrape_site(site_url, tag):
 
             # Tras recargar, el EULA ya está aceptado (cookie), pero por si acaso:
             handle_eula(page)
-            page.wait_for_load_state("networkidle", timeout=60000)
+            wait_idle(page)
 
             log(f"Esperando a que cargue la página (máx {WAIT_FILL_SECONDS}s)")
             tables = []
@@ -443,8 +570,14 @@ def scrape_site(site_url, tag):
             while time.time() < deadline:
                 tables = page.evaluate(EXTRACT_JS, TABLE_IDS)
                 if tables_ready(tables):
-                    # Carga estable: mismo nº de filas en dos lecturas seguidas
-                    sig = tuple(len(t["filas"]) for t in tables)
+                    # Carga estable: mismas filas y mismas celdas Acestream rellenas en dos lecturas seguidas
+                    filled = sum(
+                        1
+                        for t in tables
+                        for f in t["filas"]
+                        if f.get(ACESTREAM_COLUMN, "").strip() not in ("", "-")
+                    )
+                    sig = (tuple(len(t["filas"]) for t in tables), filled)
                     if sig == prev:
                         ready = True
                         break
@@ -454,6 +587,9 @@ def scrape_site(site_url, tag):
                 time.sleep(2)
 
             save_debug(page, f"{tag}_03_final")
+            log(f"La web pidió el JSON de Elcano {served['n']} vez/veces")
+            if served["n"] == 0:
+                log("AVISO: la web no pidió PAGE_JSON_URL; revisa debug/ por si usa otra vía de descarga")
             if not ready:
                 raise RuntimeError(
                     "la página no terminó de cargar (tablaAcestream o columna Acestream vacías)"
@@ -476,10 +612,10 @@ def tables_ready(tables):
 def main():
     errores = []
 
-    # 1) elcano.json + ezdakit.m3u (no dependen de la web)
-    elcano = None
+    # 1) elcano.json + ezdakit.m3u (se descargan de IPFS, no dependen de la web)
+    elcano, elcano_src, elcano_cid = None, None, None
     try:
-        elcano = fetch_elcano()
+        elcano, elcano_src, elcano_cid = fetch_elcano()
         write_json(ELCANO_FILE, elcano)
         n = build_channels_m3u(elcano, CHANNELS_M3U)
         log(f"Guardado {ELCANO_FILE} ({len(elcano['hashes'])} hashes) y {CHANNELS_M3U} ({n} canales)")
@@ -489,17 +625,20 @@ def main():
 
     # 2) scraping de la web: se prueba cada URL hasta que una cargue por completo
     tables, site_used = [], None
-    for i, url in enumerate(SITE_URLS, 1):
-        try:
-            tables = scrape_site(url, f"{i}")
-            site_used = url
-            break
-        except Exception as e:  # noqa: BLE001
-            log(f"ERROR con {url}: {type(e).__name__}: {e}")
-            if i < len(SITE_URLS):
-                log("Probando la siguiente URL de respaldo")
-    if site_used is None:
-        log("No se pudo cargar ninguna de las URLs de la web")
+    if elcano is None:
+        log("Sin datos de Elcano no se puede rellenar la columna Acestream: se omite la web")
+    else:
+        for i, url in enumerate(SITE_URLS, 1):
+            try:
+                tables = scrape_site(url, f"{i}", elcano)
+                site_used = url
+                break
+            except Exception as e:  # noqa: BLE001
+                log(f"ERROR con {url}: {type(e).__name__}: {e}")
+                if i < len(SITE_URLS):
+                    log("Probando la siguiente URL de respaldo")
+        if site_used is None:
+            log("No se pudo cargar ninguna de las URLs de la web")
 
     # 3) eventos.json + ezdakit_eventos.m3u (solo si la página terminó de cargar,
     #    para no machacar con datos vacíos la última versión buena)
@@ -510,13 +649,15 @@ def main():
             log(f"Guardado {EVENTS_M3U}: {n} entradas")
             resultado = {
                 "fuente": site_used,
-                "acestream_json": ACESTREAM_JSON_URL,
+                "acestream_json": IPNS_PATH,
+                "elcano_fuente": elcano_src,
+                "elcano_cid": elcano_cid,
                 "generado_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                 "tablas": tables,
             }
-            write_json(OUTPUT_FILE, resultado)
             total = sum(len(t["filas"]) for t in tables)
-            log(f"Guardado {OUTPUT_FILE}: {len(tables)} tablas, {total} filas")
+            if write_if_changed(OUTPUT_FILE, resultado):
+                log(f"Guardado {OUTPUT_FILE}: {len(tables)} tablas, {total} filas")
         except Exception as e:  # noqa: BLE001
             log(f"ERROR generando eventos (se conservan los ficheros anteriores): {e}")
             errores.append("eventos")

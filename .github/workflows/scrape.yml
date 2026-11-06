@@ -30,10 +30,28 @@ jobs:
       - name: Instalar dependencias
         run: |
           python -m pip install --upgrade pip
+          # Si quieres evitar roturas por actualizaciones, fija la versión: pip install playwright==X.Y.Z
           pip install playwright
 
       - name: Instalar Chromium para Playwright
         run: playwright install --with-deps chromium
+
+      # Nodo IPFS (Kubo) para leer el hashes.json directamente por IPNS, sin proxy.
+      # Es opcional: si falla, el script usa pasarelas públicas IPFS como respaldo.
+      - name: Instalar y arrancar nodo IPFS
+        continue-on-error: true
+        run: |
+          set -e
+          v=$(curl -fsS https://dist.ipfs.tech/kubo/versions | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$' | sort -V | tail -n1)
+          echo "Instalando Kubo $v"
+          curl -fsSL "https://dist.ipfs.tech/kubo/$v/kubo_${v}_linux-amd64.tar.gz" | tar -xz -C "$RUNNER_TEMP"
+          sudo install "$RUNNER_TEMP/kubo/ipfs" /usr/local/bin/ipfs
+          ipfs init --profile=server
+          nohup ipfs daemon > "$RUNNER_TEMP/ipfs.log" 2>&1 &
+          # esperar a que el demonio esté en línea y conectado a algunos peers
+          for i in $(seq 1 30); do ipfs swarm peers >/dev/null 2>&1 && break; sleep 1; done
+          for i in $(seq 1 30); do [ "$(ipfs swarm peers 2>/dev/null | wc -l)" -ge 5 ] && break; sleep 1; done
+          echo "Peers conectados: $(ipfs swarm peers 2>/dev/null | wc -l)"
 
       - name: Ejecutar script
         env:
@@ -56,7 +74,7 @@ jobs:
             echo "Sin cambios que subir"
           else
             git commit -m "Actualizar listas y eventos ($(date -u +'%Y-%m-%d %H:%M UTC'))"
-            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
             git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
 
