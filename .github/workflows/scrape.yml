@@ -1,4 +1,42 @@
-- name: Instalar y arrancar nodo IPFS
+name: Scrape eventos Acestream
+
+on:
+  schedule:
+    - cron: "22 */3 * * *" 
+  workflow_dispatch:        # ejecución manual desde la pestaña Actions
+
+permissions:
+  contents: write           # necesario para hacer commit/push de los ficheros generados
+
+# Evita que dos ejecuciones simultáneas se pisen al hacer push
+concurrency:
+  group: scrape-eventos
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-24.04   # fijado: ubuntu-latest migra a Ubuntu 26 y Playwright --with-deps podría no soportarlo aún
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Configurar Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          # Si quieres evitar roturas por actualizaciones, fija la versión: pip install playwright==X.Y.Z
+          pip install playwright
+
+      - name: Instalar Chromium para Playwright
+        run: playwright install --with-deps chromium
+
+      - name: Instalar y arrancar nodo IPFS
         continue-on-error: true
         timeout-minutes: 5
         env:
@@ -31,5 +69,34 @@
 
       - name: Ejecutar script
         env:
+          # La web exige aceptar un EULA (licencia de uso personal).
+          # Cámbialo a "yes" SOLO después de leerlo y aceptarlo tú.
           ACCEPT_EULA: "yes"
         run: python scrape_eventos.py
+
+      # Se ejecuta aunque el scraping falle, para no perder elcano.json / ezdakit.m3u
+      # (el script no sobrescribe eventos.json ni el m3u de eventos si salen vacíos).
+      - name: Subir ficheros a la raíz del repositorio
+        if: always()
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for f in elcano.json ezdakit.m3u eventos.json ezdakit_eventos.m3u; do
+            [ -f "$f" ] && git add "$f"
+          done
+          if git diff --cached --quiet; then
+            echo "Sin cambios que subir"
+          else
+            git commit -m "Actualizar listas y eventos ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      # Solo si algo falla: capturas/HTML para depurar (ya no se sube eventos.json como artefacto)
+      - name: Subir debug si falla
+        if: failure()
+        uses: actions/upload-artifact@v6
+        with:
+          name: debug
+          path: debug/
+          if-no-files-found: warn
