@@ -36,41 +36,12 @@ jobs:
       - name: Instalar Chromium para Playwright
         run: playwright install --with-deps chromium
 
-      # Nodo IPFS (Kubo) para leer el hashes.json directamente por IPNS, sin proxy.
-      # Es opcional: si falla, el script usa pasarelas públicas IPFS como respaldo.
-      # dist.ipfs.tech ya no existe (Shipyard cerró su infraestructura el 30/09/2026):
-      # el binario se descarga de GitHub Releases. Kubo ya no tiene mantenedores,
-      # así que si quieres reproducibilidad total, fija KUBO_VERSION (p. ej. "v0.XX.X").
-      - name: Instalar y arrancar nodo IPFS
-        continue-on-error: true
-        timeout-minutes: 4
-        env:
-          GH_TOKEN: ${{ github.token }}
-          KUBO_VERSION: ""      # vacío = última release publicada
-        run: |
-          set -e
-          v="$KUBO_VERSION"
-          if [ -z "$v" ]; then
-            v=$(gh release view --repo ipfs/kubo --json tagName -q .tagName)
-          fi
-          [ -n "$v" ] || { echo "No se pudo obtener la versión de Kubo"; exit 1; }
-          echo "Instalando Kubo $v"
-          gh release download "$v" --repo ipfs/kubo \
-            --pattern "kubo_${v}_linux-amd64.tar.gz" --dir "$RUNNER_TEMP"
-          tar -xzf "$RUNNER_TEMP/kubo_${v}_linux-amd64.tar.gz" -C "$RUNNER_TEMP"
-          sudo install "$RUNNER_TEMP/kubo/ipfs" /usr/local/bin/ipfs
-          ipfs init --profile=server
-          nohup ipfs daemon > "$RUNNER_TEMP/ipfs.log" 2>&1 &
-          # esperar a que el demonio esté en línea y conectado a algunos peers
-          for i in $(seq 1 30); do ipfs swarm peers >/dev/null 2>&1 && break; sleep 1; done
-          for i in $(seq 1 30); do [ "$(ipfs swarm peers 2>/dev/null | wc -l)" -ge 5 ] && break; sleep 1; done
-          echo "Peers conectados: $(ipfs swarm peers 2>/dev/null | wc -l)"
-
       - name: Ejecutar script
         env:
           # La web exige aceptar un EULA (licencia de uso personal).
           # Cámbialo a "yes" SOLO después de leerlo y aceptarlo tú.
           ACCEPT_EULA: "yes"
+          ELCANO_FALLBACK_URL: "https://k51qzi5uqu5di462t7j4vu4akwfhvtjhy88qbupktvoacqfqe9uforjvhyi4wr.ipns.inbrowser.link/hashes.json"
         run: python scrape_eventos.py
 
       # Se ejecuta aunque el scraping falle, para no perder elcano.json / ezdakit.m3u
