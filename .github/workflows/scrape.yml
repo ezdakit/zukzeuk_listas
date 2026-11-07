@@ -2,20 +2,31 @@ name: Scrape eventos Acestream
 
 on:
   schedule:
-    - cron: "22 */3 * * *" 
+    - cron: "22 */3 * * *"
   workflow_dispatch:
+    inputs:
+      log_level:
+        description: "Nivel de log del script"
+        type: choice
+        default: DEBUG
+        options: [DEBUG, INFO, WARN, ERROR]
 
 permissions:
   contents: write
 
+# Evita que dos ejecuciones simultáneas se pisen al hacer push
 concurrency:
   group: scrape-eventos
   cancel-in-progress: false
 
+env:
+  PYTHONUNBUFFERED: "1"
+  LOG_LEVEL: ${{ github.event.inputs.log_level || 'DEBUG' }}
+
 jobs:
   scrape:
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 20
 
     steps:
       - name: Checkout
@@ -30,65 +41,124 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4
+          python --version
+          pip list 2>/dev/null | grep -iE "^(requests|beautifulsoup4) "
 
       - name: Instalar y arrancar nodo IPFS
         continue-on-error: true
         timeout-minutes: 5
         env:
           GH_TOKEN: ${{ github.token }}
-          KUBO_VERSION: ""
+          KUBO_VERSION: ""          # vacío = última versión; p. ej. "v0.39.0" para fijarla
           IPFS_PATH: ${{ runner.temp }}/.ipfs
         run: |
           set -e
-          
-          echo "Limpiando entorno..."
-          killall -9 ipfs || true
+          log() { echo "[$(date -u +%H:%M:%S)] $*"; }
+          trap 'echo "::warning::Fallo en el paso de IPFS (línea $LINENO). El script usará URL directa y pasarelas."' ERR
+
+          log "Limpiando entorno..."
+          killall -9 ipfs 2>/dev/null || true
           rm -rf "$IPFS_PATH"
-          
-          v=$(gh release view --repo ipfs/kubo --json tagName -q .tagName)
-          echo "Instalando Kubo $v"
+
+          v="${KUBO_VERSION:-}"
+          if [ -z "$v" ]; then
+            v=$(gh release view --repo ipfs/kubo --json tagName -q .tagName)
+            log "Última versión de Kubo: $v"
+          else
+            log "Versión de Kubo fijada: $v"
+          fi
+
+          log "Descargando Kubo $v"
           gh release download "$v" --repo ipfs/kubo --pattern "kubo_${v}_linux-amd64.tar.gz" --dir "$RUNNER_TEMP"
           tar -xzf "$RUNNER_TEMP/kubo_${v}_linux-amd64.tar.gz" -C "$RUNNER_TEMP"
           sudo install "$RUNNER_TEMP/kubo/ipfs" /usr/local/bin/ipfs
-          
-          echo "Inicializando nodo..."
+          ipfs --version
+
+          log "Inicializando nodo..."
           ipfs init --profile=server
           rm -f "$IPFS_PATH/repo.lock"
-          
-          echo "Arrancando demonio en background..."
+
+          log "Arrancando demonio en segundo plano..."
           nohup ipfs daemon --routing=dhtclient > "$RUNNER_TEMP/ipfs.log" 2>&1 &
-          
           sleep 5
-          
-          echo "Esperando conexión a la red P2P..."
+          log "Peer ID: $(ipfs id -f='<id>' 2>/dev/null || echo desconocido)"
+
+          log "Esperando a que el demonio responda..."
           for i in $(seq 1 30); do ipfs swarm peers >/dev/null 2>&1 && break; sleep 2; done
+          log "Esperando a tener al menos 3 peers..."
           for i in $(seq 1 30); do [ "$(ipfs swarm peers 2>/dev/null | wc -l)" -ge 3 ] && break; sleep 2; done
-          
+
           PEERS=$(ipfs swarm peers 2>/dev/null | wc -l)
-          echo "Peers conectados: $PEERS"
-          
+          log "Peers conectados: $PEERS"
           if [ "$PEERS" -eq 0 ]; then
-            echo "--- ERROR: Sin peers. Volcando log de Kubo ---"
-            cat "$RUNNER_TEMP/ipfs.log"
+            echo "::warning::Nodo IPFS sin peers; se usarán URL directa y pasarelas"
+            echo "--- últimas 80 líneas del log de Kubo ---"
+            tail -n 80 "$RUNNER_TEMP/ipfs.log"
           fi
 
       - name: Ejecutar script
+        timeout-minutes: 9
         env:
           IPFS_PATH: ${{ runner.temp }}/.ipfs
+          # Las URLs directas del worker (una por clave IPNS) las construye el script solo.
+          # Opcionales: ELCANO_DIRECT_BASES, ELCANO_FALLBACK_URLS, ELCANO_MAX_SECONDS, EQUIVALENCIAS_URLS
+          DEBUG_DIR: debug
         run: python scrape_eventos.py
+
+      - name: Recopilar logs de depuración
+        if: always()
+        run: |
+          mkdir -p debug
+          if [ -f "$RUNNER_TEMP/ipfs.log" ]; then cp "$RUNNER_TEMP/ipfs.log" debug/ipfs.log; else echo "(no hay log de IPFS)"; fi
+          echo "Ficheros generados:"
+          ls -la elcano.json ezdakit.m3u eventos.json ezdakit_eventos.m3u equivalencias_canales.json scraper.log 2>&1 || true
 
       - name: Subir ficheros a la raíz del repositorio
         if: always()
         run: |
+          log() { echo "[$(date -u +%H:%M:%S)] $*"; }
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for f in elcano.json ezdakit.m3u eventos.json ezdakit_eventos.m3u; do
-            [ -f "$f" ] && git add "$f"
+
+          for f in elcano.json ezdakit.m3u eventos.json ezdakit_eventos.m3u equivalencias_canales.json scraper.log; do
+            if [ -f "$f" ]; then
+              git add -- "$f"
+              log "preparado: $f"
+            else
+              log "no existe: $f"
+            fi
           done
+
           if git diff --cached --quiet; then
-            echo "Sin cambios que subir"
-          else
-            git commit -m "Actualizar listas y eventos ($(date -u +'%Y-%m-%d %H:%M UTC'))"
-            git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
-            git push origin "HEAD:${GITHUB_REF_NAME}"
+            log "Sin cambios que subir"
+            exit 0
           fi
+
+          log "Cambios a subir:"
+          git diff --cached --stat
+          git commit -m "Actualizar listas y eventos ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+
+          ok=0
+          for intento in 1 2 3; do
+            log "Sincronizando y subiendo (intento $intento/3)..."
+            if git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              ok=1
+              break
+            fi
+            sleep $((intento * 5))
+          done
+          if [ "$ok" -ne 1 ]; then
+            echo "::error::No se pudieron subir los cambios tras 3 intentos"
+            exit 1
+          fi
+          log "Subida completada"
+
+      # Solo si algo falla: capturas/HTML del script y log de IPFS
+      - name: Subir logs de depuración si falla
+        if: failure()
+        uses: actions/upload-artifact@v6
+        with:
+          name: debug-${{ github.run_id }}
+          path: debug/
+          if-no-files-found: ignore
+          retention-days: 7
