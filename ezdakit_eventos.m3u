@@ -1,266 +1,6 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="06/11/2026 | NFL Liga Regular" tvg-name="02:15 - Baltimore Ravens vs Jacksonville Jaguars (DAZN 2) (HD) (27e)",02:15 - Baltimore Ravens vs Jacksonville Jaguars (DAZN 2) (HD) (27e)
-http://127.0.0.1:6878/ace/getstream?id=27ed8f532a68301bff62becf01769bb524904814
-#EXTINF:-1 group-title="06/11/2026 | NFL Liga Regular" tvg-name="02:15 - Baltimore Ravens vs Jacksonville Jaguars (DAZN 2) (FHD) (fee)",02:15 - Baltimore Ravens vs Jacksonville Jaguars (DAZN 2) (FHD) (fee)
-http://127.0.0.1:6878/ace/getstream?id=feea1c77fb2692e4de0a4465628b367eb4c8aec0
-#EXTINF:-1 group-title="06/11/2026 | NFL Liga Regular" tvg-name="02:15 - Baltimore Ravens vs Jacksonville Jaguars (DAZN 2) (FHD) (e74)",02:15 - Baltimore Ravens vs Jacksonville Jaguars (DAZN 2) (FHD) (e74)
-http://127.0.0.1:6878/ace/getstream?id=e748e196d4f26edd7e743cd0d901bfc23d807794
-#EXTINF:-1 group-title="06/11/2026 | NBA Liga Regular" tvg-name="03:00 - Phoenix Suns vs Orlando Magic (NBA League Pass) (FHD) (2ee)",03:00 - Phoenix Suns vs Orlando Magic (NBA League Pass) (FHD) (2ee)
-http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
-#EXTINF:-1 group-title="06/11/2026 | NBA Liga Regular" tvg-name="03:00 - Phoenix Suns vs Orlando Magic (NBA League Pass) (FHD) (4af)",03:00 - Phoenix Suns vs Orlando Magic (NBA League Pass) (FHD) (4af)
-http://127.0.0.1:6878/ace/getstream?id=4af480f65d5d09eea5b546a79ace5b55979c7685
-#EXTINF:-1 group-title="06/11/2026 | NBA Liga Regular" tvg-name="03:00 - Phoenix Suns vs Orlando Magic (DAZN Baloncesto) (HD) (788)",03:00 - Phoenix Suns vs Orlando Magic (DAZN Baloncesto) (HD) (788)
-http://127.0.0.1:6878/ace/getstream?id=788891525283f541893b809c54d1b9cbe2344dc5
-#EXTINF:-1 group-title="06/11/2026 | NBA Liga Regular" tvg-name="03:00 - Phoenix Suns vs Orlando Magic (DAZN Baloncesto) (FHD) (e5b)",03:00 - Phoenix Suns vs Orlando Magic (DAZN Baloncesto) (FHD) (e5b)
-http://127.0.0.1:6878/ace/getstream?id=e5b57c3919b1714f01cb6e5f1812d22aa87bae2b
-#EXTINF:-1 group-title="06/11/2026 | NBA Liga Regular" tvg-name="04:00 - Golden State Warriors vs Miami Heat (NBA League Pass) (FHD) (2ee)",04:00 - Golden State Warriors vs Miami Heat (NBA League Pass) (FHD) (2ee)
-http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
-#EXTINF:-1 group-title="06/11/2026 | NBA Liga Regular" tvg-name="04:00 - Golden State Warriors vs Miami Heat (NBA League Pass) (FHD) (4af)",04:00 - Golden State Warriors vs Miami Heat (NBA League Pass) (FHD) (4af)
-http://127.0.0.1:6878/ace/getstream?id=4af480f65d5d09eea5b546a79ace5b55979c7685
-#EXTINF:-1 group-title="06/11/2026 | LPGA Aramco China Championship" tvg-name="06:30 - Jornada 2 (M+ Golf 2) (FHD) (8c2)",06:30 - Jornada 2 (M+ Golf 2) (FHD) (8c2)
-http://127.0.0.1:6878/ace/getstream?id=8c22182e8ebe7320c97d87d030a6b5741c84f782
-#EXTINF:-1 group-title="06/11/2026 | WTA Torneo de Hong Kong 1/4 de Final" tvg-name="07:10 - Z. Sonmez vs C. Liu (Tennis Channel) (FHD) (694)",07:10 - Z. Sonmez vs C. Liu (Tennis Channel) (FHD) (694)
-http://127.0.0.1:6878/ace/getstream?id=6945bf402126a38905b2645d61f9915a3b5a8b09
-#EXTINF:-1 group-title="06/11/2026 | WTA Torneo de Hong Kong 1/4 de Final" tvg-name="07:10 - Z. Sonmez vs C. Liu (Tennis Channel) (FHD) (c1e)",07:10 - Z. Sonmez vs C. Liu (Tennis Channel) (FHD) (c1e)
-http://127.0.0.1:6878/ace/getstream?id=c1e3479282920d097550ce68edbfb17888ea9474
-#EXTINF:-1 group-title="06/11/2026 | DP World Tour Championship" tvg-name="08:00 - Jornada 2 (M+ Golf) (HD) (c50)",08:00 - Jornada 2 (M+ Golf) (HD) (c50)
-http://127.0.0.1:6878/ace/getstream?id=c50eeeff75b016cc115842cd2db4e80c5615e89a
-#EXTINF:-1 group-title="06/11/2026 | DP World Tour Championship" tvg-name="08:00 - Jornada 2 (M+ Golf) (FHD) (f96)",08:00 - Jornada 2 (M+ Golf) (FHD) (f96)
-http://127.0.0.1:6878/ace/getstream?id=f96a97afa44dd515c09eb6e7863f6cd465c8a90e
-#EXTINF:-1 group-title="06/11/2026 | DP World Tour Championship" tvg-name="08:00 - Jornada 2 (M+ Golf) (FHD) (c49)",08:00 - Jornada 2 (M+ Golf) (FHD) (c49)
-http://127.0.0.1:6878/ace/getstream?id=c499ba98f4b0d78804ef5aa64e5d1f4d44f7e2e9
-#EXTINF:-1 group-title="06/11/2026 | WTA Torneo de Hong Kong 1/4 de Final" tvg-name="10:00 - S. Cirstea vs A. Shubladze (Tennis Channel) (FHD) (694)",10:00 - S. Cirstea vs A. Shubladze (Tennis Channel) (FHD) (694)
-http://127.0.0.1:6878/ace/getstream?id=6945bf402126a38905b2645d61f9915a3b5a8b09
-#EXTINF:-1 group-title="06/11/2026 | WTA Torneo de Hong Kong 1/4 de Final" tvg-name="10:00 - S. Cirstea vs A. Shubladze (Tennis Channel) (FHD) (c1e)",10:00 - S. Cirstea vs A. Shubladze (Tennis Channel) (FHD) (c1e)
-http://127.0.0.1:6878/ace/getstream?id=c1e3479282920d097550ce68edbfb17888ea9474
-#EXTINF:-1 group-title="06/11/2026 | WTA Torneo de Hong Kong 1/4 de Final" tvg-name="11:40 - A. Sasnovich vs M. Sakkari (Tennis Channel) (FHD) (694)",11:40 - A. Sasnovich vs M. Sakkari (Tennis Channel) (FHD) (694)
-http://127.0.0.1:6878/ace/getstream?id=6945bf402126a38905b2645d61f9915a3b5a8b09
-#EXTINF:-1 group-title="06/11/2026 | WTA Torneo de Hong Kong 1/4 de Final" tvg-name="11:40 - A. Sasnovich vs M. Sakkari (Tennis Channel) (FHD) (c1e)",11:40 - A. Sasnovich vs M. Sakkari (Tennis Channel) (FHD) (c1e)
-http://127.0.0.1:6878/ace/getstream?id=c1e3479282920d097550ce68edbfb17888ea9474
-#EXTINF:-1 group-title="06/11/2026 | Mundial Femenino Semifinales" tvg-name="12:00 - España vs Francia (M+ Vamos 3) (HD) (354)",12:00 - España vs Francia (M+ Vamos 3) (HD) (354)
-http://127.0.0.1:6878/ace/getstream?id=354a0fac478c2887a6e0382b1f39a54a5f7f7de1
-#EXTINF:-1 group-title="06/11/2026 | Mundial Femenino Semifinales" tvg-name="12:00 - España vs Francia (M+ Vamos 3) (FHD) (8d7)",12:00 - España vs Francia (M+ Vamos 3) (FHD) (8d7)
-http://127.0.0.1:6878/ace/getstream?id=8d752ceceaa26b063d8edfa9c70352ada62c424d
-#EXTINF:-1 group-title="06/11/2026 | Mundial Femenino Semifinales" tvg-name="12:00 - España vs Francia (M+ Vamos 3) (FHD) (30d)",12:00 - España vs Francia (M+ Vamos 3) (FHD) (30d)
-http://127.0.0.1:6878/ace/getstream?id=30de10517ae304747a56addc1dfba2e963852e52
-#EXTINF:-1 group-title="06/11/2026 | Mundial Femenino Semifinales" tvg-name="12:00 - España vs Francia (M+ Vamos 3) (FHD) (acc)",12:00 - España vs Francia (M+ Vamos 3) (FHD) (acc)
-http://127.0.0.1:6878/ace/getstream?id=acc2d46eaf6a0b4c3dbd299ffcd67c2b946c2c3e
-#EXTINF:-1 group-title="06/11/2026 | Mundial Femenino Semifinales" tvg-name="12:00 - España vs Francia (M+ Deportes) (HD) (0fd)",12:00 - España vs Francia (M+ Deportes) (HD) (0fd)
-http://127.0.0.1:6878/ace/getstream?id=0fd61072edad41e15d072cfab53e5e3503cbd498
-#EXTINF:-1 group-title="06/11/2026 | Mundial Femenino Semifinales" tvg-name="12:00 - España vs Francia (M+ Deportes) (HD) (633)",12:00 - España vs Francia (M+ Deportes) (HD) (633)
-http://127.0.0.1:6878/ace/getstream?id=63307e32e9cbf51e7ca610f9fac0b9910217ea49
-#EXTINF:-1 group-title="06/11/2026 | Mundial Femenino Semifinales" tvg-name="12:00 - España vs Francia (M+ Deportes) (FHD) (779)",12:00 - España vs Francia (M+ Deportes) (FHD) (779)
-http://127.0.0.1:6878/ace/getstream?id=7793c6658b8d9c5e6219f27ce54e20ca1b8c0859
-#EXTINF:-1 group-title="06/11/2026 | Mundial Femenino Semifinales" tvg-name="12:00 - España vs Francia (M+ Deportes) (FHD) (403)",12:00 - España vs Francia (M+ Deportes) (FHD) (403)
-http://127.0.0.1:6878/ace/getstream?id=403354bfa8ec7769589b18977c22b99f1cae5aca
-#EXTINF:-1 group-title="06/11/2026 | Mundial Femenino Semifinales" tvg-name="12:00 - Argentina vs Italia (M+ Vamos 2) (HD) (ead)",12:00 - Argentina vs Italia (M+ Vamos 2) (HD) (ead)
-http://127.0.0.1:6878/ace/getstream?id=eadc069bbd45d77cb33ca3bac6f6d86281597122
-#EXTINF:-1 group-title="06/11/2026 | Mundial Femenino Semifinales" tvg-name="12:00 - Argentina vs Italia (M+ Vamos 2) (FHD) (8fd)",12:00 - Argentina vs Italia (M+ Vamos 2) (FHD) (8fd)
-http://127.0.0.1:6878/ace/getstream?id=8fd3ab88c95744e502aca1cdb369e07941914344
-#EXTINF:-1 group-title="06/11/2026 | Mundial Femenino Semifinales" tvg-name="12:00 - Argentina vs Italia (M+ Vamos 2) (FHD) (973)",12:00 - Argentina vs Italia (M+ Vamos 2) (FHD) (973)
-http://127.0.0.1:6878/ace/getstream?id=973094e625613b693cffb05a3f98fabe2d59dafa
-#EXTINF:-1 group-title="06/11/2026 | Mundial Femenino Semifinales" tvg-name="12:00 - Argentina vs Italia (M+ Deportes 3) (HD) (b53)",12:00 - Argentina vs Italia (M+ Deportes 3) (HD) (b53)
-http://127.0.0.1:6878/ace/getstream?id=b53deba2d4f6a26d6fe69cffec360e1916d77fa8
-#EXTINF:-1 group-title="06/11/2026 | Mundial Femenino Semifinales" tvg-name="12:00 - Argentina vs Italia (M+ Deportes 3) (HD) (c47)",12:00 - Argentina vs Italia (M+ Deportes 3) (HD) (c47)
-http://127.0.0.1:6878/ace/getstream?id=c47fe0698f928f92481ca709ead6ff7b635a8bf9
-#EXTINF:-1 group-title="06/11/2026 | Mundial Femenino Semifinales" tvg-name="12:00 - Argentina vs Italia (M+ Deportes 3) (FHD) (335)",12:00 - Argentina vs Italia (M+ Deportes 3) (FHD) (335)
-http://127.0.0.1:6878/ace/getstream?id=335b8e8849b99763fe51b7aecef2338ffb8d0101
-#EXTINF:-1 group-title="06/11/2026 | Mundial Femenino Semifinales" tvg-name="12:00 - Argentina vs Italia (M+ Deportes 3) (FHD) (239)",12:00 - Argentina vs Italia (M+ Deportes 3) (FHD) (239)
-http://127.0.0.1:6878/ace/getstream?id=239fc67555e053a344d0259560ae23c37a96e64b
-#EXTINF:-1 group-title="06/11/2026 | MotoGP" tvg-name="12:45 - G.P. Catar (Losail) Libres 1 (Dazn MotoGP) (FHD) (002)",12:45 - G.P. Catar (Losail) Libres 1 (Dazn MotoGP) (FHD) (002)
-http://127.0.0.1:6878/ace/getstream?id=002ebb242685b729fd1235fc24c93110593343a6
-#EXTINF:-1 group-title="06/11/2026 | MotoGP" tvg-name="12:45 - G.P. Catar (Losail) Libres 1 (Dazn MotoGP) (FHD) (aaf)",12:45 - G.P. Catar (Losail) Libres 1 (Dazn MotoGP) (FHD) (aaf)
-http://127.0.0.1:6878/ace/getstream?id=aaf8f939186264a31449c5e31ebf424965b0369f
-#EXTINF:-1 group-title="06/11/2026 | MotoGP" tvg-name="12:45 - G.P. Catar (Losail) Libres 1 (Dazn MotoGP) (FHD) (27f)",12:45 - G.P. Catar (Losail) Libres 1 (Dazn MotoGP) (FHD) (27f)
-http://127.0.0.1:6878/ace/getstream?id=27fdc342ae5fae5012eaf9502415107d94eb1f11
-#EXTINF:-1 group-title="06/11/2026 | MotoGP" tvg-name="12:45 - G.P. Catar (Losail) Libres 1 (Dazn MotoGP) (FHD) (49c)",12:45 - G.P. Catar (Losail) Libres 1 (Dazn MotoGP) (FHD) (49c)
-http://127.0.0.1:6878/ace/getstream?id=49ceb0e5d2c2c41fcbe6ed56d78eb78559aa1dca
-#EXTINF:-1 group-title="06/11/2026 | WTA Torneo de Hong Kong 1/4 de Final" tvg-name="13:40 - A. Ruzic vs A. Eala (Tennis Channel) (FHD) (694)",13:40 - A. Ruzic vs A. Eala (Tennis Channel) (FHD) (694)
-http://127.0.0.1:6878/ace/getstream?id=6945bf402126a38905b2645d61f9915a3b5a8b09
-#EXTINF:-1 group-title="06/11/2026 | WTA Torneo de Hong Kong 1/4 de Final" tvg-name="13:40 - A. Ruzic vs A. Eala (Tennis Channel) (FHD) (c1e)",13:40 - A. Ruzic vs A. Eala (Tennis Channel) (FHD) (c1e)
-http://127.0.0.1:6878/ace/getstream?id=c1e3479282920d097550ce68edbfb17888ea9474
-#EXTINF:-1 group-title="06/11/2026 | Masters París 1/4 de Final" tvg-name="14:10 - B. Shelton vs T. Paul (M+ Deportes 2) (HD) (f62)",14:10 - B. Shelton vs T. Paul (M+ Deportes 2) (HD) (f62)
-http://127.0.0.1:6878/ace/getstream?id=f62f06bb905564bf718467658947e24c2b21735f
-#EXTINF:-1 group-title="06/11/2026 | Masters París 1/4 de Final" tvg-name="14:10 - B. Shelton vs T. Paul (M+ Deportes 2) (FHD) (1c1)",14:10 - B. Shelton vs T. Paul (M+ Deportes 2) (FHD) (1c1)
-http://127.0.0.1:6878/ace/getstream?id=1c15bb40e6b2d153e3b30ed28eaa057ea44c3f41
-#EXTINF:-1 group-title="06/11/2026 | Saudi Pro League" tvg-name="15:55 - Al-Hazem SC vs Al Nassr (M+ Vamos) (HD) (931)",15:55 - Al-Hazem SC vs Al Nassr (M+ Vamos) (HD) (931)
-http://127.0.0.1:6878/ace/getstream?id=9311a4590f5966acbb77e4c2d13e1be17fd258b4
-#EXTINF:-1 group-title="06/11/2026 | Saudi Pro League" tvg-name="15:55 - Al-Hazem SC vs Al Nassr (M+ Vamos) (FHD) (9e5)",15:55 - Al-Hazem SC vs Al Nassr (M+ Vamos) (FHD) (9e5)
-http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
-#EXTINF:-1 group-title="06/11/2026 | Saudi Pro League" tvg-name="15:55 - Al-Hazem SC vs Al Nassr (M+ Vamos) (FHD) (1b0)",15:55 - Al-Hazem SC vs Al Nassr (M+ Vamos) (FHD) (1b0)
-http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
-#EXTINF:-1 group-title="06/11/2026 | Campeonato del Mundo Semifinales" tvg-name="16:00 - España vs Portugal (M+ Vamos 2) (HD) (ead)",16:00 - España vs Portugal (M+ Vamos 2) (HD) (ead)
-http://127.0.0.1:6878/ace/getstream?id=eadc069bbd45d77cb33ca3bac6f6d86281597122
-#EXTINF:-1 group-title="06/11/2026 | Campeonato del Mundo Semifinales" tvg-name="16:00 - España vs Portugal (M+ Vamos 2) (FHD) (8fd)",16:00 - España vs Portugal (M+ Vamos 2) (FHD) (8fd)
-http://127.0.0.1:6878/ace/getstream?id=8fd3ab88c95744e502aca1cdb369e07941914344
-#EXTINF:-1 group-title="06/11/2026 | Campeonato del Mundo Semifinales" tvg-name="16:00 - España vs Portugal (M+ Vamos 2) (FHD) (973)",16:00 - España vs Portugal (M+ Vamos 2) (FHD) (973)
-http://127.0.0.1:6878/ace/getstream?id=973094e625613b693cffb05a3f98fabe2d59dafa
-#EXTINF:-1 group-title="06/11/2026 | Campeonato del Mundo Semifinales" tvg-name="16:00 - España vs Portugal (M+ Deportes 3) (HD) (b53)",16:00 - España vs Portugal (M+ Deportes 3) (HD) (b53)
-http://127.0.0.1:6878/ace/getstream?id=b53deba2d4f6a26d6fe69cffec360e1916d77fa8
-#EXTINF:-1 group-title="06/11/2026 | Campeonato del Mundo Semifinales" tvg-name="16:00 - España vs Portugal (M+ Deportes 3) (HD) (c47)",16:00 - España vs Portugal (M+ Deportes 3) (HD) (c47)
-http://127.0.0.1:6878/ace/getstream?id=c47fe0698f928f92481ca709ead6ff7b635a8bf9
-#EXTINF:-1 group-title="06/11/2026 | Campeonato del Mundo Semifinales" tvg-name="16:00 - España vs Portugal (M+ Deportes 3) (FHD) (335)",16:00 - España vs Portugal (M+ Deportes 3) (FHD) (335)
-http://127.0.0.1:6878/ace/getstream?id=335b8e8849b99763fe51b7aecef2338ffb8d0101
-#EXTINF:-1 group-title="06/11/2026 | Campeonato del Mundo Semifinales" tvg-name="16:00 - España vs Portugal (M+ Deportes 3) (FHD) (239)",16:00 - España vs Portugal (M+ Deportes 3) (FHD) (239)
-http://127.0.0.1:6878/ace/getstream?id=239fc67555e053a344d0259560ae23c37a96e64b
-#EXTINF:-1 group-title="06/11/2026 | Campeonato del Mundo Semifinales" tvg-name="16:00 - Argentina vs Italia (M+ Deportes) (HD) (0fd)",16:00 - Argentina vs Italia (M+ Deportes) (HD) (0fd)
-http://127.0.0.1:6878/ace/getstream?id=0fd61072edad41e15d072cfab53e5e3503cbd498
-#EXTINF:-1 group-title="06/11/2026 | Campeonato del Mundo Semifinales" tvg-name="16:00 - Argentina vs Italia (M+ Deportes) (HD) (633)",16:00 - Argentina vs Italia (M+ Deportes) (HD) (633)
-http://127.0.0.1:6878/ace/getstream?id=63307e32e9cbf51e7ca610f9fac0b9910217ea49
-#EXTINF:-1 group-title="06/11/2026 | Campeonato del Mundo Semifinales" tvg-name="16:00 - Argentina vs Italia (M+ Deportes) (FHD) (779)",16:00 - Argentina vs Italia (M+ Deportes) (FHD) (779)
-http://127.0.0.1:6878/ace/getstream?id=7793c6658b8d9c5e6219f27ce54e20ca1b8c0859
-#EXTINF:-1 group-title="06/11/2026 | Campeonato del Mundo Semifinales" tvg-name="16:00 - Argentina vs Italia (M+ Deportes) (FHD) (403)",16:00 - Argentina vs Italia (M+ Deportes) (FHD) (403)
-http://127.0.0.1:6878/ace/getstream?id=403354bfa8ec7769589b18977c22b99f1cae5aca
-#EXTINF:-1 group-title="06/11/2026 | Liga U Primera Fase" tvg-name="16:00 - Barça Basket B vs Fundación CB Canarias (DAZN Baloncesto) (HD) (788)",16:00 - Barça Basket B vs Fundación CB Canarias (DAZN Baloncesto) (HD) (788)
-http://127.0.0.1:6878/ace/getstream?id=788891525283f541893b809c54d1b9cbe2344dc5
-#EXTINF:-1 group-title="06/11/2026 | Liga U Primera Fase" tvg-name="16:00 - Barça Basket B vs Fundación CB Canarias (DAZN Baloncesto) (FHD) (e5b)",16:00 - Barça Basket B vs Fundación CB Canarias (DAZN Baloncesto) (FHD) (e5b)
-http://127.0.0.1:6878/ace/getstream?id=e5b57c3919b1714f01cb6e5f1812d22aa87bae2b
-#EXTINF:-1 group-title="06/11/2026 | Masters París 1/4 de Final" tvg-name="16:20 - L. Van Assche vs R. Hijikata (M+ Deportes 2) (HD) (f62)",16:20 - L. Van Assche vs R. Hijikata (M+ Deportes 2) (HD) (f62)
-http://127.0.0.1:6878/ace/getstream?id=f62f06bb905564bf718467658947e24c2b21735f
-#EXTINF:-1 group-title="06/11/2026 | Masters París 1/4 de Final" tvg-name="16:20 - L. Van Assche vs R. Hijikata (M+ Deportes 2) (FHD) (1c1)",16:20 - L. Van Assche vs R. Hijikata (M+ Deportes 2) (FHD) (1c1)
-http://127.0.0.1:6878/ace/getstream?id=1c15bb40e6b2d153e3b30ed28eaa057ea44c3f41
-#EXTINF:-1 group-title="06/11/2026 | Fórmula 1" tvg-name="16:30 - G.P. Brasil (Interlagos) Libres 1 (DAZN F1) (FHD) (423)",16:30 - G.P. Brasil (Interlagos) Libres 1 (DAZN F1) (FHD) (423)
-http://127.0.0.1:6878/ace/getstream?id=4236714aa65e854f90bb6b710369bfb6e862cb23
-#EXTINF:-1 group-title="06/11/2026 | Fórmula 1" tvg-name="16:30 - G.P. Brasil (Interlagos) Libres 1 (DAZN F1) (FHD) (701)",16:30 - G.P. Brasil (Interlagos) Libres 1 (DAZN F1) (FHD) (701)
-http://127.0.0.1:6878/ace/getstream?id=7017fea3b65e2f08a6d2f410b9b17c5c4c5b265b
-#EXTINF:-1 group-title="06/11/2026 | Fórmula 1" tvg-name="16:30 - G.P. Brasil (Interlagos) Libres 1 (DAZN F1) (FHD) (f8c)",16:30 - G.P. Brasil (Interlagos) Libres 1 (DAZN F1) (FHD) (f8c)
-http://127.0.0.1:6878/ace/getstream?id=f8cc362318bc6b667dd6ba90969e3b34675c9a85
-#EXTINF:-1 group-title="06/11/2026 | Fórmula 1" tvg-name="16:30 - G.P. Brasil (Interlagos) Libres 1 (DAZN F1) (FHD) (dc1)",16:30 - G.P. Brasil (Interlagos) Libres 1 (DAZN F1) (FHD) (dc1)
-http://127.0.0.1:6878/ace/getstream?id=dc149729d6b4be6ae8199eae450611d1d06e5149
-#EXTINF:-1 group-title="06/11/2026 | MotoGP" tvg-name="17:00 - G.P. Catar (Losail) Libres (Dazn MotoGP) (FHD) (002)",17:00 - G.P. Catar (Losail) Libres (Dazn MotoGP) (FHD) (002)
-http://127.0.0.1:6878/ace/getstream?id=002ebb242685b729fd1235fc24c93110593343a6
-#EXTINF:-1 group-title="06/11/2026 | MotoGP" tvg-name="17:00 - G.P. Catar (Losail) Libres (Dazn MotoGP) (FHD) (aaf)",17:00 - G.P. Catar (Losail) Libres (Dazn MotoGP) (FHD) (aaf)
-http://127.0.0.1:6878/ace/getstream?id=aaf8f939186264a31449c5e31ebf424965b0369f
-#EXTINF:-1 group-title="06/11/2026 | MotoGP" tvg-name="17:00 - G.P. Catar (Losail) Libres (Dazn MotoGP) (FHD) (27f)",17:00 - G.P. Catar (Losail) Libres (Dazn MotoGP) (FHD) (27f)
-http://127.0.0.1:6878/ace/getstream?id=27fdc342ae5fae5012eaf9502415107d94eb1f11
-#EXTINF:-1 group-title="06/11/2026 | MotoGP" tvg-name="17:00 - G.P. Catar (Losail) Libres (Dazn MotoGP) (FHD) (49c)",17:00 - G.P. Catar (Losail) Libres (Dazn MotoGP) (FHD) (49c)
-http://127.0.0.1:6878/ace/getstream?id=49ceb0e5d2c2c41fcbe6ed56d78eb78559aa1dca
-#EXTINF:-1 group-title="06/11/2026 | Liga Femenina Endesa Liga Regular" tvg-name="19:00 - Spar Girona vs Valencia Basket (M+ Vamos) (HD) (931)",19:00 - Spar Girona vs Valencia Basket (M+ Vamos) (HD) (931)
-http://127.0.0.1:6878/ace/getstream?id=9311a4590f5966acbb77e4c2d13e1be17fd258b4
-#EXTINF:-1 group-title="06/11/2026 | Liga Femenina Endesa Liga Regular" tvg-name="19:00 - Spar Girona vs Valencia Basket (M+ Vamos) (FHD) (9e5)",19:00 - Spar Girona vs Valencia Basket (M+ Vamos) (FHD) (9e5)
-http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
-#EXTINF:-1 group-title="06/11/2026 | Liga Femenina Endesa Liga Regular" tvg-name="19:00 - Spar Girona vs Valencia Basket (M+ Vamos) (FHD) (1b0)",19:00 - Spar Girona vs Valencia Basket (M+ Vamos) (FHD) (1b0)
-http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
-#EXTINF:-1 group-title="06/11/2026 | Liga Femenina Endesa Liga Regular" tvg-name="19:00 - Spar Girona vs Valencia Basket (M+ Baloncesto) (FHD) (7af)",19:00 - Spar Girona vs Valencia Basket (M+ Baloncesto) (FHD) (7af)
-http://127.0.0.1:6878/ace/getstream?id=7afd36951b7c47b2d784ad1282f0d8fa532d0fe0
-#EXTINF:-1 group-title="06/11/2026 | Liga Femenina Endesa Liga Regular" tvg-name="19:00 - Spar Girona vs Valencia Basket (M+ Baloncesto) (FHD) (be9)",19:00 - Spar Girona vs Valencia Basket (M+ Baloncesto) (FHD) (be9)
-http://127.0.0.1:6878/ace/getstream?id=be93edb36056187656714f66c84026662f483e2f
-#EXTINF:-1 group-title="06/11/2026 | Liga Femenina Endesa Liga Regular" tvg-name="19:00 - Spar Girona vs Valencia Basket (M+ Baloncesto) (FHD) (5ba)",19:00 - Spar Girona vs Valencia Basket (M+ Baloncesto) (FHD) (5ba)
-http://127.0.0.1:6878/ace/getstream?id=5ba57eae303be35f8b551d2ba27b27ef0dd649b0
-#EXTINF:-1 group-title="06/11/2026 | Liga Femenina Endesa Liga Regular" tvg-name="19:00 - Spar Girona vs Valencia Basket (M+ Baloncesto) (FHD) (463)",19:00 - Spar Girona vs Valencia Basket (M+ Baloncesto) (FHD) (463)
-http://127.0.0.1:6878/ace/getstream?id=4639224a85a8e244acfbf6f7f616e062354cf485
-#EXTINF:-1 group-title="06/11/2026 | Liga Femenina Endesa Liga Regular" tvg-name="19:00 - Movistar Estudiantes vs Casademont Zaragoza (M+ Baloncesto 3) (FHD) (e67)",19:00 - Movistar Estudiantes vs Casademont Zaragoza (M+ Baloncesto 3) (FHD) (e67)
-http://127.0.0.1:6878/ace/getstream?id=e675aecf437124d37f7f2daf31669f1af532a50c
-#EXTINF:-1 group-title="06/11/2026 | Liga Femenina Endesa Liga Regular" tvg-name="19:00 - Movistar Estudiantes vs Casademont Zaragoza (M+ Baloncesto 3) (FHD) (70f)",19:00 - Movistar Estudiantes vs Casademont Zaragoza (M+ Baloncesto 3) (FHD) (70f)
-http://127.0.0.1:6878/ace/getstream?id=70f7638f664442f1a1d4c2389bed5346e4b72dfb
-#EXTINF:-1 group-title="06/11/2026 | Primera Federación Grupo 1" tvg-name="19:00 - Cacereño vs Lugo (RFEF TV) (FHD) (066)",19:00 - Cacereño vs Lugo (RFEF TV) (FHD) (066)
-http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
-#EXTINF:-1 group-title="06/11/2026 | Primera Federación Grupo 1" tvg-name="19:00 - Cacereño vs Lugo (RFEF TV) (FHD) (af5)",19:00 - Cacereño vs Lugo (RFEF TV) (FHD) (af5)
-http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
-#EXTINF:-1 group-title="06/11/2026 | Primera Federación Grupo 1" tvg-name="19:00 - Cacereño vs Lugo (RFEF TV) (FHD) (204)",19:00 - Cacereño vs Lugo (RFEF TV) (FHD) (204)
-http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
-#EXTINF:-1 group-title="06/11/2026 | Primera Federación Grupo 1" tvg-name="19:00 - Cacereño vs Lugo (RFEF TV) (FHD) (eb1)",19:00 - Cacereño vs Lugo (RFEF TV) (FHD) (eb1)
-http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
-#EXTINF:-1 group-title="06/11/2026 | Liga U Primera Fase" tvg-name="19:45 - Bilbao Basket B vs Monbus Obradoiro B (DAZN Baloncesto 2) (HD) (09e)",19:45 - Bilbao Basket B vs Monbus Obradoiro B (DAZN Baloncesto 2) (HD) (09e)
-http://127.0.0.1:6878/ace/getstream?id=09ee8afc1d9b468d3b470c682cfcacd58a95e273
-#EXTINF:-1 group-title="06/11/2026 | Fórmula 1" tvg-name="20:00 - G.P. Brasil (Interlagos) Libres 2 (DAZN F1) (FHD) (423)",20:00 - G.P. Brasil (Interlagos) Libres 2 (DAZN F1) (FHD) (423)
-http://127.0.0.1:6878/ace/getstream?id=4236714aa65e854f90bb6b710369bfb6e862cb23
-#EXTINF:-1 group-title="06/11/2026 | Fórmula 1" tvg-name="20:00 - G.P. Brasil (Interlagos) Libres 2 (DAZN F1) (FHD) (701)",20:00 - G.P. Brasil (Interlagos) Libres 2 (DAZN F1) (FHD) (701)
-http://127.0.0.1:6878/ace/getstream?id=7017fea3b65e2f08a6d2f410b9b17c5c4c5b265b
-#EXTINF:-1 group-title="06/11/2026 | Fórmula 1" tvg-name="20:00 - G.P. Brasil (Interlagos) Libres 2 (DAZN F1) (FHD) (f8c)",20:00 - G.P. Brasil (Interlagos) Libres 2 (DAZN F1) (FHD) (f8c)
-http://127.0.0.1:6878/ace/getstream?id=f8cc362318bc6b667dd6ba90969e3b34675c9a85
-#EXTINF:-1 group-title="06/11/2026 | Fórmula 1" tvg-name="20:00 - G.P. Brasil (Interlagos) Libres 2 (DAZN F1) (FHD) (dc1)",20:00 - G.P. Brasil (Interlagos) Libres 2 (DAZN F1) (FHD) (dc1)
-http://127.0.0.1:6878/ace/getstream?id=dc149729d6b4be6ae8199eae450611d1d06e5149
-#EXTINF:-1 group-title="06/11/2026 | Liga Femenina Endesa Liga Regular" tvg-name="20:00 - Perfumerías Avenida vs IDK Euskotren (M+ Deportes 6) (FHD) (cb3)",20:00 - Perfumerías Avenida vs IDK Euskotren (M+ Deportes 6) (FHD) (cb3)
-http://127.0.0.1:6878/ace/getstream?id=cb389520f92a6ec25a14e9887103fb7463c0ced4
-#EXTINF:-1 group-title="06/11/2026 | Liga Femenina Endesa Liga Regular" tvg-name="20:00 - Perfumerías Avenida vs IDK Euskotren (M+ Deportes 6) (FHD) (432)",20:00 - Perfumerías Avenida vs IDK Euskotren (M+ Deportes 6) (FHD) (432)
-http://127.0.0.1:6878/ace/getstream?id=432c450563e47b21e41540f19bff0f05d5adc59f
-#EXTINF:-1 group-title="06/11/2026 | Masters París 1/4 de Final" tvg-name="20:05 - T. Fritz vs C. Alcaraz (MOVISTAR PLUS) (HD) (d2b)",20:05 - T. Fritz vs C. Alcaraz (MOVISTAR PLUS) (HD) (d2b)
-http://127.0.0.1:6878/ace/getstream?id=d2b5299ed45cbaf35482bb0869b2c2f75fbed64a
-#EXTINF:-1 group-title="06/11/2026 | Masters París 1/4 de Final" tvg-name="20:05 - T. Fritz vs C. Alcaraz (MOVISTAR PLUS) (FHD) (a2d)",20:05 - T. Fritz vs C. Alcaraz (MOVISTAR PLUS) (FHD) (a2d)
-http://127.0.0.1:6878/ace/getstream?id=a2d33536b7d55727c8f6bea010624d6478c3ba2d
-#EXTINF:-1 group-title="06/11/2026 | Masters París 1/4 de Final" tvg-name="20:05 - T. Fritz vs C. Alcaraz (M+ Deportes 2) (HD) (f62)",20:05 - T. Fritz vs C. Alcaraz (M+ Deportes 2) (HD) (f62)
-http://127.0.0.1:6878/ace/getstream?id=f62f06bb905564bf718467658947e24c2b21735f
-#EXTINF:-1 group-title="06/11/2026 | Masters París 1/4 de Final" tvg-name="20:05 - T. Fritz vs C. Alcaraz (M+ Deportes 2) (FHD) (1c1)",20:05 - T. Fritz vs C. Alcaraz (M+ Deportes 2) (FHD) (1c1)
-http://127.0.0.1:6878/ace/getstream?id=1c15bb40e6b2d153e3b30ed28eaa057ea44c3f41
-#EXTINF:-1 group-title="06/11/2026 | Euroliga Liga Regular" tvg-name="20:15 - Olympiacos Piraeus vs Crvena Zvezda MTS Belgrade (M+ Baloncesto) (FHD) (7af)",20:15 - Olympiacos Piraeus vs Crvena Zvezda MTS Belgrade (M+ Baloncesto) (FHD) (7af)
-http://127.0.0.1:6878/ace/getstream?id=7afd36951b7c47b2d784ad1282f0d8fa532d0fe0
-#EXTINF:-1 group-title="06/11/2026 | Euroliga Liga Regular" tvg-name="20:15 - Olympiacos Piraeus vs Crvena Zvezda MTS Belgrade (M+ Baloncesto) (FHD) (be9)",20:15 - Olympiacos Piraeus vs Crvena Zvezda MTS Belgrade (M+ Baloncesto) (FHD) (be9)
-http://127.0.0.1:6878/ace/getstream?id=be93edb36056187656714f66c84026662f483e2f
-#EXTINF:-1 group-title="06/11/2026 | Euroliga Liga Regular" tvg-name="20:15 - Olympiacos Piraeus vs Crvena Zvezda MTS Belgrade (M+ Baloncesto) (FHD) (5ba)",20:15 - Olympiacos Piraeus vs Crvena Zvezda MTS Belgrade (M+ Baloncesto) (FHD) (5ba)
-http://127.0.0.1:6878/ace/getstream?id=5ba57eae303be35f8b551d2ba27b27ef0dd649b0
-#EXTINF:-1 group-title="06/11/2026 | Euroliga Liga Regular" tvg-name="20:15 - Olympiacos Piraeus vs Crvena Zvezda MTS Belgrade (M+ Baloncesto) (FHD) (463)",20:15 - Olympiacos Piraeus vs Crvena Zvezda MTS Belgrade (M+ Baloncesto) (FHD) (463)
-http://127.0.0.1:6878/ace/getstream?id=4639224a85a8e244acfbf6f7f616e062354cf485
-#EXTINF:-1 group-title="06/11/2026 | Euroliga Liga Regular" tvg-name="20:45 - BC Partizan Beograd vs Maccabi Tel Aviv BC (M+ Vamos 3) (HD) (354)",20:45 - BC Partizan Beograd vs Maccabi Tel Aviv BC (M+ Vamos 3) (HD) (354)
-http://127.0.0.1:6878/ace/getstream?id=354a0fac478c2887a6e0382b1f39a54a5f7f7de1
-#EXTINF:-1 group-title="06/11/2026 | Euroliga Liga Regular" tvg-name="20:45 - BC Partizan Beograd vs Maccabi Tel Aviv BC (M+ Vamos 3) (FHD) (8d7)",20:45 - BC Partizan Beograd vs Maccabi Tel Aviv BC (M+ Vamos 3) (FHD) (8d7)
-http://127.0.0.1:6878/ace/getstream?id=8d752ceceaa26b063d8edfa9c70352ada62c424d
-#EXTINF:-1 group-title="06/11/2026 | Euroliga Liga Regular" tvg-name="20:45 - BC Partizan Beograd vs Maccabi Tel Aviv BC (M+ Vamos 3) (FHD) (30d)",20:45 - BC Partizan Beograd vs Maccabi Tel Aviv BC (M+ Vamos 3) (FHD) (30d)
-http://127.0.0.1:6878/ace/getstream?id=30de10517ae304747a56addc1dfba2e963852e52
-#EXTINF:-1 group-title="06/11/2026 | Euroliga Liga Regular" tvg-name="20:45 - BC Partizan Beograd vs Maccabi Tel Aviv BC (M+ Vamos 3) (FHD) (acc)",20:45 - BC Partizan Beograd vs Maccabi Tel Aviv BC (M+ Vamos 3) (FHD) (acc)
-http://127.0.0.1:6878/ace/getstream?id=acc2d46eaf6a0b4c3dbd299ffcd67c2b946c2c3e
-#EXTINF:-1 group-title="06/11/2026 | Liga Femenina Endesa Liga Regular" tvg-name="21:00 - Cadi La Seu vs CB Jairis (Esport3) (HD) (1c2)",21:00 - Cadi La Seu vs CB Jairis (Esport3) (HD) (1c2)
-http://127.0.0.1:6878/ace/getstream?id=1c2b17f41b46cabbc60c64d500fd4a07b1089b7b
-#EXTINF:-1 group-title="06/11/2026 | Liga Femenina Endesa Liga Regular" tvg-name="21:00 - Cadi La Seu vs CB Jairis (Esport3) (HD) (ff1)",21:00 - Cadi La Seu vs CB Jairis (Esport3) (HD) (ff1)
-http://127.0.0.1:6878/ace/getstream?id=ff162bf69c1579edf953bf76933c80b1c7e893d0
-#EXTINF:-1 group-title="06/11/2026 | Liga Femenina Endesa Liga Regular" tvg-name="21:00 - Cadi La Seu vs CB Jairis (Esport3) (FHD) (720)",21:00 - Cadi La Seu vs CB Jairis (Esport3) (FHD) (720)
-http://127.0.0.1:6878/ace/getstream?id=720111bc8ab44e425e24b93785f06ba3184ef3a4
-#EXTINF:-1 group-title="06/11/2026 | Liga Femenina Endesa Liga Regular" tvg-name="21:00 - Cadi La Seu vs CB Jairis (Esport3) (FHD) (1aa)",21:00 - Cadi La Seu vs CB Jairis (Esport3) (FHD) (1aa)
-http://127.0.0.1:6878/ace/getstream?id=1aacd162a6e6fcd06216da5a39ebe335ad2a97b4
-#EXTINF:-1 group-title="06/11/2026 | Liga Femenina Endesa Liga Regular" tvg-name="21:00 - Ensino Lugo vs Lointek Gernika (M+ Deportes 6) (FHD) (cb3)",21:00 - Ensino Lugo vs Lointek Gernika (M+ Deportes 6) (FHD) (cb3)
-http://127.0.0.1:6878/ace/getstream?id=cb389520f92a6ec25a14e9887103fb7463c0ced4
-#EXTINF:-1 group-title="06/11/2026 | Liga Femenina Endesa Liga Regular" tvg-name="21:00 - Ensino Lugo vs Lointek Gernika (M+ Deportes 6) (FHD) (432)",21:00 - Ensino Lugo vs Lointek Gernika (M+ Deportes 6) (FHD) (432)
-http://127.0.0.1:6878/ace/getstream?id=432c450563e47b21e41540f19bff0f05d5adc59f
-#EXTINF:-1 group-title="06/11/2026 | Liga Femenina Endesa Liga Regular" tvg-name="21:00 - Celta Baloncesto vs Kutxabank Araski (M+ Baloncesto 3) (FHD) (e67)",21:00 - Celta Baloncesto vs Kutxabank Araski (M+ Baloncesto 3) (FHD) (e67)
-http://127.0.0.1:6878/ace/getstream?id=e675aecf437124d37f7f2daf31669f1af532a50c
-#EXTINF:-1 group-title="06/11/2026 | Liga Femenina Endesa Liga Regular" tvg-name="21:00 - Celta Baloncesto vs Kutxabank Araski (M+ Baloncesto 3) (FHD) (70f)",21:00 - Celta Baloncesto vs Kutxabank Araski (M+ Baloncesto 3) (FHD) (70f)
-http://127.0.0.1:6878/ace/getstream?id=70f7638f664442f1a1d4c2389bed5346e4b72dfb
-#EXTINF:-1 group-title="06/11/2026 | La Liga EA Sports" tvg-name="21:00 - Sevilla FC vs Alavés (DAZN LaLiga) (HD) (7d8)",21:00 - Sevilla FC vs Alavés (DAZN LaLiga) (HD) (7d8)
-http://127.0.0.1:6878/ace/getstream?id=7d898e9c227d706e5479b9b523ad615847825d14
-#EXTINF:-1 group-title="06/11/2026 | La Liga EA Sports" tvg-name="21:00 - Sevilla FC vs Alavés (DAZN LaLiga) (FHD) (529)",21:00 - Sevilla FC vs Alavés (DAZN LaLiga) (FHD) (529)
-http://127.0.0.1:6878/ace/getstream?id=529f5abd2c87209f69c0727ade740ff6f160be88
-#EXTINF:-1 group-title="06/11/2026 | La Liga EA Sports" tvg-name="21:00 - Sevilla FC vs Alavés (DAZN LaLiga) (FHD) (5bf)",21:00 - Sevilla FC vs Alavés (DAZN LaLiga) (FHD) (5bf)
-http://127.0.0.1:6878/ace/getstream?id=5bf898b0ffc2ca662b898a424a988a922ab88abd
-#EXTINF:-1 group-title="06/11/2026 | La Liga EA Sports" tvg-name="21:00 - Sevilla FC vs Alavés (DAZN LaLiga) (599)",21:00 - Sevilla FC vs Alavés (DAZN LaLiga) (599)
-http://127.0.0.1:6878/ace/getstream?id=599fb52eba4bd937b2029210bdeca9f1a34a32da
-#EXTINF:-1 group-title="06/11/2026 | World Wide Technology Championship" tvg-name="21:00 - Jornada 2 (M+ Golf) (HD) (c50)",21:00 - Jornada 2 (M+ Golf) (HD) (c50)
-http://127.0.0.1:6878/ace/getstream?id=c50eeeff75b016cc115842cd2db4e80c5615e89a
-#EXTINF:-1 group-title="06/11/2026 | World Wide Technology Championship" tvg-name="21:00 - Jornada 2 (M+ Golf) (FHD) (f96)",21:00 - Jornada 2 (M+ Golf) (FHD) (f96)
-http://127.0.0.1:6878/ace/getstream?id=f96a97afa44dd515c09eb6e7863f6cd465c8a90e
-#EXTINF:-1 group-title="06/11/2026 | World Wide Technology Championship" tvg-name="21:00 - Jornada 2 (M+ Golf) (FHD) (c49)",21:00 - Jornada 2 (M+ Golf) (FHD) (c49)
-http://127.0.0.1:6878/ace/getstream?id=c499ba98f4b0d78804ef5aa64e5d1f4d44f7e2e9
-#EXTINF:-1 group-title="06/11/2026 | Premier League" tvg-name="21:00 - Everton vs Coventry City (DAZN 1) (HD) (495)",21:00 - Everton vs Coventry City (DAZN 1) (HD) (495)
-http://127.0.0.1:6878/ace/getstream?id=49545d05f95846e93fd8f08da320be866995c550
-#EXTINF:-1 group-title="06/11/2026 | Nations Championship" tvg-name="21:10 - Irlanda vs Argentina (M+ Vamos) (HD) (931)",21:10 - Irlanda vs Argentina (M+ Vamos) (HD) (931)
-http://127.0.0.1:6878/ace/getstream?id=9311a4590f5966acbb77e4c2d13e1be17fd258b4
-#EXTINF:-1 group-title="06/11/2026 | Nations Championship" tvg-name="21:10 - Irlanda vs Argentina (M+ Vamos) (FHD) (9e5)",21:10 - Irlanda vs Argentina (M+ Vamos) (FHD) (9e5)
-http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
-#EXTINF:-1 group-title="06/11/2026 | Nations Championship" tvg-name="21:10 - Irlanda vs Argentina (M+ Vamos) (FHD) (1b0)",21:10 - Irlanda vs Argentina (M+ Vamos) (FHD) (1b0)
-http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
-#EXTINF:-1 group-title="06/11/2026 | Primera Federación Grupo 1" tvg-name="21:15 - Real Avilés vs CD Extremadura (RFEF TV) (FHD) (066)",21:15 - Real Avilés vs CD Extremadura (RFEF TV) (FHD) (066)
-http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
-#EXTINF:-1 group-title="06/11/2026 | Primera Federación Grupo 1" tvg-name="21:15 - Real Avilés vs CD Extremadura (RFEF TV) (FHD) (af5)",21:15 - Real Avilés vs CD Extremadura (RFEF TV) (FHD) (af5)
-http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
-#EXTINF:-1 group-title="06/11/2026 | Primera Federación Grupo 1" tvg-name="21:15 - Real Avilés vs CD Extremadura (RFEF TV) (FHD) (204)",21:15 - Real Avilés vs CD Extremadura (RFEF TV) (FHD) (204)
-http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
-#EXTINF:-1 group-title="06/11/2026 | Primera Federación Grupo 1" tvg-name="21:15 - Real Avilés vs CD Extremadura (RFEF TV) (FHD) (eb1)",21:15 - Real Avilés vs CD Extremadura (RFEF TV) (FHD) (eb1)
-http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
-#EXTINF:-1 group-title="06/11/2026 | Masters París 1/4 de Final" tvg-name="21:35 - C. Ruud vs N. Borges (M+ Deportes 2) (HD) (f62)",21:35 - C. Ruud vs N. Borges (M+ Deportes 2) (HD) (f62)
-http://127.0.0.1:6878/ace/getstream?id=f62f06bb905564bf718467658947e24c2b21735f
-#EXTINF:-1 group-title="06/11/2026 | Masters París 1/4 de Final" tvg-name="21:35 - C. Ruud vs N. Borges (M+ Deportes 2) (FHD) (1c1)",21:35 - C. Ruud vs N. Borges (M+ Deportes 2) (FHD) (1c1)
-http://127.0.0.1:6878/ace/getstream?id=1c15bb40e6b2d153e3b30ed28eaa057ea44c3f41
-#EXTINF:-1 group-title="06/11/2026 | Primera División Argentina Torneo Clausura" tvg-name="23:15 - San Lorenzo vs Platense (M+ Liga de Campeones) (HD) (074)",23:15 - San Lorenzo vs Platense (M+ Liga de Campeones) (HD) (074)
-http://127.0.0.1:6878/ace/getstream?id=07413e8e25d03d5a775dd058ff9447eab16c5de6
-#EXTINF:-1 group-title="06/11/2026 | Primera División Argentina Torneo Clausura" tvg-name="23:15 - San Lorenzo vs Platense (M+ Liga de Campeones) (HD) (45f)",23:15 - San Lorenzo vs Platense (M+ Liga de Campeones) (HD) (45f)
-http://127.0.0.1:6878/ace/getstream?id=45f160e173eb93dfdc37ca14b95ab1e6869868e0
-#EXTINF:-1 group-title="06/11/2026 | Primera División Argentina Torneo Clausura" tvg-name="23:15 - San Lorenzo vs Platense (M+ Liga de Campeones) (FHD) (663)",23:15 - San Lorenzo vs Platense (M+ Liga de Campeones) (FHD) (663)
-http://127.0.0.1:6878/ace/getstream?id=66382069b0b1863428e2a107bbeb236241365e84
-#EXTINF:-1 group-title="06/11/2026 | Primera División Argentina Torneo Clausura" tvg-name="23:15 - San Lorenzo vs Platense (M+ Liga de Campeones) (FHD) (76f)",23:15 - San Lorenzo vs Platense (M+ Liga de Campeones) (FHD) (76f)
-http://127.0.0.1:6878/ace/getstream?id=76f0f810b6f72d5e98d188689526a052b0900ac5
-#EXTINF:-1 group-title="06/11/2026 | Primera División Argentina Torneo Clausura" tvg-name="23:15 - San Lorenzo vs Platense (M+ Liga de Campeones) (FHD) (8ce)",23:15 - San Lorenzo vs Platense (M+ Liga de Campeones) (FHD) (8ce)
-http://127.0.0.1:6878/ace/getstream?id=8ce3c02c950c857a1a258493bf2fb4628c1b48fd
 #EXTINF:-1 group-title="07/11/2026 | NBA Liga Regular" tvg-name="01:00 - Charlotte Hornets vs Boston Celtics (NBA League Pass) (FHD) (2ee)",01:00 - Charlotte Hornets vs Boston Celtics (NBA League Pass) (FHD) (2ee)
 http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
 #EXTINF:-1 group-title="07/11/2026 | NBA Liga Regular" tvg-name="01:00 - Charlotte Hornets vs Boston Celtics (NBA League Pass) (FHD) (4af)",01:00 - Charlotte Hornets vs Boston Celtics (NBA League Pass) (FHD) (4af)
@@ -313,14 +53,16 @@ http://127.0.0.1:6878/ace/getstream?id=c499ba98f4b0d78804ef5aa64e5d1f4d44f7e2e9
 http://127.0.0.1:6878/ace/getstream?id=6945bf402126a38905b2645d61f9915a3b5a8b09
 #EXTINF:-1 group-title="07/11/2026 | WTA Torneo de Hong Kong Semifinal 2 WTA 250" tvg-name="08:30 - M. Sakkari vs A. Eala (Tennis Channel) (FHD) (c1e)",08:30 - M. Sakkari vs A. Eala (Tennis Channel) (FHD) (c1e)
 http://127.0.0.1:6878/ace/getstream?id=c1e3479282920d097550ce68edbfb17888ea9474
+#EXTINF:-1 group-title="07/11/2026 | Primera Federación Femenina" tvg-name="11:00 - LBTL Alcantarilla FS vs At. Navalcarnero FS (Teledeporte) (FHD) (f60)",11:00 - LBTL Alcantarilla FS vs At. Navalcarnero FS (Teledeporte) (FHD) (f60)
+http://127.0.0.1:6878/ace/getstream?id=f608f9cb7099d94172739494e8864e8b5b6a4360
+#EXTINF:-1 group-title="07/11/2026 | Primera Federación Femenina" tvg-name="11:00 - LBTL Alcantarilla FS vs At. Navalcarnero FS (Teledeporte) (FHD) (f80)",11:00 - LBTL Alcantarilla FS vs At. Navalcarnero FS (Teledeporte) (FHD) (f80)
+http://127.0.0.1:6878/ace/getstream?id=f80b9184bdd16a335d523ea3ea15b8e9a1c3bbcc
 #EXTINF:-1 group-title="07/11/2026 | MotoGP" tvg-name="12:00 - G.P. Catar (Losail) Libres 2 (Dazn MotoGP) (FHD) (002)",12:00 - G.P. Catar (Losail) Libres 2 (Dazn MotoGP) (FHD) (002)
 http://127.0.0.1:6878/ace/getstream?id=002ebb242685b729fd1235fc24c93110593343a6
 #EXTINF:-1 group-title="07/11/2026 | MotoGP" tvg-name="12:00 - G.P. Catar (Losail) Libres 2 (Dazn MotoGP) (FHD) (aaf)",12:00 - G.P. Catar (Losail) Libres 2 (Dazn MotoGP) (FHD) (aaf)
 http://127.0.0.1:6878/ace/getstream?id=aaf8f939186264a31449c5e31ebf424965b0369f
 #EXTINF:-1 group-title="07/11/2026 | MotoGP" tvg-name="12:00 - G.P. Catar (Losail) Libres 2 (Dazn MotoGP) (FHD) (27f)",12:00 - G.P. Catar (Losail) Libres 2 (Dazn MotoGP) (FHD) (27f)
 http://127.0.0.1:6878/ace/getstream?id=27fdc342ae5fae5012eaf9502415107d94eb1f11
-#EXTINF:-1 group-title="07/11/2026 | MotoGP" tvg-name="12:00 - G.P. Catar (Losail) Libres 2 (Dazn MotoGP) (FHD) (49c)",12:00 - G.P. Catar (Losail) Libres 2 (Dazn MotoGP) (FHD) (49c)
-http://127.0.0.1:6878/ace/getstream?id=49ceb0e5d2c2c41fcbe6ed56d78eb78559aa1dca
 #EXTINF:-1 group-title="07/11/2026 | Mundial Femenino Final" tvg-name="12:00 - España vs Argentina (M+ Vamos 2) (HD) (ead)",12:00 - España vs Argentina (M+ Vamos 2) (HD) (ead)
 http://127.0.0.1:6878/ace/getstream?id=eadc069bbd45d77cb33ca3bac6f6d86281597122
 #EXTINF:-1 group-title="07/11/2026 | Mundial Femenino Final" tvg-name="12:00 - España vs Argentina (M+ Vamos 2) (FHD) (8fd)",12:00 - España vs Argentina (M+ Vamos 2) (FHD) (8fd)
@@ -365,12 +107,14 @@ http://127.0.0.1:6878/ace/getstream?id=002ebb242685b729fd1235fc24c93110593343a6
 http://127.0.0.1:6878/ace/getstream?id=aaf8f939186264a31449c5e31ebf424965b0369f
 #EXTINF:-1 group-title="07/11/2026 | MotoGP" tvg-name="12:40 - G.P. Catar (Losail) Clasificación (Dazn MotoGP) (FHD) (27f)",12:40 - G.P. Catar (Losail) Clasificación (Dazn MotoGP) (FHD) (27f)
 http://127.0.0.1:6878/ace/getstream?id=27fdc342ae5fae5012eaf9502415107d94eb1f11
-#EXTINF:-1 group-title="07/11/2026 | MotoGP" tvg-name="12:40 - G.P. Catar (Losail) Clasificación (Dazn MotoGP) (FHD) (49c)",12:40 - G.P. Catar (Losail) Clasificación (Dazn MotoGP) (FHD) (49c)
-http://127.0.0.1:6878/ace/getstream?id=49ceb0e5d2c2c41fcbe6ed56d78eb78559aa1dca
-#EXTINF:-1 group-title="07/11/2026 | Primera Federación Grupo 1" tvg-name="13:00 - Racing Ferrol vs UD Logroñés (RFEF TV) (FHD) (066)",13:00 - Racing Ferrol vs UD Logroñés (RFEF TV) (FHD) (066)
-http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
+#EXTINF:-1 group-title="07/11/2026 | Liga Guerreras Iberdrola" tvg-name="13:00 - Beti Onak BM vs BM Logroño La Rioja (Teledeporte) (FHD) (f60)",13:00 - Beti Onak BM vs BM Logroño La Rioja (Teledeporte) (FHD) (f60)
+http://127.0.0.1:6878/ace/getstream?id=f608f9cb7099d94172739494e8864e8b5b6a4360
+#EXTINF:-1 group-title="07/11/2026 | Liga Guerreras Iberdrola" tvg-name="13:00 - Beti Onak BM vs BM Logroño La Rioja (Teledeporte) (FHD) (f80)",13:00 - Beti Onak BM vs BM Logroño La Rioja (Teledeporte) (FHD) (f80)
+http://127.0.0.1:6878/ace/getstream?id=f80b9184bdd16a335d523ea3ea15b8e9a1c3bbcc
 #EXTINF:-1 group-title="07/11/2026 | Primera Federación Grupo 1" tvg-name="13:00 - Racing Ferrol vs UD Logroñés (RFEF TV) (FHD) (af5)",13:00 - Racing Ferrol vs UD Logroñés (RFEF TV) (FHD) (af5)
 http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
+#EXTINF:-1 group-title="07/11/2026 | Primera Federación Grupo 1" tvg-name="13:00 - Racing Ferrol vs UD Logroñés (RFEF TV) (FHD) (066)",13:00 - Racing Ferrol vs UD Logroñés (RFEF TV) (FHD) (066)
+http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
 #EXTINF:-1 group-title="07/11/2026 | Primera Federación Grupo 1" tvg-name="13:00 - Racing Ferrol vs UD Logroñés (RFEF TV) (FHD) (204)",13:00 - Racing Ferrol vs UD Logroñés (RFEF TV) (FHD) (204)
 http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
 #EXTINF:-1 group-title="07/11/2026 | Primera Federación Grupo 1" tvg-name="13:00 - Racing Ferrol vs UD Logroñés (RFEF TV) (FHD) (eb1)",13:00 - Racing Ferrol vs UD Logroñés (RFEF TV) (FHD) (eb1)
@@ -381,14 +125,8 @@ http://127.0.0.1:6878/ace/getstream?id=49545d05f95846e93fd8f08da320be866995c550
 http://127.0.0.1:6878/ace/getstream?id=e1825dc2deae9f24ef55e6ff11fe780201ae758d
 #EXTINF:-1 group-title="07/11/2026 | La Liga EA Sports" tvg-name="14:00 - Málaga vs Racing Santander (M+ LaLiga) (HD) (1c0)",14:00 - Málaga vs Racing Santander (M+ LaLiga) (HD) (1c0)
 http://127.0.0.1:6878/ace/getstream?id=1c00e6a5404f84e9bd22aa9d8f09e96ffa4ab319
-#EXTINF:-1 group-title="07/11/2026 | La Liga EA Sports" tvg-name="14:00 - Málaga vs Racing Santander (M+ LaLiga) (HD) (69f)",14:00 - Málaga vs Racing Santander (M+ LaLiga) (HD) (69f)
-http://127.0.0.1:6878/ace/getstream?id=69f76f6516620d91612e7509077b5ac3bb4d3c0b
 #EXTINF:-1 group-title="07/11/2026 | La Liga EA Sports" tvg-name="14:00 - Málaga vs Racing Santander (M+ LaLiga) (FHD) (aae)",14:00 - Málaga vs Racing Santander (M+ LaLiga) (FHD) (aae)
 http://127.0.0.1:6878/ace/getstream?id=aae8bcb9b00c4505ccfa5981b860da012e8cf23e
-#EXTINF:-1 group-title="07/11/2026 | La Liga EA Sports" tvg-name="14:00 - Málaga vs Racing Santander (M+ LaLiga) (FHD) (726)",14:00 - Málaga vs Racing Santander (M+ LaLiga) (FHD) (726)
-http://127.0.0.1:6878/ace/getstream?id=72626ce6e2f0dc8f0a71ac1d9b960d3cc166c86e
-#EXTINF:-1 group-title="07/11/2026 | La Liga EA Sports" tvg-name="14:00 - Málaga vs Racing Santander (M+ LaLiga) (FHD) (25b)",14:00 - Málaga vs Racing Santander (M+ LaLiga) (FHD) (25b)
-http://127.0.0.1:6878/ace/getstream?id=25ba36fb3ff78d37b304177cb5b9f9f84348d2ad
 #EXTINF:-1 group-title="07/11/2026 | La Liga EA Sports" tvg-name="14:00 - Málaga vs Racing Santander (M+ LaLiga) (FHD) (3d4)",14:00 - Málaga vs Racing Santander (M+ LaLiga) (FHD) (3d4)
 http://127.0.0.1:6878/ace/getstream?id=3d4c3b9d44af0658a9ec6b29c92033f732b65422
 #EXTINF:-1 group-title="07/11/2026 | LaLiga Hypermotion" tvg-name="14:00 - Burgos CF vs Celta B (LaLiga TV Hypermotion) (HD) (974)",14:00 - Burgos CF vs Celta B (LaLiga TV Hypermotion) (HD) (974)
@@ -397,22 +135,14 @@ http://127.0.0.1:6878/ace/getstream?id=9743a3b8d01520ec383434fd829340c9d53a7077
 http://127.0.0.1:6878/ace/getstream?id=a19cada553b895e719796741d9d86785c986fce0
 #EXTINF:-1 group-title="07/11/2026 | LaLiga Hypermotion" tvg-name="14:00 - Burgos CF vs Celta B (LaLiga TV Hypermotion) (FHD) (de0)",14:00 - Burgos CF vs Celta B (LaLiga TV Hypermotion) (FHD) (de0)
 http://127.0.0.1:6878/ace/getstream?id=de00099a1fc928f292bb92d62a0841ac7104e31c
-#EXTINF:-1 group-title="07/11/2026 | Masters París Semifinal 1 ATP Masters 1000" tvg-name="14:30 - L. Van Assche vs B. Shelton (MOVISTAR PLUS) (HD) (d2b)",14:30 - L. Van Assche vs B. Shelton (MOVISTAR PLUS) (HD) (d2b)
-http://127.0.0.1:6878/ace/getstream?id=d2b5299ed45cbaf35482bb0869b2c2f75fbed64a
-#EXTINF:-1 group-title="07/11/2026 | Masters París Semifinal 1 ATP Masters 1000" tvg-name="14:30 - L. Van Assche vs B. Shelton (MOVISTAR PLUS) (FHD) (a2d)",14:30 - L. Van Assche vs B. Shelton (MOVISTAR PLUS) (FHD) (a2d)
-http://127.0.0.1:6878/ace/getstream?id=a2d33536b7d55727c8f6bea010624d6478c3ba2d
 #EXTINF:-1 group-title="07/11/2026 | Masters París Semifinal 1 ATP Masters 1000" tvg-name="14:30 - L. Van Assche vs B. Shelton (M+ Deportes 2) (HD) (f62)",14:30 - L. Van Assche vs B. Shelton (M+ Deportes 2) (HD) (f62)
 http://127.0.0.1:6878/ace/getstream?id=f62f06bb905564bf718467658947e24c2b21735f
-#EXTINF:-1 group-title="07/11/2026 | Masters París Semifinal 1 ATP Masters 1000" tvg-name="14:30 - L. Van Assche vs B. Shelton (M+ Deportes 2) (FHD) (1c1)",14:30 - L. Van Assche vs B. Shelton (M+ Deportes 2) (FHD) (1c1)
-http://127.0.0.1:6878/ace/getstream?id=1c15bb40e6b2d153e3b30ed28eaa057ea44c3f41
 #EXTINF:-1 group-title="07/11/2026 | Moto3" tvg-name="14:50 - G.P. Catar (Losail) Clasificación (Dazn MotoGP) (FHD) (002)",14:50 - G.P. Catar (Losail) Clasificación (Dazn MotoGP) (FHD) (002)
 http://127.0.0.1:6878/ace/getstream?id=002ebb242685b729fd1235fc24c93110593343a6
 #EXTINF:-1 group-title="07/11/2026 | Moto3" tvg-name="14:50 - G.P. Catar (Losail) Clasificación (Dazn MotoGP) (FHD) (aaf)",14:50 - G.P. Catar (Losail) Clasificación (Dazn MotoGP) (FHD) (aaf)
 http://127.0.0.1:6878/ace/getstream?id=aaf8f939186264a31449c5e31ebf424965b0369f
 #EXTINF:-1 group-title="07/11/2026 | Moto3" tvg-name="14:50 - G.P. Catar (Losail) Clasificación (Dazn MotoGP) (FHD) (27f)",14:50 - G.P. Catar (Losail) Clasificación (Dazn MotoGP) (FHD) (27f)
 http://127.0.0.1:6878/ace/getstream?id=27fdc342ae5fae5012eaf9502415107d94eb1f11
-#EXTINF:-1 group-title="07/11/2026 | Moto3" tvg-name="14:50 - G.P. Catar (Losail) Clasificación (Dazn MotoGP) (FHD) (49c)",14:50 - G.P. Catar (Losail) Clasificación (Dazn MotoGP) (FHD) (49c)
-http://127.0.0.1:6878/ace/getstream?id=49ceb0e5d2c2c41fcbe6ed56d78eb78559aa1dca
 #EXTINF:-1 group-title="07/11/2026 | Campeonato Europa Ciclocross" tvg-name="14:50 - Carrera Femenina (Eurosport 2) (HD) (be1)",14:50 - Carrera Femenina (Eurosport 2) (HD) (be1)
 http://127.0.0.1:6878/ace/getstream?id=be1ab9f792dac014fc3ce8e7a52e6bdd92bea6c6
 #EXTINF:-1 group-title="07/11/2026 | Campeonato Europa Ciclocross" tvg-name="14:50 - Carrera Femenina (Eurosport 2) (FHD) (ce8)",14:50 - Carrera Femenina (Eurosport 2) (FHD) (ce8)
@@ -431,50 +161,42 @@ http://127.0.0.1:6878/ace/getstream?id=239fc67555e053a344d0259560ae23c37a96e64b
 http://127.0.0.1:6878/ace/getstream?id=bfcc1ccd2ce52dd947731a8d8fc9de85d5dbe4c3
 #EXTINF:-1 group-title="07/11/2026 | Fórmula 1" tvg-name="15:30 - G.P. Brasil (Interlagos) Libres 3 (DAZN F1) (FHD) (423)",15:30 - G.P. Brasil (Interlagos) Libres 3 (DAZN F1) (FHD) (423)
 http://127.0.0.1:6878/ace/getstream?id=4236714aa65e854f90bb6b710369bfb6e862cb23
-#EXTINF:-1 group-title="07/11/2026 | Fórmula 1" tvg-name="15:30 - G.P. Brasil (Interlagos) Libres 3 (DAZN F1) (FHD) (701)",15:30 - G.P. Brasil (Interlagos) Libres 3 (DAZN F1) (FHD) (701)
-http://127.0.0.1:6878/ace/getstream?id=7017fea3b65e2f08a6d2f410b9b17c5c4c5b265b
-#EXTINF:-1 group-title="07/11/2026 | Fórmula 1" tvg-name="15:30 - G.P. Brasil (Interlagos) Libres 3 (DAZN F1) (FHD) (f8c)",15:30 - G.P. Brasil (Interlagos) Libres 3 (DAZN F1) (FHD) (f8c)
-http://127.0.0.1:6878/ace/getstream?id=f8cc362318bc6b667dd6ba90969e3b34675c9a85
 #EXTINF:-1 group-title="07/11/2026 | Fórmula 1" tvg-name="15:30 - G.P. Brasil (Interlagos) Libres 3 (DAZN F1) (FHD) (dc1)",15:30 - G.P. Brasil (Interlagos) Libres 3 (DAZN F1) (FHD) (dc1)
 http://127.0.0.1:6878/ace/getstream?id=dc149729d6b4be6ae8199eae450611d1d06e5149
+#EXTINF:-1 group-title="07/11/2026 | Fórmula 1" tvg-name="15:30 - G.P. Brasil (Interlagos) Libres 3 (DAZN F1) (FHD) (701)",15:30 - G.P. Brasil (Interlagos) Libres 3 (DAZN F1) (FHD) (701)
+http://127.0.0.1:6878/ace/getstream?id=7017fea3b65e2f08a6d2f410b9b17c5c4c5b265b
 #EXTINF:-1 group-title="07/11/2026 | Moto2" tvg-name="15:45 - G.P. Catar (Losail) Clasificación (Dazn MotoGP) (FHD) (002)",15:45 - G.P. Catar (Losail) Clasificación (Dazn MotoGP) (FHD) (002)
 http://127.0.0.1:6878/ace/getstream?id=002ebb242685b729fd1235fc24c93110593343a6
 #EXTINF:-1 group-title="07/11/2026 | Moto2" tvg-name="15:45 - G.P. Catar (Losail) Clasificación (Dazn MotoGP) (FHD) (aaf)",15:45 - G.P. Catar (Losail) Clasificación (Dazn MotoGP) (FHD) (aaf)
 http://127.0.0.1:6878/ace/getstream?id=aaf8f939186264a31449c5e31ebf424965b0369f
 #EXTINF:-1 group-title="07/11/2026 | Moto2" tvg-name="15:45 - G.P. Catar (Losail) Clasificación (Dazn MotoGP) (FHD) (27f)",15:45 - G.P. Catar (Losail) Clasificación (Dazn MotoGP) (FHD) (27f)
 http://127.0.0.1:6878/ace/getstream?id=27fdc342ae5fae5012eaf9502415107d94eb1f11
-#EXTINF:-1 group-title="07/11/2026 | Moto2" tvg-name="15:45 - G.P. Catar (Losail) Clasificación (Dazn MotoGP) (FHD) (49c)",15:45 - G.P. Catar (Losail) Clasificación (Dazn MotoGP) (FHD) (49c)
-http://127.0.0.1:6878/ace/getstream?id=49ceb0e5d2c2c41fcbe6ed56d78eb78559aa1dca
-#EXTINF:-1 group-title="07/11/2026 | Campeonato del Mundo Final" tvg-name="16:00 - España vs TBD (M+ Vamos 2) (HD) (ead)",16:00 - España vs TBD (M+ Vamos 2) (HD) (ead)
-http://127.0.0.1:6878/ace/getstream?id=eadc069bbd45d77cb33ca3bac6f6d86281597122
-#EXTINF:-1 group-title="07/11/2026 | Campeonato del Mundo Final" tvg-name="16:00 - España vs TBD (M+ Vamos 2) (FHD) (8fd)",16:00 - España vs TBD (M+ Vamos 2) (FHD) (8fd)
-http://127.0.0.1:6878/ace/getstream?id=8fd3ab88c95744e502aca1cdb369e07941914344
-#EXTINF:-1 group-title="07/11/2026 | Campeonato del Mundo Final" tvg-name="16:00 - España vs TBD (M+ Vamos 2) (FHD) (973)",16:00 - España vs TBD (M+ Vamos 2) (FHD) (973)
-http://127.0.0.1:6878/ace/getstream?id=973094e625613b693cffb05a3f98fabe2d59dafa
-#EXTINF:-1 group-title="07/11/2026 | Campeonato del Mundo Final" tvg-name="16:00 - España vs TBD (M+ Deportes) (HD) (0fd)",16:00 - España vs TBD (M+ Deportes) (HD) (0fd)
-http://127.0.0.1:6878/ace/getstream?id=0fd61072edad41e15d072cfab53e5e3503cbd498
-#EXTINF:-1 group-title="07/11/2026 | Campeonato del Mundo Final" tvg-name="16:00 - España vs TBD (M+ Deportes) (HD) (633)",16:00 - España vs TBD (M+ Deportes) (HD) (633)
-http://127.0.0.1:6878/ace/getstream?id=63307e32e9cbf51e7ca610f9fac0b9910217ea49
-#EXTINF:-1 group-title="07/11/2026 | Campeonato del Mundo Final" tvg-name="16:00 - España vs TBD (M+ Deportes) (FHD) (779)",16:00 - España vs TBD (M+ Deportes) (FHD) (779)
-http://127.0.0.1:6878/ace/getstream?id=7793c6658b8d9c5e6219f27ce54e20ca1b8c0859
-#EXTINF:-1 group-title="07/11/2026 | Campeonato del Mundo Final" tvg-name="16:00 - España vs TBD (M+ Deportes) (FHD) (403)",16:00 - España vs TBD (M+ Deportes) (FHD) (403)
-http://127.0.0.1:6878/ace/getstream?id=403354bfa8ec7769589b18977c22b99f1cae5aca
-#EXTINF:-1 group-title="07/11/2026 | Campeonato del Mundo 3er Puesto" tvg-name="16:00 - Portugal vs TBD (M+ Deportes 5) (FHD) (bfc)",16:00 - Portugal vs TBD (M+ Deportes 5) (FHD) (bfc)
+#EXTINF:-1 group-title="07/11/2026 | Campeonato del Mundo 3er Puesto" tvg-name="16:00 - Italia vs Portugal (M+ Deportes 5) (FHD) (bfc)",16:00 - Italia vs Portugal (M+ Deportes 5) (FHD) (bfc)
 http://127.0.0.1:6878/ace/getstream?id=bfcc1ccd2ce52dd947731a8d8fc9de85d5dbe4c3
-#EXTINF:-1 group-title="07/11/2026 | World Rugby Nations Cup" tvg-name="16:00 - España vs Uruguay (M+ Vamos) (HD) (931)",16:00 - España vs Uruguay (M+ Vamos) (HD) (931)
-http://127.0.0.1:6878/ace/getstream?id=9311a4590f5966acbb77e4c2d13e1be17fd258b4
-#EXTINF:-1 group-title="07/11/2026 | World Rugby Nations Cup" tvg-name="16:00 - España vs Uruguay (M+ Vamos) (FHD) (9e5)",16:00 - España vs Uruguay (M+ Vamos) (FHD) (9e5)
-http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
-#EXTINF:-1 group-title="07/11/2026 | World Rugby Nations Cup" tvg-name="16:00 - España vs Uruguay (M+ Vamos) (FHD) (1b0)",16:00 - España vs Uruguay (M+ Vamos) (FHD) (1b0)
-http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
-#EXTINF:-1 group-title="07/11/2026 | Liga F" tvg-name="16:00 - Athletic Femenino vs Real Madrid Femenino (M+ Vamos 3) (HD) (354)",16:00 - Athletic Femenino vs Real Madrid Femenino (M+ Vamos 3) (HD) (354)
-http://127.0.0.1:6878/ace/getstream?id=354a0fac478c2887a6e0382b1f39a54a5f7f7de1
-#EXTINF:-1 group-title="07/11/2026 | Liga F" tvg-name="16:00 - Athletic Femenino vs Real Madrid Femenino (M+ Vamos 3) (FHD) (8d7)",16:00 - Athletic Femenino vs Real Madrid Femenino (M+ Vamos 3) (FHD) (8d7)
+#EXTINF:-1 group-title="07/11/2026 | Campeonato del Mundo Final" tvg-name="16:00 - Argentina vs España (M+ Vamos 2) (HD) (ead)",16:00 - Argentina vs España (M+ Vamos 2) (HD) (ead)
+http://127.0.0.1:6878/ace/getstream?id=eadc069bbd45d77cb33ca3bac6f6d86281597122
+#EXTINF:-1 group-title="07/11/2026 | Campeonato del Mundo Final" tvg-name="16:00 - Argentina vs España (M+ Vamos 2) (FHD) (8fd)",16:00 - Argentina vs España (M+ Vamos 2) (FHD) (8fd)
+http://127.0.0.1:6878/ace/getstream?id=8fd3ab88c95744e502aca1cdb369e07941914344
+#EXTINF:-1 group-title="07/11/2026 | Campeonato del Mundo Final" tvg-name="16:00 - Argentina vs España (M+ Vamos 2) (FHD) (973)",16:00 - Argentina vs España (M+ Vamos 2) (FHD) (973)
+http://127.0.0.1:6878/ace/getstream?id=973094e625613b693cffb05a3f98fabe2d59dafa
+#EXTINF:-1 group-title="07/11/2026 | Campeonato del Mundo Final" tvg-name="16:00 - Argentina vs España (M+ Deportes) (HD) (0fd)",16:00 - Argentina vs España (M+ Deportes) (HD) (0fd)
+http://127.0.0.1:6878/ace/getstream?id=0fd61072edad41e15d072cfab53e5e3503cbd498
+#EXTINF:-1 group-title="07/11/2026 | Campeonato del Mundo Final" tvg-name="16:00 - Argentina vs España (M+ Deportes) (HD) (633)",16:00 - Argentina vs España (M+ Deportes) (HD) (633)
+http://127.0.0.1:6878/ace/getstream?id=63307e32e9cbf51e7ca610f9fac0b9910217ea49
+#EXTINF:-1 group-title="07/11/2026 | Campeonato del Mundo Final" tvg-name="16:00 - Argentina vs España (M+ Deportes) (FHD) (779)",16:00 - Argentina vs España (M+ Deportes) (FHD) (779)
+http://127.0.0.1:6878/ace/getstream?id=7793c6658b8d9c5e6219f27ce54e20ca1b8c0859
+#EXTINF:-1 group-title="07/11/2026 | Campeonato del Mundo Final" tvg-name="16:00 - Argentina vs España (M+ Deportes) (FHD) (403)",16:00 - Argentina vs España (M+ Deportes) (FHD) (403)
+http://127.0.0.1:6878/ace/getstream?id=403354bfa8ec7769589b18977c22b99f1cae5aca
+#EXTINF:-1 group-title="07/11/2026 | World Rugby Nations Cup" tvg-name="16:00 - España vs Uruguay (M+ Vamos 3) (FHD) (8d7)",16:00 - España vs Uruguay (M+ Vamos 3) (FHD) (8d7)
 http://127.0.0.1:6878/ace/getstream?id=8d752ceceaa26b063d8edfa9c70352ada62c424d
-#EXTINF:-1 group-title="07/11/2026 | Liga F" tvg-name="16:00 - Athletic Femenino vs Real Madrid Femenino (M+ Vamos 3) (FHD) (30d)",16:00 - Athletic Femenino vs Real Madrid Femenino (M+ Vamos 3) (FHD) (30d)
+#EXTINF:-1 group-title="07/11/2026 | World Rugby Nations Cup" tvg-name="16:00 - España vs Uruguay (M+ Vamos 3) (FHD) (30d)",16:00 - España vs Uruguay (M+ Vamos 3) (FHD) (30d)
 http://127.0.0.1:6878/ace/getstream?id=30de10517ae304747a56addc1dfba2e963852e52
-#EXTINF:-1 group-title="07/11/2026 | Liga F" tvg-name="16:00 - Athletic Femenino vs Real Madrid Femenino (M+ Vamos 3) (FHD) (acc)",16:00 - Athletic Femenino vs Real Madrid Femenino (M+ Vamos 3) (FHD) (acc)
+#EXTINF:-1 group-title="07/11/2026 | World Rugby Nations Cup" tvg-name="16:00 - España vs Uruguay (M+ Vamos 3) (FHD) (acc)",16:00 - España vs Uruguay (M+ Vamos 3) (FHD) (acc)
 http://127.0.0.1:6878/ace/getstream?id=acc2d46eaf6a0b4c3dbd299ffcd67c2b946c2c3e
+#EXTINF:-1 group-title="07/11/2026 | Liga F" tvg-name="16:00 - Athletic Femenino vs Real Madrid Femenino (MOVISTAR PLUS) (HD) (d2b)",16:00 - Athletic Femenino vs Real Madrid Femenino (MOVISTAR PLUS) (HD) (d2b)
+http://127.0.0.1:6878/ace/getstream?id=d2b5299ed45cbaf35482bb0869b2c2f75fbed64a
+#EXTINF:-1 group-title="07/11/2026 | Liga F" tvg-name="16:00 - Athletic Femenino vs Real Madrid Femenino (MOVISTAR PLUS) (FHD) (a2d)",16:00 - Athletic Femenino vs Real Madrid Femenino (MOVISTAR PLUS) (FHD) (a2d)
+http://127.0.0.1:6878/ace/getstream?id=a2d33536b7d55727c8f6bea010624d6478c3ba2d
 #EXTINF:-1 group-title="07/11/2026 | Liga F" tvg-name="16:00 - Athletic Femenino vs Real Madrid Femenino (DAZN 2) (HD) (27e)",16:00 - Athletic Femenino vs Real Madrid Femenino (DAZN 2) (HD) (27e)
 http://127.0.0.1:6878/ace/getstream?id=27ed8f532a68301bff62becf01769bb524904814
 #EXTINF:-1 group-title="07/11/2026 | Liga F" tvg-name="16:00 - Athletic Femenino vs Real Madrid Femenino (DAZN 2) (FHD) (fee)",16:00 - Athletic Femenino vs Real Madrid Femenino (DAZN 2) (FHD) (fee)
@@ -483,8 +205,6 @@ http://127.0.0.1:6878/ace/getstream?id=feea1c77fb2692e4de0a4465628b367eb4c8aec0
 http://127.0.0.1:6878/ace/getstream?id=e748e196d4f26edd7e743cd0d901bfc23d807794
 #EXTINF:-1 group-title="07/11/2026 | Premier League" tvg-name="16:00 - Arsenal vs Hull City (DAZN 1) (HD) (495)",16:00 - Arsenal vs Hull City (DAZN 1) (HD) (495)
 http://127.0.0.1:6878/ace/getstream?id=49545d05f95846e93fd8f08da320be866995c550
-#EXTINF:-1 group-title="07/11/2026 | La Liga EA Sports" tvg-name="16:15 - Espanyol vs Deportivo (DAZN LaLiga) (HD) (7d8)",16:15 - Espanyol vs Deportivo (DAZN LaLiga) (HD) (7d8)
-http://127.0.0.1:6878/ace/getstream?id=7d898e9c227d706e5479b9b523ad615847825d14
 #EXTINF:-1 group-title="07/11/2026 | La Liga EA Sports" tvg-name="16:15 - Espanyol vs Deportivo (DAZN LaLiga) (FHD) (529)",16:15 - Espanyol vs Deportivo (DAZN LaLiga) (FHD) (529)
 http://127.0.0.1:6878/ace/getstream?id=529f5abd2c87209f69c0727ade740ff6f160be88
 #EXTINF:-1 group-title="07/11/2026 | La Liga EA Sports" tvg-name="16:15 - Espanyol vs Deportivo (DAZN LaLiga) (FHD) (5bf)",16:15 - Espanyol vs Deportivo (DAZN LaLiga) (FHD) (5bf)
@@ -497,10 +217,10 @@ http://127.0.0.1:6878/ace/getstream?id=9743a3b8d01520ec383434fd829340c9d53a7077
 http://127.0.0.1:6878/ace/getstream?id=a19cada553b895e719796741d9d86785c986fce0
 #EXTINF:-1 group-title="07/11/2026 | LaLiga Hypermotion" tvg-name="16:15 - Cádiz CF vs Real Oviedo (LaLiga TV Hypermotion) (FHD) (de0)",16:15 - Cádiz CF vs Real Oviedo (LaLiga TV Hypermotion) (FHD) (de0)
 http://127.0.0.1:6878/ace/getstream?id=de00099a1fc928f292bb92d62a0841ac7104e31c
-#EXTINF:-1 group-title="07/11/2026 | Primera Federación Grupo 2" tvg-name="16:30 - Alcorcón vs Real Jaén (RFEF TV) (FHD) (066)",16:30 - Alcorcón vs Real Jaén (RFEF TV) (FHD) (066)
-http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
 #EXTINF:-1 group-title="07/11/2026 | Primera Federación Grupo 2" tvg-name="16:30 - Alcorcón vs Real Jaén (RFEF TV) (FHD) (af5)",16:30 - Alcorcón vs Real Jaén (RFEF TV) (FHD) (af5)
 http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
+#EXTINF:-1 group-title="07/11/2026 | Primera Federación Grupo 2" tvg-name="16:30 - Alcorcón vs Real Jaén (RFEF TV) (FHD) (066)",16:30 - Alcorcón vs Real Jaén (RFEF TV) (FHD) (066)
+http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
 #EXTINF:-1 group-title="07/11/2026 | Primera Federación Grupo 2" tvg-name="16:30 - Alcorcón vs Real Jaén (RFEF TV) (FHD) (204)",16:30 - Alcorcón vs Real Jaén (RFEF TV) (FHD) (204)
 http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
 #EXTINF:-1 group-title="07/11/2026 | Primera Federación Grupo 2" tvg-name="16:30 - Alcorcón vs Real Jaén (RFEF TV) (FHD) (eb1)",16:30 - Alcorcón vs Real Jaén (RFEF TV) (FHD) (eb1)
@@ -515,24 +235,24 @@ http://127.0.0.1:6878/ace/getstream?id=002ebb242685b729fd1235fc24c93110593343a6
 http://127.0.0.1:6878/ace/getstream?id=aaf8f939186264a31449c5e31ebf424965b0369f
 #EXTINF:-1 group-title="07/11/2026 | MotoGP" tvg-name="17:00 - G.P. Catar (Losail) Sprint (Dazn MotoGP) (FHD) (27f)",17:00 - G.P. Catar (Losail) Sprint (Dazn MotoGP) (FHD) (27f)
 http://127.0.0.1:6878/ace/getstream?id=27fdc342ae5fae5012eaf9502415107d94eb1f11
-#EXTINF:-1 group-title="07/11/2026 | MotoGP" tvg-name="17:00 - G.P. Catar (Losail) Sprint (Dazn MotoGP) (FHD) (49c)",17:00 - G.P. Catar (Losail) Sprint (Dazn MotoGP) (FHD) (49c)
-http://127.0.0.1:6878/ace/getstream?id=49ceb0e5d2c2c41fcbe6ed56d78eb78559aa1dca
-#EXTINF:-1 group-title="07/11/2026 | Masters París" tvg-name="17:00 - Semifinal 2 ATP Masters 1000 (M+ Deportes 2) (HD) (f62)",17:00 - Semifinal 2 ATP Masters 1000 (M+ Deportes 2) (HD) (f62)
+#EXTINF:-1 group-title="07/11/2026 | Masters París Semifinal 2 ATP Masters 1000" tvg-name="17:00 - C. Ruud vs C. Alcaraz (M+ Vamos) (HD) (931)",17:00 - C. Ruud vs C. Alcaraz (M+ Vamos) (HD) (931)
+http://127.0.0.1:6878/ace/getstream?id=9311a4590f5966acbb77e4c2d13e1be17fd258b4
+#EXTINF:-1 group-title="07/11/2026 | Masters París Semifinal 2 ATP Masters 1000" tvg-name="17:00 - C. Ruud vs C. Alcaraz (M+ Vamos) (FHD) (9e5)",17:00 - C. Ruud vs C. Alcaraz (M+ Vamos) (FHD) (9e5)
+http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
+#EXTINF:-1 group-title="07/11/2026 | Masters París Semifinal 2 ATP Masters 1000" tvg-name="17:00 - C. Ruud vs C. Alcaraz (M+ Vamos) (FHD) (1b0)",17:00 - C. Ruud vs C. Alcaraz (M+ Vamos) (FHD) (1b0)
+http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
+#EXTINF:-1 group-title="07/11/2026 | Masters París Semifinal 2 ATP Masters 1000" tvg-name="17:00 - C. Ruud vs C. Alcaraz (M+ Deportes 2) (HD) (f62)",17:00 - C. Ruud vs C. Alcaraz (M+ Deportes 2) (HD) (f62)
 http://127.0.0.1:6878/ace/getstream?id=f62f06bb905564bf718467658947e24c2b21735f
-#EXTINF:-1 group-title="07/11/2026 | Masters París" tvg-name="17:00 - Semifinal 2 ATP Masters 1000 (M+ Deportes 2) (FHD) (1c1)",17:00 - Semifinal 2 ATP Masters 1000 (M+ Deportes 2) (FHD) (1c1)
-http://127.0.0.1:6878/ace/getstream?id=1c15bb40e6b2d153e3b30ed28eaa057ea44c3f41
+#EXTINF:-1 group-title="07/11/2026 | Liga F" tvg-name="17:00 - Eibar Femenino vs Real Sociedad Femenino (Teledeporte) (FHD) (f60)",17:00 - Eibar Femenino vs Real Sociedad Femenino (Teledeporte) (FHD) (f60)
+http://127.0.0.1:6878/ace/getstream?id=f608f9cb7099d94172739494e8864e8b5b6a4360
+#EXTINF:-1 group-title="07/11/2026 | Liga F" tvg-name="17:00 - Eibar Femenino vs Real Sociedad Femenino (Teledeporte) (FHD) (f80)",17:00 - Eibar Femenino vs Real Sociedad Femenino (Teledeporte) (FHD) (f80)
+http://127.0.0.1:6878/ace/getstream?id=f80b9184bdd16a335d523ea3ea15b8e9a1c3bbcc
 #EXTINF:-1 group-title="07/11/2026 | La Liga EA Sports" tvg-name="18:30 - Osasuna vs Athletic Club (M+ LaLiga) (HD) (e18)",18:30 - Osasuna vs Athletic Club (M+ LaLiga) (HD) (e18)
 http://127.0.0.1:6878/ace/getstream?id=e1825dc2deae9f24ef55e6ff11fe780201ae758d
 #EXTINF:-1 group-title="07/11/2026 | La Liga EA Sports" tvg-name="18:30 - Osasuna vs Athletic Club (M+ LaLiga) (HD) (1c0)",18:30 - Osasuna vs Athletic Club (M+ LaLiga) (HD) (1c0)
 http://127.0.0.1:6878/ace/getstream?id=1c00e6a5404f84e9bd22aa9d8f09e96ffa4ab319
-#EXTINF:-1 group-title="07/11/2026 | La Liga EA Sports" tvg-name="18:30 - Osasuna vs Athletic Club (M+ LaLiga) (HD) (69f)",18:30 - Osasuna vs Athletic Club (M+ LaLiga) (HD) (69f)
-http://127.0.0.1:6878/ace/getstream?id=69f76f6516620d91612e7509077b5ac3bb4d3c0b
 #EXTINF:-1 group-title="07/11/2026 | La Liga EA Sports" tvg-name="18:30 - Osasuna vs Athletic Club (M+ LaLiga) (FHD) (aae)",18:30 - Osasuna vs Athletic Club (M+ LaLiga) (FHD) (aae)
 http://127.0.0.1:6878/ace/getstream?id=aae8bcb9b00c4505ccfa5981b860da012e8cf23e
-#EXTINF:-1 group-title="07/11/2026 | La Liga EA Sports" tvg-name="18:30 - Osasuna vs Athletic Club (M+ LaLiga) (FHD) (726)",18:30 - Osasuna vs Athletic Club (M+ LaLiga) (FHD) (726)
-http://127.0.0.1:6878/ace/getstream?id=72626ce6e2f0dc8f0a71ac1d9b960d3cc166c86e
-#EXTINF:-1 group-title="07/11/2026 | La Liga EA Sports" tvg-name="18:30 - Osasuna vs Athletic Club (M+ LaLiga) (FHD) (25b)",18:30 - Osasuna vs Athletic Club (M+ LaLiga) (FHD) (25b)
-http://127.0.0.1:6878/ace/getstream?id=25ba36fb3ff78d37b304177cb5b9f9f84348d2ad
 #EXTINF:-1 group-title="07/11/2026 | La Liga EA Sports" tvg-name="18:30 - Osasuna vs Athletic Club (M+ LaLiga) (FHD) (3d4)",18:30 - Osasuna vs Athletic Club (M+ LaLiga) (FHD) (3d4)
 http://127.0.0.1:6878/ace/getstream?id=3d4c3b9d44af0658a9ec6b29c92033f732b65422
 #EXTINF:-1 group-title="07/11/2026 | La Liga EA Sports" tvg-name="18:30 - Osasuna vs Athletic Club (MOVISTAR PLUS) (HD) (d2b)",18:30 - Osasuna vs Athletic Club (MOVISTAR PLUS) (HD) (d2b)
@@ -551,8 +271,6 @@ http://127.0.0.1:6878/ace/getstream?id=9743a3b8d01520ec383434fd829340c9d53a7077
 http://127.0.0.1:6878/ace/getstream?id=a19cada553b895e719796741d9d86785c986fce0
 #EXTINF:-1 group-title="07/11/2026 | LaLiga Hypermotion" tvg-name="18:30 - Leganés vs Albacete (LaLiga TV Hypermotion) (FHD) (de0)",18:30 - Leganés vs Albacete (LaLiga TV Hypermotion) (FHD) (de0)
 http://127.0.0.1:6878/ace/getstream?id=de00099a1fc928f292bb92d62a0841ac7104e31c
-#EXTINF:-1 group-title="07/11/2026 | Saudi Pro League" tvg-name="18:30 - Al Ahli vs Al Taawoun FC (M+ Vamos 3) (HD) (354)",18:30 - Al Ahli vs Al Taawoun FC (M+ Vamos 3) (HD) (354)
-http://127.0.0.1:6878/ace/getstream?id=354a0fac478c2887a6e0382b1f39a54a5f7f7de1
 #EXTINF:-1 group-title="07/11/2026 | Saudi Pro League" tvg-name="18:30 - Al Ahli vs Al Taawoun FC (M+ Vamos 3) (FHD) (8d7)",18:30 - Al Ahli vs Al Taawoun FC (M+ Vamos 3) (FHD) (8d7)
 http://127.0.0.1:6878/ace/getstream?id=8d752ceceaa26b063d8edfa9c70352ada62c424d
 #EXTINF:-1 group-title="07/11/2026 | Saudi Pro League" tvg-name="18:30 - Al Ahli vs Al Taawoun FC (M+ Vamos 3) (FHD) (30d)",18:30 - Al Ahli vs Al Taawoun FC (M+ Vamos 3) (FHD) (30d)
@@ -569,20 +287,16 @@ http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
 http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
 #EXTINF:-1 group-title="07/11/2026 | Bundesliga" tvg-name="18:30 - Stuttgart vs Werder Bremen (M+ Liga de Campeones) (HD) (074)",18:30 - Stuttgart vs Werder Bremen (M+ Liga de Campeones) (HD) (074)
 http://127.0.0.1:6878/ace/getstream?id=07413e8e25d03d5a775dd058ff9447eab16c5de6
-#EXTINF:-1 group-title="07/11/2026 | Bundesliga" tvg-name="18:30 - Stuttgart vs Werder Bremen (M+ Liga de Campeones) (HD) (45f)",18:30 - Stuttgart vs Werder Bremen (M+ Liga de Campeones) (HD) (45f)
-http://127.0.0.1:6878/ace/getstream?id=45f160e173eb93dfdc37ca14b95ab1e6869868e0
 #EXTINF:-1 group-title="07/11/2026 | Bundesliga" tvg-name="18:30 - Stuttgart vs Werder Bremen (M+ Liga de Campeones) (FHD) (663)",18:30 - Stuttgart vs Werder Bremen (M+ Liga de Campeones) (FHD) (663)
 http://127.0.0.1:6878/ace/getstream?id=66382069b0b1863428e2a107bbeb236241365e84
-#EXTINF:-1 group-title="07/11/2026 | Bundesliga" tvg-name="18:30 - Stuttgart vs Werder Bremen (M+ Liga de Campeones) (FHD) (76f)",18:30 - Stuttgart vs Werder Bremen (M+ Liga de Campeones) (FHD) (76f)
-http://127.0.0.1:6878/ace/getstream?id=76f0f810b6f72d5e98d188689526a052b0900ac5
 #EXTINF:-1 group-title="07/11/2026 | Bundesliga" tvg-name="18:30 - Stuttgart vs Werder Bremen (M+ Liga de Campeones) (FHD) (8ce)",18:30 - Stuttgart vs Werder Bremen (M+ Liga de Campeones) (FHD) (8ce)
 http://127.0.0.1:6878/ace/getstream?id=8ce3c02c950c857a1a258493bf2fb4628c1b48fd
+#EXTINF:-1 group-title="07/11/2026 | Bundesliga" tvg-name="18:30 - Stuttgart vs Werder Bremen (M+ Liga de Campeones) (FHD) (76f)",18:30 - Stuttgart vs Werder Bremen (M+ Liga de Campeones) (FHD) (76f)
+http://127.0.0.1:6878/ace/getstream?id=76f0f810b6f72d5e98d188689526a052b0900ac5
 #EXTINF:-1 group-title="07/11/2026 | Bundesliga" tvg-name="18:30 - Stuttgart vs Werder Bremen (M+ Liga de Campeones 2) (HD) (231)",18:30 - Stuttgart vs Werder Bremen (M+ Liga de Campeones 2) (HD) (231)
 http://127.0.0.1:6878/ace/getstream?id=231a1698890b6d930fc678ce8189bc7034ea2cda
 #EXTINF:-1 group-title="07/11/2026 | Bundesliga" tvg-name="18:30 - Stuttgart vs Werder Bremen (M+ Liga de Campeones 2) (HD) (550)",18:30 - Stuttgart vs Werder Bremen (M+ Liga de Campeones 2) (HD) (550)
 http://127.0.0.1:6878/ace/getstream?id=5508bd9255cb689e18f1c363fa1f3b790c8e5579
-#EXTINF:-1 group-title="07/11/2026 | Bundesliga" tvg-name="18:30 - Stuttgart vs Werder Bremen (M+ Liga de Campeones 2) (FHD) (185)",18:30 - Stuttgart vs Werder Bremen (M+ Liga de Campeones 2) (FHD) (185)
-http://127.0.0.1:6878/ace/getstream?id=1856a9959619954e02edf1a36fcaca159fde257f
 #EXTINF:-1 group-title="07/11/2026 | Bundesliga" tvg-name="18:30 - Stuttgart vs Werder Bremen (M+ Liga de Campeones 2) (FHD) (1f7)",18:30 - Stuttgart vs Werder Bremen (M+ Liga de Campeones 2) (FHD) (1f7)
 http://127.0.0.1:6878/ace/getstream?id=1f740f14c7a5c02b6c6e64f089b6005498bfd217
 #EXTINF:-1 group-title="07/11/2026 | Primera Federación Grupo 2" tvg-name="18:45 - FC Cartagena vs Sant Andreu (Esport3) (HD) (1c2)",18:45 - FC Cartagena vs Sant Andreu (Esport3) (HD) (1c2)
@@ -593,22 +307,20 @@ http://127.0.0.1:6878/ace/getstream?id=ff162bf69c1579edf953bf76933c80b1c7e893d0
 http://127.0.0.1:6878/ace/getstream?id=720111bc8ab44e425e24b93785f06ba3184ef3a4
 #EXTINF:-1 group-title="07/11/2026 | Primera Federación Grupo 2" tvg-name="18:45 - FC Cartagena vs Sant Andreu (Esport3) (FHD) (1aa)",18:45 - FC Cartagena vs Sant Andreu (Esport3) (FHD) (1aa)
 http://127.0.0.1:6878/ace/getstream?id=1aacd162a6e6fcd06216da5a39ebe335ad2a97b4
-#EXTINF:-1 group-title="07/11/2026 | Primera Federación Grupo 1" tvg-name="18:45 - Unionistas vs Zamora (RFEF TV) (FHD) (066)",18:45 - Unionistas vs Zamora (RFEF TV) (FHD) (066)
-http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
 #EXTINF:-1 group-title="07/11/2026 | Primera Federación Grupo 1" tvg-name="18:45 - Unionistas vs Zamora (RFEF TV) (FHD) (af5)",18:45 - Unionistas vs Zamora (RFEF TV) (FHD) (af5)
 http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
+#EXTINF:-1 group-title="07/11/2026 | Primera Federación Grupo 1" tvg-name="18:45 - Unionistas vs Zamora (RFEF TV) (FHD) (066)",18:45 - Unionistas vs Zamora (RFEF TV) (FHD) (066)
+http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
 #EXTINF:-1 group-title="07/11/2026 | Primera Federación Grupo 1" tvg-name="18:45 - Unionistas vs Zamora (RFEF TV) (FHD) (204)",18:45 - Unionistas vs Zamora (RFEF TV) (FHD) (204)
 http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
 #EXTINF:-1 group-title="07/11/2026 | Primera Federación Grupo 1" tvg-name="18:45 - Unionistas vs Zamora (RFEF TV) (FHD) (eb1)",18:45 - Unionistas vs Zamora (RFEF TV) (FHD) (eb1)
 http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
 #EXTINF:-1 group-title="07/11/2026 | Fórmula 1" tvg-name="19:00 - G.P. Brasil (Interlagos) Clasificación (DAZN F1) (FHD) (423)",19:00 - G.P. Brasil (Interlagos) Clasificación (DAZN F1) (FHD) (423)
 http://127.0.0.1:6878/ace/getstream?id=4236714aa65e854f90bb6b710369bfb6e862cb23
-#EXTINF:-1 group-title="07/11/2026 | Fórmula 1" tvg-name="19:00 - G.P. Brasil (Interlagos) Clasificación (DAZN F1) (FHD) (701)",19:00 - G.P. Brasil (Interlagos) Clasificación (DAZN F1) (FHD) (701)
-http://127.0.0.1:6878/ace/getstream?id=7017fea3b65e2f08a6d2f410b9b17c5c4c5b265b
-#EXTINF:-1 group-title="07/11/2026 | Fórmula 1" tvg-name="19:00 - G.P. Brasil (Interlagos) Clasificación (DAZN F1) (FHD) (f8c)",19:00 - G.P. Brasil (Interlagos) Clasificación (DAZN F1) (FHD) (f8c)
-http://127.0.0.1:6878/ace/getstream?id=f8cc362318bc6b667dd6ba90969e3b34675c9a85
 #EXTINF:-1 group-title="07/11/2026 | Fórmula 1" tvg-name="19:00 - G.P. Brasil (Interlagos) Clasificación (DAZN F1) (FHD) (dc1)",19:00 - G.P. Brasil (Interlagos) Clasificación (DAZN F1) (FHD) (dc1)
 http://127.0.0.1:6878/ace/getstream?id=dc149729d6b4be6ae8199eae450611d1d06e5149
+#EXTINF:-1 group-title="07/11/2026 | Fórmula 1" tvg-name="19:00 - G.P. Brasil (Interlagos) Clasificación (DAZN F1) (FHD) (701)",19:00 - G.P. Brasil (Interlagos) Clasificación (DAZN F1) (FHD) (701)
+http://127.0.0.1:6878/ace/getstream?id=7017fea3b65e2f08a6d2f410b9b17c5c4c5b265b
 #EXTINF:-1 group-title="07/11/2026 | Liga Endesa Liga Regular" tvg-name="19:30 - Basquet Girona vs Bilbao Basket (DAZN Baloncesto 2) (HD) (09e)",19:30 - Basquet Girona vs Bilbao Basket (DAZN Baloncesto 2) (HD) (09e)
 http://127.0.0.1:6878/ace/getstream?id=09ee8afc1d9b468d3b470c682cfcacd58a95e273
 #EXTINF:-1 group-title="07/11/2026 | Título Mundial Peso Semipesado" tvg-name="20:00 - J. Buatsi vs W. Hutchinson (DAZN 2) (HD) (27e)",20:00 - J. Buatsi vs W. Hutchinson (DAZN 2) (HD) (27e)
@@ -617,18 +329,16 @@ http://127.0.0.1:6878/ace/getstream?id=27ed8f532a68301bff62becf01769bb524904814
 http://127.0.0.1:6878/ace/getstream?id=feea1c77fb2692e4de0a4465628b367eb4c8aec0
 #EXTINF:-1 group-title="07/11/2026 | Título Mundial Peso Semipesado" tvg-name="20:00 - J. Buatsi vs W. Hutchinson (DAZN 2) (FHD) (e74)",20:00 - J. Buatsi vs W. Hutchinson (DAZN 2) (FHD) (e74)
 http://127.0.0.1:6878/ace/getstream?id=e748e196d4f26edd7e743cd0d901bfc23d807794
-#EXTINF:-1 group-title="07/11/2026 | La Liga EA Sports" tvg-name="21:00 - Valencia CF vs Real Madrid (DAZN LaLiga) (HD) (7d8)",21:00 - Valencia CF vs Real Madrid (DAZN LaLiga) (HD) (7d8)
-http://127.0.0.1:6878/ace/getstream?id=7d898e9c227d706e5479b9b523ad615847825d14
 #EXTINF:-1 group-title="07/11/2026 | La Liga EA Sports" tvg-name="21:00 - Valencia CF vs Real Madrid (DAZN LaLiga) (FHD) (529)",21:00 - Valencia CF vs Real Madrid (DAZN LaLiga) (FHD) (529)
 http://127.0.0.1:6878/ace/getstream?id=529f5abd2c87209f69c0727ade740ff6f160be88
 #EXTINF:-1 group-title="07/11/2026 | La Liga EA Sports" tvg-name="21:00 - Valencia CF vs Real Madrid (DAZN LaLiga) (FHD) (5bf)",21:00 - Valencia CF vs Real Madrid (DAZN LaLiga) (FHD) (5bf)
 http://127.0.0.1:6878/ace/getstream?id=5bf898b0ffc2ca662b898a424a988a922ab88abd
 #EXTINF:-1 group-title="07/11/2026 | La Liga EA Sports" tvg-name="21:00 - Valencia CF vs Real Madrid (DAZN LaLiga) (599)",21:00 - Valencia CF vs Real Madrid (DAZN LaLiga) (599)
 http://127.0.0.1:6878/ace/getstream?id=599fb52eba4bd937b2029210bdeca9f1a34a32da
-#EXTINF:-1 group-title="07/11/2026 | Primera Federación Grupo 2" tvg-name="21:00 - Real Zaragoza vs Huesca (RFEF TV) (FHD) (066)",21:00 - Real Zaragoza vs Huesca (RFEF TV) (FHD) (066)
-http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
 #EXTINF:-1 group-title="07/11/2026 | Primera Federación Grupo 2" tvg-name="21:00 - Real Zaragoza vs Huesca (RFEF TV) (FHD) (af5)",21:00 - Real Zaragoza vs Huesca (RFEF TV) (FHD) (af5)
 http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
+#EXTINF:-1 group-title="07/11/2026 | Primera Federación Grupo 2" tvg-name="21:00 - Real Zaragoza vs Huesca (RFEF TV) (FHD) (066)",21:00 - Real Zaragoza vs Huesca (RFEF TV) (FHD) (066)
+http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
 #EXTINF:-1 group-title="07/11/2026 | Primera Federación Grupo 2" tvg-name="21:00 - Real Zaragoza vs Huesca (RFEF TV) (FHD) (204)",21:00 - Real Zaragoza vs Huesca (RFEF TV) (FHD) (204)
 http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
 #EXTINF:-1 group-title="07/11/2026 | Primera Federación Grupo 2" tvg-name="21:00 - Real Zaragoza vs Huesca (RFEF TV) (FHD) (eb1)",21:00 - Real Zaragoza vs Huesca (RFEF TV) (FHD) (eb1)
@@ -649,8 +359,6 @@ http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
 http://127.0.0.1:6878/ace/getstream?id=788891525283f541893b809c54d1b9cbe2344dc5
 #EXTINF:-1 group-title="07/11/2026 | Liga Endesa Liga Regular" tvg-name="21:00 - iLERNA Lleida vs Baskonia (DAZN Baloncesto) (FHD) (e5b)",21:00 - iLERNA Lleida vs Baskonia (DAZN Baloncesto) (FHD) (e5b)
 http://127.0.0.1:6878/ace/getstream?id=e5b57c3919b1714f01cb6e5f1812d22aa87bae2b
-#EXTINF:-1 group-title="07/11/2026 | Primera División Argentina Torneo Clausura" tvg-name="21:30 - Boca Juniors vs Defensa y Justicia (M+ Vamos 3) (HD) (354)",21:30 - Boca Juniors vs Defensa y Justicia (M+ Vamos 3) (HD) (354)
-http://127.0.0.1:6878/ace/getstream?id=354a0fac478c2887a6e0382b1f39a54a5f7f7de1
 #EXTINF:-1 group-title="07/11/2026 | Primera División Argentina Torneo Clausura" tvg-name="21:30 - Boca Juniors vs Defensa y Justicia (M+ Vamos 3) (FHD) (8d7)",21:30 - Boca Juniors vs Defensa y Justicia (M+ Vamos 3) (FHD) (8d7)
 http://127.0.0.1:6878/ace/getstream?id=8d752ceceaa26b063d8edfa9c70352ada62c424d
 #EXTINF:-1 group-title="07/11/2026 | Primera División Argentina Torneo Clausura" tvg-name="21:30 - Boca Juniors vs Defensa y Justicia (M+ Vamos 3) (FHD) (30d)",21:30 - Boca Juniors vs Defensa y Justicia (M+ Vamos 3) (FHD) (30d)
@@ -659,14 +367,12 @@ http://127.0.0.1:6878/ace/getstream?id=30de10517ae304747a56addc1dfba2e963852e52
 http://127.0.0.1:6878/ace/getstream?id=acc2d46eaf6a0b4c3dbd299ffcd67c2b946c2c3e
 #EXTINF:-1 group-title="07/11/2026 | Primera División Argentina Torneo Clausura" tvg-name="21:30 - Boca Juniors vs Defensa y Justicia (M+ Liga de Campeones) (HD) (074)",21:30 - Boca Juniors vs Defensa y Justicia (M+ Liga de Campeones) (HD) (074)
 http://127.0.0.1:6878/ace/getstream?id=07413e8e25d03d5a775dd058ff9447eab16c5de6
-#EXTINF:-1 group-title="07/11/2026 | Primera División Argentina Torneo Clausura" tvg-name="21:30 - Boca Juniors vs Defensa y Justicia (M+ Liga de Campeones) (HD) (45f)",21:30 - Boca Juniors vs Defensa y Justicia (M+ Liga de Campeones) (HD) (45f)
-http://127.0.0.1:6878/ace/getstream?id=45f160e173eb93dfdc37ca14b95ab1e6869868e0
 #EXTINF:-1 group-title="07/11/2026 | Primera División Argentina Torneo Clausura" tvg-name="21:30 - Boca Juniors vs Defensa y Justicia (M+ Liga de Campeones) (FHD) (663)",21:30 - Boca Juniors vs Defensa y Justicia (M+ Liga de Campeones) (FHD) (663)
 http://127.0.0.1:6878/ace/getstream?id=66382069b0b1863428e2a107bbeb236241365e84
-#EXTINF:-1 group-title="07/11/2026 | Primera División Argentina Torneo Clausura" tvg-name="21:30 - Boca Juniors vs Defensa y Justicia (M+ Liga de Campeones) (FHD) (76f)",21:30 - Boca Juniors vs Defensa y Justicia (M+ Liga de Campeones) (FHD) (76f)
-http://127.0.0.1:6878/ace/getstream?id=76f0f810b6f72d5e98d188689526a052b0900ac5
 #EXTINF:-1 group-title="07/11/2026 | Primera División Argentina Torneo Clausura" tvg-name="21:30 - Boca Juniors vs Defensa y Justicia (M+ Liga de Campeones) (FHD) (8ce)",21:30 - Boca Juniors vs Defensa y Justicia (M+ Liga de Campeones) (FHD) (8ce)
 http://127.0.0.1:6878/ace/getstream?id=8ce3c02c950c857a1a258493bf2fb4628c1b48fd
+#EXTINF:-1 group-title="07/11/2026 | Primera División Argentina Torneo Clausura" tvg-name="21:30 - Boca Juniors vs Defensa y Justicia (M+ Liga de Campeones) (FHD) (76f)",21:30 - Boca Juniors vs Defensa y Justicia (M+ Liga de Campeones) (FHD) (76f)
+http://127.0.0.1:6878/ace/getstream?id=76f0f810b6f72d5e98d188689526a052b0900ac5
 #EXTINF:-1 group-title="07/11/2026 | NBA Liga Regular" tvg-name="23:00 - Indiana Pacers vs Denver Nuggets (NBA League Pass) (FHD) (2ee)",23:00 - Indiana Pacers vs Denver Nuggets (NBA League Pass) (FHD) (2ee)
 http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
 #EXTINF:-1 group-title="07/11/2026 | NBA Liga Regular" tvg-name="23:00 - Indiana Pacers vs Denver Nuggets (NBA League Pass) (FHD) (4af)",23:00 - Indiana Pacers vs Denver Nuggets (NBA League Pass) (FHD) (4af)
@@ -709,6 +415,10 @@ http://127.0.0.1:6878/ace/getstream?id=c50eeeff75b016cc115842cd2db4e80c5615e89a
 http://127.0.0.1:6878/ace/getstream?id=f96a97afa44dd515c09eb6e7863f6cd465c8a90e
 #EXTINF:-1 group-title="08/11/2026 | DP World Tour Championship" tvg-name="07:30 - Jornada 4 (M+ Golf) (FHD) (c49)",07:30 - Jornada 4 (M+ Golf) (FHD) (c49)
 http://127.0.0.1:6878/ace/getstream?id=c499ba98f4b0d78804ef5aa64e5d1f4d44f7e2e9
+#EXTINF:-1 group-title="08/11/2026 | Maratón Málaga" tvg-name="08:15 - World Athletics Label Road Races (Teledeporte) (FHD) (f60)",08:15 - World Athletics Label Road Races (Teledeporte) (FHD) (f60)
+http://127.0.0.1:6878/ace/getstream?id=f608f9cb7099d94172739494e8864e8b5b6a4360
+#EXTINF:-1 group-title="08/11/2026 | Maratón Málaga" tvg-name="08:15 - World Athletics Label Road Races (Teledeporte) (FHD) (f80)",08:15 - World Athletics Label Road Races (Teledeporte) (FHD) (f80)
+http://127.0.0.1:6878/ace/getstream?id=f80b9184bdd16a335d523ea3ea15b8e9a1c3bbcc
 #EXTINF:-1 group-title="08/11/2026 | WTA Torneo de Hong Kong" tvg-name="09:00 - Final WTA 250 (Tennis Channel) (FHD) (694)",09:00 - Final WTA 250 (Tennis Channel) (FHD) (694)
 http://127.0.0.1:6878/ace/getstream?id=6945bf402126a38905b2645d61f9915a3b5a8b09
 #EXTINF:-1 group-title="08/11/2026 | WTA Torneo de Hong Kong" tvg-name="09:00 - Final WTA 250 (Tennis Channel) (FHD) (c1e)",09:00 - Final WTA 250 (Tennis Channel) (FHD) (c1e)
@@ -723,14 +433,12 @@ http://127.0.0.1:6878/ace/getstream?id=dcc3be2e16b61b10557d8a7e954c5496ba5e4b60
 http://127.0.0.1:6878/ace/getstream?id=b1a862efaf38730ffdb5a016a5d1d06dbca0ef6a
 #EXTINF:-1 group-title="08/11/2026 | Superliga Infantil Grupo Único (Madrid)" tvg-name="10:00 - Real Madrid Academy vs Sporting Hortaleza Academy (Real Madrid TV) (FHD) (2cb)",10:00 - Real Madrid Academy vs Sporting Hortaleza Academy (Real Madrid TV) (FHD) (2cb)
 http://127.0.0.1:6878/ace/getstream?id=2cb1ae3c7959c66481b7f16cedf6f5a171b08983
-#EXTINF:-1 group-title="08/11/2026 | 6 Horas de Monza" tvg-name="11:00 - Campeonato Mundial de Resistencia FIA Carrera (Eurosport 1) (HD) (818)",11:00 - Campeonato Mundial de Resistencia FIA Carrera (Eurosport 1) (HD) (818)
-http://127.0.0.1:6878/ace/getstream?id=818735480ae40a4207ece5153ef9a3e798cef7aa
 #EXTINF:-1 group-title="08/11/2026 | 6 Horas de Monza" tvg-name="11:00 - Campeonato Mundial de Resistencia FIA Carrera (Eurosport 1) (FHD) (ca1)",11:00 - Campeonato Mundial de Resistencia FIA Carrera (Eurosport 1) (FHD) (ca1)
 http://127.0.0.1:6878/ace/getstream?id=ca185612d5b5b6e863a16fc0177e8a6db1d1d3c2
-#EXTINF:-1 group-title="08/11/2026 | Primera Federación Grupo 2" tvg-name="12:00 - CE Europa vs Atlético Madrileño (RFEF TV) (FHD) (066)",12:00 - CE Europa vs Atlético Madrileño (RFEF TV) (FHD) (066)
-http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
 #EXTINF:-1 group-title="08/11/2026 | Primera Federación Grupo 2" tvg-name="12:00 - CE Europa vs Atlético Madrileño (RFEF TV) (FHD) (af5)",12:00 - CE Europa vs Atlético Madrileño (RFEF TV) (FHD) (af5)
 http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
+#EXTINF:-1 group-title="08/11/2026 | Primera Federación Grupo 2" tvg-name="12:00 - CE Europa vs Atlético Madrileño (RFEF TV) (FHD) (066)",12:00 - CE Europa vs Atlético Madrileño (RFEF TV) (FHD) (066)
+http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
 #EXTINF:-1 group-title="08/11/2026 | Primera Federación Grupo 2" tvg-name="12:00 - CE Europa vs Atlético Madrileño (RFEF TV) (FHD) (204)",12:00 - CE Europa vs Atlético Madrileño (RFEF TV) (FHD) (204)
 http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
 #EXTINF:-1 group-title="08/11/2026 | Primera Federación Grupo 2" tvg-name="12:00 - CE Europa vs Atlético Madrileño (RFEF TV) (FHD) (eb1)",12:00 - CE Europa vs Atlético Madrileño (RFEF TV) (FHD) (eb1)
@@ -741,6 +449,10 @@ http://127.0.0.1:6878/ace/getstream?id=27ed8f532a68301bff62becf01769bb524904814
 http://127.0.0.1:6878/ace/getstream?id=feea1c77fb2692e4de0a4465628b367eb4c8aec0
 #EXTINF:-1 group-title="08/11/2026 | Liga F" tvg-name="12:00 - Logroño United Femenino vs Sevilla FC Femenino (DAZN 2) (FHD) (e74)",12:00 - Logroño United Femenino vs Sevilla FC Femenino (DAZN 2) (FHD) (e74)
 http://127.0.0.1:6878/ace/getstream?id=e748e196d4f26edd7e743cd0d901bfc23d807794
+#EXTINF:-1 group-title="08/11/2026 | Liga F" tvg-name="12:00 - Logroño United Femenino vs Sevilla FC Femenino (Teledeporte) (FHD) (f60)",12:00 - Logroño United Femenino vs Sevilla FC Femenino (Teledeporte) (FHD) (f60)
+http://127.0.0.1:6878/ace/getstream?id=f608f9cb7099d94172739494e8864e8b5b6a4360
+#EXTINF:-1 group-title="08/11/2026 | Liga F" tvg-name="12:00 - Logroño United Femenino vs Sevilla FC Femenino (Teledeporte) (FHD) (f80)",12:00 - Logroño United Femenino vs Sevilla FC Femenino (Teledeporte) (FHD) (f80)
+http://127.0.0.1:6878/ace/getstream?id=f80b9184bdd16a335d523ea3ea15b8e9a1c3bbcc
 #EXTINF:-1 group-title="08/11/2026 | OK Liga" tvg-name="12:30 - Liceo vs Barça HP (Esport3) (HD) (1c2)",12:30 - Liceo vs Barça HP (Esport3) (HD) (1c2)
 http://127.0.0.1:6878/ace/getstream?id=1c2b17f41b46cabbc60c64d500fd4a07b1089b7b
 #EXTINF:-1 group-title="08/11/2026 | OK Liga" tvg-name="12:30 - Liceo vs Barça HP (Esport3) (HD) (ff1)",12:30 - Liceo vs Barça HP (Esport3) (HD) (ff1)
@@ -763,16 +475,12 @@ http://127.0.0.1:6878/ace/getstream?id=002ebb242685b729fd1235fc24c93110593343a6
 http://127.0.0.1:6878/ace/getstream?id=aaf8f939186264a31449c5e31ebf424965b0369f
 #EXTINF:-1 group-title="08/11/2026 | Moto3" tvg-name="14:00 - G.P. Catar (Losail) Carrera (Dazn MotoGP) (FHD) (27f)",14:00 - G.P. Catar (Losail) Carrera (Dazn MotoGP) (FHD) (27f)
 http://127.0.0.1:6878/ace/getstream?id=27fdc342ae5fae5012eaf9502415107d94eb1f11
-#EXTINF:-1 group-title="08/11/2026 | Moto3" tvg-name="14:00 - G.P. Catar (Losail) Carrera (Dazn MotoGP) (FHD) (49c)",14:00 - G.P. Catar (Losail) Carrera (Dazn MotoGP) (FHD) (49c)
-http://127.0.0.1:6878/ace/getstream?id=49ceb0e5d2c2c41fcbe6ed56d78eb78559aa1dca
 #EXTINF:-1 group-title="08/11/2026 | División de Honor" tvg-name="14:00 - Pozuelo Rugby Union vs Alcobendas Rugby (M+ Vamos) (HD) (931)",14:00 - Pozuelo Rugby Union vs Alcobendas Rugby (M+ Vamos) (HD) (931)
 http://127.0.0.1:6878/ace/getstream?id=9311a4590f5966acbb77e4c2d13e1be17fd258b4
 #EXTINF:-1 group-title="08/11/2026 | División de Honor" tvg-name="14:00 - Pozuelo Rugby Union vs Alcobendas Rugby (M+ Vamos) (FHD) (9e5)",14:00 - Pozuelo Rugby Union vs Alcobendas Rugby (M+ Vamos) (FHD) (9e5)
 http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
 #EXTINF:-1 group-title="08/11/2026 | División de Honor" tvg-name="14:00 - Pozuelo Rugby Union vs Alcobendas Rugby (M+ Vamos) (FHD) (1b0)",14:00 - Pozuelo Rugby Union vs Alcobendas Rugby (M+ Vamos) (FHD) (1b0)
 http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
-#EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="14:00 - Elche vs Real Betis (DAZN LaLiga) (HD) (7d8)",14:00 - Elche vs Real Betis (DAZN LaLiga) (HD) (7d8)
-http://127.0.0.1:6878/ace/getstream?id=7d898e9c227d706e5479b9b523ad615847825d14
 #EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="14:00 - Elche vs Real Betis (DAZN LaLiga) (FHD) (529)",14:00 - Elche vs Real Betis (DAZN LaLiga) (FHD) (529)
 http://127.0.0.1:6878/ace/getstream?id=529f5abd2c87209f69c0727ade740ff6f160be88
 #EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="14:00 - Elche vs Real Betis (DAZN LaLiga) (FHD) (5bf)",14:00 - Elche vs Real Betis (DAZN LaLiga) (FHD) (5bf)
@@ -791,8 +499,6 @@ http://127.0.0.1:6878/ace/getstream?id=d2b5299ed45cbaf35482bb0869b2c2f75fbed64a
 http://127.0.0.1:6878/ace/getstream?id=a2d33536b7d55727c8f6bea010624d6478c3ba2d
 #EXTINF:-1 group-title="08/11/2026 | Masters París" tvg-name="15:00 - Final ATP Masters 1000 (M+ Deportes 2) (HD) (f62)",15:00 - Final ATP Masters 1000 (M+ Deportes 2) (HD) (f62)
 http://127.0.0.1:6878/ace/getstream?id=f62f06bb905564bf718467658947e24c2b21735f
-#EXTINF:-1 group-title="08/11/2026 | Masters París" tvg-name="15:00 - Final ATP Masters 1000 (M+ Deportes 2) (FHD) (1c1)",15:00 - Final ATP Masters 1000 (M+ Deportes 2) (FHD) (1c1)
-http://127.0.0.1:6878/ace/getstream?id=1c15bb40e6b2d153e3b30ed28eaa057ea44c3f41
 #EXTINF:-1 group-title="08/11/2026 | Premier League" tvg-name="15:00 - Sunderland vs Chelsea (DAZN 2) (HD) (27e)",15:00 - Sunderland vs Chelsea (DAZN 2) (HD) (27e)
 http://127.0.0.1:6878/ace/getstream?id=27ed8f532a68301bff62becf01769bb524904814
 #EXTINF:-1 group-title="08/11/2026 | Premier League" tvg-name="15:00 - Sunderland vs Chelsea (DAZN 2) (FHD) (fee)",15:00 - Sunderland vs Chelsea (DAZN 2) (FHD) (fee)
@@ -805,32 +511,28 @@ http://127.0.0.1:6878/ace/getstream?id=002ebb242685b729fd1235fc24c93110593343a6
 http://127.0.0.1:6878/ace/getstream?id=aaf8f939186264a31449c5e31ebf424965b0369f
 #EXTINF:-1 group-title="08/11/2026 | Moto2" tvg-name="15:15 - G.P. Catar (Losail) Carrera (Dazn MotoGP) (FHD) (27f)",15:15 - G.P. Catar (Losail) Carrera (Dazn MotoGP) (FHD) (27f)
 http://127.0.0.1:6878/ace/getstream?id=27fdc342ae5fae5012eaf9502415107d94eb1f11
-#EXTINF:-1 group-title="08/11/2026 | Moto2" tvg-name="15:15 - G.P. Catar (Losail) Carrera (Dazn MotoGP) (FHD) (49c)",15:15 - G.P. Catar (Losail) Carrera (Dazn MotoGP) (FHD) (49c)
-http://127.0.0.1:6878/ace/getstream?id=49ceb0e5d2c2c41fcbe6ed56d78eb78559aa1dca
 #EXTINF:-1 group-title="08/11/2026 | NFL Liga Regular" tvg-name="15:30 - Atlanta Falcons vs Cincinnati Bengals (DAZN 1) (HD) (495)",15:30 - Atlanta Falcons vs Cincinnati Bengals (DAZN 1) (HD) (495)
 http://127.0.0.1:6878/ace/getstream?id=49545d05f95846e93fd8f08da320be866995c550
 #EXTINF:-1 group-title="08/11/2026 | NFL Liga Regular" tvg-name="15:30 - Atlanta Falcons vs Cincinnati Bengals (Cuatro) (FHD) (98c)",15:30 - Atlanta Falcons vs Cincinnati Bengals (Cuatro) (FHD) (98c)
 http://127.0.0.1:6878/ace/getstream?id=98ca3466e722d21487635e3b73b791edd348e67f
-#EXTINF:-1 group-title="08/11/2026 | Primera Federación Grupo 2" tvg-name="16:00 - RM Castilla vs Hércules (RFEF TV) (FHD) (066)",16:00 - RM Castilla vs Hércules (RFEF TV) (FHD) (066)
-http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
 #EXTINF:-1 group-title="08/11/2026 | Primera Federación Grupo 2" tvg-name="16:00 - RM Castilla vs Hércules (RFEF TV) (FHD) (af5)",16:00 - RM Castilla vs Hércules (RFEF TV) (FHD) (af5)
 http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
+#EXTINF:-1 group-title="08/11/2026 | Primera Federación Grupo 2" tvg-name="16:00 - RM Castilla vs Hércules (RFEF TV) (FHD) (066)",16:00 - RM Castilla vs Hércules (RFEF TV) (FHD) (066)
+http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
 #EXTINF:-1 group-title="08/11/2026 | Primera Federación Grupo 2" tvg-name="16:00 - RM Castilla vs Hércules (RFEF TV) (FHD) (204)",16:00 - RM Castilla vs Hércules (RFEF TV) (FHD) (204)
 http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
 #EXTINF:-1 group-title="08/11/2026 | Primera Federación Grupo 2" tvg-name="16:00 - RM Castilla vs Hércules (RFEF TV) (FHD) (eb1)",16:00 - RM Castilla vs Hércules (RFEF TV) (FHD) (eb1)
 http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
+#EXTINF:-1 group-title="08/11/2026 | Liga F" tvg-name="16:00 - FC Barcelona Femenino vs Madrid CFF (Teledeporte) (FHD) (f60)",16:00 - FC Barcelona Femenino vs Madrid CFF (Teledeporte) (FHD) (f60)
+http://127.0.0.1:6878/ace/getstream?id=f608f9cb7099d94172739494e8864e8b5b6a4360
+#EXTINF:-1 group-title="08/11/2026 | Liga F" tvg-name="16:00 - FC Barcelona Femenino vs Madrid CFF (Teledeporte) (FHD) (f80)",16:00 - FC Barcelona Femenino vs Madrid CFF (Teledeporte) (FHD) (f80)
+http://127.0.0.1:6878/ace/getstream?id=f80b9184bdd16a335d523ea3ea15b8e9a1c3bbcc
 #EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="16:15 - Real Sociedad vs Rayo Vallecano (M+ LaLiga) (HD) (e18)",16:15 - Real Sociedad vs Rayo Vallecano (M+ LaLiga) (HD) (e18)
 http://127.0.0.1:6878/ace/getstream?id=e1825dc2deae9f24ef55e6ff11fe780201ae758d
 #EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="16:15 - Real Sociedad vs Rayo Vallecano (M+ LaLiga) (HD) (1c0)",16:15 - Real Sociedad vs Rayo Vallecano (M+ LaLiga) (HD) (1c0)
 http://127.0.0.1:6878/ace/getstream?id=1c00e6a5404f84e9bd22aa9d8f09e96ffa4ab319
-#EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="16:15 - Real Sociedad vs Rayo Vallecano (M+ LaLiga) (HD) (69f)",16:15 - Real Sociedad vs Rayo Vallecano (M+ LaLiga) (HD) (69f)
-http://127.0.0.1:6878/ace/getstream?id=69f76f6516620d91612e7509077b5ac3bb4d3c0b
 #EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="16:15 - Real Sociedad vs Rayo Vallecano (M+ LaLiga) (FHD) (aae)",16:15 - Real Sociedad vs Rayo Vallecano (M+ LaLiga) (FHD) (aae)
 http://127.0.0.1:6878/ace/getstream?id=aae8bcb9b00c4505ccfa5981b860da012e8cf23e
-#EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="16:15 - Real Sociedad vs Rayo Vallecano (M+ LaLiga) (FHD) (726)",16:15 - Real Sociedad vs Rayo Vallecano (M+ LaLiga) (FHD) (726)
-http://127.0.0.1:6878/ace/getstream?id=72626ce6e2f0dc8f0a71ac1d9b960d3cc166c86e
-#EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="16:15 - Real Sociedad vs Rayo Vallecano (M+ LaLiga) (FHD) (25b)",16:15 - Real Sociedad vs Rayo Vallecano (M+ LaLiga) (FHD) (25b)
-http://127.0.0.1:6878/ace/getstream?id=25ba36fb3ff78d37b304177cb5b9f9f84348d2ad
 #EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="16:15 - Real Sociedad vs Rayo Vallecano (M+ LaLiga) (FHD) (3d4)",16:15 - Real Sociedad vs Rayo Vallecano (M+ LaLiga) (FHD) (3d4)
 http://127.0.0.1:6878/ace/getstream?id=3d4c3b9d44af0658a9ec6b29c92033f732b65422
 #EXTINF:-1 group-title="08/11/2026 | LaLiga Hypermotion" tvg-name="16:15 - Girona vs UD Almería (LaLiga TV Hypermotion) (HD) (974)",16:15 - Girona vs UD Almería (LaLiga TV Hypermotion) (HD) (974)
@@ -845,8 +547,6 @@ http://127.0.0.1:6878/ace/getstream?id=002ebb242685b729fd1235fc24c93110593343a6
 http://127.0.0.1:6878/ace/getstream?id=aaf8f939186264a31449c5e31ebf424965b0369f
 #EXTINF:-1 group-title="08/11/2026 | MotoGP" tvg-name="17:00 - G.P. Catar (Losail) Carrera (Dazn MotoGP) (FHD) (27f)",17:00 - G.P. Catar (Losail) Carrera (Dazn MotoGP) (FHD) (27f)
 http://127.0.0.1:6878/ace/getstream?id=27fdc342ae5fae5012eaf9502415107d94eb1f11
-#EXTINF:-1 group-title="08/11/2026 | MotoGP" tvg-name="17:00 - G.P. Catar (Losail) Carrera (Dazn MotoGP) (FHD) (49c)",17:00 - G.P. Catar (Losail) Carrera (Dazn MotoGP) (FHD) (49c)
-http://127.0.0.1:6878/ace/getstream?id=49ceb0e5d2c2c41fcbe6ed56d78eb78559aa1dca
 #EXTINF:-1 group-title="08/11/2026 | Premier League" tvg-name="17:30 - Manchester Utd. vs Aston Villa (DAZN 2) (HD) (27e)",17:30 - Manchester Utd. vs Aston Villa (DAZN 2) (HD) (27e)
 http://127.0.0.1:6878/ace/getstream?id=27ed8f532a68301bff62becf01769bb524904814
 #EXTINF:-1 group-title="08/11/2026 | Premier League" tvg-name="17:30 - Manchester Utd. vs Aston Villa (DAZN 2) (FHD) (fee)",17:30 - Manchester Utd. vs Aston Villa (DAZN 2) (FHD) (fee)
@@ -861,22 +561,22 @@ http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
 http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
 #EXTINF:-1 group-title="08/11/2026 | Premier League" tvg-name="17:30 - Manchester Utd. vs Aston Villa (M+ Liga de Campeones) (HD) (074)",17:30 - Manchester Utd. vs Aston Villa (M+ Liga de Campeones) (HD) (074)
 http://127.0.0.1:6878/ace/getstream?id=07413e8e25d03d5a775dd058ff9447eab16c5de6
-#EXTINF:-1 group-title="08/11/2026 | Premier League" tvg-name="17:30 - Manchester Utd. vs Aston Villa (M+ Liga de Campeones) (HD) (45f)",17:30 - Manchester Utd. vs Aston Villa (M+ Liga de Campeones) (HD) (45f)
-http://127.0.0.1:6878/ace/getstream?id=45f160e173eb93dfdc37ca14b95ab1e6869868e0
 #EXTINF:-1 group-title="08/11/2026 | Premier League" tvg-name="17:30 - Manchester Utd. vs Aston Villa (M+ Liga de Campeones) (FHD) (663)",17:30 - Manchester Utd. vs Aston Villa (M+ Liga de Campeones) (FHD) (663)
 http://127.0.0.1:6878/ace/getstream?id=66382069b0b1863428e2a107bbeb236241365e84
-#EXTINF:-1 group-title="08/11/2026 | Premier League" tvg-name="17:30 - Manchester Utd. vs Aston Villa (M+ Liga de Campeones) (FHD) (76f)",17:30 - Manchester Utd. vs Aston Villa (M+ Liga de Campeones) (FHD) (76f)
-http://127.0.0.1:6878/ace/getstream?id=76f0f810b6f72d5e98d188689526a052b0900ac5
 #EXTINF:-1 group-title="08/11/2026 | Premier League" tvg-name="17:30 - Manchester Utd. vs Aston Villa (M+ Liga de Campeones) (FHD) (8ce)",17:30 - Manchester Utd. vs Aston Villa (M+ Liga de Campeones) (FHD) (8ce)
 http://127.0.0.1:6878/ace/getstream?id=8ce3c02c950c857a1a258493bf2fb4628c1b48fd
+#EXTINF:-1 group-title="08/11/2026 | Premier League" tvg-name="17:30 - Manchester Utd. vs Aston Villa (M+ Liga de Campeones) (FHD) (76f)",17:30 - Manchester Utd. vs Aston Villa (M+ Liga de Campeones) (FHD) (76f)
+http://127.0.0.1:6878/ace/getstream?id=76f0f810b6f72d5e98d188689526a052b0900ac5
 #EXTINF:-1 group-title="08/11/2026 | Fórmula 1" tvg-name="18:00 - G.P. Brasil (Interlagos) Carrera (DAZN F1) (FHD) (423)",18:00 - G.P. Brasil (Interlagos) Carrera (DAZN F1) (FHD) (423)
 http://127.0.0.1:6878/ace/getstream?id=4236714aa65e854f90bb6b710369bfb6e862cb23
-#EXTINF:-1 group-title="08/11/2026 | Fórmula 1" tvg-name="18:00 - G.P. Brasil (Interlagos) Carrera (DAZN F1) (FHD) (701)",18:00 - G.P. Brasil (Interlagos) Carrera (DAZN F1) (FHD) (701)
-http://127.0.0.1:6878/ace/getstream?id=7017fea3b65e2f08a6d2f410b9b17c5c4c5b265b
-#EXTINF:-1 group-title="08/11/2026 | Fórmula 1" tvg-name="18:00 - G.P. Brasil (Interlagos) Carrera (DAZN F1) (FHD) (f8c)",18:00 - G.P. Brasil (Interlagos) Carrera (DAZN F1) (FHD) (f8c)
-http://127.0.0.1:6878/ace/getstream?id=f8cc362318bc6b667dd6ba90969e3b34675c9a85
 #EXTINF:-1 group-title="08/11/2026 | Fórmula 1" tvg-name="18:00 - G.P. Brasil (Interlagos) Carrera (DAZN F1) (FHD) (dc1)",18:00 - G.P. Brasil (Interlagos) Carrera (DAZN F1) (FHD) (dc1)
 http://127.0.0.1:6878/ace/getstream?id=dc149729d6b4be6ae8199eae450611d1d06e5149
+#EXTINF:-1 group-title="08/11/2026 | Fórmula 1" tvg-name="18:00 - G.P. Brasil (Interlagos) Carrera (DAZN F1) (FHD) (701)",18:00 - G.P. Brasil (Interlagos) Carrera (DAZN F1) (FHD) (701)
+http://127.0.0.1:6878/ace/getstream?id=7017fea3b65e2f08a6d2f410b9b17c5c4c5b265b
+#EXTINF:-1 group-title="08/11/2026 | EHF Euro Cup" tvg-name="18:00 - España vs Portugal (Teledeporte) (FHD) (f60)",18:00 - España vs Portugal (Teledeporte) (FHD) (f60)
+http://127.0.0.1:6878/ace/getstream?id=f608f9cb7099d94172739494e8864e8b5b6a4360
+#EXTINF:-1 group-title="08/11/2026 | EHF Euro Cup" tvg-name="18:00 - España vs Portugal (Teledeporte) (FHD) (f80)",18:00 - España vs Portugal (Teledeporte) (FHD) (f80)
+http://127.0.0.1:6878/ace/getstream?id=f80b9184bdd16a335d523ea3ea15b8e9a1c3bbcc
 #EXTINF:-1 group-title="08/11/2026 | Segunda Federación Grupo 2" tvg-name="18:00 - CE Manresa vs Barcelona Atlétic (Esport3) (HD) (1c2)",18:00 - CE Manresa vs Barcelona Atlétic (Esport3) (HD) (1c2)
 http://127.0.0.1:6878/ace/getstream?id=1c2b17f41b46cabbc60c64d500fd4a07b1089b7b
 #EXTINF:-1 group-title="08/11/2026 | Segunda Federación Grupo 2" tvg-name="18:00 - CE Manresa vs Barcelona Atlétic (Esport3) (HD) (ff1)",18:00 - CE Manresa vs Barcelona Atlétic (Esport3) (HD) (ff1)
@@ -885,18 +585,18 @@ http://127.0.0.1:6878/ace/getstream?id=ff162bf69c1579edf953bf76933c80b1c7e893d0
 http://127.0.0.1:6878/ace/getstream?id=720111bc8ab44e425e24b93785f06ba3184ef3a4
 #EXTINF:-1 group-title="08/11/2026 | Segunda Federación Grupo 2" tvg-name="18:00 - CE Manresa vs Barcelona Atlétic (Esport3) (FHD) (1aa)",18:00 - CE Manresa vs Barcelona Atlétic (Esport3) (FHD) (1aa)
 http://127.0.0.1:6878/ace/getstream?id=1aacd162a6e6fcd06216da5a39ebe335ad2a97b4
-#EXTINF:-1 group-title="08/11/2026 | Primera Federación Femenina" tvg-name="18:00 - Real Madrid B Femenino vs At. Madrid B Femenino (RFEF TV) (FHD) (066)",18:00 - Real Madrid B Femenino vs At. Madrid B Femenino (RFEF TV) (FHD) (066)
-http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
 #EXTINF:-1 group-title="08/11/2026 | Primera Federación Femenina" tvg-name="18:00 - Real Madrid B Femenino vs At. Madrid B Femenino (RFEF TV) (FHD) (af5)",18:00 - Real Madrid B Femenino vs At. Madrid B Femenino (RFEF TV) (FHD) (af5)
 http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
+#EXTINF:-1 group-title="08/11/2026 | Primera Federación Femenina" tvg-name="18:00 - Real Madrid B Femenino vs At. Madrid B Femenino (RFEF TV) (FHD) (066)",18:00 - Real Madrid B Femenino vs At. Madrid B Femenino (RFEF TV) (FHD) (066)
+http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
 #EXTINF:-1 group-title="08/11/2026 | Primera Federación Femenina" tvg-name="18:00 - Real Madrid B Femenino vs At. Madrid B Femenino (RFEF TV) (FHD) (204)",18:00 - Real Madrid B Femenino vs At. Madrid B Femenino (RFEF TV) (FHD) (204)
 http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
 #EXTINF:-1 group-title="08/11/2026 | Primera Federación Femenina" tvg-name="18:00 - Real Madrid B Femenino vs At. Madrid B Femenino (RFEF TV) (FHD) (eb1)",18:00 - Real Madrid B Femenino vs At. Madrid B Femenino (RFEF TV) (FHD) (eb1)
 http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
-#EXTINF:-1 group-title="08/11/2026 | Primera Federación Grupo 1" tvg-name="18:15 - Cultural Leonesa vs Ponferradina (RFEF TV) (FHD) (066)",18:15 - Cultural Leonesa vs Ponferradina (RFEF TV) (FHD) (066)
-http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
 #EXTINF:-1 group-title="08/11/2026 | Primera Federación Grupo 1" tvg-name="18:15 - Cultural Leonesa vs Ponferradina (RFEF TV) (FHD) (af5)",18:15 - Cultural Leonesa vs Ponferradina (RFEF TV) (FHD) (af5)
 http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
+#EXTINF:-1 group-title="08/11/2026 | Primera Federación Grupo 1" tvg-name="18:15 - Cultural Leonesa vs Ponferradina (RFEF TV) (FHD) (066)",18:15 - Cultural Leonesa vs Ponferradina (RFEF TV) (FHD) (066)
+http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
 #EXTINF:-1 group-title="08/11/2026 | Primera Federación Grupo 1" tvg-name="18:15 - Cultural Leonesa vs Ponferradina (RFEF TV) (FHD) (204)",18:15 - Cultural Leonesa vs Ponferradina (RFEF TV) (FHD) (204)
 http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
 #EXTINF:-1 group-title="08/11/2026 | Primera Federación Grupo 1" tvg-name="18:15 - Cultural Leonesa vs Ponferradina (RFEF TV) (FHD) (eb1)",18:15 - Cultural Leonesa vs Ponferradina (RFEF TV) (FHD) (eb1)
@@ -905,14 +605,8 @@ http://127.0.0.1:6878/ace/getstream?id=eb1a92754ca21883e4473646eed3a5d69202e629
 http://127.0.0.1:6878/ace/getstream?id=e1825dc2deae9f24ef55e6ff11fe780201ae758d
 #EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="18:30 - Celta vs Levante (M+ LaLiga) (HD) (1c0)",18:30 - Celta vs Levante (M+ LaLiga) (HD) (1c0)
 http://127.0.0.1:6878/ace/getstream?id=1c00e6a5404f84e9bd22aa9d8f09e96ffa4ab319
-#EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="18:30 - Celta vs Levante (M+ LaLiga) (HD) (69f)",18:30 - Celta vs Levante (M+ LaLiga) (HD) (69f)
-http://127.0.0.1:6878/ace/getstream?id=69f76f6516620d91612e7509077b5ac3bb4d3c0b
 #EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="18:30 - Celta vs Levante (M+ LaLiga) (FHD) (aae)",18:30 - Celta vs Levante (M+ LaLiga) (FHD) (aae)
 http://127.0.0.1:6878/ace/getstream?id=aae8bcb9b00c4505ccfa5981b860da012e8cf23e
-#EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="18:30 - Celta vs Levante (M+ LaLiga) (FHD) (726)",18:30 - Celta vs Levante (M+ LaLiga) (FHD) (726)
-http://127.0.0.1:6878/ace/getstream?id=72626ce6e2f0dc8f0a71ac1d9b960d3cc166c86e
-#EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="18:30 - Celta vs Levante (M+ LaLiga) (FHD) (25b)",18:30 - Celta vs Levante (M+ LaLiga) (FHD) (25b)
-http://127.0.0.1:6878/ace/getstream?id=25ba36fb3ff78d37b304177cb5b9f9f84348d2ad
 #EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="18:30 - Celta vs Levante (M+ LaLiga) (FHD) (3d4)",18:30 - Celta vs Levante (M+ LaLiga) (FHD) (3d4)
 http://127.0.0.1:6878/ace/getstream?id=3d4c3b9d44af0658a9ec6b29c92033f732b65422
 #EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="18:30 - Celta vs Levante (M+ LALIGA 2) (HD) (93e)",18:30 - Celta vs Levante (M+ LALIGA 2) (HD) (93e)
@@ -921,8 +615,6 @@ http://127.0.0.1:6878/ace/getstream?id=93e21c01e9a7bc7418ac04f220ee87c3c2fddd2d
 http://127.0.0.1:6878/ace/getstream?id=e26e32779e026f1c51353b8fca92860765cf8e3c
 #EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="18:30 - Celta vs Levante (M+ LALIGA 2) (4c8)",18:30 - Celta vs Levante (M+ LALIGA 2) (4c8)
 http://127.0.0.1:6878/ace/getstream?id=4c8107cd9165bafd80ad21a71e8285a9a4c990df
-#EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="18:30 - Villarreal vs Getafe (DAZN LaLiga) (HD) (7d8)",18:30 - Villarreal vs Getafe (DAZN LaLiga) (HD) (7d8)
-http://127.0.0.1:6878/ace/getstream?id=7d898e9c227d706e5479b9b523ad615847825d14
 #EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="18:30 - Villarreal vs Getafe (DAZN LaLiga) (FHD) (529)",18:30 - Villarreal vs Getafe (DAZN LaLiga) (FHD) (529)
 http://127.0.0.1:6878/ace/getstream?id=529f5abd2c87209f69c0727ade740ff6f160be88
 #EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="18:30 - Villarreal vs Getafe (DAZN LaLiga) (FHD) (5bf)",18:30 - Villarreal vs Getafe (DAZN LaLiga) (FHD) (5bf)
@@ -953,10 +645,10 @@ http://127.0.0.1:6878/ace/getstream?id=403354bfa8ec7769589b18977c22b99f1cae5aca
 http://127.0.0.1:6878/ace/getstream?id=788891525283f541893b809c54d1b9cbe2344dc5
 #EXTINF:-1 group-title="08/11/2026 | Liga Endesa Liga Regular" tvg-name="19:00 - Real Madrid Baloncesto vs UCAM Murcia CB (DAZN Baloncesto) (FHD) (e5b)",19:00 - Real Madrid Baloncesto vs UCAM Murcia CB (DAZN Baloncesto) (FHD) (e5b)
 http://127.0.0.1:6878/ace/getstream?id=e5b57c3919b1714f01cb6e5f1812d22aa87bae2b
-#EXTINF:-1 group-title="08/11/2026 | Primera Federación Grupo 2" tvg-name="20:30 - Real Murcia vs Algeciras CF (RFEF TV) (FHD) (066)",20:30 - Real Murcia vs Algeciras CF (RFEF TV) (FHD) (066)
-http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
 #EXTINF:-1 group-title="08/11/2026 | Primera Federación Grupo 2" tvg-name="20:30 - Real Murcia vs Algeciras CF (RFEF TV) (FHD) (af5)",20:30 - Real Murcia vs Algeciras CF (RFEF TV) (FHD) (af5)
 http://127.0.0.1:6878/ace/getstream?id=af565d3fa5193d629eaf01b4fe080b734170d14e
+#EXTINF:-1 group-title="08/11/2026 | Primera Federación Grupo 2" tvg-name="20:30 - Real Murcia vs Algeciras CF (RFEF TV) (FHD) (066)",20:30 - Real Murcia vs Algeciras CF (RFEF TV) (FHD) (066)
+http://127.0.0.1:6878/ace/getstream?id=0664b139ecacfe236cab92ebbb26f2d5a6816455
 #EXTINF:-1 group-title="08/11/2026 | Primera Federación Grupo 2" tvg-name="20:30 - Real Murcia vs Algeciras CF (RFEF TV) (FHD) (204)",20:30 - Real Murcia vs Algeciras CF (RFEF TV) (FHD) (204)
 http://127.0.0.1:6878/ace/getstream?id=2042a3df45db52568fb629ca10b8b62b16c4f9d6
 #EXTINF:-1 group-title="08/11/2026 | Primera Federación Grupo 2" tvg-name="20:30 - Real Murcia vs Algeciras CF (RFEF TV) (FHD) (eb1)",20:30 - Real Murcia vs Algeciras CF (RFEF TV) (FHD) (eb1)
@@ -969,14 +661,12 @@ http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
 http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
 #EXTINF:-1 group-title="08/11/2026 | Serie A Italiana" tvg-name="20:45 - Fiorentina vs Juventus (M+ Liga de Campeones) (HD) (074)",20:45 - Fiorentina vs Juventus (M+ Liga de Campeones) (HD) (074)
 http://127.0.0.1:6878/ace/getstream?id=07413e8e25d03d5a775dd058ff9447eab16c5de6
-#EXTINF:-1 group-title="08/11/2026 | Serie A Italiana" tvg-name="20:45 - Fiorentina vs Juventus (M+ Liga de Campeones) (HD) (45f)",20:45 - Fiorentina vs Juventus (M+ Liga de Campeones) (HD) (45f)
-http://127.0.0.1:6878/ace/getstream?id=45f160e173eb93dfdc37ca14b95ab1e6869868e0
 #EXTINF:-1 group-title="08/11/2026 | Serie A Italiana" tvg-name="20:45 - Fiorentina vs Juventus (M+ Liga de Campeones) (FHD) (663)",20:45 - Fiorentina vs Juventus (M+ Liga de Campeones) (FHD) (663)
 http://127.0.0.1:6878/ace/getstream?id=66382069b0b1863428e2a107bbeb236241365e84
-#EXTINF:-1 group-title="08/11/2026 | Serie A Italiana" tvg-name="20:45 - Fiorentina vs Juventus (M+ Liga de Campeones) (FHD) (76f)",20:45 - Fiorentina vs Juventus (M+ Liga de Campeones) (FHD) (76f)
-http://127.0.0.1:6878/ace/getstream?id=76f0f810b6f72d5e98d188689526a052b0900ac5
 #EXTINF:-1 group-title="08/11/2026 | Serie A Italiana" tvg-name="20:45 - Fiorentina vs Juventus (M+ Liga de Campeones) (FHD) (8ce)",20:45 - Fiorentina vs Juventus (M+ Liga de Campeones) (FHD) (8ce)
 http://127.0.0.1:6878/ace/getstream?id=8ce3c02c950c857a1a258493bf2fb4628c1b48fd
+#EXTINF:-1 group-title="08/11/2026 | Serie A Italiana" tvg-name="20:45 - Fiorentina vs Juventus (M+ Liga de Campeones) (FHD) (76f)",20:45 - Fiorentina vs Juventus (M+ Liga de Campeones) (FHD) (76f)
+http://127.0.0.1:6878/ace/getstream?id=76f0f810b6f72d5e98d188689526a052b0900ac5
 #EXTINF:-1 group-title="08/11/2026 | WTA Finals Round Robin" tvg-name="21:00 - E. Rybakina vs L. Noskova (Tennis Channel) (FHD) (694)",21:00 - E. Rybakina vs L. Noskova (Tennis Channel) (FHD) (694)
 http://127.0.0.1:6878/ace/getstream?id=6945bf402126a38905b2645d61f9915a3b5a8b09
 #EXTINF:-1 group-title="08/11/2026 | WTA Finals Round Robin" tvg-name="21:00 - E. Rybakina vs L. Noskova (Tennis Channel) (FHD) (c1e)",21:00 - E. Rybakina vs L. Noskova (Tennis Channel) (FHD) (c1e)
@@ -985,14 +675,8 @@ http://127.0.0.1:6878/ace/getstream?id=c1e3479282920d097550ce68edbfb17888ea9474
 http://127.0.0.1:6878/ace/getstream?id=e1825dc2deae9f24ef55e6ff11fe780201ae758d
 #EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="21:00 - At. Madrid vs FC Barcelona (M+ LaLiga) (HD) (1c0)",21:00 - At. Madrid vs FC Barcelona (M+ LaLiga) (HD) (1c0)
 http://127.0.0.1:6878/ace/getstream?id=1c00e6a5404f84e9bd22aa9d8f09e96ffa4ab319
-#EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="21:00 - At. Madrid vs FC Barcelona (M+ LaLiga) (HD) (69f)",21:00 - At. Madrid vs FC Barcelona (M+ LaLiga) (HD) (69f)
-http://127.0.0.1:6878/ace/getstream?id=69f76f6516620d91612e7509077b5ac3bb4d3c0b
 #EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="21:00 - At. Madrid vs FC Barcelona (M+ LaLiga) (FHD) (aae)",21:00 - At. Madrid vs FC Barcelona (M+ LaLiga) (FHD) (aae)
 http://127.0.0.1:6878/ace/getstream?id=aae8bcb9b00c4505ccfa5981b860da012e8cf23e
-#EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="21:00 - At. Madrid vs FC Barcelona (M+ LaLiga) (FHD) (726)",21:00 - At. Madrid vs FC Barcelona (M+ LaLiga) (FHD) (726)
-http://127.0.0.1:6878/ace/getstream?id=72626ce6e2f0dc8f0a71ac1d9b960d3cc166c86e
-#EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="21:00 - At. Madrid vs FC Barcelona (M+ LaLiga) (FHD) (25b)",21:00 - At. Madrid vs FC Barcelona (M+ LaLiga) (FHD) (25b)
-http://127.0.0.1:6878/ace/getstream?id=25ba36fb3ff78d37b304177cb5b9f9f84348d2ad
 #EXTINF:-1 group-title="08/11/2026 | La Liga EA Sports" tvg-name="21:00 - At. Madrid vs FC Barcelona (M+ LaLiga) (FHD) (3d4)",21:00 - At. Madrid vs FC Barcelona (M+ LaLiga) (FHD) (3d4)
 http://127.0.0.1:6878/ace/getstream?id=3d4c3b9d44af0658a9ec6b29c92033f732b65422
 #EXTINF:-1 group-title="08/11/2026 | World Wide Technology Championship" tvg-name="21:00 - Jornada 4 (M+ Golf) (HD) (c50)",21:00 - Jornada 4 (M+ Golf) (HD) (c50)
@@ -1016,4 +700,64 @@ http://127.0.0.1:6878/ace/getstream?id=4af480f65d5d09eea5b546a79ace5b55979c7685
 #EXTINF:-1 group-title="08/11/2026 | WTA Finals Round Robin" tvg-name="22:30 - C. Gauff vs J. Pegula (Tennis Channel) (FHD) (694)",22:30 - C. Gauff vs J. Pegula (Tennis Channel) (FHD) (694)
 http://127.0.0.1:6878/ace/getstream?id=6945bf402126a38905b2645d61f9915a3b5a8b09
 #EXTINF:-1 group-title="08/11/2026 | WTA Finals Round Robin" tvg-name="22:30 - C. Gauff vs J. Pegula (Tennis Channel) (FHD) (c1e)",22:30 - C. Gauff vs J. Pegula (Tennis Channel) (FHD) (c1e)
+http://127.0.0.1:6878/ace/getstream?id=c1e3479282920d097550ce68edbfb17888ea9474
+#EXTINF:-1 group-title="09/11/2026 | NBA Liga Regular" tvg-name="00:00 - Detroit Pistons vs Los Angeles Lakers (NBA League Pass) (FHD) (2ee)",00:00 - Detroit Pistons vs Los Angeles Lakers (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="09/11/2026 | NBA Liga Regular" tvg-name="00:00 - Detroit Pistons vs Los Angeles Lakers (NBA League Pass) (FHD) (4af)",00:00 - Detroit Pistons vs Los Angeles Lakers (NBA League Pass) (FHD) (4af)
+http://127.0.0.1:6878/ace/getstream?id=4af480f65d5d09eea5b546a79ace5b55979c7685
+#EXTINF:-1 group-title="09/11/2026 | NBA Liga Regular" tvg-name="01:00 - Minnesota Timberwolves vs Utah Jazz (NBA League Pass) (FHD) (2ee)",01:00 - Minnesota Timberwolves vs Utah Jazz (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="09/11/2026 | NBA Liga Regular" tvg-name="01:00 - Minnesota Timberwolves vs Utah Jazz (NBA League Pass) (FHD) (4af)",01:00 - Minnesota Timberwolves vs Utah Jazz (NBA League Pass) (FHD) (4af)
+http://127.0.0.1:6878/ace/getstream?id=4af480f65d5d09eea5b546a79ace5b55979c7685
+#EXTINF:-1 group-title="09/11/2026 | NBA Liga Regular" tvg-name="01:30 - Dallas Mavericks vs Brooklyn Nets (NBA League Pass) (FHD) (2ee)",01:30 - Dallas Mavericks vs Brooklyn Nets (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="09/11/2026 | NBA Liga Regular" tvg-name="01:30 - Dallas Mavericks vs Brooklyn Nets (NBA League Pass) (FHD) (4af)",01:30 - Dallas Mavericks vs Brooklyn Nets (NBA League Pass) (FHD) (4af)
+http://127.0.0.1:6878/ace/getstream?id=4af480f65d5d09eea5b546a79ace5b55979c7685
+#EXTINF:-1 group-title="09/11/2026 | NBA Liga Regular" tvg-name="02:00 - Milwaukee Bucks vs Boston Celtics (NBA League Pass) (FHD) (2ee)",02:00 - Milwaukee Bucks vs Boston Celtics (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="09/11/2026 | NBA Liga Regular" tvg-name="02:00 - Milwaukee Bucks vs Boston Celtics (NBA League Pass) (FHD) (4af)",02:00 - Milwaukee Bucks vs Boston Celtics (NBA League Pass) (FHD) (4af)
+http://127.0.0.1:6878/ace/getstream?id=4af480f65d5d09eea5b546a79ace5b55979c7685
+#EXTINF:-1 group-title="09/11/2026 | NFL Liga Regular" tvg-name="02:20 - Chicago Bears vs Tampa Bay Buccaneers (DAZN 2) (HD) (27e)",02:20 - Chicago Bears vs Tampa Bay Buccaneers (DAZN 2) (HD) (27e)
+http://127.0.0.1:6878/ace/getstream?id=27ed8f532a68301bff62becf01769bb524904814
+#EXTINF:-1 group-title="09/11/2026 | NFL Liga Regular" tvg-name="02:20 - Chicago Bears vs Tampa Bay Buccaneers (DAZN 2) (FHD) (fee)",02:20 - Chicago Bears vs Tampa Bay Buccaneers (DAZN 2) (FHD) (fee)
+http://127.0.0.1:6878/ace/getstream?id=feea1c77fb2692e4de0a4465628b367eb4c8aec0
+#EXTINF:-1 group-title="09/11/2026 | NFL Liga Regular" tvg-name="02:20 - Chicago Bears vs Tampa Bay Buccaneers (DAZN 2) (FHD) (e74)",02:20 - Chicago Bears vs Tampa Bay Buccaneers (DAZN 2) (FHD) (e74)
+http://127.0.0.1:6878/ace/getstream?id=e748e196d4f26edd7e743cd0d901bfc23d807794
+#EXTINF:-1 group-title="09/11/2026 | NFL Liga Regular" tvg-name="02:20 - Chicago Bears vs Tampa Bay Buccaneers (Cuatro) (FHD) (98c)",02:20 - Chicago Bears vs Tampa Bay Buccaneers (Cuatro) (FHD) (98c)
+http://127.0.0.1:6878/ace/getstream?id=98ca3466e722d21487635e3b73b791edd348e67f
+#EXTINF:-1 group-title="09/11/2026 | NBA Liga Regular" tvg-name="03:00 - Los Angeles Clippers vs New Orleans Pelicans (NBA League Pass) (FHD) (2ee)",03:00 - Los Angeles Clippers vs New Orleans Pelicans (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="09/11/2026 | NBA Liga Regular" tvg-name="03:00 - Los Angeles Clippers vs New Orleans Pelicans (NBA League Pass) (FHD) (4af)",03:00 - Los Angeles Clippers vs New Orleans Pelicans (NBA League Pass) (FHD) (4af)
+http://127.0.0.1:6878/ace/getstream?id=4af480f65d5d09eea5b546a79ace5b55979c7685
+#EXTINF:-1 group-title="09/11/2026 | NBA Liga Regular" tvg-name="03:00 - Sacramento Kings vs Miami Heat (NBA League Pass) (FHD) (2ee)",03:00 - Sacramento Kings vs Miami Heat (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="09/11/2026 | NBA Liga Regular" tvg-name="03:00 - Sacramento Kings vs Miami Heat (NBA League Pass) (FHD) (4af)",03:00 - Sacramento Kings vs Miami Heat (NBA League Pass) (FHD) (4af)
+http://127.0.0.1:6878/ace/getstream?id=4af480f65d5d09eea5b546a79ace5b55979c7685
+#EXTINF:-1 group-title="09/11/2026 | Liga F" tvg-name="19:00 - At. Madrid Femenino vs FC Badalona Women (M+ Vamos 2) (HD) (ead)",19:00 - At. Madrid Femenino vs FC Badalona Women (M+ Vamos 2) (HD) (ead)
+http://127.0.0.1:6878/ace/getstream?id=eadc069bbd45d77cb33ca3bac6f6d86281597122
+#EXTINF:-1 group-title="09/11/2026 | Liga F" tvg-name="19:00 - At. Madrid Femenino vs FC Badalona Women (M+ Vamos 2) (FHD) (8fd)",19:00 - At. Madrid Femenino vs FC Badalona Women (M+ Vamos 2) (FHD) (8fd)
+http://127.0.0.1:6878/ace/getstream?id=8fd3ab88c95744e502aca1cdb369e07941914344
+#EXTINF:-1 group-title="09/11/2026 | Liga F" tvg-name="19:00 - At. Madrid Femenino vs FC Badalona Women (M+ Vamos 2) (FHD) (973)",19:00 - At. Madrid Femenino vs FC Badalona Women (M+ Vamos 2) (FHD) (973)
+http://127.0.0.1:6878/ace/getstream?id=973094e625613b693cffb05a3f98fabe2d59dafa
+#EXTINF:-1 group-title="09/11/2026 | Liga F" tvg-name="19:00 - At. Madrid Femenino vs FC Badalona Women (DAZN 1) (HD) (495)",19:00 - At. Madrid Femenino vs FC Badalona Women (DAZN 1) (HD) (495)
+http://127.0.0.1:6878/ace/getstream?id=49545d05f95846e93fd8f08da320be866995c550
+#EXTINF:-1 group-title="09/11/2026 | LaLiga Hypermotion" tvg-name="20:30 - Sabadell vs Real Sociedad B (LaLiga TV Hypermotion) (HD) (974)",20:30 - Sabadell vs Real Sociedad B (LaLiga TV Hypermotion) (HD) (974)
+http://127.0.0.1:6878/ace/getstream?id=9743a3b8d01520ec383434fd829340c9d53a7077
+#EXTINF:-1 group-title="09/11/2026 | LaLiga Hypermotion" tvg-name="20:30 - Sabadell vs Real Sociedad B (LaLiga TV Hypermotion) (FHD) (a19)",20:30 - Sabadell vs Real Sociedad B (LaLiga TV Hypermotion) (FHD) (a19)
+http://127.0.0.1:6878/ace/getstream?id=a19cada553b895e719796741d9d86785c986fce0
+#EXTINF:-1 group-title="09/11/2026 | LaLiga Hypermotion" tvg-name="20:30 - Sabadell vs Real Sociedad B (LaLiga TV Hypermotion) (FHD) (de0)",20:30 - Sabadell vs Real Sociedad B (LaLiga TV Hypermotion) (FHD) (de0)
+http://127.0.0.1:6878/ace/getstream?id=de00099a1fc928f292bb92d62a0841ac7104e31c
+#EXTINF:-1 group-title="09/11/2026 | WTA Finals Round Robin" tvg-name="21:00 - A. Sabalenka vs K. Muchova (Tennis Channel) (FHD) (694)",21:00 - A. Sabalenka vs K. Muchova (Tennis Channel) (FHD) (694)
+http://127.0.0.1:6878/ace/getstream?id=6945bf402126a38905b2645d61f9915a3b5a8b09
+#EXTINF:-1 group-title="09/11/2026 | WTA Finals Round Robin" tvg-name="21:00 - A. Sabalenka vs K. Muchova (Tennis Channel) (FHD) (c1e)",21:00 - A. Sabalenka vs K. Muchova (Tennis Channel) (FHD) (c1e)
+http://127.0.0.1:6878/ace/getstream?id=c1e3479282920d097550ce68edbfb17888ea9474
+#EXTINF:-1 group-title="09/11/2026 | Liga F" tvg-name="21:00 - Deportivo Abanca vs Valencia Féminas (DAZN 2) (HD) (27e)",21:00 - Deportivo Abanca vs Valencia Féminas (DAZN 2) (HD) (27e)
+http://127.0.0.1:6878/ace/getstream?id=27ed8f532a68301bff62becf01769bb524904814
+#EXTINF:-1 group-title="09/11/2026 | Liga F" tvg-name="21:00 - Deportivo Abanca vs Valencia Féminas (DAZN 2) (FHD) (fee)",21:00 - Deportivo Abanca vs Valencia Féminas (DAZN 2) (FHD) (fee)
+http://127.0.0.1:6878/ace/getstream?id=feea1c77fb2692e4de0a4465628b367eb4c8aec0
+#EXTINF:-1 group-title="09/11/2026 | Liga F" tvg-name="21:00 - Deportivo Abanca vs Valencia Féminas (DAZN 2) (FHD) (e74)",21:00 - Deportivo Abanca vs Valencia Féminas (DAZN 2) (FHD) (e74)
+http://127.0.0.1:6878/ace/getstream?id=e748e196d4f26edd7e743cd0d901bfc23d807794
+#EXTINF:-1 group-title="09/11/2026 | WTA Finals Round Robin" tvg-name="22:30 - M. Andreeva vs E. Svitolina (Tennis Channel) (FHD) (694)",22:30 - M. Andreeva vs E. Svitolina (Tennis Channel) (FHD) (694)
+http://127.0.0.1:6878/ace/getstream?id=6945bf402126a38905b2645d61f9915a3b5a8b09
+#EXTINF:-1 group-title="09/11/2026 | WTA Finals Round Robin" tvg-name="22:30 - M. Andreeva vs E. Svitolina (Tennis Channel) (FHD) (c1e)",22:30 - M. Andreeva vs E. Svitolina (Tennis Channel) (FHD) (c1e)
 http://127.0.0.1:6878/ace/getstream?id=c1e3479282920d097550ce68edbfb17888ea9474
