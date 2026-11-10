@@ -800,6 +800,7 @@ def cruzar_eventos(agenda, equivalencias, elcano):
     sin_equiv = Counter()
     claves_vistas, claves_con_stream = set(), set()
     entradas_por_fecha = Counter()
+    eventos_con_streams_por_fecha = Counter()
     eventos_con_equiv = eventos_con_entradas = 0
 
     for e in agenda:
@@ -852,6 +853,8 @@ def cruzar_eventos(agenda, equivalencias, elcano):
 
         eventos_con_equiv += con_equiv
         eventos_con_entradas += usado
+        if usado:
+            eventos_con_streams_por_fecha[e["fecha"]] += 1
         if not con_equiv:
             log("    => descartado: ningún canal tiene equivalencia", "DEBUG")
 
@@ -861,6 +864,7 @@ def cruzar_eventos(agenda, equivalencias, elcano):
         "eventos_con_entradas": eventos_con_entradas,
         "entradas": len(lines) // 2,
         "entradas_por_fecha": dict(entradas_por_fecha),
+        "eventos_con_entradas_por_fecha": dict(eventos_con_streams_por_fecha),
         "canales_sin_equivalencia": sin_equiv,
         "claves_sin_stream": sorted(claves_vistas - claves_con_stream),
     }
@@ -875,6 +879,7 @@ def build_events_m3u(agenda, equivalencias, elcano, path):
     )
     if stats["entradas_por_fecha"]:
         log("Entradas por fecha: " + ", ".join(f"{f}: {n}" for f, n in stats["entradas_por_fecha"].items()))
+        log("Eventos con streams por fecha: " + ", ".join(f"{f}: {n}" for f, n in stats["eventos_con_entradas_por_fecha"].items()))
     if stats["claves_sin_stream"]:
         log(f"Claves de equivalencias sin ningún stream en Elcano hoy ({len(stats['claves_sin_stream'])}): {stats['claves_sin_stream']}", "WARN")
     top = stats["canales_sin_equivalencia"].most_common(15)
@@ -1001,6 +1006,9 @@ def bloque_control(ctrl):
             L.append(f"    {fecha}: {ev['por_dia'][fecha]}")
         if "entradas_m3u" in ev:
             L.append(f"  ezdakit_eventos.m3u: {ev['entradas_m3u']} entradas · {ev.get('eventos_con_streams', 0)} eventos con streams")
+            for fecha in sorted(ev.get("m3u_por_dia", {}), key=_clave_fecha):
+                d = ev["m3u_por_dia"][fecha]
+                L.append(f"    {fecha}: {d['entradas']} entradas · {d['eventos']} eventos")
     elif ev.get("error"):
         L.append(f"  Error:            {ev['error']}")
     elif ev.get("omitido"):
@@ -1151,9 +1159,17 @@ def ejecutar(errores):
                         for e in agenda:
                             e["canales_equivalencia"] = canales_con_equivalencia(e, indice)
                         stats = build_events_m3u(agenda, equivalencias, elcano, EVENTS_M3U)
+                        fechas = set(CTRL["eventos"].get("por_dia", {})) | set(stats["entradas_por_fecha"])
                         CTRL["eventos"].update(
                             entradas_m3u=stats["entradas"],
                             eventos_con_streams=stats["eventos_con_entradas"],
+                            m3u_por_dia={
+                                f: {
+                                    "eventos": stats["eventos_con_entradas_por_fecha"].get(f, 0),
+                                    "entradas": stats["entradas_por_fecha"].get(f, 0),
+                                }
+                                for f in fechas
+                            },
                         )
 
                         resultado = {
