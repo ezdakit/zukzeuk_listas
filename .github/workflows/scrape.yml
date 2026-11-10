@@ -2,7 +2,7 @@ name: Scrape eventos Acestream
 
 on:
   schedule:
-    - cron: "22 */6 * * *"
+    - cron: "22 */4 * * *"
   workflow_dispatch:
     inputs:
       log_level:
