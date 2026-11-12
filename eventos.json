@@ -1,7 +1,7 @@
 {
   "fuente": "futbolenlatv.es/deporte",
-  "elcano_cid": "QmYRTg5BtsfJ7YvyEHqDB5gr7HB2hR985Y4N97wwbFWJ3p",
-  "generado_utc": "2026-11-12T01:56:42+00:00",
+  "elcano_cid": "QmStpnaoPNmUXwzEBCreHHU7J1z519wznZg92b5imwx8o1",
+  "generado_utc": "2026-11-12T12:54:08+00:00",
   "agenda": [
     {
       "fecha": "12/11/2026",
@@ -305,12 +305,38 @@
     },
     {
       "fecha": "12/11/2026",
-      "hora": "12:00",
-      "competicion": "Torneo de Estocolmo",
-      "partido": "1/4 de Final ATP 250",
+      "hora": "13:00",
+      "competicion": "Torneo de Estocolmo 1/4 de Final",
+      "partido": "A. Michelsen vs A. Tabilo",
       "canales": [
         "ATP Tennis TV"
       ],
+      "local": "A. Michelsen",
+      "visitante": "A. Tabilo",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "12/11/2026",
+      "hora": "14:00",
+      "competicion": "Europeo Sub-19",
+      "partido": "Alemania vs Suecia",
+      "canales": [
+        "German Football YouTube"
+      ],
+      "local": "Alemania",
+      "visitante": "Suecia",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "12/11/2026",
+      "hora": "15:00",
+      "competicion": "Torneo de Estocolmo 1/4 de Final",
+      "partido": "TA. Tirante vs A. Shevchenko",
+      "canales": [
+        "ATP Tennis TV"
+      ],
+      "local": "TA. Tirante",
+      "visitante": "A. Shevchenko",
       "canales_equivalencia": []
     },
     {
@@ -412,6 +438,18 @@
       ],
       "local": "Malta",
       "visitante": "Suazilandia",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "12/11/2026",
+      "hora": "18:30",
+      "competicion": "Torneo de Estocolmo 1/4 de Final",
+      "partido": "T. Fritz vs H. Rune",
+      "canales": [
+        "ATP Tennis TV"
+      ],
+      "local": "T. Fritz",
+      "visitante": "H. Rune",
       "canales_equivalencia": []
     },
     {
@@ -592,6 +630,18 @@
       ],
       "local": "Osasuna Femenino",
       "visitante": "Logroño United Femenino",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "12/11/2026",
+      "hora": "20:00",
+      "competicion": "Torneo de Estocolmo 1/4 de Final",
+      "partido": "L. Musetti vs U. Humbert",
+      "canales": [
+        "ATP Tennis TV"
+      ],
+      "local": "L. Musetti",
+      "visitante": "U. Humbert",
       "canales_equivalencia": []
     },
     {
@@ -781,6 +831,21 @@
       "visitante": "FC Bayern Basketball",
       "canales_equivalencia": [
         "M+ Vamos (11 y 50)"
+      ]
+    },
+    {
+      "fecha": "12/11/2026",
+      "hora": "20:45",
+      "competicion": "Liga Guerreras Iberdrola",
+      "partido": "Atlético Guardés vs Rocasa Gran Canaria",
+      "canales": [
+        "Teledeporte",
+        "RTVE Play"
+      ],
+      "local": "Atlético Guardés",
+      "visitante": "Rocasa Gran Canaria",
+      "canales_equivalencia": [
+        "Teledeporte"
       ]
     },
     {
@@ -2363,6 +2428,20 @@
     },
     {
       "fecha": "14/11/2026",
+      "hora": "11:00",
+      "competicion": "Copa Continental Femenina",
+      "partido": "Club Patín Fraga vs CP Voltregá",
+      "canales": [
+        "Esport3 (Cataluña)"
+      ],
+      "local": "Club Patín Fraga",
+      "visitante": "CP Voltregá",
+      "canales_equivalencia": [
+        "Esport3 (Cataluña)"
+      ]
+    },
+    {
+      "fecha": "14/11/2026",
       "hora": "12:00",
       "competicion": "Liga U Primera Fase",
       "partido": "Valencia Basket B vs Real Madrid B Baloncesto",
@@ -2428,11 +2507,14 @@
       "competicion": "Liga Prime Torneo Apertura",
       "partido": "ElPozo Murcia vs Barça FS",
       "canales": [
-        "DAZN (Ver en directo)"
+        "DAZN (Ver en directo)",
+        "Esport3 (Cataluña)"
       ],
       "local": "ElPozo Murcia",
       "visitante": "Barça FS",
-      "canales_equivalencia": []
+      "canales_equivalencia": [
+        "Esport3 (Cataluña)"
+      ]
     },
     {
       "fecha": "14/11/2026",
@@ -2680,6 +2762,20 @@
       "local": "Rayo Cantabria",
       "visitante": "Gimnástica Torrelavega",
       "canales_equivalencia": []
+    },
+    {
+      "fecha": "14/11/2026",
+      "hora": "16:00",
+      "competicion": "Copa Continental",
+      "partido": "CE Lleida Llista Blava vs Barça HP",
+      "canales": [
+        "Esport3 (Cataluña)"
+      ],
+      "local": "CE Lleida Llista Blava",
+      "visitante": "Barça HP",
+      "canales_equivalencia": [
+        "Esport3 (Cataluña)"
+      ]
     },
     {
       "fecha": "14/11/2026",
@@ -3275,7 +3371,8 @@
       "competicion": "Segunda Federación Grupo 4",
       "partido": "At. Sanluqueño vs Betis Deportivo",
       "canales": [
-        "TV FootballClub (Acceder)"
+        "TV FootballClub (Acceder)",
+        "Real Betis TV"
       ],
       "local": "At. Sanluqueño",
       "visitante": "Betis Deportivo",
