@@ -1,100 +1,58 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="11/11/2026 | NBA Liga Regular" tvg-name="01:30 - New York Knicks vs Milwaukee Bucks (NBA League Pass) (FHD) (2ee)",01:30 - New York Knicks vs Milwaukee Bucks (NBA League Pass) (FHD) (2ee)
-http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
-#EXTINF:-1 group-title="11/11/2026 | NBA Liga Regular" tvg-name="02:00 - Philadelphia 76ers vs Boston Celtics (NBA League Pass) (FHD) (2ee)",02:00 - Philadelphia 76ers vs Boston Celtics (NBA League Pass) (FHD) (2ee)
-http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
-#EXTINF:-1 group-title="11/11/2026 | NBA Liga Regular" tvg-name="02:00 - Philadelphia 76ers vs Boston Celtics (DAZN Baloncesto) (HD) (788)",02:00 - Philadelphia 76ers vs Boston Celtics (DAZN Baloncesto) (HD) (788)
-http://127.0.0.1:6878/ace/getstream?id=788891525283f541893b809c54d1b9cbe2344dc5
-#EXTINF:-1 group-title="11/11/2026 | NBA Liga Regular" tvg-name="02:00 - Philadelphia 76ers vs Boston Celtics (DAZN Baloncesto) (HD) (803)",02:00 - Philadelphia 76ers vs Boston Celtics (DAZN Baloncesto) (HD) (803)
-http://127.0.0.1:6878/ace/getstream?id=8033aae52386138bac76bd7a16b8c1ab67bcd679
-#EXTINF:-1 group-title="11/11/2026 | NBA Liga Regular" tvg-name="02:00 - Philadelphia 76ers vs Boston Celtics (DAZN Baloncesto) (FHD) (e5b)",02:00 - Philadelphia 76ers vs Boston Celtics (DAZN Baloncesto) (FHD) (e5b)
-http://127.0.0.1:6878/ace/getstream?id=e5b57c3919b1714f01cb6e5f1812d22aa87bae2b
-#EXTINF:-1 group-title="11/11/2026 | NBA Liga Regular" tvg-name="03:00 - Utah Jazz vs Miami Heat (NBA League Pass) (FHD) (2ee)",03:00 - Utah Jazz vs Miami Heat (NBA League Pass) (FHD) (2ee)
-http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
-#EXTINF:-1 group-title="11/11/2026 | NBA Liga Regular" tvg-name="03:00 - Phoenix Suns vs Los Angeles Clippers (NBA League Pass) (FHD) (2ee)",03:00 - Phoenix Suns vs Los Angeles Clippers (NBA League Pass) (FHD) (2ee)
-http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
-#EXTINF:-1 group-title="11/11/2026 | NBA Liga Regular" tvg-name="04:00 - Sacramento Kings vs Orlando Magic (NBA League Pass) (FHD) (2ee)",04:00 - Sacramento Kings vs Orlando Magic (NBA League Pass) (FHD) (2ee)
-http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
-#EXTINF:-1 group-title="11/11/2026 | NBA Liga Regular" tvg-name="05:00 - Portland Trail Blazers vs Oklahoma C. Thunder (NBA League Pass) (FHD) (2ee)",05:00 - Portland Trail Blazers vs Oklahoma C. Thunder (NBA League Pass) (FHD) (2ee)
-http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
-#EXTINF:-1 group-title="11/11/2026 | Superprestige Ciclocross" tvg-name="13:35 - Niel (Bélgica) Carrera femenina (Eurosport 1) (HD) (818)",13:35 - Niel (Bélgica) Carrera femenina (Eurosport 1) (HD) (818)
-http://127.0.0.1:6878/ace/getstream?id=818735480ae40a4207ece5153ef9a3e798cef7aa
-#EXTINF:-1 group-title="11/11/2026 | Superprestige Ciclocross" tvg-name="13:35 - Niel (Bélgica) Carrera femenina (Eurosport 1) (FHD) (3b2)",13:35 - Niel (Bélgica) Carrera femenina (Eurosport 1) (FHD) (3b2)
-http://127.0.0.1:6878/ace/getstream?id=3b2bd7daedec3ef9fb72de78ea05b58a26fd452b
-#EXTINF:-1 group-title="11/11/2026 | Superprestige Ciclocross" tvg-name="15:05 - Niel (Bélgica) Carrera masculina (Eurosport 1) (HD) (818)",15:05 - Niel (Bélgica) Carrera masculina (Eurosport 1) (HD) (818)
-http://127.0.0.1:6878/ace/getstream?id=818735480ae40a4207ece5153ef9a3e798cef7aa
-#EXTINF:-1 group-title="11/11/2026 | Superprestige Ciclocross" tvg-name="15:05 - Niel (Bélgica) Carrera masculina (Eurosport 1) (FHD) (3b2)",15:05 - Niel (Bélgica) Carrera masculina (Eurosport 1) (FHD) (3b2)
-http://127.0.0.1:6878/ace/getstream?id=3b2bd7daedec3ef9fb72de78ea05b58a26fd452b
-#EXTINF:-1 group-title="11/11/2026 | Eurocup Liga Regular" tvg-name="17:30 - KK Šiauliai vs La Laguna Tenerife (M+ Vamos) (HD) (7f3)",17:30 - KK Šiauliai vs La Laguna Tenerife (M+ Vamos) (HD) (7f3)
-http://127.0.0.1:6878/ace/getstream?id=7f33dc6152f265be28b0292c5c5f4b9f457b9811
-#EXTINF:-1 group-title="11/11/2026 | Eurocup Liga Regular" tvg-name="17:30 - KK Šiauliai vs La Laguna Tenerife (M+ Vamos) (FHD) (9e5)",17:30 - KK Šiauliai vs La Laguna Tenerife (M+ Vamos) (FHD) (9e5)
-http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
-#EXTINF:-1 group-title="11/11/2026 | Eurocup Liga Regular" tvg-name="17:30 - KK Šiauliai vs La Laguna Tenerife (M+ Vamos) (FHD) (1b0)",17:30 - KK Šiauliai vs La Laguna Tenerife (M+ Vamos) (FHD) (1b0)
-http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
-#EXTINF:-1 group-title="11/11/2026 | FIBA Europe Cup Liga Regular" tvg-name="18:00 - CS Dinamo București BC vs Basquet Girona (Esport3) (HD) (1c2)",18:00 - CS Dinamo București BC vs Basquet Girona (Esport3) (HD) (1c2)
-http://127.0.0.1:6878/ace/getstream?id=1c2b17f41b46cabbc60c64d500fd4a07b1089b7b
-#EXTINF:-1 group-title="11/11/2026 | FIBA Europe Cup Liga Regular" tvg-name="18:00 - CS Dinamo București BC vs Basquet Girona (Esport3) (HD) (ff1)",18:00 - CS Dinamo București BC vs Basquet Girona (Esport3) (HD) (ff1)
-http://127.0.0.1:6878/ace/getstream?id=ff162bf69c1579edf953bf76933c80b1c7e893d0
-#EXTINF:-1 group-title="11/11/2026 | FIBA Europe Cup Liga Regular" tvg-name="18:00 - CS Dinamo București BC vs Basquet Girona (Esport3) (FHD) (720)",18:00 - CS Dinamo București BC vs Basquet Girona (Esport3) (FHD) (720)
-http://127.0.0.1:6878/ace/getstream?id=720111bc8ab44e425e24b93785f06ba3184ef3a4
-#EXTINF:-1 group-title="11/11/2026 | FIBA Europe Cup Liga Regular" tvg-name="18:00 - CS Dinamo București BC vs Basquet Girona (Esport3) (FHD) (1aa)",18:00 - CS Dinamo București BC vs Basquet Girona (Esport3) (FHD) (1aa)
-http://127.0.0.1:6878/ace/getstream?id=1aacd162a6e6fcd06216da5a39ebe335ad2a97b4
-#EXTINF:-1 group-title="11/11/2026 | Eurocup Liga Regular" tvg-name="20:00 - Le Mans Sarthe Basket vs San Pablo Burgos (M+ Baloncesto 3) (FHD) (70f)",20:00 - Le Mans Sarthe Basket vs San Pablo Burgos (M+ Baloncesto 3) (FHD) (70f)
-http://127.0.0.1:6878/ace/getstream?id=70f7638f664442f1a1d4c2389bed5346e4b72dfb
-#EXTINF:-1 group-title="11/11/2026 | Basketball Champions League Liga Regular" tvg-name="20:30 - UCAM Murcia CB vs Bamberg Baskets (Teledeporte) (HD) (c7d)",20:30 - UCAM Murcia CB vs Bamberg Baskets (Teledeporte) (HD) (c7d)
-http://127.0.0.1:6878/ace/getstream?id=c7d8405bdef3650b9bac58042c3708440ef286a8
-#EXTINF:-1 group-title="11/11/2026 | Basketball Champions League Liga Regular" tvg-name="20:30 - UCAM Murcia CB vs Bamberg Baskets (Teledeporte) (FHD) (f60)",20:30 - UCAM Murcia CB vs Bamberg Baskets (Teledeporte) (FHD) (f60)
-http://127.0.0.1:6878/ace/getstream?id=f608f9cb7099d94172739494e8864e8b5b6a4360
-#EXTINF:-1 group-title="11/11/2026 | Basketball Champions League Liga Regular" tvg-name="20:30 - UCAM Murcia CB vs Bamberg Baskets (Teledeporte) (FHD) (f80)",20:30 - UCAM Murcia CB vs Bamberg Baskets (Teledeporte) (FHD) (f80)
-http://127.0.0.1:6878/ace/getstream?id=f80b9184bdd16a335d523ea3ea15b8e9a1c3bbcc
-#EXTINF:-1 group-title="11/11/2026 | Euroliga Liga Regular" tvg-name="20:45 - BC Partizan Beograd vs Baskonia (M+ Baloncesto) (FHD) (5ba)",20:45 - BC Partizan Beograd vs Baskonia (M+ Baloncesto) (FHD) (5ba)
-http://127.0.0.1:6878/ace/getstream?id=5ba57eae303be35f8b551d2ba27b27ef0dd649b0
-#EXTINF:-1 group-title="11/11/2026 | Euroliga Liga Regular" tvg-name="20:45 - BC Partizan Beograd vs Baskonia (M+ Baloncesto) (FHD) (be9)",20:45 - BC Partizan Beograd vs Baskonia (M+ Baloncesto) (FHD) (be9)
-http://127.0.0.1:6878/ace/getstream?id=be93edb36056187656714f66c84026662f483e2f
-#EXTINF:-1 group-title="11/11/2026 | Euroliga Liga Regular" tvg-name="20:45 - BC Partizan Beograd vs Baskonia (M+ Baloncesto) (FHD) (463)",20:45 - BC Partizan Beograd vs Baskonia (M+ Baloncesto) (FHD) (463)
-http://127.0.0.1:6878/ace/getstream?id=4639224a85a8e244acfbf6f7f616e062354cf485
-#EXTINF:-1 group-title="11/11/2026 | Euroliga Liga Regular" tvg-name="20:45 - Paris Basketball vs Fenerbahce Istanbul (M+ Baloncesto 2) (FHD) (e9c)",20:45 - Paris Basketball vs Fenerbahce Istanbul (M+ Baloncesto 2) (FHD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9c285968edade2d0ce4cdcaa32bbe5f97716fb5
-#EXTINF:-1 group-title="11/11/2026 | WTA Finals Round Robin" tvg-name="21:00 - E. Svitolina vs K. Muchova (Tennis Channel) (FHD) (694)",21:00 - E. Svitolina vs K. Muchova (Tennis Channel) (FHD) (694)
-http://127.0.0.1:6878/ace/getstream?id=6945bf402126a38905b2645d61f9915a3b5a8b09
-#EXTINF:-1 group-title="11/11/2026 | WTA Finals Round Robin" tvg-name="22:30 - A. Sabalenka vs M. Andreeva (Tennis Channel) (FHD) (694)",22:30 - A. Sabalenka vs M. Andreeva (Tennis Channel) (FHD) (694)
-http://127.0.0.1:6878/ace/getstream?id=6945bf402126a38905b2645d61f9915a3b5a8b09
 #EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="01:00 - Indiana Pacers vs Washington Wizards (NBA League Pass) (FHD) (2ee)",01:00 - Indiana Pacers vs Washington Wizards (NBA League Pass) (FHD) (2ee)
 http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="01:00 - Indiana Pacers vs Washington Wizards (NBA League Pass) (FHD) (093)",01:00 - Indiana Pacers vs Washington Wizards (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
 #EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="01:00 - Toronto Raptors vs Boston Celtics (NBA League Pass) (FHD) (2ee)",01:00 - Toronto Raptors vs Boston Celtics (NBA League Pass) (FHD) (2ee)
 http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="01:00 - Toronto Raptors vs Boston Celtics (NBA League Pass) (FHD) (093)",01:00 - Toronto Raptors vs Boston Celtics (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
 #EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="01:00 - New York Knicks vs Cleveland Cavaliers (NBA League Pass) (FHD) (2ee)",01:00 - New York Knicks vs Cleveland Cavaliers (NBA League Pass) (FHD) (2ee)
 http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
-#EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="01:00 - New York Knicks vs Cleveland Cavaliers (DAZN Baloncesto) (HD) (788)",01:00 - New York Knicks vs Cleveland Cavaliers (DAZN Baloncesto) (HD) (788)
-http://127.0.0.1:6878/ace/getstream?id=788891525283f541893b809c54d1b9cbe2344dc5
+#EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="01:00 - New York Knicks vs Cleveland Cavaliers (NBA League Pass) (FHD) (093)",01:00 - New York Knicks vs Cleveland Cavaliers (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
 #EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="01:00 - New York Knicks vs Cleveland Cavaliers (DAZN Baloncesto) (HD) (803)",01:00 - New York Knicks vs Cleveland Cavaliers (DAZN Baloncesto) (HD) (803)
 http://127.0.0.1:6878/ace/getstream?id=8033aae52386138bac76bd7a16b8c1ab67bcd679
-#EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="01:00 - New York Knicks vs Cleveland Cavaliers (DAZN Baloncesto) (FHD) (e5b)",01:00 - New York Knicks vs Cleveland Cavaliers (DAZN Baloncesto) (FHD) (e5b)
-http://127.0.0.1:6878/ace/getstream?id=e5b57c3919b1714f01cb6e5f1812d22aa87bae2b
+#EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="01:00 - New York Knicks vs Cleveland Cavaliers (DAZN Baloncesto) (FHD) (f46)",01:00 - New York Knicks vs Cleveland Cavaliers (DAZN Baloncesto) (FHD) (f46)
+http://127.0.0.1:6878/ace/getstream?id=f460b9c1b77222ac21b0e148f2b2c07791ce2d5d
 #EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="02:00 - Chicago Bulls vs San Antonio Spurs (NBA League Pass) (FHD) (2ee)",02:00 - Chicago Bulls vs San Antonio Spurs (NBA League Pass) (FHD) (2ee)
 http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="02:00 - Chicago Bulls vs San Antonio Spurs (NBA League Pass) (FHD) (093)",02:00 - Chicago Bulls vs San Antonio Spurs (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
 #EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="02:00 - Milwaukee Bucks vs Los Angeles Lakers (NBA League Pass) (FHD) (2ee)",02:00 - Milwaukee Bucks vs Los Angeles Lakers (NBA League Pass) (FHD) (2ee)
 http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="02:00 - Milwaukee Bucks vs Los Angeles Lakers (NBA League Pass) (FHD) (093)",02:00 - Milwaukee Bucks vs Los Angeles Lakers (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
 #EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="02:00 - New Orleans Pelicans vs Brooklyn Nets (NBA League Pass) (FHD) (2ee)",02:00 - New Orleans Pelicans vs Brooklyn Nets (NBA League Pass) (FHD) (2ee)
 http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="02:00 - New Orleans Pelicans vs Brooklyn Nets (NBA League Pass) (FHD) (093)",02:00 - New Orleans Pelicans vs Brooklyn Nets (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
 #EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="02:00 - Memphis Grizzlies vs Denver Nuggets (NBA League Pass) (FHD) (2ee)",02:00 - Memphis Grizzlies vs Denver Nuggets (NBA League Pass) (FHD) (2ee)
 http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="02:00 - Memphis Grizzlies vs Denver Nuggets (NBA League Pass) (FHD) (093)",02:00 - Memphis Grizzlies vs Denver Nuggets (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
 #EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="03:00 - Utah Jazz vs Orlando Magic (NBA League Pass) (FHD) (2ee)",03:00 - Utah Jazz vs Orlando Magic (NBA League Pass) (FHD) (2ee)
 http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="03:00 - Utah Jazz vs Orlando Magic (NBA League Pass) (FHD) (093)",03:00 - Utah Jazz vs Orlando Magic (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
 #EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="03:30 - Houston Rockets vs Golden State Warriors (NBA League Pass) (FHD) (2ee)",03:30 - Houston Rockets vs Golden State Warriors (NBA League Pass) (FHD) (2ee)
 http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="03:30 - Houston Rockets vs Golden State Warriors (NBA League Pass) (FHD) (093)",03:30 - Houston Rockets vs Golden State Warriors (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
 #EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="03:30 - Houston Rockets vs Golden State Warriors (DAZN Baloncesto 2) (HD) (09e)",03:30 - Houston Rockets vs Golden State Warriors (DAZN Baloncesto 2) (HD) (09e)
 http://127.0.0.1:6878/ace/getstream?id=09ee8afc1d9b468d3b470c682cfcacd58a95e273
-#EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="03:30 - Houston Rockets vs Golden State Warriors (DAZN Baloncesto 2) (FHD) (8ed)",03:30 - Houston Rockets vs Golden State Warriors (DAZN Baloncesto 2) (FHD) (8ed)
-http://127.0.0.1:6878/ace/getstream?id=8edc606f4b349f43db14f5190180e2873659e972
 #EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="04:00 - Portland Trail Blazers vs Oklahoma C. Thunder (NBA League Pass) (FHD) (2ee)",04:00 - Portland Trail Blazers vs Oklahoma C. Thunder (NBA League Pass) (FHD) (2ee)
 http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
-#EXTINF:-1 group-title="12/11/2026 | Euroliga Liga Regular" tvg-name="20:05 - Maccabi Tel Aviv BC vs Hapoel Tel Aviv BC (M+ Baloncesto 3) (FHD) (70f)",20:05 - Maccabi Tel Aviv BC vs Hapoel Tel Aviv BC (M+ Baloncesto 3) (FHD) (70f)
-http://127.0.0.1:6878/ace/getstream?id=70f7638f664442f1a1d4c2389bed5346e4b72dfb
-#EXTINF:-1 group-title="12/11/2026 | Euroliga Liga Regular" tvg-name="20:15 - Olympiacos Piraeus vs Dubai Basketball (M+ Baloncesto 2) (FHD) (e9c)",20:15 - Olympiacos Piraeus vs Dubai Basketball (M+ Baloncesto 2) (FHD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9c285968edade2d0ce4cdcaa32bbe5f97716fb5
+#EXTINF:-1 group-title="12/11/2026 | NBA Liga Regular" tvg-name="04:00 - Portland Trail Blazers vs Oklahoma C. Thunder (NBA League Pass) (FHD) (093)",04:00 - Portland Trail Blazers vs Oklahoma C. Thunder (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="12/11/2026 | Euroliga Liga Regular" tvg-name="20:05 - Maccabi Tel Aviv BC vs Hapoel Tel Aviv BC (M+ Baloncesto 3) (FHD) (e67)",20:05 - Maccabi Tel Aviv BC vs Hapoel Tel Aviv BC (M+ Baloncesto 3) (FHD) (e67)
+http://127.0.0.1:6878/ace/getstream?id=e675aecf437124d37f7f2daf31669f1af532a50c
+#EXTINF:-1 group-title="12/11/2026 | Euroliga Liga Regular" tvg-name="20:15 - Olympiacos Piraeus vs Dubai Basketball (M+ Baloncesto 2) (FHD) (ad5)",20:15 - Olympiacos Piraeus vs Dubai Basketball (M+ Baloncesto 2) (FHD) (ad5)
+http://127.0.0.1:6878/ace/getstream?id=ad50a4fcd5fc51b2fdfaba02216e3e1ee7c310d8
+#EXTINF:-1 group-title="12/11/2026 | Euroliga Liga Regular" tvg-name="20:15 - Olympiacos Piraeus vs Dubai Basketball (M+ Baloncesto 2) (FHD) (1ae)",20:15 - Olympiacos Piraeus vs Dubai Basketball (M+ Baloncesto 2) (FHD) (1ae)
+http://127.0.0.1:6878/ace/getstream?id=1aedb9d609bbfec87c2614d126a384a1f0ae136f
 #EXTINF:-1 group-title="12/11/2026 | Euroliga Liga Regular" tvg-name="20:30 - Valencia Basket vs FC Bayern Basketball (M+ Vamos) (HD) (7f3)",20:30 - Valencia Basket vs FC Bayern Basketball (M+ Vamos) (HD) (7f3)
 http://127.0.0.1:6878/ace/getstream?id=7f33dc6152f265be28b0292c5c5f4b9f457b9811
 #EXTINF:-1 group-title="12/11/2026 | Euroliga Liga Regular" tvg-name="20:30 - Valencia Basket vs FC Bayern Basketball (M+ Vamos) (FHD) (9e5)",20:30 - Valencia Basket vs FC Bayern Basketball (M+ Vamos) (FHD) (9e5)
@@ -105,26 +63,30 @@ http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
 http://127.0.0.1:6878/ace/getstream?id=6945bf402126a38905b2645d61f9915a3b5a8b09
 #EXTINF:-1 group-title="12/11/2026 | Euroliga Liga Regular" tvg-name="21:00 - Real Madrid Baloncesto vs Crvena Zvezda MTS Belgrade (M+ Baloncesto) (FHD) (5ba)",21:00 - Real Madrid Baloncesto vs Crvena Zvezda MTS Belgrade (M+ Baloncesto) (FHD) (5ba)
 http://127.0.0.1:6878/ace/getstream?id=5ba57eae303be35f8b551d2ba27b27ef0dd649b0
-#EXTINF:-1 group-title="12/11/2026 | Euroliga Liga Regular" tvg-name="21:00 - Real Madrid Baloncesto vs Crvena Zvezda MTS Belgrade (M+ Baloncesto) (FHD) (be9)",21:00 - Real Madrid Baloncesto vs Crvena Zvezda MTS Belgrade (M+ Baloncesto) (FHD) (be9)
-http://127.0.0.1:6878/ace/getstream?id=be93edb36056187656714f66c84026662f483e2f
 #EXTINF:-1 group-title="12/11/2026 | Euroliga Liga Regular" tvg-name="21:00 - Real Madrid Baloncesto vs Crvena Zvezda MTS Belgrade (M+ Baloncesto) (FHD) (463)",21:00 - Real Madrid Baloncesto vs Crvena Zvezda MTS Belgrade (M+ Baloncesto) (FHD) (463)
 http://127.0.0.1:6878/ace/getstream?id=4639224a85a8e244acfbf6f7f616e062354cf485
 #EXTINF:-1 group-title="12/11/2026 | WTA Finals Round Robin" tvg-name="22:30 - J. Pegula vs L. Noskova (Tennis Channel) (FHD) (694)",22:30 - J. Pegula vs L. Noskova (Tennis Channel) (FHD) (694)
 http://127.0.0.1:6878/ace/getstream?id=6945bf402126a38905b2645d61f9915a3b5a8b09
 #EXTINF:-1 group-title="13/11/2026 | NBA Liga Regular" tvg-name="01:00 - Philadelphia 76ers vs Toronto Raptors (NBA League Pass) (FHD) (2ee)",01:00 - Philadelphia 76ers vs Toronto Raptors (NBA League Pass) (FHD) (2ee)
 http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
-#EXTINF:-1 group-title="13/11/2026 | NBA Liga Regular" tvg-name="01:00 - Philadelphia 76ers vs Toronto Raptors (DAZN Baloncesto) (HD) (788)",01:00 - Philadelphia 76ers vs Toronto Raptors (DAZN Baloncesto) (HD) (788)
-http://127.0.0.1:6878/ace/getstream?id=788891525283f541893b809c54d1b9cbe2344dc5
+#EXTINF:-1 group-title="13/11/2026 | NBA Liga Regular" tvg-name="01:00 - Philadelphia 76ers vs Toronto Raptors (NBA League Pass) (FHD) (093)",01:00 - Philadelphia 76ers vs Toronto Raptors (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
 #EXTINF:-1 group-title="13/11/2026 | NBA Liga Regular" tvg-name="01:00 - Philadelphia 76ers vs Toronto Raptors (DAZN Baloncesto) (HD) (803)",01:00 - Philadelphia 76ers vs Toronto Raptors (DAZN Baloncesto) (HD) (803)
 http://127.0.0.1:6878/ace/getstream?id=8033aae52386138bac76bd7a16b8c1ab67bcd679
-#EXTINF:-1 group-title="13/11/2026 | NBA Liga Regular" tvg-name="01:00 - Philadelphia 76ers vs Toronto Raptors (DAZN Baloncesto) (FHD) (e5b)",01:00 - Philadelphia 76ers vs Toronto Raptors (DAZN Baloncesto) (FHD) (e5b)
-http://127.0.0.1:6878/ace/getstream?id=e5b57c3919b1714f01cb6e5f1812d22aa87bae2b
+#EXTINF:-1 group-title="13/11/2026 | NBA Liga Regular" tvg-name="01:00 - Philadelphia 76ers vs Toronto Raptors (DAZN Baloncesto) (FHD) (f46)",01:00 - Philadelphia 76ers vs Toronto Raptors (DAZN Baloncesto) (FHD) (f46)
+http://127.0.0.1:6878/ace/getstream?id=f460b9c1b77222ac21b0e148f2b2c07791ce2d5d
 #EXTINF:-1 group-title="13/11/2026 | NBA Liga Regular" tvg-name="01:00 - Washington Wizards vs Detroit Pistons (NBA League Pass) (FHD) (2ee)",01:00 - Washington Wizards vs Detroit Pistons (NBA League Pass) (FHD) (2ee)
 http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="13/11/2026 | NBA Liga Regular" tvg-name="01:00 - Washington Wizards vs Detroit Pistons (NBA League Pass) (FHD) (093)",01:00 - Washington Wizards vs Detroit Pistons (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
 #EXTINF:-1 group-title="13/11/2026 | NBA Liga Regular" tvg-name="02:00 - Minnesota Timberwolves vs Dallas Mavericks (NBA League Pass) (FHD) (2ee)",02:00 - Minnesota Timberwolves vs Dallas Mavericks (NBA League Pass) (FHD) (2ee)
 http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="13/11/2026 | NBA Liga Regular" tvg-name="02:00 - Minnesota Timberwolves vs Dallas Mavericks (NBA League Pass) (FHD) (093)",02:00 - Minnesota Timberwolves vs Dallas Mavericks (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
 #EXTINF:-1 group-title="13/11/2026 | NBA Liga Regular" tvg-name="03:00 - Phoenix Suns vs Charlotte Hornets (NBA League Pass) (FHD) (2ee)",03:00 - Phoenix Suns vs Charlotte Hornets (NBA League Pass) (FHD) (2ee)
 http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="13/11/2026 | NBA Liga Regular" tvg-name="03:00 - Phoenix Suns vs Charlotte Hornets (NBA League Pass) (FHD) (093)",03:00 - Phoenix Suns vs Charlotte Hornets (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
 #EXTINF:-1 group-title="13/11/2026 | Dubai Open" tvg-name="09:00 - 1/4 de final femenino Premier Padel Tour (M+ Vamos) (HD) (7f3)",09:00 - 1/4 de final femenino Premier Padel Tour (M+ Vamos) (HD) (7f3)
 http://127.0.0.1:6878/ace/getstream?id=7f33dc6152f265be28b0292c5c5f4b9f457b9811
 #EXTINF:-1 group-title="13/11/2026 | Dubai Open" tvg-name="09:00 - 1/4 de final femenino Premier Padel Tour (M+ Vamos) (FHD) (9e5)",09:00 - 1/4 de final femenino Premier Padel Tour (M+ Vamos) (FHD) (9e5)
@@ -137,12 +99,10 @@ http://127.0.0.1:6878/ace/getstream?id=7f33dc6152f265be28b0292c5c5f4b9f457b9811
 http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
 #EXTINF:-1 group-title="13/11/2026 | Dubai Open" tvg-name="16:00 - 1/4 de final masculino Premier Padel Tour (M+ Vamos) (FHD) (1b0)",16:00 - 1/4 de final masculino Premier Padel Tour (M+ Vamos) (FHD) (1b0)
 http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
-#EXTINF:-1 group-title="13/11/2026 | Liga U Primera Fase" tvg-name="16:00 - Kids&Us Manresa B vs Monbus Obradoiro B (DAZN Baloncesto) (HD) (788)",16:00 - Kids&Us Manresa B vs Monbus Obradoiro B (DAZN Baloncesto) (HD) (788)
-http://127.0.0.1:6878/ace/getstream?id=788891525283f541893b809c54d1b9cbe2344dc5
 #EXTINF:-1 group-title="13/11/2026 | Liga U Primera Fase" tvg-name="16:00 - Kids&Us Manresa B vs Monbus Obradoiro B (DAZN Baloncesto) (HD) (803)",16:00 - Kids&Us Manresa B vs Monbus Obradoiro B (DAZN Baloncesto) (HD) (803)
 http://127.0.0.1:6878/ace/getstream?id=8033aae52386138bac76bd7a16b8c1ab67bcd679
-#EXTINF:-1 group-title="13/11/2026 | Liga U Primera Fase" tvg-name="16:00 - Kids&Us Manresa B vs Monbus Obradoiro B (DAZN Baloncesto) (FHD) (e5b)",16:00 - Kids&Us Manresa B vs Monbus Obradoiro B (DAZN Baloncesto) (FHD) (e5b)
-http://127.0.0.1:6878/ace/getstream?id=e5b57c3919b1714f01cb6e5f1812d22aa87bae2b
+#EXTINF:-1 group-title="13/11/2026 | Liga U Primera Fase" tvg-name="16:00 - Kids&Us Manresa B vs Monbus Obradoiro B (DAZN Baloncesto) (FHD) (f46)",16:00 - Kids&Us Manresa B vs Monbus Obradoiro B (DAZN Baloncesto) (FHD) (f46)
+http://127.0.0.1:6878/ace/getstream?id=f460b9c1b77222ac21b0e148f2b2c07791ce2d5d
 #EXTINF:-1 group-title="13/11/2026 | Liga U Primera Fase" tvg-name="16:00 - Kids&Us Manresa B vs Monbus Obradoiro B (Teledeporte) (HD) (c7d)",16:00 - Kids&Us Manresa B vs Monbus Obradoiro B (Teledeporte) (HD) (c7d)
 http://127.0.0.1:6878/ace/getstream?id=c7d8405bdef3650b9bac58042c3708440ef286a8
 #EXTINF:-1 group-title="13/11/2026 | Liga U Primera Fase" tvg-name="16:00 - Kids&Us Manresa B vs Monbus Obradoiro B (Teledeporte) (FHD) (f60)",16:00 - Kids&Us Manresa B vs Monbus Obradoiro B (Teledeporte) (FHD) (f60)
@@ -151,33 +111,141 @@ http://127.0.0.1:6878/ace/getstream?id=f608f9cb7099d94172739494e8864e8b5b6a4360
 http://127.0.0.1:6878/ace/getstream?id=f80b9184bdd16a335d523ea3ea15b8e9a1c3bbcc
 #EXTINF:-1 group-title="13/11/2026 | Liga U Primera Fase" tvg-name="18:30 - Basquet Girona B vs Fundación CB Canarias (DAZN Baloncesto 2) (HD) (09e)",18:30 - Basquet Girona B vs Fundación CB Canarias (DAZN Baloncesto 2) (HD) (09e)
 http://127.0.0.1:6878/ace/getstream?id=09ee8afc1d9b468d3b470c682cfcacd58a95e273
-#EXTINF:-1 group-title="13/11/2026 | Liga U Primera Fase" tvg-name="18:30 - Basquet Girona B vs Fundación CB Canarias (DAZN Baloncesto 2) (FHD) (8ed)",18:30 - Basquet Girona B vs Fundación CB Canarias (DAZN Baloncesto 2) (FHD) (8ed)
-http://127.0.0.1:6878/ace/getstream?id=8edc606f4b349f43db14f5190180e2873659e972
-#EXTINF:-1 group-title="13/11/2026 | Euroliga Liga Regular" tvg-name="18:30 - Anadolu Efes Istanbul vs Virtus Bologna (M+ Baloncesto 2) (FHD) (e9c)",18:30 - Anadolu Efes Istanbul vs Virtus Bologna (M+ Baloncesto 2) (FHD) (e9c)
-http://127.0.0.1:6878/ace/getstream?id=e9c285968edade2d0ce4cdcaa32bbe5f97716fb5
+#EXTINF:-1 group-title="13/11/2026 | Euroliga Liga Regular" tvg-name="18:30 - Anadolu Efes Istanbul vs Virtus Bologna (M+ Baloncesto 2) (FHD) (ad5)",18:30 - Anadolu Efes Istanbul vs Virtus Bologna (M+ Baloncesto 2) (FHD) (ad5)
+http://127.0.0.1:6878/ace/getstream?id=ad50a4fcd5fc51b2fdfaba02216e3e1ee7c310d8
+#EXTINF:-1 group-title="13/11/2026 | Euroliga Liga Regular" tvg-name="18:30 - Anadolu Efes Istanbul vs Virtus Bologna (M+ Baloncesto 2) (FHD) (1ae)",18:30 - Anadolu Efes Istanbul vs Virtus Bologna (M+ Baloncesto 2) (FHD) (1ae)
+http://127.0.0.1:6878/ace/getstream?id=1aedb9d609bbfec87c2614d126a384a1f0ae136f
 #EXTINF:-1 group-title="13/11/2026 | Amistoso Sub-21" tvg-name="19:00 - España vs Japón (Teledeporte) (HD) (c7d)",19:00 - España vs Japón (Teledeporte) (HD) (c7d)
 http://127.0.0.1:6878/ace/getstream?id=c7d8405bdef3650b9bac58042c3708440ef286a8
 #EXTINF:-1 group-title="13/11/2026 | Amistoso Sub-21" tvg-name="19:00 - España vs Japón (Teledeporte) (FHD) (f60)",19:00 - España vs Japón (Teledeporte) (FHD) (f60)
 http://127.0.0.1:6878/ace/getstream?id=f608f9cb7099d94172739494e8864e8b5b6a4360
 #EXTINF:-1 group-title="13/11/2026 | Amistoso Sub-21" tvg-name="19:00 - España vs Japón (Teledeporte) (FHD) (f80)",19:00 - España vs Japón (Teledeporte) (FHD) (f80)
 http://127.0.0.1:6878/ace/getstream?id=f80b9184bdd16a335d523ea3ea15b8e9a1c3bbcc
-#EXTINF:-1 group-title="13/11/2026 | Liga ASOBAL" tvg-name="20:00 - Barça BM vs Balonmano Proin Sevilla (Esport3) (HD) (1c2)",20:00 - Barça BM vs Balonmano Proin Sevilla (Esport3) (HD) (1c2)
-http://127.0.0.1:6878/ace/getstream?id=1c2b17f41b46cabbc60c64d500fd4a07b1089b7b
 #EXTINF:-1 group-title="13/11/2026 | Liga ASOBAL" tvg-name="20:00 - Barça BM vs Balonmano Proin Sevilla (Esport3) (HD) (ff1)",20:00 - Barça BM vs Balonmano Proin Sevilla (Esport3) (HD) (ff1)
 http://127.0.0.1:6878/ace/getstream?id=ff162bf69c1579edf953bf76933c80b1c7e893d0
-#EXTINF:-1 group-title="13/11/2026 | Liga ASOBAL" tvg-name="20:00 - Barça BM vs Balonmano Proin Sevilla (Esport3) (FHD) (720)",20:00 - Barça BM vs Balonmano Proin Sevilla (Esport3) (FHD) (720)
-http://127.0.0.1:6878/ace/getstream?id=720111bc8ab44e425e24b93785f06ba3184ef3a4
 #EXTINF:-1 group-title="13/11/2026 | Liga ASOBAL" tvg-name="20:00 - Barça BM vs Balonmano Proin Sevilla (Esport3) (FHD) (1aa)",20:00 - Barça BM vs Balonmano Proin Sevilla (Esport3) (FHD) (1aa)
 http://127.0.0.1:6878/ace/getstream?id=1aacd162a6e6fcd06216da5a39ebe335ad2a97b4
+#EXTINF:-1 group-title="13/11/2026 | Liga ASOBAL" tvg-name="20:00 - Barça BM vs Balonmano Proin Sevilla (Eurosport 2) (HD) (be1)",20:00 - Barça BM vs Balonmano Proin Sevilla (Eurosport 2) (HD) (be1)
+http://127.0.0.1:6878/ace/getstream?id=be1ab9f792dac014fc3ce8e7a52e6bdd92bea6c6
+#EXTINF:-1 group-title="13/11/2026 | Liga ASOBAL" tvg-name="20:00 - Barça BM vs Balonmano Proin Sevilla (Eurosport 2) (FHD) (f23)",20:00 - Barça BM vs Balonmano Proin Sevilla (Eurosport 2) (FHD) (f23)
+http://127.0.0.1:6878/ace/getstream?id=f23811d7cebed9847ae7497bb082c1052d11b0b1
+#EXTINF:-1 group-title="13/11/2026 | Liga ASOBAL" tvg-name="20:00 - Barça BM vs Balonmano Proin Sevilla (Eurosport 2) (FHD) (dcc)",20:00 - Barça BM vs Balonmano Proin Sevilla (Eurosport 2) (FHD) (dcc)
+http://127.0.0.1:6878/ace/getstream?id=dcc3be2e16b61b10557d8a7e954c5496ba5e4b60
+#EXTINF:-1 group-title="13/11/2026 | Liga U Primera Fase" tvg-name="20:15 - Joventut Badalona B vs Bilbao Basket B (DAZN Baloncesto 3) (HD) (8e2)",20:15 - Joventut Badalona B vs Bilbao Basket B (DAZN Baloncesto 3) (HD) (8e2)
+http://127.0.0.1:6878/ace/getstream?id=8e2f1e1f1fdc8e7d324dc931a6fb65fc4d1a71da
+#EXTINF:-1 group-title="13/11/2026 | Liga U Primera Fase" tvg-name="20:15 - Joventut Badalona B vs Bilbao Basket B (DAZN Baloncesto 3) (FHD) (0ca)",20:15 - Joventut Badalona B vs Bilbao Basket B (DAZN Baloncesto 3) (FHD) (0ca)
+http://127.0.0.1:6878/ace/getstream?id=0ca08fccd1d403b33a6eca52f9a0b6215140e162
 #EXTINF:-1 group-title="13/11/2026 | Euroliga Liga Regular" tvg-name="20:15 - Panathinaikos BC vs Barça Basket (M+ Baloncesto) (FHD) (5ba)",20:15 - Panathinaikos BC vs Barça Basket (M+ Baloncesto) (FHD) (5ba)
 http://127.0.0.1:6878/ace/getstream?id=5ba57eae303be35f8b551d2ba27b27ef0dd649b0
-#EXTINF:-1 group-title="13/11/2026 | Euroliga Liga Regular" tvg-name="20:15 - Panathinaikos BC vs Barça Basket (M+ Baloncesto) (FHD) (be9)",20:15 - Panathinaikos BC vs Barça Basket (M+ Baloncesto) (FHD) (be9)
-http://127.0.0.1:6878/ace/getstream?id=be93edb36056187656714f66c84026662f483e2f
 #EXTINF:-1 group-title="13/11/2026 | Euroliga Liga Regular" tvg-name="20:15 - Panathinaikos BC vs Barça Basket (M+ Baloncesto) (FHD) (463)",20:15 - Panathinaikos BC vs Barça Basket (M+ Baloncesto) (FHD) (463)
 http://127.0.0.1:6878/ace/getstream?id=4639224a85a8e244acfbf6f7f616e062354cf485
-#EXTINF:-1 group-title="13/11/2026 | Euroliga Liga Regular" tvg-name="20:30 - ASVEL Lyon-Villeurbanne vs Besiktas JK Istanbul (M+ Baloncesto 3) (FHD) (70f)",20:30 - ASVEL Lyon-Villeurbanne vs Besiktas JK Istanbul (M+ Baloncesto 3) (FHD) (70f)
-http://127.0.0.1:6878/ace/getstream?id=70f7638f664442f1a1d4c2389bed5346e4b72dfb
+#EXTINF:-1 group-title="13/11/2026 | Euroliga Liga Regular" tvg-name="20:30 - ASVEL Lyon-Villeurbanne vs Besiktas JK Istanbul (M+ Baloncesto 3) (FHD) (e67)",20:30 - ASVEL Lyon-Villeurbanne vs Besiktas JK Istanbul (M+ Baloncesto 3) (FHD) (e67)
+http://127.0.0.1:6878/ace/getstream?id=e675aecf437124d37f7f2daf31669f1af532a50c
 #EXTINF:-1 group-title="13/11/2026 | WTA Finals" tvg-name="21:00 - Semifinal 1 (Tennis Channel) (FHD) (694)",21:00 - Semifinal 1 (Tennis Channel) (FHD) (694)
 http://127.0.0.1:6878/ace/getstream?id=6945bf402126a38905b2645d61f9915a3b5a8b09
 #EXTINF:-1 group-title="13/11/2026 | WTA Finals" tvg-name="22:30 - Semifinal 2 (Tennis Channel) (FHD) (694)",22:30 - Semifinal 2 (Tennis Channel) (FHD) (694)
 http://127.0.0.1:6878/ace/getstream?id=6945bf402126a38905b2645d61f9915a3b5a8b09
+#EXTINF:-1 group-title="14/11/2026 | Amistoso" tvg-name="00:00 - Argentina vs Uruguay (M+ Vamos) (HD) (7f3)",00:00 - Argentina vs Uruguay (M+ Vamos) (HD) (7f3)
+http://127.0.0.1:6878/ace/getstream?id=7f33dc6152f265be28b0292c5c5f4b9f457b9811
+#EXTINF:-1 group-title="14/11/2026 | Amistoso" tvg-name="00:00 - Argentina vs Uruguay (M+ Vamos) (FHD) (9e5)",00:00 - Argentina vs Uruguay (M+ Vamos) (FHD) (9e5)
+http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
+#EXTINF:-1 group-title="14/11/2026 | Amistoso" tvg-name="00:00 - Argentina vs Uruguay (M+ Vamos) (FHD) (1b0)",00:00 - Argentina vs Uruguay (M+ Vamos) (FHD) (1b0)
+http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
+#EXTINF:-1 group-title="14/11/2026 | NBA Liga Regular" tvg-name="01:00 - Indiana Pacers vs New York Knicks (NBA League Pass) (FHD) (2ee)",01:00 - Indiana Pacers vs New York Knicks (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="14/11/2026 | NBA Liga Regular" tvg-name="01:00 - Indiana Pacers vs New York Knicks (NBA League Pass) (FHD) (093)",01:00 - Indiana Pacers vs New York Knicks (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="14/11/2026 | NBA Liga Regular" tvg-name="01:00 - Orlando Magic vs Milwaukee Bucks (NBA League Pass) (FHD) (2ee)",01:00 - Orlando Magic vs Milwaukee Bucks (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="14/11/2026 | NBA Liga Regular" tvg-name="01:00 - Orlando Magic vs Milwaukee Bucks (NBA League Pass) (FHD) (093)",01:00 - Orlando Magic vs Milwaukee Bucks (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="14/11/2026 | NBA Liga Regular" tvg-name="02:00 - Miami Heat vs Cleveland Cavaliers (NBA League Pass) (FHD) (2ee)",02:00 - Miami Heat vs Cleveland Cavaliers (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="14/11/2026 | NBA Liga Regular" tvg-name="02:00 - Miami Heat vs Cleveland Cavaliers (NBA League Pass) (FHD) (093)",02:00 - Miami Heat vs Cleveland Cavaliers (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="14/11/2026 | NBA Liga Regular" tvg-name="02:00 - Chicago Bulls vs Atlanta Hawks (NBA League Pass) (FHD) (2ee)",02:00 - Chicago Bulls vs Atlanta Hawks (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="14/11/2026 | NBA Liga Regular" tvg-name="02:00 - Chicago Bulls vs Atlanta Hawks (NBA League Pass) (FHD) (093)",02:00 - Chicago Bulls vs Atlanta Hawks (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="14/11/2026 | NBA Liga Regular" tvg-name="02:00 - New Orleans Pelicans vs Memphis Grizzlies (NBA League Pass) (FHD) (2ee)",02:00 - New Orleans Pelicans vs Memphis Grizzlies (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="14/11/2026 | NBA Liga Regular" tvg-name="02:00 - New Orleans Pelicans vs Memphis Grizzlies (NBA League Pass) (FHD) (093)",02:00 - New Orleans Pelicans vs Memphis Grizzlies (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="14/11/2026 | NBA Liga Regular" tvg-name="02:30 - Houston Rockets vs Utah Jazz (NBA League Pass) (FHD) (2ee)",02:30 - Houston Rockets vs Utah Jazz (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="14/11/2026 | NBA Liga Regular" tvg-name="02:30 - Houston Rockets vs Utah Jazz (NBA League Pass) (FHD) (093)",02:30 - Houston Rockets vs Utah Jazz (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="14/11/2026 | NBA Liga Regular" tvg-name="03:30 - San Antonio Spurs vs Golden State Warriors (NBA League Pass) (FHD) (2ee)",03:30 - San Antonio Spurs vs Golden State Warriors (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="14/11/2026 | NBA Liga Regular" tvg-name="03:30 - San Antonio Spurs vs Golden State Warriors (NBA League Pass) (FHD) (093)",03:30 - San Antonio Spurs vs Golden State Warriors (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="14/11/2026 | NBA Liga Regular" tvg-name="04:00 - Sacramento Kings vs Portland Trail Blazers (NBA League Pass) (FHD) (2ee)",04:00 - Sacramento Kings vs Portland Trail Blazers (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="14/11/2026 | NBA Liga Regular" tvg-name="04:00 - Sacramento Kings vs Portland Trail Blazers (NBA League Pass) (FHD) (093)",04:00 - Sacramento Kings vs Portland Trail Blazers (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="14/11/2026 | NBA Liga Regular" tvg-name="04:30 - Los Angeles Clippers vs Oklahoma C. Thunder (NBA League Pass) (FHD) (2ee)",04:30 - Los Angeles Clippers vs Oklahoma C. Thunder (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="14/11/2026 | NBA Liga Regular" tvg-name="04:30 - Los Angeles Clippers vs Oklahoma C. Thunder (NBA League Pass) (FHD) (093)",04:30 - Los Angeles Clippers vs Oklahoma C. Thunder (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="14/11/2026 | Liga U Primera Fase" tvg-name="12:00 - Valencia Basket B vs Real Madrid B Baloncesto (DAZN Baloncesto) (HD) (803)",12:00 - Valencia Basket B vs Real Madrid B Baloncesto (DAZN Baloncesto) (HD) (803)
+http://127.0.0.1:6878/ace/getstream?id=8033aae52386138bac76bd7a16b8c1ab67bcd679
+#EXTINF:-1 group-title="14/11/2026 | Liga U Primera Fase" tvg-name="12:00 - Valencia Basket B vs Real Madrid B Baloncesto (DAZN Baloncesto) (FHD) (f46)",12:00 - Valencia Basket B vs Real Madrid B Baloncesto (DAZN Baloncesto) (FHD) (f46)
+http://127.0.0.1:6878/ace/getstream?id=f460b9c1b77222ac21b0e148f2b2c07791ce2d5d
+#EXTINF:-1 group-title="14/11/2026 | Dubai Open" tvg-name="13:00 - Semifinal Femenina Premier Padel Tour (M+ Vamos) (HD) (7f3)",13:00 - Semifinal Femenina Premier Padel Tour (M+ Vamos) (HD) (7f3)
+http://127.0.0.1:6878/ace/getstream?id=7f33dc6152f265be28b0292c5c5f4b9f457b9811
+#EXTINF:-1 group-title="14/11/2026 | Dubai Open" tvg-name="13:00 - Semifinal Femenina Premier Padel Tour (M+ Vamos) (FHD) (9e5)",13:00 - Semifinal Femenina Premier Padel Tour (M+ Vamos) (FHD) (9e5)
+http://127.0.0.1:6878/ace/getstream?id=9e5da99bac88a4a3ed200d3bdf260b683145ca57
+#EXTINF:-1 group-title="14/11/2026 | Dubai Open" tvg-name="13:00 - Semifinal Femenina Premier Padel Tour (M+ Vamos) (FHD) (1b0)",13:00 - Semifinal Femenina Premier Padel Tour (M+ Vamos) (FHD) (1b0)
+http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
+#EXTINF:-1 group-title="14/11/2026 | Superprestige Ciclocross" tvg-name="13:40 - Merksplas (Bélgica) Carrera femenina (Eurosport 2) (HD) (be1)",13:40 - Merksplas (Bélgica) Carrera femenina (Eurosport 2) (HD) (be1)
+http://127.0.0.1:6878/ace/getstream?id=be1ab9f792dac014fc3ce8e7a52e6bdd92bea6c6
+#EXTINF:-1 group-title="14/11/2026 | Superprestige Ciclocross" tvg-name="13:40 - Merksplas (Bélgica) Carrera femenina (Eurosport 2) (FHD) (f23)",13:40 - Merksplas (Bélgica) Carrera femenina (Eurosport 2) (FHD) (f23)
+http://127.0.0.1:6878/ace/getstream?id=f23811d7cebed9847ae7497bb082c1052d11b0b1
+#EXTINF:-1 group-title="14/11/2026 | Superprestige Ciclocross" tvg-name="13:40 - Merksplas (Bélgica) Carrera femenina (Eurosport 2) (FHD) (dcc)",13:40 - Merksplas (Bélgica) Carrera femenina (Eurosport 2) (FHD) (dcc)
+http://127.0.0.1:6878/ace/getstream?id=dcc3be2e16b61b10557d8a7e954c5496ba5e4b60
+#EXTINF:-1 group-title="14/11/2026 | Superprestige Ciclocross" tvg-name="15:05 - Merksplas (Bélgica) Carrera masculina (Eurosport 2) (HD) (be1)",15:05 - Merksplas (Bélgica) Carrera masculina (Eurosport 2) (HD) (be1)
+http://127.0.0.1:6878/ace/getstream?id=be1ab9f792dac014fc3ce8e7a52e6bdd92bea6c6
+#EXTINF:-1 group-title="14/11/2026 | Superprestige Ciclocross" tvg-name="15:05 - Merksplas (Bélgica) Carrera masculina (Eurosport 2) (FHD) (f23)",15:05 - Merksplas (Bélgica) Carrera masculina (Eurosport 2) (FHD) (f23)
+http://127.0.0.1:6878/ace/getstream?id=f23811d7cebed9847ae7497bb082c1052d11b0b1
+#EXTINF:-1 group-title="14/11/2026 | Superprestige Ciclocross" tvg-name="15:05 - Merksplas (Bélgica) Carrera masculina (Eurosport 2) (FHD) (dcc)",15:05 - Merksplas (Bélgica) Carrera masculina (Eurosport 2) (FHD) (dcc)
+http://127.0.0.1:6878/ace/getstream?id=dcc3be2e16b61b10557d8a7e954c5496ba5e4b60
+#EXTINF:-1 group-title="14/11/2026 | Eurobasket Femenino Fase de Clasificación" tvg-name="18:00 - Bulgaria vs España (Teledeporte) (HD) (c7d)",18:00 - Bulgaria vs España (Teledeporte) (HD) (c7d)
+http://127.0.0.1:6878/ace/getstream?id=c7d8405bdef3650b9bac58042c3708440ef286a8
+#EXTINF:-1 group-title="14/11/2026 | Eurobasket Femenino Fase de Clasificación" tvg-name="18:00 - Bulgaria vs España (Teledeporte) (FHD) (f60)",18:00 - Bulgaria vs España (Teledeporte) (FHD) (f60)
+http://127.0.0.1:6878/ace/getstream?id=f608f9cb7099d94172739494e8864e8b5b6a4360
+#EXTINF:-1 group-title="14/11/2026 | Eurobasket Femenino Fase de Clasificación" tvg-name="18:00 - Bulgaria vs España (Teledeporte) (FHD) (f80)",18:00 - Bulgaria vs España (Teledeporte) (FHD) (f80)
+http://127.0.0.1:6878/ace/getstream?id=f80b9184bdd16a335d523ea3ea15b8e9a1c3bbcc
+#EXTINF:-1 group-title="14/11/2026 | Liga Endesa Liga Regular" tvg-name="18:00 - Río Breogán vs San Pablo Burgos (DAZN Baloncesto) (HD) (803)",18:00 - Río Breogán vs San Pablo Burgos (DAZN Baloncesto) (HD) (803)
+http://127.0.0.1:6878/ace/getstream?id=8033aae52386138bac76bd7a16b8c1ab67bcd679
+#EXTINF:-1 group-title="14/11/2026 | Liga Endesa Liga Regular" tvg-name="18:00 - Río Breogán vs San Pablo Burgos (DAZN Baloncesto) (FHD) (f46)",18:00 - Río Breogán vs San Pablo Burgos (DAZN Baloncesto) (FHD) (f46)
+http://127.0.0.1:6878/ace/getstream?id=f460b9c1b77222ac21b0e148f2b2c07791ce2d5d
+#EXTINF:-1 group-title="14/11/2026 | Liga F" tvg-name="18:00 - Alavés Femenino vs Eibar Femenino (M+ Vamos 3) (FHD) (8d7)",18:00 - Alavés Femenino vs Eibar Femenino (M+ Vamos 3) (FHD) (8d7)
+http://127.0.0.1:6878/ace/getstream?id=8d752ceceaa26b063d8edfa9c70352ada62c424d
+#EXTINF:-1 group-title="14/11/2026 | Primera Federación Grupo 2" tvg-name="18:30 - CE Europa vs Sant Andreu (Esport3) (HD) (ff1)",18:30 - CE Europa vs Sant Andreu (Esport3) (HD) (ff1)
+http://127.0.0.1:6878/ace/getstream?id=ff162bf69c1579edf953bf76933c80b1c7e893d0
+#EXTINF:-1 group-title="14/11/2026 | Primera Federación Grupo 2" tvg-name="18:30 - CE Europa vs Sant Andreu (Esport3) (FHD) (1aa)",18:30 - CE Europa vs Sant Andreu (Esport3) (FHD) (1aa)
+http://127.0.0.1:6878/ace/getstream?id=1aacd162a6e6fcd06216da5a39ebe335ad2a97b4
+#EXTINF:-1 group-title="14/11/2026 | Liga ASOBAL" tvg-name="19:00 - BM Logroño La Rioja vs BM Granollers (Eurosport 2) (HD) (be1)",19:00 - BM Logroño La Rioja vs BM Granollers (Eurosport 2) (HD) (be1)
+http://127.0.0.1:6878/ace/getstream?id=be1ab9f792dac014fc3ce8e7a52e6bdd92bea6c6
+#EXTINF:-1 group-title="14/11/2026 | Liga ASOBAL" tvg-name="19:00 - BM Logroño La Rioja vs BM Granollers (Eurosport 2) (FHD) (f23)",19:00 - BM Logroño La Rioja vs BM Granollers (Eurosport 2) (FHD) (f23)
+http://127.0.0.1:6878/ace/getstream?id=f23811d7cebed9847ae7497bb082c1052d11b0b1
+#EXTINF:-1 group-title="14/11/2026 | Liga ASOBAL" tvg-name="19:00 - BM Logroño La Rioja vs BM Granollers (Eurosport 2) (FHD) (dcc)",19:00 - BM Logroño La Rioja vs BM Granollers (Eurosport 2) (FHD) (dcc)
+http://127.0.0.1:6878/ace/getstream?id=dcc3be2e16b61b10557d8a7e954c5496ba5e4b60
+#EXTINF:-1 group-title="14/11/2026 | Liga Endesa Liga Regular" tvg-name="19:30 - MoraBanc Andorra vs La Laguna Tenerife (DAZN Baloncesto 2) (HD) (09e)",19:30 - MoraBanc Andorra vs La Laguna Tenerife (DAZN Baloncesto 2) (HD) (09e)
+http://127.0.0.1:6878/ace/getstream?id=09ee8afc1d9b468d3b470c682cfcacd58a95e273
+#EXTINF:-1 group-title="14/11/2026 | Liga F" tvg-name="20:30 - Real Madrid Femenino vs FC Badalona Women (Teledeporte) (HD) (c7d)",20:30 - Real Madrid Femenino vs FC Badalona Women (Teledeporte) (HD) (c7d)
+http://127.0.0.1:6878/ace/getstream?id=c7d8405bdef3650b9bac58042c3708440ef286a8
+#EXTINF:-1 group-title="14/11/2026 | Liga F" tvg-name="20:30 - Real Madrid Femenino vs FC Badalona Women (Teledeporte) (FHD) (f60)",20:30 - Real Madrid Femenino vs FC Badalona Women (Teledeporte) (FHD) (f60)
+http://127.0.0.1:6878/ace/getstream?id=f608f9cb7099d94172739494e8864e8b5b6a4360
+#EXTINF:-1 group-title="14/11/2026 | Liga F" tvg-name="20:30 - Real Madrid Femenino vs FC Badalona Women (Teledeporte) (FHD) (f80)",20:30 - Real Madrid Femenino vs FC Badalona Women (Teledeporte) (FHD) (f80)
+http://127.0.0.1:6878/ace/getstream?id=f80b9184bdd16a335d523ea3ea15b8e9a1c3bbcc
+#EXTINF:-1 group-title="14/11/2026 | Liga F" tvg-name="20:30 - Real Madrid Femenino vs FC Badalona Women (Esport3) (HD) (ff1)",20:30 - Real Madrid Femenino vs FC Badalona Women (Esport3) (HD) (ff1)
+http://127.0.0.1:6878/ace/getstream?id=ff162bf69c1579edf953bf76933c80b1c7e893d0
+#EXTINF:-1 group-title="14/11/2026 | Liga F" tvg-name="20:30 - Real Madrid Femenino vs FC Badalona Women (Esport3) (FHD) (1aa)",20:30 - Real Madrid Femenino vs FC Badalona Women (Esport3) (FHD) (1aa)
+http://127.0.0.1:6878/ace/getstream?id=1aacd162a6e6fcd06216da5a39ebe335ad2a97b4
+#EXTINF:-1 group-title="14/11/2026 | WTA Finals" tvg-name="21:00 - Final (Tennis Channel) (FHD) (694)",21:00 - Final (Tennis Channel) (FHD) (694)
+http://127.0.0.1:6878/ace/getstream?id=6945bf402126a38905b2645d61f9915a3b5a8b09
+#EXTINF:-1 group-title="14/11/2026 | Liga Endesa Liga Regular" tvg-name="21:00 - Joventut Badalona vs Casademont Zaragoza (DAZN Baloncesto 3) (HD) (8e2)",21:00 - Joventut Badalona vs Casademont Zaragoza (DAZN Baloncesto 3) (HD) (8e2)
+http://127.0.0.1:6878/ace/getstream?id=8e2f1e1f1fdc8e7d324dc931a6fb65fc4d1a71da
+#EXTINF:-1 group-title="14/11/2026 | Liga Endesa Liga Regular" tvg-name="21:00 - Joventut Badalona vs Casademont Zaragoza (DAZN Baloncesto 3) (FHD) (0ca)",21:00 - Joventut Badalona vs Casademont Zaragoza (DAZN Baloncesto 3) (FHD) (0ca)
+http://127.0.0.1:6878/ace/getstream?id=0ca08fccd1d403b33a6eca52f9a0b6215140e162
