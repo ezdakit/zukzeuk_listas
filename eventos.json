@@ -1,7 +1,7 @@
 {
   "fuente": "futbolenlatv.es/deporte",
-  "elcano_cid": "QmP8DefY7anQSQcrUrCFZEoQEDAxPykBsewDpsK1QjqMdN",
-  "generado_utc": "2026-11-14T11:36:49+00:00",
+  "elcano_cid": "QmXZnVibLMqjSTrdzbEURd1zQbSXzRbddKF4xPoJwprfEt",
+  "generado_utc": "2026-11-14T18:16:18+00:00",
   "agenda": [
     {
       "fecha": "14/11/2026",
@@ -2085,6 +2085,9 @@
       "partido": "Sestao River vs Recreativo Huelva",
       "canales": [
         "RFEF.es",
+        "Canalcosta TV (Huelva)",
+        "Teleonuba (Huelva)",
+        "Condavisión (Huelva)",
         "RFEF TV YouTube"
       ],
       "local": "Sestao River",
@@ -2367,19 +2370,6 @@
     {
       "fecha": "14/11/2026",
       "hora": "20:30",
-      "competicion": "Intercontinental Futsal Cup Fase de grupos",
-      "partido": "Carlos Barbosa vs Bintang Timur Surabaya",
-      "canales": [
-        "DAZN (Ver en directo)",
-        "DAZN App Gratis (Ver gratis)"
-      ],
-      "local": "Carlos Barbosa",
-      "visitante": "Bintang Timur Surabaya",
-      "canales_equivalencia": []
-    },
-    {
-      "fecha": "14/11/2026",
-      "hora": "20:30",
       "competicion": "Liga AUF Uruguaya",
       "partido": "Deportivo Maldonado vs CA Cerro",
       "canales": [
@@ -2481,16 +2471,31 @@
     {
       "fecha": "14/11/2026",
       "hora": "21:00",
-      "competicion": "WTA Finals",
-      "partido": "Semifinal 1",
+      "competicion": "WTA Finals Semifinal 1",
+      "partido": "J. Pegula vs M. Andreeva",
       "canales": [
         "WTA TV",
         "Tennis Channel - Orange TV (131)",
         "Amazon Prime Video (Ver en directo)"
       ],
+      "local": "J. Pegula",
+      "visitante": "M. Andreeva",
       "canales_equivalencia": [
         "Tennis Channel - Orange TV (131)"
       ]
+    },
+    {
+      "fecha": "14/11/2026",
+      "hora": "21:00",
+      "competicion": "Intercontinental Futsal Cup Fase de grupos",
+      "partido": "Carlos Barbosa vs Bintang Timur Surabaya",
+      "canales": [
+        "DAZN (Ver en directo)",
+        "DAZN App Gratis (Ver gratis)"
+      ],
+      "local": "Carlos Barbosa",
+      "visitante": "Bintang Timur Surabaya",
+      "canales_equivalencia": []
     },
     {
       "fecha": "14/11/2026",
@@ -2757,13 +2762,15 @@
     {
       "fecha": "14/11/2026",
       "hora": "22:30",
-      "competicion": "WTA Finals",
-      "partido": "Semifinal 2",
+      "competicion": "WTA Finals Semifinal 2",
+      "partido": "L. Noskova vs E. Svitolina",
       "canales": [
         "WTA TV",
         "Tennis Channel - Orange TV (131)",
         "Amazon Prime Video (Ver en directo)"
       ],
+      "local": "L. Noskova",
+      "visitante": "E. Svitolina",
       "canales_equivalencia": [
         "Tennis Channel - Orange TV (131)"
       ]
@@ -2790,19 +2797,6 @@
       ],
       "local": "Mirassol",
       "visitante": "Atlético Mineiro",
-      "canales_equivalencia": []
-    },
-    {
-      "fecha": "14/11/2026",
-      "hora": "23:00",
-      "competicion": "Intercontinental Futsal Cup Fase de grupos",
-      "partido": "Pato Futsal vs Al-Ula FS",
-      "canales": [
-        "DAZN (Ver en directo)",
-        "DAZN App Gratis (Ver gratis)"
-      ],
-      "local": "Pato Futsal",
-      "visitante": "Al-Ula FS",
       "canales_equivalencia": []
     },
     {
@@ -2887,6 +2881,19 @@
       ],
       "local": "Chapecoense",
       "visitante": "Vasco da Gama",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "15/11/2026",
+      "hora": "01:00",
+      "competicion": "Intercontinental Futsal Cup Fase de grupos",
+      "partido": "Pato Futsal vs Al-Ula FS",
+      "canales": [
+        "DAZN (Ver en directo)",
+        "DAZN App Gratis (Ver gratis)"
+      ],
+      "local": "Pato Futsal",
+      "visitante": "Al-Ula FS",
       "canales_equivalencia": []
     },
     {
@@ -5177,19 +5184,6 @@
     {
       "fecha": "15/11/2026",
       "hora": "20:30",
-      "competicion": "Intercontinental Futsal Cup Fase de grupos",
-      "partido": "Sporting CP FS vs Bintang Timur Surabaya",
-      "canales": [
-        "DAZN (Ver en directo)",
-        "DAZN App Gratis (Ver gratis)"
-      ],
-      "local": "Sporting CP FS",
-      "visitante": "Bintang Timur Surabaya",
-      "canales_equivalencia": []
-    },
-    {
-      "fecha": "15/11/2026",
-      "hora": "20:30",
       "competicion": "ATP Finals Round Robin",
       "partido": "B. Shelton vs A. Fils",
       "canales": [
@@ -5284,6 +5278,19 @@
       "canales_equivalencia": [
         "Tennis Channel - Orange TV (131)"
       ]
+    },
+    {
+      "fecha": "15/11/2026",
+      "hora": "21:00",
+      "competicion": "Intercontinental Futsal Cup Fase de grupos",
+      "partido": "Sporting CP FS vs Bintang Timur Surabaya",
+      "canales": [
+        "DAZN (Ver en directo)",
+        "DAZN App Gratis (Ver gratis)"
+      ],
+      "local": "Sporting CP FS",
+      "visitante": "Bintang Timur Surabaya",
+      "canales_equivalencia": []
     },
     {
       "fecha": "15/11/2026",
@@ -5431,20 +5438,6 @@
     {
       "fecha": "15/11/2026",
       "hora": "23:00",
-      "competicion": "Intercontinental Futsal Cup Fase de grupos",
-      "partido": "Palma Futsal vs Al-Ula FS",
-      "canales": [
-        "Esports IB3 YouTube",
-        "DAZN (Ver en directo)",
-        "DAZN App Gratis (Ver gratis)"
-      ],
-      "local": "Palma Futsal",
-      "visitante": "Al-Ula FS",
-      "canales_equivalencia": []
-    },
-    {
-      "fecha": "15/11/2026",
-      "hora": "23:00",
       "competicion": "NBA Liga Regular",
       "partido": "Utah Jazz vs San Antonio Spurs",
       "canales": [
@@ -5458,6 +5451,20 @@
         "NBA League Pass",
         "DAZN Baloncesto 2 (M75 O127)"
       ]
+    },
+    {
+      "fecha": "16/11/2026",
+      "hora": "00:00",
+      "competicion": "Intercontinental Futsal Cup Fase de grupos",
+      "partido": "Palma Futsal vs Al-Ula FS",
+      "canales": [
+        "Esports IB3 YouTube",
+        "DAZN (Ver en directo)",
+        "DAZN App Gratis (Ver gratis)"
+      ],
+      "local": "Palma Futsal",
+      "visitante": "Al-Ula FS",
+      "canales_equivalencia": []
     },
     {
       "fecha": "16/11/2026",
