@@ -1,7 +1,7 @@
 {
   "fuente": "futbolenlatv.es/deporte",
-  "elcano_cid": "QmWkXGiu2y7w99f3qCtiWZXardnDoveSMy8g5F3JwKgUPf",
-  "generado_utc": "2026-11-15T06:48:49+00:00",
+  "elcano_cid": "QmfBUAXEBSxmsB2PJQ3GL58qjeDxc4WcYz2ZrwXxYehwYY",
+  "generado_utc": "2026-11-15T15:43:19+00:00",
   "agenda": [
     {
       "fecha": "15/11/2026",
@@ -751,7 +751,8 @@
       "partido": "Valencia Basket vs Básquet Coruña",
       "canales": [
         "DAZN (Ver en directo)",
-        "DAZN Baloncesto 2 (M75 O127)"
+        "DAZN Baloncesto 2 (M75 O127)",
+        "TV Galicia"
       ],
       "local": "Valencia Basket",
       "visitante": "Básquet Coruña",
@@ -2389,7 +2390,8 @@
       "competicion": "UEFA Nations League Fase de grupos",
       "partido": "Francia vs Turquía",
       "canales": [
-        "DAZN (Ver en directo)"
+        "DAZN (Ver en directo)",
+        "LaLiga TV Bar"
       ],
       "local": "Francia",
       "visitante": "Turquía",
@@ -2413,13 +2415,15 @@
     {
       "fecha": "15/11/2026",
       "hora": "21:00",
-      "competicion": "WTA Finals",
-      "partido": "Final",
+      "competicion": "WTA Finals Final",
+      "partido": "E. Svitolina vs M. Andreeva",
       "canales": [
         "WTA TV",
         "Tennis Channel - Orange TV (131)",
         "Amazon Prime Video (Ver en directo)"
       ],
+      "local": "E. Svitolina",
+      "visitante": "M. Andreeva",
       "canales_equivalencia": [
         "Tennis Channel - Orange TV (131)"
       ]
@@ -3625,6 +3629,30 @@
     {
       "fecha": "17/11/2026",
       "hora": "18:00",
+      "competicion": "FIBA Europe Cup Liga Regular",
+      "partido": "Denizli Basket vs Benfica CB",
+      "canales": [
+        "FIBA YouTube"
+      ],
+      "local": "Denizli Basket",
+      "visitante": "Benfica CB",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "17/11/2026",
+      "hora": "18:00",
+      "competicion": "FIBA Europe Cup Liga Regular",
+      "partido": "AO Mykonos vs Fribourg Olympic",
+      "canales": [
+        "FIBA YouTube"
+      ],
+      "local": "AO Mykonos",
+      "visitante": "Fribourg Olympic",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "17/11/2026",
+      "hora": "18:00",
       "competicion": "Euroliga Liga Regular",
       "partido": "Maccabi Tel Aviv BC vs Olympiacos Piraeus",
       "canales": [
@@ -3635,6 +3663,18 @@
       "canales_equivalencia": [
         "M+ Baloncesto 3 (M194)"
       ]
+    },
+    {
+      "fecha": "17/11/2026",
+      "hora": "18:30",
+      "competicion": "FIBA Europe Cup Liga Regular",
+      "partido": "BC Kalev Cramo vs Valmiera Glass Via",
+      "canales": [
+        "FIBA YouTube"
+      ],
+      "local": "BC Kalev Cramo",
+      "visitante": "Valmiera Glass Via",
+      "canales_equivalencia": []
     },
     {
       "fecha": "17/11/2026",
@@ -3783,6 +3823,18 @@
     {
       "fecha": "17/11/2026",
       "hora": "19:00",
+      "competicion": "FIBA Europe Cup Liga Regular",
+      "partido": "S. Oliver Baskets vs Iraklis BC",
+      "canales": [
+        "FIBA YouTube"
+      ],
+      "local": "S. Oliver Baskets",
+      "visitante": "Iraklis BC",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "17/11/2026",
+      "hora": "19:00",
       "competicion": "Euroliga Liga Regular",
       "partido": "Fenerbahce Istanbul vs ASVEL Lyon-Villeurbanne",
       "canales": [
@@ -3810,7 +3862,7 @@
       "competicion": "FIBA Europe Cup Liga Regular",
       "partido": "Basquet Girona vs Filou Oostende",
       "canales": [
-        "Canal por confirmar"
+        "FIBA YouTube"
       ],
       "local": "Basquet Girona",
       "visitante": "Filou Oostende",
@@ -3886,6 +3938,30 @@
       ],
       "local": "Santa Lucía",
       "visitante": "Barbados",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "17/11/2026",
+      "hora": "20:00",
+      "competicion": "FIBA Europe Cup Liga Regular",
+      "partido": "Elan Chalon vs Manisa BBSK",
+      "canales": [
+        "FIBA YouTube"
+      ],
+      "local": "Elan Chalon",
+      "visitante": "Manisa BBSK",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "17/11/2026",
+      "hora": "20:00",
+      "competicion": "FIBA Europe Cup Liga Regular",
+      "partido": "SLUC Nancy vs BC Parnu Sadam",
+      "canales": [
+        "FIBA YouTube"
+      ],
+      "local": "SLUC Nancy",
+      "visitante": "BC Parnu Sadam",
       "canales_equivalencia": []
     },
     {
