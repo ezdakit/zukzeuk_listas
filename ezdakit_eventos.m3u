@@ -1,46 +1,6 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="16/11/2026 | NFL Liga Regular" tvg-name="02:20 - Cincinnati Bengals vs Pittsburgh Steelers (DAZN 2) (HD) (27e)",02:20 - Cincinnati Bengals vs Pittsburgh Steelers (DAZN 2) (HD) (27e)
-http://127.0.0.1:6878/ace/getstream?id=27ed8f532a68301bff62becf01769bb524904814
-#EXTINF:-1 group-title="16/11/2026 | NFL Liga Regular" tvg-name="02:20 - Cincinnati Bengals vs Pittsburgh Steelers (DAZN 2) (FHD) (58c)",02:20 - Cincinnati Bengals vs Pittsburgh Steelers (DAZN 2) (FHD) (58c)
-http://127.0.0.1:6878/ace/getstream?id=58c58cafc992a03557965efaaa8be0a380135115
-#EXTINF:-1 group-title="16/11/2026 | NFL Liga Regular" tvg-name="02:20 - Cincinnati Bengals vs Pittsburgh Steelers (DAZN 2) (FHD) (e74)",02:20 - Cincinnati Bengals vs Pittsburgh Steelers (DAZN 2) (FHD) (e74)
-http://127.0.0.1:6878/ace/getstream?id=e748e196d4f26edd7e743cd0d901bfc23d807794
-#EXTINF:-1 group-title="16/11/2026 | ATP Finals Round Robin" tvg-name="14:10 - C. Alcaraz vs F. Tiafoe (MOVISTAR PLUS) (HD) (44d)",14:10 - C. Alcaraz vs F. Tiafoe (MOVISTAR PLUS) (HD) (44d)
-http://127.0.0.1:6878/ace/getstream?id=44dea2aa000e29b059f9c42471204d70e7436403
-#EXTINF:-1 group-title="16/11/2026 | ATP Finals Round Robin" tvg-name="14:10 - C. Alcaraz vs F. Tiafoe (MOVISTAR PLUS) (FHD) (423)",14:10 - C. Alcaraz vs F. Tiafoe (MOVISTAR PLUS) (FHD) (423)
-http://127.0.0.1:6878/ace/getstream?id=423d84a999fde31dd1cebad55a55ae7160664b21
-#EXTINF:-1 group-title="16/11/2026 | ATP Finals Round Robin" tvg-name="14:10 - C. Alcaraz vs F. Tiafoe (MOVISTAR PLUS) (FHD) (0b0)",14:10 - C. Alcaraz vs F. Tiafoe (MOVISTAR PLUS) (FHD) (0b0)
-http://127.0.0.1:6878/ace/getstream?id=0b05fa66cfd62f9d4f686ff42f0c52ff3196a9fa
-#EXTINF:-1 group-title="16/11/2026 | ATP Finals Round Robin" tvg-name="14:10 - C. Alcaraz vs F. Tiafoe (M+ Deportes 2) (HD) (71e)",14:10 - C. Alcaraz vs F. Tiafoe (M+ Deportes 2) (HD) (71e)
-http://127.0.0.1:6878/ace/getstream?id=71e56f0315a20d87c3c472dcfbe4cc2c875db090
-#EXTINF:-1 group-title="16/11/2026 | ATP Finals Round Robin" tvg-name="14:10 - C. Alcaraz vs F. Tiafoe (M+ Deportes 2) (HD) (592)",14:10 - C. Alcaraz vs F. Tiafoe (M+ Deportes 2) (HD) (592)
-http://127.0.0.1:6878/ace/getstream?id=592c427008038847d6486daa7c3afd7a72f447da
-#EXTINF:-1 group-title="16/11/2026 | ATP Finals Round Robin" tvg-name="14:10 - C. Alcaraz vs F. Tiafoe (M+ Deportes 2) (FHD) (fb4)",14:10 - C. Alcaraz vs F. Tiafoe (M+ Deportes 2) (FHD) (fb4)
-http://127.0.0.1:6878/ace/getstream?id=fb4bb73e23b7b24625cc7932f2ff3f7343a43810
-#EXTINF:-1 group-title="16/11/2026 | ATP Finals Round Robin" tvg-name="14:10 - C. Alcaraz vs F. Tiafoe (M+ Deportes 2) (FHD) (ac6)",14:10 - C. Alcaraz vs F. Tiafoe (M+ Deportes 2) (FHD) (ac6)
-http://127.0.0.1:6878/ace/getstream?id=ac66efa6cf24464dcc7f94049775ae580d7ba569
-#EXTINF:-1 group-title="16/11/2026 | ATP Finals Round Robin" tvg-name="20:30 - D. Medvedev vs F. Cobolli (M+ Deportes 2) (HD) (71e)",20:30 - D. Medvedev vs F. Cobolli (M+ Deportes 2) (HD) (71e)
-http://127.0.0.1:6878/ace/getstream?id=71e56f0315a20d87c3c472dcfbe4cc2c875db090
-#EXTINF:-1 group-title="16/11/2026 | ATP Finals Round Robin" tvg-name="20:30 - D. Medvedev vs F. Cobolli (M+ Deportes 2) (HD) (592)",20:30 - D. Medvedev vs F. Cobolli (M+ Deportes 2) (HD) (592)
-http://127.0.0.1:6878/ace/getstream?id=592c427008038847d6486daa7c3afd7a72f447da
-#EXTINF:-1 group-title="16/11/2026 | ATP Finals Round Robin" tvg-name="20:30 - D. Medvedev vs F. Cobolli (M+ Deportes 2) (FHD) (fb4)",20:30 - D. Medvedev vs F. Cobolli (M+ Deportes 2) (FHD) (fb4)
-http://127.0.0.1:6878/ace/getstream?id=fb4bb73e23b7b24625cc7932f2ff3f7343a43810
-#EXTINF:-1 group-title="16/11/2026 | ATP Finals Round Robin" tvg-name="20:30 - D. Medvedev vs F. Cobolli (M+ Deportes 2) (FHD) (ac6)",20:30 - D. Medvedev vs F. Cobolli (M+ Deportes 2) (FHD) (ac6)
-http://127.0.0.1:6878/ace/getstream?id=ac66efa6cf24464dcc7f94049775ae580d7ba569
-#EXTINF:-1 group-title="16/11/2026 | LaLiga Hypermotion" tvg-name="20:30 - Albacete vs Celta B (LaLiga TV Hypermotion) (HD) (e3c)",20:30 - Albacete vs Celta B (LaLiga TV Hypermotion) (HD) (e3c)
-http://127.0.0.1:6878/ace/getstream?id=e3cb35599c8908ae94163fdf1164784bd547b1b6
-#EXTINF:-1 group-title="16/11/2026 | LaLiga Hypermotion" tvg-name="20:30 - Albacete vs Celta B (LaLiga TV Hypermotion) (HD) (c1b)",20:30 - Albacete vs Celta B (LaLiga TV Hypermotion) (HD) (c1b)
-http://127.0.0.1:6878/ace/getstream?id=c1b4a8596b0b1ec04741aec78a61e9052da2ec57
-#EXTINF:-1 group-title="16/11/2026 | LaLiga Hypermotion" tvg-name="20:30 - Albacete vs Celta B (LaLiga TV Hypermotion) (FHD) (d60)",20:30 - Albacete vs Celta B (LaLiga TV Hypermotion) (FHD) (d60)
-http://127.0.0.1:6878/ace/getstream?id=d6044509ec5c7c8670cf54accf2cc9b822f42807
-#EXTINF:-1 group-title="16/11/2026 | LaLiga Hypermotion" tvg-name="20:30 - Albacete vs Celta B (LaLiga TV Hypermotion) (FHD) (de0)",20:30 - Albacete vs Celta B (LaLiga TV Hypermotion) (FHD) (de0)
-http://127.0.0.1:6878/ace/getstream?id=de00099a1fc928f292bb92d62a0841ac7104e31c
-#EXTINF:-1 group-title="16/11/2026 | UEFA Nations League Fase de grupos" tvg-name="20:45 - Alemania vs Holanda (Teledeporte) (HD) (c7d)",20:45 - Alemania vs Holanda (Teledeporte) (HD) (c7d)
-http://127.0.0.1:6878/ace/getstream?id=c7d8405bdef3650b9bac58042c3708440ef286a8
-#EXTINF:-1 group-title="16/11/2026 | UEFA Nations League Fase de grupos" tvg-name="20:45 - Alemania vs Holanda (Teledeporte) (FHD) (81a)",20:45 - Alemania vs Holanda (Teledeporte) (FHD) (81a)
-http://127.0.0.1:6878/ace/getstream?id=81aead134bb63a51291d23e793fcddca981ee834
 #EXTINF:-1 group-title="17/11/2026 | Amistoso" tvg-name="01:00 - Argentina vs Costa Rica (M+ Vamos) (HD) (cdc)",01:00 - Argentina vs Costa Rica (M+ Vamos) (HD) (cdc)
 http://127.0.0.1:6878/ace/getstream?id=cdc332904a0f9be7db0328b0046c56ac1c0b73c9
 #EXTINF:-1 group-title="17/11/2026 | Amistoso" tvg-name="01:00 - Argentina vs Costa Rica (M+ Vamos) (HD) (7f3)",01:00 - Argentina vs Costa Rica (M+ Vamos) (HD) (7f3)
@@ -49,16 +9,60 @@ http://127.0.0.1:6878/ace/getstream?id=7f33dc6152f265be28b0292c5c5f4b9f457b9811
 http://127.0.0.1:6878/ace/getstream?id=85e526aae99c6c118d740e44710dcfece2c3a748
 #EXTINF:-1 group-title="17/11/2026 | Amistoso" tvg-name="01:00 - Argentina vs Costa Rica (M+ Vamos) (FHD) (1b0)",01:00 - Argentina vs Costa Rica (M+ Vamos) (FHD) (1b0)
 http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
+#EXTINF:-1 group-title="17/11/2026 | NBA Liga Regular" tvg-name="01:00 - Cleveland Cavaliers vs Chicago Bulls (NBA League Pass) (FHD) (2ee)",01:00 - Cleveland Cavaliers vs Chicago Bulls (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="17/11/2026 | NBA Liga Regular" tvg-name="01:00 - Cleveland Cavaliers vs Chicago Bulls (NBA League Pass) (FHD) (869)",01:00 - Cleveland Cavaliers vs Chicago Bulls (NBA League Pass) (FHD) (869)
+http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
+#EXTINF:-1 group-title="17/11/2026 | NBA Liga Regular" tvg-name="01:00 - Cleveland Cavaliers vs Chicago Bulls (NBA League Pass) (FHD) (093)",01:00 - Cleveland Cavaliers vs Chicago Bulls (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="17/11/2026 | NBA Liga Regular" tvg-name="01:00 - Boston Celtics vs Orlando Magic (NBA League Pass) (FHD) (2ee)",01:00 - Boston Celtics vs Orlando Magic (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="17/11/2026 | NBA Liga Regular" tvg-name="01:00 - Boston Celtics vs Orlando Magic (NBA League Pass) (FHD) (869)",01:00 - Boston Celtics vs Orlando Magic (NBA League Pass) (FHD) (869)
+http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
+#EXTINF:-1 group-title="17/11/2026 | NBA Liga Regular" tvg-name="01:00 - Boston Celtics vs Orlando Magic (NBA League Pass) (FHD) (093)",01:00 - Boston Celtics vs Orlando Magic (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="17/11/2026 | NBA Liga Regular" tvg-name="01:00 - Washington Wizards vs Memphis Grizzlies (NBA League Pass) (FHD) (2ee)",01:00 - Washington Wizards vs Memphis Grizzlies (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="17/11/2026 | NBA Liga Regular" tvg-name="01:00 - Washington Wizards vs Memphis Grizzlies (NBA League Pass) (FHD) (869)",01:00 - Washington Wizards vs Memphis Grizzlies (NBA League Pass) (FHD) (869)
+http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
+#EXTINF:-1 group-title="17/11/2026 | NBA Liga Regular" tvg-name="01:00 - Washington Wizards vs Memphis Grizzlies (NBA League Pass) (FHD) (093)",01:00 - Washington Wizards vs Memphis Grizzlies (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="17/11/2026 | NBA Liga Regular" tvg-name="01:30 - Miami Heat vs Houston Rockets (NBA League Pass) (FHD) (2ee)",01:30 - Miami Heat vs Houston Rockets (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="17/11/2026 | NBA Liga Regular" tvg-name="01:30 - Miami Heat vs Houston Rockets (NBA League Pass) (FHD) (869)",01:30 - Miami Heat vs Houston Rockets (NBA League Pass) (FHD) (869)
+http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
+#EXTINF:-1 group-title="17/11/2026 | NBA Liga Regular" tvg-name="01:30 - Miami Heat vs Houston Rockets (NBA League Pass) (FHD) (093)",01:30 - Miami Heat vs Houston Rockets (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="17/11/2026 | NBA Liga Regular" tvg-name="01:30 - Brooklyn Nets vs Philadelphia 76ers (NBA League Pass) (FHD) (2ee)",01:30 - Brooklyn Nets vs Philadelphia 76ers (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="17/11/2026 | NBA Liga Regular" tvg-name="01:30 - Brooklyn Nets vs Philadelphia 76ers (NBA League Pass) (FHD) (869)",01:30 - Brooklyn Nets vs Philadelphia 76ers (NBA League Pass) (FHD) (869)
+http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
+#EXTINF:-1 group-title="17/11/2026 | NBA Liga Regular" tvg-name="01:30 - Brooklyn Nets vs Philadelphia 76ers (NBA League Pass) (FHD) (093)",01:30 - Brooklyn Nets vs Philadelphia 76ers (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="17/11/2026 | NBA Liga Regular" tvg-name="02:00 - Minnesota Timberwolves vs Portland Trail Blazers (NBA League Pass) (FHD) (2ee)",02:00 - Minnesota Timberwolves vs Portland Trail Blazers (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="17/11/2026 | NBA Liga Regular" tvg-name="02:00 - Minnesota Timberwolves vs Portland Trail Blazers (NBA League Pass) (FHD) (869)",02:00 - Minnesota Timberwolves vs Portland Trail Blazers (NBA League Pass) (FHD) (869)
+http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
+#EXTINF:-1 group-title="17/11/2026 | NBA Liga Regular" tvg-name="02:00 - Minnesota Timberwolves vs Portland Trail Blazers (NBA League Pass) (FHD) (093)",02:00 - Minnesota Timberwolves vs Portland Trail Blazers (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="17/11/2026 | NBA Liga Regular" tvg-name="02:00 - New Orleans Pelicans vs Golden State Warriors (NBA League Pass) (FHD) (2ee)",02:00 - New Orleans Pelicans vs Golden State Warriors (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="17/11/2026 | NBA Liga Regular" tvg-name="02:00 - New Orleans Pelicans vs Golden State Warriors (NBA League Pass) (FHD) (869)",02:00 - New Orleans Pelicans vs Golden State Warriors (NBA League Pass) (FHD) (869)
+http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
+#EXTINF:-1 group-title="17/11/2026 | NBA Liga Regular" tvg-name="02:00 - New Orleans Pelicans vs Golden State Warriors (NBA League Pass) (FHD) (093)",02:00 - New Orleans Pelicans vs Golden State Warriors (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
 #EXTINF:-1 group-title="17/11/2026 | NFL Liga Regular" tvg-name="02:15 - Baltimore Ravens vs Los Angeles Chargers (DAZN 2) (HD) (27e)",02:15 - Baltimore Ravens vs Los Angeles Chargers (DAZN 2) (HD) (27e)
 http://127.0.0.1:6878/ace/getstream?id=27ed8f532a68301bff62becf01769bb524904814
-#EXTINF:-1 group-title="17/11/2026 | NFL Liga Regular" tvg-name="02:15 - Baltimore Ravens vs Los Angeles Chargers (DAZN 2) (FHD) (58c)",02:15 - Baltimore Ravens vs Los Angeles Chargers (DAZN 2) (FHD) (58c)
-http://127.0.0.1:6878/ace/getstream?id=58c58cafc992a03557965efaaa8be0a380135115
 #EXTINF:-1 group-title="17/11/2026 | NFL Liga Regular" tvg-name="02:15 - Baltimore Ravens vs Los Angeles Chargers (DAZN 2) (FHD) (e74)",02:15 - Baltimore Ravens vs Los Angeles Chargers (DAZN 2) (FHD) (e74)
 http://127.0.0.1:6878/ace/getstream?id=e748e196d4f26edd7e743cd0d901bfc23d807794
+#EXTINF:-1 group-title="17/11/2026 | NBA Liga Regular" tvg-name="03:00 - Denver Nuggets vs Phoenix Suns (NBA League Pass) (FHD) (2ee)",03:00 - Denver Nuggets vs Phoenix Suns (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="17/11/2026 | NBA Liga Regular" tvg-name="03:00 - Denver Nuggets vs Phoenix Suns (NBA League Pass) (FHD) (869)",03:00 - Denver Nuggets vs Phoenix Suns (NBA League Pass) (FHD) (869)
+http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
+#EXTINF:-1 group-title="17/11/2026 | NBA Liga Regular" tvg-name="03:00 - Denver Nuggets vs Phoenix Suns (NBA League Pass) (FHD) (093)",03:00 - Denver Nuggets vs Phoenix Suns (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
 #EXTINF:-1 group-title="17/11/2026 | ATP Finals Round Robin" tvg-name="14:00 - A. Fils vs R. Jódar (MOVISTAR PLUS) (HD) (44d)",14:00 - A. Fils vs R. Jódar (MOVISTAR PLUS) (HD) (44d)
 http://127.0.0.1:6878/ace/getstream?id=44dea2aa000e29b059f9c42471204d70e7436403
-#EXTINF:-1 group-title="17/11/2026 | ATP Finals Round Robin" tvg-name="14:00 - A. Fils vs R. Jódar (MOVISTAR PLUS) (FHD) (423)",14:00 - A. Fils vs R. Jódar (MOVISTAR PLUS) (FHD) (423)
-http://127.0.0.1:6878/ace/getstream?id=423d84a999fde31dd1cebad55a55ae7160664b21
 #EXTINF:-1 group-title="17/11/2026 | ATP Finals Round Robin" tvg-name="14:00 - A. Fils vs R. Jódar (MOVISTAR PLUS) (FHD) (0b0)",14:00 - A. Fils vs R. Jódar (MOVISTAR PLUS) (FHD) (0b0)
 http://127.0.0.1:6878/ace/getstream?id=0b05fa66cfd62f9d4f686ff42f0c52ff3196a9fa
 #EXTINF:-1 group-title="17/11/2026 | ATP Finals Round Robin" tvg-name="14:00 - A. Fils vs R. Jódar (M+ Deportes 2) (HD) (71e)",14:00 - A. Fils vs R. Jódar (M+ Deportes 2) (HD) (71e)
@@ -93,6 +97,36 @@ http://127.0.0.1:6878/ace/getstream?id=7f33dc6152f265be28b0292c5c5f4b9f457b9811
 http://127.0.0.1:6878/ace/getstream?id=85e526aae99c6c118d740e44710dcfece2c3a748
 #EXTINF:-1 group-title="17/11/2026 | Euroliga Liga Regular" tvg-name="20:30 - Barça Basket vs Paris Basketball (M+ Vamos) (FHD) (1b0)",20:30 - Barça Basket vs Paris Basketball (M+ Vamos) (FHD) (1b0)
 http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
+#EXTINF:-1 group-title="18/11/2026 | NBA Liga Regular" tvg-name="01:30 - Toronto Raptors vs New York Knicks (NBA League Pass) (FHD) (2ee)",01:30 - Toronto Raptors vs New York Knicks (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="18/11/2026 | NBA Liga Regular" tvg-name="01:30 - Toronto Raptors vs New York Knicks (NBA League Pass) (FHD) (869)",01:30 - Toronto Raptors vs New York Knicks (NBA League Pass) (FHD) (869)
+http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
+#EXTINF:-1 group-title="18/11/2026 | NBA Liga Regular" tvg-name="01:30 - Toronto Raptors vs New York Knicks (NBA League Pass) (FHD) (093)",01:30 - Toronto Raptors vs New York Knicks (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="18/11/2026 | NBA Liga Regular" tvg-name="02:00 - San Antonio Spurs vs Detroit Pistons (NBA League Pass) (FHD) (2ee)",02:00 - San Antonio Spurs vs Detroit Pistons (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="18/11/2026 | NBA Liga Regular" tvg-name="02:00 - San Antonio Spurs vs Detroit Pistons (NBA League Pass) (FHD) (869)",02:00 - San Antonio Spurs vs Detroit Pistons (NBA League Pass) (FHD) (869)
+http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
+#EXTINF:-1 group-title="18/11/2026 | NBA Liga Regular" tvg-name="02:00 - San Antonio Spurs vs Detroit Pistons (NBA League Pass) (FHD) (093)",02:00 - San Antonio Spurs vs Detroit Pistons (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="18/11/2026 | NBA Liga Regular" tvg-name="02:00 - Minnesota Timberwolves vs Portland Trail Blazers (NBA League Pass) (FHD) (2ee)",02:00 - Minnesota Timberwolves vs Portland Trail Blazers (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="18/11/2026 | NBA Liga Regular" tvg-name="02:00 - Minnesota Timberwolves vs Portland Trail Blazers (NBA League Pass) (FHD) (869)",02:00 - Minnesota Timberwolves vs Portland Trail Blazers (NBA League Pass) (FHD) (869)
+http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
+#EXTINF:-1 group-title="18/11/2026 | NBA Liga Regular" tvg-name="02:00 - Minnesota Timberwolves vs Portland Trail Blazers (NBA League Pass) (FHD) (093)",02:00 - Minnesota Timberwolves vs Portland Trail Blazers (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="18/11/2026 | NBA Liga Regular" tvg-name="04:30 - Los Angeles Clippers vs Utah Jazz (NBA League Pass) (FHD) (2ee)",04:30 - Los Angeles Clippers vs Utah Jazz (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="18/11/2026 | NBA Liga Regular" tvg-name="04:30 - Los Angeles Clippers vs Utah Jazz (NBA League Pass) (FHD) (869)",04:30 - Los Angeles Clippers vs Utah Jazz (NBA League Pass) (FHD) (869)
+http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
+#EXTINF:-1 group-title="18/11/2026 | NBA Liga Regular" tvg-name="04:30 - Los Angeles Clippers vs Utah Jazz (NBA League Pass) (FHD) (093)",04:30 - Los Angeles Clippers vs Utah Jazz (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="18/11/2026 | NBA Liga Regular" tvg-name="05:00 - Los Angeles Lakers vs Charlotte Hornets (NBA League Pass) (FHD) (2ee)",05:00 - Los Angeles Lakers vs Charlotte Hornets (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="18/11/2026 | NBA Liga Regular" tvg-name="05:00 - Los Angeles Lakers vs Charlotte Hornets (NBA League Pass) (FHD) (869)",05:00 - Los Angeles Lakers vs Charlotte Hornets (NBA League Pass) (FHD) (869)
+http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
+#EXTINF:-1 group-title="18/11/2026 | NBA Liga Regular" tvg-name="05:00 - Los Angeles Lakers vs Charlotte Hornets (NBA League Pass) (FHD) (093)",05:00 - Los Angeles Lakers vs Charlotte Hornets (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
 #EXTINF:-1 group-title="18/11/2026 | ATP Finals" tvg-name="14:00 - Round Robin (M+ Deportes 2) (HD) (71e)",14:00 - Round Robin (M+ Deportes 2) (HD) (71e)
 http://127.0.0.1:6878/ace/getstream?id=71e56f0315a20d87c3c472dcfbe4cc2c875db090
 #EXTINF:-1 group-title="18/11/2026 | ATP Finals" tvg-name="14:00 - Round Robin (M+ Deportes 2) (HD) (592)",14:00 - Round Robin (M+ Deportes 2) (HD) (592)
@@ -103,8 +137,6 @@ http://127.0.0.1:6878/ace/getstream?id=fb4bb73e23b7b24625cc7932f2ff3f7343a43810
 http://127.0.0.1:6878/ace/getstream?id=ac66efa6cf24464dcc7f94049775ae580d7ba569
 #EXTINF:-1 group-title="18/11/2026 | Euroliga Liga Regular" tvg-name="18:00 - Besiktas JK Istanbul vs Real Madrid Baloncesto (MOVISTAR PLUS) (HD) (44d)",18:00 - Besiktas JK Istanbul vs Real Madrid Baloncesto (MOVISTAR PLUS) (HD) (44d)
 http://127.0.0.1:6878/ace/getstream?id=44dea2aa000e29b059f9c42471204d70e7436403
-#EXTINF:-1 group-title="18/11/2026 | Euroliga Liga Regular" tvg-name="18:00 - Besiktas JK Istanbul vs Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (423)",18:00 - Besiktas JK Istanbul vs Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (423)
-http://127.0.0.1:6878/ace/getstream?id=423d84a999fde31dd1cebad55a55ae7160664b21
 #EXTINF:-1 group-title="18/11/2026 | Euroliga Liga Regular" tvg-name="18:00 - Besiktas JK Istanbul vs Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (0b0)",18:00 - Besiktas JK Istanbul vs Real Madrid Baloncesto (MOVISTAR PLUS) (FHD) (0b0)
 http://127.0.0.1:6878/ace/getstream?id=0b05fa66cfd62f9d4f686ff42f0c52ff3196a9fa
 #EXTINF:-1 group-title="18/11/2026 | Eurocup Liga Regular" tvg-name="18:30 - Olimpija Ljubljana vs San Pablo Burgos (M+ Vamos) (HD) (cdc)",18:30 - Olimpija Ljubljana vs San Pablo Burgos (M+ Vamos) (HD) (cdc)
@@ -123,3 +155,107 @@ http://127.0.0.1:6878/ace/getstream?id=81aead134bb63a51291d23e793fcddca981ee834
 http://127.0.0.1:6878/ace/getstream?id=c7d8405bdef3650b9bac58042c3708440ef286a8
 #EXTINF:-1 group-title="18/11/2026 | Basketball Champions League Liga Regular" tvg-name="20:30 - Unicaja Málaga vs KVIS Pardubice (Teledeporte) (FHD) (81a)",20:30 - Unicaja Málaga vs KVIS Pardubice (Teledeporte) (FHD) (81a)
 http://127.0.0.1:6878/ace/getstream?id=81aead134bb63a51291d23e793fcddca981ee834
+#EXTINF:-1 group-title="19/11/2026 | Serie A Brasil" tvg-name="00:30 - Cruzeiro vs Palmeiras (M+ Vamos) (HD) (cdc)",00:30 - Cruzeiro vs Palmeiras (M+ Vamos) (HD) (cdc)
+http://127.0.0.1:6878/ace/getstream?id=cdc332904a0f9be7db0328b0046c56ac1c0b73c9
+#EXTINF:-1 group-title="19/11/2026 | Serie A Brasil" tvg-name="00:30 - Cruzeiro vs Palmeiras (M+ Vamos) (HD) (7f3)",00:30 - Cruzeiro vs Palmeiras (M+ Vamos) (HD) (7f3)
+http://127.0.0.1:6878/ace/getstream?id=7f33dc6152f265be28b0292c5c5f4b9f457b9811
+#EXTINF:-1 group-title="19/11/2026 | Serie A Brasil" tvg-name="00:30 - Cruzeiro vs Palmeiras (M+ Vamos) (FHD) (85e)",00:30 - Cruzeiro vs Palmeiras (M+ Vamos) (FHD) (85e)
+http://127.0.0.1:6878/ace/getstream?id=85e526aae99c6c118d740e44710dcfece2c3a748
+#EXTINF:-1 group-title="19/11/2026 | Serie A Brasil" tvg-name="00:30 - Cruzeiro vs Palmeiras (M+ Vamos) (FHD) (1b0)",00:30 - Cruzeiro vs Palmeiras (M+ Vamos) (FHD) (1b0)
+http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="01:00 - Miami Heat vs Milwaukee Bucks (NBA League Pass) (FHD) (2ee)",01:00 - Miami Heat vs Milwaukee Bucks (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="01:00 - Miami Heat vs Milwaukee Bucks (NBA League Pass) (FHD) (869)",01:00 - Miami Heat vs Milwaukee Bucks (NBA League Pass) (FHD) (869)
+http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="01:00 - Miami Heat vs Milwaukee Bucks (NBA League Pass) (FHD) (093)",01:00 - Miami Heat vs Milwaukee Bucks (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="01:00 - Indiana Pacers vs Houston Rockets (NBA League Pass) (FHD) (2ee)",01:00 - Indiana Pacers vs Houston Rockets (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="01:00 - Indiana Pacers vs Houston Rockets (NBA League Pass) (FHD) (869)",01:00 - Indiana Pacers vs Houston Rockets (NBA League Pass) (FHD) (869)
+http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="01:00 - Indiana Pacers vs Houston Rockets (NBA League Pass) (FHD) (093)",01:00 - Indiana Pacers vs Houston Rockets (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="01:00 - Orlando Magic vs Philadelphia 76ers (NBA League Pass) (FHD) (2ee)",01:00 - Orlando Magic vs Philadelphia 76ers (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="01:00 - Orlando Magic vs Philadelphia 76ers (NBA League Pass) (FHD) (869)",01:00 - Orlando Magic vs Philadelphia 76ers (NBA League Pass) (FHD) (869)
+http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="01:00 - Orlando Magic vs Philadelphia 76ers (NBA League Pass) (FHD) (093)",01:00 - Orlando Magic vs Philadelphia 76ers (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="01:00 - Cleveland Cavaliers vs Memphis Grizzlies (NBA League Pass) (FHD) (2ee)",01:00 - Cleveland Cavaliers vs Memphis Grizzlies (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="01:00 - Cleveland Cavaliers vs Memphis Grizzlies (NBA League Pass) (FHD) (869)",01:00 - Cleveland Cavaliers vs Memphis Grizzlies (NBA League Pass) (FHD) (869)
+http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="01:00 - Cleveland Cavaliers vs Memphis Grizzlies (NBA League Pass) (FHD) (093)",01:00 - Cleveland Cavaliers vs Memphis Grizzlies (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="01:30 - Brooklyn Nets vs Chicago Bulls (NBA League Pass) (FHD) (2ee)",01:30 - Brooklyn Nets vs Chicago Bulls (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="01:30 - Brooklyn Nets vs Chicago Bulls (NBA League Pass) (FHD) (869)",01:30 - Brooklyn Nets vs Chicago Bulls (NBA League Pass) (FHD) (869)
+http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="01:30 - Brooklyn Nets vs Chicago Bulls (NBA League Pass) (FHD) (093)",01:30 - Brooklyn Nets vs Chicago Bulls (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="01:30 - Toronto Raptors vs Washington Wizards (NBA League Pass) (FHD) (2ee)",01:30 - Toronto Raptors vs Washington Wizards (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="01:30 - Toronto Raptors vs Washington Wizards (NBA League Pass) (FHD) (869)",01:30 - Toronto Raptors vs Washington Wizards (NBA League Pass) (FHD) (869)
+http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="01:30 - Toronto Raptors vs Washington Wizards (NBA League Pass) (FHD) (093)",01:30 - Toronto Raptors vs Washington Wizards (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="02:00 - New Orleans Pelicans vs Detroit Pistons (NBA League Pass) (FHD) (2ee)",02:00 - New Orleans Pelicans vs Detroit Pistons (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="02:00 - New Orleans Pelicans vs Detroit Pistons (NBA League Pass) (FHD) (869)",02:00 - New Orleans Pelicans vs Detroit Pistons (NBA League Pass) (FHD) (869)
+http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="02:00 - New Orleans Pelicans vs Detroit Pistons (NBA League Pass) (FHD) (093)",02:00 - New Orleans Pelicans vs Detroit Pistons (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="02:00 - Dallas Mavericks vs Golden State Warriors (NBA League Pass) (FHD) (2ee)",02:00 - Dallas Mavericks vs Golden State Warriors (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="02:00 - Dallas Mavericks vs Golden State Warriors (NBA League Pass) (FHD) (869)",02:00 - Dallas Mavericks vs Golden State Warriors (NBA League Pass) (FHD) (869)
+http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="02:00 - Dallas Mavericks vs Golden State Warriors (NBA League Pass) (FHD) (093)",02:00 - Dallas Mavericks vs Golden State Warriors (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="02:00 - Oklahoma C. Thunder vs Atlanta Hawks (NBA League Pass) (FHD) (2ee)",02:00 - Oklahoma C. Thunder vs Atlanta Hawks (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="02:00 - Oklahoma C. Thunder vs Atlanta Hawks (NBA League Pass) (FHD) (869)",02:00 - Oklahoma C. Thunder vs Atlanta Hawks (NBA League Pass) (FHD) (869)
+http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="02:00 - Oklahoma C. Thunder vs Atlanta Hawks (NBA League Pass) (FHD) (093)",02:00 - Oklahoma C. Thunder vs Atlanta Hawks (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="03:30 - Denver Nuggets vs Boston Celtics (NBA League Pass) (FHD) (2ee)",03:30 - Denver Nuggets vs Boston Celtics (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="03:30 - Denver Nuggets vs Boston Celtics (NBA League Pass) (FHD) (869)",03:30 - Denver Nuggets vs Boston Celtics (NBA League Pass) (FHD) (869)
+http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="03:30 - Denver Nuggets vs Boston Celtics (NBA League Pass) (FHD) (093)",03:30 - Denver Nuggets vs Boston Celtics (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="04:00 - Los Angeles Lakers vs Utah Jazz (NBA League Pass) (FHD) (2ee)",04:00 - Los Angeles Lakers vs Utah Jazz (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="04:00 - Los Angeles Lakers vs Utah Jazz (NBA League Pass) (FHD) (869)",04:00 - Los Angeles Lakers vs Utah Jazz (NBA League Pass) (FHD) (869)
+http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="04:00 - Los Angeles Lakers vs Utah Jazz (NBA League Pass) (FHD) (093)",04:00 - Los Angeles Lakers vs Utah Jazz (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="04:00 - Sacramento Kings vs Phoenix Suns (NBA League Pass) (FHD) (2ee)",04:00 - Sacramento Kings vs Phoenix Suns (NBA League Pass) (FHD) (2ee)
+http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="04:00 - Sacramento Kings vs Phoenix Suns (NBA League Pass) (FHD) (869)",04:00 - Sacramento Kings vs Phoenix Suns (NBA League Pass) (FHD) (869)
+http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
+#EXTINF:-1 group-title="19/11/2026 | NBA Liga Regular" tvg-name="04:00 - Sacramento Kings vs Phoenix Suns (NBA League Pass) (FHD) (093)",04:00 - Sacramento Kings vs Phoenix Suns (NBA League Pass) (FHD) (093)
+http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
+#EXTINF:-1 group-title="19/11/2026 | FIFA Mundial Sub-17 Fase de grupos" tvg-name="16:30 - Catar vs Panamá (Teledeporte) (HD) (c7d)",16:30 - Catar vs Panamá (Teledeporte) (HD) (c7d)
+http://127.0.0.1:6878/ace/getstream?id=c7d8405bdef3650b9bac58042c3708440ef286a8
+#EXTINF:-1 group-title="19/11/2026 | FIFA Mundial Sub-17 Fase de grupos" tvg-name="16:30 - Catar vs Panamá (Teledeporte) (FHD) (81a)",16:30 - Catar vs Panamá (Teledeporte) (FHD) (81a)
+http://127.0.0.1:6878/ace/getstream?id=81aead134bb63a51291d23e793fcddca981ee834
+#EXTINF:-1 group-title="19/11/2026 | Copa de la Reina 3ª Ronda" tvg-name="19:00 - Celta Femenino vs Espanyol Femenino (Teledeporte) (HD) (c7d)",19:00 - Celta Femenino vs Espanyol Femenino (Teledeporte) (HD) (c7d)
+http://127.0.0.1:6878/ace/getstream?id=c7d8405bdef3650b9bac58042c3708440ef286a8
+#EXTINF:-1 group-title="19/11/2026 | Copa de la Reina 3ª Ronda" tvg-name="19:00 - Celta Femenino vs Espanyol Femenino (Teledeporte) (FHD) (81a)",19:00 - Celta Femenino vs Espanyol Femenino (Teledeporte) (FHD) (81a)
+http://127.0.0.1:6878/ace/getstream?id=81aead134bb63a51291d23e793fcddca981ee834
+#EXTINF:-1 group-title="19/11/2026 | Euroliga Liga Regular" tvg-name="21:00 - Valencia Basket vs Virtus Bologna (M+ Vamos) (HD) (cdc)",21:00 - Valencia Basket vs Virtus Bologna (M+ Vamos) (HD) (cdc)
+http://127.0.0.1:6878/ace/getstream?id=cdc332904a0f9be7db0328b0046c56ac1c0b73c9
+#EXTINF:-1 group-title="19/11/2026 | Euroliga Liga Regular" tvg-name="21:00 - Valencia Basket vs Virtus Bologna (M+ Vamos) (HD) (7f3)",21:00 - Valencia Basket vs Virtus Bologna (M+ Vamos) (HD) (7f3)
+http://127.0.0.1:6878/ace/getstream?id=7f33dc6152f265be28b0292c5c5f4b9f457b9811
+#EXTINF:-1 group-title="19/11/2026 | Euroliga Liga Regular" tvg-name="21:00 - Valencia Basket vs Virtus Bologna (M+ Vamos) (FHD) (85e)",21:00 - Valencia Basket vs Virtus Bologna (M+ Vamos) (FHD) (85e)
+http://127.0.0.1:6878/ace/getstream?id=85e526aae99c6c118d740e44710dcfece2c3a748
+#EXTINF:-1 group-title="19/11/2026 | Euroliga Liga Regular" tvg-name="21:00 - Valencia Basket vs Virtus Bologna (M+ Vamos) (FHD) (1b0)",21:00 - Valencia Basket vs Virtus Bologna (M+ Vamos) (FHD) (1b0)
+http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
+#EXTINF:-1 group-title="19/11/2026 | Serie A Brasil" tvg-name="23:30 - Vasco da Gama vs Internacional (M+ Vamos) (HD) (cdc)",23:30 - Vasco da Gama vs Internacional (M+ Vamos) (HD) (cdc)
+http://127.0.0.1:6878/ace/getstream?id=cdc332904a0f9be7db0328b0046c56ac1c0b73c9
+#EXTINF:-1 group-title="19/11/2026 | Serie A Brasil" tvg-name="23:30 - Vasco da Gama vs Internacional (M+ Vamos) (HD) (7f3)",23:30 - Vasco da Gama vs Internacional (M+ Vamos) (HD) (7f3)
+http://127.0.0.1:6878/ace/getstream?id=7f33dc6152f265be28b0292c5c5f4b9f457b9811
+#EXTINF:-1 group-title="19/11/2026 | Serie A Brasil" tvg-name="23:30 - Vasco da Gama vs Internacional (M+ Vamos) (FHD) (85e)",23:30 - Vasco da Gama vs Internacional (M+ Vamos) (FHD) (85e)
+http://127.0.0.1:6878/ace/getstream?id=85e526aae99c6c118d740e44710dcfece2c3a748
+#EXTINF:-1 group-title="19/11/2026 | Serie A Brasil" tvg-name="23:30 - Vasco da Gama vs Internacional (M+ Vamos) (FHD) (1b0)",23:30 - Vasco da Gama vs Internacional (M+ Vamos) (FHD) (1b0)
+http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
