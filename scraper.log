@@ -1,4 +1,31 @@
 ================================================================================
+EJECUCIÓN 2026-11-17 13:37:00 UTC · 2026-11-17 14:37:00 Madrid
+================================================================================
+hashes.json
+  Estado:           DESCARGADO
+  Origen:           nodo IPFS local · clave 1 (k51qzi5uqu…) · CID QmXGf6WffTJyLCqJe3Tg53fULF4jKjUaVLRVUXTcFF8eGj
+  Fecha en el JSON: 2026-11-17T13:00:03Z
+  Entradas:         44 (campo 'count' del JSON: 44)
+
+equivalencias_canales.json
+  Estado:           DESCARGADO
+  Origen:           https://kiroideuno.pages.gay/equivalencias_canales.json
+  Fecha en el JSON: el fichero no incluye fecha
+  Canales (claves): 104 · subcanales: 109
+
+eventos (futbolenlatv.es)
+  Total extraídos:  238
+    17/11/2026: 100
+    18/11/2026: 84
+    19/11/2026: 54
+  ezdakit_eventos.m3u: 164 entradas · 58 eventos con streams
+    17/11/2026: 62 entradas · 23 eventos
+    18/11/2026: 44 entradas · 14 eventos
+    19/11/2026: 58 entradas · 21 eventos
+
+Resultado: OK · duración 7.1s
+
+================================================================================
 EJECUCIÓN 2026-11-17 02:59:07 UTC · 2026-11-17 03:59:07 Madrid
 ================================================================================
 hashes.json
@@ -510,27 +537,3 @@ eventos (futbolenlatv.es)
     12/11/2026: 24 entradas · 17 eventos
 
 Resultado: OK · duración 7.0s
-
-================================================================================
-EJECUCIÓN 2026-11-10 07:29:04 UTC · 2026-11-10 08:29:04 Madrid
-================================================================================
-hashes.json
-  Estado:           DESCARGADO
-  Origen:           nodo IPFS local · clave 1 (k51qzi5uqu…) · CID QmcAPN2yDStdjX1mdVca5uTA8k8Swc2qaY1khdVKdVaWSc
-  Fecha en el JSON: 2026-11-09T09:49:43Z
-  Entradas:         50 (campo 'count' del JSON: 50)
-
-equivalencias_canales.json
-  Estado:           DESCARGADO
-  Origen:           https://kiroideuno.pages.gay/equivalencias_canales.json
-  Fecha en el JSON: el fichero no incluye fecha
-  Canales (claves): 104 · subcanales: 109
-
-eventos (futbolenlatv.es)
-  Total extraídos:  171
-    10/11/2026: 51
-    11/11/2026: 60
-    12/11/2026: 60
-  ezdakit_eventos.m3u: 61 entradas · 41 eventos con streams
-
-Resultado: OK · duración 7.8s

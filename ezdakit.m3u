@@ -1,87 +1,91 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 tvg-id="DAZN 2 HD" tvg-name="DAZN 2 ** (HD) (E-27e)" group-title="DAZN",DAZN 2 ** (HD) (E-27e)
-http://127.0.0.1:6878/ace/getstream?id=27ed8f532a68301bff62becf01769bb524904814
-#EXTINF:-1 tvg-id="DAZN 2 HD" tvg-name="DAZN 2 ** (FHD) (E-e74)" group-title="DAZN",DAZN 2 ** (FHD) (E-e74)
-http://127.0.0.1:6878/ace/getstream?id=e748e196d4f26edd7e743cd0d901bfc23d807794
-#EXTINF:-1 tvg-id="Eurosport 1 HD" tvg-name="EUROSPORT 1 * (FHD) (E-fc8)" group-title="EUROSPORT",EUROSPORT 1 * (FHD) (E-fc8)
-http://127.0.0.1:6878/ace/getstream?id=fc81ec3decf1be2c5a84c5a5e22c69e5f153b862
-#EXTINF:-1 tvg-id="Eurosport 2" tvg-name="EUROSPORT 2 * (FHD) (E-add)" group-title="EUROSPORT",EUROSPORT 2 * (FHD) (E-add)
-http://127.0.0.1:6878/ace/getstream?id=add0d5369db46ef85d2183abcf71cb7c90195534
-#EXTINF:-1 tvg-id="LaLiga TV Hypermotion HD" tvg-name="LALIGA TV HYPERMOTION * (HD) (E-e3c)" group-title="HYPERMOTION",LALIGA TV HYPERMOTION * (HD) (E-e3c)
-http://127.0.0.1:6878/ace/getstream?id=e3cb35599c8908ae94163fdf1164784bd547b1b6
-#EXTINF:-1 tvg-id="LaLiga TV Hypermotion HD" tvg-name="LALIGA TV HYPERMOTION ** (HD) (E-c1b)" group-title="HYPERMOTION",LALIGA TV HYPERMOTION ** (HD) (E-c1b)
-http://127.0.0.1:6878/ace/getstream?id=c1b4a8596b0b1ec04741aec78a61e9052da2ec57
-#EXTINF:-1 tvg-id="LaLiga TV Hypermotion HD" tvg-name="LALIGA TV HYPERMOTION * (FHD) (E-d60)" group-title="HYPERMOTION",LALIGA TV HYPERMOTION * (FHD) (E-d60)
-http://127.0.0.1:6878/ace/getstream?id=d6044509ec5c7c8670cf54accf2cc9b822f42807
-#EXTINF:-1 tvg-id="LaLiga TV Hypermotion HD" tvg-name="LALIGA TV HYPERMOTION ** (FHD) (E-de0)" group-title="HYPERMOTION",LALIGA TV HYPERMOTION ** (FHD) (E-de0)
-http://127.0.0.1:6878/ace/getstream?id=de00099a1fc928f292bb92d62a0841ac7104e31c
-#EXTINF:-1 tvg-id="DAZN LaLiga HD" tvg-name="DAZN LALIGA * (FHD) (E-85b)" group-title="LA LIGA",DAZN LALIGA * (FHD) (E-85b)
-http://127.0.0.1:6878/ace/getstream?id=85b13e0d682d56e6976ed874a5526003bf21dca6
-#EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-name="M+ LALIGA * (HD) (E-424)" group-title="LA LIGA",M+ LALIGA * (HD) (E-424)
-http://127.0.0.1:6878/ace/getstream?id=4243ec2599770c2ed62c174c946def54dcd24980
-#EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-name="M+ LALIGA * (HD) (E-73b)" group-title="LA LIGA",M+ LALIGA * (HD) (E-73b)
-http://127.0.0.1:6878/ace/getstream?id=73b9678f76017acc06e6f9402a975517f3a9bd05
-#EXTINF:-1 tvg-id="M+ LaLiga HD" tvg-name="M+ LALIGA * (FHD) (E-913)" group-title="LA LIGA",M+ LALIGA * (FHD) (E-913)
-http://127.0.0.1:6878/ace/getstream?id=913a520ccaf1ef4a1ab73e146d0319d80d0c39da
-#EXTINF:-1 tvg-id="M+ LaLiga 2 HD" tvg-name="M+ LALIGA 2 * () (E-f32)" group-title="LA LIGA",M+ LALIGA 2 * () (E-f32)
-http://127.0.0.1:6878/ace/getstream?id=f32207b978456daa7e7c93b27a7758e6025990ea
-#EXTINF:-1 tvg-id="M+ Liga de Campeones HD" tvg-name="M+ LIGA DE CAMPEONES * (HD) (E-fb3)" group-title="LIGA DE CAMPEONES",M+ LIGA DE CAMPEONES * (HD) (E-fb3)
-http://127.0.0.1:6878/ace/getstream?id=fb3f3e9629ba9ae3a529a08cab752f47387593d5
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 2 HD" tvg-name="M+ LIGA DE CAMPEONES 2 * (FHD) (E-a86)" group-title="LIGA DE CAMPEONES",M+ LIGA DE CAMPEONES 2 * (FHD) (E-a86)
-http://127.0.0.1:6878/ace/getstream?id=a86b421d097f8c2b1886641b95d55827bb80b2c6
-#EXTINF:-1 tvg-id="M+ Liga de Campeones 3 HD" tvg-name="M+ LIGA DE CAMPEONES 3 * (FHD) (E-1ac)" group-title="LIGA DE CAMPEONES",M+ LIGA DE CAMPEONES 3 * (FHD) (E-1ac)
-http://127.0.0.1:6878/ace/getstream?id=1acd08b0f0461388f42203a643c7455a85f34082
-#EXTINF:-1 tvg-id="Movistar Plus+ HD" tvg-name="MOVISTAR PLUS * (HD) (E-44d)" group-title="MOVISTAR",MOVISTAR PLUS * (HD) (E-44d)
-http://127.0.0.1:6878/ace/getstream?id=44dea2aa000e29b059f9c42471204d70e7436403
-#EXTINF:-1 tvg-id="Movistar Plus+ HD" tvg-name="MOVISTAR PLUS ** (FHD) (E-0b0)" group-title="MOVISTAR",MOVISTAR PLUS ** (FHD) (E-0b0)
-http://127.0.0.1:6878/ace/getstream?id=0b05fa66cfd62f9d4f686ff42f0c52ff3196a9fa
-#EXTINF:-1 tvg-id="M+ Deportes HD" tvg-name="M+ DEPORTES * (HD) (E-3d2)" group-title="MOVISTAR DEPORTES",M+ DEPORTES * (HD) (E-3d2)
-http://127.0.0.1:6878/ace/getstream?id=3d225a957a38de94dcc6801538bbe6d1d185d8cc
-#EXTINF:-1 tvg-id="M+ Deportes HD" tvg-name="M+ DEPORTES * (FHD) (E-401)" group-title="MOVISTAR DEPORTES",M+ DEPORTES * (FHD) (E-401)
-http://127.0.0.1:6878/ace/getstream?id=4012a8533cc36eb6a648827fee85fe4a89325b44
-#EXTINF:-1 tvg-id="M+ Deportes 2 HD" tvg-name="M+ DEPORTES 2 * (HD) (E-71e)" group-title="MOVISTAR DEPORTES",M+ DEPORTES 2 * (HD) (E-71e)
-http://127.0.0.1:6878/ace/getstream?id=71e56f0315a20d87c3c472dcfbe4cc2c875db090
-#EXTINF:-1 tvg-id="M+ Deportes 2 HD" tvg-name="M+ DEPORTES 2 ** (HD) (E-592)" group-title="MOVISTAR DEPORTES",M+ DEPORTES 2 ** (HD) (E-592)
-http://127.0.0.1:6878/ace/getstream?id=592c427008038847d6486daa7c3afd7a72f447da
-#EXTINF:-1 tvg-id="M+ Deportes 2 HD" tvg-name="M+ DEPORTES 2 * (FHD) (E-fb4)" group-title="MOVISTAR DEPORTES",M+ DEPORTES 2 * (FHD) (E-fb4)
-http://127.0.0.1:6878/ace/getstream?id=fb4bb73e23b7b24625cc7932f2ff3f7343a43810
-#EXTINF:-1 tvg-id="M+ Deportes 2 HD" tvg-name="M+ DEPORTES 2 ** (FHD) (E-ac6)" group-title="MOVISTAR DEPORTES",M+ DEPORTES 2 ** (FHD) (E-ac6)
-http://127.0.0.1:6878/ace/getstream?id=ac66efa6cf24464dcc7f94049775ae580d7ba569
-#EXTINF:-1 tvg-id="M+ Deportes 3" tvg-name="M+ DEPORTES 3 * (HD) (E-96b)" group-title="MOVISTAR DEPORTES",M+ DEPORTES 3 * (HD) (E-96b)
-http://127.0.0.1:6878/ace/getstream?id=96bd8287edb64eb75a92e43aaf91b394842d19b9
-#EXTINF:-1 tvg-id="M+ Deportes 4" tvg-name="M+ DEPORTES 4 * (HD) (E-2f9)" group-title="MOVISTAR DEPORTES",M+ DEPORTES 4 * (HD) (E-2f9)
-http://127.0.0.1:6878/ace/getstream?id=2f9ae910bd7b5b43192fb2bd1cb41d8885d9af60
-#EXTINF:-1 tvg-id="M+ Deportes 5" tvg-name="M+ DEPORTES 5 * (FHD) (E-501)" group-title="MOVISTAR DEPORTES",M+ DEPORTES 5 * (FHD) (E-501)
-http://127.0.0.1:6878/ace/getstream?id=501412ab1917c2f5f3ab07b6923e1126b56a0419
-#EXTINF:-1 tvg-id="M+ Deportes 6" tvg-name="M+ DEPORTES 6 * (FHD) (E-fcf)" group-title="MOVISTAR DEPORTES",M+ DEPORTES 6 * (FHD) (E-fcf)
-http://127.0.0.1:6878/ace/getstream?id=fcf7f8fbce2316e6dc67568b3bed2601f189d3d3
-#EXTINF:-1 tvg-id="M+ Vamos HD" tvg-name="M+ VAMOS * (HD) (E-cdc)" group-title="MOVISTAR DEPORTES",M+ VAMOS * (HD) (E-cdc)
-http://127.0.0.1:6878/ace/getstream?id=cdc332904a0f9be7db0328b0046c56ac1c0b73c9
-#EXTINF:-1 tvg-id="M+ Vamos HD" tvg-name="M+ VAMOS ** (HD) (E-7f3)" group-title="MOVISTAR DEPORTES",M+ VAMOS ** (HD) (E-7f3)
-http://127.0.0.1:6878/ace/getstream?id=7f33dc6152f265be28b0292c5c5f4b9f457b9811
-#EXTINF:-1 tvg-id="M+ Vamos HD" tvg-name="M+ VAMOS * (FHD) (E-85e)" group-title="MOVISTAR DEPORTES",M+ VAMOS * (FHD) (E-85e)
-http://127.0.0.1:6878/ace/getstream?id=85e526aae99c6c118d740e44710dcfece2c3a748
-#EXTINF:-1 tvg-id="M+ Vamos HD" tvg-name="M+ VAMOS ** (FHD) (E-1b0)" group-title="MOVISTAR DEPORTES",M+ VAMOS ** (FHD) (E-1b0)
-http://127.0.0.1:6878/ace/getstream?id=1b0374aae74e9792034b21298d6b3dfa25bc60c1
-#EXTINF:-1 tvg-id="M+ Vamos 3" tvg-name="M+ VAMOS 3 * (FHD) (E-112)" group-title="MOVISTAR DEPORTES",M+ VAMOS 3 * (FHD) (E-112)
-http://127.0.0.1:6878/ace/getstream?id=112b3fe1e475cefad946da4f851470725bbddb58
-#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS 3 TR * (HD) (E-e6d)" group-title="DEPORTES",BEIN SPORTS 3 TR * (HD) (E-e6d)
-http://127.0.0.1:6878/ace/getstream?id=e6d57cf3fc22f7e90f572307188dea8de9a93d3f
-#EXTINF:-1 tvg-id="" tvg-name="BEIN SPORTS TR * (HD) (E-191)" group-title="DEPORTES",BEIN SPORTS TR * (HD) (E-191)
-http://127.0.0.1:6878/ace/getstream?id=19178159610c1bf901c6895b3a076db9d92fd586
-#EXTINF:-1 tvg-id="Teledeporte" tvg-name="TELEDEPORTE ** (HD) (E-c7d)" group-title="DEPORTES",TELEDEPORTE ** (HD) (E-c7d)
-http://127.0.0.1:6878/ace/getstream?id=c7d8405bdef3650b9bac58042c3708440ef286a8
-#EXTINF:-1 tvg-id="Teledeporte" tvg-name="TELEDEPORTE * (FHD) (E-81a)" group-title="DEPORTES",TELEDEPORTE * (FHD) (E-81a)
-http://127.0.0.1:6878/ace/getstream?id=81aead134bb63a51291d23e793fcddca981ee834
-#EXTINF:-1 tvg-id="" tvg-name="NBA LEAGUE PASS * (FHD) (E-2ee)" group-title="NBA",NBA LEAGUE PASS * (FHD) (E-2ee)
-http://127.0.0.1:6878/ace/getstream?id=2eedcbcc7173d3622804609460687d3e5a19e1ff
-#EXTINF:-1 tvg-id="" tvg-name="NBA LEAGUE PASS * (FHD) (E-869)" group-title="NBA",NBA LEAGUE PASS * (FHD) (E-869)
-http://127.0.0.1:6878/ace/getstream?id=8698d62f3b2a35aabb599c420b06945ea006400b
-#EXTINF:-1 tvg-id="" tvg-name="NBA LEAGUE PASS ** (FHD) (E-093)" group-title="NBA",NBA LEAGUE PASS ** (FHD) (E-093)
-http://127.0.0.1:6878/ace/getstream?id=09368635b716c33a43695a48e6cfe903eac25e20
-#EXTINF:-1 tvg-id="" tvg-name="TENNIS CHANNEL * (FHD) (E-a1f)" group-title="TENNIS",TENNIS CHANNEL * (FHD) (E-a1f)
-http://127.0.0.1:6878/ace/getstream?id=a1f28d5eac77119941ae60e7b1f908609bfcb67f
-#EXTINF:-1 tvg-id="" tvg-name="ONETORO TV * (FHD) (E-76e)" group-title="TOROS",ONETORO TV * (FHD) (E-76e)
-http://127.0.0.1:6878/ace/getstream?id=76ec588158958781fab321816bbb3502416edc01
+#EXTINF:-1 tvg-id="DAZN Baloncesto" tvg-name="DAZN BALONCESTO ** (HD) (E-817)" group-title="BALONCESTO",DAZN BALONCESTO ** (HD) (E-817)
+http://127.0.0.1:6878/ace/getstream?id=81726596472933c3dfc9b3cd31fef7d0716c8ba4
+#EXTINF:-1 tvg-id="DAZN Baloncesto" tvg-name="DAZN BALONCESTO ** (FHD) (E-e1e)" group-title="BALONCESTO",DAZN BALONCESTO ** (FHD) (E-e1e)
+http://127.0.0.1:6878/ace/getstream?id=e1e543b882178ea985f27285ec87c698d6553027
+#EXTINF:-1 tvg-id="DAZN Baloncesto 2" tvg-name="DAZN BALONCESTO 2 * (HD) (E-99d)" group-title="BALONCESTO",DAZN BALONCESTO 2 * (HD) (E-99d)
+http://127.0.0.1:6878/ace/getstream?id=99de2862eb671f858c7865c9cf5950e13e89eeba
+#EXTINF:-1 tvg-id="DAZN Baloncesto 3" tvg-name="DAZN BALONCESTO 3 * (HD) (E-9a5)" group-title="BALONCESTO",DAZN BALONCESTO 3 * (HD) (E-9a5)
+http://127.0.0.1:6878/ace/getstream?id=9a55697bb16e7b5352e7a82456e4e67a5690965e
+#EXTINF:-1 tvg-id="DAZN Baloncesto 3" tvg-name="DAZN BALONCESTO 3 ** (FHD) (E-e4c)" group-title="BALONCESTO",DAZN BALONCESTO 3 ** (FHD) (E-e4c)
+http://127.0.0.1:6878/ace/getstream?id=e4cc41e787e3f44bb766520a3b4b64e2baa5977c
+#EXTINF:-1 tvg-id="M+ Baloncesto" tvg-name="M+ BALONCESTO * (FHD) (E-283)" group-title="BALONCESTO",M+ BALONCESTO * (FHD) (E-283)
+http://127.0.0.1:6878/ace/getstream?id=28360e214f0cae450e9aaa8753c5be455109188f
+#EXTINF:-1 tvg-id="M+ Baloncesto 2" tvg-name="M+ BALONCESTO 2 * (FHD) (E-dce)" group-title="BALONCESTO",M+ BALONCESTO 2 * (FHD) (E-dce)
+http://127.0.0.1:6878/ace/getstream?id=dce8628942410de57606a6849ab6be46de3f9458
+#EXTINF:-1 tvg-id="" tvg-name="M+ BALONCESTO 3 * (FHD) (E-54e)" group-title="BALONCESTO",M+ BALONCESTO 3 * (FHD) (E-54e)
+http://127.0.0.1:6878/ace/getstream?id=54e1205da682d519fcc8ddeccff1626b8af86a6a
+#EXTINF:-1 tvg-id="" tvg-name="M+ BALONCESTO 3 ** (FHD) (E-f64)" group-title="BALONCESTO",M+ BALONCESTO 3 ** (FHD) (E-f64)
+http://127.0.0.1:6878/ace/getstream?id=f645199c617b2f0894506d8d3ef8369212f602eb
+#EXTINF:-1 tvg-id="DAZN 2 HD" tvg-name="DAZN 2 ** (HD) (E-9b0)" group-title="DAZN",DAZN 2 ** (HD) (E-9b0)
+http://127.0.0.1:6878/ace/getstream?id=9b02402621c83b8b68f1d83a7bbb1b972b4abe5e
+#EXTINF:-1 tvg-id="DAZN 2 HD" tvg-name="DAZN 2 * (FHD) (E-b64)" group-title="DAZN",DAZN 2 * (FHD) (E-b64)
+http://127.0.0.1:6878/ace/getstream?id=b649d084ca326e77a26ce78d172a003e320bc4d7
+#EXTINF:-1 tvg-id="DAZN 2 HD" tvg-name="DAZN 2 ** (FHD) (E-556)" group-title="DAZN",DAZN 2 ** (FHD) (E-556)
+http://127.0.0.1:6878/ace/getstream?id=55616eb11715c5ce83659f28e3aa191f95ff7cef
+#EXTINF:-1 tvg-id="Movistar Plus+ HD" tvg-name="MOVISTAR PLUS * (HD) (E-d2b)" group-title="MOVISTAR",MOVISTAR PLUS * (HD) (E-d2b)
+http://127.0.0.1:6878/ace/getstream?id=d2b5299ed45cbaf35482bb0869b2c2f75fbed64a
+#EXTINF:-1 tvg-id="Movistar Plus+ HD" tvg-name="MOVISTAR PLUS * (FHD) (E-96c)" group-title="MOVISTAR",MOVISTAR PLUS * (FHD) (E-96c)
+http://127.0.0.1:6878/ace/getstream?id=96cc6b02a0ce66ed3a01d9904e7ee8db0f2da5d7
+#EXTINF:-1 tvg-id="Movistar Plus+ HD" tvg-name="MOVISTAR PLUS ** (FHD) (E-68b)" group-title="MOVISTAR",MOVISTAR PLUS ** (FHD) (E-68b)
+http://127.0.0.1:6878/ace/getstream?id=68b53041272592f4fbf00bf38cd91e54a4e16abf
+#EXTINF:-1 tvg-id="M+ Deportes HD" tvg-name="M+ DEPORTES ** (HD) (E-3ba)" group-title="MOVISTAR DEPORTES",M+ DEPORTES ** (HD) (E-3ba)
+http://127.0.0.1:6878/ace/getstream?id=3ba3863c20e3b14a379ed7812cbc52c606bfbe9b
+#EXTINF:-1 tvg-id="M+ Deportes HD" tvg-name="M+ DEPORTES ** (FHD) (E-e1c)" group-title="MOVISTAR DEPORTES",M+ DEPORTES ** (FHD) (E-e1c)
+http://127.0.0.1:6878/ace/getstream?id=e1cbf42f80ce35e6ec7c69d8c5307245aebfd1d0
+#EXTINF:-1 tvg-id="M+ Deportes 2 HD" tvg-name="M+ DEPORTES 2 * (HD) (E-f62)" group-title="MOVISTAR DEPORTES",M+ DEPORTES 2 * (HD) (E-f62)
+http://127.0.0.1:6878/ace/getstream?id=f62f06bb905564bf718467658947e24c2b21735f
+#EXTINF:-1 tvg-id="M+ Deportes 2 HD" tvg-name="M+ DEPORTES 2 ** (HD) (E-b99)" group-title="MOVISTAR DEPORTES",M+ DEPORTES 2 ** (HD) (E-b99)
+http://127.0.0.1:6878/ace/getstream?id=b9914c456b60655f6997e1e0b85cffb19975d888
+#EXTINF:-1 tvg-id="M+ Deportes 2 HD" tvg-name="M+ DEPORTES 2 * (FHD) (E-a38)" group-title="MOVISTAR DEPORTES",M+ DEPORTES 2 * (FHD) (E-a38)
+http://127.0.0.1:6878/ace/getstream?id=a38ca9c4f4b488112daef66104df45a05a9fb9ad
+#EXTINF:-1 tvg-id="M+ Deportes 2 HD" tvg-name="M+ DEPORTES 2 ** (FHD) (E-6b5)" group-title="MOVISTAR DEPORTES",M+ DEPORTES 2 ** (FHD) (E-6b5)
+http://127.0.0.1:6878/ace/getstream?id=6b556144b907286ddc6dc071ecf7362b0fab5f78
+#EXTINF:-1 tvg-id="M+ Deportes 3" tvg-name="M+ DEPORTES 3 ** (HD) (E-a75)" group-title="MOVISTAR DEPORTES",M+ DEPORTES 3 ** (HD) (E-a75)
+http://127.0.0.1:6878/ace/getstream?id=a754a937e8aefd1babcb2768a4eba769df998a48
+#EXTINF:-1 tvg-id="M+ Deportes 3" tvg-name="M+ DEPORTES 3 ** (FHD) (E-846)" group-title="MOVISTAR DEPORTES",M+ DEPORTES 3 ** (FHD) (E-846)
+http://127.0.0.1:6878/ace/getstream?id=84668cf0948056328d6be06ac27c6d4491cbed26
+#EXTINF:-1 tvg-id="M+ Deportes 5" tvg-name="M+ DEPORTES 5 ** (FHD) (E-770)" group-title="MOVISTAR DEPORTES",M+ DEPORTES 5 ** (FHD) (E-770)
+http://127.0.0.1:6878/ace/getstream?id=770c89e46a912758cfcc80ecd5a97c4dd0dfe734
+#EXTINF:-1 tvg-id="M+ Deportes 7" tvg-name="M+ DEPORTES 7 ** (FHD) (E-718)" group-title="MOVISTAR DEPORTES",M+ DEPORTES 7 ** (FHD) (E-718)
+http://127.0.0.1:6878/ace/getstream?id=718323ef5595bf0e6c4f71f4354fcdcaeb018c82
+#EXTINF:-1 tvg-id="M+ Vamos HD" tvg-name="M+ VAMOS * (HD) (E-271)" group-title="MOVISTAR DEPORTES",M+ VAMOS * (HD) (E-271)
+http://127.0.0.1:6878/ace/getstream?id=27197daae8ce31d03ad69c1ac189333ec608150b
+#EXTINF:-1 tvg-id="M+ Vamos HD" tvg-name="M+ VAMOS ** (HD) (E-b20)" group-title="MOVISTAR DEPORTES",M+ VAMOS ** (HD) (E-b20)
+http://127.0.0.1:6878/ace/getstream?id=b20b467fae6af2983ee5163ebcb469eeca9146ee
+#EXTINF:-1 tvg-id="M+ Vamos HD" tvg-name="M+ VAMOS ** (FHD) (E-9b7)" group-title="MOVISTAR DEPORTES",M+ VAMOS ** (FHD) (E-9b7)
+http://127.0.0.1:6878/ace/getstream?id=9b7fc5f95b281a9a3370f71a8fe5a375c4655abb
+#EXTINF:-1 tvg-id="M+ Vamos 2" tvg-name="M+ VAMOS 2 * (HD) (E-758)" group-title="MOVISTAR DEPORTES",M+ VAMOS 2 * (HD) (E-758)
+http://127.0.0.1:6878/ace/getstream?id=75898c06f71b867b147654912bb0db8a19d6086e
+#EXTINF:-1 tvg-id="M+ Vamos 2" tvg-name="M+ VAMOS 2 * (FHD) (E-c04)" group-title="MOVISTAR DEPORTES",M+ VAMOS 2 * (FHD) (E-c04)
+http://127.0.0.1:6878/ace/getstream?id=c04f1daf665ca4b6a8d1f6d552b2bffff1c839d3
+#EXTINF:-1 tvg-id="M+ Vamos 2" tvg-name="M+ VAMOS 2 ** (FHD) (E-22e)" group-title="MOVISTAR DEPORTES",M+ VAMOS 2 ** (FHD) (E-22e)
+http://127.0.0.1:6878/ace/getstream?id=22ed339fb4f878ab562a434d847dd7849736794f
+#EXTINF:-1 tvg-id="M+ Vamos 2" tvg-name="M+ VAMOS 2 ** (FHD) (E-bec)" group-title="MOVISTAR DEPORTES",M+ VAMOS 2 ** (FHD) (E-bec)
+http://127.0.0.1:6878/ace/getstream?id=bec179fcda0f5016821bcc97f34f407d86f128e6
+#EXTINF:-1 tvg-id="" tvg-name="A PUNT ** (FHD) (E-fb0)" group-title="DEPORTES",A PUNT ** (FHD) (E-fb0)
+http://127.0.0.1:6878/ace/getstream?id=fb0f6e32e15857a821240abbed6da0379bed40dc
+#EXTINF:-1 tvg-id="Esport 3" tvg-name="ESPORT3 ** (HD) (E-839)" group-title="DEPORTES",ESPORT3 ** (HD) (E-839)
+http://127.0.0.1:6878/ace/getstream?id=8392984997d6ce361bca121ca1631cdd04040ae7
+#EXTINF:-1 tvg-id="Esport 3" tvg-name="ESPORT3 ** (FHD) (E-20a)" group-title="DEPORTES",ESPORT3 ** (FHD) (E-20a)
+http://127.0.0.1:6878/ace/getstream?id=20a6f764b55a1cbe34f62d732561b4a09ff50829
+#EXTINF:-1 tvg-id="Teledeporte" tvg-name="TELEDEPORTE ** (HD) (E-d88)" group-title="DEPORTES",TELEDEPORTE ** (HD) (E-d88)
+http://127.0.0.1:6878/ace/getstream?id=d889729516a30bb2ac9e0355a1fbda0d10281e9a
+#EXTINF:-1 tvg-id="Teledeporte" tvg-name="TELEDEPORTE * (FHD) (E-1d9)" group-title="DEPORTES",TELEDEPORTE * (FHD) (E-1d9)
+http://127.0.0.1:6878/ace/getstream?id=1d9e4ec1c78ae31da88a5f8582eb95d29d329d8d
+#EXTINF:-1 tvg-id="" tvg-name="À PUNT * (FHD) (E-5f0)" group-title="DEPORTES",À PUNT * (FHD) (E-5f0)
+http://127.0.0.1:6878/ace/getstream?id=5f09f7cae7b7d3fb9b7e492dbab3edfe1e70067c
+#EXTINF:-1 tvg-id="" tvg-name="À PUNT * (FHD) (E-ad7)" group-title="DEPORTES",À PUNT * (FHD) (E-ad7)
+http://127.0.0.1:6878/ace/getstream?id=ad7a52a05039e95e73a334e9d4518832ff84f448
+#EXTINF:-1 tvg-id="" tvg-name="SKY SPORT MOTOGP ** (FHD) (E-c34)" group-title="MOTOGP",SKY SPORT MOTOGP ** (FHD) (E-c34)
+http://127.0.0.1:6878/ace/getstream?id=c349a1a8953a4f64c61a6614aec63e11dc7eff96
+#EXTINF:-1 tvg-id="" tvg-name="NBA ESPN * (HD) (E-c50)" group-title="NBA",NBA ESPN * (HD) (E-c50)
+http://127.0.0.1:6878/ace/getstream?id=c50472a723a9c8412dc51fc6ae2761e113014b00
+#EXTINF:-1 tvg-id="" tvg-name="NBA LEAGUE PASS * (FHD) (E-594)" group-title="NBA",NBA LEAGUE PASS * (FHD) (E-594)
+http://127.0.0.1:6878/ace/getstream?id=594d954ecc68f601040630de6671cd648e0964f6
+#EXTINF:-1 tvg-id="" tvg-name="NBA LEAGUE PASS * (FHD) (E-cd7)" group-title="NBA",NBA LEAGUE PASS * (FHD) (E-cd7)
+http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
+#EXTINF:-1 tvg-id="" tvg-name="SKY SPORT TENNIS ** (FHD) (E-a0a)" group-title="TENNIS",SKY SPORT TENNIS ** (FHD) (E-a0a)
+http://127.0.0.1:6878/ace/getstream?id=a0adfe52f8a9275067d559debe17523c655975e5
