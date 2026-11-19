@@ -1,7 +1,7 @@
 {
   "fuente": "futbolenlatv.es/deporte",
-  "elcano_cid": "QmT58qLGeS9Ketzb3Gs8KvR3ocMRemgi8pjjtehU9ccwun",
-  "generado_utc": "2026-11-19T01:55:10+00:00",
+  "elcano_cid": "QmfRQxG1fNtKvpt3o5wmdnjyoFwqaVxZLGWGKtRZ5MNkQ5",
+  "generado_utc": "2026-11-19T13:28:19+00:00",
   "agenda": [
     {
       "fecha": "19/11/2026",
@@ -598,6 +598,19 @@
     {
       "fecha": "19/11/2026",
       "hora": "20:00",
+      "competicion": "Intercontinental Futsal Cup 3er Puesto",
+      "partido": "Carlos Barbosa vs Pato Futsal",
+      "canales": [
+        "DAZN (Ver en directo)",
+        "DAZN App Gratis (Ver gratis)"
+      ],
+      "local": "Carlos Barbosa",
+      "visitante": "Pato Futsal",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "19/11/2026",
+      "hora": "20:00",
       "competicion": "Campeonato Femenino",
       "partido": "Ferro Carril Oeste Femenino vs River Plate Femenino",
       "canales": [
@@ -787,13 +800,16 @@
     },
     {
       "fecha": "19/11/2026",
-      "hora": "21:30",
-      "competicion": "Intercontinental Futsal Cup",
-      "partido": "3er Puesto",
+      "hora": "23:00",
+      "competicion": "Intercontinental Futsal Cup Final",
+      "partido": "Palma Futsal vs Sporting CP FS",
       "canales": [
         "DAZN (Ver en directo)",
-        "DAZN App Gratis (Ver gratis)"
+        "DAZN App Gratis (Ver gratis)",
+        "Esports IB3 YouTube"
       ],
+      "local": "Palma Futsal",
+      "visitante": "Sporting CP FS",
       "canales_equivalencia": []
     },
     {
@@ -822,17 +838,6 @@
       ],
       "local": "Vitória",
       "visitante": "RB Bragantino",
-      "canales_equivalencia": []
-    },
-    {
-      "fecha": "20/11/2026",
-      "hora": "00:00",
-      "competicion": "Intercontinental Futsal Cup",
-      "partido": "Final",
-      "canales": [
-        "DAZN (Ver en directo)",
-        "DAZN App Gratis (Ver gratis)"
-      ],
       "canales_equivalencia": []
     },
     {
@@ -869,6 +874,18 @@
       ],
       "local": "Tigres de Aragua",
       "visitante": "Bravos de Margarita",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "20/11/2026",
+      "hora": "01:00",
+      "competicion": "NCAA",
+      "partido": "Ohio State vs UMBC Retrievers",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "Ohio State",
+      "visitante": "UMBC Retrievers",
       "canales_equivalencia": []
     },
     {
@@ -983,6 +1000,18 @@
     {
       "fecha": "20/11/2026",
       "hora": "02:00",
+      "competicion": "NCAA",
+      "partido": "Kentucky vs Indiana Hoosiers",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "Kentucky",
+      "visitante": "Indiana Hoosiers",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "20/11/2026",
+      "hora": "02:00",
       "competicion": "NHL Liga Regular",
       "partido": "Chicago Blackhawks vs Columbus Blue Jackets",
       "canales": [
@@ -1081,6 +1110,30 @@
     {
       "fecha": "20/11/2026",
       "hora": "03:00",
+      "competicion": "NCAA",
+      "partido": "Oregon State vs Oregon",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "Oregon State",
+      "visitante": "Oregon",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "20/11/2026",
+      "hora": "03:00",
+      "competicion": "NCAA",
+      "partido": "Eastern Illinois vs Illinois",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "Eastern Illinois",
+      "visitante": "Illinois",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "20/11/2026",
+      "hora": "03:00",
       "competicion": "NHL Liga Regular",
       "partido": "Colorado Avalanche vs Anaheim Ducks",
       "canales": [
@@ -1126,6 +1179,18 @@
       "canales_equivalencia": [
         "DAZN F1 (M70 O104)"
       ]
+    },
+    {
+      "fecha": "20/11/2026",
+      "hora": "05:00",
+      "competicion": "NCAA",
+      "partido": "Tarleton Texans vs USC",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "Tarleton Texans",
+      "visitante": "USC",
+      "canales_equivalencia": []
     },
     {
       "fecha": "20/11/2026",
@@ -1185,9 +1250,15 @@
       "competicion": "UEFA Nations League",
       "partido": "Sorteo Fase Final",
       "canales": [
-        "UEFA TV"
+        "UEFA TV",
+        "DAZN (Ver en directo)",
+        "DAZN App Gratis (Ver gratis)",
+        "Teledeporte",
+        "RTVE Play"
       ],
-      "canales_equivalencia": []
+      "canales_equivalencia": [
+        "Teledeporte"
+      ]
     },
     {
       "fecha": "20/11/2026",
@@ -1288,6 +1359,19 @@
     {
       "fecha": "20/11/2026",
       "hora": "18:30",
+      "competicion": "Bundesliga Femenina",
+      "partido": "1. FC Union Berlin Frauen vs Bayer Leverkusen Femenino",
+      "canales": [
+        "DAZN (Ver en directo)",
+        "DAZN App Gratis (Ver gratis)"
+      ],
+      "local": "1. FC Union Berlin Frauen",
+      "visitante": "Bayer Leverkusen Femenino",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "20/11/2026",
+      "hora": "18:30",
       "competicion": "2. Liga",
       "partido": "St. Pölten vs ASK Voitsberg",
       "canales": [
@@ -1340,12 +1424,14 @@
       "partido": "Al Ahli vs Al Nassr",
       "canales": [
         "M+ Vamos (11 y 50)",
-        "M+ #Vamos Bar (307)"
+        "M+ #Vamos Bar (307)",
+        "M+ Liga de Campeones (M60 O115)"
       ],
       "local": "Al Ahli",
       "visitante": "Al Nassr",
       "canales_equivalencia": [
-        "M+ Vamos (11 y 50)"
+        "M+ Vamos (11 y 50)",
+        "M+ Liga de Campeones (M60 O115)"
       ]
     },
     {
@@ -1641,12 +1727,14 @@
       "competicion": "Euroliga Liga Regular",
       "partido": "Barça Basket vs Crvena Zvezda MTS Belgrade",
       "canales": [
-        "M+ Baloncesto 2 (M67)"
+        "M+ Baloncesto 2 (M67)",
+        "M+ Baloncesto (M66)"
       ],
       "local": "Barça Basket",
       "visitante": "Crvena Zvezda MTS Belgrade",
       "canales_equivalencia": [
-        "M+ Baloncesto 2 (M67)"
+        "M+ Baloncesto 2 (M67)",
+        "M+ Baloncesto (M66)"
       ]
     },
     {
@@ -1656,11 +1744,16 @@
       "partido": "FC Bayern vs FC Köln",
       "canales": [
         "DAZN (Ver en directo)",
+        "M+ Vamos 2 (51)",
+        "Orange Fútbol 3 (109)",
+        "M+ Liga de Campeones (M60 O115)",
         "LaLiga TV M3"
       ],
       "local": "FC Bayern",
       "visitante": "FC Köln",
       "canales_equivalencia": [
+        "M+ Vamos 2 (51)",
+        "M+ Liga de Campeones (M60 O115)",
         "LaLiga TV M3"
       ]
     },
@@ -1874,6 +1967,18 @@
     {
       "fecha": "21/11/2026",
       "hora": "01:00",
+      "competicion": "NCAA",
+      "partido": "Oakland vs Purdue",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "Oakland",
+      "visitante": "Purdue",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "21/11/2026",
+      "hora": "01:00",
       "competicion": "NBA Liga Regular",
       "partido": "Atlanta Hawks vs Charlotte Hornets",
       "canales": [
@@ -1998,6 +2103,18 @@
     },
     {
       "fecha": "21/11/2026",
+      "hora": "03:00",
+      "competicion": "NCAA",
+      "partido": "Wyoming vs New Mexico",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "Wyoming",
+      "visitante": "New Mexico",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "21/11/2026",
       "hora": "03:05",
       "competicion": "AFLW",
       "partido": "North Melbourne FC vs Sydney Swans",
@@ -2035,6 +2152,18 @@
       "canales_equivalencia": [
         "NBA League Pass"
       ]
+    },
+    {
+      "fecha": "21/11/2026",
+      "hora": "04:00",
+      "competicion": "NCAA Women",
+      "partido": "Stanford vs Washington Athletics",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "Stanford",
+      "visitante": "Washington Athletics",
+      "canales_equivalencia": []
     },
     {
       "fecha": "21/11/2026",
@@ -2088,6 +2217,18 @@
       ],
       "local": "Auckland FC",
       "visitante": "Melbourne Victory",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "21/11/2026",
+      "hora": "05:00",
+      "competicion": "NCAA Women",
+      "partido": "Baylor vs USC",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "Baylor",
+      "visitante": "USC",
       "canales_equivalencia": []
     },
     {
@@ -2177,6 +2318,19 @@
       "canales_equivalencia": [
         "DAZN MotoGP (M71 O105)"
       ]
+    },
+    {
+      "fecha": "21/11/2026",
+      "hora": "12:00",
+      "competicion": "Bundesliga Femenina",
+      "partido": "Eintracht Frankfurt Femenino vs Hamburger SV Frauen",
+      "canales": [
+        "DAZN (Ver en directo)",
+        "DAZN App Gratis (Ver gratis)"
+      ],
+      "local": "Eintracht Frankfurt Femenino",
+      "visitante": "Hamburger SV Frauen",
+      "canales_equivalencia": []
     },
     {
       "fecha": "21/11/2026",
@@ -2276,6 +2430,19 @@
     {
       "fecha": "21/11/2026",
       "hora": "12:30",
+      "competicion": "Serie A Femminile",
+      "partido": "Parma Femminile vs Napoli Femenino",
+      "canales": [
+        "DAZN (Ver en directo)",
+        "DAZN App Gratis (Ver gratis)"
+      ],
+      "local": "Parma Femminile",
+      "visitante": "Napoli Femenino",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "21/11/2026",
+      "hora": "12:30",
       "competicion": "Liga Vasca Cadete Grupo 4",
       "partido": "Real Sociedad Academy vs SD Leioa Academy",
       "canales": [
@@ -2303,11 +2470,15 @@
       "competicion": "Liga Prime Torneo Apertura",
       "partido": "Viña Albali Valdepeñas vs Noia Portus Apostoli FS",
       "canales": [
-        "DAZN (Ver en directo)"
+        "DAZN (Ver en directo)",
+        "Teledeporte",
+        "RTVE Play"
       ],
       "local": "Viña Albali Valdepeñas",
       "visitante": "Noia Portus Apostoli FS",
-      "canales_equivalencia": []
+      "canales_equivalencia": [
+        "Teledeporte"
+      ]
     },
     {
       "fecha": "21/11/2026",
@@ -2356,11 +2527,15 @@
       "competicion": "Premier League",
       "partido": "Manchester City vs Fulham",
       "canales": [
-        "DAZN (Ver en directo)"
+        "DAZN (Ver en directo)",
+        "DAZN 1 (M72)",
+        "DAZN 1 Bar (M148)"
       ],
       "local": "Manchester City",
       "visitante": "Fulham",
-      "canales_equivalencia": []
+      "canales_equivalencia": [
+        "DAZN 1 (M72)"
+      ]
     },
     {
       "fecha": "21/11/2026",
@@ -2617,12 +2792,14 @@
       "competicion": "Nations Championship",
       "partido": "Inglaterra vs Nueva Zelanda",
       "canales": [
+        "M+ Vamos (11 y 50)",
         "M+ #Vamos Bar (307)",
         "M+ Deportes (63)"
       ],
       "local": "Inglaterra",
       "visitante": "Nueva Zelanda",
       "canales_equivalencia": [
+        "M+ Vamos (11 y 50)",
         "M+ Deportes (63)"
       ]
     },
@@ -2728,6 +2905,21 @@
     {
       "fecha": "21/11/2026",
       "hora": "16:00",
+      "competicion": "FIFA Mundial Sub-17 Fase de grupos",
+      "partido": "Brasil vs República Irlanda",
+      "canales": [
+        "Teledeporte",
+        "RTVE Play"
+      ],
+      "local": "Brasil",
+      "visitante": "República Irlanda",
+      "canales_equivalencia": [
+        "Teledeporte"
+      ]
+    },
+    {
+      "fecha": "21/11/2026",
+      "hora": "16:00",
       "competicion": "MotoGP",
       "partido": "G.P. Portugal (Algarve International) Sprint",
       "canales": [
@@ -2737,6 +2929,20 @@
       ],
       "canales_equivalencia": [
         "DAZN MotoGP (M71 O105)"
+      ]
+    },
+    {
+      "fecha": "21/11/2026",
+      "hora": "16:00",
+      "competicion": "OK Liga Femenina",
+      "partido": "CH Palau vs CP Vila-Sana",
+      "canales": [
+        "Esport3 (Cataluña)"
+      ],
+      "local": "CH Palau",
+      "visitante": "CP Vila-Sana",
+      "canales_equivalencia": [
+        "Esport3 (Cataluña)"
       ]
     },
     {
@@ -2890,11 +3096,15 @@
       "competicion": "Premier League",
       "partido": "Chelsea vs Leeds Utd",
       "canales": [
-        "DAZN (Ver en directo)"
+        "DAZN (Ver en directo)",
+        "DAZN 1 (M72)",
+        "DAZN 1 Bar (M148)"
       ],
       "local": "Chelsea",
       "visitante": "Leeds Utd",
-      "canales_equivalencia": []
+      "canales_equivalencia": [
+        "DAZN 1 (M72)"
+      ]
     },
     {
       "fecha": "21/11/2026",
@@ -3162,6 +3372,20 @@
     {
       "fecha": "21/11/2026",
       "hora": "17:00",
+      "competicion": "World Rugby Nations Cup",
+      "partido": "España vs Samoa",
+      "canales": [
+        "M+ Vamos 2 (51)"
+      ],
+      "local": "España",
+      "visitante": "Samoa",
+      "canales_equivalencia": [
+        "M+ Vamos 2 (51)"
+      ]
+    },
+    {
+      "fecha": "21/11/2026",
+      "hora": "17:00",
       "competicion": "Liga ASOBAL",
       "partido": "Viveros Herol BM Nava vs Ángel Ximénez Puente Genil",
       "canales": [
@@ -3253,6 +3477,18 @@
     {
       "fecha": "21/11/2026",
       "hora": "18:00",
+      "competicion": "NCAA",
+      "partido": "Detroit Mercy vs Michigan State",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "Detroit Mercy",
+      "visitante": "Michigan State",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "21/11/2026",
+      "hora": "18:00",
       "competicion": "Segunda Federación Grupo 2",
       "partido": "Espanyol B vs Barcelona Atlétic",
       "canales": [
@@ -3329,12 +3565,14 @@
         "M+ Vamos (11 y 50)",
         "M+ #Vamos Bar (307)",
         "Orange Fútbol 3 (109)",
+        "M+ Liga de Campeones (M60 O115)",
         "LaLiga TV M5"
       ],
       "local": "Parma",
       "visitante": "AS Roma",
       "canales_equivalencia": [
         "M+ Vamos (11 y 50)",
+        "M+ Liga de Campeones (M60 O115)",
         "LaLiga TV M5"
       ]
     },
@@ -3423,6 +3661,18 @@
     {
       "fecha": "21/11/2026",
       "hora": "18:30",
+      "competicion": "Segunda Federación Futsal",
+      "partido": "FS Móstoles vs CFS Pinatar",
+      "canales": [
+        "FutsalRFEF YouTube"
+      ],
+      "local": "FS Móstoles",
+      "visitante": "CFS Pinatar",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "21/11/2026",
+      "hora": "18:30",
       "competicion": "Título Continental Peso Supermedio",
       "partido": "G. Stein vs M. Antonietti",
       "canales": [
@@ -3450,11 +3700,15 @@
       "competicion": "Premier League",
       "partido": "Newcastle vs Arsenal",
       "canales": [
-        "DAZN (Ver en directo)"
+        "DAZN (Ver en directo)",
+        "DAZN 1 (M72)",
+        "DAZN 1 Bar (M148)"
       ],
       "local": "Newcastle",
       "visitante": "Arsenal",
-      "canales_equivalencia": []
+      "canales_equivalencia": [
+        "DAZN 1 (M72)"
+      ]
     },
     {
       "fecha": "21/11/2026",
@@ -3569,6 +3823,54 @@
     {
       "fecha": "21/11/2026",
       "hora": "19:00",
+      "competicion": "Primera B Argentina Reducido 1/4 Final",
+      "partido": "Arsenal Sarandí vs Comunicaciones",
+      "canales": [
+        "LPF Play (plan plus)"
+      ],
+      "local": "Arsenal Sarandí",
+      "visitante": "Comunicaciones",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "21/11/2026",
+      "hora": "19:00",
+      "competicion": "Primera B Argentina Reducido 1/4 Final",
+      "partido": "Sportivo Italiano vs Dep. Armenio",
+      "canales": [
+        "LPF Play (plan plus)"
+      ],
+      "local": "Sportivo Italiano",
+      "visitante": "Dep. Armenio",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "21/11/2026",
+      "hora": "19:00",
+      "competicion": "Primera B Argentina Reducido 1/4 Final",
+      "partido": "CA Talleres vs Real Pilar",
+      "canales": [
+        "LPF Play (plan plus)"
+      ],
+      "local": "CA Talleres",
+      "visitante": "Real Pilar",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "21/11/2026",
+      "hora": "19:00",
+      "competicion": "Primera B Argentina Reducido 1/4 Final",
+      "partido": "Deportivo Camioneros vs Villa Dálmine",
+      "canales": [
+        "LPF Play (plan plus)"
+      ],
+      "local": "Deportivo Camioneros",
+      "visitante": "Villa Dálmine",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "21/11/2026",
+      "hora": "19:00",
       "competicion": "UFC UFC Fight Night",
       "partido": "J. Prochazka vs N. Stirling",
       "canales": [
@@ -3665,7 +3967,7 @@
     {
       "fecha": "21/11/2026",
       "hora": "19:00",
-      "competicion": "Primera División Argentina",
+      "competicion": "Primera División Argentina 1/8 de Final",
       "partido": "Defensa y Justicia vs Barracas Central",
       "canales": [
         "Fanatiz (Ver en directo)"
@@ -3758,6 +4060,7 @@
         "ASOBAL TV",
         "HBO MAX",
         "DAZN (Ver en directo)",
+        "ETB1ON",
         "Esport3 (Cataluña)",
         "Eurosport 2"
       ],
@@ -3789,12 +4092,14 @@
       "canales": [
         "M+ Vamos (11 y 50)",
         "M+ #Vamos Bar (307)",
-        "Fanatiz (Ver en directo)"
+        "Fanatiz (Ver en directo)",
+        "M+ Liga de Campeones (M60 O115)"
       ],
       "local": "Palmeiras",
       "visitante": "CR Flamengo",
       "canales_equivalencia": [
-        "M+ Vamos (11 y 50)"
+        "M+ Vamos (11 y 50)",
+        "M+ Liga de Campeones (M60 O115)"
       ]
     },
     {
@@ -3881,6 +4186,18 @@
     {
       "fecha": "21/11/2026",
       "hora": "21:00",
+      "competicion": "Primera Nacional Argentina",
+      "partido": "Ciudad de Bolivar vs CA Atlanta",
+      "canales": [
+        "LPF Play (plan plus)"
+      ],
+      "local": "Ciudad de Bolivar",
+      "visitante": "CA Atlanta",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "21/11/2026",
+      "hora": "21:00",
       "competicion": "La Liga EA Sports",
       "partido": "Real Madrid vs Celta",
       "canales": [
@@ -3948,6 +4265,18 @@
     {
       "fecha": "21/11/2026",
       "hora": "21:00",
+      "competicion": "Primera División Futsal AFA Semifinales",
+      "partido": "River Plate Futsal vs Independiente Futsal",
+      "canales": [
+        "LPF Play (plan plus)"
+      ],
+      "local": "River Plate Futsal",
+      "visitante": "Independiente Futsal",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "21/11/2026",
+      "hora": "21:00",
       "competicion": "Liga Endesa Liga Regular",
       "partido": "UCAM Murcia CB vs Casademont Zaragoza",
       "canales": [
@@ -3963,13 +4292,37 @@
     {
       "fecha": "21/11/2026",
       "hora": "21:00",
-      "competicion": "Primera División Argentina",
+      "competicion": "Primera División Argentina 1/8 de Final",
       "partido": "Argentinos Juniors vs Independiente",
       "canales": [
         "Fanatiz (Ver en directo)"
       ],
       "local": "Argentinos Juniors",
       "visitante": "Independiente",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "21/11/2026",
+      "hora": "21:30",
+      "competicion": "NCAA",
+      "partido": "Baylor vs Texas Tech",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "Baylor",
+      "visitante": "Texas Tech",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "21/11/2026",
+      "hora": "21:30",
+      "competicion": "NCAA",
+      "partido": "Texas Tech vs Baylor",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "Texas Tech",
+      "visitante": "Baylor",
       "canales_equivalencia": []
     },
     {
@@ -3982,6 +4335,18 @@
       ],
       "local": "Calgary Flames",
       "visitante": "Chicago Blackhawks",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "21/11/2026",
+      "hora": "21:30",
+      "competicion": "Primera Nacional Argentina",
+      "partido": "CA Colón vs Deportivo Morón",
+      "canales": [
+        "LPF Play (plan plus)"
+      ],
+      "local": "CA Colón",
+      "visitante": "Deportivo Morón",
       "canales_equivalencia": []
     },
     {
@@ -4039,12 +4404,14 @@
       "partido": "Atlético Mineiro vs Boca Juniors",
       "canales": [
         "M+ Vamos (11 y 50)",
-        "M+ #Vamos Bar (307)"
+        "M+ #Vamos Bar (307)",
+        "M+ Liga de Campeones (M60 O115)"
       ],
       "local": "Atlético Mineiro",
       "visitante": "Boca Juniors",
       "canales_equivalencia": [
-        "M+ Vamos (11 y 50)"
+        "M+ Vamos (11 y 50)",
+        "M+ Liga de Campeones (M60 O115)"
       ]
     }
   ]
