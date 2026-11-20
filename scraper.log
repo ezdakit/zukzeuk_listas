@@ -1,4 +1,32 @@
 ================================================================================
+EJECUCIÓN 2026-11-20 07:29:01 UTC · 2026-11-20 08:29:01 Madrid
+================================================================================
+hashes.json
+  Estado:           DESCARGADO
+  Origen:           nodo IPFS local · clave 1 (k51qzi5uqu…) · CID QmbSf3sYRnX61EjBdEBWgMB2hztLeTU7rQY3tLkci7z5gy
+  Fecha en el JSON: 2026-11-20T07:14:21Z
+  Entradas:         136 (campo 'count' del JSON: 136)
+  Fuentes fallidas: 12 → nodo IPFS local · clave 1 (k51qzi5uqu…) (RuntimeError); URL directa https://tokyo.elcano-ipfs.workers.dev/k51qzi5uqu5dh5qej4b9wlcr5i6vhc7rcfkekhrxqek5c9l…; https://dweb.link · clave 1 (k51qzi5uqu…) (HTTPError); https://ipfs.io · clave 1 (k51qzi5uqu…) (HTTPError); https://w3s.link · clave 1 (k51qzi5uqu…) (HTTPError); https://gateway.pinata.cloud · clave 1 (k51qzi5uqu…) (HTTPError); … (+6)
+
+equivalencias_canales.json
+  Estado:           DESCARGADO
+  Origen:           https://kiroideuno.pages.gay/equivalencias_canales.json
+  Fecha en el JSON: el fichero no incluye fecha
+  Canales (claves): 107 · subcanales: 112
+
+eventos (futbolenlatv.es)
+  Total extraídos:  473
+    20/11/2026: 80
+    21/11/2026: 192
+    22/11/2026: 201
+  ezdakit_eventos.m3u: 496 entradas · 140 eventos con streams
+    20/11/2026: 112 entradas · 31 eventos
+    21/11/2026: 205 entradas · 56 eventos
+    22/11/2026: 179 entradas · 53 eventos
+
+Resultado: OK · duración 72.9s
+
+================================================================================
 EJECUCIÓN 2026-11-19 23:06:46 UTC · 2026-11-20 00:06:46 Madrid
 ================================================================================
 hashes.json
@@ -483,30 +511,3 @@ eventos (futbolenlatv.es)
     15/11/2026: 193 entradas · 48 eventos
 
 Resultado: OK · duración 72.3s
-
-================================================================================
-EJECUCIÓN 2026-11-13 06:55:38 UTC · 2026-11-13 07:55:38 Madrid
-================================================================================
-hashes.json
-  Estado:           DESCARGADO
-  Origen:           nodo IPFS local · clave 1 (k51qzi5uqu…) · CID Qmb94kQsn88M1psdpJHV12ZT1ZHNmTfCEiqjKrkQ8zuGf9
-  Fecha en el JSON: 2026-11-13T06:21:37Z
-  Entradas:         133 (campo 'count' del JSON: 133)
-
-equivalencias_canales.json
-  Estado:           DESCARGADO
-  Origen:           https://kiroideuno.pages.gay/equivalencias_canales.json
-  Fecha en el JSON: el fichero no incluye fecha
-  Canales (claves): 104 · subcanales: 109
-
-eventos (futbolenlatv.es)
-  Total extraídos:  455
-    13/11/2026: 81
-    14/11/2026: 196
-    15/11/2026: 178
-  ezdakit_eventos.m3u: 440 entradas · 129 eventos con streams
-    13/11/2026: 128 entradas · 33 eventos
-    14/11/2026: 161 entradas · 50 eventos
-    15/11/2026: 151 entradas · 46 eventos
-
-Resultado: OK · duración 22.7s
