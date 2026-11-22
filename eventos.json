@@ -1,7 +1,7 @@
 {
   "fuente": "futbolenlatv.es/deporte",
-  "elcano_cid": null,
-  "generado_utc": "2026-11-22T07:07:18+00:00",
+  "elcano_cid": "QmZdjrXbpQD1q9hY4FRniR6ZbMNrrGxPohkgYf5uHxPGRs",
+  "generado_utc": "2026-11-22T16:24:34+00:00",
   "agenda": [
     {
       "fecha": "22/11/2026",
@@ -25,6 +25,18 @@
       ],
       "local": "Nashville Predators",
       "visitante": "Pittsburgh Penguins",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "22/11/2026",
+      "hora": "00:00",
+      "competicion": "LVBP",
+      "partido": "Águilas del Zulia vs Bravos de Margarita",
+      "canales": [
+        "BeisbolPlay"
+      ],
+      "local": "Águilas del Zulia",
+      "visitante": "Bravos de Margarita",
       "canales_equivalencia": []
     },
     {
@@ -803,7 +815,7 @@
         "DAZN (Ver en directo)",
         "DAZN Baloncesto 3 (M76 O128)",
         "TV3 (Cataluña)",
-        "TVG (Galicia)"
+        "TVG2 (Galicia)"
       ],
       "local": "Monbus Obradoiro",
       "visitante": "Basquet Girona",
@@ -2811,13 +2823,15 @@
       "canales": [
         "LALIGA TV Hypermotion (M56 O120)",
         "DAZN (Ver en directo)",
-        "LaLiga TV M2"
+        "LaLiga TV M2",
+        "LaLiga TV M4"
       ],
       "local": "Burgos CF",
       "visitante": "Albacete",
       "canales_equivalencia": [
         "LALIGA TV Hypermotion (M56 O120)",
-        "LaLiga TV M2"
+        "LaLiga TV M2",
+        "LaLiga TV M4"
       ]
     },
     {
@@ -3275,6 +3289,18 @@
     },
     {
       "fecha": "23/11/2026",
+      "hora": "19:00",
+      "competicion": "The RSM Classic",
+      "partido": "Jornada 4",
+      "canales": [
+        "Movistar Golf (M68)"
+      ],
+      "canales_equivalencia": [
+        "Movistar Golf (M68)"
+      ]
+    },
+    {
+      "fecha": "23/11/2026",
       "hora": "19:15",
       "competicion": "AFC Champions League Elite Fase Liga",
       "partido": "Al Quwa Al Jawiya vs Al Gharafa",
@@ -3388,13 +3414,15 @@
       "canales": [
         "LALIGA TV Hypermotion (M56 O120)",
         "DAZN (Ver en directo)",
-        "LaLiga TV M2"
+        "LaLiga TV M2",
+        "LaLiga TV M4"
       ],
       "local": "AD Ceuta",
       "visitante": "UD Almería",
       "canales_equivalencia": [
         "LALIGA TV Hypermotion (M56 O120)",
-        "LaLiga TV M2"
+        "LaLiga TV M2",
+        "LaLiga TV M4"
       ]
     },
     {
@@ -4563,7 +4591,8 @@
         "Movistar Plus+ (M8)",
         "Orange Fútbol 1 (107)",
         "M+ Liga de Campeones (M60 O115)",
-        "M+ Liga de Campeones 4 (M180 O119)"
+        "M+ Liga de Campeones 4 (M180 O119)",
+        "LaLiga TV Bar"
       ],
       "local": "Real Madrid",
       "visitante": "PSV Eindhoven",
