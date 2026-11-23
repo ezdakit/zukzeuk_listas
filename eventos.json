@@ -1,7 +1,7 @@
 {
   "fuente": "futbolenlatv.es/deporte",
-  "elcano_cid": "QmaJ1wT7QuJKwinrX8AxG9R8D5CnuZdWqVpmWLXosFy8iU",
-  "generado_utc": "2026-11-23T00:58:12+00:00",
+  "elcano_cid": null,
+  "generado_utc": "2026-11-23T14:56:36+00:00",
   "agenda": [
     {
       "fecha": "23/11/2026",
@@ -100,8 +100,7 @@
       "competicion": "NBA Liga Regular",
       "partido": "Washington Wizards vs Orlando Magic",
       "canales": [
-        "NBA League Pass",
-        "DAZN (Ver en directo)"
+        "NBA League Pass"
       ],
       "local": "Washington Wizards",
       "visitante": "Orlando Magic",
@@ -384,14 +383,13 @@
         "DAZN 2 Bar (M149)",
         "Teledeporte",
         "RTVE Play",
-        "Esport3 (Cataluña)"
+        "Esport3 Web"
       ],
       "local": "Espanyol Femenino",
       "visitante": "Valencia Féminas",
       "canales_equivalencia": [
         "DAZN 2 (M73)",
-        "Teledeporte",
-        "Esport3 (Cataluña)"
+        "Teledeporte"
       ]
     },
     {
@@ -412,7 +410,7 @@
       "competicion": "Futsal Champions League 1/8 de final",
       "partido": "ElPozo Murcia vs Sporting Anderlecht Futsal",
       "canales": [
-        "Canal por confirmar"
+        "La 7 TV (Murcia)"
       ],
       "local": "ElPozo Murcia",
       "visitante": "Sporting Anderlecht Futsal",
@@ -554,6 +552,18 @@
       ],
       "local": "Internacional",
       "visitante": "Vitória",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "24/11/2026",
+      "hora": "00:00",
+      "competicion": "LVBP",
+      "partido": "Tiburones de la Guaira vs Cardenales de Lara",
+      "canales": [
+        "BeisbolPlay"
+      ],
+      "local": "Tiburones de la Guaira",
+      "visitante": "Cardenales de Lara",
       "canales_equivalencia": []
     },
     {
@@ -704,12 +714,14 @@
       "partido": "Minnesota Timberwolves vs Brooklyn Nets",
       "canales": [
         "NBA League Pass",
-        "DAZN (Ver en directo)"
+        "DAZN (Ver en directo)",
+        "DAZN Baloncesto (M74 O126)"
       ],
       "local": "Minnesota Timberwolves",
       "visitante": "Brooklyn Nets",
       "canales_equivalencia": [
-        "NBA League Pass"
+        "NBA League Pass",
+        "DAZN Baloncesto (M74 O126)"
       ]
     },
     {
@@ -722,6 +734,16 @@
       ],
       "local": "Winthrop Eagles",
       "visitante": "Illinois",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "24/11/2026",
+      "hora": "02:00",
+      "competicion": "México Major",
+      "partido": "1ª Ronda Premier Padel Tour",
+      "canales": [
+        "Premier Padel YouTube"
+      ],
       "canales_equivalencia": []
     },
     {
@@ -1296,6 +1318,24 @@
     {
       "fecha": "24/11/2026",
       "hora": "20:30",
+      "competicion": "Liga U Primera Fase",
+      "partido": "Real Madrid B Baloncesto vs Casademont Zaragoza B",
+      "canales": [
+        "Liga U YouTube",
+        "DAZN (Ver en directo)",
+        "DAZN App Gratis (Ver gratis)",
+        "Aragón Play",
+        "DAZN Baloncesto (M74 O126)"
+      ],
+      "local": "Real Madrid B Baloncesto",
+      "visitante": "Casademont Zaragoza B",
+      "canales_equivalencia": [
+        "DAZN Baloncesto (M74 O126)"
+      ]
+    },
+    {
+      "fecha": "24/11/2026",
+      "hora": "20:30",
       "competicion": "Euroliga Liga Regular",
       "partido": "Valencia Basket vs Panathinaikos BC",
       "canales": [
@@ -1723,6 +1763,52 @@
       ]
     },
     {
+      "fecha": "24/11/2026",
+      "hora": "23:00",
+      "competicion": "México Major",
+      "partido": "1ª Ronda Premier Padel Tour",
+      "canales": [
+        "Premier Padel YouTube"
+      ],
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "25/11/2026",
+      "hora": "00:00",
+      "competicion": "NCAA",
+      "partido": "Purdue vs DePaul",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "Purdue",
+      "visitante": "DePaul",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "25/11/2026",
+      "hora": "00:00",
+      "competicion": "LVBP",
+      "partido": "Navegantes del Magallanes vs Leones del Caracas",
+      "canales": [
+        "BeisbolPlay"
+      ],
+      "local": "Navegantes del Magallanes",
+      "visitante": "Leones del Caracas",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "25/11/2026",
+      "hora": "01:00",
+      "competicion": "NCAA",
+      "partido": "Ohio State vs Vanderbilt",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "Ohio State",
+      "visitante": "Vanderbilt",
+      "canales_equivalencia": []
+    },
+    {
       "fecha": "25/11/2026",
       "hora": "01:00",
       "competicion": "Liga Pro Ecuador",
@@ -1763,6 +1849,18 @@
     {
       "fecha": "25/11/2026",
       "hora": "02:00",
+      "competicion": "NCAA Women",
+      "partido": "South Carolina vs U Connecticut",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "South Carolina",
+      "visitante": "U Connecticut",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "25/11/2026",
+      "hora": "02:00",
       "competicion": "NBA Liga Regular",
       "partido": "Washington Wizards vs Boston Celtics",
       "canales": [
@@ -1781,12 +1879,14 @@
       "partido": "Denver Nuggets vs Dallas Mavericks",
       "canales": [
         "NBA League Pass",
-        "DAZN (Ver en directo)"
+        "DAZN (Ver en directo)",
+        "DAZN Baloncesto (M74 O126)"
       ],
       "local": "Denver Nuggets",
       "visitante": "Dallas Mavericks",
       "canales_equivalencia": [
-        "NBA League Pass"
+        "NBA League Pass",
+        "DAZN Baloncesto (M74 O126)"
       ]
     },
     {
@@ -2215,7 +2315,8 @@
       "partido": "Sporting Huelva vs FC Badalona Women",
       "canales": [
         "Teledeporte",
-        "RTVE Play"
+        "RTVE Play",
+        "Esport3 Web"
       ],
       "local": "Sporting Huelva",
       "visitante": "FC Badalona Women",
@@ -2356,13 +2457,11 @@
       "partido": "Spar Girona vs BC Montana 2003",
       "canales": [
         "FIBA YouTube",
-        "Esport3 (Cataluña)"
+        "Esport3 Web"
       ],
       "local": "Spar Girona",
       "visitante": "BC Montana 2003",
-      "canales_equivalencia": [
-        "Esport3 (Cataluña)"
-      ]
+      "canales_equivalencia": []
     },
     {
       "fecha": "25/11/2026",
@@ -2655,16 +2754,30 @@
     {
       "fecha": "25/11/2026",
       "hora": "23:00",
+      "competicion": "NCAA",
+      "partido": "Southern Jaguars vs Nebraska",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "Southern Jaguars",
+      "visitante": "Nebraska",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "25/11/2026",
+      "hora": "23:00",
       "competicion": "NBA Liga Regular",
       "partido": "Philadelphia 76ers vs Miami Heat",
       "canales": [
         "NBA League Pass",
-        "DAZN (Ver en directo)"
+        "DAZN (Ver en directo)",
+        "DAZN Baloncesto (M74 O126)"
       ],
       "local": "Philadelphia 76ers",
       "visitante": "Miami Heat",
       "canales_equivalencia": [
-        "NBA League Pass"
+        "NBA League Pass",
+        "DAZN Baloncesto (M74 O126)"
       ]
     }
   ]
