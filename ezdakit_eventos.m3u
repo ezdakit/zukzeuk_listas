@@ -1,361 +1,1037 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/refs/heads/master/guiatv.xml,https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz,https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiatv.xml" refresh="3600"
 #EXTVLCOPT:network-caching=1000
 
-#EXTINF:-1 group-title="23/11/2026 | NBA Liga Regular" tvg-name="00:00 - Miami Heat vs Oklahoma C. Thunder (NBA ESPN) (FHD) (15d)",00:00 - Miami Heat vs Oklahoma C. Thunder (NBA ESPN) (FHD) (15d)
-http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
-#EXTINF:-1 group-title="23/11/2026 | NBA Liga Regular" tvg-name="00:00 - Miami Heat vs Oklahoma C. Thunder (NBA League Pass) (FHD) (cd7)",00:00 - Miami Heat vs Oklahoma C. Thunder (NBA League Pass) (FHD) (cd7)
-http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
-#EXTINF:-1 group-title="23/11/2026 | NBA Liga Regular" tvg-name="00:00 - Miami Heat vs Oklahoma C. Thunder (NBA League Pass) (FHD) (53c)",00:00 - Miami Heat vs Oklahoma C. Thunder (NBA League Pass) (FHD) (53c)
-http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
-#EXTINF:-1 group-title="23/11/2026 | NBA Liga Regular" tvg-name="00:00 - Miami Heat vs Oklahoma C. Thunder (DAZN Baloncesto 3) (HD) (9a5)",00:00 - Miami Heat vs Oklahoma C. Thunder (DAZN Baloncesto 3) (HD) (9a5)
-http://127.0.0.1:6878/ace/getstream?id=9a55697bb16e7b5352e7a82456e4e67a5690965e
-#EXTINF:-1 group-title="23/11/2026 | NBA Liga Regular" tvg-name="01:00 - Chicago Bulls vs Denver Nuggets (NBA ESPN) (FHD) (15d)",01:00 - Chicago Bulls vs Denver Nuggets (NBA ESPN) (FHD) (15d)
-http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
-#EXTINF:-1 group-title="23/11/2026 | NBA Liga Regular" tvg-name="01:00 - Chicago Bulls vs Denver Nuggets (NBA League Pass) (FHD) (cd7)",01:00 - Chicago Bulls vs Denver Nuggets (NBA League Pass) (FHD) (cd7)
-http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
-#EXTINF:-1 group-title="23/11/2026 | NBA Liga Regular" tvg-name="01:00 - Chicago Bulls vs Denver Nuggets (NBA League Pass) (FHD) (53c)",01:00 - Chicago Bulls vs Denver Nuggets (NBA League Pass) (FHD) (53c)
-http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
-#EXTINF:-1 group-title="23/11/2026 | NBA Liga Regular" tvg-name="01:00 - Washington Wizards vs Orlando Magic (NBA ESPN) (FHD) (15d)",01:00 - Washington Wizards vs Orlando Magic (NBA ESPN) (FHD) (15d)
-http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
-#EXTINF:-1 group-title="23/11/2026 | NBA Liga Regular" tvg-name="01:00 - Washington Wizards vs Orlando Magic (NBA League Pass) (FHD) (cd7)",01:00 - Washington Wizards vs Orlando Magic (NBA League Pass) (FHD) (cd7)
-http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
-#EXTINF:-1 group-title="23/11/2026 | NBA Liga Regular" tvg-name="01:00 - Washington Wizards vs Orlando Magic (NBA League Pass) (FHD) (53c)",01:00 - Washington Wizards vs Orlando Magic (NBA League Pass) (FHD) (53c)
-http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
-#EXTINF:-1 group-title="23/11/2026 | NBA Liga Regular" tvg-name="01:00 - Utah Jazz vs Dallas Mavericks (NBA ESPN) (FHD) (15d)",01:00 - Utah Jazz vs Dallas Mavericks (NBA ESPN) (FHD) (15d)
-http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
-#EXTINF:-1 group-title="23/11/2026 | NBA Liga Regular" tvg-name="01:00 - Utah Jazz vs Dallas Mavericks (NBA League Pass) (FHD) (cd7)",01:00 - Utah Jazz vs Dallas Mavericks (NBA League Pass) (FHD) (cd7)
-http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
-#EXTINF:-1 group-title="23/11/2026 | NBA Liga Regular" tvg-name="01:00 - Utah Jazz vs Dallas Mavericks (NBA League Pass) (FHD) (53c)",01:00 - Utah Jazz vs Dallas Mavericks (NBA League Pass) (FHD) (53c)
-http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
-#EXTINF:-1 group-title="23/11/2026 | NBA Liga Regular" tvg-name="02:00 - New York Knicks vs Indiana Pacers (NBA ESPN) (FHD) (15d)",02:00 - New York Knicks vs Indiana Pacers (NBA ESPN) (FHD) (15d)
-http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
-#EXTINF:-1 group-title="23/11/2026 | NBA Liga Regular" tvg-name="02:00 - New York Knicks vs Indiana Pacers (NBA League Pass) (FHD) (cd7)",02:00 - New York Knicks vs Indiana Pacers (NBA League Pass) (FHD) (cd7)
-http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
-#EXTINF:-1 group-title="23/11/2026 | NBA Liga Regular" tvg-name="02:00 - New York Knicks vs Indiana Pacers (NBA League Pass) (FHD) (53c)",02:00 - New York Knicks vs Indiana Pacers (NBA League Pass) (FHD) (53c)
-http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
-#EXTINF:-1 group-title="23/11/2026 | NFL Liga Regular" tvg-name="02:20 - San Francisco 49ers vs Minnesota Vikings (DAZN 2) (FHD) (b64)",02:20 - San Francisco 49ers vs Minnesota Vikings (DAZN 2) (FHD) (b64)
-http://127.0.0.1:6878/ace/getstream?id=b649d084ca326e77a26ce78d172a003e320bc4d7
-#EXTINF:-1 group-title="23/11/2026 | NFL Liga Regular" tvg-name="02:20 - San Francisco 49ers vs Minnesota Vikings (DAZN 2) (FHD) (247)",02:20 - San Francisco 49ers vs Minnesota Vikings (DAZN 2) (FHD) (247)
-http://127.0.0.1:6878/ace/getstream?id=247a20c5a4234a37bb91e122561344e1c34d546d
-#EXTINF:-1 group-title="23/11/2026 | NFL Liga Regular" tvg-name="02:20 - San Francisco 49ers vs Minnesota Vikings (Cuatro) (FHD) (53f)",02:20 - San Francisco 49ers vs Minnesota Vikings (Cuatro) (FHD) (53f)
-http://127.0.0.1:6878/ace/getstream?id=53f5cae6541b7c548b7ed408dee2f5a7e0d0b976
-#EXTINF:-1 group-title="23/11/2026 | NBA Liga Regular" tvg-name="02:30 - Golden State Warriors vs Boston Celtics (NBA ESPN) (FHD) (15d)",02:30 - Golden State Warriors vs Boston Celtics (NBA ESPN) (FHD) (15d)
-http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
-#EXTINF:-1 group-title="23/11/2026 | NBA Liga Regular" tvg-name="02:30 - Golden State Warriors vs Boston Celtics (NBA League Pass) (FHD) (cd7)",02:30 - Golden State Warriors vs Boston Celtics (NBA League Pass) (FHD) (cd7)
-http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
-#EXTINF:-1 group-title="23/11/2026 | NBA Liga Regular" tvg-name="02:30 - Golden State Warriors vs Boston Celtics (NBA League Pass) (FHD) (53c)",02:30 - Golden State Warriors vs Boston Celtics (NBA League Pass) (FHD) (53c)
-http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
-#EXTINF:-1 group-title="23/11/2026 | Copa del Rey" tvg-name="12:30 - Sorteo 2ª Eliminatoria (RFEF TV) (FHD) (368)",12:30 - Sorteo 2ª Eliminatoria (RFEF TV) (FHD) (368)
-http://127.0.0.1:6878/ace/getstream?id=36820e768af871a66048cd702f8f3988683f6242
-#EXTINF:-1 group-title="23/11/2026 | Copa del Rey" tvg-name="12:30 - Sorteo 2ª Eliminatoria (MOVISTAR PLUS) (FHD) (96c)",12:30 - Sorteo 2ª Eliminatoria (MOVISTAR PLUS) (FHD) (96c)
-http://127.0.0.1:6878/ace/getstream?id=96cc6b02a0ce66ed3a01d9904e7ee8db0f2da5d7
-#EXTINF:-1 group-title="23/11/2026 | Copa del Rey" tvg-name="12:30 - Sorteo 2ª Eliminatoria (MOVISTAR PLUS) (FHD) (68b)",12:30 - Sorteo 2ª Eliminatoria (MOVISTAR PLUS) (FHD) (68b)
-http://127.0.0.1:6878/ace/getstream?id=68b53041272592f4fbf00bf38cd91e54a4e16abf
-#EXTINF:-1 group-title="23/11/2026 | Copa del Rey" tvg-name="12:30 - Sorteo 2ª Eliminatoria (Teledeporte) (HD) (d88)",12:30 - Sorteo 2ª Eliminatoria (Teledeporte) (HD) (d88)
-http://127.0.0.1:6878/ace/getstream?id=d889729516a30bb2ac9e0355a1fbda0d10281e9a
-#EXTINF:-1 group-title="23/11/2026 | FIFA Mundial Sub-17 Fase de grupos" tvg-name="13:30 - España vs Fiyi (Teledeporte) (HD) (d88)",13:30 - España vs Fiyi (Teledeporte) (HD) (d88)
-http://127.0.0.1:6878/ace/getstream?id=d889729516a30bb2ac9e0355a1fbda0d10281e9a
-#EXTINF:-1 group-title="23/11/2026 | The RSM Classic" tvg-name="19:00 - Jornada 4 (M+ Golf) (HD) (d33)",19:00 - Jornada 4 (M+ Golf) (HD) (d33)
-http://127.0.0.1:6878/ace/getstream?id=d3396a08ea9f2ccc70ecc33e1ee2977b08c7f419
-#EXTINF:-1 group-title="23/11/2026 | The RSM Classic" tvg-name="19:00 - Jornada 4 (M+ Golf) (FHD) (dd4)",19:00 - Jornada 4 (M+ Golf) (FHD) (dd4)
-http://127.0.0.1:6878/ace/getstream?id=dd41423912d132c67cd7281cbf6b45cee13de385
-#EXTINF:-1 group-title="23/11/2026 | Futsal Champions League 1/8 de final" tvg-name="20:00 - MNK Olmissum vs Barça FS (Esport3) (HD) (839)",20:00 - MNK Olmissum vs Barça FS (Esport3) (HD) (839)
-http://127.0.0.1:6878/ace/getstream?id=8392984997d6ce361bca121ca1631cdd04040ae7
-#EXTINF:-1 group-title="23/11/2026 | Futsal Champions League 1/8 de final" tvg-name="20:00 - MNK Olmissum vs Barça FS (Esport3) (FHD) (eb0)",20:00 - MNK Olmissum vs Barça FS (Esport3) (FHD) (eb0)
-http://127.0.0.1:6878/ace/getstream?id=eb0a08dfb47f01b0d8a8f13ab11a1c062d9eebfb
-#EXTINF:-1 group-title="23/11/2026 | Futsal Champions League 1/8 de final" tvg-name="20:00 - MNK Olmissum vs Barça FS (Esport3) (FHD) (20a)",20:00 - MNK Olmissum vs Barça FS (Esport3) (FHD) (20a)
-http://127.0.0.1:6878/ace/getstream?id=20a6f764b55a1cbe34f62d732561b4a09ff50829
-#EXTINF:-1 group-title="23/11/2026 | Liga F" tvg-name="20:00 - Espanyol Femenino vs Valencia Féminas (DAZN 2) (FHD) (b64)",20:00 - Espanyol Femenino vs Valencia Féminas (DAZN 2) (FHD) (b64)
-http://127.0.0.1:6878/ace/getstream?id=b649d084ca326e77a26ce78d172a003e320bc4d7
-#EXTINF:-1 group-title="23/11/2026 | Liga F" tvg-name="20:00 - Espanyol Femenino vs Valencia Féminas (DAZN 2) (FHD) (247)",20:00 - Espanyol Femenino vs Valencia Féminas (DAZN 2) (FHD) (247)
-http://127.0.0.1:6878/ace/getstream?id=247a20c5a4234a37bb91e122561344e1c34d546d
-#EXTINF:-1 group-title="23/11/2026 | Liga F" tvg-name="20:00 - Espanyol Femenino vs Valencia Féminas (Teledeporte) (HD) (d88)",20:00 - Espanyol Femenino vs Valencia Féminas (Teledeporte) (HD) (d88)
-http://127.0.0.1:6878/ace/getstream?id=d889729516a30bb2ac9e0355a1fbda0d10281e9a
-#EXTINF:-1 group-title="23/11/2026 | LaLiga Hypermotion" tvg-name="20:30 - AD Ceuta vs UD Almería (LaLiga TV Hypermotion) (HD) (0ac)",20:30 - AD Ceuta vs UD Almería (LaLiga TV Hypermotion) (HD) (0ac)
-http://127.0.0.1:6878/ace/getstream?id=0ac326b3cc8701f1155ea68c07ebf6090f684e80
-#EXTINF:-1 group-title="23/11/2026 | LaLiga Hypermotion" tvg-name="20:30 - AD Ceuta vs UD Almería (LaLiga TV Hypermotion) (FHD) (17a)",20:30 - AD Ceuta vs UD Almería (LaLiga TV Hypermotion) (FHD) (17a)
-http://127.0.0.1:6878/ace/getstream?id=17a4e20b6c852bac39bb9d6cbffa9177a54717cf
-#EXTINF:-1 group-title="23/11/2026 | LaLiga Hypermotion" tvg-name="20:30 - AD Ceuta vs UD Almería (LaLiga TV Hypermotion) (128)",20:30 - AD Ceuta vs UD Almería (LaLiga TV Hypermotion) (128)
-http://127.0.0.1:6878/ace/getstream?id=1285fbe392b67c3fbc2284fcef8094d06c65eee5
-#EXTINF:-1 group-title="23/11/2026 | La Liga EA Sports" tvg-name="21:00 - Levante vs Elche (DAZN LaLiga) (HD) (aac)",21:00 - Levante vs Elche (DAZN LaLiga) (HD) (aac)
-http://127.0.0.1:6878/ace/getstream?id=aac92415626c18a3adbdd0ba1ac77ad076741fcf
-#EXTINF:-1 group-title="23/11/2026 | La Liga EA Sports" tvg-name="21:00 - Levante vs Elche (DAZN LaLiga) (HD) (819)",21:00 - Levante vs Elche (DAZN LaLiga) (HD) (819)
-http://127.0.0.1:6878/ace/getstream?id=819b5627494a7830591ed7b995268315edcc7d0a
-#EXTINF:-1 group-title="23/11/2026 | La Liga EA Sports" tvg-name="21:00 - Levante vs Elche (DAZN LaLiga) (FHD) (7f1)",21:00 - Levante vs Elche (DAZN LaLiga) (FHD) (7f1)
-http://127.0.0.1:6878/ace/getstream?id=7f11f3366b520f71adedddf6ff1ad70362cc6a65
-#EXTINF:-1 group-title="23/11/2026 | La Liga EA Sports" tvg-name="21:00 - Levante vs Elche (DAZN LaLiga) (FHD) (510)",21:00 - Levante vs Elche (DAZN LaLiga) (FHD) (510)
-http://127.0.0.1:6878/ace/getstream?id=5103030e741d2ad44293b8767b739eaf48035d62
-#EXTINF:-1 group-title="23/11/2026 | La Liga EA Sports" tvg-name="21:00 - Levante vs Elche (DAZN LaLiga) (FHD) (8ba)",21:00 - Levante vs Elche (DAZN LaLiga) (FHD) (8ba)
-http://127.0.0.1:6878/ace/getstream?id=8bab8645432567ed754b9e1fc9e52b1c468505c0
-#EXTINF:-1 group-title="23/11/2026 | La Liga EA Sports" tvg-name="21:00 - Levante vs Elche (DAZN LaLiga) (d23)",21:00 - Levante vs Elche (DAZN LaLiga) (d23)
-http://127.0.0.1:6878/ace/getstream?id=d2313a40320aa2ebc2ec16409e8fd2344357efe9
-#EXTINF:-1 group-title="23/11/2026 | Premier League" tvg-name="21:00 - Brentford vs Everton (DAZN 1) (HD) (8d1)",21:00 - Brentford vs Everton (DAZN 1) (HD) (8d1)
-http://127.0.0.1:6878/ace/getstream?id=8d1d49d3cd1f693f7822e16b9fa0211dfd50bc93
-#EXTINF:-1 group-title="23/11/2026 | Premier League" tvg-name="21:00 - Brentford vs Everton (DAZN 1) (HD) (748)",21:00 - Brentford vs Everton (DAZN 1) (HD) (748)
-http://127.0.0.1:6878/ace/getstream?id=7482eec330fe108c6e00be3558e527f404f73478
-#EXTINF:-1 group-title="23/11/2026 | Premier League" tvg-name="21:00 - Brentford vs Everton (DAZN 1) (FHD) (626)",21:00 - Brentford vs Everton (DAZN 1) (FHD) (626)
-http://127.0.0.1:6878/ace/getstream?id=626f30abf7243049bbb9035218784265976d3108
-#EXTINF:-1 group-title="23/11/2026 | Premier League" tvg-name="21:00 - Brentford vs Everton (DAZN 1) (FHD) (2f9)",21:00 - Brentford vs Everton (DAZN 1) (FHD) (2f9)
-http://127.0.0.1:6878/ace/getstream?id=2f92b9ad901d49f651e1d383a032298d8c8b016a
+#EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:00 - Philadelphia 76ers vs Portland Trail Blazers (NBA ESPN) (HD) (c50)",01:00 - Philadelphia 76ers vs Portland Trail Blazers (NBA ESPN) (HD) (c50)
+http://127.0.0.1:6878/ace/getstream?id=c50472a723a9c8412dc51fc6ae2761e113014b00
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:00 - Philadelphia 76ers vs Portland Trail Blazers (NBA ESPN) (FHD) (15d)",01:00 - Philadelphia 76ers vs Portland Trail Blazers (NBA ESPN) (FHD) (15d)
 http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:00 - Philadelphia 76ers vs Portland Trail Blazers (NBA League Pass) (FHD) (cd7)",01:00 - Philadelphia 76ers vs Portland Trail Blazers (NBA League Pass) (FHD) (cd7)
 http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
+#EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:00 - Philadelphia 76ers vs Portland Trail Blazers (NBA League Pass) (FHD) (1f5)",01:00 - Philadelphia 76ers vs Portland Trail Blazers (NBA League Pass) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f585e677701e7283ed0cda9fad5d49d885afa9e
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:00 - Philadelphia 76ers vs Portland Trail Blazers (NBA League Pass) (FHD) (53c)",01:00 - Philadelphia 76ers vs Portland Trail Blazers (NBA League Pass) (FHD) (53c)
 http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
+#EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:00 - Charlotte Hornets vs Memphis Grizzlies (NBA ESPN) (HD) (c50)",01:00 - Charlotte Hornets vs Memphis Grizzlies (NBA ESPN) (HD) (c50)
+http://127.0.0.1:6878/ace/getstream?id=c50472a723a9c8412dc51fc6ae2761e113014b00
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:00 - Charlotte Hornets vs Memphis Grizzlies (NBA ESPN) (FHD) (15d)",01:00 - Charlotte Hornets vs Memphis Grizzlies (NBA ESPN) (FHD) (15d)
 http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:00 - Charlotte Hornets vs Memphis Grizzlies (NBA League Pass) (FHD) (cd7)",01:00 - Charlotte Hornets vs Memphis Grizzlies (NBA League Pass) (FHD) (cd7)
 http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
+#EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:00 - Charlotte Hornets vs Memphis Grizzlies (NBA League Pass) (FHD) (1f5)",01:00 - Charlotte Hornets vs Memphis Grizzlies (NBA League Pass) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f585e677701e7283ed0cda9fad5d49d885afa9e
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:00 - Charlotte Hornets vs Memphis Grizzlies (NBA League Pass) (FHD) (53c)",01:00 - Charlotte Hornets vs Memphis Grizzlies (NBA League Pass) (FHD) (53c)
 http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
+#EXTINF:-1 group-title="24/11/2026 | Serie A Brasil" tvg-name="01:00 - Santos vs Grêmio (M+ Vamos) (HD) (b20)",01:00 - Santos vs Grêmio (M+ Vamos) (HD) (b20)
+http://127.0.0.1:6878/ace/getstream?id=b20b467fae6af2983ee5163ebcb469eeca9146ee
+#EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:30 - Indiana Pacers vs Oklahoma C. Thunder (NBA ESPN) (HD) (c50)",01:30 - Indiana Pacers vs Oklahoma C. Thunder (NBA ESPN) (HD) (c50)
+http://127.0.0.1:6878/ace/getstream?id=c50472a723a9c8412dc51fc6ae2761e113014b00
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:30 - Indiana Pacers vs Oklahoma C. Thunder (NBA ESPN) (FHD) (15d)",01:30 - Indiana Pacers vs Oklahoma C. Thunder (NBA ESPN) (FHD) (15d)
 http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:30 - Indiana Pacers vs Oklahoma C. Thunder (NBA League Pass) (FHD) (cd7)",01:30 - Indiana Pacers vs Oklahoma C. Thunder (NBA League Pass) (FHD) (cd7)
 http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
+#EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:30 - Indiana Pacers vs Oklahoma C. Thunder (NBA League Pass) (FHD) (1f5)",01:30 - Indiana Pacers vs Oklahoma C. Thunder (NBA League Pass) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f585e677701e7283ed0cda9fad5d49d885afa9e
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:30 - Indiana Pacers vs Oklahoma C. Thunder (NBA League Pass) (FHD) (53c)",01:30 - Indiana Pacers vs Oklahoma C. Thunder (NBA League Pass) (FHD) (53c)
 http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
+#EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:30 - Toronto Raptors vs Milwaukee Bucks (NBA ESPN) (HD) (c50)",01:30 - Toronto Raptors vs Milwaukee Bucks (NBA ESPN) (HD) (c50)
+http://127.0.0.1:6878/ace/getstream?id=c50472a723a9c8412dc51fc6ae2761e113014b00
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:30 - Toronto Raptors vs Milwaukee Bucks (NBA ESPN) (FHD) (15d)",01:30 - Toronto Raptors vs Milwaukee Bucks (NBA ESPN) (FHD) (15d)
 http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:30 - Toronto Raptors vs Milwaukee Bucks (NBA League Pass) (FHD) (cd7)",01:30 - Toronto Raptors vs Milwaukee Bucks (NBA League Pass) (FHD) (cd7)
 http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
+#EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:30 - Toronto Raptors vs Milwaukee Bucks (NBA League Pass) (FHD) (1f5)",01:30 - Toronto Raptors vs Milwaukee Bucks (NBA League Pass) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f585e677701e7283ed0cda9fad5d49d885afa9e
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:30 - Toronto Raptors vs Milwaukee Bucks (NBA League Pass) (FHD) (53c)",01:30 - Toronto Raptors vs Milwaukee Bucks (NBA League Pass) (FHD) (53c)
 http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
+#EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:30 - Minnesota Timberwolves vs Brooklyn Nets (NBA ESPN) (HD) (c50)",01:30 - Minnesota Timberwolves vs Brooklyn Nets (NBA ESPN) (HD) (c50)
+http://127.0.0.1:6878/ace/getstream?id=c50472a723a9c8412dc51fc6ae2761e113014b00
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:30 - Minnesota Timberwolves vs Brooklyn Nets (NBA ESPN) (FHD) (15d)",01:30 - Minnesota Timberwolves vs Brooklyn Nets (NBA ESPN) (FHD) (15d)
 http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:30 - Minnesota Timberwolves vs Brooklyn Nets (NBA League Pass) (FHD) (cd7)",01:30 - Minnesota Timberwolves vs Brooklyn Nets (NBA League Pass) (FHD) (cd7)
 http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
+#EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:30 - Minnesota Timberwolves vs Brooklyn Nets (NBA League Pass) (FHD) (1f5)",01:30 - Minnesota Timberwolves vs Brooklyn Nets (NBA League Pass) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f585e677701e7283ed0cda9fad5d49d885afa9e
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:30 - Minnesota Timberwolves vs Brooklyn Nets (NBA League Pass) (FHD) (53c)",01:30 - Minnesota Timberwolves vs Brooklyn Nets (NBA League Pass) (FHD) (53c)
 http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
-#EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:30 - Minnesota Timberwolves vs Brooklyn Nets (DAZN Baloncesto) (HD) (817)",01:30 - Minnesota Timberwolves vs Brooklyn Nets (DAZN Baloncesto) (HD) (817)
-http://127.0.0.1:6878/ace/getstream?id=81726596472933c3dfc9b3cd31fef7d0716c8ba4
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:30 - Minnesota Timberwolves vs Brooklyn Nets (DAZN Baloncesto) (FHD) (535)",01:30 - Minnesota Timberwolves vs Brooklyn Nets (DAZN Baloncesto) (FHD) (535)
 http://127.0.0.1:6878/ace/getstream?id=535b353f94a275ca60ab176c0633ecbb561b41f2
-#EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="01:30 - Minnesota Timberwolves vs Brooklyn Nets (DAZN Baloncesto) (FHD) (383)",01:30 - Minnesota Timberwolves vs Brooklyn Nets (DAZN Baloncesto) (FHD) (383)
-http://127.0.0.1:6878/ace/getstream?id=3834a73b9e07c3d0485935407366d7acac52fdf0
+#EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="02:00 - Chicago Bulls vs Cleveland Cavaliers (NBA ESPN) (HD) (c50)",02:00 - Chicago Bulls vs Cleveland Cavaliers (NBA ESPN) (HD) (c50)
+http://127.0.0.1:6878/ace/getstream?id=c50472a723a9c8412dc51fc6ae2761e113014b00
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="02:00 - Chicago Bulls vs Cleveland Cavaliers (NBA ESPN) (FHD) (15d)",02:00 - Chicago Bulls vs Cleveland Cavaliers (NBA ESPN) (FHD) (15d)
 http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="02:00 - Chicago Bulls vs Cleveland Cavaliers (NBA League Pass) (FHD) (cd7)",02:00 - Chicago Bulls vs Cleveland Cavaliers (NBA League Pass) (FHD) (cd7)
 http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
+#EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="02:00 - Chicago Bulls vs Cleveland Cavaliers (NBA League Pass) (FHD) (1f5)",02:00 - Chicago Bulls vs Cleveland Cavaliers (NBA League Pass) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f585e677701e7283ed0cda9fad5d49d885afa9e
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="02:00 - Chicago Bulls vs Cleveland Cavaliers (NBA League Pass) (FHD) (53c)",02:00 - Chicago Bulls vs Cleveland Cavaliers (NBA League Pass) (FHD) (53c)
 http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
+#EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="02:00 - New Orleans Pelicans vs Phoenix Suns (NBA ESPN) (HD) (c50)",02:00 - New Orleans Pelicans vs Phoenix Suns (NBA ESPN) (HD) (c50)
+http://127.0.0.1:6878/ace/getstream?id=c50472a723a9c8412dc51fc6ae2761e113014b00
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="02:00 - New Orleans Pelicans vs Phoenix Suns (NBA ESPN) (FHD) (15d)",02:00 - New Orleans Pelicans vs Phoenix Suns (NBA ESPN) (FHD) (15d)
 http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="02:00 - New Orleans Pelicans vs Phoenix Suns (NBA League Pass) (FHD) (cd7)",02:00 - New Orleans Pelicans vs Phoenix Suns (NBA League Pass) (FHD) (cd7)
 http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
+#EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="02:00 - New Orleans Pelicans vs Phoenix Suns (NBA League Pass) (FHD) (1f5)",02:00 - New Orleans Pelicans vs Phoenix Suns (NBA League Pass) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f585e677701e7283ed0cda9fad5d49d885afa9e
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="02:00 - New Orleans Pelicans vs Phoenix Suns (NBA League Pass) (FHD) (53c)",02:00 - New Orleans Pelicans vs Phoenix Suns (NBA League Pass) (FHD) (53c)
 http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
-#EXTINF:-1 group-title="24/11/2026 | NFL Liga Regular" tvg-name="02:15 - Washington Commanders vs Cincinnati Bengals (DAZN 2) (FHD) (b64)",02:15 - Washington Commanders vs Cincinnati Bengals (DAZN 2) (FHD) (b64)
-http://127.0.0.1:6878/ace/getstream?id=b649d084ca326e77a26ce78d172a003e320bc4d7
 #EXTINF:-1 group-title="24/11/2026 | NFL Liga Regular" tvg-name="02:15 - Washington Commanders vs Cincinnati Bengals (DAZN 2) (FHD) (247)",02:15 - Washington Commanders vs Cincinnati Bengals (DAZN 2) (FHD) (247)
 http://127.0.0.1:6878/ace/getstream?id=247a20c5a4234a37bb91e122561344e1c34d546d
+#EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="02:30 - Houston Rockets vs Los Angeles Clippers (NBA ESPN) (HD) (c50)",02:30 - Houston Rockets vs Los Angeles Clippers (NBA ESPN) (HD) (c50)
+http://127.0.0.1:6878/ace/getstream?id=c50472a723a9c8412dc51fc6ae2761e113014b00
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="02:30 - Houston Rockets vs Los Angeles Clippers (NBA ESPN) (FHD) (15d)",02:30 - Houston Rockets vs Los Angeles Clippers (NBA ESPN) (FHD) (15d)
 http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="02:30 - Houston Rockets vs Los Angeles Clippers (NBA League Pass) (FHD) (cd7)",02:30 - Houston Rockets vs Los Angeles Clippers (NBA League Pass) (FHD) (cd7)
 http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
+#EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="02:30 - Houston Rockets vs Los Angeles Clippers (NBA League Pass) (FHD) (1f5)",02:30 - Houston Rockets vs Los Angeles Clippers (NBA League Pass) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f585e677701e7283ed0cda9fad5d49d885afa9e
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="02:30 - Houston Rockets vs Los Angeles Clippers (NBA League Pass) (FHD) (53c)",02:30 - Houston Rockets vs Los Angeles Clippers (NBA League Pass) (FHD) (53c)
 http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
+#EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="04:00 - Los Angeles Lakers vs Utah Jazz (NBA ESPN) (HD) (c50)",04:00 - Los Angeles Lakers vs Utah Jazz (NBA ESPN) (HD) (c50)
+http://127.0.0.1:6878/ace/getstream?id=c50472a723a9c8412dc51fc6ae2761e113014b00
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="04:00 - Los Angeles Lakers vs Utah Jazz (NBA ESPN) (FHD) (15d)",04:00 - Los Angeles Lakers vs Utah Jazz (NBA ESPN) (FHD) (15d)
 http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="04:00 - Los Angeles Lakers vs Utah Jazz (NBA League Pass) (FHD) (cd7)",04:00 - Los Angeles Lakers vs Utah Jazz (NBA League Pass) (FHD) (cd7)
 http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
+#EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="04:00 - Los Angeles Lakers vs Utah Jazz (NBA League Pass) (FHD) (1f5)",04:00 - Los Angeles Lakers vs Utah Jazz (NBA League Pass) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f585e677701e7283ed0cda9fad5d49d885afa9e
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="04:00 - Los Angeles Lakers vs Utah Jazz (NBA League Pass) (FHD) (53c)",04:00 - Los Angeles Lakers vs Utah Jazz (NBA League Pass) (FHD) (53c)
 http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
+#EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="04:00 - Sacramento Kings vs San Antonio Spurs (NBA ESPN) (HD) (c50)",04:00 - Sacramento Kings vs San Antonio Spurs (NBA ESPN) (HD) (c50)
+http://127.0.0.1:6878/ace/getstream?id=c50472a723a9c8412dc51fc6ae2761e113014b00
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="04:00 - Sacramento Kings vs San Antonio Spurs (NBA ESPN) (FHD) (15d)",04:00 - Sacramento Kings vs San Antonio Spurs (NBA ESPN) (FHD) (15d)
 http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="04:00 - Sacramento Kings vs San Antonio Spurs (NBA League Pass) (FHD) (cd7)",04:00 - Sacramento Kings vs San Antonio Spurs (NBA League Pass) (FHD) (cd7)
 http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
+#EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="04:00 - Sacramento Kings vs San Antonio Spurs (NBA League Pass) (FHD) (1f5)",04:00 - Sacramento Kings vs San Antonio Spurs (NBA League Pass) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f585e677701e7283ed0cda9fad5d49d885afa9e
 #EXTINF:-1 group-title="24/11/2026 | NBA Liga Regular" tvg-name="04:00 - Sacramento Kings vs San Antonio Spurs (NBA League Pass) (FHD) (53c)",04:00 - Sacramento Kings vs San Antonio Spurs (NBA League Pass) (FHD) (53c)
 http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
+#EXTINF:-1 group-title="24/11/2026 | UEFA Youth League Fase Liga" tvg-name="14:00 - Arsenal Academy vs B. Dortmund Academy (M+ Liga de Campeones) (HD) (c35)",14:00 - Arsenal Academy vs B. Dortmund Academy (M+ Liga de Campeones) (HD) (c35)
+http://127.0.0.1:6878/ace/getstream?id=c357860cefca4a77e9a1d319083752a5be627709
 #EXTINF:-1 group-title="24/11/2026 | UEFA Youth League Fase Liga" tvg-name="14:00 - Arsenal Academy vs B. Dortmund Academy (M+ Liga de Campeones) (FHD) (cac)",14:00 - Arsenal Academy vs B. Dortmund Academy (M+ Liga de Campeones) (FHD) (cac)
 http://127.0.0.1:6878/ace/getstream?id=cac54759f6353a4a8fc5b6ec84849bc50b048193
 #EXTINF:-1 group-title="24/11/2026 | UEFA Youth League Fase Liga" tvg-name="14:00 - Arsenal Academy vs B. Dortmund Academy (M+ Liga de Campeones) (FHD) (68d)",14:00 - Arsenal Academy vs B. Dortmund Academy (M+ Liga de Campeones) (FHD) (68d)
 http://127.0.0.1:6878/ace/getstream?id=68d1621b35cbabb84633b9fb82e81b03056ffe02
+#EXTINF:-1 group-title="24/11/2026 | UEFA Youth League Fase Liga" tvg-name="14:00 - Arsenal Academy vs B. Dortmund Academy (M+ Liga de Campeones) (FHD) (16b)",14:00 - Arsenal Academy vs B. Dortmund Academy (M+ Liga de Campeones) (FHD) (16b)
+http://127.0.0.1:6878/ace/getstream?id=16b6e20bdf0553c2efacb74aa33d68b89ed8994c
 #EXTINF:-1 group-title="24/11/2026 | UEFA Youth League Fase Liga" tvg-name="16:00 - Real Madrid Academy vs PSV Academy (M+ Vamos) (HD) (b20)",16:00 - Real Madrid Academy vs PSV Academy (M+ Vamos) (HD) (b20)
 http://127.0.0.1:6878/ace/getstream?id=b20b467fae6af2983ee5163ebcb469eeca9146ee
+#EXTINF:-1 group-title="24/11/2026 | UEFA Youth League Fase Liga" tvg-name="16:00 - Real Madrid Academy vs PSV Academy (M+ Liga de Campeones) (HD) (c35)",16:00 - Real Madrid Academy vs PSV Academy (M+ Liga de Campeones) (HD) (c35)
+http://127.0.0.1:6878/ace/getstream?id=c357860cefca4a77e9a1d319083752a5be627709
 #EXTINF:-1 group-title="24/11/2026 | UEFA Youth League Fase Liga" tvg-name="16:00 - Real Madrid Academy vs PSV Academy (M+ Liga de Campeones) (FHD) (cac)",16:00 - Real Madrid Academy vs PSV Academy (M+ Liga de Campeones) (FHD) (cac)
 http://127.0.0.1:6878/ace/getstream?id=cac54759f6353a4a8fc5b6ec84849bc50b048193
 #EXTINF:-1 group-title="24/11/2026 | UEFA Youth League Fase Liga" tvg-name="16:00 - Real Madrid Academy vs PSV Academy (M+ Liga de Campeones) (FHD) (68d)",16:00 - Real Madrid Academy vs PSV Academy (M+ Liga de Campeones) (FHD) (68d)
 http://127.0.0.1:6878/ace/getstream?id=68d1621b35cbabb84633b9fb82e81b03056ffe02
-#EXTINF:-1 group-title="24/11/2026 | UEFA Youth League Fase Liga" tvg-name="16:00 - Real Madrid Academy vs PSV Academy (Real Madrid TV) (FHD) (b6e)",16:00 - Real Madrid Academy vs PSV Academy (Real Madrid TV) (FHD) (b6e)
-http://127.0.0.1:6878/ace/getstream?id=b6e789be7b85bc63b7508cbe01a78c3722ec7aff
+#EXTINF:-1 group-title="24/11/2026 | UEFA Youth League Fase Liga" tvg-name="16:00 - Real Madrid Academy vs PSV Academy (M+ Liga de Campeones) (FHD) (16b)",16:00 - Real Madrid Academy vs PSV Academy (M+ Liga de Campeones) (FHD) (16b)
+http://127.0.0.1:6878/ace/getstream?id=16b6e20bdf0553c2efacb74aa33d68b89ed8994c
 #EXTINF:-1 group-title="24/11/2026 | UEFA Youth League Fase Liga" tvg-name="16:00 - Real Madrid Academy vs PSV Academy (Real Madrid TV) (FHD) (c07)",16:00 - Real Madrid Academy vs PSV Academy (Real Madrid TV) (FHD) (c07)
 http://127.0.0.1:6878/ace/getstream?id=c077065de8837b84c0caec11f67ee7ad7141e3c5
-#EXTINF:-1 group-title="24/11/2026 | Davis Cup Finals 1/4 de Final" tvg-name="16:00 - República Checa vs Canadá (M+ Deportes 2) (HD) (f62)",16:00 - República Checa vs Canadá (M+ Deportes 2) (HD) (f62)
-http://127.0.0.1:6878/ace/getstream?id=f62f06bb905564bf718467658947e24c2b21735f
+#EXTINF:-1 group-title="24/11/2026 | Davis Cup Finals 1/4 de Final" tvg-name="16:00 - República Checa vs Canadá (M+ Deportes 2) (FHD) (6b5)",16:00 - República Checa vs Canadá (M+ Deportes 2) (FHD) (6b5)
+http://127.0.0.1:6878/ace/getstream?id=6b556144b907286ddc6dc071ecf7362b0fab5f78
 #EXTINF:-1 group-title="24/11/2026 | FIFA Mundial Sub-17 Fase de grupos" tvg-name="16:30 - Honduras vs Colombia (Teledeporte) (HD) (d88)",16:30 - Honduras vs Colombia (Teledeporte) (HD) (d88)
 http://127.0.0.1:6878/ace/getstream?id=d889729516a30bb2ac9e0355a1fbda0d10281e9a
-#EXTINF:-1 group-title="24/11/2026 | Euroliga Liga Regular" tvg-name="18:00 - Besiktas JK Istanbul vs Paris Basketball (M+ Baloncesto) (FHD) (d9e)",18:00 - Besiktas JK Istanbul vs Paris Basketball (M+ Baloncesto) (FHD) (d9e)
-http://127.0.0.1:6878/ace/getstream?id=d9e468180fcd3dcd45141dc09f56ea21eb88912e
+#EXTINF:-1 group-title="24/11/2026 | FIFA Mundial Sub-17 Fase de grupos" tvg-name="16:30 - Honduras vs Colombia (Teledeporte) (FHD) (1d9)",16:30 - Honduras vs Colombia (Teledeporte) (FHD) (1d9)
+http://127.0.0.1:6878/ace/getstream?id=1d9e4ec1c78ae31da88a5f8582eb95d29d329d8d
+#EXTINF:-1 group-title="24/11/2026 | FIFA Mundial Sub-17 Fase de grupos" tvg-name="16:30 - Honduras vs Colombia (Teledeporte) (FHD) (1a4)",16:30 - Honduras vs Colombia (Teledeporte) (FHD) (1a4)
+http://127.0.0.1:6878/ace/getstream?id=1a4360fe8dd0d2467cca45c6bc13ff43ca21ac55
 #EXTINF:-1 group-title="24/11/2026 | Euroliga Liga Regular" tvg-name="18:00 - Besiktas JK Istanbul vs Paris Basketball (M+ Baloncesto) (FHD) (31f)",18:00 - Besiktas JK Istanbul vs Paris Basketball (M+ Baloncesto) (FHD) (31f)
 http://127.0.0.1:6878/ace/getstream?id=31f2a257cd226d80339342c449d76339b4a1e6fa
 #EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="18:45 - Galatasaray vs Aston Villa (M+ Liga de Campeones 2) (HD) (71c)",18:45 - Galatasaray vs Aston Villa (M+ Liga de Campeones 2) (HD) (71c)
 http://127.0.0.1:6878/ace/getstream?id=71ca00c9df974de359209bc9e1f6c31dc16f4150
 #EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="18:45 - Galatasaray vs Aston Villa (M+ Liga de Campeones 2) (FHD) (e4d)",18:45 - Galatasaray vs Aston Villa (M+ Liga de Campeones 2) (FHD) (e4d)
 http://127.0.0.1:6878/ace/getstream?id=e4dc9305ef1933314ef31c9aa476e7eba38de6e8
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="18:45 - Galatasaray vs Aston Villa (M+ Liga de Campeones 2) (FHD) (798)",18:45 - Galatasaray vs Aston Villa (M+ Liga de Campeones 2) (FHD) (798)
+http://127.0.0.1:6878/ace/getstream?id=7984a4450c0e9e1584003ed58c0a2e95da20316a
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="18:45 - Bodø/Glimt vs LASK Linz (M+ Liga de Campeones 3) (HD) (d89)",18:45 - Bodø/Glimt vs LASK Linz (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="18:45 - Bodø/Glimt vs LASK Linz (M+ Liga de Campeones 3) (HD) (6b4)",18:45 - Bodø/Glimt vs LASK Linz (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="18:45 - Bodø/Glimt vs LASK Linz (M+ Liga de Campeones 3) (FHD) (9ab)",18:45 - Bodø/Glimt vs LASK Linz (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="18:45 - Bodø/Glimt vs LASK Linz (M+ Liga de Campeones 3) (FHD) (bc1)",18:45 - Bodø/Glimt vs LASK Linz (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
 #EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="18:45 - Bodø/Glimt vs LASK Linz (M+ Liga de Campeones 3) (FHD) (08c)",18:45 - Bodø/Glimt vs LASK Linz (M+ Liga de Campeones 3) (FHD) (08c)
 http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
-#EXTINF:-1 group-title="24/11/2026 | EHF European League Fase de grupos" tvg-name="18:45 - HC Buzau 2012 vs BM Granollers (Esport3) (HD) (839)",18:45 - HC Buzau 2012 vs BM Granollers (Esport3) (HD) (839)
-http://127.0.0.1:6878/ace/getstream?id=8392984997d6ce361bca121ca1631cdd04040ae7
-#EXTINF:-1 group-title="24/11/2026 | EHF European League Fase de grupos" tvg-name="18:45 - HC Buzau 2012 vs BM Granollers (Esport3) (FHD) (eb0)",18:45 - HC Buzau 2012 vs BM Granollers (Esport3) (FHD) (eb0)
-http://127.0.0.1:6878/ace/getstream?id=eb0a08dfb47f01b0d8a8f13ab11a1c062d9eebfb
 #EXTINF:-1 group-title="24/11/2026 | EHF European League Fase de grupos" tvg-name="18:45 - HC Buzau 2012 vs BM Granollers (Esport3) (FHD) (20a)",18:45 - HC Buzau 2012 vs BM Granollers (Esport3) (FHD) (20a)
 http://127.0.0.1:6878/ace/getstream?id=20a6f764b55a1cbe34f62d732561b4a09ff50829
 #EXTINF:-1 group-title="24/11/2026 | Euroliga Liga Regular" tvg-name="19:00 - Crvena Zvezda MTS Belgrade vs Virtus Bologna (M+ Baloncesto 2) (FHD) (dce)",19:00 - Crvena Zvezda MTS Belgrade vs Virtus Bologna (M+ Baloncesto 2) (FHD) (dce)
 http://127.0.0.1:6878/ace/getstream?id=dce8628942410de57606a6849ab6be46de3f9458
-#EXTINF:-1 group-title="24/11/2026 | Euroliga Liga Regular" tvg-name="20:00 - FC Bayern Basketball vs Maccabi Tel Aviv BC (M+ Baloncesto 3) (FHD) (54e)",20:00 - FC Bayern Basketball vs Maccabi Tel Aviv BC (M+ Baloncesto 3) (FHD) (54e)
-http://127.0.0.1:6878/ace/getstream?id=54e1205da682d519fcc8ddeccff1626b8af86a6a
-#EXTINF:-1 group-title="24/11/2026 | Liga U Primera Fase" tvg-name="20:30 - Real Madrid B Baloncesto vs Casademont Zaragoza B (DAZN Baloncesto) (HD) (817)",20:30 - Real Madrid B Baloncesto vs Casademont Zaragoza B (DAZN Baloncesto) (HD) (817)
-http://127.0.0.1:6878/ace/getstream?id=81726596472933c3dfc9b3cd31fef7d0716c8ba4
+#EXTINF:-1 group-title="24/11/2026 | Euroliga Liga Regular" tvg-name="20:00 - FC Bayern Basketball vs Maccabi Tel Aviv BC (M+ Baloncesto 3) (FHD) (6d4)",20:00 - FC Bayern Basketball vs Maccabi Tel Aviv BC (M+ Baloncesto 3) (FHD) (6d4)
+http://127.0.0.1:6878/ace/getstream?id=6d493da11517de648f00646c3040d1c8fce91f4a
 #EXTINF:-1 group-title="24/11/2026 | Liga U Primera Fase" tvg-name="20:30 - Real Madrid B Baloncesto vs Casademont Zaragoza B (DAZN Baloncesto) (FHD) (535)",20:30 - Real Madrid B Baloncesto vs Casademont Zaragoza B (DAZN Baloncesto) (FHD) (535)
 http://127.0.0.1:6878/ace/getstream?id=535b353f94a275ca60ab176c0633ecbb561b41f2
-#EXTINF:-1 group-title="24/11/2026 | Liga U Primera Fase" tvg-name="20:30 - Real Madrid B Baloncesto vs Casademont Zaragoza B (DAZN Baloncesto) (FHD) (383)",20:30 - Real Madrid B Baloncesto vs Casademont Zaragoza B (DAZN Baloncesto) (FHD) (383)
-http://127.0.0.1:6878/ace/getstream?id=3834a73b9e07c3d0485935407366d7acac52fdf0
 #EXTINF:-1 group-title="24/11/2026 | Euroliga Liga Regular" tvg-name="20:30 - Valencia Basket vs Panathinaikos BC (M+ Vamos) (HD) (b20)",20:30 - Valencia Basket vs Panathinaikos BC (M+ Vamos) (HD) (b20)
 http://127.0.0.1:6878/ace/getstream?id=b20b467fae6af2983ee5163ebcb469eeca9146ee
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Arsenal vs Borussia Dortmund (M+ Liga de Campeones 3) (HD) (d89)",21:00 - Arsenal vs Borussia Dortmund (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Arsenal vs Borussia Dortmund (M+ Liga de Campeones 3) (HD) (6b4)",21:00 - Arsenal vs Borussia Dortmund (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Arsenal vs Borussia Dortmund (M+ Liga de Campeones 3) (FHD) (9ab)",21:00 - Arsenal vs Borussia Dortmund (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Arsenal vs Borussia Dortmund (M+ Liga de Campeones 3) (FHD) (bc1)",21:00 - Arsenal vs Borussia Dortmund (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
 #EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Arsenal vs Borussia Dortmund (M+ Liga de Campeones 3) (FHD) (08c)",21:00 - Arsenal vs Borussia Dortmund (M+ Liga de Campeones 3) (FHD) (08c)
 http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
 #EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Arsenal vs Borussia Dortmund (M+ Liga de Campeones 4) (FHD) (c6e)",21:00 - Arsenal vs Borussia Dortmund (M+ Liga de Campeones 4) (FHD) (c6e)
 http://127.0.0.1:6878/ace/getstream?id=c6e038aa3938b4f6a58a212a08b324851a361048
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Arsenal vs Borussia Dortmund (M+ Liga de Campeones 4) (FHD) (140)",21:00 - Arsenal vs Borussia Dortmund (M+ Liga de Campeones 4) (FHD) (140)
+http://127.0.0.1:6878/ace/getstream?id=140bd35544f42a466b852163d18124ecd2fafd10
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Arsenal vs Borussia Dortmund (M+ Liga de Campeones 4) (FHD) (c04)",21:00 - Arsenal vs Borussia Dortmund (M+ Liga de Campeones 4) (FHD) (c04)
+http://127.0.0.1:6878/ace/getstream?id=c043fade5b4aac4899017bab40340fefccca7e09
 #EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Manchester City vs Napoli (M+ Liga de Campeones 4) (FHD) (c6e)",21:00 - Manchester City vs Napoli (M+ Liga de Campeones 4) (FHD) (c6e)
 http://127.0.0.1:6878/ace/getstream?id=c6e038aa3938b4f6a58a212a08b324851a361048
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Manchester City vs Napoli (M+ Liga de Campeones 4) (FHD) (140)",21:00 - Manchester City vs Napoli (M+ Liga de Campeones 4) (FHD) (140)
+http://127.0.0.1:6878/ace/getstream?id=140bd35544f42a466b852163d18124ecd2fafd10
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Manchester City vs Napoli (M+ Liga de Campeones 4) (FHD) (c04)",21:00 - Manchester City vs Napoli (M+ Liga de Campeones 4) (FHD) (c04)
+http://127.0.0.1:6878/ace/getstream?id=c043fade5b4aac4899017bab40340fefccca7e09
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Manchester City vs Napoli (M+ Liga de Campeones 5) (FHD) (c79)",21:00 - Manchester City vs Napoli (M+ Liga de Campeones 5) (FHD) (c79)
+http://127.0.0.1:6878/ace/getstream?id=c7959c396edfcc1654541572ed3cb39f7456bbd6
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Manchester City vs Napoli (M+ Liga de Campeones 5) (FHD) (860)",21:00 - Manchester City vs Napoli (M+ Liga de Campeones 5) (FHD) (860)
+http://127.0.0.1:6878/ace/getstream?id=860392c455d7cd2b1664ed6c95a8aa22ee869023
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Real Madrid vs PSV Eindhoven (MOVISTAR PLUS) (HD) (d2b)",21:00 - Real Madrid vs PSV Eindhoven (MOVISTAR PLUS) (HD) (d2b)
+http://127.0.0.1:6878/ace/getstream?id=d2b5299ed45cbaf35482bb0869b2c2f75fbed64a
 #EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Real Madrid vs PSV Eindhoven (MOVISTAR PLUS) (FHD) (96c)",21:00 - Real Madrid vs PSV Eindhoven (MOVISTAR PLUS) (FHD) (96c)
 http://127.0.0.1:6878/ace/getstream?id=96cc6b02a0ce66ed3a01d9904e7ee8db0f2da5d7
 #EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Real Madrid vs PSV Eindhoven (MOVISTAR PLUS) (FHD) (68b)",21:00 - Real Madrid vs PSV Eindhoven (MOVISTAR PLUS) (FHD) (68b)
 http://127.0.0.1:6878/ace/getstream?id=68b53041272592f4fbf00bf38cd91e54a4e16abf
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Real Madrid vs PSV Eindhoven (M+ Liga de Campeones) (HD) (c35)",21:00 - Real Madrid vs PSV Eindhoven (M+ Liga de Campeones) (HD) (c35)
+http://127.0.0.1:6878/ace/getstream?id=c357860cefca4a77e9a1d319083752a5be627709
 #EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Real Madrid vs PSV Eindhoven (M+ Liga de Campeones) (FHD) (cac)",21:00 - Real Madrid vs PSV Eindhoven (M+ Liga de Campeones) (FHD) (cac)
 http://127.0.0.1:6878/ace/getstream?id=cac54759f6353a4a8fc5b6ec84849bc50b048193
 #EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Real Madrid vs PSV Eindhoven (M+ Liga de Campeones) (FHD) (68d)",21:00 - Real Madrid vs PSV Eindhoven (M+ Liga de Campeones) (FHD) (68d)
 http://127.0.0.1:6878/ace/getstream?id=68d1621b35cbabb84633b9fb82e81b03056ffe02
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Real Madrid vs PSV Eindhoven (M+ Liga de Campeones) (FHD) (16b)",21:00 - Real Madrid vs PSV Eindhoven (M+ Liga de Campeones) (FHD) (16b)
+http://127.0.0.1:6878/ace/getstream?id=16b6e20bdf0553c2efacb74aa33d68b89ed8994c
 #EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Real Madrid vs PSV Eindhoven (M+ Liga de Campeones 4) (FHD) (c6e)",21:00 - Real Madrid vs PSV Eindhoven (M+ Liga de Campeones 4) (FHD) (c6e)
 http://127.0.0.1:6878/ace/getstream?id=c6e038aa3938b4f6a58a212a08b324851a361048
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Real Madrid vs PSV Eindhoven (M+ Liga de Campeones 4) (FHD) (140)",21:00 - Real Madrid vs PSV Eindhoven (M+ Liga de Campeones 4) (FHD) (140)
+http://127.0.0.1:6878/ace/getstream?id=140bd35544f42a466b852163d18124ecd2fafd10
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Real Madrid vs PSV Eindhoven (M+ Liga de Campeones 4) (FHD) (c04)",21:00 - Real Madrid vs PSV Eindhoven (M+ Liga de Campeones 4) (FHD) (c04)
+http://127.0.0.1:6878/ace/getstream?id=c043fade5b4aac4899017bab40340fefccca7e09
 #EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Feyenoord vs FC Porto (M+ Liga de Campeones 4) (FHD) (c6e)",21:00 - Feyenoord vs FC Porto (M+ Liga de Campeones 4) (FHD) (c6e)
 http://127.0.0.1:6878/ace/getstream?id=c6e038aa3938b4f6a58a212a08b324851a361048
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Feyenoord vs FC Porto (M+ Liga de Campeones 4) (FHD) (140)",21:00 - Feyenoord vs FC Porto (M+ Liga de Campeones 4) (FHD) (140)
+http://127.0.0.1:6878/ace/getstream?id=140bd35544f42a466b852163d18124ecd2fafd10
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Feyenoord vs FC Porto (M+ Liga de Campeones 4) (FHD) (c04)",21:00 - Feyenoord vs FC Porto (M+ Liga de Campeones 4) (FHD) (c04)
+http://127.0.0.1:6878/ace/getstream?id=c043fade5b4aac4899017bab40340fefccca7e09
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Feyenoord vs FC Porto (M+ Liga de Campeones 6) (FHD) (f30)",21:00 - Feyenoord vs FC Porto (M+ Liga de Campeones 6) (FHD) (f30)
+http://127.0.0.1:6878/ace/getstream?id=f305b4719cfe00b6bd2aeeb3e7265b119d4b687b
 #EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Feyenoord vs FC Porto (M+ Liga de Campeones 6) (FHD) (95d)",21:00 - Feyenoord vs FC Porto (M+ Liga de Campeones 6) (FHD) (95d)
 http://127.0.0.1:6878/ace/getstream?id=95d4e79a6e558c14cae4c3fe1dd4c3ad8804fd3d
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Feyenoord vs FC Porto (M+ Liga de Campeones 6) (FHD) (08d)",21:00 - Feyenoord vs FC Porto (M+ Liga de Campeones 6) (FHD) (08d)
+http://127.0.0.1:6878/ace/getstream?id=08d75f7722acbe4a024a3bcadcea617504c4778c
 #EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - RB Leipzig vs Lens (M+ Liga de Campeones 4) (FHD) (c6e)",21:00 - RB Leipzig vs Lens (M+ Liga de Campeones 4) (FHD) (c6e)
 http://127.0.0.1:6878/ace/getstream?id=c6e038aa3938b4f6a58a212a08b324851a361048
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - RB Leipzig vs Lens (M+ Liga de Campeones 4) (FHD) (140)",21:00 - RB Leipzig vs Lens (M+ Liga de Campeones 4) (FHD) (140)
+http://127.0.0.1:6878/ace/getstream?id=140bd35544f42a466b852163d18124ecd2fafd10
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - RB Leipzig vs Lens (M+ Liga de Campeones 4) (FHD) (c04)",21:00 - RB Leipzig vs Lens (M+ Liga de Campeones 4) (FHD) (c04)
+http://127.0.0.1:6878/ace/getstream?id=c043fade5b4aac4899017bab40340fefccca7e09
 #EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - RB Leipzig vs Lens (M+ Liga de Campeones 8) (FHD) (f57)",21:00 - RB Leipzig vs Lens (M+ Liga de Campeones 8) (FHD) (f57)
 http://127.0.0.1:6878/ace/getstream?id=f57b01f2507e4ec4fad3cd81aece503d185120a7
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - RB Leipzig vs Lens (M+ Liga de Campeones 8) (FHD) (282)",21:00 - RB Leipzig vs Lens (M+ Liga de Campeones 8) (FHD) (282)
+http://127.0.0.1:6878/ace/getstream?id=282c37d1583e43ea2970a5d85ecb616b0960d048
 #EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Slovan Bratislava vs Real Betis (M+ Liga de Campeones 2) (HD) (71c)",21:00 - Slovan Bratislava vs Real Betis (M+ Liga de Campeones 2) (HD) (71c)
 http://127.0.0.1:6878/ace/getstream?id=71ca00c9df974de359209bc9e1f6c31dc16f4150
 #EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Slovan Bratislava vs Real Betis (M+ Liga de Campeones 2) (FHD) (e4d)",21:00 - Slovan Bratislava vs Real Betis (M+ Liga de Campeones 2) (FHD) (e4d)
 http://127.0.0.1:6878/ace/getstream?id=e4dc9305ef1933314ef31c9aa476e7eba38de6e8
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Slovan Bratislava vs Real Betis (M+ Liga de Campeones 2) (FHD) (798)",21:00 - Slovan Bratislava vs Real Betis (M+ Liga de Campeones 2) (FHD) (798)
+http://127.0.0.1:6878/ace/getstream?id=7984a4450c0e9e1584003ed58c0a2e95da20316a
 #EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Slovan Bratislava vs Real Betis (M+ Liga de Campeones 4) (FHD) (c6e)",21:00 - Slovan Bratislava vs Real Betis (M+ Liga de Campeones 4) (FHD) (c6e)
 http://127.0.0.1:6878/ace/getstream?id=c6e038aa3938b4f6a58a212a08b324851a361048
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Slovan Bratislava vs Real Betis (M+ Liga de Campeones 4) (FHD) (140)",21:00 - Slovan Bratislava vs Real Betis (M+ Liga de Campeones 4) (FHD) (140)
+http://127.0.0.1:6878/ace/getstream?id=140bd35544f42a466b852163d18124ecd2fafd10
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Slovan Bratislava vs Real Betis (M+ Liga de Campeones 4) (FHD) (c04)",21:00 - Slovan Bratislava vs Real Betis (M+ Liga de Campeones 4) (FHD) (c04)
+http://127.0.0.1:6878/ace/getstream?id=c043fade5b4aac4899017bab40340fefccca7e09
 #EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Como 1907 vs AEK FC (M+ Liga de Campeones 4) (FHD) (c6e)",21:00 - Como 1907 vs AEK FC (M+ Liga de Campeones 4) (FHD) (c6e)
 http://127.0.0.1:6878/ace/getstream?id=c6e038aa3938b4f6a58a212a08b324851a361048
-#EXTINF:-1 group-title="24/11/2026 | Euroliga Liga Regular" tvg-name="21:00 - Barça Basket vs Fenerbahce Istanbul (M+ Baloncesto) (FHD) (d9e)",21:00 - Barça Basket vs Fenerbahce Istanbul (M+ Baloncesto) (FHD) (d9e)
-http://127.0.0.1:6878/ace/getstream?id=d9e468180fcd3dcd45141dc09f56ea21eb88912e
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Como 1907 vs AEK FC (M+ Liga de Campeones 4) (FHD) (140)",21:00 - Como 1907 vs AEK FC (M+ Liga de Campeones 4) (FHD) (140)
+http://127.0.0.1:6878/ace/getstream?id=140bd35544f42a466b852163d18124ecd2fafd10
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Como 1907 vs AEK FC (M+ Liga de Campeones 4) (FHD) (c04)",21:00 - Como 1907 vs AEK FC (M+ Liga de Campeones 4) (FHD) (c04)
+http://127.0.0.1:6878/ace/getstream?id=c043fade5b4aac4899017bab40340fefccca7e09
+#EXTINF:-1 group-title="24/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Como 1907 vs AEK FC (M+ Liga de Campeones 7) (FHD) (934)",21:00 - Como 1907 vs AEK FC (M+ Liga de Campeones 7) (FHD) (934)
+http://127.0.0.1:6878/ace/getstream?id=93402a76024868654e2c7ba5e7d2b376721767f4
 #EXTINF:-1 group-title="24/11/2026 | Euroliga Liga Regular" tvg-name="21:00 - Barça Basket vs Fenerbahce Istanbul (M+ Baloncesto) (FHD) (31f)",21:00 - Barça Basket vs Fenerbahce Istanbul (M+ Baloncesto) (FHD) (31f)
 http://127.0.0.1:6878/ace/getstream?id=31f2a257cd226d80339342c449d76339b4a1e6fa
 #EXTINF:-1 group-title="24/11/2026 | Serie A Brasil" tvg-name="22:00 - Chapecoense vs Palmeiras (M+ Vamos 2) (HD) (758)",22:00 - Chapecoense vs Palmeiras (M+ Vamos 2) (HD) (758)
 http://127.0.0.1:6878/ace/getstream?id=75898c06f71b867b147654912bb0db8a19d6086e
 #EXTINF:-1 group-title="24/11/2026 | Serie A Brasil" tvg-name="22:00 - Chapecoense vs Palmeiras (M+ Vamos 2) (FHD) (c04)",22:00 - Chapecoense vs Palmeiras (M+ Vamos 2) (FHD) (c04)
 http://127.0.0.1:6878/ace/getstream?id=c04f1daf665ca4b6a8d1f6d552b2bffff1c839d3
-#EXTINF:-1 group-title="24/11/2026 | Serie A Brasil" tvg-name="22:00 - Chapecoense vs Palmeiras (M+ Vamos 2) (FHD) (22e)",22:00 - Chapecoense vs Palmeiras (M+ Vamos 2) (FHD) (22e)
-http://127.0.0.1:6878/ace/getstream?id=22ed339fb4f878ab562a434d847dd7849736794f
 #EXTINF:-1 group-title="24/11/2026 | Serie A Brasil" tvg-name="22:00 - Chapecoense vs Palmeiras (M+ Vamos 2) (FHD) (bec)",22:00 - Chapecoense vs Palmeiras (M+ Vamos 2) (FHD) (bec)
 http://127.0.0.1:6878/ace/getstream?id=bec179fcda0f5016821bcc97f34f407d86f128e6
+#EXTINF:-1 group-title="24/11/2026 | Serie A Brasil" tvg-name="22:00 - Chapecoense vs Palmeiras (M+ Vamos 2) (FHD) (22e)",22:00 - Chapecoense vs Palmeiras (M+ Vamos 2) (FHD) (22e)
+http://127.0.0.1:6878/ace/getstream?id=22ed339fb4f878ab562a434d847dd7849736794f
+#EXTINF:-1 group-title="24/11/2026 | Serie A Brasil" tvg-name="22:00 - Chapecoense vs Palmeiras (M+ Liga de Campeones 9) (FHD) (1f5)",22:00 - Chapecoense vs Palmeiras (M+ Liga de Campeones 9) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f528ed789f615ceccb4f878634ea2b767ec7442
+#EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="01:00 - Orlando Magic vs Detroit Pistons (NBA ESPN) (HD) (c50)",01:00 - Orlando Magic vs Detroit Pistons (NBA ESPN) (HD) (c50)
+http://127.0.0.1:6878/ace/getstream?id=c50472a723a9c8412dc51fc6ae2761e113014b00
 #EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="01:00 - Orlando Magic vs Detroit Pistons (NBA ESPN) (FHD) (15d)",01:00 - Orlando Magic vs Detroit Pistons (NBA ESPN) (FHD) (15d)
 http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
 #EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="01:00 - Orlando Magic vs Detroit Pistons (NBA League Pass) (FHD) (cd7)",01:00 - Orlando Magic vs Detroit Pistons (NBA League Pass) (FHD) (cd7)
 http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
+#EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="01:00 - Orlando Magic vs Detroit Pistons (NBA League Pass) (FHD) (1f5)",01:00 - Orlando Magic vs Detroit Pistons (NBA League Pass) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f585e677701e7283ed0cda9fad5d49d885afa9e
 #EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="01:00 - Orlando Magic vs Detroit Pistons (NBA League Pass) (FHD) (53c)",01:00 - Orlando Magic vs Detroit Pistons (NBA League Pass) (FHD) (53c)
 http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
+#EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="02:00 - Washington Wizards vs Boston Celtics (NBA ESPN) (HD) (c50)",02:00 - Washington Wizards vs Boston Celtics (NBA ESPN) (HD) (c50)
+http://127.0.0.1:6878/ace/getstream?id=c50472a723a9c8412dc51fc6ae2761e113014b00
 #EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="02:00 - Washington Wizards vs Boston Celtics (NBA ESPN) (FHD) (15d)",02:00 - Washington Wizards vs Boston Celtics (NBA ESPN) (FHD) (15d)
 http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
 #EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="02:00 - Washington Wizards vs Boston Celtics (NBA League Pass) (FHD) (cd7)",02:00 - Washington Wizards vs Boston Celtics (NBA League Pass) (FHD) (cd7)
 http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
+#EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="02:00 - Washington Wizards vs Boston Celtics (NBA League Pass) (FHD) (1f5)",02:00 - Washington Wizards vs Boston Celtics (NBA League Pass) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f585e677701e7283ed0cda9fad5d49d885afa9e
 #EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="02:00 - Washington Wizards vs Boston Celtics (NBA League Pass) (FHD) (53c)",02:00 - Washington Wizards vs Boston Celtics (NBA League Pass) (FHD) (53c)
 http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
+#EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="04:00 - Denver Nuggets vs Dallas Mavericks (NBA ESPN) (HD) (c50)",04:00 - Denver Nuggets vs Dallas Mavericks (NBA ESPN) (HD) (c50)
+http://127.0.0.1:6878/ace/getstream?id=c50472a723a9c8412dc51fc6ae2761e113014b00
 #EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="04:00 - Denver Nuggets vs Dallas Mavericks (NBA ESPN) (FHD) (15d)",04:00 - Denver Nuggets vs Dallas Mavericks (NBA ESPN) (FHD) (15d)
 http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
 #EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="04:00 - Denver Nuggets vs Dallas Mavericks (NBA League Pass) (FHD) (cd7)",04:00 - Denver Nuggets vs Dallas Mavericks (NBA League Pass) (FHD) (cd7)
 http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
+#EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="04:00 - Denver Nuggets vs Dallas Mavericks (NBA League Pass) (FHD) (1f5)",04:00 - Denver Nuggets vs Dallas Mavericks (NBA League Pass) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f585e677701e7283ed0cda9fad5d49d885afa9e
 #EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="04:00 - Denver Nuggets vs Dallas Mavericks (NBA League Pass) (FHD) (53c)",04:00 - Denver Nuggets vs Dallas Mavericks (NBA League Pass) (FHD) (53c)
 http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
-#EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="04:00 - Denver Nuggets vs Dallas Mavericks (DAZN Baloncesto) (HD) (817)",04:00 - Denver Nuggets vs Dallas Mavericks (DAZN Baloncesto) (HD) (817)
-http://127.0.0.1:6878/ace/getstream?id=81726596472933c3dfc9b3cd31fef7d0716c8ba4
 #EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="04:00 - Denver Nuggets vs Dallas Mavericks (DAZN Baloncesto) (FHD) (535)",04:00 - Denver Nuggets vs Dallas Mavericks (DAZN Baloncesto) (FHD) (535)
 http://127.0.0.1:6878/ace/getstream?id=535b353f94a275ca60ab176c0633ecbb561b41f2
-#EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="04:00 - Denver Nuggets vs Dallas Mavericks (DAZN Baloncesto) (FHD) (383)",04:00 - Denver Nuggets vs Dallas Mavericks (DAZN Baloncesto) (FHD) (383)
-http://127.0.0.1:6878/ace/getstream?id=3834a73b9e07c3d0485935407366d7acac52fdf0
+#EXTINF:-1 group-title="25/11/2026 | UEFA Youth League Fase Liga" tvg-name="14:00 - Sporting CP Academy vs Man Utd Academy (M+ Liga de Campeones) (HD) (c35)",14:00 - Sporting CP Academy vs Man Utd Academy (M+ Liga de Campeones) (HD) (c35)
+http://127.0.0.1:6878/ace/getstream?id=c357860cefca4a77e9a1d319083752a5be627709
 #EXTINF:-1 group-title="25/11/2026 | UEFA Youth League Fase Liga" tvg-name="14:00 - Sporting CP Academy vs Man Utd Academy (M+ Liga de Campeones) (FHD) (cac)",14:00 - Sporting CP Academy vs Man Utd Academy (M+ Liga de Campeones) (FHD) (cac)
 http://127.0.0.1:6878/ace/getstream?id=cac54759f6353a4a8fc5b6ec84849bc50b048193
 #EXTINF:-1 group-title="25/11/2026 | UEFA Youth League Fase Liga" tvg-name="14:00 - Sporting CP Academy vs Man Utd Academy (M+ Liga de Campeones) (FHD) (68d)",14:00 - Sporting CP Academy vs Man Utd Academy (M+ Liga de Campeones) (FHD) (68d)
 http://127.0.0.1:6878/ace/getstream?id=68d1621b35cbabb84633b9fb82e81b03056ffe02
+#EXTINF:-1 group-title="25/11/2026 | UEFA Youth League Fase Liga" tvg-name="14:00 - Sporting CP Academy vs Man Utd Academy (M+ Liga de Campeones) (FHD) (16b)",14:00 - Sporting CP Academy vs Man Utd Academy (M+ Liga de Campeones) (FHD) (16b)
+http://127.0.0.1:6878/ace/getstream?id=16b6e20bdf0553c2efacb74aa33d68b89ed8994c
+#EXTINF:-1 group-title="25/11/2026 | UEFA Youth League Fase Liga" tvg-name="16:00 - At. Madrid Academy vs Viking FK Academy (M+ Liga de Campeones) (HD) (c35)",16:00 - At. Madrid Academy vs Viking FK Academy (M+ Liga de Campeones) (HD) (c35)
+http://127.0.0.1:6878/ace/getstream?id=c357860cefca4a77e9a1d319083752a5be627709
 #EXTINF:-1 group-title="25/11/2026 | UEFA Youth League Fase Liga" tvg-name="16:00 - At. Madrid Academy vs Viking FK Academy (M+ Liga de Campeones) (FHD) (cac)",16:00 - At. Madrid Academy vs Viking FK Academy (M+ Liga de Campeones) (FHD) (cac)
 http://127.0.0.1:6878/ace/getstream?id=cac54759f6353a4a8fc5b6ec84849bc50b048193
 #EXTINF:-1 group-title="25/11/2026 | UEFA Youth League Fase Liga" tvg-name="16:00 - At. Madrid Academy vs Viking FK Academy (M+ Liga de Campeones) (FHD) (68d)",16:00 - At. Madrid Academy vs Viking FK Academy (M+ Liga de Campeones) (FHD) (68d)
 http://127.0.0.1:6878/ace/getstream?id=68d1621b35cbabb84633b9fb82e81b03056ffe02
+#EXTINF:-1 group-title="25/11/2026 | UEFA Youth League Fase Liga" tvg-name="16:00 - At. Madrid Academy vs Viking FK Academy (M+ Liga de Campeones) (FHD) (16b)",16:00 - At. Madrid Academy vs Viking FK Academy (M+ Liga de Campeones) (FHD) (16b)
+http://127.0.0.1:6878/ace/getstream?id=16b6e20bdf0553c2efacb74aa33d68b89ed8994c
 #EXTINF:-1 group-title="25/11/2026 | UEFA Youth League Fase Liga" tvg-name="16:00 - PSG Academy vs Roma Academy (M+ Liga de Campeones 2) (HD) (71c)",16:00 - PSG Academy vs Roma Academy (M+ Liga de Campeones 2) (HD) (71c)
 http://127.0.0.1:6878/ace/getstream?id=71ca00c9df974de359209bc9e1f6c31dc16f4150
 #EXTINF:-1 group-title="25/11/2026 | UEFA Youth League Fase Liga" tvg-name="16:00 - PSG Academy vs Roma Academy (M+ Liga de Campeones 2) (FHD) (e4d)",16:00 - PSG Academy vs Roma Academy (M+ Liga de Campeones 2) (FHD) (e4d)
 http://127.0.0.1:6878/ace/getstream?id=e4dc9305ef1933314ef31c9aa476e7eba38de6e8
-#EXTINF:-1 group-title="25/11/2026 | Davis Cup Finals 1/4 de Final" tvg-name="16:00 - Italia vs Corea del Sur (M+ Deportes 2) (HD) (f62)",16:00 - Italia vs Corea del Sur (M+ Deportes 2) (HD) (f62)
-http://127.0.0.1:6878/ace/getstream?id=f62f06bb905564bf718467658947e24c2b21735f
+#EXTINF:-1 group-title="25/11/2026 | UEFA Youth League Fase Liga" tvg-name="16:00 - PSG Academy vs Roma Academy (M+ Liga de Campeones 2) (FHD) (798)",16:00 - PSG Academy vs Roma Academy (M+ Liga de Campeones 2) (FHD) (798)
+http://127.0.0.1:6878/ace/getstream?id=7984a4450c0e9e1584003ed58c0a2e95da20316a
+#EXTINF:-1 group-title="25/11/2026 | Davis Cup Finals 1/4 de Final" tvg-name="16:00 - Italia vs Corea del Sur (M+ Deportes 2) (FHD) (6b5)",16:00 - Italia vs Corea del Sur (M+ Deportes 2) (FHD) (6b5)
+http://127.0.0.1:6878/ace/getstream?id=6b556144b907286ddc6dc071ecf7362b0fab5f78
 #EXTINF:-1 group-title="25/11/2026 | FIFA Mundial Sub-17 Fase de grupos" tvg-name="16:30 - Dinamarca vs Argentina (Teledeporte) (HD) (d88)",16:30 - Dinamarca vs Argentina (Teledeporte) (HD) (d88)
 http://127.0.0.1:6878/ace/getstream?id=d889729516a30bb2ac9e0355a1fbda0d10281e9a
-#EXTINF:-1 group-title="25/11/2026 | Euroliga Liga Regular" tvg-name="17:00 - Dubai Basketball vs BC Partizan Beograd (M+ Baloncesto) (FHD) (d9e)",17:00 - Dubai Basketball vs BC Partizan Beograd (M+ Baloncesto) (FHD) (d9e)
-http://127.0.0.1:6878/ace/getstream?id=d9e468180fcd3dcd45141dc09f56ea21eb88912e
+#EXTINF:-1 group-title="25/11/2026 | FIFA Mundial Sub-17 Fase de grupos" tvg-name="16:30 - Dinamarca vs Argentina (Teledeporte) (FHD) (1d9)",16:30 - Dinamarca vs Argentina (Teledeporte) (FHD) (1d9)
+http://127.0.0.1:6878/ace/getstream?id=1d9e4ec1c78ae31da88a5f8582eb95d29d329d8d
+#EXTINF:-1 group-title="25/11/2026 | FIFA Mundial Sub-17 Fase de grupos" tvg-name="16:30 - Dinamarca vs Argentina (Teledeporte) (FHD) (1a4)",16:30 - Dinamarca vs Argentina (Teledeporte) (FHD) (1a4)
+http://127.0.0.1:6878/ace/getstream?id=1a4360fe8dd0d2467cca45c6bc13ff43ca21ac55
 #EXTINF:-1 group-title="25/11/2026 | Euroliga Liga Regular" tvg-name="17:00 - Dubai Basketball vs BC Partizan Beograd (M+ Baloncesto) (FHD) (31f)",17:00 - Dubai Basketball vs BC Partizan Beograd (M+ Baloncesto) (FHD) (31f)
 http://127.0.0.1:6878/ace/getstream?id=31f2a257cd226d80339342c449d76339b4a1e6fa
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="18:45 - Slavia Praha vs Villarreal (M+ Liga de Campeones 3) (HD) (d89)",18:45 - Slavia Praha vs Villarreal (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="18:45 - Slavia Praha vs Villarreal (M+ Liga de Campeones 3) (HD) (6b4)",18:45 - Slavia Praha vs Villarreal (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="18:45 - Slavia Praha vs Villarreal (M+ Liga de Campeones 3) (FHD) (9ab)",18:45 - Slavia Praha vs Villarreal (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="18:45 - Slavia Praha vs Villarreal (M+ Liga de Campeones 3) (FHD) (bc1)",18:45 - Slavia Praha vs Villarreal (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
 #EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="18:45 - Slavia Praha vs Villarreal (M+ Liga de Campeones 3) (FHD) (08c)",18:45 - Slavia Praha vs Villarreal (M+ Liga de Campeones 3) (FHD) (08c)
 http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="18:45 - Sabah FK vs FC Barcelona (M+ Liga de Campeones) (HD) (c35)",18:45 - Sabah FK vs FC Barcelona (M+ Liga de Campeones) (HD) (c35)
+http://127.0.0.1:6878/ace/getstream?id=c357860cefca4a77e9a1d319083752a5be627709
 #EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="18:45 - Sabah FK vs FC Barcelona (M+ Liga de Campeones) (FHD) (cac)",18:45 - Sabah FK vs FC Barcelona (M+ Liga de Campeones) (FHD) (cac)
 http://127.0.0.1:6878/ace/getstream?id=cac54759f6353a4a8fc5b6ec84849bc50b048193
 #EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="18:45 - Sabah FK vs FC Barcelona (M+ Liga de Campeones) (FHD) (68d)",18:45 - Sabah FK vs FC Barcelona (M+ Liga de Campeones) (FHD) (68d)
 http://127.0.0.1:6878/ace/getstream?id=68d1621b35cbabb84633b9fb82e81b03056ffe02
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="18:45 - Sabah FK vs FC Barcelona (M+ Liga de Campeones) (FHD) (16b)",18:45 - Sabah FK vs FC Barcelona (M+ Liga de Campeones) (FHD) (16b)
+http://127.0.0.1:6878/ace/getstream?id=16b6e20bdf0553c2efacb74aa33d68b89ed8994c
 #EXTINF:-1 group-title="25/11/2026 | Copa de la Reina 3ª Ronda" tvg-name="19:00 - Sporting Huelva vs FC Badalona Women (Teledeporte) (HD) (d88)",19:00 - Sporting Huelva vs FC Badalona Women (Teledeporte) (HD) (d88)
 http://127.0.0.1:6878/ace/getstream?id=d889729516a30bb2ac9e0355a1fbda0d10281e9a
+#EXTINF:-1 group-title="25/11/2026 | Copa de la Reina 3ª Ronda" tvg-name="19:00 - Sporting Huelva vs FC Badalona Women (Teledeporte) (FHD) (1d9)",19:00 - Sporting Huelva vs FC Badalona Women (Teledeporte) (FHD) (1d9)
+http://127.0.0.1:6878/ace/getstream?id=1d9e4ec1c78ae31da88a5f8582eb95d29d329d8d
+#EXTINF:-1 group-title="25/11/2026 | Copa de la Reina 3ª Ronda" tvg-name="19:00 - Sporting Huelva vs FC Badalona Women (Teledeporte) (FHD) (1a4)",19:00 - Sporting Huelva vs FC Badalona Women (Teledeporte) (FHD) (1a4)
+http://127.0.0.1:6878/ace/getstream?id=1a4360fe8dd0d2467cca45c6bc13ff43ca21ac55
 #EXTINF:-1 group-title="25/11/2026 | Euroliga Femenina Liga Regular" tvg-name="20:00 - Casademont Zaragoza vs Athinaikos (M+ Vamos) (HD) (b20)",20:00 - Casademont Zaragoza vs Athinaikos (M+ Vamos) (HD) (b20)
 http://127.0.0.1:6878/ace/getstream?id=b20b467fae6af2983ee5163ebcb469eeca9146ee
-#EXTINF:-1 group-title="25/11/2026 | Euroliga Liga Regular" tvg-name="20:15 - Olympiacos Piraeus vs Hapoel Tel Aviv BC (M+ Baloncesto 3) (FHD) (54e)",20:15 - Olympiacos Piraeus vs Hapoel Tel Aviv BC (M+ Baloncesto 3) (FHD) (54e)
-http://127.0.0.1:6878/ace/getstream?id=54e1205da682d519fcc8ddeccff1626b8af86a6a
+#EXTINF:-1 group-title="25/11/2026 | Euroliga Liga Regular" tvg-name="20:15 - Olympiacos Piraeus vs Hapoel Tel Aviv BC (M+ Baloncesto 3) (FHD) (6d4)",20:15 - Olympiacos Piraeus vs Hapoel Tel Aviv BC (M+ Baloncesto 3) (FHD) (6d4)
+http://127.0.0.1:6878/ace/getstream?id=6d493da11517de648f00646c3040d1c8fce91f4a
+#EXTINF:-1 group-title="25/11/2026 | Euroliga Liga Regular" tvg-name="20:30 - Baskonia vs Anadolu Efes Istanbul (MOVISTAR PLUS) (HD) (d2b)",20:30 - Baskonia vs Anadolu Efes Istanbul (MOVISTAR PLUS) (HD) (d2b)
+http://127.0.0.1:6878/ace/getstream?id=d2b5299ed45cbaf35482bb0869b2c2f75fbed64a
 #EXTINF:-1 group-title="25/11/2026 | Euroliga Liga Regular" tvg-name="20:30 - Baskonia vs Anadolu Efes Istanbul (MOVISTAR PLUS) (FHD) (96c)",20:30 - Baskonia vs Anadolu Efes Istanbul (MOVISTAR PLUS) (FHD) (96c)
 http://127.0.0.1:6878/ace/getstream?id=96cc6b02a0ce66ed3a01d9904e7ee8db0f2da5d7
 #EXTINF:-1 group-title="25/11/2026 | Euroliga Liga Regular" tvg-name="20:30 - Baskonia vs Anadolu Efes Istanbul (MOVISTAR PLUS) (FHD) (68b)",20:30 - Baskonia vs Anadolu Efes Istanbul (MOVISTAR PLUS) (FHD) (68b)
 http://127.0.0.1:6878/ace/getstream?id=68b53041272592f4fbf00bf38cd91e54a4e16abf
 #EXTINF:-1 group-title="25/11/2026 | Euroliga Liga Regular" tvg-name="20:30 - Baskonia vs Anadolu Efes Istanbul (M+ Baloncesto 2) (FHD) (dce)",20:30 - Baskonia vs Anadolu Efes Istanbul (M+ Baloncesto 2) (FHD) (dce)
 http://127.0.0.1:6878/ace/getstream?id=dce8628942410de57606a6849ab6be46de3f9458
-#EXTINF:-1 group-title="25/11/2026 | Euroliga Liga Regular" tvg-name="20:45 - Real Madrid Baloncesto vs Zalgiris Kaunas (M+ Baloncesto) (FHD) (d9e)",20:45 - Real Madrid Baloncesto vs Zalgiris Kaunas (M+ Baloncesto) (FHD) (d9e)
-http://127.0.0.1:6878/ace/getstream?id=d9e468180fcd3dcd45141dc09f56ea21eb88912e
 #EXTINF:-1 group-title="25/11/2026 | Euroliga Liga Regular" tvg-name="20:45 - Real Madrid Baloncesto vs Zalgiris Kaunas (M+ Baloncesto) (FHD) (31f)",20:45 - Real Madrid Baloncesto vs Zalgiris Kaunas (M+ Baloncesto) (FHD) (31f)
 http://127.0.0.1:6878/ace/getstream?id=31f2a257cd226d80339342c449d76339b4a1e6fa
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - PSG vs AS Roma (M+ Liga de Campeones 3) (HD) (d89)",21:00 - PSG vs AS Roma (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - PSG vs AS Roma (M+ Liga de Campeones 3) (HD) (6b4)",21:00 - PSG vs AS Roma (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - PSG vs AS Roma (M+ Liga de Campeones 3) (FHD) (9ab)",21:00 - PSG vs AS Roma (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - PSG vs AS Roma (M+ Liga de Campeones 3) (FHD) (bc1)",21:00 - PSG vs AS Roma (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
 #EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - PSG vs AS Roma (M+ Liga de Campeones 3) (FHD) (08c)",21:00 - PSG vs AS Roma (M+ Liga de Campeones 3) (FHD) (08c)
 http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
 #EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - PSG vs AS Roma (M+ Liga de Campeones 4) (FHD) (c6e)",21:00 - PSG vs AS Roma (M+ Liga de Campeones 4) (FHD) (c6e)
 http://127.0.0.1:6878/ace/getstream?id=c6e038aa3938b4f6a58a212a08b324851a361048
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - PSG vs AS Roma (M+ Liga de Campeones 4) (FHD) (140)",21:00 - PSG vs AS Roma (M+ Liga de Campeones 4) (FHD) (140)
+http://127.0.0.1:6878/ace/getstream?id=140bd35544f42a466b852163d18124ecd2fafd10
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - PSG vs AS Roma (M+ Liga de Campeones 4) (FHD) (c04)",21:00 - PSG vs AS Roma (M+ Liga de Campeones 4) (FHD) (c04)
+http://127.0.0.1:6878/ace/getstream?id=c043fade5b4aac4899017bab40340fefccca7e09
 #EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - At. Madrid vs Viking FK (M+ Liga de Campeones 2) (HD) (71c)",21:00 - At. Madrid vs Viking FK (M+ Liga de Campeones 2) (HD) (71c)
 http://127.0.0.1:6878/ace/getstream?id=71ca00c9df974de359209bc9e1f6c31dc16f4150
 #EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - At. Madrid vs Viking FK (M+ Liga de Campeones 2) (FHD) (e4d)",21:00 - At. Madrid vs Viking FK (M+ Liga de Campeones 2) (FHD) (e4d)
 http://127.0.0.1:6878/ace/getstream?id=e4dc9305ef1933314ef31c9aa476e7eba38de6e8
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - At. Madrid vs Viking FK (M+ Liga de Campeones 2) (FHD) (798)",21:00 - At. Madrid vs Viking FK (M+ Liga de Campeones 2) (FHD) (798)
+http://127.0.0.1:6878/ace/getstream?id=7984a4450c0e9e1584003ed58c0a2e95da20316a
 #EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - At. Madrid vs Viking FK (M+ Liga de Campeones 4) (FHD) (c6e)",21:00 - At. Madrid vs Viking FK (M+ Liga de Campeones 4) (FHD) (c6e)
 http://127.0.0.1:6878/ace/getstream?id=c6e038aa3938b4f6a58a212a08b324851a361048
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - At. Madrid vs Viking FK (M+ Liga de Campeones 4) (FHD) (140)",21:00 - At. Madrid vs Viking FK (M+ Liga de Campeones 4) (FHD) (140)
+http://127.0.0.1:6878/ace/getstream?id=140bd35544f42a466b852163d18124ecd2fafd10
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - At. Madrid vs Viking FK (M+ Liga de Campeones 4) (FHD) (c04)",21:00 - At. Madrid vs Viking FK (M+ Liga de Campeones 4) (FHD) (c04)
+http://127.0.0.1:6878/ace/getstream?id=c043fade5b4aac4899017bab40340fefccca7e09
 #EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Inter Milan vs Stuttgart (M+ Liga de Campeones 4) (FHD) (c6e)",21:00 - Inter Milan vs Stuttgart (M+ Liga de Campeones 4) (FHD) (c6e)
 http://127.0.0.1:6878/ace/getstream?id=c6e038aa3938b4f6a58a212a08b324851a361048
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Inter Milan vs Stuttgart (M+ Liga de Campeones 4) (FHD) (140)",21:00 - Inter Milan vs Stuttgart (M+ Liga de Campeones 4) (FHD) (140)
+http://127.0.0.1:6878/ace/getstream?id=140bd35544f42a466b852163d18124ecd2fafd10
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Inter Milan vs Stuttgart (M+ Liga de Campeones 4) (FHD) (c04)",21:00 - Inter Milan vs Stuttgart (M+ Liga de Campeones 4) (FHD) (c04)
+http://127.0.0.1:6878/ace/getstream?id=c043fade5b4aac4899017bab40340fefccca7e09
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Inter Milan vs Stuttgart (M+ Liga de Campeones 6) (FHD) (f30)",21:00 - Inter Milan vs Stuttgart (M+ Liga de Campeones 6) (FHD) (f30)
+http://127.0.0.1:6878/ace/getstream?id=f305b4719cfe00b6bd2aeeb3e7265b119d4b687b
 #EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Inter Milan vs Stuttgart (M+ Liga de Campeones 6) (FHD) (95d)",21:00 - Inter Milan vs Stuttgart (M+ Liga de Campeones 6) (FHD) (95d)
 http://127.0.0.1:6878/ace/getstream?id=95d4e79a6e558c14cae4c3fe1dd4c3ad8804fd3d
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Inter Milan vs Stuttgart (M+ Liga de Campeones 6) (FHD) (08d)",21:00 - Inter Milan vs Stuttgart (M+ Liga de Campeones 6) (FHD) (08d)
+http://127.0.0.1:6878/ace/getstream?id=08d75f7722acbe4a024a3bcadcea617504c4778c
 #EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Sporting CP vs Manchester Utd. (M+ Liga de Campeones 4) (FHD) (c6e)",21:00 - Sporting CP vs Manchester Utd. (M+ Liga de Campeones 4) (FHD) (c6e)
 http://127.0.0.1:6878/ace/getstream?id=c6e038aa3938b4f6a58a212a08b324851a361048
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Sporting CP vs Manchester Utd. (M+ Liga de Campeones 4) (FHD) (140)",21:00 - Sporting CP vs Manchester Utd. (M+ Liga de Campeones 4) (FHD) (140)
+http://127.0.0.1:6878/ace/getstream?id=140bd35544f42a466b852163d18124ecd2fafd10
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Sporting CP vs Manchester Utd. (M+ Liga de Campeones 4) (FHD) (c04)",21:00 - Sporting CP vs Manchester Utd. (M+ Liga de Campeones 4) (FHD) (c04)
+http://127.0.0.1:6878/ace/getstream?id=c043fade5b4aac4899017bab40340fefccca7e09
 #EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Sporting CP vs Manchester Utd. (M+ Liga de Campeones 8) (FHD) (f57)",21:00 - Sporting CP vs Manchester Utd. (M+ Liga de Campeones 8) (FHD) (f57)
 http://127.0.0.1:6878/ace/getstream?id=f57b01f2507e4ec4fad3cd81aece503d185120a7
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Sporting CP vs Manchester Utd. (M+ Liga de Campeones 8) (FHD) (282)",21:00 - Sporting CP vs Manchester Utd. (M+ Liga de Campeones 8) (FHD) (282)
+http://127.0.0.1:6878/ace/getstream?id=282c37d1583e43ea2970a5d85ecb616b0960d048
 #EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Shakhtar Donetsk vs Fenerbahçe (M+ Liga de Campeones 4) (FHD) (c6e)",21:00 - Shakhtar Donetsk vs Fenerbahçe (M+ Liga de Campeones 4) (FHD) (c6e)
 http://127.0.0.1:6878/ace/getstream?id=c6e038aa3938b4f6a58a212a08b324851a361048
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Shakhtar Donetsk vs Fenerbahçe (M+ Liga de Campeones 4) (FHD) (140)",21:00 - Shakhtar Donetsk vs Fenerbahçe (M+ Liga de Campeones 4) (FHD) (140)
+http://127.0.0.1:6878/ace/getstream?id=140bd35544f42a466b852163d18124ecd2fafd10
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Shakhtar Donetsk vs Fenerbahçe (M+ Liga de Campeones 4) (FHD) (c04)",21:00 - Shakhtar Donetsk vs Fenerbahçe (M+ Liga de Campeones 4) (FHD) (c04)
+http://127.0.0.1:6878/ace/getstream?id=c043fade5b4aac4899017bab40340fefccca7e09
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Shakhtar Donetsk vs Fenerbahçe (M+ Liga de Campeones 9) (FHD) (1f5)",21:00 - Shakhtar Donetsk vs Fenerbahçe (M+ Liga de Campeones 9) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f528ed789f615ceccb4f878634ea2b767ec7442
 #EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Club Brugge vs Liverpool (M+ Liga de Campeones 4) (FHD) (c6e)",21:00 - Club Brugge vs Liverpool (M+ Liga de Campeones 4) (FHD) (c6e)
 http://127.0.0.1:6878/ace/getstream?id=c6e038aa3938b4f6a58a212a08b324851a361048
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Club Brugge vs Liverpool (M+ Liga de Campeones 4) (FHD) (140)",21:00 - Club Brugge vs Liverpool (M+ Liga de Campeones 4) (FHD) (140)
+http://127.0.0.1:6878/ace/getstream?id=140bd35544f42a466b852163d18124ecd2fafd10
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Club Brugge vs Liverpool (M+ Liga de Campeones 4) (FHD) (c04)",21:00 - Club Brugge vs Liverpool (M+ Liga de Campeones 4) (FHD) (c04)
+http://127.0.0.1:6878/ace/getstream?id=c043fade5b4aac4899017bab40340fefccca7e09
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Club Brugge vs Liverpool (M+ Liga de Campeones 5) (FHD) (c79)",21:00 - Club Brugge vs Liverpool (M+ Liga de Campeones 5) (FHD) (c79)
+http://127.0.0.1:6878/ace/getstream?id=c7959c396edfcc1654541572ed3cb39f7456bbd6
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Club Brugge vs Liverpool (M+ Liga de Campeones 5) (FHD) (860)",21:00 - Club Brugge vs Liverpool (M+ Liga de Campeones 5) (FHD) (860)
+http://127.0.0.1:6878/ace/getstream?id=860392c455d7cd2b1664ed6c95a8aa22ee869023
 #EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Lille vs FC Bayern (M+ Liga de Campeones 4) (FHD) (c6e)",21:00 - Lille vs FC Bayern (M+ Liga de Campeones 4) (FHD) (c6e)
 http://127.0.0.1:6878/ace/getstream?id=c6e038aa3938b4f6a58a212a08b324851a361048
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Lille vs FC Bayern (M+ Liga de Campeones 4) (FHD) (140)",21:00 - Lille vs FC Bayern (M+ Liga de Campeones 4) (FHD) (140)
+http://127.0.0.1:6878/ace/getstream?id=140bd35544f42a466b852163d18124ecd2fafd10
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Lille vs FC Bayern (M+ Liga de Campeones 4) (FHD) (c04)",21:00 - Lille vs FC Bayern (M+ Liga de Campeones 4) (FHD) (c04)
+http://127.0.0.1:6878/ace/getstream?id=c043fade5b4aac4899017bab40340fefccca7e09
+#EXTINF:-1 group-title="25/11/2026 | Champions League Fase Liga" tvg-name="21:00 - Lille vs FC Bayern (M+ Liga de Campeones 7) (FHD) (934)",21:00 - Lille vs FC Bayern (M+ Liga de Campeones 7) (FHD) (934)
+http://127.0.0.1:6878/ace/getstream?id=93402a76024868654e2c7ba5e7d2b376721767f4
+#EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="23:00 - Philadelphia 76ers vs Miami Heat (NBA ESPN) (HD) (c50)",23:00 - Philadelphia 76ers vs Miami Heat (NBA ESPN) (HD) (c50)
+http://127.0.0.1:6878/ace/getstream?id=c50472a723a9c8412dc51fc6ae2761e113014b00
 #EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="23:00 - Philadelphia 76ers vs Miami Heat (NBA ESPN) (FHD) (15d)",23:00 - Philadelphia 76ers vs Miami Heat (NBA ESPN) (FHD) (15d)
 http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
 #EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="23:00 - Philadelphia 76ers vs Miami Heat (NBA League Pass) (FHD) (cd7)",23:00 - Philadelphia 76ers vs Miami Heat (NBA League Pass) (FHD) (cd7)
 http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
+#EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="23:00 - Philadelphia 76ers vs Miami Heat (NBA League Pass) (FHD) (1f5)",23:00 - Philadelphia 76ers vs Miami Heat (NBA League Pass) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f585e677701e7283ed0cda9fad5d49d885afa9e
 #EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="23:00 - Philadelphia 76ers vs Miami Heat (NBA League Pass) (FHD) (53c)",23:00 - Philadelphia 76ers vs Miami Heat (NBA League Pass) (FHD) (53c)
 http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
-#EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="23:00 - Philadelphia 76ers vs Miami Heat (DAZN Baloncesto) (HD) (817)",23:00 - Philadelphia 76ers vs Miami Heat (DAZN Baloncesto) (HD) (817)
-http://127.0.0.1:6878/ace/getstream?id=81726596472933c3dfc9b3cd31fef7d0716c8ba4
 #EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="23:00 - Philadelphia 76ers vs Miami Heat (DAZN Baloncesto) (FHD) (535)",23:00 - Philadelphia 76ers vs Miami Heat (DAZN Baloncesto) (FHD) (535)
 http://127.0.0.1:6878/ace/getstream?id=535b353f94a275ca60ab176c0633ecbb561b41f2
-#EXTINF:-1 group-title="25/11/2026 | NBA Liga Regular" tvg-name="23:00 - Philadelphia 76ers vs Miami Heat (DAZN Baloncesto) (FHD) (383)",23:00 - Philadelphia 76ers vs Miami Heat (DAZN Baloncesto) (FHD) (383)
-http://127.0.0.1:6878/ace/getstream?id=3834a73b9e07c3d0485935407366d7acac52fdf0
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="01:00 - Charlotte Hornets vs Chicago Bulls (NBA ESPN) (HD) (c50)",01:00 - Charlotte Hornets vs Chicago Bulls (NBA ESPN) (HD) (c50)
+http://127.0.0.1:6878/ace/getstream?id=c50472a723a9c8412dc51fc6ae2761e113014b00
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="01:00 - Charlotte Hornets vs Chicago Bulls (NBA ESPN) (FHD) (15d)",01:00 - Charlotte Hornets vs Chicago Bulls (NBA ESPN) (FHD) (15d)
+http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="01:00 - Charlotte Hornets vs Chicago Bulls (NBA League Pass) (FHD) (cd7)",01:00 - Charlotte Hornets vs Chicago Bulls (NBA League Pass) (FHD) (cd7)
+http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="01:00 - Charlotte Hornets vs Chicago Bulls (NBA League Pass) (FHD) (1f5)",01:00 - Charlotte Hornets vs Chicago Bulls (NBA League Pass) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f585e677701e7283ed0cda9fad5d49d885afa9e
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="01:00 - Charlotte Hornets vs Chicago Bulls (NBA League Pass) (FHD) (53c)",01:00 - Charlotte Hornets vs Chicago Bulls (NBA League Pass) (FHD) (53c)
+http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
+#EXTINF:-1 group-title="26/11/2026 | Primera División Argentina 1/8 de Final" tvg-name="01:00 - Boca Juniors vs Independiente Rivadavia (M+ Liga de Campeones) (HD) (c35)",01:00 - Boca Juniors vs Independiente Rivadavia (M+ Liga de Campeones) (HD) (c35)
+http://127.0.0.1:6878/ace/getstream?id=c357860cefca4a77e9a1d319083752a5be627709
+#EXTINF:-1 group-title="26/11/2026 | Primera División Argentina 1/8 de Final" tvg-name="01:00 - Boca Juniors vs Independiente Rivadavia (M+ Liga de Campeones) (FHD) (cac)",01:00 - Boca Juniors vs Independiente Rivadavia (M+ Liga de Campeones) (FHD) (cac)
+http://127.0.0.1:6878/ace/getstream?id=cac54759f6353a4a8fc5b6ec84849bc50b048193
+#EXTINF:-1 group-title="26/11/2026 | Primera División Argentina 1/8 de Final" tvg-name="01:00 - Boca Juniors vs Independiente Rivadavia (M+ Liga de Campeones) (FHD) (68d)",01:00 - Boca Juniors vs Independiente Rivadavia (M+ Liga de Campeones) (FHD) (68d)
+http://127.0.0.1:6878/ace/getstream?id=68d1621b35cbabb84633b9fb82e81b03056ffe02
+#EXTINF:-1 group-title="26/11/2026 | Primera División Argentina 1/8 de Final" tvg-name="01:00 - Boca Juniors vs Independiente Rivadavia (M+ Liga de Campeones) (FHD) (16b)",01:00 - Boca Juniors vs Independiente Rivadavia (M+ Liga de Campeones) (FHD) (16b)
+http://127.0.0.1:6878/ace/getstream?id=16b6e20bdf0553c2efacb74aa33d68b89ed8994c
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="01:30 - New York Knicks vs Cleveland Cavaliers (NBA ESPN) (HD) (c50)",01:30 - New York Knicks vs Cleveland Cavaliers (NBA ESPN) (HD) (c50)
+http://127.0.0.1:6878/ace/getstream?id=c50472a723a9c8412dc51fc6ae2761e113014b00
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="01:30 - New York Knicks vs Cleveland Cavaliers (NBA ESPN) (FHD) (15d)",01:30 - New York Knicks vs Cleveland Cavaliers (NBA ESPN) (FHD) (15d)
+http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="01:30 - New York Knicks vs Cleveland Cavaliers (NBA League Pass) (FHD) (cd7)",01:30 - New York Knicks vs Cleveland Cavaliers (NBA League Pass) (FHD) (cd7)
+http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="01:30 - New York Knicks vs Cleveland Cavaliers (NBA League Pass) (FHD) (1f5)",01:30 - New York Knicks vs Cleveland Cavaliers (NBA League Pass) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f585e677701e7283ed0cda9fad5d49d885afa9e
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="01:30 - New York Knicks vs Cleveland Cavaliers (NBA League Pass) (FHD) (53c)",01:30 - New York Knicks vs Cleveland Cavaliers (NBA League Pass) (FHD) (53c)
+http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="01:30 - Oklahoma C. Thunder vs Minnesota Timberwolves (NBA ESPN) (HD) (c50)",01:30 - Oklahoma C. Thunder vs Minnesota Timberwolves (NBA ESPN) (HD) (c50)
+http://127.0.0.1:6878/ace/getstream?id=c50472a723a9c8412dc51fc6ae2761e113014b00
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="01:30 - Oklahoma C. Thunder vs Minnesota Timberwolves (NBA ESPN) (FHD) (15d)",01:30 - Oklahoma C. Thunder vs Minnesota Timberwolves (NBA ESPN) (FHD) (15d)
+http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="01:30 - Oklahoma C. Thunder vs Minnesota Timberwolves (NBA League Pass) (FHD) (cd7)",01:30 - Oklahoma C. Thunder vs Minnesota Timberwolves (NBA League Pass) (FHD) (cd7)
+http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="01:30 - Oklahoma C. Thunder vs Minnesota Timberwolves (NBA League Pass) (FHD) (1f5)",01:30 - Oklahoma C. Thunder vs Minnesota Timberwolves (NBA League Pass) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f585e677701e7283ed0cda9fad5d49d885afa9e
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="01:30 - Oklahoma C. Thunder vs Minnesota Timberwolves (NBA League Pass) (FHD) (53c)",01:30 - Oklahoma C. Thunder vs Minnesota Timberwolves (NBA League Pass) (FHD) (53c)
+http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="01:30 - Oklahoma C. Thunder vs Minnesota Timberwolves (DAZN Baloncesto 2) (HD) (0dd)",01:30 - Oklahoma C. Thunder vs Minnesota Timberwolves (DAZN Baloncesto 2) (HD) (0dd)
+http://127.0.0.1:6878/ace/getstream?id=0ddecad49d6b1d9546dd599514e9ccf9deb95bf7
+#EXTINF:-1 group-title="26/11/2026 | NFL Liga Regular" tvg-name="02:00 - Los Angeles Rams vs Green Bay Packers (DAZN 2) (FHD) (247)",02:00 - Los Angeles Rams vs Green Bay Packers (DAZN 2) (FHD) (247)
+http://127.0.0.1:6878/ace/getstream?id=247a20c5a4234a37bb91e122561344e1c34d546d
+#EXTINF:-1 group-title="26/11/2026 | Australian PGA Championship" tvg-name="02:00 - Jornada 1 (M+ Golf) (FHD) (dd4)",02:00 - Jornada 1 (M+ Golf) (FHD) (dd4)
+http://127.0.0.1:6878/ace/getstream?id=dd41423912d132c67cd7281cbf6b45cee13de385
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="02:00 - Milwaukee Bucks vs Brooklyn Nets (NBA ESPN) (HD) (c50)",02:00 - Milwaukee Bucks vs Brooklyn Nets (NBA ESPN) (HD) (c50)
+http://127.0.0.1:6878/ace/getstream?id=c50472a723a9c8412dc51fc6ae2761e113014b00
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="02:00 - Milwaukee Bucks vs Brooklyn Nets (NBA ESPN) (FHD) (15d)",02:00 - Milwaukee Bucks vs Brooklyn Nets (NBA ESPN) (FHD) (15d)
+http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="02:00 - Milwaukee Bucks vs Brooklyn Nets (NBA League Pass) (FHD) (cd7)",02:00 - Milwaukee Bucks vs Brooklyn Nets (NBA League Pass) (FHD) (cd7)
+http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="02:00 - Milwaukee Bucks vs Brooklyn Nets (NBA League Pass) (FHD) (1f5)",02:00 - Milwaukee Bucks vs Brooklyn Nets (NBA League Pass) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f585e677701e7283ed0cda9fad5d49d885afa9e
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="02:00 - Milwaukee Bucks vs Brooklyn Nets (NBA League Pass) (FHD) (53c)",02:00 - Milwaukee Bucks vs Brooklyn Nets (NBA League Pass) (FHD) (53c)
+http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="02:00 - Memphis Grizzlies vs Los Angeles Clippers (NBA ESPN) (HD) (c50)",02:00 - Memphis Grizzlies vs Los Angeles Clippers (NBA ESPN) (HD) (c50)
+http://127.0.0.1:6878/ace/getstream?id=c50472a723a9c8412dc51fc6ae2761e113014b00
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="02:00 - Memphis Grizzlies vs Los Angeles Clippers (NBA ESPN) (FHD) (15d)",02:00 - Memphis Grizzlies vs Los Angeles Clippers (NBA ESPN) (FHD) (15d)
+http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="02:00 - Memphis Grizzlies vs Los Angeles Clippers (NBA League Pass) (FHD) (cd7)",02:00 - Memphis Grizzlies vs Los Angeles Clippers (NBA League Pass) (FHD) (cd7)
+http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="02:00 - Memphis Grizzlies vs Los Angeles Clippers (NBA League Pass) (FHD) (1f5)",02:00 - Memphis Grizzlies vs Los Angeles Clippers (NBA League Pass) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f585e677701e7283ed0cda9fad5d49d885afa9e
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="02:00 - Memphis Grizzlies vs Los Angeles Clippers (NBA League Pass) (FHD) (53c)",02:00 - Memphis Grizzlies vs Los Angeles Clippers (NBA League Pass) (FHD) (53c)
+http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="02:30 - Houston Rockets vs Phoenix Suns (NBA ESPN) (HD) (c50)",02:30 - Houston Rockets vs Phoenix Suns (NBA ESPN) (HD) (c50)
+http://127.0.0.1:6878/ace/getstream?id=c50472a723a9c8412dc51fc6ae2761e113014b00
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="02:30 - Houston Rockets vs Phoenix Suns (NBA ESPN) (FHD) (15d)",02:30 - Houston Rockets vs Phoenix Suns (NBA ESPN) (FHD) (15d)
+http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="02:30 - Houston Rockets vs Phoenix Suns (NBA League Pass) (FHD) (cd7)",02:30 - Houston Rockets vs Phoenix Suns (NBA League Pass) (FHD) (cd7)
+http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="02:30 - Houston Rockets vs Phoenix Suns (NBA League Pass) (FHD) (1f5)",02:30 - Houston Rockets vs Phoenix Suns (NBA League Pass) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f585e677701e7283ed0cda9fad5d49d885afa9e
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="02:30 - Houston Rockets vs Phoenix Suns (NBA League Pass) (FHD) (53c)",02:30 - Houston Rockets vs Phoenix Suns (NBA League Pass) (FHD) (53c)
+http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="04:00 - Portland Trail Blazers vs San Antonio Spurs (NBA ESPN) (HD) (c50)",04:00 - Portland Trail Blazers vs San Antonio Spurs (NBA ESPN) (HD) (c50)
+http://127.0.0.1:6878/ace/getstream?id=c50472a723a9c8412dc51fc6ae2761e113014b00
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="04:00 - Portland Trail Blazers vs San Antonio Spurs (NBA ESPN) (FHD) (15d)",04:00 - Portland Trail Blazers vs San Antonio Spurs (NBA ESPN) (FHD) (15d)
+http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="04:00 - Portland Trail Blazers vs San Antonio Spurs (NBA League Pass) (FHD) (cd7)",04:00 - Portland Trail Blazers vs San Antonio Spurs (NBA League Pass) (FHD) (cd7)
+http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="04:00 - Portland Trail Blazers vs San Antonio Spurs (NBA League Pass) (FHD) (1f5)",04:00 - Portland Trail Blazers vs San Antonio Spurs (NBA League Pass) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f585e677701e7283ed0cda9fad5d49d885afa9e
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="04:00 - Portland Trail Blazers vs San Antonio Spurs (NBA League Pass) (FHD) (53c)",04:00 - Portland Trail Blazers vs San Antonio Spurs (NBA League Pass) (FHD) (53c)
+http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="04:00 - Golden State Warriors vs Sacramento Kings (NBA ESPN) (HD) (c50)",04:00 - Golden State Warriors vs Sacramento Kings (NBA ESPN) (HD) (c50)
+http://127.0.0.1:6878/ace/getstream?id=c50472a723a9c8412dc51fc6ae2761e113014b00
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="04:00 - Golden State Warriors vs Sacramento Kings (NBA ESPN) (FHD) (15d)",04:00 - Golden State Warriors vs Sacramento Kings (NBA ESPN) (FHD) (15d)
+http://127.0.0.1:6878/ace/getstream?id=15d2fc44828d86ff128dd17c07523baf3f8d6e10
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="04:00 - Golden State Warriors vs Sacramento Kings (NBA League Pass) (FHD) (cd7)",04:00 - Golden State Warriors vs Sacramento Kings (NBA League Pass) (FHD) (cd7)
+http://127.0.0.1:6878/ace/getstream?id=cd7f8f210268b161f399c626cad5b02678f86f7f
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="04:00 - Golden State Warriors vs Sacramento Kings (NBA League Pass) (FHD) (1f5)",04:00 - Golden State Warriors vs Sacramento Kings (NBA League Pass) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f585e677701e7283ed0cda9fad5d49d885afa9e
+#EXTINF:-1 group-title="26/11/2026 | NBA Liga Regular" tvg-name="04:00 - Golden State Warriors vs Sacramento Kings (NBA League Pass) (FHD) (53c)",04:00 - Golden State Warriors vs Sacramento Kings (NBA League Pass) (FHD) (53c)
+http://127.0.0.1:6878/ace/getstream?id=53c92aafb0dabf38c55b6f3d816f5f10a1977db3
+#EXTINF:-1 group-title="26/11/2026 | Davis Cup Finals 1/4 de Final" tvg-name="10:00 - Gran Bretaña vs Alemania (M+ Deportes 2) (FHD) (6b5)",10:00 - Gran Bretaña vs Alemania (M+ Deportes 2) (FHD) (6b5)
+http://127.0.0.1:6878/ace/getstream?id=6b556144b907286ddc6dc071ecf7362b0fab5f78
+#EXTINF:-1 group-title="26/11/2026 | Open de España" tvg-name="14:00 - Jornada 1 (M+ Golf) (FHD) (dd4)",14:00 - Jornada 1 (M+ Golf) (FHD) (dd4)
+http://127.0.0.1:6878/ace/getstream?id=dd41423912d132c67cd7281cbf6b45cee13de385
+#EXTINF:-1 group-title="26/11/2026 | FIFA Mundial Sub-17 Fase de grupos" tvg-name="16:00 - Marruecos vs España (Teledeporte) (HD) (d88)",16:00 - Marruecos vs España (Teledeporte) (HD) (d88)
+http://127.0.0.1:6878/ace/getstream?id=d889729516a30bb2ac9e0355a1fbda0d10281e9a
+#EXTINF:-1 group-title="26/11/2026 | FIFA Mundial Sub-17 Fase de grupos" tvg-name="16:00 - Marruecos vs España (Teledeporte) (FHD) (1d9)",16:00 - Marruecos vs España (Teledeporte) (FHD) (1d9)
+http://127.0.0.1:6878/ace/getstream?id=1d9e4ec1c78ae31da88a5f8582eb95d29d329d8d
+#EXTINF:-1 group-title="26/11/2026 | FIFA Mundial Sub-17 Fase de grupos" tvg-name="16:00 - Marruecos vs España (Teledeporte) (FHD) (1a4)",16:00 - Marruecos vs España (Teledeporte) (FHD) (1a4)
+http://127.0.0.1:6878/ace/getstream?id=1a4360fe8dd0d2467cca45c6bc13ff43ca21ac55
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="16:30 - FC Kairat vs Mjällby AIF (M+ Liga de Campeones) (HD) (c35)",16:30 - FC Kairat vs Mjällby AIF (M+ Liga de Campeones) (HD) (c35)
+http://127.0.0.1:6878/ace/getstream?id=c357860cefca4a77e9a1d319083752a5be627709
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="16:30 - FC Kairat vs Mjällby AIF (M+ Liga de Campeones) (FHD) (cac)",16:30 - FC Kairat vs Mjällby AIF (M+ Liga de Campeones) (FHD) (cac)
+http://127.0.0.1:6878/ace/getstream?id=cac54759f6353a4a8fc5b6ec84849bc50b048193
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="16:30 - FC Kairat vs Mjällby AIF (M+ Liga de Campeones) (FHD) (68d)",16:30 - FC Kairat vs Mjällby AIF (M+ Liga de Campeones) (FHD) (68d)
+http://127.0.0.1:6878/ace/getstream?id=68d1621b35cbabb84633b9fb82e81b03056ffe02
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="16:30 - FC Kairat vs Mjällby AIF (M+ Liga de Campeones) (FHD) (16b)",16:30 - FC Kairat vs Mjällby AIF (M+ Liga de Campeones) (FHD) (16b)
+http://127.0.0.1:6878/ace/getstream?id=16b6e20bdf0553c2efacb74aa33d68b89ed8994c
+#EXTINF:-1 group-title="26/11/2026 | Copa de la Reina" tvg-name="16:30 - Sorteo Octavos de Final (Teledeporte) (HD) (d88)",16:30 - Sorteo Octavos de Final (Teledeporte) (HD) (d88)
+http://127.0.0.1:6878/ace/getstream?id=d889729516a30bb2ac9e0355a1fbda0d10281e9a
+#EXTINF:-1 group-title="26/11/2026 | Copa de la Reina" tvg-name="16:30 - Sorteo Octavos de Final (Teledeporte) (FHD) (1d9)",16:30 - Sorteo Octavos de Final (Teledeporte) (FHD) (1d9)
+http://127.0.0.1:6878/ace/getstream?id=1d9e4ec1c78ae31da88a5f8582eb95d29d329d8d
+#EXTINF:-1 group-title="26/11/2026 | Copa de la Reina" tvg-name="16:30 - Sorteo Octavos de Final (Teledeporte) (FHD) (1a4)",16:30 - Sorteo Octavos de Final (Teledeporte) (FHD) (1a4)
+http://127.0.0.1:6878/ace/getstream?id=1a4360fe8dd0d2467cca45c6bc13ff43ca21ac55
+#EXTINF:-1 group-title="26/11/2026 | Davis Cup Finals 1/4 de Final" tvg-name="17:00 - Austria vs España (MOVISTAR PLUS) (HD) (d2b)",17:00 - Austria vs España (MOVISTAR PLUS) (HD) (d2b)
+http://127.0.0.1:6878/ace/getstream?id=d2b5299ed45cbaf35482bb0869b2c2f75fbed64a
+#EXTINF:-1 group-title="26/11/2026 | Davis Cup Finals 1/4 de Final" tvg-name="17:00 - Austria vs España (MOVISTAR PLUS) (FHD) (96c)",17:00 - Austria vs España (MOVISTAR PLUS) (FHD) (96c)
+http://127.0.0.1:6878/ace/getstream?id=96cc6b02a0ce66ed3a01d9904e7ee8db0f2da5d7
+#EXTINF:-1 group-title="26/11/2026 | Davis Cup Finals 1/4 de Final" tvg-name="17:00 - Austria vs España (MOVISTAR PLUS) (FHD) (68b)",17:00 - Austria vs España (MOVISTAR PLUS) (FHD) (68b)
+http://127.0.0.1:6878/ace/getstream?id=68b53041272592f4fbf00bf38cd91e54a4e16abf
+#EXTINF:-1 group-title="26/11/2026 | Davis Cup Finals 1/4 de Final" tvg-name="17:00 - Austria vs España (M+ Deportes 2) (FHD) (6b5)",17:00 - Austria vs España (M+ Deportes 2) (FHD) (6b5)
+http://127.0.0.1:6878/ace/getstream?id=6b556144b907286ddc6dc071ecf7362b0fab5f78
+#EXTINF:-1 group-title="26/11/2026 | FIBA Copa Mundial Fase de Clasificación" tvg-name="17:30 - Lituania vs Serbia (M+ Baloncesto 2) (FHD) (dce)",17:30 - Lituania vs Serbia (M+ Baloncesto 2) (FHD) (dce)
+http://127.0.0.1:6878/ace/getstream?id=dce8628942410de57606a6849ab6be46de3f9458
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Celta vs Bournemouth (M+ Liga de Campeones) (HD) (c35)",18:45 - Celta vs Bournemouth (M+ Liga de Campeones) (HD) (c35)
+http://127.0.0.1:6878/ace/getstream?id=c357860cefca4a77e9a1d319083752a5be627709
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Celta vs Bournemouth (M+ Liga de Campeones) (FHD) (cac)",18:45 - Celta vs Bournemouth (M+ Liga de Campeones) (FHD) (cac)
+http://127.0.0.1:6878/ace/getstream?id=cac54759f6353a4a8fc5b6ec84849bc50b048193
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Celta vs Bournemouth (M+ Liga de Campeones) (FHD) (68d)",18:45 - Celta vs Bournemouth (M+ Liga de Campeones) (FHD) (68d)
+http://127.0.0.1:6878/ace/getstream?id=68d1621b35cbabb84633b9fb82e81b03056ffe02
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Celta vs Bournemouth (M+ Liga de Campeones) (FHD) (16b)",18:45 - Celta vs Bournemouth (M+ Liga de Campeones) (FHD) (16b)
+http://127.0.0.1:6878/ace/getstream?id=16b6e20bdf0553c2efacb74aa33d68b89ed8994c
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Celta vs Bournemouth (M+ Liga de Campeones 3) (HD) (d89)",18:45 - Celta vs Bournemouth (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Celta vs Bournemouth (M+ Liga de Campeones 3) (HD) (6b4)",18:45 - Celta vs Bournemouth (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Celta vs Bournemouth (M+ Liga de Campeones 3) (FHD) (9ab)",18:45 - Celta vs Bournemouth (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Celta vs Bournemouth (M+ Liga de Campeones 3) (FHD) (bc1)",18:45 - Celta vs Bournemouth (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Celta vs Bournemouth (M+ Liga de Campeones 3) (FHD) (08c)",18:45 - Celta vs Bournemouth (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Olympiacos vs AC Milan (M+ Liga de Campeones 3) (HD) (d89)",18:45 - Olympiacos vs AC Milan (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Olympiacos vs AC Milan (M+ Liga de Campeones 3) (HD) (6b4)",18:45 - Olympiacos vs AC Milan (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Olympiacos vs AC Milan (M+ Liga de Campeones 3) (FHD) (9ab)",18:45 - Olympiacos vs AC Milan (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Olympiacos vs AC Milan (M+ Liga de Campeones 3) (FHD) (bc1)",18:45 - Olympiacos vs AC Milan (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Olympiacos vs AC Milan (M+ Liga de Campeones 3) (FHD) (08c)",18:45 - Olympiacos vs AC Milan (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Olympiacos vs AC Milan (M+ Liga de Campeones 4) (FHD) (c6e)",18:45 - Olympiacos vs AC Milan (M+ Liga de Campeones 4) (FHD) (c6e)
+http://127.0.0.1:6878/ace/getstream?id=c6e038aa3938b4f6a58a212a08b324851a361048
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Olympiacos vs AC Milan (M+ Liga de Campeones 4) (FHD) (140)",18:45 - Olympiacos vs AC Milan (M+ Liga de Campeones 4) (FHD) (140)
+http://127.0.0.1:6878/ace/getstream?id=140bd35544f42a466b852163d18124ecd2fafd10
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Olympiacos vs AC Milan (M+ Liga de Campeones 4) (FHD) (c04)",18:45 - Olympiacos vs AC Milan (M+ Liga de Campeones 4) (FHD) (c04)
+http://127.0.0.1:6878/ace/getstream?id=c043fade5b4aac4899017bab40340fefccca7e09
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Viktoria Plzen vs Benfica (M+ Liga de Campeones 3) (HD) (d89)",18:45 - Viktoria Plzen vs Benfica (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Viktoria Plzen vs Benfica (M+ Liga de Campeones 3) (HD) (6b4)",18:45 - Viktoria Plzen vs Benfica (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Viktoria Plzen vs Benfica (M+ Liga de Campeones 3) (FHD) (9ab)",18:45 - Viktoria Plzen vs Benfica (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Viktoria Plzen vs Benfica (M+ Liga de Campeones 3) (FHD) (bc1)",18:45 - Viktoria Plzen vs Benfica (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Viktoria Plzen vs Benfica (M+ Liga de Campeones 3) (FHD) (08c)",18:45 - Viktoria Plzen vs Benfica (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Viktoria Plzen vs Benfica (M+ Liga de Campeones 6) (FHD) (f30)",18:45 - Viktoria Plzen vs Benfica (M+ Liga de Campeones 6) (FHD) (f30)
+http://127.0.0.1:6878/ace/getstream?id=f305b4719cfe00b6bd2aeeb3e7265b119d4b687b
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Viktoria Plzen vs Benfica (M+ Liga de Campeones 6) (FHD) (95d)",18:45 - Viktoria Plzen vs Benfica (M+ Liga de Campeones 6) (FHD) (95d)
+http://127.0.0.1:6878/ace/getstream?id=95d4e79a6e558c14cae4c3fe1dd4c3ad8804fd3d
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Viktoria Plzen vs Benfica (M+ Liga de Campeones 6) (FHD) (08d)",18:45 - Viktoria Plzen vs Benfica (M+ Liga de Campeones 6) (FHD) (08d)
+http://127.0.0.1:6878/ace/getstream?id=08d75f7722acbe4a024a3bcadcea617504c4778c
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - O. Marseille vs Levski Sofia (M+ Liga de Campeones 3) (HD) (d89)",18:45 - O. Marseille vs Levski Sofia (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - O. Marseille vs Levski Sofia (M+ Liga de Campeones 3) (HD) (6b4)",18:45 - O. Marseille vs Levski Sofia (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - O. Marseille vs Levski Sofia (M+ Liga de Campeones 3) (FHD) (9ab)",18:45 - O. Marseille vs Levski Sofia (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - O. Marseille vs Levski Sofia (M+ Liga de Campeones 3) (FHD) (bc1)",18:45 - O. Marseille vs Levski Sofia (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - O. Marseille vs Levski Sofia (M+ Liga de Campeones 3) (FHD) (08c)",18:45 - O. Marseille vs Levski Sofia (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - O. Marseille vs Levski Sofia (M+ Liga de Campeones 5) (FHD) (c79)",18:45 - O. Marseille vs Levski Sofia (M+ Liga de Campeones 5) (FHD) (c79)
+http://127.0.0.1:6878/ace/getstream?id=c7959c396edfcc1654541572ed3cb39f7456bbd6
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - O. Marseille vs Levski Sofia (M+ Liga de Campeones 5) (FHD) (860)",18:45 - O. Marseille vs Levski Sofia (M+ Liga de Campeones 5) (FHD) (860)
+http://127.0.0.1:6878/ace/getstream?id=860392c455d7cd2b1664ed6c95a8aa22ee869023
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - GNK Dinamo Zagreb vs Bayer Leverkusen (M+ Liga de Campeones 3) (HD) (d89)",18:45 - GNK Dinamo Zagreb vs Bayer Leverkusen (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - GNK Dinamo Zagreb vs Bayer Leverkusen (M+ Liga de Campeones 3) (HD) (6b4)",18:45 - GNK Dinamo Zagreb vs Bayer Leverkusen (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - GNK Dinamo Zagreb vs Bayer Leverkusen (M+ Liga de Campeones 3) (FHD) (9ab)",18:45 - GNK Dinamo Zagreb vs Bayer Leverkusen (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - GNK Dinamo Zagreb vs Bayer Leverkusen (M+ Liga de Campeones 3) (FHD) (bc1)",18:45 - GNK Dinamo Zagreb vs Bayer Leverkusen (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - GNK Dinamo Zagreb vs Bayer Leverkusen (M+ Liga de Campeones 3) (FHD) (08c)",18:45 - GNK Dinamo Zagreb vs Bayer Leverkusen (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - GNK Dinamo Zagreb vs Bayer Leverkusen (M+ Liga de Campeones 7) (FHD) (934)",18:45 - GNK Dinamo Zagreb vs Bayer Leverkusen (M+ Liga de Campeones 7) (FHD) (934)
+http://127.0.0.1:6878/ace/getstream?id=93402a76024868654e2c7ba5e7d2b376721767f4
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Red Bull Salzburg vs FC Ararat-Armenia (M+ Liga de Campeones 3) (HD) (d89)",18:45 - Red Bull Salzburg vs FC Ararat-Armenia (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Red Bull Salzburg vs FC Ararat-Armenia (M+ Liga de Campeones 3) (HD) (6b4)",18:45 - Red Bull Salzburg vs FC Ararat-Armenia (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Red Bull Salzburg vs FC Ararat-Armenia (M+ Liga de Campeones 3) (FHD) (9ab)",18:45 - Red Bull Salzburg vs FC Ararat-Armenia (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Red Bull Salzburg vs FC Ararat-Armenia (M+ Liga de Campeones 3) (FHD) (bc1)",18:45 - Red Bull Salzburg vs FC Ararat-Armenia (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Red Bull Salzburg vs FC Ararat-Armenia (M+ Liga de Campeones 3) (FHD) (08c)",18:45 - Red Bull Salzburg vs FC Ararat-Armenia (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Red Bull Salzburg vs FC Ararat-Armenia (M+ Liga de Campeones 9) (FHD) (1f5)",18:45 - Red Bull Salzburg vs FC Ararat-Armenia (M+ Liga de Campeones 9) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f528ed789f615ceccb4f878634ea2b767ec7442
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Besiktas vs Hapoel Beer Sheva (M+ Liga de Campeones 3) (HD) (d89)",18:45 - Besiktas vs Hapoel Beer Sheva (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Besiktas vs Hapoel Beer Sheva (M+ Liga de Campeones 3) (HD) (6b4)",18:45 - Besiktas vs Hapoel Beer Sheva (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Besiktas vs Hapoel Beer Sheva (M+ Liga de Campeones 3) (FHD) (9ab)",18:45 - Besiktas vs Hapoel Beer Sheva (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Besiktas vs Hapoel Beer Sheva (M+ Liga de Campeones 3) (FHD) (bc1)",18:45 - Besiktas vs Hapoel Beer Sheva (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Besiktas vs Hapoel Beer Sheva (M+ Liga de Campeones 3) (FHD) (08c)",18:45 - Besiktas vs Hapoel Beer Sheva (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Besiktas vs Hapoel Beer Sheva (M+ Liga de Campeones 8) (FHD) (f57)",18:45 - Besiktas vs Hapoel Beer Sheva (M+ Liga de Campeones 8) (FHD) (f57)
+http://127.0.0.1:6878/ace/getstream?id=f57b01f2507e4ec4fad3cd81aece503d185120a7
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Besiktas vs Hapoel Beer Sheva (M+ Liga de Campeones 8) (FHD) (282)",18:45 - Besiktas vs Hapoel Beer Sheva (M+ Liga de Campeones 8) (FHD) (282)
+http://127.0.0.1:6878/ace/getstream?id=282c37d1583e43ea2970a5d85ecb616b0960d048
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Saint-Gilloise vs Lech Poznan (M+ Liga de Campeones 3) (HD) (d89)",18:45 - Saint-Gilloise vs Lech Poznan (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Saint-Gilloise vs Lech Poznan (M+ Liga de Campeones 3) (HD) (6b4)",18:45 - Saint-Gilloise vs Lech Poznan (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Saint-Gilloise vs Lech Poznan (M+ Liga de Campeones 3) (FHD) (9ab)",18:45 - Saint-Gilloise vs Lech Poznan (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Saint-Gilloise vs Lech Poznan (M+ Liga de Campeones 3) (FHD) (bc1)",18:45 - Saint-Gilloise vs Lech Poznan (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="18:45 - Saint-Gilloise vs Lech Poznan (M+ Liga de Campeones 3) (FHD) (08c)",18:45 - Saint-Gilloise vs Lech Poznan (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Ajax vs FC Thun (M+ Liga de Campeones 3) (HD) (d89)",18:45 - Ajax vs FC Thun (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Ajax vs FC Thun (M+ Liga de Campeones 3) (HD) (6b4)",18:45 - Ajax vs FC Thun (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Ajax vs FC Thun (M+ Liga de Campeones 3) (FHD) (9ab)",18:45 - Ajax vs FC Thun (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Ajax vs FC Thun (M+ Liga de Campeones 3) (FHD) (bc1)",18:45 - Ajax vs FC Thun (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Ajax vs FC Thun (M+ Liga de Campeones 3) (FHD) (08c)",18:45 - Ajax vs FC Thun (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Brighton vs FCU Craiova 1948 (M+ Liga de Campeones 3) (HD) (d89)",18:45 - Brighton vs FCU Craiova 1948 (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Brighton vs FCU Craiova 1948 (M+ Liga de Campeones 3) (HD) (6b4)",18:45 - Brighton vs FCU Craiova 1948 (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Brighton vs FCU Craiova 1948 (M+ Liga de Campeones 3) (FHD) (9ab)",18:45 - Brighton vs FCU Craiova 1948 (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Brighton vs FCU Craiova 1948 (M+ Liga de Campeones 3) (FHD) (bc1)",18:45 - Brighton vs FCU Craiova 1948 (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Brighton vs FCU Craiova 1948 (M+ Liga de Campeones 3) (FHD) (08c)",18:45 - Brighton vs FCU Craiova 1948 (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - FKB Jablonec vs Lugano (M+ Liga de Campeones 3) (HD) (d89)",18:45 - FKB Jablonec vs Lugano (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - FKB Jablonec vs Lugano (M+ Liga de Campeones 3) (HD) (6b4)",18:45 - FKB Jablonec vs Lugano (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - FKB Jablonec vs Lugano (M+ Liga de Campeones 3) (FHD) (9ab)",18:45 - FKB Jablonec vs Lugano (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - FKB Jablonec vs Lugano (M+ Liga de Campeones 3) (FHD) (bc1)",18:45 - FKB Jablonec vs Lugano (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - FKB Jablonec vs Lugano (M+ Liga de Campeones 3) (FHD) (08c)",18:45 - FKB Jablonec vs Lugano (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Hearts vs AS Monaco (M+ Liga de Campeones 3) (HD) (d89)",18:45 - Hearts vs AS Monaco (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Hearts vs AS Monaco (M+ Liga de Campeones 3) (HD) (6b4)",18:45 - Hearts vs AS Monaco (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Hearts vs AS Monaco (M+ Liga de Campeones 3) (FHD) (9ab)",18:45 - Hearts vs AS Monaco (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Hearts vs AS Monaco (M+ Liga de Campeones 3) (FHD) (bc1)",18:45 - Hearts vs AS Monaco (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Hearts vs AS Monaco (M+ Liga de Campeones 3) (FHD) (08c)",18:45 - Hearts vs AS Monaco (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - SK Brann vs AGF Aarhus (M+ Liga de Campeones 3) (HD) (d89)",18:45 - SK Brann vs AGF Aarhus (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - SK Brann vs AGF Aarhus (M+ Liga de Campeones 3) (HD) (6b4)",18:45 - SK Brann vs AGF Aarhus (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - SK Brann vs AGF Aarhus (M+ Liga de Campeones 3) (FHD) (9ab)",18:45 - SK Brann vs AGF Aarhus (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - SK Brann vs AGF Aarhus (M+ Liga de Campeones 3) (FHD) (bc1)",18:45 - SK Brann vs AGF Aarhus (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - SK Brann vs AGF Aarhus (M+ Liga de Campeones 3) (FHD) (08c)",18:45 - SK Brann vs AGF Aarhus (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Pafos FC vs FC Midtjylland (M+ Liga de Campeones 3) (HD) (d89)",18:45 - Pafos FC vs FC Midtjylland (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Pafos FC vs FC Midtjylland (M+ Liga de Campeones 3) (HD) (6b4)",18:45 - Pafos FC vs FC Midtjylland (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Pafos FC vs FC Midtjylland (M+ Liga de Campeones 3) (FHD) (9ab)",18:45 - Pafos FC vs FC Midtjylland (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Pafos FC vs FC Midtjylland (M+ Liga de Campeones 3) (FHD) (bc1)",18:45 - Pafos FC vs FC Midtjylland (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Pafos FC vs FC Midtjylland (M+ Liga de Campeones 3) (FHD) (08c)",18:45 - Pafos FC vs FC Midtjylland (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Klubi Sportiv Egnatia vs Lincoln Red Imps (M+ Liga de Campeones 3) (HD) (d89)",18:45 - Klubi Sportiv Egnatia vs Lincoln Red Imps (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Klubi Sportiv Egnatia vs Lincoln Red Imps (M+ Liga de Campeones 3) (HD) (6b4)",18:45 - Klubi Sportiv Egnatia vs Lincoln Red Imps (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Klubi Sportiv Egnatia vs Lincoln Red Imps (M+ Liga de Campeones 3) (FHD) (9ab)",18:45 - Klubi Sportiv Egnatia vs Lincoln Red Imps (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Klubi Sportiv Egnatia vs Lincoln Red Imps (M+ Liga de Campeones 3) (FHD) (bc1)",18:45 - Klubi Sportiv Egnatia vs Lincoln Red Imps (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Klubi Sportiv Egnatia vs Lincoln Red Imps (M+ Liga de Campeones 3) (FHD) (08c)",18:45 - Klubi Sportiv Egnatia vs Lincoln Red Imps (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - FC Iberia 1999 vs Getafe (M+ Liga de Campeones 2) (HD) (71c)",18:45 - FC Iberia 1999 vs Getafe (M+ Liga de Campeones 2) (HD) (71c)
+http://127.0.0.1:6878/ace/getstream?id=71ca00c9df974de359209bc9e1f6c31dc16f4150
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - FC Iberia 1999 vs Getafe (M+ Liga de Campeones 2) (FHD) (e4d)",18:45 - FC Iberia 1999 vs Getafe (M+ Liga de Campeones 2) (FHD) (e4d)
+http://127.0.0.1:6878/ace/getstream?id=e4dc9305ef1933314ef31c9aa476e7eba38de6e8
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - FC Iberia 1999 vs Getafe (M+ Liga de Campeones 2) (FHD) (798)",18:45 - FC Iberia 1999 vs Getafe (M+ Liga de Campeones 2) (FHD) (798)
+http://127.0.0.1:6878/ace/getstream?id=7984a4450c0e9e1584003ed58c0a2e95da20316a
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - FC Iberia 1999 vs Getafe (M+ Liga de Campeones 3) (HD) (d89)",18:45 - FC Iberia 1999 vs Getafe (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - FC Iberia 1999 vs Getafe (M+ Liga de Campeones 3) (HD) (6b4)",18:45 - FC Iberia 1999 vs Getafe (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - FC Iberia 1999 vs Getafe (M+ Liga de Campeones 3) (FHD) (9ab)",18:45 - FC Iberia 1999 vs Getafe (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - FC Iberia 1999 vs Getafe (M+ Liga de Campeones 3) (FHD) (bc1)",18:45 - FC Iberia 1999 vs Getafe (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - FC Iberia 1999 vs Getafe (M+ Liga de Campeones 3) (FHD) (08c)",18:45 - FC Iberia 1999 vs Getafe (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Kauno Žalgiris vs Riga FC (M+ Liga de Campeones 3) (HD) (d89)",18:45 - Kauno Žalgiris vs Riga FC (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Kauno Žalgiris vs Riga FC (M+ Liga de Campeones 3) (HD) (6b4)",18:45 - Kauno Žalgiris vs Riga FC (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Kauno Žalgiris vs Riga FC (M+ Liga de Campeones 3) (FHD) (9ab)",18:45 - Kauno Žalgiris vs Riga FC (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Kauno Žalgiris vs Riga FC (M+ Liga de Campeones 3) (FHD) (bc1)",18:45 - Kauno Žalgiris vs Riga FC (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="18:45 - Kauno Žalgiris vs Riga FC (M+ Liga de Campeones 3) (FHD) (08c)",18:45 - Kauno Žalgiris vs Riga FC (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | FIBA Copa Mundial Fase de Clasificación" tvg-name="19:00 - Montenegro vs España (M+ Vamos 2) (HD) (758)",19:00 - Montenegro vs España (M+ Vamos 2) (HD) (758)
+http://127.0.0.1:6878/ace/getstream?id=75898c06f71b867b147654912bb0db8a19d6086e
+#EXTINF:-1 group-title="26/11/2026 | FIBA Copa Mundial Fase de Clasificación" tvg-name="19:00 - Montenegro vs España (M+ Vamos 2) (FHD) (c04)",19:00 - Montenegro vs España (M+ Vamos 2) (FHD) (c04)
+http://127.0.0.1:6878/ace/getstream?id=c04f1daf665ca4b6a8d1f6d552b2bffff1c839d3
+#EXTINF:-1 group-title="26/11/2026 | FIBA Copa Mundial Fase de Clasificación" tvg-name="19:00 - Montenegro vs España (M+ Vamos 2) (FHD) (bec)",19:00 - Montenegro vs España (M+ Vamos 2) (FHD) (bec)
+http://127.0.0.1:6878/ace/getstream?id=bec179fcda0f5016821bcc97f34f407d86f128e6
+#EXTINF:-1 group-title="26/11/2026 | FIBA Copa Mundial Fase de Clasificación" tvg-name="19:00 - Montenegro vs España (M+ Vamos 2) (FHD) (22e)",19:00 - Montenegro vs España (M+ Vamos 2) (FHD) (22e)
+http://127.0.0.1:6878/ace/getstream?id=22ed339fb4f878ab562a434d847dd7849736794f
+#EXTINF:-1 group-title="26/11/2026 | FIBA Copa Mundial Fase de Clasificación" tvg-name="19:00 - Montenegro vs España (M+ Baloncesto) (FHD) (31f)",19:00 - Montenegro vs España (M+ Baloncesto) (FHD) (31f)
+http://127.0.0.1:6878/ace/getstream?id=31f2a257cd226d80339342c449d76339b4a1e6fa
+#EXTINF:-1 group-title="26/11/2026 | FIBA Copa Mundial Fase de Clasificación" tvg-name="19:00 - Montenegro vs España (Teledeporte) (HD) (d88)",19:00 - Montenegro vs España (Teledeporte) (HD) (d88)
+http://127.0.0.1:6878/ace/getstream?id=d889729516a30bb2ac9e0355a1fbda0d10281e9a
+#EXTINF:-1 group-title="26/11/2026 | FIBA Copa Mundial Fase de Clasificación" tvg-name="19:00 - Montenegro vs España (Teledeporte) (FHD) (1d9)",19:00 - Montenegro vs España (Teledeporte) (FHD) (1d9)
+http://127.0.0.1:6878/ace/getstream?id=1d9e4ec1c78ae31da88a5f8582eb95d29d329d8d
+#EXTINF:-1 group-title="26/11/2026 | FIBA Copa Mundial Fase de Clasificación" tvg-name="19:00 - Montenegro vs España (Teledeporte) (FHD) (1a4)",19:00 - Montenegro vs España (Teledeporte) (FHD) (1a4)
+http://127.0.0.1:6878/ace/getstream?id=1a4360fe8dd0d2467cca45c6bc13ff43ca21ac55
+#EXTINF:-1 group-title="26/11/2026 | NFL Liga Regular" tvg-name="19:00 - Detroit Lions vs Chicago Bears (DAZN 2) (FHD) (247)",19:00 - Detroit Lions vs Chicago Bears (DAZN 2) (FHD) (247)
+http://127.0.0.1:6878/ace/getstream?id=247a20c5a4234a37bb91e122561344e1c34d546d
+#EXTINF:-1 group-title="26/11/2026 | FIBA Copa Mundial Fase de Clasificación" tvg-name="20:00 - Italia vs Turquía (M+ Baloncesto 2) (FHD) (dce)",20:00 - Italia vs Turquía (M+ Baloncesto 2) (FHD) (dce)
+http://127.0.0.1:6878/ace/getstream?id=dce8628942410de57606a6849ab6be46de3f9458
+#EXTINF:-1 group-title="26/11/2026 | FIBA Copa Mundial Fase de Clasificación" tvg-name="20:00 - Portugal vs Ucrania (M+ Baloncesto 3) (FHD) (6d4)",20:00 - Portugal vs Ucrania (M+ Baloncesto 3) (FHD) (6d4)
+http://127.0.0.1:6878/ace/getstream?id=6d493da11517de648f00646c3040d1c8fce91f4a
+#EXTINF:-1 group-title="26/11/2026 | FIBA Copa Mundial Fase de Clasificación" tvg-name="20:30 - Islandia vs Bosnia (M+ Baloncesto 5) (FHD) (283)",20:30 - Islandia vs Bosnia (M+ Baloncesto 5) (FHD) (283)
+http://127.0.0.1:6878/ace/getstream?id=28360e214f0cae450e9aaa8753c5be455109188f
+#EXTINF:-1 group-title="26/11/2026 | EHF Champions League" tvg-name="20:45 - Barça BM vs GOG Gudme (Esport3) (FHD) (20a)",20:45 - Barça BM vs GOG Gudme (Esport3) (FHD) (20a)
+http://127.0.0.1:6878/ace/getstream?id=20a6f764b55a1cbe34f62d732561b4a09ff50829
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Juventus vs AC Omonia (M+ Liga de Campeones 2) (HD) (71c)",21:00 - Juventus vs AC Omonia (M+ Liga de Campeones 2) (HD) (71c)
+http://127.0.0.1:6878/ace/getstream?id=71ca00c9df974de359209bc9e1f6c31dc16f4150
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Juventus vs AC Omonia (M+ Liga de Campeones 2) (FHD) (e4d)",21:00 - Juventus vs AC Omonia (M+ Liga de Campeones 2) (FHD) (e4d)
+http://127.0.0.1:6878/ace/getstream?id=e4dc9305ef1933314ef31c9aa476e7eba38de6e8
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Juventus vs AC Omonia (M+ Liga de Campeones 2) (FHD) (798)",21:00 - Juventus vs AC Omonia (M+ Liga de Campeones 2) (FHD) (798)
+http://127.0.0.1:6878/ace/getstream?id=7984a4450c0e9e1584003ed58c0a2e95da20316a
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Juventus vs AC Omonia (M+ Liga de Campeones 3) (HD) (d89)",21:00 - Juventus vs AC Omonia (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Juventus vs AC Omonia (M+ Liga de Campeones 3) (HD) (6b4)",21:00 - Juventus vs AC Omonia (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Juventus vs AC Omonia (M+ Liga de Campeones 3) (FHD) (9ab)",21:00 - Juventus vs AC Omonia (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Juventus vs AC Omonia (M+ Liga de Campeones 3) (FHD) (bc1)",21:00 - Juventus vs AC Omonia (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Juventus vs AC Omonia (M+ Liga de Campeones 3) (FHD) (08c)",21:00 - Juventus vs AC Omonia (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Sunderland vs Jagiellonia Bialystok (M+ Liga de Campeones 3) (HD) (d89)",21:00 - Sunderland vs Jagiellonia Bialystok (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Sunderland vs Jagiellonia Bialystok (M+ Liga de Campeones 3) (HD) (6b4)",21:00 - Sunderland vs Jagiellonia Bialystok (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Sunderland vs Jagiellonia Bialystok (M+ Liga de Campeones 3) (FHD) (9ab)",21:00 - Sunderland vs Jagiellonia Bialystok (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Sunderland vs Jagiellonia Bialystok (M+ Liga de Campeones 3) (FHD) (bc1)",21:00 - Sunderland vs Jagiellonia Bialystok (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Sunderland vs Jagiellonia Bialystok (M+ Liga de Campeones 3) (FHD) (08c)",21:00 - Sunderland vs Jagiellonia Bialystok (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Sunderland vs Jagiellonia Bialystok (M+ Liga de Campeones 4) (FHD) (c6e)",21:00 - Sunderland vs Jagiellonia Bialystok (M+ Liga de Campeones 4) (FHD) (c6e)
+http://127.0.0.1:6878/ace/getstream?id=c6e038aa3938b4f6a58a212a08b324851a361048
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Sunderland vs Jagiellonia Bialystok (M+ Liga de Campeones 4) (FHD) (140)",21:00 - Sunderland vs Jagiellonia Bialystok (M+ Liga de Campeones 4) (FHD) (140)
+http://127.0.0.1:6878/ace/getstream?id=140bd35544f42a466b852163d18124ecd2fafd10
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Sunderland vs Jagiellonia Bialystok (M+ Liga de Campeones 4) (FHD) (c04)",21:00 - Sunderland vs Jagiellonia Bialystok (M+ Liga de Campeones 4) (FHD) (c04)
+http://127.0.0.1:6878/ace/getstream?id=c043fade5b4aac4899017bab40340fefccca7e09
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Hoffenheim vs Sturm Graz (M+ Liga de Campeones 3) (HD) (d89)",21:00 - Hoffenheim vs Sturm Graz (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Hoffenheim vs Sturm Graz (M+ Liga de Campeones 3) (HD) (6b4)",21:00 - Hoffenheim vs Sturm Graz (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Hoffenheim vs Sturm Graz (M+ Liga de Campeones 3) (FHD) (9ab)",21:00 - Hoffenheim vs Sturm Graz (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Hoffenheim vs Sturm Graz (M+ Liga de Campeones 3) (FHD) (bc1)",21:00 - Hoffenheim vs Sturm Graz (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Hoffenheim vs Sturm Graz (M+ Liga de Campeones 3) (FHD) (08c)",21:00 - Hoffenheim vs Sturm Graz (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Hoffenheim vs Sturm Graz (M+ Liga de Campeones 7) (FHD) (934)",21:00 - Hoffenheim vs Sturm Graz (M+ Liga de Campeones 7) (FHD) (934)
+http://127.0.0.1:6878/ace/getstream?id=93402a76024868654e2c7ba5e7d2b376721767f4
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - NEC Nijmegen vs Rennes (M+ Liga de Campeones 3) (HD) (d89)",21:00 - NEC Nijmegen vs Rennes (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - NEC Nijmegen vs Rennes (M+ Liga de Campeones 3) (HD) (6b4)",21:00 - NEC Nijmegen vs Rennes (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - NEC Nijmegen vs Rennes (M+ Liga de Campeones 3) (FHD) (9ab)",21:00 - NEC Nijmegen vs Rennes (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - NEC Nijmegen vs Rennes (M+ Liga de Campeones 3) (FHD) (bc1)",21:00 - NEC Nijmegen vs Rennes (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - NEC Nijmegen vs Rennes (M+ Liga de Campeones 3) (FHD) (08c)",21:00 - NEC Nijmegen vs Rennes (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - NEC Nijmegen vs Rennes (M+ Liga de Campeones 9) (FHD) (1f5)",21:00 - NEC Nijmegen vs Rennes (M+ Liga de Campeones 9) (FHD) (1f5)
+http://127.0.0.1:6878/ace/getstream?id=1f528ed789f615ceccb4f878634ea2b767ec7442
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - O. Lyonnais vs Lillestrøm SK (M+ Liga de Campeones 3) (HD) (d89)",21:00 - O. Lyonnais vs Lillestrøm SK (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - O. Lyonnais vs Lillestrøm SK (M+ Liga de Campeones 3) (HD) (6b4)",21:00 - O. Lyonnais vs Lillestrøm SK (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - O. Lyonnais vs Lillestrøm SK (M+ Liga de Campeones 3) (FHD) (9ab)",21:00 - O. Lyonnais vs Lillestrøm SK (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - O. Lyonnais vs Lillestrøm SK (M+ Liga de Campeones 3) (FHD) (bc1)",21:00 - O. Lyonnais vs Lillestrøm SK (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - O. Lyonnais vs Lillestrøm SK (M+ Liga de Campeones 3) (FHD) (08c)",21:00 - O. Lyonnais vs Lillestrøm SK (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - O. Lyonnais vs Lillestrøm SK (M+ Liga de Campeones 5) (FHD) (c79)",21:00 - O. Lyonnais vs Lillestrøm SK (M+ Liga de Campeones 5) (FHD) (c79)
+http://127.0.0.1:6878/ace/getstream?id=c7959c396edfcc1654541572ed3cb39f7456bbd6
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - O. Lyonnais vs Lillestrøm SK (M+ Liga de Campeones 5) (FHD) (860)",21:00 - O. Lyonnais vs Lillestrøm SK (M+ Liga de Campeones 5) (FHD) (860)
+http://127.0.0.1:6878/ace/getstream?id=860392c455d7cd2b1664ed6c95a8aa22ee869023
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Sparta Praha vs AZ Alkmaar (M+ Liga de Campeones 3) (HD) (d89)",21:00 - Sparta Praha vs AZ Alkmaar (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Sparta Praha vs AZ Alkmaar (M+ Liga de Campeones 3) (HD) (6b4)",21:00 - Sparta Praha vs AZ Alkmaar (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Sparta Praha vs AZ Alkmaar (M+ Liga de Campeones 3) (FHD) (9ab)",21:00 - Sparta Praha vs AZ Alkmaar (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Sparta Praha vs AZ Alkmaar (M+ Liga de Campeones 3) (FHD) (bc1)",21:00 - Sparta Praha vs AZ Alkmaar (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Sparta Praha vs AZ Alkmaar (M+ Liga de Campeones 3) (FHD) (08c)",21:00 - Sparta Praha vs AZ Alkmaar (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Sparta Praha vs AZ Alkmaar (M+ Liga de Campeones 8) (FHD) (f57)",21:00 - Sparta Praha vs AZ Alkmaar (M+ Liga de Campeones 8) (FHD) (f57)
+http://127.0.0.1:6878/ace/getstream?id=f57b01f2507e4ec4fad3cd81aece503d185120a7
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Sparta Praha vs AZ Alkmaar (M+ Liga de Campeones 8) (FHD) (282)",21:00 - Sparta Praha vs AZ Alkmaar (M+ Liga de Campeones 8) (FHD) (282)
+http://127.0.0.1:6878/ace/getstream?id=282c37d1583e43ea2970a5d85ecb616b0960d048
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Crystal Palace vs Real Sociedad (M+ Vamos) (HD) (b20)",21:00 - Crystal Palace vs Real Sociedad (M+ Vamos) (HD) (b20)
+http://127.0.0.1:6878/ace/getstream?id=b20b467fae6af2983ee5163ebcb469eeca9146ee
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Crystal Palace vs Real Sociedad (M+ Liga de Campeones) (HD) (c35)",21:00 - Crystal Palace vs Real Sociedad (M+ Liga de Campeones) (HD) (c35)
+http://127.0.0.1:6878/ace/getstream?id=c357860cefca4a77e9a1d319083752a5be627709
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Crystal Palace vs Real Sociedad (M+ Liga de Campeones) (FHD) (cac)",21:00 - Crystal Palace vs Real Sociedad (M+ Liga de Campeones) (FHD) (cac)
+http://127.0.0.1:6878/ace/getstream?id=cac54759f6353a4a8fc5b6ec84849bc50b048193
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Crystal Palace vs Real Sociedad (M+ Liga de Campeones) (FHD) (68d)",21:00 - Crystal Palace vs Real Sociedad (M+ Liga de Campeones) (FHD) (68d)
+http://127.0.0.1:6878/ace/getstream?id=68d1621b35cbabb84633b9fb82e81b03056ffe02
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Crystal Palace vs Real Sociedad (M+ Liga de Campeones) (FHD) (16b)",21:00 - Crystal Palace vs Real Sociedad (M+ Liga de Campeones) (FHD) (16b)
+http://127.0.0.1:6878/ace/getstream?id=16b6e20bdf0553c2efacb74aa33d68b89ed8994c
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Crystal Palace vs Real Sociedad (M+ Liga de Campeones 3) (HD) (d89)",21:00 - Crystal Palace vs Real Sociedad (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Crystal Palace vs Real Sociedad (M+ Liga de Campeones 3) (HD) (6b4)",21:00 - Crystal Palace vs Real Sociedad (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Crystal Palace vs Real Sociedad (M+ Liga de Campeones 3) (FHD) (9ab)",21:00 - Crystal Palace vs Real Sociedad (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Crystal Palace vs Real Sociedad (M+ Liga de Campeones 3) (FHD) (bc1)",21:00 - Crystal Palace vs Real Sociedad (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Crystal Palace vs Real Sociedad (M+ Liga de Campeones 3) (FHD) (08c)",21:00 - Crystal Palace vs Real Sociedad (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Ferencvaros vs NK Celje (M+ Liga de Campeones 3) (HD) (d89)",21:00 - Ferencvaros vs NK Celje (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Ferencvaros vs NK Celje (M+ Liga de Campeones 3) (HD) (6b4)",21:00 - Ferencvaros vs NK Celje (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Ferencvaros vs NK Celje (M+ Liga de Campeones 3) (FHD) (9ab)",21:00 - Ferencvaros vs NK Celje (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Ferencvaros vs NK Celje (M+ Liga de Campeones 3) (FHD) (bc1)",21:00 - Ferencvaros vs NK Celje (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - Ferencvaros vs NK Celje (M+ Liga de Campeones 3) (FHD) (08c)",21:00 - Ferencvaros vs NK Celje (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - OFI Creta vs Anderlecht (M+ Liga de Campeones 3) (HD) (d89)",21:00 - OFI Creta vs Anderlecht (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - OFI Creta vs Anderlecht (M+ Liga de Campeones 3) (HD) (6b4)",21:00 - OFI Creta vs Anderlecht (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - OFI Creta vs Anderlecht (M+ Liga de Campeones 3) (FHD) (9ab)",21:00 - OFI Creta vs Anderlecht (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - OFI Creta vs Anderlecht (M+ Liga de Campeones 3) (FHD) (bc1)",21:00 - OFI Creta vs Anderlecht (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - OFI Creta vs Anderlecht (M+ Liga de Campeones 3) (FHD) (08c)",21:00 - OFI Creta vs Anderlecht (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - SCU Torreense vs Celtic FC (M+ Liga de Campeones 3) (HD) (d89)",21:00 - SCU Torreense vs Celtic FC (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - SCU Torreense vs Celtic FC (M+ Liga de Campeones 3) (HD) (6b4)",21:00 - SCU Torreense vs Celtic FC (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - SCU Torreense vs Celtic FC (M+ Liga de Campeones 3) (FHD) (9ab)",21:00 - SCU Torreense vs Celtic FC (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - SCU Torreense vs Celtic FC (M+ Liga de Campeones 3) (FHD) (bc1)",21:00 - SCU Torreense vs Celtic FC (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - SCU Torreense vs Celtic FC (M+ Liga de Campeones 3) (FHD) (08c)",21:00 - SCU Torreense vs Celtic FC (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - SCU Torreense vs Celtic FC (M+ Liga de Campeones 6) (FHD) (f30)",21:00 - SCU Torreense vs Celtic FC (M+ Liga de Campeones 6) (FHD) (f30)
+http://127.0.0.1:6878/ace/getstream?id=f305b4719cfe00b6bd2aeeb3e7265b119d4b687b
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - SCU Torreense vs Celtic FC (M+ Liga de Campeones 6) (FHD) (95d)",21:00 - SCU Torreense vs Celtic FC (M+ Liga de Campeones 6) (FHD) (95d)
+http://127.0.0.1:6878/ace/getstream?id=95d4e79a6e558c14cae4c3fe1dd4c3ad8804fd3d
+#EXTINF:-1 group-title="26/11/2026 | Europa League Fase Liga" tvg-name="21:00 - SCU Torreense vs Celtic FC (M+ Liga de Campeones 6) (FHD) (08d)",21:00 - SCU Torreense vs Celtic FC (M+ Liga de Campeones 6) (FHD) (08d)
+http://127.0.0.1:6878/ace/getstream?id=08d75f7722acbe4a024a3bcadcea617504c4778c
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Freiburg vs Twente (M+ Liga de Campeones 3) (HD) (d89)",21:00 - Freiburg vs Twente (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Freiburg vs Twente (M+ Liga de Campeones 3) (HD) (6b4)",21:00 - Freiburg vs Twente (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Freiburg vs Twente (M+ Liga de Campeones 3) (FHD) (9ab)",21:00 - Freiburg vs Twente (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Freiburg vs Twente (M+ Liga de Campeones 3) (FHD) (bc1)",21:00 - Freiburg vs Twente (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Freiburg vs Twente (M+ Liga de Campeones 3) (FHD) (08c)",21:00 - Freiburg vs Twente (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - SC Braga vs KuPS (M+ Liga de Campeones 3) (HD) (d89)",21:00 - SC Braga vs KuPS (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - SC Braga vs KuPS (M+ Liga de Campeones 3) (HD) (6b4)",21:00 - SC Braga vs KuPS (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - SC Braga vs KuPS (M+ Liga de Campeones 3) (FHD) (9ab)",21:00 - SC Braga vs KuPS (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - SC Braga vs KuPS (M+ Liga de Campeones 3) (FHD) (bc1)",21:00 - SC Braga vs KuPS (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - SC Braga vs KuPS (M+ Liga de Campeones 3) (FHD) (08c)",21:00 - SC Braga vs KuPS (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Gent vs Crvena Zvezda (M+ Liga de Campeones 3) (HD) (d89)",21:00 - Gent vs Crvena Zvezda (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Gent vs Crvena Zvezda (M+ Liga de Campeones 3) (HD) (6b4)",21:00 - Gent vs Crvena Zvezda (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Gent vs Crvena Zvezda (M+ Liga de Campeones 3) (FHD) (9ab)",21:00 - Gent vs Crvena Zvezda (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Gent vs Crvena Zvezda (M+ Liga de Campeones 3) (FHD) (bc1)",21:00 - Gent vs Crvena Zvezda (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Gent vs Crvena Zvezda (M+ Liga de Campeones 3) (FHD) (08c)",21:00 - Gent vs Crvena Zvezda (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Nordsjælland vs Panathinaikos (M+ Liga de Campeones 3) (HD) (d89)",21:00 - Nordsjælland vs Panathinaikos (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Nordsjælland vs Panathinaikos (M+ Liga de Campeones 3) (HD) (6b4)",21:00 - Nordsjælland vs Panathinaikos (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Nordsjælland vs Panathinaikos (M+ Liga de Campeones 3) (FHD) (9ab)",21:00 - Nordsjælland vs Panathinaikos (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Nordsjælland vs Panathinaikos (M+ Liga de Campeones 3) (FHD) (bc1)",21:00 - Nordsjælland vs Panathinaikos (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Nordsjælland vs Panathinaikos (M+ Liga de Campeones 3) (FHD) (08c)",21:00 - Nordsjælland vs Panathinaikos (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - CSKA Sofia vs Trabzonspor (M+ Liga de Campeones 3) (HD) (d89)",21:00 - CSKA Sofia vs Trabzonspor (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - CSKA Sofia vs Trabzonspor (M+ Liga de Campeones 3) (HD) (6b4)",21:00 - CSKA Sofia vs Trabzonspor (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - CSKA Sofia vs Trabzonspor (M+ Liga de Campeones 3) (FHD) (9ab)",21:00 - CSKA Sofia vs Trabzonspor (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - CSKA Sofia vs Trabzonspor (M+ Liga de Campeones 3) (FHD) (bc1)",21:00 - CSKA Sofia vs Trabzonspor (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - CSKA Sofia vs Trabzonspor (M+ Liga de Campeones 3) (FHD) (08c)",21:00 - CSKA Sofia vs Trabzonspor (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Hajduk Split vs Sint-Truiden VV (M+ Liga de Campeones 3) (HD) (d89)",21:00 - Hajduk Split vs Sint-Truiden VV (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Hajduk Split vs Sint-Truiden VV (M+ Liga de Campeones 3) (HD) (6b4)",21:00 - Hajduk Split vs Sint-Truiden VV (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Hajduk Split vs Sint-Truiden VV (M+ Liga de Campeones 3) (FHD) (9ab)",21:00 - Hajduk Split vs Sint-Truiden VV (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Hajduk Split vs Sint-Truiden VV (M+ Liga de Campeones 3) (FHD) (bc1)",21:00 - Hajduk Split vs Sint-Truiden VV (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Hajduk Split vs Sint-Truiden VV (M+ Liga de Campeones 3) (FHD) (08c)",21:00 - Hajduk Split vs Sint-Truiden VV (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Borac Banja Luka vs Atalanta (M+ Liga de Campeones 3) (HD) (d89)",21:00 - Borac Banja Luka vs Atalanta (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Borac Banja Luka vs Atalanta (M+ Liga de Campeones 3) (HD) (6b4)",21:00 - Borac Banja Luka vs Atalanta (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Borac Banja Luka vs Atalanta (M+ Liga de Campeones 3) (FHD) (9ab)",21:00 - Borac Banja Luka vs Atalanta (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Borac Banja Luka vs Atalanta (M+ Liga de Campeones 3) (FHD) (bc1)",21:00 - Borac Banja Luka vs Atalanta (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Borac Banja Luka vs Atalanta (M+ Liga de Campeones 3) (FHD) (08c)",21:00 - Borac Banja Luka vs Atalanta (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Inter Club d'Escaldes vs København (M+ Liga de Campeones 3) (HD) (d89)",21:00 - Inter Club d'Escaldes vs København (M+ Liga de Campeones 3) (HD) (d89)
+http://127.0.0.1:6878/ace/getstream?id=d8953c923df15949f98b4499b1dae41fe3a7366f
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Inter Club d'Escaldes vs København (M+ Liga de Campeones 3) (HD) (6b4)",21:00 - Inter Club d'Escaldes vs København (M+ Liga de Campeones 3) (HD) (6b4)
+http://127.0.0.1:6878/ace/getstream?id=6b4bbb1d4b8b8687330a1954b3692274517748f7
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Inter Club d'Escaldes vs København (M+ Liga de Campeones 3) (FHD) (9ab)",21:00 - Inter Club d'Escaldes vs København (M+ Liga de Campeones 3) (FHD) (9ab)
+http://127.0.0.1:6878/ace/getstream?id=9ab3940a1a93dae850d934a88b90bdb1b55ab97b
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Inter Club d'Escaldes vs København (M+ Liga de Campeones 3) (FHD) (bc1)",21:00 - Inter Club d'Escaldes vs København (M+ Liga de Campeones 3) (FHD) (bc1)
+http://127.0.0.1:6878/ace/getstream?id=bc1ff3a2a7b744df7173d78401bca71d5f21f512
+#EXTINF:-1 group-title="26/11/2026 | Conference League Fase Liga" tvg-name="21:00 - Inter Club d'Escaldes vs København (M+ Liga de Campeones 3) (FHD) (08c)",21:00 - Inter Club d'Escaldes vs København (M+ Liga de Campeones 3) (FHD) (08c)
+http://127.0.0.1:6878/ace/getstream?id=08c3670fbbee3ee7a06642b72d45e9eb3408da4f
