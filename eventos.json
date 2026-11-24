@@ -1,7 +1,7 @@
 {
   "fuente": "futbolenlatv.es/deporte",
-  "elcano_cid": "QmQs8y7WvswcPbKbwsA8tKHyWd6FfmtRwYteTLefQbLAQh",
-  "generado_utc": "2026-11-24T02:57:22+00:00",
+  "elcano_cid": "Qmf4RuBCzmLPQ3LPAKXNmy7nBRv8tfwemmK4Jj2nKfseCh",
+  "generado_utc": "2026-11-24T14:58:39+00:00",
   "agenda": [
     {
       "fecha": "24/11/2026",
@@ -75,12 +75,14 @@
       "canales": [
         "Fanatiz (Ver en directo)",
         "M+ Vamos (11 y 50)",
-        "M+ #Vamos Bar (307)"
+        "M+ #Vamos Bar (307)",
+        "M+ Liga de Campeones (M60 O115)"
       ],
       "local": "Santos",
       "visitante": "Grêmio",
       "canales_equivalencia": [
-        "M+ Vamos (11 y 50)"
+        "M+ Vamos (11 y 50)",
+        "M+ Liga de Campeones (M60 O115)"
       ]
     },
     {
@@ -400,11 +402,13 @@
       "competicion": "UEFA Youth League Fase Liga",
       "partido": "Slovan Bratislava Academy vs Real Betis Academy",
       "canales": [
-        "Canal por confirmar"
+        "* SIN TV EN DIRECTO *"
       ],
       "local": "Slovan Bratislava Academy",
       "visitante": "Real Betis Academy",
-      "canales_equivalencia": []
+      "canales_equivalencia": [
+        "* SIN TV EN DIRECTO *"
+      ]
     },
     {
       "fecha": "24/11/2026",
@@ -452,7 +456,7 @@
     {
       "fecha": "24/11/2026",
       "hora": "16:00",
-      "competicion": "Davis Cup Finals 1/4 de Final",
+      "competicion": "Davis Cup Finals 1/4 de Final Partido 1",
       "partido": "República Checa vs Canadá",
       "canales": [
         "M+ Deportes 2 (64)"
@@ -501,6 +505,20 @@
       "local": "Al Seeb",
       "visitante": "Al-Shorta SC",
       "canales_equivalencia": []
+    },
+    {
+      "fecha": "24/11/2026",
+      "hora": "18:00",
+      "competicion": "Davis Cup Finals 1/4 de Final Partido 2",
+      "partido": "República Checa vs Canadá",
+      "canales": [
+        "M+ Deportes 2 (64)"
+      ],
+      "local": "República Checa",
+      "visitante": "Canadá",
+      "canales_equivalencia": [
+        "M+ Deportes 2 (64)"
+      ]
     },
     {
       "fecha": "24/11/2026",
@@ -756,6 +774,20 @@
     {
       "fecha": "24/11/2026",
       "hora": "20:00",
+      "competicion": "Davis Cup Finals 1/4 de Final Partido 3 (Dobles)",
+      "partido": "República Checa vs Canadá",
+      "canales": [
+        "M+ Deportes 2 (64)"
+      ],
+      "local": "República Checa",
+      "visitante": "Canadá",
+      "canales_equivalencia": [
+        "M+ Deportes 2 (64)"
+      ]
+    },
+    {
+      "fecha": "24/11/2026",
+      "hora": "20:00",
       "competicion": "Euroliga Liga Regular",
       "partido": "FC Bayern Basketball vs Maccabi Tel Aviv BC",
       "canales": [
@@ -866,7 +898,8 @@
       "competicion": "EHF European League Fase de grupos",
       "partido": "FH Hafnarfjördur HB vs Bidasoa Irún",
       "canales": [
-        "EHF TV"
+        "EHF TV",
+        "ETB1ON"
       ],
       "local": "FH Hafnarfjördur HB",
       "visitante": "Bidasoa Irún",
@@ -1391,6 +1424,18 @@
     },
     {
       "fecha": "25/11/2026",
+      "hora": "11:00",
+      "competicion": "J1 League",
+      "partido": "Fagiano Okayama vs Shimizu S-Pulse",
+      "canales": [
+        "J.LEAGUE International YouTube"
+      ],
+      "local": "Fagiano Okayama",
+      "visitante": "Shimizu S-Pulse",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "25/11/2026",
       "hora": "12:00",
       "competicion": "UEFA Youth League Fase Liga",
       "partido": "Sabah FK Academy vs FC Barcelona Academy",
@@ -1496,7 +1541,7 @@
     {
       "fecha": "25/11/2026",
       "hora": "16:00",
-      "competicion": "Davis Cup Finals 1/4 de Final",
+      "competicion": "Davis Cup Finals 1/4 de Final Partido 1",
       "partido": "Italia vs Corea del Sur",
       "canales": [
         "M+ Deportes 2 (64)"
@@ -1611,21 +1656,6 @@
     {
       "fecha": "25/11/2026",
       "hora": "18:00",
-      "competicion": "Euroliga Femenina Liga Regular",
-      "partido": "Carolo Basket vs Valencia Basket",
-      "canales": [
-        "À Punt Mèdia",
-        "M+ Baloncesto 4 (M195)"
-      ],
-      "local": "Carolo Basket",
-      "visitante": "Valencia Basket",
-      "canales_equivalencia": [
-        "M+ Baloncesto 4 (M195)"
-      ]
-    },
-    {
-      "fecha": "25/11/2026",
-      "hora": "18:00",
       "competicion": "Eurocup Women Liga Regular",
       "partido": "Besiktas JK Istanbul vs DSK Basketball Brandys",
       "canales": [
@@ -1682,6 +1712,20 @@
       "local": "KP Brno",
       "visitante": "Cinkarna Celje",
       "canales_equivalencia": []
+    },
+    {
+      "fecha": "25/11/2026",
+      "hora": "18:00",
+      "competicion": "Davis Cup Finals 1/4 de Final Partido 2",
+      "partido": "Italia vs Corea del Sur",
+      "canales": [
+        "M+ Deportes 2 (64)"
+      ],
+      "local": "Italia",
+      "visitante": "Corea del Sur",
+      "canales_equivalencia": [
+        "M+ Deportes 2 (64)"
+      ]
     },
     {
       "fecha": "25/11/2026",
@@ -1771,6 +1815,21 @@
       "local": "US Cremonese",
       "visitante": "Avellino",
       "canales_equivalencia": []
+    },
+    {
+      "fecha": "25/11/2026",
+      "hora": "19:00",
+      "competicion": "Euroliga Femenina Liga Regular",
+      "partido": "Carolo Basket vs Valencia Basket",
+      "canales": [
+        "À Punt Mèdia",
+        "M+ Baloncesto 4 (M195)"
+      ],
+      "local": "Carolo Basket",
+      "visitante": "Valencia Basket",
+      "canales_equivalencia": [
+        "M+ Baloncesto 4 (M195)"
+      ]
     },
     {
       "fecha": "25/11/2026",
@@ -1917,6 +1976,18 @@
     {
       "fecha": "25/11/2026",
       "hora": "20:00",
+      "competicion": "Torneo Proyección 1/4 de Final",
+      "partido": "Lanús Reserva vs River Plate Reserva",
+      "canales": [
+        "LPF Play (plan plus)"
+      ],
+      "local": "Lanús Reserva",
+      "visitante": "River Plate Reserva",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "25/11/2026",
+      "hora": "20:00",
       "competicion": "Eurocup Women Liga Regular",
       "partido": "Spar Girona vs BC Montana 2003",
       "canales": [
@@ -1950,6 +2021,20 @@
       "local": "Maccabi Bnot Ashdod",
       "visitante": "Villeneuve d'Ascq LM",
       "canales_equivalencia": []
+    },
+    {
+      "fecha": "25/11/2026",
+      "hora": "20:00",
+      "competicion": "Davis Cup Finals 1/4 de Final Partido 3 (Dobles)",
+      "partido": "Italia vs Corea del Sur",
+      "canales": [
+        "M+ Deportes 2 (64)"
+      ],
+      "local": "Italia",
+      "visitante": "Corea del Sur",
+      "canales_equivalencia": [
+        "M+ Deportes 2 (64)"
+      ]
     },
     {
       "fecha": "25/11/2026",
@@ -2213,6 +2298,18 @@
       ],
       "local": "Colón FC",
       "visitante": "CA Atenas",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "25/11/2026",
+      "hora": "22:30",
+      "competicion": "Torneo Proyección 1/4 de Final",
+      "partido": "Talleres Córdoba Reserva vs Estudiantes LP Reserva",
+      "canales": [
+        "LPF Play (plan plus)"
+      ],
+      "local": "Talleres Córdoba Reserva",
+      "visitante": "Estudiantes LP Reserva",
       "canales_equivalencia": []
     },
     {
@@ -2812,7 +2909,8 @@
         "RFEF.es",
         "Teledeporte",
         "RTVE Play",
-        "RFEF TV YouTube"
+        "RFEF TV YouTube",
+        "Esport3 Web"
       ],
       "canales_equivalencia": [
         "RFEF.es",
@@ -3262,7 +3360,8 @@
       "partido": "Detroit Lions vs Chicago Bears",
       "canales": [
         "DAZN (Ver en directo)",
-        "DAZN 2 (M73)"
+        "DAZN 2 (M73)",
+        "Mediaset Infinity"
       ],
       "local": "Detroit Lions",
       "visitante": "Chicago Bears",
@@ -3371,6 +3470,18 @@
       ],
       "local": "Georgetown",
       "visitante": "Texas Longhorns",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "26/11/2026",
+      "hora": "20:30",
+      "competicion": "Torneo Proyección 1/4 de Final",
+      "partido": "Vélez Sarsfield Reserva vs Boca Juniors Reserva",
+      "canales": [
+        "LPF Play (plan plus)"
+      ],
+      "local": "Vélez Sarsfield Reserva",
+      "visitante": "Boca Juniors Reserva",
       "canales_equivalencia": []
     },
     {
@@ -3753,6 +3864,18 @@
       ],
       "local": "UCLA",
       "visitante": "Saint Mary's Gaels",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "26/11/2026",
+      "hora": "23:00",
+      "competicion": "Torneo Proyección 1/4 de Final",
+      "partido": "Independiente Reserva vs Gimnasia Mendoza Reserva",
+      "canales": [
+        "LPF Play (plan plus)"
+      ],
+      "local": "Independiente Reserva",
+      "visitante": "Gimnasia Mendoza Reserva",
       "canales_equivalencia": []
     }
   ]
