@@ -1,7 +1,7 @@
 {
   "fuente": "futbolenlatv.es/deporte",
-  "elcano_cid": "Qmdpi735tp2r3bkW2RH7PCqX9DzShjwVm7wMA1JZHtzstC",
-  "generado_utc": "2026-11-25T00:52:19+00:00",
+  "elcano_cid": "QmYwymskD6XrqaQVPw3QKeLigi25hLxvEkTP1pmJWciJXC",
+  "generado_utc": "2026-11-25T14:34:30+00:00",
   "agenda": [
     {
       "fecha": "25/11/2026",
@@ -174,11 +174,13 @@
       "competicion": "UEFA Youth League Fase Liga",
       "partido": "Sabah FK Academy vs FC Barcelona Academy",
       "canales": [
-        "Canal por confirmar"
+        "* SIN TV EN DIRECTO *"
       ],
       "local": "Sabah FK Academy",
       "visitante": "FC Barcelona Academy",
-      "canales_equivalencia": []
+      "canales_equivalencia": [
+        "* SIN TV EN DIRECTO *"
+      ]
     },
     {
       "fecha": "25/11/2026",
@@ -196,13 +198,15 @@
       "fecha": "25/11/2026",
       "hora": "13:00",
       "competicion": "UEFA Youth League Fase Liga",
-      "partido": "Slavia Praha Academy vs Villarreal Academy",
+      "partido": "Shakhtar Academy vs Fenerbahçe Academy",
       "canales": [
-        "Canal por confirmar"
+        "* SIN TV EN DIRECTO *"
       ],
-      "local": "Slavia Praha Academy",
-      "visitante": "Villarreal Academy",
-      "canales_equivalencia": []
+      "local": "Shakhtar Academy",
+      "visitante": "Fenerbahçe Academy",
+      "canales_equivalencia": [
+        "* SIN TV EN DIRECTO *"
+      ]
     },
     {
       "fecha": "25/11/2026",
@@ -1036,6 +1040,16 @@
     },
     {
       "fecha": "25/11/2026",
+      "hora": "22:00",
+      "competicion": "México Major",
+      "partido": "2ª Ronda Premier Padel Tour",
+      "canales": [
+        "Premier Padel YouTube"
+      ],
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "25/11/2026",
       "hora": "22:30",
       "competicion": "Torneo Proyección 1/4 de Final",
       "partido": "Talleres Córdoba Reserva vs Estudiantes LP Reserva",
@@ -1109,6 +1123,18 @@
       ],
       "local": "Atlético Mineiro",
       "visitante": "Corinthians",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "26/11/2026",
+      "hora": "00:20",
+      "competicion": "Liga Colombiana Cuadrangulares Semifinales",
+      "partido": "Santa Fe vs Once Caldas",
+      "canales": [
+        "RCN Nuestra Tele"
+      ],
+      "local": "Santa Fe",
+      "visitante": "Once Caldas",
       "canales_equivalencia": []
     },
     {
@@ -1386,6 +1412,18 @@
     {
       "fecha": "26/11/2026",
       "hora": "02:30",
+      "competicion": "Liga Colombiana Cuadrangulares Semifinales",
+      "partido": "Atlético Nacional vs Medellín",
+      "canales": [
+        "RCN Nuestra Tele"
+      ],
+      "local": "Atlético Nacional",
+      "visitante": "Medellín",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "26/11/2026",
+      "hora": "02:30",
       "competicion": "NBA Liga Regular",
       "partido": "Houston Rockets vs Phoenix Suns",
       "canales": [
@@ -1476,7 +1514,7 @@
     {
       "fecha": "26/11/2026",
       "hora": "10:00",
-      "competicion": "Davis Cup Finals 1/4 de Final",
+      "competicion": "Davis Cup Finals 1/4 de Final Partido 1",
       "partido": "Gran Bretaña vs Alemania",
       "canales": [
         "M+ Deportes 2 (64)"
@@ -1537,6 +1575,20 @@
     },
     {
       "fecha": "26/11/2026",
+      "hora": "12:00",
+      "competicion": "Davis Cup Finals 1/4 de Final Partido 2",
+      "partido": "Gran Bretaña vs Alemania",
+      "canales": [
+        "M+ Deportes 2 (64)"
+      ],
+      "local": "Gran Bretaña",
+      "visitante": "Alemania",
+      "canales_equivalencia": [
+        "M+ Deportes 2 (64)"
+      ]
+    },
+    {
+      "fecha": "26/11/2026",
       "hora": "13:15",
       "competicion": "AFC Champions League Two Fase de grupos",
       "partido": "BG Pathum United vs Lion City Sailors FC",
@@ -1574,9 +1626,22 @@
     {
       "fecha": "26/11/2026",
       "hora": "14:00",
-      "competicion": "Open de España",
+      "competicion": "FIBA Copa Mundial Fase de Clasificación",
+      "partido": "Arabia Saudí vs China",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "Arabia Saudí",
+      "visitante": "China",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "26/11/2026",
+      "hora": "14:00",
+      "competicion": "Open de España Femenino",
       "partido": "Jornada 1",
       "canales": [
+        "RTVE Play",
         "Movistar Golf (M68)"
       ],
       "canales_equivalencia": [
@@ -1586,12 +1651,16 @@
     {
       "fecha": "26/11/2026",
       "hora": "14:00",
-      "competicion": "Open de España Femenino",
-      "partido": "Jornada 1",
+      "competicion": "Davis Cup Finals 1/4 de Final Partido 3 (Dobles)",
+      "partido": "Gran Bretaña vs Alemania",
       "canales": [
-        "RTVE Play"
+        "M+ Deportes 2 (64)"
       ],
-      "canales_equivalencia": []
+      "local": "Gran Bretaña",
+      "visitante": "Alemania",
+      "canales_equivalencia": [
+        "M+ Deportes 2 (64)"
+      ]
     },
     {
       "fecha": "26/11/2026",
@@ -1666,7 +1735,19 @@
     {
       "fecha": "26/11/2026",
       "hora": "17:00",
-      "competicion": "Davis Cup Finals 1/4 de Final",
+      "competicion": "FIBA Copa Mundial Fase de Clasificación",
+      "partido": "Catar vs Corea del Sur",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "Catar",
+      "visitante": "Corea del Sur",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "26/11/2026",
+      "hora": "17:00",
+      "competicion": "Davis Cup Finals 1/4 de Final Partido 1",
       "partido": "Austria vs España",
       "canales": [
         "Movistar Plus+ (M8)",
@@ -1685,7 +1766,8 @@
       "competicion": "FIBA Copa Mundial Fase de Clasificación",
       "partido": "Lituania vs Serbia",
       "canales": [
-        "M+ Baloncesto 2 (M67)"
+        "M+ Baloncesto 2 (M67)",
+        "DAZN (Ver en directo)"
       ],
       "local": "Lituania",
       "visitante": "Serbia",
@@ -2072,7 +2154,8 @@
       "competicion": "FIBA Copa Mundial Fase de Clasificación",
       "partido": "Grecia vs Georgia",
       "canales": [
-        "M+ Baloncesto 4 (M195)"
+        "M+ Baloncesto 4 (M195)",
+        "DAZN (Ver en directo)"
       ],
       "local": "Grecia",
       "visitante": "Georgia",
@@ -2088,6 +2171,7 @@
       "canales": [
         "M+ Vamos 2 (51)",
         "M+ Baloncesto (M66)",
+        "DAZN (Ver en directo)",
         "Teledeporte",
         "RTVE Play"
       ],
@@ -2130,6 +2214,22 @@
     },
     {
       "fecha": "26/11/2026",
+      "hora": "19:00",
+      "competicion": "Davis Cup Finals 1/4 de Final Partido 2",
+      "partido": "Austria vs España",
+      "canales": [
+        "Movistar Plus+ (M8)",
+        "M+ Deportes 2 (64)"
+      ],
+      "local": "Austria",
+      "visitante": "España",
+      "canales_equivalencia": [
+        "Movistar Plus+ (M8)",
+        "M+ Deportes 2 (64)"
+      ]
+    },
+    {
+      "fecha": "26/11/2026",
       "hora": "19:30",
       "competicion": "Eurobasket",
       "partido": "Noruega vs Bélgica",
@@ -2146,7 +2246,8 @@
       "competicion": "FIBA Copa Mundial Fase de Clasificación",
       "partido": "Italia vs Turquía",
       "canales": [
-        "M+ Baloncesto 2 (M67)"
+        "M+ Baloncesto 2 (M67)",
+        "DAZN (Ver en directo)"
       ],
       "local": "Italia",
       "visitante": "Turquía",
@@ -2160,13 +2261,26 @@
       "competicion": "FIBA Copa Mundial Fase de Clasificación",
       "partido": "Portugal vs Ucrania",
       "canales": [
-        "M+ Baloncesto 3 (M194)"
+        "M+ Baloncesto 3 (M194)",
+        "DAZN (Ver en directo)"
       ],
       "local": "Portugal",
       "visitante": "Ucrania",
       "canales_equivalencia": [
         "M+ Baloncesto 3 (M194)"
       ]
+    },
+    {
+      "fecha": "26/11/2026",
+      "hora": "20:00",
+      "competicion": "FIBA Copa Mundial Fase de Clasificación",
+      "partido": "Líbano vs Japón",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "Líbano",
+      "visitante": "Japón",
+      "canales_equivalencia": []
     },
     {
       "fecha": "26/11/2026",
@@ -2198,7 +2312,8 @@
       "competicion": "FIBA Copa Mundial Fase de Clasificación",
       "partido": "Islandia vs Bosnia",
       "canales": [
-        "M+ Baloncesto 5 (M196)"
+        "M+ Baloncesto 5 (M196)",
+        "DAZN (Ver en directo)"
       ],
       "local": "Islandia",
       "visitante": "Bosnia",
@@ -2458,6 +2573,22 @@
     {
       "fecha": "26/11/2026",
       "hora": "21:00",
+      "competicion": "Davis Cup Finals 1/4 de Final Partido 3 (Dobles)",
+      "partido": "Austria vs España",
+      "canales": [
+        "Movistar Plus+ (M8)",
+        "M+ Deportes 2 (64)"
+      ],
+      "local": "Austria",
+      "visitante": "España",
+      "canales_equivalencia": [
+        "Movistar Plus+ (M8)",
+        "M+ Deportes 2 (64)"
+      ]
+    },
+    {
+      "fecha": "26/11/2026",
+      "hora": "21:00",
       "competicion": "Conference League Fase Liga",
       "partido": "Freiburg vs Twente",
       "canales": [
@@ -2577,6 +2708,16 @@
     },
     {
       "fecha": "26/11/2026",
+      "hora": "22:00",
+      "competicion": "México Major",
+      "partido": "3ª Ronda Premier Padel Tour",
+      "canales": [
+        "Premier Padel YouTube"
+      ],
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "26/11/2026",
       "hora": "22:30",
       "competicion": "NFL Liga Regular",
       "partido": "Dallas Cowboys vs Philadelphia Eagles",
@@ -2622,6 +2763,18 @@
       ],
       "local": "Independiente Reserva",
       "visitante": "Gimnasia Mendoza Reserva",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "26/11/2026",
+      "hora": "23:10",
+      "competicion": "FIBA Copa Mundial",
+      "partido": "Uruguay vs Canadá",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "Uruguay",
+      "visitante": "Canadá",
       "canales_equivalencia": []
     },
     {
@@ -2698,6 +2851,18 @@
     },
     {
       "fecha": "27/11/2026",
+      "hora": "01:40",
+      "competicion": "FIBA Copa Mundial",
+      "partido": "Argentina vs Bahamas",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "Argentina",
+      "visitante": "Bahamas",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "27/11/2026",
       "hora": "02:00",
       "competicion": "Australian PGA Championship",
       "partido": "Jornada 2",
@@ -2722,6 +2887,18 @@
     },
     {
       "fecha": "27/11/2026",
+      "hora": "02:40",
+      "competicion": "FIBA Copa Mundial",
+      "partido": "Panamá vs Puerto Rico",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "Panamá",
+      "visitante": "Puerto Rico",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "27/11/2026",
       "hora": "05:00",
       "competicion": "WBSC Premier 12",
       "partido": "Nicaragua vs República Checa",
@@ -2734,6 +2911,29 @@
     },
     {
       "fecha": "27/11/2026",
+      "hora": "06:50",
+      "competicion": "Supercars Championship",
+      "partido": "Adelaide Street Circuit Carrera 1",
+      "canales": [
+        "DAZN (Ver en directo)",
+        "DAZN App Gratis (Ver gratis)"
+      ],
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "27/11/2026",
+      "hora": "07:00",
+      "competicion": "FIBA Copa Mundial Fase de Clasificación",
+      "partido": "Jordania vs Nueva Zelanda",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "Jordania",
+      "visitante": "Nueva Zelanda",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "27/11/2026",
       "hora": "09:40",
       "competicion": "A-League",
       "partido": "Macarthur FC vs Melbourne City",
@@ -2742,6 +2942,30 @@
       ],
       "local": "Macarthur FC",
       "visitante": "Melbourne City",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "27/11/2026",
+      "hora": "09:45",
+      "competicion": "AFLW",
+      "partido": "North Melbourne FC vs Melbourne FC",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "North Melbourne FC",
+      "visitante": "Melbourne FC",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "27/11/2026",
+      "hora": "10:00",
+      "competicion": "FIBA Copa Mundial Fase de Clasificación",
+      "partido": "Irán vs Australia",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "Irán",
+      "visitante": "Australia",
       "canales_equivalencia": []
     },
     {
@@ -2787,6 +3011,18 @@
     },
     {
       "fecha": "27/11/2026",
+      "hora": "13:00",
+      "competicion": "FIBA Copa Mundial Fase de Clasificación",
+      "partido": "Siria vs Filipinas",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "Siria",
+      "visitante": "Filipinas",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "27/11/2026",
       "hora": "13:15",
       "competicion": "Saudi Pro League",
       "partido": "Al Kholood vs Khaleej FC",
@@ -2800,24 +3036,15 @@
     {
       "fecha": "27/11/2026",
       "hora": "14:00",
-      "competicion": "Open de España",
+      "competicion": "Open de España Femenino",
       "partido": "Jornada 2",
       "canales": [
+        "RTVE Play",
         "Movistar Golf (M68)"
       ],
       "canales_equivalencia": [
         "Movistar Golf (M68)"
       ]
-    },
-    {
-      "fecha": "27/11/2026",
-      "hora": "14:00",
-      "competicion": "Open de España Femenino",
-      "partido": "Jornada 2",
-      "canales": [
-        "RTVE Play"
-      ],
-      "canales_equivalencia": []
     },
     {
       "fecha": "27/11/2026",
@@ -2941,7 +3168,8 @@
       "competicion": "FIBA Copa Mundial Fase de Clasificación",
       "partido": "Estonia vs Francia",
       "canales": [
-        "M+ Baloncesto 3 (M194)"
+        "M+ Baloncesto 3 (M194)",
+        "DAZN (Ver en directo)"
       ],
       "local": "Estonia",
       "visitante": "Francia",
@@ -2994,7 +3222,8 @@
       "competicion": "FIBA Copa Mundial Fase de Clasificación",
       "partido": "Letonia vs Alemania",
       "canales": [
-        "M+ Baloncesto (M66)"
+        "M+ Baloncesto (M66)",
+        "DAZN (Ver en directo)"
       ],
       "local": "Letonia",
       "visitante": "Alemania",
@@ -3020,7 +3249,8 @@
       "competicion": "FIBA Copa Mundial Fase de Clasificación",
       "partido": "Suecia vs Hungría",
       "canales": [
-        "M+ Baloncesto 2 (M67)"
+        "M+ Baloncesto 2 (M67)",
+        "DAZN (Ver en directo)"
       ],
       "local": "Suecia",
       "visitante": "Hungría",
@@ -3180,7 +3410,8 @@
       "competicion": "FIBA Copa Mundial Fase de Clasificación",
       "partido": "Holanda vs Israel",
       "canales": [
-        "M+ Baloncesto 5 (M196)"
+        "M+ Baloncesto 5 (M196)",
+        "DAZN (Ver en directo)"
       ],
       "local": "Holanda",
       "visitante": "Israel",
@@ -3194,7 +3425,8 @@
       "competicion": "FIBA Copa Mundial Fase de Clasificación",
       "partido": "Eslovenia vs Finlandia",
       "canales": [
-        "M+ Baloncesto 4 (M195)"
+        "M+ Baloncesto 4 (M195)",
+        "DAZN (Ver en directo)"
       ],
       "local": "Eslovenia",
       "visitante": "Finlandia",
@@ -3554,6 +3786,18 @@
     },
     {
       "fecha": "27/11/2026",
+      "hora": "22:00",
+      "competicion": "Tercera Federación Grupo 12",
+      "partido": "Real Unión Tenerife vs UD Añaza",
+      "canales": [
+        "Movidadeportivatv YouTube"
+      ],
+      "local": "Real Unión Tenerife",
+      "visitante": "UD Añaza",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "27/11/2026",
       "hora": "22:30",
       "competicion": "Liga Pro Ecuador",
       "partido": "Deportivo Cuenca vs Manta FC",
@@ -3562,6 +3806,18 @@
       ],
       "local": "Deportivo Cuenca",
       "visitante": "Manta FC",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "27/11/2026",
+      "hora": "23:00",
+      "competicion": "Primera Nacional Argentina",
+      "partido": "CA Atlanta vs Ciudad de Bolivar",
+      "canales": [
+        "LPF Play (plan plus)"
+      ],
+      "local": "CA Atlanta",
+      "visitante": "Ciudad de Bolivar",
       "canales_equivalencia": []
     },
     {
@@ -3578,6 +3834,22 @@
     },
     {
       "fecha": "27/11/2026",
+      "hora": "23:00",
+      "competicion": "México Major",
+      "partido": "1/4 de final femenino Premier Padel Tour",
+      "canales": [
+        "Red Bull TV",
+        "M+ Vamos (11 y 50)",
+        "M+ #Vamos Bar (307)",
+        "M+ Deportes (63)"
+      ],
+      "canales_equivalencia": [
+        "M+ Vamos (11 y 50)",
+        "M+ Deportes (63)"
+      ]
+    },
+    {
+      "fecha": "27/11/2026",
       "hora": "23:30",
       "competicion": "NHL Liga Regular",
       "partido": "Chicago Blackhawks vs New York Rangers",
@@ -3586,6 +3858,18 @@
       ],
       "local": "Chicago Blackhawks",
       "visitante": "New York Rangers",
+      "canales_equivalencia": []
+    },
+    {
+      "fecha": "27/11/2026",
+      "hora": "23:40",
+      "competicion": "FIBA Copa Mundial",
+      "partido": "Chile vs México",
+      "canales": [
+        "DAZN (Ver en directo)"
+      ],
+      "local": "Chile",
+      "visitante": "México",
       "canales_equivalencia": []
     }
   ]
